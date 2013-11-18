@@ -1,6 +1,6 @@
 ---
 layout: post
-title: sketchnoting in reverse
+title: Sketchnoting in Reverse
 ---
 
 #Sketchnoting In Reverse
