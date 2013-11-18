@@ -1,5 +1,5 @@
 ---
-title: deejaygraham
+title: d. j. graham
 layout: default
 ---
 
