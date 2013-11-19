@@ -1,4 +1,4 @@
-﻿/* 
+/* 
  colours:  
  
  dark blue: 556270
@@ -9,3 +9,13 @@
  
 */
 
+body
+{
+background-color: #c7f464;
+}
+
+header
+{
+background-color: black;
+color: white;
+}
