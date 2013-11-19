@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Planning Poker Card Design
+tags:
+- planning poker
+- scrum
+- agile
 ---
 
 #Planning Poker Card Design

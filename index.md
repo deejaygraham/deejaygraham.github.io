@@ -7,4 +7,4 @@ layout: default
 
 Not much here yet. But there will be in a little while.
 
-[blog](//blog/)
+[blog]({{ site.url }}/blog/)

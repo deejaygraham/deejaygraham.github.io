@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Sketchnoting in Reverse
+tags:
+- sketchnote
+- tdd
+- deliberate practice
+- presentations
 ---
 
 #Sketchnoting In Reverse
