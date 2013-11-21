@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Sketchnoting in Reverse
+published: true
 tags:
 - sketchnote
 - tdd
 - deliberate practice
 - presentations
 ---
-
-#Sketchnoting In Reverse
-
 A little while ago I was introducted to the idea of sketchnoting by [Mike Rohde](http://rohdesign.com/) and the [sketchnote army](http://www.sketchnotearmy.com/). 
 
 I bought [Mike's book](http://rohdesign.com/book) and decided to try the method for taking notes on presentations I attend and during training sessions. I found it to be a great tool for retaining information and 

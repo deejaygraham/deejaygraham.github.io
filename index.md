@@ -1,10 +1,14 @@
 ---
-title: d. j. graham
+title: d.j. graham
 layout: default
 ---
 
-# Hello. 
+{% assign post = site.posts.first %}
 
-Not much here yet. But there will be in a little while.
-
-[blog]({{ site.url }}/blog/)
+<div class="row">
+	<div class="small-12 columns">
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<p>{{ post.date | date_to_long_string }}</p>
+		<p>{{ post.content }}</p>
+	</div>
+</div>

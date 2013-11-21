@@ -23,21 +23,20 @@
 
 <body>
 
+<!-- Nav Bar -->
 <header>
-	<div class="row">
-		<div class="large-12 columns">
-			<h1>{{ site.name }}</h1>
-			<p>{{ site.description }}</p>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="large-12 columns">
-			<ul class="inline-list">
-				<li><a href="/">Home</a></li>
-				<li><a href="/blog">Blog</a></li>
-			</ul>
-		</div>
-	</div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h1><a href="{{ site.url }}">{{ site.name }}</a> <small>{{ site.description }}</small></h1>
+	<ul class="inline-list right">
+		<li><a href="{{ site.url }}" >Home</a></li>
+		<li><a href="{{ site.url }}/blog/" >Blog</a></li>
+		<!-- <li><a href="{{ site.url }}/about/" >About</a></li> -->
+	</ul>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
 </header>
 	

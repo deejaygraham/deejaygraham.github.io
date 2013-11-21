@@ -1,14 +1,12 @@
 ---
 layout: post
 title: Planning Poker Card Design
+published: true
 tags:
 - planning poker
 - scrum
 - agile
 ---
-
-#Planning Poker Card Design
-
 I have just completed and checked in some designs for [planning poker cards](https://github.com/deejaygraham/PlanningPoker/) in png format.
 
 We occasionally use [Planning Poker](https://en.wikipedia.org/wiki/Planning_poker) in our scrum story estimation process, so I designed some to 

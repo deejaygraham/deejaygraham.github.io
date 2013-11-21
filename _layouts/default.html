@@ -1,12 +1,23 @@
 {% include header.html %}
 
+<!-- Main Page Content and Sidebar -->
+
 <div class="row">
-	<div class="large-8 columns">
-	{{ content }}
+    <!-- Main Blog Content -->
+	<div class="small-9 columns" role="content">
+		<article>
+			{{ content }}
+		</article>
 	</div>
-	<div class="large-4 columns">
+	<!-- End Main Content -->
+	
+	<!-- Sidebar -->
+	<aside class="small-3 columns">
 	{% include sidebar.html %}
-	</div>
+	</aside>
+	<!-- End Sidebar -->
 </div>
+
+<!-- End Main Content and Sidebar -->
 
 {% include footer.html %}	
