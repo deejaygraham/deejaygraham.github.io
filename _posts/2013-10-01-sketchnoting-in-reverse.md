@@ -8,7 +8,7 @@ tags:
 - deliberate practice
 - presentations
 ---
-A little while ago I was introducted to the idea of sketchnoting by [Mike Rohde](http://rohdesign.com/) and the [sketchnote army](http://www.sketchnotearmy.com/). 
+A little while ago I was introduced to the idea of sketchnoting by [Mike Rohde](http://rohdesign.com/) and the [sketchnote army](http://www.sketchnotearmy.com/). 
 
 I bought [Mike's book](http://rohdesign.com/book) and decided to try the method for taking notes on presentations I attend and during training sessions. I found it to be a great tool for retaining information and 
 for refreshing your memory once a presentation is long in the past.
@@ -21,7 +21,7 @@ on the idea of using the sketchnote concept in reverse; sketch out the main area
 to drive my talk instead of written notes. As they say, a picture is worth a thousand words and quick glances at the completed sketch meant I was 
 able to stay up to date with where I was in the script very easily and without dropping out of "live coding" mode.
 
-I tweeted my idea to Mike and he responded asking me to share. 
+I tweeted my idea to [Mike](http://twitter.com/rohdesign) and he responded asking me to share. 
 
 ![tweet](/img/tweet-2013-10-01.jpg)
 

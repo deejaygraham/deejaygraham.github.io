@@ -9,3 +9,70 @@
  
 */
 
+/*
+
+cream: DED4B9
+choc: 46433A
+red: CE534D
+green blue: 64B6B1
+
+*/
+
+/*body 
+{
+background-color: #ded4b9;
+}
+
+a:link, a:visited
+{
+	color: #999;
+	text-decoration:underline;
+}
+
+a:hover
+{
+	color: #000;
+	background-color: #CE534D;
+}
+
+a:active
+{
+}
+
+*/
+
+body
+{
+color: rgb(68,68,68);
+}
+
+header
+{
+border-bottom: 1px solid rgb(196,196,196);
+}
+
+footer
+{
+border-top: 1px solid rgb(196,196,196);
+}
+
+p > a
+{
+color: rgb(68,68,68);
+text-decoration: underline;
+}
+
+h3 > a:link, h3 > a:visited
+{
+color: rgb(68,68,68);
+}
+
+h3 > a:hover, h3 > a:active
+{
+color: #64B6B1;
+}
+
+h6
+{
+color: rgb(196,196,196);
+}
