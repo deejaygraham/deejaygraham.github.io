@@ -35,5 +35,5 @@ The book is very quick to read all the way through and is a lot of fun. I learne
 any others like it in the field. It seems even more of a chore to go back to reading real books. 
 
 ###### Disclaimer
-[@PortiaTung](http://twitter.com/portiatung) and I are twitter "friends" and I helped debug an early version of the pdf manuscript's links and typos.
+[@PortiaTung](http://twitter.com/portiatung) and I are twitter "friends" and I helped debug an early version of the pdf manuscript.
 
