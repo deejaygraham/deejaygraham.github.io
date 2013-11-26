@@ -56,6 +56,11 @@ footer
 border-top: 1px solid rgb(196,196,196);
 }
 
+p
+{
+	font-family: Georgia, serif;
+}
+
 p > a
 {
 color: rgb(68,68,68);
