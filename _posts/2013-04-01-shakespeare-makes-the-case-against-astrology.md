@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Shakespeare makes the case against astrology
-published: true
-tags:
-- poetry
-- quote
+published: false
+tags: [ poetry, quote ]
 ---
 
 > This is the excellent foppery of the world, 
