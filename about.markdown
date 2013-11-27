@@ -1,5 +1,5 @@
 ---
-title: About
+title: about d.j.graham
 layout: default
 ---
 

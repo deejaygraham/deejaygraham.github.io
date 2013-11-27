@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: d.j.graham's blog
 layout: blog
 ---
 {% for post in site.posts %}

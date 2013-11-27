@@ -1,5 +1,5 @@
 ---
-title: d.j. graham
+title: d.j.graham's blog
 layout: index
 ---
 
