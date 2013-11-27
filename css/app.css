@@ -41,6 +41,7 @@ a:active
 
 */
 
+
 body
 {
 color: rgb(68,68,68);
@@ -48,13 +49,21 @@ color: rgb(68,68,68);
 
 header
 {
-border-bottom: 1px solid rgb(196,196,196);
+	border-bottom: 1px dotted rgb(196,196,196);
+}
+
+header h2
+{
+	font-size: 90%;
+	color: #ccc;
 }
 
 footer
 {
-border-top: 1px solid rgb(196,196,196);
+	border-top: 1px dotted rgb(196,196,196);
 }
+
+/*
 
 p
 {
@@ -81,3 +90,5 @@ h6
 {
 color: rgb(196,196,196);
 }
+*/
+

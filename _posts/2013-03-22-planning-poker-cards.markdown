@@ -14,19 +14,19 @@ meet our needs rather than buying them in.
 
 There are three decks currently, each containing their respective story point values and two jokers: "coffee" and "huh?"
 
-## Fibonnacci
+#### Fibonnacci
 
 Strictly traditional Fibonnacci progression
 
 ![fibonnacci card](/img/poker-card-fibonnacci-question.png "Fibonnacci")
 
-## Modified Fibonnacci
+#### Modified Fibonnacci
 
 Modified Fibonnacci is more coarse grained for higher values to represent the greater uncertainty involved in estimating large stories.
 
 ![modified fibonnacci](/img/poker-card-modified-fibonnacci-20.png "Modified Fibonnacci")
 
-## T-Shirt sizes
+#### T-Shirt sizes
 
 Just in time for Summer !
 

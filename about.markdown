@@ -1,6 +1,6 @@
 ---
 title: About
-layout: blog
+layout: default
 ---
 
 # Hello.

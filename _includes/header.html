@@ -14,26 +14,26 @@
 	
 	<title>{{ site.name }}</title>
 
-	<link rel="stylesheet" href="/css/normalize.css" />
-	<link rel="stylesheet" href="/css/foundation.min.css" />
-	<link rel="stylesheet" href="/css/app.css" />
-
-	<script src="/js/vendor/custom.modernizr.js"></script>
+	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="/css/bootstrap-responsive.css" media="screen">
+	<link rel="stylesheet" href="/css/app.css"  media="screen">
 </head>
 
 <body>
 
+<!-- Fluid Container -->
+<div class="container-fluid">
+
+	{% include masthead.html %}
+
+<!-- replace nav bar...
 <!-- Nav Bar -->
-<header class="row">
-	<div class="small-12 columns">
-		<h1><a href="{{ site.url }}"><img class="avatar" src="/img/avatar.jpg" /></a> <small>{{ site.description }}</small></h1>
-		<ul class="inline-list right">
-			<li><a href="{{ site.url }}" >Home</a></li>
-			<li><a href="{{ site.url }}/blog/" >Blog</a></li>
-			<li><a href="{{ site.url }}/about/" >About</a></li>
-			<li><a href="{{ site.url }}/rss.xml" >Feed</a></li>
-		</ul>
+	
+	<div class="row-fluid">
+		<div class="span12">
+		{% include navigation.html %}
+		</div>
 	</div>
-  <!-- End Nav -->
-</header>
+	
+<!-- End Nav -->
 	
