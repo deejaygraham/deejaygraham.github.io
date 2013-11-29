@@ -17,10 +17,10 @@ Here's the [github repo](https://github.com/deejaygraham/brioche).
 
 To use it, create a type registry object and an instance creation object:
 
-````
+{% highlight csharp %}
 var typeRegistry = new SimpleTypeRegistry();
 var instanceCreator = new ResolvingInstanceCreator(typeRegistry);
-````
+{% endhighlight %}
 
 Then set up the type container depending on whether you want to auto-discover all the composable types we can find:
 
