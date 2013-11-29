@@ -4,6 +4,9 @@ permalink: pretty
 url: http://deejaygraham.github.io
 twitterurl: http://twitter.com/deejaygraham
 email: deejaygraham@gmail.com
+markdown: rdiscount
+pygments: true
+
 
 
 
