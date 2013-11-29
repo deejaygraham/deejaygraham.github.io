@@ -17,26 +17,26 @@ Here's the [github repo](https://github.com/deejaygraham/brioche).
 
 To use it, create a type registry object and an instance creation object:
 
-````ruby
+````
 var typeRegistry = new SimpleTypeRegistry();
 var instanceCreator = new ResolvingInstanceCreator(typeRegistry);
 ````
 
 Then set up the type container depending on whether you want to auto-discover all the composable types we can find:
 
-```` ruby
+````
 var container = new AutoTypeContainer("MyNamespace", typeRegistry, instanceCreator);
 ````
 
 or add types manually:
  
-````csharp
+````
 var container = new TypeContainer(typeRegistry, instanceCreator);
 ````
 
 and register the types you will need:
 
-```` csharp
+````
 DependencyInjection.Container.Register<ISpeak, Cat>();
 DependencyInjection.Container.Register<ISpeak, Dog>();
 DependencyInjection.Container.Register<ISpeak, Parrot>();
@@ -45,7 +45,7 @@ DependencyInjection.Container.Register<ISpeak, Hydra>();
 
 Then set the IoC container:
 
-````cs
+````
 DependencyInjection.Container = container;
 ````				
 
