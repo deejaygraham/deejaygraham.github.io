@@ -58,6 +58,18 @@ header h2
 	color: #ccc;
 }
 
+.post-date
+{
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+.post-title
+{
+font-weight: normal;
+line-height: 1.3;
+}
+
 footer
 {
 	border-top: 1px dotted rgb(196,196,196);

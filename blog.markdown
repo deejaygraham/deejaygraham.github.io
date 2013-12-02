@@ -4,8 +4,8 @@ layout: blog
 ---
 {% for post in site.posts %}
 <article>
-	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-	<h6>{{ post.date | date_to_long_string }}</h6>
+	<h6 class="post-date">{{ post.date | date_to_long_string }}</h6>
+	<h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 	<p>{{ post.excerpt }}</p>
 </article>
 {% endfor %}		
