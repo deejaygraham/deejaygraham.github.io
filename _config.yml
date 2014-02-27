@@ -6,6 +6,7 @@ twitterurl: http://twitter.com/deejaygraham
 email: deejaygraham@gmail.com
 markdown: rdiscount
 pygments: true
+exclude: [ make.cmd ]
 
 
 

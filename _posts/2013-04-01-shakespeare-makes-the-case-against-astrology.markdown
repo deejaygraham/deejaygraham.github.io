@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shakespeare makes the case against astrology
-published: false
+published: true
 tags: [ poetry, quote ]
 ---
 
