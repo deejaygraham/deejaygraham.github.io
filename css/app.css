@@ -18,6 +18,11 @@ green blue: 64B6B1
 
 */
 
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
 /*body 
 {
 background-color: #ded4b9;
