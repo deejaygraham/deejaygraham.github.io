@@ -20,7 +20,7 @@ green blue: 64B6B1
 
 body
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans Light', 'Century Gothic', 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
 
 /*body 
@@ -63,10 +63,18 @@ header h2
 	color: #ccc;
 }
 
+article p 
+{ 
+font-family: Georgia, Cambria, Times, 'Times New Roman', serif; 
+line-height: 1.5; 
+}
+
+
 .post-date
 {
 text-transform: uppercase;
 letter-spacing: 3px;
+color: #ddd;
 }
 
 .post-title

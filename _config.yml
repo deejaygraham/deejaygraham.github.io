@@ -1,7 +1,7 @@
 name: "d. j. graham"
 description: "a triumph of style over substance"
 permalink: pretty
-url: http://deejaygraham.github.io
+baseurl: "http://deejaygraham.github.io"
 twitterurl: http://twitter.com/deejaygraham
 email: deejaygraham@gmail.com
 markdown: rdiscount
