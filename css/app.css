@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 /* 
  colours:  
  
@@ -46,7 +48,6 @@ a:active
 
 */
 
-
 body
 {
 color: rgb(68,68,68);
@@ -69,7 +70,6 @@ font-family: Georgia, Cambria, Times, 'Times New Roman', serif;
 line-height: 1.5; 
 }
 
-
 .post-date
 {
 text-transform: uppercase;
@@ -87,33 +87,3 @@ footer
 {
 	border-top: 1px dotted rgb(196,196,196);
 }
-
-/*
-
-p
-{
-	font-family: Georgia, serif;
-}
-
-p > a
-{
-color: rgb(68,68,68);
-text-decoration: underline;
-}
-
-h3 > a:link, h3 > a:visited
-{
-color: rgb(68,68,68);
-}
-
-h3 > a:hover, h3 > a:active
-{
-color: #64B6B1;
-}
-
-h6
-{
-color: rgb(196,196,196);
-}
-*/
-
