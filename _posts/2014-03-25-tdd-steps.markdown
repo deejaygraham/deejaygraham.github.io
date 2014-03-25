@@ -1,0 +1,27 @@
+---
+layout: post
+title: TDD Steps
+published: true
+tags: [ tdd kata deliberate-practice cyber-dojo ]
+---
+
+I'm currently running a series of weekly [cyber-dojo](http://www.cyber-dojo.com/)
+sessions for some of our testers who are working towards becoming developers so
+that they can get a feel for working on code and doing TDD.
+
+Each week we pick a kata and implement it in pairs or randori style with 
+a projector. To keep everyone focussed on the task at hand I wrote the following
+"program" to explain the TDD process in simple terms.
+
+	10 Think about what you want to achieve
+	20 Write a little test for what you need
+	30 Run the tests and make sure this test fails
+	40 Write just enough code to make the test pass
+	50 Run the tests and make sure this test (and all the others) pass
+	60 Can anything be improved?
+	70 Make improvements
+	80 Run the tests again
+	90 Goto 10
+
+Of course, if I were serious about TDD, I should have written tests around
+this too ;)
