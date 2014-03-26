@@ -1,17 +1,17 @@
 {% include header.html %}
 
 <!-- Post -->
-<div class="row-fluid">
-	<div class="span8">
+<div class="row">
+	<div class="col-md-8">
 		<article>
 			<h6 class="post-date">{{ page.date | date_to_string }}</h6>
 			<h3 class="post-title">{{ page.title }}</h3>
-			<p><a href="https://twitter.com/share" class="twitter-share-button" data-via="deejaygraham">Tweet</a></p>
+			<p>{% include tweet-button.html %}</p>
 			{{ content }}
-			<p><a href="https://twitter.com/share" class="twitter-share-button" data-via="deejaygraham">Tweet</a></p>
+			<p>{% include tweet-button.html %}</p>
 		</article>
 	</div>
-	<div  class="span4">
+	<div  class="col-md-4">
 		{% include recentposts.html %}
 	</div>
 </div>
