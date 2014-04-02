@@ -17,7 +17,7 @@ a projector. To keep everyone focussed on the task at hand I wrote the following
 	20 Write a little test for what you need
 	30 Run the tests and make sure this test fails
 	40 Write just enough code to make the test pass
-	50 Run the tests and make sure this test (and all the others) pass
+	50 Run the tests and make sure this test passes
 	60 Can anything be improved?
 	70 Make improvements
 	80 Run the tests again

@@ -1,20 +1,19 @@
-{% include header.html %}
+{% include page-header.html %}
 
-<!-- Post -->
-<div class="row">
-	<div class="col-md-8">
-		<article>
-			<h6 class="post-date">{{ page.date | date_to_string }}</h6>
-			<h3 class="post-title">{{ page.title }}</h3>
-			<p>{% include tweet-button.html %}</p>
-			{{ content }}
-			<p>{% include tweet-button.html %}</p>
-		</article>
-	</div>
-	<div  class="col-md-4">
-		{% include recentposts.html %}
-	</div>
-</div>
-<!-- Post -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<article>
+						<header>
+							<h1 class="post-title">{{ page.title }}</h1>
+							<p>Published on {{ page.date | date_to_long_string }}</p>
+						</header>
+						<p>{% include tweet-button.html %}</p>
+						{{ content }}
+						<p>{% include tweet-button.html %}</p>
+					</article>
+				</div>
+			</div>
+		</div>
 
-{% include footer.html %}	
+{% include page-footer.html %}

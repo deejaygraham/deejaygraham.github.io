@@ -5,23 +5,25 @@ layout: default
 
 # Hello.
 
-My name is Derek Graham and this is my personal website. I'm a software developer working in the North East 
-of England for a very popular business software company.
+My name is Derek Graham and this is my personal website. I'm a software 
+developer working in the North East of England for a very popular business 
+software company.
 
-My main areas of interest are in using agile methods to help improve what we ship, test-driven development, 
-continuous learning, visual thinking, design and, of course, code.
+My main areas of interest are in using agile methods to help improve what 
+we ship, test-driven development, continuous learning, visual thinking, 
+design and, of course, code.
 
 #### Get in touch
 
-email: [deejaygraham@gmail.com](mailto:deejaygraham@gmail.com)
+email: [{{ site.email}}]({{ site.emaillink }})
 
-twitter: [@deejaygraham](http://twitter.com/deejaygraham)
+twitter: [@{{ site.twitterid }}]({{ site.twitterurl }})
 
 #### Open Source
 
-[github](https://github.com/deejaygraham)
+[github]({{ site.githuburl }})
 
-[gists](https://gist.github.com/deejaygraham)
+[gists]({{ site.gisturl }})
 
-[codeplex](https://www.codeplex.com/site/users/view/deejaygraham)
+[codeplex]({{ site.codeplexurl }})
 
