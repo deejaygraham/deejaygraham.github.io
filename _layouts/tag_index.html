@@ -1,0 +1,20 @@
+---
+layout: vanilla
+---
+
+<h1>{{ page.title }}</h1>
+{% for post in site.posts %}
+	{% for tag in post.tags %}
+		{% if tag == page.tag %}
+		
+	<article>
+		<header>
+			<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<p>{{ post.date | date_to_long_string }}</p>
+		</header>
+		<p>{{ post.excerpt }} <a href="{{ post.url }}">more</a></p>
+	</article>
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+

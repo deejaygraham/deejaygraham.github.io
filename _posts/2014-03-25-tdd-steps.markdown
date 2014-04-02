@@ -2,7 +2,7 @@
 layout: post
 title: TDD Steps
 published: true
-tags: [ tdd kata deliberate-practice cyber-dojo ]
+tags: [ tdd, kata, deliberate-practice, cyber-dojo ]
 ---
 
 I'm currently running a series of weekly [cyber-dojo](http://www.cyber-dojo.com/)
