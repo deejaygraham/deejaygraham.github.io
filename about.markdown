@@ -13,17 +13,13 @@ My main areas of interest are in using agile methods to help improve what
 we ship, test-driven development, continuous learning, visual thinking, 
 design and, of course, code.
 
-### Get in touch
+### Things What I Have Made
 
-email: [{{ site.email}}]({{ site.emaillink }})
+Here are some of the places you can see my work:
 
-twitter: [@{{ site.twitterid }}]({{ site.twitterurl }})
-
-### Open Source
-
-[github]({{ site.githuburl }})
-
-[gists]({{ site.gisturl }})
-
-[codeplex]({{ site.codeplexurl }})
+ [github]({{ site.githuburl }})
+ 
+ [gists]({{ site.gisturl }})
+ 
+ [codeplex]({{ site.codeplexurl }})
 
