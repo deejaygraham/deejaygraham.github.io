@@ -1,21 +1,37 @@
 <footer>
 	<div class="container">
-		<!-- contact info -->
-		<h2>Stay in touch</h2>
-		<ul>
-			<!-- icons needed -->
-			<li>email me: <a href="{{ site.emaillink }}">{{ site.email }}</a></li>
-			<li>tweet me: <a href="{{ site.twitterurl }}">@{{ site.twitterid }}</a></li>
-			<li>rss: <a href="{{ site.baseurl }}/rss.xml">RSS Feed</a></li>
-			<li>atom: <a href="{{ site.baseurl }}/atom.xml">Atom Feed</a></li>
-		</ul>
-		
-		<!-- hosting etc -->
-		<ul>
-			<li><a href="http://github.com/">Hosted by GitHub</a></li>
-			<li><a href="http://jekyllrb.com/">Powered by Jekyll</a></li>
-		</ul>
-
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Tags</h3>
+				<p>
+				{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+				{% assign tag_words = site_tags | split:',' | sort %}
+				{% for tag in tag_words %}
+					<a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a> 
+				{% endfor %}
+				</p>
+			</div>
+			<div class="col-md-6">
+				<!-- contact info -->
+				<h3>Stay in touch</h3>
+				<ul>
+					<!-- icons needed -->
+					<li>by email: <a href="{{ site.emaillink }}">{{ site.email }}</a></li>
+					<li>by tweet: <a href="{{ site.twitterurl }}">@{{ site.twitterid }}</a></li>
+					<li>by rss: <a href="{{ site.baseurl }}/rss.xml">RSS Feed</a></li>
+					<li>by atom: <a href="{{ site.baseurl }}/atom.xml">Atom Feed</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<!-- hosting etc -->
+				<ul class="list-inline">
+					<li><a href="http://github.com/">Hosted by GitHub</a></li>
+					<li><a href="http://jekyllrb.com/">Powered by Jekyll</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </footer>
 
