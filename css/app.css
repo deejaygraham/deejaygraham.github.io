@@ -19,10 +19,11 @@ h1, h2, h3, h4, h5, h6
 	letter-spacing: 3px;
 }
 
-p 
+article > p 
 { 
 	font-family: Georgia, Cambria, Times, 'Times New Roman', serif; 
-	line-height: 1.5; 
+	font-size: 1.2em;
+	line-height: 1.5em; 
 }
 
 
@@ -34,19 +35,29 @@ body
 	color: rgb(109,110,114);
 }
 
-.navigation-bar
+.navbar-default
 {
 	background-color: #428bca;
 }
 
-nav a, nav a:visited, nav a:hover, nav a:active
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus 
 {
 	color: #fff;
 }
 
+.navbar-default .navbar-nav > li > a, 
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus 
+{
+	color: #fff;
+}
+
+
 header
 {
-	border-bottom: 1px dotted rgb(184,180,179); /* 196,196,196); */
+	border-bottom: 1px dotted rgb(184,180,179); 
 }
 
 header p
@@ -61,7 +72,7 @@ header p
 
 footer
 {
-	border-top: 1px dotted rgb(184,180,179); /* 196,196,196); */
+	border-top: 1px dotted rgb(184,180,179); 
 }
 
 /* Layout */
@@ -95,37 +106,5 @@ choc: 46433A
 red: CE534D
 green blue: 64B6B1
 
-*/
-
-
-/*body 
-{
-background-color: #ded4b9;
-}
-
-a:link, a:visited
-{
-	color: #999;
-	text-decoration:underline;
-}
-
-a:hover
-{
-	color: #000;
-	background-color: #CE534D;
-}
-
-a:active
-{
-}
-
-*/
-
-
-/*header h2
-{
-	font-size: 90%;
-	color: #ccc;
-}
 */
 
