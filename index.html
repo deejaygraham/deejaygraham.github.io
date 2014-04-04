@@ -18,7 +18,11 @@ layout: index
 					<!-- Pagination links -->
 					<ul class="pager">
 					  {% if paginator.previous_page %}
-						<li><a href="/page{{ paginator.previous_page }}" class="previous">Previous</a></li>
+						{% if paginator.previous_page == 1 %}
+							<li><a href="/" class="previous">Previous</a></li>
+						{% else %}	
+							<li><a href="/page{{ paginator.previous_page }}" class="previous">Previous</a></li>
+						{% endif %}	
 					  {% endif %}
 					  {% if paginator.next_page %}
 						<li><a href="/page{{ paginator.next_page }}" class="next">Next</a></li>
