@@ -15,7 +15,7 @@ design and, of course, code.
 
 ### Things What I Have Made
 
-Here are some of the places you can see my work:
+Here are some of the places you can see some of my open source work:
 
  [github]({{ site.githuburl }})
  
