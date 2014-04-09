@@ -30,6 +30,10 @@ defined responsibilities.
 That way lies a lifetime of cruft accumulation and code archaeology for 
 your future self and your colleagues. Please don't do it.
 
+The (c2 wiki)[] has a good discussion on the subject: (Dont Name Classes Object Manager Handler or Data)[http://c2.com/cgi/wiki?DontNameClassesObjectManagerHandlerOrData]
+and the (Taligent Object Oriented design guidelines)[http://root.cern.ch/TaligentDocs/TaligentOnline/DocumentRoot/1.0/Docs/books/WM/WM_3.html] 
+has an article (Managers are not objects)[http://root.cern.ch/TaligentDocs/TaligentOnline/DocumentRoot/1.0/Docs/books/WM/WM_47.html#HEADING61]
+
 On the other hand, if think FooBarManager is a good name, you might just 
 like two websites (Class Namer)[http://www.classnamer.com/] by 
 (Aaron Beckerman)[https://github.com/ab9] and (Method Namer)[http://methodnamer.com/] 
