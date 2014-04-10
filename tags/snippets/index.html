@@ -11,7 +11,7 @@
 		<meta name="author" content="d.j.graham" >
 		<link rel="shortcut icon" href="/favicon.ico">
 		
-		<title>Posts Tagged &ldquo;TFS&rdquo;</title>
+		<title>Posts Tagged &ldquo;snippets&rdquo;</title>
 
 		<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
 		<link rel="stylesheet" href="/css/syntax.css"  media="screen">
@@ -41,7 +41,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1>Posts Tagged &ldquo;TFS&rdquo;</h1>
+					<h1>Posts Tagged &ldquo;snippets&rdquo;</h1>
 
 	
 		
@@ -61,56 +61,6 @@
 
 	
 		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-
 	
 		
 	
@@ -124,14 +74,13 @@
 		
 	<article>
 		<header>
-			<h2 class="post-title"><a href="/2014/02/12/transparently-extending-the-msbuild-process/">Transparently Extending the MsBuild Process</a></h2>
-			<p>12 February 2014</p>
+			<h2 class="post-title"><a href="/2014/04/02/zipping-folder-contents-using-msbuild/">Zipping Folder Contents Using MsBuild</a></h2>
+			<p>02 April 2014</p>
 		</header>
-		<p>I am a big fan of the Xml-based build systems ever since the days of being bitten
-by Microsoft's black magic deployment projects and the hidden voodoo they 
-invoke.
+		<p>Here's a script to zip the contents of a folder. Again, this is posted more
+so I don't forget but hopefully someone else will find it useful.
 
- <a href="/2014/02/12/transparently-extending-the-msbuild-process/">more</a></p>
+ <a href="/2014/04/02/zipping-folder-contents-using-msbuild/">more</a></p>
 	</article>
 		
 	
@@ -145,73 +94,7 @@ invoke.
 	
 		
 	
-		
-	
 
-	
-		
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
-	
-
-	
-		
-	
-
-	
-		
-	
-		
-	
-		
-	
-
-	
-		
-	
-		
 	
 		
 	
@@ -219,15 +102,172 @@ invoke.
 		
 	<article>
 		<header>
-			<h2 class="post-title"><a href="/2012/07/15/using-trello-for-retrospectives/">Using Trello for Retrospectives</a></h2>
-			<p>15 July 2012</p>
+			<h2 class="post-title"><a href="/2014/03/18/using-environment-variables-in-msbuild-scripts/">Using Environment Variables in MsBuild Scripts</a></h2>
+			<p>18 March 2014</p>
 		</header>
-		<p>One of the things we routinely struggle with when it comes to retrospective 
-time is building a timeline of what everyone did and the difficulties and 
-successes we experienced. 
+		<p>It is only recently I realised you can use Windows environment variables 
+in your msbuild scripts. If you want to allow overrides of build settings
+on a per-user basis but don't want force anyone to create a file just to 
+prevent the build from breaking, you can use something like this:
 
- <a href="/2012/07/15/using-trello-for-retrospectives/">more</a></p>
+ <a href="/2014/03/18/using-environment-variables-in-msbuild-scripts/">more</a></p>
 	</article>
+		
+	
+
+	
+		
+	
+		
+		
+	<article>
+		<header>
+			<h2 class="post-title"><a href="/2014/03/11/msbuild-recursive-import-snippet/">MsBuild Recursive Import Snippet</a></h2>
+			<p>11 March 2014</p>
+		</header>
+		<p>Here's a neat snippet to add to an msbuild script to import all scripts 
+in nested sub-folders rather than hard-coding each one.
+
+ <a href="/2014/03/11/msbuild-recursive-import-snippet/">more</a></p>
+	</article>
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+		
+	<article>
+		<header>
+			<h2 class="post-title"><a href="/2014/02/20/contracts-in-msbuild/">Programming by Contract in MsBuild</a></h2>
+			<p>20 February 2014</p>
+		</header>
+		<p>One of the great ways to prevent bugs creeping into your code during development 
+is to use contracts and assertions for what you *know* is true or what 
+*should* be true at particular points in your code. Using this technique allows 
+you to automatically catch the kinds of errors that are easy to cause (e.g. by
+forgetting to set a required property correctly) and are often difficult to 
+track down.
+
+ <a href="/2014/02/20/contracts-in-msbuild/">more</a></p>
+	</article>
+		
+	
+
+	
+		
+	
+		
+		
+	<article>
+		<header>
+			<h2 class="post-title"><a href="/2014/02/15/msbuild-target-order/">MsBuild Target Order</a></h2>
+			<p>15 February 2014</p>
+		</header>
+		<p>MsBuild version 4.0 introduced two new Target attributes: *BeforeTargets* 
+and *AfterTargets*.
+
+ <a href="/2014/02/15/msbuild-target-order/">more</a></p>
+	</article>
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
 		
 	
 		
