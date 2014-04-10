@@ -2,7 +2,7 @@
 layout: post
 title: Planning Poker Card Design
 published: true
-tags: [ planning poker, scrum, agile ]
+tags: [ planning-poker, scrum, agile ]
 ---
 
 I have just completed and checked in some designs for 

@@ -2,7 +2,7 @@
 layout: post
 title: My Coding Dojo Checklist
 published: true
-tags: [ tdd, kata, deliberate-practice, cyber-dojo ]
+tags: [ TDD, kata, deliberate-practice, cyber-dojo ]
 ---
 I have been running a series of TDD-focussed coding dojos for a while now, 
 mainly using the brilliant [cyber-dojo](http://www.cyber-dojo.com/) platform 

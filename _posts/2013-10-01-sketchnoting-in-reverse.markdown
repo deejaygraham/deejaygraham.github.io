@@ -2,7 +2,7 @@
 layout: post
 title: Sketchnoting in Reverse
 published: true
-tags: [sketchnote, tdd, deliberate-practice, presentations]
+tags: [ sketchnotes, TDD, deliberate-practice, presentations ]
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by 
