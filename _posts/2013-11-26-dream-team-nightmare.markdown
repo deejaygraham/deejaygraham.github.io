@@ -2,7 +2,7 @@
 layout: post
 title: The Dream Team Nightmare by Portia Tung
 published: true
-tags: [ agile, scrum, coaching, review, books ]
+tags: [ agile, scrum, coaching, book reviews, books ]
 ---
 
 ![cover](/img/ptdream_xlargecover.jpg)

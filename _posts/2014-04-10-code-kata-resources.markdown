@@ -1,0 +1,26 @@
+---
+layout: post
+title: Code Kata Resources
+published: true
+tags: [ kata, deliberate-practice, cyber-dojo, tdd ]
+---
+
+I've been accumulating resources for code katas recently so I'm posting 
+them here in the hope that I don't just forget them or lose them down the 
+back of the sofa.
+
+* [TDD Problems](https://sites.google.com/site/tddproblems/all-problems-1)
+* [CyberDojo](http://www.cyber-dojo.com/) by [Jon Jagger](http://jonjagger.blogspot.co.uk/)
+* [Ruby Quiz](http://rubyquiz.com/)
+* [Ruby Koans](http://rubykoans.com/) by the late Jim Weirich and [Joe O'Brien](@objo)
+* [Coding Dojo](http://codingdojo.org/) by [EmmanuelGaillot](http://codingdojo.org/cgi-bin/index.pl?EmmanuelGaillot)
+* [Software Craftsmanship Code Katas](http://katas.softwarecraftsmanship.org/)
+* [Kata Club](http://www.kataclub.com/) by [Nola Stowe](http://blog.rubygeek.com/)
+* [Code Kata](http://codekata.com/) by [Dave Thomas](http://pragdave.me/)
+
+Although there are a few in this list that have language specific solutions, 
+most of them can be attempted in any language.
+
+The last site in the list also has a very nice article about 
+[Kata and the Dreyfuss Model of Skills Acquisition](http://codekata.com/kata/kata-kumite-koan-and-dreyfus/)
+by Dave Thomas that is well worth reading. 
