@@ -17,7 +17,10 @@ and unzip it or use NuGet to get the *MsBuildTasks* package.
 
 Import the task:
 
-	<UsingTask AssemblyFile="$(MyMsBuildTasksFolder)MSBuild.Community.Tasks.dll" TaskName="MSBuild.Community.Tasks.Zip" />
+	<UsingTask 
+		AssemblyFile="$(MyMsBuildTasksFolder)MSBuild.Community.Tasks.dll" 
+		TaskName="MSBuild.Community.Tasks.Zip" 
+		/>
 
 ### Step 3
 
