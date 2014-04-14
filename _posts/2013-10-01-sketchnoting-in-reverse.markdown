@@ -56,7 +56,7 @@ I redid it and enhanced it based on feedback after giving the talk a few
 more times.
 </div>
 
-The new version of the sketchnote is:
+Here's a cleaned up scanned image of the new version of the sketchnote:
 
-[!new version](/img/deliberate-practice-presentation-notes2-bw-lofi.png "Sketchote update")
+![new version](/img/deliberate-practice-presentation-notes2-bw-lofi.png "Sketchote update")
 
