@@ -25,4 +25,4 @@ The steps are roughly in this order (in case you can't read my writing):
 
 Here's the finished article:
 
-*Placeholder*
+![scanned version](/img/derek-graham-sketchnote-process-bw-lofi.png "Sketchote process")
