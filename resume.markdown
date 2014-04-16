@@ -1,5 +1,5 @@
 ---
-layout: vanilla
+layout: resume
 title: DJ Graham's Resume
 published: true
 ---
