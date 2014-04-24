@@ -6,13 +6,14 @@
 					<article>
 						<header class="post">
 							<h1 class="post-title">{{ page.title }}</h1>
-							<p>Published on {{ page.date | date_to_long_string }}</p>
 							{% if page.tags %}
-							<span>tags: 						
+							<p>Posted in 
 								{% for tag in page.tags %}
 									<a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a> 
 								{% endfor %}
-							</span>
+								on {{ page.date | date_to_long_string }}</p>
+							{% else %}
+							<p>Posted on {{ page.date | date_to_long_string }}</p>
 							{% endif %}
 						</header>
 						<p>{% include tweet-button.html %}</p>
