@@ -58,5 +58,5 @@ more times.
 
 Here's a cleaned up scanned image of the new version of the sketchnote:
 
-![new version](/img/deliberate-practice-presentation-notes2-bw-lofi.png "Sketchote update")
+[![new version](/img/deliberate-practice-presentation-notes2-bw-lofi.png "Sketchote update")](/img/deliberate-practice-presentation-notes2-bw.png)
 

@@ -25,4 +25,4 @@ The steps are roughly in this order (in case you can't read my writing):
 
 Here's the finished article:
 
-![scanned version](/img/derek-graham-sketchnote-process-bw-lofi.png "Sketchote process")
+[![scanned version](/img/derek-graham-sketchnote-process-bw-lofi.png "Sketchote process")](/img/derek-graham-sketchnote-process-bw-scan.png)
