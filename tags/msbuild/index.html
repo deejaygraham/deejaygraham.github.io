@@ -45,6 +45,25 @@
 
 	
 		
+		
+	<article>
+		<header>
+			<h2 class="post-title"><a href="/2014/04/15/cleaning-msbuild-itemgroup-includes/">Cleaning MsBuild ItemGroup Includes</a></h2>
+			<p>15 April 2014</p>
+		</header>
+		<p>Here's a neat solution (that I totally stole from [Sayed Ibrahim Hashimi](http://sedodream.com/) ) 
+to a problem that I sometimes run into when writing longer or multi-file 
+msbuild scripts.
+
+ <a href="/2014/04/15/cleaning-msbuild-itemgroup-includes/">more</a></p>
+	</article>
+		
+	
+		
+	
+
+	
+		
 	
 		
 	
@@ -174,7 +193,11 @@ track down.
 			<p>15 February 2014</p>
 		</header>
 		<p>MsBuild version 4.0 introduced two new Target attributes: *BeforeTargets* 
-and *AfterTargets*.
+and *AfterTargets*. Prior to v4.0 if you wanted to run some tasks before or 
+after a target you had to explicitly build them into the dependency chain 
+using the *DependsOnTargets* attribute. For example, if you wanted to do 
+something like print a set of configuration messages before running a build, 
+you had to add that target to the list of build dependencies. 
 
  <a href="/2014/02/15/msbuild-target-order/">more</a></p>
 	</article>
