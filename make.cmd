@@ -1,9 +1,10 @@
-echo refreshing tags folder
+@echo off
 
-rd /S /Q tags 
-md tags
-xcopy _site\tags\*.* tags /S /I 
+SET MsBuildPath="%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"
 
-jekyll serve --baseurl=
+rem Is this a 64 bit machine?
+IF EXIST "%Programfiles(x86)%" SET MsBuildPath="%windir%\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe"
 
+%MsBuildPath% /nologo BuildSite.msbuild
 
+rem jekyll serve --baseurl= 

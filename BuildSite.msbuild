@@ -1,0 +1,53 @@
+<Project DefaultTargets="BuildWithJekyll" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<TagsFolder>$(MSBuildThisFileDirectory)tags\</TagsFolder>
+		<SiteTagsFolder>$(MSBuildThisFileDirectory)_site\tags\</SiteTagsFolder>
+	</PropertyGroup>
+
+	<Target Name="BuildWithJekyll"
+		DependsOnTargets="RemoveTagsFolder;
+							RunJekyll;
+							CreateTagsFolder;
+							CopyNewTags" />
+	
+	<Target Name="RemoveTagsFolder">
+		
+		<ItemGroup>
+			<FilesToDelete Include="$(TagsFolder)**\*.*" />
+		</ItemGroup>
+		
+		<Message Text="Deleting tags folder" Importance="High" />
+		
+		<Delete Files="@(FilesToDelete" />
+		<RemoveDir Directories="$(TagsFolder)" 
+				Condition="Exists('$(TagsFolder)')"/>
+		
+	</Target>
+	
+	<Target Name="CreateTagsFolder">
+
+		<MakeDir 
+				Directories="$(TagsFolder)"
+				Condition="!Exists('$(TagsFolder)')" 
+				/>
+	
+	</Target>
+	
+	<Target Name="RunJekyll">
+	
+		<Exec Command="jekyll build" />
+		
+	</Target>
+	
+	<Target Name="CopyNewTags">
+		<ItemGroup>
+			<FilesToCopy Include="$(SiteTagsFolder)**\*.*" />
+		</ItemGroup>
+		
+		<Copy SourceFiles="@(FilesToCopy)"
+			DestinationFolder="$(TagsFolder)%(RecursiveDir)" />
+	</Target>
+
+</Project>
+
