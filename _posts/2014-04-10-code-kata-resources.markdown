@@ -17,6 +17,9 @@ back of the sofa.
 * [Software Craftsmanship Code Katas](http://katas.softwarecraftsmanship.org/)
 * [Kata Club](http://www.kataclub.com/) by [Nola Stowe](http://blog.rubygeek.com/)
 * [Code Kata](http://codekata.com/) by [Dave Thomas](http://pragdave.me/)
+* [MicroBlogging](http://tutorials.jumpstartlab.com/projects/microblogger.html) a nice 
+multi-step project to interact with Twitter in Ruby. More of these kinds of tutorials are
+availabe at [JumpstartLab's tutorials](http://tutorials.jumpstartlab.com/).
 
 Although there are a few in this list that have language specific solutions, 
 most of them can be attempted in any language.
