@@ -11,6 +11,7 @@ back of the sofa.
 
 * [TDD Problems](https://sites.google.com/site/tddproblems/all-problems-1)
 * [CyberDojo](http://www.cyber-dojo.com/) by [Jon Jagger](http://jonjagger.blogspot.co.uk/)
+* [CodeKatas.Org](http://codekatas.org/) screencasts of developers performing a kata.
 * [Ruby Quiz](http://rubyquiz.com/)
 * [Ruby Koans](http://rubykoans.com/) by the late Jim Weirich and [Joe O'Brien](http://twitter.com/objo)
 * [Coding Dojo](http://codingdojo.org/) by [Emmanuel Gaillot](http://codingdojo.org/cgi-bin/index.pl?EmmanuelGaillot)
