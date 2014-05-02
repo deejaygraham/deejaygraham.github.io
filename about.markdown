@@ -22,6 +22,8 @@ No classes were harmed in the making of this blog.</small>
 
 Here are some of the places you can see some of my open source work:
 
+* [NDifference]({{ site.githuburl }}/NDifference) my .Net API reporting tool.
+
 * [github]({{ site.githuburl }})
  
 * [gists]({{ site.gisturl }})
