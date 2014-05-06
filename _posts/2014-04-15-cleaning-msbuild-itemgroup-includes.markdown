@@ -9,7 +9,7 @@ Here's a neat solution (that I totally stole from [Sayed Ibrahim Hashimi](http:/
 to a problem that I sometimes run into when writing longer or multi-file 
 msbuild scripts.
 
-If you create an ItemGroup in your script:
+If you create an ItemGroup inside an MsBuild target:
 
 	<ItemGroup>
 		<MyFiles Include="a.cs" />
@@ -70,5 +70,9 @@ the list required.
 		<MyFiles Include="f.cs" />
 	</ItemGroup>
 
-Using this convention means you are always guaranteed 
-the content of the list will be what you intended.
+Using this convention means you are always guaranteed the content of the list 
+will be what you intended.
+
+## Note
+This technique only works if the item group is inside a target. Static item groups 
+(what you might think of as global item groups) *don't* support this behaviour.
