@@ -7,6 +7,6 @@ tags: [ ruby, snippets ]
 
 My mp3 player tends to accumulate sub-folders in my podcast folder as my 
 podcast app syncs with it and podcast episodes come and go. Rather than leave 
-them unoccupied and unloved, I use this script "tidy them up". By killing them.   
+them unoccupied and unloved, I use this script to "tidy them up". By killing them.   
 
-{% gist cabca05530b3ba740610 %}
+<script src="https://gist.github.com/deejaygraham/9d82b1a03c869791236a.js"></script>
