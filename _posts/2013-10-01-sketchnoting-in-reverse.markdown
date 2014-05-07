@@ -9,7 +9,7 @@ A little while ago I was introduced to the idea of sketchnoting by
 [Mike Rohde](http://rohdesign.com/) and the 
 [sketchnote army](http://www.sketchnotearmy.com/) website.
 
-![book](/img/sketchnote-handbook.jpg)
+![book](/img/posts/sketchnoting-in-reverse/sketchnote-handbook.jpg)
 
 I bought [Mike's book](http://rohdesign.com/book) and I've been using the 
 method for taking notes in presentations and during training sessions. I 
@@ -36,13 +36,13 @@ out of "live coding" mode.
 I tweeted my idea to [Mike](http://twitter.com/rohdesign) and he responded 
 asking me to share. 
 
-![tweet](/img/tweet-2013-10-01.jpg)
+![tweet](/img/posts/sketchnoting-in-reverse/tweet-2013-10-01.jpg)
 
 I wasn't really prepared for this. My sketch was meant for my eyes only 
 (I hid it during the presentation so no-one would be distracted by it) 
 but in the interests of sharing, here it is:
 
-![sketchnote](/img/deliberate-practice-presentation-notes-lofi.jpg "Sketchnote")
+![sketchnote](/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes-lofi.jpg "Sketchnote")
 
 Feedback from the session suggests I made the right choice, so it's something 
 I'm going to continue. I'm happy with how it turned out, even if it's not 
@@ -58,5 +58,5 @@ more times.
 
 Here's a cleaned up scanned image of the new version of the sketchnote:
 
-[![new version](/img/deliberate-practice-presentation-notes2-bw-lofi.png "Sketchote update")](/img/deliberate-practice-presentation-notes2-bw.png)
+[![new version](/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw-lofi.png "Sketchote update")](/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png)
 

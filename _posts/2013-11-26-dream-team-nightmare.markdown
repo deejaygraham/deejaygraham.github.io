@@ -4,11 +4,10 @@ title: The Dream Team Nightmare by Portia Tung
 published: true
 tags: [ agile, scrum, coaching, book-reviews, books ]
 ---
-
-![cover](/img/ptdream_xlargecover.jpg)
-
 Imagine for a moment, you are writing a book about agile techniques and 
 how they can be applied in the context of coaching a software team.
+
+![cover](/img/posts/dream-team-nightmare/ptdream_xlargecover.jpg)
 
 You *might* structure it in a nice, linear fashion, explaining the history 
 of agile, enumerating each technique in turn and explaining when and how 

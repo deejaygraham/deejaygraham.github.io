@@ -10,6 +10,6 @@ and retro propaganda posters, I wondered what a government with a strict
 focus on the principles of good object-oriented design would produce to inspire 
 it's citizens.
 
-![tell don't ask](/img/tell-dont-ask.jpg)
+![tell don't ask](/img/posts/tell-dont-ask/tell-dont-ask.jpg)
 
 

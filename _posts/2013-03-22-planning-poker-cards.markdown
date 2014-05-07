@@ -20,7 +20,7 @@ values and two jokers: "coffee" and "huh?"
 
 Strictly traditional Fibonnacci progression
 
-![fibonnacci card](/img/poker-card-fibonnacci-question.png "Fibonnacci")
+![fibonnacci card](/img/posts/planning-poker-cards/poker-card-fibonnacci-question.png "Fibonnacci")
 
 
 #### Modified Fibonnacci
@@ -28,14 +28,14 @@ Strictly traditional Fibonnacci progression
 Modified Fibonnacci is more coarse grained for higher values to represent 
 the greater uncertainty involved in estimating large stories.
 
-![modified fibonnacci](/img/poker-card-modified-fibonnacci-20.png "Modified Fibonnacci")
+![modified fibonnacci](/img/posts/planning-poker-cards/poker-card-modified-fibonnacci-20.png "Modified Fibonnacci")
 
 
 #### T-Shirt sizes
 
 Just in time for Summer !
 
-![t-shirt sizes](/img/poker-card-tshirt-xs.png "T-Shirts")
+![t-shirt sizes](/img/posts/planning-poker-cards/poker-card-tshirt-xs.png "T-Shirts")
 
 Each "deck" consists of 17 "suits", way more than you would traditionally 
 need but included so you can pick your favourite colours :) 
