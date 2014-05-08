@@ -2,7 +2,7 @@
 layout: post
 title: Most Recent Folder MsBuild Task
 published: true
-tags: [ msbuild, automation, CI ]
+tags: [ msbuild, automation, ci ]
 ---
 
 I wrote this MsBuild task because I needed a build script to pick up the 

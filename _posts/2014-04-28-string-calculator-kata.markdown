@@ -2,7 +2,7 @@
 layout: post
 title: String Calculator Kata
 published: true
-tags: [ kata, TDD, cyber-dojo ]
+tags: [ kata, tdd, cyber-dojo ]
 ---
 
 Here's a sample solution for the String Calculator Kata that I'm using with 

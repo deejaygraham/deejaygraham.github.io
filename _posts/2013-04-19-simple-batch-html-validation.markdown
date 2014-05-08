@@ -2,7 +2,7 @@
 layout: post
 title: Simple Batch Html Validation
 published: true
-tags: [ HTML ]
+tags: [ html ]
 ---
 
 After struggling with writing a suitable html parser, I began to feel 

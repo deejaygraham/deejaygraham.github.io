@@ -2,7 +2,7 @@
 layout: post
 title: Tell Don't Ask
 published: true
-tags: [ OO, Demeter, TDD ]
+tags: [ oo, demeter, tdd ]
 ---
 
 Inspired by the [GOOS book](http://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) 

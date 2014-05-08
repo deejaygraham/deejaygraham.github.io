@@ -2,7 +2,7 @@
 layout: post
 title: Transparently Extending the MsBuild Process
 published: true
-tags: [ msbuild, TFS, snippets ]
+tags: [ msbuild, tfs, snippets ]
 ---
 
 It's often the case that you need to extend your normal build process. To copy

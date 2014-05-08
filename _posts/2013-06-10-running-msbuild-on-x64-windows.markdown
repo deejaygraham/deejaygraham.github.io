@@ -2,7 +2,7 @@
 layout: post
 title: Running MsBuild on 32-bit and 64-bit Windows
 published: true
-tags: [ msbuild, automation, CI ]
+tags: [ msbuild, automation, ci ]
 ---
 
 Here's a simple script I use to allow me to invoke an MsBuild project from 
