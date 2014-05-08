@@ -7,4 +7,7 @@ IF EXIST "%Programfiles(x86)%" SET MsBuildPath="%windir%\Microsoft.NET\Framework
 
 %MsBuildPath% /nologo BuildSite.msbuild
 
-rem jekyll serve --baseurl= 
+rem Now run server
+jekyll serve --baseurl= 
+
+
