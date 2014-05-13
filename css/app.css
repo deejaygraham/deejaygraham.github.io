@@ -37,13 +37,13 @@ article > p
 
 body
 {
-	background-color: rgb(242,237,234);
-	color: rgb(109,110,114);
+	background-color: #fff;
+	color: #373e4b;
 }
 
 .navbar-default
 {
-	background-color: #428bca;
+	background-color: #aebb9d;
 }
 
 .navbar-default .navbar-brand, 
@@ -60,6 +60,10 @@ body
 	color: #fff;
 }
 
+a, a:visited, a:hover, a:focus
+{
+	color: #d73b25;
+}
 
 header
 {
@@ -79,6 +83,8 @@ header p
 footer
 {
 	border-top: 1px dotted rgb(184,180,179); 
+	background-color: #373e4b;
+	color: #e3d197;
 }
 
 /* Layout */
