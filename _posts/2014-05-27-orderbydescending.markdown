@@ -5,7 +5,8 @@ published: true
 tags: [ csharp, snippets, ms-azure ]
 ---
 
-Working on some code that will delete some file from Azure blob storage.
+Lately I've been working on some code that will delete a hierarchical list 
+of files from Azure blob storage.
 
 According to [msdn](http://msdn.microsoft.com/en-us/library/ee772840.aspx) 
 deleting a container blob will cause contained blobs to fail while the delete 
