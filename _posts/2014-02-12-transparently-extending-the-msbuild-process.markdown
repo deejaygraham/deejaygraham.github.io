@@ -73,7 +73,7 @@ For example, delay signing an assembly after it is built is a general purpose
 	-->
 	<Target Name="SignBuiltAssembly" 
 		DependsOnTargets="FindPathToSnTool" 
-		Condition="$(DelaySign) AND $(SignAssemblies)"> 
+		Condition=" '$(SignAssembly)' != '' AND '$(DelaySign)' != '' AND $(SignAssembly) AND $(DelaySign)"> 
 	
 		<Message 
 			Text="Signing $(TargetPath)..." />
@@ -116,15 +116,15 @@ Obviously, if you have a lot of projects this might not be all that appealing.
 ## Sneakier Import
 
 If you don't want to modify each project, there are two other folders that MsBuild
-uses to look for extension points:
+uses to look for extension points for the command line:
 
-	$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore\
+	$(MSBuildExtensionsPath)\4.0\Microsoft.Common.Targets\ImportAfter\
 
-and
+and for the IDE
 
-	$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter\
+	$(MSBuildExtensionsPath)\12.0\Microsoft.Common.Targets\ImportAfter\
 
-If you place a target file in either of these locations (first, create the folder, 
+If you place a target file in both of these locations (first, create the folder, 
 it isn't created by default) it will be imported by *every solution* that 
 MsBuild tries to build *on that machine*.
 
