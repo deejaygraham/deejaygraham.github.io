@@ -62,7 +62,7 @@ For example, delay signing an assembly after it is built is a general purpose
 	<PropertyGroup>
 		<PostBuildEventDependsOn>
 			$(PostBuildEventDependsOn);
-			SignDiagnosticMessage;
+			SignTargetSkippedMessage;
 			SignBuiltAssembly
 		</PostBuildEventDependsOn>
 	</PropertyGroup>
@@ -87,8 +87,8 @@ For example, delay signing an assembly after it is built is a general purpose
 	<!-- 
 		If $(SignAssembly) not set, issue a diagnostic message 
 	-->
-	<Target Name="SignDiagnosticMessage" 
-		Condition="!$(SignAssemblies)">
+	<Target Name="SignTargetSkippedMessage" 
+		Condition=" '$(SignAssembly)' == '' OR '$(DelaySign)' == '' OR !$(SignAssembly) OR !$(DelaySign)" >
 		
 		<Message 
 			Text="SignAssemblies property not enabled - Skipping signing of $(TargetPath)" />
@@ -134,3 +134,24 @@ If you place a target file in both of these locations (first, create the folder,
 it isn't created by default) it will be imported by *every solution* that 
 MsBuild tries to build *on that machine*.
 
+For me, given that this is targetted at a code base of several hundred assemblies, it's
+very nice not to have to update all those project files!
+
+## Sneakier Build Process
+
+Rather than using an explicit *PostBuildEventDependsOn* chain, another alternative 
+is to use the *BeforeTargets* and *AfterTargets* attributes to shoehorn the 
+target into the right place in the build process. In this case, because I want to 
+invoke the target after the build but before running an post-build steps, I 
+use the following:
+
+	<Target Name="..."
+		AfterTargets="CopyFilesToOutputDirectory" 
+		BeforeTargets="PostBuildEvent;AfterBuild" 
+		>
+		...
+	</Target>	
+
+So as long as the assembly is in the output folder (after *CopyFilesToOutputDirectory*) 
+and before any kind of post build event (before *PostBuildEvent* and *AfterBuild* events) I 
+can leave it up to MsBuild when it will run the target.
