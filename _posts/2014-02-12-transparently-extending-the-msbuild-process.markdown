@@ -113,6 +113,12 @@ can be local to your source code or one of MsBuild's well-known folders:
 where $(MSBuildToolsPath) usually resolves to somewhere like C:\Windows\Microsoft.NET\Framework\v4.0.30128.
 Obviously, if you have a lot of projects this might not be all that appealing.
 
+## Import Condition
+
+Adding the condition means that the import won't fail if the file does not exist.
+This allows for build steps that only get executed on, say, official build 
+machines and ignored on developer machines.
+
 ## Sneakier Import
 
 If you don't want to modify each project, there are two other folders that MsBuild
@@ -128,8 +134,3 @@ If you place a target file in both of these locations (first, create the folder,
 it isn't created by default) it will be imported by *every solution* that 
 MsBuild tries to build *on that machine*.
 
-## Import Condition
-
-Adding the condition means that the import won't fail if the file does not exist.
-This allows for build steps that only get executed on, say, official build 
-machines and ignored on developer machines.
