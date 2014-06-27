@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving to Github
-published: false
+published: true
 tags: [ open-source, codeplex, github ]
 ---
 
