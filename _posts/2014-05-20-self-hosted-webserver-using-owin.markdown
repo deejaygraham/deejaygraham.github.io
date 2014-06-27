@@ -35,6 +35,7 @@ shows the binaries in the build folder.
 
 ![listing](/img/posts/self-hosted-webserver-using-owin/index-browse-folder.png)
 
-The [Nancy](http://nancyfx.org/) web framework was my favourite for building .Net 
-web applications but now I'm torn between it and using OWIN. More experiments 
-are needed.
+For home projects, the [Nancy](http://nancyfx.org/) web framework was my 
+favourite for building .Net web applications (hosted on IIS or self-hosted) 
+but now I'm torn between using the self-hosting or Helios-hosted version of 
+OWIN. More experiments are needed.
