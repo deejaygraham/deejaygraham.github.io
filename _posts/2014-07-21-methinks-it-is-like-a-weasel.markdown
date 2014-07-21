@@ -1,0 +1,32 @@
+---
+layout: post
+title: Methinks it is like a Weasel
+published: true
+tags: [ snippets, csharp ]
+---
+
+I'm posting this older code example of a simple evolutionary algorithm to get 
+it off my hard drive :) 
+
+I've been interested in [evolutionary algorithms](http://en.wikipedia.org/wiki/Evolutionary_algorithm) 
+for a while now with an idea of using them to solve some interesting puzzles
+(more of that in a later post, honest).
+
+This is the canonical example provided by Richard Dawkins in his book 
+[The Blind Watchmaker](http://en.wikipedia.org/wiki/The_Blind_Watchmaker) 
+which attempts to start with a random series of letters of the right length and 
+by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
+
+>
+> HAMLET
+> Do you see yonder cloud that’s almost in shape of a camel?
+>
+> POLONIUS
+> By th' mass, and ’tis like a camel indeed.
+> 
+> HAMLET
+> Methinks it is like a weasel.
+>
+
+<script src="https://gist.github.com/deejaygraham/0f9215abd64ffaf91a24.js"></script>
+
