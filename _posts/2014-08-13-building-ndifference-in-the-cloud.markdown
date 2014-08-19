@@ -2,7 +2,7 @@
 layout: post
 title: Building NDifference in the Cloud
 published: true
-tags: [ code, ci, open-source, github, ndifference, c#, mono, cloud ]
+tags: [ code, ci, open-source, github, ndifference, csharp, mono, cloud ]
 ---
 
 Ever since I switched over to github to host my [NDifference](http://http://deejaygraham.github.io/ndifference/) 
