@@ -2,7 +2,7 @@
 layout: post
 title: Using NAudio to generate midi
 published: true
-tags: [ csharp, midi, NAudio, snippets]
+tags: [ csharp, midi, naudio, snippets ]
 ---
 
 Here's a small sample using [NAudio's](http://naudio.codeplex.com/) midi 
