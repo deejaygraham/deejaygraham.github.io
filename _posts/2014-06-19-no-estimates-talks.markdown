@@ -19,3 +19,9 @@ subject of #NoEstimates.
 [Woody Zuill](http://twitter.com/@WoodyZuill) - No Estimates, Let's Explore the Possibilities
 
 <iframe src="//player.vimeo.com/video/79128724" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/79128724">131107 1000 Andromeda Roy Woody Zuill Recording on 2013-11-07 0952-Vimeo</a> from <a href="http://vimeo.com/user4280938">&Oslash;redev Conference</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+[Ángel Medinilla](http://twitter.com/@angel_m) - "The Easy Way To Stop Estimating" at XP2012
+
+<iframe src="//player.vimeo.com/video/42970378" width="500" height="275" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/42970378">The Easy Way To Stop Estimating - Workshop at XP2012</a> from <a href="http://vimeo.com/user3469010">Proyectalis</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
