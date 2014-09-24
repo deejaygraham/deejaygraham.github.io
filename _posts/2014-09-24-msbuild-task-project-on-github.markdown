@@ -13,5 +13,5 @@ another post which uses the [Html Agility Pack](http://htmlagilitypack.codeplex.
 validate html links on a page, only this time I've packaged it into an MsBuild 
 task called "LocalLinkChecker".
  
-You can get a zip of task [here](https://github.com/deejaygraham/msbuild-tasks/blob/master/msbuild-tasks.zip)
+You can get a zip of the task assembly [here](https://github.com/deejaygraham/msbuild-tasks/blob/master/msbuild-tasks.zip)
 
