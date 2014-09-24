@@ -24,4 +24,7 @@ subject of #NoEstimates.
 
 <iframe src="//player.vimeo.com/video/42970378" width="500" height="275" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/42970378">The Easy Way To Stop Estimating - Workshop at XP2012</a> from <a href="http://vimeo.com/user3469010">Proyectalis</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+[Filip van Laenen](https://twitter.com/filipvanlaenen) - #NoEstimates Lightning Talk from JavaZone 2014
+
+<iframe src="//player.vimeo.com/video/105869249" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/105869249">#NoEstimates - Filip van Laenen</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
