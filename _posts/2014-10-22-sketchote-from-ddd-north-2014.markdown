@@ -23,5 +23,7 @@ resolve the gaps and improve understanding.
 This talk was the first one I have tried to live sketchnote and you can see the 
 result below.
 
+![ddd sketchnote](/img/posts/sketchote-from-ddd-north-2014/lofi-sketchnote.jpg)
+
 
 
