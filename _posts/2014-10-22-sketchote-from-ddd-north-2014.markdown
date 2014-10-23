@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sketchnote from DDDNorth 2014
-published: false
+published: true
 tags: [ sketchnotes, presentations, ruby, csharp ]
 ---
 
