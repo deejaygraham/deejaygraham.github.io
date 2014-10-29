@@ -16,6 +16,7 @@ Here's the session summary:
 ![ddd north](/img/posts/sketchote3-from-ddd-north-2014/session-summary.png)
 
 ...and the sketchnote:
+
 ![ddd sketchnote](/img/posts/sketchote3-from-ddd-north-2014/dddnorth-2014-tech-lead-talk-vanilla.png)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
