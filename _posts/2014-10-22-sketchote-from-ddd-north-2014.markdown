@@ -23,7 +23,7 @@ resolve the gaps and improve understanding.
 This talk was the first one I have tried to live sketchnote and you can see the 
 result below.
 
-![ddd sketchnote](/img/posts/sketchote-from-ddd-north-2014/lofi-sketchnote.jpg)
+![ddd sketchnote](/img/posts/sketchote-from-ddd-north-2014/dddnorth-2014-ruby-dotnet-talk-lofi.png)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
