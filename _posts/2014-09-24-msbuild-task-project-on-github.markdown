@@ -16,5 +16,5 @@ validate html links on a page, only this time I've packaged it into an MsBuild
 task called "LocalLinkChecker".
  
 The [repo is here](https://github.com/deejaygraham/msbuild-tasks) and you can 
-get a zip of the task assembly [here](https://github.com/deejaygraham/msbuild-tasks/blob/master/msbuild-tasks.zip)
+get a zip of the task assembly [here](https://github.com/deejaygraham/deejaygraham.github.io/raw/master/downloads/MsBuild.ThreeByTwo.Tasks.zip)
 
