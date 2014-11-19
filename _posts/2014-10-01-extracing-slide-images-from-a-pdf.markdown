@@ -50,11 +50,22 @@ Clearly another approach was needed. After some googling, I discovered another t
 [pdf2svg](http://www.cityinthesky.co.uk/opensource/pdf2svg/) which could export 
 pdfs to svg and could handle embedded fonts.
 
-Fortunately, but unsurprisingly, Inkscape is so awesome it can handle conversion 
-from svg to png, so the script has had to change a little to include the extra tool 
-in the chain, which now goes....
+<code>
+pdf2svg.exe slide01.pdf slide01.png 1
+</code>
 
-	
-	Multi-page-pdf -> batch-single-page-pdfs -> batch-single-svgs -> batch-single-pngs
-	
+Fortunately, but unsurprisingly, Inkscape is so awesome it can handle conversion 
+from svg to png.
+
+<code>
+Inkscape.exe -f slide01.svg -e slide01.png
+</code>
+
+So the script has had to change a little to include the extra tool in the chain. 
+It now goes....
+
+<code>	
+Multi-page-pdf -> batch-single-page-pdfs -> batch-single-svgs -> batch-single-pngs
+</code>	
+
 I have refreshed the gist above to reflect this new information.	
