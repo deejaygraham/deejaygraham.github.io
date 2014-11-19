@@ -40,4 +40,21 @@ into an image.
 
 <script src="https://gist.github.com/deejaygraham/ec6e40a616451aed0ae6.js"></script>
 
+### Update
 
+Now I've been playing with this technique for a number of different slide decks, 
+I discovered that any pdf with embedded fonts didn't export correctly. The font 
+was replaced by Inkscape with a weird "not understood" icon.
+
+Clearly another approach was needed. After some googling, I discovered another tool,
+[pdf2svg](http://www.cityinthesky.co.uk/opensource/pdf2svg/) which could export 
+pdfs to svg and could handle embedded fonts.
+
+Fortunately, but unsurprisingly, Inkscape is so awesome it can handle conversion 
+from svg to png, so the script has had to change a little to include the extra tool 
+in the chain, which now goes....
+
+	
+	Multi-page-pdf -> batch-single-page-pdfs -> batch-single-svgs -> batch-single-pngs
+	
+I have refreshed the gist above to reflect this new information.	
