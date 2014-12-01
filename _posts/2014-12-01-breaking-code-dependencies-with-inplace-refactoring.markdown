@@ -21,10 +21,10 @@ a bigger problem.
 ## Crufts
 By the time the project begins to reach to multiple files, multiple classes, 
 configuration files, databases, multiple developers stretching out over time 
-it is starting to suffer from accumulations of cruft. Anyone who works on 
-the application is happy to add code, perhaps by copying, pasting and modifying, 
-but not many are confident about refactoring when the code begins to scream 
-out for it.
+it is starting to suffer from accumulations of [cruft](http://en.wikipedia.org/wiki/Cruft). 
+Anyone who works on the application is happy to add code, perhaps by copying, 
+pasting and modifying, but not many are confident about refactoring when the 
+code begins to scream out for it.
 
 A monolithic application, for my purposes here, is definded as a single executable 
 containing lots of functionality, perhaps in Windows Forms code-behind style, 
