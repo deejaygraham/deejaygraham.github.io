@@ -2,7 +2,7 @@
 layout: post
 title: ITaskItem Extension Methods
 published: true
-tags: [ msbuild, snippets ]
+tags: [ csharp, snippets, tdd, code ]
 ---
 
 Writing custom tasks for MsBuild often involves handling files and folders. These are 
