@@ -42,7 +42,7 @@ I wasn't really prepared for this. My sketch was meant for my eyes only
 (I hid it during the presentation so no-one would be distracted by it) 
 but in the interests of sharing, here it is:
 
-![sketchnote](/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes-lofi.jpg "Sketchnote")
+<img src="/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes-lofi.jpg" class="img-responsive" alt="Original sketchnote" />
 
 Feedback from the session suggests I made the right choice, so it's something 
 I'm going to continue. I'm happy with how it turned out, even if it's not 
@@ -58,5 +58,4 @@ more times.
 
 Here's a cleaned up scanned image of the new version of the sketchnote:
 
-[![new version](/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw-lofi.png "Sketchote update")](/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png)
-
+<img src="/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png" class="img-responsive" alt="Sketchote update" />

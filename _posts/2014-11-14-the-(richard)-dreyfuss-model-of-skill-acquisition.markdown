@@ -13,7 +13,7 @@ I first became aware of the [Dreyfus Model](http://en.wikipedia.org/wiki/Dreyfus
 [Merlin Mann](http://www.kungfugrippe.com/post/197493983/am-i-obsessed-with-the-dreyfus-model-of-skill)'s work 
 and Andy Hunt's book [Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning).
 
-![sketchnote](/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-lofi.png)
+<img src="/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-lofi.png" class="img-responsive" alt="sketchnote" /> 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />

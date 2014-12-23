@@ -5,8 +5,7 @@ published: true
 tags: [ agile, scrum, illustration ]
 ---
 
-Talking with someone about the anti-agile mindset recently, I was inspired 
+Talking with someone about the anti-agile mindset recently, I was inspired to
 draw this:
 
-[![Perils of the anti-agile mindeset](/img/posts/perils-of-the-anti-agile-mindset/perils-bw-lofi.png)](perils-of-the-anti-agile-mindset/perils-bw.png)
-
+<img src="/img/posts/perils-of-the-anti-agile-mindset/perils-bw.png" class="img-responsive" alt="Perils of the anti-agile mindeset" />

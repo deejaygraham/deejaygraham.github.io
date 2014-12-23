@@ -10,8 +10,4 @@ given by [Cory Doctorow](http://craphound.com/) on the general theme of
 [The Coming War on General Purpose Computing](http://boingboing.net/2012/01/10/lockdown.html) 
 which he writes and talks about when not writing wonderful fiction.
 
-![sketchnote](/img/posts/doctorows-three-laws/doctorows-three-laws-lofi.png)
-
- 
- 
-
+<img src="/img/posts/doctorows-three-laws/doctorows-three-laws-lofi.png" class="img-responsive" alt="sketchnote" /> 

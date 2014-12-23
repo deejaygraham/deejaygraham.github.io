@@ -25,4 +25,4 @@ The steps are roughly in this order (in case you can't read my writing):
 
 Here's the finished article:
 
-[![scanned version](/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-lofi.png "Sketchote process")](/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png)
+<img src="/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png" class="img-responsive" alt="Sketchote process" />
