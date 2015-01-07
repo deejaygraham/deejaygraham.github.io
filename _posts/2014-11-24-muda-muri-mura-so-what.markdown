@@ -12,4 +12,4 @@ clear differences between them for the western .
 
 So...
 
-<img src="/img/posts/muda-muri-mura-so-what/muda-muri-mura-so-what-lofi.png" class="img-responsive" alt="sketchnote" /> 
+<img src="/img/posts/muda-muri-mura-so-what/muda-muri-mura-so-what-hifi.png" class="img-responsive" alt="sketchnote" /> 
