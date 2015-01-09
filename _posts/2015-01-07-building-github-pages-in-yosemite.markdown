@@ -32,7 +32,11 @@ line developer tools by running:
 	xcode-select --install
 	
 	
-Agree to prompts and wait for it to finish.
+Agree to prompts and wait for it to finish. Before you jump into installing anything else,
+make sure you spend a couple of minutes opening the XCode tools. You will be asked to 
+agree to a EULA before you can do anything else. If you miss this step, you will 
+be asked to agree in the terminal and it's a bit more awkward to read pages and 
+pages of text before "agreeing"!
 
 
 ## ...Ruby...
