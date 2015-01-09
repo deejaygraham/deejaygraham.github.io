@@ -19,7 +19,7 @@
 		
 		<Message Text="Deleting tags folder" Importance="High" />
 		
-		<Delete Files="@(FilesToDelete" />
+		<Delete Files="@(FilesToDelete)" />
 		<RemoveDir Directories="$(TagsFolder)" 
 				Condition="Exists('$(TagsFolder)')"/>
 		
