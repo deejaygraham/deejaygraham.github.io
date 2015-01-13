@@ -10,7 +10,7 @@ A text heavy sketchnote this time from a speech by [Cory Doctorow](http://crapho
 their owners when we try to subvert their Turing-machine-ness in order 
 to protect copyright holders.
 
-![sketchnote](/img/posts/doctorow-at-hieroglyph/doctorow-at-hieroglyph-hifi.jpg)
+<img src="/img/posts/doctorow-at-hieroglyph/doctorow-at-hieroglyph-hifi.png" class="img-responsive" alt="sketchnote" />
 
 I added a [spy-vs-spy](en.wikipedia.org/wiki/Spy_vs._Spy) character being 
 chased by the [xkcd Cory](http://www.explainxkcd.com/wiki/index.php/Category:Comics_featuring_Cory_Doctorow) 
