@@ -23,8 +23,8 @@ Azure?
 There are two blocking issues that can prevent you from using a standard console 
 application to host your application.
 
-1. Your worker role derived from Microsoft.WindowsAzure.ServiceRuntime.RoleEntryPoint
-2. RoleEnvironment settings. 
+* Your worker role derived from `Microsoft.WindowsAzure.ServiceRuntime.RoleEntryPoint`
+* `RoleEnvironment` settings. 
 
 ## RoleEntryPoint 
 
@@ -34,21 +34,21 @@ just plugging together blocks in the right configuration as pressing "go".
 
 ## RoleEnvironment 
 
-The RoleEnvironment can require a little more work. It's a static class so 
+The `RoleEnvironment` can require a little more work. It's a static class so 
 it's reach into a codebase can be pervasive. We can help ourselves a little by 
-hiding the static-ness behind an interface IRoleSettings, say, and passing that 
+hiding the static-ness behind an interface `IRoleSettings`, say, and passing that 
 into constructors. 
 
-When can then create an AzureRoleSettings implementation that delegates to 
-RoleEnvironment for the deployed scenario. 
+When can then create an `AzureRoleSettings` implementation that delegates to 
+`RoleEnvironment` for the deployed scenario. 
 
-For unit testing, we can mock the interface or create a StubRoleSettings implementation
-that uses a Dictionary to store name value pairs.
+For unit testing, we can mock the interface or create a `StubRoleSettings` implementation
+that uses a `Dictionary` to store name value pairs.
 
 For integration testing or debugging subtle issues requiring real world values 
 we would really like to be able to read the cscfg and pull out values for 
-an individual role. Since we already have the IRoleSettings interface, we can 
-implement an IntegrationRoleEnviroment class and use XPath to build our list of 
+an individual role. Since we already have the `IRoleSettings` interface, we can 
+implement an `IntegrationRoleEnviroment` class and use XPath to build our list of 
 name value pairs.
 
 The code for all these implementations is at [gist](https://gist.github.com/deejaygraham/7787aa578a33816c24e8) and 
