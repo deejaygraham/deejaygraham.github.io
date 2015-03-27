@@ -5,8 +5,6 @@ published: true
 tags: [ csharp, azure, cloud ]
 ---
 
-# Running an Azure Cloud Service without an Emulator
-
 Running and debugging complex code in an Azure deployment environment frequently 
 requires implies a long turn around time when running on the Azure fabric. Building,
 packing, uploading and startup all take time. Running the code locally on 
