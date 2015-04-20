@@ -1,8 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
-=======
->>>>>>> origin/master
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 /* Typography */
@@ -10,22 +7,19 @@
 body
 {
 	font-family: 'Lato', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
-	font-size: 22px;
+/*	font-size: 22px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 1.5; 
+	line-height: 1.5;*/ 
 }
 	
 h1, h2, h3, h4, h5, h6
 {
-<<<<<<< HEAD
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif;
 	font-weight: 900;
 	/*padding: 0.5em 0 1em 0; */
-=======
 	font-family: 'Open Sans Light', 'Century Gothic', 'Lucida Sans', Geneva, Verdana, sans-serif;
 	font-family: 'Roboto', sans-serif;
->>>>>>> origin/master
 }
 
 /* font-sizes */
