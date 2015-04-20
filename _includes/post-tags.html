@@ -1,0 +1,4 @@
+{% if page.tags %}
+<h3>Tags</h3>
+<p>{% for tag in page.tags %}<span class="post-tag"><a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a></span>{% endfor %}</p>	
+{% endif %}

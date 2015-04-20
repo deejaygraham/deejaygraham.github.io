@@ -1,27 +1,28 @@
+{% include html-head.html %}
+<body>
+<div class="container">
 {% include page-header.html %}
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<article>
-						<header class="post">
-							<h1 class="post-title">{{ page.title }}</h1>
-							{% if page.tags %}
-							<p>Posted in 
-								{% for tag in page.tags %}
-									<a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a> 
-								{% endfor %}
-								on {{ page.date | date_to_long_string }}</p>
-							{% else %}
-							<p>Posted on {{ page.date | date_to_long_string }}</p>
-							{% endif %}
-						</header>
-						<p>{% include tweet-button.html %}</p>
-						{{ content }}
-						<p>{% include tweet-button.html %}</p>
-					</article>
-				</div>
-			</div>
+	<div class="row" id="{{ page.id }}">
+		<div class="eight columns" role="main">
+			<article>
+				<header>
+					<h1>{{ page.title }}</h1>
+					<div class="post-meta">
+						<time datetime="">{{ page.date | date_to_long_string }}</time>
+					</div>
+				</header>
+				<p>{% include tweet-button.html %}</p>
+				{{ content }}
+				<p>{% include tweet-button.html %}</p>
+			</article>
 		</div>
-
+		<div class="four columns">
+		{% include post-tags.html %}
+		{% include tag-cloud.html %}
+		{% include contact-info.html %}
+		</div>
+	</div>
 {% include page-footer.html %}
+</div>
+</body>
+</html>
