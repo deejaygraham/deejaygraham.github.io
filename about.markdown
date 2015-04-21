@@ -5,9 +5,9 @@ layout: vanilla
 
 ## Hello.
 
-My name is Derek Graham and this is my personal weblog. I'm a software 
-developer working in the North East of England for a very popular business 
-software company. I can't be sure that the opinions expressed here are my own
+My name is Derek Graham and this is my personal blog. I'm a principal  
+developer working for a very popular business software company in the North 
+East of England. I can't be sure that the opinions expressed here are my own
 so they definitely don't represent the views of my employer.
 
 My main areas of interest are in using agile methods to help improve what 

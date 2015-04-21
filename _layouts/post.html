@@ -1,14 +1,17 @@
 {% include html-head.html %}
 <body>
-<div class="container">
 {% include page-header.html %}
+<div class="container">
 	<div class="row" id="{{ page.id }}">
-		<div class="eight columns" role="main">
+		<div class="twelve columns content" role="main">
 			<article>
 				<header>
-					<h1>{{ page.title }}</h1>
 					<div class="post-meta">
 						<time datetime="">{{ page.date | date_to_long_string }}</time>
+					</div>
+					<h1>{{ page.title }}</h1>
+					<div class="post-meta">
+						{% include post-tags.html %}
 					</div>
 				</header>
 				<p>{% include tweet-button.html %}</p>
@@ -16,8 +19,9 @@
 				<p>{% include tweet-button.html %}</p>
 			</article>
 		</div>
-		<div class="four columns">
-		{% include post-tags.html %}
+	</div>
+	<div class="row">
+		<div class="twelve columns navigation">
 		{% include tag-cloud.html %}
 		{% include contact-info.html %}
 		</div>
