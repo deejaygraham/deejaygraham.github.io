@@ -1,6 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 
@@ -8,80 +5,18 @@
 
 body
 {
-	font-family: 'Raleway', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
-/*	font-size: 22px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.5;*/ 
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
 	
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Bitter', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif;
+	font-family: 'Bitter', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
 	font-weight: 900;
-	/*padding: 0.5em 0 1em 0; */
 }
 
-/* font-sizes */
-
-/*   5 =  
- *   7 =  
- *   9 =  
- *  12 =  
- *  16 = 1em
- *  21 =  
- *  28 =  
- *  37 =  
- *  50 =  
- *  67 =  
- *  83 =  
- * 111 =  
- * 148 =  
- */
-
-.banner { background-color: #eee; padding: 1em; }
-
-/*.banner h1 { font-size: 0.95em; }*/
- 
-.banner h1 { margin-bottom: 0; }
-
-h1 > a { text-decoration: none; }
+h1 { font-size: 2em; }
 
 /* Colour */
-
-body
-{
-	background-color: white;
-	color: black; /*#373e4b;*/
-}
-
-.navbar-default
-{
-	background-color: white; /*#aebb9d;*/
-}
-
-a, a:visited, a:hover, a:focus
-{
-	color: black; /*#d73b25;*/
-}
-
-.post-date
-{
-	color: black; /*#ddd;*/
-}
-
-/* Layout */
-
-.tagline { margin-bottom : 0; }
-
-.content { margin-top: 2em; }
-
-.navigation { font-size: 0.95em; }
-
-.post-tag
-{
-	margin: 0.2em;
-}
 
 /* 
  colours:  
@@ -108,4 +43,44 @@ green blue: 64B6B1
  * dk blue : #313E59
  * grey : #7B7C85
  * */
+
+
+ 
+body
+{
+	background-color: white;
+	color: black; /*#373e4b;*/
+}
+
+.banner { background-color: #eee; padding: 1em; }
+
+a, a:visited, a:hover, a:focus
+{
+	color: black; /*#d73b25;*/
+}
+
+.post-date
+{
+	color: black; /*#ddd;*/
+}
+
+/* Layout */
+
+.banner h1 { margin-bottom: 0; }
+
+h1 > a { text-decoration: none; }
+
+.tagline { margin-bottom : 0; }
+
+.content { margin-top: 2em; }
+
+.navigation { font-size: 0.95em; }
+
+.post-tag
+{
+	margin: 0.2em;
+}
+
+.list-inline { list-style-type: none; }
+.list-inline li { display: inline; }
 
