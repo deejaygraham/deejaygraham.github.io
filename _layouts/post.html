@@ -3,25 +3,20 @@
 {% include page-header.html %}
 <div class="container">
 	<div class="row" id="{{ page.id }}">
-		<div class="twelve columns content" role="main">
+		<div class="nine columns content" role="main">
 			<article>
 				<header>
 					<div class="post-meta">
-						<time datetime="">{{ page.date | date_to_long_string }}</time>
+						<time datetime="">{{ page.date | date_to_long_string }}</time> <span id="tags">{% include post-tags.html %}</tags>
 					</div>
 					<h1>{{ page.title }}</h1>
-					<div class="post-meta">
-						{% include post-tags.html %}
-					</div>
 				</header>
 				<p>{% include tweet-button.html %}</p>
 				{{ content }}
 				<p>{% include tweet-button.html %}</p>
 			</article>
 		</div>
-	</div>
-	<div class="row">
-		<div class="twelve columns navigation">
+		<div class="three columns navigation">
 		{% include tag-cloud.html %}
 		{% include contact-info.html %}
 		</div>
