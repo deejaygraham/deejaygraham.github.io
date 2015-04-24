@@ -3,6 +3,8 @@ title: style guide
 layout: styleguide
 ---
 
+<!-- Text -->
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in imperdiet leo. Suspendisse tristique, arcu vestibulum dapibus 
 pellentesque, nulla arcu convallis neque, ut porttitor velit ipsum sit amet ligula. Aenean sed dolor iaculis, sodales nulla quis, 
 auctor nisi. Morbi eget gravida nunc, vel viverra mauris. In sodales iaculis velit, et sollicitudin eros malesuada et. In accumsan 
@@ -22,6 +24,8 @@ ullamcorper neque, sed bibendum odio mollis non. Sed ullamcorper sodales justo, 
 lorem eget elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer at hendrerit sem, 
 lobortis semper nunc. 
 
+<!-- Headings -->
+
 # Heading 1
 
 ## Heading 2
@@ -32,7 +36,11 @@ lobortis semper nunc.
 
 ##### Heading 6
 
+<!-- Block quotes -->
+
 > This is a block quote. Is it not?
+
+<!-- Text Formatting -->
 
 *Italic text looks like this*
 
@@ -40,14 +48,27 @@ lobortis semper nunc.
 
 ~~Strikethrough this text. I made a mistake~~
 
+<!-- Links -->
+
 [Visit GitHub!](http://www.github.com)
 
+<!-- Lists -->
+
 * Unordered Item star
 * Unordered Item star
 * Unordered Item star
 * Unordered Item star
 * Unordered Item star
 
+<!-- Inline Lists -->
+
+<ul class="list-inline">
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+</ul>
+
+<!-- Monospaced code -->
 
 ```
 Here is some code what I wrote
@@ -63,7 +84,6 @@ puts markdown.to_html
 System.Console.WriteLine("Hello World");
 ```
 
-550px or 250px and media queries needed
 ```
 img {
 	width:auto;
@@ -72,5 +92,35 @@ img {
 }
 ```
 
+
+<!-- 
+	Images 
+	550px or 250px and media queries needed
+
+	-->
 <img src="/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png" alt="alt text" width="550px" />
+
+<!-- Index -->
+
+<!-- Post -->
+
+Post Title
+<div>
+<span class="post-title"><a href="#">How to do blah, blah, blah</a></span>
+</div>
+
+Tags
+<!-- Tags -->
+<div>
+<span class="tag">csharp</span>
+<span class="tag">tdd</span>
+<span class="tag">illustration</span>
+</div>
+
+Dates
+<!-- Dates -->
+<div>
+<span class="tag-date">20th April 1996</span>
+</div>
+
 

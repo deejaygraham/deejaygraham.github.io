@@ -3,20 +3,50 @@
 
 /* Typography */
 
-body
-{
-	font-family: 'Raleway', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif;
+body 
+{ 
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
 }
 	
-h1, h2, h3, h4, h5, h6
-{
+h1, h2, h3, h4, h5, h6 
+{ 
 	font-family: 'Bitter', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
-	font-weight: 900;
+	font-weight: 900; 
 }
 
-h1 { font-size: 2em; }
+/* general site */
+
+a, a:visited, a:hover, a:focus { text-decoration: none; }
+
+/* index page */
+.post-title { font-size: 2em; }
+
+/* post pages */
+
+.banner { }
+
+.tag-cloud { }
+
+.tag-cloud-item { }
+
+.follow { }
+
+.footer { }
+
+
+.post-meta { }
+
+.post-date {}
+
+.post-tags { }
+
+.post-tag { }
+
+
+/* h1 { font-size: 2em; }
 
 .navigation { font-size: 0.95em; }
+*/
 
 /* Colour */
 
@@ -48,27 +78,62 @@ green blue: 64B6B1
 
 
  
-body
+/* body
 {
 	background-color: white;
 	color: black; /*#373e4b;*/
 }
 
-.banner { background-color: #eee; padding: 1em; }
+/* general site */
 
-a, a:visited, a:hover, a:focus
+.post-title  a:hover { color: #FC6C10; }
+
+.tag a { border-bottom: 1px dotted #888; }
+
+/* index page */
+
+/* post pages */
+
+
+/* .banner { background-color: #eee; padding: 1em; } */ 
+
+/*a, a:visited, a:hover, a:focus
 {
-	color: black; /*#d73b25;*/
-}
+	color: black;*/ /*#d73b25;*/
+	/*text-decoration: none;
+}*/
 
-.post-date
+/*.post-date
 {
 	color: black; /*#ddd;*/
 }
+*/
+/* li.post { border-bottom: 1px dotted #888; list-style-type: none; } */
+
+/*
+.post-tag { background-color: #eee; }
+*/
 
 /* Layout */
 
-.banner h1 { margin-bottom: 0; }
+/* general site */
+/* most lists don't need blob */
+.list-inline, .post-list { list-style-type: none; }
+/* inline lists should display inline */
+.list-inline li { display: inline; }
+
+
+/* index page */
+
+/* post pages */
+
+
+/*.banner h1 { margin-bottom: 0; }
+
+.post-title { margin-bottom: 0; }
+
+.post-tag { padding: 0.1em 0.2em; }
+.post-tag a { text-decoration: none; }
 
 h1 > a { text-decoration: none; }
 
@@ -83,4 +148,7 @@ h1 > a { text-decoration: none; }
 
 .list-inline { list-style-type: none; }
 .list-inline li { display: inline; }
+
+*/
+
 

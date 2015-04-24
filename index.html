@@ -2,27 +2,21 @@
 title: d.j.graham's blog
 layout: index
 ---
+<ul class="post-list">
 {% for post in paginator.posts %}
-<article id="{{ post.id}}" >
-	<header>
-		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		<div class="post-meta">
-			<time datetime="">{{ post.date | date_to_long_string }}</time>
-		</div>
-	</header>
-</article>
+<li class="post" id="{{ post.id}}" >
+	<div class="post-details"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div>
+	<div class="post-meta"><time datetime="">{{ post.date | date_to_long_string }}</time><span id="tags">{% include post-tags.html %}</tags></div>
+</li>	
 {% endfor %}		
+</ul>
 				
 <!-- Pagination links -->
 <ul class="pager">
   {% if paginator.previous_page %}
-	{% if paginator.previous_page == 1 %}
-		<li><a href="/" class="previous">Newer</a></li>
-	{% else %}	
-		<li><a href="/page{{ paginator.previous_page }}" class="previous">Newer</a></li>
-	{% endif %}	
+	{% if paginator.previous_page == 1 %}<li><a href="/" class="previous">newer</a></li>{% else %}<li><a href="/page{{ paginator.previous_page }}" class="previous">newer</a></li>{% endif %}	
   {% endif %}
   {% if paginator.next_page %}
-	<li><a href="/page{{ paginator.next_page }}" class="next">Older</a></li>
+	<li><a href="/page{{ paginator.next_page }}" class="next">older</a></li>
   {% endif %}
 </ul>
