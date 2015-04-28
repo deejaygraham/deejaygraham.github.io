@@ -6,9 +6,19 @@ layout: styleguide
 ##Colour Palette
 
 <table>
-<tr><th>Main Colour</th><th colspan="5">Secondary Colours</th></tr>
-<tr><td style="background-color: black; color: white; width: 50px; height: 50px;">#000</td><td>#</td><td>#</td><td>#</td><td>#</td><td>#</td></tr>
+<tr><th>Main Colour</th><th>&nbsp;</th><th colspan="5">Secondary Colours</th></tr>
+<tr>
+<td style="background-color: #FC6C10; color: black; width: 50px; height: 50px;">#FC6C10</td>
+<td>&nbsp;</td>
+<td style="background-color: #313E59; color: black; width: 50px; height: 50px;">#313E59</td>
+<td style="background-color: #7B7C85; color: black; width: 50px; height: 50px;">#7B7C85</td>
+<td>#</td>
+<td>#</td>
+<td>#</td>
+</tr>
 </table>
+
+-----
 
 ##Typography
 
@@ -78,6 +88,8 @@ img {
 }
 ```
 
+------
+
 ##Iconography
 
 <table>
@@ -85,6 +97,8 @@ img {
 <tr><td><img src="/img/github.png" /></td></tr>
 <tr><td><img src="/img/email.png" /></td></tr>
 </table>
+
+------
 
 ##Images
 
@@ -94,6 +108,8 @@ img {
 
 	-->
 <img src="/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png" alt="alt text" width="550px" />
+
+------
 
 ##Posts
 
