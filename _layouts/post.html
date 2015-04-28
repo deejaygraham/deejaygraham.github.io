@@ -4,17 +4,13 @@
 <div class="container">
 	<div class="row" id="{{ page.id }}">
 		<div class="nine columns content" role="main">
-			<article>
-				<header>
-					<h1 class="post-title">{{ page.title }}</h1>
-					<div class="post-meta">
-						<time datetime="">{{ page.date | date_to_long_string }}</time> <span id="tags">{% include post-tags.html %}</tags>
-					</div>
-				</header>
-				<p>{% include tweet-button.html %}</p>
-				{{ content }}
-				<p>{% include tweet-button.html %}</p>
-			</article>
+			<h1 class="post-title">{{ page.title }}</h1>
+			<div class="post-meta">
+				<time datetime="">{{ page.date | date_to_long_string }}</time> <span id="tags">{% include post-tags.html %}</tags>
+			</div>
+			<p>{% include tweet-button.html %}</p>
+			{{ content }}
+			<p>{% include tweet-button.html %}</p>
 		</div>
 		<div class="three columns navigation">
 		{% include tag-cloud.html %}
