@@ -111,7 +111,7 @@ img {
 
 ------
 
-##Posts
+##Blog Index
 
 ###Title Links
 <span class="post-title"><a href="#">How to do blah, blah, blah</a></span>
@@ -124,5 +124,14 @@ img {
 
 ###Dates
 <span class="date">20th April 1996</span>
+
+##Blog Post
+
+#Title
+
+##Sub Heading
+
+###Sub sub heading
+
 
 

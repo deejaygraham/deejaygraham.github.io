@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 
-/* Typography */
+/* ===================== Typography ===================== */
 
 body 
 { 
@@ -14,49 +14,38 @@ h1, h2, h3, h4, h5, h6
 	font-weight: 900; 
 }
 
-p { line-height: 1.333; }
+h1 { font-size: 2em; }
 
-/* general site */
+h2 { font-size: 1.75em; }
+
+h3 { font-size: 1.6em; }
+
+p { line-height: 1.333; }
 
 a, a:visited, a:hover, a:focus { text-decoration: none; }
 
-
-a.tag { text-decoration: 1px dotted #888; background-color: #ccc; 
-color: blue; 
--moz-border-radius: 2px;
--webkit-border-radius: 2px;
-border-radius: 2px; /* future proofing */
--khtml-border-radius: 2px; 
- }
-
-a.tag { margin: 0.5em; padding: 0.3em 0.5em; }
-a.tag { color: #ff6b6b; background-color: #eee; }
-a.tag:hover { color: #fff; background-color: #ff6b6b; }
-
-/* index page */
-.post-title { font-size: 2em; }
-
-/* post pages */
-
-
-
-
-/* h1 { font-size: 2em; }
-
-.navigation { font-size: 0.95em; }
-*/
-
-/* Colour */
+/* ===================== Colour ===================== */
 
 body 
 { 
 	background-color: white; 
-	color: #444854; 
+	color: #444854; /* dk gray */
 }
 
 a { color: black; }
 
-.post-title a { } 
+a.tag 
+{ 
+	color: #ff6b6b;  /* orange */
+	background-color: #eee; /* lt gray */
+}
+
+a.tag:hover 
+{ 
+	/* invert colours */
+	color: #fff; 
+	background-color: #ff6b6b; 
+}
 
 .date 
 { 
@@ -89,47 +78,18 @@ green blue: 64B6B1
  * grey : #7B7C85
  * */
 
+/* ===================== Layout ===================== */
 
- 
-/* body
-{
-	background-color: white;
-	color: black; /*#373e4b;*/
-}
+a.tag 
+{ 
+	margin: 0.5em; 
+	padding: 0.3em 0.5em;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px; /* future proofing */
+	-khtml-border-radius: 2px; 
+ }
 
-/* general site */
-
-/*.post-title  a:hover { color: #FC6C10; }
-
-.tag a { border-bottom: 1px dotted #888; }*/
-
-/* index page */
-
-/* post pages */
-
-
-/* .banner { background-color: #eee; padding: 1em; } */ 
-
-/*a, a:visited, a:hover, a:focus
-{
-	color: black;*/ /*#d73b25;*/
-	/*text-decoration: none;
-}*/
-
-/*.post-date
-{
-	color: black; *//*#ddd;*//*
-}
-*/
-/* li.post { border-bottom: 1px dotted #888; list-style-type: none; } */
-
-/*
-.post-tag { background-color: #eee; }
-*/
-
-/* Layout */
-
-/* general site */
 /* most lists don't need blob */
 .no-list-dot { list-style-type: none; }
 
@@ -137,33 +97,4 @@ green blue: 64B6B1
 /* inline lists should display inline */
 .list-inline li { display: inline; }
 
-
-/* index page */
-
-/* post pages */
-
-
-/*.banner h1 { margin-bottom: 0; }
-
 .post-title { margin-bottom: 0; }
-
-.post-tag { padding: 0.1em 0.2em; }
-.post-tag a { text-decoration: none; }
-
-h1 > a { text-decoration: none; }
-
-.tagline { margin-bottom : 0; }
-
-.content, .navigation { margin-top: 2em; }
-
-.post-tag
-{
-	margin: 0.2em;
-}
-
-.list-inline { list-style-type: none; }
-.list-inline li { display: inline; }
-
-*/
-
-

@@ -7,5 +7,5 @@ permalink: /404.html
 Sorry the page you were looking for is missing.
 
 
-Please try one of the links at the top or the bottom of this page.
+Please try one of the links on this page to find what you were looking for.
 

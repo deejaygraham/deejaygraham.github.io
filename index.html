@@ -6,7 +6,7 @@ layout: index
 {% for post in paginator.posts %}
 <li class="post" id="{{ post.id}}" >
 	<div class="post-details"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div>
-	<div class="post-meta"><time datetime="">{{ post.date | date_to_long_string }}</time><span id="tags">{% include post-tags.html %}</tags></div>
+	<div class="post-meta"><time datetime="">{{ post.date | date_to_long_string }}</time><span id="tags">{% include post-tags.html tags=post.tags %}</tags></div>
 </li>	
 {% endfor %}		
 </ul>
