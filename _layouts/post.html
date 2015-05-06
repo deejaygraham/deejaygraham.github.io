@@ -4,19 +4,18 @@
 <div class="container">
 	<div class="row" id="{{ page.id }}">
 		<div class="nine columns content" role="main">
-			<h1 class="post-title">{{ page.title }}</h1>
-			<div class="post-meta">
-				<time datetime="">{{ page.date | date_to_long_string }}</time> <span id="tags">{% include post-tags.html tags=page.tags %}</tags>
-			</div>
-			<p>{% include tweet-button.html %}</p>
+			<div class="post-title"><h1>{{ page.title }}</h1></div>
+			<div class="post-meta"><span class="date">{{ page.date | date_to_long_string }}</span><span class="tags">{% include post-tags.html tags=page.tags %}</span>
+			<div class="post-social">{% include tweet-button.html %}</div>
+			{% if page.hero %}<div class="hero"><img src="{{page.hero }}" alt="title" /></div>{% endif %}
 			{{ content }}
-			<p>{% include tweet-button.html %}</p>
 		</div>
 		<div class="three columns navigation">
 		{% include tag-cloud.html %}
 		{% include contact-info.html %}
 		</div>
 	</div>
+	<!-- links to stuff -->
 {% include page-footer.html %}
 </div>
 </body>

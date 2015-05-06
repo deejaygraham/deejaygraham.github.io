@@ -5,6 +5,7 @@
 
 body 
 { 
+/* Numbers not very good */
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
 }
 	
@@ -32,25 +33,31 @@ body
 	color: #444854; /* dk gray */
 }
 
-a { color: black; }
+/* a { color: black; } */
 
-a.tag 
+.post-title a { color: #444854; }
+
+a.tagdeleteme 
 { 
 	color: #ff6b6b;  /* orange */
 	background-color: #eee; /* lt gray */
 }
 
-a.tag:hover 
+a.tagdeleteme:hover 
 { 
 	/* invert colours */
 	color: #fff; 
 	background-color: #ff6b6b; 
 }
+/* normal links */
 
-.date 
+.datedeleteme 
 { 
 	color: #ccc; 
 }
+
+/* post list items */
+.post { border-bottom: 1px dotted #ccc; }
 
 /* 
  colours:  
@@ -80,15 +87,14 @@ green blue: 64B6B1
 
 /* ===================== Layout ===================== */
 
-a.tag 
-{ 
-	margin: 0.5em; 
-	padding: 0.3em 0.5em;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px; /* future proofing */
-	-khtml-border-radius: 2px; 
- }
+.post-title h1, .post-title h2 { margin-bottom: 0.2em; }
+
+.post { margin-bottom: 1.5em; }
+
+/* put image here */
+.date, .tags { margin-left: 1em; }
+
+a.tag { margin-left: 0.2em; }
 
 /* most lists don't need blob */
 .no-list-dot { list-style-type: none; }

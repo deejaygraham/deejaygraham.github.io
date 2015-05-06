@@ -1,6 +1,14 @@
 {% include html-head.html %}
 <body>
 {% include page-header.html %}
+{% if page.hero %}
+<div class="container">
+	<div class="row" id="{{ page.id }}">
+		<div class="twelve columns hero">
+		</div>
+	</div>		
+</div>
+{% endif %}
 <div class="container">
 	<div class="row" id="{{ page.id }}">
 		<div class="twelve columns content" role="main">
