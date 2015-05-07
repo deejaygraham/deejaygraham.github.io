@@ -33,14 +33,16 @@ body
 	color: #444854; /* dk gray */
 }
 
-/* a { color: black; } */
+a { color: #444854; border-bottom: 1px dotted #444854; } 
+a:hover { color: #444854; }
 
-.post-title a { color: #444854; }
+/* .post-title a { color: #444854; } */
 
-a.tagdeleteme 
+a.tag
 { 
 	color: #ff6b6b;  /* orange */
-	background-color: #eee; /* lt gray */
+	/* border-bottom: 1px dotted #ccc; */
+	/*background-color: #eee; */ /* lt gray */
 }
 
 a.tagdeleteme:hover 
