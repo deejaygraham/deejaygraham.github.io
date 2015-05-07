@@ -5,7 +5,7 @@ layout: index
 {% for post in paginator.posts %}
 <article class="post" id="{{ post.id}}" >
 	<div class="post-title"><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></div>
-	<div class="post-meta"><span class="date"><i class="fa fa-calendar"/>{{ post.date | date_to_long_string }}</span><span class="tags"><i class="fa fa-tag"/>{% include post-tags.html tags=post.tags %}</span></div>
+	<div class="post-meta"><i class="fa fa-calendar"></i><span class="date">{{ post.date | date_to_long_string }}</span><i class="fa fa-tags"></i><span class="tags">{% include post-tags.html tags=post.tags %}</span></div>
 </article>	
 {% endfor %}		
 				
