@@ -1,8 +1,16 @@
-{% if page.banner %}
-<div class="banner {{ page.banner }}" id="banner">
-{% else %}
-<div class="banner" id="banner">
-{% endif %}
-	<h1><a href="{{ site.baseurl }}">{{ site.name }}</a></h1>
-	<p class="tagline">{{ site.description }}</p>
-</div>
+<!-- pageheader.html -->
+{% if page.header-colour %}
+<header class="header" style="background-color: #{{ page.header-colour }};" >
+{% else %}    
+<header class="header" >
+{% endif %}	
+	<div class="row">
+		<div class="three columns avatar">
+			<a href="{{ site.baseurl }}"><img src="/img/avatar.png" alt="home"></a>
+		</div>
+		<div class="nine columns social">
+			{% include social-links.html %}
+		</div>
+	</div>
+</header>
+<!-- pageheader.html -->

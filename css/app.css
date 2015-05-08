@@ -5,7 +5,7 @@
 
 body 
 { 
-/* Numbers not very good */
+/* Numbers not very good in Raleway */
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
 }
 	
@@ -21,11 +21,13 @@ h2 { font-size: 1.75em; }
 
 h3 { font-size: 1.6em; }
 
+.social { font-size: 250% }
+
 p { line-height: 1.333; }
 
 a, a:visited, a:hover, a:focus { text-decoration: none; }
 
-/* ===================== Colour ===================== */
+/* ==================== Colour ===================== */
 
 body 
 { 
@@ -34,29 +36,16 @@ body
 }
 
 a { color: #444854; border-bottom: 1px dotted #444854; } 
+
 a:hover { color: #444854; }
+     
+.avatar { opacity: 0.75; transition: opacity 0.3s ease 0s; }
+.avatar img { width: 5em; }
 
-/* .post-title a { color: #444854; } */
+.social a { color: #333; opacity: 0.2; }
+.social a:hover { opacity: 1; transition: opacity 0.3s ease 0s; }
 
-a.tag
-{ 
-	color: #ff6b6b;  /* orange */
-	/* border-bottom: 1px dotted #ccc; */
-	/*background-color: #eee; */ /* lt gray */
-}
-
-a.tagdeleteme:hover 
-{ 
-	/* invert colours */
-	color: #fff; 
-	background-color: #ff6b6b; 
-}
-/* normal links */
-
-.datedeleteme 
-{ 
-	color: #ccc; 
-}
+a.tag { color: #ff6b6b;  /* orange */ }
 
 /* post list items */
 .post { border-bottom: 1px dotted #ccc; }
@@ -89,6 +78,13 @@ green blue: 64B6B1
 
 /* ===================== Layout ===================== */
 
+.header a { border: 0; } 
+.header { margin-bottom: 5em; }
+
+.avatar { padding: 1em; }
+
+.post-title { margin-bottom: 0; }
+
 .post-title h1, .post-title h2 { margin-bottom: 0.2em; }
 
 .post { padding-bottom: 1.5em; margin-bottom: 1.5em; }
@@ -97,6 +93,10 @@ green blue: 64B6B1
 
 a.tag { margin-right: 0.4em; }
 
+.paginator { margin-bottom: 2em }
+
+.paginator .button { padding: 0 10px; }
+
 /* most lists don't need blob */
 .no-list-dot { list-style-type: none; }
 
@@ -104,4 +104,3 @@ a.tag { margin-right: 0.4em; }
 /* inline lists should display inline */
 .list-inline li { display: inline; }
 
-.post-title { margin-bottom: 0; }
