@@ -3,22 +3,28 @@
 {% include page-header.html %}
 <div class="container">
 	<div class="row">
-		<div class="nine columns content" role="main">
+		<div class="two columns social">
+			{% include social-links.html %}
+		</div>
+		<div class="ten columns content" role="main">
 			<article class="post" id="{{ page.id }}">
-				<div class="post-title"><h1>{{ page.title }}</h1></div>
-				<div class="post-meta"><i class="fa fa-calendar"></i><span class="date">{{ page.date | date_to_long_string }}</span><i class="fa fa-tags"></i><span class="tags">{% include post-tags.html tags=page.tags %}</span></div>
-				<div class="post-social">{% include tweet-button.html %}</div>
+				<header>
+					<h1 class="post-title">{{ page.title }}</h1>
+					<div class="post-meta"><i class="fa fa-calendar"></i><span class="date">{{ page.date | date_to_long_string }}</span></div>
+					<div class="post-meta"><i class="fa fa-tags"></i><span class="tags">{% include post-tags.html tags=page.tags %}</span></div>
+				</header>
 				{% if page.hero %}<div class="hero"><img src="{{ page.hero }}" alt="title" /></div>{% endif %}
 				{{ content }}
+				<div class="n">
+					{% if page.next %}
+					<span><a href="{{ page.next.path }}"></a></span>
+					{% endif %}
+				</div>
 			</article>	
-		</div>
-		<div class="three columns navigation">
-		{% include tag-cloud.html %}
-		{% include contact-info.html %}
 		</div>
 	</div>
 	<!-- links to stuff -->
-{% include page-footer.html %}
 </div>
+{% include page-footer.html %}
 </body>
 </html>

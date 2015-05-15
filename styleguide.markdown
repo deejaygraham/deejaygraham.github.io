@@ -111,7 +111,7 @@ img {
 
 ------
 
-##Blog Index
+##Blog Index 
 
 ###Title Links
 <span class="post-title"><a href="#">How to do blah, blah, blah</a></span>

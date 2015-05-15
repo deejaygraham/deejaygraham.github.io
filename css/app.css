@@ -1,17 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Bitter);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 /* ===================== Typography ===================== */
 
 body 
 { 
-/* Numbers not very good in Raleway */
-	font-family: 'Raleway', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
 }
 	
 h1, h2, h3, h4, h5, h6 
 { 
-	font-family: 'Bitter', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
+	font-family: 'Raleway', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
 	font-weight: 900; 
 }
 
@@ -21,7 +20,7 @@ h2 { font-size: 1.75em; }
 
 h3 { font-size: 1.6em; }
 
-.social { font-size: 250% }
+.social { font-size: 150% }
 
 p { line-height: 1.333; }
 
@@ -49,6 +48,12 @@ a.tag { color: #ff6b6b;  /* orange */ }
 
 /* post list items */
 .post { border-bottom: 1px dotted #ccc; }
+
+footer { background-color: #585858; color: #fff; }
+
+footer a { color: #888; }
+
+footer a:hover { color: #fff; }
 
 /* 
  colours:  
@@ -81,7 +86,11 @@ green blue: 64B6B1
 .header a { border: 0; } 
 .header { margin-bottom: 5em; }
 
-.avatar { padding: 1em; }
+.avatar { padding: 1em; }  
+
+header { margin-bottom: 2em; }
+
+footer { padding: 2em; }
 
 .post-title { margin-bottom: 0; }
 
@@ -103,4 +112,11 @@ a.tag { margin-right: 0.4em; }
 .list-inline, .post-list { list-style-type: none; }
 /* inline lists should display inline */
 .list-inline li { display: inline; }
+
+.social li { margin: 0; }
+
+.social a { border: 0; }
+
+/* hide social block for low screen resolutions */
+
 
