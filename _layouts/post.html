@@ -1,6 +1,15 @@
 {% include html-head.html %}
 <body>
 {% include page-header.html %}
+{% if page.hero %}
+<div class="container">
+	<div class="row" id="{{ page.id }}">
+		<div class="twelve columns hero">
+			<h1>{{ page.title }}</h1>
+		</div>
+	</div>		
+</div>
+{% endif %}
 <div class="container">
 	<div class="row">
 		<div class="two columns social">
@@ -13,13 +22,7 @@
 					<div class="post-meta"><i class="fa fa-calendar"></i><span class="date">{{ page.date | date_to_long_string }}</span></div>
 					<div class="post-meta"><i class="fa fa-tags"></i><span class="tags">{% include post-tags.html tags=page.tags %}</span></div>
 				</header>
-				{% if page.hero %}<div class="hero"><img src="{{ page.hero }}" alt="title" /></div>{% endif %}
 				{{ content }}
-				<div class="n">
-					{% if page.next %}
-					<span><a href="{{ page.next.path }}"></a></span>
-					{% endif %}
-				</div>
 			</article>	
 		</div>
 	</div>
