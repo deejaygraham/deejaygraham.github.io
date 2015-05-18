@@ -15,11 +15,7 @@ and Andy Hunt's book [Pragmatic Thinking and Learning](https://pragprog.com/book
 
 <img src="/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-hifi.png" class="img-responsive" alt="sketchnote" /> 
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
-</a>
-<br />
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+{% include licence-boilerplate.html %}
 
 The original paper is [here](http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA084551&Location=U2&doc=GetTRDoc.pdf)
 

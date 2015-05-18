@@ -17,10 +17,5 @@ them symptoms and how to avoid it.
 
 <img src="/img/posts/sketchote2-from-ddd-north-2014/dddnorth-2014-burn-out-talk-vanilla-lofi.png" class="img-responsive" alt="ddd north sketchnote" />
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
-</a>
-<br />
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
+{% include licence-boilerplate.html %}
 
