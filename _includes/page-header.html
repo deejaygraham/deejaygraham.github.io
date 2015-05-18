@@ -1,12 +1,18 @@
 <!-- pageheader.html -->
-{% if page.header-colour %}
-<header class="header" style="background-color: #{{ page.header-colour }};" >
+{% if page.hero %}
+<header class="hero {{ page.hero }}"> 
 {% else %}    
-<header class="header" >
-{% endif %}	
-	<div class="row">
-		<div class="three columns avatar">
-			<a href="{{ site.baseurl }}"><img src="/img/avatar.png" alt="home"></a>
+<header>
+{% endif %}
+	<div class="container">
+		<div class="row">
+			<div class="three columns avatar">
+				<a href="{{ site.baseurl }}"><img src="/img/avatar.png" alt="home"></a>
+			</div>
+			<div class="nine colums site-title">
+				<h1>{{ site.name }}</h1>
+				<p>{{ site.description }}</p>
+			</div>
 		</div>
 	</div>
 </header>

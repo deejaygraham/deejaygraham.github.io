@@ -20,7 +20,7 @@ h2 { font-size: 1.75em; }
 
 h3 { font-size: 1.6em; }
 
-.social { font-size: 150% }
+.social a { font-size: 250% }
 
 p { line-height: 1.333; }
 
@@ -34,14 +34,15 @@ body
 	color: #444854; /* dk gray */
 }
 
-a { color: #444854; border-bottom: 1px dotted #444854; } 
+.content a { color: #444854; border-bottom: 1px dotted #444854; }
+/* a { color: #444854; border-bottom: 1px dotted #444854; }  */
 
 a:hover { color: #444854; }
      
 .avatar { opacity: 0.75; transition: opacity 0.3s ease 0s; }
 .avatar img { width: 5em; }
 
-.social a { color: #333; opacity: 0.2; }
+.social a { color: #FF6B6B; opacity: 0.2; } /* #333 */ 
 .social a:hover { opacity: 1; transition: opacity 0.3s ease 0s; }
 
 a.tag { color: #ff6b6b;  /* orange */ }
@@ -92,6 +93,8 @@ header { margin-bottom: 2em; }
 
 footer { padding: 2em; }
 
+.colophon { padding-top: 2em; }
+
 .post-title { margin-bottom: 0; }
 
 .post-title h1, .post-title h2 { margin-bottom: 0.2em; }
@@ -115,8 +118,6 @@ a.tag { margin-right: 0.4em; }
 
 .social li { margin: 0; }
 
-.social a { border: 0; }
+.social a { border: 0; padding-right: 1em; }
 
-/* hide social block for low screen resolutions */
-
-
+.hero { background-color: #eee; padding: 5em; }

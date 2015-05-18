@@ -1,10 +1,19 @@
 <footer>
-{% include social-links.html %}
-<!-- hosting etc -->
-<ul class="list-inline">
-	<li>{% include hosted-by.html %}</li>
-	<li>{% include powered-by.html %}</li>  
-</ul>
+	<div class="container">
+		<div class="row">
+			<div class="six columns tag-cloud">{% include tag-cloud.html %}</div>
+			<div class="six columns social">{% include social-links.html %}</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns colophon">
+				<!-- hosting etc -->
+				<ul class="list-inline">
+					<li>{% include hosted-by.html %}</li>
+					<li>{% include powered-by.html %}</li>  
+				</ul>
+			</div>
+		</div>
+	</div>
 </footer>
 <!-- Javascript -->  
 {% include tracking-js.html %}
