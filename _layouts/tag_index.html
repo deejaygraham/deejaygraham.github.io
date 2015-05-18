@@ -1,10 +1,11 @@
 ---
 layout: vanilla
 ---
-<h1 class="post-title"><i class="fa fa-tag"></i>{{ page.title }}</h1>
+<h1 class="post-title"><i class="fa fa-tag"></i> {{ page.title }}</h1>
 {% for post in site.posts %} {% if post.published %} {% for tag in post.tags %} {% if tag == page.tag %} 
 <article class="post" id="{{ post.id}}" >
 	<div class="post-title"><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></div>
-	<div class="post-meta"><i class="fa fa-calendar"></i><span class="date">{{ post.date | date_to_long_string }}</span><i class="fa fa-tags"></i><span class="tags">{% include post-tags.html tags=post.tags %}</span></div>
+	<div class="post-meta"><i class="fa fa-calendar"></i><span class="date">{{ post.date | date_to_long_string }}</span></div>
+	<div class="post-meta"><i class="fa fa-tags"></i><span class="tags">{% include post-tags.html tags=post.tags %}</span></div>
 </article>	
 {% endif %} {% endfor %} {% endif %} {% endfor %}
