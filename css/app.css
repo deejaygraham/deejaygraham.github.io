@@ -54,7 +54,12 @@ footer { background-color: #585858; color: #fff; }
 
 footer a { color: #888; }
 
-footer a:hover { color: #fff; }
+footer a:hover { color: #fff; padding: 0.2em; }
+
+.paginator a { border: 1px solid #ccc; padding: 0.2em 0.4em; } 
+
+.paginator em, .paginator span { border: 1px solid #eee; padding: 0.2em 0.4em; background-color: #eee; }
+
 
 /* 
  colours:  
