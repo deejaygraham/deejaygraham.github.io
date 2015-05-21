@@ -6,9 +6,9 @@
 		<div class="twelve columns content" role="main">
 			<article class="post" id="{{ page.id }}">
 				<header>
-					<h1 class="post-title">{{ page.title }}</h1>
-					<div class="post-meta"><i class="fa fa-calendar"></i><span class="date">{{ page.date | date_to_long_string }}</span></div>
-					<div class="post-meta"><i class="fa fa-tags"></i><span class="tags">{% include post-tags.html tags=page.tags %}</span></div>
+					<h2>{{ page.title }}</h2>
+					<p><i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }}</p>
+					<p><i class="fa fa-tags"></i> {% include post-tags.html tags=page.tags %}</p>
 				</header>
 				{{ content }}
 			</article>	

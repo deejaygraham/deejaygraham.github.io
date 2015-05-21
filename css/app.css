@@ -1,128 +1,108 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Lato);
-
-/* ===================== Typography ===================== */
 
 body 
 { 
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
-}
-	
-h1, h2, h3, h4, h5, h6 
-{ 
-	font-family: 'Raleway', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
-	font-weight: 900; 
-}
-
-h1 { font-size: 2em; }
-
-h2 { font-size: 1.75em; }
-
-h3 { font-size: 1.6em; }
-
-.social a { font-size: 250% }
-
-p { line-height: 1.333; }
-
-a, a:visited, a:hover, a:focus { text-decoration: none; }
-
-/* ==================== Colour ===================== */
-
-body 
-{ 
 	background-color: white; 
 	color: #444854; /* dk gray */
 }
 
-.content a { color: #444854; border-bottom: 1px dotted #444854; }
-/* a { color: #444854; border-bottom: 1px dotted #444854; }  */
+header
+{
+}
 
-a:hover { color: #444854; }
-     
-.avatar { opacity: 0.75; transition: opacity 0.3s ease 0s; }
-.avatar img { width: 5em; }
+header p 
+{ 
+	margin: 0; 
+}
 
-.social a { color: #FF6B6B; opacity: 0.2; } /* #333 */ 
-.social a:hover { opacity: 1; transition: opacity 0.3s ease 0s; }
+.content 
+{ 
+	padding: 2em 0; 
+}
 
-a.tag { color: #ff6b6b;  /* orange */ }
+.content p
+{
+	line-height: 2;
+}
 
-/* post list items */
-.post { border-bottom: 1px dotted #ccc; }
+footer 
+{ 
+	background-color: #585858; 
+	color: #fff; 
+	padding: 2em 0;
+}
 
-footer { background-color: #585858; color: #fff; }
+a
+{
+	color: #dd5d26;
+	text-decoration: none;
+	border-bottom: 1px dotted #dd5d26;
+}
 
-footer a { color: #888; }
+a:hover
+{	
+	color: #ef7f3f;
+}
 
-footer a:hover { color: #fff; padding: 0.2em; }
+.avatar a, .social a 
+{
+	border: 0;
+}
+
+header
+{
+	margin-bottom: 2em;
+}
+
+header h2, header h3
+{
+	margin-bottom: 0;
+}
+
+header a.tag 
+{ 
+	margin-right: 0.4em;  
+}
+
+blockquote
+{
+	border-left: 3px solid #a7cb68;
+	padding-left: 2em;
+}
+
+code
+{
+	border-radius: 0;
+	border-left: 3px solid #a7cb68;
+}
+
+.colophon
+{
+	padding-top: 2em;
+}
+
+.social 
+{
+	font-size: 250%
+}
 
 .paginator a { border: 1px solid #ccc; padding: 0.2em 0.4em; } 
 
 .paginator em, .paginator span { border: 1px solid #eee; padding: 0.2em 0.4em; background-color: #eee; }
 
-
-/* 
- colours:  
- 
- dark blue: 556270
- light blue: 4ecdc4
- lime: c7f464
- pink: ff6b6b
- red: c44d58
- 
-*/
-
-/*
-
-cream: DED4B9
-choc: 46433A
-red: CE534D
-green blue: 64B6B1
-
-*/
-
-/* gtd 
- * orange: #FC6C10
- * dk blue : #313E59
- * grey : #7B7C85
- * */
-
-/* ===================== Layout ===================== */
-
-.header a { border: 0; } 
-.header { margin-bottom: 5em; }
-
-.avatar { padding: 1em; }  
-
-header { margin-bottom: 2em; }
-
-footer { padding: 2em; }
-
-.colophon { padding-top: 2em; }
-
-.post-title { margin-bottom: 0; }
-
-.post-title h1, .post-title h2 { margin-bottom: 0.2em; }
-
-.post { padding-bottom: 1.5em; margin-bottom: 1.5em; }
-
-.date, .tags { margin: 0 0.5em; }
-
-a.tag { margin-right: 0.4em; }
-
-.paginator { margin-bottom: 2em }
-
 .paginator .button { padding: 0 10px; }
 
-/* most lists don't need blob */
+h1, h2, h3, h4, h5, h6 
+{ 
+	font-family: 'Raleway', Garamond, Georgia, Cambria, Times, 'Times New Roman', serif; 
+}
+
+th, td { border-bottom: 0; }
+
 .no-list-dot { list-style-type: none; }
 
-.list-inline, .post-list { list-style-type: none; }
-/* inline lists should display inline */
-.list-inline li { display: inline; }
+.list-inline { list-style-type: none; }
+.list-inline li { display: inline; } 
 
-.social li { margin: 0; }
-
-.social a { border: 0; padding-right: 1em; }
-
-.hero { background-color: #eee; padding: 5em; }
+/* hero styles */
+.hero { background-color: #ffedbe; padding: 5em; }
