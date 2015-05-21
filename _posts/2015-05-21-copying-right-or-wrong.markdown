@@ -24,3 +24,5 @@ Here are a selection of quotes (to come later) and photos* from the evening:
 ### Photo credits
 
 Photos by Steve Brock under [CC BY-NC](https://creativecommons.org/licenses/by-nc/2.0/)
+
+The photos are available in an album at [Flickr](https://www.flickr.com/photos/newcastlelibraries/sets/72157652681510606/with/17413243000/)
