@@ -72,6 +72,8 @@ dignissim ut. Curabitur tincidunt cursus orci eget dictum.
 
 ###Code
 
+Here is the name of a <code>Csharp.Namespace.Class</code> in the middle of some text.
+
 ```
 Here is some code what I wrote
 ```
