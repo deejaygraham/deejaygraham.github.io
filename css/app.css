@@ -29,8 +29,10 @@ footer
 { 
 	background-color: #585858; 
 	color: #fff; 
-	padding: 2em 0;
+	padding-bottom: 2em;
 }
+
+.tag-cloud, .social, .other { padding-top: 2em; }
 
 a
 {
@@ -81,7 +83,7 @@ code
 	padding-top: 2em;
 }
 
-.social 
+.large-icons 
 {
 	font-size: 250%
 }
@@ -101,7 +103,7 @@ th, td { border-bottom: 0; }
 
 .no-list-dot { list-style-type: none; }
 
-.list-inline { list-style-type: none; }
+.list-inline { list-style-type: none; margin-bottom: 0; }
 .list-inline li { display: inline; } 
 
 /* hero styles */
