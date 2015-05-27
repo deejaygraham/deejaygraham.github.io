@@ -75,7 +75,8 @@ blockquote
 code
 {
 	border-radius: 0;
-	background-color: #ffedbe
+	background-color: #eee;
+	font-family: Consolas, Monaco, "Lucida Console", "Courier New", courier, monospace;
 }
 
 .colophon
