@@ -31,9 +31,17 @@ Running the tool with no arguments, prompts with the available options:
 
 ![no options](/img/posts/jekyll-post-generator-in-ruby/no-options.png "no options")
 
+and here's a typical use:
+
+``` 
+ruby post.rb "Jekyll Post Generator in Ruby" -t "jekyll, ruby, meta, snippets"
+```
+
 The options code follows a similar pattern to .Net libraries like NDesk but adding 
 options and sensible defaults ended up taking more code than the main work of 
 the script.
+
+
 
 ## Ruby vs .Net 
  
