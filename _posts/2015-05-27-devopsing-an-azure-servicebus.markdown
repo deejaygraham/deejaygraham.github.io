@@ -5,10 +5,13 @@ published: true
 tags: [ azure, cloud, powershell ]
 ---
 
-I was debating with a couple of DevOps people the other day approaches to monitoring an Azure Service 
-Bus message queue for "stuck" content.
+I was debating with a couple of DevOps people some approaches to monitoring an Azure Service 
+Bus message queue for "stuck" content. It needed to be a solution that would fit 
+in with the existing monitoring ecosystem and be able to talk to the Azure infrastructure
+directly. A custom Powershell Cmdlet seemed to fit on both counts. 
 
-This resulted in a little [PowerShell Cmdlet](https://github.com/deejaygraham/AzurePowershellDevOps/blob/master/src/AzureServiceBusCmdlets/GetAzureServiceBusQueueCommand.cs) 
+After the discussion, I got to work on a little 
+[PowerShell Cmdlet](https://github.com/deejaygraham/AzurePowershellDevOps/blob/master/src/AzureServiceBusCmdlets/GetAzureServiceBusQueueCommand.cs) 
 to connect to a number of Service Bus namespaces and report on active and dead letter message counts.
 
 It's a fairly simple piece of code, using <code>Microsoft.ServiceBus.NamespaceManager</code> to query 
