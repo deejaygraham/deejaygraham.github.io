@@ -110,6 +110,12 @@ code
 	font-size: 250%
 }
 
+img 
+{
+	max-width: 100%;
+	height: auto;
+}
+
 .paginator a { border: 1px solid $celeste; padding: 0.2em 0.4em; } 
 
 .paginator em, .paginator span { border: 1px solid $gallery; padding: 0.2em 0.4em; background-color: $gallery; }
