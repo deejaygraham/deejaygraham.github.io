@@ -11,3 +11,4 @@ running a conversation or meeting.
 
 <img src="/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png" class="img-responsive" alt="Lean Coffee" />
 
+{% include licence-boilerplate.html %}

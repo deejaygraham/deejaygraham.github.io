@@ -59,3 +59,5 @@ more times.
 Here's a cleaned up scanned image of the new version of the sketchnote:
 
 <img src="/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png" class="img-responsive" alt="Sketchote update" />
+
+{% include licence-boilerplate.html %}
