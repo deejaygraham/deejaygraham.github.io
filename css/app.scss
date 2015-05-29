@@ -21,7 +21,8 @@ body
 { 
 	font-family: $base-font-stack; 
 	background-color: $white; 
-	color: $mako
+	color: $mako;
+	border-top: 5px solid $hot-cinnamon;
 }
 
 header p 
@@ -133,10 +134,12 @@ th, td { border-bottom: 0; }
 }
 
 /* hero styles */
-.hero { background-color: $colonial-white; padding: 5em; }
+.hero { background-color: $white; padding: 5em; }
 
-.waste
+@media (min-width: 750px) 
 {
-	background: url("../img/heroes/muda-muri-mura.png") no-repeat scroll center top / 1600px auto transparent;
+	.waste
+	{
+		background: url("../img/heroes/muda-muri-mura.png") no-repeat scroll center top / 1600px auto transparent;
+	}
 }
-
