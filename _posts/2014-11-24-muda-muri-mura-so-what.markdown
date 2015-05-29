@@ -3,6 +3,7 @@ layout: post
 title: Muda Muri Mura, so what?
 published: true
 tags: [ lean, sketchnotes, illustration ]
+hero: waste
 ---
 
 Explaining what these three variations on waste were in [the Toyota Production System](http://en.wikipedia.org/wiki/Toyota_Production_System), 

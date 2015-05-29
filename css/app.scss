@@ -127,10 +127,16 @@ th, td { border-bottom: 0; }
 .list-inline { list-style-type: none; margin-bottom: 0; }
 .list-inline li { display: inline; } 
 
+.site-title { 
+	background-color: $white; 
+	padding: 2em;
+}
+
 /* hero styles */
 .hero { background-color: $colonial-white; padding: 5em; }
 
-.hero
+.waste
 {
-	background: url("img/heroes/path-to-dll.jpg") no-repeat scroll center top / 1600px auto transparent;
+	background: url("../img/heroes/muda-muri-mura.png") no-repeat scroll center top / 1600px auto transparent;
 }
+
