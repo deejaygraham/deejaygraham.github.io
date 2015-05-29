@@ -1,18 +1,25 @@
+# meta
 name: "d.j.graham's blog"
 description: "a triumph of style over substance"
-permalink: pretty
-baseurl: "http://deejaygraham.github.io"
-twitterid: deejaygraham
-twitterurl: http://twitter.com/deejaygraham
 author: d.j.graham
-email: deejaygraham@gmail.com
-emaillink: mailto:deejaygraham@gmail.com
-markdown: rdiscount
-pygments: true
+
+# options
+permalink: pretty
+markdown: kramdown
+highlighter: pygments
 paginate: 25
 exclude: [ make.cmd ]
+
+# css processing
+sass:
+  style: compressed
+  
+# external links
+twitterid: deejaygraham
+twitterurl: http://twitter.com/deejaygraham
+email: deejaygraham@gmail.com
+emaillink: mailto:deejaygraham@gmail.com
 githuburl: https://github.com/deejaygraham
 gisturl: https://gist.github.com/deejaygraham
 codeplexurl: https://www.codeplex.com/site/users/view/deejaygraham
 linkedinurl: https://uk.linkedin.com/in/derekjohngraham
-

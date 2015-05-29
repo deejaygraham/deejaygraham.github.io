@@ -10,4 +10,4 @@ jekyll build
 # copy built tags over 
 cp -r ./_site/tags/* ./tags/
 
-jekyll serve --baseurl= 
+jekyll serve 

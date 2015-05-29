@@ -21,15 +21,3 @@ deliberate **learning**, **visual** thinking, design and, of course, **code**.
 epressed or implied. Code may not compile if you do not keep up payments on it.
 No classes were harmed in the making of this blog.</small>
 
-### Things What I Have Made
-
-Here are some of the places you can see some of my open source work:
-
-* [NDifference]({{ site.baseurl }}/ndifference/) my .Net API reporting tool.
-
-* [github]({{ site.githuburl }})
- 
-* [gists]({{ site.gisturl }})
- 
-* [codeplex]({{ site.codeplexurl }})
-

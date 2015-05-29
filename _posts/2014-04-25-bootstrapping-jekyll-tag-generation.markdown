@@ -31,7 +31,6 @@ Then I wrote a batch file to invoke this script before running the test server:
 	%MsBuildPath% /nologo BuildSite.msbuild
 	
 	rem Now run server
-	jekyll serve --baseurl= 
-	
+	jekyll serve 	
 
 Now I just have to remember to commit the tag changes with the post :)

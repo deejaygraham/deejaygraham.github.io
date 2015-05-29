@@ -2,6 +2,6 @@
 <h4><i class="fa fa-tags" ></i> Tags</h4>
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
-<a class="tag" href="{{ site.baseurl }}/tags/{{ tag | first | slugify }}/" >{{ tag[0] | replace:'-', ' ' }}</a>
+<a class="tag" href="{{ site.url }}/tags/{{ tag | first | slugify }}/" >{{ tag[0] | replace:'-', ' ' }}</a>
 {% endfor %}
 <!-- tag-cloud.html -->
