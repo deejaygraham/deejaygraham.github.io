@@ -11,3 +11,5 @@ given by [Cory Doctorow](http://craphound.com/) on the general theme of
 which he writes and talks about when not writing wonderful fiction.
 
 <img src="/img/posts/doctorows-three-laws/doctorows-three-laws-hifi.png" class="img-responsive" alt="sketchnote" /> 
+
+{% include licence-boilerplate.html %}

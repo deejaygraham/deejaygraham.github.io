@@ -13,3 +13,5 @@ such clear differences in meaning, I thought a visual mnemonic might be in order
 So...
 
 <img src="/img/posts/muda-muri-mura-so-what/muda-muri-mura-so-what-hifi.png" class="img-responsive" alt="sketchnote" /> 
+
+{% include licence-boilerplate.html %}

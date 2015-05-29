@@ -19,3 +19,4 @@ to illustrate the last sentence.
 I was not hugely happy with the way this one turned out so I may revisit it 
 at a later date.
 
+{% include licence-boilerplate.html %}

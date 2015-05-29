@@ -19,3 +19,4 @@ Here's my entry:
 
 The judges have spoken and here's the link to [the list of winners](http://sketchnotearmy.com/blog/2015/2/23/sketchnoting-challenge-david-allen-on-mac-power-users-and-th.html)
 
+{% include licence-boilerplate.html %}
