@@ -6,12 +6,11 @@ layout: styleguide
 ##Colour Palette
 
 <table>
-<tr><th>Main Colour</th><th>&nbsp;</th><th colspan="6">Secondary Colours</th></tr>
+<tr><th>Main Colour</th><th>&nbsp;</th><th colspan="5">Secondary Colours</th></tr>
 <tr>
 <td style="background-color: #dd5d26; color: black; width: 50px; height: 50px;">#dd5d26</td>
 <td>&nbsp;</td>
 <td style="background-color: #ef7f3f; color: black; width: 50px; height: 50px; padding: 1em;">#ef7f3f</td>
-<td style="background-color: #a7cb68; color: black; width: 50px; height: 50px; padding: 1em;">#a7cb68</td>
 <td style="background-color: #585858; color: white; width: 50px; height: 50px; padding: 1em;">#585858</td>
 <td style="background-color: #444854; color: white; width: 50px; height: 50px; padding: 1em;">#444854</td>
 <td style="background-color: #ffedbe; color: black; width: 50px; height: 50px; padding: 1em;">#ffedbe</td>
