@@ -130,5 +130,8 @@ img {
 
 ###Sub sub heading
 
+## Hero
+
+Background image on header: 1600 x 200-450 pixels, 50% opacity in /img/heroes folder.
 
 
