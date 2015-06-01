@@ -2,7 +2,7 @@
 layout: post
 title: Cleaning MsBuild ItemGroup Includes
 published: true
-tags: [ msbuild, snippets ]
+tags: [ msbuild, code ]
 ---
 
 Here's a neat solution (that I totally stole from [Sayed Ibrahim Hashimi](http://sedodream.com/) ) 

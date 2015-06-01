@@ -2,7 +2,7 @@
 layout: post
 title: Html Link Validation
 published: true
-tags: [ csharp, snippets ]
+tags: [ csharp, code ]
 ---
 
 Writing documentation in html for processing into help files with tools like 

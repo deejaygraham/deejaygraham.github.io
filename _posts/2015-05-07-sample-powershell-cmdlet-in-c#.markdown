@@ -2,7 +2,7 @@
 layout: post
 title: Sample Powershell Cmdlet in C#
 published: true 
-tags: [ csharp, snippets, powershell ]
+tags: [ csharp, code, powershell ]
 ---
 
 Another one from the department of aide memoire. Here's the basic process to follow 

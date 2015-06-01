@@ -2,7 +2,7 @@
 layout: post
 title: Travis supports C# CI
 published: true
-tags: [ code, ci, open-source, github, ndifference, csharp, mono, cloud ]
+tags: [ code, open-source, ndifference, csharp, cloud ]
 ---
 
 It's great news that my favourite cloud CI service, [Travis CI](https://travis-ci.org/) 

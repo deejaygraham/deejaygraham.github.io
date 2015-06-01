@@ -2,7 +2,7 @@
 layout: post
 title: Javascript Message in a Bottle
 published: true
-tags: [ snippets, javascript ]
+tags: [ code ]
 ---
    
 Another from the department of uses-the-syntax-so-infrequentyly-I-nearly-always-forget.

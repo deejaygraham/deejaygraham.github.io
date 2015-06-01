@@ -2,7 +2,7 @@
 layout: post
 title: Methinks it is like a Weasel
 published: true
-tags: [ snippets, csharp ]
+tags: [ code, csharp ]
 ---
 
 I'm posting this older code example of a simple evolutionary algorithm to get 

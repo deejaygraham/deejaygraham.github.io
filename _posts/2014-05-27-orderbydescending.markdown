@@ -2,7 +2,7 @@
 layout: post
 title: OrderByDescending
 published: true
-tags: [ csharp, snippets, ms-azure ]
+tags: [ csharp, code, cloud ]
 ---
 
 Lately I've been working on some code that will delete a hierarchical list 

@@ -2,7 +2,7 @@
 layout: post
 title: Dan North on Deliberate Learning @ Foo Cafe
 published: true
-tags: [ presentation, sketchnotes ]
+tags: [ presentations, sketchnotes ]
 ---
 
 This sketchnote is from [Dan North's](https://twitter.com/tastapod) talk 

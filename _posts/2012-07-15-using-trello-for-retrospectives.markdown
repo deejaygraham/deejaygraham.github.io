@@ -2,7 +2,7 @@
 layout: post
 title: Using Trello for Retrospectives
 published: true
-tags: [ agile, retrospectives, kanban, tfs, team ]
+tags: [ agile ]
 ---
 
 One of the things we routinely struggle with when it comes to retrospective 

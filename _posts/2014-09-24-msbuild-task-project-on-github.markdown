@@ -2,7 +2,7 @@
 layout: post
 title: MsBuild Task Project on Github
 published: true
-tags: [ msbuild, open-source, github ]
+tags: [ msbuild, open-source ]
 ---
 
 As if there weren't enough MsBuild Task libraries already, I've added another. I 

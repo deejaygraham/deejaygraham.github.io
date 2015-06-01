@@ -49,6 +49,12 @@ footer
 
 .tag-cloud, .social, .other { padding-top: 2em; }
 
+.tag-cloud li 
+{ 
+	float: left; 
+	width: 33%;
+}
+
 a
 {
 	color: $hot-cinnamon;
@@ -91,6 +97,16 @@ blockquote
 	padding-left: 2em;
 	font-size: 200%;
 	font-style: italic;
+}
+
+blockquote p:before 
+{
+	color: $celeste;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
 }
 
 code
@@ -147,5 +163,19 @@ th, td { border-bottom: 0; }
 	.waste
 	{
 		background: url("../img/heroes/muda-muri-mura.png") no-repeat scroll center top / 1600px auto transparent;
+	}
+}
+
+@media only screen and (max-device-width: 480px) 
+{
+	.tag-cloud li 
+	{ 
+		float: left; 
+		width: 50%;
+	}
+	
+	.tag-cloud
+	{
+		font-size: 150%;
 	}
 }

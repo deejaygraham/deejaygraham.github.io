@@ -2,7 +2,7 @@
 layout: post
 title: Testing ItemGroups for Content
 published: true
-tags: [ snippets, msbuild ]
+tags: [ msbuild ]
 ---
 
 If you are writing MsBuild scripts that are expected to work consistently 

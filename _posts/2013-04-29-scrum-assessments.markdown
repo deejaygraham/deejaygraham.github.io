@@ -2,7 +2,7 @@
 layout: post
 title: Scrum.org Open Assessments
 published: true
-tags: [ scrum, agile ]
+tags: [ agile ]
 ---
 
 Today I discovered the [Open Assessments](https://www.scrum.org/Assessments/Open-Assessments) 

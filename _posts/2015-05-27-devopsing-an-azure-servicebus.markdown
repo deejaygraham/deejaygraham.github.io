@@ -2,7 +2,7 @@
 layout: post
 title: DevOpsing an Azure ServiceBus
 published: true 
-tags: [ azure, cloud, powershell ]
+tags: [ cloud, powershell ]
 ---
 
 I was debating with a couple of DevOps people some approaches to monitoring an Azure Service 

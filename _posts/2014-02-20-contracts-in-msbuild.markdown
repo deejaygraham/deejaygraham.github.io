@@ -2,7 +2,7 @@
 layout: post
 title: Programming by Contract in MsBuild
 published: true
-tags: [ msbuild, snippets ]
+tags: [ msbuild, code ]
 ---
 
 One of the great ways to prevent bugs creeping into your code during development 

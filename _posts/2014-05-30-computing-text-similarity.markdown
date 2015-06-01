@@ -2,7 +2,7 @@
 layout: post
 title: Computing Text Similarity
 published: true
-tags: [ csharp, snippets ]
+tags: [ csharp, code ]
 ---
 
 A part of the implementation of the [NDifference](http://deejaygraham.github.io/ndifference/) 

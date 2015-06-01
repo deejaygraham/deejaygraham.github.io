@@ -2,7 +2,7 @@
 layout: post
 title: Perils of the Anti-Agile Mindset
 published: true
-tags: [ agile, scrum, illustration ]
+tags: [ agile, illustration ]
 ---
 
 Talking with someone about the anti-agile mindset recently, I was inspired to

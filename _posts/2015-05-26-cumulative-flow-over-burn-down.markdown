@@ -2,7 +2,7 @@
 layout: post
 title: Cumulative Flow over Burning Down
 published: false 
-tags: [ agile, scrum ]
+tags: [ agile ]
 ---
 
 Today's modest proposal is that scrum teams abandon burndown charts and adopt 
