@@ -73,27 +73,27 @@ dignissim ut. Curabitur tincidunt cursus orci eget dictum.
 
 Here is the name of a <code>Csharp.Namespace.Class</code> in the middle of some text.
 
-```
+~~~
 Here is some code what I wrote
-```
+~~~
 
-```ruby
+~~~ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-```
+~~~
 
-```csharp
+~~~csharp
 System.Console.WriteLine("Hello World");
-```
+~~~
 
-```
+~~~css
 img {
 	width:auto;
-    max-width:100%;
+	max-width:100%;
 	height:auto;
 }
-```
+~~~
 
 ------
 
