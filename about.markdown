@@ -18,6 +18,6 @@ we **ship**, **test-driven** development, unit **testing**, continuous and
 deliberate **learning**, **visual** thinking, design and, of course, **code**.
 
 <small>The information in the weblog, or blog, is provided "AS IS" with no warranties
-epressed or implied. Code may not compile if you do not keep up payments on it.
-No classes were harmed in the making of this blog.</small>
+epressed or implied. Code may not compile if you do not keep up payments on it or 
+fall into technical debt. No classes were harmed in the making of this blog.</small>
 
