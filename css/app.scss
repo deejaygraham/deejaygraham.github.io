@@ -155,6 +155,11 @@ th, td { border-bottom: 0; }
 	padding: 2em;
 }
 
+.site-title a {
+	border: 0;
+	color: #000;
+}
+
 /* hero styles */
 .hero { background-color: $white; padding: 5em; }
 
