@@ -29,3 +29,4 @@ Here's an example that I often use as a starting point for discussion:
 * Application is deployed from build server not local builds
 * Application deploys without errors.
 * System tests pass.
+* Product owner sign off.
