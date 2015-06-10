@@ -3,6 +3,7 @@ layout: post
 title: No Estimates Talks
 published: true
 tags: [ video, presentations, agile ]
+hero: agile
 ---
 
 Here are a collection of some of my favourite talks on the often controversial 

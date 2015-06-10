@@ -3,6 +3,7 @@ layout: post
 title: Sketchnotes from ACE! 2014
 published: true
 tags: [ agile, illustration, sketchnotes ]
+hero: agile
 ---
 
 A few months back I was lucky enough to be accepted by [Paul Klipp](https://twitter.com/paulklipp) as one 

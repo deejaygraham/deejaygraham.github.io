@@ -3,6 +3,7 @@ layout: post
 title: Lean Coffee Rules
 published: true
 tags: [sketchnotes, presentations ]
+hero: agile
 ---
 
 Here's a sketchnote of a [talk](http://www.infoq.com/presentations/Lean-Coffee) given 

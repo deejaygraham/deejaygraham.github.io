@@ -3,6 +3,7 @@ layout: post
 title: Scrum.org Open Assessments
 published: true
 tags: [ agile ]
+hero: agile
 ---
 
 Today I discovered the [Open Assessments](https://www.scrum.org/Assessments/Open-Assessments) 

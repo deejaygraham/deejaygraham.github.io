@@ -3,6 +3,7 @@ layout: post
 title: Sketchnoting Lean Concepts
 published: true
 tags: [ sketchnotes, presentations, lean, agile ]
+hero: agile
 ---
 
 Continuing on with the quest to find many and varied things to sketchnote, 

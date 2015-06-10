@@ -3,6 +3,7 @@ layout: post
 title: Team Working Agreements
 published: true 
 tags: [ agile ]
+hero: agile
 ---
 
 The last post about definitions of done got me thinking about another under used team practice, 

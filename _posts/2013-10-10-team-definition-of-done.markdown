@@ -3,6 +3,7 @@ layout: post
 title: Team Definitions of Done
 published: true 
 tags: [ agile ]
+hero: agile
 ---
 
 Quoting from the [Scrum Guide](http://www.scrumguides.org/) :

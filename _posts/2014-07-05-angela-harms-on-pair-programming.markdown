@@ -3,6 +3,7 @@ layout: post
 title: Angela Harms on Pair Programming
 published: true
 tags: [ video, presentations, agile ]
+hero: agile
 ---
 
 Angela Harms discusses why there are such divergent views on Pair Programming 
