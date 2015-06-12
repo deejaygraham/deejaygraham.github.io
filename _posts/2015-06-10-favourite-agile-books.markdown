@@ -42,7 +42,7 @@ Andy Hunt & David Thomas
 ### Pragmatic Thinking and Learning
 Andy Hunt
 
-![pragmatic thinking learning](/img/posts/favourite-agile-books/pragmatic-thinking-learning.jpg)
+![pragmatic thinking learning](/img/posts/favourite-agile-books/pragmatic-thinking-and-learning.jpg)
 
 ---
 
