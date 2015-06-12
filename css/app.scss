@@ -96,7 +96,6 @@ header a.tag
 
 blockquote
 {
-	padding-left: 2em;
 	font-size: 200%;
 	font-style: italic;
 }
@@ -108,6 +107,15 @@ blockquote p:before
 	font-size: 4em;
 	line-height: 0.1em;
 	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+blockquote p:after
+{
+	color: $celeste;
+	content: close-quote;
+	font-size: 4em;
+	line-height: 0.1em;
 	vertical-align: -0.4em;
 }
 
