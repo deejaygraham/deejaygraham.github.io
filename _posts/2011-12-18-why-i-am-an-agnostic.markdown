@@ -2,6 +2,7 @@
 layout: post
 title: Why I am an Agnostic
 published: true
+tags: [ quote ]
 ---
 
 > When I became convinced that the Universe is natural – that
