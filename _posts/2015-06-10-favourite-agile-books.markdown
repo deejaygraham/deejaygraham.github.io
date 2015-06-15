@@ -68,19 +68,37 @@ Robert Martin
 ---
 
 ### The Clean Coder
-Rober Martin
+Robert Martin
 
 ![clean coder](/img/posts/favourite-agile-books/clean-coder.jpg)
 
 ---
 
 ### Agile Coaching
-Rachel Davies
+[Rachel Davies](http://rachelcdavies.github.io) and Liz Sedley
+
+![agile coaching](/img/posts/favourite-agile-books/agile-coaching.jpg)
+
+> To help agile teams improve, you need to work with the individuals
+> in the team. They’re the number one experts on how they work and
+> why. Tap into their expertise to reveal what’s holding them back. 
+> Listen to their concerns and ideas one-on-one to give you insights 
+> on how they can improve. Give them feedback to help them see where 
+> they can improve
 
 ---
 
 ### Agile Retrospectives
+Esther Derby and Diana Larsen
 
+![agile coaching](/img/posts/favourite-agile-books/agile-retrospectives.jpg)
+
+---
+
+### Coaching Agile Teams
+Lyssa Adkins
+
+![agile teams](/img/posts/favourite-agile-books/coaching-agile-teams.jpg)
 
 ---
 
@@ -93,7 +111,10 @@ Michael T. Nygard
 ---
 
 ### eXtreme Programming Explained 
+*Embrace Change*
 Kent Beck
+
+![xp explained](/img/posts/favourite-agile-books/extreme-programming-explained.jpg)
 
 ---
 
