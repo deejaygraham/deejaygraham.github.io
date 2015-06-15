@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Favourite Agile Books
+title: Favourite Books
 published: true
 tags: [ agile, books ]
 ---
@@ -155,9 +155,10 @@ Tom DeMarco and Timothy Lister
 
 ---
 
-
 ### The Practice of Programming 
 Brian W. Kernighan & Rob Pike
+
+![p of p](/img/posts/favourite-agile-books/practice-of-programming.jpg)
 
 ---
 
@@ -180,11 +181,15 @@ Peter Coad, David North, Mark Mayfield
 ### Working Effectively with Legacy Code 
 Michael Feathers
 
+![working effectively](/img/posts/favourite-agile-books/working-effectively-with-legacy-code.jpg)
+
 ---
 
 
 ### 97 Things Every Programmer Should Know
 Ed. Kevlin Henney
+
+![97 things](/img/posts/favourite-agile-books/ninety-seven-things.jpg)
 
 ---
 
@@ -195,15 +200,24 @@ Harold Abelson
 
 ---
 
-
----
-
 ### The Sketchnote Handbook
 Mike Rohde
+
+![sketchnote](/img/posts/favourite-agile-books/sketchnote-handbook.jpg)
 
 ---
 
 ### Brain Rules
+John Medina
+
+![brain rules](/img/posts/favourite-agile-books/brain-rules.jpg)
+
+---
+
+### A Mind of it's Own
+Cordelia Fine
+
+![Mind](/img/posts/favourite-agile-books/a-mind-of-its-own.jpg)
 
 ---
 
