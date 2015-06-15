@@ -1,0 +1,11 @@
+---
+layout: post
+title: Parameterize from Above
+published: true 
+tags: [  quote ]
+---
+
+> Yup. PfA. Replace magic with engineering.
+
+[Kevlin Henney](http://www.curbralan.com/)
+
