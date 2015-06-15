@@ -153,6 +153,12 @@ h1, h2, h3, h4, h5, h6
 	font-family: $heading-font-stack; 
 }
 
+h2, h3, h4
+{
+	color: rgba(0,0,0,0.44);
+	letter-spacing:-0.02em;
+}
+
 th, td { border-bottom: 0; }
 
 .no-list-dot { list-style-type: none; }
