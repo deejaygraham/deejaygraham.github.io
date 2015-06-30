@@ -20,7 +20,7 @@ From that post:
 
 md c:\tools; 
 Import-Module bitstransfer; 
-Start-BitsTransfer http://dsazure.blob.core.windows.net/azuretools/AzureTools.exe c:\tool\AzureTools.exe; 
+Start-BitsTransfer http://dsazure.blob.core.windows.net/azuretools/AzureTools.exe c:\tools\AzureTools.exe; 
 c:\tools\AzureTools.exe
 
 ~~~
