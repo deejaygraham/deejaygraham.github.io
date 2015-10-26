@@ -1,0 +1,30 @@
+---
+layout: post
+title: Reveal.js Cheatsheet
+published: false 
+tags: [ presentations ]
+---
+
+I've started using [reveal.js](https://github.com/hakimel/reveal.js/) and wanted to collect together 
+and share a couple of techniques I've used while building my most recent presentation.
+
+!Auto-advancing slides
+
+~~~
+<section data-autoslide="2000">
+					<h1>How dogs see the world</h1>
+				</section>
+					
+				<section data-autoslide="1000" data-background="#dddddd">
+					<h2>Slide Backgrounds</h2>
+				</section>
+
+				<section  data-autoslide="0" data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section> 
+~~~
+
