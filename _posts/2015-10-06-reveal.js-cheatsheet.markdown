@@ -1,30 +1,29 @@
 ---
 layout: post
 title: Reveal.js Cheatsheet
-published: false 
+published: true 
 tags: [ presentations ]
 ---
 
 I've started using [reveal.js](https://github.com/hakimel/reveal.js/) and wanted to collect together 
-and share a couple of techniques I've used while building my most recent presentation.
+and share a couple of keyboard shortcuts I have used when giving presentations with it.
 
-!Auto-advancing slides
+## Full-Screen Mode
 
-~~~
-<section data-autoslide="2000">
-					<h1>How dogs see the world</h1>
-				</section>
-					
-				<section data-autoslide="1000" data-background="#dddddd">
-					<h2>Slide Backgrounds</h2>
-				</section>
+Press *F* to go full screen and *Esc* to cancel.
 
-				<section  data-autoslide="0" data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section> 
-~~~
+## Fade Out
 
+To hide a slide temporarily use the *B* or *.* (dot) key.
+
+## Speaker View
+
+Enabled by using *S*. Shows a timer and content of slides with &lt;aside&gt; markup.
+
+## Fast Navigation
+
+Show the slide overview using *Esc*. 
+
+## Zoom
+
+Use the mouse to *Alt+Click* to zoom in and out.
