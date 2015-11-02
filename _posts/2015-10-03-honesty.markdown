@@ -1,0 +1,20 @@
+---
+layout: post
+title: Honesty
+published: true 
+tags: [ illustration ]
+---
+
+# Coniston's Honest Shop
+
+With this whole sketchnote mularky, I've started to have more of an appreciation of typography 
+and hand-written type. We were visiting Coniston recently and stopped into the Honest Shop. This is 
+an unstaffed shop that relies on the customer's honesty to pay for anything they buy. I particularly 
+liked the documentation provided which is written on the wall.
+
+![shop rules](/img/posts/honesty/coniston-honest-shop.png "Shop rules")
+
+The shop door is also a lovely illustration of the signwriter's art.
+
+![shop door](/img/posts/honesty/coniston-honest-shop-door.png "Shop door")
+
