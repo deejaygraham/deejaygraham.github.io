@@ -3,6 +3,7 @@ layout: post
 title: Enabling RDP Access to Azure Instances
 published: true 
 tags: [ cloud ]
+hero: cloud
 ---
 
 Enabling RDP access is often, and probably should be, a last resort for debugging Azure 

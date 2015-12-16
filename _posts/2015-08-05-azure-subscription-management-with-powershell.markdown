@@ -3,6 +3,7 @@ layout: post
 title: Azure subscription management with PowerShell
 published: true 
 tags: [ cloud  ]
+hero: cloud
 ---
 
 ## .PublishSettings

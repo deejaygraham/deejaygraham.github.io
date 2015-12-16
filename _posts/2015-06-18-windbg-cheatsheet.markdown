@@ -3,6 +3,7 @@ layout: post
 title: Windbg Cheatsheet
 published: true 
 tags: [ cloud ]
+hero: cloud
 ---
 
 A quick list of the most common windbg commands I use in Azure deployments.

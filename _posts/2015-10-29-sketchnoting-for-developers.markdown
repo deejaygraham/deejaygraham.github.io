@@ -36,15 +36,22 @@ and get more "serious" and "professional" we are gradually encouraged to leave t
 childish things behind. Sometimes when we are asked for charts and visuals, we're tempted to 
 reach for Excel or Visio to create our "professional-looking" artefacts.
 
-Thankfully, techniques like Visual Thinking, Visual Problem Solving and Visual Notetaking/Sketchnoting are starting to be adopted by the agile community in all kinds of ways. This adoption, like most agile technqiues, is driven by their effectiveness for communication and learning, rather than tradition. 
+Thankfully, techniques like Visual Thinking, Visual Problem Solving and Visual 
+Notetaking/Sketchnoting are starting to be adopted by the agile community in all 
+kinds of ways. This adoption, like most agile technqiues, is driven by their effectiveness 
+for communication and learning, rather than tradition. 
 
 It's caught on to such a degree in the agile community, sketchnoters are being hired to work 
 at conferences, capturing content as a way of documenting the presentations beyond video.
 
-At the most recent big "A" Agile conference in Washington D.C. some of the delegates put together their sketchnotes into an ebook that you can download for free from HERE - PUT LINK HERE !!!.
+At the most recent big "A" Agile conference in Washington D.C. some of the delegates put together 
+their sketchnotes into an ebook that you can [download for free](http://kl.la/Agile2015LittleBook)
 
-Atlassian (the company who make the Jira tool) are one example of a company who get everyone involved in conversations about how the software should look, behave, the priorities for work. 
-All the work is made visible on walls around the business. They use visual techniques for brainstorming, working out problems from user stories and lots of others. 
+Atlassian (the company who make the Jira tool) are one example of a company who get everyone 
+involved in conversations about how the software should look, behave, the priorities for work. 
+
+All the work is made visible on walls around the business. They use visual techniques for 
+brainstorming, working out problems from user stories and lots of others. 
 
 "The winner is the best idea not the best artist".
 

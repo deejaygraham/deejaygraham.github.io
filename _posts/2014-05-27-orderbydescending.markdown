@@ -3,6 +3,7 @@ layout: post
 title: OrderByDescending
 published: true
 tags: [ csharp, code, cloud ]
+hero: cloud
 ---
 
 Lately I've been working on some code that will delete a hierarchical list 

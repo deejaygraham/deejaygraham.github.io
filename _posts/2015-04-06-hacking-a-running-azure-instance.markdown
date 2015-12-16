@@ -3,6 +3,7 @@ layout: post
 title: Hacking a Running Azure Instance
 published: true 
 tags: [ cloud ]
+hero: cloud
 ---
 
 By which I mean, temporarily modifying your application on a live instance, rather than 

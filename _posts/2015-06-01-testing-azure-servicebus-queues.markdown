@@ -3,6 +3,7 @@ layout: post
 title: Testing Azure ServiceBus Queues
 published: true 
 tags: [ cloud, csharp ]
+hero: cloud
 ---
 
 Here's a quick example of using Microsoft Azure's ServiceBus message queue to decouple 

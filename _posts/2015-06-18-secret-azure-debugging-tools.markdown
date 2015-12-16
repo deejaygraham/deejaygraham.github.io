@@ -3,6 +3,7 @@ layout: post
 title: Secret Azure Debugging Tools
 published: true 
 tags: [ cloud ]
+hero: cloud
 ---
 
 I recently stumbled on a [blog post](http://blogs.msdn.com/b/kwill/archive/2013/08/26/azuretools-the-diagnostic-utility-used-by-the-windows-azure-developer-support-team.aspx) 
