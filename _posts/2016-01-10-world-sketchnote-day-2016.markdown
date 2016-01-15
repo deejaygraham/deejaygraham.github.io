@@ -7,7 +7,7 @@ tags: [ sketchnotes ]
 
 The 11th of January 2016 is going to be the first World Sketchnote Day. 
 
-![logo](/img/posts/world-sketchnote-day-2016/wsd-logo-400px.png  "logo"))
+![logo](/img/posts/world-sketchnote-day-2016/wsd-logo-400px.png  "logo")
 
 It's an opportunity for practitioners from all over the world to celebrate and publicise the 
 technique to those who don't know about it yet!
