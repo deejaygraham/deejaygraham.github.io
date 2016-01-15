@@ -71,14 +71,15 @@ puts "Creating post in #{path_to_post} "
 add_image_link = false
 
 # check if image supplied - copy it and put a reference to it in the post
-if File.exists?(options[:image])
+image_post_subfolder = 'img/posts'
+path_to_image_posts_folder = File.join(current_folder, image_post_subfolder)
+new_post_image_folder = File.join(path_to_image_posts_folder, safe_title)
 
+# create directory for this post, even if we don't have an image yet.
+Dir.mkdir(new_post_image_folder) unless Dir.exists?(new_post_image_folder)
+
+if File.exists?(options[:image])
 	add_image_link = true
-	image_post_subfolder = 'img/posts'
-	path_to_image_posts_folder = File.join(current_folder, image_post_subfolder)
-	new_post_image_folder = File.join(path_to_image_posts_folder, safe_title)
-	# create directory for this post
-	Dir.mkdir(new_post_image_folder) unless Dir.exists?(new_post_image_folder)
 	# get file name only 
 	# create new path and copy the file
 	image_filename = File.split(options[:image])[1]
@@ -116,6 +117,9 @@ File.open(path_to_post, "w") do | file |
    if add_image_link
 		file.puts 'Imported this image: '
 		file.puts "![image](/#{image_post_subfolder}/#{safe_title}/#{image_filename})"
+   else
+	# Always struggle with the syntax and folder name for images.
+		file.puts "![example image](/img/posts/#{safe_title}/example-image.png)"
    end
 
 end
