@@ -3,6 +3,7 @@ layout: post
 title: Finding and using user certificates in PowerShell
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 Accessing a certificate store from PowerShell is another one of those incantations that never 

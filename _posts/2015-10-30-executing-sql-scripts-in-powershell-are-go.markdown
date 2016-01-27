@@ -3,6 +3,7 @@ layout: post
 title: Executing SQL Scripts in PowerShell are GO
 published: true
 tags: [ powershell  ]
+hero: power
 ---
 
 Another quick snippet showing how to split a SQL script at the GO statements to execute a potentially large set 

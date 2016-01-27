@@ -3,6 +3,7 @@ layout: post
 title: Sample Powershell Cmdlet in C#
 published: true 
 tags: [ csharp, code, powershell ]
+hero: power
 ---
 
 Another one from the department of aide memoire. Here's the basic process to follow 

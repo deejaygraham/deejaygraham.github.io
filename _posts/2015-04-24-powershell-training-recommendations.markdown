@@ -3,6 +3,7 @@ layout: post
 title: PowerShell Training Recommendations
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 Microsoft Virtual Academy is a training resource I didn't know about until I had it recommended to me 

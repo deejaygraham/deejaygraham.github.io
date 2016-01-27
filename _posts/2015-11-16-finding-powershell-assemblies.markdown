@@ -3,6 +3,7 @@ layout: post
 title: Finding Powershell Assemblies
 published: true 
 tags: [ powershell  ]
+hero: power
 ---
 
 I have been having problems with the Start-Transcript command working on some machines and not on others (particularly 

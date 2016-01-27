@@ -3,6 +3,7 @@ layout: post
 title: Search and Replace in Powershell
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 In scenarios where we keep configuration information in app.config or web.config files (or .cscfg's even), 

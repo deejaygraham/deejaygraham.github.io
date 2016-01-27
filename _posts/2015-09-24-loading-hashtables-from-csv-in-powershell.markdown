@@ -3,6 +3,7 @@ layout: post
 title: Loading Hashtables from CSV in Powershell
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 Yesterday I mentioned that we should probably keep "secrets" we want to use in a production web.config out 

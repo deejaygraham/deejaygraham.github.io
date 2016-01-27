@@ -3,6 +3,7 @@ layout: post
 title: Waiting for a Timeout in PowerShell
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 I've been working on continuous deployment of an application to Azure which we do by

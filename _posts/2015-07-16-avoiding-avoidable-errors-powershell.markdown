@@ -3,6 +3,7 @@ layout: post
 title: Avoiding avoidable errors in PowerShell
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 Two wonderful features of PowerShell that don't seem to get used enough are embodied by the 

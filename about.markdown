@@ -36,6 +36,12 @@ you can and cannot use the material for. In short:
 Not part of the licence but I'd also really like it if you would let me know, 
 by email or tweet, what you did with it or how it helped you. 
 
+### Other Illustrations
+
+You will notice some of the "hero" images on some posts are not drawn by me. They 
+are from [Old Book Illustrations](http://www.oldbookillustrations.com/), a searchable 
+site of public domain illustrations. 
+
 <small>The information in the weblog, or blog, is provided "AS IS" with no warranties
 epressed or implied. Code may not compile if you do not keep up payments on it or 
 fall into technical debt. No classes were harmed in the making of this blog.</small>

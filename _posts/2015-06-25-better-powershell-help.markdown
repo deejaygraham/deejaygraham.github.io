@@ -3,6 +3,7 @@ layout: post
 title: Better PowerShell Help
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 Here's a tip I always forget about when trying to read the help for a function in the ISE: you can send the 

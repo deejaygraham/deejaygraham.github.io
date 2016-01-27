@@ -3,6 +3,7 @@ layout: post
 title: Restricting Powershell Cmdlet Values
 published: true 
 tags: [ powershell ]
+hero: power
 ---
 
 In any program or script, it's (nearly) always a good thing to validate user input 
