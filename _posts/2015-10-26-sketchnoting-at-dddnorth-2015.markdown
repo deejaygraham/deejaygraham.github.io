@@ -12,9 +12,15 @@ of October 2015. I was speaking there for the first time and chose [sketchnoting
 as my topic. At [Richard Dalton](http://twitter.com/richardadalton)'s suggestion, the organizers put my 
 talk right at the start of the conference so delegates would get the chance to try out their new skills 
 for rest of the day. 
- 
+
+![agenda](/img/posts/sketchnoting-at-dddnorth-2015/agenda.png "Agenda") 
+
 I pitched this talk for all developers regardless of drawing ability so I thought it would be fun to encourage 
-everyone at the talk to try it out at at least once. A few weeks before, Mike Rohde had offered me a copy of the 
+everyone at the talk to try it out at at least once. 
+
+![abstract](/img/posts/sketchnoting-at-dddnorth-2015/abstract.png "Abstract") 
+
+A few weeks before, Mike Rohde had offered me a copy of the 
 Sketchnote Handbook to give away so I set up a challenge at the end of my talk. The challenge was to sketchnote any 
 talk during the conference and tweet a picture of it with the *#dddnorth* hashtag, I would then pick one at random 
 to win the book. Here are the submissions we had:
