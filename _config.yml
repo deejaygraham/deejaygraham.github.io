@@ -5,8 +5,6 @@ author: d.j.graham
 
 # options
 permalink: pretty
-markdown: kramdown
-highlighter: pygments
 paginate: 25
 exclude: [ make.cmd ]
 
