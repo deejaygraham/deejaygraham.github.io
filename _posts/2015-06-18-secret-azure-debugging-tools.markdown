@@ -17,14 +17,9 @@ From that post:
 * Open a PowerShell console
 * paste and run the command
 
-~~~
+<script src="https://gist.github.com/deejaygraham/d1c6d861d971a0f86094.js"></script>
 
-md c:\tools; 
-Import-Module bitstransfer; 
-Start-BitsTransfer http://dsazure.blob.core.windows.net/azuretools/AzureTools.exe c:\tools\AzureTools.exe; 
-c:\tools\AzureTools.exe
-
-~~~
+[Download](https://gist.github.com/deejaygraham/d1c6d861d971a0f86094)
 
 ![powershell](/img/posts/secret-azure-tools/powershell-tools-install.png)
 
