@@ -34,3 +34,43 @@ Most of the guidance when you come to refactor your powershell scripts into cmdl
 doesn't talk about this kind of scenario.  
 
 ![example image](/img/posts/using-custom-module-paths-in-powershell/example-image.png)
+
+# Finding the Path
+
+~~~
+
+If ($MyInvocation.MyCommand.CommandType -eq 'ExternalScript') {
+	
+	$RootPath = Split-Path -Parent $MyInvocation.MyCommand.Path
+	
+} Else {
+	
+	$RootPath = Get-Location
+}
+
+$PathModule = Join-Path -Path $rootPath -ChildPath "Modules"
+
+~~~
+
+# Permanent Installation
+
+
+$CurrentValue = [Environment]::GetEnvironmentVariable("PSModulePath")
+if (!$CurrentValue.contains($pathModule)) {
+	[Environment]::SetEnvironmentVariable("PSModulePath", $CurrentValue + ";$PathModule")
+}
+
+
+# Per session installation
+
+$PathModule = Join-Path -Path $RootPath -ChildPath "Modules"
+$env:PSModulePath = $env:PSModulePath + ";$PathModule"
+
+
+DoSomethingController.ps1
++ Modules
+	MyModule
+		MyModule.psd1
+		MyFunction.ps1
+		MyOtherFunction.ps1
+		
