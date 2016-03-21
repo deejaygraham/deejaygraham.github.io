@@ -16,7 +16,7 @@ thing but with slightly different conditions.
 
 Using a Property Function makes this so much more elegant and snappier if you are able to 
 use MsBuild with .Net 4 or 4.5. Here's an example of a Condition checking the content of 
-a property.
+a property using the String property function Contains.
 
 ~~~xml
 
@@ -24,3 +24,12 @@ a property.
 
 ~~~
 
+You can also use static .Net methods like DateTime.Now using this syntax:
+
+~~~xml
+
+    <PropertyGroup>
+        <BuildTime>$([System.DateTime]::Now)</BuildTime>
+    </PropertyGroup>    
+
+~~~
