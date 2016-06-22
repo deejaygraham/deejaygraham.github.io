@@ -1,8 +1,17 @@
 ---
-layout: post
+layout: sketchnote
 title: Super Technical Sketchnoting
 published: true
 tags: [ sketchnotes, presentations, ruby ]
+sketchnote:
+    url: '/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.png'
+    alt: 'sketchnote'
+	source:
+		name:'Programming with Nothing'
+		url: 'http://rubymanor.org/3/videos/programming_with_nothing/'
+    speaker:
+        name: 'Tom Stuart'
+        url: 'http://www.twitter.com/tomstuart'
 ---
 
 After I posted some of my sketchnotes from [DDD North 2014](http://www.dddnorth.co.uk/) 
@@ -30,11 +39,4 @@ to capture everything.
 I posted a snap of the sketchnote to twitter and Tom was kind enough to reply:
 
 ![tweet](/img/posts/super-technical-sketchnoting/tom-stuart-reaction.jpg)
-
-And here's the result:
-
-<img src="/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.png" class="img-responsive" alt="sketchnote" />
-
-{% include licence-boilerplate.html %}
-
 

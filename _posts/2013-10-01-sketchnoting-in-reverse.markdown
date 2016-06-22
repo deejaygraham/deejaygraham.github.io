@@ -1,8 +1,11 @@
 ---
-layout: post
+layout: sketchnote
 title: Sketchnoting in Reverse
 published: true
 tags: [ sketchnotes, deliberate-practice, presentations ]
+sketchnote:
+    url: '/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png'
+    alt: 'Sketchote update'
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by 
@@ -56,8 +59,4 @@ I redid it and enhanced it based on feedback after giving the talk a few
 more times.
 </div>
 
-Here's a cleaned up scanned image of the new version of the sketchnote:
-
-<img src="/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png" class="img-responsive" alt="Sketchote update" />
-
-{% include licence-boilerplate.html %}
+Here's a cleaned up scanned image of the new version of the sketchnote

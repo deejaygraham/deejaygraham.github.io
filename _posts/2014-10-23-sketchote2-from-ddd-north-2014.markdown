@@ -1,8 +1,17 @@
 ---
-layout: post
+layout: sketchnote
 title: Sketchnote 2 from DDDNorth 2014
 published: true
 tags: [ sketchnotes, presentations ]
+sketchnote:
+    url: '/img/posts/sketchote2-from-ddd-north-2014/dddnorth-2014-burn-out-talk-vanilla-lofi.png'
+    alt: 'ddd north sketchnote'
+	    event:
+        name: 'DDD North 2014'
+        url: 'http://www.dddnorth.co.uk'
+    speaker:
+        name: 'Richard Dalton'
+        url: 'http://www.twitter.com/richardadalton'
 ---
 
 Here's another sketchnote from the [Developer Developer Developer North 
@@ -14,8 +23,4 @@ on how developers are susceptible to burn out and what you can do to recognise
 them symptoms and how to avoid it.
 
 ![ddd north](/img/posts/sketchote2-from-ddd-north-2014/session-summary.png)
-
-<img src="/img/posts/sketchote2-from-ddd-north-2014/dddnorth-2014-burn-out-talk-vanilla-lofi.png" class="img-responsive" alt="ddd north sketchnote" />
-
-{% include licence-boilerplate.html %}
 

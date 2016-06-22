@@ -1,15 +1,24 @@
 ---
-layout: post
+layout: sketchnote
 title: Lean Coffee Rules
 published: true
 tags: [sketchnotes, presentations ]
 hero: agile
+sketchnote:
+    url: '/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png'
+    alt: 'Lean Coffee'
+    event:
+        name: 'Infoq'
+        url: 'http://www.infoq.com'
+    source:
+        name: 'Lean Coffee'
+        url: http://www.infoq.com/presentations/Lean-Coffee
+    speaker:
+        name: '@adamyuret'
+        url: 'https://twitter.com/adamyuret'
 ---
 
-Here's a sketchnote of a [talk](http://www.infoq.com/presentations/Lean-Coffee) given 
-by [Adam Yuret](https://twitter.com/adamyuret) about "Lean Coffee", an agile way of
+Here's a sketchnote about "Lean Coffee", an agile way of
 running a conversation or meeting.
 
-<img src="/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png" class="img-responsive" alt="Lean Coffee" />
 
-{% include licence-boilerplate.html %}

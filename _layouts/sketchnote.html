@@ -13,16 +13,15 @@
 				{{ content }}
 				
 				<div class="sketchnote">
-					<img src="{{ page.sketchnote.url }}" alt="sketchnote" />
+					<img src="{{ page.sketchnote.url }}" class="img-responsive" alt="{{ page.sketchnote.alt }}" />
 				</div>
-				<div class="tweet-post">{% include tweet-link.html %}</div>
 			</article>	
 		</div>
 	</div>
 	<div class="row">
 		<div class="four columns meta">
 		{% if page.sketchnote.event %}
-			<h3>About the event</h3>
+			<h4>About the event</h4>
 			<p>
 			{% if page.sketchnote.event.url %}
 				<a href="{{ page.sketchnote.event.url }}">{{ page.sketchnote.event.name }}</a>
@@ -34,7 +33,7 @@
 		</div>	
 		<div class="four columns meta">
 		{% if page.sketchnote.source %}
-			<h3>Source</h3>
+			<h4>Source</h4>
 			<p>
 			{% if page.sketchnote.source.url %}
 				<a href="{{ page.sketchnote.source.url }}">{{ page.sketchnote.source.name }}</a>
@@ -46,7 +45,7 @@
 		</div>	
 		<div class="four columns meta">
 		{% if page.sketchnote.speaker %}
-			<h3>About the speaker</h3>
+			<h4>About the speaker</h4>
 			<p>
 			{% if page.sketchnote.speaker.url %}
 				<a href="{{ page.sketchnote.speaker.url }}">{{ page.sketchnote.speaker.name }}</a>
@@ -60,7 +59,8 @@
 	<div class="row">
 		<div class="twelve columns meta">
 			{% include licence-boilerplate.html %}
-		</div>		
+		</div>
+		<div class="tweet-post">{% include tweet-link.html %}</div>
 	</div>	
 </div>
 {% include page-footer.html %}

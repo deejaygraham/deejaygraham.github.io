@@ -1,8 +1,11 @@
 ---
-layout: post
+layout: sketchnote
 title: My Sketchnoting Workflow for Presentations
 published: true
 tags: [ sketchnotes, presentations ]
+sketchnote:
+    url: '/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png'
+    alt: 'Sketchnote process'
 ---
 
 It sounds very meta but I thought I would have a go at sketching out the 
@@ -23,8 +26,3 @@ The steps are roughly in this order (in case you can't read my writing):
 * Take the sketchnote to the presentation
 * Profit!
 
-Here's the finished article:
-
-<img src="/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png" class="img-responsive" alt="Sketchote process" />
-
-{% include licence-boilerplate.html %}
