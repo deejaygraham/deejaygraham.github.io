@@ -55,10 +55,10 @@ title = ARGV[0]
 safe_title = title.downcase.strip.gsub(' ', '-')
 post_filename = options[:date] + '-' + safe_title + options[:extension]
 
-# If there is a post subfolder, create the post file
+# If there is a drafts subfolder, create the post file
 # there rather than in the current directory.
 current_folder = Dir.pwd
-posts_subfolder = '_posts'
+posts_subfolder = '_drafts'
 path_to_post_folder = File.join(current_folder, posts_subfolder)
 
 path_to_post = Dir.exists?(path_to_post_folder) ? File.join(path_to_post_folder, post_filename) : File.join(current_folder, post_filename)
@@ -92,7 +92,6 @@ end
 yaml = {
   'layout' => "#{options[:layout]}",
   'title' => title,
-  'published' => "#{options[:publish]} ",
   'tags' => "[ #{options[:tags]} ]" 
 }
 
