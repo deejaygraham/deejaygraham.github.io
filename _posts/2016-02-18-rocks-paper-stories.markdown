@@ -2,6 +2,8 @@
 layout: sketchnote
 title: Rocks, Paper ... Stories
 tags: [ sketchnotes, presentations  ]
+tweet: true
+thumbnail: "posts/rocks-paper-stories/rock-paper-stories-ching.png"
 sketchnote:
   url: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.png"
   alt: "sketchnote"
