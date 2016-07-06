@@ -7,7 +7,7 @@ sketchnote:
   url: "/img/posts/sketchnoting-lean-concepts/sketchnoting-lean-concepts-hifi.png"
   alt: "sketchnote"
   source:
-    name:"Reach for the Stars"
+    name: "Reach for the Stars"
     url: "https://www.youtube.com/watch?v=JYHjt78Iceg"
   event:
     name: "Lean Kanban Day 2013"
