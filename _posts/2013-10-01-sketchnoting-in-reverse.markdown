@@ -1,11 +1,10 @@
 ---
 layout: sketchnote
 title: Sketchnoting in Reverse
-published: true
 tags: [ sketchnotes, deliberate-practice, presentations ]
 sketchnote:
-    url: '/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png'
-    alt: 'Sketchote update'
+  url: "/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png"
+  alt: "Sketchote update"
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by 

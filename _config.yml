@@ -6,7 +6,7 @@ author: d.j.graham
 # options
 permalink: pretty
 paginate: 25
-exclude: [ make.cmd ]
+exclude: [ make.cmd, build.sh, buildsite.msbuild, post.rb ]
 
 # css processing
 sass:

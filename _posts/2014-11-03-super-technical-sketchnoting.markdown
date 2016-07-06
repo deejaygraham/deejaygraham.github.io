@@ -1,17 +1,16 @@
 ---
 layout: sketchnote
 title: Super Technical Sketchnoting
-published: true
 tags: [ sketchnotes, presentations, ruby ]
 sketchnote:
-    url: '/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.png'
-    alt: 'sketchnote'
-	source:
-		name:'Programming with Nothing'
-		url: 'http://rubymanor.org/3/videos/programming_with_nothing/'
-    speaker:
-        name: 'Tom Stuart'
-        url: 'http://www.twitter.com/tomstuart'
+  url: "/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.png" 
+  alt: "sketchnote"
+  source:
+    name: "Programming with Nothing"
+    url:  "http://rubymanor.org/3/videos/programming_with_nothing/"
+  speaker:
+    name: "Tom Stuart"
+    url:  "http://www.twitter.com/tomstuart"
 ---
 
 After I posted some of my sketchnotes from [DDD North 2014](http://www.dddnorth.co.uk/) 

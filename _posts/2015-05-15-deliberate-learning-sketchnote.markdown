@@ -1,20 +1,19 @@
 ---
 layout: sketchnote
 title: Dan North on Deliberate Learning @ Foo Cafe
-published: true
 tags: [ presentations, sketchnotes ]
 sketchnote:
-    url: '/img/posts/deliberate-learning-sketchnote/dan-north-deliberate-learning.png'
-    alt: 'deliberate practice'
-    event:
-        name: 'FooCafe'
-        url: 'http://www.foocafe.org/'
-    source:
-        name: 'Deliberate Learning'
-        url: 'https://www.youtube.com/watch?v=SPj-23z-hQA'
-    speaker:
-        name: 'Dan North'
-        url: 'https://twitter.com/tastapod'
+  url: "/img/posts/deliberate-learning-sketchnote/dan-north-deliberate-learning.png"
+  alt: "deliberate practice"
+  event:
+    name: "FooCafe"
+    url: "http://www.foocafe.org/"
+  source:
+    name: "Deliberate Learning"
+    url: "https://www.youtube.com/watch?v=SPj-23z-hQA"
+  speaker:
+    name: "Dan North"
+    url: "https://twitter.com/tastapod"
 ---
 
 This sketchnote is from [Dan North's](https://twitter.com/tastapod) talk 

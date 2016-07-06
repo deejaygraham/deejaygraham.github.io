@@ -1,11 +1,10 @@
 ---
 layout: sketchnote
 title: My Sketchnoting Workflow for Presentations
-published: true
 tags: [ sketchnotes, presentations ]
 sketchnote:
-    url: '/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png'
-    alt: 'Sketchnote process'
+  url: "/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png"
+  alt: "Sketchnote process"
 ---
 
 It sounds very meta but I thought I would have a go at sketching out the 
