@@ -11,7 +11,7 @@
 							CreateTagsFolder;
 							CopyNewTags" />
 	
-	<Target Name="RemoveTagsFolder">
+	<Target Name="RemoveTagsFolder" Condition="false">
 		
 		<ItemGroup>
 			<FilesToDelete Include="$(TagsFolder)**\*.*" />
@@ -25,7 +25,7 @@
 		
 	</Target>
 	
-	<Target Name="CreateTagsFolder">
+	<Target Name="CreateTagsFolder" Condition="false">
 
 		<MakeDir 
 				Directories="$(TagsFolder)"
@@ -46,7 +46,9 @@
 		</ItemGroup>
 		
 		<Copy SourceFiles="@(FilesToCopy)"
-			DestinationFolder="$(TagsFolder)%(RecursiveDir)" />
+			DestinationFolder="$(TagsFolder)%(RecursiveDir)" 
+			SkipUnchangedFiles="true"
+			/>
 	</Target>
 
 </Project>
