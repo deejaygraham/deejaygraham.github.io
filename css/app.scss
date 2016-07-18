@@ -37,10 +37,16 @@ header p
 	padding: 2em 0; 
 }
 
+.meta 
+{ 
+	padding: 0 0 2em 0; 
+} 
+
 .content p
 {
 	line-height: 2;
 }
+
 
 footer 
 { 
@@ -151,6 +157,7 @@ img
 h1, h2, h3, h4, h5, h6 
 { 
 	font-family: $heading-font-stack; 
+	font-weight: 600;
 }
 
 h2, h3, h4

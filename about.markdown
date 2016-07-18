@@ -8,7 +8,9 @@ layout: vanilla
 My name is Derek Graham and this is my personal blog. 
 
 I'm a Principal Software Developer working for a very popular business 
-software company in the North East of England. 
+software company in the North East of England. I also co-organize [NE Bytes](http://nebytes.net), 
+a monthly .Net community get-together at [Campus North](http://campusnorth.co.uk) 
+in Newcastle city centre.
 
 I can't be sure that the opinions expressed here are my own so they definitely 
 don't represent the views of my employer.
@@ -44,5 +46,5 @@ site of public domain illustrations.
 
 <small>The information in the weblog, or blog, is provided "AS IS" with no warranties
 epressed or implied. Code may not compile if you do not keep up payments on it or 
-fall into technical debt. No classes were harmed in the making of this blog.</small>
+fall into technical debt. No monads were harmed in the making of this blog.</small>
 
