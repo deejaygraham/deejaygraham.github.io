@@ -23,17 +23,17 @@ $mako: #444854;
 
 // colour values
 $background-colour: $white;
-$text-colour: $mako;
+$text-colour: #393939;
 
-$negative-background-colour: $chicago;
-$negative-text-colour: $white;
+$negative-background-colour: $text-colour;
+$negative-text-colour: $background-colour;
 
-$primary-colour : $hot-cinnamon;
-$highlight-colour: $jaffa;  
+$primary-colour : #ff5a09;
+$highlight-colour: #ff9900;  
 
 $light-subdued-colour: $gallery;
 $medium-subdued-colour: $celeste;
-$dark-subdued-colour: $chicago;
+$dark-subdued-colour: #6e6e6e;
 
 $half-transparent-background-colour: rgba(255,255,255, 0.5);
 $half-transparent-text-color: rgba(0,0,0, 0.44);
@@ -61,6 +61,11 @@ footer {
 	background-color: $negative-background-colour; 
 	color: $negative-text-colour; 
 	padding-bottom: 2em;
+
+	h2, h3, h4 {
+		color: $half-transparent-text-color;
+		letter-spacing:-0.02em;
+	}
 }
 
 .tag-cloud, .social, .other { 
@@ -171,11 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
 
-// headings at bottom
-h2, h3, h4 {
-	color: $half-transparent-text-color;
-	letter-spacing:-0.02em;
-}
+
 
 th, td { 
 	border-bottom: 0; 
