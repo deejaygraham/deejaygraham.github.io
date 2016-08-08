@@ -18,6 +18,7 @@ self-defense and survival is forced upon animals as well as upon men by the nece
 uniting nervous systems even more than by the necessity of uniting physical strength. Societies, 
 both animal and human, might almost be regarded as huge co-operative nervous systems. 
 
+
 While animals use only a few limited cries, however, human beings use extremely complicated 
 systems of sputtering, hissing, gurgling, clucking, and cooing noises called language, with 
 which they express and report what goes on in their nervous systems. Language is, in 
