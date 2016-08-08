@@ -7,8 +7,8 @@
 			<article class="post" id="{{ page.id }}">
 				<header>
 					<h2>{{ page.title }}</h2>
-					<p><i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }}</p>
-					<p><i class="fa fa-tags"></i> {% include post-tags.html tags=page.tags %}</p>
+					{% if page.date %}<p><i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }}</p>{% endif %}
+					{% if page.tags %}<p><i class="fa fa-tags"></i> {% include post-tags.html tags=page.tags %}</p>{% endif %}
 				</header>
 				{{ content }}
 				
