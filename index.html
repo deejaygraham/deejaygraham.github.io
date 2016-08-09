@@ -5,8 +5,8 @@ layout: index
 {% for post in paginator.posts %}
 <article class="post-summary" id="{{ post.id}}" >
 	<header>
-		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }}</p>
+		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
+		<p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }}</p>
 		<p><i class="fa fa-calendar"></i> {{ post.date | date_to_long_string }}</p>
 		<p><i class="fa fa-tags"></i> {% include post-tags.html tags=post.tags %}</p>
 	</header>
@@ -16,17 +16,17 @@ layout: index
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}    
 <div class="paginator">
-  {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path | replace: '//', '/' }}"><i class="fa fa-arrow-circle-left"></i> Newer</a>{% else %}<span><i class="fa fa-arrow-circle-left"></i> Newer</span>{% endif %}
+  {% if paginator.previous_page %} <a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}"><i class="fa fa-arrow-circle-left"></i> Newer</a>{% else %}<span><i class="fa fa-arrow-circle-left"></i> Newer</span>{% endif %}
   
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
       <em>{{ page }}</em>
     {% elsif page == 1 %}
-      <a href="{{ '/index.html' | replace: '//', '/' }}">{{ page }}</a>
+      <a title="goto page" href="{{ '/index.html' | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a title="goto page" href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
 
-  {% if paginator.next_page %}<a href="{{ paginator.next_page_path | replace: '//', '/' }}">Older <i class="fa fa-arrow-circle-right"></i></a>{% else %}<span>Older <i class="fa fa-arrow-circle-right"></i></span>{% endif %}
+  {% if paginator.next_page %}<a title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older <i class="fa fa-arrow-circle-right"></i></a>{% else %}<span>Older <i class="fa fa-arrow-circle-right"></i></span>{% endif %}
 </div>{% endif %}
