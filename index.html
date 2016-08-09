@@ -7,8 +7,8 @@ layout: index
 	<header>
 		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
 		<p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }}</p>
-		<p><i class="fa fa-calendar"></i> {{ post.date | date_to_long_string }}</p>
-		<p><i class="fa fa-tags"></i> {% include post-tags.html tags=post.tags %}</p>
+		<p><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_long_string }}</p>
+		<p><i class="fa fa-tags" aria-hidden="true"></i> {% include post-tags.html tags=post.tags %}</p>
 	</header>
 </article>	
 {% endfor %}		
@@ -16,7 +16,7 @@ layout: index
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}    
 <div class="paginator">
-  {% if paginator.previous_page %} <a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}"><i class="fa fa-arrow-circle-left"></i> Newer</a>{% else %}<span><i class="fa fa-arrow-circle-left"></i> Newer</span>{% endif %}
+  {% if paginator.previous_page %} <a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Newer</a>{% else %}<span><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Newer</span>{% endif %}
   
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
@@ -28,5 +28,5 @@ layout: index
     {% endif %}
   {% endfor %}
 
-  {% if paginator.next_page %}<a title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older <i class="fa fa-arrow-circle-right"></i></a>{% else %}<span>Older <i class="fa fa-arrow-circle-right"></i></span>{% endif %}
+  {% if paginator.next_page %}<a title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>{% else %}<span>Older <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>{% endif %}
 </div>{% endif %}
