@@ -23,8 +23,46 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 code {
 	font-family: $code-font;
+}
+
+blockquote {
+	font-size: 200%;
+	font-style: italic;
+
+	p:before {
+		content: '"';
+		content: open-quote;
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+	}
+
+	p:after {
+		content: '"';
+		content: close-quote;
+		font-size: 4em;
+		line-height: 0.1em;
+		vertical-align: -0.4em;
+	}
+}
+
+footer { 
+	font-family: $heading-font;
+
+	h2, h3, h4 {
+	 	letter-spacing:-0.02em;
+	}
+}
+
+.large-icons {
+	font-size: 250%
 }
 
 /* typography */
