@@ -1,9 +1,11 @@
 
 /* app.scss */
 
-$base-font: Georgia, Garamond, Cambria, Times, 'Times New Roman', serif; 
-$heading-font: 'Segoe UI', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
-$code-font: Consolas, Monaco, "Lucida Console", "Courier New", courier, monospace;
+// $base-font-stack: Georgia, Garamond, Cambria, Times, 'Times New Roman', serif; 
+// $heading-font-stack: 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
+$base-font-stack: 'Segoe UI', Georgia, Garamond, Cambria, Times, 'Times New Roman', serif; 
+$heading-font-stack: 'Segoe UI', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
+$code-font-stack: Consolas, Monaco, "Lucida Console", "Courier New", courier, monospace;
 
 // colour scheme
 // light to dark
@@ -36,37 +38,61 @@ $half-transparent-background-colour: rgba(255,255,255, 0.5);
 $half-transparent-text-color: rgba(0,0,0, 0.44);
 
 body { 
-	font-family: $base-font; 
+	font-family: $base-font-stack; 
 	background-color: $background-colour; 
 	color: $text-colour;
 	border-top: 5px solid $primary-colour;
 }
 
-h1, h2, h3, h4, h5, h6 { 
-	font-family: $heading-font; 
-	font-weight: 600;
+.content { 
+	padding: 2em 0; 
+
+	p {
+		line-height: 2;
+	}
 }
 
-th, td { 
-	border-bottom: 0; 
+.meta { 
+	padding: 0 0 2em 0; 
+} 
+
+footer { 
+	background-color: $negative-background-colour; 
+	color: $negative-text-colour; 
+	padding-bottom: 2em;
+
+	h2, h3, h4 {
+		color: $half-transparent-text-color;
+		letter-spacing:-0.02em;
+	}
+}
+
+.tag-cloud, .social, .other { 
+	padding-top: 2em; 
+}
+
+.tag-cloud li { 
+	float: left; 
+	width: 33%;
 }
 
 a {
 	color: $primary-colour;
 	text-decoration: none;
 	border-bottom: 1px dotted $primary-colour;
-
-	&:hover {	
-		color: $highlight-colour;
-	}
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+a:hover {	
+	color: $highlight-colour;
 }
 
-header {
+.avatar a, .social a 
+{
+	border: 0;
+}
+
+header
+{
 	margin-bottom: 2em;
 
 
@@ -109,51 +135,9 @@ blockquote {
 code {
 	border-radius: 0;
 	background-color: $light-subdued-colour;
-	font-family: $code-font;
+	font-family: $code-font-stack;
 }
 
-footer { 
-	background-color: $negative-background-colour; 
-	color: $negative-text-colour; 
-	padding-bottom: 2em;
-
-	h2, h3, h4 {
-		color: $half-transparent-text-color;
-		letter-spacing:-0.02em;
-	}
-}
-
-/*
-.content { 
-	padding: 2em 0; 
-
-	p {
-		line-height: 2;
-	}
-}
-
-.meta { 
-	padding: 0 0 2em 0; 
-} 
-
-.tag-cloud, .social, .other { 
-	padding-top: 2em; 
-}
-
-.tag-cloud li { 
-	float: left; 
-	width: 33%;
-}
-
-.avatar a, .social a 
-{
-	border: 0;
-}
-
-*/
-
-
-/*
 .colophon {
 	padding-top: 2em;
 }
@@ -162,9 +146,11 @@ footer {
 	font-size: 250%
 }
 
-*/
+img {
+	max-width: 100%;
+	height: auto;
+}
 
-/*
 .paginator {
 
 	a { 
@@ -183,9 +169,18 @@ footer {
 	}
 }
 
-*/
 
-/*
+h1, h2, h3, h4, h5, h6 { 
+	font-family: $heading-font-stack; 
+	font-weight: 600;
+}
+
+
+
+th, td { 
+	border-bottom: 0; 
+}
+
 .no-list-dot { 
 	list-style-type: none; 
 }
@@ -209,11 +204,8 @@ footer {
 	}
 
 }
-*/
 
 /* hero styles */
-
-/*
 .hero { 
 	background-color: $background-colour; 
 	padding: 5em; 
@@ -249,4 +241,3 @@ footer {
 		}
 	}
 }
-*/
