@@ -1,0 +1,106 @@
+/* colour */
+
+$white: #fff;
+$gallery: #eee;
+$celeste: #ccc;
+$colonial-white: #ffedbe;
+// $wild-willow: #a7cb68;
+$jaffa: #ef7f3f;
+$hot-cinnamon: #dd5d26;
+$chicago: #585858;
+$mako: #444854;
+
+// goulet
+$orange: #F18624;
+$dark-gray: #404146;
+$green: #ADC33D;
+
+// colour values
+$background-colour: darken($white, 5%);
+$text-colour: $dark-gray; // #393939;
+
+$negative-background-colour: $text-colour;
+$negative-text-colour: $white;
+
+$light-subdued-colour: $gallery;
+$medium-subdued-colour: $celeste;
+$dark-subdued-colour: #6e6e6e;
+
+$primary-colour : $orange; //#ff5a09;
+$highlight-colour: lighten($primary-colour, 20%);
+
+body { 
+	background-color: $background-colour; 
+	color: $text-colour;
+	border-top: 5px solid $primary-colour;
+}
+
+a {
+	color: $primary-colour;
+	border-bottom: 1px dotted $primary-colour;
+
+	&:hover {	
+		color: $highlight-colour;
+	}
+}
+
+code {
+	background-color: $white;
+}
+
+header {
+
+	p { 
+		color: $medium-subdued-colour; 
+	}
+}
+
+.excerpt {
+	color: $text-colour;
+}
+
+.site-title {
+	background: transparentize($background-colour, .5);
+
+	a {
+		color: $text-colour;
+	}
+}
+
+.hero { 
+	background-color: $background-colour; 
+}
+
+.paginator {
+
+	a { 
+		border: 1px solid $medium-subdued-colour; 
+	} 
+
+	em, span { 
+		background-color: $light-subdued-colour; 
+		border: 1px solid $light-subdued-colour; 
+	}
+}
+
+blockquote {
+
+	p:before {
+		color: $medium-subdued-colour;
+	}
+
+	p:after {
+		color: $medium-subdued-colour;
+	}
+}
+
+footer { 
+	background-color: $negative-background-colour; 
+	color: $negative-text-colour; 
+
+	h2, h3, h4 {
+	 	color: darken($negative-background-colour, 20%);
+	}
+}
+
+/* colour */
