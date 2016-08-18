@@ -123,6 +123,10 @@ footer {
 	.power {
 		background: url("../img/heroes/crampton-locomotive-1600.jpg") no-repeat scroll center top / 1600px auto transparent;
 	}
+
+	.secret {
+		background: url("/img/heroes/secret-harbour.jpg") no-repeat scroll center top / 1600px auto transparent;
+	}
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -139,3 +143,11 @@ footer {
 }
 
 /* layout */
+
+// display a grid for alignment etc.
+
+/* body {
+    background-image: repeating-linear-gradient(0deg,transparent,transparent 70px,#CCC 70px,#CCC 71px),repeating-linear-gradient(-90deg,transparent,transparent 70px,#CCC 70px,#CCC 71px);
+    background-size: 71px 71px;
+}
+*/
