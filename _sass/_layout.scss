@@ -146,8 +146,15 @@ footer {
 
 // display a grid for alignment etc.
 
-/* body {
-    background-image: repeating-linear-gradient(0deg,transparent,transparent 70px,#CCC 70px,#CCC 71px),repeating-linear-gradient(-90deg,transparent,transparent 70px,#CCC 70px,#CCC 71px);
-    background-size: 71px 71px;
+/*
+
+$grid-colour: #ccc;
+$grid-spacing: 100px;
+$grid-size: 101px;
+
+body {
+    background-image: repeating-linear-gradient(0deg,transparent,transparent $grid-spacing,$grid-colour $grid-spacing,$grid-colour $grid-size),repeating-linear-gradient(-90deg,transparent,transparent $grid-spacing,$grid-colour $grid-spacing,$grid-colour $grid-size);
+    background-size: $grid-size $grid-size;
 }
+
 */
