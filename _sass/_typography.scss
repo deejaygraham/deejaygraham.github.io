@@ -1,7 +1,7 @@
 /* typography */
 
-$base-font: Georgia, Garamond, Cambria, Times, 'Times New Roman', serif; 
-$heading-font: 'Segoe UI', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
+$heading-font: 'Open Sans', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
+$body-font: $heading-font; //Georgia, Garamond, Cambria, Times, 'Times New Roman', serif; 
 $code-font: Consolas, Monaco, "Lucida Console", "Courier New", courier, monospace;
 
 $weight-light: 300;
@@ -10,7 +10,7 @@ $weight-semibold: 500;
 $weight-bold: 700;
 
 body { 
-	font-family: $base-font; 
+	font-family: $body-font; 
 	font-weight: $weight-normal;
 	line-height: 1.6;
 	letter-spacing: -0.003em;
