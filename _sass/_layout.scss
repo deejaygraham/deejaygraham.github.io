@@ -158,3 +158,13 @@ body {
 }
 
 */
+
+// refactoring and debugging
+
+/*[class*="rf-"] {
+	outline: 5px solid green;
+}
+
+[class]:not([class*="rf-"]) {
+	outline: 5px solid red;
+}*/
