@@ -1,19 +1,22 @@
 <!-- pageheader.html -->
+<div class="container u-full-width">
+	<div class="row banner">
+		<div class="three columns avatar">
+			<a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a>
+		</div>
+		<div class="nine colums site-title">
+			<h1><a title="home" href="/">{{ site.name }}</a></h1>
+			<p><em>{{ site.description }}</em></p>
+		</div>
+	</div>
+</div>
 {% if page.hero %}
 <header class="hero {{ page.hero }}"> 
 {% else %}    
-<header>
+<header class="hero secret">
 {% endif %}
-	<div class="container">
-		<div class="row banner">
-			<div class="three columns avatar">
-				<a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a>
-			</div>
-			<div class="nine colums site-title">
-				<h1><a title="home" href="/">{{ site.name }}</a></h1>
-				<p><em>{{ site.description }}</em></p>
-			</div>
-		</div>
-	</div>
+	<div class="container"><div class="row"><!-- nothing --></div></div>
 </header>
+
+
 <!-- pageheader.html -->
