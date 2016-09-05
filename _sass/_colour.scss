@@ -1,105 +1,176 @@
 /* colour */
 
+// Neutrals
 $white: #fff;
-$gallery: #eee;
-$celeste: #ccc;
-$colonial-white: #ffedbe;
-// $wild-willow: #a7cb68;
-$jaffa: #ef7f3f;
-$hot-cinnamon: #dd5d26;
-$chicago: #585858;
-$mako: #444854;
+$light-grey: #f5f2f0;
+$grey: #bdc4d5;
+$dark-grey: #444854;
 
+// Perhaps
+$purple-blue: #4b60be;
+$blue: #3653a5;
+$pink: #d64f4f;
+$light-pink: #ffb4b4;
+
+$lighest-purple-blue: tint($purple-blue, 80%);
+$lighter-purple-blue: tint($purple-blue, 20%);
+$darker-purple-blue: mix($purple-blue, $dark-grey);
+$darkest-purple-blue: darken($purple-blue, 20%);
+
+// mix with white - tint($purple-blue, 20%);
+// mix with black - shade();
 // goulet
-$orange: #F18624;
-$dark-gray: #404146;
-$green: #ADC33D;
+//$orange: #F18624;
+//$green: #ADC33D;
 
-// colour values
-$background-colour: darken($white, 5%);
-$text-colour: $dark-gray; // #393939;
+// Body
+$body-background-colour: $white; 
+$body-text-colour: #262934;
+$body-decoration-colour: #B5C588; //grayscale($purple-blue)
 
-$negative-background-colour: $text-colour;
-$negative-text-colour: $white;
+// Links
+$link-background-colour: $white;
+$link-text-colour: #0D3C55;
+$link-decoration-colour: #0D3C55;
+$link-hover-colour: lighten($link-decoration-colour, 10%);
+// $link-hover-background-colour: $grey;
 
-$light-subdued-colour: $gallery;
-$medium-subdued-colour: $celeste;
-$dark-subdued-colour: #6e6e6e;
+// Header
+$header-text-colour: $body-text-colour;
+$secondary-text-colour: #0D3C55;
 
-$primary-colour : $orange; //#ff5a09;
-$highlight-colour: lighten($primary-colour, 20%);
+// Titles
+$title-background-colour: transparentize($body-background-colour, .75);
+$title-link-colour: $body-text-colour;
+
+// Hero
+$hero-background-colour: $title-background-colour;
+
+// Paginator navigation
+$pagination-box-colour: $grey;
+$pagination-disabled-colour: $light-grey;
+
+// Code
+$code-background-colour: $light-grey;
+$code-text-colour: $body-text-colour;
+
+// Quotes
+$quotation-text-colour: #99A6BF;
+$quotation-decoration-colour: #99A6BF;
+$quotation-background-colour: $body-background-colour;
+$quotation-border-colour: $body-background-colour;
+$excerpt-text-colour: $body-text-colour;
+
+// Footer
+$footer-heading-colour:#262934;
+$footer-background-colour: grayscale(#B5C588); //#B5C588; 
+$footer-text-colour: #262934; 
+$footer-link-colour: #0D3C55;
+$footer-link-hover-colour: lighten($footer-link-colour, 10%);
 
 body { 
-	background-color: $background-colour; 
-	color: $text-colour;
-	border-top: 5px solid $primary-colour;
+	background-color: $body-background-colour; 
+	color: $body-text-colour;
+	// border-top: 5px solid $body-decoration-colour;
 }
 
 a {
-	color: $primary-colour;
-	border-bottom: 1px dotted $primary-colour;
+	// background-color: $link-background-colour;
+	color: $link-text-colour;
+	border-bottom: 1px dotted $link-decoration-colour;
 
 	&:hover {	
-		color: $highlight-colour;
+		//background-color: $link-hover-background-colour;
+		color: $link-hover-colour;
 	}
 }
 
 code {
-	background-color: $white;
+	background-color: $code-background-colour;
+	color: $code-text-colour;
 }
 
 header {
 
 	p { 
-		color: $medium-subdued-colour; 
+		color: $header-text-colour; 
 	}
 }
 
+// is this used ???
 .excerpt {
-	color: $text-colour;
+	color: $excerpt-text-colour;
 }
 
-.site-title {
-	background: transparentize($background-colour, .5);
+.site-title, .avatar {
+	background: $title-background-colour;
 
 	a {
-		color: $text-colour;
+		background-color: $title-background-colour;
+		color: $title-link-colour;
+	}
+
+	p {
+		color: $secondary-text-colour;
+		font-size: 150%;
 	}
 }
 
 .hero { 
-	background-color: $background-colour; 
+	background-color: $hero-background-colour; 
 }
 
 .paginator {
 
 	a { 
-		border: 1px solid $medium-subdued-colour; 
+		border: 1px solid $pagination-box-colour; 
 	} 
 
 	em, span { 
-		background-color: $light-subdued-colour; 
-		border: 1px solid $light-subdued-colour; 
+		background-color: $pagination-disabled-colour; 
+		border: 1px solid $pagination-disabled-colour; 
 	}
 }
 
 blockquote {
 
+	color: $quotation-text-colour;
+	background-color: $quotation-background-colour;
+	//border-left: 3px solid $quotation-decoration-colour;
+	//padding-left: 2em;
+
 	p:before {
-		color: $medium-subdued-colour;
+		color: $quotation-decoration-colour;
 	}
 
 	p:after {
-		color: $medium-subdued-colour;
+		color: $quotation-decoration-colour;
 	}
 }
 
 footer { 
-	background-color: $negative-background-colour; 
-	color: $negative-text-colour; 
+	background-color: $footer-background-colour; 
+	color: $footer-text-colour; 
+
+	a {
+		background-color: $footer-background-colour;
+		color: $footer-link-colour;
+		border-bottom: 1px solid $footer-link-colour;
+
+		&:hover {	
+
+			color: $footer-link-hover-colour;
+		}
+	}
 
 	h2, h3, h4 {
-	 	color: darken($negative-background-colour, 20%);
+	 	color: $footer-heading-colour;
+	}
+}
+
+.post-summary {
+	p {
+		color: 	$secondary-text-colour;
 	}
 }
 
