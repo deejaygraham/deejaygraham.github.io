@@ -115,26 +115,30 @@ footer {
 
 	.hero {
 		padding: 5em; 
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 
 	.waste {
-		background: url("../img/heroes/muda-muri-mura.png") no-repeat scroll center top / 1600px auto transparent;
+		background-image: url("/img/heroes/muda-muri-mura.png");
 	}
 	
 	.agile {
-		background: url("../img/heroes/agile-maxim-1.png") no-repeat scroll center top / 1600px auto transparent;
+		background-image: url("/img/heroes/agile-maxim-1.png");
 	}
 
 	.cloud {
-		background: url("../img/heroes/man-love-1600.jpg") no-repeat scroll center top / 1600px auto transparent;
+		background-image: url("/img/heroes/man-love-1600.jpg");
 	}
 	
 	.power {
-		background: url("../img/heroes/crampton-locomotive-1600.jpg") no-repeat scroll center top / 1600px auto transparent;
+		background-image: url("/img/heroes/crampton-locomotive-1600.jpg");
 	}
 
 	.secret {
-		background: url("/img/heroes/secret-harbour.jpg") no-repeat scroll center top / 1600px auto transparent;
+		background-image: url("/img/heroes/secret-harbour.jpg");
 	}
 }
 
