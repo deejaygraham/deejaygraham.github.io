@@ -1,13 +1,8 @@
 <!-- pageheader.html -->
-<div class="container u-full-width">
-	<div class="row banner">
-		<div class="three columns avatar">
-			<a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a>
-		</div>
-		<div class="nine colums site-title">
-			<h1><a title="home" href="/">{{ site.name }}</a></h1>
-			<p><em>{{ site.description }}</em></p>
-		</div>
+<div class="u-full-width">
+	<div class="banner">
+		<!-- <a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a> -->
+		<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em>
 	</div>
 </div>
 {% if page.hero %}

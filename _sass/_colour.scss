@@ -39,6 +39,9 @@ $link-hover-colour: lighten($link-decoration-colour, 10%);
 $header-text-colour: $body-text-colour;
 $secondary-text-colour: #0D3C55;
 
+$banner-background-colour: #000;
+$banner-text-colour: $white;
+
 // Titles
 $title-background-colour: transparentize($body-background-colour, .75);
 $title-link-colour: $body-text-colour;
@@ -88,6 +91,15 @@ a {
 code {
 	background-color: $code-background-colour;
 	color: $code-text-colour;
+}
+
+.banner {
+	background-color: $banner-background-colour;
+	color: $banner-text-colour;
+
+	a {
+		color: $banner-text-colour;
+	}
 }
 
 header {
