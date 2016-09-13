@@ -5,6 +5,9 @@ tags: [ books, quote  ]
 published: true 
 ---
 
+S.I. Hayakawa's book "Language in Thought and Action" is full of great quotes. Here's just 
+one (fairly big one) that caught my eye. 
+
 <blockquote>Indeed, most of the time when we are listening to the noises people make 
 or looking at the black marks on paper that stand for such noises, we are drawing upon 
 the experiences of the nervous systems of others in order to make up what our own 
@@ -17,7 +20,6 @@ make noises when they find food or become alarmed. In fact, gregariousness as an
 self-defense and survival is forced upon animals as well as upon men by the necessity of 
 uniting nervous systems even more than by the necessity of uniting physical strength. Societies, 
 both animal and human, might almost be regarded as huge co-operative nervous systems. 
-
 
 While animals use only a few limited cries, however, human beings use extremely complicated 
 systems of sputtering, hissing, gurgling, clucking, and cooing noises called language, with 
