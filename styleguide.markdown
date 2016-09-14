@@ -25,11 +25,7 @@ augue, in eleifend eros dignissim ut. Curabitur tincidunt cursus orci eget dictu
 
 ----
 
-*Italic text looks like this*
-
-----
-
-**Bold text looks like this**
+This is normal text. *This is italic text.* **This is bold text!**
 
 ----
 
@@ -42,48 +38,19 @@ augue, in eleifend eros dignissim ut. Curabitur tincidunt cursus orci eget dictu
 
 ----
 
-[Visit GitHub!](http://www.github.com)
+Click some links - [Visit GitHub!](http://www.github.com) !!!
 
 ----
 
-* Unordered Item 1
-* Unordered Item 2
-* Unordered Item 3
-* Unordered Item 4
-* Unordered Item 5
-
-----
-
-<ul class="list-inline">
-<li>First in Inline List</li>
-<li>Second in Inline List</li>
-<li>Third in Inline List</li>
-</ul>
-
------
-
-Here is the name of a <code>Csharp.Namespace.Class</code> in the middle of some text.
+Here is some inline code <code>Csharp.Namespace.Class</code> in the middle of some text.
 
 ~~~
-Here is some code what I wrote
-~~~
 
-~~~ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-~~~
+And()
+{
+	HereIs(some_code, what, I_wrote);
+} 
 
-~~~csharp
-System.Console.WriteLine("Hello World");
-~~~
-
-~~~css
-img {
-	width:auto;
-	max-width:100%;
-	height:auto;
-}
 ~~~
 
 ----
