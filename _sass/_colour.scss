@@ -1,46 +1,45 @@
 /* colour */
 
+/* --- Named Colours --- */
+
 // Neutrals
 $white: #fff;
-$light-grey: #f5f2f0;
-$grey: #bdc4d5;
-$dark-grey: #444854;
+$subduedgray: #dbe6ec;
+$lightgray: #99a9b3;
+$bodygray: #67747c;
+$titlegray: #3b444f;
+$darkgray: #2c3643;
 
-// Perhaps
-$purple-blue: #4b60be;
-$blue: #3653a5;
-$pink: #d64f4f;
-$light-pink: #ffb4b4;
+// Accents
+$darkblue: #0D3C55;
+$lightgreen: #B5C588;
+ 
+// tint() 
+// grayscale($purple-blue) 
+// darken($purple-blue, 20%);
 
-$lighest-purple-blue: tint($purple-blue, 80%);
-$lighter-purple-blue: tint($purple-blue, 20%);
-$darker-purple-blue: mix($purple-blue, $dark-grey);
-$darkest-purple-blue: darken($purple-blue, 20%);
+/* --- Named Colours --- */
 
-// mix with white - tint($purple-blue, 20%);
-// mix with black - shade();
-// goulet
-//$orange: #F18624;
-//$green: #ADC33D;
+/* --- Style Variables --- */
 
 // Body
 $body-background-colour: $white; 
-$body-text-colour: #262934;
-$body-decoration-colour: #B5C588; //grayscale($purple-blue)
+$body-text-colour: $darkgray;
+$body-decoration-colour: $lightgreen; 
 
 // Links
 $link-background-colour: $white;
-$link-text-colour: #0D3C55;
-$link-decoration-colour: #0D3C55;
+$link-text-colour: $darkblue;
+$link-decoration-colour: $darkblue;
 $link-hover-colour: lighten($link-decoration-colour, 10%);
 // $link-hover-background-colour: $grey;
 
 // Header
 $header-text-colour: $body-text-colour;
-$secondary-text-colour: #0D3C55;
+$secondary-text-colour: $darkblue;
 
-$banner-background-colour: #000;
-$banner-text-colour: $white;
+$banner-background-colour: $darkgray;
+$banner-text-colour: $subduedgray;
 
 // Titles
 $title-background-colour: transparentize($body-background-colour, .75);
@@ -50,31 +49,36 @@ $title-link-colour: $body-text-colour;
 $hero-background-colour: $title-background-colour;
 
 // Paginator navigation
-$pagination-box-colour: $grey;
-$pagination-disabled-colour: $light-grey;
+$pagination-box-colour: $lightgray;
+$pagination-disabled-colour: $bodygray;
+$pagination-disabled-text-colour: $subduedgray;
 
 // Code
-$code-background-colour: $light-grey;
+$code-background-colour: $subduedgray;
 $code-text-colour: $body-text-colour;
 
 // Quotes
-$quotation-text-colour: #99A6BF;
-$quotation-decoration-colour: #99A6BF;
+$quotation-text-colour: $lightgray;
+$quotation-decoration-colour: $lightgray;
 $quotation-background-colour: $body-background-colour;
 $quotation-border-colour: $body-background-colour;
 $excerpt-text-colour: $body-text-colour;
 
 // Footer
-$footer-heading-colour:#262934;
-$footer-background-colour: grayscale(#B5C588); //#B5C588; 
-$footer-text-colour: #262934; 
-$footer-link-colour: #0D3C55;
-$footer-link-hover-colour: lighten($footer-link-colour, 10%);
+$footer-heading-colour: $darkgray;
+$footer-background-colour: $bodygray; 
+$footer-text-colour: $white; 
+$footer-link-colour: $white;
+$footer-link-hover-colour: $darkgray;
+$footer-bottom-border-colour: $darkgray;
+
+/* --- Style Variables --- */
+
+/* --- Colour Styles --- */
 
 body { 
 	background-color: $body-background-colour; 
 	color: $body-text-colour;
-	// border-top: 5px solid $body-decoration-colour;
 }
 
 a {
@@ -85,6 +89,7 @@ a {
 	&:hover {	
 		//background-color: $link-hover-background-colour;
 		color: $link-hover-colour;
+		border-bottom: 1px dotted $link-hover-colour;
 	}
 }
 
@@ -124,7 +129,6 @@ header {
 
 	p {
 		color: $secondary-text-colour;
-		font-size: 150%;
 	}
 }
 
@@ -141,6 +145,7 @@ header {
 	em, span { 
 		background-color: $pagination-disabled-colour; 
 		border: 1px solid $pagination-disabled-colour; 
+		color: $pagination-disabled-text-colour;
 	}
 }
 
@@ -148,8 +153,6 @@ blockquote {
 
 	color: $quotation-text-colour;
 	background-color: $quotation-background-colour;
-	//border-left: 3px solid $quotation-decoration-colour;
-	//padding-left: 2em;
 
 	p:before {
 		color: $quotation-decoration-colour;
@@ -164,14 +167,16 @@ footer {
 	background-color: $footer-background-colour; 
 	color: $footer-text-colour; 
 
+	border-bottom: 1em solid $footer-bottom-border-colour;
+
 	a {
 		background-color: $footer-background-colour;
 		color: $footer-link-colour;
 		border-bottom: 1px solid $footer-link-colour;
 
 		&:hover {	
-
 			color: $footer-link-hover-colour;
+			border-bottom: 1px solid $footer-link-hover-colour;
 		}
 	}
 
@@ -186,4 +191,4 @@ footer {
 	}
 }
 
-/* colour */
+/* --- Colour Styles --- */
