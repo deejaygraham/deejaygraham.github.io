@@ -1,6 +1,6 @@
 ---
 title: projects
-layout: vanilla
+layout: index
 ---
 
 ### Things What I Have Made

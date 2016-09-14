@@ -1,6 +1,6 @@
 ---
 title: about d.j.graham
-layout: vanilla
+layout: index
 ---
 
 ## Hey, Hi, Hello.
