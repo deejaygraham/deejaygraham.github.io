@@ -1,0 +1,36 @@
+---
+layout: post
+title: Rolling Rocks in Newcastle
+tags: [ agile, presentations, sketchnotes ]
+published: true
+---
+
+On the 12th of July I had the pleasure of hosting [Clarke Ching](http://rolls.rocks) 
+at the [Agile North East meetup](http://www.meetup.com/Agile-North-East/) at the 
+Bunker Coffee House in Newcastle. It took a little while to arrange a date and time 
+when Clarke would be passing through at the right time of day but the wait was 
+definitely worth it. 
+
+![meetup](/img/posts/rolling-rocks-in-newcastle/july-meetup.png)
+
+Clarke presented to a full house of developers, agile coaches and managers. He talked about 
+his book - Rolling Rocks Downhill, Eli Goldratt's Theory of Constraints (ToC), how ToC can be 
+applied to many problems in our lives. Occe you are exposed to these ideas, you 
+start to see queues and constraints everywhere and recognize how ToC can make things better. 
+
+![Rolling Rocks](/img/posts/rolling-rocks-in-newcastle/2016-07-12 18.33.04.jpg)
+
+Many of his points were illustrated with examples of applying ToC from Clarke's own working life. 
+
+![Clarke Mid Presentation](/img/posts/rolling-rocks-in-newcastle/2016-07-12 18.53.35.jpg)
+
+Sitting at the back, I was able to get some sketchnoting done, so here's how I interpreted his 
+presentation:
+
+![sketchnote](/img/posts/rolling-rocks-in-newcastle/2016-07-13 23.05.32.jpg)
+
+Finally, just because I can't resist it, here's a pic of the very cute german shepherd 
+puppy who shares the Bunker Coffee House with the customers.
+
+![puppy](/img/posts/rolling-rocks-in-newcastle/2016-07-12 17.33.01.jpg)
+
