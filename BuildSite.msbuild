@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<TagsFolder>$(MSBuildThisFileDirectory)tags\</TagsFolder>
 		<SiteTagsFolder>$(MSBuildThisFileDirectory)_site\tags\</SiteTagsFolder>
+		<BuildTags Condition=" '$(BuildTags)' == '' " >true</BuildTags>
 	</PropertyGroup>
 
 	<Target Name="BuildWithJekyll"
@@ -11,7 +12,7 @@
 							CreateTagsFolder;
 							CopyNewTags" />
 	
-	<Target Name="RemoveTagsFolder" Condition="false">
+	<Target Name="RemoveTagsFolder" Condition="$(BuildTags)">
 		
 		<ItemGroup>
 			<FilesToDelete Include="$(TagsFolder)**\*.*" />
@@ -25,7 +26,7 @@
 		
 	</Target>
 	
-	<Target Name="CreateTagsFolder" Condition="false">
+	<Target Name="CreateTagsFolder" Condition="$(BuildTags)">
 
 		<MakeDir 
 				Directories="$(TagsFolder)"
@@ -40,7 +41,7 @@
 		
 	</Target>
 	
-	<Target Name="CopyNewTags">
+	<Target Name="CopyNewTags" Condition="$(BuildTags)" >
 		<ItemGroup>
 			<FilesToCopy Include="$(SiteTagsFolder)**\*.*" />
 		</ItemGroup>
