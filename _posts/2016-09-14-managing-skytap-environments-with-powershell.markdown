@@ -19,7 +19,7 @@ from reading the module source and referring to the
 ## Import
 
 Download and unpack the module as you would normally into Install into 
-~~~%UserProfile%\Documents\WindowsPowerShell\Modules\skytap~~~. Note, you can safely ignore 
+<code>%UserProfile%\Documents\WindowsPowerShell\Modules\skytap</code>. Note, you can safely ignore 
 the user_token file, you can set authorization a number of different ways.
 
 ~~~
@@ -30,7 +30,7 @@ Import-Module skytap # -Verbose
 
 ## Authentication
 
-Authentication is handled by the ~~~Set-Authorization~~~ cmdlet. You can either provide a path 
+Authentication is handled by the <code>Set-Authorization</code> cmdlet. You can either provide a path 
 to a user token file or provide explicit user name and api key (from your account page) or 
 user name and password.
 
@@ -75,7 +75,7 @@ While ($Environment.runstate -Eq 'busy') {
 ## Starting 
 
 Now that you have a shiny new environment, the default state could be running, stopped, suspended
- (and maybe others). Starting and stopping an environment is done using the ~~~Update-RunState~~~
+ (and maybe others). Starting and stopping an environment is done using the <code>Update-RunState</code>
  cmdlet. 
 
 ~~~

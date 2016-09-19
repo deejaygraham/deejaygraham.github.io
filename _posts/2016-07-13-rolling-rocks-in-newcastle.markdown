@@ -33,7 +33,8 @@ presentation:
 ![sketchnote](/img/posts/rolling-rocks-in-newcastle/2016-07-13 23.05.32.jpg)
 
 Finally, just because I can't resist it, here's a pic of the very cute german shepherd 
-puppy who shares the Bunker Coffee House with the customers.
+puppy who shares the Bunker Coffee House with the customers and only slightly howled-like-a-wolf 
+as it was starting to get dark outside, lending a nice creepy end to the evening.
 
 ![puppy](/img/posts/rolling-rocks-in-newcastle/2016-07-12 17.33.01.jpg)
 
