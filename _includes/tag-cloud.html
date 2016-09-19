@@ -3,7 +3,7 @@
 {% assign tags = site.tags | sort %}
 <ul class="no-list-dot">
 {% for tag in tags %}
-<li><a title="posts tagged with &quot;{{ tag[0] | replace:'-', ' ' }} &quot;" class="tag" href="{{ site.url }}/tags/{{ tag | first | slugify }}/" >{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a></li>
+<li><a title="posts tagged with &quot;{{ tag[0] | replace:'-', ' ' }} &quot;" class="tag" href="{{ site.url }}/tags/{{ tag | first | slugify }}/" >{{ tag[0] | replace:'-', ' ' }}</a></li>
 {% endfor %}
 </ul>
 <!-- tag-cloud.html -->
