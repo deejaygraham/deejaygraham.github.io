@@ -1,9 +1,9 @@
 ---
 layout: sketchnote
 title: Rocks, Paper ... Stories
-tags: [ sketchnotes, presentations  ]
+tags: [ sketchnotes, presentations, agile  ]
 tweet: true
-thumbnail: "posts/rocks-paper-stories/rock-paper-stories-ching.png"
+thumbnail: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.png"
 sketchnote:
   url: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.png"
   alt: "sketchnote"
@@ -17,11 +17,6 @@ sketchnote:
     url: "https://twitter.com/clarkeching"
 ---
 
-Here's a sketchnote I did of [Clarke Ching](https://twitter.com/clarkeching)'s 
+Here's a sketchnote I did of <a href="https://twitter.com/clarkeching" >Clarke Ching</a>'s 
 wonderful and hilarious keynote presentation from last year's Lean 
 Agile Scotland conference.
-
-![sketchnote](/img/posts/rocks-paper-stories/rock-paper-stories-ching.png)
-
-...a [higher resolution](/img/posts/rocks-paper-stories/rock-paper-stories-hires.png) version
-

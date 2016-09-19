@@ -34,3 +34,10 @@ puppy who shares the Bunker Coffee House with the customers.
 
 ![puppy](/img/posts/rolling-rocks-in-newcastle/2016-07-12 17.33.01.jpg)
 
+### Epilogue
+
+Before Clarke's talk, I framed the original sketchnote from his Lean Agile Scotland talk  
+and gave it to him on the night as a thank you for agreeing to come. Here is the photograph 
+he tweeted of it in place in his home. 
+
+![framed](/img/posts/rolling-rocks-in-newcastle/CnbMCS6XEAIkniW.jpg)
