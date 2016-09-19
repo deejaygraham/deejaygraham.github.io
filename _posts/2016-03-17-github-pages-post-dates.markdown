@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Github Pages Post Dates
 published: true 
-tags: [ meta, powershell, presentations  ]
+tags: [ meta, powershell, presentations ]
 ---
 
 I spent a frustrating couple of days earlier this week while preparing a presentation 
@@ -10,8 +9,10 @@ for my local .Net user group [NE Bytes](http://nebytes.net/) on Azure Machine Le
 
 I was using a technique I've used before to avoid PowerPoint or Keynote and just create 
 slides with simple html using [reveal.js](https://github.com/hakimel/reveal.js). Basically, 
-I set up a github repository, create a "gh-pages" branch and check in individual slides 
-as discrete .html files, ordered by an imaginary date that jekyll understands. 
+I use the functionality provided by Github Pages to generate a little static website that 
+then serves up the slides. All that's needed is to set up a github repository, create a 
+"gh-pages" branch and check in individual slides as discrete .html files, ordered by an 
+imaginary date that jekyll understands. 
 
 The data prefix is meant to be used to identify blog post dates but works well for ordering 
 slides as well. For example, the first slide in the deck is given the prefix 
