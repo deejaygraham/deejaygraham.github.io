@@ -1,5 +1,6 @@
 ---
 layout: post
+title: The Case of the Disappearing Github Pages
 published: true 
 tags: [ meta, powershell, presentations ]
 ---

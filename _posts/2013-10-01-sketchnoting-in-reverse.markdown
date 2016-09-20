@@ -1,15 +1,12 @@
 ---
-layout: sketchnote
+layout: post
 title: Sketchnoting in Reverse
 tags: [ sketchnotes, deliberate-practice, presentations ]
-sketchnote:
-  url: "/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png"
-  alt: "Sketchote update"
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by 
-[Mike Rohde](http://rohdesign.com/) and the 
-[sketchnote army](http://www.sketchnotearmy.com/) website.
+<a href="http://rohdesign.com/">Mike Rohde</a> and the <a href="http://www.sketchnotearmy.com/">sketchnote army</a> 
+website.
 
 ![book](/img/posts/sketchnoting-in-reverse/sketchnote-handbook.jpg)
 
@@ -59,3 +56,6 @@ more times.
 </div>
 
 Here's a cleaned up scanned image of the new version of the sketchnote
+
+<img src="/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png" class="img-responsive" alt="Update sketchnote" />
+

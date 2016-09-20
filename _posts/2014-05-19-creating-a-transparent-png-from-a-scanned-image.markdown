@@ -6,7 +6,7 @@ tags: [ csharp, sketchnotes, code ]
 ---
 
 One of the many parts of my sketchnoting process that I took from Mike Rohde's 
-[Sketchnote Handbook](http://rohdesign.com/book) is scanning the finished 
+<a href="http://rohdesign.com/book">Sketchnote Handbook</a> is scanning the finished 
 sketch in black and white and adding colour to the image later. 
 
 Adding colour usually means using Photoshop or Paint.Net to separate the image 

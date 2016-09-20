@@ -13,8 +13,8 @@ sketchnote:
     url: "http://www.twitter.com/richardadalton"
 ---
 
-Here's another sketchnote from the [Developer Developer Developer North 
-2014 conference](http://www.dddnorth.co.uk/). 
+Here's another sketchnote from the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North 
+2014 conference</a>. 
 
 This time it was [Richard Dalton](http://www.twitter.com/richardadalton)'s 
 "Burn Out is Real, and its coming to get YOU", a very brave and important talk 

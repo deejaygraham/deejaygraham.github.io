@@ -13,8 +13,8 @@ sketchnote:
     url: "http://www.twitter.com/b_seven_e"
 ---
 
-I was lucky enough to be able to attend the [Developer Developer Developer North 
-2014 conference](http://www.dddnorth.co.uk/) in Leeds this past weekend. 
+I was lucky enough to be able to attend the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North 
+2014 conference</a> in Leeds this past weekend. 
 
 ![ddd north](/img/posts/sketchote-from-ddd-north-2014/dddnorth-logo.png)
 

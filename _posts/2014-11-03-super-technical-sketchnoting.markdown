@@ -1,6 +1,6 @@
 ---
 layout: sketchnote
-title: Super Technical Sketchnoting
+title: Super-Technical Sketchnoting
 tags: [ sketchnotes, presentations, ruby ]
 sketchnote:
   url: "/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.png" 
@@ -13,7 +13,7 @@ sketchnote:
     url:  "http://www.twitter.com/tomstuart"
 ---
 
-After I posted some of my sketchnotes from [DDD North 2014](http://www.dddnorth.co.uk/) 
+After I posted some of my sketchnotes from <a href="http://www.dddnorth.co.uk/">DDD North</a> 
 I got some very nice feedback from people on Twitter. One conversation with 
 [Richard Dalton](http://www.twitter.com/RichardADalton) we got talking about 
 the differences in approach between presentations with non-technical and 

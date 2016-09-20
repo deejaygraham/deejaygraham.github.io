@@ -6,8 +6,8 @@ tags: [ agile, illustration, sketchnotes ]
 hero: agile
 ---
 
-A few months back I was lucky enough to be accepted by [Paul Klipp](https://twitter.com/paulklipp) as one 
-of the people to produce a sketchnote of a talk from the [ACE! 2014](http://aceconf.com) 
+A few months back I was lucky enough to be accepted by <a href="https://twitter.com/paulklipp">Paul Klipp</a> 
+as one of the people to produce a sketchnote of a talk from the <a href="http://aceconf.com">ACE! 2014</a>  
 conference to be included in the conference proceedings along with slides and 
 transcripts of the talks.
 

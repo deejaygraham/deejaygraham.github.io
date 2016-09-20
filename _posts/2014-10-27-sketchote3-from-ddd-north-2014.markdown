@@ -14,8 +14,8 @@ sketchnote:
 ---
 
 The third and final sketchnote (but actually from the first session of the day)
-from the [Developer Developer Developer North 
-2014 conference](http://www.dddnorth.co.uk/). 
+from the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North 
+2014 conference</a>. 
 
 This time it was a talk by [Joel Hammond-Turner](http://www.twitter.com/rammesses) on 
 his opinions around what it takes to be successful as a Tech Lead.

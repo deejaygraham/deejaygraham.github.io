@@ -19,20 +19,20 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="four columns meta">
 		{% if page.sketchnote.event %}
+		<div class="four columns meta">
 			<h4>About the event</h4>
 			<p>
-			{% if page.sketchnote.event.url %}
+				{% if page.sketchnote.event.url %}
 				<a href="{{ page.sketchnote.event.url }}">{{ page.sketchnote.event.name }}</a>
-			{% else %}	
+				{% else %}
 				{{ page.sketchnote.event.name }}
-			{% endif %}
+				{% endif %}
 			</p>
+		</div>
 		{% endif %}
-		</div>	
-		<div class="four columns meta">
 		{% if page.sketchnote.source %}
+		<div class="four columns meta">
 			<h4>Source</h4>
 			<p>
 			{% if page.sketchnote.source.url %}
@@ -41,10 +41,10 @@
 				{{ page.sketchnote.source.name }}
 			{% endif %}
 			</p>
-		{% endif %}
 		</div>	
-		<div class="four columns meta">
+		{% endif %}
 		{% if page.sketchnote.speaker %}
+		<div class="four columns meta">
 			<h4>About the speaker</h4>
 			<p>
 			{% if page.sketchnote.speaker.url %}
@@ -53,8 +53,8 @@
 				{{ page.sketchnote.speaker.name }}
 			{% endif %}
 			</p>
-		{% endif %}
 		</div>	
+		{% endif %}
 	</div>	
 	<div class="row">
 		<div class="twelve columns meta">

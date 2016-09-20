@@ -17,9 +17,9 @@ sketchnote:
     url: "http://gettingthingsdone.com/"
 ---
 
-The [Sketchnote Army](http://sketchnotearmy.com) website has been running a challenge to create a 
-sketchnote to capture a snippet of time from episode #219 of the [Mac 
-Power User's](http://5by5.tv/mpu/) podcast featuring [David Allen](http://gettingthingsdone.com/). 
+The <a href="http://sketchnotearmy.com">Sketchnote Army</a> website has been running a challenge to create a 
+sketchnote to capture a snippet of time from episode #219 of the <a href="http://5by5.tv/mpu/">Mac 
+Power User's</a> podcast featuring <a href="http://gettingthingsdone.com/">David Allen</a>. 
 
 ## Update
 
