@@ -5,7 +5,7 @@ published: true
 tags: [ presentations, sketchnotes  ]
 ---
 
-![ddd north](/img/posts/sketchotes-from-dddnorth-2015/dddnorth-logo.png "DDD North")
+<img src="/img/posts/sketchotes-from-dddnorth-2015/dddnorth-logo.png" class="img-responsive" alt="DDD North" />
 
 As well as speaking at DDDNorth this year, I did some more live sketchnoting. Here are the talks I went to see:
 

@@ -5,7 +5,7 @@ published: true
 tags: [ presentations, sketchnotes  ]
 ---
 
-![ddd north](/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.png "DDD North")
+<img src="/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.png" class="img-responsive" alt="DDD North" />
 
 This year's [Developer Developer Developer North conference](http://www.dddnorth.co.uk) ran on the 24th 
 of October 2015. I was speaking there for the first time and chose [sketchnoting for developers](http://deejaygraham.github.io/sketchnoting-for-developers) 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Sketchnotes ebook from DDDNorth 2015
-tags: [ sketchnotes, presentations  ]
+title: Ebook of Sketchnotes from DDDNorth 2015 now available!
+tags: [ sketchnotes, presentations ]
 ---
 
-![cover](/img/posts/sketchnotes-ebook-from-dddnorth-2015/dddnorth-cover.png  "Cover Page"))
+<img src="/img/posts/sketchnotes-ebook-from-dddnorth-2015/dddnorth-cover.png" class="img-responsive" alt="Cover Page" />
 
 I've blogged about presenting and live sketchnoting at the [DDD North](http://www.dddnorth.co.uk/) 
 conference ad nauseam [here]({% post_url 2015-10-26-sketchnoting-at-dddnorth-2015 %}) 
