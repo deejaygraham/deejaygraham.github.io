@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<TagsFolder>$(MSBuildThisFileDirectory)tags\</TagsFolder>
 		<SiteTagsFolder>$(MSBuildThisFileDirectory)_site\tags\</SiteTagsFolder>
+		<ForceBuildTags Condition=" '$(ForceBuildTags)' == '' " >false</ForceBuildTags>
 		<BuildTags Condition=" '$(BuildTags)' == '' " >true</BuildTags>
 	</PropertyGroup>
 
@@ -12,7 +13,7 @@
 							CreateTagsFolder;
 							CopyNewTags" />
 	
-	<Target Name="RemoveTagsFolder" Condition="$(BuildTags)">
+	<Target Name="RemoveTagsFolder" Condition="$(ForceBuildTags)">
 		
 		<ItemGroup>
 			<FilesToDelete Include="$(TagsFolder)**\*.*" />
@@ -48,6 +49,7 @@
 		
 		<Copy SourceFiles="@(FilesToCopy)"
 			DestinationFolder="$(TagsFolder)%(RecursiveDir)" 
+			OverwriteReadOnlyFiles="true"
 			SkipUnchangedFiles="true"
 			/>
 	</Target>
