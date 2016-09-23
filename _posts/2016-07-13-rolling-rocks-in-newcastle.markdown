@@ -24,8 +24,9 @@ Many of his points were illustrated with examples of applying ToC from Clarke's 
 
 ![Clarke Mid Presentation](/img/posts/rolling-rocks-in-newcastle/2016-07-12 18.53.35.jpg)
 
-There was lots of lively discussion at the end over beer and pizza and the feedback I got over 
-the following days suggested that the evening was a great success!
+This was a very well attended meetup for Agile North East, there was lots of lively discussion at the 
+end over beer and pizza and the feedback I got over the following days suggested that the evening was a 
+great success!
 
 Sitting at the back, I was able to get some sketchnoting done, so here's how I interpreted his 
 presentation:
@@ -34,7 +35,7 @@ presentation:
 
 Finally, just because I can't resist it, here's a pic of the very cute german shepherd 
 puppy who shares the Bunker Coffee House with the customers and only slightly howled-like-a-wolf 
-as it was starting to get dark outside, lending a nice creepy end to the evening.
+as it was starting to get dark outside, lending a nice spooky end to the evening.
 
 ![puppy](/img/posts/rolling-rocks-in-newcastle/2016-07-12 17.33.01.jpg)
 
