@@ -1,5 +1,7 @@
 /* colour */
 
+/* Colours from http://chir.ag/projects/name-that-color/ */
+
 /* --- Named Colours --- */
 
 // Neutrals
@@ -13,9 +15,9 @@ $darkgray: #2c3643;
 // Accents
 $darkblue: #0D3C55;
 $lightgreen: #B5C588;
- 
-// tint() 
-// grayscale($purple-blue) 
+
+// tint()
+// grayscale($purple-blue)
 // darken($purple-blue, 20%);
 
 /* --- Named Colours --- */
@@ -23,9 +25,9 @@ $lightgreen: #B5C588;
 /* --- Style Variables --- */
 
 // Body
-$body-background-colour: $white; 
+$body-background-colour: $white;
 $body-text-colour: $darkgray;
-$body-decoration-colour: $lightgreen; 
+$body-decoration-colour: $lightgreen;
 
 // Links
 $link-background-colour: $white;
@@ -66,129 +68,10 @@ $excerpt-text-colour: $body-text-colour;
 
 // Footer
 $footer-heading-colour: $darkgray;
-$footer-background-colour: $bodygray; 
-$footer-text-colour: $white; 
+$footer-background-colour: $bodygray;
+$footer-text-colour: $white;
 $footer-link-colour: $white;
 $footer-link-hover-colour: $darkgray;
 $footer-bottom-border-colour: $darkgray;
 
 /* --- Style Variables --- */
-
-/* --- Colour Styles --- */
-
-body { 
-	background-color: $body-background-colour; 
-	color: $body-text-colour;
-}
-
-a {
-	// background-color: $link-background-colour;
-	color: $link-text-colour;
-	border-bottom: 1px dotted $link-decoration-colour;
-
-	&:hover {	
-		//background-color: $link-hover-background-colour;
-		color: $link-hover-colour;
-		border-bottom: 1px dotted $link-hover-colour;
-	}
-}
-
-code {
-	background-color: $code-background-colour;
-	color: $code-text-colour;
-}
-
-.banner {
-	background-color: $banner-background-colour;
-	color: $banner-text-colour;
-
-	a {
-		color: $banner-text-colour;
-	}
-}
-
-header {
-
-	p { 
-		color: $header-text-colour; 
-	}
-}
-
-// is this used ???
-.excerpt {
-	color: $excerpt-text-colour;
-}
-
-.site-title, .avatar {
-	background: $title-background-colour;
-
-	a {
-		background-color: $title-background-colour;
-		color: $title-link-colour;
-	}
-
-	p {
-		color: $secondary-text-colour;
-	}
-}
-
-.hero { 
-	background-color: $hero-background-colour; 
-}
-
-.paginator {
-
-	a { 
-		border: 1px solid $pagination-box-colour; 
-	} 
-
-	em, span { 
-		background-color: $pagination-disabled-colour; 
-		border: 1px solid $pagination-disabled-colour; 
-		color: $pagination-disabled-text-colour;
-	}
-}
-
-blockquote {
-
-	color: $quotation-text-colour;
-	background-color: $quotation-background-colour;
-
-	p:before {
-		color: $quotation-decoration-colour;
-	}
-
-	p:after {
-		color: $quotation-decoration-colour;
-	}
-}
-
-footer { 
-	background-color: $footer-background-colour; 
-	color: $footer-text-colour; 
-
-	border-bottom: 1em solid $footer-bottom-border-colour;
-
-	a {
-		background-color: $footer-background-colour;
-		color: $footer-link-colour;
-		border-bottom: 1px solid $footer-link-colour;
-
-		&:hover {	
-			color: $footer-link-hover-colour;
-			border-bottom: 1px solid $footer-link-hover-colour;
-		}
-	}
-
-	h2, h3, h4 {
-	 	color: $footer-heading-colour;
-	}
-}
-
-.post-summary {
-	p {
-		color: 	$secondary-text-colour;
-	}
-}
-
-/* --- Colour Styles --- */

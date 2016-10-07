@@ -1,86 +1,12 @@
 /* typography */
 
-$heading-font: 'Open Sans', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif; 
-$body-font: $heading-font; //Georgia, Garamond, Cambria, Times, 'Times New Roman', serif; 
+$heading-font: 'Open Sans', 'Helvetica Neue', Helvetica, 'Lucida Sans', Geneva, Verdana, sans-serif;
+$body-font: $heading-font; //Georgia, Garamond, Cambria, Times, 'Times New Roman', serif;
 $code-font: Consolas, Monaco, "Lucida Console", "Courier New", courier, monospace;
 
 $weight-light: 300;
 $weight-normal: 400;
 $weight-semibold: 500;
 $weight-bold: 700;
-
-body { 
-	font-family: $body-font; 
-	font-weight: $weight-normal;
-	line-height: 1.6;
-	letter-spacing: -0.003em;
-}
-
-h1, h2, h3, h4, h5, h6 { 
-	font-family: $heading-font; 
-	font-weight: $weight-bold;
-	font-style: normal;
-	letter-spacing: 0;
-}
-
-.site-title {
-	p {
-		font-size: 150%;
-	}
-}
-
-.banner {
-
-	a {
-		font-weight: $weight-bold;
-		// text-transform: uppercase;
-	}
-}
-
-a {
-	text-decoration: none;
-}
-
-code {
-	font-family: $code-font;
-}
-
-blockquote {
-	font-size: 200%;
-	font-style: italic;
-
-	p:before {
-		content: '"';
-		content: open-quote;
-		font-size: 4em;
-		line-height: 0.1em;
-		margin-right: 0.25em;
-		vertical-align: -0.4em;
-	}
-
-	p:after {
-		content: '"';
-		content: close-quote;
-		font-size: 4em;
-		line-height: 0.1em;
-		vertical-align: -0.4em;
-	}
-}
-
-.paginator {
-	font-family: $heading-font;
-}
-
-footer { 
-	font-family: $heading-font;
-
-	h2, h3, h4 {
-	 	letter-spacing:-0.02em;
-	}
-}
-
-.large-icons {
-	font-size: 250%
-}
 
 /* typography */
