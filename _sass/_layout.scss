@@ -5,7 +5,11 @@ body {
 	font-weight: $weight-normal;
 	line-height: 1.6;
 	letter-spacing: -0.003em;
+
+	background-color: $body-background-colour;
+	color: $body-text-colour;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
@@ -74,11 +78,6 @@ footer {
 	font-size: 250%
 }
 
-
-body {
-	background-color: $body-background-colour;
-	color: $body-text-colour;
-}
 
 a {
 	// background-color: $link-background-colour;
@@ -318,23 +317,23 @@ footer {
 	}
 
 	.waste {
-		background-image: url("/img/heroes/muda-muri-mura.png");
+		background-image: url("/img/heroes/hero-muda-muri-mura.png");
 	}
 
 	.agile {
-		background-image: url("/img/heroes/agile-maxim-1.png");
+		background-image: url("/img/heroes/hero-agile-maxim-1.png");
 	}
 
 	.cloud {
-		background-image: url("/img/heroes/man-love-1600.jpg");
+		background-image: url("/img/heroes/hero-man-love.jpg");
 	}
 
 	.power {
-		background-image: url("/img/heroes/crampton-locomotive-1600.jpg");
+		background-image: url("/img/heroes/hero-crampton-locomotive.jpg");
 	}
 
 	.secret {
-		background-image: url("/img/heroes/secret-harbour.jpg");
+		background-image: url("/img/heroes/hero-secret-harbour.jpg");
 	}
 }
 
@@ -352,21 +351,6 @@ footer {
 }
 
 /* layout */
-
-// display a grid for alignment etc.
-
-/*
-
-$grid-colour: #ccc;
-$grid-spacing: 100px;
-$grid-size: 101px;
-
-body {
-    background-image: repeating-linear-gradient(0deg,transparent,transparent $grid-spacing,$grid-colour $grid-spacing,$grid-colour $grid-size),repeating-linear-gradient(-90deg,transparent,transparent $grid-spacing,$grid-colour $grid-spacing,$grid-colour $grid-size);
-    background-size: $grid-size $grid-size;
-}
-
-*/
 
 // refactoring and debugging
 
