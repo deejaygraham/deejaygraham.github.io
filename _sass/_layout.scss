@@ -63,7 +63,24 @@ blockquote {
 }
 
 .paginator {
+
 	font-family: $heading-font;
+
+	a {
+		padding: 0.2em 0.4em;
+		border: 1px solid $pagination-box-colour;
+	}
+
+	em, span {
+		padding: 0.2em 0.4em;
+		background-color: $pagination-disabled-colour;
+		border: 1px solid $pagination-disabled-colour;
+		color: $pagination-disabled-text-colour;
+	}
+
+	.button {
+		padding: 0 10px;
+	}
 }
 
 footer {
@@ -132,19 +149,6 @@ header {
 
 .hero {
 	background-color: $hero-background-colour;
-}
-
-.paginator {
-
-	a {
-		border: 1px solid $pagination-box-colour;
-	}
-
-	em, span {
-		background-color: $pagination-disabled-colour;
-		border: 1px solid $pagination-disabled-colour;
-		color: $pagination-disabled-text-colour;
-	}
 }
 
 blockquote {
@@ -252,20 +256,6 @@ header {
 	}
 }
 
-.paginator {
-
-	a {
-		padding: 0.2em 0.4em;
-	}
-
-	em, span {
-		padding: 0.2em 0.4em;
-	}
-
-	.button {
-		padding: 0 10px;
-	}
-}
 
 footer {
 	padding-bottom: 2em;
