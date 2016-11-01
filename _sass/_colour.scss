@@ -5,16 +5,16 @@
 /* --- Named Colours --- */
 
 // Neutrals
-$white: #fff;
-$subduedgray: #dbe6ec; // mystic
-$lightgray: #99a9b3; // gull gray
-$bodygray: #67747c; // nevada
-$titlegray: #3b444f; // bright gray
-$darkgray: #2c3643; // ebony clay
+$white: rgb(255, 255, 255);
+$subduedgray: rgb(219, 230, 236); //#dbe6ec; // mystic
+$lightgray: rgb(153, 169, 179); // #99a9b3; // gull gray
+$bodygray: rgb(103, 116, 124); //#67747c; // nevada
+$titlegray: rgb(59, 68, 79); //#3b444f; // bright gray
+$darkgray: rgb(44, 54, 67); //#2c3643; // ebony clay
 
 // Accents
-$darkblue: #0D3C55; //Tarawera
-$lightgreen: #B5C588; // Pine Glade
+$darkblue: rgb(13, 60, 85); //#0D3C55; //Tarawera
+$lightgreen: rgb(181, 197, 136); //#B5C588; // Pine Glade
 
 // tint()
 // grayscale($purple-blue)
