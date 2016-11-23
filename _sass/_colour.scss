@@ -4,21 +4,28 @@
 
 /* --- Named Colours --- */
 
+$colour-white: rgb(255, 255, 255);
+$colour-mystic: rgb(219, 230, 236);
+$colour-gullGray: rgb(153, 169, 179);
+$colour-nevada: rgb(103, 116, 124);
+$colour-brightGray: rgb(59, 68, 79);
+$colour-ebonyClay: rgb(44, 54, 67);
+$colour-tarawera: rgb(13, 60, 85);
+$colour-pineGlade: rgb(181, 197, 136);
+
 // Neutrals
-$white: rgb(255, 255, 255);
-$subduedgray: rgb(219, 230, 236); //#dbe6ec; // mystic
-$lightgray: rgb(153, 169, 179); // #99a9b3; // gull gray
-$bodygray: rgb(103, 116, 124); //#67747c; // nevada
-$titlegray: rgb(59, 68, 79); //#3b444f; // bright gray
-$darkgray: rgb(44, 54, 67); //#2c3643; // ebony clay
+$white: $colour-white;
+$subduedgray: $colour-mystic;
+$lightgray: $colour-gullGray;
+$bodygray: $colour-nevada;
+$titlegray: $colour-brightGray;
+$darkgray: $colour-ebonyClay;
 
 // Accents
-$darkblue: rgb(13, 60, 85); //#0D3C55; //Tarawera
-$lightgreen: rgb(181, 197, 136); //#B5C588; // Pine Glade
+$darkblue: $colour-tarawera;
+$lightgreen: $colour-pineGlade;
 
-// tint()
-// grayscale($purple-blue)
-// darken($purple-blue, 20%);
+// tint() grayscale($purple-blue) darken($purple-blue, 20%);
 
 /* --- Named Colours --- */
 
