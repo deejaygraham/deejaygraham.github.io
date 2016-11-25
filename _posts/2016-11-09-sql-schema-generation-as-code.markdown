@@ -17,8 +17,8 @@ Plus the bug in a lot of versions of SQL server that means that the order that t
 scripted in is entirely random so that seeing changes between one version and the other is
 all but impossible.  
 
-What we'd really like is a repeatable, source-controllable means of creating a database schema...? Almost
-as if I had written it myself - here's a script I wrote myself to do just that.
+What we'd really like is a repeatable, source-controllable means of creating a database schema...? Well, I'm
+glad you asked. Here's a script to do just that :)
 
 This PowerShell script takes an existing database and generates the SQL statements
 required to generate the database schema from scratch, in alphabetical (so mostly diff-able), repeatable order.
