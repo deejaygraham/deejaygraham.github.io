@@ -8,4 +8,8 @@
 # using dialogue sheets
 # nebytes giant robots
 # Twitter bot for dog
+# Facing Backwards - using yesterday's weather to predict the future
+# Core protocols for code review
+# Sketchnotes recent
+
 deej & bnn posts
