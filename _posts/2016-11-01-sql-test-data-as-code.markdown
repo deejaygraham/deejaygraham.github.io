@@ -2,8 +2,8 @@
 layout: post
 title: SQL Test Data as Code
 published: true
-tags: [ cloud  ]
-hero: cloud
+tags: [ powershell  ]
+hero: power
 ---
 
 I'm a big fan of driving manual, error-prone setup steps for anything into scripts and
