@@ -32,10 +32,10 @@ option_parser = OptionParser.new do | opts |
   end
 
   options[:publish] = false
-  opts.on( '-p', '--publish', 'Mark for immediate publish' ) do 
+  opts.on( '-p', '--publish', 'Mark for immediate publish' ) do
      options[:publish] = true
   end
-  
+
   opts.on( '-h', '--help', 'Display this screen' ) do
      puts opts
      exit
@@ -52,8 +52,10 @@ end
 # First argument must be the title of the post
 title = ARGV[0]
 # Use the post title to name the file and optional image file
-safe_title = title.downcase.strip.gsub(' ', '-')
-post_filename = options[:date] + '-' + safe_title + options[:extension]
+safe_title = title.downcase.strip.gsub(' ', '-').gsub(',', '-')
+# post_filename = options[:date] + '-' + safe_title + options[:extension]
+# drafts shouldn't have a date...
+post_filename = safe_title + options[:extension]
 
 # If there is a drafts subfolder, create the post file
 # there rather than in the current directory.
@@ -66,8 +68,8 @@ puts "Creating post in #{path_to_post} "
 
 
 # Optional path to an image
-# if set, we copy the image into the img folder 
-# and add a link to it in the body of the file 
+# if set, we copy the image into the img folder
+# and add a link to it in the body of the file
 add_image_link = false
 
 # check if image supplied - copy it and put a reference to it in the post
@@ -80,10 +82,10 @@ Dir.mkdir(new_post_image_folder) unless Dir.exists?(new_post_image_folder)
 
 if File.exists?(options[:image])
 	add_image_link = true
-	# get file name only 
+	# get file name only
 	# create new path and copy the file
 	image_filename = File.split(options[:image])[1]
-	
+
 	FileUtils.cp(options[:image], new_post_image_folder)
 	puts image_filename
 end
@@ -92,27 +94,28 @@ end
 yaml = {
   'layout' => "#{options[:layout]}",
   'title' => title,
-  'tags' => "[ #{options[:tags]} ]" 
+  'published' => 'true',
+  'tags' => "[ #{options[:tags]} ]"
 }
 
 yaml_delimiter = '---'
 
-File.open(path_to_post, "w") do | file |  
-   
+File.open(path_to_post, "w") do | file |
+
    # Front matter
    file.puts yaml_delimiter
-   
+
    yaml.each do | key, value |
 	file.puts key + ': ' + value + "\n"
    end
 
    file.puts yaml_delimiter
-   
+
    # Main content
    file.puts
    file.puts '# ' + title
    file.puts
-   
+
    if add_image_link
 		file.puts 'Imported this image: '
 		file.puts "![image](/#{image_post_subfolder}/#{safe_title}/#{image_filename})"
