@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unboxing the BBC Micro:bit
-tags: [ code ]
+tags: [ code, microbit ]
 published: true
 ---
 

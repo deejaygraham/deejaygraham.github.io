@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Balancing Ball - Writing a Game for the BBC Micro:bit
-tags: [ code ]
+tags: [ code, microbit ]
 published: true
 ---
 
