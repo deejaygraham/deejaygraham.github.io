@@ -31,7 +31,8 @@ collaborative than critical.
 It starts with the creator (or *perfectee*) presenting something to someone else, asking that
 person to rate the performance on a scale of 1 to 10. The *perfector* then lists the things
 they liked about the performance and offers suggestions for improvement that would take the work
-form it's current score to a "10".
+from it's current score to a "10". If the perfector can't think of a way to improve the code, they
+can't withhold points.
 
 ### Review
 
@@ -43,7 +44,7 @@ questions - "why did you do it that way?", "that's all wrong, why would you writ
 
 The junior dev may strongly identify with *their* code and feel very protective of it, maybe even
 insulted if the code doesn't see them instantly welcomed as the second coming of Linus Torvalds. There's probably
-a whole series of articles on using techniques like the Socratic method to teach self evaluation
+a whole series of articles on using techniques, like the Socratic method, to teach self evaluation
 of source code.
 
 Teaching a
