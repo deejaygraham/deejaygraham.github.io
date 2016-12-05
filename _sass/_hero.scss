@@ -1,0 +1,35 @@
+.hero {
+	background-color: $hero-background-colour;
+	display:none;
+}
+
+@media (min-width: 750px) {
+
+	.hero {
+		padding: 10em;
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.waste {
+		background-image: url("/img/heroes/hero-muda-muri-mura.png");
+	}
+
+	.agile {
+		background-image: url("/img/heroes/hero-agile-maxim-1.png");
+	}
+
+	.cloud {
+		background-image: url("/img/heroes/hero-man-love.jpg");
+	}
+
+	.power {
+		background-image: url("/img/heroes/hero-crampton-locomotive.jpg");
+	}
+
+	.secret {
+		background-image: url("/img/heroes/hero-secret-harbour.jpg");
+	}
+}
