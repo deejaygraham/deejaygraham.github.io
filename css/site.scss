@@ -2,11 +2,44 @@
 # container scss for site.css
 ---
 
+// general
 @import "normalize";
 @import "skeleton";
 @import "font-awesome";
 @import "typography";
 @import "colour";
+
+// components
 @import "layout";
+
+// styling
+  // background
+  // border
+  // color
+  // font
+  // padding
+  // text-align
+
+// Layouting
+  // clear
+  // float
+  // margin
+  // position
+  // transform
+  // top, right, bottom, left
+  // width, height
+
+//@import "layout-legacy";
+//@import "banner";
+//@import "hero";
+//@import "post-preview";
+//@import "paginator";
+//@import "post";
+
+//@import "tag-cloud";
+//@import "social";
+//@import "internal-links";
+//@import "colophon";
+
 //@import "grid";
 //@import "debug";
