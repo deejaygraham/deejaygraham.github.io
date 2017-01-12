@@ -69,19 +69,19 @@ better way.
 
 ### The PowerShell Way
 
- Neither of the previous two approaches seemed very PowerShell-y, they harked back to a procedural,
- string building kind of mentality which is often not the approach of this language.
+Neither of the previous two approaches seemed very PowerShell-y, they harked back to a procedural,
+string building kind of mentality which is often not the approach of this language.
 
- The "correct" approach, I just discovered, is to let PowerShell work it out by embedding the
- arguments directly into the program call as if you were typing them on the command line - no need
- for string concatenation or expanding string variables before calling the program.
+The "correct" approach, I just discovered, is to let PowerShell work it out by embedding the
+arguments directly into the program call as if you were typing them on the command line - no need
+for string concatenation or expanding string variables before calling the program.
 
- ~~~
+~~~
 
-    & RunMyProgram.exe /p="$MyArg1" /v /s="$MyArg2" $MyArg3
+  & RunMyProgram.exe /p="$MyArg1" /v /s="$MyArg2" $MyArg3
 
- ~~~
+~~~
 
- Variable values are expanded correctly, literal values are passed correctly without needing to be
- explicitly made string values, the arguments are directly there with the call to the program and, best
- of all, it worked first time - which is not what I could have said about the other two approaches.
+Variable values are expanded correctly, literal values are passed correctly without needing to be
+explicitly made string values, the arguments are directly there with the call to the program and, best
+of all, it worked first time - which is not what I could have said about the other two approaches.
