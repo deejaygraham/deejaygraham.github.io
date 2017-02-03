@@ -100,15 +100,20 @@ runs our cmdlet with the <code>-Verbose</code> switch.
 ### Parameters
 
 specifying
+
+strings,
+switches
+arrays
+
+optional
+mandatory
+
+processing multiple records from pipe.
+
 validating
 Help
 
 ### Returning Data
-
-### Logging
-
-
-
 
 ### Errors
 
