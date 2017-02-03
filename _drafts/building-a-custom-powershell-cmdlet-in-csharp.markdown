@@ -5,8 +5,6 @@ published: true
 tags: [ code, cloud, powershell ]
 ---
 
-## Building a Custom PowerShell Cmdlet in C Sharp
-
 
 Over the time I've spent automating deployment and build processes, I have fallen
 out with plain command line applications and batch files. In their stead, I favour
@@ -56,8 +54,31 @@ use the two string version of the attribute to provide the verb as text.
 
 <script src="https://gist.github.com/deejaygraham/5c808a28d4dc5b9d1e10a332172773ee.js"></script>
 
+Building the project into an assembly will let you write the PowerShell to use it. In a plain vanilla
+console, we can run <code>Get-Module</code> and see this:
+
+![get-module](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module.png)
+
+We can then run <code>Import-Module .\ExampleCmdlet.dll</code>, followed by another
+ <code>Get-Module</code> and see this:
+
+![get-module](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module2.png)
+
+and run it using <code>Get-FortuneCookie</code>. Granted that doesn't do much. We need
+to actually execute some code...
 
 ### Execution
+
+To execute actual code, we need to override the <code>ProcessRecord()</code> method. The
+simplest thing we could do is write out the first fortune cookie. Like this:
+
+<script src="https://gist.github.com/deejaygraham/f9b29fa95f9c609adbf5b3ed9d73560d.js"></script>
+
+As you would expect, that writes out to the console:
+
+![first output](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/first-output.png)
+
+
 
 
 ### Parameters
@@ -69,6 +90,11 @@ Help
 ### Returning Data
 
 ### Logging
+
+### Verbosity
+
+### Debugging
+
 
 ### Errors
 
