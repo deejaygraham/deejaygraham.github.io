@@ -67,6 +67,7 @@ We can then run <code>Import-Module .\ExampleCmdlet.dll</code>, followed by anot
 and run it using <code>Get-FortuneCookie</code>. Granted that doesn't do much. We need
 to actually execute some code...
 
+
 ### Execution
 
 To execute actual code, we need to override the <code>ProcessRecord()</code> method. The
@@ -78,7 +79,22 @@ As you would expect, that writes out to the console:
 
 ![first output](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/first-output.png)
 
+Now that we have some kind of output, it's not a massive leap to add in some randomness.
 
+<script src="https://gist.github.com/deejaygraham/82a0ffece4620cbd50d6e4717317e788.js"></script>
+
+Running the command multiple times, behaves as expected.
+
+![random output](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/random-cookie.png)
+
+
+### Debugging and Verbosity
+
+Maybe now is a good time to add some debug logging. The <code>WriteDebug()</code> method
+gives us what we want here. We could also add some verbose information when the user
+runs our cmdlet with the <code>-Verbose</code> switch.
+
+<script src="https://gist.github.com/deejaygraham/61fbf319ac4b5e10546222c3384b3d1e.js"></script>
 
 
 ### Parameters
@@ -91,9 +107,7 @@ Help
 
 ### Logging
 
-### Verbosity
 
-### Debugging
 
 
 ### Errors
