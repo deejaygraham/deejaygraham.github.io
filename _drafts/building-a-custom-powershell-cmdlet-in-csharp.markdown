@@ -96,26 +96,61 @@ runs our cmdlet with the <code>-Verbose</code> switch.
 
 <script src="https://gist.github.com/deejaygraham/61fbf319ac4b5e10546222c3384b3d1e.js"></script>
 
+### Returning Data
+
+So far we are writing text to the output using the <code>WriteOutput</code> method. It would be nice if
+we could return an object with a bit more context built in. First, we need to define a type <code>FortuneCookie</code>.
+Second we need to refactor the internal code to deal in FortuneCookie objects. Finally, we
+need to tell PowerShell that we want to return that type from the cmdlet. Note, we leave the
+call to <code>WriteObject</code> since PowerShell will now understand something about our new type.
+
+<script src="https://gist.github.com/deejaygraham/b90a4e9432acbd687883b7d639198f1a.js"></script>
+
+![output](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/output-type.png)
+
 
 ### Parameters
 
-specifying
+Now that we have a functioning cmdlet, it would be nice to add parameters so that we can
+change the behaviour at runtime. Perhaps we should change the default behaviour so that running
+Get-FortuneCookie will return all the cookies and we can pick a random cookie by passing the
+-Random switch? First we create a member property to hold the setting and apply a <code>Parameter</code>
+attribute to alert PowerShell to it.
 
-strings,
-switches
-arrays
+<script src="https://gist.github.com/deejaygraham/4e8c797651118be7f3d837e3903598b5.js"></script>
 
-optional
-mandatory
+So running with no parameters as before we get:
 
-processing multiple records from pipe.
+ ![full output](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/all-cookies.png)
 
-validating
-Help
-
-### Returning Data
-
-### Errors
+and running it with the -Random switch returns to the original functionality:
 
 
-### -WhatIf
+![switch](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/random-switch.png)
+
+Most parameters are native types but the <code>SwitchParameter</code> type allows us to pass the
+name of the option. If we had declared Random to be a <code>bool</code> we would have been forced to write:
+
+~~~
+
+Get-FortuneCookie -Random $true
+
+~~~
+
+Which I think we can all agree is not an elegant experience for the user.
+
+
+### What, If?
+
+Finally, one of the most useful and yet under used arguments to a cmdlet is the WhatIf switch. I like this
+because it allows you to try out a dummy run of a scary command like <code>Delete-TheInternet</code> without
+actually doing anything. A well written but potentially high risk cmdlet will implement this
+option to allow someone to make sure all their parameters are correct before running it for real.
+
+<script src="https://gist.github.com/deejaygraham/ba3e953304d3e5dd59de3a45103fa3d8.js"></script>
+
+### Done
+
+And that's our example cmdlet completed. There are more options to explore - for error reporting,
+throwing exceptions, mandatory parameters, handling pipeline input - which I may come
+back to later once I've had longer to play around building some real world cmdlets.
