@@ -38,7 +38,7 @@ I borrowed a few and created a list of them to select from:
 
 <script src="https://gist.github.com/deejaygraham/a54146d62f4846a0f85ec8fd1cb42cf6.js"></script>
 
-To make this class into a Cmdlet, I need to derive the class from <code>System.Management.Automation.Cmdlet</code>. I also need
+To make this class into a Cmdlet, I need to derive the class from <code class="powershell">System.Management.Automation.Cmdlet</code>. I also need
 to decide what the class name is going to be and what it should be called in PowerShell.
 
 
@@ -55,16 +55,16 @@ use the two string version of the attribute to provide the verb as text.
 <script src="https://gist.github.com/deejaygraham/5c808a28d4dc5b9d1e10a332172773ee.js"></script>
 
 Building the project into an assembly will let you write the PowerShell to use it. In a plain vanilla
-console, we can run <code>Get-Module</code> and see this:
+console, we can run <code class="powershell">Get-Module</code> and see this:
 
 ![get-module](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module.png)
 
-We can then run <code>Import-Module .\ExampleCmdlet.dll</code>, followed by another
- <code>Get-Module</code> and see this:
+We can then run <code class="powershell">Import-Module .\ExampleCmdlet.dll</code>, followed by another
+ <code class="powershell">Get-Module</code> and see this:
 
 ![get-module](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module2.png)
 
-and run it using <code>Get-FortuneCookie</code>. Granted that doesn't do much. We need
+and run it using <code class="powershell">Get-FortuneCookie</code>. Granted that doesn't do much. We need
 to actually execute some code...
 
 
@@ -131,11 +131,7 @@ and running it with the -Random switch returns to the original functionality:
 Most parameters are native types but the <code>SwitchParameter</code> type allows us to pass the
 name of the option. If we had declared Random to be a <code>bool</code> we would have been forced to write:
 
-~~~
-
-Get-FortuneCookie -Random $true
-
-~~~
+<code class="powershell">Get-FortuneCookie -Random $true</code>
 
 Which I think we can all agree is not an elegant experience for the user.
 
@@ -143,7 +139,7 @@ Which I think we can all agree is not an elegant experience for the user.
 ### What, If?
 
 Finally, one of the most useful and yet under used arguments to a cmdlet is the WhatIf switch. I like this
-because it allows you to try out a dummy run of a scary command like <code>Delete-TheInternet</code> without
+because it allows you to try out a dummy run of a scary command like <code class="powershell">Delete-TheInternet</code> without
 actually doing anything. A well written but potentially high risk cmdlet will implement this
 option to allow someone to make sure all their parameters are correct before running it for real.
 
