@@ -5,10 +5,11 @@ published: true
 tags: [ code  ]
 ---
 
-![mcpi](/img/posts/hello--minecraft/minecraft_pi_edition_header.jpg)
-
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
-writing some code to script building using the Python interface.
+writing some code to do some building using the Python interface.
+
+![boot](/img/posts/hello--minecraft/boot-sequence.jpg)
+
 
 ### Get
 
