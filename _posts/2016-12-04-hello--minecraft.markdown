@@ -8,12 +8,13 @@ tags: [ code  ]
 ![mcpi](/img/posts/hello--minecraft/minecraft_pi_edition_header.jpg)
 
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
-writing some code to script building using the Python interface.
+writing some code to script some building using the Python interface.
 
 ### Get
 
-Minecraft has been installed by default on Raspbian images for a long time, but if
-you don't have it installed, you can get it, either by opening a terminal and typing:
+Minecraft has been installed by default on Raspbian images for a long time, and more recent
+Raspbian images have the API installed by default but if
+you don't have the python API installed, you can get it, either by opening a terminal and typing:
 
 ~~~
 
@@ -69,8 +70,19 @@ Command | Action
 
 ### Python
 
-To start writing scripts against our brave new world, you will need to create a python
-source file, say hello.py, like this:
+To start writing scripts against our brave new world, you will need to create a
+new folder to store your python scripts. For ease, we can copy the contents of the
+mcpi folder into the new code folder. If you have a more recent version of Raspbian,
+you can run a script from any folder and it will work.
+
+~~~
+
+cp -r ~/mcpi/api/python/* .
+
+~~~
+
+Once that's done, we are ready to start programming in minecraft. First you will need
+to create a new python source file, say hello.py, like this:
 
 ~~~
 
