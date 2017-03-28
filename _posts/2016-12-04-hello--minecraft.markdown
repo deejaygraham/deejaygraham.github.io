@@ -5,16 +5,18 @@ published: true
 tags: [ code  ]
 ---
 
-![mcpi](/img/posts/hello--minecraft/minecraft_pi_edition_header.jpg)
-
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
-writing some code to script some building using the Python interface.
+writing some code to do some building using the Python interface.
 
-### Get
+![boot](/img/posts/hello--minecraft/boot-sequence.jpg)
+
+
+### For Older Installations...
 
 Minecraft has been installed by default on Raspbian images for a long time, and more recent
-Raspbian images have the API installed by default but if
-you don't have the python API installed, you can get it, either by opening a terminal and typing:
+Raspbian images have the API installed by default so that you can write and run your scripts
+from anywhere. If you have an older image without the API, you can get it either by opening
+a terminal and typing:
 
 ~~~
 
@@ -23,8 +25,8 @@ sudo apt-get install minecraft-pi
 
 ~~~
 
-or by downloading the <a href="https://s3.amazonaws.com/assets.minecraft.net/pi/minecraft-pi-0.1.1.tar.gz">PI Edition of Minecraft here</a>.
-Or by using wget:
+or by downloading the <a href="https://s3.amazonaws.com/assets.minecraft.net/pi/minecraft-pi-0.1.1.tar.gz">PI
+Edition of Minecraft here</a> using the Pi web browser. Or you can use wget from the console:
 
 ~~~
 
@@ -49,6 +51,10 @@ start a minecraft session by typing:
 ./minecraft-pi
 
 ~~~
+
+Newer Pi images have a desktop shortcut or menu item so you can start Minecraft directly
+from the UI.
+
 
 ### Navigation
 
@@ -81,7 +87,7 @@ cp -r ~/mcpi/api/python/* .
 
 ~~~
 
-Once that's done, we are ready to start programming in minecraft. First you will need
+Once that's done, we are ready to start programming in Minecraft. First you will need
 to create a new python source file, say hello.py, like this:
 
 ~~~
