@@ -2,7 +2,7 @@
 layout: post
 title: Building a house in Minecraft
 published: true
-tags: [ code ]
+tags: [ code, minecraft ]
 ---
 
 The Python API for the raspberry pi edition of Minecraft is really nice and easy to
@@ -73,12 +73,12 @@ playerPosition = world.player.getTilePos()
 house_height = 5
 house_depth = 10
 house_width = 10
+wall_thickness = 1
 
-for y in range(0, house_height):
-  for z in range(1, house_depth):
-    for x in range(1, house_width):
-      mc.setBlock(playerPosition.x + x, playerPosition.y + y, playerPosition.z + z, block.STONE_BRICK.id)
-
+world.setBlocks(x, y, z, x + house_width, y + house_height, z + house_depth, block.STONE.id)
+world.setBlocks(x + wall_thickness, y, z + wall_thickness,
+                x + house_width - wall_thickness, y + house_height, z + house_depth - wall_thickness,
+                block.STONE_BRICK.id)
 ~~~
 
 Nice and easy but now we need a roof and a doorway and a swimming pool and maybe a lava moat...

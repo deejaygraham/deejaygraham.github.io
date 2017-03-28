@@ -152,7 +152,11 @@ height = 10
 width = 5
 length = 15
 
+wall_thickness = 1
+
 world.setBlocks(x, y, z, x + length, y + height, z + width, block.STONE.id)
-world.setBlocks(x + 1, y, z + 1, x + length - 2, y + height, z + width - 2, block.STONE.id)
+world.setBlocks(x + wall_thickness, y, z + wall_thickness,
+                x + length - wall_thickness, y + height, z + width - wall_thickness,
+                block.STONE.id)
 
 ~~~

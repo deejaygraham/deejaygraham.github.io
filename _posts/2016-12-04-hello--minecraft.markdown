@@ -2,7 +2,7 @@
 layout: post
 title: Hello, Minecraft
 published: true
-tags: [ code  ]
+tags: [ code, minecraft ]
 ---
 
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
