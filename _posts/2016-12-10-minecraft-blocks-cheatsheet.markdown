@@ -123,7 +123,8 @@ FENCE_GATE          | 107
 GLOWING_OBSIDIAN    | 246
 NETHER_REACTOR_CORE | 247
 
-There are a few others but they are not called out in the API as block ids.
+There are a few others but they are not called out in the API as block ids. There is
+a more comprehensive <a href="http://minecraft.gamepedia.com/Pocket_Edition_data_values">guide to blocks and optional attributes</a>.
 
 ### Bigger building
 
@@ -157,6 +158,6 @@ wall_thickness = 1
 world.setBlocks(x, y, z, x + length, y + height, z + width, block.STONE.id)
 world.setBlocks(x + wall_thickness, y, z + wall_thickness,
                 x + length - wall_thickness, y + height, z + width - wall_thickness,
-                block.STONE.id)
+                block.AIR.id)
 
 ~~~
