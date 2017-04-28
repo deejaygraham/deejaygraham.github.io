@@ -5,7 +5,9 @@ published: true
 tags: [  quote  ]
 ---
 
-> I can give you a silver bullet, but be aware that YOU might be the werewolf.
-
-Dale Emery (@dhemery)
+<blockquote>
+<p>I can give you a silver bullet, but be aware that YOU might be the werewolf.
+</p>
+</blockquote>
+<small>Dale Emery (@dhemery)</small>
 

@@ -5,7 +5,9 @@ published: true
 tags: [  quote ]
 ---
 
-> Yup. PfA. Replace magic with engineering.
-
-[Kevlin Henney](http://www.curbralan.com/)
-
+<blockquote>
+<p>
+Yup. PfA. Replace magic with engineering.
+</p>
+</blockquote>
+<small><a href="http://www.curbralan.com/">Kevlin Henney</a></small>

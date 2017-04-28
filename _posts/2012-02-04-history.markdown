@@ -5,11 +5,14 @@ published: true
 tags: [  quote  ]
 ---
 
-> Biographical history, as taught in our public schools, is still largely a 
-> history of boneheads: ridiculous kings and queens, paranoid political 
-> leaders, compulsive voyagers, ignorant generals - the flotsam and jetsam 
-> of historical currents. The men who radically altered history, the great 
-> scientists and mathematicians, are seldom mentioned, if at all.
-
-Martin Gardner (21 October 1914 – 22 May 2010)
+<blockquote>
+<p>
+Biographical history, as taught in our public schools, is still largely a 
+history of boneheads: ridiculous kings and queens, paranoid political 
+leaders, compulsive voyagers, ignorant generals - the flotsam and jetsam 
+of historical currents. The men who radically altered history, the great 
+scientists and mathematicians, are seldom mentioned, if at all.
+</p>
+</blockquote>
+<small>Martin Gardner (21 October 1914 – 22 May 2010)</small>
 

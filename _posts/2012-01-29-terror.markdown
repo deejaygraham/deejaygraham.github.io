@@ -5,9 +5,11 @@ published: true
 tags: [  quote  ]
 ---
 
-> No man dies for what he knows to be true. Men die for 
-> what they want to be true, for what some terror in their 
-> hearts tells them is not true
-
-Oscar Wilde
-
+<blockquote>
+<p>
+No man dies for what he knows to be true. Men die for 
+what they want to be true, for what some terror in their 
+hearts tells them is not true
+</p>
+</blockquote>
+<small>Oscar Wilde</small>

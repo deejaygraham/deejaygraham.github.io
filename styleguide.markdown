@@ -29,13 +29,15 @@ This is normal text. *This is italic text.* **This is bold text!**
 
 ----
 
->
-> Morbi eget gravida nunc, vel viverra mauris. In sodales iaculis velit, 
-> et sollicitudin eros malesuada et. In accumsan sem vitae dolor luctus posuere. 
-> Vivamus ac ornare mi. Quisque euismod bibendum auctor. Nunc viverra tristique 
-> augue, in eleifend eros dignissim ut. 
->
-
+<blockquote>
+<p>
+Morbi eget gravida nunc, vel viverra mauris. In sodales iaculis velit, 
+et sollicitudin eros malesuada et. In accumsan sem vitae dolor luctus posuere. 
+Vivamus ac ornare mi. Quisque euismod bibendum auctor. Nunc viverra tristique 
+augue, in eleifend eros dignissim ut. 
+<small>attribution</small>
+</p>
+</blockquote>
 ----
 
 Click some links - [Visit GitHub!](http://www.github.com) !!!

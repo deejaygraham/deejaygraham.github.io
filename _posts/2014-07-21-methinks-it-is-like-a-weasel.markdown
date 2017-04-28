@@ -17,16 +17,14 @@ This is the canonical example provided by Richard Dawkins in his book
 which attempts to start with a random series of letters of the right length and 
 by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
->
-> HAMLET
-> Do you see yonder cloud that’s almost in shape of a camel?
->
-> POLONIUS
-> By th' mass, and ’tis like a camel indeed.
-> 
-> HAMLET
-> Methinks it is like a weasel.
->
+<blockquote>
+<p>HAMLET</p>
+<p>Do you see yonder cloud that’s almost in shape of a camel?</p>
+<p>POLONIUS</p>
+<p>By th' mass, and ’tis like a camel indeed.</p>
+<p>HAMLET</p>
+<p>Methinks it is like a weasel.</p>
+</blockquote>
 
 <script src="https://gist.github.com/deejaygraham/0f9215abd64ffaf91a24.js"></script>
 
