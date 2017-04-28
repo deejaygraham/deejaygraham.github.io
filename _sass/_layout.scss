@@ -163,6 +163,10 @@ blockquote {
 	p:after {
 		color: $quotation-decoration-colour;
 	}
+
+	small {
+		color: $titlegray;
+	}
 }
 
 footer {

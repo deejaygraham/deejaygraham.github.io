@@ -67,7 +67,7 @@ $code-background-colour: $subduedgray;
 $code-text-colour: $body-text-colour;
 
 // Quotes
-$quotation-text-colour: $lightgray;
+$quotation-text-colour: $body-text-colour; // $lightgray;
 $quotation-decoration-colour: $lightgray;
 $quotation-background-colour: $body-background-colour;
 $quotation-border-colour: $body-background-colour;
