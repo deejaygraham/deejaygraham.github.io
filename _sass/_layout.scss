@@ -90,6 +90,11 @@ footer {
 	h2, h3, h4 {
 	 	letter-spacing:-0.02em;
 	}
+	
+	input[type="text"] {
+		color: $body-text-colour;
+		background-color: $body-background-colour;
+	}
 }
 
 .large-icons {
