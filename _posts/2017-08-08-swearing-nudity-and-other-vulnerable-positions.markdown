@@ -9,9 +9,9 @@ On the 8th of August <a href="http://wisenoodle.me/">John Le Drew</a> was kind e
 travel up to Newcastle to talk at the <a href="http://www.meetup.com/Agile-North-East/">Agile North East meetup</a>
 in <a href="http://campusnorth.co.uk/">Campus North</a>.
 
-John talked about Google's Project Aristotle, psychological safety, trust, teamwork,
-motivation and stress with some fun improvisation games thrown in (and minimal nudity). Here
-are a few photos from the night.
+John talked about Google's <a href="https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/introduction/">Project Aristotle</a>,
+psychological safety, trust, teamwork, motivation and stress with some fun improvisation
+games thrown in (and minimal nudity). Here are a few photos from the night.
 
 Proving that the word is not, in fact, "Grease":
 

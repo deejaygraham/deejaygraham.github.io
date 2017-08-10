@@ -2,7 +2,7 @@
 layout: post
 title: Playing with Sonic Pi
 tags: [ code, music ]
-published: true
+published: false
 ---
 
 I'm teaching some more 101 level programmer classes and this time we're looking at <a href="http://sonic-pi.net/">Sonic Pi</a> as an introduction to text-based languages after playing with the building blocks of <a href="http://scratch.mit.edu/">Scratch</a>. I chose Sonic Pi because of it's immediacy of interaction and fast feedback going from typing code to seeing (or hearing) a result.
@@ -12,23 +12,23 @@ I'm teaching some more 101 level programmer classes and this time we're looking 
 
 The first and simplest program you can write is a one liner to play a single note. Like this
 
-~~~
+```ruby
 
 play 60
 
-~~~
+```
 
 Changing the numeric value changes the pitch of the note, lower values are lower in pitch, higher values are higher in pitch.
 
 You can play two notes separated by small pause like this:
 
-~~~
+```ruby
 
 play 60
 sleep 0.5
 play 62
 
-~~~
+```
 
 Notes are processed top to bottom in order. Sleep puts a pause in the program of that many seconds before playing the next note. If the sleep wasn't there, both notes would play together. Increasing and decreasing the sleep value changes length of the piece.
 
@@ -41,18 +41,18 @@ One thing to mention before we go too far, as this is a text based language, spe
 
 Music is often about repetition so it's good to be able to repeat phrases and there are a number of different ways that Sonic Pi supports this. An easy one is repeating something a number of times:
 
-~~~
+```ruby
 
 5.times do
   play 60
   sleep 1
 end
 
-~~~
+```
 
 Maybe not terribly exciting but we can move on from there to do scales:
 
-~~~
+```ruby
 
 # play a chromatic scale
 
@@ -64,9 +64,11 @@ note = 60
   sleep 0.5
 end
 
-~~~
+```
 
 # C Chromatic scale
+
+```ruby
 
 10.times do
   play chord(:E3, :major).choose
@@ -111,10 +113,9 @@ note = root
   note = note + 1
 end
 
+```
 
-
-# Welcome to Sonic Pi v2.9
-
+```ruby
 use_bpm 52
 
 live_loop :bass do
@@ -178,3 +179,5 @@ live_loop :bar do
   play (ring :d, :r, :r, :a, :f5, :r, :a, :r).tick
   sleep 0.25
 end
+
+```
