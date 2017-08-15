@@ -72,6 +72,7 @@ Command | Action
 **Left Click** | Destroy block
 **Right Click** | Place block
 **Space bar** | Jump
+**Tab** | Release mouse
 
 
 ### Python
