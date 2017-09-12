@@ -5,7 +5,7 @@ tags: [ sketchnotes, presentations, agile  ]
 tweet: true
 thumbnail: "/img/posts/vasco-duarte-no-estimates/no-estimates.png"
 sketchnote:
-  url: "/img/posts/vasco-duarte-no-estimates/no-estimates.png"
+  url: "/img/posts/vasco-duarte-no-estimates/no-estimates-hires.png"
   alt: "sketchnote"
   source:
     name: "No estimates: how to predict a project's release date"
