@@ -2,3 +2,4 @@ _site/
 .sass-cache/
 *.db
 *.exe
+.DS_Store
