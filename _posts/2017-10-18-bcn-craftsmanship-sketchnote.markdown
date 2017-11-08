@@ -16,12 +16,12 @@ which Geoff credits seeing my talk at [DDD North](http://dddnorth.co.uk/) in
 October 2015. I had no idea that I was going to be mentioned and it was a little surreal
 hearing my own name but still, super cool!
 
-Next, I sketchnoted a slightly controversial talk by [Dan North](https://twitter.com/tastapod)
-about how lots of the SOLID guidelines are redundant, wrong or just overly complicated.
+Next, I sketchnoted a slightly [controversial talk](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong) by [Dan North](https://twitter.com/tastapod)
+about how lots of the [SOLID guidelines](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) are redundant, wrong or just overly complicated.
 
 This got a huge (for me) storm of feedback about how it was completely wrong, we didn't
 understand any of it etc. etc. One nice interaction was from [Eduardo Ferro Aldama](https://twitter.com/eferro) who asked if he could use the sketchnote to illustrate a
-point in his upcoming talk at the Barcelong Software Craftsmanship conference.
+point in his upcoming talk at the [Barcelona Software Craftsmanship](https://scbcn.github.io/) conference.
 
 Once the conference was finished he was kind enough to point me to
 his [blog post](http://www.eferro.net/2017/10/simplicidad-para-desarrolladores.html) and
