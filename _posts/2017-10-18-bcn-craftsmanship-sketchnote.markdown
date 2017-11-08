@@ -5,12 +5,13 @@ published: true
 tags: [ code, illustration  ]
 ---
 
-Ordinarily, the way sketchnotes work is that you a capturing and distilling ideas
-from a talk or similar event and presenting them on paper. Twice recently that  
-process got turned on its head or inside out or something.
+Ordinarily, the way sketchnotes work is that you are capturing and distilling ideas
+and information from a talk or similar event and presenting them on paper. Twice recently that  
+process got turned on its head or inside out or something and the sketchnotes became the
+topic of conversation.
 
 First, I stumbled on a video of a talk by Geoff Bowden at the 2015 Agile Yorkshire
-Christmas lightning talks meeting, titled ["Sketchnoting Agile One Doodle at A Time"](https://www.youtube.com/watch?v=mZTkP6Joqro), in 
+Christmas lightning talks meeting, titled ["Sketchnoting Agile One Doodle at A Time"](https://www.youtube.com/watch?v=mZTkP6Joqro), in
 which Geoff credits seeing my talk at [DDD North](http://dddnorth.co.uk/) in
 October 2015. I had no idea that I was going to be mentioned and it was a little surreal
 hearing my own name but still, super cool!
