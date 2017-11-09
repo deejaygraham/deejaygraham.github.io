@@ -10,6 +10,11 @@ bdd-like testing framework for PowerShell for quite a while now. Last month I wo
 new DevOps project where "we" (our PowerShell experts) used Pester to validate pre- and
 post- deployment conditions so I thought it was time to dig a bit deeper.
 
+$PSVersionTable - need  v 5
+
+Import-Module PackageManagement
+
+Install-Module Pester -Force 
 
 ### Getting Pester
 
