@@ -30,14 +30,14 @@ Give it a name and fill in the basic boilerplate required by msbuild:
 ~~~
 
 <UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
-    <Task>
-        <Using Namespace="System"/>
-        <Code Type="Fragment" Language="cs">
-            <![CDATA[
+	<Task>
+		<Using Namespace="System"/>
+		<Code Type="Fragment" Language="cs">
+			<![CDATA[
 
-            ]]>
-        </Code>
-    </Task>
+			]]>
+		</Code>
+	</Task>
 </UsingTask>
 
 ~~~
@@ -51,14 +51,14 @@ interesting;
 ~~~
 
 <UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
-    <Task>
-        <Using Namespace="System"/>
-        <Code Type="Fragment" Language="cs">
-            <![CDATA[
-						Log.LogMessage(MessageImportance.Normal, "Hello, World ");
-            ]]>
-        </Code>
-    </Task>
+	<Task>
+		<Using Namespace="System"/>
+		<Code Type="Fragment" Language="cs">
+			<![CDATA[
+				Log.LogMessage(MessageImportance.Normal, "Hello, World ");
+			]]>
+		</Code>
+	</Task>
 </UsingTask>
 
 ~~~
@@ -72,15 +72,17 @@ task file. Then use it in a target.
 
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 
-		<!-- Path to the task file -->
-    <Import Project="HelloWorld.tasks" />
+	<!-- Path to the task file -->
+	<Import Project="HelloWorld.tasks" />
 
-		<!-- Use it -->
-		<Target Name="SayHello" >
+	<!-- Use it -->
+	<Target Name="SayHello" >
 
-        <HelloWorld />  
+		<HelloWorld />  
 
-		</Target>
+	</Target>
+
+</Project>
 
 ~~~
 
@@ -97,18 +99,18 @@ ParameterGroup in the UsingTask.
 ~~~
 
 <UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
-		<ParameterGroup>
-			<Person ParameterType="System.String" Required="true" />
-			<Greeting ParameterType="System.String" Required="true" />
-		</ParameterGroup>
-    <Task>
-        <Using Namespace="System"/>
-        <Code Type="Fragment" Language="cs">
-            <![CDATA[
-						Log.LogMessage(MessageImportance.Normal, "{0} {1}" Greeting, Person);
-            ]]>
-        </Code>
-    </Task>
+	<ParameterGroup>
+		<Person ParameterType="System.String" Required="true" />
+		<Greeting ParameterType="System.String" Required="true" />
+	</ParameterGroup>
+	<Task>
+		<Using Namespace="System"/>
+		<Code Type="Fragment" Language="cs">
+			<![CDATA[
+				Log.LogMessage(MessageImportance.Normal, "{0} {1}" Greeting, Person);
+			]]>
+		</Code>
+	</Task>
 </UsingTask>
 
 ~~~
@@ -137,12 +139,11 @@ c# syntax.
 
 ...
 
-
 <Code Type="Fragment" Language="cs">
-		<![CDATA[
+	<![CDATA[
 		FullSentence = String.Format("{0} {1}" Greeting, Person);
 		Log.LogMessage(MessageImportance.Normal, FullSentence);
-		]]>
+	]]>
 </Code>
 
 ~~~
