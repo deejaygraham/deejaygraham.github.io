@@ -2,6 +2,7 @@
 name: "invalid argument"
 description: "a triumph of style over substance"
 author: d.j.graham
+repository: 'deejaygraham/deejaygraham.github.io'
 
 # options
 permalink: pretty
