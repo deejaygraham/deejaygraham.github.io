@@ -4,14 +4,14 @@ description: "a triumph of style over substance"
 author: d.j.graham
 
 # options
-permalink: pretty
+permalink: /:year/:month/:day/:title:output_ext
 paginate: 25
 exclude: [ make.cmd, build.sh, buildsite.msbuild, post.rb ]
 
 # css processing
 sass:
   style: compressed
-  
+
 # external links
 twitterid: deejaygraham
 twitterurl: http://twitter.com/deejaygraham
