@@ -8,6 +8,19 @@ permalink: /:year/:month/:day/:title:output_ext
 paginate: 25
 exclude: [ make.cmd, build.sh, buildsite.msbuild, post.rb ]
 
+# collections
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
 # css processing
 sass:
   style: compressed

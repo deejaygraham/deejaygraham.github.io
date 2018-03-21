@@ -1,0 +1,15 @@
+---
+layout: index
+---
+<h2># {{ page.tag }}</h2>
+
+{% for post in site.categories[page.tag] %}
+<article class="post-summary" id="{{ post.id}}" >
+	<header>
+		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
+		<p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }} <a title="read post" href="{{ post.url }}">Read more</a></p>
+		<p><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_long_string }}</p>
+		<p><i class="fa fa-tags" aria-hidden="true"></i> {% include post-tags.html tags=post.tags %}</p>
+	</header>
+</article>
+{% endfor %}
