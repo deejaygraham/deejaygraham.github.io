@@ -4,11 +4,14 @@ layout: index
 hero: secret
 ---
 {% for post in paginator.posts %}
-<article class="post-summary" id="{{ post.id}}" >
+<article class="post-summary" id="{{ post.id }}" >
 	<header>
+		<div id="post-meta">
+		{% if post.date %}<span>{{ post.date | date_to_long_string }} | </span>{% endif %}
+		{% if post.tags %}<span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
+		</div>
 		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
 		<p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }} <a title="read post" href="{{ post.url }}">Read more</a></p>
-		<p><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_long_string }}</p>
 	</header>
 </article>	
 {% endfor %}		

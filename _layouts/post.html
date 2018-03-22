@@ -6,9 +6,11 @@
 		<div class="twelve columns content" role="main">
 			<article class="post" id="{{ page.id }}">
 				<header>
+					<div id="post-meta">
+					{% if page.date %}<span>{{ page.date | date_to_long_string }} | </span>{% endif %}
+					{% if page.tags %}<span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
+					</div>
 					<h2>{{ page.title }}</h2>
-					{% if page.date %}<p><i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }}</p>{% endif %}
-					{% if page.tags %}<p><i class="fa fa-tags"></i> {% include post-tags.html tags=page.categories %}</p>{% endif %}
 				</header>
 				{{ content }}
 
