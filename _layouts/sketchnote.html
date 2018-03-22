@@ -7,8 +7,8 @@
 			<article class="post" id="{{ page.id }}">
 				<header>
 					<div id="post-meta">
-		{% if post.date %}<span>{{ post.date | date_to_long_string }} | </span>{% endif %}
-		{% if post.tags %}<span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
+		{% if page.date %}<span>{{ page.date | date_to_long_string }} | </span>{% endif %}
+		{% if page.tags %}<span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
 		</div>
 					<h2>{{ page.title }}</h2>
 				</header>
