@@ -2,7 +2,7 @@
 layout: post
 title: Two Examples of Sketchnoting Inception
 published: true
-tags: [ code, illustration  ]
+categories: [ sketchnotes ]
 ---
 
 Ordinarily, the way sketchnotes work is that you are capturing and distilling ideas
