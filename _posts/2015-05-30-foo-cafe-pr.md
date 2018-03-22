@@ -2,7 +2,7 @@
 layout: post
 title: Promoting the Foo Cafe 
 published: true 
-tags: [ sketchnotes, illustration, deliberate-practice ]
+categories: [ sketchnotes, illustration, deliberate-practice ]
 hero: power
 ---
 

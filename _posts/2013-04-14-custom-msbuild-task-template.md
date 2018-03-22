@@ -2,7 +2,7 @@
 layout: post
 title: Custom MsBuild Task Template
 published: true
-tags: [ msbuild, code ]
+categories: [ msbuild, code ]
 ---
 Creating customs tasks for MsBuild is relatively easy provided you follow a few steps. 
 

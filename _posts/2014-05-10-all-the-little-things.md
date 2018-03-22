@@ -2,7 +2,7 @@
 layout: post
 title: All the Little Things
 published: true
-tags: [ video, presentations, oo, kata ]
+categories: [ video, presentations, oo, kata ]
 ---
 
 Carrying on the series of [Sandi Metz's](http://twitter.com/sandimetz/) talks, here's

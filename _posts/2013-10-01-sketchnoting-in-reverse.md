@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sketchnoting in Reverse
-tags: [ sketchnotes, deliberate-practice, presentations ]
+categories: [ sketchnotes, deliberate-practice, presentations ]
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by 

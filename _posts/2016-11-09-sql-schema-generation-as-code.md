@@ -2,7 +2,7 @@
 layout: post
 title: SQL Schema Generation as Code
 published: true
-tags: [ cloud, powershell  ]
+categories: [ cloud, powershell  ]
 hero: power
 ---
 

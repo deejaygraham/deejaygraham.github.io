@@ -2,7 +2,7 @@
 layout: post
 title: Hello, Pygame
 published: true
-tags: [ code ]
+categories: [ code ]
 ---
 
 Having exhausted everything there is to do with plain old Python, the Raspberry Pi,

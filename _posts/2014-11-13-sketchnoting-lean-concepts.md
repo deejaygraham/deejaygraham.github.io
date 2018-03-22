@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Sketchnoting Lean Concepts
-tags: [ sketchnotes, presentations, lean, agile ]
+categories: [ sketchnotes, presentations, lean, agile ]
 sketchnote:
   url: "/img/posts/sketchnoting-lean-concepts/sketchnoting-lean-concepts-hifi.png"
   alt: "sketchnote"

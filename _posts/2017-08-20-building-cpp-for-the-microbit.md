@@ -2,7 +2,7 @@
 layout: post
 title: Building C++ for the BBC Micro:bit
 published: true
-tags: [ code, microbit ]
+categories: [ code, microbit ]
 ---
 
 In the last 12-18 months of coding for the BBC micro:bit I tended to shy away from the

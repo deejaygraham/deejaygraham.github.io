@@ -2,7 +2,7 @@
 layout: post
 title: Sending data to Azure EventHubs
 published: true 
-tags: [ cloud ]
+categories: [ cloud ]
 hero: cloud
 ---
 

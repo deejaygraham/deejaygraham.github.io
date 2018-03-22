@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: The (Richard) Dreyfuss Model of Skill Acquisition
-tags: [ sketchnotes, illustration ]
+categories: [ sketchnotes, illustration ]
 published: true
 sketchnote:
   url: "/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-hifi.png"

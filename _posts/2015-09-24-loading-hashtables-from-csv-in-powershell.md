@@ -2,7 +2,7 @@
 layout: post
 title: Loading Hashtables from CSV in Powershell
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

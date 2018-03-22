@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Old-Timey Twitter for the Microbit
-tags: [ code, microbit ]
+categories: [ code, microbit ]
 published: true
 ---
 
@@ -15,4 +15,8 @@ I began to realise the students were getting comfortable with the microbit when 
 
 I made an off-the-cuff comment that the example I had just written up on the board that this was like an old-timey twitter. This got a big laugh and the students really seemed to enjoy experimenting with the application and seeing what they could do with it. I thought it might be fun to share the code here.
 
-<script src="https://gist.github.com/deejaygraham/d5a8933f9450bc8b40bf43650f3faf9f.js"></script>
+```python
+
+{% include code/python/microbit/old-timey-twitter.py %}
+
+```

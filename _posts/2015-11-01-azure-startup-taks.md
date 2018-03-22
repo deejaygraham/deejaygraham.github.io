@@ -2,7 +2,7 @@
 layout: post
 title: Azure Startup Tasks
 published: true
-tags: [ powershell, cloud  ]
+categories: [ powershell, cloud  ]
 hero: power
 ---
 

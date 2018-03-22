@@ -2,7 +2,7 @@
 layout: post
 title: A Bad System...
 published: true
-tags: [ agile, illustration  ]
+categories: [ agile, illustration  ]
 ---
 
 Another quote from Deming.

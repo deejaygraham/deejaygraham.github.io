@@ -2,7 +2,7 @@
 layout: post
 title: Executing SQL Scripts in PowerShell are GO
 published: true
-tags: [ powershell  ]
+categories: [ powershell  ]
 hero: power
 ---
 

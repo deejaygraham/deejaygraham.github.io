@@ -2,7 +2,7 @@
 layout: post
 title: Building an IIS website in PowerShell
 published: true
-tags: [ powershell ]
+categories: [ powershell ]
 ---
 
 A tiny script to create a local website in IIS just so I could test out a set of static 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Playing with Sonic Pi
-tags: [ code, music ]
+categories: [ code, music ]
 published: false
 ---
 

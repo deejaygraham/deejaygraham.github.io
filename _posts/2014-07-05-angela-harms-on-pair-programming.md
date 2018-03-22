@@ -2,7 +2,7 @@
 layout: post
 title: Angela Harms on Pair Programming
 published: true
-tags: [ video, presentations, agile ]
+categories: [ video, presentations, agile ]
 hero: agile
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Planning Poker Card Design
 published: true
-tags: [ agile ]
+categories: [ agile ]
 hero: agile
 ---
 

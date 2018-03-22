@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Cory Doctorow at Hieroglyph
 published: true
-tags: [ sketchnotes, illustration ]
+categories: [ sketchnotes, illustration ]
 sketchnote:
   url: "/img/posts/doctorow-at-hieroglyph/doctorow-at-hieroglyph-hifi.png"
   alt: "sketchnote"

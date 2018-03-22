@@ -2,7 +2,7 @@
 layout: post
 title: On-the-fly MsBuild Task Template
 published: true
-tags: [ msbuild, code ]
+categories: [ msbuild, code ]
 ---
 
 I've written earlier about creating a custom MsBuild task in C# and building it into

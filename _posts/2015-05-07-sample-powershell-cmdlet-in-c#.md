@@ -2,7 +2,7 @@
 layout: post
 title: Sample Powershell Cmdlet in C#
 published: true 
-tags: [ csharp, code, powershell ]
+categories: [ csharp, code, powershell ]
 hero: power
 ---
 

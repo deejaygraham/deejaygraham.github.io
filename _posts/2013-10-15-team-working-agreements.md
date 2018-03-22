@@ -2,7 +2,7 @@
 layout: post
 title: Team Working Agreements
 published: true 
-tags: [ agile ]
+categories: [ agile ]
 hero: agile
 ---
 

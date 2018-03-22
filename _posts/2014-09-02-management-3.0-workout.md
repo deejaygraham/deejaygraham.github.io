@@ -2,7 +2,7 @@
 layout: post
 title: Management 3.0 Workout
 published: true
-tags: [ agile, management, books ]
+categories: [ agile, management, books ]
 ---
 
 ![cover](/img/posts/management-30-workout/management-30-workout.png)

@@ -2,7 +2,7 @@
 layout: post
 title: Parameterised Builds using Jenkins
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

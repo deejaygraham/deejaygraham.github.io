@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Final sketchnote from DDDNorth 2014
-tags: [ sketchnotes, presentations, management ]
+categories: [ sketchnotes, presentations, management ]
 sketchnote:
   url: "/img/posts/sketchote3-from-ddd-north-2014/dddnorth-2014-tech-lead-talk-vanilla.png"
   alt: "ddd north sketchnote"

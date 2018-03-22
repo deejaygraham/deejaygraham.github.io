@@ -2,7 +2,7 @@
 layout: post
 title: Creating Jekyll Collections
 published: true
-tags: [ code, meta ]
+categories: [ code, meta ]
 ---
 
 So far with this personal site, I have stuck to the bog-standard way of putting all

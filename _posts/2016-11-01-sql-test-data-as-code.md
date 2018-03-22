@@ -2,7 +2,7 @@
 layout: post
 title: SQL Test Data as Code
 published: true
-tags: [ powershell  ]
+categories: [ powershell  ]
 hero: power
 ---
 

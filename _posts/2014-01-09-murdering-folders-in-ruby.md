@@ -2,7 +2,7 @@
 layout: post
 title: Murdering Folders. In Ruby
 published: true
-tags: [ ruby, code ]
+categories: [ ruby, code ]
 ---
 
 My mp3 player tends to accumulate sub-folders in my podcast folder as my 

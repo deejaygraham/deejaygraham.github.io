@@ -2,7 +2,7 @@
 layout: post
 title: Secret Azure Debugging Tools
 published: true 
-tags: [ cloud ]
+categories: [ cloud ]
 hero: cloud
 ---
 

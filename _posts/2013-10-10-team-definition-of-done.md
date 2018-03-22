@@ -2,7 +2,7 @@
 layout: post
 title: Team Definitions of Done
 published: true 
-tags: [ agile ]
+categories: [ agile ]
 hero: agile
 ---
 

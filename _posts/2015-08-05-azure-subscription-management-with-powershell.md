@@ -2,7 +2,7 @@
 layout: post
 title: Azure subscription management with PowerShell
 published: true 
-tags: [ cloud  ]
+categories: [ cloud  ]
 hero: cloud
 ---
 

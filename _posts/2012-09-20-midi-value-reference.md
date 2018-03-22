@@ -2,7 +2,7 @@
 layout: post
 title: Midi Value Reference
 published: true
-tags: [ music ]
+categories: [ music ]
 ---
 
 A quick post, mainly for me, because I always have trouble remembering or 

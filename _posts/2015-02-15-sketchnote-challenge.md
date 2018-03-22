@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Sketchnoting Challenge
 published: true
-tags: [ sketchnotes, gtd ]
+categories: [ sketchnotes, gtd ]
 sketchnote:
   url: "/img/posts/sketchnoting-challenge/mac-power-users.png"
   alt: ""

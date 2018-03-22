@@ -2,7 +2,7 @@
 layout: post
 title: Using Contains to Examine MSBuild Properties
 published: true 
-tags: [ msbuild  ]
+categories: [ msbuild  ]
 ---
 
 Sometimes I see MsBuild scripts which seem to be trying to treat it more 

@@ -2,7 +2,7 @@
 layout: post
 title: Sketchnotes from ACE! 2014
 published: true
-tags: [ agile, illustration, sketchnotes ]
+categories: [ agile, illustration, sketchnotes ]
 hero: agile
 ---
 

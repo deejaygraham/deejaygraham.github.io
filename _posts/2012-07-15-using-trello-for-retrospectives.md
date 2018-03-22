@@ -2,7 +2,7 @@
 layout: post
 title: Using Trello for Retrospectives
 published: true
-tags: [ agile ]
+categories: [ agile ]
 hero: agile
 ---
 

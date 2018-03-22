@@ -2,7 +2,7 @@
 layout: post
 title: Man's Original Virtue
 published: true 
-tags: [ quote  ]
+categories: [ quote  ]
 ---
 
 <blockquote>

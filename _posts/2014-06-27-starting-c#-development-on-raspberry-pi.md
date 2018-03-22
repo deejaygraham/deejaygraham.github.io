@@ -2,7 +2,7 @@
 layout: post
 title: Starting C# Development on Raspberry Pi
 published: true
-tags: [ csharp, raspberry-pi, mono ]
+categories: [ csharp, raspberry-pi, mono ]
 ---
 
 Youngest child and I have been playing around with the Raspberry Pi using 

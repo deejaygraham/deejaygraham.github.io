@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Lean Coffee Rules
-tags: [sketchnotes, presentations ]
+categories: [sketchnotes, presentations ]
 hero: agile
 sketchnote:
   url: "/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png"

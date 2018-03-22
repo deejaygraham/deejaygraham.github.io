@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Super-Technical Sketchnoting
-tags: [ sketchnotes, presentations, ruby ]
+categories: [ sketchnotes, presentations, ruby ]
 sketchnote:
   url: "/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.png" 
   alt: "sketchnote"

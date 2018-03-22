@@ -2,7 +2,7 @@
 layout: post
 title: But Really You Should Learn Smalltalk
 published: true
-tags: [ video, presentations, oo ]
+categories: [ video, presentations, oo ]
 ---
 
 From Mountain West Ruby Conf 2014, Noel Rappin's talk, But Really You Should Learn Smalltalk.

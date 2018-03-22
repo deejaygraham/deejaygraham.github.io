@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Muda Muri Mura, so what?
-tags: [ lean, sketchnotes, illustration ]
+categories: [ lean, sketchnotes, illustration ]
 published: true
 sketchnote:
   url: "/img/posts/muda-muri-mura-so-what/muda-muri-mura-so-what-hifi.png"

@@ -2,7 +2,7 @@
 layout: post
 title: Merlin Mann at Webstock 2011
 published: true 
-tags: [ video, presentations ]
+categories: [ video, presentations ]
 ---
 
 Merlin Mann talking about what scares him (and most people).

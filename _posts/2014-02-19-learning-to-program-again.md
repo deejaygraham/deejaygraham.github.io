@@ -2,7 +2,7 @@
 layout: post
 title: Learning to Program, Again
 published: true
-tags: [ ruby, books ]
+categories: [ ruby, books ]
 ---
 
 I have wanted to learn ruby in anger for a long time and have had many false starts. 

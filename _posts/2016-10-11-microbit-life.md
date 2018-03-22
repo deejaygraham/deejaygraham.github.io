@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microbit Life
-tags: [ code, microbit ]
+categories: [ code, microbit ]
 published: true
 ---
 

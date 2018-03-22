@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: My Sketchnoting Workflow for Presentations
-tags: [ sketchnotes, presentations ]
+categories: [ sketchnotes, presentations ]
 sketchnote:
   url: "/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png"
   alt: "Sketchnote process"

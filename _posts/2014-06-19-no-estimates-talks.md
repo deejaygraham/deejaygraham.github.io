@@ -2,7 +2,7 @@
 layout: post
 title: No Estimates Talks
 published: true
-tags: [ video, presentations, agile ]
+categories: [ video, presentations, agile ]
 hero: agile
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Emily Remler
 published: true
-tags: [ quote ]
+categories: [ quote ]
 ---
 
 ![Emily Remler](/img/posts/emily-remler/emily-remler.jpg)

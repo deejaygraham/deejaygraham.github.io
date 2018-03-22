@@ -2,7 +2,7 @@
 layout: post
 title: Charles Chilton Moore
 published: true 
-tags: [  quote  ]
+categories: [  quote  ]
 ---
 
 <blockquote>

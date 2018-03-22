@@ -2,7 +2,7 @@
 layout: post
 title: Testing Azure ServiceBus Queues
 published: true 
-tags: [ cloud, csharp ]
+categories: [ cloud, csharp ]
 hero: cloud
 ---
 

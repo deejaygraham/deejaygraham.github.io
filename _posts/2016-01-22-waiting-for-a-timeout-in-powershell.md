@@ -2,7 +2,7 @@
 layout: post
 title: Waiting for a Timeout in PowerShell
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

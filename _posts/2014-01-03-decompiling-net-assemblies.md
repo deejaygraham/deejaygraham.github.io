@@ -2,7 +2,7 @@
 layout: post
 title: Decompiling .Net Assemblies
 published: true
-tags: [ csharp, code, open-source ]
+categories: [ csharp, code, open-source ]
 ---
 
 Another entry from the "Combatting Not-Invented-Here Syndrome" department.

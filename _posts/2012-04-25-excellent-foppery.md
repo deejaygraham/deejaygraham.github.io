@@ -2,7 +2,7 @@
 layout: post
 title: Excellent Foppery
 published: true 
-tags: [  quote  ]
+categories: [  quote  ]
 ---
 
 <blockquote>

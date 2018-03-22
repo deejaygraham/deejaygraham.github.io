@@ -2,7 +2,7 @@
 layout: post
 title: Rock, Paper, Microbit
 published: true
-tags: [ code, microbit ]
+categories: [ code, microbit ]
 ---
 
 

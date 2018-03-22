@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Sketchnote 2 from DDDNorth 2014
-tags: [ sketchnotes, presentations ]
+categories: [ sketchnotes, presentations ]
 sketchnote:
   url: "/img/posts/sketchote2-from-ddd-north-2014/dddnorth-2014-burn-out-talk-vanilla-lofi.png"
   alt: "ddd north sketchnote"

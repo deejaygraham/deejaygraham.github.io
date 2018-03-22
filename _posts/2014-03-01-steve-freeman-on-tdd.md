@@ -2,7 +2,7 @@
 layout: post
 title: Steve Freeman on TDD
 published: true
-tags: [ video, presentations, tdd ]
+categories: [ video, presentations, tdd ]
 hero: agile
 ---
 

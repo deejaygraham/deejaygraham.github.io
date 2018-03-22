@@ -2,7 +2,7 @@
 layout: post
 title: Moving to Github
 published: true
-tags: [ open-source ]
+categories: [ open-source ]
 ---
 
 A long, long time ago, my initial forays into the open source .Net eco-system 

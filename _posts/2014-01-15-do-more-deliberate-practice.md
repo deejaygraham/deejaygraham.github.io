@@ -2,7 +2,7 @@
 layout: post
 title: Do More Deliberate Practice
 published: true
-tags: [ video, presentations, deliberate-practice ]
+categories: [ video, presentations, deliberate-practice ]
 ---
 
 Do More Deliberate Practice by Jon Jagger at JavaZone 2010.

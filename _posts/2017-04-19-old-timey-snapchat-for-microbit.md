@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Old-Timey Snapchat for the Microbit
-tags: [ code, microbit ]
+categories: [ code, microbit ]
 published: true
 ---
 

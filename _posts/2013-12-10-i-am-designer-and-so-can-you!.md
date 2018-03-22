@@ -2,7 +2,7 @@
 layout: post
 title: I am Designer and So Can You!
 published: true
-tags: [ video, presentations ]
+categories: [ video, presentations ]
 ---
 
 Justine Arreche's talk from RubyConf Uruguay 2013.

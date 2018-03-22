@@ -2,7 +2,7 @@
 layout: post
 title: Growing a Garden
 published: true
-tags: [ agile, illustration  ]
+categories: [ agile, illustration  ]
 ---
 
 A favourite anti-analogy I was reminded of recently which I converted into a

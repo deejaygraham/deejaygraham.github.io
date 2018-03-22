@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Language in Thought and Action
-tags: [ books, quote  ]
+categories: [ books, quote  ]
 published: true 
 ---
 

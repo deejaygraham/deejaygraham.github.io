@@ -2,7 +2,7 @@
 layout: post
 title: Finding Differences in Folder Content
 published: true
-tags: [ powershell  ]
+categories: [ powershell  ]
 hero: power
 ---
 

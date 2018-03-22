@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tiny Asteroids for Microbit
-tags: [ code, microbit ]
+categories: [ code, microbit ]
 published: true
 ---
 

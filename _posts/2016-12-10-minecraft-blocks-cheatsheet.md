@@ -2,7 +2,7 @@
 layout: post
 title: Minecraft Blocks Cheatsheet
 published: true
-tags: [ code, minecraft ]
+categories: [ code, minecraft ]
 ---
 
 There are a **huge** number of block types available to build through the Python API.

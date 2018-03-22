@@ -2,7 +2,7 @@
 layout: post
 title: Creating a Transparent PNG from a Scanned Image
 published: true
-tags: [ csharp, sketchnotes, code ]
+categories: [ csharp, sketchnotes, code ]
 ---
 
 One of the many parts of my sketchnoting process that I took from Mike Rohde's 

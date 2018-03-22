@@ -2,7 +2,7 @@
 layout: post
 title: Playing with Sonic Pi
 published: true
-tags: [ raspberry-pi, music  ]
+categories: [ raspberry-pi, music  ]
 ---
 
 There are several ways to play notes using sonic pi, not all of them obvious from the

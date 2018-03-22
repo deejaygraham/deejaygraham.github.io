@@ -2,7 +2,7 @@
 layout: post
 title: Having the Right Kind of Argument(s)
 published: true
-tags: [ powershell ]
+categories: [ powershell ]
 ---
 
 I saw a PowerShell script from a few days ago got me thinking about command line arguments and

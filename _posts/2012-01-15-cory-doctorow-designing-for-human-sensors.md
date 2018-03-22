@@ -2,7 +2,7 @@
 layout: post
 title: Cory Doctorow Designing for Human Sensors
 published: true 
-tags: [ video, presentations  ]
+categories: [ video, presentations  ]
 ---
 
 Cory speaking at the Strata Summit 2011 on designing online to be used by people thought of 

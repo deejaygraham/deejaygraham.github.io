@@ -2,7 +2,7 @@
 layout: post
 title: How Do I Unix?
 published: true
-tags: [ presentations  ]
+categories: [ presentations  ]
 ---
 
 Slides for a presentation I did to some Windows-only junior devs on the joys of Linux

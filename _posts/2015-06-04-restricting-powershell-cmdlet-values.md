@@ -2,7 +2,7 @@
 layout: post
 title: Restricting Powershell Cmdlet Values
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

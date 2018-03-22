@@ -2,7 +2,7 @@
 layout: post
 title: Windows Installers for the Lazy
 published: true
-tags: [ code ]
+categories: [ code ]
 ---
 
 If you've ever installed any software for Windows using an installer wizard, 

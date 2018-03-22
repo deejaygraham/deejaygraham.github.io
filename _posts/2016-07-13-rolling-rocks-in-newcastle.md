@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rolling Rocks in Newcastle
-tags: [ agile, presentations, sketchnotes ]
+categories: [ agile, presentations, sketchnotes ]
 published: true
 ---
 

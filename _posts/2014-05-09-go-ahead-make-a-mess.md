@@ -2,7 +2,7 @@
 layout: post
 title: Go Ahead Make a Mess
 published: true
-tags: [ video, presentations, oo ]
+categories: [ video, presentations, oo ]
 ---
 
 Another of [Sandi Metz's](http://twitter.com/sandimetz/) talks, 

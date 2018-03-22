@@ -2,7 +2,7 @@
 layout: post
 title: Building a Custom PowerShell Cmdlet in C#
 published: true
-tags: [ code, cloud, powershell ]
+categories: [ code, cloud, powershell ]
 ---
 
 

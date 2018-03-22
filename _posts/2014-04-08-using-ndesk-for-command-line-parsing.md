@@ -2,7 +2,7 @@
 layout: post
 title: Using NDesk.Options for Command Line Parsing
 published: true
-tags: [ csharp, code, open-source ]
+categories: [ csharp, code, open-source ]
 ---
 
 Another snippet to remind future-me (and maybe future-you) how to use a 

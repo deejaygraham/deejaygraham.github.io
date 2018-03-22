@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Doctorow's Three Laws
-tags: [ video, sketchnotes, open-source, illustration ]
+categories: [ video, sketchnotes, open-source, illustration ]
 published: true
 sketchnote:
   url: "/img/posts/doctorows-three-laws/doctorows-three-laws-hifi.png"

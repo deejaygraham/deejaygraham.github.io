@@ -2,7 +2,7 @@
 layout: post
 title: Mocking Multiple Return Values with Rhino Mocks
 published: true 
-tags: [ tdd ]
+categories: [ tdd ]
 ---
 
 It's been a while since I've found the need to write unit tests using any 

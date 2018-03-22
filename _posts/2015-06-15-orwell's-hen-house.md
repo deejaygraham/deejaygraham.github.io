@@ -2,7 +2,7 @@
 layout: post
 title: Orwell's Hen-House
 published: true
-tags: [  quote  ]
+categories: [  quote  ]
 ---
 George Orwell on the difficulting of naming concepts in software :)
 

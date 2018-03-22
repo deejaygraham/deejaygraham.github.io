@@ -2,7 +2,7 @@
 layout: post
 title: Diffing Folder Content using ItemGroups
 published: true 
-tags: [ msbuild, code ]
+categories: [ msbuild, code ]
 ---
 
 More on complicated build systems. This time, I was attempting to make the complicated 

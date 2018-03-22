@@ -2,7 +2,7 @@
 layout: post
 title: Food for the Eagle
 published: true 
-tags: [ presentations, quote  ]
+categories: [ presentations, quote  ]
 ---
 
 <blockquote>

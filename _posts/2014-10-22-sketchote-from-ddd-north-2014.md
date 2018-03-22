@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Sketchnote from DDDNorth 2014
-tags: [ sketchnotes, presentations, ruby, csharp ]
+categories: [ sketchnotes, presentations, ruby, csharp ]
 sketchnote:
   url: "/img/posts/sketchote-from-ddd-north-2014/dddnorth-2014-ruby-dotnet-talk-lofi.png"
   alt: "ddd north sketchnote"

@@ -2,7 +2,7 @@
 layout: post
 title: Finding Powershell Assemblies
 published: true 
-tags: [ powershell  ]
+categories: [ powershell  ]
 hero: power
 ---
 

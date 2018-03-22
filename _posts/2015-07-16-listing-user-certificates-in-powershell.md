@@ -2,7 +2,7 @@
 layout: post
 title: Finding and using user certificates in PowerShell
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

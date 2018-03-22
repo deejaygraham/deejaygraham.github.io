@@ -2,7 +2,7 @@
 layout: post
 title: Kill All Your Managers
 published: true
-tags: [ naming, code, oo ]
+categories: [ naming, code, oo ]
 ---
 
 Not your line manager, obviously. I mean your Manager classes.

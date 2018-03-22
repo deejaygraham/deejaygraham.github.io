@@ -2,7 +2,7 @@
 layout: post
 title: Sketchnoting at DDDNorth 2015
 published: true 
-tags: [ presentations, sketchnotes  ]
+categories: [ presentations, sketchnotes  ]
 ---
 
 <img src="/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.png" class="img-responsive" alt="DDD North" />

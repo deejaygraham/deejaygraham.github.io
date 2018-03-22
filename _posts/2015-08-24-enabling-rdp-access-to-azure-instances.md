@@ -2,7 +2,7 @@
 layout: post
 title: Enabling RDP Access to Azure Instances
 published: true 
-tags: [ cloud ]
+categories: [ cloud ]
 hero: cloud
 ---
 

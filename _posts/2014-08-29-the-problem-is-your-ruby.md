@@ -2,7 +2,7 @@
 layout: post
 title: The Problem is Your Ruby
 published: true
-tags: [ video, presentations, ruby ]
+categories: [ video, presentations, ruby ]
 ---
 
 The Problem is Your Ruby, a talk by Jeff Casimir about the fundamentals of 

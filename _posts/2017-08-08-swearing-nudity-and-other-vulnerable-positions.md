@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swearing and Nudity in Newcastle
-tags: [ agile, presentations, sketchnotes ]
+categories: [ agile, presentations, sketchnotes ]
 published: true
 ---
 

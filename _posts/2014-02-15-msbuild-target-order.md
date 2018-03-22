@@ -2,7 +2,7 @@
 layout: post
 title: MsBuild Target Order
 published: true
-tags: [ msbuild, code ]
+categories: [ msbuild, code ]
 ---
 
 MsBuild version 4.0 introduced two new Target attributes: *BeforeTargets* 

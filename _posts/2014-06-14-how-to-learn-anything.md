@@ -2,7 +2,7 @@
 layout: sketchnote
 title: How to Learn Anything
 published: true
-tags: [ sketchnotes, deliberate-practice, presentations]
+categories: [ sketchnotes, deliberate-practice, presentations]
 sketchnote:
   url: "/img/posts/how-to-learn-anything/how-to-learn-anything-bw.png"
   alt: "How to Learn Anything"

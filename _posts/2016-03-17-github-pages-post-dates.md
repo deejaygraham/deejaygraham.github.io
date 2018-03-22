@@ -2,7 +2,7 @@
 layout: post
 title: The Case of the Disappearing Github Pages
 published: true 
-tags: [ meta, powershell, presentations ]
+categories: [ meta, powershell, presentations ]
 ---
 
 I spent a frustrating couple of days earlier this week while preparing a presentation 

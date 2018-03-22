@@ -2,7 +2,7 @@
 layout: post
 title: Presenting with Reveal.js and Jekyll
 published: true 
-tags: [ meta, ruby, presentations ]
+categories: [ meta, ruby, presentations ]
 ---
 
 I am giving a talk at [DDDNorth 2015](http://www.dddnorth.co.uk/) and wanted to use something other than  

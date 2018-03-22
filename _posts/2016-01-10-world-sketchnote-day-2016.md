@@ -2,7 +2,7 @@
 layout: post
 title: World Sketchnote Day 2016
 published: true 
-tags: [ sketchnotes ]
+categories: [ sketchnotes ]
 ---
 
 The 11th of January 2016 is going to be the first World Sketchnote Day. 

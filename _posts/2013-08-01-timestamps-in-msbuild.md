@@ -2,7 +2,7 @@
 layout: post
 title: Timestamps in MsBuild
 published: true
-tags: [ msbuild, code ]
+categories: [ msbuild, code ]
 ---
 
 I often need to include a timestamp in a build, either in naming a file 

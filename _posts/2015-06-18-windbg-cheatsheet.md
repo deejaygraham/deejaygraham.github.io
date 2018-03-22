@@ -2,7 +2,7 @@
 layout: post
 title: Windbg Cheatsheet
 published: true 
-tags: [ cloud ]
+categories: [ cloud ]
 hero: cloud
 ---
 

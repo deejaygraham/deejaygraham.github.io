@@ -2,7 +2,7 @@
 layout: post
 title: Favourite Books
 published: true
-tags: [ agile, books ]
+categories: [ agile, books ]
 ---
 
 Not all super-specifically all agile related but I thought I would put them all down in a list.

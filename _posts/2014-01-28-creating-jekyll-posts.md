@@ -2,7 +2,7 @@
 layout: post
 title: Creating Jekyll Posts
 published: true
-tags: [ meta, csharp, code ]
+categories: [ meta, csharp, code ]
 ---
 
 Being a good programmer, [I am told](http://c2.com/cgi/wiki?LazinessImpatienceHubris), 

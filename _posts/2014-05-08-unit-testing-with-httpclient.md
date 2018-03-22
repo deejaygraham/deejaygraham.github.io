@@ -2,7 +2,7 @@
 layout: post
 title: Unit Testing with HttpClient
 published: true
-tags: [ csharp, code, tdd ]
+categories: [ csharp, code, tdd ]
 ---
 
 I've been moving some code away from depending on [RestSharp](https://github.com/restsharp/RestSharp) 

@@ -2,7 +2,7 @@
 layout: post
 title: Scrum.org Open Assessments
 published: true
-tags: [ agile ]
+categories: [ agile ]
 hero: agile
 ---
 

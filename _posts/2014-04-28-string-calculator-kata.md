@@ -2,7 +2,7 @@
 layout: post
 title: String Calculator Kata
 published: true
-tags: [ tdd, deliberate-practice ]
+categories: [ tdd, deliberate-practice ]
 ---
 
 Here's a sample solution for the String Calculator Kata that I'm using with 

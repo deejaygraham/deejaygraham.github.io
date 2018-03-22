@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll Post Generator in Ruby
 published: true 
-tags: [ ruby, meta, csharp, code ]
+categories: [ ruby, meta, csharp, code ]
 ---
 
 A while ago, I blogged a quick console application to create a blog post outline, 

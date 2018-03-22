@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MobProgramming comes to Newcastle
-tags: [ agile ]
+categories: [ agile ]
 published: true
 ---
 

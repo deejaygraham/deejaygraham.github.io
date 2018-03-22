@@ -2,7 +2,7 @@
 layout: post
 title: Think Different
 published: true
-tags: [ video, presentations ]
+categories: [ video, presentations ]
 ---
 
 Dave Thomas' Keynote from Elixir Conf 2014, ["Think Different"](http://www.confreaks.com/videos/4119-elixirconf2014-opening-keynote-think-different) 

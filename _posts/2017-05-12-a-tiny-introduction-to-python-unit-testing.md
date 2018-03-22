@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A tiny introduction to Python unit testing
-tags: [ code, python, tdd ]
+categories: [ code, python, tdd ]
 published: true
 ---
 

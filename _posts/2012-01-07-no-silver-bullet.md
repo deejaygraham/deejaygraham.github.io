@@ -2,7 +2,7 @@
 layout: post
 title: No Silver Bullet
 published: true 
-tags: [  quote  ]
+categories: [  quote  ]
 ---
 
 <blockquote>

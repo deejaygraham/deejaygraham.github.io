@@ -2,7 +2,7 @@
 layout: post
 title: DevOpsing an Azure ServiceBus
 published: true 
-tags: [ cloud, powershell ]
+categories: [ cloud, powershell ]
 hero: power
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Logging from MsBuild's Commandline
 published: true
-tags: [ msbuild ]
+categories: [ msbuild ]
 ---
 
 There's a fair bit of flexibility built into msbuild's logging that goes under 

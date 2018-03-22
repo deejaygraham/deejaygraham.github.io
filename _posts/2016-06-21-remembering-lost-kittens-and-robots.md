@@ -2,7 +2,7 @@
 layout: post
 title: Remembering Lost Kittens and Robots
 published: true
-tags: [ code, kata, open-source ]
+categories: [ code, kata, open-source ]
 ---
 
 I had been looking at some alternative programming languages, like [Sonic Pi](http://sonic-pi.net) 

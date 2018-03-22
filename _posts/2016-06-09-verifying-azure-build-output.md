@@ -2,7 +2,7 @@
 layout: post
 title: Verifying Azure Build Output
 published: true 
-tags: [ cloud, msbuild  ]
+categories: [ cloud, msbuild  ]
 ---
 
 One of the differences one often finds between development and production environments, in Azure deployments, 

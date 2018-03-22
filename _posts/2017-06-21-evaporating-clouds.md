@@ -2,7 +2,7 @@
 layout: post
 title: Evaporating Clouds
 published: true
-tags: [ agile, illustration  ]
+categories: [ agile, illustration  ]
 ---
 
 My re-imagining of the Evaporating Clouds thinking process which I read originally in

@@ -2,7 +2,7 @@
 layout: post
 title: Creating Builds in TFS 2015
 published: true
-tags: [ tfs, build, msbuild, ci ]
+categories: [ tfs, build, msbuild, ci ]
 ---
 
 ![build](/img/posts/creating-builds-in-tfs-vnext/new-build-definition.png)

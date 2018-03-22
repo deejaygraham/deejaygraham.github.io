@@ -2,7 +2,7 @@
 layout: post
 title: Generating File Content in the Build
 published: true
-tags: [ msbuild, code ]
+categories: [ msbuild, code ]
 ---
 
 Whether your build system was developed by [Heath Robinson](en.wikipedia.org/wiki/W._Heath_Robinson) 

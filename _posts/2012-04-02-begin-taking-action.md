@@ -2,7 +2,7 @@
 layout: post
 title: Begin Taking Action
 published: true 
-tags: [  quote  ]
+categories: [  quote  ]
 ---
 
 <blockquote>

@@ -2,7 +2,7 @@
 layout: post
 title: Better PowerShell Help
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrapping Jekyll Tag Generation
 published: true
-tags: [ meta, code, msbuild ]
+categories: [ meta, code, msbuild ]
 ---
 
 I love working with Jekyll and Github to produce this blog as if it were software.

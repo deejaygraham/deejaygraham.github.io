@@ -2,7 +2,7 @@
 layout: post
 title: Text Diamond Kata
 published: true
-tags: [ tdd, deliberate-practice ]
+categories: [ tdd, deliberate-practice ]
 ---
 
 Here's a sample solution for the Text Diamond Kata that I'm using with 

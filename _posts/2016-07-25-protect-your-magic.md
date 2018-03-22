@@ -2,7 +2,7 @@
 layout: post
 title: Protect Your Magic
 published: true
-tags: [ agile, illustration ]
+categories: [ agile, illustration ]
 ---
 
 A lovely piece of hand lettering from a wall in Bunker Coffee House in Newcastle.

@@ -2,7 +2,7 @@
 layout: post
 title: Studies in Terror
 published: true
-tags: [ video, presentations, management ]
+categories: [ video, presentations, management ]
 ---
 
 Studies in Terror - Becoming a People Manager, is a great talk from [Meri Williams](http://www.twitter.com/@geekmanager)

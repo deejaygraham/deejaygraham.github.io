@@ -2,7 +2,7 @@
 layout: post
 title: Building NDifference in the Cloud
 published: true
-tags: [ code, open-source, ndifference, csharp, cloud ]
+categories: [ code, open-source, ndifference, csharp, cloud ]
 hero: cloud
 ---
 

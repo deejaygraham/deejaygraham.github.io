@@ -2,7 +2,7 @@
 layout: post
 title: Discreet Sheep
 published: true 
-tags: [ quote  ]
+categories: [ quote  ]
 ---
 
 <blockquote>

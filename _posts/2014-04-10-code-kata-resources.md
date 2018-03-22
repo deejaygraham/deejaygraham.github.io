@@ -2,7 +2,7 @@
 layout: post
 title: Code Kata Resources
 published: true
-tags: [ deliberate-practice, tdd ]
+categories: [ deliberate-practice, tdd ]
 ---
 
 I've been accumulating resources for code katas recently so I'm posting 

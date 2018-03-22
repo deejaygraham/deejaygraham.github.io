@@ -2,7 +2,7 @@
 layout: post
 title: I'm in the Sketchnote Workbook!
 published: true
-tags: [ sketchnotes, books ]
+categories: [ sketchnotes, books ]
 ---
 
 Or rather, some of my work is :) Exciting news from <a href="http://rohdesign.com">Mike Rohde</a> - 

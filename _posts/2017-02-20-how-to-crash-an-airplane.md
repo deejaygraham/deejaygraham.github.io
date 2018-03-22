@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: How to Crash an Airplane
-tags: [ sketchnotes, presentations, agile  ]
+categories: [ sketchnotes, presentations, agile  ]
 tweet: true
 thumbnail: "/img/posts/how-to-crash-an-airplane/how-to-crash-an-airplane.png"
 sketchnote:

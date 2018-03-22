@@ -2,7 +2,7 @@
 layout: post
 title: David Allen at Google
 published: true 
-tags: [ presentations  ]
+categories: [ presentations  ]
 ---
 
 [David Allen](http://www.davidco.com/) on Getting Things Done at Google

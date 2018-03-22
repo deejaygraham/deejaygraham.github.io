@@ -2,7 +2,7 @@
 layout: post
 title: Why Aren't You Using Ruby
 published: true
-tags: [ video, presentations, ruby ]
+categories: [ video, presentations, ruby ]
 ---
 
 Why Aren't You Using Ruby by Jim Weirich from RubyConf Uruguay 2013.

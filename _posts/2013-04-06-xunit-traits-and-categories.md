@@ -2,7 +2,7 @@
 layout: post
 title: XUnit Traits and Categories
 published: true
-tags: [ tdd, code ]
+categories: [ tdd, code ]
 ---
 
 One of the things I love about [xUnit.net](xunit.codeplex.com) is how small

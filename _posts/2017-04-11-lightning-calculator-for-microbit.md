@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lightning Calculator for the Microbit
-tags: [ code, microbit ]
+categories: [ code, microbit ]
 published: true
 ---
 

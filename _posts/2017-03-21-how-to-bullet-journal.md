@@ -2,7 +2,7 @@
 layout: post
 title: How to Bullet Journal
 published: true
-tags: [ illustration  ]
+categories: [ illustration  ]
 ---
 
 My process adapted from <a href="https://www.youtube.com/watch?v=fm15cmYU0IM">the guide</a> on youtube and <a href="http://bulletjournal.com/">the website</a>.

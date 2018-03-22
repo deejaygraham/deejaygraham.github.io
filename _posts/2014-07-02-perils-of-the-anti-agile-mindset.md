@@ -2,7 +2,7 @@
 layout: post
 title: Perils of the Anti-Agile Mindset
 published: true
-tags: [ agile, illustration ]
+categories: [ agile, illustration ]
 hero: agile
 ---
 

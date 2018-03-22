@@ -2,7 +2,7 @@
 layout: post
 title: PowerShell Training Recommendations
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

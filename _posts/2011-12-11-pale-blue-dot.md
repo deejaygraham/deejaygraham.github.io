@@ -2,7 +2,7 @@
 layout: post
 title: Pale Blue Dot
 published: true 
-tags: [ video ]
+categories: [ video ]
 ---
 
 A lovely animation of Carl Sagan's "Pale Blue Dot"...

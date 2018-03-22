@@ -2,7 +2,7 @@
 layout: post
 title: The Dream Team Nightmare by Portia Tung
 published: true
-tags: [ agile, books ]
+categories: [ agile, books ]
 hero: agile
 ---
 Imagine for a moment, you are writing a book about agile techniques and 

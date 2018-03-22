@@ -2,7 +2,7 @@
 layout: post
 title: Dirge Without Music
 published: true 
-tags: [  music  ]
+categories: [  music  ]
 ---
 
 <blockquote>

@@ -2,7 +2,7 @@
 layout: post
 title: Search and Replace in Powershell
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: A Long Habit
 published: true
-tags: [  quote  ]
+categories: [  quote  ]
 ---
 
 <blockquote>

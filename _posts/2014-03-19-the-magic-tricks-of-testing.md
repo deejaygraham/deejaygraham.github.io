@@ -2,7 +2,7 @@
 layout: post
 title: The Magic Tricks of Testing
 published: true
-tags: [ video, presentations, tdd ]
+categories: [ video, presentations, tdd ]
 ---
 
 Here's a video of [Sandi Metz's](http://twitter.com/sandimetz/) presentation

@@ -2,7 +2,7 @@
 layout: post
 title: Extracting Slide Images from a Pdf
 published: true
-tags: [ code, msbuild ]
+categories: [ code, msbuild ]
 ---
 
 Being a programmer, I'm often tempted to crack open a compiler when faced 

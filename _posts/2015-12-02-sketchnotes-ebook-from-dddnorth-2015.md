@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ebook of Sketchnotes from DDDNorth 2015 now available!
-tags: [ sketchnotes, presentations ]
+categories: [ sketchnotes, presentations ]
 ---
 
 <img src="/img/posts/sketchnotes-ebook-from-dddnorth-2015/dddnorth-cover.png" class="img-responsive" alt="Cover Page" />

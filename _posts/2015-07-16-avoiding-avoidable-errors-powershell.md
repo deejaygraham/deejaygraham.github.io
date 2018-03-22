@@ -2,7 +2,7 @@
 layout: post
 title: Avoiding avoidable errors in PowerShell
 published: true 
-tags: [ powershell ]
+categories: [ powershell ]
 hero: power
 ---
 

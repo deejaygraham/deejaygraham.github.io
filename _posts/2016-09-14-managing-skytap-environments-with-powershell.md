@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Skytap environments with PowerShell
-tags: [ powershell ]
+categories: [ powershell ]
 published: true
 ---
 

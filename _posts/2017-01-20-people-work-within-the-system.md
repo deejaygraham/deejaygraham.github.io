@@ -2,7 +2,7 @@
 layout: post
 title: People Work Within the System
 published: true
-tags: [ agile, illustration  ]
+categories: [ agile, illustration  ]
 ---
 
 From W. Edwards Deming's work:

@@ -2,7 +2,7 @@
 layout: post
 title: Why I am an Agnostic
 published: true
-tags: [ quote ]
+categories: [ quote ]
 ---
 
 <blockquote>

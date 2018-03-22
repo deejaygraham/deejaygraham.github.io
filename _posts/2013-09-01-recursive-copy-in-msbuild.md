@@ -2,7 +2,7 @@
 layout: post
 title: Recursive Copy in MsBuild
 published: true
-tags: [ msbuild, code ]
+categories: [ msbuild, code ]
 ---
 
 Simply because I always forget the syntax for this, here's how to recursively 

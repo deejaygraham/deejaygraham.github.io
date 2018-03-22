@@ -2,7 +2,7 @@
 layout: post
 title: Running an Azure Cloud Service without an Emulator
 published: true 
-tags: [ csharp, cloud ]
+categories: [ csharp, cloud ]
 hero: cloud
 ---
 

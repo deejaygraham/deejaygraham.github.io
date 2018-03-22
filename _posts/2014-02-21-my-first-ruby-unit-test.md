@@ -2,7 +2,7 @@
 layout: post
 title: My First Ruby Unit Test
 published: true
-tags: [ ruby, tdd, code ]
+categories: [ ruby, tdd, code ]
 ---
 
 I have an on-going project to trick myself into learning Ruby by accident.

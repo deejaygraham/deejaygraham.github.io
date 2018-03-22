@@ -2,7 +2,7 @@
 layout: post
 title: Breaking code dependencies with inplace refactoring
 published: true
-tags: [ tdd, csharp, refactoring ]
+categories: [ tdd, csharp, refactoring ]
 ---
 
 There's a common symptom of monolithic applications that I see fairly

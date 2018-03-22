@@ -2,7 +2,7 @@
 layout: post
 title: What the World Needs Now is Another IoC project
 published: true
-tags: [ tdd, open-source ]
+categories: [ tdd, open-source ]
 ---
 
 Ok, I admit it. In a moment of weakness I created an IoC framework, br**IoC**he. 

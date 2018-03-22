@@ -2,7 +2,7 @@
 layout: post
 title: Refreshing Folder Contents
 published: true
-tags: [ msbuild ]
+categories: [ msbuild ]
 ---
 
 The traditional method of copying content from one folder to another is fairly 

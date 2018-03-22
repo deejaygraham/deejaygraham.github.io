@@ -2,7 +2,7 @@
 layout: post
 title: Building Github Pages in OSX Yosemite
 published: true
-tags: [ meta, ruby, mac-os ]
+categories: [ meta, ruby, mac-os ]
 ---
 
 As the proud owner of a shiny new Macbook running Yosemite, I'm now in the 

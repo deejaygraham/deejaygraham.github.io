@@ -2,7 +2,7 @@
 layout: post
 title: Being a Good Senior Dev
 published: true
-tags: [ agile, illustration  ]
+categories: [ agile, illustration  ]
 ---
 
 I saw a tweet last year from <a href="http://twitter.com/rgladwell">Ricardo Gladwell</a>

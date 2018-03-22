@@ -2,7 +2,7 @@
 layout: post
 title: Updating web.config Settings with MsBuild
 published: true
-tags: [ msbuild ]
+categories: [ msbuild ]
 ---
 
 I've slightly stolen this technique from [Sayed I. Hashimi](https://twitter.com/sayedihashimi) and 

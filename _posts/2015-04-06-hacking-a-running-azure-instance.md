@@ -2,7 +2,7 @@
 layout: post
 title: Hacking a Running Azure Instance
 published: true 
-tags: [ cloud ]
+categories: [ cloud ]
 hero: cloud
 ---
 
