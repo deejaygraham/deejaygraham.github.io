@@ -9,7 +9,7 @@ layout: index
 		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
 		<p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }} <a title="read post" href="{{ post.url }}">Read more</a></p>
 		<p><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_long_string }}</p>
-		<p><i class="fa fa-tags" aria-hidden="true"></i> {% include post-tags.html tags=post.tags %}</p>
+		<p><i class="fa fa-tags" aria-hidden="true"></i> {% include post-tags.html tags=post.categories %}</p>
 	</header>
 </article>
 {% endfor %}
