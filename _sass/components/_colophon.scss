@@ -6,6 +6,10 @@ $color-mid-gray: #C8CDD0;
 	background-color: $colour-black;
 	color: $color-mid-gray;
 	padding: 1em 0;
+	
+	a {
+		color: $color-mid-gray;
+	}
 }
 
 	.colophon-list {
