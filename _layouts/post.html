@@ -6,7 +6,7 @@
 		<div class="twelve columns content" role="main">
 			<article class="post" id="{{ page.id }}">
 				<header>
-					<div id="post-meta">
+					<div id="post-meta" class="post-meta">
 					{% if page.date %}<span>{{ page.date | date_to_long_string }} | </span>{% endif %}
 					{% if page.tags %}<span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
 					</div>
@@ -15,13 +15,12 @@
 				{{ content }}
 
 				<div class="tweet-post">{% include tweet-link.html %}</div>
-
 				
 				{% assign firstCategory = page.categories | first %}
 				
 				{% if site.categories[firstCategory].size > 1 %}
 	    		{% assign relatedCount = 0 %}
-				<div class="related">
+				<div class="related-posts">
 					<h4>Related Posts</h4>
 					<ul>
 	    		{% for related in site.categories[firstCategory] %}

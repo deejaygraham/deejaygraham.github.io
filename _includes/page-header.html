@@ -1,16 +1,15 @@
 <!-- pageheader.html -->
-<div class="u-full-width">
-	<div class="banner">
-		<!-- <a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a> -->
-		<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em>
+<section id="banner" class="banner">
+	<div class="container">
+		<div class="twelve columns">
+			<!-- <a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a> -->
+			<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em>
+		</div>
 	</div>
-</div>
+</section>	
+{% assign localhero = "secret" %}
 {% if page.hero %}
-<header class="hero {{ page.hero }}">
-{% else %}
-<header class="hero secret">
+{% assign localhero = page.hero %}
 {% endif %}
-</header>
-
-
+<header id="hero" class="hero {{ localhero }} u-full-width"></header>
 <!-- pageheader.html -->

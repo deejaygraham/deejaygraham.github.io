@@ -6,7 +6,7 @@ hero: secret
 {% for post in paginator.posts %}
 <article class="post-summary" id="{{ post.id }}" >
 	<header>
-		<div id="post-meta">
+		<div id="post-meta" class="post-meta">
 		{% if post.date %}<span>{{ post.date | date_to_long_string }} | </span>{% endif %}
 		{% if post.tags %}<span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
 		</div>

@@ -1,0 +1,18 @@
+
+$colour-black: #1f292e;
+$color-mid-gray: #C8CDD0;
+
+.colophon {
+	background-color: $colour-black;
+	color: $color-mid-gray;
+	padding: 1em 0;
+}
+
+	.colophon-list {
+		list-style-type: none;
+		margin-bottom: 0;
+	}
+
+		.colophon-list-item {
+			display: inline;
+		}

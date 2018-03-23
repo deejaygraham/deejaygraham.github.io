@@ -1,0 +1,23 @@
+$post-meta-colour: #415058;
+$link-text-colour: rgb(13, 60, 85);
+$link-decoration-colour: $link-text-colour;
+$link-hover-colour: lighten($link-decoration-colour, 10%);
+
+.post-meta {
+
+	padding: 1em 0 0 0;
+	color: $post-meta-colour;
+	
+	a {
+		color: $link-text-colour;
+		text-decoration: none;
+		border-bottom: 1px dotted $link-decoration-colour;
+		margin: 0 0.2em;
+		
+		&:hover {
+			color: $link-hover-colour;
+			border-bottom: 1px dotted $link-hover-colour;
+		}
+	}
+}
+

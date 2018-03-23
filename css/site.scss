@@ -3,14 +3,29 @@
 ---
 
 // general
+// -------
+
 @import "normalize";
 @import "skeleton";
 @import "font-awesome";
-@import "typography";
-@import "colour";
+
+// variables
+// ---------
+
+@import "variables/colours";
+@import "variables/typography";
 
 // components
-@import "layout";
+// ----------
+
+@import "components/banner";
+@import "components/hero";
+@import "components/postmeta";
+@import "components/relatedposts";
+@import "components/footer";
+@import "components/social";
+@import "components/other";
+@import "components/colophon";
 
 // styling
   // background
@@ -28,18 +43,6 @@
   // transform
   // top, right, bottom, left
   // width, height
-
-//@import "layout-legacy";
-//@import "banner";
-//@import "hero";
-//@import "post-preview";
-//@import "paginator";
-//@import "post";
-
-//@import "tag-cloud";
-//@import "social";
-//@import "internal-links";
-//@import "colophon";
 
 //@import "grid";
 //@import "debug";
