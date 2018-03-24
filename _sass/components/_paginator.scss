@@ -7,14 +7,14 @@ $pagination-disabled-text-colour: #C8CDD0;
 
 	a {
 		padding: 0.2em 0.4em;
-		border: 1px solid $pagination-box-colour;
+		// border: 1px solid $pagination-box-colour;
 	}
 
 	em, span {
 		padding: 0.2em 0.4em;
-		background-color: $pagination-disabled-colour;
-		border: 1px solid $pagination-disabled-colour;
-		color: $pagination-disabled-text-colour;
+		//background-color: $pagination-disabled-colour;
+		//border: 1px solid $pagination-disabled-colour;
+		//color: $pagination-disabled-text-colour;
 	}
 
 	.button {
