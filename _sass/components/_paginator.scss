@@ -4,7 +4,8 @@ $pagination-disabled-colour: #C8CDD0;
 $pagination-disabled-text-colour: #C8CDD0;
 
 .paginator {
-
+	padding: 1em 0;
+	
 	a {
 		padding: 0.2em 0.4em;
 		// border: 1px solid $pagination-box-colour;
