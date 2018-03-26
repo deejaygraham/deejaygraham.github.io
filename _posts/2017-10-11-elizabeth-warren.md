@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aneurin Bevan
+title: Elizabeth Warren
 published: true
 categories: [ quote ]
 ---
