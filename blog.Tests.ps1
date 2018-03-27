@@ -59,11 +59,11 @@ Describe 'My Blog' {
           "css - site" = "$($baseurl)css/site.css";
           # Downloads
           "downloads - ndifference release 0.1" = "$($baseurl)downloads/ndifference/NDifference.0.0.0.1.Installer.msi";
-          # Tags
-          "tags - tdd" = "$($baseurl)tags/tdd/";
-          "tags - oo" = "$($baseurl)tags/oo/";
-          "tags - microbit" = "$($baseurl)tags/microbit/";
-          "tags - sketchnotes" = "$($baseurl)tags/sketchnotes/";
+          # Tags -> Categories
+          "categories - tdd" = "$($baseurl)category/tdd/";
+          "categories - oo" = "$($baseurl)category/oo/";
+          "categories - microbit" = "$($baseurl)category/microbit/";
+          "categories - sketchnotes" = "$($baseurl)category/sketchnotes/";
       }
 
       $urls.Keys | ForEach-Object {
