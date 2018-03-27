@@ -5,7 +5,7 @@ author: d.j.graham
 repository: 'deejaygraham/deejaygraham.github.io'
 
 # options
-permalink: /:year/:month/:day/:title:output_ext
+permalink: /:year/:month/:day/:title/index:output_ext
 paginate: 10
 exclude: [ make.cmd, build.sh, buildsite.msbuild, post.rb ]
 syntax-theme: zenburn
