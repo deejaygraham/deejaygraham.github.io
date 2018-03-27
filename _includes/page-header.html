@@ -1,9 +1,16 @@
 <!-- pageheader.html -->
 <section id="banner" class="banner">
 	<div class="container">
-		<div class="twelve columns">
+		<div class="nine columns">
 			<!-- <a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a> -->
 			<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em>
+		</div>
+		<div class="three columns search-box">
+			<form action="{{ site.url }}/search/index.html" method="get">
+		<!--  <label for="search-box">Search</label> -->
+			  <i class="fa fa-search" aria-hidden="true"></i><input type="text" id="search-box" name="query">
+			  <input type="submit" value="search">
+			</form>
 		</div>
 	</div>
 </section>	
