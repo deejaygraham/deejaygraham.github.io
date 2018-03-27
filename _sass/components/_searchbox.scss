@@ -1,4 +1,20 @@
 .search-box {
-
+	float:right;
+	margin: 6px 0;
+	width: auto;
 }
-
+	#search-box {
+		display: inline-block;
+		width: 230px;
+		margin: 1px 0 0 0;
+		height: auto;
+		border: 1px solid #e0e1dd;
+		padding: 8px 12px;
+	}
+	
+	#search-button {
+		float: right;
+		border:0;
+		padding: 16px 26px 17px;
+		margin: 1px 0 0;
+	}
