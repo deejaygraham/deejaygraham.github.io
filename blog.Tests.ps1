@@ -1,3 +1,5 @@
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 Import-Module Pester
 
 [string]$baseurl = 'https://deejaygraham.github.io/'
