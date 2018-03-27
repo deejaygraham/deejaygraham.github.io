@@ -1,4 +1,4 @@
 ---
 tag: naming
-permalink: "/category/naming"
+permalink: "/category/naming/"
 ---

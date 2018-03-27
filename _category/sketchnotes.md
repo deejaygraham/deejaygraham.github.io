@@ -1,4 +1,4 @@
 ---
 tag: sketchnotes
-permalink: "/category/sketchnotes"
+permalink: "/category/sketchnotes/"
 ---

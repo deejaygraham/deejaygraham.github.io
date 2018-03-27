@@ -1,4 +1,4 @@
 ---
 tag: lean
-permalink: "/category/lean"
+permalink: "/category/lean/"
 ---

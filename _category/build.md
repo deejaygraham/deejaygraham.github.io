@@ -1,4 +1,4 @@
 ---
 tag: build
-permalink: "/category/build"
+permalink: "/category/build/"
 ---

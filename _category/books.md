@@ -1,4 +1,4 @@
 ---
 tag: books	
-permalink: "/category/books"
+permalink: "/category/books/"
 ---

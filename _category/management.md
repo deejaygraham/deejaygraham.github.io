@@ -1,4 +1,4 @@
 ---
 tag: management
-permalink: "/category/management"
+permalink: "/category/management/"
 ---

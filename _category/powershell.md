@@ -1,4 +1,4 @@
 ---
 tag: powershell
-permalink: "/category/powershell"
+permalink: "/category/powershell/"
 ---

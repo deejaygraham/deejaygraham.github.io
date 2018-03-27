@@ -1,4 +1,4 @@
 ---
 tag: ci
-permalink: "/category/ci"
+permalink: "/category/ci/"
 ---

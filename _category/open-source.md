@@ -1,4 +1,4 @@
 ---
 tag: open-source
-permalink: "/category/open-source"
+permalink: "/category/open-source/"
 ---

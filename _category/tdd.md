@@ -1,4 +1,4 @@
 ---
 tag: tdd
-permalink: "/category/tdd"
+permalink: "/category/tdd/"
 ---

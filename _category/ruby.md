@@ -1,4 +1,4 @@
 ---
 tag: ruby
-permalink: "/category/ruby"
+permalink: "/category/ruby/"
 ---

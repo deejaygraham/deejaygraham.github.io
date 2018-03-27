@@ -1,4 +1,4 @@
 ---
 tag: csharp
-permalink: "/category/csharp"
+permalink: "/category/csharp/"
 ---

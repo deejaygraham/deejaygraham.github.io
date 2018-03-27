@@ -1,4 +1,4 @@
 ---
 tag: ndifference
-permalink: "/category/ndifference"
+permalink: "/category/ndifference/"
 ---

@@ -1,4 +1,4 @@
 ---
 tag: quote
-permalink: "/category/quote"
+permalink: "/category/quote/"
 ---

@@ -1,4 +1,4 @@
 ---
 tag: gtd
-permalink: "/category/gtd"
+permalink: "/category/gtd/"
 ---

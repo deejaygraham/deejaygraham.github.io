@@ -1,4 +1,4 @@
 ---
 tag: refactoring
-permalink: "/category/refactoring"
+permalink: "/category/refactoring/"
 ---

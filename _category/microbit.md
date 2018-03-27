@@ -1,4 +1,4 @@
 ---
 tag: microbit
-permalink: "/category/microbit"
+permalink: "/category/microbit/"
 ---

@@ -1,4 +1,4 @@
 ---
 tag: msbuild
-permalink: "/category/msbuild"
+permalink: "/category/msbuild/"
 ---

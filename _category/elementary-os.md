@@ -1,4 +1,4 @@
 ---
 tag: elementary-os
-permalink: "/category/elementary-os"
+permalink: "/category/elementary-os/"
 ---

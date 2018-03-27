@@ -1,4 +1,4 @@
 ---
 tag: python
-permalink: "/category/python"
+permalink: "/category/python/"
 ---

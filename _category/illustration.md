@@ -1,4 +1,4 @@
 ---
 tag: illustration
-permalink: "/category/illustration"
+permalink: "/category/illustration/"
 ---

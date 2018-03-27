@@ -1,4 +1,4 @@
 ---
 tag: meta
-permalink: "/category/meta"
+permalink: "/category/meta/"
 ---

@@ -1,4 +1,4 @@
 ---
 tag: linux
-permalink: "/category/linux"
+permalink: "/category/linux/"
 ---

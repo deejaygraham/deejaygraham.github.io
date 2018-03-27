@@ -1,4 +1,4 @@
 ---
 tag: music
-permalink: "/category/music"
+permalink: "/category/music/"
 ---

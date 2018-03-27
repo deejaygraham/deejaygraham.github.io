@@ -1,4 +1,4 @@
 ---
 tag: video
-permalink: "/category/video"
+permalink: "/category/video/"
 ---

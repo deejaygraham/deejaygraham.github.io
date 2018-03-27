@@ -1,4 +1,4 @@
 ---
 tag: kata
-permalink: "/category/kata"
+permalink: "/category/kata/"
 ---

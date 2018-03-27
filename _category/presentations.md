@@ -1,4 +1,4 @@
 ---
 tag: presentations
-permalink: "/category/presentations"
+permalink: "/category/presentations/"
 ---

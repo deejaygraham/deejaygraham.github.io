@@ -1,4 +1,4 @@
 ---
 tag: cloud
-permalink: "/category/cloud"
+permalink: "/category/cloud/"
 ---

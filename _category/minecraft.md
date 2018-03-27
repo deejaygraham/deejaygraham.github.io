@@ -1,4 +1,4 @@
 ---
 tag: minecraft
-permalink: "/category/minecraft"
+permalink: "/category/minecraft/"
 ---
