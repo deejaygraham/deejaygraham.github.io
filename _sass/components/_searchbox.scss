@@ -2,19 +2,21 @@
 	float:right;
 	margin: 6px 0;
 	width: auto;
+	
+	form {
+		margin: 0;
+	}
 }
+	
 	#search-box {
 		display: inline-block;
-		width: 230px;
-		margin: 1px 0 0 0;
+		width: 200px;
 		height: auto;
 		border: 1px solid #e0e1dd;
-		padding: 8px 12px;
+		margin: 0;
 	}
 	
 	#search-button {
-		float: right;
-		border:0;
-		padding: 16px 26px 17px;
-		margin: 1px 0 0;
+		padding: 0 10px;
+		margin: 0;
 	}
