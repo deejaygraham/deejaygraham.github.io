@@ -9,16 +9,21 @@ hero: makers
 My name is Derek Graham and this is my personal blog.
 
 I'm a Principal Software Developer working for a very popular business
-software company in the North East of England. I also co-organize [NE Bytes](http://nebytes.net),
-a monthly .Net community get-together at [Campus North](http://campusnorth.co.uk)
-in Newcastle city centre.
+software company in the North East of England. I can't be sure that the opinions 
+I have expressed here are my own so they **definitely** don't represent the views 
+of my employer.
 
-I can't be sure that the opinions expressed here are my own so they definitely
-don't represent the views of my employer.
+I co-organize [NE Bytes](http://nebytes.net), a monthly .Net community get-together and 
+[Agile North East](http://meetup.com/Agile-North-East/), both hosted at 
+[Campus North](http://campusnorth.co.uk) in Newcastle city centre.
+
+I am an **Extreme Programmer**, an Infrequent **Sketchnoter**, a Collector of **Programming** Languages,
+a **Speaker**, a **Mob** Programmer, a **Test-Driven** Developer and Struggling **Agilista**. 
 
 My main areas of interest are in using **agile methods** to help improve what
 we **ship**, **test-driven** development, unit **testing**, continuous and
 deliberate **learning**, **visual** thinking, design and, of course, **code**.
+
 
 ### A Note on Sharing
 
