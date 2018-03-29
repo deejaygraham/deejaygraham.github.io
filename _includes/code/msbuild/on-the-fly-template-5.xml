@@ -1,0 +1,14 @@
+<UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+	<ParameterGroup>
+		<Person ParameterType="System.String" Required="true" />
+		<Greeting ParameterType="System.String" Required="true" />
+	</ParameterGroup>
+	<Task>
+		<Using Namespace="System"/>
+		<Code Type="Fragment" Language="cs">
+			<![CDATA[
+				Log.LogMessage(MessageImportance.Normal, "{0} {1}" Greeting, Person);
+			]]>
+		</Code>
+	</Task>
+</UsingTask>

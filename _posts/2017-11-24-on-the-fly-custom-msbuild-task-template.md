@@ -13,13 +13,9 @@ an assembly that we can load during a build. An alternative to a compiled assemb
 This is where the custom tasks will live. I prefer to keep the custom code separated
 from the actual build script.
 
-~~~
+~~~xml
 
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-
-	<!-- Tasks will go here -->
-
-</Project>
+{% include code/msbuild/on-the-fly-template-1.xml %}
 
 ~~~
 
@@ -27,18 +23,9 @@ from the actual build script.
 
 Give it a name and fill in the basic boilerplate required by msbuild:
 
-~~~
+~~~xml
 
-<UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
-	<Task>
-		<Using Namespace="System"/>
-		<Code Type="Fragment" Language="cs">
-			<![CDATA[
-
-			]]>
-		</Code>
-	</Task>
-</UsingTask>
+{% include code/msbuild/on-the-fly-template-2.xml %}
 
 ~~~
 
@@ -48,18 +35,9 @@ Here I'm just writing to the msbuild log, use your imagination to do something m
 interesting;
 
 
-~~~
+~~~xml
 
-<UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
-	<Task>
-		<Using Namespace="System"/>
-		<Code Type="Fragment" Language="cs">
-			<![CDATA[
-				Log.LogMessage(MessageImportance.Normal, "Hello, World ");
-			]]>
-		</Code>
-	</Task>
-</UsingTask>
+{% include code/msbuild/on-the-fly-template-3.xml %}
 
 ~~~
 
@@ -68,21 +46,9 @@ interesting;
 Add an import statement pointing to the correct relative path for your new
 task file. Then use it in a target.
 
-~~~
+~~~xml
 
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-
-	<!-- Path to the task file -->
-	<Import Project="HelloWorld.tasks" />
-
-	<!-- Use it -->
-	<Target Name="SayHello" >
-
-		<HelloWorld />  
-
-	</Target>
-
-</Project>
+{% include code/msbuild/on-the-fly-template-4.xml %}
 
 ~~~
 
@@ -96,30 +62,17 @@ assembly compilation log which you can use to fix your broken code.
 Like any other task, you can code the on-the-fly task to accept parameters by defining a
 ParameterGroup in the UsingTask.
 
-~~~
+~~~xml
 
-<UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
-	<ParameterGroup>
-		<Person ParameterType="System.String" Required="true" />
-		<Greeting ParameterType="System.String" Required="true" />
-	</ParameterGroup>
-	<Task>
-		<Using Namespace="System"/>
-		<Code Type="Fragment" Language="cs">
-			<![CDATA[
-				Log.LogMessage(MessageImportance.Normal, "{0} {1}" Greeting, Person);
-			]]>
-		</Code>
-	</Task>
-</UsingTask>
+{% include code/msbuild/on-the-fly-template-5.xml %}
 
 ~~~
 
 and invoke it in the same way you would with built-in tasks:
 
-~~~
+~~~xml
 
-	<HelloWorld Person="Brian" Greeting="Hi!" />  
+{% include code/msbuild/on-the-fly-template-6.xml %}
 
 ~~~
 
@@ -129,22 +82,9 @@ We can also write the task to pass data back to the calling script. The Paramete
 can accept output parameters too and they are assigned in the script in standard
 c# syntax.
 
-~~~
+~~~xml
 
-<ParameterGroup>
-	<Person ParameterType="System.String" Required="true" />
-	<Greeting ParameterType="System.String" Required="true" />
-	<FullSentence ParameterType="System.String" Output="true" />
-</ParameterGroup>
-
-...
-
-<Code Type="Fragment" Language="cs">
-	<![CDATA[
-		FullSentence = String.Format("{0} {1}" Greeting, Person);
-		Log.LogMessage(MessageImportance.Normal, FullSentence);
-	]]>
-</Code>
+{% include code/msbuild/on-the-fly-template-7.xml %}
 
 ~~~
 
@@ -155,10 +95,6 @@ using dollar notation.
 
 ~~~
 
-	<HelloWorld Person="Brian" Greeting="Hi!" >  
-		<Output TaskParameter="FullSentence" PropertyName="WhatWeWroteToTheLog" />
-	</HelloWorld>
-
-	<Message Text="We said $(WhatWeWroteToTheLog)" />
+{% include code/msbuild/on-the-fly-template-8.xml %}
 
 ~~~

@@ -1,0 +1,15 @@
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+
+	<!-- Path to the task file -->
+	<Import Project="HelloWorld.tasks" />
+
+	<!-- Use it -->
+	<Target Name="SayHello" >
+
+		<HelloWorld />  
+
+	</Target>
+
+</Project>
+
+
