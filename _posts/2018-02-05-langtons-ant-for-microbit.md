@@ -5,7 +5,7 @@ categories: [ code, microbit ]
 published: true
 ---
 
-Another cellular automata that I've only just heard about is <a href="https://en.wikipedia.org/wiki/Langton's_ant">Langton's Ant</a>. 
+Another example of cellular automata that I've only just discovered is <a href="https://en.wikipedia.org/wiki/Langton's_ant">Langton's Ant</a>. 
 
 It's a tiny program that obeys a couple of simple rules and draws some really very interesting patterns that look for all the world like 
 there is an intelligence behind the process, guiding it.  
