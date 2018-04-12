@@ -23,5 +23,5 @@ Power User's</a> podcast featuring <a href="http://gettingthingsdone.com/">David
 
 ## Update
 
-The judges have spoken and here's the link to [the list of winners](http://sketchnotearmy.com/blog/2015/2/23/sketchnoting-challenge-david-allen-on-mac-power-users-and-th.html)
+The judges have spoken and here's the link to [the list of winners](http://sketchnotearmy.com/blog/2015/2/23/sketchnoting-challenge-david-allen-on-mac-power-users-and-th.html). I didn't win but got an honourable mention :)
 
