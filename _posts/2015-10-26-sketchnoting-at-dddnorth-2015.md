@@ -67,3 +67,6 @@ another excellent conference. Thanks also to [Jeannel King](https://twitter.com/
 [Nadine Rossa](https://twitter.com/nadrosia) and all the sketchnoters who gave permission to include 
 examples of their work in my talk.
   
+### Update
+
+The story was featured at [Sketchnote Army](http://sketchnotearmy.com/blog/2015/10/30/sketchnoting-at-dddnorth-2015-derek-graham.html) :)
