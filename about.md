@@ -18,7 +18,8 @@ I co-organize [NE Bytes](http://nebytes.net), a monthly .Net community get-toget
 [Campus North](http://campusnorth.co.uk) in Newcastle city centre.
 
 I am an **Extreme Programmer**, an Infrequent **Sketchnoter**, a Collector of **Programming** Languages,
-a **Speaker**, a **Mob** Programmer, a **Test-Driven** Developer and Struggling **Agilista**. 
+a **Speaker**, a **Mob** Programmer, a **Test-Driven** Developer and Struggling **Agilista**. I am also a 
+STEM ambassador and project lead for the "Makers & Creators" events at Campus North.
 
 My main areas of interest are in using **agile methods** to help improve what
 we **ship**, **test-driven** development, unit **testing**, continuous and
