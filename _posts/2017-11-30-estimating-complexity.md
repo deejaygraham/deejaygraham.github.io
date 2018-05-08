@@ -12,13 +12,9 @@ this scale to be enormously helpful before going into an estimation meeting (or 
 
 
 5. Nobody has ever done it before.
-
 4. Someone outside the organization has done it before (probably a competitor).
-
 3. Someone in our organization has done it before.
-
 2. Someone in the team has done it before.
-
 1. We all know how to do it.
- 
+{: reversed="reversed"} 
 
