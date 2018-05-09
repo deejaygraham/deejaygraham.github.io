@@ -18,11 +18,11 @@ his book - Rolling Rocks Downhill, Eli Goldratt's Theory of Constraints (ToC), h
 applied to many problems in our lives. Once you are exposed to these ideas, you 
 start to see queues and constraints everywhere and recognize how ToC can make things better. 
 
-![Rolling Rocks](/img/posts/rolling-rocks-in-newcastle/2016-07-12 18.33.04.jpg)
+<img src="/img/posts/rolling-rocks-in-newcastle/2016-07-12 18.33.04.jpg" alt="Rolling Rocks" class="u-max-full-width" />
 
 Many of his points were illustrated with examples of applying ToC from Clarke's own working life. 
 
-![Clarke Mid Presentation](/img/posts/rolling-rocks-in-newcastle/2016-07-12 18.53.35.jpg)
+<img src="/img/posts/rolling-rocks-in-newcastle/2016-07-12 18.53.35.jpg" alt="Clarke Mid Presentation" class="u-max-full-width" />
 
 This was a very well attended meetup for Agile North East, there was lots of lively discussion at the 
 end over beer and pizza and the feedback I got over the following days suggested that the evening was a 
@@ -31,13 +31,13 @@ great success!
 Sitting at the back, I was able to get some sketchnoting done, so here's how I interpreted his 
 presentation:
 
-![sketchnote](/img/posts/rolling-rocks-in-newcastle/2016-07-13 23.05.32.jpg)
+<img src="/img/posts/rolling-rocks-in-newcastle/2016-07-13 23.05.32.jpg" alt="sketchnote" class="u-max-full-width" />
 
 Finally, just because I can't resist it, here's a pic of the very cute german shepherd 
 puppy who shares the Bunker Coffee House with the customers and only slightly howled-like-a-wolf 
 as it was starting to get dark outside, lending a nice spooky end to the evening.
 
-![puppy](/img/posts/rolling-rocks-in-newcastle/2016-07-12 17.33.01.jpg)
+<img src="/img/posts/rolling-rocks-in-newcastle/2016-07-12 17.33.01.jpg" alt="puppy" class="u-max-full-width" />
 
 ### Epilogue
 
