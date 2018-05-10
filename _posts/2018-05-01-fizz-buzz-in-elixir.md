@@ -18,4 +18,5 @@ the matching code "outside" of the body of the function.
 
 <img src="/img/posts/fizz-buzz-in-elixir/fizz-buzz-in-elixir.jpg" alt="fizz buzz" class="u-max-full-width" />
 
-We ran the dojo using the wonderful <a href="http://cyber-dojo.org">cyber-dojo</a> TDD tool. 
+We ran the dojo using the wonderful <a href="http://cyber-dojo.org">cyber-dojo</a> TDD tool (and forgot to change the name 
+of the module away from the default Hitchhiker's Guide to the Galaxy naming convention). 
