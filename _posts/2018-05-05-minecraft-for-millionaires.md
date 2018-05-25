@@ -16,7 +16,7 @@ tropical fish to swim in.
 
 ```
 
-Now that the fish are taken care of, the minecraft millionaire about town might like to own their own is a human fish tank, called a swimming pool. The code that worked for the fish tank can be sunk into the ground and work just as well as a lovely swimming pool.
+Now that the fish are taken care of, the minecraft millionaire about town might like to own their own human fish tank, which we usually call a swimming pool. The code that worked for the fish tank can be sunk into the ground and work just as well as a lovely swimming pool.
 
 <img src="/img/posts/minecraft-millionaires/swimming-pool.jpg" alt="swimming pool" class="u-max-full-width" />
 
