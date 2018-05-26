@@ -34,7 +34,7 @@ while True:
   #if playerTile != lastPlayerTile:
     # remove the spooky block from old position by building
     # over the existing figure with "air"
-  build_spooky_figure(world, x, y, z, block.AIR.id)
+  build_spooky_figure(world, x, y, z, block.AIR)
   
   #lastPlayerTile = playerTile
     # move it to new position
@@ -42,8 +42,6 @@ while True:
   if (x - playerTile.x) < 0: x += 1
   if (z - playerTile.z) > 0: z -= 1
   if (z - playerTile.z) < 0: z += 1
-  #if (y - playerTile.y) > 0: y -= 1
-  #if (y - playerTile.y) < 0: y += 1
   
   world.postToChat(str(x) + " " + str(z))
 
