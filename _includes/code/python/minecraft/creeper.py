@@ -16,11 +16,11 @@ world.postToChat("What ever you do ...")
 time.sleep(5)
 world.postToChat("Don't blink!")
 
-lastPlayerTile = world.player.getTilePos()
+playerTile = world.player.getTilePos()
 
 # create the spooky block 20 blocks away
-x = lastPlayerTile.x
-z = lastPlayerTile.z + 20
+x = playerTile.x
+z = playerTile.z + 20
 y = world.getHeight(x, z)
 build_spooky_figure(world, x, y, z, block.OBSIDIAN)
 
@@ -36,9 +36,8 @@ while True:
   if (x - playerTile.x) < 0: x += 1
   if (z - playerTile.z) > 0: z -= 1
   if (z - playerTile.z) < 0: z += 1
+  y = world.getHeight(x, z)
   
   # debug
   # world.postToChat(str(x) + " " + str(z))
-
-  y = world.getHeight(x, z)
   build_spooky_figure(world, x, y, z, block.OBSIDIAN)
