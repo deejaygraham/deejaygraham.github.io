@@ -21,6 +21,6 @@ I used obsidian blocks to build the creeper but could have used green wool or so
 ```
 <img src="/img/posts/simulated-minecraft-creeper/creeper-2.jpg" alt="creeper" class="u-max-full-width" />
 
-Note that I started out positioning the creeper at a distance from the player and just using the player's y coordinate. This had the disadvantage that the creeper ignored things like hills (he burrowed straight through them) or valleys (he floated over them). Now I use the getHeight function which gets the height of the terrain at the current location so that the creeper behaves much more realistically, climbing over hills and going down into valleys.
+Note that I started out positioning the creeper at a distance from the player and just using the player's y coordinate, assuming that the terrain was flat at the place where the creeper spawned. Using the fixed y coordinate had the disadvantage that the creeper ignored things like hills (he burrowed straight through them) or valleys (he floated over them). Now I use the getHeight function which gets the height of the terrain at the current location so that the creeper behaves much more realistically, climbing over hills and going down into valleys.
 
 Right at the start of the game I make reference to the weeping angels from Dr Who as a fun little easter egg for the participants on the programming course this code sample was written for, because creepers and weeping angels are similarly spooky in their respective fields.
