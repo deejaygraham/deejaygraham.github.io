@@ -72,3 +72,5 @@ I hope you will agree that that covers a good deal of the functionality in the m
 * speech
 
 The only wrinkle to this is that the robot definitely needs new, high quality AA batteries to work correctly. The digital IO, speech synth driving a speaker and the radio on all the time, I found anything other batteries would allow it to start off driving the speaker but would cause the voltage to dip too much and reset the device so it only got half of the trick done. With new batteries it worked flawlessly.
+
+The slides for my talk are on <a href="https://www.slideshare.net/deejaygraham/physical-computing-91152232">slideshare</a>.
