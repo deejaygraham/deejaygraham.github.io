@@ -3,6 +3,7 @@ layout: post
 title: Microbit Life
 categories: [ code, microbit ]
 published: true
+hero: microbit
 ---
 
 <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life<a/> is a programming

@@ -3,6 +3,7 @@ layout: post
 title: Unboxing the BBC Micro:bit
 categories: [ code, microbit ]
 published: true
+hero: microbit
 ---
 
 I finally got my hands on a <a href="http://www.microbit.co.uk/">BBC Micro:bit</a> and

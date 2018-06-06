@@ -3,6 +3,7 @@ layout: post
 title: Balancing Ball - Writing a Game for the BBC Micro:bit
 categories: [ code, microbit ]
 published: true
+hero: microbit
 ---
 
 After getting a little more familiar with the <a href="http://www.microbit.co.uk/">BBC Micro:bit</a> I decided

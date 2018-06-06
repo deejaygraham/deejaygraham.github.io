@@ -3,6 +3,7 @@ layout: post
 title: microbit Blinkenlights
 categories: [ code, microbit ]
 published: true
+hero: microbit
 ---
 
 A tiny snippet of code often used when the microbit is not showing anything

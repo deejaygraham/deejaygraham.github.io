@@ -3,6 +3,7 @@ layout: post
 title: Blinking C++
 published: true
 categories: [ code, microbit ]
+hero: microbit
 ---
 
 Following hard on the heels of the last post, I decided to try to implement one of the

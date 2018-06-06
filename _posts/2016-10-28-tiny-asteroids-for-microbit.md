@@ -3,6 +3,7 @@ layout: post
 title: Tiny Asteroids for Microbit
 categories: [ code, microbit ]
 published: true
+hero: microbit
 ---
 
 Asteroids is a game I used to love to play on the old Atari 2600 console.

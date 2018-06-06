@@ -20,13 +20,17 @@ $hero-background: #415058;
 	}
 
 	.agile {
-		background-image: url("/img/heroes/hero-agile-maxim-1.png");
+		background-image: url("/img/heroes/hero-muda-muri-mura.png");
 	}
 
 	.cloud {
 		background-image: url("/img/heroes/hero-man-love.jpg");
 	}
 
+	.code {
+		background-image: url("/img/heroes/hero-dddnorth.jpg");
+	}
+	
 	.power {
 		background-image: url("/img/heroes/hero-crampton-locomotive.jpg");
 	}
@@ -42,5 +46,10 @@ $hero-background: #415058;
 	.minecraft {
 		background-image: url("/img/heroes/rpi-2.jpg");
 	}
+	
+	.microbit {
+		background-image: url("/img/heroes/hero-microbit.jpg");
+	}
+	
 }
 

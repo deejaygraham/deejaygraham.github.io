@@ -3,6 +3,7 @@ layout: post
 title: Rock, Paper, Microbit
 published: true
 categories: [ code, microbit ]
+hero: microbit
 ---
 
 
