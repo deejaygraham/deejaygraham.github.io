@@ -3,6 +3,8 @@ layout: post
 title: Building a house in Minecraft
 published: true
 categories: [ code, minecraft ]
+hero: minecraft 
+
 ---
 
 The Python API for the raspberry pi edition of Minecraft is really nice and easy to

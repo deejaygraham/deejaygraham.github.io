@@ -3,6 +3,7 @@ layout: post
 title: Hello, Minecraft
 published: true
 categories: [ code, minecraft ]
+hero: minecraft 
 ---
 
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
