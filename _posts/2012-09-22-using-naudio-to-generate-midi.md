@@ -5,10 +5,14 @@ published: true
 categories: [ csharp, music, code ]
 ---
 
-Here's a small sample using [NAudio's](http://naudio.codeplex.com/) midi 
+Here's a small sample using <a href="https://github.com/naudio/NAudio" alt="link to NAudio site">NAudio's</a> midi 
 file processing classes to write a simple set of notes to a .mid file.
 
-<script src="https://gist.github.com/deejaygraham/2250ce39438e2aeef558.js"></script>
+```csharp
+
+{% include code/csharp/SimpleMidiFileWriter.cs %}
+
+```
 
 
 
