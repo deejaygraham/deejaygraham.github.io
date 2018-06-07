@@ -27,5 +27,9 @@ can filter tests based on the name "Category".
 
 I created a set of *traits* to be applied to fast and slow unit tests as appropriate.
 
-{% gist 11375398 %}
+```csharp
+
+{% include code/csharp/xUnitTraits.cs %}
+
+```
 
