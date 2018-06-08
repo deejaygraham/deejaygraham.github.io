@@ -11,5 +11,8 @@ running 32-bit or 64-bit and adjusts the path to msbuild.exe accordingly,
 since, of course, msbuild is deployed in different folders in each flavour 
 of the OS.
 
-{% gist 5627119 %}
+```bat
 
+{% include code/csharp/MsBuildMake.cmd %}
+
+```
