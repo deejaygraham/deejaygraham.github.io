@@ -13,6 +13,8 @@ I couldn't think of another way monitoring the folder and finding the most
 recent build without tightly entwining my build script with calls to the 
 TFS server or Developer Studio.
 
-{% gist 5627099 %}
+```csharp
 
-It's on github [here](https://gist.github.com/deejaygraham/5627099)
+{% include code/csharp/MsBuildMostRecentFolder.cs %}
+
+```

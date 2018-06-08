@@ -12,6 +12,10 @@ and [Mono's](http://www.mono-project.com/Main_Page) Cecil library to load
 a managed assembly (or folder's worth of assemblies) and generate a code file 
 for each type found.
 
-{% gist 5600173 %}
+```csharp
+
+{% include code/csharp/DecompileAssembly.cs %}
+
+```
 
 
