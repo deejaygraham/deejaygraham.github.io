@@ -9,4 +9,8 @@ My mp3 player tends to accumulate sub-folders in my podcast folder as my
 podcast app syncs with it and podcast episodes come and go. Rather than leave 
 them unoccupied and unloved, I use this script to "tidy them up". By killing them.   
 
-<script src="https://gist.github.com/deejaygraham/9d82b1a03c869791236a.js"></script>
+```ruby
+
+{% include code/ruby/clean.rb %}
+
+```
