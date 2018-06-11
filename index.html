@@ -11,7 +11,12 @@ hero: secret
 		{% if post.tags %}<span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
 		</div>
 		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
-		<p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }} <a title="read post" href="{{ post.url }}">Read more</a></p>
+		
+		{% assign wordLimit = 25 %}
+		{% if post.page == 1 %}
+			{% assign wordLimit = 250 %}
+		{% endif %}
+		<p class="excerpt">{{ post.excerpt | truncatewords: wordLimit }} <a title="read post" href="{{ post.url }}">Read more</a></p>
 	</header>
 </article>
 {% endfor %}
@@ -20,5 +25,5 @@ hero: secret
 {% if paginator.total_pages > 1 %}
 <div class="paginator">
   {% if paginator.next_page %}<span class="paginate-older"><a title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}"><i class="fa fa-arrow-left" aria-hidden="true"></i> Older posts</a></span>{% endif %}
-	{% if paginator.previous_page %}<span class="paginate-newer"><a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts <i class="fa fa-arrow-right" aria-hidden="true"></i></a></span>{% endif %}
+  {% if paginator.previous_page %}<span class="paginate-newer"><a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts <i class="fa fa-arrow-right" aria-hidden="true"></i></a></span>{% endif %}
 </div>{% endif %}
