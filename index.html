@@ -4,7 +4,7 @@ layout: index
 hero: secret
 ---
 {% for post in paginator.posts %}
-<article class="post-summary {{ paginator.page }}" id="{{ post.id }}" >
+<article class="post-summary" id="{{ post.id }}" >
 	<header>
 		<div id="post-meta" class="post-meta">
 		{% if post.date %}<span>{{ post.date | date_to_long_string }} | </span>{% endif %}
@@ -15,7 +15,7 @@ hero: secret
 		{% if post.page == 1 %}
 			{{ post.content }}
 		{% else %}	
-			<p class="excerpt">{{ post.excerpt | truncatewords:25 }} <a title="read post" href="{{ post.url }}">Read more</a></p>
+			<p class="excerpt">{{ post.excerpt }} <a title="read post" href="{{ post.url }}">Read more</a></p>
 		{% endif %}
 	</header>
 </article>
