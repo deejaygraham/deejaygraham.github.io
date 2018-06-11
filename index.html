@@ -12,11 +12,11 @@ hero: secret
 		</div>
 		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
 		
-		{% assign wordLimit = 25 %}
 		{% if post.page == 1 %}
-			{% assign wordLimit = 250 %}
+			{{ post.content }}
+		{% else %}	
+			<p class="excerpt">{{ post.excerpt | truncatewords:25 }} <a title="read post" href="{{ post.url }}">Read more</a></p>
 		{% endif %}
-		<p class="excerpt">{{ post.excerpt | truncatewords: wordLimit }} <a title="read post" href="{{ post.url }}">Read more</a></p>
 	</header>
 </article>
 {% endfor %}
