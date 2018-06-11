@@ -12,7 +12,7 @@ hero: secret
 		</div>
 		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
 		
-		{% if post.page == 1 %}
+		{% if paginator.page == 1 %}
 			{{ post.content }}
 		{% else %}	
 			<p class="excerpt">{{ post.excerpt }} <a title="read post" href="{{ post.url }}">Read more</a></p>
