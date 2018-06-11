@@ -16,7 +16,7 @@ hero: secret
 		{% if post.page == 1 %}
 			{% assign wordLimit = 250 %}
 		{% endif %}
-		<p class="excerpt">{{ post.excerpt | truncatewords: wordLimit }} <a title="read post" href="{{ post.url }}">Read more</a></p>
+		<p class="excerpt">{{ post.content | truncatewords: wordLimit }} <a title="read post" href="{{ post.url }}">Read more</a></p>
 	</header>
 </article>
 {% endfor %}
