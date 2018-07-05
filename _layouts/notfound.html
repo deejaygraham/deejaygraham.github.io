@@ -1,0 +1,23 @@
+{% include html-head.html %}
+<body>
+<section id="banner" class="banner">
+	<div class="container">
+		<div class="eight columns">
+			<!-- <a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a> -->
+			<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em>
+		</div>
+		<div class="four columns search">
+			{% include search-box.html %}
+		</div>
+	</div>
+</section>	
+<div class="container">
+	<div class="row">
+		<div class="twelve columns content" role="main">
+			{{ content }}
+		</div>
+	</div>
+</div>
+{% include page-footer.html %}
+</body>
+</html>
