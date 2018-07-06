@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>throws</Title>
+			<Shortcut>throws</Shortcut>
+			<Description>Code snippet for assert throws exception</Description>
+			<Author>Derek Graham</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="csharp"><![CDATA[Assert.That(() =>
+            {
+				$selected$ $end$
+			},
+            Throws.Exception.TypeOf<System.Exception>());]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
