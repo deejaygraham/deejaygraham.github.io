@@ -10,7 +10,7 @@ def distance_to_treasure(player, treasure):
     dx = player.x - treasure.x
     dy = player.y - treasure.y
     dz = player.z - treasure.z
-    return math.sqrt((dx*dx) + (dy*dy) + (dz*dz))
+    return math.ceil(math.sqrt((dx*dx) + (dy*dy) + (dz*dz)))
 	
 world = minecraft.Minecraft.create()
 
@@ -33,6 +33,8 @@ while detectoring:
   
 	if distance < 2:
 	  detectoring = False
+	elif distance < 10:
+	  world.postToChat("Hot")
 	else:
 	  if distance < last_distance:
 		world.postToChat("Warmer")
