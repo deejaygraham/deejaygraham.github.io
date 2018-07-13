@@ -38,6 +38,7 @@ title: talks
 			<article class="post">
 				<a href="https://www.slideshare.net/deejaygraham/sketchnoting-for-developers-at-ddd-north-2015">
 				<h2>Sketchnoting for Developers</h2>
+				<img src="/img/talks/sketchnoting-for-developers.png" />
 				</a>		
 			</article>
 		</div>
