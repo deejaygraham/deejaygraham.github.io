@@ -1,7 +1,7 @@
 ---
 layout: index
 ---
-<h2># {{ page.tag }}</h2>
+<h2># {{ page.tag }} - {{ site.categories[page.tag].size }} Posts</h2>
 
 {% for post in site.categories[page.tag] %}
 <article class="post-summary" id="{{ post.id}}" >
