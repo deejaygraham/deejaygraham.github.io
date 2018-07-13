@@ -2,6 +2,7 @@ import mcpi.minecraft as minecraft
 import mcpi.block as block
 import time
 import random
+import math
 
 def random_underground_position():
   return minecraft.Vec3(random.randint(-100, 100), random.randint(-20, 0), random.randint(-100, 100))
@@ -15,7 +16,7 @@ def distance_to_treasure(player, treasure):
 world = minecraft.Minecraft.create()
 
 treasure = random_underground_position()
-world.setBlock(treasure.x, treasure.y, treasure.z, block.GOLD)
+world.setBlock(treasure.x, treasure.y, treasure.z, block.GOLD_BLOCK)
 
 last_position = world.player.getTilePos()
 last_distance = distance_to_treasure(last_position, treasure)
@@ -29,17 +30,19 @@ while detectoring:
   position = world.player.getTilePos()
   
   if position != last_position:
-    distance = distance_to_treasure(playerTile, treasure)
+    distance = distance_to_treasure(position, treasure)
   
-    if distance < 2:
+    if distance < 5:
       detectoring = False
-    elif distance < 10:
-      world.postToChat("Hot")
     else:
+      message = ""
+	  
       if distance < last_distance:
-        world.postToChat("Warmer")
+        message = "Warmer " + str(distance)
       elif distance > last_distance:
-        world.postToChat("Colder")
+        message = "Colder " + str(distance)
+      
+      world.postToChat(message)
 
     last_distance = distance 
 
