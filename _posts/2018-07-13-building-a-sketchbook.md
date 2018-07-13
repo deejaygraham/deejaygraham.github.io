@@ -22,6 +22,10 @@ sewing and binding techniques. That's another project for me.
 
 <img src="/img/posts/build-a-sketchbook/step-3.jpg" alt="step 3" class="u-max-full-width" />
 
+Notice how the pages don't fit together perfectly, one inside the other. They sort of bulge out more 
+as you go towards the centre. The more pages you have in a signature, the worse this gets. Don't worry, we'll 
+fix this in a little while.
+
 Once you have a signature, we need to assemble some tools. Some staples to keep the pages together and something
 to make holes for the staples because a standard stapler isn't built to work with this thickness of paper 
 or where the holes are required to be.
