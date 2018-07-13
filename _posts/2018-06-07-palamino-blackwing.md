@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Palamino Blackwing
-categories: [ sketchnoting ]
+categories: [ sketchnotes ]
 published: true
 ---
 
