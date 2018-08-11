@@ -3,7 +3,7 @@ import music
 
 still_alive = [ 
     # this was a tri
-	"R:4", "g6:1", "f#", "e", "e", 
+    "R:4", "g6:1", "f#", "e", "e", 
     # umph
     "f#:4", "R:4",
     # I'm making a note 
@@ -15,7 +15,7 @@ still_alive = [
     # hard to overstate 
     "e6:2", "f#:1", "g:3", "e:1", "c#:2", 
     # my satisfact
-	"d:3", "e:2", "a5:3", 
+    "d:3", "e:2", "a5:3", 
     # tion
     "f#6:3", "R:4", 
     # aperture science
