@@ -26,7 +26,7 @@ def build_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
 
 
 # function to build a simple tree using the given materials
-def build_tree(world, x, z, trunk_height = 5, leaf_height = 3, leaf_radius = 4, trunk_material = block.WOOD, leaf_material = block.LEAVES ):
+def build_tree(world, x, z, trunk_height=5, leaf_height=3, leaf_radius=4, trunk_material=block.WOOD, leaf_material=block.LEAVES):
   
   y = world.getHeight(x, z)
   
