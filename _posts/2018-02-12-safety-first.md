@@ -2,7 +2,7 @@
 layout: post
 title: Safety First
 published: true
-categories: [ agile ]
+categories: [ agile, signs ]
 ---
 
 An important sign hanging outside a garage in Caldbeck in Cumbria.

@@ -1,3 +1,4 @@
 ---
 tag: signs
-permalink: "/category/s
+permalink: "/category/signs/"
+---

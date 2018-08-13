@@ -2,7 +2,7 @@
 layout: post
 title: Rules of Engagement
 published: true
-categories: [ agile ]
+categories: [ agile, signs ]
 ---
 
 How close are these to your team's agreed working practices? 
