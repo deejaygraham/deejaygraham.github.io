@@ -2,7 +2,7 @@
 layout: post
 title: Perfecting Code Reviews
 published: true
-tags: [ code, agile ]
+categories: [ code, agile ]
 ---
 
 I first read about the Core Protocols way back in the early 2000s from 
