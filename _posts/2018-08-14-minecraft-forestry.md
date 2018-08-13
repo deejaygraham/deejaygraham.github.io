@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Minecraft Forestry
-categories: [ code, minecraft ]
+categories: [ minecraft, code ]
 published: true
 hero: minecraft 
 
