@@ -16,5 +16,5 @@ fully and not to just jump at the first answer that springs to mind.
 For anyone doubting I could even spell my name correctly, I managed to pass 
 the Scrum Open assessment :)
 
-![certificate](/img/posts/scrum-assessments/crum-org-open-assessment.png)
+![certificate](/img/posts/scrum-assessments/scrum-org-open-assessment.png)
 
