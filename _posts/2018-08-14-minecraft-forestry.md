@@ -45,4 +45,12 @@ Note by using the ground value specific to each tree location, we can get a nice
 hillside.
 
 
-We can go further by changing the materials for each tree, the trunk and leaf materials, on a random basis. 
+We can go further by changing the materials for each tree, the trunk and leaf materials, on a random basis. For example, 
+the foliage still looks a bit too false as a single monolithic block of leaves. We can change the leaf generation to work 
+on a probability of a leaf block being at any one position in the canopy.
+
+```python
+
+{% include code/python/minecraft/tree-4.py %}
+
+```
