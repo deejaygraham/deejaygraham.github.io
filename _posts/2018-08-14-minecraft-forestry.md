@@ -45,9 +45,23 @@ Note by using the ground value specific to each tree location, we can get a nice
 hillside.
 
 
-We can go further by changing the materials for each tree, the trunk and leaf materials, on a random basis. For example, 
-the foliage still looks a bit too false as a single monolithic block of leaves. We can change the leaf generation to work 
-on a probability of a leaf block being at any one position in the canopy.
+We can go further by changing the materials for each tree, the trunk and leaf materials, on a random basis. The **setBlock** 
+function can take an extra argument for some block types. For wood and leaves, you are able to pick the exact kind of 
+material you would like.
+
+| value | Wood |
+|0 | Oak |
+|1 | Spruce |
+|2 | Birch |
+
+| value | Leaves |
+| 1 | Oak |
+| 2 | Spruce |
+| 3 | Birch |
+
+
+In the final version, the foliage still looks a bit too false as a single monolithic block of leaves. We can 
+change the leaf generation to work on a probability of a leaf block being at any one position in the canopy.
 
 ```python
 
