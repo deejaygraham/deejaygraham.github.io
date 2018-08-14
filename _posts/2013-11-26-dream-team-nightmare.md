@@ -53,9 +53,10 @@ learned more than I thought I would but the downside of this book is that
 there really aren't any others like it in the field. It seems even more of 
 a chore to go back to reading real books. 
 
-<div class="alert alert-info">
-<h4>Full Disclosure</h4>
+### Full Disclosure
+
 <a href="http://twitter.com/portiatung">@PortiaTung</a> and I are twitter 
 &quot;friends&quot; and I helped debug an early version of the pdf manuscript.
-</div>
+
+
 
