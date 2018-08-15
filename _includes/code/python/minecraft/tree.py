@@ -1,32 +1,50 @@
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 import random
+import time
 
 
-def build_trunk(world, x, y, z, trunk_height, trunk_diameter, trunk_material):
-  for i in range(trunk_height):
-    world.setBlock(x + trunk_diameter, y + i, z + trunk_diameter, trunk_material)
+def build_trunk(world, x, y, z, trunk_height, trunk_radius, trunk_material):
+  if trunk_radius = 0:
+    world.setBlocks(x, y, z, x + 1, y + trunk_height, z + 1, trunk_material)
+  else:
+    world.setBlocks(x - trunk_radius, 
+                    y,
+                    z - trunk_radius,
+                    x + trunk_radius,
+                    y + trunk_height,
+                    z + trunk_radius, 
+                    trunk_material)
 
 
 def build_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
-  world.setBlocks(x - leaf_radius, y, z - leaf_radius, 
-					x + leaf_radius, y + leaf_height, z + leaf_radius, 
-					leaf_material)
+  world.setBlocks(x - leaf_radius, 
+                  y, 
+                  z - leaf_radius, 
+                  x + leaf_radius, 
+                  y + leaf_height, 
+                  z + leaf_radius, 
+                  leaf_material)
 
 
 # function to build a simple tree using the given materials
-def build_tree(world, x, z, trunk_height=5, trunk_diameter = 1, leaf_height=3, leaf_radius=4, trunk_material=block.WOOD, leaf_material=block.LEAVES):
+def build_tree(world, x, z, trunk_height=5, trunk_radius = 1, leaf_height=3, leaf_radius=4, trunk_material=block.WOOD, leaf_material=block.LEAVES):
   
   y = world.getHeight(x, z)
   
-  build_trunk(world, x, y, z, trunk_height, trunk_diameter, trunk_material)
+  build_trunk(world, x, y, z, trunk_height, trunk_radius, trunk_material)
   build_leaves(world, x, y + trunk_height, z, leaf_height, leaf_radius, leaf_material)
 
 
 world = minecraft.Minecraft.create()
+
+# clear out the space
+world.setBlocks(-128, 0, -128, 128, 40, 128, block.AIR)
+world.setBlocks(-128, 1, -128, 128,  2, 128, block.GRASS)
+
 playerTile = world.player.getTilePos()
 
-x = playerTile.x
-z = playerTile.z + 20
+x = playerTile.x + 5
+z = playerTile.z + 5
 
 build_tree(world, x, z)
