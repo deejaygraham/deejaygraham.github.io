@@ -7,7 +7,8 @@ hero: minecraft
 
 ---
 
-What's programming without an occasional Harry Potter/Minecraft mashup? In the Harry Potter universe, a PortKey is a 
+What's programming without an occasional Harry Potter/Minecraft mashup? In the Harry Potter universe, a 
+<a href="https://www.pottermore.com/writing-by-jk-rowling/portkeys">Portkey</a> is a 
 magical teleportation device which is disguised as an ordinary, everyday object. Touch the object and it automatically 
 teleports you to a matching location. How would we do this in Minecraft?
 

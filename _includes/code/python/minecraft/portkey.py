@@ -5,23 +5,31 @@ import time
 
 world = minecraft.Minecraft.create()
 
-# place a mushroom portkey in a random place.
-mushroom_x = random.randint(-50, 50)
-mushroom_z = random.randint(-50, 50)
-mushroom_y = world.getHeight(mushroom_x, mushroom_z)
-world.setBlock(mushroom_x, mushroom_y, mushroom_z, block.MUSHROOM_RED)
+# place a portkey in a "random" place.
+portkey_x = 0
+portkey_z = 0
+portkey_y = world.getHeight(portkey_x, portkey_z)
 
-# place the destination object 
+# clear some space around the port key
+world.setBlocks(portkey_x - 10, portkey_y, portkey_z - 10, 
+                portkey_x + 10, portkey_y + 10, portkey_z + 10, 
+                block.AIR)
+
+portkey_block = block.CHEST
+world.setBlock(portkey_x, portkey_y, portkey_z, portkey_block)
+
 destination_x = random.randint(-50, 50)
 destination_z = random.randint(-50, 50)
 destination_y = world.getHeight(destination_x, destination_z)
-world.setBlock(destination_x, destination_y, destination_z, block.MUSHROOM_BROWN)
 
 while True:
   playerTile = world.player.getTilePos()
-  blockType = world.getBlock(player.x, player.y, player.z)
+  blockType = world.getBlock(playerTile.x, playerTile.y, playerTile.z)
 
-  if blockType == block.MUSHROOM_RED:
-    world.player.setPos(destination_x, destination_y, destination_z)
+  if blockType == portkey_block:
+    world.postToChat("port key activated...")
+    world.postToChat("hold on!")
+    time.sleep(0.5)
+    world.player.setPos(destination_x, destination_y + 5, destination_z)
 
-  time.sleep(0.2)
+  time.sleep(0.3)
