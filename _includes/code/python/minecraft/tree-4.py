@@ -1,5 +1,5 @@
 
-def build_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
+def generate_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
 
   leaf_probability = random.randint(30, 65)
   

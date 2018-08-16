@@ -17,7 +17,7 @@ def build_trunk(world, x, y, z, trunk_height, trunk_radius, trunk_material):
                     trunk_material)
 
 
-def build_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
+def generate_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
   world.setBlocks(x - leaf_radius, 
                   y, 
                   z - leaf_radius, 
@@ -33,7 +33,7 @@ def build_tree(world, x, z, trunk_height=5, trunk_radius = 1, leaf_height=3, lea
   y = world.getHeight(x, z)
   
   build_trunk(world, x, y, z, trunk_height, trunk_radius, trunk_material)
-  build_leaves(world, x, y + trunk_height, z, leaf_height, leaf_radius, leaf_material)
+  generate_leaves(world, x, y + trunk_height, z, leaf_height, leaf_radius, leaf_material)
 
 
 world = minecraft.Minecraft.create()
