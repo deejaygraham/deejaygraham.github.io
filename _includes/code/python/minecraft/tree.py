@@ -5,7 +5,7 @@ import time
 
 
 def build_trunk(world, x, y, z, trunk_height, trunk_radius, trunk_material):
-  if trunk_radius = 0:
+  if trunk_radius == 0:
     world.setBlocks(x, y, z, x + 1, y + trunk_height, z + 1, trunk_material)
   else:
     world.setBlocks(x - trunk_radius, 
