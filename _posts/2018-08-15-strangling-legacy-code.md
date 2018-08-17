@@ -17,7 +17,8 @@ some code.
 Amitai started off by introducing mob programming and the strangler pattern before moving onto the coding scenario and the code we, as a mob, 
 were to build on. It's fair to say we had a few technical challenges with connections, keyboards and mice but our newly formed 
 mob coped with those problems, managed to make progress on new features in the code with Amitai's guidance and gathered 
-confidence as the evening proceeded. 
+confidence as the evening proceeded. We swapped out drivers every 4 minutes which meant everyone who wanted to was able to 
+experience driving for the navigator and the mob.
 
 Here are a few photos from the night.
 
