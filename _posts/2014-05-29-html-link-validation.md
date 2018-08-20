@@ -18,23 +18,39 @@ I assume these are correct.
 
 First of a little class to find all html-like files in a given folder and sub folders.
 
-<script src="https://gist.github.com/deejaygraham/c4e0a9165ef46ba5f508.js"></script>
+~~~csharp
+
+{% include code/csharp/HtmlFileFinder.cs %}
+
+~~~
 
 Next we need an event to represent a link found in an html document:
 
-<script src="https://gist.github.com/deejaygraham/1be4f217858457149bbc.js"></script>
+~~~csharp
+
+{% include code/csharp/HyperLinkEventArgs.cs %}
+
+~~~
 
 Now, the *AnchorFinder* which processes a single html document and fires an 
 event each time an anchor is found.
 
-<script src="https://gist.github.com/deejaygraham/0a103620a61063df6347.js"></script>
+~~~csharp
+
+{% include code/csharp/AnchorFinder.cs %}
+
+~~~
 
 I added the ability to ignore certain url prefixes so we can ignore *mailto* 
 and local file links.
 
 Finally the Main class to use all the preceding pieces.
 
-<script src="https://gist.github.com/deejaygraham/28832111dfee7c511bd2.js"></script>
+~~~csharp
+
+{% include code/csharp/HtmlLinkValidation.cs %}
+
+~~~
 
 
 
