@@ -68,3 +68,6 @@ change the leaf generation to work on a probability of a leaf block being at any
 {% include code/python/minecraft/tree-4.py %}
 
 ```
+
+<img src="/img/posts/minecraft-forestry/random-leaves.jpg" alt="random leaves" class="u-max-full-width" />
+

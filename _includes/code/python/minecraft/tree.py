@@ -28,10 +28,7 @@ def generate_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
 
 
 # function to build a simple tree using the given materials
-def build_tree(world, x, z, trunk_height=5, trunk_radius = 1, leaf_height=3, leaf_radius=4, trunk_material=block.WOOD, leaf_material=block.LEAVES):
-  
-  y = world.getHeight(x, z)
-  
+def build_tree(world, x, y, z, trunk_height=5, trunk_radius = 1, leaf_height=3, leaf_radius=4, trunk_material=block.WOOD, leaf_material=block.LEAVES):
   build_trunk(world, x, y, z, trunk_height, trunk_radius, trunk_material)
   generate_leaves(world, x, y + trunk_height, z, leaf_height, leaf_radius, leaf_material)
 
@@ -46,5 +43,6 @@ playerTile = world.player.getTilePos()
 
 x = playerTile.x + 5
 z = playerTile.z + 5
+y = world.getHeight(x, z)
 
-build_tree(world, x, z)
+build_tree(world, x, y, z)

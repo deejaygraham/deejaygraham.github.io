@@ -9,4 +9,4 @@ def generate_leaves(world, x, y, z, leaf_height, leaf_radius, leaf_material):
         if random.randrange(100) < leaf_probability:
           world.setBlock(i, j, k, leaf_material)
   
-  sand_off_corners(x - leaf_radius, y, z - leaf_radius, x + leaf_radius, y + leaf_height, z + leaf_radius)
+  sand_off_corners(world, x - leaf_radius, y, z - leaf_radius, x + leaf_radius, y + leaf_height, z + leaf_radius)
