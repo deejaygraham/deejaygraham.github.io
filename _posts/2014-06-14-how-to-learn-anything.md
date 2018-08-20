@@ -4,7 +4,7 @@ title: How to Learn Anything
 published: true
 categories: [ sketchnotes, deliberate-practice, presentations]
 sketchnote:
-  url: "/img/posts/how-to-learn-anything/how-to-learn-anything-bw.png"
+  url: "/img/posts/how-to-learn-anything/how-to-learn-anything-bw-lofi.png"
   alt: "How to Learn Anything"
   event:
     name: "TED"
