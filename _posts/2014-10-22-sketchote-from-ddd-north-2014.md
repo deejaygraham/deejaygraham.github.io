@@ -26,7 +26,7 @@ the differences and similarities between Rubyists and .Net Developers and how he
 at [NHS Choices](http://www.nhs.uk/Pages/HomePage.aspx) have been working to 
 resolve the gaps and improve understanding.
 
-<img src="/img/posts/sketchote-from-ddd-north-2014/session-summary.png" class="img-responsive" alt="ddd north" />
+<img src="/img/posts/sketchote-from-ddd-north-2014/session-summary.png" class="u-max-full-width" alt="ddd north" />
 
 This talk was the first one I have tried to live sketchnote and you can see the result below.
 

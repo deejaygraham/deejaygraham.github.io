@@ -76,7 +76,7 @@ called Orca to let you peer inside an installer package and see almost everythin
 We can use Orca to look at the *Properties* table to see what the values we need to set.
 Here's an example of what Mono's Gendarme tool has in it's Property table:
 
-<img src="/img/posts/windows-installers-for-the-lazy/orca.png" class="img-responsive" alt="orca" />
+<img src="/img/posts/windows-installers-for-the-lazy/orca.png" class="u-max-full-width" alt="orca" />
 
 Ta-da! look up the names, fill the options in on the command line and the installer 
 runs to full completion with no intervention from you!
