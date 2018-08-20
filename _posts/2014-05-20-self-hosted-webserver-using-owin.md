@@ -20,7 +20,11 @@ to get up and running serving static files from a [console application](http://w
 
 ![console](/img/posts/self-hosted-webserver-using-owin/console.png)
 
-<script src="https://gist.github.com/deejaygraham/03b147c9719bddb7f09d.js"></script>
+~~~csharp
+
+{% include code/csharp/OwinServer.cs %}
+
+~~~
 
 The example above shows a method of using different *OwinStartup* attributes 
 to identify which startup object to use. 
