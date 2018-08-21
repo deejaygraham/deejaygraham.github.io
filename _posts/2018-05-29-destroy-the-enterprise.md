@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Best Plan for a System
+title: Destroy the Enterprise
 published: true
 categories: [ agile, quote ]
 ---
