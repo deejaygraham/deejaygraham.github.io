@@ -2,7 +2,7 @@
 layout: post
 title: XP - Extreme Portraiture
 published: true
-categories: [ sketchnotes, illustration ]
+categories: [ sketchnotes, illustration, xp ]
 ---
 
 One of my favourite talks explaining why XP does what it does in software development is 
