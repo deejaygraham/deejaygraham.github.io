@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Euler #1 in Elixir
+title: Project Euler #Problem 1 in Elixir
 published: true 
 categories: [ code ]
 hero: power
