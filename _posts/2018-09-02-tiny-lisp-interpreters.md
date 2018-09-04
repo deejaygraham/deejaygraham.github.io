@@ -5,10 +5,9 @@ published: true
 categories: [ code ]
 ---
 
-I wanted to mention a couple of awesome walkthroughs - one old, one newer - dealing a subject I always find fascinating, 
-writing interpreters for little languages. 
-
-I discovered a live programming language intended for children called <a href="http://islalanguage.org/">Isla</a> by 
+I wanted to mention a couple of awesome walkthroughs - one old, one newer - dealing with a subject I always find fascinating, 
+writing interpreters for little languages. Back a couple of weeks ago I discovered a live programming language intended 
+for children called <a href="http://islalanguage.org/">Isla</a> by 
 <a href="https://twitter.com/maryrosecook">Mary Rose Cook</a> and after browsing her blog, found an article on 
 implementing a <a href="https://github.com/maryrosecook/littlelisp">Lisp interpreter in Javascript</a>.
 
