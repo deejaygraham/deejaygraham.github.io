@@ -9,6 +9,17 @@ hero: power
 For those times when you just need to automate a UI without worrying about too many edge cases. SendKeys works 
 well for simple applications where there isn't a lot of choice required for workflow or lots of possible dialogs opening. 
 
+```powershell
+
+{% include code/powershell/NaiveAutomation-1.ps1 %}
+
+```
 
 Occasionally, the shell implementation can get confused, in which case the alternative is to use a direct invokation of SendWait.
+
+```powershell
+
+{% include code/powershell/NaiveAutomation-2.ps1 %}
+
+```
 
