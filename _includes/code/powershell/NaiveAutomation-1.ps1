@@ -7,7 +7,7 @@ Start-Sleep -Seconds  3
 
 $Shell.SendKeys('Hello World')
 
-# Close Notepad
+# Close Notepad 
 $Shell.SendKeys({%})
 Start-Sleep -Seconds 1
 $Shell.SendKeys({F})
@@ -15,6 +15,6 @@ Start-Sleep -Seconds 1
 $Shell.SendKeys({X})
 Start-Sleep -Seconds 1
 
-# Answer No - Don't save when prompted
+# Answer No - Don't save when prompted 
 $Shell.SendKeys({n}) 
 Start-Sleep -Seconds 1
