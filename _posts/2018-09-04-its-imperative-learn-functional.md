@@ -5,6 +5,42 @@ tags: [ presentations ]
 published: false
 ---
 
+Erland 250 years of development into making it rock solid OS. 
+
+Elixir sounds exotic but it borrows from languages (and others have borrowed from it) so that 
+it doesn't seem too scary.
+
+Coding dojo - find a nice language that nobody knows anything about.
+
+Hard to understand - not c like syntax - like C# or java
+
+Parallel processing 
+
+Hard multitasking is easy 
+No cooperative multiataksing like in old windows - crashes if someone forgets to play by the rules
+
+Documentation
+Execution speed
+FUnction overloading 
+parameter values not number of variables
+
+Pipeliniong like in unix or powershell
+
+Pattern matching
+
+
+
+client and server code communication
+
+Json, 
+
+ORM, Query is weird but not difficult
+
+
+Distribution package manager
+
+
+.Net 
 Notes for
 It's imperative that you learn a functional language
 
