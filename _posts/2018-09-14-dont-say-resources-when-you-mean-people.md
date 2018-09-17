@@ -5,7 +5,7 @@ published: true
 categories: [ illustration, sketchnotes ]
 ---
 
-![resources](/img/posts/dont-say-resources-when-you-mean-people/dont-say-resources-when-you-mean-people.jpg)
+<img src="/img/posts/dont-say-resources-when-you-mean-people/dont-say-resources-when-you-mean-people.jpg" alt="hr" class="u-max-full-width" />
 
 A business-speak/management thing that is really popular in some organizations but that
 really annoys me and shows huge disrespect to any kind of team or individual contributor.
