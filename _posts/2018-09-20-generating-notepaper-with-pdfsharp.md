@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generating Notepaper with PdfSharp
-tags: [ code ]
+categories: [ code ]
 published: true
 ---
 

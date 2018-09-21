@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NUnit Test Actions for Great Good
-tags: [ code ]
+categories: [ code ]
 published: true
 ---
 
