@@ -19,4 +19,8 @@ and didn't really care where. You could easily extend this code to report the fi
 
 ```
 
+Additionally, I used a list of search terms but that could be replaced with a simple string search variable. 
+
+Sample output from this script:
+
 <img src="/img/posts/grepping-in-powershell/grepping-in-powershell.png" alt="grep" class="u-max-full-width" />

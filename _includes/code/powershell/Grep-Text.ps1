@@ -1,15 +1,15 @@
 [string]$SourceFolder = 'D:\MyCode\Source' 
 
-$GrepFor = @( 'using System.Reflection' )
+$SearchTerms = @( 'using System.Reflection' )
 
 Get-ChildItem -Path $SourceFolder -Filter *.cs -Recurse | % {
 
-    $File = $_.FullName
-    $Content = Get-Content -Path $File 
+    $Path = $_.FullName
+    $FileContent = Get-Content -Path $Path 
   
-    $GrepFor | % {
+    $SearchTerms | % {
     
-        $Pattern = $_
-        $Content | Select-String -Pattern $Pattern
+        $SearchPattern = $_
+        $FileContent | Select-String -Pattern $SearchPattern
     }
 } 
