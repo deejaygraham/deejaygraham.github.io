@@ -113,3 +113,16 @@ also check that a condition is met inside a task by using the Assert statement.
 {% include code/powershell/PSake-Cheatsheet-8.ps1 %}
 
 ```
+
+
+### Preconditions 
+
+PSake will skip a Task if the precondition is not met. 
+
+
+```powershell
+
+{% include code/powershell/PSake-Cheatsheet-9.ps1 %}
+
+```
+
