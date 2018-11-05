@@ -48,7 +48,7 @@ your Tasks and their dependencies using the -docs switch:
 
 ```powershell
 
-include code/powershell/PSake-Cheatsheet-3.ps1
+{% include code/powershell/PSake-Cheatsheet-3.ps1 %} 
 
 ```
 
@@ -61,7 +61,7 @@ execution to honour each dependency statement.
 
 ```powershell
 
-include code/powershell/PSake-Cheatsheet-4.ps1
+{% include code/powershell/PSake-Cheatsheet-4.ps1 %}
 
 ```
 
