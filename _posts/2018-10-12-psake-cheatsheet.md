@@ -18,7 +18,7 @@ The basic unit of execution in PSake is the Task:
 
 ```powershell
 
-include code/powershell/PSake-Cheatsheet-1.ps1
+{% include code/powershell/PSake-Cheatsheet-1.ps1 %}
 
 ```
 
