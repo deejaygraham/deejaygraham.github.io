@@ -32,7 +32,7 @@ We run the task by invoking PSake (after Importing the module if we need to):
 
 ```powershell
 
-include code/powershell/PSake-Cheatsheet-2.ps1
+{% include code/powershell/PSake-Cheatsheet-2.ps1 %}
 
 ```
 
