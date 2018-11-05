@@ -18,7 +18,7 @@ The basic unit of execution in PSake is the Task:
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-1.ps1 %}
+include code/powershell/PSake-Cheatsheet-1.ps1
 
 ```
 
@@ -32,7 +32,7 @@ We run the task by invoking PSake (after Importing the module if we need to):
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-2.ps1 %}
+include code/powershell/PSake-Cheatsheet-2.ps1
 
 ```
 
@@ -48,7 +48,7 @@ your Tasks and their dependencies using the -docs switch:
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-3.ps1 %}
+include code/powershell/PSake-Cheatsheet-3.ps1
 
 ```
 
@@ -61,7 +61,7 @@ execution to honour each dependency statement.
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-4.ps1 %}
+include code/powershell/PSake-Cheatsheet-4.ps1
 
 ```
 
