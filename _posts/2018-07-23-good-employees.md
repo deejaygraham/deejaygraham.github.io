@@ -9,4 +9,4 @@ categories: [ agile, quote ]
 Good employees in a poor system are commonly 
 mistaken for poor employees.
 </blockquote>
-<small>Doc Norton, channeling W. Edwards Deming</small>
+<small>Doc Norton (channeling W. Edwards Deming)</small>
