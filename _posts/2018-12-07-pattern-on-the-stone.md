@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Newspapers
+title: Computer Witchcraft
 published: true
 categories: [ quote ]
 ---
