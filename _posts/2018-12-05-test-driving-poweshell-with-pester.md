@@ -18,10 +18,9 @@ Import-Module Pester
 
 Describe 'Presenting in public' {
 	
-	$Emotion = 'Kacking It'
+	It 'Emotion should be positive' {
 	
-	It 'Emotion should be good' {
-	
+		$Emotion = 'Kacking It'
 		$Emotion | Should Be 'Joy'
 	}
 }
@@ -37,10 +36,9 @@ Import-Module Pester
 
 Describe 'Presenting in public' {
 	
-	$Emotion = 'Kacking It'
+	It 'Emotion may not be positive' {
 	
-	It 'Emotion may not be good' {
-	
+		$Emotion = 'Kacking It'
 		$Emotion | Should Not Be 'Joy'
 	}
 }
@@ -54,10 +52,9 @@ Import-Module Pester
 
 Describe 'Presenting in public' {
 	
-	$Emotion = "I'm Loathing It"
-	
 	It 'should be like Macdonalds' {
 	
+		$Emotion = "I'm Loathing It"
 		$Emotion | Should BeLike "I'm Lo*ing It"
 	}
 }
@@ -72,19 +69,20 @@ We can have multiple describe blocks or collapse into one describe with multiple
 ```powershell
 
 Import-Module Pester
-
 Set-StrictMode -Version Latest
-
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 Describe 'My Blog' {
 
     It 'Serves pages over http' {
-        Invoke-WebRequest -Uri 'http://deejaygraham.github.io/' | Select -ExpandProperty StatusCode | Should Be 200
+        Invoke-WebRequest -Uri 'http://deejaygraham.github.io/' -UseBasicParsing | 
+		Select-Object -ExpandProperty StatusCode | 
+		Should Be 200
     }
 
     It 'Serves pages over https' {
-        Invoke-WebRequest -Uri 'https://deejaygraham.github.io/' | Select -ExpandProperty StatusCode | Should Be 200
+        Invoke-WebRequest -Uri 'https://deejaygraham.github.io/' -UseBasicParsing | 
+		Select-Object -ExpandProperty StatusCode | 
+		Should Be 200
     }
 }
 
@@ -100,7 +98,7 @@ Describe 'Externally Referenced Links' {
 
         It "$_ is reachable" {
 
-            Invoke-WebRequest -uri $_ | Select -ExpandProperty StatusCode | Should Be 200
+            Invoke-WebRequest -uri $_ -UseBasicParsing | Select-Object -ExpandProperty StatusCode | Should Be 200
         }
     }
 }
@@ -208,7 +206,7 @@ Import-Module Pester
 
 $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
-Invoke-Pester -Script @{ 
+Invoke-Pester -Tags First -Script @{ 
 
 	Path = "$here\*.Tests.ps1"
 
@@ -334,7 +332,7 @@ Describe 'Scrooge' {
     Context 'Before the Ghosts Visit' {
         
         It 'Doesn't care about Christmas day' {
-			# when will this work, when will it not work?
+			# when will this work, when will it not work
             Test-ChristmasDay | Should Be $false
         }
     }
@@ -426,3 +424,18 @@ Describe 'Get-ChrisReaSong' {
 
 ```
 
+### CI 
+
+```powershell
+
+Invoke-Pester -OutputFile 'PesterResults.xml' -OutputFormat NUnitXml
+
+```
+
+### Code Coverage
+
+```powershell
+
+Invoke-Pester -Script Demo.Tests.ps1 -CodeCoverage Demo.ps1
+
+```
