@@ -432,17 +432,27 @@ Describe 'Get-ChristmasCarolGhost' {
 
 ```powershell
 
-Describe 'Get-ChrisReaSong' {
+$here = Split-Path -Path $MyInvocation.MyCommand.Path
+
+Get-Module ChrisRea | Remove-Module -Force
+Import-Module $here\ChrisRea.psm1
+
+Import-Module Pester
+
+Describe 'Chris Rea' {
 
 	$Path = Join-Path $TestDrive -ChildPath 'ChrisRea.txt'
 	Set-Content -Path $Path -Content "I'm driving home for Christmas, Oh, I can't wait to see those faces"
 
-    It 'Can read lyrics from a local file' {
-		Get-ChristmasSong -Path $Path | Should Contain 'faces'
-    }
+	It 'Song lyrics can be read from a local file' {
+	  Get-ChristmasSong -Path $Path | Should Contain 'faces'
+	}
 }
 
 ```
+
+Write a function that prints the lyrics to a christmas song.
+
 
 ```powershell
 
@@ -467,6 +477,19 @@ Export-ModuleMember -Function *
 ```powershell
 
 Invoke-Pester -OutputFile 'PesterResults.xml' -OutputFormat NUnitXml
+
+Import-Module Pester
+
+$here = Split-Path -Path $MyInvocation.MyCommand.Path
+
+Invoke-Pester -Script @{ 
+
+	Path = "$here\*.Tests.ps1"
+
+	Parameters = @{ 
+		BaseUri = $BaseUri
+	}
+}
 
 ```
 
