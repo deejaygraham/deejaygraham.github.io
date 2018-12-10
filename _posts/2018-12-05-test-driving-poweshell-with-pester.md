@@ -362,6 +362,9 @@ Describe 'Scrooge' {
 
     Context 'The Spirits have done it all in one night' {
 
+		# Wizzard way of doing it.
+		Mock Get-Date { New-Object DateTime (2018, 12, 25) }
+	
         It 'It is Christmas Day' {
     
             Test-ChristmasDay | Should Be $True
@@ -391,18 +394,35 @@ Import-Module $here\Scrooge.psm1 -Force
 
 ```powershell
 
+Set-StrictMode -Version Latest
+
+Function Get-Ghost {
+  [CmdletBinding()]
+  Param()
+  
+  $Ghosts = @( 'Jacob Marley', 'Christmas Past', 'Christmas Present', 'Christmas Future', 'Patrick Swayze', '' )
+
+  Write-Output $Ghosts
+}
+
+Export-ModuleMember -Function *
+
+```
+
+```powershell
+
 Describe 'Get-ChristmasCarolGhost' {
 
 	$Ghosts = Get-ChristmasCarolGhost
     $FirstGhost = $Ghosts | Select-Object -First 1
 
     It 'Three spirits shall visit scrooge' {
-        $Ghosts.Count | Should -Be 3
+        $Ghosts.Count | Should -Be 4
     }
 
-    It 'Finds existing ghost by name' {
-        (Get-ChristmasCarolGhost -Name $FirstGhost.Name).id | Should -Be $FirstGhost.id 
-    }
+    It 'First Ghost is Marley' {
+        $FirstGhost | Should -Be Like '*Marley'
+	}
 }
 
 ```
@@ -418,9 +438,27 @@ Describe 'Get-ChrisReaSong' {
 	Set-Content -Path $Path -Content "I'm driving home for Christmas, Oh, I can't wait to see those faces"
 
     It 'Can read lyrics from a local file' {
-		Get-ChrisReaSong -Path $Path | Should Contain 'faces'
+		Get-ChristmasSong -Path $Path | Should Contain 'faces'
     }
 }
+
+```
+
+```powershell
+
+Set-StrictMode -Version Latest
+
+Function Get-ChristmasSong {
+  [CmdletBinding()]
+  Param(
+    [Parameter(Mandatory=$True)]
+    [string]$Path
+  )
+
+  Write-Output (Get-Content -Path $Path)
+}
+
+Export-ModuleMember -Function *
 
 ```
 
