@@ -1,29 +1,29 @@
 ---
 layout: post
 title: Test Driving PowerShell with Pester
-published: true 
+published: true
 categories: [ powershell ]
 hero: power
 ---
 
-Work in progress text and examples from an upcoming presentation. 
+Work in progress text and examples from an upcoming presentation.
 
 Test Driven Development is Christmas themed - red green refactor cycle.
 
 * Why Pester
 * What is Pester
 * Describe
-* It 
+* It
 * Should
-* Formatted Output 
+* Formatted Output
 	- Success
 	- Failures
-	
+
 * Simplest testing
 * Url testing
 * Testing & Documenting Webservices
 * Running suites of tests
-* Output Format 
+* Output Format
 * Code Coverage
 * Mocking to make tests reliable
 * TestDrive
@@ -40,29 +40,46 @@ module ExpenseTracker
 
 	RSpec.describe 'Expense Tracker API' do
 
-		it 'records submitted expenses' do 
+		it 'records submitted expenses' do
 
 			post '/expenses', JSON.generate(receipt)
 
 		end
 	end
-end	
-	
+end
+
 ```
 
 
-### Describe It and Should 
+### Describe It and Should
 
-(quotes from Christmas Carol) It is a ponderous chain!
+Easy to get started, let's try running vs code and typing a simple test.
+
+```powershell
+
+Import-Module Pester
+
+Describe 'Pester' {
+
+    It 'Just Works' {
+
+        'toast' | Should Be 'test'
+    }
+}   
+
+```
+
+We can try Should Not Be, Be Like Be LikeExactly
+
 
 ```powershell
 
 Import-Module Pester
 
 Describe 'Presenting in public' {
-	
+
 	It 'Emotion should be positive' {
-	
+
 		$Emotion = 'Kacking It'
 		$Emotion | Should Be 'Joy'
 	}
@@ -78,9 +95,9 @@ Ok, that fails, let's fix the test to make it more representative of reality.
 Import-Module Pester
 
 Describe 'Presenting in public' {
-	
+
 	It 'Emotion may not be positive' {
-	
+
 		$Emotion = 'Kacking It'
 		$Emotion | Should Not Be 'Joy'
 	}
@@ -94,9 +111,9 @@ Describe 'Presenting in public' {
 Import-Module Pester
 
 Describe 'Presenting in public' {
-	
+
 	It 'should be like Macdonalds' {
-	
+
 		$Emotion = "I'm Loathing It"
 		$Emotion | Should BeLike "I'm Lo*ing It"
 	}
@@ -104,9 +121,9 @@ Describe 'Presenting in public' {
 
 ```
 
-### Refactoring 
+### Refactoring
 
-We can have multiple describe blocks or collapse into one describe with multiple context blocks
+We can have multiple describe blocks and multiple It blocks or collapse into one describe with multiple context blocks
 
 ```powershell
 
@@ -116,14 +133,14 @@ Set-StrictMode -Version Latest
 Describe 'Google' {
 
     It 'Serves pages over http' {
-        Invoke-WebRequest -Uri 'http://google.com/' -UseBasicParsing | 
-		Select-Object -ExpandProperty StatusCode | 
+        Invoke-WebRequest -Uri 'http://google.com/' -UseBasicParsing |
+		Select-Object -ExpandProperty StatusCode |
 		Should Be 200
     }
 
     It 'Serves pages over https' {
-        Invoke-WebRequest -Uri 'https://google.co.uk/' -UseBasicParsing | 
-		Select-Object -ExpandProperty StatusCode | 
+        Invoke-WebRequest -Uri 'https://google.co.uk/' -UseBasicParsing |
+		Select-Object -ExpandProperty StatusCode |
 		Should Be 200
     }
 }
@@ -140,8 +157,8 @@ Describe 'Externally Referenced Links' {
 
         It "$_ is reachable" {
 
-            Invoke-WebRequest -uri $_ -UseBasicParsing | 
-            Select-Object -ExpandProperty StatusCode | 
+            Invoke-WebRequest -uri $_ -UseBasicParsing |
+            Select-Object -ExpandProperty StatusCode |
             Should Be 200
         }
     }
@@ -167,7 +184,7 @@ Param (
 Describe "Films in the Star Wars Universe" {
 
 	$AllFilms = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
-	
+
 	It 'Contains all 7 films' {
 
 		$AllFilms.Count | Should Be 7
@@ -184,7 +201,7 @@ Param (
 Describe "Planets in Star Wars" {
 
 	$AllPlanets = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
-	
+
 	It 'Contains a lot of planets' {
 
 		$AllPlanets.Count | Should Be 61
@@ -201,7 +218,7 @@ Param (
 Describe "People in Star Wars" {
 
 	$Everyone = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
-	
+
 	It 'Contains a lot of people' {
 
 		$Everyone.Count | Should Be 87
@@ -218,7 +235,7 @@ Describe "People in Star Wars" {
 ```
 
 
-```powershell 
+```powershell
 
 Import-Module Pester
 
@@ -227,11 +244,11 @@ Import-Module Pester
 [string]$here = Split-Path -Path $MyInvocation.MyCommand.Path
 [string]$BaseUri = 'https://swapi.co/api/'
 
-Invoke-Pester -Script @{ 
+Invoke-Pester -Script @{
 
 	Path = "$here\*.Tests.ps1"
 
-	Parameters = @{ 
+	Parameters = @{
 		BaseUri = $BaseUri
 	}
 }
@@ -267,18 +284,18 @@ Import-Module Pester
 
 $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
-Invoke-Pester -Script @{ 
+Invoke-Pester -Script @{
 
 	Path = "$here\*.Tests.ps1"
 
-	Parameters = @{ 
+	Parameters = @{
 		BaseUri = $BaseUri
 	}
 }
 
 ```
 
-### Christmas Driven Development 
+### Christmas Driven Development
 
 Now to the serious stuff
 
@@ -314,7 +331,7 @@ Function Get-HowLongUntilChristmas {
 
 ```
 
-### Mocking 
+### Mocking
 
 Initial set of tests...
 
@@ -329,7 +346,7 @@ Describe 'Email Santa Service' {
         It 'Expressed in days' {
             Get-HowLongUntilChristmas | Should BeLike '* days'               
         }
-		
+
         It 'Calculates correctly' {
             Get-HowLongUntilChristmas | Should Be '24 days'               
         }
@@ -338,8 +355,8 @@ Describe 'Email Santa Service' {
 
 ```
 
-Fails. We need some way to make this test work for every day of the year. Mock the content function and return a 
-known value. Works all of the time. 
+Fails. We need some way to make this test work for every day of the year. Mock the content function and return a
+known value. Works all of the time.
 
 
 ```powershell
@@ -356,7 +373,7 @@ Describe 'Email Santa Service' {
         It 'Expressed in days' {
             Get-HowLongUntilChristmas | Should BeLike '* days'               
         }
-		
+
         It 'Calculates correctly' {
             Get-HowLongUntilChristmas | Should Be '24 days'               
         }
@@ -398,7 +415,7 @@ So I know I should test that difficult logic:
 Describe 'Scrooge' {
 
     Context 'Before the Ghosts Visit' {
-        
+
         It 'Doesn't care about Christmas day' {
 			# when will this work, when will it not work
             Test-ChristmasDay | Should Be $false
@@ -420,7 +437,7 @@ Describe 'Scrooge' {
 Describe 'Scrooge' {
 
     Context 'Before the Ghosts Visit' {
-        
+
         Mock Get-Date { New-Object DateTime (2018, 7, 10) }
 
         It 'Doesn't care about Christmas day' {
@@ -432,9 +449,9 @@ Describe 'Scrooge' {
 
 		# Wizzard way of doing it.
 		Mock Get-Date { New-Object DateTime (2018, 12, 25) }
-	
+
         It 'It is Christmas Day' {
-    
+
             Test-ChristmasDay | Should Be $True
             Assert-MockCalled Get-Date -Times 2 -Exactly
         }
@@ -443,14 +460,14 @@ Describe 'Scrooge' {
 
 ```
 
-Made tests independent of dates and times. We can expect that our code is much more likely to succeed when 
+Made tests independent of dates and times. We can expect that our code is much more likely to succeed when
 put into a real environment. We can also make sure that the internals we are expecting are called the right
-number of times. 
+number of times.
 
-### Modules 
+### Modules
 
-Testing modules and developing them side by side with the tests, it's a good idea to make sure we are working 
-with the most up to date version 
+Testing modules and developing them side by side with the tests, it's a good idea to make sure we are working
+with the most up to date version
 
 
 ```powershell
@@ -467,7 +484,7 @@ Set-StrictMode -Version Latest
 Function Get-Ghost {
   [CmdletBinding()]
   Param()
-  
+
   $Ghosts = @( 'Jacob Marley', 'Christmas Past', 'Christmas Present', 'Christmas Future', 'Patrick Swayze', '' )
 
   Write-Output $Ghosts
@@ -540,7 +557,7 @@ Export-ModuleMember -Function *
 
 ```
 
-### CI 
+### CI
 
 ```powershell
 
@@ -550,11 +567,11 @@ Import-Module Pester
 
 $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
-Invoke-Pester -Script @{ 
+Invoke-Pester -Script @{
 
 	Path = "$here\*.Tests.ps1"
 
-	Parameters = @{ 
+	Parameters = @{
 		BaseUri = $BaseUri
 	}
 }
