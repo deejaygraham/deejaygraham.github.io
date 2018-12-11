@@ -22,7 +22,12 @@ Test Driven Development is Christmas themed - red green refactor cycle.
 * Simplest testing
 * Url testing
 * Testing & Documenting Webservices
-* 
+* Running suites of tests
+* Output Format 
+* Code Coverage
+* Mocking to make tests reliable
+* TestDrive
+
 
 ### RSpec
 
@@ -103,7 +108,6 @@ Describe 'Presenting in public' {
 
 We can have multiple describe blocks or collapse into one describe with multiple context blocks
 
-
 ```powershell
 
 Import-Module Pester
@@ -149,95 +153,112 @@ Describe 'Externally Referenced Links' {
 
 We can setup a test context for a specific Rest API - get and post.
 
-```powershell 
+### Test Suite
+
+```powershell
 
 Param (
 	[Parameter(Mandatory=$True)]
 	[string]$BaseUri
 )
 
-[string]$Resource = "$($BaseUri)builds/"
+[string]$Resource = "$($BaseUri)films/"
 
-Describe "Build API : $Resource" {
+Describe "Films in the Star Wars Universe" {
 
-	Context "Get Requests" {
-
-		$AllBuilds = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
+	$AllFilms = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
 	
-		It 'Finds all builds' {
+	It 'Contains all 7 films' {
 
-			$AllBuilds.Count | Should BeGreaterThan 0
-		}
+		$AllFilms.Count | Should Be 7
+	}
+}
 
-		It 'Finds builds by Id' {
+Param (
+	[Parameter(Mandatory=$True)]
+	[string]$BaseUri
+)
 
-			$SpecificBuild = $AllBuilds | Select-Object -First 1 
+[string]$Resource = "$($BaseUri)planets/"
 
-			$Build = Invoke-RestMethod -Method Get -Uri "$($Resource)$($SpecificBuild.id)" -UseBasicParsing
+Describe "Planets in Star Wars" {
 
-			$Build.id | Should Be $SpecificBuild.id
-		}
+	$AllPlanets = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
+	
+	It 'Contains a lot of planets' {
 
-		It 'Finds build by Name' {
+		$AllPlanets.Count | Should Be 61
+	}
+}
 
-			$SpecificBuild = $AllBuilds | Select-Object -First 1 
+Param (
+	[Parameter(Mandatory=$True)]
+	[string]$BaseUri
+)
 
-			$Build = Invoke-RestMethod -Method Get -Uri "$($Resource)?name=$($SpecificBuild.name)" -UseBasicParsing
+[string]$Resource = "$($BaseUri)people/"
 
-			$Build.id | Should Be $SpecificBuild.id
-		}
+Describe "People in Star Wars" {
 
-		It 'Unknown build returns 404' {
+	$Everyone = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
+	
+	It 'Contains a lot of people' {
 
-			[int]$InvalidDbKey = 99999999
-
-			Try {
-				Invoke-RestMethod -Method Get -Uri "$($Resource)$InvalidDbKey" -UseBasicParsing
-			} Catch {
-
-				$Error[0].Exception.Message | Should Be 'The remote server returned an error: (404) Not Found.'
-			}
-		}
-
+		$Everyone.Count | Should Be 87
 	}
 
-	Context "Post Requests" {
+	It 'Luke Skywalker is Id = 1' {
 
-		$AllBuilds = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
+		$Luke = Invoke-RestMethod -Method Get -Uri "$($Resource)1" -UseBasicParsing
 
-		It 'Accepts new builds' {
-
-			$SpecificBuild = $AllBuilds | Select-Object -First 1 
-
-			$NewBuild = @{
-
-				productid = $SpecificBuild.productid 
-				name = 'Example build'
-				definition = '99.99.99.99'
-				url = 'http://example.com/'
-				version = 'Example Build 99'
-			}
-
-			$JsonObject = $NewBuild | ConvertTo-Json
-
-			$CreatedObject = Invoke-RestMethod -Method Post -Uri $Resource -UseBasicParsing -Body $JsonObject -ContentType 'application/json'
-
-			$CreatedObject.name | Should Be $NewBuild.name
-		}
+		$Luke.name | Should Be 'Luke Skywalker'
 	}
 }
 
 ```
 
-### Test Suite
+
+```powershell 
+
+Import-Module Pester
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+[string]$here = Split-Path -Path $MyInvocation.MyCommand.Path
+[string]$BaseUri = 'https://swapi.co/api/'
+
+Invoke-Pester -Script @{ 
+
+	Path = "$here\*.Tests.ps1"
+
+	Parameters = @{ 
+		BaseUri = $BaseUri
+	}
+}
+
+```
+
 
 We can then invoke tests from a controlling script that will execute against all tests in a directory.
 
 ```powershell
 
+Import-Module Pester
+
+$here = Split-Path -Path $MyInvocation.MyCommand.Path
+
+Invoke-Pester -Script "$here\*.Tests.ps1"
+
+```
+
+We can even pass parameters to each script, like the base uri
+
+
+```powershell
+
 Param (
 	[Parameter()]
-	[string]$BaseUri = 'http://localhost:51089/api/'
+	[string]$BaseUri = 'https://swapi.co/api/'
 )
 
 Import-Module Pester
