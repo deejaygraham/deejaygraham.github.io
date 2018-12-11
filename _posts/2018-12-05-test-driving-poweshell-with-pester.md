@@ -8,6 +8,44 @@ hero: power
 
 Work in progress text and examples from an upcoming presentation. 
 
+Test Driven Development is Christmas themed - red green refactor cycle.
+
+* Why Pester
+* What is Pester
+* Describe
+* It 
+* Should
+* Formatted Output 
+	- Success
+	- Failures
+	
+* Simplest testing
+* Url testing
+* Testing & Documenting Webservices
+* 
+
+### RSpec
+
+```ruby
+
+require 'rack/test'
+require 'json'
+
+module ExpenseTracker
+
+	RSpec.describe 'Expense Tracker API' do
+
+		it 'records submitted expenses' do 
+
+			post '/expenses', JSON.generate(receipt)
+
+		end
+	end
+end	
+	
+```
+
+
 ### Describe It and Should 
 
 (quotes from Christmas Carol) It is a ponderous chain!
@@ -71,16 +109,16 @@ We can have multiple describe blocks or collapse into one describe with multiple
 Import-Module Pester
 Set-StrictMode -Version Latest
 
-Describe 'My Blog' {
+Describe 'Google' {
 
     It 'Serves pages over http' {
-        Invoke-WebRequest -Uri 'http://deejaygraham.github.io/' -UseBasicParsing | 
+        Invoke-WebRequest -Uri 'http://google.com/' -UseBasicParsing | 
 		Select-Object -ExpandProperty StatusCode | 
 		Should Be 200
     }
 
     It 'Serves pages over https' {
-        Invoke-WebRequest -Uri 'https://deejaygraham.github.io/' -UseBasicParsing | 
+        Invoke-WebRequest -Uri 'https://google.co.uk/' -UseBasicParsing | 
 		Select-Object -ExpandProperty StatusCode | 
 		Should Be 200
     }
@@ -98,7 +136,9 @@ Describe 'Externally Referenced Links' {
 
         It "$_ is reachable" {
 
-            Invoke-WebRequest -uri $_ -UseBasicParsing | Select-Object -ExpandProperty StatusCode | Should Be 200
+            Invoke-WebRequest -uri $_ -UseBasicParsing | 
+            Select-Object -ExpandProperty StatusCode | 
+            Should Be 200
         }
     }
 }
@@ -206,7 +246,7 @@ Import-Module Pester
 
 $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
-Invoke-Pester -Tags First -Script @{ 
+Invoke-Pester -Script @{ 
 
 	Path = "$here\*.Tests.ps1"
 
@@ -219,10 +259,15 @@ Invoke-Pester -Tags First -Script @{
 
 ### Christmas Driven Development 
 
-(red and green) Like scrooge (more on him later), I need to know when christmas is coming so I can make preparations.
+Now to the serious stuff
+
+Like scrooge (more on him later), I need to know when Christmas is coming so I can make preparations.
 Let's write two functions, one to get some content from a website, and another to parse the text and find the value.
 
 ```powershell
+
+$SantaUrl = 'https://www.emailsanta.com/clock.asp'
+$HtmlToMatch = '<span class="XmasDayemph">(.*)</span>'
 
 Function Get-WebPageContent {
 
@@ -239,7 +284,7 @@ Function Get-HowLongUntilChristmas {
 
     $response = Get-WebPageContent -Url "https://www.emailsanta.com/clock.asp"
 
-    If ($response -match '<span class="XmasDayemph">(.*)</span>') {
+    If ($response -match $HtmlToMatch) {
 
         Write-Output $matches[1]
     }
@@ -250,6 +295,7 @@ Function Get-HowLongUntilChristmas {
 
 ### Mocking 
 
+Initial set of tests...
 
 ```powershell
 
@@ -283,7 +329,8 @@ Describe 'Email Santa Service' {
 
     Context 'Countdown to Christmas' {
 
-        Mock Get-WebPageContent { return '<html><span class="XmasDayemph">24 days</span>' }
+		$FakeWebPage = '<html><span class="XmasDayemph">24 days</span>'
+        Mock Get-WebPageContent { return $FakeWebPage }
 
         It 'Expressed in days' {
             Get-HowLongUntilChristmas | Should BeLike '* days'               
