@@ -383,6 +383,14 @@ Describe 'Email Santa Service' {
     }
 }
 
+
+# Evaluated in order 
+$filter = '(B|D|E)$'
+Mock Select-String { "matched!" } -ParameterFilter { $Path -match $filter }
+Mock Select-String 
+		
+		
+
 ```
 
 ### SDD
