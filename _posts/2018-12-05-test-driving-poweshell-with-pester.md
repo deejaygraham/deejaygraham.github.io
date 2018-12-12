@@ -123,7 +123,10 @@ Describe 'Presenting in public' {
 
 ### Refactoring
 
-We can have multiple describe blocks and multiple It blocks or collapse into one describe with multiple context blocks
+We can have multiple describe blocks and multiple It blocks or collapse into one describe with multiple context blocks and they stack up as you would expect.
+
+So we can test a website..
+
 
 ```powershell
 
