@@ -12,21 +12,36 @@ Test Driven Development is Christmas themed - red green refactor cycle.
 
 * Why Pester
 * What is Pester
-* Describe
+* Describe (01Structure)
 * It
-* Should
+* Should (02Should)
 * Formatted Output
 	- Success
 	- Failures
 
 * Simplest testing
-* Url testing
-* Testing & Documenting Webservices
-* Running suites of tests
-* Output Format
-* Code Coverage
-* Mocking to make tests reliable
+* Url testing (03Web) (04Links)
+* Testing & Documenting Webservices  (05 StarWars) 
+* Running suites of tests Invoke-Pester
+Pass variables.
+
+-Tag Films | People | Planets - only runs those tags
+* Output Format -File -OutputFormat xml - understood by CI tools - VSTS etc. 
+
+
+Christmas - Red Green is very festive. Let's look at import stuff.
+Write-Christmas module and test it.
+
+* Code Coverage Running any tests for christmas
+
 * TestDrive
+Set-Content 
+
+* Mocking to make tests reliable
+
+* Code Coverage
+
+
 
 
 ### RSpec
