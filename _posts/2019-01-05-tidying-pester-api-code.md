@@ -41,7 +41,7 @@ as the basis for another.
 
 ```
 
-To address this, I thought first off to add a custom Pester assertion, as <a href="https://github.com/pester/Pester">outlined here</a>. That seemed to 
+To address this, I thought first off to add a custom Pester assertion, as <a href="https://mathieubuisson.github.io/pester-custom-assertions/">outlined here</a>. That seemed to 
 be too much effort for the tiny bit of tidying I though was warranted by the code so I converted the Get-Member snippet into a cmdlet, Get-FieldCount, 
 that could be used as part of an assertion.  
 
