@@ -16,18 +16,15 @@
 # Pin 9 (GND) 
 
 
-import RPi.GPIO as GPIO
+from gpiozero import LED
 import time
 
-red_led = 17
+red_led = LED(17)
 blink_time = 0.5
 
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(red_led, GPIO.OUT)
-
 while True:
-   GPIO.output(red_led, GPIO.HIGH)
+   red_led.on()
    time.sleep(blink_time)
-   GPIO.output(red_led, GPIO.LOW)
+   red_led.off()
    time.sleep(blink_time)
    

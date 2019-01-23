@@ -24,6 +24,13 @@ You will need a couple of electronics bits and bobs for this project:
 
 ### Wiring
 
+The Raspberry Pi has specific pins on the connector set aside for power, ground and GPIO. Refer to the 
+<a href="https://www.raspberrypi.org/documentation/usage/gpio/">GPIO documentation</a> to work out which 
+pins you want to pick for power and IO (and change the code below if you decide to 
+pick different output pins). The IO pins are subtly different on each version of the PI so if you aren't 
+sure which Pi you have you can <a href="https://www.modmypi.com/blog/raspberry-pi-comparison-table">find the 
+right version here</a>.
+
 Wiring diagram to go here.
 
 
