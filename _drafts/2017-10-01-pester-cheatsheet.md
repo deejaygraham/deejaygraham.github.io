@@ -1,20 +1,50 @@
 ---
 layout: post
-title: Get-PesterCheatSheet
+title: Pester CheatSheet
 tags: [ powershell ]
 published: true
 ---
 
-I've been meaning to investigate <a href="https://github.com/pester/Pester/">Pester</a>, the
-bdd-like testing framework for PowerShell for quite a while now. Last month I worked on a
+I've been meaning to investigate <a href="https://github.com/pester/Pester/">Pester</a>, a
+BDD-like testing framework for PowerShell for quite a while now. Last month I worked on a
 new DevOps project where "we" (our PowerShell experts) used Pester to validate pre- and
 post- deployment conditions so I thought it was time to dig a bit deeper.
+
+
+### Test, First
+
+~~~powershell
+
+$calculated_value | Should Be 42
+
+~~~
+
+### Mocking 
+
+
+### Checking Mocking
+
+~~~powershell
+
+Assert-MockCalled Select-String  -Times 0  
+
+-Exactly -Times 1  
+
+~~~
+
+
+ArrayDifferences $actualResult $expectedResult | Should BeNullOrEmpty
+
+
+
+### Getting Pester
 
 $PSVersionTable - need  v 5
 
 Import-Module PackageManagement
 
 Install-Module Pester -Force 
+
 
 ### Getting Pester
 
