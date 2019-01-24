@@ -1,19 +1,17 @@
-<section class="footer u-full-width">
+<footer class="section is-primary is-small hast-text-centred">
 	<div class="container">
-		<div class="row">
-			<div class="four columns social">
+		<div class="columns is-centered">
+			<div class="column is-one-half">
 				<h5>social</h5>
 				<ul class="social-list">
 					<li class="social-list-item"><a title="rss feed" href="{{ site.url }}/rss.xml" target="_blank" ><i class="fa fa-rss" aria-hidden="true"></i></a></li>
 					<li class="social-list-item"><a title="twitter" href="{{ site.twitterurl }}" target="_blank" ><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 					<li class="social-list-item"><a title="github" href="{{ site.githuburl }}" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
-					<!-- <li class="social-list-item"><a title="instagram" href="{{ site.instagramurl }}" target="_blank" ><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
--->
 					<li class="social-list-item"><a title="linked in" href="{{ site.linkedinurl }}" target="_blank" ><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 					<li class="social-list-item"><a title="slideshare" href="{{ site.slideshareurl }}" target="_blank" ><i class="fa fa-slideshare" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
-			<div class="four columns other">
+			<div class="column is-one-half other">
 				<h5>meta</h5>
 				<ul class="other-list">
 					<li class="other-list-item"><a title="blog archive" href="{{ site.url }}/archive" >blog archive</a></li>
@@ -21,16 +19,10 @@
 					<li class="other-list-item"><a title="about me" href="{{ site.url }}/about" >about me</a></li>
 				</ul>
 			</div>
-			<div class="four columns tag-cloud">
-			</div>
 		</div>
-	</div>
-</section>
-<section class="colophon u-full-width">
-	<div class="container">
-		<div class="row">
-			<div class="twelve columns">
-			<!-- hosting etc -->
+		<div class="columns is-centered">
+			<div class="column">
+				<!-- hosting etc -->
 				<ul class="colophon-list">
 					<li class="colophon-list-item">{% include hosted-by.html %}</li>
 					<li class="colophon-list-item">{% include powered-by.html %}</li>
@@ -38,7 +30,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</footer>
 <!-- js -->
 <script src="{{ site.url }}/js/prism.js"></script>
 <!-- js -->
