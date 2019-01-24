@@ -1,18 +1,30 @@
 <!-- pageheader.html -->
-<section id="banner" class="banner">
+<nav class="navbar">
 	<div class="container">
-		<div class="eight columns">
-			<!-- <a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a> -->
-			<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em>
+		<div class="navbar-brand">
+			<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em></a>
 		</div>
-		<div class="four columns search">
-			{% include search-box.html %}
-		</div>
+		<div id="navbarMenu" class="navbar-menu">
+			<div class="navbar-end">
+				<!-- links here ? -->
+			</div>
+			<div class="four columns search">
+				{% include search-box.html %}
+			</div>
+		</div>	
 	</div>
-</section>	
+</div>
+
 {% assign localhero = "secret" %}
 {% if page.hero %}
 {% assign localhero = page.hero %}
 {% endif %}
-<header id="hero" class="hero {{ localhero }} u-full-width"></header>
+	
+<section id="banner" class="hero is-info is-medium is-bold">
+	<div class="hero-body">
+		<div class="container has-text-centred">
+			<h1>hey, hi, hello</h1>
+	</div>
+</section>	
+<!-- <header id="hero" class="hero {{ localhero }} u-full-width"></header> -->
 <!-- pageheader.html -->
