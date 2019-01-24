@@ -10,4 +10,5 @@ categories: [  quote  ]
 </p>
 </blockquote>
 <small>Dale Emery (@dhemery)</small>
+<p>As quoted by Alan Cooper <a href="https://www.cooper.com/journal/2010/05/agile_up_to_here?">here</a>.
 
