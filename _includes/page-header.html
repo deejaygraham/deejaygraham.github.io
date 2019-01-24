@@ -1,31 +1,31 @@
 <!-- pageheader.html -->
-<nav class="navbar">
+<nav class="navbar is-transparent">
 	<div class="container">
 		<div class="navbar-brand">
-			<a title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em></a>
+			<a class="navbar-item" title="home" href="/">{{ site.name }}</a> - <em>{{ site.description }}</em></a>
 		</div>
 		<div id="navbarMenu" class="navbar-menu">
 			<div class="navbar-end">
-				<!-- links here ? -->
-			</div>
-			<div class="four columns search">
-				{% include search-box.html %}
+				<div class="navbar-item">
+					{% include search-box.html %}
+				</div>
 			</div>
 		</div>	
 	</div>
 </nav>
 
 {% assign localhero = "secret" %}
-{% if page.hero %}
-{% assign localhero = page.hero %}
-{% endif %}
+{% if page.hero %}{% assign localhero = page.hero %}{% endif %}
 	
-<section id="banner" class="hero is-info is-medium is-bold">
-	<div class="hero-body">
-		<div class="container has-text-centred">
-			<h1>hey, hi, hello</h1>
+<section id="banner" class="hero is-white has-text-centred">
+	<div class="hero-body {{ localhero }}">
+		<div class="container">
+			<div class="columns is-centred">
+				<div class="column">
+					<h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile" >hey, hi, hello</h1>
+				</div>
+			</div>
 		</div>	
 	</div>
 </section>	
-<!-- <header id="hero" class="hero {{ localhero }} u-full-width"></header> -->
 <!-- pageheader.html -->
