@@ -18,9 +18,11 @@
 				<h1 class="title">{{ page.title }}</h1>
 				{% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
 				<div id="post-meta" class="post-meta">
-				{% if page.date %}<span class="has-text-gray">{{ page.date | date_to_long_string }} | </span>{% endif %}
-				{% if page.tags %}<span class="has-text-gray">{% include post-tags.html tags=page.categories %}</span>{% endif %}
+				{% if page.date %}<span>Posted on {{ page.date | date_to_long_string }}</span>{% endif %}
+				{% if page.tags %} | <span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
 				</div>
+				
+				{% if page.illustration %}<img src="/img/{{ page.illustration }}" alt="Article illustration" /> {% endif %}
 			</header>
 			{{ content }}
 
