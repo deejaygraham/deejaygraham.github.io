@@ -4,10 +4,7 @@
 <section class="section">
 	<div class="container">
 		<nav class="breadcrumb" aria-label="breadcrumbs">
-			<ul>
-				<li><a href="{{ site.url }}">home</a></li>
-				<li class="is-active"> {{ page.title }}</li>
-			</ul>
+			<ul><li><a href="{{ site.url }}">home</a></li><li class="is-active"> {{ page.title }}</li></ul>
 		</nav>
 	</div>
 </section>
@@ -21,8 +18,6 @@
 				{% if page.date %}<span>Posted on {{ page.date | date_to_long_string }}</span>{% endif %}
 				{% if page.tags %} | <span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
 				</div>
-				
-				{% if page.illustration %}<img src="/img/{{ page.illustration }}" alt="Article illustration" /> {% endif %}
 			</header>
 			{{ content }}
 

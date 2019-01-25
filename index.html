@@ -4,26 +4,27 @@ layout: index
 hero: secret
 ---
 {% for post in paginator.posts %}
-<article class="post-summary" id="{{ post.id }}" >
+<article class="post-summary" id="{{ post.id }}">
 	<header>
+		<h1 class="title"><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h1>
+		{% if post.subtitle %}<h2 class="subtitle">{{ post.subtitle }}</h2>{% endif %}
 		<div id="post-meta" class="post-meta">
-		{% if post.date %}<span>{{ post.date | date_to_long_string }} | </span>{% endif %}
-		{% if post.tags %}<span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
+		{% if post.date %}<span>Posted on {{ post.date | date_to_long_string }}</span>{% endif %}
+		{% if post.tags %} | <span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
 		</div>
-		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
-		
-		{% if paginator.page == 1 %}
-			{{ post.content }}
-		{% else %}	
-			<p class="excerpt">{{ post.excerpt }} <a title="read post" href="{{ post.url }}">Read more</a></p>
-		{% endif %}
 	</header>
+	{% if paginator.page == 1 %}
+		{{ post.content }}
+	{% else %}	
+		<p class="excerpt">{{ post.excerpt }} <a title="read post" href="{{ post.url }}">Read more</a></p>
+	{% endif %}
 </article>
 {% endfor %}
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
-<div class="paginator">
-  {% if paginator.next_page %}<span class="paginate-older"><a title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Older posts</a></span>{% endif %}
-  {% if paginator.previous_page %}<span class="paginate-newer"><a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts <i class="fas fa-arrow-right" aria-hidden="true"></i></a></span>{% endif %}
-</div>{% endif %}
+<nav class="pagination" role="navigation" aria-label="pagination">
+  {% if paginator.next_page %}<a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Older posts</a>{% endif %}
+  {% if paginator.previous_page %}<a class="pagination-previous" title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts <i class="fas fa-arrow-right" aria-hidden="true"></i></a>{% endif %}
+</nav>
+{% endif %}
