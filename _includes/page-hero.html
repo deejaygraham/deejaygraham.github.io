@@ -1,0 +1,11 @@
+<!-- page-hero.html -->
+{% assign localhero = "secret" %}
+{% if page.hero %}
+{% assign localhero = page.hero %}
+{% endif %}
+<section class="hero has-background-black">
+	<div class="hero-body">
+		<div class="container {{ localhero }} " />
+	</div>	
+</section>
+<!-- page-hero.html -->

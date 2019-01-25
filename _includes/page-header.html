@@ -1,18 +1,4 @@
 <!-- pageheader.html -->
-<section id="banner" class="banner">
-	<div class="container">
-		<div class="eight columns">
-			<!-- <a title="home" href="/"><img title="home" src="/img/avatar.png" alt="home"></a> -->
-			<a title="home" href="/"><img src="/img/avatar-small.png" alt="{{ site.description }}" /></a></em>
-		</div>
-		<div class="four columns search">
-			{% include search-box.html %}
-		</div>
-	</div>
-</section>	
-{% assign localhero = "secret" %}
-{% if page.hero %}
-{% assign localhero = page.hero %}
-{% endif %}
-<header id="hero" class="hero {{ localhero }} u-full-width"></header>
+{% include page-navigation.html %}
+{% include page-hero.html %}
 <!-- pageheader.html -->
