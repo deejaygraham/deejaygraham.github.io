@@ -1,34 +1,26 @@
 <!-- page-navigation.html -->
-<nav class="navbar">
-	<div class="container">
-		<div class="navbar-brand">
-			<a class="navbar-item" title="home" href="/">
-				<img src="/img/avatar-small.png" alt="{{ site.description }}" />
-			</a>
-		</div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+	<div class="navbar-brand">
+		<a class="navbar-item" title="home" href="/">
+			<img src="/img/avatar-small.png" alt="{{ site.description }}" />
+		</a>
+		<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="rightHandMenu">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		</a>
 	</div>
 	
-<!-- <section id="banner" class="banner">
-
-	<div class="container">
-		<div class="eight columns">
-			<a title="home" href="/"><img src="/img/avatar-small.png" alt="{{ site.description }}" /></a></em>
+	<div id="rightHandMenu" class="navbar-menu">
+		<div class="navbar-start">
+			<a class="navbar-item"  title="home" href="{{ site.url }}/">home</a>
+			<a title="blog archive" href="{{ site.url }}/archive" >archive</a>
+			<a title="my projects" href="{{ site.url }}/projects" >projects</a>
+			<a title="about me" href="{{ site.url }}/about" >about</a>
 		</div>
-		<div class="four columns search"> -->
-			{% include search-box.html %}
-<!--		</div>
-	</div>
-</section>	-->
-
-<!--			<div class="column is-6 is-offset-2">
-				<h5>meta</h5>
-				<ul class="other-list">
-					<li class="other-list-item"><a title="blog archive" href="{{ site.url }}/archive" >blog archive</a></li>
-					<li class="other-list-item"><a title="my projects" href="{{ site.url }}/projects" >projects</a></li>
-					<li class="other-list-item"><a title="about me" href="{{ site.url }}/about" >about me</a></li>
-				</ul>
-			</div>
-			-->
-
+		<div class="navbar-end">
+		{% include search-box.html %}
+		</div>
+    </div>
 </nav>
 <!-- page-navigation.html -->
