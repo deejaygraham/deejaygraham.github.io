@@ -1,37 +1,14 @@
 <footer class="footer">
-	<div class="container">
-		<div class="columns">
-			<div class="column is-4">
-				<h5>social</h5>
-				<ul class="social-list">
-					<li class="social-list-item"><a title="rss feed" href="{{ site.url }}/rss.xml" target="_blank" ><i class="fas fa-rss" aria-hidden="true"></i></a></li>
-					<li class="social-list-item"><a title="twitter" href="{{ site.twitterurl }}" target="_blank" ><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-					<li class="social-list-item"><a title="github" href="{{ site.githuburl }}" target="_blank" ><i class="fab fa-github" aria-hidden="true"></i></a></li>
-					<li class="social-list-item"><a title="linked in" href="{{ site.linkedinurl }}" target="_blank" ><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-					<li class="social-list-item"><a title="slideshare" href="{{ site.slideshareurl }}" target="_blank" ><i class="fab fa-slideshare" aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
-			<div class="column is-6 is-offset-2">
-				<h5>meta</h5>
-				<ul class="other-list">
-					<li class="other-list-item"><a title="blog archive" href="{{ site.url }}/archive" >blog archive</a></li>
-					<li class="other-list-item"><a title="my projects" href="{{ site.url }}/projects" >projects</a></li>
-					<li class="other-list-item"><a title="about me" href="{{ site.url }}/about" >about me</a></li>
-				</ul>
-			</div>
+	<div class="container has-text-centered">
+		<div class="nav-center">
+			<a class="nav-item" title="rss feed"   href="{{ site.url }}/rss.xml"   target="_blank" ><i class="fas fa-rss" aria-hidden="true"></i></a>
+			<a class="nav-item" title="twitter"    href="{{ site.twitterurl }}"    target="_blank" ><i class="fab fa-twitter" aria-hidden="true"></i></a>
+			<a class="nav-item" title="github"     href="{{ site.githuburl }}"     target="_blank" ><i class="fab fa-github" aria-hidden="true"></i></a>
+			<a class="nav-item" title="linked in"  href="{{ site.linkedinurl }}"   target="_blank" ><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+			<a class="nav-item" title="slideshare" href="{{ site.slideshareurl }}" target="_blank" ><i class="fab fa-slideshare" aria-hidden="true"></i></a>
 		</div>
-	</div>
-</section>
-<section class="colophon">
-	<div class="container">
-		<div class="columns">
-			<div class="column">
-			<!-- hosting etc -->
-				<ul class="colophon-list">
-					<li class="colophon-list-item">{% include hosted-by.html %}</li>
-					<li class="colophon-list-item">{% include powered-by.html %}</li>
-				</ul>
-			</div>
+		<!-- hosting etc -->
+		<div class="colophon">{% include hosted-by.html %} {% include powered-by.html %}
 		</div>
 	</div>
 </section>
