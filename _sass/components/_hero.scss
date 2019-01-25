@@ -1,4 +1,4 @@
-$hero-background: #415058;
+/*$hero-background: #415058;
 
 .hero {
 	background-color: $hero-background;
@@ -8,11 +8,12 @@ $hero-background: #415058;
 @media (min-width: 750px) {
 
 	.hero {
-		padding: 10em;
+		padding: 10em 0;
 		display: block;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		height: 500px;
 	}
 
 	.waste {
@@ -62,3 +63,4 @@ $hero-background: #415058;
 		
 	}
 }
+
