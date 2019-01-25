@@ -6,14 +6,27 @@
 // -------
 
 @import "normalize";
+
+
+// css framework
+// ----------------
+
 @import "skeleton";
-@import "font-awesome";
+
+
+// font-awesome
+// ------------
+
+@import "fa/fontawesome.scss";
+@import "fa/solid.scss";
+
 
 // variables
 // ---------
 
 @import "variables/colours";
 @import "variables/typography";
+
 
 // components
 // ----------

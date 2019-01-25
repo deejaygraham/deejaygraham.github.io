@@ -24,6 +24,6 @@ hero: secret
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
 <div class="paginator">
-  {% if paginator.next_page %}<span class="paginate-older"><a title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}"><i class="fa fa-arrow-left" aria-hidden="true"></i> Older posts</a></span>{% endif %}
-  {% if paginator.previous_page %}<span class="paginate-newer"><a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts <i class="fa fa-arrow-right" aria-hidden="true"></i></a></span>{% endif %}
+  {% if paginator.next_page %}<span class="paginate-older"><a title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Older posts</a></span>{% endif %}
+  {% if paginator.previous_page %}<span class="paginate-newer"><a title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts <i class="fas fa-arrow-right" aria-hidden="true"></i></a></span>{% endif %}
 </div>{% endif %}
