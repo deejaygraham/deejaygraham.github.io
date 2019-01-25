@@ -13,11 +13,13 @@ hero: secret
 		{% if post.tags %} | <span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
 		</div>
 	</header>
+	<div class="content">
 	{% if paginator.page == 1 %}
 		{{ post.content }}
 	{% else %}	
 		<p class="excerpt">{{ post.excerpt }} <a title="read post" href="{{ post.url }}">Read more</a></p>
 	{% endif %}
+	</div>
 </article>
 {% endfor %}
 

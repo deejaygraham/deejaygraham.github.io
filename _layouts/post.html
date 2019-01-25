@@ -3,13 +3,6 @@
 {% include page-header.html %}
 <section class="section">
 	<div class="container">
-		<nav class="breadcrumb" aria-label="breadcrumbs">
-			<ul><li><a href="{{ site.url }}">home</a></li><li class="is-active"> {{ page.title }}</li></ul>
-		</nav>
-	</div>
-</section>
-<section class="section is-paddingless">
-	<div class="container">
 		<article class="post" id="{{ page.id }}">
 			<header>
 				<h1 class="title">{{ page.title }}</h1>
@@ -19,30 +12,33 @@
 				{% if page.tags %} | <span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
 				</div>
 			</header>
-			{{ content }}
+			<div class="content">
+				{{ content }}
 
-			<div class="tweet-post">{% include tweet-link.html %}</div>
-			
-			{% assign firstCategory = page.categories | first %}
-			
-			{% if site.categories[firstCategory].size > 1 %}
-			{% assign relatedCount = 0 %}
-			<div class="related-posts">
-				<h4>Related Posts</h4>
-				<ul>
-			{% for related in site.categories[firstCategory] %}
-				{% unless page.url == related.url %}
-					{% assign relatedCount = relatedCount | plus: 1 %}
-					<li><a title="read post" href="{{ related.url }}">{{ related.title }}</a></li>
-				{% endunless %}
-				{% if relatedCount == 3 %}
-					{% break %}
+				<div class="content-footer">
+					<div class="tweet-post">{% include tweet-link.html %}</div>
+				
+				{% assign firstCategory = page.categories | first %}
+				
+				{% if site.categories[firstCategory].size > 1 %}
+				{% assign relatedCount = 0 %}
+					<div class="related-posts">
+						<h4>Related Posts</h4>
+						<ul>
+					{% for related in site.categories[firstCategory] %}
+						{% unless page.url == related.url %}
+							{% assign relatedCount = relatedCount | plus: 1 %}
+							<li><a title="read post" href="{{ related.url }}">{{ related.title }}</a></li>
+						{% endunless %}
+						{% if relatedCount == 3 %}
+							{% break %}
+						{% endif %}
+					{% endfor %}
+						</ul>
+					</div>
 				{% endif %}
-			{% endfor %}
-				</ul>
+				</div>
 			</div>
-			{% endif %}
-
 		</article>
 	</div>
 </section>
