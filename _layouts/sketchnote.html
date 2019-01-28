@@ -1,75 +1,69 @@
 {% include html-head.html %}
 <body>
 {% include page-header.html %}
-<div class="container">
-	<div class="row">
-		<div class="twelve columns content" role="main">
-			<article class="post" id="{{ page.id }}">
-				<header>
-					<div id="post-meta" class="post-meta">
-					{% if page.date %}<span>{{ page.date | date_to_long_string }} | </span>{% endif %}
-					{% if page.tags %}<span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
-					</div>
-					<h2>{{ page.title }}</h2>
-				</header>
+<section class="section">
+	<div class="container">
+		<article class="post" id="{{ page.id }}">
+			{% include article-header.html title=page.title subtitle=page.subtitle date=page.date categories=page.categories %}
+			<div class="content">
 				{{ content }}
-				
-				<div class="sketchnote">
-					<img src="{{ page.sketchnote.url }}" class="u-max-full-width" alt="{{ page.sketchnote.alt }}" />
+			</div>
+			<div class="sketchnote">
+				<img src="{{ page.sketchnote.url }}" class="u-max-full-width" alt="{{ page.sketchnote.alt }}" />
+			</div>
+			
+			<div class="columns">
+{% if page.sketchnote.event %}
+				<div class="column meta">
+					<h4>About the event</h4>
+					<p>
+	{% if page.sketchnote.event.url %}
+						<a href="{{ page.sketchnote.event.url }}">{{ page.sketchnote.event.name }}</a>
+	{% else %}
+						{{ page.sketchnote.event.name }}
+	{% endif %}
+					</p>
 				</div>
-			</article>	
-		</div>
-	</div>
-	<div class="row">
-		{% if page.sketchnote.event %}
-		<div class="four columns meta">
-			<h4>About the event</h4>
-			<p>
-				{% if page.sketchnote.event.url %}
-				<a href="{{ page.sketchnote.event.url }}">{{ page.sketchnote.event.name }}</a>
-				{% else %}
-				{{ page.sketchnote.event.name }}
-				{% endif %}
-			</p>
-		</div>
-		{% endif %}
-		{% if page.sketchnote.source %}
-		<div class="four columns meta">
-			<h4>Source</h4>
-			<p>
-			{% if page.sketchnote.source.url %}
-				<a href="{{ page.sketchnote.source.url }}">{{ page.sketchnote.source.name }}</a>
-			{% else %}	
-				{{ page.sketchnote.source.name }}
-			{% endif %}
-			</p>
-		</div>	
-		{% endif %}
-		{% if page.sketchnote.speaker %}
-		<div class="four columns meta">
-			<h4>About the speaker</h4>
-			<p>
-			{% if page.sketchnote.speaker.url %}
-				<a href="{{ page.sketchnote.speaker.url }}">{{ page.sketchnote.speaker.name }}</a>
-			{% else %}	
-				{{ page.sketchnote.speaker.name }}
-			{% endif %}
-			</p>
-		</div>	
-		{% endif %}
+{% endif %}
+{% if page.sketchnote.source %}
+				<div class="column meta">
+					<h4>Source</h4>
+					<p>
+	{% if page.sketchnote.source.url %}
+						<a href="{{ page.sketchnote.source.url }}">{{ page.sketchnote.source.name }}</a>
+	{% else %}	
+						{{ page.sketchnote.source.name }}
+	{% endif %}
+					</p>
+				</div>	
+{% endif %}
+{% if page.sketchnote.speaker %}
+				<div class="column meta">
+					<h4>About the speaker</h4>
+					<p>
+	{% if page.sketchnote.speaker.url %}
+						<a href="{{ page.sketchnote.speaker.url }}">{{ page.sketchnote.speaker.name }}</a>
+	{% else %}	
+						{{ page.sketchnote.speaker.name }}
+	{% endif %}
+					</p>
+				</div>	
+{% endif %}
+			</div>
+			<div class="columns">
+				<div class="column meta">
+					<h4>Licence</h4>
+					{% include licence-boilerplate.html %}
+				</div>
+			</div>	
+			<div class="content-footer">
+				<div class="tweet-post">{% include tweet-link.html %}</div>
+				{% include post-related.html url=page.url categories=page.categories %}
+			</div>
+			
+		</article>
 	</div>	
-	<div class="row">
-		<div class="twelve columns meta">
-			<h4>Licence</h4>
-			{% include licence-boilerplate.html %}
-		</div>
-	</div>	
-	<div class="row">
-		<div class="twelve columns meta">
-			<div class="tweet-post">{% include tweet-link.html %}</div>
-		</div>
-	</div>
-</div>
+</section>
 {% include page-footer.html %}
 </body>
 </html>
