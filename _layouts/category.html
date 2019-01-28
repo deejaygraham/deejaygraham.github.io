@@ -4,14 +4,10 @@ layout: index
 <h2># {{ page.tag }} - {{ site.categories[page.tag].size }} Posts</h2>
 
 {% for post in site.categories[page.tag] %}
-<article class="post-summary" id="{{ post.id}}" >
-	<header>
-		<div id="post-meta" class="post-meta">
-		{% if post.date %}<span>{{ post.date | date_to_long_string }} | </span>{% endif %}
-		{% if post.tags %}<span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
-		</div>
-		<h3><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h3>
+<article class="post-summary has-vertical-spacing" id="{{ post.id}}" >
+	{% include article-header.html title=post.title subtitle=post.subtitle date=post.date categories=post.categories %}
+	<div class="content">
 		<p class="excerpt">{{ post.excerpt | strip_html | truncatewords:25 }} <a title="read post" href="{{ post.url }}">Read more</a></p>
-	</header>
+	</div>
 </article>
 {% endfor %}

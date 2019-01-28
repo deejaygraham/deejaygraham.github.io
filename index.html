@@ -4,15 +4,8 @@ layout: index
 hero: secret
 ---
 {% for post in paginator.posts %}
-<article class="post-summary" id="{{ post.id }}">
-	<header>
-		<h1 class="title"><a title="read post" href="{{ post.url }}">{{ post.title }}</a></h1>
-		{% if post.subtitle %}<h2 class="subtitle">{{ post.subtitle }}</h2>{% endif %}
-		<div id="post-meta" class="post-meta">
-		{% if post.date %}<span>Posted on {{ post.date | date_to_long_string }}</span>{% endif %}
-		{% if post.tags %} | <span>{% include post-tags.html tags=post.categories %}</span>{% endif %}
-		</div>
-	</header>
+<article class="post-summary has-vertical-spacing" id="{{ post.id }}">
+	{% include article-header.html title=post.title subtitle=post.subtitle date=post.date categories=post.categories %}
 	<div class="content">
 	{% if paginator.page == 1 %}
 		{{ post.content }}
