@@ -1,14 +1,13 @@
 ---
-layout: post
+layout: quotation
 title: Language in Thought and Action
+attribution: S.I. Hayakawa
+comment: S.I. Hayakawa's book "Language in Thought and Action" is full of great quotes. Here's just one (fairly big one) that caught my eye. 
 categories: [ books, quote  ]
 published: true 
 ---
 
-S.I. Hayakawa's book "Language in Thought and Action" is full of great quotes. Here's just 
-one (fairly big one) that caught my eye. 
-
-<blockquote>Indeed, most of the time when we are listening to the noises people make 
+Indeed, most of the time when we are listening to the noises people make 
 or looking at the black marks on paper that stand for such noises, we are drawing upon 
 the experiences of the nervous systems of others in order to make up what our own 
 nervous systems have missed. Now obviously the more an individual can make use of the 
@@ -32,6 +31,4 @@ or in alarm, but the second yelp is not about the first yelp. But when a man say
 river," a second man can say, "He says he sees a river" — which is a statement about a 
 statement. About this statement-about-a-statement further statements can be made — and about 
 those, still more. Language, in short, can be about language. This is a fundamental way in 
-which human noise-making systems differ from the cries of animals.</blockquote>
-
-<p>S.I. Hayakawa</p>
+which human noise-making systems differ from the cries of animals.

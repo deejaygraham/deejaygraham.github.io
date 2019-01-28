@@ -13,6 +13,7 @@
 			{% else %}
 				<div class="box">
 			{% endif %}	
+			{% if page.comment %}<p>{{ page.comment }}</p> {% endif %}
 					<blockquote>
 					{{ content }}
 					</blockquote>	

@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Art for a Few
+attribution: William Morris
 published: true
 categories: [ quote ]
+size: large
 ---
 
-<blockquote>
-I do not want art for a few, any more than education for a few,
-or freedom for a few.
-</blockquote>
-<small>William Morris</small>
+I do not want art for a few, any more than education for a few, or freedom for a few.

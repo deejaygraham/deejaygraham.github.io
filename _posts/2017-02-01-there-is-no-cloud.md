@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: There is no Cloud
+attribution: Free Software Foundation
 published: true
+size: large
 categories: [ quote ]
 ---
 
-<blockquote>
 There is no Cloud, just other people's computers.
-</blockquote>
-<small>Free Software Foundation</small>

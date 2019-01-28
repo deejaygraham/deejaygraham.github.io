@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Individual Heroics
+publication: anon
 published: true
 categories: [ quote ]
+size: large
 ---
 
-<blockquote>
 Individual heroics cannot substitute for lasting systemic change.
-</blockquote>
-<small>anon</small>
