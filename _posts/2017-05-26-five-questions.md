@@ -13,5 +13,4 @@ categories: [ quote ]
 <li>In whose interest do you exercise it?</li>
 <li>To whom are you accountable?</li>
 <li>How can we get rid of you?</li>
-</ul>
 </ol>
