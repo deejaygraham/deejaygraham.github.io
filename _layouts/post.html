@@ -4,40 +4,14 @@
 <section class="section">
 	<div class="container">
 		<article class="post" id="{{ page.id }}">
-			<header>
-				<h1 class="title">{{ page.title }}</h1>
-				{% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
-				<div id="post-meta" class="post-meta">
-				{% if page.date %}<span>Posted on {{ page.date | date_to_long_string }}</span>{% endif %}
-				{% if page.tags %} | <span>{% include post-tags.html tags=page.categories %}</span>{% endif %}
-				</div>
-			</header>
+			{% include article-header.html title=page.title subtitle=page.subtitle date=page.date categories=page.categories %}
 			<div class="content">
 				{{ content }}
 			</div>
 
 			<div class="content-footer">
 				<div class="tweet-post">{% include tweet-link.html %}</div>
-				
-{% assign firstCategory = page.categories | first %}
-
-{% if site.categories[firstCategory].size > 1 %}
-	{% assign relatedCount = 0 %}
-				<div class="related-posts box">
-					<h4>Related Posts</h4>
-					<ul>
-	{% for related in site.categories[firstCategory] %}
-		{% unless page.url == related.url %}
-			{% assign relatedCount = relatedCount | plus: 1 %}
-						<li><a title="read post" href="{{ related.url }}">{{ related.title }}</a></li>
-		{% endunless %}
-		{% if relatedCount == 3 %}
-			{% break %}
-		{% endif %}
-	{% endfor %}
-					</ul>
-				</div>
-{% endif %}
+				{% include post-related url=page.url categories=page.categories %}
 			</div>
 		</article>
 	</div>
