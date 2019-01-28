@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: quotation
 title: Emily Remler
 published: true
 attribution: Emily Remler (18 September 1957 – 4 May 1990)
