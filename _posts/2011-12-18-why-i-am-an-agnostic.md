@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: quotation
 title: Why I am an Agnostic
 published: true
+attribution: Robert Ingersoll (1833 - 1899)
+publication: Why I am an Agnostic
 categories: [ quote ]
 ---
 
-<blockquote>
-<p>
 When I became convinced that the Universe is natural – that
 all the ghosts and gods are myths, there entered into my brain,
 into my soul, into every drop of my blood, the sense, the feeling,
@@ -32,6 +32,3 @@ back – no fires for my flesh – no master’s frown or threat – no
 following another’s steps – no need to bow, or cringe, or crawl,
 or utter lying words. I was free. I stood erect and fearlessly,
 joyously, faced all worlds.
-</p>
-</blockquote>
-<small>from “Why I am an Agnostic” by Robert Ingersoll (1833 - 1899)</small>

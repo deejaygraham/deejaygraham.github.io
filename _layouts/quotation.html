@@ -1,0 +1,29 @@
+{% include html-head.html %}
+<body>
+{% include page-header.html %}
+<section class="section">
+	<div class="container">
+		<article class="post" id="{{ page.id }}">
+			{% include article-header.html title=page.title subtitle=page.subtitle date=page.date categories=page.categories %}
+			<div class="content">
+				<div class"box">
+					<blockquote>
+					{{ content }}
+					</blockquote>	
+				</div>
+				<p>
+				{% if page.attribution %} {{ page.attribution }} {% endif %}
+				{% if page.publication %} {{ page.publication }} {% endif %}
+				</p>
+			</div>
+
+			<div class="content-footer">
+				<div class="tweet-post">{% include tweet-link.html %}</div>
+				{% include post-related.html url=page.url categories=page.categories %}
+			</div>
+		</article>
+	</div>
+</section>
+{% include page-footer.html %}
+</body>
+</html>
