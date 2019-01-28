@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Hostile to Liberty
 published: true
 categories: [ quote ]
+attribution: Thomas Jefferson
+size: large
 ---
 
-<blockquote>
-In every country and in every age, the priest has been
-hostile to liberty
-</blockquote>
-<small>Thomas Jefferson</small>
+In every country and in every age, the priest has been hostile to liberty.

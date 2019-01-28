@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Making American Toast
 published: true
 categories: [ agile, quote ]
+attribution: W. Edwards Deming
+size: large
 ---
 
-<blockquote>
-Let's make toast the American Way: 
-I'll burn it, you scrape it.
-</blockquote>
-<small>W. Edwards Deming</small>
+Let's make toast the American Way: I'll burn it, you scrape it.

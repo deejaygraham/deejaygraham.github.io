@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Good Employees
 published: true
+attribution: Doc Norton (channeling W. Edwards Deming)
 categories: [ agile, quote ]
+size: large
 ---
 
-<blockquote>
-Good employees in a poor system are commonly 
-mistaken for poor employees.
-</blockquote>
-<small>Doc Norton (channeling W. Edwards Deming)</small>
+Good employees in a poor system are commonly mistaken for poor employees.

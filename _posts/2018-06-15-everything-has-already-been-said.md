@@ -1,15 +1,13 @@
 ---
-layout: post
+layout: quotation
 title: Everything has already been said...
 categories: [ quote, code ]
 published: true
+attribution: André Gide
+size: large
 ---
 
-<blockquote>
-Everything that needs to be said has already been said. But since no one was 
-listening, everything must be said again.
-</blockquote>
-<small>André Gide</small>
+Everything that needs to be said has already been said. But since no one was listening, everything must be said again.
 
 
 

@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Be Where Your Feet Are
 published: true
 categories: [ agile, quote ]
+size: large
+attribution: Jamie Lee Curtis
 ---
 
-<blockquote>
-Be where your feet are, not where your head is. </blockquote>
-<small>Jamie Lee Curtis</small>
+Be where your feet are, not where your head is.

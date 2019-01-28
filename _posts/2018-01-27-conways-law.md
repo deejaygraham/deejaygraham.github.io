@@ -1,14 +1,11 @@
 ---
-layout: post
+layout: quotation
 title: Conway's Law
 published: true
 categories: [ agile, quote ]
+attribution: Melvin Conway
+publication: How Do Committees Invent?
 ---
 
-<blockquote>
-We have seen that this fact has important implications for 
-the management of system design... 
-A design effort should be organized according to the 
-need for communication.
-</blockquote>
-<small>Melvin Conway - How Do Committees Invent?</small>
+We have seen that this fact has important implications for the management of system design... 
+A design effort should be organized according to the need for communication.

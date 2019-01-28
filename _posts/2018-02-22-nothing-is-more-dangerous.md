@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: quotation
 title: Nothing is more dangerous
 published: true
 categories: [ quote, agile ]
+attribution: Emile Auguste Chartier
+comment: This is from a Kevlin Henney talk a while ago.
+size: large
 ---
 
-This is from a Kevlin Henney talk a while ago.
-
-<blockquote>
-Nothing is more dangerous than an idea,
-when you have only one idea.</blockquote>
-<small>Emile Auguste Chartier</small>
+Nothing is more dangerous than an idea, when you have only one idea.

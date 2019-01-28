@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Every day, somebody
 published: true
 categories: [ agile, quote ]
+size: large
+attribution: Station Manager, WXIX Cincinnati via <a href="https://twitter.com/hotdogsladies">Merlin Mann</a>
 ---
 
-<blockquote>
-Every day, somebody's born who's never seen <em>The Flintstones</em>.
-</blockquote>
-<small>Station Manager, WXIX Cincinnati via <a href="https://twitter.com/hotdogsladies">Merlin Mann</a></small>
+Every day, somebody's born who's never seen The Flintstones.

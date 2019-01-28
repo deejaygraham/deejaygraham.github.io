@@ -1,14 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Left to themselves
 published: true
 categories: [ quote, agile ]
+comment: Deming's pithy case against performance appraisals and management devoid of systems thinking.
+attribution: W. Edwards Deming
 ---
 
-Deming's pithy case against performance appraisals and management 
-devoid of systems thinking.
-
-<blockquote>
-Left to themselves in the Western world, components become selfish,
-competitive, independent profit centres, and thus destroy the system.</blockquote>
-<small>W. Edwards Deming</small>
+Left to themselves in the Western world, components become selfish, competitive, independent profit centres, and thus destroy the system.

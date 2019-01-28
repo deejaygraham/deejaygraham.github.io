@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: quotation
 title: Products Not Projects
 published: true
 categories: [ agile, quote ]
+attribution: Jerry Weinberg
+size: large
 ---
 
-<blockquote>
-A system is never finished being developed until it ceases to be used.</blockquote>
-<small>Jerry Weinberg</small>
+A system is never finished being developed until it ceases to be used.
