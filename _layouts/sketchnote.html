@@ -13,18 +13,6 @@
 			</div>
 			
 			<div class="columns">
-{% if page.sketchnote.event %}
-				<div class="column meta">
-					<h4>About the event</h4>
-					<p>
-	{% if page.sketchnote.event.url %}
-						<a href="{{ page.sketchnote.event.url }}">{{ page.sketchnote.event.name }}</a>
-	{% else %}
-						{{ page.sketchnote.event.name }}
-	{% endif %}
-					</p>
-				</div>
-{% endif %}
 {% if page.sketchnote.source %}
 				<div class="column meta">
 					<h4>Source</h4>
@@ -48,6 +36,18 @@
 	{% endif %}
 					</p>
 				</div>	
+{% endif %}
+{% if page.sketchnote.event %}
+				<div class="column meta">
+					<h4>About the event</h4>
+					<p>
+	{% if page.sketchnote.event.url %}
+						<a href="{{ page.sketchnote.event.url }}">{{ page.sketchnote.event.name }}</a>
+	{% else %}
+						{{ page.sketchnote.event.name }}
+	{% endif %}
+					</p>
+				</div>
 {% endif %}
 			</div>
 			<div class="columns">
