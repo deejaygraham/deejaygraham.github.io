@@ -14,30 +14,30 @@
 			</header>
 			<div class="content">
 				{{ content }}
+			</div>
 
-				<div class="content-footer">
-					<div class="tweet-post">{% include tweet-link.html %}</div>
+			<div class="content-footer">
+				<div class="tweet-post">{% include tweet-link.html %}</div>
 				
-				{% assign firstCategory = page.categories | first %}
-				
-				{% if site.categories[firstCategory].size > 1 %}
-				{% assign relatedCount = 0 %}
-					<div class="related-posts box">
-						<h4>Related Posts</h4>
-						<ul>
-					{% for related in site.categories[firstCategory] %}
-						{% unless page.url == related.url %}
-							{% assign relatedCount = relatedCount | plus: 1 %}
-							<li><a title="read post" href="{{ related.url }}">{{ related.title }}</a></li>
-						{% endunless %}
-						{% if relatedCount == 3 %}
-							{% break %}
-						{% endif %}
-					{% endfor %}
-						</ul>
-					</div>
-				{% endif %}
+{% assign firstCategory = page.categories | first %}
+
+{% if site.categories[firstCategory].size > 1 %}
+	{% assign relatedCount = 0 %}
+				<div class="related-posts box">
+					<h4>Related Posts</h4>
+					<ul>
+	{% for related in site.categories[firstCategory] %}
+		{% unless page.url == related.url %}
+			{% assign relatedCount = relatedCount | plus: 1 %}
+						<li><a title="read post" href="{{ related.url }}">{{ related.title }}</a></li>
+		{% endunless %}
+		{% if relatedCount == 3 %}
+			{% break %}
+		{% endif %}
+	{% endfor %}
+					</ul>
 				</div>
+{% endif %}
 			</div>
 		</article>
 	</div>
