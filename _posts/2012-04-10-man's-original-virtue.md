@@ -3,7 +3,7 @@ layout: quotation
 title: Man's Original Virtue
 published: true 
 categories: [ quote  ]
-size: large
+size: medium
 attribution: Robert Anton Wilson
 ---
 
