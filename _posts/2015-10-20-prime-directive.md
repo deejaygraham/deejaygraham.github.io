@@ -2,7 +2,7 @@
 layout: quotation
 title: Prime Directive
 attribution: Norm Kerth
-publication: Project Retrospectives: A Handbook for Team Review
+publication: Project Retrospectives - A Handbook for Team Review
 published: true
 size: medium
 categories: [ agile, quote ]
