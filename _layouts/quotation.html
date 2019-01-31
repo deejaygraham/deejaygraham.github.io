@@ -2,13 +2,13 @@
 <body>
 {% include page-header.html %}
 
-{% assign quotesize = 'is-size-1' %}
+{% assign quotesize = "is-size-5" %}
 {% if page.size %}
-	{% if page.size == 'small' %}
+	{% if page.size == "small" %}
 		{% assign quotesize = "is-size-5" %}
-	{% elsif page.size == 'medium' %}
+	{% elsif page.size == "medium" %}
 		{% assign quotesize = "is-size-3" %}
-	{% elsif page.size == 'large' %}
+	{% elsif page.size == "large" %}
 		{% assign quotesize = "is-size-1" %}
 	{% endif %}
 {% endif %}
