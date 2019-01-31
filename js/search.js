@@ -9,8 +9,10 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<article class="post-summary has-vertical-spacing"><header><h3><a title="read post" href="' + item.url + '">' + item.title + '</a></h3>';
-        appendString += '<p class="excerpt">' + item.content.substring(0, 150) + '...</p></header></article>';
+        appendString += '<article class="post-summary has-vertical-spacing">';
+		appendString += '<header><h1 class="title"><a title="read post" href="' + item.url + '">' + item.title + '</a></h1></header>';
+        appendString += '<div class="content"><p class="excerpt">' + item.content.substring(0, 150) + '...</p></div>';
+		appendString += '</article>';
       }
 
       searchResults.innerHTML = appendString;
