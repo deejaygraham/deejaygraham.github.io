@@ -5,12 +5,12 @@ hero: secret
 ---
 {% for post in paginator.posts %}
 <article class="post-summary has-vertical-spacing" id="{{ post.id }}">
-	{% include article-header.html title=post.title subtitle=post.subtitle date=post.date categories=post.categories %}
+	{% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
 	<div class="content">
 	{% if paginator.page == 1 %}
 		{{ post.content }}
 	{% else %}	
-		<p class="excerpt">{{ post.excerpt }} <a title="read post" href="{{ post.url }}">Read more</a></p>
+		{% include article-excerpt.html excerpt=post.excerpt url=post.url %}
 	{% endif %}
 	</div>
 </article>
