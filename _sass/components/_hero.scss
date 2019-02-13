@@ -8,12 +8,12 @@ $hero-background: #415058;
 @media (min-width: 750px) {
 
 	.hero {
-		padding: 10em 0;
+		//padding: 10em 0;
 		display: block;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: bottom;
 		background-size: cover;
-		height: 500px;
+		height: 250px;
 	}
 
 	.waste {
