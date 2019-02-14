@@ -8,4 +8,4 @@ size: large
 categories: [ quote ]
 ---
 
-Like a fox out of a cannon!
+I shot out of there like a fox out of a cannon!
