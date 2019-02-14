@@ -31,7 +31,8 @@ pick different output pins). The IO pins are subtly different on each version of
 sure which Pi you have you can <a href="https://www.modmypi.com/blog/raspberry-pi-comparison-table">find the 
 right version here</a>.
 
-Wiring diagram to go here.
+
+<img src="/img/posts/pi-build-monitor/pi-led-test.jpg" alt="led circuit" />
 
 
 ### Code
