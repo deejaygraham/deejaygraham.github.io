@@ -1,0 +1,1 @@
+& Robocopy.exe $SourceFolder $DestinationFolder *.* /s | Out-Null 
