@@ -62,3 +62,11 @@ task names from the calling scripts while still preserving the reuse of scripts 
 
 And of course, we can repeat this nesting as needed with each component. 
 
+
+### Error Handling
+
+One thing to watch out for is error handling and exceptions when calling nested psake scripts. If a sub-task throws an exception, 
+psake won't report that problem in the calling script and will just terminate all succeeding tasks. You will need to wrap the 
+Invoke-Psake call in a Try block and use Write-Error in the Catch. To continue with succeeding tasks in a psake script, use 
+the ContinueOnError switch in a Task that may throw.
+
