@@ -1,63 +1,47 @@
-<!-- bulma modal -->
-class BulmaModal {
-	constructor(selector) {
-		this.elem = document.querySelector(selector)
-		this.close_data()
-	}
-	
-	show() {
-		this.elem.classList.toggle('is-active')
-		this.on_show()
-	}
-	
-	close() {
-		this.elem.classList.toggle('is-active')
-		this.on_close()
-	}
-	
-	close_data() {
-		var modalClose = this.elem.querySelectorAll("[data-bulma-modal='close'], .modal-background")
-		var that = this
-		modalClose.forEach(function(e) {
-			e.addEventListener("click", function() {
-				
-				that.elem.classList.toggle('is-active')
+  var rootEl = document.documentElement;
+  var $modals = getAll('.modal');
+  var $modalButtons = getAll('.modal-button');
+  var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
 
-				var event = new Event('modal:close')
+  if ($modalButtons.length > 0) {
+    $modalButtons.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        var target = $el.dataset.target;
+        openModal(target);
+      });
+    });
+  }
 
-				that.elem.dispatchEvent(event);
-			})
-		})
-	}
-	
-	on_show() {
-		var event = new Event('modal:show')
-	
-		this.elem.dispatchEvent(event);
-	}
-	
-	on_close() {
-		var event = new Event('modal:close')
-	
-		this.elem.dispatchEvent(event);
-	}
-	
-	addEventListener(event, callback) {
-		this.elem.addEventListener(event, callback)
-	}
-}
+  if ($modalCloses.length > 0) {
+    $modalCloses.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        closeModals();
+      });
+    });
+  }
 
-var btn = document.querySelector("#modal-button")
-var mdl = new BulmaModal("#modal-sketch")
+  function openModal(target) {
+    var $target = document.getElementById(target);
+    rootEl.classList.add('is-clipped');
+    $target.classList.add('is-active');
+  }
 
-btn.addEventListener("click", function () {
-	mdl.show()
-})
+  function closeModals() {
+    rootEl.classList.remove('is-clipped');
+    $modals.forEach(function ($el) {
+      $el.classList.remove('is-active');
+    });
+  }
 
-mdl.addEventListener('modal:show', function() {
-	console.log("opened")
-})
-
-mdl.addEventListener("modal:close", function() {
-	console.log("closed")
-})
+  document.addEventListener('keydown', function (event) {
+    var e = event || window.event;
+    if (e.keyCode === 27) {
+      closeModals();
+      closeDropdowns();
+    }
+  });
+  
+  
+  function getAll(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+  }
