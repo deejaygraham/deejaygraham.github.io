@@ -9,7 +9,8 @@
 				{{ content }}
 			</div>
 			<div class="sketchnote">
-				<a class="modal-button" data-target="modal-sketch"><img src="{{ page.sketchnote.url }}" class="u-max-full-width" alt="{{ page.sketchnote.alt }}" /></a>
+				<img src="{{ page.sketchnote.url }}" class="u-max-full-width" alt="{{ page.sketchnote.alt }}" />
+				<button class="button modal-button" data-target="modal-sketch" aria-haspopup="true">view</button>
 			</div>
 			<div id="modal-sketch" class="modal">
 				<div class="modal-background"></div>
