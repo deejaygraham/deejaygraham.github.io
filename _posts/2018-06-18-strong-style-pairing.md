@@ -16,4 +16,9 @@ it MUST go through someone else's hands</blockquote>
 This is how I like to think about it:
 
 
-<img src="/img/posts/strong-style-pairing/strong-style-pairing.jpg" alt="strong style sketchnote" class="u-max-full-width" />
+<img src="/img/posts/strong-style-pairing/strong-style-pairing.png" alt="strong style sketchnote"/>
+
+and in a slightly different format:
+
+<img src="/img/posts/strong-style-pairing/strong-style-pairing-landscape-lofi.png" alt="strong style sketchnote"/>
+

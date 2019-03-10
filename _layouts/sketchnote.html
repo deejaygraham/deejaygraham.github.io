@@ -10,6 +10,16 @@
 			</div>
 			<div class="sketchnote">
 				<img src="{{ page.sketchnote.url }}" class="u-max-full-width" alt="{{ page.sketchnote.alt }}" />
+				<button class="button modal-button is-text" data-target="modal-sketch" aria-haspopup="true">view</button>
+			</div>
+			<div id="modal-sketch" class="modal">
+				<div class="modal-background"></div>
+				<div class="modal-content">
+					<p class="image">
+						<img src="{{ page.sketchnote.url }}" class="u-max-full-width" alt="{{ page.sketchnote.alt }}" />
+					</p>
+			  </div>
+				<button class="modal-close is-large" aria-label="close"></button>
 			</div>
 			
 			<div class="columns">
@@ -65,5 +75,6 @@
 	</div>	
 </section>
 {% include page-footer.html %}
+<script src="{{ site.url }}/js/bulma-modal.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ categories: [ sketchnotes, presentations, tdd, xp  ]
 tweet: true
 thumbnail: "/img/posts/polly-want-a-message/polly-want-a-message-tn.jpg"
 sketchnote:
-  url: "/img/posts/polly-want-a-message/polly-want-a-message.jpg"
+  url: "/img/posts/polly-want-a-message/polly-want-a-message.png"
   alt: "sketchnote"
   source:
     name: "Polly Want a Message"
