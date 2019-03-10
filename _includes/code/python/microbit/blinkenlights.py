@@ -1,10 +1,11 @@
+# Microbit Blinkenlights
 from microbit import *
 
-poll_interval = 500
-intensity = 9
+blink_interval = 500
+pixel_intensity = 9
 
 while True:
-    sleep(poll_interval)
-    display.set_pixel(2, 2, intensity)
-    intensity = 0 if intensity == 9 else 9
-    
+    display.set_pixel(2, 2, pixel_intensity)
+    pixel_intensity = 0 if pixel_intensity == 9 else 9
+
+    sleep(blink_interval)    
