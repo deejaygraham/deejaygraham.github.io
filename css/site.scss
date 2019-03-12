@@ -64,6 +64,12 @@ $dj-default-padding: 1em;
 	margin: inherit;
 }
 
+.footer {
+	.nav-item {
+		padding: 0 2em;
+	}
+}
+
 // debugging
 // ---------
 
