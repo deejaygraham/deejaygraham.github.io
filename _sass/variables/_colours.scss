@@ -1,17 +1,13 @@
-// colours taken from https://anice.red/#0d3c55
+$alto: #dfdede; // light gray
+$shark: #25292d; // black
+$thunderbird: #ce1a1d; // red
+$oslo-gray: #8c8d8e; // dark gray
 
-$anchor-text-colour: rgb(13, 60, 85);
-$anchor-decoration-colour: $anchor-text-colour;
-$anchor-hover-colour: lighten($anchor-decoration-colour, 10%);
-
-/*
-a {
-	color: $anchor-text-colour;
-	text-decoration: none;
-	border-bottom: 1px dotted $anchor-decoration-colour;
-	
-	&:hover {
-		color: $anchor-hover-colour;
-	}
-}
-*/
+//$primary: $thunderbird;
+$link: $thunderbird;
+//$info: $cyan
+//$success: $green
+//$warning: $yellow
+//$danger: $red
+//$dark: $grey-darker
+//$text: $grey-dark

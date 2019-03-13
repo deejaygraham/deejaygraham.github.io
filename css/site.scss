@@ -6,10 +6,17 @@
 // -------
 
 
+// colours
+// ---------
+
+@import "variables/colours";
+
+
 // css framework
 // ----------------
 
 @import "bulma/bulma.sass";
+
 
 // font-awesome
 // ------------
@@ -19,10 +26,9 @@
 @import "fa/brands.scss";
 
 
-// variables
-// ---------
+// typography 
+// ----------
 
-@import "variables/colours";
 @import "variables/typography";
 
 
