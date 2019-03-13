@@ -8,7 +8,7 @@ title: talks
 		<div class="tile is-child box">
 			<a href="https://www.slideshare.net/deejaygraham/married-to-the-mob-programming-134117887" target="_blank">
 				<p><img src="/img/posts/talks/married-to-the-mob-programming.png" /></p>
-				<p>Married to the Mob (programming)</p>
+				<p>Married to the Mob (programming) - DDD North 2019</p>
 			</a>		
 		</div>
 	</div>
@@ -24,7 +24,7 @@ title: talks
 		<div class="tile is-child box">
 			<a href="https://www.slideshare.net/deejaygraham/married-to-the-mob-programming" target="_blank">
 				<p><img src="/img/posts/talks/married-to-the-mob-programming.png" /></p>
-				<p>Married to the Mob (programming)</p>
+				<p>Married to the Mob (programming) - DDD North 2017</p>
 			</a>		
 		</div>
 	</div>
@@ -48,7 +48,7 @@ title: talks
 		<div class="tile is-child box">
 			<a href="https://www.slideshare.net/deejaygraham/sketchnoting-for-developers-at-ddd-north-2015" target="_blank">
 				<p><img src="/img/posts/talks/sketchnoting-for-developers.png" /></p>
-				<p>Sketchnoting for Developers</p>
+				<p>Sketchnoting for Developers -DDD North 2015</p>
 			</a>		
 		</div>
 	</div>
