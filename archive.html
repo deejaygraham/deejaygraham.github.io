@@ -3,6 +3,9 @@ title: blog archive
 layout: index
 hero: secret
 ---
+
+<h2 class="is-size-2">Previous posts</h2>
+
 {% for post in site.posts %}
 	{% capture current_year %}{{ post.date | date: "%B %Y" }}{% endcapture %}
 
