@@ -73,6 +73,8 @@ $dj-default-padding: 1em;
 .title {
 	a {
 		color: $title-color;
+		&:hover
+			color: $link-hover;
 	}
 }
 .footer {
