@@ -4,7 +4,7 @@ layout: index
 hero: makers
 ---
 
-## Hey, Hi, Hello.
+<h2 class="is-size-2">Hey, Hi, Hello.</h2>
 
 My name is Derek Graham and this is my personal blog.
 
@@ -26,7 +26,7 @@ we **ship**, **test-driven** development, unit **testing**, continuous and
 deliberate **learning**, **visual** thinking, design and, of course, **code**.
 
 
-### A Note on Sharing
+<h2 class="is-size-2">A Note on Sharing</h2>
 
 I've had a few requests from people wanting to use sketchnotes or graphics from my
 site for non-commercial uses. I try to make sure all posts that contain any "art"
@@ -45,7 +45,7 @@ you can and cannot use the material for. In short:
 Not part of the licence but I'd also really like it if you would let me know,
 by email or tweet, what you did with it or how it helped you.
 
-### Other Illustrations
+<h2 class="is-size-2">Other Illustrations</h2>
 
 You will notice some of the "hero" images on some posts are not drawn by me. They
 are from [Old Book Illustrations](http://www.oldbookillustrations.com/), a searchable
