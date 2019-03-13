@@ -18,8 +18,8 @@ of my employer.</p>
 
 <p class="has-vertical-spacing">I am an <strong>Extreme Programmer</strong>, an Infrequent <strong>Sketchnoter</strong>, a Collector 
 of <strong>Programming</strong> Languages, a <strong>Speaker</strong>, a <strong>Mob</strong> Programmer, a <strong>Test-Driven</strong> 
-Developer and Struggling <strong>Agilista</strong>. I am also a 
-STEM ambassador, microbit hacker and project lead for the "Makers & Creators" events at Campus North with Tech for Life UK.</p>
+Developer and Struggling <strong>Agilista</strong>. I am also a STEM ambassador, microbit hacker and project lead 
+for the "Makers &amp; Creators" events at Campus North with Tech for Life UK.</p>
 
 <p class="has-vertical-spacing">My main areas of interest are in using <strong>agile methods</strong> to help improve what
 we <strong>ship</strong>, <strong>test-driven</strong> development, unit <strong>testing</strong>, continuous and
@@ -51,7 +51,7 @@ by email or tweet, what you did with it or how it helped you.</p>
 
 <p class="has-vertical-spacing">You will notice some of the "hero" images on some posts are not drawn by me. They
 are from [Old Book Illustrations](http://www.oldbookillustrations.com/), a searchable
-site of public domain illustrations.</a>
+site of public domain illustrations.</p>
 
 <p class="has-vertical-spacing"><small>The information in the weblog, or blog, is provided "AS IS" with no warranties
 epressed or implied. Code may not compile if you do not keep up payments on it or
