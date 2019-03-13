@@ -4,7 +4,10 @@ $thunderbird: #ce1a1d; // red
 $oslo-gray: #8c8d8e; // dark gray
 
 //$primary: $thunderbird;
+
 $link: $thunderbird;
+$link-hover: lighten($link, 10% )
+
 //$info: $cyan
 //$success: $green
 //$warning: $yellow
