@@ -14,7 +14,7 @@ hero: secret
 {% for post in paginator.posts %}
 	{% if box_count == 0 %}
 <div class="tile is-ancestor">
-	<div class="tile is-4 is-parent">
+	<div class="tile is-{{ boxes_per_row }} is-parent">
 	{% endif %}	
 
 		<div class="tile is-child box"> <!-- {{ box_count }} -->
