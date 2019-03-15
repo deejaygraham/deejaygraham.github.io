@@ -9,16 +9,16 @@ hero: secret
 {% if boxlayout %}
 
 <div class="tile is-ancestor">
+	<div class="tile is-10 is-parent">
 {% for post in paginator.posts %}
-	<div class="tile is-parent">
-		<div class="tile is-child is-4 box">
+		<div class="tile is-child box">
 			<article class="post-summary has-vertical-spacing" id="{{ post.id }}">
 {% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
 {% include article-excerpt.html excerpt=post.excerpt url=post.url %}
 			</article>
 		</div>
-	</div>
 {% endfor %}
+	</div>
 </div>
 
 {% else %} 
