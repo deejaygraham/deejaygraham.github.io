@@ -3,6 +3,26 @@ title: d.j.graham's blog
 layout: index
 hero: secret
 ---
+
+{% assign boxlayout = "boxes" %}
+
+{% if boxlayout %}
+
+<div class="tile is-ancestor">
+{% for post in paginator.posts %}
+	<div class="tile is-parent">
+		<div class="tile is-child box">
+			<article class="post-summary has-vertical-spacing" id="{{ post.id }}">
+{% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
+{% include article-excerpt.html excerpt=post.excerpt url=post.url %}
+			</article>
+		</div>
+	</div>
+{% endfor %}
+</div>
+
+{% else %} 
+
 {% for post in paginator.posts %}
 <article class="post-summary has-vertical-spacing" id="{{ post.id }}">
 	{% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
@@ -15,6 +35,8 @@ hero: secret
 	</div>
 </article>
 {% endfor %}
+	
+{% endif %}
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
