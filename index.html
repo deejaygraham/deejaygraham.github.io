@@ -14,7 +14,7 @@ hero: secret
 {% for post in paginator.posts %}
 	{% if box_count == 0 %}
 <div class="tile is-ancestor">
-	<div class="tile is-{{ boxes_per_row }} is-parent">
+	<div class="tile is-parent">
 	{% endif %}	
 
 		<div class="tile is-child box"> <!-- {{ box_count }} -->
@@ -53,8 +53,10 @@ hero: secret
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
+<div>
 <nav class="pagination" role="navigation" aria-label="pagination">
   {% if paginator.next_page %}<a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older posts</a>{% endif %}
   {% if paginator.previous_page %}<a class="pagination-previous" title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts</a>{% endif %}
 </nav>
+</div>
 {% endif %}
