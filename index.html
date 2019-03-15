@@ -11,7 +11,7 @@ hero: secret
 <div class="tile is-ancestor">
 {% for post in paginator.posts %}
 	<div class="tile is-parent">
-		<div class="tile is-child box">
+		<div class="tile is-child is-4 box">
 			<article class="post-summary has-vertical-spacing" id="{{ post.id }}">
 {% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
 {% include article-excerpt.html excerpt=post.excerpt url=post.url %}
