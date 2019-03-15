@@ -14,29 +14,26 @@ hero: secret
 {% for post in paginator.posts %}
 	{% if box_count == 0 %}
 <div class="tile is-ancestor">
-	<div class="tile is-parent">
 	{% endif %}	
 
-		<div class="tile is-child box"> <!-- {{ box_count }} -->
-			<article class="post-summary" id="{{ post.id }}">
+	<div class="tile is-parent">
+		<article class="tile is-child box post-summary" id="{{ post.id }}"> <!-- box {{ box_count }} -->
 {% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
 {% include article-excerpt.html excerpt=post.excerpt url=post.url %}
-			</article>
-		</div>
+		</article>
+	</div>
 
 	{% assign box_count = box_count | plus:1 %}
 
 	{% if box_count >= boxes_per_row %}
 		{% assign box_count = 0 %}
-		</div>
-	</div>
+</div>
 	{% endif %}	
 
 {% endfor %}
 
 {% if box_count > 0 %}
-		</div>
-	</div>
+</div>
 {% endif %}	
 
 {% else %} 
