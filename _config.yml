@@ -6,7 +6,7 @@ repository: 'deejaygraham/deejaygraham.github.io'
 
 # options
 permalink: /:year/:month/:day/:title/
-paginate: 10
+paginate: 12
 exclude: [ make.cmd, build.sh, buildsite.msbuild, post.rb ]
 syntax-theme: zenburn
 
