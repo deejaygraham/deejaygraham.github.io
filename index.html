@@ -18,7 +18,7 @@ hero: secret
 	{% endif %}	
 
 		<div class="tile is-child box"> <!-- {{ box_count }} -->
-			<article class="post-summary has-vertical-spacing" id="{{ post.id }}">
+			<article class="post-summary" id="{{ post.id }}">
 {% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
 {% include article-excerpt.html excerpt=post.excerpt url=post.url %}
 			</article>
