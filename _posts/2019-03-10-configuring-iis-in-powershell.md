@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configurng IIS in PowerShell
+title: Configuring IIS in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
