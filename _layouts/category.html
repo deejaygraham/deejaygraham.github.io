@@ -3,11 +3,32 @@ layout: index
 ---
 <h2># {{ page.tag }} - {{ site.categories[page.tag].size }} Posts</h2>
 
+{% assign box_count = 0 %}
+{% assign boxes_per_row = 4 %}
+
 {% for post in site.categories[page.tag] %}
-<article class="post-summary has-vertical-spacing" id="{{ post.id}}" >
-	{% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
-	<div class="content">
-		{% include article-excerpt.html excerpt=post.excerpt url=post.url %}
+	{% if box_count == 0 %}
+<div class="tile is-ancestor">
+	{% endif %}	
+
+	<div class="tile is-parent">
+		<article class="tile is-child box post-summary" id="{{ post.id }}"> <!-- box {{ box_count }} -->
+{% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
+{% include article-excerpt.html excerpt=post.excerpt url=post.url %}
+		</article>
 	</div>
-</article>
+
+	{% assign box_count = box_count | plus:1 %}
+
+	{% if box_count >= boxes_per_row %}
+		{% assign box_count = 0 %}
+</div>
+	{% endif %}	
+
 {% endfor %}
+
+{% if box_count > 0 %}
+</div>
+{% endif %}	
+
+
