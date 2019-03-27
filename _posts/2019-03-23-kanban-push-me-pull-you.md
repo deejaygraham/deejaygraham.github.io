@@ -1,6 +1,6 @@
 ---
 layout: sketchnote
-title: Kanban Push Me Pull You
+title: Kanban PushMe PullYou
 categories: [ sketchnotes, presentations, xp  ]
 tweet: true
 thumbnail: "/img/posts/kanban-push-me-pull-you/kanban-push-me-pull-you.png"
