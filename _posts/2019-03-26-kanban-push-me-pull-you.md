@@ -8,7 +8,7 @@ sketchnote:
   url: "/img/posts/kanban-push-me-pull-you/kanban-push-me-pull-you.png"
   alt: "sketchnote"
   source:
-    name: "Confessions of a Tech Lead"
+    name: "Kanban - Push Me Pull You"
 	url: "https://www.youtube.com/watch?v=hhHsliAKH84"
   event:
     name: "Lean Kanban UK 13"
