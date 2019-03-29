@@ -84,6 +84,17 @@ $dj-default-padding: 1em;
 	}
 }
 
+
+// print 
+// -----
+
+@media print  {
+	.navbar, .post-meta, .content-footer, .footer { 
+		display: none; 
+	}
+}
+
+
 // debugging
 // ---------
 
