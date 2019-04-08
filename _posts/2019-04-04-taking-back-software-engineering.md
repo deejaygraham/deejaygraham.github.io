@@ -3,9 +3,9 @@ layout: sketchnote
 title: Taking Back Software Engineering
 categories: [ sketchnotes, presentations ]
 tweet: true
-thumbnail: "/img/posts/taking-back-software-engineering/taking-back-software-engineering.jpg"
+thumbnail: "/img/posts/taking-back-software-engineering/taking-back-software-engineering.png"
 sketchnote:
-  url: "/img/posts/taking-back-software-engineering/taking-back-software-engineering.jpg"
+  url: "/img/posts/taking-back-software-engineering/taking-back-software-engineering.png"
   alt: "sketchnote"
   source:
     name: "Taking Back Software Engineering"
@@ -16,3 +16,5 @@ sketchnote:
     name: "Dave Farley"
     url: "https://twitter.com/davefarley77"
 ---
+
+<img src="/img/posts/taking-back-software-engineering/dave.png" alt="dave farley speaking at Agile NE" />
