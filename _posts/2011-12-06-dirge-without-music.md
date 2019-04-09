@@ -1,12 +1,13 @@
 ---
-layout: post
+layout: quotation
+size: medium
 title: Dirge Without Music
-published: true 
-categories: [  music  ]
+attribution: Edna St Vincent Millay (1892 – 1950)
+publication: 
+published: true
+categories: [ quote, music ]
 ---
 
-<blockquote>
-<p>
 I am not resigned to the shutting away of loving hearts in the hard ground
 So it is, and so it will be, for so it has been, time out of mind: 
 Into the darkness they go, the wise and the lovely. Crowned 
@@ -23,9 +24,3 @@ Down, down, down into the darkness of the grave
 Gently they go, the beautiful, the tender, the kind: 
 Quietly they go, the intelligent, the witty, the brave. 
 I know. But I do not approve. And I am not resigned.
-</p>
-</blockquote>
-<small>Edna St Vincent Millay (1892 – 1950)</small>
-
-
-
