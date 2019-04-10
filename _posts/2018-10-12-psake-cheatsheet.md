@@ -68,7 +68,7 @@ execution to honour each dependency statement.
 
 ### Default 
 
-A default taks can be run if nothing is specified from the command line. 
+A default task can be run if nothing is specified from the command line. 
 
 
 ```powershell
@@ -123,6 +123,19 @@ PSake will skip a Task if the precondition is not met.
 ```powershell
 
 {% include code/powershell/PSake-Cheatsheet-9.ps1 %}
+
+```
+
+
+### Task formatting
+
+You can make individual tasks stand out by formatting the task name output. Either 
+by setting FormatTaskName with a string or a code block.
+
+
+```powershell
+
+{% include code/powershell/PSake-Cheatsheet-10.ps1 %}
 
 ```
 
