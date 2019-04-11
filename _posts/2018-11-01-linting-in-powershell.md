@@ -14,3 +14,22 @@ it seems, can do pretty much the same job for .ps1 files. Here I wrote a simple 
 {% include code/powershell/Lint-Scripts.ps1 %}
 
 ```
+
+As with all lint tools, we sometimes need to suppress errors that don't matter to our current domain.
+ 
+We do this by creating a config file with ExcludeRules 
+
+```powershell
+
+{% include code/powershell/Lint-Config.ps1 %}
+
+```
+
+
+and use it when we invoke. 
+
+```powershell
+
+{% include code/powershell/Lint-Scripts-2.ps1 %}
+
+```
