@@ -17,7 +17,7 @@
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<p>No results found for ' + searchTerm + '</p>';
+      searchResults.innerHTML = '<p>No results found for <em>' + searchTerm + '</em></p>';
     }
   }
 
