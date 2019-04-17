@@ -1,7 +1,7 @@
 /* from https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/ */
 /* modified to work with newer version of lunr.js */
 (function() {
-  function displaySearchResults(results, store) {
+  function displaySearchResults(results, store, searchTerm) {
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
@@ -17,7 +17,7 @@
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<p>No results found</p>';
+      searchResults.innerHTML = '<p>No results found for ' + searchTerm + '</p>';
     }
   }
 
@@ -60,6 +60,6 @@
     });
 
     var results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, window.store); // We'll write this in the next section
+    displaySearchResults(results, window.store, searchTerm); // We'll write this in the next section
   }
 })();
