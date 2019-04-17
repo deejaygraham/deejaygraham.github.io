@@ -1,7 +1,7 @@
 ---
 layout: quotation
 size: medium
-title: Fairies
+title: Chestertons Fence
 published: true
 attribution: G K Chesterton
 publication: The Thing 1929
