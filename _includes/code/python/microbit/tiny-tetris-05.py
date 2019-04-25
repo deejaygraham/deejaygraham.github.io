@@ -77,10 +77,10 @@ class Board:
             self.bitmap.set_pixel(column, row, off_pixel_intensity)
 
     def collapse_rows_above(self, row):
-        for r in range(row + 1, top_row - 1, -1):
+        for r in range(row - 1, top_row - 1, -1):
             for column in range(left_column, right_column + 1):
                 pixel = self.bitmap.get_pixel(column, r)
-                self.bitmap.set_pixel(column, r - 1, off_pixel_intensity)
+                self.bitmap.set_pixel(column, r + 1, pixel)
 
     def clear_rows(self, screen):
         rows_cleared = 0
@@ -122,6 +122,6 @@ while True:
         block.drop()
     else:
         board.accept_block(block)
-        score += board.clear_rows()
+        score += board.clear_rows(display)
 
         block = Block()
