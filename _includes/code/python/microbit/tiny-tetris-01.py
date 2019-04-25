@@ -1,7 +1,6 @@
 # Tiny Tetris clone for Microbit
 
 from microbit import *
-import random
 
 
 Frame_Rate_In_Milliseconds = 500

@@ -1,7 +1,7 @@
 # Tiny Tetris clone for Microbit
 
 from microbit import *
-import random
+
 
 # board dimensions
 board_width, board_height = 4, 4
@@ -23,7 +23,8 @@ class Block:
         screen.set_pixel(self.x, self.y, 0)
 
     def can_drop(self, board):
-        if self.y >= board_height: return False
+        if self.y >= board_height:
+            return False
 
         return board.block_at(self.x, self.y + 1)
 
@@ -60,5 +61,5 @@ while True:
 
     block.hide(display)
 
-    if block.can_drop(board): 
+    if block.can_drop(board):
         block.drop()

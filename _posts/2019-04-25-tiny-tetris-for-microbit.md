@@ -44,6 +44,8 @@ be sure we haven't dropped off the bottom of the screen.
 
 ```
 
+So our block drops but then just sits there at the bottom of the screen. 
+
 Perhaps the next thing to address is moving the block left and right to be able to fill up a whole row 
 of pixels. 
 
