@@ -7,8 +7,8 @@ from microbit import *
 top_row = 0
 bottom_row = 4
 
-left_row = 0
-right_row = 4
+left_column = 0
+right_column = 4
 
 max_pixel_intensity = 9
 mid_pixel_intensity = 5
@@ -40,11 +40,11 @@ class Block:
         self.y += 1
 
     def move_left(self):
-        if self.x > left_row:
+        if self.x > left_column:
             self.x -= 1
 
     def move_right(self):
-        if self.x < right_row:
+        if self.x < right_column:
             self.x += 1
 
 
@@ -65,7 +65,7 @@ class Board:
         self.bitmap.set_pixel(block.x, block.y, self.intensity)
 
     def is_row_filled(self, row):
-        for column in range(left_row, right_row + 1):
+        for column in range(left_column, right_column + 1):
             pixel = self.bitmap.get_pixel(column, row)
             if pixel != self.intensity:
                 return False
@@ -73,8 +73,14 @@ class Board:
         return True
 
     def clear_row(self, row):
-        for column in range(left_row, right_row + 1):
+        for column in range(left_column, right_column + 1):
             self.bitmap.set_pixel(column, row, off_pixel_intensity)
+
+    def collapse_rows_above(self, row):
+        for r in range(row + 1, top_row - 1, -1):
+            for column in range(left_column, right_column + 1):
+                pixel = self.bitmap.get_pixel(column, r)
+                self.bitmap.set_pixel(column, r - 1, off_pixel_intensity)
 
     def clear_rows(self, screen):
         rows_cleared = 0
@@ -85,6 +91,7 @@ class Board:
                 self.clear_row(row)
                 self.draw(screen)
                 sleep(Frame_Rate_In_Milliseconds)
+                self.collapse_rows_above(row)
 
         return rows_cleared
 

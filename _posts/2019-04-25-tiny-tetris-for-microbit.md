@@ -57,9 +57,9 @@ ownership to the board and create a new block back up at the top of the screen.
 
 ```
 
-Another characteristic of Tetris, we would like to preserve is scoring points when you fill up a complete row of pixels. 
+Another characteristic of Tetris we would like to preserve is scoring points when you fill up a complete row of pixels. 
 To know if we should clear a row, we need to make sure that all pixels in that row are non-zero, any zeroes tell us there is 
-a hole and we shouldn't remove it. 
+a hole and we shouldn't remove it. If we do find a full row, we remove it and add to the score for this game. 
 
 
 ```python
@@ -68,3 +68,10 @@ a hole and we shouldn't remove it.
 
 ```
 
+Notice that the incomplete rows don't "fall" down into the newly emptied rows so we need to tackle that next.
+
+```python
+
+{% include code/python/microbit/tiny-tetris-05.py %}
+
+```
