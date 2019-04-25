@@ -41,7 +41,11 @@ to nothing.
 
 Here's the finished code:
 
-<script src="https://gist.github.com/deejaygraham/de1c66941f87975f6a53164c7b891ff0.js"></script>
+```python
+
+{% include code/python/microbit/tiny-asteroids.py %}
+
+```
 
 This might be my most ambitious game for the microbit even though the tiny screen does
 mean that representing the ship and the asteroids are not a satisfying as I would have
