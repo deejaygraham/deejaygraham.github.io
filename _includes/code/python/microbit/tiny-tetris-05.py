@@ -73,6 +73,8 @@ class Board:
         return True
 
     def clear_row(self, row):
+        # flash the row first ?
+        # clear it
         for column in range(left_column, right_column + 1):
             self.bitmap.set_pixel(column, row, off_pixel_intensity)
 
@@ -92,6 +94,7 @@ class Board:
                 self.draw(screen)
                 sleep(Frame_Rate_In_Milliseconds)
                 self.collapse_rows_above(row)
+                rows_cleared += 1
 
         return rows_cleared
 
