@@ -16,20 +16,16 @@ class Block:
         self.y = 0
         self.intensity = 9
 
-
     def draw(self, screen):
         screen.set_pixel(self.x, self.y, self.intensity)
 
-
     def hide(self, screen):
         screen.set_pixel(self.x, self.y, 0)
-
 
     def can_drop(self, board):
         if self.y >= board_height: return False
 
         return board.block_at(self.x, self.y + 1)
-
 
     def drop(self):
         self.y += 1

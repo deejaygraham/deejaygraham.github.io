@@ -3,8 +3,6 @@
 from microbit import *
 import random
 
-# board dimensions
-pixel_width, pixel_height = 4, 4
 
 Frame_Rate_In_Milliseconds = 500
 
@@ -15,7 +13,6 @@ class Block:
         self.x = 2
         self.y = 0
         self.intensity = 9
-
 
     def draw(self, screen):
         screen.set_pixel(self.x, self.y, self.intensity)
