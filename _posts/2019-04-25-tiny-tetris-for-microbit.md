@@ -37,7 +37,6 @@ value, the redraw at the new position. We also need to be able to check that the
 current position for the block to drop. We ask the board if the pixel below us is empty. We also want to 
 be sure we haven't dropped off the bottom of the screen.
 
-
 ```python
 
 {% include code/python/microbit/tiny-tetris-02.py %}
@@ -47,10 +46,25 @@ be sure we haven't dropped off the bottom of the screen.
 So our block drops but then just sits there at the bottom of the screen. 
 
 Perhaps the next thing to address is moving the block left and right to be able to fill up a whole row 
-of pixels. 
+of pixels. Again we have to be careful we don't accidentally drift off the sides of the screen by checking 
+before we change the x value of the block. Once a block can't move any further down the screen, either because 
+it has hit the bottom or landed on another block, we need to convert that "live" block to a "dead" one, transfer 
+ownership to the board and create a new block back up at the top of the screen. 
 
 ```python
 
 {% include code/python/microbit/tiny-tetris-03.py %}
 
 ```
+
+Another characteristic of Tetris, we would like to preserve is scoring points when you fill up a complete row of pixels. 
+To know if we should clear a row, we need to make sure that all pixels in that row are non-zero, any zeroes tell us there is 
+a hole and we shouldn't remove it. 
+
+
+```python
+
+{% include code/python/microbit/tiny-tetris-04.py %}
+
+```
+

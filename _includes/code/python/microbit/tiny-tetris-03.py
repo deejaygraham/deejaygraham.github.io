@@ -39,6 +39,14 @@ class Block:
     def drop(self):
         self.y += 1
 
+    def move_left(self):
+        if self.x > left_row:
+            self.x -= 1
+
+    def move_right(self):
+        if self.x < right_row:
+            self.x += 1
+
 
 class Board:
 
@@ -52,6 +60,9 @@ class Board:
     def has_block_at(self, x, y):
         pixel = self.bitmap.get_pixel(x, y)
         return pixel == off_pixel_intensity
+
+    def accept_block(self, block):
+        self.bitmap.set_pixel(block.x, block.y, self.intensity)
 
 
 # Start Game
@@ -69,5 +80,13 @@ while True:
 
     block.hide(display)
 
+    if (button_a.was_pressed()):
+        block.move_left()
+    elif (button_b.was_pressed()):
+        block.move_right()
+
     if block.can_drop(board):
         block.drop()
+    else:
+        board.accept_block(block)
+        block = Block()

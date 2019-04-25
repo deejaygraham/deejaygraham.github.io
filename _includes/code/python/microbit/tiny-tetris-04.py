@@ -39,6 +39,14 @@ class Block:
     def drop(self):
         self.y += 1
 
+    def move_left(self):
+        if self.x > left_row:
+            self.x -= 1
+
+    def move_right(self):
+        if self.x < right_row:
+            self.x += 1
+
 
 class Board:
 
@@ -52,6 +60,33 @@ class Board:
     def has_block_at(self, x, y):
         pixel = self.bitmap.get_pixel(x, y)
         return pixel == off_pixel_intensity
+
+    def accept_block(self, block):
+        self.bitmap.set_pixel(block.x, block.y, self.intensity)
+
+    def is_row_filled(self, row):
+        for column in range(left_row, right_row + 1):
+            pixel = self.bitmap.get_pixel(column, row)
+            if pixel != self.intensity:
+                return False
+
+        return True
+
+    def clear_row(self, row):
+        for column in range(left_row, right_row + 1):
+            self.bitmap.set_pixel(column, row, off_pixel_intensity)
+
+    def clear_rows(self, screen):
+        rows_cleared = 0
+
+        # go from bottom to top
+        for row in range(bottom_row, top_row - 1, -1):
+            if self.is_row_filled(row):
+                self.clear_row(row)
+                self.draw(screen)
+                sleep(Frame_Rate_In_Milliseconds)
+
+        return rows_cleared
 
 
 # Start Game
@@ -69,5 +104,15 @@ while True:
 
     block.hide(display)
 
+    if (button_a.was_pressed()):
+        block.move_left()
+    elif (button_b.was_pressed()):
+        block.move_right()
+
     if block.can_drop(board):
         block.drop()
+    else:
+        board.accept_block(block)
+        board.clear_rows()
+
+        block = Block()
