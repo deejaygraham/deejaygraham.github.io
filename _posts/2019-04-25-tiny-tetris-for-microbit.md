@@ -31,4 +31,16 @@ So here, our first attempt with an empty board and a single block floating at th
 I have given the "live" and "dead" blocks different LED intensities since we can't have 
 different colours. 
 
+Next, we should be able to let the block drop from the top of the screen to the bottom. To be able to 
+animate the falling block, we need to be able to erase the block at its current position, update the y 
+value, the redraw at the new position. We also need to be able to check that there is space below the 
+current position for the block to drop. We ask the board if the pixel below us is empty. We also want to 
+be sure we haven't dropped off the bottom of the screen.
+
+
+```python
+
+{% include code/python/microbit/tiny-tetris-02.py %}
+
+```
 
