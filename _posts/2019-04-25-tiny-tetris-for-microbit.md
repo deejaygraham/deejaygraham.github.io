@@ -4,6 +4,7 @@ title: Tiny Tetris for Microbit
 categories: [ code, microbit ]
 published: true
 hero: microbit
+tweet: true
 thumbnail: posts/tiny-tetris-for-microbit/tetris.png
 ---
 
