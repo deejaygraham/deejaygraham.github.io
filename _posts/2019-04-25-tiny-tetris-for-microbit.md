@@ -20,6 +20,9 @@ First, we need two classes, one to model the current falling block and one to mo
 lying on the floor, waiting to be cleared away when we fill up a row. We also need a game loop that can 
 show the board and the block. 
 
+
+### First
+
 So here, our first attempt with an empty board and a single block floating at the start position.  
 
 ```python
@@ -30,6 +33,9 @@ So here, our first attempt with an empty board and a single block floating at th
 
 I have given the "live" and "dead" blocks different LED intensities since we can't have 
 different colours. 
+
+
+### Drop
 
 Next, we should be able to let the block drop from the top of the screen to the bottom. To be able to 
 animate the falling block, we need to be able to erase the block at its current position, update the y 
@@ -42,6 +48,9 @@ be sure we haven't dropped off the bottom of the screen.
 {% include code/python/microbit/tiny-tetris-02.py %}
 
 ```
+
+
+### Buttons
 
 So our block drops but then just sits there at the bottom of the screen. 
 
@@ -57,6 +66,9 @@ ownership to the board and create a new block back up at the top of the screen.
 
 ```
 
+
+### Clearing
+
 Another characteristic of Tetris we would like to preserve is scoring points when you fill up a complete row of pixels. 
 To know if we should clear a row, we need to make sure that all pixels in that row are non-zero, any zeroes tell us there is 
 a hole and we shouldn't remove it. If we do find a full row, we remove it and add to the score for this game. 
@@ -68,6 +80,9 @@ a hole and we shouldn't remove it. If we do find a full row, we remove it and ad
 
 ```
 
+
+### Collapse
+
 Notice that the incomplete rows don't "fall" down into the newly emptied rows so we need to tackle that next.
 
 ```python
@@ -76,6 +91,9 @@ Notice that the incomplete rows don't "fall" down into the newly emptied rows so
 
 ```
 
+
+### Finished
+
 Finally, we need a way to get out of the game and show the score at the end. Here is the finished code:
 
 ```python
@@ -83,6 +101,9 @@ Finally, we need a way to get out of the game and show the score at the end. Her
 {% include code/python/microbit/tiny-tetris-06.py %}
 
 ```
+
+
+### Improvements
 
 I have given some thought to creating a couple of different shape blocks to make it a little more challenging - a 2x2 block 
 or a 2x1 plank say - but finding a method to trigger rotation is the problem with only two buttons. Perhaps building a set of 
