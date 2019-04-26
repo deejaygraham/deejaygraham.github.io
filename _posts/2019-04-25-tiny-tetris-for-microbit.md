@@ -4,6 +4,7 @@ title: Tiny Tetris for Microbit
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: posts/tiny-tetris-for-microbit/tetris.png
 ---
 
 Tetris is one of those addictive games that seems to have been ported to nearly 
@@ -15,6 +16,8 @@ us having different shape pieces which you might argue is one of the fundamental
 of tetris as a game. Let's simplify the game and just use pixels for blocks so there is 
 no rotation of blocks or complex fitting of blocks together. Hopefully there will be 
 enough of a game left to make this worthwile.
+
+<img src="/img/posts/tiny-tetris-for-microbit/tetris.png" alt="microbit tetris" />
 
 First, we need two classes, one to model the current falling block and one to model the "dead" blocks 
 lying on the floor, waiting to be cleared away when we fill up a row. We also need a game loop that can 
