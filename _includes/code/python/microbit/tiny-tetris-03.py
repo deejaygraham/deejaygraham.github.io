@@ -7,8 +7,8 @@ from microbit import *
 top_row = 0
 bottom_row = 4
 
-left_row = 0
-right_row = 4
+left_column = 0
+right_column = 4
 
 max_pixel_intensity = 9
 mid_pixel_intensity = 5
@@ -40,11 +40,11 @@ class Block:
         self.y += 1
 
     def move_left(self):
-        if self.x > left_row:
+        if self.x > left_column:
             self.x -= 1
 
     def move_right(self):
-        if self.x < right_row:
+        if self.x < right_column:
             self.x += 1
 
 

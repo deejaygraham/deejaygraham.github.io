@@ -73,8 +73,16 @@ class Board:
         return True
 
     def clear_row(self, row):
+        # flash the row first ?
+        # clear it
         for column in range(left_column, right_column + 1):
             self.bitmap.set_pixel(column, row, off_pixel_intensity)
+
+    def collapse_rows_above(self, row):
+        for r in range(row - 1, top_row - 1, -1):
+            for column in range(left_column, right_column + 1):
+                pixel = self.bitmap.get_pixel(column, r)
+                self.bitmap.set_pixel(column, r + 1, pixel)
 
     def clear_rows(self, screen):
         rows_cleared = 0
@@ -85,12 +93,17 @@ class Board:
                 self.clear_row(row)
                 self.draw(screen)
                 sleep(Frame_Rate_In_Milliseconds)
+                self.collapse_rows_above(row)
+                self.draw(screen)
+                sleep(Frame_Rate_In_Milliseconds)
                 rows_cleared += 1
-                
+
         return rows_cleared
 
 
 # Start Game
+display.scroll("Tiny Tetris") 
+
 
 block = Block()
 board = Board()
@@ -115,7 +128,14 @@ while True:
     if block.can_drop(board):
         block.drop()
     else:
+        if block.y == top_row:
+            break
+
         board.accept_block(block)
-        score += board.clear_rows()
+        score += board.clear_rows(display)
 
         block = Block()
+
+display.scroll("Game Over!") 
+display.scroll("You scored ")       
+display.scroll(str(score)) 

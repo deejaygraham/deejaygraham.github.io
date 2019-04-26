@@ -75,3 +75,15 @@ Notice that the incomplete rows don't "fall" down into the newly emptied rows so
 {% include code/python/microbit/tiny-tetris-05.py %}
 
 ```
+
+Finally, we need a way to get out of the game and show the score at the end. Here is the finished code:
+
+```python
+
+{% include code/python/microbit/tiny-tetris-06.py %}
+
+```
+
+I have given some thought to creating a couple of different shape blocks to make it a little more challenging - a 2x2 block 
+or a 2x1 plank say - but finding a method to trigger rotation is the problem with only two buttons. Perhaps building a set of 
+controls wired to the digital IO would be a solution. 
