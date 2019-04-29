@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Agile Testing Mindset
 categories: [ sketchnotes, presentations, tdd, xp  ]
-tweet: true
+tweetable: true
 thumbnail: "/img/posts/agile-testing-mindset/agile-testing-mindset.png"
 sketchnote:
   url: "/img/posts/agile-testing-mindset/agile-testing-mindset.png"

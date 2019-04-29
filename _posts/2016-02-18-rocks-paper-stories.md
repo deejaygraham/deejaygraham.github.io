@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Rocks, Paper ... Stories
 categories: [ sketchnotes, presentations, agile  ]
-tweet: true
+tweetable: true
 thumbnail: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.png"
 sketchnote:
   url: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.png"

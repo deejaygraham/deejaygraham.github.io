@@ -2,7 +2,7 @@
 layout: sketchnote
 title: 7 minutes, 26 seconds
 categories: [ sketchnotes, presentations, agile, tdd, xp  ]
-tweet: true
+tweetable: true
 thumbnail: "/img/posts/seven-minutes-twenty-six-seconds/seven-minutes-twenty-six-seconds.jpg"
 sketchnote:
   url: "/img/posts/seven-minutes-twenty-six-seconds/seven-minutes-twenty-six-seconds.jpg"

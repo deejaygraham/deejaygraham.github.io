@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Kanban Push Me Pull You
 categories: [ sketchnotes, presentations, xp ]
-tweet: true
+tweetable: true
 thumbnail: "/img/posts/kanban-push-me-pull-you/kanban-push-me-pull-you.png"
 sketchnote:
   url: "/img/posts/kanban-push-me-pull-you/kanban-push-me-pull-you.png"

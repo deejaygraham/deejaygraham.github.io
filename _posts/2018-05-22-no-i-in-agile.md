@@ -2,7 +2,7 @@
 layout: sketchnote
 title: There's No 'I' in Agile
 categories: [ sketchnotes, presentations, agile  ]
-tweet: true
+tweetable: true
 thumbnail: "/img/posts/no-i-in-agile/no-i-in-agile.jpg"
 sketchnote:
   url: "/img/posts/no-i-in-agile/no-i-in-agile.jpg"

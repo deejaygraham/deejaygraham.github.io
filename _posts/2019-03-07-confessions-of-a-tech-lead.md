@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Confessions of a Tech Lead
 categories: [ sketchnotes, presentations, xp  ]
-tweet: true
+tweetable: true
 thumbnail: "/img/posts/confessions-of-a-tech-lead/confessions-of-a-tech-lead.jpg"
 sketchnote:
   url: "/img/posts/confessions-of-a-tech-lead/confessions-of-a-tech-lead.png"
