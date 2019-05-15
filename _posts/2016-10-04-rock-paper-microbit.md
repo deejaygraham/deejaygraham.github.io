@@ -64,4 +64,9 @@ at the start of the game using display.show with the list of images.
 
 Here's the finished code:
 
-<script src="https://gist.github.com/deejaygraham/fd3519507d5e4b8c3791706faeaeada7.js"></script>
+
+```python
+
+{% include code/python/microbit/rock-paper-scissors.py %}
+
+```
