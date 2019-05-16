@@ -1,13 +1,13 @@
 from microbit import *
 import random
 
-def fade_out(image, delay=250, minimum = 1):
+def fade_out(image, delay=250):
     image = image.copy()
     for times in range(0, 10):
         for x in range(0, 5):
             for y in range(0, 5):
                 brightness = image.get_pixel(x, y)
-                if (brightness > minimum):
+                if (brightness > 1):
                     image.set_pixel(x, y, brightness - 1)
         display.show(image)
         sleep(delay)
@@ -82,3 +82,5 @@ while is_alive:
 fade_out(Image.SAD)
 # dead
 display.show(Image.GHOST)
+sleep(10000)
+fade_out(Image.GHOST)
