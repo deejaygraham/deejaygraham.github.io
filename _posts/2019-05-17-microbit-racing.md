@@ -43,9 +43,21 @@ a little bit.
 
 ```
 
+The random.randint function returns a random value between the two values given (0 and 1 in this case) each time 
+it is called in the for loop and we use that value to see if we have been given a 1 value. If so, we can move the 
+flea forward a little bit. Each flea has about the same opportunity to move, a 50% chance because there are only 
+two values possible from randint in this code.
+
 We increase the number of opportunities to move from 4 to 10 because we have the random chance where 
-we may not move in 4 turns. There’s a problem with this code which you might have spotted. Moving the flea 
-off the end of the display will cause and out of range error when we call set_pixel.
+we may not move in 4 turns. There’s a problem with this code which you might have spotted. 
+
+There's a problem with this code, though. Can you find it?
+
+
+### Going too far
+
+In between moving the flea and actually drawing on the screen, we can make sure we don't go beyond the 
+fourth column by using the min function.
 
 ```python
 
@@ -96,4 +108,42 @@ descriptive names:
 That’s the only change we need to have 5 fleas, all racing in their own lane (y coordinate).
 
 ### Cheating
+
+So that's a nice racing game which should have a different result each time. Each flea has a 50% chance or 
+moving each time around the for loop, with random giving everyone an equal chance of winning, on average.
+
+But what if we wanted to be a bit sneaky and cheat at the race? Could we make sure that one or two fleas would 
+have a better chance than the others?
+
+The critical piece of code is the call to random.randint that always has the same chance for each flea. If we 
+manipulated the range of values available we could change the odds for each competitor. A flea which had a 1 
+in 4 (25%) chance of advancing would probably not win against a flea which had a 1 in 2 (50%) chance of advancing.
+
+We can use the flea object to store a chance value as well as the x and y coordinates.
+
+```python
+
+{% include code/python/microbit/flea-race-9.py %}
+
+```
+
+Now we can change the random code to use the new chance value:
+
+```python
+
+{% include code/python/microbit/flea-race-10.py %}
+
+```
+
+If you run the code again, you should see that alice and dave have the best chance of winning while poor 
+eleanor has the worst (but not impossible) chance of winning with only 1 chance in 10 of moving for each turn.
+
+
+### Finish
+
+```python
+
+{% include code/python/microbit/flea-race-11.py %}
+
+```
 
