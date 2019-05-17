@@ -15,7 +15,7 @@ class BitBot:
         self.left_motor.reverse(percent)
         self.right_motor.reverse(percent)
         
-    def cirlce_left (self, percent):
+    def circle_left (self, percent):
         display.show(Image.ARROW_W)
         self.left_motor.reverse(percent)
         self.right_motor.forward(percent)
