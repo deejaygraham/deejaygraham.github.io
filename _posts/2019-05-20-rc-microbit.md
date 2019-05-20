@@ -40,5 +40,5 @@ check for a new command and react to it with directions.
 
 ```
 
-Helpful in debugging the remote titling, and in making sure the remote and the bitbot were in sync, I made sure 
-that both displayed icons corresponding to the command they were sending or receiving. Arrows for each direction and a square for stop.
+Helpful in debugging the tilting directions and thresholds, and in making sure the remote and the bitbot were in sync, I made sure 
+that both units displayed icons corresponding to the command they were sending or receiving. Arrows for each direction and a square for stop.
