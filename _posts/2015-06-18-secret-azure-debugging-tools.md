@@ -13,11 +13,16 @@ PaaS instance.
  
 From that post:
 
-* RDP to the instance
-* Open a PowerShell console
-* paste and run the command
+- RDP to the instance
+- Open a PowerShell console
+- Paste and run the command
 
-<script src="https://gist.github.com/deejaygraham/d1c6d861d971a0f86094.js"></script>
+
+```powershell
+
+{% include code/powershell/Secret-Azure-Tools.ps1 %}
+
+```
 
 [Download](https://gist.github.com/deejaygraham/d1c6d861d971a0f86094)
 
