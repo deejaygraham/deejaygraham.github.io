@@ -1,5 +1,10 @@
 <!-- article-header.html -->
 <header>
+{% assign articleimage = "/img/heroes/hero-secret-harbour.jpg" %}
+{% if include.image %}
+{% assign articleimage = include.image %}
+{% endif %}	
+	<figure><img src="{{ articleimage }}" alt="{{ include.title }}" /></figure>
 {% if include.url %}
 	<h1 class="title"><a href="{{ include.url }}">{{ include.title }}</a></h1>
 {% else %}
