@@ -17,5 +17,3 @@ sketchnote:
     name: "J B Rainsberger"
     url: "https://twitter.com/jbrains"
 ---
-
-<img src="/img/posts/playing-well-with-others/playing-well-with-others.png" alt="J B" />
