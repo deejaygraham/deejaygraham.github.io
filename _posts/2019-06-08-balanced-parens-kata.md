@@ -31,6 +31,8 @@ that we can model it very well by using a stack metaphor. When we open a parenth
 close one we should have seen a matching open otherwise we consider it unbalanced. We know we have a balance at the end of the 
 function if the stack is empty - that is, we have popped as many closing parentheses as we have pushed opening ones. 
 
+### Code
+
 ```python
 
 {% include code/python/balanced-parens-kata.py %}
@@ -41,3 +43,11 @@ We can also neatly match up opening and closing pairs by using a dictionary. If 
 paren and look up what we think should be the matching closing character and compare it to the one we have just read. If they 
 don't match, that's an unbalanced case. 
 
+
+### Unit Tests
+
+```python
+
+{% include code/python/balanced-parens-tests.py %}
+
+```
