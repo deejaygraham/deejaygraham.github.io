@@ -33,13 +33,24 @@ function if the stack is empty - that is, we have popped as many closing parenth
 
 ### Code
 
+First pass looked like this with lots of repeated code in brace comparisons:
+
+```python
+
+{% include code/python/balanced-parens-naive.py %}
+
+```
+
+We can also neatly match up opening and closing pairs by using a dictionary. 
+
+
 ```python
 
 {% include code/python/balanced-parens-kata.py %}
 
 ```
 
-We can also neatly match up opening and closing pairs by using a dictionary. If we find a closing character, we look at the previous 
+If we find a closing character, we look at the previous 
 paren and look up what we think should be the matching closing character and compare it to the one we have just read. If they 
 don't match, that's an unbalanced case. 
 
