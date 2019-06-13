@@ -1,4 +1,4 @@
-def balanced(self, text):
+def balanced(text):
 
     if len(text) % 2 != 0: return False
     
