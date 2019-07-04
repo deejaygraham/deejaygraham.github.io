@@ -2,6 +2,21 @@
 from microbit import *
 import radio
 
+# bitbot classes go here...
+
+led_brightness = 50
+forward_command = 'F'
+stop_command = 'S'
+left_command = 'L'
+right_command = 'R'
+reverse_command = 'B'
+fast_command = 'Z'
+slow_command = 'W'
+
+fast_speed = 75
+slow_speed = 25
+
+motor_speed_percent = slow_speed
 
 bitbot = BitBot()
 
@@ -15,19 +30,23 @@ while True:
     received = radio.receive()
   
     if received:
-        if received == 'S':
+        if received == stop_command:
             bitbot.stop()
-        elif received == 'F':
-            bitbot.headlights(50)
-            bitbot.forward(50)
-        elif received == 'B':
-            bitbot.reversing_lights(50)
-            bitbot.reverse(50)
-        elif received == 'L':
-            bitbot.blink_left(50)
-            bitbot.circle_left(50)
-        elif received == 'R':
-            bitbot.blink_right(50)
-            bitbot.circle_right(50)
+        elif received == forward_command:
+            bitbot.headlights(led_brightness)
+            bitbot.forward(motor_speed_percent)
+        elif received == reverse_command:
+            bitbot.reversing_lights(led_brightness)
+            bitbot.reverse(motor_speed_percent)
+        elif received == left_command:
+            bitbot.blink_left(led_brightness)
+            bitbot.circle_left(motor_speed_percent)
+        elif received == right_command:
+            bitbot.blink_right(led_brightness)
+            bitbot.circle_right(motor_speed_percent)
+         elif received == slow_command:
+            motor_speed_percent = slow_speed
+        elif received == fast_command:
+            motor_speed_percent = fast_speed           
             
     sleep(100)

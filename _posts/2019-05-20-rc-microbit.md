@@ -42,3 +42,5 @@ check for a new command and react to it with directions.
 
 Helpful in debugging the tilting directions and thresholds, and in making sure the remote and the bitbot were in sync, I made sure 
 that both units displayed icons corresponding to the command they were sending or receiving. Arrows for each direction and a square for stop.
+
+The last feature we added more recently. Instead of driving at a constant speed forward and reverse, we designated two other commands - Z and W - to select between faZt and sloW speeds. Pressing one of the remote buttons speeds up the driving, pressing the other slows it down.
