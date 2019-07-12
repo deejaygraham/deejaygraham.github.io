@@ -1,3 +1,5 @@
+from microbit import *
+
 class MicrobitMotor:
 
     def __init__(self, speed_pin, direction_pin):
