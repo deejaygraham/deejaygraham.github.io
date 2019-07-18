@@ -7,6 +7,8 @@ categories: [code]
 
 Another random discussion in our regular coding dojo led me to think about representing individual playing cards and decks of cards in python. Playing cards with Snakes rather than Sharks, if you will :)
 
+### Card
+
 Here's a card class I came up with to model the suit and rank of an instance along with string conversion and comparison operators - which seem to make sense for cards so that they can be sorted or we can tell if they aren't in order.
 
 ```python
@@ -15,6 +17,8 @@ Here's a card class I came up with to model the suit and rank of an instance alo
 
 ```
 
+### Deck
+
 Next we need to collect the cards into a deck so we can order, shuffle, add and remove cards from the collection.
 
 ```python
@@ -22,6 +26,8 @@ Next we need to collect the cards into a deck so we can order, shuffle, add and 
 {% include code/python/cards-2.py %}
 
 ```
+
+### Magic
 
 In the dojo we talked about card tricks and ways in which magician's use maths and probability in their favour to give the illusion that cards are randomly arranged but they can predict a card you chose.
 
@@ -35,6 +41,8 @@ Here's the ordering of the cards for this system.
 
 One of the magical properties of this ordering is that the pattern rolls over at the edges so if you can see the last card in the deck, you can know what the first card is. Cutting the cards also preserves the pattern so we can do some really cool tricks just with this simple ordering.
 
+### Cutting
+
 For our deck of cards we want to be able to cut the cards into two stacks and place the bottom stack onto the top stack.
 
 ```python
@@ -42,6 +50,8 @@ For our deck of cards we want to be able to cut the cards into two stacks and pl
 {% include code/python/cards-3.py %}
 
 ```
+
+### Si Stebbins Order
 
 Now if we implement the Si Stebbins ordering algorithm, we can cut the cards and demonstrate that the ordering still works. Magic!
 
