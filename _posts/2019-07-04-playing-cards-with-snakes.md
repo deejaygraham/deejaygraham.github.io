@@ -5,7 +5,7 @@ published: true
 categories: [code]
 ---
 
-Another random discussion in our regular coding dojo led me to think about representing individual playing cards and decks of cards in python.
+Another random discussion in our regular coding dojo led me to think about representing individual playing cards and decks of cards in python. Playing cards with Snakes rather than Sharks, if you will :)
 
 Here's a card class I came up with to model the suit and rank of an instance along with string conversion and comparison operators - which seem to make sense for cards so that they can be sorted or we can tell if they aren't in order.
 
