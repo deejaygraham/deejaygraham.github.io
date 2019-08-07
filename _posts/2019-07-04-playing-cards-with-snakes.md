@@ -37,7 +37,9 @@ See <a href="https://www.deceptionary.com/ftp/SStebbins.pdf">this link</a> for a
 
 Here's the ordering of the cards for this system.
 
-<img src="/img/posts/playing-cards-with-snakes/sistebbins.png" alt="booklet page" />
+<img src="/img/posts/playing-cards-with-snakes/sistebbins.png" alt="booklet page 1" />
+
+<img src="/img/posts/playing-cards-with-snakes/sirules.png" alt="booklet page 2" />
 
 One of the magical properties of this ordering is that the pattern rolls over at the edges so if you can see the last card in the deck, you can know what the first card is. Cutting the cards also preserves the pattern so we can do some really cool tricks just with this simple ordering.
 
