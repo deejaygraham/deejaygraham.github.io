@@ -8,10 +8,8 @@ hero: secret
 
 {% assign sorted_cats = site.categories | sort %}
 
-<ul>
+<div class="tags">
   {% for cat in sorted_cats %}
-  <li>
-    <a href="/category/{{ category[0] }}/">{{ cat[0] }}</a>
-  </li>
+  <a class="tag is-link" href="/category/{{ category[0] }}/">{{ cat[0] }}</a>
   {% endfor %}
-</ul>
+</div>
