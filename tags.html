@@ -6,10 +6,12 @@ hero: secret
 
 <h2 class="is-size-2">Tags</h2>
 
+{% assign sorted_cats = site.categories | sort %}
+
 <ul>
-  {% for category in site.categories %}
+  {% for cat in sorted_cats %}
   <li>
-    <a href="/category/{{ category[0] }}/">{{ category[0] }}</a>
+    <a href="/category/{{ category[0] }}/">{{ cat[0] }}</a>
   </li>
   {% endfor %}
 </ul>
