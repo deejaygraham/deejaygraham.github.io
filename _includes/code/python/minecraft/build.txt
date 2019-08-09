@@ -1,0 +1,15 @@
+goto 0 0 
+
+# Clear some space by filling area with 'air'
+blocks 0 -20 -20 -20 20 20 20 
+wait 10
+
+# layer of dirt
+blocks 3 -20 -1 -20 20 0 20
+wait 10
+
+# layer of grass
+blocks 2 -20 1 -20 20 1 20
+wait 10
+
+message done
