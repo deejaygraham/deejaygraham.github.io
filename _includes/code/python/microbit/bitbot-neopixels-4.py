@@ -3,8 +3,6 @@ class BitBot:
     def __init__(self):
         self.neopixels = neopixel.NeoPixel(pin13, 12)
 
-# list comprehension?
-# [5, 11]
     def lights(self, pixels, colour):
         for i in pixels:
             self.neopixels[i] = colour
