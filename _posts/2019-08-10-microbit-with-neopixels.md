@@ -33,7 +33,7 @@ so that turning off all LEDs is a good practice before changing which LEDs are s
 
 ```python
 
-{% include code/python/microbit/bitbot-neopixels-2.py %}
+{% include code/python/microbit/bitbot-neopixels-3.py %}
 
 ```
 
