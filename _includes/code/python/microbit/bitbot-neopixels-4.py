@@ -5,8 +5,8 @@ class BitBot:
 
 # list comprehension?
 # [5, 11]
-    def lights(self, colour):
-        for i in range(0, len(self.neopixels)):
+    def lights(self, pixels, colour):
+        for i in pixels:
             self.neopixels[i] = colour
         self.neopixels.show()
 
@@ -15,38 +15,23 @@ class BitBot:
 
     def headlights(self, colour = (255, 255, 255)):
         self.lights_off()
-
-        self.neopixels[5] = colour
-        self.neopixels[11] = colour
-        self.neopixels.show()
+        self.lights([5, 11], colour)
 
     def reversing_lights(self, colour = (127, 127, 127)):
         self.lights_off()
-
-        self.neopixels[0] = colour
-        self.neopixels[6] = colour
-        self.neopixels.show()
+        self.lights([0, 6], colour)
 
     def brake_lights(self, colour = (127, 0, 0)):
         self.lights_off()
-
-        self.neopixels[0] = colour
-        self.neopixels[6] = colour
-        self.neopixels.show()
+        self.lights([0, 6], colour)
 
     def left_lights(self, colour):
         self.lights_off()
-
-        for i in range(0, 6):
-            self.neopixels[i] = colour
-        self.neopixels.show()
+        self.lights(range(0, 6), colour)
 
     def right_lights(self, colour):
         self.lights_off()
-
-        for i in range(6, 12):
-            self.neopixels[i] = colour
-        self.neopixels.show()
+        self.lights(range(6, 12), colour)
 
     def lights_forward(self, colour, delay = 50):
         self.lights_off()
