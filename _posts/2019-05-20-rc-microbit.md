@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RC Microbit
+title: Remote Control Microbit
 published: true
 categories: [code, microbit]
 hero: microbit
@@ -39,8 +39,8 @@ check for a new command and react to it with directions.
 
 ```
 
-Helpful in debugging the tilting directions and thresholds, and in making sure the remote and the bitbot were
-in sync, I made sure that both units displayed icons corresponding to the command they were sending or
+Helpful in debugging the tilting directions and thresholds, and in checking that the remote control and the bitbot were
+both in sync, I made sure that both units displayed icons corresponding to the command they were sending or
 receiving. Arrows for each direction and a square for stop and as long as both units are displaying the same icon
 we know everything is good.
 
