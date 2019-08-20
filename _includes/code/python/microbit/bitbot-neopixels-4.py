@@ -9,7 +9,7 @@ class BitBot:
         self.neopixels.show()
 
     def lights_off(self):
-        self.lights((0, 0, 0))
+        self.lights(range(0, len(self.neopixels)), (0, 0, 0))
 
     def headlights(self, colour = (255, 255, 255)):
         self.lights_off()
