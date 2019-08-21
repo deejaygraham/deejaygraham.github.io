@@ -9,7 +9,7 @@ class BitBot:
         self.neopixels.show()
 
     def lights_off(self):
-        self.lights(range(0, len(self.neopixels)), (0, 0, 0))
+        self.lights(range(0, 12), (0, 0, 0))
 
     def headlights(self, colour = (255, 255, 255)):
         self.lights_off()
@@ -31,7 +31,7 @@ class BitBot:
         self.lights_off()
         self.lights(range(6, 12), colour)
 
-    def lights_forward(self, colour, delay = 50):
+    def sweep_forward(self, colour, delay = 50):
         self.lights_off()
 
         for i in range(0, 6):
@@ -40,7 +40,7 @@ class BitBot:
             self.neopixels.show()
             sleep(delay)
 
-    def lights_backward(self, colour, delay = 50):
+    def sweep_backward(self, colour, delay = 50):
         self.lights_off()
 
         for i in range(11, 5, -1):
