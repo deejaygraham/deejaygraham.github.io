@@ -31,19 +31,19 @@ class BitBot:
         self.lights_off()
         self.lights(range(6, 12), colour)
 
-    def sweep_forward(self, colour, delay = 50):
-        self.lights_off()
+    def sweep_forward(self, colour, delay = 25):
 
         for i in range(0, 6):
+            self.lights_off()
             self.neopixels[i] = colour
             self.neopixels[i + 6] = colour
             self.neopixels.show()
             sleep(delay)
 
-    def sweep_backward(self, colour, delay = 50):
-        self.lights_off()
+    def sweep_backward(self, colour, delay = 25):
 
         for i in range(11, 5, -1):
+            self.lights_off()
             self.neopixels[i] = colour
             self.neopixels[i - 6] = colour
             self.neopixels.show()
