@@ -1,0 +1,36 @@
+---
+layout: post
+title: Autonomous Microbit Vehicle
+published: true
+categories: [code, microbit]
+hero: microbit
+---
+
+Another great facility built into the <a href="http://4tronix.co.uk/blog/?p=1490">BitBot</a> is that it comes with two
+light sensors built into the underside so that we can sense changes in light reflection coming from the floor. The sensors
+report a binary value depending on whether they are "seeing" a reflection (white) or no reflection (black). They are arranged
+on separate sides of the vehicle chassis so that we can build a track using <a href="http://robotsquare.com/wp-content/uploads/2012/11/linefollowtiles.pdf">printable
+squares</a> and use the sensors to keep us on the straight and narrow.
+
+### Line Sensor
+
+The two sensors are wired to two different digital input pins on the microbit and we can query each individually. If we can see
+equal reflections from both sensors we assume we are travelling in a roughly straight line (or at least not hit an edge). When we
+see a difference in sensors we know we have hit an edge and need to correct by turning in the opposite direction.
+
+```python
+
+{% include code/python/microbit/bitbot-linesensor-1.py %}
+
+```
+
+### BitBot
+
+Building the line sensors into the BitBot class we can switch it to autonomous mode and watch while it "feels" its way around
+any sort of track we can devise.
+
+```python
+
+{% include code/python/microbit/bitbot-linesensor-2.py %}
+
+```
