@@ -37,7 +37,7 @@ so that turning off all LEDs is a good practice before changing which LEDs are s
 
 ```
 
-### BitBot
+### Microbit LEDs
 
 We can add this NeoPixel functionality to the BitBot vehicle so that we can have headlights, reverse lights, brake lights...
 
@@ -46,5 +46,14 @@ We can add this NeoPixel functionality to the BitBot vehicle so that we can have
 {% include code/python/microbit/bitbot-neopixels-4.py %}
 
 ```
-I also added functions to light the left and right arms of the vehicle independently and two cool effects - 
+
+I also added functions to light the left and right arms of the vehicle independently and two cool effects -
 swiping a colour from the back LEDs all the way to the front one (and the reverse effect) just to show off.
+
+### BitBot
+
+```python
+
+{% include code/python/microbit/bitbot-neopixels-5.py %}
+
+```
