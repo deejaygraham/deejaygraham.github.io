@@ -52,6 +52,8 @@ swiping a colour from the back LEDs all the way to the front one (and the revers
 
 ### BitBot
 
+We can add this code into the [BitBot class]({% link _posts/2019-05-16-microbit-motoring.md %}) like this:
+
 ```python
 
 {% include code/python/microbit/bitbot-neopixels-5.py %}
