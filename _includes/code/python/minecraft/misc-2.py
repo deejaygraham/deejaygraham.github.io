@@ -1,4 +1,5 @@
 import mcpi.minecraft as minecraft
+import mcpi.block as block
 import random
 import time
 
@@ -6,18 +7,16 @@ world = minecraft.Minecraft.create()
 
 world.postToChat("I have hidden a diamond...")
 
-diamond_block = 57
-
-x = 100
-y = 25
-z = 100
+x = 0
+y = 0
+z = 0
 
 # random position?
 # x = random.randrange(-50, 50)
 # y = random.randrange(0, 20)
 # z = random.randrange(-50, 50)
 
-world.setBlock(x, y, z, diamond_block)
+world.setBlock(x, y, z, block.DIAMOND)
 world.camera.setFixed()
 
 world.camera.setPos(x, y + 5, z)

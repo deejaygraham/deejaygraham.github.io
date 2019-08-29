@@ -49,3 +49,11 @@ Stand on some grass and bounce!
 {% include code/python/minecraft/misc-5.py %}
 
 ```
+
+### Clearing Changes
+
+```python
+
+{% include code/python/minecraft/misc-6.py %}
+
+```

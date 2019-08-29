@@ -8,7 +8,7 @@ def build_pyramid(x, y, z, width, material):
     if width % 2 == 0:
         width = width + 1
 
-    height = (width + 1) / 2     
+    height = int((width + 1) / 2)     
     layer_width = int(math.floor(width/2))
 
     world.setBlocks(x - layer_width - 2, y - 1, z - layer_width - 2, x + layer_width + 2, y - 1, z + layer_width + 2, block.DIRT)
@@ -21,4 +21,9 @@ def build_pyramid(x, y, z, width, material):
 world = minecraft.Minecraft.create()
 
 # Customise with different block types
-build_pyramid(x, y, z, 20, block.ICE) 
+x = 0
+y = 1
+z = 0
+width = 20
+
+build_pyramid(x, y, z, width, block.ICE) 

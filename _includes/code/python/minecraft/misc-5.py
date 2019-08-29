@@ -3,20 +3,15 @@ import mcpi.block as block
 import time
 import math
 
-def clear_area(x, y, z, width, height):
-    world.setBlocks(x - width, y - height, z - width, x + width, y + height, z + width, block.AIR)
-    world.setBlocks(x - width, y - 1, z - width, x + width, y, z + width, block.GRASS)
-
-
 def build_tower(x, y, z, width, height, material):
     # tower
     world.setBlocks(x, y, z, x + width, y + height, z + width, material)
 
     # create crennelations
-    for dx in range(0, 12):
-            for dz in range(0, 12):
+    for dx in range(width + 1):
+            for dz in range(width + 1):
                     if dx % 2 == 0 and dz % 2 == 0:
-                        world.setBlock(x + dx, y + height, z + dz, material)
+                        world.setBlock(x + dx, y + height + 1, z + dz, material)
 
     # carve out top of tower
     world.setBlocks(x + 1, y + height, z + 1, x + width - 1, y + height + 1, z + width - 1, block.AIR)
@@ -49,39 +44,41 @@ def build_castle(x, y, z, length, height, material):
     time.sleep(1)
     build_wall(x, y, z, length, height, material, "z")
     time.sleep(1)
-    build_wall(x, y, z + length, length, height, "x")
+    build_wall(x, y, z + length, length, height, material, "x")
     time.sleep(1)
-    build_wall(x + length, y, z + length, length, height, "z")
+    build_wall(x + length, y, z, length, height, material, "z")
     time.sleep(1)
 
-    tower_width = 10
-    tower_height = height * 2
+    tower_width = int(length /5)
+    if tower_width % 2 > 0:
+        tower_width = tower_width + 1
+
+    tower_height = int(height * 1.75)
     build_tower(x, y, z, tower_width, tower_height, material)
     time.sleep(1)
-    build_tower(x, y, z + length, tower_width, tower_height, material)
+    build_tower(x, y, z + length - tower_width, tower_width, tower_height, material)
     time.sleep(1)
-    build_tower(x + length, y, z, tower_width, tower_height, material)
+    build_tower(x + length - tower_width, y, z, tower_width, tower_height, material)
     time.sleep(1)
-    build_tower(x + length, y, z + length, tower_width, tower_height, material)
+    build_tower(x + length - tower_width, y, z + length - tower_width, tower_width, tower_height, material)
 
 def create_moat(x, y, z, width, depth, island):
-    world.setBlocks(x - width, y - depth, z - width, x + width, y - 1, z + width, block.WATER)
+    world.setBlocks(x - width, y - depth, z - width, x + island + width, y, z + island + width, block.WATER)
     world.setBlock(x, y - depth, z, x + island, y, z + island, block.GRASS)
 
 world = minecraft.Minecraft.create()
 
+x = z = 10
+y = 0
 
-clear_area(0, 0, 0, 100, 20)
+moat_width = 3
+moat_depth = 5
 
-x = y = z = 0
-moat_width = 2
-moat_depth = 3
 island_size = 60
-castle_size = 50
+castle_size = island_size - 2
 wall_height = 10
 
 create_moat(x, y, z, moat_width, moat_depth, island_size)
-
-build_castle(x + 5, y, z + 5, castle_size, wall_height, block.STONE)
+build_castle(x + 1, y, z + 1, castle_size, wall_height, block.STONE)
 
 
