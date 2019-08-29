@@ -5,6 +5,7 @@ import math
 
 def clear_area(x, y, z, width, height):
     world.setBlocks(x - width, y - height, z - width, x + width, y + height, z + width, block.AIR)
+    world.setBlocks(x - width, y - 1, z - width, x + width, y, z + width, block.GRASS)
 
 
 def build_tower(x, y, z, width, height, material):
@@ -64,8 +65,8 @@ def build_castle(x, y, z, length, height, material):
     build_tower(x + length, y, z + length, tower_width, tower_height, material)
 
 def create_moat(x, y, z, width, depth, island):
-    world.setBlocks(x - width, y - depth, z - width, x + width, y, z + width, block.WATER)
-    world.setBlock(x, y, z, x + island, y, z + island, block.GRASS)
+    world.setBlocks(x - width, y - depth, z - width, x + width, y - 1, z + width, block.WATER)
+    world.setBlock(x, y - depth, z, x + island, y, z + island, block.GRASS)
 
 world = minecraft.Minecraft.create()
 
