@@ -70,9 +70,18 @@ def create_moat(x, y, z, width, depth, island):
 
 world = minecraft.Minecraft.create()
 
+
 clear_area(0, 0, 0, 100, 20)
-# create a moat using block.WATER ?
-create_moat(0, 0, 0, 2, 3, 60)
-build_castle(0, 0, 0, 50, 10, block.STONE)
+
+x = y = z = 0
+moat_width = 2
+moat_depth = 3
+island_size = 60
+castle_size = 50
+wall_height = 10
+
+create_moat(x, y, z, moat_width, moat_depth, island_size)
+
+build_castle(x + 5, y, z + 5, castle_size, wall_height, block.STONE)
 
 
