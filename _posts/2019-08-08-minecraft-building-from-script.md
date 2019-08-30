@@ -2,7 +2,8 @@
 layout: post
 title: Minecraft Building from Script
 published: true
-categories: [code]
+categories: [code, minecraft]
+hero: minecraft 
 ---
 
 We are running an intro to programming event in a few weeks and wanted to demo some building stuff with Minecraft on the raspberry pi

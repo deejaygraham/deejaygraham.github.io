@@ -2,7 +2,8 @@
 layout: post
 title: Minecraft Building Miscellanea
 published: true
-categories: [code]
+categories: [code, minecraft]
+hero: minecraft 
 ---
 
 We're doing some more computer science workshops demonstrating building stuff in minecraft on the Raspberry Pi. Here are
