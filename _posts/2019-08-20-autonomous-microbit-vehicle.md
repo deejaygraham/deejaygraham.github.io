@@ -34,3 +34,14 @@ mode and watch while it "feels" its way around any sort of track we can devise.
 {% include code/python/microbit/bitbot-linesensor-2.py %}
 
 ```
+
+### Demo
+
+Here is the finished vehicle running around a test track at one of our work open days.
+
+![starting off](/img/posts/autonomous-microbit-vehicle/autonomous-1.png)
+
+![running round the track](/img/posts/autonomous-microbit-vehicle/autonomous-1.png)
+
+Occasionally the vehicle would leave the track (I think the reflectivity of the sellotape holding the tiles together was to blame) and meander away, reading the colours of the floor tiles
+and the varying surfaces under its wheels until it was eventually rescued.
