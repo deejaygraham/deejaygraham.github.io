@@ -5,4 +5,4 @@ published: true
 categories: [signs]
 ---
 
-![lambs oot](/img/posts/respect-the-land-yo/respect-the-land-yo.png)
+![respect the land](/img/posts/respect-the-land-yo/respect-the-land-yo.png)
