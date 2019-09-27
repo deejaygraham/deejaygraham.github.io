@@ -59,3 +59,17 @@ We can add this code into the [BitBot class]({% link _posts/2019-05-16-microbit-
 {% include code/python/microbit/bitbot-neopixels-5.py %}
 
 ```
+
+### Rainbows
+
+For reference, since the LEDs are all RGB programmable, we can set each one to a different colour of the rainbow.
+
+| Colour | RGB          |
+| ------ | ------------ |
+| Red    | 255, 0, 0    |
+| Orange | 255, 127, 0  |
+| Yellow | 255, 255, 0  |
+| Green  | 0, 255, 0    |
+| Blue   | 0, 0, 255    |
+| Indigo | 75, 0, 130   |
+| Violet | 148, 90, 211 |
