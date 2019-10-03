@@ -2,13 +2,13 @@
 name: "invalid argument"
 description: "a triumph of style over substance"
 author: d.j.graham
-repository: 'deejaygraham/deejaygraham.github.io'
+repository: "deejaygraham/deejaygraham.github.io"
 
 # options
 permalink: /:year/:month/:day/:title/
 paginate: 12
-exclude: [ make.cmd, build.sh, buildsite.msbuild, post.rb ]
-syntax-theme: zenburn
+exclude: [make.cmd, build.sh, buildsite.msbuild, post.rb]
+syntax-theme: prism-atom-dark
 
 # collections
 collections:
@@ -16,8 +16,7 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: category
     values:
