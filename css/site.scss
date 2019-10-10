@@ -89,7 +89,8 @@ $dj-default-padding: 1em;
     text-align: center;
     width: 100%;
     display: inline-block;
-    color: #ddd;
+	color: #ddd;
+	border-radius:6px;
 }
 
 .post-summary {
@@ -174,6 +175,8 @@ background-color: #ffd64a;
 .cat-refactoring {
 }
 .cat-ruby {
+color: #ffff;
+background-color: #cd2f10;
 }
 .cat-signs {
 }
