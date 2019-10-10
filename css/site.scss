@@ -82,6 +82,26 @@ $dj-default-padding: 1em;
 		}
 	}
 }
+
+.tile-icon {
+
+	align-content: center;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    color: #ddd;
+}
+
+.post-summary > .title {
+
+	// smaller title,
+	// smaller date 
+	// less obvious tags
+	h1 {
+		font-size: 1rem;
+	}
+}
+
 .footer {
 	.nav-item {
 		padding: 0 1em;
