@@ -92,15 +92,15 @@ $dj-default-padding: 1em;
     color: #ddd;
 }
 
-.post-summary > h1.title {
+.post-summary {
 
-	// smaller title,
-	// smaller date 
-	// less obvious tags
-	h1 {
-		font-size: 1rem;
+	.title {
+		// smaller title,
+		// smaller date 
+		// less obvious tags
+			font-size: 1rem;
 	}
-}
+} 
 
 .footer {
 	.nav-item {
