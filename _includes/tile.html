@@ -15,6 +15,8 @@
     {% if include.categories %}
         {% assign firstCategory = include.categories | first %}
 
+        {% assign icon = "fa-{{ firstCategory }}" %}
+
         {% if firstCategory == "agile" %}
             {% assign icon = "fa-coffee" %}
         {% elsif firstCategory == "books" %}
@@ -23,12 +25,8 @@
             {% assign icon = "fa-building" %}
         {% elsif firstCategory == "ci" %}
             {% assign icon = "fa-circle" %}
-        {% elsif firstCategory == "cloud" %}
-            {% assign icon = "fa-cloud" %}
-        {% elsif firstCategory == "code" %}
-            {% assign icon = "fa-file-code" %}
         {% elsif firstCategory == "csharp" %}
-            {% assign icon = "fa-file-code" %}
+            {% assign icon = "fa-code" %}
         {% elsif firstCategory == "deliberate-practice" %}
             {% assign icon = "fa-hand-peace" %}
         {% elsif firstCategory == "gtd" %}
@@ -36,7 +34,7 @@
         {% elsif firstCategory == "illustration" %}
             {% assign icon = "fa-edit" %}
         {% elsif firstCategory == "kata" %}
-            {% assign icon = "fa-" %}
+            {% assign icon = "fa-code" %}
         {% elsif firstCategory == "lean" %}
             {% assign icon = "fa-leaf" %}
         {% elsif firstCategory == "linux" %}
@@ -66,13 +64,13 @@
         {% elsif firstCategory == "presentations" %}
             {% assign icon = "fa-gift" %}
         {% elsif firstCategory == "python" %}
-            {% assign icon = "fa-file-code" %}
+            {% assign icon = "fa-code" %}
         {% elsif firstCategory == "quote" %}
             {% assign icon = "fa-quote-left" %}
         {% elsif firstCategory == "raspberry-pi" %}
             {% assign icon = "fa-microchip" %}
         {% elsif firstCategory == "refactoring" %}
-            {% assign icon = "fa-file-code" %}
+            {% assign icon = "fa-code" %}
         {% elsif firstCategory == "ruby" %}
             {% assign icon = "fa-diamond" %}
         {% elsif firstCategory == "signs" %}
