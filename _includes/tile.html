@@ -1,7 +1,6 @@
 <!-- tile.html -->
-<a href="{{ include.url }}">
 <header>
-	<h1 class="title">{{ include.title }}</h1>
+	<h1 class="title"><a href="{{ include.url }}">{{ include.title }}</a></h1>
 	{% if include.subtitle %}<h2 class="subtitle">{{ include.subtitle }}</h2>{% endif %}
 	<div id="post-meta" class="post-meta">
 	{% if include.date %}<span>{{ include.date | date_to_long_string }}</span>{% endif %}
@@ -33,8 +32,7 @@
         sketchnotes
 
         -->
-    <i class="tile-icon fas {{ icon }} fa-10x"></i>
+        <a href="{{ include.url }}"><i class="tile-icon fas {{ icon }} fa-10x"></i></a>
 
 {% endif %}
-</a>
 <!-- tile.html -->
