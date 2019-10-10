@@ -13,8 +13,7 @@ layout: index
 
 	<div class="tile is-parent">
 		<article class="tile is-child box post-summary" id="{{ post.id }}"> <!-- box {{ box_count }} -->
-{% include article-header.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories %}
-{% include article-excerpt.html excerpt=post.excerpt url=post.url %}
+{% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt %}
 		</article>
 	</div>
 
