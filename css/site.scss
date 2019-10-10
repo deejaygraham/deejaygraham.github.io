@@ -112,7 +112,7 @@ $dj-default-padding: 1em;
 
 // categories
 
-agile {
+.cat-agile {
 }
 .cat-books {
 }
@@ -129,7 +129,9 @@ agile {
 .cat-deliberate-practice {
 }
 .cat-gtd {
-}
+	color: #e45300;
+	background-color: #c0c0c0;
+	}
 .cat-illustration {
 }
 .cat-kata {
