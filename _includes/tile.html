@@ -7,32 +7,88 @@
 	{% if include.categories %} | <span>{% include post-tags.html tags=include.categories %}</span>{% endif %}
 	</div>
 </header>
-{% if include.categories %}
-    {% assign firstCategory = include.categories | first %}
-    {% assign icon = "fa-terminal" %}
+{% assign icon = "fa-terminal" %}
 
-    <!-- 
-        fa-terminal
-        barcode
-        bug
-        browser
-        code-branch
-        coffee
-        file-code
-        laptop-code
-        keyboard
-        pencil-ruler
-        pencil-alt
-        pen-nib
-        pen-alt
+{% if include.icon %}
+    {% assign icon = {{ include.icon }} %}
+{% else %}
+    {% if include.categories %}
+        {% assign firstCategory = include.categories | first %}
 
-        code 
-        signs
-        presentations
-        sketchnotes
-
-        -->
-        <a href="{{ include.url }}"><i class="tile-icon fas {{ icon }} fa-10x"></i></a>
-
+        {% if firstCategory == "agile" %}
+            {% assign icon = "fa-coffee" %}
+        {% elsif firstCategory == "books" %}
+            {% assign icon = "fa-book" %}
+        {% elsif firstCategory == "build" %}
+            {% assign icon = "fa-building-o" %}
+        {% elsif firstCategory == "ci" %}
+            {% assign icon = "fa-circle-o" %}
+        {% elsif firstCategory == "cloud" %}
+            {% assign icon = "fa-cloud" %}
+        {% elsif firstCategory == "code" %}
+            {% assign icon = "fa-file-code-o" %}
+        {% elsif firstCategory == "csharp" %}
+            {% assign icon = "fa-file-code-o" %}
+        {% elsif firstCategory == "deliberate-practice" %}
+            {% assign icon = "fa-hand-peace-o" %}
+        {% elsif firstCategory == "gtd" %}
+            {% assign icon = "fa-check" %}
+        {% elsif firstCategory == "illustration" %}
+            {% assign icon = "fa-pencil-square-o" %}
+        {% elsif firstCategory == "kata" %}
+            {% assign icon = "fa-" %}
+        {% elsif firstCategory == "lean" %}
+            {% assign icon = "fa-leaf" %}
+        {% elsif firstCategory == "linux" %}
+            {% assign icon = "fa-desktop" %}
+        {% elsif firstCategory == "mac-os" %}
+            {% assign icon = "fa-desktop" %}
+        {% elsif firstCategory == "management" %}
+            {% assign icon = "fa-handshake-o" %}
+        {% elsif firstCategory == "meta" %}
+            {% assign icon = "fa-info-circle" %}
+        {% elsif firstCategory == "microbit" %}
+            {% assign icon = "fa-microchip" %}
+        {% elsif firstCategory == "minecraft" %}
+            {% assign icon = "fa-th" %}
+        {% elsif firstCategory == "msbuild" %}
+            {% assign icon = "fa-building-o" %}
+        {% elsif firstCategory == "music" %}
+            {% assign icon = "fa-music" %}
+        {% elsif firstCategory == "naming" %}
+            {% assign icon = "fa-id-badge" %}
+        {% elsif firstCategory == "oo" %}
+            {% assign icon = "fa-object-group" %}
+        {% elsif firstCategory == "open-source" %}
+            {% assign icon = "fa-code-fork" %}
+        {% elsif firstCategory == "powershell" %}
+            {% assign icon = "fa-terminal" %}
+        {% elsif firstCategory == "presentations" %}
+            {% assign icon = "fa-gift" %}
+        {% elsif firstCategory == "python" %}
+            {% assign icon = "fa-file-code-o" %}
+        {% elsif firstCategory == "quote" %}
+            {% assign icon = "fa-quote-left" %}
+        {% elsif firstCategory == "raspberry-pi" %}
+            {% assign icon = "fa-microchip" %}
+        {% elsif firstCategory == "refactoring" %}
+            {% assign icon = "fa-file-code-o" %}
+        {% elsif firstCategory == "ruby" %}
+            {% assign icon = "fa-diamond" %}
+        {% elsif firstCategory == "signs" %}
+            {% assign icon = "fa-map-signs" %}
+        {% elsif firstCategory == "sketchnotes" %}
+            {% assign icon = "fa-pencil-square-o" %}
+        {% elsif firstCategory == "tdd" %}
+            {% assign icon = "fa-comment-o" %}
+        {% elsif firstCategory == "tfs" %}
+            {% assign icon = "fa-code-fork" %}
+        {% elsif firstCategory == "video" %}
+            {% assign icon = "fa-file-video-o" %}
+        {% elsif firstCategory == "xp" %}
+            {% assign icon = "fa-tasks" %}
+        {% endif %}    
+    {% endif %}    
 {% endif %}
+<a href="{{ include.url }}"><i class="tile-icon fas {{ icon }} fa-10x"></i></a>
 <!-- tile.html -->
