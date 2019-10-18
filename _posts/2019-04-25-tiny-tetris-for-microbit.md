@@ -5,7 +5,8 @@ categories: [ code, microbit ]
 published: true
 hero: microbit
 tweetable: true
-thumbnail: posts/tiny-tetris-for-microbit/tetris.png
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Tetris is one of those addictive games that seems to have been ported to nearly 

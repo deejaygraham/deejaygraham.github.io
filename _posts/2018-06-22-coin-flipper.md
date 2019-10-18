@@ -4,6 +4,8 @@ title: Microbit coin flipper
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Running up to a new Maker's week at the end of July, I was getting a bit bored

@@ -4,6 +4,8 @@ title: Debugging Microbit Sensors
 published: true
 categories: [microbit]
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 The <a href="https://codewith.mu/">mu editor</a> is really coming along nicely with some great

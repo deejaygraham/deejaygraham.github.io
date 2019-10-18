@@ -4,6 +4,8 @@ title: Microbit Turtles
 published: true
 categories: [code, microbit]
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 <a href="https://en.wikipedia.org/wiki/Turtle_graphics">Turtle</a> graphics are a time-honoured way to teach algorithmic thinking and are supported in <a href="https://docs.python.org/3.7/library/turtle.html">regular</a> <a href="https://python.camden.rutgers.edu/python_resources/python3_book/hello_little_turtles.html">python</a>.

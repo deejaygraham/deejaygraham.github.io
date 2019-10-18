@@ -4,6 +4,8 @@ title: Microbit Dinosaur Detector
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 It's been a while since I posted a microbit sample so here's one that would work well on the set of Jurassic Park, a dinosaur detector. 

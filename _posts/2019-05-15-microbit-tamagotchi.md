@@ -4,6 +4,8 @@ title: Microbotchi
 published: true
 categories: [ code, microbit ]
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 I'm teaching another course of 'Coding for Absolute Beginners' using the BBC microbit and python to explain 

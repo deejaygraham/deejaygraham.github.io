@@ -4,6 +4,8 @@ title: Portal Theme on Microbit
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 One feature of the microbit I haven't explored too much in the past was the

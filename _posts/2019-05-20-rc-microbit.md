@@ -4,6 +4,8 @@ title: Remote Control Microbit
 published: true
 categories: [code, microbit]
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Building on the Motor and BitBot classes, I decided to build a remote control for the bitbot so I can drive it

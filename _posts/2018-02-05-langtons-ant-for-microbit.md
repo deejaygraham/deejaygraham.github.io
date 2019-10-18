@@ -4,6 +4,8 @@ title: Langton's Ant
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Another example of cellular automata that I've only just discovered is <a href="https://en.wikipedia.org/wiki/Langton's_ant">Langton's Ant</a>. 

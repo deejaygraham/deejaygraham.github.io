@@ -4,6 +4,8 @@ title: microbit Blinkenlights
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 A tiny snippet of code often used when the microbit is not showing anything

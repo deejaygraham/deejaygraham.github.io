@@ -4,6 +4,8 @@ title: Microbit Beacons
 published: true
 categories: [ code, microbit ]
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Radio on the microbit is one of it's best features for interactivity between learners. Here I'll show a couple of examples of 

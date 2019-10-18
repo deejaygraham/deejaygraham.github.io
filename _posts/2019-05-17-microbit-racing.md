@@ -4,6 +4,8 @@ title: Microbit Racing
 published: true
 categories: [ code, microbit ]
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Racing fleas is a fun pastime, especially when those fleas are actually microbit pixels and no harm is done to 

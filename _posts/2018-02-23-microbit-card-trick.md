@@ -4,6 +4,8 @@ title: Microbit Mentalism
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 I was due to give a talk to some educators about using the BBC microbit in the computer science syllabus and was having a hard time coming up with a demonstration of the capabilities of the device, something that was short, memorable and showed off the full range of what it could do. Finally, I hit on the idea of a magic trick, it didn't need to be hugely convincing but it seemed that a form of mentalism might be what was needed.
