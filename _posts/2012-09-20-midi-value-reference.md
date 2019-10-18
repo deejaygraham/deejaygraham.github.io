@@ -11,7 +11,7 @@ guitar or ukulele.
 
 I should know them off by heart by now.
 
-### Guitar
+## Guitar
 
 <table class="table">
 <caption>Standard Tuning</caption>
@@ -24,7 +24,7 @@ I should know them off by heart by now.
 <tr><td>1</td><td>E</td><td>E5</td><td>64</td></tr>
 </table>
 
-### Ukulele
+## Ukulele
 
 <table class="table">
 <caption>Standard Tuning</caption>
