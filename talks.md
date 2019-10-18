@@ -28,6 +28,9 @@ title: talks
 			</a>		
 		</div>
 	</div>
+</div>
+
+<div class="tile is-ancestor">
 	<div class="tile is-parent">
 		<div class="tile is-child box">
 			<a href="https://www.slideshare.net/deejaygraham/how-do-i-unix" target="_blank">
