@@ -13,7 +13,7 @@ layout: index
 <div class="tile is-ancestor">
     <div class="tile is-parent">
         <article class="tile is-child box post-summary" id="{{ post.id }}">
-            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt image=post.image %}
+            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt thumbnail=post.thumbnail alttext=post.alttext %}
         </article>
     </div>
 </div>
@@ -29,7 +29,7 @@ layout: index
     <div class="tile is-parent">
         <article class="tile is-child box post-summary" id="{{ post.id }}">
             <!-- box {{ box_count }} -->
-            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt image=post.image %}
+            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt thumbnail=post.thumbnail alttext=post.alttext %}
         </article>
     </div>
 
@@ -59,7 +59,7 @@ layout: index
     <div class="tile is-parent">
         <article class="tile is-child box post-summary" id="{{ post.id }}">
             <!-- box {{ box_count }} -->
-            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt image=post.image %}
+            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt thumbnail=post.thumbnail alttext=post.alttext %}
         </article>
     </div>
 
