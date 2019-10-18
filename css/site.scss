@@ -70,6 +70,12 @@ $dj-default-padding: 1em;
 	margin: inherit;
 }
 
+.tag:not(body) {
+
+    padding-left:0;
+    padding-right: 0;
+}
+
 .content {
 	margin-top: 1.5rem;
 }
