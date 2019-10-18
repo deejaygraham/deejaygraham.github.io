@@ -4,6 +4,8 @@ title: Balancing Ball - Writing a Game for the BBC Micro:bit
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 After getting a little more familiar with the <a href="http://www.microbit.co.uk/">BBC Micro:bit</a> I decided

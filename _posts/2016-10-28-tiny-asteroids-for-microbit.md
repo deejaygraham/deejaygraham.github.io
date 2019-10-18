@@ -4,6 +4,8 @@ title: Tiny Asteroids for Microbit
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Asteroids is a game I used to love to play on the old Atari 2600 console.

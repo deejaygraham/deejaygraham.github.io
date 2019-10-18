@@ -4,6 +4,8 @@ title: Blinking C++
 published: true
 categories: [ code, microbit ]
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 Following hard on the heels of the last post, I decided to try to implement one of the

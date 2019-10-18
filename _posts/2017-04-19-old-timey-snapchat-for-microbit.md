@@ -4,6 +4,8 @@ title: Old-Timey Snapchat for the Microbit
 categories: [ code, microbit ]
 published: true
 hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
 ---
 
 As a I mentioned in my other post from today about the microbit radio API, teaching the maker class gave me some new 
