@@ -4,7 +4,8 @@ title: Minecraft PortKey
 categories: [ minecraft, code ]
 published: true
 hero: minecraft 
-
+thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+alttext: raspberry pi
 ---
 
 What's programming without an occasional Harry Potter/Minecraft mashup? In the Harry Potter universe, a 

@@ -4,7 +4,8 @@ title: It's Raining Blocks
 categories: [ code, minecraft ]
 published: true
 hero: minecraft 
-
+thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+alttext: raspberry pi
 ---
 
 A super simple rain simulator creates blocks at random positions in the sky and lets them fall to the ground under minecraft physics.

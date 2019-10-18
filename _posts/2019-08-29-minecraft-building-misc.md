@@ -4,6 +4,8 @@ title: Minecraft Building Miscellanea
 published: true
 categories: [code, minecraft]
 hero: minecraft 
+thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+alttext: raspberry pi
 ---
 
 We're doing some more computer science workshops demonstrating building stuff in minecraft on the Raspberry Pi. Here are

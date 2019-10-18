@@ -4,7 +4,8 @@ title: Minecraft Detectorists
 categories: [ code, minecraft ]
 published: true
 hero: minecraft 
-
+thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+alttext: raspberry pi
 ---
 
 Another simple minecraft game, this time using Pythagoras' theorem to work out distances between two points.

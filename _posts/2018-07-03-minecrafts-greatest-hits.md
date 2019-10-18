@@ -4,7 +4,8 @@ title: Minecraft's Greatest Hits
 categories: [ minecraft, code ]
 published: true
 hero: minecraft 
-
+thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+alttext: raspberry pi
 ---
 
 The Raspberry Pi Minecraft API has a little known function for reporting which blocks "Steve" has hit/mined 

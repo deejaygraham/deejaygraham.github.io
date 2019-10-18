@@ -4,7 +4,8 @@ title: Minecraft Pi for Millionaires
 categories: [ code, minecraft ]
 published: true
 hero: minecraft 
-
+thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+alttext: raspberry pi
 ---
 
 If you were a millionaire, living in a minecraft-kind-of-world, I'm sure you would want to have an enormously ostentatious fish tank for your block-shaped
