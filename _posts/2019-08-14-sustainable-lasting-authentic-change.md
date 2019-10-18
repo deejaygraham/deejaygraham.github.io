@@ -3,7 +3,8 @@ layout: sketchnote
 title: Sustainable, Lasting, Authentic Change
 categories: [sketchnotes, presentations]
 tweetable: true
-thumbnail: "/img/posts/sustainable-lasting-authentic-change/sustainable-lasting-authentic-change.png"
+thumbnail: "/img/posts/sustainable-lasting-authentic-change/john-420x255.png"
+alttext: john le drew talking
 sketchnote:
   url: "/img/posts/sustainable-lasting-authentic-change/sustainable-lasting-authentic-change.png"
   alt: "sketchnote"
