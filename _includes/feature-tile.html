@@ -1,5 +1,5 @@
 <!-- feature-tile.html -->
-<header>
+<header class="media">
 {% if include.thumbnail %}
     <div class="tile-thumbnail media-left"><a href="{{ include.url }}"><img src="{{ site.url }}/{{ include.thumbnail }}" alt="{{ include.alttext }}" /></a></div>
 {% endif %}
@@ -10,6 +10,7 @@
         <div id="post-meta" class="post-meta">
 {% if include.date %}<span>{{ include.date | date_to_long_string }}</span>{% endif %}
         </div>
+        <p>include.excerpt</p>
     </div>
 </header>
 <!-- feature-tile.html -->
