@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Common-Sense Guide to Data Structures and Algorithms
-published: false
+published: true
 categories: [books]
 ---
 
