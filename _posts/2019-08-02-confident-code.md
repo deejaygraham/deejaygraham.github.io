@@ -1,11 +1,13 @@
 ---
 layout: post
-title: What do you mean
+title: Confident Code
 published: true
 categories: [video, presentations]
+thumbnail: img/posts/confident-code/confident-code-420x255.png
+alttext: avdi grimm
 ---
 
-<a href="https://twitter.com/kevlinhenney">Kevlin Henney</a> from the 2019 ACCU conference, on language and meaning
-in software development and why you should never let a C++ developer help you park your car.
+<a href="https://twitter.com/avdi">Avid Grimm</a> from Ruby Midwest 2011, on developer joy, the squint test for timid code 
+and how to refactor to a more expressive, simpler and confident design.
 
-<iframe width="914" height="514" src="https://www.youtube.com/embed/ndnvOElnyUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1064" height="599" src="https://www.youtube.com/embed/T8J0j2xJFgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
