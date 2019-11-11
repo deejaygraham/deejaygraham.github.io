@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting variables in TFS builds
-categories: [ code ]
+categories: [ code, msbuild, tfs ]
 published: true
 ---
 
@@ -62,6 +62,16 @@ You can also do the same thing in a PowerShell task in Tfs using Write-Host rath
 ```powershell
 
 {% include code/powershell/Set-Variable.ps1 %}
+
+```
+
+
+Once we have created a variable, we can read it back in PowerShell as an environment variable.
+
+
+```powershell
+
+{% include code/powershell/Get-Variable.ps1 %}
 
 ```
 

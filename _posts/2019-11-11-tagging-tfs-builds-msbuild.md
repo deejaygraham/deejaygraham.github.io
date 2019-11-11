@@ -2,7 +2,7 @@
 layout: post
 title: Tagging TFS builds from MSBuild
 published: true
-categories: [ msbuild, code ]
+categories: [ msbuild, code, tfs ]
 ---
 
 Here's another integration between MsBuild and TFS that I didn't know you could do - add tags to a build.
