@@ -100,7 +100,9 @@ pre[class*="language-"] {
 
 .token.operator {
   color: #ededed;
+  background: #1d1f21;
 }
+
 
 .token.entity {
   color: #ffffb6;
