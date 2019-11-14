@@ -15,10 +15,14 @@ right order.
 
 Having used [Rhino Mocks](http://hibernatingrhinos.com/oss/rhino-mocks) 
 before I fell naturally into using the 
+	
 
-	
+```csharp	
+
 	MockRepository.GenerateMock<IMyInterface>() 
-	
+
+```
+
 	
 syntax.
 
@@ -29,10 +33,12 @@ is done, move on to the next stage). I thought this might mean a nasty bit of
 involved logic but I was surprised to find Rhino gives you this *Repeat* control 
 relatively easily.
 
-	
+
+```csharp	
+
 	var mockRepo = MockRepository.GenerateMock<IMyMultiStageInterface>();
 	
 	mockRepo.Expect(r => r.WorkHasBeenDone()).Return(false).Repeat.Once();
 	mockRepo.Expect(r => r.WorkHasBeenDone()).Return(true);
 		
-	
+```	
