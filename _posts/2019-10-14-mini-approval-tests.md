@@ -2,7 +2,7 @@
 layout: post
 title: Mini Approval Testing
 published: true
-categories: [ csharp, music, code ]
+categories: [ csharp, code, tdd ]
 thumbnail: img/posts/mini-approval-tests/mini-approval-tests-420x255.jpg
 alttext: mini-approval-tests
 ---
