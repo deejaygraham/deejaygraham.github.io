@@ -3,6 +3,8 @@ layout: post
 title: Mini Approval Testing
 published: true
 categories: [ csharp, music, code ]
+thumbnail: img/posts/mini-approval-tests/mini-approval-tests-420x255.jpg
+alttext: mini-approval-tests
 ---
 
 I always learn a lot from <a href="https://twitter.com/emilybache">Emily Bache</a> everytime I hear her speak or read her blog. 
