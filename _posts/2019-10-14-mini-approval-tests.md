@@ -93,7 +93,7 @@ all be wrapped up in a handy class called Approve so we can use it to approve an
 
 ```csharp
 
-{% include code/csharp/ApprovalTests-Assert.cs %}
+{% include code/csharp/ApprovalTests-Approve.cs %}
 
 ```
 I included an optional hint parameter to the Instance method so we can distinguish between difference scenarios for instances of the same type 
