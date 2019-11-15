@@ -1,8 +1,8 @@
-public class ObjectMetadata
+public class InstanceSnapshot
 {
-    // build an instance of metdata from another object's 
+    // build a snapshot of data from another object's 
     // public property values
-    public ObjectMetadata(object instance)
+    public InstanceSnapshot(object instance)
     {
         this.Name = instance.ToString();
         this.Values = new SortedDictionary<string, string>();

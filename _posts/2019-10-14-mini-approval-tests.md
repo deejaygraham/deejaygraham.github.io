@@ -30,7 +30,7 @@ NUnit framework we had built.
 
 ### Code 
 
-This is what that looks like. First we need a way to record all the values of all the fields in a form's page object. The name of the MetadataObject is 
+This is what that looks like. First we need a way to record all the values of all the fields in a form's page object. The name of the InstanceSnapshot is 
 the class name of the instance and the values are name-value pairs corresponding to the controls and the value of each one as provided by 
 reflecting on the page object's gettable properties. 
 
@@ -39,9 +39,9 @@ reflecting on the page object's gettable properties.
 {% include code/csharp/ApprovalTests-ObjectMetadata-1.cs %}
 
 ```
-We also need a way to persist the metadata so the ToString method gives us the simplest possible rendering. 
+We also need a way to persist the snapshot so the ToString method gives us the simplest possible rendering. 
 
-If we render to a file, we need to be able to reconstruct so I added another constructor to take a list of lines read from a file:
+Conversely, if we render to a file, we need to be able to reconstruct so I added another constructor to take a list of lines read from a file:
 
 ```csharp
 

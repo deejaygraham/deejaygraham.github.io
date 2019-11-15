@@ -1,4 +1,4 @@
-    public ObjectMetadata(IEnumerable<string> lines)
+    public InstanceSnapshot(IEnumerable<string> lines)
     {
         this.Name = lines.FirstOrDefault();
         this.Values = new SortedDictionary<string, string>();
