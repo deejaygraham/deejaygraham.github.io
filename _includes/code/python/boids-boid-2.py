@@ -18,6 +18,10 @@ class Boid(object):
     self.borders()
     self.render()
 
+  def applyForce(self, force):
+    # We could add mass here if we want A = F / M
+    self.acceleration.add(force)
+
   def flock(self, members):
     separation = self.separate(members) # Separation
     alignment = self.align(members)       # Alignment
@@ -27,9 +31,9 @@ class Boid(object):
     alignment.mult(1.0)
     chohesion.mult(1.0)
     # Add the force vectors to acceleration
-    applyForce(separation)
-    applyForce(alignment)
-    applyForce(chohesion)
+    self.applyForce(separation)
+    self.applyForce(alignment)
+    self.applyForce(chohesion)
 
   def update(self):
     # Update velocity
@@ -43,14 +47,13 @@ class Boid(object):
   # Ensure boids wrap around the edges of the screen
   def borders(self):
     pass
-# need screen width
+    # need screen width and height for this.
+    # if self.position.x < -self.r: self.position.x = width + self.r
+    # if self.position.y < -self.r: self.position.y = height + self.r
+    # if self.position.x > width + self.r: self.position.x = -self.r
+    # if self.position.y > height + self.r: self.position.y = -self.r 
 
- #   if self.position.x < -self.r: self.position.x = width + self.r
- #   if self.position.y < -self.r: self.position.y = height + self.r
-  ##  if self.position.x > width + self.r: self.position.x = -self.r
-   # if self.position.y > height + self.r: self.position.y = -self.r 
-
-  def render(sefl):
+  def render(self):
     # Draw a triangle rotated in the direction of velocity
     theta = self.velocity.heading2D() + radians(90)
     # heading2D() above is now heading() but leaving old syntax until Processing.js catches up
@@ -141,22 +144,22 @@ class Boid(object):
         sum.add(other.velocity)
         count += 1
 
-       if count > 0:      
-         sum.div(float(count))
+    if count > 0:      
+      sum.div(float(count))
       
-       # First two lines of code below could be condensed with new PVector setMag() method
-       # Not using this method until Processing.js catches up
-       # sum.setMag(maxspeed);
+      # First two lines of code below could be condensed with new PVector setMag() method
+      # Not using this method until Processing.js catches up
+      # sum.setMag(maxspeed);
 
-       # Implement Reynolds: Steering = Desired - Velocity
-         sum.normalize()
-         sum.mult(maxspeed)
-         steer = PVector.sub(sum, self.velocity)
-         steer.limit(self.maxforce)
+      # Implement Reynolds: Steering = Desired - Velocity
+      sum.normalize()
+      sum.mult(maxspeed)
+      steer = PVector.sub(sum, self.velocity)
+      steer.limit(self.maxforce)
             
-         return steer
+      return steer
       
-      return PVector(0, 0)
+    return PVector(0, 0)
 
     # Cohesion
     # For the average position (i.e. center) of all nearby boids, calculate steering vector towards that position
@@ -171,8 +174,8 @@ class Boid(object):
           sum.add(other.position); # Add position
           count += 1
         
-        if count > 0:
-          sum.div(count)
-          return self.seek(sum)  # Steer towards the position
+      if count > 0:
+        sum.div(count)
+        return self.seek(sum)  # Steer towards the position
 
       return PVector(0, 0)
