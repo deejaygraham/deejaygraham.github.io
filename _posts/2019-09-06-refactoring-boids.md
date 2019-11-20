@@ -79,3 +79,15 @@ I'm using the right mouse button to trigger a screenshot.
 
 ![initial flock](/img/posts/refactoring-boids/refactoring-boids-1.png)
 
+### Boids
+
+Now that we have something like a manageable split between the three concerns, game, flock and individual boid, it's time to look at the implementation 
+of the boid itself and the rules it uses to interact with the flock-mates. 
+
+Here's a pretty straight rewrite of the original code from Java to Python and by far the biggest bit of the rewrite before the actual refactor:
+
+```python
+
+{% include code/python/boids-boid-2.py %}
+
+```
