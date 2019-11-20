@@ -12,10 +12,10 @@ class Boid(object):
     self.maxspeed = 2
     self.maxforce = 0.03
     
-  def fly(self, members):
+  def fly(self, members, width, height):
     self.flock(members)
     self.update()
-    self.borders()
+    self.borders(width, height)
     self.render()
 
   def applyForce(self, force):
@@ -23,17 +23,17 @@ class Boid(object):
     self.acceleration.add(force)
 
   def flock(self, members):
-    separation = self.separate(members) # Separation
-    alignment = self.align(members)       # Alignment
-    chohesion = self.cohesion(members)    # Cohesion
+    separationForce = self.separate(members) # Separation
+    alignmentForce = self.align(members)       # Alignment
+    cohesiveForce = PVector(0,0) #self.cohesion(members)    # Cohesion
     # Arbitrarily weight these forces
-    separation.mult(1.5)
-    alignment.mult(1.0)
-    chohesion.mult(1.0)
+    separationForce.mult(1.5)
+    alignmentForce.mult(1.0)
+    cohesiveForce.mult(1.0)
     # Add the force vectors to acceleration
-    self.applyForce(separation)
-    self.applyForce(alignment)
-    self.applyForce(chohesion)
+    self.applyForce(separationForce)
+    self.applyForce(alignmentForce)
+    self.applyForce(cohesiveForce)
 
   def update(self):
     # Update velocity
@@ -45,13 +45,11 @@ class Boid(object):
     self.acceleration.mult(0)
 
   # Ensure boids wrap around the edges of the screen
-  def borders(self):
-    pass
-    # need screen width and height for this.
-    # if self.position.x < -self.r: self.position.x = width + self.r
-    # if self.position.y < -self.r: self.position.y = height + self.r
-    # if self.position.x > width + self.r: self.position.x = -self.r
-    # if self.position.y > height + self.r: self.position.y = -self.r 
+  def borders(self, width, height):
+    if self.position.x < -self.r: self.position.x = width + self.r
+    if self.position.y < -self.r: self.position.y = height + self.r
+    if self.position.x > width + self.r: self.position.x = -self.r
+    if self.position.y > height + self.r: self.position.y = -self.r 
 
   def render(self):
     # Draw a triangle rotated in the direction of velocity
@@ -94,7 +92,7 @@ class Boid(object):
 
   # Separation
   # Method checks for nearby boids and steers away
-  def separate (self, members):
+  def separate(self, members):
     desiredseparation = 25.0
     steer = PVector(0, 0, 0)
     
@@ -123,15 +121,15 @@ class Boid(object):
 
       # Implement Reynolds: Steering = Desired - Velocity
       steer.normalize()
-      steer.mult(maxspeed)
-      steer.sub(velocity)
-      steer.limit(maxforce)
+      steer.mult(self.maxspeed)
+      steer.sub(self.velocity)
+      steer.limit(self.maxforce)
 
     return steer
 
     # Alignment
     # For every nearby boid in the system, calculate the average velocity
-  def align (self, members):
+  def align(self, members):
     neighbordist = 50
     sum = PVector(0, 0)
     
@@ -153,7 +151,7 @@ class Boid(object):
 
       # Implement Reynolds: Steering = Desired - Velocity
       sum.normalize()
-      sum.mult(maxspeed)
+      sum.mult(self.maxspeed)
       steer = PVector.sub(sum, self.velocity)
       steer.limit(self.maxforce)
             
@@ -163,7 +161,7 @@ class Boid(object):
 
     # Cohesion
     # For the average position (i.e. center) of all nearby boids, calculate steering vector towards that position
-    def cohesion (self, members):
+    def cohesion(self, members):
       neighbordist = 50
       sum = PVector(0, 0)    # Start with empty vector to accumulate all positions
         

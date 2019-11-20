@@ -9,7 +9,7 @@ def setup():
 def draw():
   background(50)
   global flock
-  flock.fly()
+  flock.fly(width, height)
 
 def mousePressed():
   global flock
