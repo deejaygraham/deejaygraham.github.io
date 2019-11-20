@@ -91,3 +91,12 @@ Here's a pretty straight rewrite of the original code from Java to Python and by
 {% include code/python/boids-boid-2.py %}
 
 ```
+
+### Refactor
+
+So, what opportunities do we have to refactor (code and functionality)?
+
+- Lots of maths which is a bit difficult to understand
+- Hard coded creation policy
+- No flexibility in drawing
+- All boids behave in pretty much the same way. 
