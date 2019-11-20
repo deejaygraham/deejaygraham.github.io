@@ -98,6 +98,10 @@ Here's a pretty straight rewrite of the original code from Java to Python and by
 
 ```
 
+One consequence of splitting the code up into separate modules is not having access to width and height properties inside the flock or the boid class. We need those 
+values so we can implement the border behaviour where a boid flying off one side of the screen wraps around and flies in from the opposite side. 
+
+
 ### Refactor
 
 So, what opportunities do we have to refactor (code and functionality)?
