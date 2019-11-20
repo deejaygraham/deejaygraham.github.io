@@ -3,6 +3,8 @@ layout: post
 title: Refactoring Boids
 published: true
 categories: [code]
+thumbnail: img/posts/refactoring-boids/original-boids-420x255.png
+alttext: boids original
 ---
 
 <a href="https://processing.org/examples/flocking.html">Boids</a>, by <a href="https://shiffman.net/">Daniel Shiffman</a> is a <a href="https://processing.org/">Processing</a> example of the flocking algorithm developed by Craig Reynolds using simple rules for individual "boids" to simulate the behaviour seen 
@@ -11,6 +13,10 @@ in flocks of real birds.
 As a challenge from a colleague I wanted to see how I could refactor the code from a single file into smaller chunks so it's more readable and understandable.
 
 ### Original
+
+
+![original](/img/posts/refactoring-boids/original-boids.png)
+
 
 Here's the original code from the processing website:
 
