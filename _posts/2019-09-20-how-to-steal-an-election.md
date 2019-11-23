@@ -3,6 +3,8 @@ layout: post
 title: How to Steal an Election
 published: true
 categories: [video, presentations]
+thumbnail: img/posts/wiring-diagrams/screenshot-420x255.png
+alttext: how to steal an election
 ---
 
 A fun and scary black hat security talk by <a ref="https://twitter.com/garyshort">Gary Short</a> from NDC 2019.
