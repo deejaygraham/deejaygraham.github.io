@@ -5,6 +5,8 @@ attribution: S.I. Hayakawa
 comment: S.I. Hayakawa's book "Language in Thought and Action" is full of great quotes. Here's just one (fairly big one) that caught my eye. 
 categories: [ books, quote  ]
 published: true 
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Indeed, most of the time when we are listening to the noises people make 

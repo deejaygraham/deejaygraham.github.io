@@ -6,6 +6,8 @@ published: true
 attribution: Tony Benn
 publication:
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 I don't think people realise how the establishment became established. 

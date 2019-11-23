@@ -5,6 +5,8 @@ published: true
 categories: [ quote ]
 attribution: W. Edwards Deming
 size: large
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 It is not enough to do your best; you must know what to do, and then do your best.

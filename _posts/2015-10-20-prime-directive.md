@@ -6,6 +6,8 @@ publication: Project Retrospectives - A Handbook for Team Review
 published: true
 size: medium
 categories: [ agile, quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Regardless of what we discover, we understand and truly believe 

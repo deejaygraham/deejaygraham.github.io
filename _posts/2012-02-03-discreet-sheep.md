@@ -6,6 +6,8 @@ attribution: Mark Twain
 publication: 30 November 1835 – 21 April 1910
 size: medium
 categories: [ quote  ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 <p>We are discreet sheep; we wait to see how the drove is going, and then go with the drove. We have two opinions: one private, 

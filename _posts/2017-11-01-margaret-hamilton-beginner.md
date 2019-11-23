@@ -4,6 +4,8 @@ title: Margaret Hamilton, Beginner
 published: true
 categories: [ quote ]
 attribution: Margaret Hamilton
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 What they used to do when you came into this organization as a beginner,

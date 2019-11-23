@@ -6,6 +6,8 @@ publication: Overclocked
 comment: Variations on this quote keep turning up in Corys work including Walkaway 
 published: true
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 And then, as we tuned every screen in the house to the launch, I raised a glass and toasted Pug: 

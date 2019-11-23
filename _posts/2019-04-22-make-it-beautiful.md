@@ -6,6 +6,8 @@ published: true
 attribution: Joe Armstrong
 publication: 
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Make it work, then make it beautiful, then if you 

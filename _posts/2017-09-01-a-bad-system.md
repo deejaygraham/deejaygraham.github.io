@@ -3,6 +3,8 @@ layout: post
 title: A Bad System...
 published: true
 categories: [ agile, illustration  ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Another quote from Deming.

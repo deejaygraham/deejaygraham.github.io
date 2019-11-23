@@ -5,6 +5,8 @@ attribution: Tony Benn
 publication: (1925 - 2014)
 published: true
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 <ol>

@@ -6,6 +6,8 @@ published: true
 attribution: Eliel Saarinen
 publication:
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Always design a thing by considering it in its next larger context - a chair in a room, a 

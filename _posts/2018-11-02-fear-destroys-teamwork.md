@@ -5,6 +5,8 @@ published: true
 categories: [ agile, quote ]
 size: large
 attribution: <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6451">Amy C. Edmondson</a>
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Fear Destroys Teamwork! — fear of not being included, fear of appearing ignorant, fear of being ignored, 

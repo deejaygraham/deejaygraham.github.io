@@ -5,6 +5,8 @@ attribution: Shoma Morita
 published: true 
 size: medium
 categories: [  quote  ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Begin taking action now, while being neurotic or imperfect or a 

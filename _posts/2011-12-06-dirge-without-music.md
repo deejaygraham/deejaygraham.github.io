@@ -6,6 +6,8 @@ attribution: Edna St Vincent Millay (1892 – 1950)
 publication: 
 published: true
 categories: [ quote, music ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 I am not resigned to the shutting away of loving hearts in the hard ground

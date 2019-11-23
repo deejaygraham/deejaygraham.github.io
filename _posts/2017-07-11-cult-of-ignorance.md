@@ -4,6 +4,8 @@ title: Cult of Ignorance
 published: true
 categories: [ agile, quote ]
 attribution: Isaac Asimov
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 There is a cult of ignorance in the United States, and there always has been. The strain of 

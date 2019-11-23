@@ -5,6 +5,8 @@ published: true
 attribution: Jean Bartik
 publication: Interview with Computer History Museum
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Betty Snyder and I, from the beginning, were a pair. And I think... I don't know if any of you 

@@ -4,6 +4,8 @@ title: Elizabeth Warren, Hero
 published: true
 categories: [ quote ]
 attribution: Elizabeth Warren
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 There is nobody in this country who got rich on his own. Nobody.

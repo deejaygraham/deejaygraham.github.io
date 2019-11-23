@@ -5,6 +5,8 @@ attribution: Allen Holub
 publication: via Twitter
 published: true
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 The essence of agility is NOT speed. It's value, the goal is to put high-quality, valuable 

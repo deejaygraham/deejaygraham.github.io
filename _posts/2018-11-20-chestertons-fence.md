@@ -6,6 +6,8 @@ published: true
 attribution: G K Chesterton
 publication: The Thing 1929
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 In the matter of reforming things, as distinct from deforming them, there is one plain and 

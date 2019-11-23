@@ -6,6 +6,8 @@ published: true
 attribution: Fred Rogers
 publication: 
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 When I was a boy and I would see scary things in the news, my mother would 

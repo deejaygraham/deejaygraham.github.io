@@ -5,6 +5,8 @@ attribution: Alexandria Ocasio-Cortez
 publication: Interview with The Verge
 published: true
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 We should be excited about automation, because what it could potentially mean is more time 

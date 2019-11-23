@@ -6,6 +6,8 @@ published: true
 attribution: Kristen Butler
 publication:
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Sometimes people don't need help or advice. They may just need 

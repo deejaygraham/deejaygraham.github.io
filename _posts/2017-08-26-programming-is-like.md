@@ -5,6 +5,8 @@ published: true
 categories: [ quote ]
 attribution: anon
 size: large
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Programming is like writing a book...

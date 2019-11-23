@@ -5,6 +5,8 @@ published: true
 categories: [ agile, quote ]
 size: large
 attribution: Jamie Lee Curtis
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Be where your feet are, not where your head is.

@@ -5,6 +5,8 @@ published: true
 categories: [ agile, quote ]
 attribution: W. Edwards Deming
 publication: The New Economics
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 If economists understood the theory of a system, the role of cooperation in optimization, they would no longer teach and 

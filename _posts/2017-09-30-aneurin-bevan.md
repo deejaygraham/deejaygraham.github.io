@@ -5,6 +5,8 @@ published: true
 categories: [ quote ]
 attribution: Aneurin Bevan
 size: large
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Illness is neither an indulgence for which people have to pay, 

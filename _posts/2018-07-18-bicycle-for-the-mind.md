@@ -5,6 +5,8 @@ attribution: Steve Jobs
 published: true
 categories: [ quote ]
 size: medium
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 I think one of the things that really separates us from the high primates is that we’re tool builders. I read 

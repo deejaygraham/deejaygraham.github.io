@@ -6,6 +6,8 @@ publication: King Lear, Act 1, Scene 2
 size: medium
 published: true 
 categories: [  quote  ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 This is the excellent foppery of the world, that, when we are sick in fortune, –often the surfeit of our own behavior,–we make 

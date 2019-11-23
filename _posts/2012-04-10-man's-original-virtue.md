@@ -5,6 +5,8 @@ published: true
 categories: [ quote  ]
 size: medium
 attribution: Robert Anton Wilson
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 Every fact of science was once damned. Every invention was considered impossible. Every discovery was a nervous shock 

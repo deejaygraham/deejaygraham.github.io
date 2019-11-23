@@ -5,6 +5,8 @@ attribution: Jason Read
 size: medium
 published: true
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 People who dismiss the unemployed and dependent as "parasites" fail to 

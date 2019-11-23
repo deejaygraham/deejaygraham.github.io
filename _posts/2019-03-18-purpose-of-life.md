@@ -6,6 +6,8 @@ published: true
 attribution: Ralph Waldo Emerson
 publication: 
 categories: [ quote ]
+thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+alttext: quote
 ---
 
 The purpose of life is not to be happy. It is to be useful, to be 
