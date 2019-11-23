@@ -3,7 +3,7 @@ layout: post
 title: How to Steal an Election
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/wiring-diagrams/screenshot-420x255.png
+thumbnail: img/posts/how-to-steal-an-election/screenshot-420x255.png
 alttext: how to steal an election
 ---
 
