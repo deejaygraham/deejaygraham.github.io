@@ -11,11 +11,21 @@ The <a href="https://en.wikipedia.org/wiki/Knapsack_problem">knapsack problem</a
 was thinking about how best to "defrag" a set of objects that are added and removed over time with the overall 
 effect that one day the objects are scattered throughout an area when they could be rearranged to 
 <a href="https://en.wikipedia.org/wiki/Packing_problems#Packing_squares"> fit</a> into a 
-<a href="https://en.wikipedia.org/wiki/Bin_packing_problem">">smaller area and save cost</a>.
+<a href="https://en.wikipedia.org/wiki/Bin_packing_problem">smaller area and save cost</a>.
+
+### Box
 
 ~~~csharp
 
 {% include code/csharp/Knapsack-Box.cs %}
+
+~~~
+
+### Bin
+
+~~~csharp
+
+{% include code/csharp/Knapsack-Bin.cs %}
 
 ~~~
 
@@ -37,7 +47,7 @@ For our purposes, I have set each container or bin to have a fixed size. Each bo
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-Bin.cs %}
+{% include code/csharp/Knapsack-Setup.cs %}
 
 ~~~
 
@@ -77,6 +87,8 @@ of fit and create new bins as appropriate.
 {% include code/csharp/Knapsack-GreedyAllocation.cs %}
 
 ~~~
+
+### Results
 
 After running the algorithm, the stats say that we save about 25-30% of bins and have wastage of zero or one bins and 
 typically in single figures for wastage of free space units across all the bins.  
