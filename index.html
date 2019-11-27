@@ -81,10 +81,16 @@ layout: index
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
-<div>
-<nav class="pagination" role="navigation" aria-label="pagination">
-  {% if paginator.next_page %}<a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older posts</a>{% endif %}
-  {% if paginator.previous_page %}<a class="pagination-previous" title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts</a>{% endif %}
+<nav class="pagination level" role="navigation" aria-label="pagination">
+    <div class="level-left">
+        <div class="level-item">
+{% if paginator.next_page %}<a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older posts</a>{% endif %}
+        </div>
+    </div>
+    <div class="level-right">
+        <div class="level-item">
+{% if paginator.previous_page %}<a class="pagination-previous" title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts</a>{% endif %}
+        </div>
+    </div>
 </nav>
-</div>
 {% endif %}
