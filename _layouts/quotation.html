@@ -19,17 +19,16 @@
 			{% include article-header.html title=page.title subtitle=page.subtitle date=page.date categories=page.categories %}
 			<div class="content">
 {% if page.comment %}<p class="has-vertical-spacing">{{ page.comment }}</p>{% endif %}
-				<div class="box {{ quotesize }}">
-					<blockquote>
-					{{ content }}
-					</blockquote>
-					<div class="has-text-right has-text-grey">
+				<div class="card {{ quotesize }}">
+                    <div class="card-content">
+					    <p class="title">{{ content }}</p>
+					    <p class="has-text-right has-text-grey">
 {% if page.attribution %}<em> {{ page.attribution }} </em>{% endif %}
 {% if page.publication %}<em> {{ page.publication }} </em>{% endif %}
-					</div>		
-				</div> <!-- box -->
+					    </p>		
+                    </div><!-- card-content -->
+				</div> <!-- card -->
 			</div> <!-- content -->
-
 			<div class="content-footer has-vertical-spacing">
 				<div class="tweet-post has-vertical-spacing">{% include tweet-link.html %}</div>
 				{% include post-related.html url=page.url categories=page.categories %}
