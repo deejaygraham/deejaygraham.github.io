@@ -1,3 +1,4 @@
+// customised for font families
 $title-color: $grey-darker !default
 $title-size: $size-3 !default
 $title-weight: $weight-semibold !default
@@ -6,6 +7,7 @@ $title-strong-color: inherit !default
 $title-strong-weight: inherit !default
 $title-sub-size: 0.75em !default
 $title-sup-size: 0.75em !default
+$title-font-family: $family-secondary !default
 
 $subtitle-color: $grey-dark !default
 $subtitle-size: $size-5 !default
@@ -14,6 +16,7 @@ $subtitle-line-height: 1.25 !default
 $subtitle-strong-color: $grey-darker !default
 $subtitle-strong-weight: $weight-semibold !default
 $subtitle-negative-margin: -1.25rem !default
+$subtitle-font-family: $family-secondary !default
 
 .title,
 .subtitle
@@ -31,6 +34,7 @@ $subtitle-negative-margin: -1.25rem !default
 
 .title
   color: $title-color
+  font-family: $title-font-family
   font-size: $title-size
   font-weight: $title-weight
   line-height: $title-line-height
@@ -49,6 +53,7 @@ $subtitle-negative-margin: -1.25rem !default
 
 .subtitle
   color: $subtitle-color
+  font-family: $subtitle-font-family
   font-size: $subtitle-size
   font-weight: $subtitle-weight
   line-height: $subtitle-line-height
