@@ -1,6 +1,12 @@
 {% if page.hero %}
 <!-- page-hero.html -->
 {% assign localhero = page.hero %}
-<section class="hero has-background-black {{ localhero }}"><div class="hero-body"><div class="container" /></div></section>
+<section class="hero is-info is-medium is-bold has-background-black">
+    <div class="hero-body {{ localhero }}">
+        <div class="container has-text-centered">
+            {{ site.name }}
+        </div>
+    </div>
+</section>
 <!-- page-hero.html -->
 {% endif %}
