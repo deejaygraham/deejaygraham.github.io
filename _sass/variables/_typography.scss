@@ -1,30 +1,7 @@
 // https://bulma.io/documentation/modifiers/typography-helpers/
 
 
-// ------ brand colours ---------
-
-$alto: #dfdede; // light gray
-$shark: #25292d; // black
-$thunderbird: #ce1a1d; // red
-$oslo-gray: #8c8d8e; // dark gray
-
-// ------ end ---------
-
-// ------ bulma global variables ---------
-
-$family-serif: Georgia, Garamond, serif;
-$family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
-
-$family-monospace: "Courier New", courier, monospace;
-
-$family-primary: $family-sans-serif;
-$family-secondary: $family-serif;
-$family-code: $family-monospace;
-
-
-// ------ end ---------
-
-/*blockquote {
+blockquote {
 	font-family: Georgia, Garamond, serif;
 	padding: 0.5em 10px;
 	quotes: "\201C""\201D""\2018""\2019";
@@ -43,4 +20,3 @@ blockquote:before {
 blockquote p {
 	display: inline;
 }
-    */
