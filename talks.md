@@ -3,14 +3,14 @@ layout: index
 title: talks
 ---
 
+<div class="content">
+
+<!-- Row 1 -->
 <div class="tile is-ancestor">
 	<div class="tile is-parent">
-		<div class="tile is-child">
-			<a href="https://www.slideshare.net/deejaygraham/the-elements-of-style-191457045" target="_blank">
-				<p><img src="/img/posts/talks/the-elements-of-style.png" /></p>
-				<p>The Elements of Style</p>
-			</a>		
-		</div>
+		<article class="tile is-child">
+            {% include tile.html title="The Elements of Style" url="https://www.slideshare.net/deejaygraham/the-elements-of-style-191457045" thumbnail="/img/posts/talks/the-elements-of-style.png" %}
+        </article>
 	</div>
 	<div class="tile is-parent">
 		<div class="tile is-child">
@@ -37,7 +37,9 @@ title: talks
 		</div>
 	</div>
 </div>
+<!-- Row 1 -->
 
+<!-- Row 2 -->
 <div class="tile is-ancestor">
 	<div class="tile is-parent">
 		<div class="tile is-child">
@@ -63,4 +65,7 @@ title: talks
 			</a>		
 		</div>
 	</div>
+</div>
+<!-- Row 2 -->
+
 </div>
