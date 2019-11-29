@@ -1,0 +1,9 @@
+<!-- post-date.html -->
+{% if include.date %}
+    <div class="level-item">
+        {{ include.date | date_to_long_string }}
+    </div>
+{% else %}
+<!-- No include.date defined -->
+{% endif %}
+<!-- post-date.html -->

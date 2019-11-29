@@ -2,7 +2,7 @@
 {% if include.tags %} 
     {% assign sorted_tags = include.tags | sort %} 
     {% for tag in sorted_tags %}
-<a title="posts tagged with &quot;{{ tag }}&quot;" class="tag is-white" href="{{ site.url }}/category/{{ tag }}" >{{ tag }}</a>
+    <div class="level-item"><a title="posts tagged with &quot;{{ tag }}&quot;" class="tag is-white" href="{{ site.url }}/category/{{ tag }}" >{{ tag }}</a></div>
     {% endfor %} 
 {% else %}
 <!-- No include.tags defined -->
