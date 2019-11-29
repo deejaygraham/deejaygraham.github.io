@@ -90,6 +90,11 @@ $dj-default-padding: 1em;
 	}
 }
 
+.tile-thumbnail {
+
+    border-radius: $radius-small;
+}
+
 .post-summary {
 
 	.title {
