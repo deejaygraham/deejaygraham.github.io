@@ -44,8 +44,7 @@ layout: index
     {% endif %}
 
     <div class="tile is-parent">
-        <article class="tile is-child box post-summary" id="{{ post.id }}">
-            <!-- box {{ box_count }} -->
+        <article class="tile is-child post-summary" id="{{ post.id }}">
             {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt thumbnail=post.thumbnail alttext=post.alttext %}
         </article>
     </div>
