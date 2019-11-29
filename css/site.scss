@@ -92,7 +92,10 @@ $dj-default-padding: 1em;
 
 .tile-thumbnail {
 
-    border-radius: $radius-small;
+    img
+        {
+        border-radius: $radius;
+    }
 }
 
 .post-summary {
