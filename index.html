@@ -82,15 +82,15 @@ layout: index
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
 <nav class="pagination level" role="navigation" aria-label="pagination">
-    <div class="level-left">
-        <div class="level-item">
-{% if paginator.next_page %}<a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older posts</a>{% endif %}
-        </div>
-    </div>
-    <div class="level-right">
-        <div class="level-item">
-{% if paginator.previous_page %}<a class="pagination-previous" title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts</a>{% endif %}
-        </div>
-    </div>
+    {% if paginator.previous_page %}
+    <a class="pagination-previous" title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts</a>
+    {% else %}
+    <a class="pagination-previous" title="newer posts" disabled>Newer posts</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older posts</a>
+    {% else %}
+    <a class="pagination-next" title="older posts" disabled>Older posts</a>
+    {% endif %}
 </nav>
 {% endif %}
