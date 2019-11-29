@@ -95,6 +95,11 @@ $dj-default-padding: 1em;
     img
         {
         border-radius: $radius;
+        opacity: 0.5;
+
+        &:hover {
+			opacity: 1;
+		}
     }
 }
 
