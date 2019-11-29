@@ -131,6 +131,14 @@ $dj-default-padding: 1em;
 	background-color: #6fc3df;
 }
 
+.post {
+
+    .article-tags {
+
+        margin-bottom: 0;
+    }
+}
+
 .post-summary {
 
 	.title {
@@ -145,11 +153,6 @@ $dj-default-padding: 1em;
 .post-meta {
 
     color: $grey-light;
-}
-
-.article-tags {
-
-    margin-bottom: 0;
 }
 
 .footer {
