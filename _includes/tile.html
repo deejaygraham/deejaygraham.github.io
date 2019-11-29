@@ -1,22 +1,22 @@
 <!-- tile.html -->
 <header>
+    <nav class="level is-mobile tile-tags">
+{% if include.categories %}
+        <div class="level-left">
+{% include post-tags.html tags=include.categories %}
+        </div>	
+{% endif %}
+        <div class="level-right">
+{% include twitter-links.html url=include.url title=include.title %}
+{% include post-date.html date=include.date %}
+        </div>	
+    </nav>        
 {% if include.thumbnail %}
     <div class="tile-thumbnail"><a href="{{ include.url }}"><img src="{{ site.url }}/{{ include.thumbnail }}" alt="{{ include.alttext }}" /></a></div>
 {% endif %}
-    <div class="tile-content">
-        <nav class="level is-mobile tile-tags">
-{% if include.categories %}
-            <div class="level-left">
-{% include post-tags.html tags=include.categories %}
-        	</div>	
+    <p class="title"><a href="{{ include.url }}">{{ include.title }}</a></p>
+{% if include.subtitle %}
+    <p class="subtitle">{{ include.subtitle }}</p>
 {% endif %}
-            <div class="level-right">
-{% include twitter-links.html url=include.url title=include.title %}
-{% include post-date.html date=include.date %}
-            </div>	
-        </nav>        
-        <h1 class="title"><a href="{{ include.url }}">{{ include.title }}</a></h1>
-        {% if include.subtitle %}<h2 class="subtitle">{{ include.subtitle }}</h2>{% endif %}
-    </div>    
 </header>
 <!-- tile.html -->
