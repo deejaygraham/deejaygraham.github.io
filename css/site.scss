@@ -141,6 +141,14 @@ $dj-default-padding: 1em;
 
 .post-summary {
 
+    .tile-tags {
+
+        margin-bottom: 0;
+    }
+}
+
+.post-summary {
+
 	.title {
 		// smaller title,
 		// smaller date 
