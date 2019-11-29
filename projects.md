@@ -3,11 +3,13 @@ title: projects
 layout: index
 ---
 
-### Things What I Have Made
+<header>
+	<h1 class="title">Things What I Have Made</h1>
+</header>
 
-Here are some of the places you can see some of my open source work:
+<p>Here are some of the places you can see some of my open source work:</p>
 
-<ul class="no-list-dot">
+<ul>
 	<li><a href="{{ site.url }}/ndifference/">NDifference</a> - My .Net API reporting tool</li>
 	<li><a href="{{ site.githuburl }}">GitHub</a> projects</li>
 	<li><a href="{{ site.gisturl }}">GitHub Gist</a> snippets</li>
