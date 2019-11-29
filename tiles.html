@@ -7,7 +7,8 @@ layout: index
         <article class="tile is-child post-summary" id="{{ post.id }}" style="padding:2em;">
             <figure>
                 <!-- images can have a tint -->
-                <img src="https://deejaygraham.github.io/img/posts/how-computers-work/how-computers-work-420x255.png" style="opacity:0.5;background-color:rosybrown;" />
+                <!-- on hover make opacity 1 -->
+                <img src="https://deejaygraham.github.io/img/posts/how-computers-work/how-computers-work-420x255.png" style="opacity:0.5;background-color:#7bd0c1;" />
                 <h1>Title</h1>
                 <p>Description short excerpt from this post</p>
             </figure>
@@ -15,9 +16,40 @@ layout: index
     </div>
 </div>
 
+
+<!-- tints 
+greeny 7bd0c1
+bluey 7ecaf6
+pinky #f2849e
+			.tiles article.style1 > .image:before {
+				background-color: #f2849e;
+			}
+
+			.tiles article.style2 > .image:before {
+				background-color: #7ecaf6;
+			}
+
+			.tiles article.style3 > .image:before {
+				background-color: #7bd0c1;
+			}
+
+			.tiles article.style4 > .image:before {
+				background-color: #c75b9b;
+			}
+
+			.tiles article.style5 > .image:before {
+				background-color: #ae85ca;
+			}
+
+			.tiles article.style6 > .image:before {
+				background-color: #8499e7;
+			}
+
+-->
+
 <div class="tile is-ancestor">
     <div class="tile is-parent" style="padding:0;">
-        <article class="tile is-child post-summary" style="border-radius:0;background-color:blueviolet;opacity:0.5;" id="{{ post.id }}">
+        <article class="tile is-child post-summary" style="border-radius:0;background-color:#7ecaf6;opacity:0.5;" id="{{ post.id }}">
             <figure>
                 <img src="https://deejaygraham.github.io/img/posts/how-computers-work/how-computers-work-420x255.png" style="opacity:0.5;" />
                 <h1>Title 2</h1>
