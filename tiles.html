@@ -1,0 +1,96 @@
+---
+title: tiles proof of concenpt
+layout: index
+---
+{% assign boxes_per_row = 3 %}
+{% assign box_count = 0 %}
+
+{% if paginator.page == 1 %}
+<!-- first page tiles -->
+
+<!-- most recent post is featured -->
+{% for post in paginator.posts limit:1 %}
+<div class="tile is-ancestor">
+    <div class="tile is-parent">
+        <article class="tile is-child box post-summary" id="{{ post.id }}">
+            {% include feature-tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt thumbnail=post.thumbnail alttext=post.alttext %}
+        </article>
+    </div>
+</div>
+{% endfor %}
+<!-- end featured post -->
+
+<!-- remaining posts -->
+{% for post in paginator.posts offset:1 %}
+	{% if box_count == 0 %}
+<div class="tile is-ancestor">
+    {% endif %}
+
+    <div class="tile is-parent">
+        <article class="tile is-child box post-summary" id="{{ post.id }}">
+            <!-- box {{ box_count }} -->
+            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt thumbnail=post.thumbnail alttext=post.alttext %}
+        </article>
+    </div>
+
+    {% assign box_count = box_count | plus:1 %}
+
+    {% if box_count >= boxes_per_row %}
+    {% assign box_count = 0 %}
+</div>
+	{% endif %}
+
+{% endfor %}
+
+{% if box_count > 0 %}
+</div>
+{% endif %}
+<!-- end remaining posts -->
+
+<!-- end first page tiles -->
+{% else %}
+<!-- subsequent page tiles -->
+
+{% for post in paginator.posts %}
+	{% if box_count == 0 %}
+<div class="tile is-ancestor">
+    {% endif %}
+
+    <div class="tile is-parent">
+        <article class="tile is-child box post-summary" id="{{ post.id }}">
+            <!-- box {{ box_count }} -->
+            {% include tile.html title=post.title subtitle=post.subtitle url=post.url date=post.date categories=post.categories excerpt=post.excerpt thumbnail=post.thumbnail alttext=post.alttext %}
+        </article>
+    </div>
+
+    {% assign box_count = box_count | plus:1 %}
+
+    {% if box_count >= boxes_per_row %}
+    {% assign box_count = 0 %}
+</div>
+	{% endif %}
+
+{% endfor %}
+
+{% if box_count > 0 %}
+</div>
+{% endif %}
+
+<!-- end subsequent page tiles -->
+{% endif %}
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<nav class="pagination level" role="navigation" aria-label="pagination">
+    {% if paginator.previous_page %}
+    <a class="pagination-previous" title="newer posts" href="{{ paginator.previous_page_path | replace: '//', '/' }}">Newer posts</a>
+    {% else %}
+    <a class="pagination-previous" title="newer posts" disabled>Newer posts</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older posts</a>
+    {% else %}
+    <a class="pagination-next" title="older posts" disabled>Older posts</a>
+    {% endif %}
+</nav>
+{% endif %}
