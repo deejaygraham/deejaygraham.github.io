@@ -59,6 +59,6 @@
     });
 
     var results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, window.store, searchTerm); // We'll write this in the next section
+    displaySearchResults(results, window.store, searchTerm); 
   }
 })();
