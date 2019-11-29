@@ -7,6 +7,8 @@ layout: index
 	<h1 class="title">Blog Entries by Month and Year</h1>
 </header>
 
+<div class="content">
+
 {% for post in site.posts %}
 {% capture current_year %}{{ post.date | date: "%B %Y" }}{% endcapture %}
 
@@ -27,3 +29,5 @@ layout: index
 </div>
 {% endif %}
 {% endfor %}
+
+</div>
