@@ -3,6 +3,8 @@ layout: post
 title: I'm in the Sketchnote Workbook!
 published: true
 categories: [ sketchnotes, books ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 Or rather, some of my work is :) Exciting news from <a href="http://rohdesign.com">Mike Rohde</a> - 

@@ -12,6 +12,8 @@ sketchnote:
   speaker:
     name: "Cory Doctorow"
     url: "https://craphound.com"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 This illustration is based on a composite of a number of different talks 

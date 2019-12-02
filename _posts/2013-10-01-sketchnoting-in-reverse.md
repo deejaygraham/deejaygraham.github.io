@@ -2,6 +2,8 @@
 layout: post
 title: Sketchnoting in Reverse
 categories: [ sketchnotes, deliberate-practice, presentations ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by 

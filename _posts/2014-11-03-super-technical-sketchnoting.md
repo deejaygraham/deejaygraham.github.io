@@ -11,6 +11,8 @@ sketchnote:
   speaker:
     name: "Tom Stuart"
     url:  "http://www.twitter.com/tomstuart"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 After I posted some of my sketchnotes from <a href="http://www.dddnorth.co.uk/">DDD North</a> 

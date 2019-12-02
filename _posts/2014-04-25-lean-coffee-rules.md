@@ -15,6 +15,8 @@ sketchnote:
   speaker:
     name: "@adamyuret"
     url: "https://twitter.com/adamyuret"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 Here's a sketchnote about "Lean Coffee", an agile way of

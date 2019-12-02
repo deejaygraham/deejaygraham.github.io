@@ -11,6 +11,8 @@ sketchnote:
   speaker:
     name: "Eve Barabas"
     url: "http://www.twitter.com/b_seven_e"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 I was lucky enough to be able to attend the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North 

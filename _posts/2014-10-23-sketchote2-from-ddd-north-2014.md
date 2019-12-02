@@ -11,6 +11,8 @@ sketchnote:
   speaker:
     name: "Richard Dalton"
     url: "http://www.twitter.com/richardadalton"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 Here's another sketchnote from the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North 
