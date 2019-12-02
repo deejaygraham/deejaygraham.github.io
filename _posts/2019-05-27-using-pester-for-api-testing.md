@@ -4,6 +4,9 @@ title: Using Pester for API Testing
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 <a href="https://github.com/pester/Pester">Pester</a> is rapidly becoming my go-to tool for writing tests that 

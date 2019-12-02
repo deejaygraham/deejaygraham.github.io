@@ -4,6 +4,8 @@ title: SQL Test Data as Code
 published: true
 categories: [ powershell  ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 I'm a big fan of driving manual, error-prone setup steps for anything into scripts and

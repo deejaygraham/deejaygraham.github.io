@@ -4,6 +4,8 @@ title: Finding Differences in Folder Content
 published: true
 categories: [ powershell  ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Another contender for the department of "I might need to remember how to do this again one day",

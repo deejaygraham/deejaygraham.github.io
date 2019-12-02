@@ -4,6 +4,9 @@ title: Passing Parameters to a Pester Test
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 A useful snippet if you don't want to hard-code values in a <a href="https://github.com/pester/Pester">Pester</a> 

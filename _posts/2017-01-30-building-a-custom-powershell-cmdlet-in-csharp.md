@@ -3,6 +3,8 @@ layout: post
 title: Building a Custom PowerShell Cmdlet in C#
 published: true
 categories: [ code, cloud, powershell ]
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 

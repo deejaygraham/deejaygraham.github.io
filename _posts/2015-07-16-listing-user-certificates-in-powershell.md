@@ -4,6 +4,8 @@ title: Finding and using user certificates in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Accessing a certificate store from PowerShell is another one of those incantations that never 

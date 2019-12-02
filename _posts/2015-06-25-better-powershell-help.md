@@ -4,6 +4,8 @@ title: Better PowerShell Help
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Here's a tip I always forget about when trying to read the help for a function in the ISE: you can send the 

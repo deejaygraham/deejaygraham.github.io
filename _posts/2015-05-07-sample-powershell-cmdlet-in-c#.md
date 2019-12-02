@@ -4,6 +4,8 @@ title: Sample Powershell Cmdlet in C#
 published: true 
 categories: [ csharp, code, powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Another one from the department of aide memoire. Here's the basic process to follow 

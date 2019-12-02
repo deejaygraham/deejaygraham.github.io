@@ -3,6 +3,8 @@ layout: post
 title: Managing Skytap environments with PowerShell
 categories: [ powershell ]
 published: true
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Our favourite virtual environment provider, <a href="http://skytap.com">skytap</a>, now 

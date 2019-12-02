@@ -4,6 +4,8 @@ title: Loading Hashtables from CSV in Powershell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Yesterday I mentioned that we should probably keep "secrets" we want to use in a production web.config out 

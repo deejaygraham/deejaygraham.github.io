@@ -4,6 +4,8 @@ title: Azure subscription management with PowerShell
 published: true 
 categories: [ cloud  ]
 hero: cloud
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 ## .PublishSettings

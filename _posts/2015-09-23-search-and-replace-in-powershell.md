@@ -4,6 +4,8 @@ title: Search and Replace in Powershell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 In scenarios where we keep configuration information in app.config or web.config files (or .cscfg's even), 

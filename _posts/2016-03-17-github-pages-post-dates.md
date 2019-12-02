@@ -3,6 +3,8 @@ layout: post
 title: The Case of the Disappearing Github Pages
 published: true 
 categories: [ meta, powershell, presentations ]
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 I spent a frustrating couple of days earlier this week while preparing a presentation 

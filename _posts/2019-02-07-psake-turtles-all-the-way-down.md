@@ -4,6 +4,9 @@ title: PSake Turtles All The Way Down
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 I have been trying for a while to come up with a way to redesign a long PowerShell script into discrete 

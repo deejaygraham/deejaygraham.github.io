@@ -4,6 +4,9 @@ title: Test Driving PowerShell with Pester
 published: true
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 Work in progress text and examples from an upcoming presentation.

@@ -4,6 +4,9 @@ title: Tidying Pester API Code
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 PowerShell's Invoke-RestMethod is a really nice cmdlet to use if you write Rest API test code using the Pester framework. One of the biggest 

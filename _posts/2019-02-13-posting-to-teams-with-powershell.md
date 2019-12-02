@@ -4,6 +4,9 @@ title: Posting Messages to MS Teams with PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 We are starting to use Microsoft Teams more and more for (suprisingly) team communication. We have a dedicated channel for product 

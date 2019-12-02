@@ -4,6 +4,8 @@ title: Parameterised Builds using Jenkins
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 My experiments with CI using [Jenkins](https://jenkins-ci.org/) continue.

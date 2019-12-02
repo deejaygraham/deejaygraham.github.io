@@ -3,6 +3,8 @@ layout: post
 title: Having the Right Kind of Argument(s)
 published: true
 categories: [ powershell ]
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 I saw a PowerShell script from a few days ago got me thinking about command line arguments and

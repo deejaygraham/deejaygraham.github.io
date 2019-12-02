@@ -4,6 +4,9 @@ title: Text Entry in AutoIt
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 There are a number of special commands and keys in <a href="https://www.autoitscript.com/site/">AutoIt</a> that are represented 

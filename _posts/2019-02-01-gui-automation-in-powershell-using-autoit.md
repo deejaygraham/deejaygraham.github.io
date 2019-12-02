@@ -4,6 +4,9 @@ title: GUI Automation in PowerShell using AutoIt
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 <a href="https://www.autoitscript.com/site/">AutoIt</a> is an automation program I used to use a long time ago

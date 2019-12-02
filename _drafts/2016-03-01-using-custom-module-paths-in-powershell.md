@@ -2,6 +2,8 @@
 layout: post
 title: Using Custom Module Paths in PowerShell
 tags: [ powershell ]
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 There seem to be two camps I come across when in the badlands of PowerShell use. 

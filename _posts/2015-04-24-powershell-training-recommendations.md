@@ -4,6 +4,8 @@ title: PowerShell Training Recommendations
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Microsoft Virtual Academy is a training resource I didn't know about until I had it recommended to me 

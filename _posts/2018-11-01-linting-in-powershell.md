@@ -4,6 +4,9 @@ title: Linting in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 Continuing the theme of C++ flavoured tools I miss, lint is another essential that doesn't appear to exist in the PowerShell world. Until I discovered ScriptAnalyzer which, 

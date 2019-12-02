@@ -4,6 +4,8 @@ title: SQL Schema Generation as Code
 published: true
 categories: [ cloud, powershell  ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 While I was generating test data from a SQL database in the last post, I returned to another

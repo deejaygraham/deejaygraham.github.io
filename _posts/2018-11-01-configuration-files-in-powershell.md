@@ -4,6 +4,9 @@ title: Configuration Files in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 Developing a mini build and configuration system with PSake recently and was getting annoyed with the number of hard-coded, machine- and environment-specific strings there were 

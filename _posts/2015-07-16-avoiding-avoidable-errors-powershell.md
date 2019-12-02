@@ -4,6 +4,8 @@ title: Avoiding avoidable errors in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Two wonderful features of PowerShell that don't seem to get used enough are embodied by the 

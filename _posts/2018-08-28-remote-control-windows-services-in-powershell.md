@@ -4,6 +4,8 @@ title: Remote Controlling Windows Services in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 Remote Desktop-ing into several machines just to enable or disable a service is a bit of a chore. PowerShell saves us from 

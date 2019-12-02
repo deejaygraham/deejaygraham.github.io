@@ -4,6 +4,8 @@ title: Building an IIS website in PowerShell
 published: true
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 A tiny script to create a local website in IIS just so I could test out a set of static 

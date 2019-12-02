@@ -4,6 +4,9 @@ title: Grepping in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 One tool I really miss sometimes is <a href="http://man7.org/linux/man-pages/man1/grep.1.html">grep</a>, the command line tool for searching for text matches inside an arbitrary set of files. In the same way you might use 

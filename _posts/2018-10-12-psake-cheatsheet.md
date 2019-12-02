@@ -4,6 +4,9 @@ title: PSake Cheatsheet
 published: true 
 categories: [ powershell ]
 hero: power
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
+
 ---
 
 <a href="https://github.com/psake/psake/">PSake</a> is a PowerShell module, similar to msbuild, that allow you to parcel up chunks of code into discrete Tasks and 
