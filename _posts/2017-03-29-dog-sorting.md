@@ -7,7 +7,8 @@ thumbnail: img/posts/dog-sorting/dog-sorting-420x255.jpg
 alttext: sorting
 ---
 
-You've heard of bubble sort and insertion sort and all the other sorts of sorts. But what about sorting your favourite dogs?
+You've heard of bubble sort and insertion sort and all the other sorts of sorts. But what about sorting and grouping 
+your favourite dogs?
 
 I was experimenting with the IEnumerable.GroupBy function and was trying to come up with an abstract (non-work related), yet 
 understandable example. And who doesn't like dogs? So I thought, what if we had an arbitrary list of dogs that we 
