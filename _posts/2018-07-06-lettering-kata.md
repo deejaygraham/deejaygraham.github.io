@@ -3,7 +3,8 @@ layout: post
 title: Lettering Kata
 categories: [ sketchnotes ]
 published: true
-
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 I am a big fan of katas and the idea of deliberate practice in general so

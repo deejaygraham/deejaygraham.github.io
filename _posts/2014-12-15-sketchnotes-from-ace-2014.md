@@ -4,6 +4,8 @@ title: Sketchnotes from ACE! 2014
 published: true
 categories: [ agile, illustration, sketchnotes ]
 hero: agile
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 A few months back I was lucky enough to be accepted by <a href="https://twitter.com/paulklipp">Paul Klipp</a> 

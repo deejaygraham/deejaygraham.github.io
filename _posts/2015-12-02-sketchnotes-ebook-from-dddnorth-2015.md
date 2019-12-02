@@ -2,6 +2,8 @@
 layout: post
 title: Ebook of Sketchnotes from DDDNorth 2015 now available!
 categories: [ sketchnotes, presentations ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 <img src="/img/posts/sketchnotes-ebook-from-dddnorth-2015/dddnorth-cover.png" class="u-max-full-width" alt="Cover Page" />

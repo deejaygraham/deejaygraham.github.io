@@ -6,6 +6,8 @@ published: true
 sketchnote:
   url: "/img/posts/lead-time-vs-cycle-time/lead-time-vs-cycle-time.jpg"
   alt: "sketchnote"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 Struggling to come up with a suitable analogy to explain the difference between cycle time and lead time 

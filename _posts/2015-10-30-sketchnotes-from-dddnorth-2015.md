@@ -3,6 +3,8 @@ layout: post
 title: Sketchnotes from DDDNorth 2015
 published: true 
 categories: [ presentations, sketchnotes  ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 <img src="/img/posts/sketchotes-from-dddnorth-2015/dddnorth-logo.png" class="u-max-full-width" alt="DDD North" />

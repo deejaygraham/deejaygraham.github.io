@@ -3,6 +3,8 @@ layout: post
 title: Palomino Blackwing
 categories: [ sketchnotes ]
 published: true
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 Ever on the look out for new sketchnoting supplies as I am, we found a <a href="http://www.oswells.co.uk/">new stationary shop</a> 

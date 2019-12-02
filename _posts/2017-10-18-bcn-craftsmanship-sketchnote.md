@@ -3,6 +3,8 @@ layout: post
 title: Two Examples of Sketchnoting Inception
 published: true
 categories: [ sketchnotes ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 Ordinarily, the way sketchnotes work is that you are capturing and distilling ideas

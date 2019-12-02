@@ -3,6 +3,8 @@ layout: post
 title: Building a sketchbook
 categories: [sketchnotes]
 published: true
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 Book making and bookbinding is a skill I knew nothing about but find fascinating so I thought I

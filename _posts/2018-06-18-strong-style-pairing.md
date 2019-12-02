@@ -3,6 +3,8 @@ layout: post
 title: Strong Style Pairing
 categories: [ sketchnotes ]
 published: true
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 I'm a big fan and advocate for mob programming and have talked about it

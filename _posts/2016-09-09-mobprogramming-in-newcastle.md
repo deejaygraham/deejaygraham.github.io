@@ -3,6 +3,8 @@ layout: post
 title: MobProgramming comes to Newcastle
 categories: [ agile ]
 published: true
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 

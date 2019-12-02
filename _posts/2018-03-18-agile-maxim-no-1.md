@@ -3,6 +3,8 @@ layout: post
 title: Agile Maxim No.1
 published: true
 categories: [ agile, sketchnotes ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 <a href="https://twitter.com/WoodyZuill">Woody Zuill's</a> first agile maxim:

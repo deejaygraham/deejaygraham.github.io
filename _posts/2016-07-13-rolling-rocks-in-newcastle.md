@@ -3,6 +3,8 @@ layout: post
 title: Rolling Rocks in Newcastle
 categories: [ agile, presentations, sketchnotes ]
 published: true
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 On the 12th of July I had the pleasure of hosting <a href="http://rolls.rocks">Clarke Ching</a> 

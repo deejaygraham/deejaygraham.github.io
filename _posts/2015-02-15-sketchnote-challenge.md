@@ -15,6 +15,8 @@ sketchnote:
   speaker:
     name: "David Allen"
     url: "http://gettingthingsdone.com/"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 The <a href="http://sketchnotearmy.com">Sketchnote Army</a> website has been running a challenge to create a 

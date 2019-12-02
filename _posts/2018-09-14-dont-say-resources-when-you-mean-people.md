@@ -3,6 +3,8 @@ layout: post
 title: Dont Say Resources When You Mean People
 published: true
 categories: [ illustration, sketchnotes ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 <img src="/img/posts/dont-say-resources-when-you-mean-people/dont-say-resources-when-you-mean-people.png" alt="hr" class="u-max-full-width" />

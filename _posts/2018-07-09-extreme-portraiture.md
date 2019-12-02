@@ -3,6 +3,8 @@ layout: post
 title: XP - Extreme Portraiture
 published: true
 categories: [ sketchnotes, illustration, xp ]
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 One of my favourite talks explaining why XP does what it does in software development is 

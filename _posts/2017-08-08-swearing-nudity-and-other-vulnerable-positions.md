@@ -3,6 +3,8 @@ layout: post
 title: Swearing and Nudity in Newcastle
 categories: [ agile, presentations, sketchnotes ]
 published: true
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+alttext: notebook
 ---
 
 On the 8th of August <a href="http://wisenoodle.me/">John Le Drew</a> was kind enough to
