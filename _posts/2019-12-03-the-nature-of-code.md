@@ -3,7 +3,7 @@ layout: post
 title: The Nature of Code
 published: true
 categories: [ code, books ]
-thumbnail: img/posts/the-nature-of-code/noc-420x255.png
+thumbnail: img/posts/the-nature-of-code/noc-420x255.jpg
 alttext: code
 ---
 
