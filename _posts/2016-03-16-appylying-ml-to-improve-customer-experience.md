@@ -22,5 +22,5 @@ about customer behaviour and scale out to provide a better customer experience w
 </blockquote>
 
 I have uploaded the slides to 
-<a target="_blank" href="https://www.slideshare.net/deejaygraham/adventures-in-azure-machine-learning-from-ne-bytes">slideshare</a>.
+<a target="_blank" href="https://www.slideshare.net/deejaygraham/adventures-in-azure-machine-learning-from-ne-bytes" rel="noreferrer">slideshare</a>.
 
