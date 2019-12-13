@@ -38,6 +38,9 @@
 
 @import "components/hero";
 
+
+$dj-highlight: #95d705;
+
 $dj-default-padding: 1em;
 
 .has-bottom-spacing {
@@ -88,6 +91,11 @@ $dj-default-padding: 1em;
 			color: $link-hover;
 		}
 	}
+}
+
+#search-button {
+
+	color: $dj-highlight;
 }
 
 .tile-thumbnail {
@@ -157,15 +165,22 @@ $dj-default-padding: 1em;
     color: $grey-light;
 }
 
+$footer-backgroundcolor: rgb(54,61,67);
+$footer-textcolor: rgb(255,255,255);
+
 .footer {
 
-	background-color: rgb(54,61,67);
-	color: rgb(255, 255, 255);
+	background-color: $footer-backgroundcolor;
+	color: $footer-textcolor;
 	
+	i {
+		color: $dj-highlight;
+	}
+
 	a {
-		color: #95d705;
+		color: $dj-highlight;
 		&:hover {
-			color: rgb(255, 255, 255);
+			color: $footer-textcolor;
 		}
 	}
 	.nav-item {
