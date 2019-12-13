@@ -39,8 +39,6 @@
 @import "components/hero";
 
 
-$dj-highlight: #95d705;
-
 $dj-default-padding: 1em;
 
 .has-bottom-spacing {
@@ -95,7 +93,7 @@ $dj-default-padding: 1em;
 
 #search-button {
 
-	color: $dj-highlight;
+	color: $lime-green;
 }
 
 .tile-thumbnail {
@@ -174,11 +172,11 @@ $footer-textcolor: rgb(255,255,255);
 	color: $footer-textcolor;
 	
 	i {
-		color: $dj-highlight;
+		color: $lime-green;
 	}
 
 	a {
-		color: $dj-highlight;
+		color: $lime-green;
 		&:hover {
 			color: $footer-textcolor;
 		}
