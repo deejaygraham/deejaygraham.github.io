@@ -158,6 +158,16 @@ $dj-default-padding: 1em;
 }
 
 .footer {
+
+	background-color: rgb(54,61,67);
+	color: rgb(255, 255, 255);
+	
+	a {
+		color: #95d705;
+		&:hover {
+			color: rgb(255, 255, 255);
+		}
+	}
 	.nav-item {
 		padding: 0 1em;
 	}
