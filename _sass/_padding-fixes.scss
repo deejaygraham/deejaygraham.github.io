@@ -1,0 +1,13 @@
+$dj-default-padding: 1em;
+
+.has-bottom-spacing {
+	padding-bottom: $dj-default-padding;
+}
+
+.has-top-spacing {
+	padding-top: $dj-default-padding;
+}
+
+.has-vertical-spacing {
+	padding: $dj-default-padding 0;
+}
