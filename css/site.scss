@@ -10,13 +10,21 @@
 // colours
 // ---------
 
-@import "variables/colours";
+//@import "variables/colours";
 
 
 // css framework
 // ----------------
 
+// flatly theme from https://github.com/jenil/bulmaswatch/tree/gh-pages/flatly
+// flatly variables
+@import "flatly-variables";
+
+// bulma itself
 @import "bulma/bulma.sass";
+
+// flatly overrides
+@import "flatly-overrides";
 
 
 // font-awesome
@@ -30,35 +38,35 @@
 // typography 
 // ----------
 
-@import "variables/typography";
+//@import "variables/typography";
 
 
 // components
 // ----------
 
-@import "components/hero";
+//@import "components/hero";
 
 
-$dj-default-padding: 1em;
+//$dj-default-padding: 1em;
 
-.has-bottom-spacing {
-	padding-bottom: $dj-default-padding;
-}
+//.has-bottom-spacing {
+	//padding-bottom: $dj-default-padding;
+//}
 
-.has-top-spacing {
-	padding-top: $dj-default-padding;
-}
+//.has-top-spacing {
+//	padding-top: $dj-default-padding;
+//}
 
-.has-vertical-spacing {
-	padding: $dj-default-padding 0;
-}
+//.has-vertical-spacing {
+//	padding: $dj-default-padding 0;
+//}
 
 // fixes
 // -----
 
 // Bulma conflicts with prism 
 
-.content .tag, .content .number {
+/*.content .tag, .content .number {
 	display: inline;
 	padding: inherit;
 	font-size: inherit;
@@ -186,6 +194,7 @@ $footer-textcolor: rgb(255,255,255);
 	}
 }
 
+*/
 
 // print 
 // -----
