@@ -20,7 +20,7 @@ to that output and any deviations are reported as differences and ultimately err
 This way, you are free to experiment and refactor and know that, even if you don't a proper set of unit tests, you have got a reference point 
 to compare your changes against. Hopefully, the unit tests can evolve as you refactor the code to be more amenable to testing. 
 
-### Mini Approval
+## Mini Approval
 
 Back to the automation project. This was a Selenium-based web automation project that used the Page Objects pattern to define screens and 
 interact with them. One test scenario is to load a screen, pick an option and validate that all of the values on the screen in each of the 
@@ -30,7 +30,7 @@ Unfortunately, the only Nu-Get package I could find required .Net Core or v 4.6.
 other constraints of the project, this wouldn't be suitable so I decided to hand roll a mini approval test suite to work alongside the 
 NUnit framework we had built. 
 
-### Code 
+## Code 
 
 This is what that looks like. First we need a way to record all the values of all the fields in a form's page object. The name of the InstanceSnapshot is 
 the class name of the instance and the values are name-value pairs corresponding to the controls and the value of each one as provided by 
@@ -51,7 +51,7 @@ Conversely, if we render to a file, we need to be able to reconstruct so I added
 
 ```
 
-### Compare
+## Compare
 
 Now we can create snapshots from objects and persist them, we should compare them. First something to capture the differences - the property name, 
 expected value from the original object and the actual value from the new object:
@@ -73,7 +73,7 @@ And the compare method so we can compare an existing "golden" image of an instan
 We use Intersect to determine the common set of properties by name and those that exist in only the original object or the new object using the 
 Except method. We further examine the common properties to check for differences in value. 
 
-### Assert
+## Assert
 
 The output is then a list of differences. If there are no differences the list is empty, if there are, they can be submitted to your test 
 framework of choice to generate test errors. In this case, NUnit.
@@ -85,7 +85,7 @@ framework of choice to generate test errors. In this case, NUnit.
 
 ```
 
-### Tiny
+## Tiny
 
 That's the majority of this tiny framework. Still outstanding is some functionality to create a snapshot if there is not one already available and 
 persist it to a file so that it can be checked in to source control as the golden image for that test scenario, ready for the next test run. This can 

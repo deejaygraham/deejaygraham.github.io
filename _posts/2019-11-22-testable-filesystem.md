@@ -1,19 +1,29 @@
 ---
 layout: post
-title: Knapsack Packing
+title: Test-Driving a File System
 published: true
 categories: [ csharp, code, tdd ]
-thumbnail: img/posts/knapsack-packing/knapsack-packing-420x255.jpg
-alttext: packing
+thumbnail: img/posts/testable-filesystem/testable-filesystem-420x255.jpg
+alttext: filing
 ---
 
-The <a href="https://en.wikipedia.org/wiki/Knapsack_problem">knapsack problem</a> came up the other day when I 
-was thinking about how best to "defrag" a set of objects that are added and removed over time with the overall 
-effect that one day the objects are scattered throughout an area when they could be rearranged to 
-<a href="https://en.wikipedia.org/wiki/Packing_problems#Packing_squares"> fit</a> into a 
-<a href="https://en.wikipedia.org/wiki/Bin_packing_problem">smaller area and save cost</a>.
+Michael Feather's definition of a unit-testness is such that a unit test shouldn't touch the network, 
+database or file system. Bu what happens if your application is all about files and folders? Should we give up 
+on trying to test it?
 
-## Box
+Lots of code I come across aspires to single responsibility but often forgets about the file system as an externality 
+and a dependency. It's true that this type of code is harder to unit test and often fails because a file doesn't exist 
+on the build server (works on my machine syndrome), or that test code can't delete or write to a temporary file 
+somewhere on disk. 
+
+Code like this that needs to read or write files, copy directory contents etc. usually gets declared 
+"un-unit-testable" and removed from the testable surface area of the project. 
+
+Like email, files and directory processing have a way of propagating through a codebase and if the untouchable 
+nature of the file system persists attitude continues  
+
+
+### Box
 
 ~~~csharp
 
@@ -21,7 +31,7 @@ effect that one day the objects are scattered throughout an area when they could
 
 ~~~
 
-## Bin
+### Bin
 
 ~~~csharp
 
@@ -29,7 +39,7 @@ effect that one day the objects are scattered throughout an area when they could
 
 ~~~
 
-## Greed
+### Greed
 
 After some reading up on the problem, I thought that the greedy approximation algorithm proposed by George 
 Dantzig would do the job. This algorithm takes a list of the objects, sorted by decreasing order of "size", 
@@ -40,7 +50,7 @@ We create a new container for the object that wouldn't fit into any of the other
 Every time we try to fit an object, we start at the first container and test them all until we find a space, 
 then continue with the next largest. 
 
-## Setup 
+### Setup 
 
 For our purposes, I have set each container or bin to have a fixed size. Each box is allocated a random size between 
 1 and the maximum size of the bin. 
@@ -51,7 +61,7 @@ For our purposes, I have set each container or bin to have a fixed size. Each bo
 
 ~~~
 
-## Statistics
+### Statistics
 
 For testing purposes we need a random ordering of the items to begin with some randomly assigned boxes and 
 containers or bins with a calculable wastage score. 
@@ -62,7 +72,7 @@ containers or bins with a calculable wastage score.
 
 ~~~
 
-## Setup 
+### Setup 
 
 ~~~csharp
 
@@ -77,7 +87,7 @@ After testing the random allocation for a few samples, rough figures are about o
 fully allocated and the remaining three quarters are partially allocated and with wastage (empty space 
 in bins) for 800 boxes measured in the low thousands.
 
-## Greedy 
+### Greedy 
 
 Running the greedy approximation algorithm, first sorting the list into decreasing sizes, we allocate to bins in order 
 of fit and create new bins as appropriate.  
@@ -88,7 +98,7 @@ of fit and create new bins as appropriate.
 
 ~~~
 
-## Results
+### Results
 
 After running the algorithm, the stats say that we save about 25-30% of bins and have wastage of zero or one bins and 
 typically in single figures for wastage of free space units across all the bins.  

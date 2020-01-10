@@ -25,7 +25,7 @@ default application drawing code.
 
 ![grid](/img/posts/game-of-oligarchy/grid-1.png)
 
-### Player
+## Player
 
 ![grid](/img/posts/game-of-oligarchy/grid-2.png)
 
@@ -45,7 +45,7 @@ or lose that amount.
 ![grid](/img/posts/game-of-oligarchy/grid-3.png)
 
 
-### Simple Game
+## Simple Game
 
 Once the player was done, I moved onto the game logic itself. I created an array of 9 players and laid them out in a grid. 
 The frame rate for the game is super slow at 1 fps just because I am using the draw method as the turn indicator and didn't want the game to be over before you could blink. 
@@ -66,7 +66,7 @@ I also added in some code to capture each frame so you can see how the game proc
 
 ![grid](/img/posts/game-of-oligarchy/grid-5.png)
 
-### Enhancements
+## Enhancements
 
 Next I think we should make the players play against each other with a more sophisticated selection routine and maybe 
 illustrate the winning and losing more explicitly, perhaps by increasing and decreasing the size of the player's avatar 

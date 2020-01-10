@@ -14,7 +14,7 @@ library until I noticed <a href="https://microbit-micropython.readthedocs.io/en/
 
 Excellent, I can use the light meter to add some more interactivity to a coding activity.
 
-### Experiments
+## Experiments
 
 An early idea for an experiment was to create a simple burglar alarm. The idea was to "arm" a device in a darkened room, or
 a closed box, that you want to protect. Monitor the light level and if it goes up beyond a specific threshold, then sound an
@@ -38,7 +38,7 @@ maybe to use the digital IO pins to signal to an electronic circuit to turn on. 
 system so that the slightly raised light level caused by turning on the LEDs doesn't make the program think it's now light/morning
 and it should turn off again.
 
-### Psychic Nightlight
+## Psychic Nightlight
 
 Rather than those reasonable options I decided to go for the psychic option. Split the nightlight into to halves. A sensor which can be
 placed on a window sill and maybe monitor outside light and a second unit which will act inside the room as the actual nightlight
@@ -46,7 +46,7 @@ placed on a window sill and maybe monitor outside light and a second unit which 
 nightlight just reacting to commands to turn on or off based on what it is sent by the sensor unit. Hence the nightlight psychically
 knows what the outside light is like without actually seeing it.
 
-#### Sensor
+## Sensor
 
 ```python
 
@@ -56,7 +56,7 @@ knows what the outside light is like without actually seeing it.
 
 I also added a configurable darkness level so we can adjust for variations throughout the year.
 
-#### Nightlight
+## Nightlight
 
 ```python
 
