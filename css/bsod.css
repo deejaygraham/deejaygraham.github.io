@@ -1,0 +1,15 @@
+body {
+	background-color: #222;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25em;
+}
+
+#emoji {
+    font-size: 3em;
+    padding: 1em;
+}
+
+#text, #status {
+    padding: 1em;
+}
