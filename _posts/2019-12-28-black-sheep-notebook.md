@@ -2,8 +2,7 @@
 layout: post
 title: Black Sheep Notebook
 published: true
-categories: [ books ]
-hero: agile
+categories: [ books, illustration ]
 thumbnail: "img/posts/black-sheep-notebook/thumbnail-420x255.png"
 alttext: cover
 ---
