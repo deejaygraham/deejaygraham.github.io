@@ -40,7 +40,7 @@ into an image.
 
 <script src="https://gist.github.com/deejaygraham/ec6e40a616451aed0ae6.js"></script>
 
-### Update
+## Update
 
 Now I've been playing with this technique for a number of different slide decks, 
 I discovered that any pdf with embedded fonts didn't export correctly. The font 

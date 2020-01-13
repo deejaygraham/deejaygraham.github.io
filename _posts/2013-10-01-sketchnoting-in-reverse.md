@@ -50,7 +50,7 @@ I'm going to continue. I'm happy with how it turned out, even if it's not
 the most elegant or elaborate it did the job and I would use it again to give 
 the same presentation.
 
-### Update
+## Update
 
 The original sketchnote got damaged when my moleskine notebook got wet so I redid it 
 and enhanced it based on feedback after giving the talk a few more times.
@@ -59,6 +59,6 @@ Here's a cleaned up scanned image of the new version of the sketchnote:
 
 <img src="/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png" class="u-max-full-width" alt="Update sketchnote" />
 
-### Update 2
+## Update 2
 
 I had this approach to writing presentations [featured at Sketchnote Army](http://sketchnotearmy.com/blog/2014/10/13/sketchnoting-in-reverse-derek-graham.html)

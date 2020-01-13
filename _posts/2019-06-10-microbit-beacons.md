@@ -21,7 +21,7 @@ measure of how close or far away we are from a beacon. Signal strength is measur
 score from 0 (strongest) down to -255 (weakest).
 
 
-#### Beacon
+### Beacon
 
 We'll start off with a simple beacon, broadcasting some text every half a second. 
 
@@ -32,7 +32,7 @@ We'll start off with a simple beacon, broadcasting some text every half a second
 ```
 
 
-#### Receiver
+### Receiver
 
 Our receiver shouldn't care what the message is, just how strong the signal is. We convert the 0-255 scale into a percentage 
 signal strength. 
@@ -49,7 +49,7 @@ purely on signal strength. You can use the radio config option to change the rad
 the space you are working in. 
 
 
-### Simple Treasure Hunt
+## Simple Treasure Hunt
 
 Now that we can send and receive messages from a single beacon, we can program several of them with unique ids, 
 hide them around the local environment and use them as the basis for a simple treasure hunt. Each beacon can be 
@@ -57,7 +57,7 @@ given a text name or a number which it broadcasts. The treasure hunter has a rec
 and completes the "hunt" by checking off each of the beacons that they find. 
 
 
-#### Beacon 
+### Beacon 
 
 Here's a simple beacon with a hard-coded id. Each beacon will need a different id flashed onto it. 
 
@@ -79,7 +79,7 @@ Each beacon is flashed with the same code and it's up to the person doing the hi
 unique number before hiding them. 
 
 
-### Full Treasure Hunt
+## Full Treasure Hunt
 
 Finally, instead of a simple id, we can embed clues to a treasure hunt trail in the beacons so that each beacon 
 can be configured to broadcast one clue. By sending the beacon's id out with the clue, we can even program 
@@ -87,7 +87,7 @@ the receiver to accept the clues in sequence so that the hunter has to visit the
 order to make sense of the clues. 
 
 
-#### Beacon 
+### Beacon 
 
 ```python
 
@@ -96,7 +96,7 @@ order to make sense of the clues.
 ```
 
 
-#### Receiver
+### Receiver
 
 ```python
 

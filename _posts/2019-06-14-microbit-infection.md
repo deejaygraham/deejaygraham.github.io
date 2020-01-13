@@ -13,7 +13,7 @@ using the radio to model the spread of an infection through a population. I coul
 Python so thought we should create one for our codind dojo. Here is one approach using an OO model to handle the
 progression of a disease in a host from healthy to sick and (the great) beyond.
 
-#### Player
+## Player
 
 We can start with a player class to model how we think about progression of the infection. At some point we will come in contact
 with an infected person and need to decide if we pick up the infection from them. Once infected we will pass on the infection and
@@ -29,12 +29,12 @@ Contract and Incubate methods are opportunities for a state change so in the nor
 option to override this behaviour in subclasses to return a different patient "state". We will derive new states from the Player to
 model the stages of the spread of the disease.
 
-#### Healthy
+## Healthy
 
 According to the rules, a healthy player is happy but can contract an illness. So we need a way to specify what an illness
 looks like and the rules around transmitting it and contracting it.
 
-#### Illness
+## Illness
 
 ```python
 
@@ -47,7 +47,7 @@ some space to get creative. We can just identify the word as the easiest thing o
 signal strength of the recevied message to see if the person is "close enough" or something else. The important thing is the
 decision logic is encapsulated within the Illness itself.
 
-#### The Great Beyond
+## The Great Beyond
 
 Let's jump straight to the end and look at what death looks like.
 
@@ -59,7 +59,7 @@ Let's jump straight to the end and look at what death looks like.
 
 For this case we are saying a dead patient is shown by the ghost and the "done" flag tells us the game is over.
 
-#### Healthy Again
+## Healthy Again
 
 Turning our attention to the healthy player, we can instantiate one in the place of our first player so that we
 start off the game in a good state. Healthy players are happy but also have a chance of catching an infection so we
@@ -74,7 +74,7 @@ need to check for this by asking if an received illness is contagious.
 We also override the incubate method to give us a quick way of simulating a patient zero condition. Pressing both
 buttons will turn a healthy person into a suitably infected person.
 
-### Infected
+## Infected
 
 An infected person is able to transmit an illness to those around them according to illness rules. They can also
 incubate for a set period of time before transitioning into a Sick person so we setup a timer and increment it
@@ -89,7 +89,7 @@ every time we do an incubate in the loop.
 Note I am using the confused icon to represent this state for debugging but in a real game this would be replaced with
 the happy icon so no one is able to tell that you are a contagious person, in line with the original rules.
 
-### Sick
+## Sick
 
 Similar to the Infected role, a sick person has a timer associated with it so that they only stay sick for a certain period.
 They have a different icon so we can tell they are sick but they are no longer infectious so don't spread the disease any

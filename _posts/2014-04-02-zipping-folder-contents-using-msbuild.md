@@ -8,12 +8,12 @@ categories: [ msbuild, code ]
 Here's a script to zip the contents of a folder. Again, this is posted more
 so I don't forget but hopefully someone else will find it useful.
 
-### Step 1
+## Step 1
 
 Get the [MsBuild Community Tasks](https://github.com/loresoft/msbuildtasks/releases) 
 and unzip it or use NuGet to get the *MsBuildTasks* package.
 
-### Step 2
+## Step 2
 
 Import the task:
 
@@ -22,7 +22,7 @@ Import the task:
 		TaskName="MSBuild.Community.Tasks.Zip" 
 		/>
 
-### Step 3
+## Step 3
 
 Create your target:
 
@@ -45,7 +45,7 @@ Create your target:
 			/>
 	</Target>
 
-### Step 4
+## Step 4
 
 Save and run the script :)
 
