@@ -22,7 +22,7 @@ Describing how I do code reviews with another developer, I noticed during the co
 that I had been subconsciously using the *Perfection Game* in recent sessions. It was in an 
 adapted form to suit the medium but still captured the spirit of the original.
 
-### Perfection
+## Perfection
 
 The Perfection Game is used as a way to help you improve something you have created. It's at a time when
 you are asking for help in making something better so that the exercise becomes more
@@ -38,7 +38,7 @@ they liked about the performance and offers suggestions for improvement that wou
 from it's current score to a "10". If the perfector can't think of a way to improve the code, they
 can't withhold points.
 
-### Review
+## Review
 
 Code reviews, by contrast, can be very negative experiences, particularly for less experienced
 developers presenting code to world-weary, battle-scarred bad-ass senior devs. A more experienced
@@ -53,7 +53,7 @@ a whole series of articles on using techniques, like the Socratic method, to tea
 of source code.
 
 
-### Steps
+## Steps
 
 Here's how I approach code reviews now using my covert perfection game :)
 
@@ -71,7 +71,7 @@ suggestion of how to make something more robust but might be as vague as "that n
 are hoping it would, how can we make it better reflect your intention?"
 
 
-### Conclusion
+## Conclusion
 
 It seems to be working well and I *think* I might keep it.
 

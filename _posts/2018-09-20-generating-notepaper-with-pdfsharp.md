@@ -54,7 +54,7 @@ So now we can treat a list of renderings as a group using a page generator.
 Finally, the implementation of each of the different types of renderer.
 
 
-### Music Manuscript
+## Music Manuscript
 
 
 ~~~csharp 
@@ -64,7 +64,7 @@ Finally, the implementation of each of the different types of renderer.
 ~~~
 
 
-### Dotted
+## Dotted
 
  
 ~~~csharp 
@@ -74,7 +74,7 @@ Finally, the implementation of each of the different types of renderer.
 ~~~
 
 
-### Lined 
+## Lined 
 
 
 ~~~csharp 
@@ -84,7 +84,7 @@ Finally, the implementation of each of the different types of renderer.
 ~~~
 
 
-### Graph
+## Graph
 
 
 ~~~csharp 
