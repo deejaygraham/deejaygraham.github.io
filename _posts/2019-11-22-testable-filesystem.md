@@ -19,8 +19,19 @@ somewhere on disk.
 Code like this that needs to read or write files, copy directory contents etc. usually gets declared 
 "un-unit-testable" and removed from the testable surface area of the project. 
 
-Like email, files and directory processing have a way of propagating through a codebase and if the untouchable 
-nature of the file system persists attitude continues  
+Like email, files and directory processing have a way of propagating through a codebase almost as given artifacts that 
+can't be abstracted. If this untouchable nature of the file system persists and finds its way into other areas of the code, 
+more and more of the testable surface area of the code is degraded or removed. Not just where explicitly used in code you are 
+trying to test but in code that this code depends on, down to several layers. Having an untestable file system means that tests 
+may pass or fail unpredictably depending on the machine environment they are run under and once it gets bad enough developers 
+can give up with the idea of testing any of their code because it seems like an intractable problem. 
+
+Much of the advice given to counter the effect of coupling to the file system like this is to hide the class using the files 
+behind another abstraction. In general, this is good advice, we should be trying as much as possible to make technology agnostic 
+choices that don't depend on a particular IO. Sometimes, though, the problem domain *is* the file system and it makes no sense to 
+abstract that away behind an artificial domain class where we have to pretend that files and directories don't exist. 
+
+What to do in this last case? Make a fake, testable file system, of course!
 
 
 ### Box
