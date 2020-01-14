@@ -34,18 +34,24 @@ abstract that away behind an artificial domain class where we have to pretend th
 What to do in this last case? Make a fake, testable file system, of course!
 
 
-### Box
+### IFileSystem
 
 First I think we need some sort of single entry point where we can pick up which - real or fake - instances of the file system we will be working with, for unit tests or for production. 
 
 To me, that seems to call for a File System object as a "root" of all other operations. An interface that we can pass to another 
 class that can be implemented as real or fake or mocked. 
 
+So, an IFileSystem that can tell us if a high level directory exists as a way to kick things off.
+
 ~~~csharp
 
-{% include code/csharp/TDD-FileSystem/TestableFileSystem-Box.cs %}
+{% include code/csharp/TDD-FileSystem/IFileSystem-1.cs %}
 
 ~~~
+
+Here I'm using a library called NSubstitute to help me define what the shape of these initial interfaces should look like using 
+mocks (the only reason to really use mocks in my opinion). 
+
 
 ### Bin
 
