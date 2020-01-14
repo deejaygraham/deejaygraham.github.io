@@ -36,9 +36,14 @@ What to do in this last case? Make a fake, testable file system, of course!
 
 ### Box
 
+First I think we need some sort of single entry point where we can pick up which - real or fake - instances of the file system we will be working with, for unit tests or for production. 
+
+To me, that seems to call for a File System object as a "root" of all other operations. An interface that we can pass to another 
+class that can be implemented as real or fake or mocked. 
+
 ~~~csharp
 
-{% include code/csharp/Knapsack-Box.cs %}
+{% include code/csharp/TDD-FileSystem/TestableFileSystem-Box.cs %}
 
 ~~~
 
@@ -105,12 +110,12 @@ of fit and create new bins as appropriate.
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-GreedyAllocation.cs %}
+{% include code/csharp/TDD-FileSystem/GreedyAllocation.cs %}
 
 ~~~
 
-### Results
 
-After running the algorithm, the stats say that we save about 25-30% of bins and have wastage of zero or one bins and 
-typically in single figures for wastage of free space units across all the bins.  
+## Finally
+
+Some of this was an exercise in TDD-ing a file system as plainly as possible. There are other implementations available - one that didn't work for me with my particular environment but looks very good for other contexts was <a href="https://www.nuget.org/packages/System.IO.Abstractions/">System.IO.Abstractions</a>. 
 
