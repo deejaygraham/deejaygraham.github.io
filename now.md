@@ -1,6 +1,6 @@
 ---
 title: What I'm doing now
-layout: index
+layout: post
 ---
 
 - Tech leading a desktop to web migration project. 
