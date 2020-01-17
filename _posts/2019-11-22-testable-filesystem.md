@@ -3,7 +3,7 @@ layout: post
 title: Test-Driving a File System
 published: false
 categories: [ csharp, code, tdd ]
-thumbnail: img/posts/testable-filesystem/testable-filesystem-420x255.jpg
+thumbnail: img/posts/tdd-filesystem/thumbnail-420x255.jpg
 alttext: filing
 ---
 
@@ -49,74 +49,22 @@ So, an IFileSystem that can tell us if a high level directory exists as a way to
 
 ~~~
 
+and a rough test-as-spec...
+
+~~~csharp
+
+{% include code/csharp/TDD-FileSystem/IFileSystemSepcs-1.cs %}
+
+~~~
+
 Here I'm using a library called NSubstitute to help me define what the shape of these initial interfaces should look like using 
-mocks (the only reason to really use mocks in my opinion). 
+mocks (the only use case for using mocks in my opinion). Essentially, it's a noop test that just gets our feet wet with defining what the interface should be.
 
-
-### Bin
-
-~~~csharp
-
-{% include code/csharp/Knapsack-Bin.cs %}
-
-~~~
-
-### Greed
-
-After some reading up on the problem, I thought that the greedy approximation algorithm proposed by George 
-Dantzig would do the job. This algorithm takes a list of the objects, sorted by decreasing order of "size", 
-then tries to insert the largest object into the first container and continues with the next largest until there 
-is no more room for that object (but there may be room for smaller objects). 
-
-We create a new container for the object that wouldn't fit into any of the other containers and add it there. 
-Every time we try to fit an object, we start at the first container and test them all until we find a space, 
-then continue with the next largest. 
-
-### Setup 
-
-For our purposes, I have set each container or bin to have a fixed size. Each box is allocated a random size between 
-1 and the maximum size of the bin. 
+That looks like how we would want the simplest sort of use case and it's then easily translatable to an actual implementation. 
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-Setup.cs %}
-
-~~~
-
-### Statistics
-
-For testing purposes we need a random ordering of the items to begin with some randomly assigned boxes and 
-containers or bins with a calculable wastage score. 
-
-~~~csharp
-
-{% include code/csharp/Knapsack-PrintStats.cs %}
-
-~~~
-
-### Setup 
-
-~~~csharp
-
-{% include code/csharp/Knapsack-RandomAllocation.cs %}
-
-~~~
-
-Since the random allocation may not fill up all the bins, we remove any completely empty bins so we don't skew 
-the figures too much. 
-
-After testing the random allocation for a few samples, rough figures are about one quarter of the bins are 
-fully allocated and the remaining three quarters are partially allocated and with wastage (empty space 
-in bins) for 800 boxes measured in the low thousands.
-
-### Greedy 
-
-Running the greedy approximation algorithm, first sorting the list into decreasing sizes, we allocate to bins in order 
-of fit and create new bins as appropriate.  
-
-~~~csharp
-
-{% include code/csharp/TDD-FileSystem/GreedyAllocation.cs %}
+{% include code/csharp/TDD-FileSystem/LocalFileSystem-1.cs %}
 
 ~~~
 
