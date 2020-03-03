@@ -12,11 +12,15 @@ class Pinger:
      
   def update(self):
     display.set_pixel(self.x, self.y, 0)
-    if self.x >= 4:
-        self.x = 4
+
+    lhs = 0
+	rhs = 4
+
+    if self.x >= rhs:
+        self.x = rhs
         self.direction = -self.direction
-    elif self.x <= 0:
-        self.x = 0
+    elif self.x <= lhs:
+        self.x = lhs
         self.direction = -self.direction
         
     self.x += self.direction

@@ -26,9 +26,103 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 <p>Methinks it is like a weasel.</p>
 </blockquote>
 
-<script src="https://gist.github.com/deejaygraham/0f9215abd64ffaf91a24.js"></script>
+## Interfaces 
+
+```csharp
+
+{% include code/csharp/Weasel_ICrossover_T.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_IMutator_T.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_IPopulationFactory_T.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_IFitnessScore_T.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_IMatchesTarget_T.cs %}
+
+```
+
+## Implementations 
+
+```csharp
+
+{% include code/csharp/Weasel_WeaselMutator.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_WeaselPopulationFactory.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_WeaselFitnessScore.cs %}
+
+```
+
+## Extension Methods
+
+```csharp
+
+{% include code/csharp/Weasel_RandomExtensions.cs %}
+
+```
+
+## Events
+
+```csharp
+
+{% include code/csharp/Weasel_InitialConditionEventArgs_T.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_FitnessProgressEventArgs_T.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/Weasel_FinalConditionEventArgs_T.cs %}
+
+```
+
+## Algorithm
+
+```csharp
+
+{% include code/csharp/Weasel_GeneticAlgorithm_T.cs %}
+
+```
+
+## Main
+
+```csharp
+
+{% include code/csharp/Weasel_Program.cs %}
+
+```
 
 Using as many interfaces as I have and using generic types may seem a little like 
-overkill but as I said, I am hoping to complete a project using some alternate 
+overkill but, as I said, I am hoping to complete a project using some alternate 
 implementations for a more interesting purpose. Stay tuned :)
 
