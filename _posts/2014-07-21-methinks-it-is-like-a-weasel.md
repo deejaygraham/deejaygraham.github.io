@@ -125,4 +125,3 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 Using as many interfaces as I have and using generic types may seem a little like 
 overkill but, as I said, I am hoping to complete a project using some alternate 
 implementations for a more interesting purpose. Stay tuned :)
-

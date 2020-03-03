@@ -38,7 +38,11 @@ Once I had the syntax of the two command line building blocks I used a bit
 of MsBuild batching magic to handle the conversion of each individual page 
 into an image.
 
-<script src="https://gist.github.com/deejaygraham/ec6e40a616451aed0ae6.js"></script>
+```xml
+
+{% include code/msbuild/screenshots.xml %}
+
+```
 
 ## Update
 
