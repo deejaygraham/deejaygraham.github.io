@@ -5,6 +5,7 @@ published: true
 categories: [ tdd, csharp, refactoring ]
 ---
 
+
 ### or, How to TDD Inside a Legacy Application 
 
 There's a common symptom of monolithic applications that I see fairly

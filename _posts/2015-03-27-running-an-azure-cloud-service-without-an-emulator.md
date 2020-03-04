@@ -40,11 +40,29 @@ it's reach into a codebase can be pervasive. We can help ourselves a little by
 hiding the static-ness behind an interface `IRoleSettings`, say, and passing that 
 into constructors. 
 
+```csharp
+
+{% include code/csharp/AzureEmulator_IRoleSettings.cs %}
+
+```
+
 When can then create an `AzureRoleSettings` implementation that delegates to 
 `RoleEnvironment` for the deployed scenario. 
 
+```csharp
+
+{% include code/csharp/AzureEmulator_AzureRoleSettings.cs %}
+
+```
+
 For unit testing, we can mock the interface or create a `StubRoleSettings` implementation
 that uses a `Dictionary` to store name value pairs.
+
+```csharp
+
+{% include code/csharp/AzureEmulator_StubRoleSettings.cs %}
+
+```
 
 For integration testing or debugging subtle issues requiring real world values 
 we would really like to be able to read the cscfg and pull out values for 
@@ -52,8 +70,8 @@ an individual role. Since we already have the `IRoleSettings` interface, we can
 implement an `IntegrationRoleEnviroment` class and use XPath to build our list of 
 name value pairs.
 
-The code for all these implementations is at [gist](https://gist.github.com/deejaygraham/7787aa578a33816c24e8) and 
-embedded below:
+```csharp
 
-<script src="https://gist.github.com/deejaygraham/7787aa578a33816c24e8.js"></script>
+{% include code/csharp/AzureEmulator_LocalRoleSettings.cs %}
 
+```
