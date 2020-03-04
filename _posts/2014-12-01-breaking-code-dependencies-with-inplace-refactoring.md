@@ -5,6 +5,8 @@ published: true
 categories: [ tdd, csharp, refactoring ]
 ---
 
+### or, How to TDD Inside a Legacy Application 
+
 There's a common symptom of monolithic applications that I see fairly
 frequently. First, a developer writes a simple little program to solve a
 simple little problem or to plug a little gap in a solution.
@@ -19,6 +21,7 @@ What started as a small utility is now blossoming into a bigger project and
 a bigger problem.
 
 ## Crufts
+
 By the time the project begins to reach to multiple files, multiple classes,
 configuration files, databases, multiple developers stretching out over time
 it is starting to suffer from accumulations of [cruft](http://en.wikipedia.org/wiki/Cruft).
@@ -30,7 +33,20 @@ A monolithic application, for my purposes here, is definded as a single executab
 containing lots of functionality, perhaps in Windows Forms code-behind style,
 that cannot be unit tested.
 
+```csharp
+
+{% include code/csharp/InplaceRefactor_GodClass.cs %}
+
+```
+
+```csharp
+
+{% include code/csharp/InplaceRefactor_GodMain.cs %}
+
+```
+
 ## Refactoring
+
 Refactoring this kind of application can be challenging because you want
 to identify repeated pattens in the code and extract them into separate methods
 or classes, break out dependencies, factor out interfaces, separate concerns.
@@ -50,10 +66,11 @@ the UI code with us into the new, refactored code.
 Add to this, the majority of the unit test frameworks I have used don't
 support testing code in executables.
 
+
 ## In-Place Refactoring
 
 One way around this is to use an inplace refactoring technique. I've used this
-a number of times, so thought it was time I captured it in a gist.
+a number of times, so thought it was time I captured it in a set of code examples.
 
 Basically, I wrote a tiny, super-simple unit test framework that can be added
 to a project as a single .cs file. As part of the framework, I am "spoofing" a
@@ -62,14 +79,46 @@ statements found in MsTest or NUnit.
 
 In this way, you can create the tests in your application so, at the source
 code level, they look like they are targetting your favourite framework (but
-you're really using the inplace, lightweight one). When you come to move the
+you're really using the inplace, lightweight one) and other developers will be immmediately 
+familiar with the behaviour of the tests. When you come to move the
 code into a separate assembly and are ready to use the real framework, the
 test code shouldn't need to change and you just need to add the correct references.
+
+## Framework
+
+Currently, I have only supported a subset of the features available from MsTest and NUnit. Other 
+frameworks are available and the principles will remain the same. 
+
+```csharp
+
+{% include code/csharp/InplaceRefactor_Fx.cs %}
+
+```
 
 ## The Process
 
 Step 0 in this approach is to include (copy and paste is your friend in this situation)
-the code below somewhere in your application and call it from your "main" method.
+the code below somewhere in your application. Either as a separate file in the project 
+or just in the same file as the problem code. 
+
+Then you can add characterisation or specific scenario tests to the class (here using a simulation of MsTest).
+
+```csharp
+
+{% include code/csharp/InplaceRefactor_AttributedClass.cs %}
+
+```
+
+Then, before any other code is loaded, you can make a call to the inplace test runner from 
+your "main" method like this :
+
+
+```csharp
+
+{% include code/csharp/InplaceRefactor_TestMain.cs %}
+
+```
+
 The next step is to identify some candidate functionality that could be refactored. Wherever this
 code happens to be, create a test for it in a separate method, named and attributed
 as if targetting your favourite unit test framework. Continue identifying and writing tests
@@ -91,7 +140,3 @@ framework (or comment out if you want to do more refactoring). Remember to inclu
 references to your targetted unit test framework in your moved tests.
 
 This technique has helped me more than once so I hope someone else finds it useful.
-
-## Code
-
-<script src="https://gist.github.com/deejaygraham/758be0abcea99f122c4c.js"></script>
