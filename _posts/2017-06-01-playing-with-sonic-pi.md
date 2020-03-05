@@ -14,7 +14,7 @@ The first and simplest program you can write is a one liner to play a single not
 
 ```ruby
 
-play 60
+{% include code/ruby/sonicpi_1.rb %}
 
 ```
 
@@ -24,9 +24,7 @@ You can play two notes separated by small pause like this:
 
 ```ruby
 
-play 60
-sleep 0.5
-play 62
+{% include code/ruby/sonicpi_2.rb %}
 
 ```
 
@@ -43,10 +41,7 @@ Music is often about repetition so it's good to be able to repeat phrases and th
 
 ```ruby
 
-5.times do
-  play 60
-  sleep 1
-end
+{% include code/ruby/sonicpi_3.rb %}
 
 ```
 
@@ -54,15 +49,7 @@ Maybe not terribly exciting but we can move on from there to do scales:
 
 ```ruby
 
-# play a chromatic scale
-
-note = 60
-
-12.times do
-  play note
-  note = note + 1
-  sleep 0.5
-end
+{% include code/ruby/sonicpi_4.rb %}
 
 ```
 
@@ -70,114 +57,12 @@ end
 
 ```ruby
 
-10.times do
-  play chord(:E3, :major).choose
-  sleep 1
-end
-
-root = 55
-
-play root # C3
-sleep 0.5
-play root + 1
-sleep 0.5
-play root + 2
-sleep 0.5
-play root + 3
-sleep 0.5
-play root + 4
-sleep 0.5
-play root + 5
-sleep 0.5
-play root + 6
-sleep 0.5
-play root + 7
-sleep 0.5
-play root + 8
-sleep 0.5
-play root + 9
-sleep 0.5
-play root + 10
-sleep 0.5
-play root + 11
-sleep 0.5
-play root + 12 # C4
-sleep 0.5
-
-root = 50
-note = root
-
-12.times do
-  play note
-  sleep 0.5
-  note = note + 1
-end
+{% include code/ruby/sonicpi_5.rb %}
 
 ```
 
 ```ruby
-use_bpm 52
 
-live_loop :bass do
-  [:d2, :a2, :b2, :g2].each do |n|
-    8.times do
-      #      with_fx :rlpf do
-      play n, release: 0.2
-      #      end
-      sleep 0.25
-    end
-  end
-end
-
-live_loop :kick do
-  #  sync :bass
-  sample :drum_bass_hard
-  with_fx :slicer do
-    sample :drum_bass_hard
-  end
-  sleep 0.5
-end
-
-chord(:e3, :major7).each do |n|
-  play n
-  sleep 0.5
-end
-live_loop :test do
-
-  sample :bd_haus, rate: 1
-  sleep 0.5
-
-end
-
-loop do
-  play choose(chord(:e3))
-  sleep 2
-end
-
-loop do
-  with_fx :flanger do
-    sample :ambi_haunted_hum, rate: (rrand 1.0, 2.5)
-    sleep (rrand 0, 2)
-    sample :perc_bell, rate: (rrand 1.0, 2.5)
-    sleep rrand(0, 2)
-  end
-end
-
-
-live_loop :foo do
-  use_synth :prophet
-  play :e2, release: 8, cutoff: rrand(70, 130)
-  sleep 8
-end
-
-live_loop :bar do
-  #use_synth :dark_ambience
-  #play :c5
-  #sample :bass_voxy_hit_c
-  #sample :guit_e_fifths
-  #sample :bd_haus
-  play (ring :d, :r, :r, :a, :f5, :r, :a, :r).tick
-  sleep 0.25
-end
+{% include code/ruby/sonicpi_6.rb %}
 
 ```
