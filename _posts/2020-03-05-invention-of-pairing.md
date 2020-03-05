@@ -8,7 +8,6 @@ alttext: pairing
 ---
 
 
-## A Bold Claim!
 
 I invented code review and pair programming in one day. There, I said it. Who believes me? 
 
