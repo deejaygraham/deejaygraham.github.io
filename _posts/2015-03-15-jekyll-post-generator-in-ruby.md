@@ -15,7 +15,11 @@ As code goes, I don't consider it my best work but it helped me explore command
 line parsing, file and folder manipulation and content generation, all things I'm 
 very comfortable with in the .Net space but had no clue previously in ruby. 
 
-<script src="https://gist.github.com/deejaygraham/a20c2f11af1cb3db421a.js"></script>
+```ruby
+
+{% include code/ruby/post.rb %}
+
+```
 
 ## File System
 
@@ -55,6 +59,3 @@ the line count and have increased readability (and it certainly doesn't satisfy
 
 Having said that, I think I got a lot of value from the exercise and it's probably 
 best that I quit while I'm ahead :)
-
-The code is in the root of my site's repository as 
-[post.rb](https://github.com/deejaygraham/deejaygraham.github.io/blob/master/post.rb)
