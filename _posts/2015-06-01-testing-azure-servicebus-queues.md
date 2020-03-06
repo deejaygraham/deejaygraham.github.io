@@ -19,12 +19,26 @@ never (I hope) use cloud infrastructure for on-premise communication.
 and sends <code>Microsoft.ServiceBus.Messaging.BrokeredMessage</code>s using the 
 <code>Microsoft.ServiceBus.Messaging.MessageSender</code> class.  
 
+### Writer
+
+```csharp
+
+{% include code/csharp/AzureServiceBusWriter.cs %}
+
+```
+
 ![writer](/img/posts/testing-azure-servicebus-queues/writer.png "writer")
 
 ## In the Read Corner...
 
 ...an application that reads from the message bus using the <code>Microsoft.ServiceBus.Messaging.MessageReceiver</code> 
 class.
+
+```csharp
+
+{% include code/csharp/AzureServiceBusReader.cs %}
+
+```
 
 ![reader 1](/img/posts/testing-azure-servicebus-queues/reader-1.png "reader 1")
 
@@ -39,6 +53,3 @@ should pick up and process their own share of messages without interfering with 
 This sample also demonstrates the use of the <code>Defer</code> method to allow an instance to 
 claim a message to work on, complete some process then come back to the message, retrieve it 
 from the queue and mark it as complete.
-
-<script src="https://gist.github.com/deejaygraham/adab7f906111820b4019.js"></script>
-
