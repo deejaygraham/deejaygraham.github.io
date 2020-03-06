@@ -25,12 +25,12 @@ width, height = 5, 5
 random_population_pc = 50
 
 # cell states
-dead_cell = 0 # debug set to 2 to see all dimly lit.
+dead_cell = 0  # debug set to 2 to see all dimly lit.
 live_cell = 9
 
 # is this x, y location on the board?
 def is_legal_location(x, y):
-  return 0 <= x < width && 0 <= y < height
+  return 0 <= x < width and 0 <= y < height
 
 # is this cell in the population in a matching state.
 def is_cell(population, x, y, state):
@@ -42,7 +42,7 @@ def is_cell(population, x, y, state):
 # certain configurations
 def count_live_neighbours(x, y, population):
   live_neighbours = 0
-# to the left...
+  # to the left...
   if is_cell(population, x - 1, y - 1, live_cell):
     live_neighbours += 1
 
@@ -52,15 +52,15 @@ def count_live_neighbours(x, y, population):
   if is_cell(population, x - 1, y + 1, live_cell):
     live_neighbours += 1
 
-# above
+  # above
   if is_cell(population, x, y - 1, live_cell):
     live_neighbours += 1
 
-# below
+  # below
   if is_cell(population, x, y + 1, live_cell):
     live_neighbours += 1
 
-# to the right...
+  # to the right...
   if is_cell(population, x + 1, y - 1, live_cell):
     live_neighbours += 1
 
@@ -74,27 +74,27 @@ def count_live_neighbours(x, y, population):
 
 # run through the survivors, births and deaths
 def create_next_generation(population):
-# nothing yet...
+  # nothing yet...
   next_generation = empty_population()
 
-# apply the rules of the game...
+  # apply the rules of the game...
   for x in range(0, width):
     for y in range(0, height):
       live_neighbours = count_live_neighbours(x, y, population)
-# Any live cell...
+      # Any live cell...
       if population[x][y] == live_cell:
-# ... with fewer than two live neighbours dies, as if caused by under-population.
+        # ... with fewer than two live neighbours dies, as if caused by under-population.
         if live_neighbours < 2:
           next_generation[x][y] = dead_cell
-# ... with two or three live neighbours lives on to the next generation.
+        # ... with two or three live neighbours lives on to the next generation.
         if live_neighbours in [2, 3]:
           next_generation[x][y] = live_cell
-# ... with more than three live neighbours dies, as if by over-population.
+        # ... with more than three live neighbours dies, as if by over-population.
         if live_neighbours > 3:
            next_generation[x][y] = dead_cell
-# Any dead cell...
+        # Any dead cell...
         if population[x][y] == dead_cell:
-# ... with exactly three live neighbours becomes a live cell, as if by reproduction.
+          # ... with exactly three live neighbours becomes a live cell, as if by reproduction.
           if live_neighbours == 3:
             next_generation[x][y] = live_cell
 
@@ -104,7 +104,7 @@ def create_next_generation(population):
 def empty_population():
   population = [[0 for x in range(width)] for y in range(height)]
 
-# start with all dead cells
+  # start with all dead cells
   for x in range(0, width):
     for y in range(0, height):
       population[x][y] = dead_cell
