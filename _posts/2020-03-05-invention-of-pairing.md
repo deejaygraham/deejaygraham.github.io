@@ -18,18 +18,25 @@ The year is 1994 or 1995 and I was working in Rogers, Arkansas with a company ca
 pretty early in my software development career, and I was a self-taught programmer. My mentor at 
 that company was a veteran called Rick who looked very much like the photos you see of the elder Mark Twain.
 
+![rick](/img/posts/invention-of-pairing/mark-twain.jpg)
+
+
 Rick and his team of seasoned, professional C and C++ developers were deep into manufacturing process control 
 and working with some of the big food manufacturers on automated packaging and wrapping machines.
 
 The new projects was to provide a complete automated system to retrofit mechanical glass-forming machines and provide central control over a whole factory-worth of machines from a single management machine but also provide at-machine control devices with touch screens for finer, operator controlled adjustments.
 
-This system used stepper and servo motors, sensors, digital IO and lots of PCs to create a system which replaced the "legacy" clock-work system of actuators and mechanical timing drums with a "modern" UI and finer 
-adjustment capability over timing.
+![maul](/img/posts/invention-of-pairing/maul.png)
 
+This system used stepper and servo motors, sensors, digital IO and lots of PCs to create a system which replaced the "legacy" clock-work system of actuators and mechanical timing drums with a "modern" UI and finer adjustment capability over timing.
+
+![ui](/img/posts/invention-of-pairing/frontside.png)
 
 ## Glass is the Word
 
 Timing is the thing that the whole glass forming machine is based on. The typical glass factory is built around a central furnace which sits high up in the factory roof and heats glass to a horrifically high temperature, delivering it to each machine on a gravity-feed system. Hot glass falls out of the furnace and is cut into a "gob" by a giant pair of scissors. The gob then falls into a iron drain pipe which directs the glass to parallel stations on the machine in a round-robin system. Each station works slightly offset in time to every other one but performs exactly the same operation. A mould is open initially, the glass gob falls into it, the mould is closed immediately and pressurised air is forced into the mould to push the hot glass into the mould and form the specific glassware. The mould is held closed for a few seconds then opens and a mechanical arm lifts the new glassware out of the mould and places it at the front of the machine. Finally, another mechanical arm, called a pusher, pushes the glass out from the machine onto a conveyor belt which takes the glass for cooling and further treatment. 
+
+![glass](/img/posts/invention-of-pairing/bottles.jpeg)
 
 As you can imagine, this is a noisy, dangerous process and relies heavily on microscopic timing (and therefore accurate control) and patience to get one section of a machine working correctly. Now do that for 10, 12, 20 
 sections in parallel and make them all fit together so that bottles come out of the machine onto the 
@@ -45,6 +52,8 @@ and build the code on your own machine, ship it and see what happens.
 ## Coding USA
 
 Now one of the first test sites we went to was a factory in Hillboro, Illinois (now closed). The factory was a big, dirty, noisy, open-ended shed which wasn't suited to thinking and algorithmic correctness. So we set up home in a small out of the way *shack* in the factory grounds but quite a way away from the factory proper. 
+
+![hillsboro](/img/posts/invention-of-pairing/hillsboro-orpheum.png)
 
 The first we knew of problems tended to be after someone had done a new build, pushed it live and then went to see how that worked! There's often a big difference between getting code to compile and it having it work as you intend it. This was one of those occasions. You can imagine the scene if they didn't do it completely perfectly. All that split-second timing gone and replaced by a massive pile of cooling, broken glass which the 
 operator on duty had to clear up. Moving cold broken glass is a hazardous thing to do never mind glass that is several hundred degrees that has welded itself around pieces of machinery. 
