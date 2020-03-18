@@ -19,6 +19,5 @@ class FlyingToaster(object):
   def move(self):
     self.xpos -= self.speed
     self.ypos += self.speed
-    # off side of the screen ?
     if self.xpos < -self.sprites[0].width: self.xpos = width + self.sprites[0].width
     if self.ypos > height: self.ypos = 0 - self.sprites[0].height
