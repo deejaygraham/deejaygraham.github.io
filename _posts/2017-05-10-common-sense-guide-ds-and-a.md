@@ -3,7 +3,7 @@ layout: post
 title: A Common-Sense Guide to Data Structures and Algorithms
 published: true
 categories: [ code, books ]
-thumbnail: "/img/posts/common-sense-guide-ds-and-a/thumbnail-420x255.jpg"
+thumbnail: "/img/posts/common-sense-guide-ds-and-a/thumbnail-420x255.png"
 alttext: pairing
 ---
 
