@@ -101,6 +101,12 @@ with you' of this ad-hoc protocol.
 Following the handshake comes the main loop which interprets the single letter commands coming from the handset controller and forwards to the bitbot class to 
 drive the car. This loop is now a lot simpler than in earlier versions.
 
+```python
+
+{% include code/python/microbit/bitbot-rc2-5.py %}
+
+```
+
 
 ## Handset
 
@@ -114,9 +120,10 @@ LED in the centre of the display and the matching heart icon after the handshake
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-5.py %}
+{% include code/python/microbit/bitbot-rc2-6.py %}
 
 ```
+
 
 ### Commands
 
@@ -124,16 +131,11 @@ I left the command variables in the handset program since this is a much smaller
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-6.py %}
-
-```
-
-I split out the forward/backward and side tilt values even though they ended up being the same. I struggled a little with coming up with the right form of algorithm for which command to send when the device is tilted
-```python
-
 {% include code/python/microbit/bitbot-rc2-7.py %}
 
 ```
+
+I split out the forward/backward and side tilt values even though they ended up being the same. I struggled a little with coming up with the right form of algorithm for which command to send when the device is tilted. In testing I found that I was trying to corner but because the controller was not completely flat on the forward axis, the handset would ignore the steering command and send a forward or reverse command instead. I ended up just looking at which of the non-zero tilts was the greatest and using that to decide which one to send out to the car.
 
 ```python
 
