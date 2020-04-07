@@ -135,10 +135,26 @@ I left the command variables in the handset program since this is a much smaller
 
 ```
 
-I split out the forward/backward and side tilt values even though they ended up being the same. I struggled a little with coming up with the right form of algorithm for which command to send when the device is tilted. In testing I found that I was trying to corner but because the controller was not completely flat on the forward axis, the handset would ignore the steering command and send a forward or reverse command instead. I ended up just looking at which of the non-zero tilts was the greatest and using that to decide which one to send out to the car.
+I split out the forward/backward and side tilt values even though they ended up being the same. I had a lot of test driving and experimented with a few settings 
+to see which felt most natural when just trying to control the car without it being too sensitive to hand movements in either direction. The values I came up 
+with seem to work well to allow for some margin of error and to respond to intentional but natural hand movements for driving.
+
+
+### Driving
+
+I struggled a little with coming up with the right form of algorithm for which command to send when the device is tilted. In testing I found that I was trying to corner but because the controller was not completely flat on the forward axis, the handset would ignore the steering command and send a forward or reverse command instead. I ended up just looking at which of the non-zero tilts was the greatest and using that to decide which one to send out to the car.
+
 
 ```python
 
 {% include code/python/microbit/bitbot-rc2-8.py %}
 
 ```
+
+Finally, I tightened up the sleep timing on the handset controller to make communcation between the devices a little bit more responsive.
+
+
+### Conclusion
+
+I think this is the final version of this project, I can't think of any other improvements I want to make. Also, all the way along I have found memory allocation 
+errors when flashing my preferred intermediate version of the code and had to modify to bring it back under the memory limit for the device. I think this is probably the biggest project you could run on a microbit with classes. It may be possible to totally devolve the solution into one big while loop to save on memory but I am very happy with the level of functionality and most of how the code looks now. 
