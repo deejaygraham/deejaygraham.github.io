@@ -1,0 +1,30 @@
+---
+layout: post
+title: Game of Life 2
+published: true
+categories: [code, microbit]
+hero: microbit
+thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+alttext: microbit sorting hat
+---
+
+I heard about John Conway's death from COVID-19 this weekend and was thinking about his most famous 
+contribution, the Game of Life. I did an implementation for the microbit a while ago modelling explicit 
+population objects as two dimensional arrays of cells. 
+
+Reconsidering this implementation, it seemed a bit too complicated for what was needed and often seemed 
+to run out of stack space when running. The thought occurred that the display itself could be used as a 
+sort of variable. After all, the original version worked with an array of cells that were manipulated according 
+to the rules of the game then mapped to the 5 x 5 led display to show the current state. If we get rid of the 
+intermediate representation, then the display can be lit with the live cells and we can read the state of 
+any particular cell by using get_pixel.
+
+```python
+
+{% include code/python/microbit/game-of-life-2.py %}
+
+```
+
+Removing the population variables and passing objects around in the code tidies things up a bit at the 
+expense of having a "global" display variable used to hold the internal game state. I think that the code is 
+easier to read and is less complicated plus it comes in at fewer actual lines of code. 
