@@ -28,3 +28,19 @@ any particular cell by using get_pixel.
 Removing the population variables and passing objects around in the code tidies things up a bit at the 
 expense of having a "global" display variable used to hold the internal game state. I think that the code is 
 easier to read and is less complicated plus it comes in at fewer actual lines of code. 
+
+### Bug
+
+There is one weakness with this implementation. Because we are updating the display as we go along in applying the rules, it's possible that the new state of the game bleeds into the current state as we proceed top left to bottom right which would have an impact on certain configurations. Better to read the current state and create a blank image object and update that with new state then blt that to the display.
+
+It turns out that is really easy to do. We create a new image in the apply rules function, update it with set_pixel as we 
+work our way through the cells, then use display.show at the end to make this image the new state of the game. 
+
+```python
+
+{% include code/python/microbit/game-of-life-3.py %}
+
+```
+
+Once this is addressed, the shapes that appear are subtly different and the stable and unstable end states are different too. 
+
