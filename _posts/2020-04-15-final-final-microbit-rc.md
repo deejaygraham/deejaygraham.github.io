@@ -22,7 +22,7 @@ looked like I was going to have to abandon some of those and replace some variab
 
 The handset code didn't change very much because that has always been small enough (about 100 lines) and all I needed was to add a couple of extra commands 
 to send to the car. 
-
+"/img/thumbnails/microbit-420x255.jpg"
 
 ### Commands
 
