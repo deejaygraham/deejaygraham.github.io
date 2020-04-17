@@ -4,7 +4,7 @@ title: Final, Final, Microbit RC
 published: true
 categories: [code, microbit]
 hero: microbit
-thumbnail: "/img/posts/thumbnails/microbit-420x255.png"
+thumbnail: "img/posts/thumbnails/microbit-420x255.png"
 alttext: microbit bit bot
 ---
 
