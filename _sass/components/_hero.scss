@@ -22,19 +22,16 @@ $heroes: (
 @media (min-width: 750px) {
 
 	.hero {
-		background-repeat: no-repeat;
-		background-position: center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		display: block;
 		width:100%;
 	}
 
 	@each $name, $image in $heroes {
 		.#{$name} {
-			background-image: url($image);
+			background: url($image) no-repeat center center fixed;
 		}
 	}
 }
