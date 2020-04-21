@@ -35,3 +35,8 @@ $dj-default-padding: 1em;
 #article-meta, .level.tile-tags {
 	margin-bottom:0.5rem;
 }
+
+// separate tiles vertically.
+.tile.is-child {
+ 	margin-bottom: 2em;
+}
