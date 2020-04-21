@@ -32,6 +32,6 @@ $dj-default-padding: 1em;
 } 
 
 // tighten meta data with tile image
-#article-meta {
+#article-meta, .level.tile-tags {
 	margin-bottom:0.5rem;
 }
