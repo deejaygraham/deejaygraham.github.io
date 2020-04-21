@@ -1,3 +1,16 @@
+// Overrides 
+
+$tile-rounding: 10px;
+
+.tile-thumbnail {
+	img {
+      -webkit-border-radius: $tile-rounding; 
+      -moz-border-radius: $tile-rounding; 
+      border-radius: $tile-rounding; 
+      background-clip: padding-box;
+	}
+}
+
 $dj-default-padding: 1em;
 
 .has-bottom-spacing {
@@ -17,3 +30,4 @@ $dj-default-padding: 1em;
 		margin-bottom: 2em;
 	}
 } 
+

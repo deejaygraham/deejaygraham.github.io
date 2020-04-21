@@ -2,32 +2,21 @@
 # container scss for site.css
 ---
 
-// https://bulma.io/documentation/customize/variables/
 
-// general
-// -------
-
-// colours
-// ---------
-
-//@import "variables/colours";
+// Customised using advice from https://bulma.io/documentation/customize/variables/
 
 
-// css framework
-// ----------------
+// Theme 
+// -----
 
 // flatly theme from https://github.com/jenil/bulmaswatch/tree/gh-pages/flatly
-// flatly variables
-@import "flatly-variables";
-
-// bulma itself
+// import theme variables, bulma, then theme overrides
+@import "theme/flatly-variables";
 @import "bulma/bulma.sass";
-
-// flatly overrides
-@import "flatly-overrides";
+@import "theme/flatly-overrides";
 
 
-// font-awesome
+// Font-awesome
 // ------------
 
 @import "fa/fontawesome.scss";
@@ -35,28 +24,23 @@
 @import "fa/brands.scss";
 
 
-// typography 
-// ----------
-
-//@import "variables/typography";
-
-
-// components
+// Components
 // ----------
 
 @import "components/hero";
 
-.tile-thumbnail {
-	img {
-		border-radius: 2px;
-	}
-}
 
-// fixes
+// General site overrides
+// ----------------------
+
+@import "site-overrides";
+
+
+// Fixes
 // -----
 
 @import "prism-fixes";
-@import "padding-fixes";
+
 
 /*
 .tag:not(body) {
@@ -181,7 +165,7 @@ $footer-textcolor: rgb(255,255,255);
 @import "print";
 
 
-// debugging
+// Debugging
 // ---------
 
 //@import "grid";
