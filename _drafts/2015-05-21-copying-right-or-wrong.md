@@ -20,7 +20,7 @@ Here are a selection of quotes (to come later) and photos* from the evening:
 
 ![pic4](/img/posts/copying-right-or-wrong/17598515072_786e19b47f_m.jpg "Cory")
 
-### Photo credits
+## Photo credits
 
 Photos by Steve Brock under [CC BY-NC](https://creativecommons.org/licenses/by-nc/2.0/)
 

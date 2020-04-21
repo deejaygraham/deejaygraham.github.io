@@ -5,7 +5,7 @@
 		<img src="{{ site.url }}/{{ include.image }}" alt="{{ include.alttext }}" />
 	</figure>
 {% endif %}
-<nav class="level is-mobile article-tags">
+<nav class="level is-mobile article-tags" id="article-meta">
 {% if include.categories %}
 	<div class="level-left">
 		{% include post-tags.html tags=include.categories %}
