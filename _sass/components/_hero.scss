@@ -5,10 +5,23 @@ $hero-background: #415058;
 	display:none;
 }
 
+$heroes: (
+	"agile": "/img/heroes/hero-muda-muri-mura.png",
+	"blank": "/img/heroes/hero-bomb.png",
+	"cloud": "/img/heroes/hero-man-love.jpg",
+	"code": "/img/heroes/hero-dddnorth.jpg",
+	"giraffes": "/img/heroes/giraffes.jpg"
+	"makers": "/img/heroes/hero-makers-and-creators.jpg",
+	"microbit": "/img/heroes/hero-microbit.jpg",
+	"minecraft": "/img/heroes/hero-rpi-2.jpg",
+	"power": "/img/heroes/hero-crampton-locomotive.jpg",
+	"secret": "/img/heroes/hero-secret-harbour.jpg",
+	"waste": "/img/heroes/hero-muda-muri-mura.png"
+); 
+
 @media (min-width: 750px) {
 
 	.hero {
-		//padding: 10em 0;
 		background-repeat: no-repeat;
 		background-position: center center;
 		-webkit-background-size: cover;
@@ -19,51 +32,9 @@ $hero-background: #415058;
 		width:100%;
 	}
 
-	.waste {
-		background-image: url("/img/heroes/hero-muda-muri-mura.png");
-	}
-
-	.agile {
-		background-image: url("/img/heroes/hero-muda-muri-mura.png");
-	}
-
-	.cloud {
-		background-image: url("/img/heroes/hero-man-love.jpg");
-	}
-
-	.code {
-		background-image: url("/img/heroes/hero-dddnorth.jpg");
-	}
-
-	.power {
-		background-image: url("/img/heroes/hero-crampton-locomotive.jpg");
-	}
-
-	.secret {
-		background-image: url("/img/heroes/hero-secret-harbour.jpg");
-	}
-
-	.makers {
-		background-image: url("/img/heroes/hero-makers-and-creators.jpg");
-	}
-
-	.minecraft {
-		background-image: url("/img/heroes/hero-rpi-2.jpg");
-	}
-
-	.microbit {
-		background-image: url("/img/heroes/hero-microbit.jpg");
-	}
-
-	.blank { 
-		background-image: url("/img/heroes/hero-bomb.png");
-	}
-	
-	.giraffes {
-		background-image: url("/img/heroes/giraffes.jpg");
-		height: 20em;
-		opacity: 0.5;
-		
+	@each $name, $image in $heroes {
+		.#{$name} {
+			background-image: url($image);
+		}
 	}
 }
-
