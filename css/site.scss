@@ -46,6 +46,11 @@
 
 @import "components/hero";
 
+.tile-thumbnail {
+	img {
+		border-radius: 2px;
+	}
+}
 
 // fixes
 // -----
