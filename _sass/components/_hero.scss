@@ -26,13 +26,13 @@ $heroes: (
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		display:table;
 		width:100%;
-		display:block;
 	}
 
 	@each $name, $image in $heroes {
 		.#{$name} {
-			background: url($image) no-repeat center center fixed;
+			background: url($image) no-repeat center center;
 		}
 	}
 }
