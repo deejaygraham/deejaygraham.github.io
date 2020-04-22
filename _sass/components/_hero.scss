@@ -27,6 +27,7 @@ $heroes: (
 		-o-background-size: cover;
 		background-size: cover;
 		width:100%;
+		display:block;
 	}
 
 	@each $name, $image in $heroes {
