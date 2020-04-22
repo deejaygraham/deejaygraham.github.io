@@ -14,7 +14,7 @@ $blue: #3498db;
 $purple: #8e44ad;
 $red: #e74c3c;
 $white-ter: #ecf0f1;
-$primary: #34495e !default;
+$primary:#34495e !default;
 $yellow-invert: #fff;
 
 // DG Colour Amendments
@@ -49,7 +49,7 @@ $box-color: $text;
 $box-background-color: $white-ter;
 $box-shadow: none;
 
-$link: $watermelon; //$turquoise;
+$link: $blue; //$turquoise;
 $link-hover: darken($link, 10);
 $link-focus: darken($link, 10);
 $link-active: darken($link, 10);
