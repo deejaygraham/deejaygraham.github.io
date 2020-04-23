@@ -3,7 +3,7 @@ layout: post
 title: Game of Oligarchy
 published: true
 categories: [code]
-thumbnail: "img/posts/game-of-oligarchy/thumbnail-420x255.png"
+thumbnail: "/img/posts/game-of-oligarchy/thumbnail-420x255.png"
 alttext: players
 ---
 
