@@ -1,11 +1,21 @@
-{% if page.tweetable %}
+{% assign tweetable = true %}
+
+{% if tweetable %}
 <!-- twitter card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.twitterid }}">
 <meta name="twitter:creator" content="@{{ site.twitterid }}">
-{% if page.title %}<meta name="twitter:title" content="{{ page.title }}">{% else %}<meta name="twitter:title" content="{{ site.title }}">{% endif %}
-{% if page.url %}<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">{% endif %}
-<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
-{% if page.thumbnail %}<meta name="twitter:image:src" content="{{ site.url }}/img/{{ page.thumbnail }}">{% else %}<meta name="twitter:image:src" content="{{ site.url }}/img/avatar.png">{% endif %}
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% if page.excerpt %}
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.thumbnail %}
+<meta name="twitter:image:src" content="{{ site.url }}{{ page.thumbnail }}">
+{% else %}
+<meta name="twitter:image:src" content="{{ site.url }}/img/avatar.png">
+{% endif %}
 <!-- end twitter card -->
 {% endif %}
