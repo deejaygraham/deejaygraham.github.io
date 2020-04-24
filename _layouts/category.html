@@ -5,8 +5,6 @@ layout: index
 <header>
 	<h1 class="title is-size-1">{{ site.categories[page.tag].size }} Posts tagged with #{{ page.tag }}</h1>
 </header>
-	
-<div class="content">
 
 {% assign boxes_per_row = 3 %}
 {% assign box_count = 0 %}
@@ -34,5 +32,3 @@ layout: index
 {% if box_count > 0 %}
 </div>
 {% endif %}	
-
-</div>
