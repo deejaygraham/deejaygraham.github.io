@@ -17,7 +17,8 @@ of my employer.</p>
 <a href="http://meetup.com/Agile-North-East/">Agile North East</a>, both hosted in Newcastle city centre.</p>
 
 <p class="has-vertical-spacing">I am an <strong>Extreme Programmer</strong>, an Infrequent <strong>Sketchnoter</strong>, a Collector 
-of <strong>Programming</strong> Languages, a <strong>Speaker</strong>, a <strong>Mob</strong> Programmer, a <strong>Test-Driven</strong> 
+of <strong>Programming</strong> Languages, a <strong>Speaker</strong> available for tech conferences and meetups, 
+a <strong>Mob</strong> Programmer, a <strong>Test-Driven</strong> 
 Developer and Struggling <strong>Agilista</strong>. I am also a STEM ambassador, microbit hacker and project lead 
 for the "Makers &amp; Creators" events at Campus North with Tech for Life UK.</p>
 
