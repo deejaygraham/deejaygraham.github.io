@@ -10,9 +10,9 @@ layout: index
 <header>
     <h1 class="title is-size-1">Blog Entries by Tag</h1>
 
+{% for cat in sorted_cats %}
+    {% if tag_count == 0 %}
     <nav class="level is-mobile tile-tags">
-    {% for cat in sorted_cats %}
-        {% if tag_count == 0 %}
         <div class="level-left">
         {% endif %}
             <div class="level-item">
@@ -22,13 +22,14 @@ layout: index
         {% if tag_count >= tags_per_row %}
         {% assign tag_count = 0 %}
         </div>
-        {% endif %}
+    </nav>    
+    {% endif %}
     
     {% endfor %}
     {% if tag_count > 0 %}
         </div>
-    {% endif %}
     </nav>    
+    {% endif %}
 </header>
 
 
