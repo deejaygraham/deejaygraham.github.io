@@ -13,7 +13,7 @@ software company in the North East of England. I can't be sure that the opinions
 I have expressed here are my own so they **definitely** don't represent the views 
 of my employer.</p>
 
-<p class="has-vertical-spacing">I co-organize <a href="http://nebytes.net" target="_blank">NE Bytes</a>, a monthly .Net community get-together and 
+<p class="has-vertical-spacing">I co-organize <a href="https://ti.to/ne-bytes" target="_blank">NE Bytes</a>, a monthly .Net community get-together and 
 <a href="http://meetup.com/Agile-North-East/">Agile North East</a>, both hosted in Newcastle city centre.</p>
 
 <p class="has-vertical-spacing">I am an <strong>Extreme Programmer</strong>, an Infrequent <strong>Sketchnoter</strong>, a Collector 
