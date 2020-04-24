@@ -8,9 +8,9 @@ title: talks
 <!-- Row 1 -->
 <div class="tile is-ancestor">
 	<div class="tile is-parent">
-		<div class="tile is-child">
-			<p class="title">Coming Soon...</p>
-		</div>
+		<article class="tile is-child">
+            {% include tile.html title="The Elements of Style 2" subtitle="Sunderland Uni 2020" url="https://www.slideshare.net/deejaygraham/the-elements-of-style-232564981" thumbnail="/img/posts/talks/the-elements-of-style-2.png" %}
+        </article>
 	</div>
 	<div class="tile is-parent">
 		<article class="tile is-child">
