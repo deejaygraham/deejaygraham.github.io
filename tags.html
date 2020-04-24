@@ -2,22 +2,22 @@
 title: blog tags
 layout: index
 ---
+{% assign sorted_cats = site.categories | sort %}
 
 <header>
     <h1 class="title is-size-1">Blog Entries by Tag</h1>
+
+    <nav class="level is-mobile tile-tags">
+        <div class="level-left">
+        {% for cat in sorted_cats %}
+            <div class="level-item"><a title="go to posts tagged with &quot;{{ cat[0] }}&quot;" class="tag is-light" href="#{{ cat[0] }}">{{ cat[0] }}</a></div>
+        {% endfor %}
+        </div>
+    </nav>    
 </header>
 
-{% assign sorted_cats = site.categories | sort %}
 
-<!-- in a box -->
 <div class="content">
-    <div class="box tags">
-{% for cat in sorted_cats %}
-        <a class="is-link" style="padding: 0.5em;" href="#{{ cat[0] }}">{{ cat[0] }}</a>
-{% endfor %}
-    </div>
-
-
 {% for cat in sorted_cats %}
     <div id="{{ cat[0] }}" class="has-vertical-spacing">
       <h2 class="is-size-3">{{ cat[0] }}</h2>
