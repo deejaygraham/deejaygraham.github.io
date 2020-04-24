@@ -14,7 +14,7 @@ I have expressed here are my own so they **definitely** don't represent the view
 of my employer.</p>
 
 <p class="has-vertical-spacing">I co-organize <a href="https://ti.to/ne-bytes" target="_blank">NE Bytes</a>, a monthly .Net community get-together and 
-<a href="http://meetup.com/Agile-North-East/">Agile North East</a>, both hosted in Newcastle city centre.</p>
+<a href="http://meetup.com/Agile-North-East/" target="_blank">Agile North East</a>, both hosted in Newcastle city centre.</p>
 
 <p class="has-vertical-spacing">I am an <strong>Extreme Programmer</strong>, an Infrequent <strong>Sketchnoter</strong>, a Collector 
 of <strong>Programming</strong> Languages, a <strong>Speaker</strong> available for tech conferences and meetups, 
@@ -27,7 +27,7 @@ we <strong>ship</strong>, <strong>test-driven</strong> development, unit <strong
 deliberate <strong>learning</strong>, <strong>visual</strong> thinking, design and, of course, <strong>code</strong>.</p>
 
 
-<h2 class="is-size-4">A Note on Sharing</h2>
+<h2 class="is-size-3">A Note on Sharing</h2>
 
 <p class="has-vertical-spacing">I've had a few requests from people wanting to use sketchnotes or graphics from my
 site for non-commercial uses. I try to make sure all posts that contain any "art"
@@ -48,7 +48,7 @@ you can and cannot use the material for. In short:</p>
 <p class="has-vertical-spacing">Not part of the licence but I'd also really like it if you would let me know,
 by email or tweet, what you did with it or how it helped you.</p>
 
-<h2 class="is-size-4">Other Illustrations</h2>
+<h2 class="is-size-3">Other Illustrations</h2>
 
 <p class="has-vertical-spacing">You will notice some of the "hero" images on some posts are not drawn by me. They
 are from [Old Book Illustrations](http://www.oldbookillustrations.com/), a searchable
