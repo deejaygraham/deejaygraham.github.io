@@ -14,22 +14,22 @@ layout: index
     {% if tag_count == 0 %}
     <nav class="level is-mobile tile-tags">
         <div class="level-left">
-        {% endif %}
+    {% endif %}
             <div class="level-item">
                 <a title="go to posts tagged with &quot;{{ cat[0] }}&quot;" class="tag is-light" href="#{{ cat[0] }}">{{ cat[0] }}</a>
             </div>
-        {% assign tag_count = tag_count | plus:1 %}
-        {% if tag_count >= tags_per_row %}
+    {% assign tag_count = tag_count | plus:1 %}
+    {% if tag_count >= tags_per_row %}
         {% assign tag_count = 0 %}
         </div>
     </nav>    
     {% endif %}
     
-    {% endfor %}
-    {% if tag_count > 0 %}
+{% endfor %}
+{% if tag_count > 0 %}
         </div>
     </nav>    
-    {% endif %}
+{% endif %}
 </header>
 
 
@@ -37,13 +37,12 @@ layout: index
 {% for cat in sorted_cats %}
     <div id="{{ cat[0] }}" class="has-vertical-spacing">
       <h2 class="is-size-3">{{ cat[0] }}</h2>
-      <p><a href="#top">Back to top</a></p>
       <ul>
-{% for post in cat[1]] %}
+    {% for post in cat[1]] %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+    {% endfor %}
       </ul>
+      <p><a href="#top">Back to top</a></p>
     </div>
 {% endfor %}
-<p><a href="#top">Back to top</a></p>
 </div>
