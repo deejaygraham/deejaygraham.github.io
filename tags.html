@@ -4,17 +4,19 @@ layout: index
 ---
 
 <header>
-    <h1 class="title">Blog Entries by Tag</h1>
+    <h1 class="title is-size-1">Blog Entries by Tag</h1>
 </header>
 
 {% assign sorted_cats = site.categories | sort %}
 
+<!-- in a box -->
 <div class="content">
-    <div class="tags">
+    <div class="box tags">
 {% for cat in sorted_cats %}
         <a class="is-link" style="padding: 0.5em;" href="#{{ cat[0] }}">{{ cat[0] }}</a>
 {% endfor %}
     </div>
+
 
 {% for cat in sorted_cats %}
     <div id="{{ cat[0] }}" class="has-vertical-spacing">
