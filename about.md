@@ -4,7 +4,7 @@ layout: index
 hero: makers
 ---
 
-<h2 class="is-size-2">Hey, Hi, Hello.</h2>
+<h1 class="is-size-1">Hey, Hi, Hello.</h1>
 
 <p class="has-vertical-spacing">My name is Derek Graham and this is my personal blog.</p>
 
@@ -27,7 +27,7 @@ we <strong>ship</strong>, <strong>test-driven</strong> development, unit <strong
 deliberate <strong>learning</strong>, <strong>visual</strong> thinking, design and, of course, <strong>code</strong>.</p>
 
 
-<h2 class="is-size-2">A Note on Sharing</h2>
+<h2 class="is-size-4">A Note on Sharing</h2>
 
 <p class="has-vertical-spacing">I've had a few requests from people wanting to use sketchnotes or graphics from my
 site for non-commercial uses. I try to make sure all posts that contain any "art"
@@ -48,7 +48,7 @@ you can and cannot use the material for. In short:</p>
 <p class="has-vertical-spacing">Not part of the licence but I'd also really like it if you would let me know,
 by email or tweet, what you did with it or how it helped you.</p>
 
-<h2 class="is-size-2">Other Illustrations</h2>
+<h2 class="is-size-4">Other Illustrations</h2>
 
 <p class="has-vertical-spacing">You will notice some of the "hero" images on some posts are not drawn by me. They
 are from [Old Book Illustrations](http://www.oldbookillustrations.com/), a searchable
