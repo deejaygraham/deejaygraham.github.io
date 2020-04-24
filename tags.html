@@ -4,15 +4,30 @@ layout: index
 ---
 {% assign sorted_cats = site.categories | sort %}
 
+{% assign tags_per_row = 10 %}
+{% assign tag_count = 0 %}
+
 <header>
     <h1 class="title is-size-1">Blog Entries by Tag</h1>
 
     <nav class="level is-mobile tile-tags">
+    {% for cat in sorted_cats %}
+        {% if tag_count == 0 %}
         <div class="level-left">
-        {% for cat in sorted_cats %}
-            <div class="level-item"><a title="go to posts tagged with &quot;{{ cat[0] }}&quot;" class="tag is-light" href="#{{ cat[0] }}">{{ cat[0] }}</a></div>
-        {% endfor %}
+        {% endif %}
+            <div class="level-item">
+                <a title="go to posts tagged with &quot;{{ cat[0] }}&quot;" class="tag is-light" href="#{{ cat[0] }}">{{ cat[0] }}</a>
+            </div>
+        {% assign tag_count = tag_count | plus:1 %}
+        {% if tag_count >= tags_per_row %}
+        {% assign tag_count = 0 %}
         </div>
+        {% endif %}
+    
+    {% endfor %}
+    {% if tag_count > 0 %}
+        </div>
+    {% endif %}
     </nav>    
 </header>
 
