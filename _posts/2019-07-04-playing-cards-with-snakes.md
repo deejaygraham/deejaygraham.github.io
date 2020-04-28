@@ -3,6 +3,7 @@ layout: post
 title: Playing Cards with Snakes
 published: true
 categories: [code]
+thumbnail: "/img/posts/playing-cards-with-snakes/thumbnail-420x255.png"
 ---
 
 Another random discussion in our regular coding dojo led me to think about representing individual playing cards and decks of cards in python. Playing cards with Snakes rather than Sharks, if you will :)
