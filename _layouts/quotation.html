@@ -22,7 +22,9 @@
                 {% if page.comment %}<p class="has-vertical-spacing">{{ page.comment }}</p>{% endif %}
                 <div class="card">
                     <div class="card-content">
-                        <p class="title {{ quotesize }}">{{ content }}</p>
+                        <div class="title {{ quotesize }}">
+                            {{ content }}
+                        </div>
                         <p class="has-text-right has-text-grey">
                             {% if page.attribution %}<em> {{ page.attribution }} </em>{% endif %}
                             {% if page.publication %}<em> {{ page.publication }} </em>{% endif %}
