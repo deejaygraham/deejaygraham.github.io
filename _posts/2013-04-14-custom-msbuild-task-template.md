@@ -9,17 +9,17 @@ Creating customs tasks for MsBuild is relatively easy provided you follow a few 
 The example below assumes you are familiar with .Net - specifically C# in this case - and 
 Visual Studio:
 
-### 1. Create a new class library project
+## 1. Create a new class library project
 
 ![New Project](/img/posts/custom-msbuild-task-template/vs-new-project.png)
 
-### 2. Add references to MsBuild
+## 2. Add references to MsBuild
 	
 	Microsoft.Build.Framework
     Microsoft.Build.Tasks.v4.0
     Microsoft.Build.Utilities.v4.0 
 
-### 3. Add a new class derived from Task
+## 3. Add a new class derived from Task
 	
 Add required input properties and override the Execute method
 	
@@ -79,7 +79,7 @@ Add required input properties and override the Execute method
         }
 	}
 
-### 4. Use it in your scripts	
+## 4. Use it in your scripts	
 
 	<!-- Change this path to point to installed dll -->	
 	<UsingTask AssemblyFile="$(MSBuildProjectDirectory)MyTasks.dll" TaskName="MyTask"/>
