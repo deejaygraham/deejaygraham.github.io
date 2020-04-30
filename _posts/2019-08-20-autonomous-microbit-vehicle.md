@@ -4,7 +4,7 @@ title: Autonomous Microbit Vehicle
 published: true
 categories: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+thumbnail: img/posts/autonomous-microbit-vehicle/thumbnail-420x255.jpg"
 alttext: microbit sorting hat
 ---
 
@@ -14,11 +14,22 @@ report a binary value depending on whether they are "seeing" a reflection (white
 on separate sides of the vehicle chassis so that we can build a track using <a href="http://robotsquare.com/wp-content/uploads/2012/11/linefollowtiles.pdf">printable
 squares</a> and use the sensors to keep us on the straight and narrow.
 
+
+
 ### Line Sensor
 
 The two sensors are wired to two different digital input pins on the microbit and we can query each individually. If we can see
-equal reflections from both sensors we assume we are travelling in a roughly straight line (or at least not hit an edge). When we
-see a difference in sensors we know we have hit an edge and need to correct by turning in the opposite direction.
+equal reflections from both sensors we assume we are travelling in a roughly straight line (or at least not hit an edge). 
+
+![straddling the line](/img/posts/autonomous-microbit-vehicle/straddling.jpg)
+
+
+When we see a difference in sensors we know we have hit an edge and need to correct by turning in the opposite direction.
+
+![too far left](/img/posts/autonomous-microbit-vehicle/too-far-left.jpg)
+
+![too far right](/img/posts/autonomous-microbit-vehicle/too-far-right.jpg)
+
 
 ```python
 
