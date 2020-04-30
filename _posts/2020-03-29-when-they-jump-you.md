@@ -6,7 +6,7 @@ published: true
 attribution: David Allen
 publication: On being prepared for work and martial arts
 categories: [ quote, gtd ]
-thumbnail: "/img/posts/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.jpg"
 alttext: gtd quote
 ---
 
