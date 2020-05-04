@@ -3,7 +3,7 @@ layout: sketchnote
 title: Practical Tips for Playing Well with Others
 categories: [ sketchnotes, presentations ]
 tweetable: true
-thumbnail: "/img/posts/playing-well-with-others/playing-well-with-others.png"
+thumbnail: "/img/posts/playing-well-with-others/thumbnail-420x255.png"
 sketchnote:
   url: "/img/posts/playing-well-with-others/playing-well-with-others.png"
   alt: "sketchnote"
