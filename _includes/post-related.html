@@ -3,7 +3,7 @@
 
 {% if site.categories[firstCategory].size > 1 %}
 <div class="related-posts">
-	<h3 class="is-size-3">Other Posts tagged with #{{ firstCategory }}</h3>
+	<h3 class="is-size-3">Other posts tagged with #{{ firstCategory }}</h3>
 	<ul>
 {% for related in site.categories[firstCategory] limit:6 %}
 	{% unless include.url == related.url %}
