@@ -63,3 +63,16 @@ Here's the working circuit:
 
 
 Now I have my wiring and breadboard and breakout edge connector to hand, I'll try to post some more electronics projects.
+
+
+### Traffic Lights
+
+From one LED to a number of them is a matter of replicating what we have already done and assigning each LED to a different out. To take the traffic light 
+example where we cycle between green, red, amber and back to green, each LED has to be assigned to a workable digital io pin (see <a href="https://microbit-micropython.readthedocs.io/en/latest/pin.html" >here for reference</a>) on a separate portion of the breadboard. 
+
+
+```python
+
+{% include code/python/microbit/traffic-lights.py %}
+
+```
