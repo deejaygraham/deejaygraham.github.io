@@ -30,7 +30,8 @@ If everything goes wrong, the facilitator can use their hidden microbit to sneak
 
 ### Volunteer
 
-So, here's the code for the volunteer microbit. You will notice that when the card selection happens, it's immediately broadcast to the other roles and overwritten each time a new selection is made. Pressing the b button actually triggers the robot to speak the card selection.
+So, here's the code for the audience volunteer microbit. The audience member will press the 'A' button to select a card at random and keep pressing the button until they find one they 
+are happy with. You will notice that when the card selection happens, it's immediately broadcast to the other roles and overwritten each time a new selection is made. Pressing the 'B' button lets the audience member "lock in" their selection but in reality triggers the robot to speak aloud the last card selected.
 
 ```python
 
@@ -38,19 +39,25 @@ So, here's the code for the volunteer microbit. You will notice that when the ca
 
 ```
 
+Notice that some of the card suits are spelled strangely, this is because we are sending the words to the robot to speak aloud and some of the words didn't sound correct over the speaker when they were spelled correctly.
+
+
 ### Robot Magician
 
 If you know your magic history, you will know that the magician we know as Harry Houdini didn't start off life with that name. He wanted to emulate a famous French magician, <a href="https://en.wikipedia.org/wiki/Jean_Eug%C3%A8ne_Robert-Houdin">Jean Eugène Robert-Houdin</a> and to be Houdin-like.
 
 It was for this reason that I felt I had to name my robot magician *Robot Houdin* or a grave injustice would have been committed :)
 
-The robot code listens for a card selection and stores it away waiting to announce the card as if by magic. Once it gets the 'announcement' message, it uses the voice synth to say a couple of words, tell the volunteer what card they have picked, then finish off with another bit of random banter.
+The robot code listens for a card selection and stores it away waiting to announce the card as if by magic. Once it gets the 'announcement' message, it uses the voice synth to say a ramdp, variation on a sentence that announces the card that was picked.
 
 ```python
 
 {% include code/python/microbit/mentalism-robot.py %}
 
 ```
+
+Again, I've taken some liberties with spelling the robot's words to make pronounciation a bit clearer. 
+
 
 ### Facilitator
 
@@ -61,6 +68,9 @@ The facilitator in the trick is the person holding everything together, introduc
 {% include code/python/microbit/mentalism-facilitator.py %}
 
 ```
+
+Make sure that each microbit is programmed with the correct program and they don't get mixed up before the trick starts. 
+
 
 ### Demonstration
 
@@ -74,6 +84,6 @@ I hope you will agree that that covers a good deal of the functionality in the m
 * digital io
 * speech
 
-The only wrinkle to this is that the robot definitely needs new, high quality AA batteries to work correctly. The digital IO, speech synth driving a speaker and the radio on all the time, I found anything other batteries would allow it to start off driving the speaker but would cause the voltage to dip too much and reset the device so it only got half of the trick done. With new batteries it worked flawlessly.
+The only wrinkle to this is that the robot definitely needs new, high quality AA batteries to work correctly. The digital IO, speech synth driving a speaker and the radio on all the time, I found any slightly worn batteries would allow it to start off driving the speaker but would cause the voltage to dip too much and reset the device so it only got half of the trick done. With new batteries it worked flawlessly.
 
 The slides for my talk are on <a href="https://www.slideshare.net/deejaygraham/physical-computing-91152232">slideshare</a>.
