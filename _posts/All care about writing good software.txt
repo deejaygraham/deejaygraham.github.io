@@ -1,0 +1,218 @@
+All care about writing good software
+
+This started out as a rant to colleagues, converted it into a haiku on twitter, then Sam asked me to try making it into a talk. I will try not to be the 
+old guy shouting at clouds.
+
+Maybe not for simple console applications and tools but for stuff we want to be around for a while, libraries, apps, products we 
+want to be able to continue to work with them easily into the future without them becoming a mess.
+
+Doing that requires experience and discipline and, since programming is more art and craft than science, we need heuristics to guide 
+us. Medicine and civil engineering are older professions and have more grounding in the real world. If you don't build a bridge correctly 
+you find out pretty quickly. Or your patient dies. If you add a line of code in the wrong place, you may not find out for a long time and 
+have people following your choice to build up a set of code that becomes unmaintainable. 
+
+Mention agile manifesto, uncovering working software.
+"We are uncovering better ways of developing
+software by doing it and helping others do it."
+
+In programming we have heuristics like "goto considered harmful", On the criteria to be used in decomposing systems into modules - Dave L Parnas,
+Liskov "data abstraction".
+
+Where did SOLID come from ?
+
+DRY - Copied stuff is not as bad as the wrong abstraction
+
+SOLID
+
+S - Single Responsiblity
+
+This principle was described in the work of Tom DeMarco¹ and Meilir Page-Jones². They called it "cohesion". They defined cohesion as the functional relatedness of the elements of a module.
+“Each software module has one, and only one, reason to change” Not a single responsibility.
+
+
+
+O - Open Closed
+
+Bertrand Meyer made this principle famous in the 1980s, which appeared in his book Object-Oriented Software Construction³. 
+Unfortunately, Bob Martin took his justification for this principle. But reading the original text, Meyer is not talking about 
+this at all, he is talking about published interfaces. COM IUnknown, etc. Windows interfaces public API that cannot change 
+Windows - Raymond Chen 
+Software systems be designed to allow the behavior of those systems to be changed by adding new code, rather than changing existing code.
+
+Make software easy to extend to new behaviour without having to make lots of changes to existing code. Good principle. But not backed up 
+by the justification. Also in tension with YAGNI principle.
+
+IUIFramework2 and IUIFramework
+Extend what the module does without changing the base implementation. Which is usually achieved through an inheritance hierarchy, 
+programming to an interface or duck typing.
+
+
+L - Liskov Substitution principle - examples completely wrong. Implies inheritance or duck typing at least.
+
+Barbara Liskov’s famous definition of subtypes, from 1988 in a conference keynote address titled Data Abstraction and Hierarchy. In short, this 
+principle says that to build software systems from interchangeable parts, those parts must adhere to a contract that allows those parts to be 
+substituted one for another. But the original paper, makes a claim "". This is relaxed and still claimed as Liskov's principle. 
+Like saying that we strictly adhere to the no snakes on a plane principle, but we have relaxed it slightly to include ... 
+any hissing animals with no legs and forked tongues are optional.
+ 100% comptabile so it can't be detected as different from the outside. More like changing the implementation of a module to use a stack instead of a list. 
+ Not viewable outside of the module so obeys the principle.
+
+I - Interface Segregation
+
+Keep interfaces small and focussed. Cohesion again. Wide interfaces may change for many reasons causing undesired changes in all the code. 
+Hyrums law (Hyrum Wright) https://www.hyrumslaw.com 
+
+With a sufficient number of users of an API,
+it does not matter what you promise in the contract:
+all observable behaviors of your system
+will be depended on by somebody.
+
+Time taken to run, level of performance.
+
+D - Dependency Inversion 
+
+Depend on abstractions not concrete behaviour, makes for mor reliable code, again cohesion and coupling. Cohesion good, some coupling good ish. Mostly bad.
+
+
+------------------------------
+Hillelogram
+
+Part of the issue is that usual advice is easily misapplied and misunderstood. See:
+
+- DRY
+- Dependency Injection
+- Reduce Coupling
+
+
+People confuse cohesion and coupling all the time, but they're unrelated.
+
+Watching Liskov's lectures and reading her references was super helpful for him.
+
+
+Another paper Liskov referenced: "Dataless Programming" by RM Balzer:  https://rand.org/content/dam/rand/pubs/research_memoranda/2007/RM5290.pdf. It was designed so you can change "an array to a list without changing the source statements" <- proto abstract data types
+
+
+The two share papers are similar in that they solve an implmenetation issue by modifying source languages. In particular, hiding information. Now talking about "Information Distribution Aspects of Design Methodology", by DL Parnas: https://
+
+
+"The connections between modules are the assumptions which hte modules make about each other." Only make changes that do not violate the assumptions that other modules have
+
+(gonna shill design-by-contract here)
+
+Liskov invented the abstract data type. Her paper on them looks super close to modern programming. We went from "what even IS structure" to "formal theory of data" in like 3 years, at least in academia
+
+------------------
+
+Robert Martin - Design Principles and Design Patterns 2000s
+Took ideas floating around and gave them an acronym
+Solid design Principles
+Single Responsiblity
+Open Closed
+Liskov - subclasses 
+Interface Segregation
+Dependency Inversion
+
+
+"Perfect state" but Don't give you guidance on how to get there. 
+All at different levels
+
+Open Closed - Goals
+Single Responsiblity and dependency inversion are coding strategies
+Liskov
+Interface segr
+
+Managing dependencies - coupling and cohesion.
+
+If you use something and it changes, you have to change?
+When things you depend on chang e 
+
+
+Steve Freeman Nat Pryce
+loosely completelyed
+highly cohesive
+easily composable
+context independent (dependencies) composable
+
+
+Rearrange
+Throw them out
+
+INterface segrateion (statically typed languages usually) depending on signature of the method yo are calling. Ruby, JS etc. 
+Liskov about subclassing. substitute a subclass. Impose typeof for selection between
+
+
+Squint test 
+
+
+is it DRY (within the module not across everywhere)
+Does it have one responsibility
+fDoes everything in it change at the same rate 
+Does it depend on things that change less often than it does? (depend on things less changing)
+
+
+
+Sandi Metz.
+
+
+
+Complexity
+
+Coupling -> Cohesion -> Connascence ?
+
+Connascence (Coupling wooly term)
+
+I think connascence is a great tool for thinking through coupling. Coupling is everywhere. And you can improve it not by removing it but making it weaker. 
+
+Two software components are connascent if a change in one would require the other to be modified in order to maintain the overall correctness of the system.
+
+Two (Jim W) pieces of software share connascence when a change in one requires a corresponding change in the other
+
+Static code [ easier to detect and refactor ]
+Name (agree on the name of something to use it - function, variable)
+type (agree on type of something, returned from a function, to create something)
+Meaning (agree on what a string is, id represents)
+Algorithm (agree on algorithm used - eg. encryption)
+Position (one call has to follow or be used in order, height and width in correct order)
+
+Running code dyanmic
+Executing order (make tea before drinking it) locking e.g.
+Timing (timeouts in network)
+Value (two values are related) invariance
+Identity (two components reference the same object)
+
+Refactoring successfully should take code from lower back up to top.
+
+More than one form of connascence can occur in the same piece of code.
+
+Imperfect 
+strength (how hard to refactor or discover)
+locality - how far apart they are. Far apart should be weak. Strong in same function, module etc. 
+Degree - size of impact, connacsecnt with one or thousands.
+
+Coupling
+Cohesion
+Cyclomatic Complexity - Skew to the right
+
+4 Simple Design Rules (Kent Beck) Core XP Practices
+
+In order, and cyclic:
+
+- Passes all tests (refactoring, documentation) it should have tests. Good way of making looser coupling
+- Reveals intent (least astonishment), naming, meaningful abstractions - Reading more than writing. Accurate description.
+- No duplication - not DRY - duplication of knowledge not duplication of code (implying inheritance)
+- Has fewest elements to maintain other rules. Coherent or coupling
+
+Reduced to 3 by jbrains
+
+1996 - Meilir Page-Jones What every programmer should know about object oriented design.
+
+Lots of things proposed by other people:
+Principles in Software (Jim Weirich): Grand unified theory of software design
+
+SOLID
+Law of Demeter
+DRY
+Small Methods
+Design by Contract
+
+
