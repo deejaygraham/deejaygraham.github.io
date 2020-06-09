@@ -226,3 +226,20 @@ cost of a feature is dominated by cost of accidental Complication
 Nothing to do with how hard it is and how much your design sucks
 
 
+
+DRY can obscure larger patterns or abstractions in your code - Sandi Metz
+
+7000 line function
+
+Composition over inheritance - strongest form of coupling in OO 
+implementation inheritance  sharing code 
+
+
+Not here to tell you but SOLID is the most over rated and mis understood thing and I believe there are 
+other ways and simpler ways to frame the same sorts of ideas about structure. 
+
+Hear it mentioned in conversation and conferences but seems to be like exercise, eating healthily and writing unit tests, everyone talks about it but no one is doing it. 
+
+
+
+
