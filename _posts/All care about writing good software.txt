@@ -216,3 +216,13 @@ Small Methods
 Design by Contract
 
 
+Essential vs Accidental Complication (JBrains)
+
+problem is hard, system is complicated
+
+cut corners, don't worry, get it out the door
+cost of a feature is dominated by cost of accidental Complication
+
+Nothing to do with how hard it is and how much your design sucks
+
+
