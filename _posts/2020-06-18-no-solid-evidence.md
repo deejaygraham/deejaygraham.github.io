@@ -117,7 +117,7 @@ It's really about dealing with coupling. Coupling is a measure of how quickly yo
 But not backed up by the justification. 
 
 
-## Meyer's Principles
+## Meyers Principles
 
 Open-Closed gets it's name from one of the 5 principles that Bertrand Meyer outlined in his OO book from the late '80s.Unfortunately, he's not talking about the same thing. Meyer is more talking about a long forgotten time, closing a piece of software by publishing an interface to a library that is shipped and never changed and strategies that you might use to mitigate that. Not talking about polymorphism, more about using inheritance to copy an existing implementation and add to it rather than processing different kinds of subclass to offer different behaviours.
 
