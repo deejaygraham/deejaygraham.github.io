@@ -3,7 +3,7 @@ layout: post
 title: no SOLID evidence
 published: true
 categories: [xp]
-thumbnail: "/img/posts/no-solid-evidence/thumbnail-420x255.jpg"
+thumbnail: "/img/posts/no-solid-evidence/thumbnail-420x255.png"
 alttext: SOLID
 ---
 
@@ -40,6 +40,7 @@ SOLID is like exercise, eating healthily or writing unit tests. We all know we s
 
 I also want to confess this is not a preaching kind of talk. I once had the honour of maintaining a system early on my career where one function was 7000 lines of C code so I’m definitely not pointing fingers.
 
+
 ## Writing software is hard
 
 Maybe not for simple console applications and tools but for stuff we want to be around for a while, libraries, apps, products we want to be able to continue to work with them easily into the future without them becoming a mess.
@@ -58,6 +59,7 @@ Fred Brooks in his book “The Mythical Man Month” talked about writing softwa
 
 So what is SOLID?
 
+
 ## History 
 
 Way back in mid 90s, Robert Martin ( who you may have heard about from the Agile Manifesto, TDD, Clean code, software craftsmanship) was discussing the 10 commandments of OOP online and proposed 11 of them! Michael Feathers identified 5 of those as making up the acronym SOLID. 
@@ -66,11 +68,13 @@ Martin went on to write articles and books (Clean *) about each one of the 5 pri
 
 So Robert Martin happened to be the right person at the right time and was one of the first internet influencers! 
 
+
 ## OOP 
 
 At this time we are talking about writing OOP code in Java was pretty much the only game in town so SOLID sort of fitted nicely with the view of software at the time.
 
 Object oriented programming (from early 2000s ) so maybe not so appropriate now with the world seemingly only doing javascript and OOP being less of a hot thing.
+
 
 ## 5 "Principles"
 
@@ -78,7 +82,8 @@ SRP, OCP, LSP, ISP, DIP
 
 What's wrong with them, I can't hear you ask? Let's look at them one by one. 
 
-#SRP
+
+## SRP
 
 A class or piece of code should have one Single responsibilty. 
 
@@ -92,6 +97,7 @@ This principle was originally described in the work of Tom DeMarco and Meilir Pa
 
 This is really a coding strategy not a principle.
 
+
 ## OCP 
 
 Open - Closed. Open for extension but closed for modification. This is really about writing code so that you don't depend on concrete types but instead depend on abstractions. Make software easy to extend to new behaviour without having to make lots of changes to existing code.
@@ -99,6 +105,7 @@ Open - Closed. Open for extension but closed for modification. This is really ab
 It's really about dealing with coupling. Coupling is a measure of how quickly your code will break if something about the code you depend on changes. Tightly coupled code may change constantly for small changes in other parts of the system. 
 
 But not backed up by the justification. 
+
 
 ## Meyer's Principles
 
@@ -108,11 +115,13 @@ OC is also in tension with YAGNI principle from XP, allowing extension where it 
 
 This is a goal for a piece of software not a principle
 
+
 ## LSP 
 
 Sub types can be substituted for super types. Another inheritance based principle which is really talking about the same thing as open-closed, deriving one type from another and changing behaviour in the common understanding of it. 
 
 Unfortunately, Martin took Liskov's original research and paraphrased it to better fit the OO world but in doing that relaxed the original constraints that made it meaningful and changed what the point of the principle was. 
+
 
 ## Liskov
 
@@ -146,6 +155,7 @@ will be depended on by somebody.
 
 Don't accidentally include lots of stuff in interfaces because someone, somewhere will eventually depend on it and then the code becomes harder to change. Keep interfaces small and tighly focussed on what you are doing. Cohesion again. And Coupling because it's interfaces we're talking about 
 
+
 ## DIP 
 
 Dependency Inversion. Don't depend on concrete types, depend on abstractions. We've heard this before haven’t we? Coupling
@@ -157,6 +167,7 @@ This is another coding strategy not a principle
 I think all five principles can be boiled down to two concepts - both beginning with CO. Coupling, Cohesion. 
 
 Cohesion and Coupling can often be as wooly as something like SOLID so I want to talk a little about another CO - Connascence
+
 
 ## Connascence
 
@@ -187,6 +198,7 @@ strength - how hard to refactor or discover
 locality - how far apart components are. Far apart should be weak. Strong in same function, module etc. 
 Degree - size of impact, connacsecnt with one or thousands.
 
+
 ## Simple Design
 
 Lastly I want talk about a set of guidelines from Kent Beck (he didn't invent them) called the 4 elements of simple design which I think make more sense and are more memorable than SOLID.
@@ -216,6 +228,7 @@ The thing about clarity and duplication is that the majority of that comes down 
 This is the major thing I am known for in code reviews, pulling names apart and trying to find the correct name for the thing under consideration because I think it is so important. 
 
 A few months ago, I was pairing with a colleague and we had no clue how to solve a problem other than a vague idea. We started out with a set of code to modify and by inspecting names and changing them into increasingly more fitting names as we went, we understood better what the solution looked like and improved the code so that the eventual solution looked like it had been carefully designed by a genius. 
+
 
 ## Wrap Up
 
