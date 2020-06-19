@@ -3,6 +3,8 @@ layout: post
 title: Get-PesterCheatSheet
 tags: [ powershell ]
 published: true
+thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+alttext: powershell
 ---
 
 I've been meaning to investigate <a href="https://github.com/pester/Pester/">Pester</a>, the
@@ -16,10 +18,10 @@ Import-Module PackageManagement
 
 Install-Module Pester -Force 
 
-### Getting Pester
+## Getting Pester
 
 
-### Test, First
+## Test, First
 
 To begin with, we need a test script to host the tests. This should be named something like:
 Widgets.Tests.ps1. If you use the Invoke-Pester Cmdlet on a folder, Pester will consider
@@ -46,7 +48,7 @@ Import-Module $here\MyLovelyCode.psm1 -Force
 
 ~~~
 
-### Spec
+## Spec
 
 The first thing to strike me about Pester is that it looks an awful lot like <a href="http://rspec.info/">Rspec</a> the
 ruby bdd tool, with "describe", "context" and "it" blocks.
@@ -67,19 +69,19 @@ Describe 'My Lovely Code' {
 
 ~~~
 
-### Should
+## Should
 
 "If frogs had wings, they wouldn't bump their asses every time they jumped."
 
 
-### Modules
+## Modules
 
 It's good to group sets of cmdlets into Modules so the first thing we should be doing
 In order to be able to
 Pester cheat sheet
 
 
-### Tags
+## Tags
 
 Describe blocks can have free form text -Tag parameters so that we can classify tests (say, into
   'unit' or 'acceptance' tests) and tell Pester to only run those tests:
