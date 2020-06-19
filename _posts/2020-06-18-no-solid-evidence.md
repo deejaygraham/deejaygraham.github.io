@@ -7,6 +7,16 @@ thumbnail: "img/posts/no-solid-evidence/thumbnail-420x255.png"
 alttext: SOLID
 ---
 
+
+### Update
+
+<a href="https://ne-rpc.co.uk">NE RPC conference</a> went live so my video is available: 
+
+<iframe width="960" height="540" src="https://www.youtube.com/embed/0l-kX9y5IaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Transcript
+
 Here is a rough transcript of my talk "no SOLID evidence" from the 
 very first <a href="https://ne-rpc.co.uk">NE RPC conference</a> happening on the 19th of June.
 
