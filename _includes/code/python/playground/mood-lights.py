@@ -6,8 +6,8 @@ import time
 brightness_step_size = 0.05
 brightness = brightness_step_size
 
-cpx.pixels.auto_write = False  # Update only when we say
-cpx.pixels.brightness = brightness   # make less blinding
+cpx.pixels.auto_write = False  
+cpx.pixels.brightness = brightness  
 
 PIXELS = 10
 
