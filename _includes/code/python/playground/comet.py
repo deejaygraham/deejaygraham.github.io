@@ -1,10 +1,9 @@
 from adafruit_circuitplayground.express import cpx
 import adafruit_fancyled.adafruit_fancyled as fancy
 
-cpx.pixels.auto_write = False  # Update only when we say
-cpx.pixels.brightness = 0.25   # make less blinding
+cpx.pixels.auto_write = False  
+cpx.pixels.brightness = 0.25   
 
-# Colours fade out
 palette = [fancy.CRGB(255, 255, 255),  
            fancy.CRGB(255, 255, 0),   
            fancy.CRGB(255, 0, 0),     
@@ -16,7 +15,8 @@ palette = [fancy.CRGB(255, 255, 255),
            fancy.CRGB(0,0,0)
            ]          
 
-offset = 0  # Position offset into palette to make it "spin"
+offset = 0  
+spin_rate = 0.03
 
 while True:
     for i in range(10):
@@ -25,4 +25,4 @@ while True:
        
     cpx.pixels.show()
 
-    offset += 0.03  # Bigger number = faster spin
+    offset += spin_rate
