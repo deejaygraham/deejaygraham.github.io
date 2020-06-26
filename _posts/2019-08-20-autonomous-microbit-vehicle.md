@@ -5,7 +5,7 @@ published: true
 categories: [code, microbit]
 hero: microbit
 thumbnail: "/img/posts/autonomous-microbit-vehicle/thumbnail-420x255.jpg"
-alttext: microbit sorting hat
+alttext: autonomous vehicle
 ---
 
 Another great facility built into the <a href="http://4tronix.co.uk/blog/?p=1490">BitBot</a> is that it comes with two
