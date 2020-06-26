@@ -4,7 +4,7 @@ title: Autonomous Microbit Vehicle
 published: true
 categories: [code, microbit]
 hero: microbit
-thumbnail: img/posts/autonomous-microbit-vehicle/thumbnail-420x255.jpg
+thumbnail: "/img/posts/autonomous-microbit-vehicle/thumbnail-420x255.jpg"
 alttext: microbit sorting hat
 ---
 
