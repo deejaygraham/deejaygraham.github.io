@@ -17,7 +17,7 @@ from around 1995. It contained lost of new, experimental languages in the days b
 
 ### Back
 
-![back](/img/posts/alternative-programming-languages/Cd-back.png)
+![back](/img/posts/alternative-programming-languages/cd-back.png)
 
 The thing that strikes me most seeing it again after all these years is that languages today that we think of as mainstream, 
 Python, Pascal, Perl, Smalltalk, were all included as "alternative". Of course, there are others, including my favourite - Bob - 
