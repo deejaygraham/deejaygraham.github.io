@@ -1,4 +1,4 @@
 ---
-tag: code	
-permalink: "/category/code/"
+tag: scratch	
+permalink: "/category/scratch/"
 ---

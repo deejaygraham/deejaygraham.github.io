@@ -2,7 +2,7 @@
 layout: post
 title: Dino Quiz in Scratch
 published: true
-categories: [code]
+categories: [code, scratch]
 thumbnail: img/posts/dino-quiz-in-scratch/thumbnail-420x255.png
 alttext: scratch
 ---
