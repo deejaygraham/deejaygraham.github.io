@@ -43,7 +43,7 @@ I didn't use all of the t-rex sprites, e.g. the crouching versions, because I wa
 ![cactus](/img/posts/scratch-t-rex-runner/cactus2.png)
 ![cactus](/img/posts/scratch-t-rex-runner/cactus3.png)
 
-![t-rex costumes](/img/posts/scratch-t-rex-runner/t-rex-costumes.png)
+![t-rex costumes](/img/posts/scratch-t-rex-runner/cactus-costumes.png)
 
 
 With the sprites created and the costumes loaded, the next stage was to write the code behind each piece. 
