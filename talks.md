@@ -5,6 +5,16 @@ title: talks
 
 <div class="content">
 
+<!-- Row 0 -->
+<div class="tile is-ancestor">
+	<div class="tile is-parent">
+		<article class="tile is-child">
+            {% include tile.html title="no SOLID evidence" subtitle="NE Remote Programming Conference" url="https://www.slideshare.net/deejaygraham/no-solid-evidence" thumbnail="/img/posts/talks/no-solid-evidence.png" %}
+        </article>
+	</div>
+</div>
+<!-- Row 1 -->
+
 <!-- Row 1 -->
 <div class="tile is-ancestor">
 	<div class="tile is-parent">
