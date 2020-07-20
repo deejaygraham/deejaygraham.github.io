@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Never Write Another HoC
+title:  Study Less, Study Smart
 published: true
 categories: [video, presentations]
 thumbnail: img/posts/study-less-study-smart/thumbnail-420x255.png
