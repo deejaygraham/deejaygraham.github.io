@@ -9,4 +9,5 @@ sketchnote:
   alt: "sketchnote"
 ---
 
-First half of the conversation about "Why hasn't TDD taken over the world yet?".
+First half of the conversation about "Why hasn't TDD taken over the world yet?", with some of the world experts on TDD, 
+hosted by SmartBear.
