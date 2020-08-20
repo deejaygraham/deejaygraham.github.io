@@ -14,11 +14,11 @@ I have expressed here are my own so they **definitely** don't represent the view
 of my employer.</p>
 
 <p class="has-vertical-spacing">I co-organize <a href="https://ti.to/ne-bytes" target="_blank">NE Bytes</a>, a monthly .Net community get-together and 
-<a href="http://meetup.com/Agile-North-East/" target="_blank">Agile North East</a>, both hosted in Newcastle city centre.</p>
+help out at <a href="http://meetup.com/Agile-North-East/" target="_blank">Agile North East</a>, both hosted in Newcastle city centre.</p>
 
 <p class="has-vertical-spacing">I am an <strong>Extreme Programmer</strong>, an Infrequent <strong>Sketchnoter</strong>, a Collector 
 of <strong>Programming</strong> Languages, a <strong>Speaker</strong> available for tech conferences and meetups, 
-a <strong>Mob</strong> Programmer, a <strong>Test-Driven</strong> 
+a <strike>Mob</strike> <strong>Ensemble</strong> Programmer, a <strong>Test-Driven</strong> 
 Developer and Struggling <strong>Agilista</strong>. I am also a STEM ambassador, microbit hacker and project lead 
 for the "Makers &amp; Creators" events at Campus North with Tech for Life UK.</p>
 
