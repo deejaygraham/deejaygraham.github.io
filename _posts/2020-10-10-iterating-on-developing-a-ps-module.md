@@ -19,4 +19,4 @@ before loading the new version into memory.
 ```
 
 This snippet finds the module if it exists in the current session and removes it before re-importing (the new version of) it. If you don't do this or start a new session, the original 
-will hang around in memory and any changes you think you are making won't show up when you run the test script.
+will stay around in memory and any changes you think you are making won't show up when you run the test script.
