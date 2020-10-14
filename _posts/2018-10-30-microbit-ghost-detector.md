@@ -12,6 +12,25 @@ In time for Halloween, here's a ghost detector that uses the microbit temperatur
 changes in room temperature - which we all know from watching supernatural tv shows - is a sure sign that 
 there's a ghost somewhere nearby :)
 
+The code is split into three parts. 
+
+## Scanner
+
+All good supernatural detector tools need a fancy display so our detector sweeps a line backwards and forwards 
+across the display as if looking for something.
+
+![microbit sweep display](/img/posts/ghost-detector/sweep-detector.gif)
+
+## Detector
+
+Our detector is checking for changes in temperature from a reference value and will report when the room temperature 
+drops by one degree or more from the reference.
+
+## Program
+
+The main body of the program puts those two elements together and reacts with a ghost image every time it senses
+a temperature drop.
+
 
 ```python
 

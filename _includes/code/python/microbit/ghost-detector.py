@@ -1,29 +1,33 @@
 # ghost-detector.py
 from microbit import *
 
-sleep_time = 200
+sleep_time = 150
 warning_time = 5000
 minimum_temperature_difference = 1 # degrees
 
 
-class Scanner:
+class SweepScanner:
 
   def __init__(self):
     self.direction = 1
     self.x = 2
     self.y = 2
 
+  def draw_line(self, brightness):
+    for y in range(5):
+        display.set_pixel(self.x, y, brightness)
+
   def scan(self):
-    display.set_pixel(self.x, self.y, 0)
-    if self.x >= 4:
-        self.x = 4
-        self.direction = -self.direction
-    elif self.x <= 0:
-        self.x = 0
+    self.draw_line(0)
+
+    lhs = 0
+    rhs = 4
+
+    if self.x >= rhs or self.x <= lhs:
         self.direction = -self.direction
 
-    self.x += self.direction
-    display.set_pixel(self.x, self.y, 9)
+    self.x = max(lhs, min(rhs, self.x + self.direction))    
+    self.draw_line(9)
 
 
 class Detector:
@@ -40,7 +44,7 @@ class Detector:
     self.starting_temperature = temperature()
 
 
-scanner = Scanner()
+scanner = SweepScanner()
 detector = Detector()
 
 while True:
@@ -56,4 +60,3 @@ while True:
 
   if button_a.was_pressed():
      detector.reset()
-     
