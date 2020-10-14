@@ -11,7 +11,6 @@ class SweepScanner:
   def __init__(self):
     self.direction = 1
     self.x = 2
-    self.y = 2
 
   def draw_line(self, brightness):
     for y in range(5):
