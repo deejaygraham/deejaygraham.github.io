@@ -1,3 +1,4 @@
+# mood-lights.py
 from adafruit_circuitplayground import cp
 from adafruit_circuitplayground.express import cpx
 import adafruit_fancyled.adafruit_fancyled as fancy
