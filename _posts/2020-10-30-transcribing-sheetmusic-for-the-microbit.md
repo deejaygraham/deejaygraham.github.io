@@ -4,7 +4,7 @@ title: Transcribing Sheet Music for the Microbit
 published: true
 categories: [code, microbit, music]
 hero: microbit
-thumbnail: img/transcribing-sheetmusic-for-the-microbit/thumbnail-420x255.png
+thumbnail: img/posts/transcribing-sheetmusic-for-the-microbit/thumbnail-420x255.png
 alttext: microbit
 ---
 
