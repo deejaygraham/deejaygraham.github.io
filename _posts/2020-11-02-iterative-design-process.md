@@ -17,3 +17,5 @@ the laboratory. In my terms design consists of:
 * Write code until you realize that you don’t.
 * Go back and re-do the flowchart.
 * Write some more code and iterate to what you feel is the correct solution.
+
+Original pdf is <a href="http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF">available from here</a>.
