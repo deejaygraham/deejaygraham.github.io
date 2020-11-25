@@ -79,3 +79,16 @@ buildings we can see.
 In the same way that each call to draw adds a new section of building, I add a random window to the scene as well now.
 
 Depending on how fast this runs, you may want to change the frame rate so that it's not going by too quickly.
+
+
+### City Depth 
+
+As a final, final experiment I added another layer of buildings behind the main layer. Not sure how well this works.
+
+
+```python
+
+{% include code/python/skyline-6.py %}
+
+```
+
