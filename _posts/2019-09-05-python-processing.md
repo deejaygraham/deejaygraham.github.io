@@ -2,7 +2,7 @@
 layout: post
 title: Processing with Python
 published: true
-categories: [code]
+categories: [code, processing]
 thumbnail: img/posts/python-processing/python-processing-420x255.png
 alttext: screenshot
 ---

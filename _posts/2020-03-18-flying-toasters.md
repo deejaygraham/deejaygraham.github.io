@@ -2,7 +2,7 @@
 layout: post
 title: Flying Toasters
 published: true
-categories: [code]
+categories: [code, processing]
 thumbnail: "/img/posts/flying-toasters/thumbnail-420x255.png"
 alttext: toasters
 ---
