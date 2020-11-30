@@ -9,7 +9,7 @@ alttext: microbit
 ---
 
 Since it's almost December, I thought of transcribing a classic tune for the microbit using the code 
-from a previous post. I transcribed the music from standard notation to microbit notation and uploaded the 
+from [a previous post](2020-10-30-transcribing-sheetmusic-for-the-microbit.md). I transcribed the music from standard notation to microbit notation and uploaded the 
 file to the microbit as score.txt.
 
 This was a uncomplicated arrangement so it didn't take very long to do but sounds very satisfying coming from the 
