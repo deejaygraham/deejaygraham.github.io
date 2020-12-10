@@ -18,11 +18,27 @@ tiny speaker.
 
 ### Silent Night
 
+In normal microbit code:
+
+silent-night.py
+```python
+
+{% include code/python/microbit/silent-night.py %}
+
+```
+
+... and using the technique from the [last post](/2020/10/30/transcribing-sheetmusic-for-the-microbit/)
+
+silent-night.txt
 ```txt
 
 {% include code/python/microbit/silent-night.txt %}
 
 ```
+
+The advantage with the second apparoach is that the music isn't hardcoded and can be changed by copying 
+a new file with different content onto the microbit and resetting it.
+
 
 ### Transcription Process
 
