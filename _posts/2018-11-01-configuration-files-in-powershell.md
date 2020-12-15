@@ -52,3 +52,20 @@ We can then get the current environment at runtime and use that to key the hasht
 {% include code/powershell/Import-Config2.ps1 %}
 
 ```
+
+### Update 2 - December 2020
+
+Another useful tip I "invented" today was to do with naming the data file the same as the script file. For example, a 
+lot of my Pester tests use a .psd1 file to load environmental data to target one of a series of base urls. Sometimes 
+it happens that the name you give the .ps1 file doesn't quite capture the intent of the tests and so renaming the file 
+implies that we also rename the .psd1 file to match and therefore need to import the newly renamed data file. 
+
+Instead of having a hard coded file name, you can use the Invocation Name and replace the extension and then as long as 
+you maintain the naming convention where the script and data files are named the same apart from the extension, you need 
+never worry about the two drifting apart and the tests breaking. 
+
+```powershell
+
+{% include code/powershell/Import-Config3.ps1 %}
+
+```
