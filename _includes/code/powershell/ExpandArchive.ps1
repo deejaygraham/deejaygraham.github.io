@@ -1,0 +1,1 @@
+Expand-Archive -Path Archive.Zip -DestinationPath C:\UnzippedFolder
