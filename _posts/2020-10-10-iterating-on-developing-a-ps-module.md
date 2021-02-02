@@ -4,7 +4,7 @@ title: Iterating on Developing a PowerShell Module
 published: true 
 categories: [ powershell ]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/shell-420x255.jpg"
 alttext: powershell
 
 ---
