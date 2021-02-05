@@ -3,7 +3,7 @@ layout: post
 title: Documenting Software with C4
 published: true 
 categories: [ xp ]
-thumbnail: "/img/thumbnails/shell-420x255.jpg"
+thumbnail: img/posts/documenting-software-with-c4/thumbnail-420x255.png
 alttext: architecture
 
 ---
