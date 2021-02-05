@@ -57,7 +57,7 @@ Rel(web, billing, "Usage")
 
 Each document or diagram type supports different macros used to define the objects with the diagram. Relationships can be set losely so that the rendering engine decides how best to layout and structure the diagram, or you can hint to the renderer that blocks should be laid out in relation to each other.
 
-The github repo for C4 PlantUML has <a href="https://github.com/plantuml-stdlib/C4-PlantUML#advanced-samples">plenty of samples</a> for reference.
+The github repo for C4 PlantUML has <a href="https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4CoreDiagrams.md">plenty of samples</a> for reference, both the markup used and the generated image for each.
 
 ### VS Code
 
