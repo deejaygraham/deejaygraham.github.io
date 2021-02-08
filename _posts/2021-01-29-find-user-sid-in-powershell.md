@@ -18,3 +18,5 @@ GetUserSid.ps1
 {% include code/powershell/GetUserSid.ps1 %}
 
 ```
+
+Another way of doing this to get more complete information is to instantiate a WindowsIdentity object using [System.Security.Principal.WindowsIdentity]::GetCurrent(). As well as SID, user name, this object includes the groups they are members of, the identity claims, and information about the authentication type. 
