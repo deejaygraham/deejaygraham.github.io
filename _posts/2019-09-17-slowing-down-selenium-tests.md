@@ -25,7 +25,7 @@ matching that network behaviour - network latency, download and upload speed.
 Throttling.cs
 ```csharp
 
-{% include code/csharp/Selenium_Throttling..cs %}
+{% include code/csharp/Selenium_Throttling.cs %}
 
 ```
 
@@ -35,7 +35,7 @@ chrome driver via the NetworkConditions property.
 WebDriverFactory.cs
 ```csharp
 
-{% include code/csharp/Selenium_UseThrottling..cs %}
+{% include code/csharp/Selenium_UseThrottling.cs %}
 
 ```
 
