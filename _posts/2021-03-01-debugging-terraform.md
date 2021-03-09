@@ -9,7 +9,7 @@ alttext: powershell
 
 ---
 
-Terraform is a wonderful tool and I'm using it at the moment to build some WVD instances in Azure. 
+<a href="https://www.terraform.io">Terraform</a> is a wonderful tool and I'm using it at the moment to build some WVD instances in Azure. 
 
 As good as the tool is, I found I was wasting a lot of time trying to work out why parameters to a PowerShell script weren't correct just by looking at error messages in the console. Then I discovered 
 that Terraform has a set of logging levels that can be turned on and adjusted through environment variables. 
@@ -57,3 +57,5 @@ Below is an extract from the beginning of one of those logs.
 2021/03/09 13:08:50 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
 2021/03/09 13:08:50 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
 ```
+
+Terraform has a great <a href="https://learn.hashicorp.com/collections/terraform/azure-get-started">introduction to using it with Azure</a>.
