@@ -2,7 +2,7 @@
 layout: post
 title: Refactoring Boids
 published: true
-categories: [code]
+categories: [processing, code]
 thumbnail: img/posts/refactoring-boids/original-boids-420x255.png
 alttext: boids original
 ---
