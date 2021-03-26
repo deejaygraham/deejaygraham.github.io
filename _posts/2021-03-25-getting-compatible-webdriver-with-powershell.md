@@ -14,6 +14,8 @@ compatible with the current version of the browser. In the case of the Chrome br
 be difficult to keep the driver up to date inline with the browser. This can be particularly challenging when the tests are run from an automated 
 context like a build machine or an environment like Azure Dev Test Labs.
 
+### Driver
+
 There is also the issue that the main Chrome browser is maintained by a billion Google engineers and released on a regular basis whereas the 
 driver is handled by a much smaller team and out of step with the main browser. From the drivers website, they offer support for several major 
 versions of the browser with updates coming out "unpredictably", especially if you aren't monitoring the site regularly.
@@ -21,7 +23,9 @@ versions of the browser with updates coming out "unpredictably", especially if y
 Trying to run an out of date driver against a newly updated version of the browser usually results in an error message and a failure of the whole 
 test run, forcing someone to go and hunt out the new driver, download it and save it in the correct place. 
 
-To help make this taks of keeping both in sync a bit easier, I came up with the following cmdlet which could be run each time before the tests are run. 
+### Code
+
+To help make this task of keeping both in sync a bit easier, I came up with the following cmdlet which could be run each time before the tests are run. 
 
 Get-CompatibleChromeDriver.ps1
 ```powershell
@@ -30,9 +34,13 @@ Get-CompatibleChromeDriver.ps1
 
 ```
 
+### Parameters
+
 The parameters aren't mandatory because they are really just there to cope with the fact that urls and names may change in the future. 
 The download uri, the name of the zip file and the application executable are all out of our control so I thought it sensible to make these parameters. 
 The final param is the location for the webdriver to run from, which might need to be specific so that it can be figured into the test code configuration.
+
+### Versions
 
 To get the current version of the browser, we look in the registry to see where chrome is installed, then load the application binary from that path and 
 query the product version directly. This is usually in the form "major.minor.build.revision" as 4 dot-delimited integers. The chrome driver really only cares 
