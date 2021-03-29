@@ -55,14 +55,17 @@ Each time the code runs now, the square has a diagonal line drawn one way or the
 ### Tiling
 
 Next, we want to be able to draw more than one tile per canvas which means we have to split up the canvas into a number of discrete units. For this we 
-introduce a variable which is the size of each tile. Moving from one tile to the next lets us introduce the idea of loops with the range function. We start off 
-small so that it's easier to see that we are moving from one place to another on screen by substituting values for x and y and seeing that the tile size doesn't change. 
+introduce a variable which is the size of each tile. Moving from one tile to the next lets us introduce the idea of loops with the range function. 
 
 ```python
 
 {% include code/python/gen-art-3.py %}
 
 ```
+
+We start off 
+small so that it's easier to see that we are moving from one place to another on screen by substituting values for x and y and seeing that the tile size doesn't change. 
+
 
 ![screenshot](/img/posts/simple-generative-art/art-3.png)
 
@@ -77,17 +80,22 @@ or in puzzle books.
 
 ![screenshot](/img/posts/simple-generative-art/art-4.png)
 
+
+### What if?
+
 At this point I'm hoping that someone will ask about changing how we draw the lines. What happens, for example, if we draw horizontal or vertical lines rather than 
 diagonal? 
 
-The advantage of the function we created is that we can make the change in that function and none of the other parts of the code need to change. And we get this rather lovely 
-basket weave effect.
-
+The advantage of the function we created is that we can make the change in that function and none of the other parts of the code need to change. 
 
 ```python
 
 {% include code/python/gen-art-4.py %}
 
 ```
+
+
+And we get this rather lovely basket weave effect.
+
 
 ![screenshot](/img/posts/simple-generative-art/art-5.png)
