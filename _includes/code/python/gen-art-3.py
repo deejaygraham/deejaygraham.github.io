@@ -6,10 +6,14 @@ def draw_tile(x, y, w, h):
   else:
     line(x + w, y, x, y + h)
 
+tile_size = 20
 
 size(400, 400)
 background(255, 255, 255)
 stroke(0)
-        
-draw_tile(0, 0, width, height)
+
+for x in range(0, width, tile_size):
+  for y in range(0, height, tile_size):
+    draw_tile(x, y, tile_size, tile_size)
+
 saveFrame("art-######.png")
