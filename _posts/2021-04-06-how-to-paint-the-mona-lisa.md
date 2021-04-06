@@ -56,3 +56,48 @@ original image and speed of the image appearing from what looks like random nois
 There is a sort of disturbing quality to the picture constantly fluctuating as the image is built and fills out, 
 particularly around the face and especially the eyes.
 
+
+### Pixelation
+
+Another approach might be rendering the image all at once, without the random factor to it but keeping some aspects of pixelation to the image.
+We can then play with some other parts of the image. 
+
+Sticking with the same setup function, we need to do something different when we are drawing and a different processing function. 
+
+This time, the processing function, pixelate, works across the image and down in rows, sampling a pixel and then filling a larger version of that pixel 
+in the screen image. 
+
+```python
+
+{% include code/python/mona-lisa-3.py %}
+
+```
+
+I have experimented witht the noStroke function to see what the difference was between including it and commenting it out. First with boxes around each "pixel":
+
+![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-4.png)
+
+And without boxes:
+
+![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-5.png)
+
+I think both have interesting qualities but I think as you go down in resolution, then having boxes around each pixel makes for a less well defined image, even taking into 
+account the pixelation.
+
+
+### Circles
+
+Of course, pixelation doesn't have to be restricted to squares, we can use circles if we want to by replacing the call to rect() with circle()
+
+![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-6.png)
+
+
+### Offsets
+
+We can also almost destroy the image but messing about with the pixel dimensions when we are rendering. For example, if we increase the pixel height on each column to get this:
+
+![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-7.png)
+
+Or if we switch the order of the for loops around in the pixelate function, so that we work from y first, then x, and modify pixel_size instaead of pixel_height.
+
+![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-8.png)
