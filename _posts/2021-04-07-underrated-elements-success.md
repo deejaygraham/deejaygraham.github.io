@@ -1,7 +1,7 @@
 ---
 layout: sketchnote
 title: Some Underrated Elements of Success for the Modern Programmer
-categories: [ presentations, sketchnotes ]
+categories: [ xp, gtd, presentations, sketchnotes ]
 sketchnote:
   url: "/img/posts/underrated-elements-success/underrated-elements-success.png"
   alt: "the modern programmer"
