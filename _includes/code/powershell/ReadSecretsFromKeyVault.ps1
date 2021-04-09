@@ -12,6 +12,6 @@ $VaultName = 'key-vault-name'
 Connect-AzAccount -Credential $Credential -Tenant $Tenant -ServicePrincipal
 
 # Now we can get secrets. 
-$Value = Get-AzKeyVaultSecret -VaultName $VaultName -Name 'My Sinsiter Secret'
+$Value = Get-AzKeyVaultSecret -VaultName $VaultName -Name 'My Sinister Secret'
 $InsecureValue = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Value.SecretValue))
 Write-Output $InsecureValue
