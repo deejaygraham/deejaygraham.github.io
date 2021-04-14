@@ -1,9 +1,3 @@
-$ServicePrincipal = New-AzADServicePrincipal  -DisplayName 'MyLovelySP'
-
-# Store these values !!!
-$UserName = $ServicePrincipal.ApplicationId
-$Password = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($ServicePrincipal.Secret))
-
 $KeyVaultName = "$($ResourceGroupName)-kv"
 
 Write-Verbose "Checking for key vault $KeyVaultName in $ResourceGroupName"
@@ -12,7 +6,6 @@ $KeyVault = Get-AzKeyVault -VaultName $KeyVaultName -ResourceGroupName $Resource
 If ($null -eq $KeyVault) {
     Write-Verbose "Creating new key vault $KeyVaultName in $ResourceGroupName"
     $KeyVault = New-AzKeyVault -Name $KeyVaultName -ResourceGroupName $ResourceGroupName -Location $Location -EnabledForDeployment -EnabledForTemplateDeployment -Sku Standard -SoftDeleteRetentionInDays 7
-    Set-AzKeyVaultAccessPolicy -VaultName $KeyVaultName -UserPrincipalName 'MyLovelySP' -PermissionsToSecrets get, list
 }
 
 $Secrets = @(
@@ -26,3 +19,11 @@ $Secrets | ForEach-Object {
     $Secret = ConvertTo-SecureString -String $Value -AsPlainText -Force
     Set-AzKeyVaultSecret -VaultName $KeyVaultName -Name $Key -SecretValue $Secret | Out-Null
 }
+
+$ServicePrincipal = New-AzADServicePrincipal  -DisplayName 'MyLovelySP'
+
+# Store these values !!!
+$UserName = $ServicePrincipal.ApplicationId
+$Password = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($ServicePrincipal.Secret))
+
+Set-AzKeyVaultAccessPolicy -VaultName $KeyVaultName -ServicePrincipalName $ServicePrincipal.ApplicationId -PermissionsToKeys create,import,delete,list -PermissionsToSecrets set,delete 

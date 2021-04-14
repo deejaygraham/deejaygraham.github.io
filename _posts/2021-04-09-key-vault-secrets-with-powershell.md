@@ -18,14 +18,16 @@ onerous.  To me, this always means using a temporary account like a service prin
 
 ### Setup and Storage
 
-First we need to create a service principal which requires us to be logged into Azure. New-AzADServicePrincipal returns an object that contains the application id (the 'user name' 
+First we need to check for and create a new key vault. If the keyvault has been created and since deleted, you will get an error here. 
+The whole point of keyvault is to store secrets so the next thing is to start pushing key-value pairs of all of our deepest, darkest secrets
+into the key vault. Note that the secret needs to be a secure string here.
+
+With the key vault created, we need to create a service principal. New-AzADServicePrincipal returns an object that contains the application id (the 'user name' 
 for this account) and the secret (the 'password'). You need to make sure you store these values for use later. The application id will be visible in the Azure portal but the 
 secret will be lost forever if you don't capture it now. Note that the secret is a secure string so may need unsecuring if you want to be able to read it.
 
-Once the service principal is created, we can check for and create a new key vault. If the keyvault has been created and since deleted, you will get an error here. With the 
-key vault created, you can use Set-AzKeyVaultAccessPolicy to allow the service principal access to the key vault to read secrets.
-
-The whole point of keyvault is to store secrets so once we've got this far, we should be storing our darkest, deepest secrets. 
+The last thing is to use Set-AzKeyVaultAccessPolicy to allow the service principal access to the key vault to read secrets. I have gone overboard a little in the example allowing access 
+to create and delete too to show the range of features but in practice I would only grant read access and have a pre-defined list of keys I want to read from. 
 
 AddSecretsToKeyVault.ps1
 ```powershell
@@ -35,6 +37,7 @@ AddSecretsToKeyVault.ps1
 ```
 
 That completes the storage and setup of the secrets, now some time later, we want to be able to read them back. 
+
 
 ### Access and Reading 
 
