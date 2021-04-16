@@ -12,10 +12,37 @@ recognized pieces of western art so I thought that might be a good place to begi
 
 ![original](/img/posts/how-to-paint-the-mona-lisa/mona-lisa.jpg)
 
-This version was just the first result from my image search which happened to be small but still recognisable with enough detail. All the way through this set of exercises, 
+This version was the first result from my image search which happened to be small but still recognisable with enough detail. All the way through this set of exercises, 
 we won't be drawing the original image, we will always have it memory as a reference and paint onto the screen a modified represenation. 
 
-### Loading 
+### No Functions
+
+Note: Before getting into the rest of the is post, the no-function version of the this concept is as below. The code is easier for a beginner to understand and follow through the idea of x and y coordinates.
+
+```python
+
+{% include code/python/mona-lisa-0.py %}
+
+```
+
+Once the shapes are worked out, we can change up the size of pixels and change the shape of the pixels to circles or triangles. This also helps with understanding what happens with the structure of the code.
+
+
+### Flipping Marvellous
+
+An entertaining further step to take before we start "destroying" the image, is to flip the image around by changing where we sample from in the image. If we keep the loop the same but sample from the right side of the image working towards the left, we can flip the image along the vertical axis. 
+If we read from the bottom upwards we can flip the image along the horizontal axis and make it upside down. If we do both, we can reverse the image on both axes. 
+
+```python
+
+{% include code/python/mona-lisa-0a.py %}
+
+```
+
+Ta-da, an original/fake artwork.
+
+
+### Loading ... 
 
 First, we'll use processing to load the image into memory (remembering to copy the original image into the sketch folder). We also set the background to be white and make sure 
 that noStroke is called so that we don't draw any boxes around our pixels. 
