@@ -39,7 +39,7 @@ If we read from the bottom upwards we can flip the image along the horizontal ax
 
 ```
 
-Ta-da, an original/fake artwork.
+Ta-da, an original/fake artwork. Now to the function-based version
 
 
 ### Loading ... 
