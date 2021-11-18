@@ -3,7 +3,7 @@ layout: post
 title: Dr Dobbs Journal
 published: true
 categories: [code]
-thumbnail: img/posts/dr-dobbs-journal/thumbnail-420x255.png
+thumbnail: img/posts/dr-dobbs-journal/thumbnail-420x255.webp
 alttext: cd-rom
 ---
 
@@ -20,22 +20,22 @@ all kinds of wonderful treasures for the professional programmer that you would 
 
 Here's the first ever copy of that magazine that made it into my possession thanks to my idols at the US company. 
 
-![cover](/img/posts/dr-dobbs-journal/dr-dobbs-cover.png)
+![cover](/img/posts/dr-dobbs-journal/dr-dobbs-cover.webp)
 
-![back cover](/img/posts/dr-dobbs-journal/dr-dobbs-back.png)
+![back cover](/img/posts/dr-dobbs-journal/dr-dobbs-back.webp)
 
-![inside content page](/img/posts/dr-dobbs-journal/contents-left.png)
+![inside content page](/img/posts/dr-dobbs-journal/contents-left.webp)
 
-![inside content page](/img/posts/dr-dobbs-journal/contents-right.png)
+![inside content page](/img/posts/dr-dobbs-journal/contents-right.webp)
 
 
 Much later after leaving that company behind, I was working at another, but much more enlightened engineering/electronics company when the internet was just starting but 
 CD-ROMs were becoming all the rage. Finally I was able to get access to even more information from Dr Dobbs in the form of their archive, supplied on one CD-ROM.
 
-![cd front](/img/posts/dr-dobbs-journal/cd-front.png)
+![cd front](/img/posts/dr-dobbs-journal/cd-front.webp)
 
 This was all the back issues, searchable, with code examples!!! There are no words for how wonderful a thing like this was to a young developer starved of both culture and 
 information that the U.S. audience seemed to take for granted. 
 
-![cd back](/img/posts/dr-dobbs-journal/cd-back.png)
+![cd back](/img/posts/dr-dobbs-journal/cd-back.webp)
 

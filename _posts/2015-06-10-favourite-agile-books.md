@@ -10,14 +10,14 @@ Not all super-specifically all agile related but I thought I would put them all 
 ### Growing Object Oriented Software Guided by Tests
 [Nat Pryce and Steve Freeman](http://www.growing-object-oriented-software.com/)
 
-![goos](/img/posts/favourite-agile-books/goos.jpg)
+![goos](/img/posts/favourite-agile-books/goos.webp)
 
 ---
 
 ### Practical Object Oriented Design in Ruby
 [Sandi Metz](http://www.sandimetz.com/)
 
-![poodr](/img/posts/favourite-agile-books/poodr.jpg)
+![poodr](/img/posts/favourite-agile-books/poodr.webp)
 
 > This book believes in your desire to do good work and gives you the tools you need to best be of use.  
 > It is completely practical and as such is, at its core, a book about how to write code that brings you joy.
@@ -28,56 +28,56 @@ Not all super-specifically all agile related but I thought I would put them all 
 *By Example*
 Kent Beck
 
-![tdd](/img/posts/favourite-agile-books/test-driven-development-by-example.jpg)
+![tdd](/img/posts/favourite-agile-books/test-driven-development-by-example.webp)
 
 ---
 
 ### The Pragmatic Programmer 
 Andy Hunt & David Thomas
 
-![pragmatic programmer](/img/posts/favourite-agile-books/pragmatic-programmer.jpg)
+![pragmatic programmer](/img/posts/favourite-agile-books/pragmatic-programmer.webp)
 
 ---
 
 ### Pragmatic Thinking and Learning
 Andy Hunt
 
-![pragmatic thinking learning](/img/posts/favourite-agile-books/pragmatic-thinking-and-learning.jpg)
+![pragmatic thinking learning](/img/posts/favourite-agile-books/pragmatic-thinking-and-learning.webp)
 
 ---
 
 ### The Elements of Style
 William Strunk Jr and E.B. White
 
-![elements of style](/img/posts/favourite-agile-books/elements-of-style.jpg)
+![elements of style](/img/posts/favourite-agile-books/elements-of-style.webp)
 
 ---
 
 ### Managing Humans
 Michael Lopp
 
-![managing humans](/img/posts/favourite-agile-books/managing-humans.jpg)
+![managing humans](/img/posts/favourite-agile-books/managing-humans.webp)
 
 ---
 
 ### Clean Code
 Robert Martin
 
-![clean code](/img/posts/favourite-agile-books/clean-code.jpg)
+![clean code](/img/posts/favourite-agile-books/clean-code.webp)
 
 ---
 
 ### The Clean Coder
 Robert Martin
 
-![clean coder](/img/posts/favourite-agile-books/clean-coder.jpg)
+![clean coder](/img/posts/favourite-agile-books/clean-coder.webp)
 
 ---
 
 ### Agile Coaching
 [Rachel Davies](http://rachelcdavies.github.io) and Liz Sedley
 
-![agile coaching](/img/posts/favourite-agile-books/agile-coaching.jpg)
+![agile coaching](/img/posts/favourite-agile-books/agile-coaching.webp)
 
 > To help agile teams improve, you need to work with the individuals
 > in the team. They’re the number one experts on how they work and
@@ -91,14 +91,14 @@ Robert Martin
 ### Agile Retrospectives
 Esther Derby and Diana Larsen
 
-![agile coaching](/img/posts/favourite-agile-books/agile-retrospectives.jpg)
+![agile coaching](/img/posts/favourite-agile-books/agile-retrospectives.webp)
 
 ---
 
 ### Coaching Agile Teams
 Lyssa Adkins
 
-![agile teams](/img/posts/favourite-agile-books/coaching-agile-teams.jpg)
+![agile teams](/img/posts/favourite-agile-books/coaching-agile-teams.webp)
 
 ---
 
@@ -106,7 +106,7 @@ Lyssa Adkins
 *Design and Deploy Production-Ready Software* 
 Michael T. Nygard
 
-![release it](/img/posts/favourite-agile-books/release-it.jpg)
+![release it](/img/posts/favourite-agile-books/release-it.webp)
 
 ---
 
@@ -114,7 +114,7 @@ Michael T. Nygard
 *Embrace Change*
 Kent Beck
 
-![xp explained](/img/posts/favourite-agile-books/extreme-programming-explained.jpg)
+![xp explained](/img/posts/favourite-agile-books/extreme-programming-explained.webp)
 
 ---
 
@@ -122,28 +122,28 @@ Kent Beck
 *Productive Projects & Teams* 
 Tom DeMarco and Timothy Lister
 
-![peopleware](/img/posts/favourite-agile-books/peopleware.jpg)
+![peopleware](/img/posts/favourite-agile-books/peopleware.webp)
 
 ---
 
 ### Behind Closed Doors
 [Johanna Rothman](http://www.jrothman.com/)
 
-![behind closed doors](/img/posts/favourite-agile-books/behind-closed-doors.jpg)
+![behind closed doors](/img/posts/favourite-agile-books/behind-closed-doors.webp)
 
 ---
 
 ### Manage It!
 [Johanna Rothman](http://www.jrothman.com/)
 
-![manage it!](/img/posts/favourite-agile-books/manage-it.jpg)
+![manage it!](/img/posts/favourite-agile-books/manage-it.webp)
 
 ---
 
 ### Manage Your Project Portfolio
 [Johanna Rothman](http://www.jrothman.com/)
 
-![manage your project portfolio](/img/posts/favourite-agile-books/manage-your-project-portfolio.jpg)
+![manage your project portfolio](/img/posts/favourite-agile-books/manage-your-project-portfolio.webp)
 
 ---
 
@@ -151,14 +151,14 @@ Tom DeMarco and Timothy Lister
 ### Management 3.0
 [Jurgen Appelo](http://www.jurgenappelo.com)
 
-![management 3.0](/img/posts/favourite-agile-books/management-3.0.jpg)
+![management 3.0](/img/posts/favourite-agile-books/management-3.0.webp)
 
 ---
 
 ### The Practice of Programming 
 Brian W. Kernighan & Rob Pike
 
-![p of p](/img/posts/favourite-agile-books/practice-of-programming.jpg)
+![p of p](/img/posts/favourite-agile-books/practice-of-programming.webp)
 
 ---
 
@@ -166,7 +166,7 @@ Brian W. Kernighan & Rob Pike
 *Improving the Design of Existing Code* 
 Martin Fowler
 
-![refactoring](/img/posts/favourite-agile-books/refactoring.jpg)
+![refactoring](/img/posts/favourite-agile-books/refactoring.webp)
 
 ---
 
@@ -174,14 +174,14 @@ Martin Fowler
 *Strategies, Patterns & Applications*
 Peter Coad, David North, Mark Mayfield
 
-![strapat](/img/posts/favourite-agile-books/object-models-strategies-patterns-applications.jpg)
+![strapat](/img/posts/favourite-agile-books/object-models-strategies-patterns-applications.webp)
 
 ---
 
 ### Working Effectively with Legacy Code 
 Michael Feathers
 
-![working effectively](/img/posts/favourite-agile-books/working-effectively-with-legacy-code.jpg)
+![working effectively](/img/posts/favourite-agile-books/working-effectively-with-legacy-code.webp)
 
 ---
 
@@ -189,35 +189,35 @@ Michael Feathers
 ### 97 Things Every Programmer Should Know
 Ed. Kevlin Henney
 
-![97 things](/img/posts/favourite-agile-books/ninety-seven-things.jpg)
+![97 things](/img/posts/favourite-agile-books/ninety-seven-things.webp)
 
 ---
 
 ### Structure and Interpretation of Computer Programs
 Harold Abelson
 
-![SICP](/img/posts/favourite-agile-books/structure-interpretation-computer-programs.jpg)
+![SICP](/img/posts/favourite-agile-books/structure-interpretation-computer-programs.webp)
 
 ---
 
 ### The Sketchnote Handbook
 Mike Rohde
 
-![sketchnote](/img/posts/favourite-agile-books/sketchnote-handbook.jpg)
+![sketchnote](/img/posts/favourite-agile-books/sketchnote-handbook.webp)
 
 ---
 
 ### Brain Rules
 John Medina
 
-![brain rules](/img/posts/favourite-agile-books/brain-rules.jpg)
+![brain rules](/img/posts/favourite-agile-books/brain-rules.webp)
 
 ---
 
 ### A Mind of it's Own
 Cordelia Fine
 
-![Mind](/img/posts/favourite-agile-books/a-mind-of-its-own.jpg)
+![Mind](/img/posts/favourite-agile-books/a-mind-of-its-own.webp)
 
 ---
 
@@ -225,6 +225,6 @@ Cordelia Fine
 *Essays on Software Engineering* 
 Frederick P. Brooks Jr.
 
-![mythical man month](/img/posts/favourite-agile-books/mythical-man-month.jpg)
+![mythical man month](/img/posts/favourite-agile-books/mythical-man-month.webp)
 
 --- 

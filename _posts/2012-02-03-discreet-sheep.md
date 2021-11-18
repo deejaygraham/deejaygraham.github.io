@@ -6,7 +6,7 @@ attribution: Mark Twain
 publication: 30 November 1835 – 21 April 1910
 size: medium
 categories: [ quote  ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -3,9 +3,9 @@ layout: sketchnote
 title: Fail better with QA in production
 categories: [ sketchnotes, presentations ]
 tweetable: true
-thumbnail: "/img/posts/fail-better-with-qa/thumbnail-420x255.png"
+thumbnail: "/img/posts/fail-better-with-qa/thumbnail-420x255.webp"
 sketchnote:
-  url: "/img/posts/fail-better-with-qa/fail-better-with-qa-in-production.png"
+  url: "/img/posts/fail-better-with-qa/fail-better-with-qa-in-production.webp"
   alt: "sketchnote"
   source:
     name: "Fail better with QA in production"

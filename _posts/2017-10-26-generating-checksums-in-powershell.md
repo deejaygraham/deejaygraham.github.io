@@ -3,7 +3,7 @@ layout: post
 title: Generating Checksums in PowerShell
 published: true
 categories: [ powershell ]
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

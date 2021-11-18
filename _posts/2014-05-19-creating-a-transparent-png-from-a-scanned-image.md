@@ -3,7 +3,7 @@ layout: post
 title: Creating a Transparent PNG from a Scanned Image
 published: true
 categories: [ csharp, sketchnotes, code ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: The Invention of Pairing
 published: true
 categories: [code, xp]
-thumbnail: "/img/posts/invention-of-pairing/thumbnail-420x255.jpg"
+thumbnail: "/img/posts/invention-of-pairing/thumbnail-420x255.webp"
 alttext: pairing
 ---
 
@@ -18,7 +18,7 @@ The year is 1994 or 1995 and I was working in Rogers, Arkansas with a company ca
 pretty early in my software development career, and I was a self-taught programmer. My mentor at 
 that company was a veteran called Rick who looked very much like the photos you see of the elder Mark Twain.
 
-![rick](/img/posts/invention-of-pairing/mark-twain.jpg)
+![rick](/img/posts/invention-of-pairing/mark-twain.webp)
 
 
 Rick and his team of seasoned, professional C and C++ developers were deep into manufacturing process control 
@@ -26,11 +26,11 @@ and working with some of the big food manufacturers on automated packaging and w
 
 The new projects was to provide a complete automated system to retrofit mechanical glass-forming machines and provide central control over a whole factory-worth of machines from a single management machine but also provide at-machine control devices with touch screens for finer, operator controlled adjustments.
 
-![maul](/img/posts/invention-of-pairing/maul.png)
+![maul](/img/posts/invention-of-pairing/maul.webp)
 
 This system used stepper and servo motors, sensors, digital IO and lots of PCs to create a system which replaced the "legacy" clock-work system of actuators and mechanical timing drums with a "modern" UI and finer adjustment capability over timing.
 
-![ui](/img/posts/invention-of-pairing/frontside.png)
+![ui](/img/posts/invention-of-pairing/frontside.webp)
 
 ## Glass is the Word
 
@@ -53,7 +53,7 @@ and build the code on your own machine, ship it and see what happens.
 
 Now one of the first test sites we went to was a factory in Hillboro, Illinois (now closed). The factory was a big, dirty, noisy, open-ended shed which wasn't suited to thinking and algorithmic correctness. So we set up home in a small out of the way *shack* in the factory grounds but quite a way away from the factory proper. 
 
-![hillsboro](/img/posts/invention-of-pairing/hillsboro-orpheum.png)
+![hillsboro](/img/posts/invention-of-pairing/hillsboro-orpheum.webp)
 
 The first we knew of problems tended to be after someone had done a new build, pushed it live and then went to see how that worked! There's often a big difference between getting code to compile and it having it work as you intend it. This was one of those occasions. You can imagine the scene if they didn't do it completely perfectly. All that split-second timing gone and replaced by a massive pile of cooling, broken glass which the 
 operator on duty had to clear up. Moving cold broken glass is a hazardous thing to do never mind glass that is several hundred degrees that has welded itself around pieces of machinery. 

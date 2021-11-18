@@ -6,7 +6,7 @@ published: true
 attribution: Kevlin Henney
 publication: 97 Things Every Software Architect Should Know
 categories: [ quote ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 

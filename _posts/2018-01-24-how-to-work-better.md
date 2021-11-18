@@ -5,5 +5,5 @@ published: true
 categories: [ agile, signs ]
 ---
 
-![sign](/img/posts/how-to-work-better/how-to-work-better.jpg)
+![sign](/img/posts/how-to-work-better/how-to-work-better.webp)
 

@@ -4,7 +4,7 @@ title: How to Learn Anything
 published: true
 categories: [ sketchnotes, deliberate-practice, presentations]
 sketchnote:
-  url: "/img/posts/how-to-learn-anything/how-to-learn-anything-bw-lofi.png"
+  url: "/img/posts/how-to-learn-anything/how-to-learn-anything-bw-lofi.webp"
   alt: "How to Learn Anything"
   event:
     name: "TED"
@@ -15,7 +15,7 @@ sketchnote:
   speaker:
     name: "@joshkaufman"
     url: "https://twitter.com/joshkaufman"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

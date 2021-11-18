@@ -3,9 +3,9 @@ layout: sketchnote
 title: Polly Want a Message
 categories: [ sketchnotes, presentations, tdd, xp  ]
 tweetable: true
-thumbnail: "/img/posts/polly-want-a-message/polly-want-a-message-tn.jpg"
+thumbnail: "/img/posts/polly-want-a-message/polly-want-a-message-tn.webp"
 sketchnote:
-  url: "/img/posts/polly-want-a-message/polly-want-a-message.png"
+  url: "/img/posts/polly-want-a-message/polly-want-a-message.webp"
   alt: "sketchnote"
   source:
     name: "Polly Want a Message"

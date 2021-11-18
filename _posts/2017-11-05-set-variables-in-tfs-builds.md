@@ -3,7 +3,7 @@ layout: post
 title: Setting variables in TFS builds
 categories: [ code, msbuild, tfs ]
 published: true
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

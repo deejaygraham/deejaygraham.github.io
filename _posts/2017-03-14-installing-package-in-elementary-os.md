@@ -22,12 +22,12 @@ So, how easy is it to install a new web browser in Elementary?
 
 First port of call is the web page to download the package.
 
-![brave](/img/posts/installing-package-in-elementary-os/brave-website.png)
+![brave](/img/posts/installing-package-in-elementary-os/brave-website.webp)
 
 Once the download is complete, I had expected to have an import or discovery
 option from the app center:
 
-![app center](/img/posts/installing-package-in-elementary-os/app-centre.png)
+![app center](/img/posts/installing-package-in-elementary-os/app-centre.webp)
 
 No? Ok, how about cracking open the terminal and the often popular <code>apt-get</code>:
 
@@ -37,7 +37,7 @@ No? Ok, how about cracking open the terminal and the often popular <code>apt-get
 
 ~~~
 
-![apt-get](/img/posts/installing-package-in-elementary-os/elementary_start_sudo-apt-get.png)
+![apt-get](/img/posts/installing-package-in-elementary-os/elementary_start_sudo-apt-get.webp)
 
 No? Because it's a Debian package we have to use <code>gdebi</code>:
 
@@ -47,8 +47,8 @@ No? Because it's a Debian package we have to use <code>gdebi</code>:
 
 ~~~
 
-![gdebi](/img/posts/installing-package-in-elementary-os/elementary-sudo-gdebi.png)
+![gdebi](/img/posts/installing-package-in-elementary-os/elementary-sudo-gdebi.webp)
 
 ..and voila!
 
-![app center2](/img/posts/installing-package-in-elementary-os/brave-installed.png)
+![app center2](/img/posts/installing-package-in-elementary-os/brave-installed.webp)

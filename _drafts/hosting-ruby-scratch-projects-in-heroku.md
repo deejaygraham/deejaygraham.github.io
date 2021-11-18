@@ -7,4 +7,4 @@ tags: [   ]
 
 # Hosting Ruby Scratch Projects in Heroku
 
-![example image](/img/posts/hosting-ruby-scratch-projects-in-heroku/example-image.png)
+![example image](/img/posts/hosting-ruby-scratch-projects-in-heroku/example-image.webp)

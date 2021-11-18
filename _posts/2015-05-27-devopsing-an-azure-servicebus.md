@@ -4,7 +4,7 @@ title: DevOpsing an Azure ServiceBus
 published: true 
 categories: [ cloud, powershell ]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

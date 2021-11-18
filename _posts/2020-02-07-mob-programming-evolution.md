@@ -3,9 +3,9 @@ layout: sketchnote
 title: Mob Programming Evolution
 categories: [ sketchnotes ]
 tweetable: true
-thumbnail: "/img/posts/mob-programming-evolution/thumbnail-420x255.png"
+thumbnail: "/img/posts/mob-programming-evolution/thumbnail-420x255.webp"
 sketchnote:
-  url: "/img/posts/mob-programming-evolution/mob-programming-evolution.png"
+  url: "/img/posts/mob-programming-evolution/mob-programming-evolution.webp"
   alt: "sketchnote"
 ---
 

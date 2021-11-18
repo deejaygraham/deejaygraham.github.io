@@ -3,9 +3,9 @@ layout: sketchnote
 title: Hacking Verbal Communication
 categories: [ sketchnotes, presentations, agile  ]
 tweetable: true
-thumbnail: "/img/posts/hacking-verbal-communication/hacking-verbal-communication.png"
+thumbnail: "/img/posts/hacking-verbal-communication/hacking-verbal-communication.webp"
 sketchnote:
-  url: "/img/posts/hacking-verbal-communication/hacking-verbal-communication.png"
+  url: "/img/posts/hacking-verbal-communication/hacking-verbal-communication.webp"
   alt: "sketchnote"
   source:
     name: "Hacking Verbal Communication"

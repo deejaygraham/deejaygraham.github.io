@@ -3,9 +3,9 @@ layout: sketchnote
 title: What do developers do all day?
 categories: [ sketchnotes ]
 tweetable: true
-thumbnail: "/img/posts/what-do-developers-do/thumbnail-420x255.png"
+thumbnail: "/img/posts/what-do-developers-do/thumbnail-420x255.webp"
 sketchnote:
-  url: "/img/posts/what-do-developers-do/what-do-developers-do.png"
+  url: "/img/posts/what-do-developers-do/what-do-developers-do.webp"
   alt: "sketchnote"
 ---
 

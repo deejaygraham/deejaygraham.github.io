@@ -4,7 +4,7 @@ title: Spoofing Nokia mobile on the Microbit
 categories: [ microbit, code ]
 published: true
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
 ---
 

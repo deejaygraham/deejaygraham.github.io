@@ -3,7 +3,7 @@ layout: post
 title: Black Sheep Notebook
 published: true
 categories: [ books, illustration ]
-thumbnail: "/img/posts/black-sheep-notebook/thumbnail-420x255.png"
+thumbnail: "/img/posts/black-sheep-notebook/thumbnail-420x255.webp"
 alttext: cover
 ---
 
@@ -12,6 +12,6 @@ got for Christmas. It's from <a href="https://www.blacksheepleather.co.uk/">Blac
 
 The front has a black sheep embossed in the lower right.
 
-![front](/img/posts/black-sheep-notebook/notebook-front.png)
+![front](/img/posts/black-sheep-notebook/notebook-front.webp)
 
-![back](/img/posts/black-sheep-notebook/notebook-back.png)
+![back](/img/posts/black-sheep-notebook/notebook-back.webp)

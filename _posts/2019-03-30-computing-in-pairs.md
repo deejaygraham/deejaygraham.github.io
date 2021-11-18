@@ -5,7 +5,7 @@ published: true
 attribution: Jean Bartik
 publication: Interview with Computer History Museum
 categories: [ quote ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

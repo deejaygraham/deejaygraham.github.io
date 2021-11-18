@@ -4,7 +4,7 @@ title: Doctorow's Three Laws
 categories: [ video, sketchnotes, open-source, illustration ]
 published: true
 sketchnote:
-  url: "/img/posts/doctorows-three-laws/doctorows-three-laws-hifi.png"
+  url: "/img/posts/doctorows-three-laws/doctorows-three-laws-hifi.webp"
   alt: "sketchnote"
   source:
     name: "The Coming War on General Purpose Computing"
@@ -12,7 +12,7 @@ sketchnote:
   speaker:
     name: "Cory Doctorow"
     url: "https://craphound.com"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

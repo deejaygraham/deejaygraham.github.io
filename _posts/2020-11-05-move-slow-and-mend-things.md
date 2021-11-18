@@ -3,7 +3,7 @@ layout: post
 title:  Move Slow and Mend Things
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/move-slow-and-mend-things/thumbnail-420x255.png
+thumbnail: img/posts/move-slow-and-mend-things/thumbnail-420x255.webp
 alttext: Kevlin Henney
 --- 
 

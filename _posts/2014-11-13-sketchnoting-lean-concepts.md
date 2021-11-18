@@ -3,7 +3,7 @@ layout: sketchnote
 title: Sketchnoting Lean Concepts
 categories: [ sketchnotes, presentations, lean, agile ]
 sketchnote:
-  url: "/img/posts/sketchnoting-lean-concepts/sketchnoting-lean-concepts-hifi.png"
+  url: "/img/posts/sketchnoting-lean-concepts/sketchnoting-lean-concepts-hifi.webp"
   alt: "sketchnote"
   source:
     name: "Reach for the Stars"
@@ -13,7 +13,7 @@ sketchnote:
   speaker:
     name: "Dan Brown"
     url: "https://twitter.com/KanbanDan"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

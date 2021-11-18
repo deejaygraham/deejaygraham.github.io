@@ -6,7 +6,7 @@ publication: The Pattern on the Stone
 comment: Rediscovered the opening few sentences from one of my favourite books
 published: true
 categories: [ quote ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

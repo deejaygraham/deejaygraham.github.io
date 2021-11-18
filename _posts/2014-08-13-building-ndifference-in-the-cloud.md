@@ -19,7 +19,7 @@ As with all CI solutions, the idea is that each time you push a change to
 github, Travis will see it and run a script to build your project. You even 
 get a live status indicator so you can check the last build status. 
 
-Here's the current status of NDifference: <a href="https://travis-ci.org/deejaygraham/ndifference"><img src="https://travis-ci.org/deejaygraham/ndifference.png?branch=master" alt="Build Status"></a>
+Here's the current status of NDifference: <a href="https://travis-ci.org/deejaygraham/ndifference"><img src="https://travis-ci.org/deejaygraham/ndifference.webp?branch=master" alt="Build Status"></a>
 
 One small complication that you might not expect given the build up so far, 
 Travis is more commonly used for building Ruby projects and there is no default 
@@ -59,7 +59,7 @@ trickery part). Then I make sure all packages are up to date before installing
 mono. Finally I build the project using xbuild with a specific target 
 (/t:TravisCI) which means I bypass running unit tests.
 
-![Screenshot](/img/posts/building-ndifference-in-the-cloud/travis-screenshot.png "Travis Working")
+![Screenshot](/img/posts/building-ndifference-in-the-cloud/travis-screenshot.webp "Travis Working")
 
 ## Gotchas
 The most immediate problem I ran into was forgetting that Unix file names 

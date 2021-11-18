@@ -4,7 +4,7 @@ title: Microbit Musicians
 published: true
 categories: [code, microbit, music]
 hero: microbit
-thumbnail: img/posts/microbit-musicians/thumbnail-420x255.png
+thumbnail: img/posts/microbit-musicians/thumbnail-420x255.webp
 alttext: microbit
 ---
 

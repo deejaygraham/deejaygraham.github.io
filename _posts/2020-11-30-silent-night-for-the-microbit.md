@@ -4,7 +4,7 @@ title: Silent Night for the Microbit
 published: true
 categories: [code, microbit, music]
 hero: microbit
-thumbnail: img/posts/silent-night-for-microbit/thumbnail-420x255.png
+thumbnail: img/posts/silent-night-for-microbit/thumbnail-420x255.webp
 alttext: microbit
 ---
 

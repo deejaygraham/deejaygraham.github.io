@@ -4,7 +4,7 @@ title: Azure Startup Tasks
 published: true
 categories: [ powershell, cloud  ]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

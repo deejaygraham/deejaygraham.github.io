@@ -3,7 +3,7 @@ layout: post
 title: 12 Things that Powershell can do (so you don't have to)
 tags: [ presentations ]
 published: false
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 
 ---

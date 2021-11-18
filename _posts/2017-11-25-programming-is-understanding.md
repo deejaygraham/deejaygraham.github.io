@@ -5,7 +5,7 @@ title: Programming is Understanding
 published: true
 attribution: Joe Armstrong
 categories: [ quote ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 

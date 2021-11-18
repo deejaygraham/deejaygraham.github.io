@@ -5,7 +5,7 @@ published: true
 categories: [ agile, quote ]
 size: large
 attribution: Jamie Lee Curtis
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -3,9 +3,9 @@ layout: sketchnote
 title: My Sketchnoting Workflow for Presentations
 categories: [ sketchnotes, presentations ]
 sketchnote:
-  url: "/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.png"
+  url: "/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.webp"
   alt: "Sketchnote process"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

@@ -4,7 +4,7 @@ title: Grepping in PowerShell
 published: true 
 categories: [ powershell ]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.jpg"
+thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell
 
 ---
@@ -26,4 +26,4 @@ Additionally, I used a list of search terms but that could be replaced with a si
 
 Sample output from this script:
 
-<img src="/img/posts/grepping-in-powershell/grepping-in-powershell.png" alt="grep" class="u-max-full-width" />
+<img src="/img/posts/grepping-in-powershell/grepping-in-powershell.webp" alt="grep" class="u-max-full-width" />

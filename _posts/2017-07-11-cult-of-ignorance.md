@@ -4,7 +4,7 @@ title: Cult of Ignorance
 published: true
 categories: [ agile, quote ]
 attribution: Isaac Asimov
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

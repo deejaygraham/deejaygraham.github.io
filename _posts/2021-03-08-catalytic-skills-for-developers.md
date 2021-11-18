@@ -3,9 +3,9 @@ layout: sketchnote
 title: Catalytic Skills for Developers
 categories: [ sketchnotes, presentations ]
 tweetable: true
-thumbnail: "/img/posts/catalytic-skills-for-developers/thumbnail-420x255.png"
+thumbnail: "/img/posts/catalytic-skills-for-developers/thumbnail-420x255.webp"
 sketchnote:
-  url: "/img/posts/catalytic-skills-for-developers/catalytic-skills-for-developers.png"
+  url: "/img/posts/catalytic-skills-for-developers/catalytic-skills-for-developers.webp"
   alt: "sketchnote"
   source:
     name: "Catalytic Skills for Developers"

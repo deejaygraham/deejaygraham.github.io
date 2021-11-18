@@ -3,7 +3,7 @@ layout: post
 title: Strong Style Pairing
 categories: [ sketchnotes ]
 published: true
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 
@@ -18,9 +18,9 @@ it MUST go through someone else's hands</blockquote>
 This is how I like to think about it:
 
 
-<img src="/img/posts/strong-style-pairing/strong-style-pairing.png" alt="strong style sketchnote"/>
+<img src="/img/posts/strong-style-pairing/strong-style-pairing.webp" alt="strong style sketchnote"/>
 
 and in a slightly different format:
 
-<img src="/img/posts/strong-style-pairing/strong-style-pairing-landscape-lofi.png" alt="strong style sketchnote"/>
+<img src="/img/posts/strong-style-pairing/strong-style-pairing-landscape-lofi.webp" alt="strong style sketchnote"/>
 

@@ -4,7 +4,7 @@ title: Using Pester for API Testing
 published: true 
 categories: [ powershell ]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.jpg"
+thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell
 
 ---

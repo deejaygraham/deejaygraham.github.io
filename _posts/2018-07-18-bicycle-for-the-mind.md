@@ -5,7 +5,7 @@ attribution: Steve Jobs
 published: true
 categories: [ quote ]
 size: medium
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

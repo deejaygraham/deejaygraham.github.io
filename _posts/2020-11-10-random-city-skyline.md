@@ -4,7 +4,7 @@ title: Random City Skyline
 published: true
 categories: [code, processing]
 hero: microbit
-thumbnail: img/posts/random-city-skyline/thumbnail-420x255.png
+thumbnail: img/posts/random-city-skyline/thumbnail-420x255.webp
 alttext: processing skyline
 ---
 

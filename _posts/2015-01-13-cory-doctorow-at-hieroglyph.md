@@ -4,7 +4,7 @@ title: Cory Doctorow at Hieroglyph
 published: true
 categories: [ sketchnotes, illustration ]
 sketchnote:
-  url: "/img/posts/doctorow-at-hieroglyph/doctorow-at-hieroglyph-hifi.png"
+  url: "/img/posts/doctorow-at-hieroglyph/doctorow-at-hieroglyph-hifi.webp"
   alt: "sketchnote"
   event:
     name: "Hieroglyph"
@@ -12,7 +12,7 @@ sketchnote:
   speaker:
     name: "Cory Doctorow"
     url: "https://craphound.com"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

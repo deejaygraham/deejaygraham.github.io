@@ -5,7 +5,7 @@ title: Compound Interest
 published: true
 attribution: CS Lewis
 categories: [ quote ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 

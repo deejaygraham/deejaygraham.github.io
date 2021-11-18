@@ -5,7 +5,7 @@ attribution: Allen Holub
 publication: via Twitter
 published: true
 categories: [ quote ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -5,7 +5,7 @@ published: true
 categories: [ quote  ]
 size: medium
 attribution: Robert Anton Wilson
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

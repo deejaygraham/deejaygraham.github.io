@@ -5,7 +5,7 @@ published: true
 categories: [ agile, quote ]
 size: large
 attribution: Station Manager, WXIX Cincinnati via <a href="https://twitter.com/hotdogsladies">Merlin Mann</a>
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

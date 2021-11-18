@@ -3,7 +3,7 @@ layout: post
 title: Confident Code
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/confident-code/confident-code-420x255.png
+thumbnail: img/posts/confident-code/confident-code-420x255.webp
 alttext: avdi grimm
 ---
 

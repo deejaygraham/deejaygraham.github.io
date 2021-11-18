@@ -4,7 +4,7 @@ title: Sketchnoting Challenge
 published: true
 categories: [ sketchnotes, gtd ]
 sketchnote:
-  url: "/img/posts/sketchnoting-challenge/mac-power-users.png"
+  url: "/img/posts/sketchnoting-challenge/mac-power-users.webp"
   alt: ""
   event:
     name: "sketchnote army challenge"
@@ -15,7 +15,7 @@ sketchnote:
   speaker:
     name: "David Allen"
     url: "http://gettingthingsdone.com/"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

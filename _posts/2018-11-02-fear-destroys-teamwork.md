@@ -5,7 +5,7 @@ published: true
 categories: [ agile, quote ]
 size: large
 attribution: <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6451">Amy C. Edmondson</a>
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

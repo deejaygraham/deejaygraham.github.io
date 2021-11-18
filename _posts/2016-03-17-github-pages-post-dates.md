@@ -3,7 +3,7 @@ layout: post
 title: The Case of the Disappearing Github Pages
 published: true 
 categories: [ meta, powershell, presentations ]
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

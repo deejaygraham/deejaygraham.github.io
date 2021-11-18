@@ -8,7 +8,7 @@ hero: agile
 Imagine for a moment, you are writing a book about agile techniques and 
 how they can be applied in the context of coaching a software team.
 
-![cover](/img/posts/dream-team-nightmare/ptdream_xlargecover.jpg)
+![cover](/img/posts/dream-team-nightmare/ptdream_xlargecover.webp)
 
 You *might* structure it in a nice, linear fashion, explaining the history 
 of agile, enumerating each technique in turn and explaining when and how 

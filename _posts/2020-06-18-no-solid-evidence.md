@@ -3,7 +3,7 @@ layout: post
 title: no SOLID evidence
 published: true
 categories: [xp]
-thumbnail: "img/posts/no-solid-evidence/thumbnail-420x255.png"
+thumbnail: "img/posts/no-solid-evidence/thumbnail-420x255.webp"
 alttext: SOLID
 ---
 

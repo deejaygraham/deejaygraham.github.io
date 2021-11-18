@@ -4,9 +4,9 @@ title: Lead Time vs Cycle Time
 categories: [ lean, sketchnotes, illustration ]
 published: true
 sketchnote:
-  url: "/img/posts/lead-time-vs-cycle-time/lead-time-vs-cycle-time.jpg"
+  url: "/img/posts/lead-time-vs-cycle-time/lead-time-vs-cycle-time.webp"
   alt: "sketchnote"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

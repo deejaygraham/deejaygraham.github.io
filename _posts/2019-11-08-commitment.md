@@ -5,9 +5,9 @@ title: Commitment
 published: true
 attribution: Esther Derby
 categories: [ quote, lean ]
-thumbnail: img/posts/commitment/commitment-420x255.jpg
+thumbnail: img/posts/commitment/commitment-420x255.webp
 alttext: phb
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -27,7 +27,7 @@ and sends <code>Microsoft.ServiceBus.Messaging.BrokeredMessage</code>s using the
 
 ```
 
-![writer](/img/posts/testing-azure-servicebus-queues/writer.png "writer")
+![writer](/img/posts/testing-azure-servicebus-queues/writer.webp "writer")
 
 ## In the Read Corner...
 
@@ -43,7 +43,7 @@ class.
 
 ```
 
-![reader 1](/img/posts/testing-azure-servicebus-queues/reader-1.png "reader 1")
+![reader 1](/img/posts/testing-azure-servicebus-queues/reader-1.webp "reader 1")
 
 ## Totally, like, random
 
@@ -51,7 +51,7 @@ In both applications I have introduced a bit of randomness in sending and receiv
 demonstrate that you can run more than instance of the reader application and each instance 
 should pick up and process their own share of messages without interfering with each other.
 
-![reader 2](/img/posts/testing-azure-servicebus-queues/reader-2.png "reader 2")
+![reader 2](/img/posts/testing-azure-servicebus-queues/reader-2.webp "reader 2")
 
 This sample also demonstrates the use of the <code>Defer</code> method to allow an instance to 
 claim a message to work on, complete some process then come back to the message, retrieve it 

@@ -3,7 +3,7 @@ layout: post
 title: Getting Back to Rust
 published: true
 categories: [code]
-thumbnail: "/img/thumbnails/rust-420x255.jpg"
+thumbnail: "/img/thumbnails/rust-420x255.webp"
 alttext: rust
 ---
 

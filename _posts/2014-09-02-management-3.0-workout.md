@@ -5,7 +5,7 @@ published: true
 categories: [ agile, management, books ]
 ---
 
-![cover](/img/posts/management-30-workout/management-30-workout.png)
+![cover](/img/posts/management-30-workout/management-30-workout.webp)
 
 I've been a fan of Jurgen Appelo since first hearing him talk about [Management 3.0](http://www.management30.com/)
 a couple of years ago. Much of my own, sometimes painful, experience with 
@@ -16,7 +16,7 @@ One of Jurgen's main points is that management is too important to be left to
 managers alone and it's good for everyone in the organization to understand and appreciate 
 the problems teams, projects and individual knowledge workers face.
 
-![original](/img/posts/management-30-workout/management-30.png)
+![original](/img/posts/management-30-workout/management-30.webp)
 
 The original Management 3.0 book contained good advice both for new managers 
 and for mature managers who were embedded in the traditional mindset of top-down, 
@@ -38,7 +38,7 @@ comments from readers who have already implemented a technique, their initial
 circumstances, how they implemented or adapted it, and their results. Each 
 chapter also includes a set of references for further research.
 
-![design edition](/img/posts/management-30-workout/design-edition.png)
+![design edition](/img/posts/management-30-workout/design-edition.webp)
 
 Currently the book is available electronically for Kindle and ePub, or as a 
 pdf if you register for his newsletter. Registration entitles you to a "plain" 

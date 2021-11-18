@@ -6,7 +6,7 @@ categories: [ agile, quote ]
 attribution: W. Edwards Deming
 publication: Quoted in foreword to Profit Beyond Measure Paperback by H. Thomas Johnson and Anders Broms
 size: medium
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

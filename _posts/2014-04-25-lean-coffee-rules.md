@@ -4,7 +4,7 @@ title: Lean Coffee Rules
 categories: [sketchnotes, presentations ]
 hero: agile
 sketchnote:
-  url: "/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png"
+  url: "/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.webp"
   alt: "Lean Coffee"
   event:
     name: "Infoq"
@@ -15,7 +15,7 @@ sketchnote:
   speaker:
     name: "@adamyuret"
     url: "https://twitter.com/adamyuret"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

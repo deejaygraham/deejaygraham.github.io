@@ -3,7 +3,7 @@ layout: post
 title: Having the Right Kind of Argument(s)
 published: true
 categories: [ powershell ]
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

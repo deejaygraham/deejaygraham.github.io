@@ -3,7 +3,7 @@ layout: post
 title:  Evolving a Clean, Pragmatic Architecture 
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/evolving-a-clean-pragmatic-architecture/thumbnail-420x255.png
+thumbnail: img/posts/evolving-a-clean-pragmatic-architecture/thumbnail-420x255.webp
 alttext: Victor Rentea
 ---
 

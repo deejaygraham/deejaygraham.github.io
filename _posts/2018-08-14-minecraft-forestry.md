@@ -4,14 +4,14 @@ title: Minecraft Forestry
 categories: [ minecraft, code ]
 published: true
 hero: minecraft 
-thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---
 
 We can build very simple trees programmatically in Minecraft by stacking blocks together using 
 wood-y and leaf-y materials.
 
-<img src="/img/posts/minecraft-forestry/simple-tree.jpg" alt="simple tree" class="u-max-full-width" />
+<img src="/img/posts/minecraft-forestry/simple-tree.webp" alt="simple tree" class="u-max-full-width" />
 
 
 ```python
@@ -22,7 +22,7 @@ wood-y and leaf-y materials.
 
 Square blocks of leaves aren't very realistic so we can trim off the square edges like this.
 
-<img src="/img/posts/minecraft-forestry/better-tree.jpg" alt="better tree" class="u-max-full-width" />
+<img src="/img/posts/minecraft-forestry/better-tree.webp" alt="better tree" class="u-max-full-width" />
 
 
 ```python
@@ -33,7 +33,7 @@ Square blocks of leaves aren't very realistic so we can trim off the square edge
 
 Finally, we can make ourselves a nice orchard or small forest using some random values for each tree:
 
-<img src="/img/posts/minecraft-forestry/random-forest.jpg" alt="forest of trees" class="u-max-full-width" />
+<img src="/img/posts/minecraft-forestry/random-forest.webp" alt="forest of trees" class="u-max-full-width" />
 
 
 ```python
@@ -70,5 +70,5 @@ change the leaf generation to work on a probability of a leaf block being at any
 
 ```
 
-<img src="/img/posts/minecraft-forestry/random-leaves.jpg" alt="random leaves" class="u-max-full-width" />
+<img src="/img/posts/minecraft-forestry/random-leaves.webp" alt="random leaves" class="u-max-full-width" />
 

@@ -4,7 +4,7 @@ title: Langton's Ant
 categories: [ code, microbit ]
 published: true
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
 ---
 
@@ -21,4 +21,4 @@ there is an intelligence behind the process, guiding it.
 
 The effect is somewhat reduced on the microbit's 5x5 screen but it's still a nice illustration of complexity coming from simple rules.
 
-![ant](/img/posts/langtons-ant/langtons-ant.jpg)
+![ant](/img/posts/langtons-ant/langtons-ant.webp)

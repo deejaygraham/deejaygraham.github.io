@@ -3,7 +3,7 @@ layout: post
 title:  Building High Performance React Applications 
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/building-high-performance-react/thumbnail-420x255.png
+thumbnail: img/posts/building-high-performance-react/thumbnail-420x255.webp
 alttext: Joe Karlsson
 --- 
 

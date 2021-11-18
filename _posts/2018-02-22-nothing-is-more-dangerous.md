@@ -6,7 +6,7 @@ categories: [ quote, agile ]
 attribution: Emile Auguste Chartier
 comment: This is from a Kevlin Henney talk a while ago.
 size: large
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

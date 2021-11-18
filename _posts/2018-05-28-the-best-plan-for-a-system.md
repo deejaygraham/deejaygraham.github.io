@@ -5,7 +5,7 @@ published: true
 categories: [ agile, quote ]
 attribution: W. Edwards Deming
 publication: The New Economics
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

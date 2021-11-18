@@ -4,7 +4,7 @@ title: Autonomous Microbit Vehicle
 published: true
 categories: [code, microbit]
 hero: microbit
-thumbnail: "img/posts/autonomous-microbit-vehicle/thumbnail-420x255.png"
+thumbnail: "img/posts/autonomous-microbit-vehicle/thumbnail-420x255.webp"
 alttext: autonomous vehicle
 ---
 
@@ -21,14 +21,14 @@ squares</a> and use the sensors to keep us on the straight and narrow.
 The two sensors are wired to two different digital input pins on the microbit and we can query each individually. If we can see
 equal reflections from both sensors we assume we are travelling in a roughly straight line (or at least not hit an edge). 
 
-![straddling the line](/img/posts/autonomous-microbit-vehicle/straddling.jpg)
+![straddling the line](/img/posts/autonomous-microbit-vehicle/straddling.webp)
 
 
 When we see a difference in sensors we know we have hit an edge and need to correct by turning in the opposite direction.
 
-![too far left](/img/posts/autonomous-microbit-vehicle/too-far-left.jpg)
+![too far left](/img/posts/autonomous-microbit-vehicle/too-far-left.webp)
 
-![too far right](/img/posts/autonomous-microbit-vehicle/too-far-right.jpg)
+![too far right](/img/posts/autonomous-microbit-vehicle/too-far-right.webp)
 
 
 ```python
@@ -52,9 +52,9 @@ mode and watch while it "feels" its way around any sort of track we can devise.
 
 Here is the finished vehicle running around a test track at one of our work open days.
 
-![starting off](/img/posts/autonomous-microbit-vehicle/autonomous-1.png)
+![starting off](/img/posts/autonomous-microbit-vehicle/autonomous-1.webp)
 
-![running round the track](/img/posts/autonomous-microbit-vehicle/autonomous-2.png)
+![running round the track](/img/posts/autonomous-microbit-vehicle/autonomous-2.webp)
 
 Occasionally the vehicle would leave the track (I think the reflectivity of the sellotape holding the tiles together was to blame) and meander away, reading the colours of the floor tiles
 and the varying surfaces under its wheels until it was eventually rescued.

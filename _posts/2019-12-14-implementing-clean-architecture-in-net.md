@@ -3,7 +3,7 @@ layout: post
 title: Implementing the Clean Architecture in .NET Core
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/implementing-clean-architecture-net/thumbnail-420x255.png
+thumbnail: img/posts/implementing-clean-architecture-net/thumbnail-420x255.webp
 alttext: Rouan
 ---
 

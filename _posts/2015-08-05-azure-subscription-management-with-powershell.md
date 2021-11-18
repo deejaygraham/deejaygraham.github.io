@@ -4,7 +4,7 @@ title: Azure subscription management with PowerShell
 published: true 
 categories: [ cloud  ]
 hero: cloud
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 
@@ -19,7 +19,7 @@ to get checked into source control and used by anyone with no traceability.
 You could force the user to login each time using the **Add-AzureAccount** command which can get 
 super tedious.
 
-![azure login](/img/posts/azure-subscription-management-with-powershell/azure-login.png)
+![azure login](/img/posts/azure-subscription-management-with-powershell/azure-login.webp)
 
 This is fine for occasional tasks that require authentication but no one I know 
 is happy to use this method 
@@ -40,11 +40,11 @@ makecert -sky exchange -r -n "CN=[My Azure Management Certificate]"
 
 ~~~
 
-![makecert](/img/posts/azure-subscription-management-with-powershell/make-cert-command-line.png)
+![makecert](/img/posts/azure-subscription-management-with-powershell/make-cert-command-line.webp)
 
 Fill in the password and confirmation at the prompt.
 
-![password](/img/posts/azure-subscription-management-with-powershell/make-cert-password.png)
+![password](/img/posts/azure-subscription-management-with-powershell/make-cert-password.webp)
 
 Now, convert the .pvk to a .pfx so we can upload it to Azure. 
 
@@ -59,7 +59,7 @@ pvk2pfx –pvk MyAzureManagementCertificate.pvk
 
 Upload the .pfx to the cloud service using the Azure portal.
 
-![azure upload](/img/posts/azure-subscription-management-with-powershell/azure-upload.png)
+![azure upload](/img/posts/azure-subscription-management-with-powershell/azure-upload.webp)
 
 Note the certificate thumbprint using PowerShell...
 

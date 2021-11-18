@@ -4,7 +4,7 @@ title: Microbit LED blinkenlights
 published: true
 categories: [code, microbit]
 hero: microbit
-thumbnail: img/posts/led-blinkenlights/thumbnail-420x255.png
+thumbnail: img/posts/led-blinkenlights/thumbnail-420x255.webp
 alttext: microbit
 ---
 
@@ -16,7 +16,7 @@ make a couple of simple circuits that would work with the digital IO on the micr
 A lot of electronics work without an externally visible sign that anything is going on. An LED is one of the most simple electronic devices that 
 does something that someone can actually see and appreciate that there is work happening. The standard circuit for an LED to work looks like this. 
 
-![led circuit](/img/posts/led-blinkenlights/led-circuit.png)
+![led circuit](/img/posts/led-blinkenlights/led-circuit.webp)
 
 The battery provides the voltage, the LED will light up when current is flowing through it in the right direction and the resistor is there to make sure 
 that the LED doesn't try to take up too much current and blow itself up. 
@@ -24,7 +24,7 @@ that the LED doesn't try to take up too much current and blow itself up.
 LEDs have a long leg (positive) and a short leg (negative) that can be used when orienting them in a circuit. If the LED is soldered down, the legs are usually 
 cut to the same length. Luckily, the body of the LED also has a flat side to it which also marks the negative end of the device. 
 
-![led package](/img/posts/led-blinkenlights/led-package.png)
+![led package](/img/posts/led-blinkenlights/led-package.webp)
 
 If the LED is connected up the "wrong" way round, no current will flow and the light won't be lit but the circuit won't break. 
 
@@ -33,7 +33,7 @@ If the LED is connected up the "wrong" way round, no current will flow and the l
 Now that we have the basics straight, we need to think about how to do this with a microbit in control. A digital IO pin on the edge connector can be connected to 
 our circuit in place of the top of the battery part of the circuit and the other end of the circuit attached to the GND pin on the edge connector. 
 
-![microbit io](/img/posts/led-blinkenlights/microbit1.png)
+![microbit io](/img/posts/led-blinkenlights/microbit1.webp)
 
 Here I have attached two wires to the edge connector, to pin 1 and to the gnd pin. 
 
@@ -42,7 +42,7 @@ a printed circuit (PCB). In the picture below, I connected the wire from pin 1 t
 column. In between we have the LED connected between the + and a slot in the middle of the breadboard. The resistor connects to that and to the - column to 
 complete the circuit. 
 
-![breadboard](/img/posts/led-blinkenlights/breadboard1.png)
+![breadboard](/img/posts/led-blinkenlights/breadboard1.webp)
 
 
 ### Code

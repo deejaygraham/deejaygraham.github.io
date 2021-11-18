@@ -5,7 +5,7 @@ attribution: George Orwell
 comment: George Orwell on the difficulting of naming concepts in software :)
 published: true
 categories: [  quote  ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

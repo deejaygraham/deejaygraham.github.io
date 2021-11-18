@@ -3,7 +3,7 @@ layout: post
 title: I'm in the Sketchnote Workbook!
 published: true
 categories: [ sketchnotes, books ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 
@@ -11,11 +11,11 @@ Or rather, some of my work is :) Exciting news from <a href="http://rohdesign.co
 he's including one of my sketchnotes in his new book, the 
 <a href="http://rohdesign.com/workbook/" alt="link to book">Sketchnote Workbook</a>! 
 
-<img src="/img/posts/im-in-the-sketchnote-workbook/rohde-sketchnote-workbook.png" alt="book cover" class="u-max-full-width" />
+<img src="/img/posts/im-in-the-sketchnote-workbook/rohde-sketchnote-workbook.webp" alt="book cover" class="u-max-full-width" />
 
 Pages 54-55 will look like this:
 
-<img src="/img/posts/im-in-the-sketchnote-workbook/tsw-ch3-54-55.png" alt="page 55 of book" class="u-max-full-width" />
+<img src="/img/posts/im-in-the-sketchnote-workbook/tsw-ch3-54-55.webp" alt="page 55 of book" class="u-max-full-width" />
 
 
 ## Update

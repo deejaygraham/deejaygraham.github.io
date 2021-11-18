@@ -3,7 +3,7 @@ layout: post
 title:  Learn Code Smells And Level Up Your Game
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/learn-code-smells-and-level-up-your-game/thumbnail-420x255.png
+thumbnail: img/posts/learn-code-smells-and-level-up-your-game/thumbnail-420x255.webp
 alttext: Sandi Metz
 --- 
 

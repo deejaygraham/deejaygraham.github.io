@@ -6,7 +6,7 @@ published: true
 attribution: F Scott Fitzgerald
 publication: The Great Gatsby
 categories: [ quote ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 

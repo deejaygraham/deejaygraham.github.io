@@ -3,9 +3,9 @@ layout: sketchnote
 title: No Estimates
 categories: [ sketchnotes, presentations, agile  ]
 tweetable: true
-thumbnail: "/img/posts/vasco-duarte-no-estimates/no-estimates.png"
+thumbnail: "/img/posts/vasco-duarte-no-estimates/no-estimates.webp"
 sketchnote:
-  url: "/img/posts/vasco-duarte-no-estimates/no-estimates.png"
+  url: "/img/posts/vasco-duarte-no-estimates/no-estimates.webp"
   alt: "sketchnote"
   source:
     name: "No estimates: how to predict a project's release date"

@@ -3,7 +3,7 @@ layout: post
 title: Test-Driving a File System
 published: false
 categories: [ csharp, code, tdd ]
-thumbnail: img/posts/tdd-filesystem/thumbnail-420x255.jpg
+thumbnail: img/posts/tdd-filesystem/thumbnail-420x255.webp
 alttext: filing
 ---
 

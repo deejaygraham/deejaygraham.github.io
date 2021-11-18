@@ -3,7 +3,7 @@ layout: post
 title: Determining when your Azure session has expired
 published: true
 categories: [ powershell, cloud ]
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

@@ -18,7 +18,7 @@ import a pdf file. On investigating the command line reference, it seems that
 Inkscape can import a pdf and export an image from it. 
 
 <code>
-Inkscape.exe slidedeck.pdf --export-png=slidedeck.png
+Inkscape.exe slidedeck.pdf --export-png=slidedeck.webp
 </code>
 
 Great. Except that it only works with the first page in the document.
@@ -55,14 +55,14 @@ Clearly another approach was needed. After some googling, I discovered another t
 pdfs to svg and could handle embedded fonts.
 
 <code>
-pdf2svg.exe slide01.pdf slide01.png 1
+pdf2svg.exe slide01.pdf slide01.webp 1
 </code>
 
 Fortunately, but unsurprisingly, Inkscape is so awesome it can handle conversion 
 from svg to png.
 
 <code>
-Inkscape.exe -f slide01.svg -e slide01.png
+Inkscape.exe -f slide01.svg -e slide01.webp
 </code>
 
 So the script has had to change a little to include the extra tool in the chain. 

@@ -4,9 +4,9 @@ title: The (Richard) Dreyfuss Model of Skill Acquisition
 categories: [ sketchnotes, illustration ]
 published: true
 sketchnote:
-  url: "/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-hifi.png"
+  url: "/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-hifi.webp"
   alt: "sketchnote"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

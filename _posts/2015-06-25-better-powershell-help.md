@@ -4,7 +4,7 @@ title: Better PowerShell Help
 published: true 
 categories: [ powershell ]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 
@@ -17,5 +17,5 @@ PS C:\>Get-Help Get-AzureDeployment -ShowWindow
 
 ~~~ 
 
-![show](/img/posts/better-powershell-help/help.png "Show Help")
+![show](/img/posts/better-powershell-help/help.webp "Show Help")
 

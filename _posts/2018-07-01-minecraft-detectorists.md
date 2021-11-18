@@ -4,7 +4,7 @@ title: Minecraft Detectorists
 categories: [ code, minecraft ]
 published: true
 hero: minecraft 
-thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---
 

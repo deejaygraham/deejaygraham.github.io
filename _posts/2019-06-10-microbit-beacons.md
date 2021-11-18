@@ -4,7 +4,7 @@ title: Microbit Beacons
 published: true
 categories: [ code, microbit ]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
 ---
 

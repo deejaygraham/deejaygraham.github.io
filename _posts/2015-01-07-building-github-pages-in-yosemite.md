@@ -36,12 +36,12 @@ Agree to prompts and wait for it to finish. Before you jump into installing anyt
 make sure you spend a couple of minutes opening the XCode tools. You will be asked to 
 agree to a EULA before you can do anything else. 
 
-<img src="/img/posts/build-github-pages-yosemite/xcode-agreement.png" class="u-max-full-width" alt="the agreement" />
+<img src="/img/posts/build-github-pages-yosemite/xcode-agreement.webp" class="u-max-full-width" alt="the agreement" />
 
 If you miss this step, you will be asked to agree in the terminal and it's a 
 bit more awkward to read pages and pages of text before "agreeing"!
 
-<img src="/img/posts/build-github-pages-yosemite/xcode-agreement-agree.png" class="u-max-full-width" alt="agreeing to the agreement" />
+<img src="/img/posts/build-github-pages-yosemite/xcode-agreement-agree.webp" class="u-max-full-width" alt="agreeing to the agreement" />
 
 ## ...Ruby...
 
@@ -57,7 +57,7 @@ Now we're ready to get jekyll. Switch back to the terminal and run:
 	sudo gem install jekyll 
 	
 	
-<img src="/img/posts/build-github-pages-yosemite/jekyll.png" class="u-max-full-width" alt="installing jekyll" />
+<img src="/img/posts/build-github-pages-yosemite/jekyll.webp" class="u-max-full-width" alt="installing jekyll" />
 
 Depending on your configuration you may need to install other gems. 
 
@@ -68,7 +68,7 @@ to process markdown so I needed to install that independently:
 	sudo gem install rdiscount
 	
 
-<img src="/img/posts/build-github-pages-yosemite/rdiscount.png" class="u-max-full-width" alt="installing rdiscount" />
+<img src="/img/posts/build-github-pages-yosemite/rdiscount.webp" class="u-max-full-width" alt="installing rdiscount" />
 
 You may also use Pygments for syntax highlighting
 

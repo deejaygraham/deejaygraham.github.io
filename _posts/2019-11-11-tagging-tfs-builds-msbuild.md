@@ -3,7 +3,7 @@ layout: post
 title: Tagging TFS builds from MSBuild
 published: true
 categories: [ msbuild, code, tfs ]
-thumbnail: img/posts/tagging-tfs-builds-msbuild/tag-420x255.jpg
+thumbnail: img/posts/tagging-tfs-builds-msbuild/tag-420x255.webp
 alttext: tag
 ---
 

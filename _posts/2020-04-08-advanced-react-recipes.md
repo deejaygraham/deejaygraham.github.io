@@ -3,7 +3,7 @@ layout: post
 title:  React Cookbook Advanced Recipes
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/advanced-react-recipes/thumbnail-420x255.png
+thumbnail: img/posts/advanced-react-recipes/thumbnail-420x255.webp
 alttext: Simon Bloom
 --- 
 

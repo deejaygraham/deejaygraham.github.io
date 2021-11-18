@@ -3,7 +3,7 @@ layout: post
 title: Dino Quiz in Scratch
 published: true
 categories: [code, scratch]
-thumbnail: img/posts/dino-quiz-in-scratch/thumbnail-420x255.png
+thumbnail: img/posts/dino-quiz-in-scratch/thumbnail-420x255.webp
 alttext: scratch
 ---
 
@@ -15,20 +15,20 @@ and to have them interact using broadcast messages and events.
 
 ### Game
 
-![game](/img/posts/dino-quiz-in-scratch/main.png)
+![game](/img/posts/dino-quiz-in-scratch/main.webp)
 
 
 ### Quiz Master
 
-![quiz](/img/posts/dino-quiz-in-scratch/quizmaster-events.png)
+![quiz](/img/posts/dino-quiz-in-scratch/quizmaster-events.webp)
 
 
 ### Contestant
 
-![contestant](/img/posts/dino-quiz-in-scratch/contestant-events.png)
+![contestant](/img/posts/dino-quiz-in-scratch/contestant-events.webp)
 
 
 ### Stage
 
-![stage](/img/posts/dino-quiz-in-scratch/stage-events.png)
+![stage](/img/posts/dino-quiz-in-scratch/stage-events.webp)
 

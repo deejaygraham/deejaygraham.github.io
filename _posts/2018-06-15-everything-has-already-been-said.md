@@ -5,7 +5,7 @@ categories: [ quote, code ]
 published: true
 attribution: André Gide
 size: large
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

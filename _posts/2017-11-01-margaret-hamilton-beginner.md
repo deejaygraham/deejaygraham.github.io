@@ -4,7 +4,7 @@ title: Margaret Hamilton, Beginner
 published: true
 categories: [ quote ]
 attribution: Margaret Hamilton
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -28,4 +28,4 @@ Clark Ching
 # The Goal
 Eli Goldratt
 
-![example image](/img/posts/learning-through-stories/example-image.png)
+![example image](/img/posts/learning-through-stories/example-image.webp)

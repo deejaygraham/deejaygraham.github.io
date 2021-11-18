@@ -3,7 +3,7 @@ layout: post
 title: Flying Toasters
 published: true
 categories: [code, processing]
-thumbnail: "/img/posts/flying-toasters/thumbnail-420x255.png"
+thumbnail: "/img/posts/flying-toasters/thumbnail-420x255.webp"
 alttext: toasters
 ---
 
@@ -25,7 +25,7 @@ I thought it might be fun to try to recreate the screensaver as a full screen Pr
 The screensaver showed flapping toasters and toast moving across the screen from top right to bottom left so I thought I 
 would start with the easier single image of toast.
 
-![toast](/img/posts/flying-toasters/toast.png)
+![toast](/img/posts/flying-toasters/toast.webp)
 
 We can construct a piece of toast at a starting postion (x, y) and a speed.
 
@@ -46,13 +46,13 @@ scrolled smoothly off the screen *then* wrapped around.
 Next, I cut up the four-frame single gif into four discrete images and numbered them 0..3. Notice each one 
 has a slightly different wing position.
 
-![toaster 0](/img/posts/flying-toasters/toaster0.png)
+![toaster 0](/img/posts/flying-toasters/toaster0.webp)
 
-![toaster 1](/img/posts/flying-toasters/toaster1.png)
+![toaster 1](/img/posts/flying-toasters/toaster1.webp)
 
-![toaster 2](/img/posts/flying-toasters/toaster2.png)
+![toaster 2](/img/posts/flying-toasters/toaster2.webp)
 
-![toaster 3](/img/posts/flying-toasters/toaster3.png)
+![toaster 3](/img/posts/flying-toasters/toaster3.webp)
 
 We create a frames member to hold each image we load in from the data folder and cycle through them on 
 each call to *draw* to achieve the flapping animation. Again, I have to wrap the sprite around the screen 
@@ -84,5 +84,5 @@ seeming to hurt toast and overtake their slower flapping friends.
 
 Here's a screenshot of the finished "screensaver".
 
-![screensaver](/img/posts/flying-toasters/screensaver.png)
+![screensaver](/img/posts/flying-toasters/screensaver.webp)
 

@@ -16,13 +16,13 @@ With that in mind, here's how to enable it in a Cloud Service:
 2. Add an import for RemoteForwarder to **one** role (you will get an obscure error if you 
 add it to more than one.
 
-![cloud service def](/img/posts/enabling-rdp-access-to-azure-instances/cloud-service-def.png "cloud service definition")
+![cloud service def](/img/posts/enabling-rdp-access-to-azure-instances/cloud-service-def.webp "cloud service definition")
 
 3. Add settings for RemoteAccess to each role, making sure that the account expiration is 
 something sensible (not christmas or new year's day :).
 4. Add a final setting to enable the RemoteForwarder.
 
-![cloud service cfg](/img/posts/enabling-rdp-access-to-azure-instances/cloud-service-cfg.png "cloud service config")    
+![cloud service cfg](/img/posts/enabling-rdp-access-to-azure-instances/cloud-service-cfg.webp "cloud service config")    
 
 Despite it's slightly cryptic name, the RemoteForwarder is particularly important. It needs to be present and 
 enabled on **one role only** so that RDP will work across *any* of the roles. The remote forwarder is used as a 

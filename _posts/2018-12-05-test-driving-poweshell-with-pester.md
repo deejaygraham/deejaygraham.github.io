@@ -4,7 +4,7 @@ title: Test Driving PowerShell with Pester
 published: true
 categories: [ powershell ]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.jpg"
+thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell
 ---
 
@@ -168,7 +168,7 @@ Describe 'Google' {
 
 $ImportantLinks = @(
     'https://deejaygraham.github.io/2015/02/15/sketchnote-challenge/',
-    'https://deejaygraham.github.io/img/posts/sketchnoting-challenge/mac-power-users.png'
+    'https://deejaygraham.github.io/img/posts/sketchnoting-challenge/mac-power-users.webp'
 )
 
 Describe 'Externally Referenced Links' {

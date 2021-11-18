@@ -3,7 +3,7 @@ layout: post
 title:  Crossing the River by Feeling the Stones
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/crossing-the-river-by-feeling-the-stones/thumbnail-420x255.png
+thumbnail: img/posts/crossing-the-river-by-feeling-the-stones/thumbnail-420x255.webp
 alttext: Simon Wardley
 --- 
 

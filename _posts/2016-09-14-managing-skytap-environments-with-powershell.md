@@ -3,7 +3,7 @@ layout: post
 title: Managing Skytap environments with PowerShell
 categories: [ powershell ]
 published: true
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

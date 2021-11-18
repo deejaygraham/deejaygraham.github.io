@@ -22,15 +22,15 @@ experience driving for the navigator and the mob.
 
 Here are a few photos from the night.
 
-<img src="/img/posts/strangling-legacy-code/WP_20180815_19_59_51_Pro.jpg" alt="strangle" class="u-max-full-width" />
+<img src="/img/posts/strangling-legacy-code/WP_20180815_19_59_51_Pro.webp" alt="strangle" class="u-max-full-width" />
 
-<img src="/img/posts/strangling-legacy-code/WP_20180815_20_06_41_Pro.jpg" alt="strangle" class="u-max-full-width" />
+<img src="/img/posts/strangling-legacy-code/WP_20180815_20_06_41_Pro.webp" alt="strangle" class="u-max-full-width" />
 
-<img src="/img/posts/strangling-legacy-code/WP_20180815_20_16_21_Pro.jpg" alt="strangle" class="u-max-full-width" />
+<img src="/img/posts/strangling-legacy-code/WP_20180815_20_16_21_Pro.webp" alt="strangle" class="u-max-full-width" />
 
-<img src="/img/posts/strangling-legacy-code/WP_20180815_20_35_57_Pro.jpg" alt="strangle" class="u-max-full-width" />
+<img src="/img/posts/strangling-legacy-code/WP_20180815_20_35_57_Pro.webp" alt="strangle" class="u-max-full-width" />
 
-<img src="/img/posts/strangling-legacy-code/WP_20180815_20_46_34_Pro.jpg" alt="strangle" class="u-max-full-width" />
+<img src="/img/posts/strangling-legacy-code/WP_20180815_20_46_34_Pro.webp" alt="strangle" class="u-max-full-width" />
 
 As a new mob, we were working in an unfamiliar IDE on unfamiliar code, in what was, for many a strange, new language and in front 
 of lots of people who were relative strangers AND typing in front of strangers while standing up! The strength of Amitai's approach - his 

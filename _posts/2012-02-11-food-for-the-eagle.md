@@ -5,7 +5,7 @@ attribution: Adam Savage
 publication: Food for the Eagle, Delivered to the Harvard Humanist Society, April 2010
 published: true 
 categories: [ presentations, quote  ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

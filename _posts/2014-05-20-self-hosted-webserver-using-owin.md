@@ -18,7 +18,7 @@ to get up and running serving static files from a [console application](http://w
 * Run the application.
 * Profit!
 
-![console](/img/posts/self-hosted-webserver-using-owin/console.png)
+![console](/img/posts/self-hosted-webserver-using-owin/console.webp)
 
 ~~~csharp
 
@@ -31,13 +31,13 @@ to identify which startup object to use.
 
 The DebugStartup class uses the default smiley welcome page:
 
-![welcome](/img/posts/self-hosted-webserver-using-owin/index-welcome.png)
+![welcome](/img/posts/self-hosted-webserver-using-owin/index-welcome.webp)
 
 and the ProductionStartup class uses a simple file system configuration to 
 serve static files from the root folder. Turning on *EnableDirectoryBrowsing* 
 shows the binaries in the build folder.
 
-![listing](/img/posts/self-hosted-webserver-using-owin/index-browse-folder.png)
+![listing](/img/posts/self-hosted-webserver-using-owin/index-browse-folder.webp)
 
 For home projects, the [Nancy](http://nancyfx.org/) web framework was my 
 favourite for building .Net web applications (hosted on IIS or self-hosted) 

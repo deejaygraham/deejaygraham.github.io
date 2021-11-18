@@ -5,7 +5,7 @@ title: Software is not a Craft
 published: true
 attribution: Jessica Kerr
 categories: [ quote ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 

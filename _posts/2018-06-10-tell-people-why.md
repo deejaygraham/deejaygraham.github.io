@@ -5,7 +5,7 @@ categories: [ quote, code ]
 published: true
 comment: Heard on the <a href="https://rework.fm/">rework podcast</a> ...
 size: large
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Two Examples of Sketchnoting Inception
 published: true
 categories: [ sketchnotes ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

@@ -5,7 +5,7 @@ attribution: Free Software Foundation
 published: true
 size: large
 categories: [ quote ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -4,14 +4,14 @@ title: Hello, Minecraft
 published: true
 categories: [ code, minecraft ]
 hero: minecraft 
-thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---
 
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
 writing some code to do some building using the Python interface.
 
-![boot](/img/posts/hello--minecraft/boot-sequence.jpg)
+![boot](/img/posts/hello--minecraft/boot-sequence.webp)
 
 
 ### For Older Installations...

@@ -5,7 +5,7 @@ categories: [ code, microbit ]
 published: true
 hero: microbit
 tweetable: true
-thumbnail: "/img/thumbnails/microbit-420x255.jpg"
+thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
 ---
 
@@ -19,7 +19,7 @@ of tetris as a game. Let's simplify the game and just use pixels for blocks so t
 no rotation of blocks or complex fitting of blocks together. Hopefully there will be 
 enough of a game left to make this worthwile.
 
-<img src="/img/posts/tiny-tetris-for-microbit/tetris.png" alt="microbit tetris" />
+<img src="/img/posts/tiny-tetris-for-microbit/tetris.webp" alt="microbit tetris" />
 
 First, we need two classes, one to model the current falling block and one to model the "dead" blocks 
 lying on the floor, waiting to be cleared away when we fill up a row. We also need a game loop that can 

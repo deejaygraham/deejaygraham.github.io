@@ -32,7 +32,7 @@ sure which Pi you have you can <a href="https://www.modmypi.com/blog/raspberry-p
 right version here</a>.
 
 
-<img src="/img/posts/pi-build-monitor/pi-led-test.jpg" alt="led circuit" />
+<img src="/img/posts/pi-build-monitor/pi-led-test.webp" alt="led circuit" />
 
 
 ### Code

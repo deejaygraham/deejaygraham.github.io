@@ -3,7 +3,7 @@ layout: post
 title: Dog Sort
 published: true
 categories: [ csharp, code, tdd ]
-thumbnail: img/posts/dog-sorting/dog-sorting-420x255.jpg
+thumbnail: img/posts/dog-sorting/dog-sorting-420x255.webp
 alttext: sorting
 ---
 
@@ -62,4 +62,4 @@ Then actually implementing the grouping comes out into a single function call. W
 
 ~~~
 
-![results](/img/posts/dog-sorting/console.png "console output")
+![results](/img/posts/dog-sorting/console.webp "console output")

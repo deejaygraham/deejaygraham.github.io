@@ -4,7 +4,7 @@ title: Stay Afraid
 published: true
 categories: [ agile, quote ]
 attribution: Carrie Fisher
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

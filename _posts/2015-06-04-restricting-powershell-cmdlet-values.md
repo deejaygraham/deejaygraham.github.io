@@ -4,7 +4,7 @@ title: Restricting Powershell Cmdlet Values
 published: true 
 categories: [ powershell ]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

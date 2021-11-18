@@ -4,7 +4,7 @@ title: Passing Parameters to a Pester Test
 published: true 
 categories: [ powershell ]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 
 ---

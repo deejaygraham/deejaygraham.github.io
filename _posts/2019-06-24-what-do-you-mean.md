@@ -3,7 +3,7 @@ layout: post
 title: What do you mean
 published: true
 categories: [video, presentations]
-thumbnail: "/img/posts/what-do-you-mean/thumbnail-420x255.png"
+thumbnail: "/img/posts/what-do-you-mean/thumbnail-420x255.webp"
 ---
 
 <a href="https://twitter.com/kevlinhenney">Kevlin Henney</a> from the 2019 ACCU conference, on language and meaning

@@ -6,7 +6,7 @@ published: true
 attribution: Ralph Waldo Emerson
 publication: 
 categories: [ quote ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -5,7 +5,7 @@ published: true
 categories: [ quote ]
 attribution: Malcolm X
 size: large
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

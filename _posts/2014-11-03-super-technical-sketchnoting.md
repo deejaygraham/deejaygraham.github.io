@@ -3,7 +3,7 @@ layout: sketchnote
 title: Super-Technical Sketchnoting
 categories: [ sketchnotes, presentations, ruby ]
 sketchnote:
-  url: "/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.png" 
+  url: "/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.webp" 
   alt: "sketchnote"
   source:
     name: "Programming with Nothing"
@@ -11,7 +11,7 @@ sketchnote:
   speaker:
     name: "Tom Stuart"
     url:  "http://www.twitter.com/tomstuart"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 
@@ -39,5 +39,5 @@ to capture everything.
 
 I posted a snap of the sketchnote to twitter and Tom was kind enough to reply:
 
-![tweet](/img/posts/super-technical-sketchnoting/tom-stuart-reaction.jpg)
+![tweet](/img/posts/super-technical-sketchnoting/tom-stuart-reaction.webp)
 

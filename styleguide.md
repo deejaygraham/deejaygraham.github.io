@@ -64,7 +64,7 @@ And()
 	550px or 250px and media queries needed
 
 	-->
-<img src="/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.png" alt="alt text" width="550px" />
+<img src="/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.webp" alt="alt text" width="550px" />
 
 ----
 

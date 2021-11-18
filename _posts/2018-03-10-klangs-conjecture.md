@@ -3,7 +3,7 @@ layout: post
 title: Klang's Conjecture
 published: true
 categories: [ agile, code ]
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

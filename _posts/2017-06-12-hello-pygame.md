@@ -18,18 +18,18 @@ as the easiest for me to get going with quickly. Then comes the canonical (or as
 
 This doesn't do much but sets us up a nice walking skeleton we can add to later.
 
-![hello](/img/posts/hello-pygame/hello.jpg)
+![hello](/img/posts/hello-pygame/hello.webp)
 
 A black screen isn't terribly exciting so, let's draw a square:
 
-![block](/img/posts/hello-pygame/blue-block.jpg)
+![block](/img/posts/hello-pygame/blue-block.webp)
 
 <script src="https://gist.github.com/deejaygraham/bbdb250302aa7ab958961fef930cb9e0.js"></script>
 
 Now, how about a bit of interaction? We can read from the keyboard in the message pump,
 looking for pygame.KEYDOWN and pygame.K_SPACE.
 
-![block](/img/posts/hello-pygame/orange-block.jpg)
+![block](/img/posts/hello-pygame/orange-block.webp)
 
 <script src="https://gist.github.com/deejaygraham/455e8b4698086000c03c02f50450dd9e.js"></script>
 
@@ -40,7 +40,7 @@ want to move the block.
 
 For good measure we should prevent the coordinates going outside of the screen.
 
-![block](/img/posts/hello-pygame/move-block.jpg)
+![block](/img/posts/hello-pygame/move-block.webp)
 
 <script src="https://gist.github.com/deejaygraham/df2bbb8c66ab738c3cc7d975d655f6fa.js"></script>
 

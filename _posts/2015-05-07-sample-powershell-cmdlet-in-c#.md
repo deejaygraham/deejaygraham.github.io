@@ -4,7 +4,7 @@ title: Sample Powershell Cmdlet in C#
 published: true 
 categories: [ csharp, code, powershell ]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 

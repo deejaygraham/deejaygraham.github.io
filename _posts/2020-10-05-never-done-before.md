@@ -5,7 +5,7 @@ title: Never Done Before
 published: true
 attribution: Shigeo Shingo
 categories: [ quote ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 

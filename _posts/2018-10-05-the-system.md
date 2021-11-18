@@ -5,7 +5,7 @@ title: The System
 published: true
 attribution: John Seddon
 categories: [ quote ]
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 

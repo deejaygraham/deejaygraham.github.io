@@ -41,7 +41,7 @@ to make sure that I started the correct xunit console runner.
 
 Here's how Travis does the build now:
 
-![Screenshot](/img/posts/travis-supports-cs-ci/travis-build.png "Travis Working")
+![Screenshot](/img/posts/travis-supports-cs-ci/travis-build.webp "Travis Working")
 
 ## Fail
 
@@ -52,5 +52,5 @@ Travis. I will investigate the differences and report back.
 
 Here's how Travis thinks NDifference is performing:
 
-<a href="https://travis-ci.org/deejaygraham/ndifference"><img src="https://travis-ci.org/deejaygraham/ndifference.png?branch=master" alt="Build Status"></a>
+<a href="https://travis-ci.org/deejaygraham/ndifference"><img src="https://travis-ci.org/deejaygraham/ndifference.webp?branch=master" alt="Build Status"></a>
 

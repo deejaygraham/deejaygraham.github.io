@@ -3,7 +3,7 @@ layout: post
 title: All the Programming Languages
 published: true
 categories: [code, xp]
-thumbnail: "/img/posts/all-the-languages/thumbnail-420x255.jpg"
+thumbnail: "/img/posts/all-the-languages/thumbnail-420x255.webp"
 alttext: languages
 ---
 

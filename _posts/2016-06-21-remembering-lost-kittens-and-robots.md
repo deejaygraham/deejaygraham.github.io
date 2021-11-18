@@ -44,17 +44,17 @@ display text, react to events and host other game stuff, icons, avatars etc.
 
 The game starts off with some simple instructions:
 
-![intro](/img/posts/remembering-lost-kittens-and-robots/rfk-intro.png)
+![intro](/img/posts/remembering-lost-kittens-and-robots/rfk-intro.webp)
 
 Clicking on the game (stage), the starts the game with a screen filled with hidden, potential-kittens,
 disguised as packages, and a robot that you move around to interact with the packages to see what they 
 are.
 
-![game](/img/posts/remembering-lost-kittens-and-robots/rfk-game.png)
+![game](/img/posts/remembering-lost-kittens-and-robots/rfk-game.webp)
 
 Once the kitten has been found by the robot, the complete screen is shown:
 
-![complete](/img/posts/remembering-lost-kittens-and-robots/rfk-complete.png)
+![complete](/img/posts/remembering-lost-kittens-and-robots/rfk-complete.webp)
 
 The number of avatars is fixed but each's location is randomised at startup to make the 
 game harder. Kittens and Non-Kittens have the same starting avatar (package) but change to 
@@ -73,21 +73,21 @@ environment.
 
 ### Stage
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-stage-code.png)
+![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-stage-code.webp)
 
 ### Robot
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-robot-code.png)
+![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-robot-code.webp)
 
 ### Non-Kittens 
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-1.png)
+![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-1.webp)
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-2.png)
+![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-2.webp)
 
 ### Kitten
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-kitten-code.png)
+![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-kitten-code.webp)
 
 If the game disappears from the MIT website, can get the scratch binary image of the game 
 [here](https://github.com/deejaygraham/deejaygraham.github.io/raw/master/downloads/rfk_scratch_binary.zip)

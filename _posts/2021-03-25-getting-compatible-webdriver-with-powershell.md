@@ -4,7 +4,7 @@ title: Getting the right Selenium driver
 published: true 
 categories: [ powershell, code ]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.jpg"
+thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: logs
 ---
 

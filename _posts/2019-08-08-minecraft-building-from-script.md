@@ -4,7 +4,7 @@ title: Minecraft Building from Script
 published: true
 categories: [code, minecraft]
 hero: minecraft 
-thumbnail: "/img/thumbnails/rpi-420x255.jpg"
+thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---
 

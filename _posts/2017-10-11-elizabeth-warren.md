@@ -4,7 +4,7 @@ title: Elizabeth Warren, Hero
 published: true
 categories: [ quote ]
 attribution: Elizabeth Warren
-thumbnail: "/img/thumbnails/microphone-420x255.jpg"
+thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 

@@ -3,9 +3,9 @@ layout: sketchnote
 title: Lets make a tiny zine
 categories: [ sketchnotes ]
 tweetable: true
-thumbnail: "/img/posts/lets-make-a-zine/thumbnail-420x255.png"
+thumbnail: "/img/posts/lets-make-a-zine/thumbnail-420x255.webp"
 sketchnote:
-  url: "/img/posts/lets-make-a-zine/austin-kleon.png"
+  url: "/img/posts/lets-make-a-zine/austin-kleon.webp"
   alt: "sketchnote"
 ---
 

@@ -6,7 +6,7 @@ published: true
 attribution: W. Edwards Deming
 publication: 14 Points for Western Management
 categories: [ quote, lean ]
-thumbnail: img/posts/eliminate-slogans/eliminate-slogans-420x255.jpg
+thumbnail: img/posts/eliminate-slogans/eliminate-slogans-420x255.webp
 alttext: madonna poster
 ---
 

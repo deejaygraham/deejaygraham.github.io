@@ -16,4 +16,4 @@ Cheat sheet
 http://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf
 
 
-![example image](/img/posts/user-story-mapping-considered-awesome/example-image.png)
+![example image](/img/posts/user-story-mapping-considered-awesome/example-image.webp)

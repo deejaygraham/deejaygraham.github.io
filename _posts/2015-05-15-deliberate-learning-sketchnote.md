@@ -3,7 +3,7 @@ layout: sketchnote
 title: Dan North on Deliberate Learning @ Foo Cafe
 categories: [ presentations, sketchnotes ]
 sketchnote:
-  url: "/img/posts/deliberate-learning-sketchnote/dan-north-deliberate-learning.png"
+  url: "/img/posts/deliberate-learning-sketchnote/dan-north-deliberate-learning.webp"
   alt: "deliberate practice"
   event:
     name: "FooCafe"
@@ -14,7 +14,7 @@ sketchnote:
   speaker:
     name: "Dan North"
     url: "https://twitter.com/tastapod"
-thumbnail: "/img/thumbnails/notebook-420x255.jpg"
+thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 

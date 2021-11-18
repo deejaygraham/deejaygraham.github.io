@@ -2,7 +2,7 @@
 layout: post
 title: Using Custom Module Paths in PowerShell
 tags: [ powershell ]
-thumbnail: "/img/thumbnails/parcel-420x255.jpg"
+thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
 
@@ -34,7 +34,7 @@ required by different controller scripts?
 Most of the guidance when you come to refactor your powershell scripts into cmdlets 
 doesn't talk about this kind of scenario.  
 
-![example image](/img/posts/using-custom-module-paths-in-powershell/example-image.png)
+![example image](/img/posts/using-custom-module-paths-in-powershell/example-image.webp)
 
 # Finding the Path
 

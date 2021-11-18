@@ -3,11 +3,11 @@ layout: post
 title: A Common-Sense Guide to Data Structures and Algorithms 2nd Edition
 published: true
 categories: [ code, books ]
-thumbnail: "/img/posts/common-sense-guide-ds-and-a-2nd/thumbnail-420x255.png"
+thumbnail: "/img/posts/common-sense-guide-ds-and-a-2nd/thumbnail-420x255.webp"
 alttext: cover
 ---
 
-![cover](/img/posts/common-sense-guide-ds-and-a-2nd/cover.png)
+![cover](/img/posts/common-sense-guide-ds-and-a-2nd/cover.webp)
 
 It's been 2-and-a-bit years since the first edition of this book and my opinion of it hasn't dimmed in that time so I was excited to get an email from Pragmatic Programmers with the updates for the 2nd Edition. 
 
