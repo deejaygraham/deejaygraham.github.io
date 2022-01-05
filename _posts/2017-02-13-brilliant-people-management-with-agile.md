@@ -19,4 +19,4 @@ Q &amp; A on general agile topics.
 The talk was packed with one of the biggest audiences I have seen at Campus North
 but I managed to get myself into a quiet corner to do some sketchnoting.
 
-![sketchnote](/img/posts/brilliant-people-management-with-agile/brilliant-people-management-with-agile-williams.jpeg)
+![sketchnote](/img/posts/brilliant-people-management-with-agile/brilliant-people-management-with-agile-williams.webp)
