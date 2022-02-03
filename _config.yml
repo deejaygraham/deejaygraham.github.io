@@ -37,3 +37,8 @@ codeplexurl: https://www.codeplex.com/site/users/view/deejaygraham
 linkedinurl: https://uk.linkedin.com/in/derekjohngraham
 instagramurl: https://www.instagram.com/dee.jay.graham/
 slideshareurl: https://www.slideshare.net/deejaygraham
+
+title: Deejaygraham.github.io
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
