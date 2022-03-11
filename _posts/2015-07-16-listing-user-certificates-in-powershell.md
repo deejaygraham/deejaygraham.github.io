@@ -47,14 +47,6 @@ Get-ChildItem -Path cert:\* -Recurse | Where-Object { $_.Thumbprint -eq '1A3B72F
 
 ```
 
-## Global find by thumbprint
-
-```powershell
-
-Get-ChildItem -Path cert:\* -Recurse | Where-Object { $_.Thumbprint -eq '1A3B72F28ACE90E1EF98591BE8FEF41CB3D4AB63' }
-
-```
-
 ## Uninstall by thumbprint
 
 The example above can be combined with the usual Remove-Item cmdlet to uninstall a certificate once it has been found.
