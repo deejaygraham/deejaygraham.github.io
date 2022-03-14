@@ -87,4 +87,7 @@ If we have the pfx file, we can get the thumbprint (useful for config files etc.
 $cert = Get-PfxData -FilePath $NewCertificatePath -Password $Password
 $cert.OtherCertificates
 
+# or 
+# $cert.EndEntityCertificates
+
 ```
