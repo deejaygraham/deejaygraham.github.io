@@ -2,7 +2,7 @@
 layout: post
 title: Linting Markdown
 published: true
-categories: [code, js, 11ty]
+categories: [code, javascript, 11ty]
 thumbnail: img/posts/linting-markdown/thumbnail-420x255.png
 alttext: screenshot
 ---
