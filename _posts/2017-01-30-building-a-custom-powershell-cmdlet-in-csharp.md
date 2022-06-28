@@ -98,6 +98,7 @@ runs our cmdlet with the <code>-Verbose</code> switch.
 
 <script src="https://gist.github.com/deejaygraham/61fbf319ac4b5e10546222c3384b3d1e.js"></script>
 
+
 ### Returning Data
 
 So far we are writing text to the output using the <code>WriteOutput</code> method. It would be nice if
@@ -146,6 +147,7 @@ actually doing anything. A well written but potentially high risk cmdlet will im
 option to allow someone to make sure all their parameters are correct before running it for real.
 
 <script src="https://gist.github.com/deejaygraham/ba3e953304d3e5dd59de3a45103fa3d8.js"></script>
+
 
 ### Done
 
