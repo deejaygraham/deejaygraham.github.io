@@ -38,7 +38,28 @@ As an example, I want to build a simple fortune cookie generator, like the unix 
 There is a great selection of fortunes collected on [github](https://github.com/bmc/fortunes/blob/master/fortunes), so
 I borrowed a few and created a list of them to select from:
 
-<script src="https://gist.github.com/deejaygraham/a54146d62f4846a0f85ec8fd1cb42cf6.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+    public class GetFortuneCookie
+    {
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+		string[] cookies = new string[]
+		{
+			"A little fire, Scarecrow?",
+            "Deliver yesterday, code today, think tomorrow.",
+			"Grub first, then ethics.",
+			"His mind is like a steel trap ― full of mice.",
+            "When in doubt, tell the truth."
+		};
+    }
+}
+```
 
 To make this class into a Cmdlet, I need to derive the class from <code class="powershell">System.Management.Automation.Cmdlet</code>. I also need
 to decide what the class name is going to be and what it should be called in PowerShell.
@@ -54,7 +75,31 @@ with <code>CmdletAttribute</code>.
 If you have selected a common verb, you can use the <code>VerbsCommon</code> enum or, if not,
 use the two string version of the attribute to provide the verb as text.
 
-<script src="https://gist.github.com/deejaygraham/5c808a28d4dc5b9d1e10a332172773ee.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management.Automation;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+	[Cmdlet(VerbsCommon.Get, "FortuneCookie")]
+	public class GetFortuneCookie : Cmdlet
+    {
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+
+		string[] cookies = new string[]
+		{
+			"A little fire, Scarecrow?",
+            "Deliver yesterday, code today, think tomorrow.",
+			"Grub first, then ethics.",
+			"His mind is like a steel trap ― full of mice.",
+            "When in doubt, tell the truth."
+		};
+    }
+}
+```
 
 Building the project into an assembly will let you write the PowerShell to use it. In a plain vanilla
 console, we can run <code class="powershell">Get-Module</code> and see this:
@@ -75,7 +120,36 @@ to actually execute some code...
 To execute actual code, we need to override the <code>ProcessRecord()</code> method. The
 simplest thing we could do is write out the first fortune cookie. Like this:
 
-<script src="https://gist.github.com/deejaygraham/f9b29fa95f9c609adbf5b3ed9d73560d.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management.Automation;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+	[Cmdlet(VerbsCommon.Get, "FortuneCookie")]
+	public class GetFortuneCookie : Cmdlet
+	{
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+
+		string[] cookies = new string[]
+		{
+			"A little fire, Scarecrow?",
+			"Deliver yesterday, code today, think tomorrow.",
+			"Grub first, then ethics.",
+			"His mind is like a steel trap ― full of mice.",
+			"When in doubt, tell the truth."
+		};
+
+        protected override void ProcessRecord()
+		{
+			WriteObject(cookies[0]);
+		}
+	}
+}
+```
 
 As you would expect, that writes out to the console:
 
@@ -83,7 +157,40 @@ As you would expect, that writes out to the console:
 
 Now that we have some kind of output, it's not a massive leap to add in some randomness.
 
-<script src="https://gist.github.com/deejaygraham/82a0ffece4620cbd50d6e4717317e788.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management.Automation;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+	[Cmdlet(VerbsCommon.Get, "FortuneCookie")]
+	public class GetFortuneCookie : Cmdlet
+	{
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+
+		string[] cookies = new string[]
+		{
+			"A little fire, Scarecrow?",
+			"Deliver yesterday, code today, think tomorrow.",
+			"Grub first, then ethics.",
+			"His mind is like a steel trap ― full of mice.",
+			"When in doubt, tell the truth."
+		};
+
+		Random random = new Random();
+
+		protected override void ProcessRecord()
+		{
+			int whichCookie = random.Next(cookies.Length);
+
+			WriteObject(cookies[whichCookie]);
+		}
+	}
+}
+```
 
 Running the command multiple times, behaves as expected.
 
@@ -96,7 +203,49 @@ Maybe now is a good time to add some debug logging. The <code>WriteDebug()</code
 gives us what we want here. We could also add some verbose information when the user
 runs our cmdlet with the <code>-Verbose</code> switch.
 
-<script src="https://gist.github.com/deejaygraham/61fbf319ac4b5e10546222c3384b3d1e.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management.Automation;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+	[Cmdlet(VerbsCommon.Get, "FortuneCookie")]
+	public class GetFortuneCookie : Cmdlet
+	{
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+
+		string[] cookies = new string[]
+		{
+			"A little fire, Scarecrow?",
+			"Deliver yesterday, code today, think tomorrow.",
+			"Grub first, then ethics.",
+			"His mind is like a steel trap ― full of mice.",
+			"When in doubt, tell the truth."
+		};
+
+		Random random = new Random();
+
+		protected override void ProcessRecord()
+		{
+			WriteDebug("Starting Fortune Cookie Cmdlet");
+
+			WriteVerbose(string.Format("Picking from {0} options", cookies.Length));
+
+			int whichCookie = random.Next(cookies.Length);
+			string cookieText = cookies[whichCookie];
+
+			WriteVerbose(string.Format("Picked cookie at index {0} - \"{1}\"", whichCookie, cookieText));
+
+			WriteObject(cookieText);
+
+			WriteDebug("Completed Fortune Cookie Cmdlet");
+		}
+	}
+}
+```
 
 
 ### Returning Data
@@ -107,7 +256,60 @@ Second we need to refactor the internal code to deal in FortuneCookie objects. F
 need to tell PowerShell that we want to return that type from the cmdlet. Note, we leave the
 call to <code>WriteObject</code> since PowerShell will now understand something about our new type.
 
-<script src="https://gist.github.com/deejaygraham/b90a4e9432acbd687883b7d639198f1a.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management.Automation;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+	[Cmdlet(VerbsCommon.Get, "FortuneCookie")]
+	[OutputType(new Type[] 
+	{
+		typeof(FortuneCookie)
+	})]
+	public class GetFortuneCookie : Cmdlet
+	{
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+
+		FortuneCookie[] cookies = new FortuneCookie[]
+		{
+			new FortuneCookie { Quote = "A little fire, Scarecrow?", Author = "The Wicked Witch of the West" },
+			new FortuneCookie { Quote = "Deliver yesterday, code today, think tomorrow.", Author = "Anonymous" },
+			new FortuneCookie { Quote = "Grub first, then ethics.", Author = "Bertholt Brecht" },
+			new FortuneCookie { Quote = "His mind is like a steel trap ― full of mice.", Author = "Foghorn Leghorn" },
+			new FortuneCookie { Quote = "When in doubt, tell the truth.", Author = "Mark Twain" }
+		};
+
+		Random random = new Random();
+
+		protected override void ProcessRecord()
+		{
+			WriteDebug("Starting Fortune Cookie Cmdlet");
+
+			WriteVerbose(string.Format("Picking from {0} options", cookies.Length));
+
+			int whichCookie = random.Next(cookies.Length);
+			var cookie = cookies[whichCookie];
+
+			WriteVerbose(string.Format("Picked cookie at index {0} - \"{1}\"", whichCookie, cookie.Quote));
+
+			WriteObject(cookie);
+
+			WriteDebug("Completed Fortune Cookie Cmdlet");
+		}
+	}
+
+	public class FortuneCookie
+	{
+		public string Quote { get; set; }
+
+		public string Author { get; set; }
+	}
+}
+```
 
 ![output](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/output-type.webp)
 
@@ -120,7 +322,81 @@ Get-FortuneCookie will return all the cookies and we can pick a random cookie by
 -Random switch? First we create a member property to hold the setting and apply a <code>Parameter</code>
 attribute to alert PowerShell to it.
 
-<script src="https://gist.github.com/deejaygraham/4e8c797651118be7f3d837e3903598b5.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management.Automation;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+	[Cmdlet(VerbsCommon.Get, "FortuneCookie")]
+	[OutputType(new Type[] 
+	{
+		typeof(FortuneCookie)
+	})]
+	public class GetFortuneCookie : Cmdlet
+	{
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+
+		FortuneCookie[] cookies = new FortuneCookie[]
+		{
+			new FortuneCookie { Quote = "A little fire, Scarecrow?", Author = "The Wicked Witch of the West" },
+			new FortuneCookie { Quote = "Deliver yesterday, code today, think tomorrow.", Author = "Anonymous" },
+			new FortuneCookie { Quote = "Grub first, then ethics.", Author = "Bertholt Brecht" },
+			new FortuneCookie { Quote = "His mind is like a steel trap ― full of mice.", Author = "Foghorn Leghorn" },
+			new FortuneCookie { Quote = "When in doubt, tell the truth.", Author = "Mark Twain" }
+		};
+
+		Random random = new Random();
+
+		[Parameter]
+		public SwitchParameter Random { get; set; }
+
+		protected override void ProcessRecord()
+		{
+			WriteDebug("Starting Fortune Cookie Cmdlet");
+
+			if (this.Random)
+			{
+				WriteDebug("Performing Random Selection");
+
+				WriteVerbose(string.Format("Picking from {0} options", cookies.Length));
+
+				int whichCookie = random.Next(cookies.Length);
+				var cookie = cookies[whichCookie];
+
+				WriteVerbose(string.Format("Picked cookie at index {0} - \"{1}\"", whichCookie, cookie.Quote));
+
+				WriteObject(cookie);
+
+				WriteDebug("Random Selection Done");
+			}
+			else
+			{
+				WriteDebug("Performing Listing");
+
+				foreach (var cookie in this.cookies)
+				{
+					WriteObject(cookie);
+				}
+
+				WriteDebug("Listing Done");
+			}
+
+			WriteDebug("Completed Fortune Cookie Cmdlet");
+		}
+	}
+
+	public class FortuneCookie
+	{
+		public string Quote { get; set; }
+
+		public string Author { get; set; }
+	}
+}
+```
 
 So running with no parameters as before we get:
 
@@ -134,7 +410,9 @@ and running it with the -Random switch returns to the original functionality:
 Most parameters are native types but the <code>SwitchParameter</code> type allows us to pass the
 name of the option. If we had declared Random to be a <code>bool</code> we would have been forced to write:
 
-<code class="powershell">Get-FortuneCookie -Random $true</code>
+```powershell
+Get-FortuneCookie -Random $true
+```
 
 Which I think we can all agree is not an elegant experience for the user.
 
@@ -146,7 +424,84 @@ because it allows you to try out a dummy run of a scary command like <code class
 actually doing anything. A well written but potentially high risk cmdlet will implement this
 option to allow someone to make sure all their parameters are correct before running it for real.
 
-<script src="https://gist.github.com/deejaygraham/ba3e953304d3e5dd59de3a45103fa3d8.js"></script>
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management.Automation;
+using System.Text;
+
+namespace ExampleCmdlet
+{
+	[Cmdlet(VerbsCommon.Get, "FortuneCookie", SupportsShouldProcess = true)]
+	[OutputType(new Type[] 
+	{
+		typeof(FortuneCookie)
+	})]
+	public class GetFortuneCookie : Cmdlet
+	{
+		// a selection of fortunes taken from https://github.com/bmc/fortunes/blob/master/fortunes
+
+		FortuneCookie[] cookies = new FortuneCookie[]
+		{
+			new FortuneCookie { Quote = "A little fire, Scarecrow?", Author = "The Wicked Witch of the West" },
+			new FortuneCookie { Quote = "Deliver yesterday, code today, think tomorrow.", Author = "Anonymous" },
+			new FortuneCookie { Quote = "Grub first, then ethics.", Author = "Bertholt Brecht" },
+			new FortuneCookie { Quote = "His mind is like a steel trap ― full of mice.", Author = "Foghorn Leghorn" },
+			new FortuneCookie { Quote = "When in doubt, tell the truth.", Author = "Mark Twain" }
+		};
+
+		Random random = new Random();
+
+		[Parameter]
+		public SwitchParameter Random { get; set; }
+
+		protected override void ProcessRecord()
+		{
+			WriteDebug("Starting Fortune Cookie Cmdlet");
+
+			if (ShouldProcess("fortune cookie collection", "select"))
+			{
+				if (this.Random)
+				{
+					WriteDebug("Performing Random Selection");
+
+					WriteVerbose(string.Format("Picking from {0} options", cookies.Length));
+
+					int whichCookie = random.Next(cookies.Length);
+					var cookie = cookies[whichCookie];
+
+					WriteVerbose(string.Format("Picked cookie at index {0} - \"{1}\"", whichCookie, cookie.Quote));
+
+					WriteObject(cookie);
+
+					WriteDebug("Random Selection Done");
+				}
+				else
+				{
+					WriteDebug("Performing Listing");
+
+					foreach (var cookie in this.cookies)
+					{
+						WriteObject(cookie);
+					}
+
+					WriteDebug("Listing Done");
+				}
+			}
+
+			WriteDebug("Completed Fortune Cookie Cmdlet");
+		}
+	}
+
+	public class FortuneCookie
+	{
+		public string Quote { get; set; }
+
+		public string Author { get; set; }
+	}
+}
+```
 
 
 ### Done
