@@ -20,6 +20,7 @@ up again once every 12 seconds until the screen if full again at the start of th
 ```python
 
 from microbit import *
+import music
 
 def set_all_pixels(brightness):
     for x in range(0, 5):
@@ -38,11 +39,13 @@ def set_first_pixel(brightness):
 display.show('pomodoro')
 
 work_phase = True
+work_sleep = 60 * 1000
+rest_sleep = 12 * 1000
 
 while True:
     
     ticks = 25
-    sleep_seconds = 60 if work_phase else 12
+    sleep_seconds = work_sleep if work_phase else rest_sleep
     pixel_value = 0 if work_phase else 9
     
     if work_phase:
@@ -53,7 +56,11 @@ while True:
         sleep(sleep_seconds)
         set_first_pixel(pixel_value)
     
+    music.play(music.RINGTONE)
     work_phase = not work_phase
 
 
 ```
+
+A last small feature I added was to play a sound at the end of each phase so that you don't miss 
+the transition to the new phase of work.
