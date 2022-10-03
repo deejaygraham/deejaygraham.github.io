@@ -8,7 +8,7 @@ repository: "deejaygraham/deejaygraham.github.io"
 permalink: /:year/:month/:day/:title/
 paginate: 12
 exclude: [make.cmd, build.sh, buildsite.msbuild, post.rb]
-syntax-theme: prism-atom-dark
+#syntax-theme: prism-atom-dark
 
 # collections
 collections:
