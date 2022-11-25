@@ -28,36 +28,57 @@ Hello, thanks for being here in Hull on a cold Saturday monring. It's very nice 
 My name is derek graham and I am a principal developer at Sage in Newcastle (if anyone can't tell from my accent).
 We are looking to hire so if you want to know more about that, please grab me sometime outside of this session.
 
+## Confession
+
+Who here has ever felt they are trapped by their code? It's hard to make changes, and any kind of change they make 
+is going to make things more difficult in the future? The kinds of changes get so mired down in details 
+and breakages and irrelevant abstractions, and even seemingly small changes spiral out of control across the 
+codebase and what you really want to do is just to abandon it to the elements and start again? 
+
+Congratulations, you are not psychic and never have been. I am also just as not psychic as you are not.
+
+In fact, I am giving this talk because I have painted myself into so many corners with bad designs that I know 
+exactly what that feels like.
+
+What I want to talk about is giving the appearance of being psychic without all the bother of all of that supernatural
+carry on. In particular I want to talk about being psychic in design rather than in debugging. Psychic debugging or 
+suggesting areas to look at to find the cause of a bug in the software is a useful but still not supernatural skill but 
+that's a whole other talk probably.
+
+## Maximum Value
+
+It was either Kent Beck or Ward Cunninghma (or another XP person) said that the system should have exactly enough 
+architecture to implement the current set of stories (and therefore tests). To get maximum value from the 
+development process, we want the design to look like it was purpose built for your application features 
+as it is now and nothing else (so we don't waste anything).
+
+
 ## Clickbait
 
 Clickbait titles get you in trouble, don't they? Last time I gave a talk at DDD North (pre-pandemic), it was on ensemble or 
-mob programming and one part featured this lady, Margaret Rutherford, playing the part of Madame Arcati, the medium in 
+mob programming as it was then and one part featured this lady, Margaret Rutherford, playing the part of Madame Arcati, the medium in 
 Noel Coward's play Blythe Spirit. That was a bit of fun to make a point about typing and not really related to the subject at hand.
 
 Later I have been involved with a lot of early career developers and graduate developers and the same subjects keep coming up. One is 
 stress and anxiety about building "the right thing" or the "right abstraction", and how the design decisions we make day to day add up to 
-the "perfect solution". Talking about this topic made me come back to the "Oh, I'm so totally awesome, plus Im' actually psychic" line 
-and someone said "Well, we don't know how to do that" and something about that made me think back to Margaret Rutherford in the film. 
-
-Another part of being psychic can be useful in suggesting areas to look at to find the cause of a bug in the software but that's a 
-whole other talk probably.
+the "perfect solution". Talking about this topic with them I said "Oh, I can do that because I'm so totally awesome, plus I'm actually 
+psychic" and to a person they were all "Cool we want to learn how to do that!" and something about that made me think back to Margaret 
+Rutherford in the film. 
 
 What I want to talk about this morning is Evolutionary Design, a technique or set of techniques that have been around since the early days 
 of XP in the early 2000s? This, for me, has been the biggest shift in my development as a software person and has meant that I spend much 
 less time stressing about making perfect decisions and am much more productive as a result.
 
+## Back up
 
-## Confession
+But first let's just back up a bit...
 
-Who here has felt in the past like they are trapped by their code? It's hard to make changes, and any kind of change they make 
-is going to make things more difficult in the future? The kinds of changes get so mired down in details and breakages and irrelevant 
-abstractions where you just want to abandon it to the elements and start again? 
+In new systems, businesses typically establish one of probably three strategies: 
 
-This is a safe space, anything confessing to in here stays in the room? I am giving this talk because I have painted myself into 
-so many corners with bad designs that I know exactly what that kind of thing feels like.
+* locking down functionality as the first phase of a multi-phase plan (what we often call waterfall) - BDUF 
+* iterating and incrementing as they go with a 3-6 month horizon 
+* no plan at all - what we call adhoc design.
 
-In new systems, businesses typically have one of two strategies: locking down functionality as the first phase of a multi-phase 
-plan (what we often call waterfall) - BDUF - and no plan at all - adhoc design.
 
 In existing (legacy!) systems, it's often the case that someone (you) might be brought in after the original developers have long 
 since left or died (happened to me) and faced with code that you don't understand or just outright HATE, there seem to be two different 
@@ -86,6 +107,13 @@ appocraphal story about the US Federal Aviation Authority hiring IBM to build an
 legal regulations and technology changes kept happening each year which meant that design was always out of date at about the time when the next spec
 was completed. They never got to build the code.
 
+## Incremental Iterative Design
+
+Incremental is at least moving in the right direction, adding functionality in smaller, but still very large, chunks where there is still a heavy onus 
+on the designer to make big bets about the likely shape of the code into the next few months and add code to support that now rather than when it is needed.
+
+In incremental designs, we can feel trapped by past design decisions, each decision almost set in concrete pushing us further into a smaller and smaller 
+box of options. This can lead to us hating the code we have and perhaps even wanting to change jobs to escape it.
 
 ## Ad Hoc
 
@@ -96,12 +124,7 @@ doesn't matter too much.
 
 ## XP
 
-Given that it's extremely difficult to design a complete architecture before you start building, either Kent Beck or Ward Cunninghma (or another XP person)
-said that the system should have exactly enough architecture to implement the current set of stories (and therefore tests). for maximum value from the 
-development process, We want the design to look like it was purpose built for your application features as it is now and nothing else (no waste).
-
-The design should evolve as the 
-system grows. Anything like a BDUF system is purely based on guesswork and will necessarily be overly complex and bloated with 
+The design should evolve as the system grows. Anything like a BDUF system is purely based on guesswork and will necessarily be overly complex and bloated with 
 code we aren;t going to have needed in the end. This unnecessary complexity adds expense - time - takes longer to implement, to maintain when not needed.
 
 Simple Desing -> Enabled by Refactoring -> Backed by fast and reliable tests
@@ -110,7 +133,6 @@ This can all lead to horrific outcomes and stress for us as developers. I said b
 get us in terrible trouble didn't I? How about I change the title of the talk to be...
 
 9 minutes
-
 
 ## Evolutionary Design ?
 
@@ -126,11 +148,7 @@ Evolutionary design lets us adapt code to meet the needs of the future without a
 It lets us pretent that the system we have right now is the result of all of the correct decisions we made at the beginning rather than along the way. 
 We can pretend that we were psychic at the beginning when in fact we have been moving the seance goalposts all the time to mix a metaphor.
 
-
 Good news is that this is a skill or set of skills that can be learned, and you can be competent and improve as you practice.
-
-In incremental designs even, we can feel trapped by past design decisions, each decision pushing further into a smaller and smaller 
-box of options. This can lead to us hating the code we have and perhaps wanting to change jobs to escape it. 
 
 If we can defer decisions about the software, we can make the design better, make design decisions less expensive to change, reverse mistakes
 or allow you to change your mind whenever you need to. This leads us to having less stress and more spare energy to devote 
@@ -144,9 +162,9 @@ Simple Design - simplest - don't anticipate the future.
 Incremental Design - rework to match current requirements as they come in.
 Continuous Design - Design all the time - every day / hour.
 
+Now I've dispensed with the silly clickbait headline to grab your attention, the rest of my talk is really about...
 
-
-## n Ways that you can improve you life developing software using evolutionary design
+## n Ways that you can improve you life developing software using evolutionary design (you won't believe number 5!!!)
 
 (you won't believe number 5)
 
