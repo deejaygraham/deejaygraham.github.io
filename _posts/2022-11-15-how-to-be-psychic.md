@@ -207,7 +207,6 @@ Coupling
 
 Cohesion
 
-
 ## Four Rules of Simple Design
 
 The four rules of simple design are wonderfully elegant but are difficult to achieve in practice.
@@ -283,20 +282,28 @@ Tests are also an awesome indicator of the quality of your production code and g
 going in a better or worse direction. Whenever you feel like the tests are getting annoying, painful, large setup, slow, anything you don't like. 
 Don't blame the tests (at least at first), suspect your production code is causing that pain. Often changing the design makes the tests better.
 
-
-
-
 ## Refactor Names
-
 
 ## How to Draw
 
 'The mind a great place to have ideas but a terrible place for keeping them'
 David Allen - Author of Getting Things Done
 
+A whiteboard and a few boxes are sometimes all you need to start getting a feel for a design and how it can be improved, away from 
+staring at the code. Here's a picture of me with one of our junior devs - we have huge whiteboards in our office that many people 
+never seem to notice much less use. I was discussing a problem with Scott when I suggested he draw out what the problem was. We took a 
+"collaboration" picture here but then got into discussing the problem and Scott, for all the "design" was horribly rendered on the board
+by us, it really helped us see clearly what the issues were and how we could get around them. 
 
+UML is a wonderful language but I often hear people complain about it. I don't go the full distance using all the notation and each diagram type
+but sticking to boxes and lines for class diagrams and something similar for interaction diagrams is about all you need most of the time. 
+What I like most about UML is it's designed for this kind of informality. A box can be anything but I can connect it to another box 
+with a line and all that tells me is it's two entities which have some sort of connection. There's nothing else to read into it. As you 
+begin to flesh out the design, you can add to the diagram to add more detail in but at no point does it have to stop being a sketch of an idea
+rather than an "official" document. Very good for evolution.
 
-
+even better C4 and plantuml are great for creating text based descriptions of systems that can be checked into source control and 
+treated like other source files.
 
 ## Code Smells
 
@@ -313,7 +320,11 @@ Like all smells, Code Smells are not always a problem but the fact that you can 
 ## Reading Code
 
 Reading code is something that it seems not many developers practice but looking at code, reviewing it critically and identifying ways it could be better 
-is a great skill to have 
+is a great skill to have. Going back to Kent Beck, when he was writing JUnit with Erich Gamma, they talked about how they read the source code 
+much, much more than they actually wrote it. Studying and reviewing code without the expectation of making changes gives you a chance to see 
+what impressions you can pick up from the code rather than worrying about the clock ticking in your head that tells you you need to be CODING! now.
+
+
 ## Deliberate Practice
 
 A few years ago a friend introduced me to the idea of deliberate practice. I used to play a musical instrument and was well aware of the 
