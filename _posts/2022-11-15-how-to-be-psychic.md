@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to be Psychic
-published: true
+published: false
 categories: [ presentations ]
 thumbnail: img/posts/dddnorth-2022/thumbnail-420x255.png
 alttext: DDD North 2022
@@ -57,13 +57,15 @@ as it is now and nothing else (so we don't waste anything).
 
 Clickbait titles get you in trouble, don't they? Last time I gave a talk at DDD North (pre-pandemic), it was on ensemble or 
 mob programming as it was then and one part featured this lady, Margaret Rutherford, playing the part of Madame Arcati, the medium in 
-Noel Coward's play Blythe Spirit. That was a bit of fun to make a point about typing and not really related to the subject at hand.
+Noel Coward's play Blythe Spirit. That was a bit of fun to make a point about typing and not really related to the subject at hand. 
+Spookily when I was coming up with this talk, I discovered that the 2020 remake of Blithe Spirit was going to be broadcast on Sky 
+at 4 this morning! 4 am the spookiest of times and I took that as a sign from the great beyond that I needed to give this talk.
 
-Later I have been involved with a lot of early career developers and graduate developers and the same subjects keep coming up. One is 
-stress and anxiety about building "the right thing" or the "right abstraction", and how the design decisions we make day to day add up to 
-the "perfect solution". Talking about this topic with them I said "Oh, I can do that because I'm so totally awesome, plus I'm actually 
-psychic" and to a person they were all "Cool we want to learn how to do that!" and something about that made me think back to Margaret 
-Rutherford in the film. 
+Since the start of the pandemic I have been much more involved with a lot of early career developers and graduate developers and the same 
+subjects keep coming up. One is stress and anxiety about building "the right thing" or the "right abstraction", and how the design decisions 
+we make day to day add up to the "perfect unchangeable solution". Talking about this topic with them I said "Oh, I can do that because I'm 
+so totally awesome, plus I'm actually psychic" and to a person they were all "Well, cool but we aren't psychic" and something about 
+that made me think back to Margaret Rutherford in the film. 
 
 What I want to talk about this morning is Evolutionary Design, a technique or set of techniques that have been around since the early days 
 of XP in the early 2000s? This, for me, has been the biggest shift in my development as a software person and has meant that I spend much 
@@ -71,14 +73,13 @@ less time stressing about making perfect decisions and am much more productive a
 
 ## Back up
 
-But first let's just back up a bit...
+But first let's just back up a bit and talk about traditional design
 
 In new systems, businesses typically establish one of probably three strategies: 
 
 * locking down functionality as the first phase of a multi-phase plan (what we often call waterfall) - BDUF 
 * iterating and incrementing as they go with a 3-6 month horizon 
 * no plan at all - what we call adhoc design.
-
 
 In existing (legacy!) systems, it's often the case that someone (you) might be brought in after the original developers have long 
 since left or died (happened to me) and faced with code that you don't understand or just outright HATE, there seem to be two different 
@@ -121,11 +122,11 @@ As if it needs saying, an adhoc approach almost never gives great results unless
 it can live in your head comfortably and the cost of throwing away a system and rewriting is not that much. In that kind of case, any sort of design 
 doesn't matter too much.
 
-
 ## XP
 
 The design should evolve as the system grows. Anything like a BDUF system is purely based on guesswork and will necessarily be overly complex and bloated with 
-code we aren;t going to have needed in the end. This unnecessary complexity adds expense - time - takes longer to implement, to maintain when not needed.
+code we aren;t going to have needed in the end. This unnecessary complexity adds expense - time - takes longer to implement, to udnerstand 
+and maintain when a good proportion of it may not be needed.
 
 Simple Desing -> Enabled by Refactoring -> Backed by fast and reliable tests
 
@@ -139,28 +140,27 @@ get us in terrible trouble didn't I? How about I change the title of the talk to
 So what do I mean when I say evolutionary design? It means starting with something small, making it bigger and adding to it, all while keeping 
 the design clean and making it more complex over time.
 
-How do you get a big, complex design that works? Start with a small one that works and grow it. Very much like growing a garden 
-rather than building a bridge. Evolutionary design lets you build a design for right now and adapt it as you go along and thereby 
-protects your capacity to deliver features over the longer term. Often when looking at code, we feel a vague idea that we should be able to 
-make a small change but often it can be a lot of effort. You can't get to where you want to be from where you currently are. 
+John Gall's Law: 
 
-Evolutionary design lets us adapt code to meet the needs of the future without anticipating the needs of the future. 
-It lets us pretent that the system we have right now is the result of all of the correct decisions we made at the beginning rather than along the way. 
-We can pretend that we were psychic at the beginning when in fact we have been moving the seance goalposts all the time to mix a metaphor.
+"All Complext systems that work evolved from simpler sytsms that worked". If you want to build a complex system that works, build a 
+simpler system first, then improve it over time.
+
+This is Very much like growing a garden rather than building a bridge. Evolutionary design lets you build a design for right now and adapt 
+it as you go along and thereby protects your capacity to deliver features over the longer term. Often when looking at code, we feel a vague idea 
+that we should be able to make a small change but often it can be a lot of effort. You can't get to where you want to be from where you 
+currently are. 
+
+Evolutionary design lets us adapt code to meet the needs of the future without having to actually anticipate the needs of the future. 
+It lets us pretent that the system we have right now is the result of all of the correct decisions we made at the beginning rather 
+than along the way. 
+We can pretend that we were psychic at the beginning when in fact we have been moving the seance goalposts all the time - to 
+painfully mix a metaphor.
 
 Good news is that this is a skill or set of skills that can be learned, and you can be competent and improve as you practice.
 
-If we can defer decisions about the software, we can make the design better, make design decisions less expensive to change, reverse mistakes
-or allow you to change your mind whenever you need to. This leads us to having less stress and more spare energy to devote 
-to harder problems.
-
-Evolutionary Design often means starting with the simplest possible design we call a walking skeleton. Something that grows in complexity as 
-the application grows
-
-Desciplined
-Simple Design - simplest - don't anticipate the future.
-Incremental Design - rework to match current requirements as they come in.
-Continuous Design - Design all the time - every day / hour.
+If we can defer decisions about the software, we can make the design better, make design decisions less expensive to change, 
+reverse mistakes or allow you to change your mind whenever you need to. This leads us to having less stress and more spare 
+energy to devote to harder problems.
 
 Now I've dispensed with the silly clickbait headline to grab your attention, the rest of my talk is really about...
 
@@ -173,12 +173,37 @@ is to make you aware if you aren't already, point you to some resources and hope
 will be loads for you to study and learn in the next year (and you can come back to DDD and present
 what you learned :)
 
+## Cold Reading 
 
-## How to get started?
+What would modern day psychics look like for software development?
 
-Getting started with this can be difficult, so here are my top ... 
+I can tell someone here has a close connection to someone with the name starting with J" kind of psychic.
+You will meet a tall dark stranger" kind of psychic.
 
+## Houdini
 
+Does anyone know why Houdini hated mediums and other people who claimed to speak for the dead? He was devastated when his mother
+died and the fashion of the time in 1920s was very much in favour of spiritualism and seances and all that. He went to visit a medium 
+who, recognizing one of the most famous people of the time, was absolutely able to contact his dear departed mother and bring 
+her forward to speak to him. *imitates old lady* "Ah yes, it is me, your dear departed, snow-white haired old mother back to 
+talk to you from beyond the grave" which was all fine. "I love you very much, person who is definitely my son, since I am your 
+dead mother, back to speak to you" also fine. Then: "I love you so much Harry... I think of you often, bye bye. Remember to 
+pay the nice lady". Big mistake! Because Harry Houdini is a stage name. His mother never used that (why would she?), she only 
+knew his as Erich - Erich Weiss.Erik Weisz 1920s
+
+## N Ways 
+
+## Walking Skeleton
+
+Evolutionary Design often means starting with the simplest possible design and we call a walking skeleton. the barest bones of 
+an application, perhaps something as simple as a console application that proves something about the system. 
+This is the foundation that we will hook all of the rich functionality on going forard. Something that grows in complexity 
+as the application grows
+
+Desciplined
+Simple Design - simplest - don't anticipate the future.
+Incremental Design - rework to match current requirements as they come in.
+Continuous Design - Design all the time - every day / hour.
 
 ## 1. Shitty first draft
 
@@ -192,7 +217,6 @@ came up with the idea of the shitty first draft, the idea that we know the first
 something it will be awful and that is what keeps us from taking that first step. But Annie 
 says, so what? It;s awful but we can improve it. I've seen this approach free people from 
 analysis paralysis and other forms of procrastination and get going on something.
-
 
 ## Ditch SOLID
 
@@ -209,13 +233,13 @@ Cohesion
 
 ## Four Rules of Simple Design
 
-The four rules of simple design are wonderfully elegant but are difficult to achieve in practice.
+Another good guideline that doesn't get talked about an awful lot but really should is "The four rules of simple design" 
+they are wonderfully elegant but are sometimes challenging to achieve in practice without an evolutionary approach.
 
 Passes all the tests
 Clearly expresses intent
 No duplication of knowledge
 Contains the fewest elements
-
 
 ## Refactoring
 
@@ -235,7 +259,6 @@ Extract Parameter
 Rename (Method, variable)
 Move method
 Got to definition, show usage
-
 
 ## Keyboard and IDE
 
@@ -324,7 +347,6 @@ is a great skill to have. Going back to Kent Beck, when he was writing JUnit wit
 much, much more than they actually wrote it. Studying and reviewing code without the expectation of making changes gives you a chance to see 
 what impressions you can pick up from the code rather than worrying about the clock ticking in your head that tells you you need to be CODING! now.
 
-
 ## Deliberate Practice
 
 A few years ago a friend introduced me to the idea of deliberate practice. I used to play a musical instrument and was well aware of the 
@@ -341,29 +363,6 @@ code.
 
 Whatever you can spare to practice, that over a week, a few months, a year will amaze you have much better you can become rather than trying 3 hours
 after this conference, getting fed up and never trying again!
-
-
-## Cold Reading 
-
-What would modern day psychics look like for software development?
-
-I can tell someone here has a close connection to someone with the name starting with J" kind of psychic.
-You will meet a tall dark stranger" kind of psychic.
-
-
-## Houdini
-
-Let me back up a bit... (check facts)
-
-Does anyone know why Houdini hated mediums and other people who claimed to speak for the dead? He was devastated when his mother
-died and the fashion of the time was very much in favour of spiritualism and seances and all that. He went to visit a medium 
-who, recognizing one of the most famous people of the time, was absolutely able to contact his dear departed mother and bring 
-her forward to speak to him. *imitates old lady* "Ah yes, it is me, your dear departed, snow-white haired old mother back to 
-talk to you from beyond the grave" which was all fine. "I love you very much, person who is definitely my son, since I am your 
-dead mother, back to speak to you" also fine. Then: "I love you so much Harry... I think of you often, bye bye. Remember to 
-pay the nice lady". Big mistake! Because Harry Houdini is a stage name. His mother never used that (why would she?), she only 
-knew his as Erich - Erich Weiss.Erik Weisz 1920s
-
 
 ### Getting started
 
@@ -388,15 +387,9 @@ judgement has already run a large number of "experiments" e.g. failed projects.
 
 Bad Judgement -> Terrible Mistakes -> Good Judgement
 
-
 ## Example ? If we have time
 
-
-
-
 ## Story splitting or narrowing
-
-
 
 ## DDD
 
@@ -414,6 +407,11 @@ If refactoring is difficult or is expensive (error prone, takes a long time to g
 not be right for you. ED is good for internal systems but be careful of evolving interfaces that other teams or customers 
 rely on. Any client of you code can be affected by changes and if you don't have the power to change their code then 
 any consumer of your code can make that difficult.
+
+
+
+
+
 
 # Possible Lightning Talk
 
