@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  Feynman's Computer Heuristics
+title:  Critical Program Reading
 published: true
 categories: [video, presentations]
-thumbnail: img/posts/feynmans-computer-heuristics/thumbnail-420x255.webp
-alttext: Richard Feynman
+thumbnail: img/posts/critical-program-reading/thumbnail-420x255.png
+alttext: 16mm Film restored
 --- 
 
-I stumbled on this today, it's a very old VHS recording of a lecture by the great Richard Feynman on how the basics of computers work with at-the-time contemporary 
-office work analogies. Great stuff if you can get over the first few minutes of video effects ;)
+A nice example of code analysis and refactoring to improve readability from an old (maybe public information or training?) film with the involvement of Gerald Weinberg and Tom Plum. 
 
-<iframe width="1262" height="710" src="https://www.youtube.com/embed/EKWGGDXe5MA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+I set this as "homework" for some graduate developers so it will be interesting to see what they make of it and how closely it aligns with the things we think about today in our 
+programs. 
+
+<iframe width="1868" height="755" src="https://www.youtube.com/embed/7hdJQkn8rtA" title="Critical Program Reading (1975) - 16mm Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
