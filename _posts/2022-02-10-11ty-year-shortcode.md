@@ -22,10 +22,4 @@ module.exports = function() {
 
 ```
 
-and in the markdown:
-
-```js
-
-Copyright &copy; 1996-{% year %} 
-
-```
+and in the markdown the name of the sortcode needs to appear bookended by moustaches.
