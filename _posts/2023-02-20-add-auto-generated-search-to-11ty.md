@@ -212,6 +212,10 @@ hugely so the transfer isn't noticeable in the browser.
 The search template document is no longer needed and the search Filter code is also redundant but was the original 
 inspiration for the shape of the plugin where it interacts with elastic lunr.
 
+The biggest benefit is that now we don't need to maintain keywords and any example code changes are reflected in the 
+search output without us having to worry about that either. In fact, I wrote an anti-keyword script to remove the keywords 
+I carefully put in at the start of the project.
+
 A possible downside of using the plugin approach was that the search index was generated on each build, taking the 
 build time from around 10 seconds all the way up to 30 seconds. This isn't too much trouble for a single build 
 but can get a bit tedious when using the dev build server when pages can be unavailable while the search generation 
