@@ -80,7 +80,7 @@ the code I was about to write that would extract the data? Upgrading from v1.som
 "elevent.after" event with the new data that is now passed to it. 
 
 
-### .elevent.js
+#### .elevent.js
 
 ```js
 
@@ -101,7 +101,7 @@ part of each page. The best one I found was [Fast HTML Parser](https://www.npmjs
 which does the job admirably.
 
 
-### _11ty/plugins/search-index-generator/index.js
+#### _11ty/plugins/search-index-generator/index.js
 
 ```js
 
