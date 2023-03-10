@@ -10,22 +10,29 @@ hero: makers
 
 <p class="has-vertical-spacing">I'm a Principal Software Developer working for a very popular business
 software company in the North East of England. I can't be sure that the opinions 
-I have expressed here are my own so they **definitely** don't represent the views 
+I have expressed here are my own so they <strong>definitely</strong> don't represent the views 
 of my employer.</p>
 
-<p class="has-vertical-spacing">I co-organize <a href="https://ti.to/ne-bytes" target="_blank">NE Bytes</a>, a monthly .Net community get-together and 
-help out at <a href="http://meetup.com/Agile-North-East/" target="_blank">Agile North East</a>, both hosted in Newcastle city centre.</p>
+<p class="has-vertical-spacing">
+For the last few years I have been working mostly on .Net, React and Azure Cloud projects. I have been involved  at almost every level of software development over the last 25+ years from 
+individual contributor, leading a development team, management: of humans and projects, and spend a fair amount of time mentoring early-career software people. My experience ranges from real-time motion 
+and process control in high reliability, 24-7 environments to commercial applications using .Net, Javascript and React, C & C++ as well as a wealth of other languages. I enjoy delivering simple, clean and 
+maintainable code and the cleaning, refactoring and general "gardening" needed in bringing legacy systems back to a manageable state.
+</p>
 
-<p class="has-vertical-spacing">I am an <strong>Extreme Programmer</strong>, an Infrequent <strong>Sketchnoter</strong>, a Collector 
-of <strong>Programming</strong> Languages, a <strong>Speaker</strong> available for tech conferences and meetups, 
-a <strike>Mob</strike> <strong>Ensemble</strong> Programmer, a <strong>Test-Driven</strong> 
-Developer and Struggling <strong>Agilista</strong>. I am also a STEM ambassador, microbit hacker and project lead 
-for the "Makers &amp; Creators" events at Campus North with Tech for Life UK.</p>
+<p class="has-vertical-spacing">
+I co-organize <a href="https://nebytes.net" target="_blank">NE Bytes</a>, a monthly .Net community get-together hosted in Newcastle-upon-Tyne. I also speak at developer events and conferences 
+like DDD North.
+</p>
+
+<p class="has-vertical-spacing">
+I am an Extreme Programmer, an Infrequent Sketchnoter, a Collector of Programming Languages, a Speaker, an Ensemble Programmer, and a Test-Driven Developer. I 
+am a second year mentor for the "We Think Code" non-profit and a STEM ambassador specialising in micro:bit hackery.
+</p>
 
 <p class="has-vertical-spacing">My main areas of interest are in using <strong>agile methods</strong> to help improve what
 we <strong>ship</strong>, <strong>test-driven</strong> development, unit <strong>testing</strong>, continuous and
 deliberate <strong>learning</strong>, <strong>visual</strong> thinking, design and, of course, <strong>code</strong>.</p>
-
 
 <h2 class="is-size-3">A Note on Sharing</h2>
 
