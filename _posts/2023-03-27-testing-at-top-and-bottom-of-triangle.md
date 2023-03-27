@@ -474,19 +474,68 @@ describe('My Calendar', () => {
   it('Defaults to today\'s date',
     () => {
       cy.mount( <Calendar /> 
-
-      ///expect(...)
   );
+  cy.get('[data-component="content"]').should('have.length', 2)
+
+  cy.get('#infoPanelTest');
     });
   });
 
 
+cy.get("input")
+            .click()
+            .type('All', { delay: 250 })
+            .type('{downArrow}', { delay: 250 })
+            .type('{downArrow}', { delay: 250 })
+            .type('{enter}');
+
+        cy.get("input").should('have.value', 'Not Allowed');
+
+        cy.get("input").click().type('Not', { delay: 250 });
+
+        cy.get('[type="radio"]').should('not.be.checked');
+
+         cy.get('input').should('be.disabled');
+         cy.get('input').should('have.attr', 'readonly', 'readonly');
 ```
+
+```js
+
+it('Will call onClick function if no "canClick" prop is provided', () => {
+    const onClick = cy.stub();
+
+    cy.mount(
+      <CustomLink
+        id='Link'
+        tag={Button}
+        onClick={onClick}
+      >
+        {'Test'}
+      </CustomLink>
+    );
+
+    cy.get('button').click().then(() => {
+      expect(onClick).to.be.called;
+      expect(onClick).to.not.be.called
+    });
+  });
+
+```
+
+```js
+
+cy.store().dispatch({type: 'order-date', value: '2022-04-30'});
+ cy.store().getState('credit_limit').should('equal', '0.00000');
+ 
+```
+
 
 ## Custom Commands 
 
 
-
+```js
+cy.window().its('store').invoke('dispatch', {type: 'description', value: 'my store description'});
+```
 
 
 
