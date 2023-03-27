@@ -101,6 +101,10 @@ where it is lowest to the top where it is highest.
 Its shape shows we have a lot of very simple unit tests/microtests at the base, giving us 
 wide coverage, slightly fewer integrated tests in the middle, and fewer still end to end application tests right at the top. 
 
+tests at the bottom of the triangle give fast, precise feedback, those at the top test for acceptability of the application, broader in scope, 
+slower, more complex.
+
+
 ## Microtests
 
 Microtests are tests where we investigate and exercise behaviour of single functions, single classes or small groups of related classes 
@@ -461,6 +465,11 @@ module.exports = defineConfig({
 });
 
 
+
+## Fake network requests
+
+
+
 ## APIs
 
 
@@ -522,11 +531,20 @@ it('Will call onClick function if no "canClick" prop is provided', () => {
 
 ```
 
+## Spying 
+```js
+
+ const onChangeSpy = cy.spy().as('onChangeSpy')
+  cy.mount(<Stepper onChange={onChangeSpy} />)
+  cy.get('[data-cy=increment]').click()
+  cy.get('@onChangeSpy').should('have.been.calledWith', 1)
+```
+
 ```js
 
 cy.store().dispatch({type: 'order-date', value: '2022-04-30'});
  cy.store().getState('credit_limit').should('equal', '0.00000');
- 
+
 ```
 
 
@@ -540,6 +558,12 @@ cy.window().its('store').invoke('dispatch', {type: 'description', value: 'my sto
 
 
 cy.log(hello tech on the tyne)
+
+
+## Component-Index.html
+
+## Commands in Component.js
+
 
 
 Slide 1: Introduction
