@@ -145,6 +145,19 @@ First we'll talk about the cypress in general, then see some examples of end to 
 like, then we will do some component testing and look at some of the subtleties there. 
 
 
+## More
+
+Some features of cypress (as compared to Selenium) that are really nice and make my job easier
+
+* Runs "inside" the browser
+* Automatic Waiting 
+* Debugging 
+* Snapshots make time travel possible
+* Spies and Stubbing
+* Control Network Traffic
+* Screenshots and Videos
+
+
 ## Installing
 
 Assume you have an node application. If not, npm init and answer questions or accept defaults. 
@@ -158,10 +171,26 @@ Has two modes of running, interactive and command line
 npx cypress run will run tests on command line like a jest test
 npx cypress open opens interactive app 
 
+## First test
 
+Before we run our first test, let's just talk about the format of the tests. 
 
+```js
 
-First test
+describe('The thing I am testing', () => {
+    it('should do this', () => {
+        expect(1 + 1).toBe(2);
+    });
+
+    it('ought not to do that', () => {
+        expect('red').toBe('green');
+    });
+});
+
+```
+
+Cypress builds on top of this by using commands prefixed with cy. Also by convention, 
+Jest runs tests that end with .test.js, Cypress runs it's tests from files that end with .cy.js
 
 
 Example 1
