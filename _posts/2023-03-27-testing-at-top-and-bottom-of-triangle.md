@@ -156,6 +156,20 @@ Some features of cypress (as compared to Selenium) that are really nice and make
 * Spies and Stubbing
 * Control Network Traffic
 * Screenshots and Videos
+* Hot reload
+* Retries
+
+One of the biggest advantages for me is that cypress runs in the browser so it 
+understands network requests and page loading and will wait for these to finish before 
+continuing. Something you need to explicitly cater for in Selenium.
+
+## Bad
+
+* Runs inside the browser so doesn't support multiple tabs
+* New-ish, not as established like Selenium
+* Javascript only, no other language bindings
+* No support for Safari
+* iFrames are limited
 
 
 ## Installing
@@ -171,15 +185,20 @@ Has two modes of running, interactive and command line
 npx cypress run will run tests on command line like a jest test
 npx cypress open opens interactive app 
 
-## First test
+## Documetation
+
+https://docs.cypress.io is really good, they have good tutorials and lots of good guidance 
+as well as good individual docs for each function.
+
+## RSpec
 
 Before we run our first test, let's just talk about the format of the tests. 
 
 ```js
 
-describe('The thing I am testing', () => {
+describe('The thing I am testing', () => { // mocha
     it('should do this', () => {
-        expect(1 + 1).toBe(2);
+        expect(1 + 1).toBe(2); // chai
     });
 
     it('ought not to do that', () => {
@@ -189,10 +208,233 @@ describe('The thing I am testing', () => {
 
 ```
 
+## Test Naming
+
 Cypress builds on top of this by using commands prefixed with cy. Also by convention, 
 Jest runs tests that end with .test.js, Cypress runs it's tests from files that end with .cy.js
 
 
+## First Test
+
+
+```js
+
+describe('Google', () => {
+  it('Can search for tech on the tyne', () => {
+
+    cy.visit('https://www.google.com/')
+
+    cy.get('input[name="q"]')
+        .type('Tech on the Tyne');
+
+    cy.get('input[value="Google Search"]')
+        .first()
+        .click();
+
+    cy.url().then(url => {
+      const getUrl = url
+      cy.log('Results URL: '+getUrl)
+    });
+  });
+});
+
+```
+
+find by text content
+
+```js
+
+    cy.contains('Google');
+
+```
+
+```js
+
+    cy.contains('google', { matchCase: false });
+
+```
+
+```js
+
+    cy.get('#password');
+
+```
+
+Will throw if it can't find the password
+
+We can chain command together
+
+```js
+
+    cy.get('#password').type('random password')
+
+```
+
+```js
+cy.title().should('contain', 'Developer Services');
+ cy.get('#doc-content').should('not.contain', 'version20');
+
+ cy.get('#doc-content')
+            .should('not.contain', '#region ') //XML and C# region
+            .and('not.contain', '#Region '); //VB and VBS region
+
+
+```
+
+Then also we can match in much the same way that other libraries do.
+
+```js
+
+    cy.get('#password')
+        .type('random password')
+        .should('have.value', 'random password');
+
+    // xpath
+    cy.get('input[type=submit]').click();
+
+```
+
+## Assertions
+
+```js
+ cy.contains('a', 'developers.programme@sage.com')
+        .should('be.visible')
+        .should("have.attr", 'href', 'mailto:developers.programme@sage.com?Subject=Sage 200 Developer Help - Support Query');
+```
+
+be.visible
+have.attr
+have.value
+have.text
+
+```js
+
+cy.get('#searchForm').then(($search) => {
+            const searchForm = cy.wrap($search);
+            searchForm.should('be.visible');
+            searchForm.invoke('attr', 'method').should('eq', 'get');
+          });
+
+
+
+```
+
+```js
+
+cy.get('h1')
+            .invoke('attr', 'class')
+            .should('eq', 'title');
+
+```
+
+```js
+// broken images
+cy.get('#doc-content').within(($container) => {
+
+            if ($container.find('img').length > 0) {
+              cy.get('img').each(($img) => {
+                cy.wrap($img).scrollIntoView().should('be.visible');
+
+                expect($img[0].naturalWidth).to.be.greaterThan(0);
+                expect($img[0].naturalHeight).to.be.greaterThan(0);
+              });
+            }
+          });
+
+```
+
+```js
+
+const block = cy.get('#doc-content')
+      .find('div.notification.is-info.hint-box');
+
+      block.should('be.visible');
+
+      block.within(() => {
+        cy.get('p.title').contains('Deploying Your Application');
+          cy.get('p:last').contains('When you deploy your application you will not need to include any of the Sage assemblies.');
+      });
+
+```
+
+```js
+
+const anchor = cy.get('a');
+
+            anchor.contains('Overview');
+            anchor.should('have.attr', 'href', './DOC0004_Overview.html');
+            anchor.should('have.attr', 'target', '_self');
+            anchor.should('have.attr', 'title', 'Show overview');
+
+            // example button is not active
+            cy.get('span.is-static').contains('Example');
+
+```
+
+```js
+before(() => {
+    cy.clearLocalStorage();
+    cy.visit(examplePage);
+  });
+```
+
+```js
+
+ cy.get('#language-picker').should('not.exist');
+
+```
+
+```js
+
+const screenshot = cy.get('figure.screenshot').first();
+    screenshot.scrollIntoView();
+    screenshot.should('be.visible');
+    screenshot.within(() => {
+      const img = cy.get('img');
+      img.should('have.attr', 'src', '../img/ArchitectureDiagramOnPremise.png');
+      img.should('have.attr', 'alt', 'object model');
+      cy.get('figcaption').contains('Figure 1: Sage 200 On Premise Architecture');
+    });
+
+```
+
+```js
+
+cy.get('#searchTextBox').type(term);
+        cy.get('#searchForm').submit();
+
+```
+
+## API requests 
+
+```js
+
+// set base url
+it('Gets Luke Skywalker', () => {
+  cy.request({
+    url: 'https://swapi.dev/api/people/1',
+    method: 'GET'
+  })
+    .its('body')
+    .should('deep.contain', {
+      name: 'Luke Skywalker',
+      completed: false,
+    })
+})
+
+```
+
+```js
+
+cy.get('a.language-cs:first').click().then(() => {
+        cy.window().then((win) => {
+          win.navigator.clipboard.readText().then((text) => {
+            expect(text).to.contain('Sage.Accounting.SystemManager.SYSCurrentFinancialYearFactory.Factory.Fetch');
+          });
+        });
+      })
+
+```
 Example 1
 
 End to end testing, Reed.com, bbc.co.uk
@@ -221,9 +463,30 @@ module.exports = defineConfig({
 
 ## APIs
 
+
+## Components 
+
+```js
+
+import Calendar from '../Calendar';
+
+describe('My Calendar', () => {
+  it('Defaults to today\'s date',
+    () => {
+      cy.mount( <Calendar /> 
+
+      ///expect(...)
+  );
+    });
+  });
+
+
+```
+
 ## Custom Commands 
 
-## What doesn't it do well
+
+
 
 
 
