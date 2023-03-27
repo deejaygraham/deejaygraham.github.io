@@ -38,7 +38,8 @@ just because I have found cypress to cover most of what I need and do it very ea
 ## Javascript
 
 The other thing to note is that all the examples will be in Javascript, so if you don't know any javascript, you have approximately
-1:45 seconds to learn some. 
+10 minutes to learn some. 
+
 
 ## Early Web Times
 
@@ -64,12 +65,13 @@ ought to work.
 Fast forward quite a few years and I am currently in the middle of several web projects, a few of which did not have any tests 
 apart from a little bit of inspection to make sure things looked "kind of ok". 
 
+
 ## React and Jest
 
-The most important project is a large React application which we test application flow using selenium. For unit testing we were doing 
-Jest but just for plain old javascript functions, we didn't find much use for libraries like enzyme. They were able to simulate a browser 
-but really just enough to generate markup. We discovered that lots of bugs were undetectable in enzyme but a human running them in a 
-browser would spot them instantly. Not really a good experience. I'll come back to this later on.
+The most important project is a large React application. We test customer facing application using c#, NUnit and Selenium. For 
+unit testing we were doing Jest but just for plain old javascript functions, we didn't find much use for libraries like enzyme. They 
+were able to simulate a browser but really just enough to generate markup. We discovered that lots of bugs were undetectable in 
+enzyme but a human running them in a browser would spot them instantly. Not really a good experience. I'll come back to this later on.
 
 ## SDK 
 
@@ -85,14 +87,18 @@ cypress. This was with the notion that it probably wouldn't be any better than a
 ## NE Bytes 
 
 Finally, I run a .net developer meetup (NEBytes) and recently moved all the content from an super old fashioned wordpress 
-installation to github pages, 11ty and bulma for css. Again a publicly facing website so I needed to make sure that  we don't 
+installation to github pages, 11ty and bulma for css. Again a publicly facing website so I needed to make sure that we don't 
 break stuff when we make changes. 
 
+All this talk of testing and breaking things leads me on to...
 
 ## Test triangle
 
 This is the testing triangle or testing pyramid, that may be familiar to many of you. It's a metaphor for the types and proportions 
-of tests we would expect in an application. Its shape shows we have a lot of very simple unit tests/microtests at the base, giving us 
+of tests we would expect in a project. The also shows the degree of interconnectedness or integration - from the bottom 
+where it is lowest to the top where it is highest.
+
+Its shape shows we have a lot of very simple unit tests/microtests at the base, giving us 
 wide coverage, slightly fewer integrated tests in the middle, and fewer still end to end application tests right at the top. 
 
 ## Microtests
@@ -124,6 +130,7 @@ those tests. For a longer rant about this, I recommend Joe Rainsberger's talk "I
 Over many projects and many opportunities to try this over and over again, I have my own version of this triangle.
 
 I hope it's now clear why my talk is now testing at both ends of the triangle (but not the middle).
+
 
 ## Web Testing 
 
