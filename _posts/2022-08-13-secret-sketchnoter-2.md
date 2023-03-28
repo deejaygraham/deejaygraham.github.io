@@ -5,7 +5,7 @@ categories: [ sketchnotes ]
 tweetable: true
 thumbnail: "/img/posts/secret-sketchnoter-2/thumbnail-420x255.jpg"
 sketchnote:
-  url: "/img/posts/secret-sketchnoter/secret-sketchnoter-2.jfif"
+  url: "/img/posts/secret-sketchnoter-2/secret-sketchnoter-2.jfif"
   alt: "sketchnote"
 ---
 
