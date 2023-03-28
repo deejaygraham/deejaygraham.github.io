@@ -113,7 +113,7 @@ Feathers definition of unit test, don't talk to any global variables, time, date
 
 ## UI
 
-At the other end, the end to end tests, test that the whole application hangs together and is wired correctly. So has a web server spun up, 
+At the other end, the end to end tests, test that the whole application hangs together and is wired correctly. So, has a web server spun up, 
 connecting to a database with config files in place and all that. This takes a lot of deployment effort to do and is relatively more expensive
 than microtesting just because of all of the things that need to be in place. For example, needing a database implies that the data needs to be 
 kept up to date, is refreshed and restored correctly etc. 
