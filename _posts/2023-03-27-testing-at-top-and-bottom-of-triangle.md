@@ -411,34 +411,35 @@ cy.get('#searchTextBox').type(term);
 
 ## API requests 
 
+We can validate API requests to our backend services if we need to get an auth token.
+
 ```js
 
-// set base url
-it('Gets Luke Skywalker', () => {
-  cy.request({
-    url: 'https://swapi.dev/api/people/1',
-    method: 'GET'
-  })
-    .its('body')
-    .should('deep.contain', {
-      name: 'Luke Skywalker',
-      completed: false,
+    it('Gets Star Wars Characters', () => {
+        cy.request({
+          url: 'https://swapi.dev/api/people/1',
+          method: 'GET'
+        })
+        .its('body')
+        .should('deep.contain', {
+          name: 'Anakin Skywalker'
+        })
     })
-})
-
 ```
+
+## Clipboard 
 
 ```js
 
-cy.get('a.language-cs:first').click().then(() => {
-        cy.window().then((win) => {
-          win.navigator.clipboard.readText().then((text) => {
-            expect(text).to.contain('Sage.Accounting.SystemManager.SYSCurrentFinancialYearFactory.Factory.Fetch');
-          });
+    cy.window().then((win) => {
+        win.navigator.clipboard.readText().then((text) => {
+        expect(text).to.contain('Hello this was copied to the clipboard');
         });
-      })
+    });
 
 ```
+
+
 Example 1
 
 End to end testing, Reed.com, bbc.co.uk
@@ -560,7 +561,150 @@ cy.window().its('store').invoke('dispatch', {type: 'description', value: 'my sto
 cy.log(hello tech on the tyne)
 
 
+
+
+## Component Testing
+
+Component tests are new to Cypress since v10. They offer a way to test a small component of the application in isolation, 
+sandboxed, with as little cruft around it. It's a good way to flush out dependencies you didn't know you had in the application. 
+
+Using cypress open you can get a number of configuration files created for you under the cypress folder. Tests go in the components 
+subfolder and the usual support and fixtures folders are there too.
+
+My desk calendar control is a simple display of today's day and date with a way to scrolling back and forward through the month. 
+We can create a calendar.cy.js file to test it and run cypress to see it pick it up.
+
+```js
+
+import React from 'react';
+import DeskCalendar from './pathtoo/Calendar';
+
+describe('DeskCalendar component', () => {
+    
+
+    it('Shows a count of the current day in the month', () => {
+        cy.mount(<DeskCalendar />);
+        
+        cy.get('.day-of-month').should('contain', '28');
+    });
+
+    it('Shows the day of the week', () => {
+        cy.mount(<DeskCalendar />);
+        
+        cy.get('.day-of-week').should('contain', 'Tuesday');
+    });
+
+    it('Pressing the previous button shows yesterdays date', () => {
+        cy.mount(<DeskCalendar />);
+        
+        cy.get('#prev').click();
+
+        cy.get('.calendar').contains('Monday');
+        cy.get('.calendar').contains('27');
+    });
+
+    it('Pressing the next button multiple times shows date in the future', () => {
+        cy.mount(<DeskCalendar />);
+        
+        cy.get('#next').click().click();
+        
+        cy.get('.calendar').contains('Thursday');
+        cy.get('.calendar').contains('30');
+    });
+});
+
+```
+
 ## Component-Index.html
+
+Before we look at the tests...
+
+Immediately there are a couple of problems evident. The control has no styling and looks a bit disappointing.
+We can provide some styling and html context for a control, but editing te component-index.html file. 
+
+```html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Components App</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+            monospace;
+        }
+
+    .calendar {
+        border: 1px solid grey;
+        box-shadow: 10px 10px lightgrey;
+        margin: auto;
+        padding: 2em;
+        width: 25%;
+        }
+
+    .day-of-week {
+        color: yellowgreen;
+        font-size: 2em;
+        }
+
+    .day-of-month {
+        color: red;
+        font-size: 10em;
+        letter-spacing: 0.1em;
+        }
+
+    .previous, .next {
+        display: inline-block;
+        background-color: #grey;
+        font-size: 0.3em;
+        padding: 0.5em;
+        margin: 0 2em 0 2em;
+        width: 5em;
+        color: #yellowgreen;
+        text-align: center;
+        }
+    </style>
+    <style>
+        [data-cy-root] {
+            padding: 2em;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- component sits here -->
+    <div data-cy-root></div>
+  </body>
+</html>
+
+```
+
+With the styling fixed we can see that the viewport isnt what we need to be (500 x500) so we can either change it 
+in the config or we can use the viewport command :
+
+```js
+
+  beforeEach(() => {
+    cy.viewport(1280, 720);
+  });
+
+```
+
+Now we'll move onto the tests. Each one runs and we can see them in the editor, we can expand each one and step 
+through them to see before and after states. We can examine the DOM using dev tools and look at failures. 
+
+
 
 ## Commands in Component.js
 
@@ -634,7 +778,7 @@ Explanation of how to troubleshoot and resolve these issues
 Slide 15: Best Practices
 
 Overview of best practices for using Cypress for testing
-Discussion of how to write efficient and effective tests, optimize test performance, and ensure the quality of your applications
+Discussion of how to write efficient and effective tests, optimize  test performance, and ensure the quality of your applications
 Lint
 
 
