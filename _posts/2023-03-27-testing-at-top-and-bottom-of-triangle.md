@@ -96,36 +96,38 @@ All this talk of testing and breaking things leads me on to...
 ## Test triangle
 
 This is the testing triangle or testing pyramid, that may be familiar to many of you. It's a metaphor for the types and proportions 
-of tests we would expect in a project. The also shows the degree of interconnectedness or integration - from the bottom 
-where it is lowest to the top where it is highest.
+of tests we would expect in a project. It shows the degree of interconnectedness or integration running from zero at the bottom 
+where we do microtests to the top where the application is tested from the outside.
 
-Its shape shows we have a lot of very simple unit tests/microtests at the base, giving us 
+Its shape is intended to show we will hae a lot of very simple unit tests/microtests at the base, giving us 
 wide coverage, slightly fewer integrated tests in the middle, and fewer still end to end application tests right at the top. 
 
-Tests at the bottom of the triangle give fast, precise feedback, those at the top test for acceptability of the application, broader in scope, 
-slower, more complex.
-
-
 ## Microtests
+
+Tests at the bottom of the triangle give fast, precise feedback, are as isolated as possible and are there to guarantee that each 
+thing works on it's own. 
 
 Microtests are tests where we investigate and exercise behaviour of single functions, single classes or small groups of related classes 
 where it makes sense to consider them as a group rather than introducing artificial barriers and seams. Importantly they stick to the 
 Feathers definition of unit test, don't talk to any global variables, time, dates, databases, network, file system. 
 
-## UI
+## End to End
 
-At the other end, the end to end tests, test that the whole application hangs together and is wired correctly. So, has a web server spun up, 
-connecting to a database with config files in place and all that. This takes a lot of deployment effort to do and is relatively more expensive
-than microtesting just because of all of the things that need to be in place. For example, needing a database implies that the data needs to be 
-kept up to date, is refreshed and restored correctly etc. 
+At the top, the tests take longer to write or change or debug, are more complex, slower, broader in scope and can fail for 
+more reasons. These tests are there to make sure the application is wired together correctly.
+
+So, has a web server spun up, connecting to a database with config files in place and all that. This takes a lot of deployment 
+effort to do and is relatively more expensive than microtesting just because of all of the things that need to be in place. For 
+example, needing a database implies that the data needs to be kept up to date, is refreshed and restored correctly etc. 
 
 ## Middle 
 
 In my experience, where we end up in trouble is in this middle section. Integrated tests are the middle ground where the worst of all 
 possible worlds exist. The integrated tests are the cursed places where we are testing that larger chunks of the application play nicely 
-together. They have not enough context of the full application but too much knowledge about the 
+together. Here we find places where the database is faked but an API is real, or a database is real but an API is faked.
+There's not enough context of the full application but too much knowledge about the 
 interals of the application and require more dependencies than unit tests, take longer to run than unit tests and are more 
-prone to breakage caused by design changes in one part of the application having a knock on effect on another part. Thses changes 
+prone to breakage caused by design changes in one part of the application having a knock on effect on another part. These changes 
 may be entirely invisible to the outside of the application. So not guaranteeing the whole system works but requiring almost as much maintenance as 
 those tests. For a longer rant about this, I recommend Joe Rainsberger's talk "Integration tests are a scam"
 
@@ -151,7 +153,7 @@ First we'll talk about the cypress in general, then see some examples of end to 
 like, then we will do some component testing and look at some of the subtleties there. 
 
 
-## More
+## Good
 
 Some features of cypress (as compared to Selenium) that are really nice and make my job easier
 
@@ -178,7 +180,13 @@ continuing. Something you need to explicitly cater for in Selenium.
 * iFrames are limited
 
 
-## Installing
+## Documetation
+
+https://docs.cypress.io is really good, they have good tutorials and lots of good guidance 
+as well as good individual docs for each function.
+
+
+## Installing - TODO !!!!
 
 Assume you have an node application. If not, npm init and answer questions or accept defaults. 
 
@@ -191,28 +199,6 @@ Has two modes of running, interactive and command line
 npx cypress run will run tests on command line like a jest test
 npx cypress open opens interactive app 
 
-## Documetation
-
-https://docs.cypress.io is really good, they have good tutorials and lots of good guidance 
-as well as good individual docs for each function.
-
-## RSpec
-
-Before we run our first test, let's just talk about the format of the tests. 
-
-```js
-
-describe('The thing I am testing', () => { // mocha
-    it('should do this', () => {
-        expect(1 + 1).toBe(2); // chai
-    });
-
-    it('ought not to do that', () => {
-        expect('red').toBe('green');
-    });
-});
-
-```
 
 ## Test Naming
 
@@ -220,45 +206,82 @@ Cypress builds on top of this by using commands prefixed with cy. Also by conven
 Jest runs tests that end with .test.js, Cypress runs it's tests from files that end with .cy.js
 
 
-## First Test
+## RSpec
 
+Before we run our first test, let's just talk about the format of the tests. The format 
+will be familiar to anyone using mocha or chai in the js world or anyone using PowerShell Pester,
+Ruby RSpec etc. 
+
+```js
+describe('The thing I am testing', () => { 
+    it('should do this', () => {
+        expect(1 + 1).toBe(2); 
+    });
+
+    it('ought not to do that', () => {
+        expect('red').toBe('green');
+    });
+});
+```
+
+## First Test
 
 ```js
 
 describe('Google', () => {
-  it('Can search for tech on the tyne', () => {
+    it('Knows about Tech on the Tyne', () => {
+  
+        cy.viewport(1280, 720);
+        cy.intercept('https://www.google.com/search*').as('google');
 
-    cy.visit('https://www.google.com/')
+        cy.visit('https://www.google.com/');
+  
+        // find reject all button...
+        cy.get('#W0wltc').click();
 
-    cy.get('input[name="q"]')
-        .type('Tech on the Tyne');
+        cy.get('input[name="q"]')
+            .type('Tech on the Tyne');
+  
+        cy.get('form').submit();
 
-    cy.get('input[value="Google Search"]')
-        .first()
-        .click();
-
-    cy.url().then(url => {
-      const getUrl = url
-      cy.log('Results URL: '+getUrl)
+        cy.wait('@google');
     });
   });
-});
 
 ```
 
-find by text content
+Let's talk about what's going on here because there's a lot.
+
+* visit
+* get
+* type
+* submit
+* intercept and wait
+* viewport
+
+
+## Arrange
+
+Make some action, visit a site, or load a component (later),
+setup viewport, setup interception etc. 
+
+```js 
+    cy.visit('/stuff');
+```
+
+## Act 
+
+Find by text content on a page
+
 
 ```js
 
     cy.contains('Google');
-
-```
-
-```js
-
     cy.contains('google', { matchCase: false });
 
 ```
+
+Find by css selector: id or by class
 
 ```js
 
@@ -266,92 +289,84 @@ find by text content
 
 ```
 
+Find by XPath
+
+```js
+
+    cy.get('input[type=submit]');
+
+```
+
 Will throw if it can't find the password
 
-We can chain command together
 
-```js
+## Actions 
 
-    cy.get('#password').type('random password')
-
-```
-
-```js
-cy.title().should('contain', 'Developer Services');
- cy.get('#doc-content').should('not.contain', 'version20');
-
- cy.get('#doc-content')
-            .should('not.contain', '#region ') //XML and C# region
-            .and('not.contain', '#Region '); //VB and VBS region
-
-
-```
-
-Then also we can match in much the same way that other libraries do.
+We can chain commands together
 
 ```js
 
     cy.get('#password')
+        .type('random password');
+
+```
+
+## Assertions 
+
+```js
+
+    cy.title().should('contain', 'Google is Awesome');
+    cy.get('#password').should('not.contain', 'swordfish');
+
+    cy.get('#password')
+        .should('not.contain', 'passw0rd')
+        .and('not.contain', 'swordfish'); 
+
+    cy.get('#password')
         .type('random password')
         .should('have.value', 'random password');
-
-    // xpath
-    cy.get('input[type=submit]').click();
-
 ```
 
-## Assertions
+## Common Assertions to Should
 
-```js
- cy.contains('a', 'developers.programme@sage.com')
-        .should('be.visible')
-        .should("have.attr", 'href', 'mailto:developers.programme@sage.com?Subject=Sage 200 Developer Help - Support Query');
-```
+* be.visible
+* have.attr
+* have.value
+* have.text
+* not.exist
 
-be.visible
-have.attr
-have.value
-have.text
-
-```js
-
-cy.get('#searchForm').then(($search) => {
-            const searchForm = cy.wrap($search);
-            searchForm.should('be.visible');
-            searchForm.invoke('attr', 'method').should('eq', 'get');
-          });
-
-
-
-```
 
 ```js
 
 cy.get('h1')
-            .invoke('attr', 'class')
-            .should('eq', 'title');
+    .invoke('attr', 'class')
+    .should('eq', 'title');
 
 ```
 
+Find broken images 
+
 ```js
-// broken images
-cy.get('#doc-content').within(($container) => {
 
-            if ($container.find('img').length > 0) {
-              cy.get('img').each(($img) => {
-                cy.wrap($img).scrollIntoView().should('be.visible');
+    cy.get('.article').within(($article) => {
 
-                expect($img[0].naturalWidth).to.be.greaterThan(0);
-                expect($img[0].naturalHeight).to.be.greaterThan(0);
-              });
-            }
-          });
+    if ($article.find('img').length > 0) {
+        cy.get('img').each(($img) => {
+        cy.wrap($img).scrollIntoView().should('be.visible');
+
+        expect($img[0].naturalWidth).to.be.greaterThan(0);
+        expect($img[0].naturalHeight).to.be.greaterThan(0);
+        });
+    }
+});
 
 ```
 
+Assign items to variables and use just like normal js.
+
 ```js
 
-const block = cy.get('#doc-content')
+    const block = cy.get('#doc-content')
       .find('div.notification.is-info.hint-box');
 
       block.should('be.visible');
@@ -377,18 +392,19 @@ const anchor = cy.get('a');
 
 ```
 
+Before and After, beforeEach, afterEach 
+
 ```js
+
 before(() => {
     cy.clearLocalStorage();
     cy.visit(examplePage);
   });
-```
 
-```js
-
- cy.get('#language-picker').should('not.exist');
 
 ```
+
+Search within a page element.
 
 ```js
 
@@ -401,13 +417,6 @@ const screenshot = cy.get('figure.screenshot').first();
       img.should('have.attr', 'alt', 'object model');
       cy.get('figcaption').contains('Figure 1: Sage 200 On Premise Architecture');
     });
-
-```
-
-```js
-
-cy.get('#searchTextBox').type(term);
-        cy.get('#searchForm').submit();
 
 ```
 
@@ -429,6 +438,17 @@ We can validate API requests to our backend services if we need to get an auth t
     })
 ```
 
+## Intercept requests made by components
+
+```js
+cy.intercept('GET', 'https://swapi.dev/api/people/1', {
+            statusCode: 200,
+            body: {
+              name: 'Peter Pan',
+            },
+          })
+```
+
 ## Clipboard 
 
 ```js
@@ -440,15 +460,6 @@ We can validate API requests to our backend services if we need to get an auth t
     });
 
 ```
-
-
-Example 1
-
-End to end testing, Reed.com, bbc.co.uk
-
-Example 2
-
-React components demo
 
 
 const { defineConfig } = require("cypress");
@@ -466,14 +477,6 @@ module.exports = defineConfig({
     },
   },
 });
-
-
-
-## Fake network requests
-
-
-
-## APIs
 
 
 ## Components 
@@ -535,6 +538,7 @@ it('Will call onClick function if no "canClick" prop is provided', () => {
 ```
 
 ## Spying 
+
 ```js
 
  const onChangeSpy = cy.spy().as('onChangeSpy')
