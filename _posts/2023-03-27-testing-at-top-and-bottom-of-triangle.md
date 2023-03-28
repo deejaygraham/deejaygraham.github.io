@@ -3,11 +3,13 @@ layout: post
 title: Testing at the Top and Bottom of the Triangle
 published: true
 categories: [code, javascript, presentations]
-thumbnail: img/thumbnails/notebook-420x255.png
+thumbnail: img/thumbnails/notebook-420x255.webp
 alttext: talk
 ---
 
 Here's a transcription of a talk that I am doing at Tech on Tyne on the 30th of March.
+
+https://romannurik.github.io/SlidesCodeHighlighter/
 
 
 ## Introduction 
@@ -567,6 +569,7 @@ cy.log(hello tech on the tyne)
 
 Component tests are new to Cypress since v10. They offer a way to test a small component of the application in isolation, 
 sandboxed, with as little cruft around it. It's a good way to flush out dependencies you didn't know you had in the application. 
+Runs in browser but doesn't require anything else to be running.
 
 Using cypress open you can get a number of configuration files created for you under the cypress folder. Tests go in the components 
 subfolder and the usual support and fixtures folders are there too.
