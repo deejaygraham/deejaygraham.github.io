@@ -85,7 +85,6 @@ better than before. This clearly needed some proper testing in place.
 I wrote the new version in 11ty and since I was already deeply involved in javascript, I decided to try extending that to using 
 cypress. This was with the notion that it probably wouldn't be any better than anything else we have tried. 
 
-
 ## NE Bytes 
 
 Finally, I run a .net developer meetup (NEBytes) and recently moved all the content from an super old fashioned wordpress 
@@ -103,7 +102,7 @@ where it is lowest to the top where it is highest.
 Its shape shows we have a lot of very simple unit tests/microtests at the base, giving us 
 wide coverage, slightly fewer integrated tests in the middle, and fewer still end to end application tests right at the top. 
 
-tests at the bottom of the triangle give fast, precise feedback, those at the top test for acceptability of the application, broader in scope, 
+Tests at the bottom of the triangle give fast, precise feedback, those at the top test for acceptability of the application, broader in scope, 
 slower, more complex.
 
 
@@ -137,11 +136,12 @@ Over many projects and many opportunities to try this over and over again, I hav
 
 I hope it's now clear why my talk is now testing at both ends of the triangle (but not the middle).
 
-
 ## Web Testing 
 
 Specifically I want to talk about web testing in this session, so I want to talk about using my favourite web testing tool 
 cypress. 
+
+-------------
 
 ## Cypress 
 
