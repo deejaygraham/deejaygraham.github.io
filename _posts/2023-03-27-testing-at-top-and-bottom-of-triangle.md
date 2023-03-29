@@ -18,6 +18,7 @@ Hi,
 
 Thanks everyone for being here. 
 
+Ask questions at any time.
 
 ## Who Likes Testing?
 
@@ -95,12 +96,15 @@ All this talk of testing and breaking things leads me on to...
 
 ## Test triangle
 
-This is the testing triangle or testing pyramid, that may be familiar to many of you. It's a metaphor for the types and proportions 
+This is the testing triangle or testing pyramid, that may be familiar to many of you (lots of different versions of it). It's a metaphor for the types and proportions 
 of tests we would expect in a project. It shows the degree of interconnectedness or integration running from zero at the bottom 
 where we do microtests to the top where the application is tested from the outside.
 
-Its shape is intended to show we will hae a lot of very simple unit tests/microtests at the base, giving us 
+Its shape is intended to show we will have a lot of very simple unit tests/microtests at the base, giving us 
 wide coverage, slightly fewer integrated tests in the middle, and fewer still end to end application tests right at the top. 
+
+We want to have a lot of tests which are quick to write, give us good feedback quickly, and are the lowest cost.
+We want to have relatively few test which are slow, complex, and more costly. 
 
 ## Microtests
 
@@ -134,7 +138,16 @@ those tests. For a longer rant about this, I recommend Joe Rainsberger's talk "I
 
 ## My Triangle
 
+First problem I see is that we don;t want to enforce the number of each kind of test, it depends on our application and the exact circumstances. 
+Of course we don't want to limit ourselves to say 100 unit tests and 5 ui tests just so we maintain a fictional ratio or a set number of each kind of test.
+So it's a guideline, not an overall test strategy. 
+
 Over many projects and many opportunities to try this over and over again, I have my own version of this triangle.
+I have two kinds of tests, 1 dev focused, fast, targetting specific qualities of the code so that we have huge confidence in it. The kinds of tests you want to 
+run each time you commit your code to source control.
+
+Second, tests that indicate how releaseable the product is. Does it hang together? Is it of sufficient quality. BDD and acceptance kinds of tests are
+ good candidates here. I've done this with Selenium but not yet gone that far with cypress (not felt the need).
 
 I hope it's now clear why my talk is now testing at both ends of the triangle (but not the middle).
 
