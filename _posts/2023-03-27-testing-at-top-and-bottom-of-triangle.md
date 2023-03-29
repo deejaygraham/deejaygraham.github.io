@@ -397,9 +397,9 @@ Before and After, beforeEach, afterEach
 ```js
 
 before(() => {
-    cy.clearLocalStorage();
-    cy.visit(examplePage);
-  });
+  cy.clearLocalStorage();
+  cy.visit(examplePage);
+});
 
 
 ```
@@ -418,6 +418,43 @@ const screenshot = cy.get('figure.screenshot').first();
       cy.get('figcaption').contains('Figure 1: Sage 200 On Premise Architecture');
     });
 
+```
+
+```js
+describe('Weather', () => {
+    beforeEach(() => {
+        cy.visit('https://bbc.co.uk/weather');
+      });
+
+    // before(() => {
+    //     cy.visit('weather');
+    //   });
+
+    it ('Has the correct title', () => {
+        cy.title().should('contain', 'BBC Weather');
+        cy.contains('UK Summary');
+    });
+
+    it('search can be refined by picking from a list', ()=> {
+        cy.get('#ls-c-search__input-label').type('Newcastle');
+        // how do we find this list?
+    });
+
+    it('Specific places give single results', ()=> {
+        // chain together
+        cy.get('#ls-c-search__input-label').type('Gosforth, Newcastle upon Tyne {enter}');
+        cy.contains('Gosforth');
+        cy.contains('rain');
+        cy.contains('Observations');
+        cy.contains('Humidity');
+        cy.contains('Visibility');
+        cy.contains('Pressure');
+
+        // contains a regional weather video
+        cy.get('.wr-c-video-forecast__video').scrollIntoView();
+    });
+
+});
 ```
 
 ## API requests 
@@ -480,6 +517,9 @@ module.exports = defineConfig({
 
 
 ## Components 
+
+https://github.com/deejaygraham/calendar
+
 
 ```js
 
@@ -566,8 +606,27 @@ cy.window().its('store').invoke('dispatch', {type: 'description', value: 'my sto
 
 cy.log(hello tech on the tyne)
 
+```js
+    it('Gets Luke Skywalker', () => {
 
+        cy.intercept('GET', 'https://swapi.dev/api/people/1', {
+            statusCode: 200,
+            body: {
+              name: 'Peter Pan',
+            },
+          })
 
+          
+        cy.request({
+          url: 'https://swapi.dev/api/people/1',
+          method: 'GET'
+        })
+          .its('body')
+          .should('deep.contain', {
+            name: 'Anakin Skywalker'
+          })
+      })
+```
 
 ## Component Testing
 
@@ -711,82 +770,73 @@ in the config or we can use the viewport command :
 Now we'll move onto the tests. Each one runs and we can see them in the editor, we can expand each one and step 
 through them to see before and after states. We can examine the DOM using dev tools and look at failures. 
 
+## Logging 
 
+Similar to console.log(args);
+
+```js
+
+cy.log('hello');
+
+```
+
+## Its and Invoke
+
+Get a Property, Call a function
+Example, get sessionStorage property of a window
+
+```js
+cy.window().its('sessionStorage');
+
+```
+
+Redux
+
+```js
+  
+  cy.window().its('store');
+
+```
+
+```js
+
+  cy.window().its('store').invoke('dispatch', {type: 'description', value: 'smol'});
+
+```
 
 ## Commands in Component.js
 
+inside support folder, there is a component.js file where we can add custom commands. Tidies up 
+some things you can do with its 
 
+E.g. 
 
-Slide 1: Introduction
+```js
 
-Brief overview of the importance of testing in web development
+// get redux store
+// e.g.
+//   cy.store()...
+Cypress.Commands.add('store', () => {
+  return cy.log('Redux - Store').window({ log: false }).its('store', { log: false });
+});
 
-Slide 2: The Testing Triangle
+// get state of current redux value (node) or entire state
+// const state = cy.store().getState();
+Cypress.Commands.add('getState', (node) => {
+  return node 
+    ? cy.log(`Redux - State[${node}]`).window({ log: false }).its('store', { log: false }).invoke('getState').its(node.toString()) 
+    : cy.log('Redux - State').window({ log: false }).its('store', { log: false }).invoke('getState');
+});
 
-Explanation of the "testing triangle" and how it represents the different levels of testing in web development
-Discussion of why it's important to test both the top and bottom of the triangle (user-facing features and underlying code)
+// dispatch a type and value object to the redux store
+// e.g.
+//   cy.store().dispatch({type: 'name', value: 'Alice'});
+Cypress.Commands.add('dispatch', (obj) => {
+    const { type, ...data } = obj;
+    return cy.log(`Redux - Dispatch: ${type}`, data)
+        .window({ log: false })
+        .its('store', { log: false })
+        .invoke('dispatch', obj);
+});
 
-Slide 16: Real-world Examples
-
-Presentation of real-world examples and case studies of successful Cypress testing
-Discussion of how these examples demonstrate the benefits of using Cypress for testing full web
-
-Slide 3: Setting Up Cypress
-
-Introduction to Cypress and its benefits for testing full web applications and React components
-Overview of how to install and set up Cypress for testing
-Discussion of the Cypress Dashboard and its benefits for monitoring test results
-
-Slide 4: Writing Tests
-
-Explanation of the basic structure and syntax of Cypress tests
-Overview of how to write tests for your applications
-
-Slide 11: End-to-end Testing
-
-Explanation of what end-to-end testing is and why it's important
-Overview of how to use Cypress to perform end-to-end testing
-
-Slide 5: Testing with the Cypress API
-
-Overview of the Cypress API and its key features
-Discussion of how to use the API to write tests for your applications
-
-Slide 6: Testing with React Components
-
-Explanation of how to test React components with Cypress
-Discussion of best practices for testing React components and maximizing test coverage
-
-Slide 7: Testing with the UI
-
-Overview of how to test user interfaces with Cypress
-Discussion of best practices for testing user interfaces and ensuring the quality of user experiences
-
-Slide 8: Testing with the Command Line Interface
-
-Explanation of how to run tests from the command line with Cypress
-Discussion of how to use the CLI to improve the efficiency and speed of your testing process
-
-Slide 9: Debugging Tests
-
-Overview of how to debug Cypress tests
-Explanation of how to use the Cypress debugger to identify and fix test failures
-
-Slide 10: Advanced Topics
-
-Discussion of advanced topics such as end-to-end testing, testing with CI/CD pipelines, and integrating with other testing frameworks
-Explanation of how to use these features to improve the efficiency and effectiveness of your testing process
-
-Slide 14: Debugging and Troubleshooting
-
-Overview of common issues that may arise when using Cypress
-Explanation of how to troubleshoot and resolve these issues
-
-Slide 15: Best Practices
-
-Overview of best practices for using Cypress for testing
-Discussion of how to write efficient and effective tests, optimize  test performance, and ensure the quality of your applications
-Lint
-
-
-
+```
