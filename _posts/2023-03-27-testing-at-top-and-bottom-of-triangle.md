@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing at the Top and Bottom of the Triangle
+title: Testing at Both Ends of the Triangle
 published: true
 categories: [code, javascript, presentations]
 thumbnail: img/thumbnails/notebook-420x255.webp
@@ -9,7 +9,8 @@ alttext: talk
 
 Here's a transcription of a talk that I am doing at Tech on the Tyne on the 30th of March.
 
-https://romannurik.github.io/SlidesCodeHighlighter/
+I use [Slides Code Highlighter](https://romannurik.github.io/SlidesCodeHighlighter/) to 
+take markdown code samples into keynote.
 
 
 ## Introduction 
