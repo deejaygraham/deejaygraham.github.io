@@ -58,6 +58,7 @@
 .title {
 	a {
 		color: $title-color;
+		transition: 0.3s;
 		&:hover {
 			color: $link-hover;
 		}
