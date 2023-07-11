@@ -11,7 +11,7 @@ alttext: powershell
 Accessing a certificate store from PowerShell is another one of those incantations that never 
 seems to stick in my head. Here are a selection of useful certificate snippets...
 
-## Find all certificates
+## Find All Certificates
 
 Here's the way to list out what's currently installed:
 
@@ -21,7 +21,7 @@ Get-ChildItem -Recurse cert:\CurrentUser\My
 
 ```
 
-## Find a specific thumbprint
+## Find a Specific Thumbprint
 
 And here's how to find a specific certificate by thumbprint:
 
@@ -39,13 +39,28 @@ Of course, sometimes we want to find a certificate *anywhere* it might be instal
 searching all through the cert store. This might be too much, depending on the number of certificates so here I have added 
 a filter where I know the thumbprint of the cert I am looking for.
 
-## Global find by thumbprint
+## Global Find by Thumbprint
 
 ```powershell
 
 Get-ChildItem -Path cert:\* -Recurse | Where-Object { $_.Thumbprint -eq '1A3B72F28ACE90E1EF98591BE8FEF41CB3D4AB63' }
 
 ```
+
+## Where ?
+
+Sometimes a certificate needs to be in the correct location to be found by software. If you've found a certificate, the PSPath 
+property tells you where it was installed.
+
+```powershell
+
+ $c = Get-ChildItem -Path cert:\* -Recurse | Where-Object { $_.Thumbprint -eq '1A3B72F28ACE90E1EF98591BE8FEF41CB3D4AB63' }
+
+```
+
+The output will look something like: `Microsoft.PowerShell.Security\Certificate::CurrentUser\My\1A3B72F28ACE90E1EF98591BE8FEF41CB3D4AB63`
+which shows it's installed under the current user's personal store.
+
 
 ## Uninstall by thumbprint
 
@@ -78,7 +93,7 @@ Import-PfxCertificate -FilePath $NewCertificatePath -CertStoreLocation 'Cert:\Cu
 
 ```
 
-## Thumbprint
+## Thumbprint from Pfx
 
 If we have the pfx file, we can get the thumbprint (useful for config files etc.) without the certificate being installed like this:
 
