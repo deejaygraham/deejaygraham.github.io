@@ -18,6 +18,10 @@ collections:
 defaults:
   - scope:
       path: ""
+    values: 
+      thumbnail: 'img/thumbnails/notebook-420x255.jpg'
+  - scope:
+      path: ""
       type: category
     values:
       layout: "category"
