@@ -6,7 +6,7 @@ repository: "deejaygraham/deejaygraham.github.io"
 
 # options
 permalink: /:year/:month/:day/:title/
-paginate: 18
+paginate: 36
 exclude: [make.cmd, build.sh, buildsite.msbuild, post.rb]
 #syntax-theme: prism-atom-dark
 
