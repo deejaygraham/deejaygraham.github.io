@@ -73,6 +73,7 @@ layout: index
     {% else %}
     <a class="pagination-previous" title="newer posts" disabled>Newer posts</a>
     {% endif %}
+    <span id="page-number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
     <a class="pagination-next" title="older posts" href="{{ paginator.next_page_path | replace: '//', '/' }}">Older posts</a>
     {% else %}
