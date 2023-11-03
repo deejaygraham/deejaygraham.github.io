@@ -7,8 +7,8 @@ thumbnail: "/img/thumbnails/cypress-420x255.png"
 alttext: cypress
 ---
 
-[Cypress](https://cypress.io) supports environment variables in the body of your tests but it's not super clear how to 
-import settings from an external source into Cypress and have them available to your tests.
+[Cypress](https://cypress.io) allows for greater flexibility in your tests by supporting environment variables to be accessed from a test 
+file but it's not super clear how to import settings from an external source into Cypress and have them available to your tests.
 
 ### Command Line
 
