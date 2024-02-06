@@ -8,7 +8,7 @@ hero: makers
 
 <p class="has-vertical-spacing">My name is Derek Graham and this is my personal blog.</p>
 
-<p class="has-vertical-spacing">I'm a Principal Software Developer working for a very popular business
+<p class="has-vertical-spacing">I'm a software Solutions Architect working for a very popular business
 software company in the North East of England. I can't be sure that the opinions 
 I have expressed here are my own so they <strong>definitely</strong> don't represent the views 
 of my employer.</p>
