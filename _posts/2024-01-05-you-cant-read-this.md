@@ -206,3 +206,113 @@ describe('Protected Content', () => {
 });
 
 ```
+
+### Refactor
+
+Once I'd got this working I refactored to make it slightly easier to understand (for me anyway). 
+
+Started with an interface to apply a modification to the text and also, if possible, undo it.
+
+```csharp
+
+interface IModifyJson
+{
+    string Do(string s);
+    string Undo(string s);
+}
+
+```
+
+Which means we can make a more general version of the Obfuscator class which looks 
+a bit simpler and pushes the implementation of each step into a separate class. 
+
+```csharp
+
+internal class Obfuscator
+{
+    private List<IModifyJson> _process = new List<IModifyJson>
+    {
+        new TextMinifier(),
+        new Base64Encoder()
+    };
+
+    public string Obfuscate(string plainTextJson)
+    {
+        string obfuscated = plainTextJson;
+
+        foreach(var modifier in _process)
+        {
+            obfuscated = modifier.Do(obfuscated);
+        }
+
+        return obfuscated;
+    }
+
+    public string DeObfuscate(string obfuscated)
+    {
+        string undone = obfuscated;
+
+        for (int i = _process.Count - 1; i >= 0; i--)
+        {
+            undone = _process[i].Undo(undone);
+        }
+
+        return undone;
+    }
+}
+
+```
+
+The minifier is nice and small, although the undo didn't seem to be useful so is 
+effectively a no-op.
+
+```csharp
+
+class TextMinifier : IModifyJson
+{
+    public string Undo(string s)
+    {
+        // can't be undone usefully
+        return s;
+    }
+
+    public string Do(string s)
+    {
+        if (String.IsNullOrEmpty(s)) return string.Empty;
+
+        var obj = JsonConvert.DeserializeObject(s);
+        return JsonConvert.SerializeObject(obj, Formatting.None);
+    }
+}
+
+```
+
+And in a similar way, the encoding is nice and self contained
+
+```csharp
+
+class Base64Encoder : IModifyJson
+{
+    private readonly Encoding _encoding = System.Text.Encoding.UTF8;
+
+    public string Undo(string s)
+    {
+        if (s.Contains("{")) return s;
+
+        var bytes = System.Convert.FromBase64String(s);
+        return _encoding.GetString(bytes);
+    }
+
+    public string Do(string s)
+    {
+        return Convert.ToBase64String(_encoding.GetBytes(s));
+    }
+}
+
+```
+
+This approach perhaps smells a little over-engineered but at the moment I'm not sure 
+how far to take the obfuscation so having a list of steps means they can be added, removed 
+and mixed around just by changing the order in the list. 
+
+
