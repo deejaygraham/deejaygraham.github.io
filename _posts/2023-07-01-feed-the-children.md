@@ -9,4 +9,4 @@ thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 
-The revolution that feed the children gets my support.
+The revolution that feeds the children gets my support.
