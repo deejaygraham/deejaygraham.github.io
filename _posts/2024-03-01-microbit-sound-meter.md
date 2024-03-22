@@ -1,4 +1,21 @@
+---
+layout: post
+title:  Microbit Sound Meter
+published: true
+categories: [code, microbit, python]
+---
 
+The new (to me) v2 of the microbit has a built-in microphone to allow it to "listen" to it's surroundings. 
+
+This could be really useful for some things and the first thing that came to mind for me was a sound level meter of the 
+kind that you see on hi-fis and sci-fi films featuring talking computers.
+
+The microbit microphone can return garbage on the first time it's called so here I discard the first reading before going 
+into a loop, reading a value, mapping it to one of five values representing five sound levels and displaying one of the 
+five carefully crafted bitmaps ;)
+
+The values from the microphone are between 0 and 255 as you might expect but I haven't been able to find any 
+spec on what that maps to in terms of dBm levels.
 
 ```python
 
