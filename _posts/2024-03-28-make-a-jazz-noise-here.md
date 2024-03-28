@@ -62,7 +62,7 @@ while True:
         note = format_note(note_name, octave, duration)
         music.play(note, wait=True)
 
-        if visualize[:
+        if visualize:
             display.set_pixel(x, y, 0)
 
 ```
