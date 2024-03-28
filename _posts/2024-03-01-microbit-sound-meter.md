@@ -12,7 +12,7 @@ kind that you see on hi-fis and sci-fi films featuring talking computers.
 
 The microbit microphone can return garbage on the first time it's called so here I discard the first reading before going 
 into a loop, reading a value, mapping it to one of five values representing five sound levels and displaying one of the 
-five carefully crafted bitmaps ;)
+five carefully crafted bitmaps ;). The microbit documentation mentions that there is a microbit.scale function that would do the same as my map_value function but I have had problems getting the ide to recognize that.
 
 The values from the microphone are between 0 and 255 as you might expect but I haven't been able to find any 
 spec on what that maps to in terms of dBm levels.
