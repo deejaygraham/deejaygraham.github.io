@@ -36,7 +36,7 @@ speed = 300
 def generate_random_strip(image, on_percent, stripe):
     for y in range(0, 5):
         on = random.randint(0, 100)
-        brightness = pixel_on if on <= on_percent else pixel)_off
+        brightness = pixel_on if on <= on_percent else pixel_off
         image.set_pixel(stripe, y, brightness)
         
     return image
