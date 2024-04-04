@@ -2,18 +2,40 @@
 
 describe('deployed site', () => {
 
-    it('contains favicon', () => {
-        cy.request('/favicon.ico');
+    context('images', () => {
+        it('contains favicon', () => {
+            cy.request('/favicon.ico');
+        });
+    
+        it('contains avatar images', () => {
+            cy.request('/img/avatar.jpg');
+            cy.request('/img/avatar.png');
+        });
+    
+        it('contains hero images', () => {
+            cy.request('/img/heroes/hero-secret-harbour.jpg');
+            cy.request('/img/heroes/makers-and-creators.jpg');
+        });
     });
 
-    it('contains avatar images', () => {
-        cy.request('/img/avatar.jpg');
-        cy.request('/img/avatar.png');
+    context('javascript', () => {
+        it('contains search scripts', () => {
+            cy.request('/js/search.js');
+            cy.request('/js/lunr.js');
+        });
     });
 
-    it ('contains hero images', () => {
-        cy.request('/img/heroes/hero-secret-harbour.jpg');
-        cy.request('/img/heroes/makers-and-creators.jpg');
+    context('fonts', () => {
+        it('contains fontawesome font', () => {
+            //cy.request('/fonts/fontawesome-webfont.eot');
+        });
+    });
+
+    context('feeds', () => {
+        it('contains xml feeds', () => {
+            cy.request('/rss.xml');
+            cy.request('/atom.xml');
+        });
     });
 });
   
