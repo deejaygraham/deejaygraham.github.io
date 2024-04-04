@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "bulma": "^1.0.0",
     "cypress": "^13.7.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
   }
 }
