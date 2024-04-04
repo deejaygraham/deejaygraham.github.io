@@ -21,7 +21,6 @@ describe('blog posts', () => {
         });
     });
 
-    // code samples contain the correct markup
 
     // footer
     // powered by
@@ -37,7 +36,6 @@ describe('blog posts', () => {
         });
 
         it('contains the correct date', () => {
-
             cy.get('#article-meta')
             .should('contain', '01 March 2024');
         });
@@ -58,6 +56,12 @@ describe('blog posts', () => {
             cy.get('.related-posts')
             .should('contain', 'Other posts tagged with #code');
         });
+
+        it('contains footer', () => {
+            cy.get('.footer')
+            .should('contain', 'Powered by');
+        });
+
     });
 });
   
