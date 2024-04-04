@@ -22,9 +22,6 @@ describe('blog posts', () => {
     });
 
     // code samples contain the correct markup
-    // tags 
-    // search bar
-    // other posts
 
     // footer
     // powered by
@@ -34,9 +31,32 @@ describe('blog posts', () => {
             cy.visit('/2024/03/01/microbit-sound-meter/');
         });
 
-        it('each post contains a date', () => {
+        it('contains the correct title', () => {
+            cy.get('h1.title')
+            .should('has.text', 'Microbit Sound Meter');
+        });
 
-            //cy.visit('/2024/03/01/microbit-sound-meter/');
+        it('contains the correct date', () => {
+
+            cy.get('#article-meta')
+            .should('contain', '01 March 2024');
+        });
+
+        it('contains the meta tags', () => {
+            cy.get('#article-meta')
+            .should('contain', 'code')
+            .should('contain', 'microbit')
+            .should('contain', 'python');
+        });
+
+        it('contains code sample', () => {
+            cy.get('.language-python')
+            .should('contain', 'from microbit import');
+        });
+
+        it('contains suggested posts', () => {
+            cy.get('.related-posts')
+            .should('contain', 'Other posts tagged with #code');
         });
     });
 });
