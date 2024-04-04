@@ -37,5 +37,11 @@ describe('deployed site', () => {
             cy.request('/atom.xml');
         });
     });
+
+    context('stylesheets', () => {
+        it('contains css', () => {
+            cy.request('/css/site.css');
+        });
+    });
 });
   
