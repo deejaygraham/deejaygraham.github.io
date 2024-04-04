@@ -43,5 +43,11 @@ describe('deployed site', () => {
             cy.request('/css/site.css');
         });
     });
+
+    context('downloads', () => {
+        it('contains download for ndifference installer', () => {
+            cy.request('/downloads/ndifference/NDifference.0.0.0.1.Installer.msi');
+        });
+    });
 });
   
