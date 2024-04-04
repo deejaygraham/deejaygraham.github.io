@@ -27,7 +27,7 @@ describe('deployed site', () => {
 
     context('fonts', () => {
         it('contains fontawesome font', () => {
-            //cy.request('/fonts/fontawesome-webfont.eot');
+            cy.request('/webfonts/fa-regular-400.woff');
         });
     });
 
