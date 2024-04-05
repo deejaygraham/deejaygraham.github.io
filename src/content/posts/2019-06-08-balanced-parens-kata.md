@@ -8,6 +8,7 @@ categories: [ code, deliberate-practice, tdd ]
 Here's a quick solution to the balanced parentheses kata. The problem statement is:
 
 <pre>
+{% raw %}
 Write a program to determine if the the parentheses (),
 the brackets [], and the braces {}, in a string are balanced.
 
@@ -23,6 +24,8 @@ For example:
 {}([]) is balanced
 
 {()}[[{}]] is balanced
+
+{% endraw %}
 </pre>   
 
 In a recent dojo we did some investigation of this, trying to find the best way to model the inner set of parentheses, maybe 
@@ -37,7 +40,7 @@ First pass looked like this with lots of repeated code in brace comparisons:
 
 ```python
 
-{% include code/python/balanced-parens-naive.py %}
+{ % include code/python/balanced-parens-naive.py %}
 
 ```
 
@@ -46,7 +49,7 @@ We can also neatly match up opening and closing pairs by using a dictionary.
 
 ```python
 
-{% include code/python/balanced-parens-kata.py %}
+{ % include code/python/balanced-parens-kata.py %}
 
 ```
 
@@ -59,6 +62,6 @@ don't match, that's an unbalanced case.
 
 ```python
 
-{% include code/python/balanced-parens-tests.py %}
+{ % include code/python/balanced-parens-tests.py %}
 
 ```

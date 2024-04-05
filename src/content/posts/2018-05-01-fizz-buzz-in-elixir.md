@@ -9,7 +9,7 @@ Here's the result of a recent junior dev coding dojo, tackling fizz buzz in a to
 
 ```elixir
 
-{% include code/elixir/fizzbuzz.exs %}
+{ % include code/elixir/fizzbuzz.exs %}
 
 ```
 

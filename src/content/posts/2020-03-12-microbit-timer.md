@@ -21,6 +21,6 @@ Once we get to the full time, we stop the timer and display a smiley face.
 
 ```python
 
-{% include code/python/microbit/microbit-timer.py %}
+{ % include code/python/microbit/microbit-timer.py %}
 
 ```

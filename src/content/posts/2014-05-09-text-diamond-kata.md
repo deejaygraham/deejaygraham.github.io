@@ -26,4 +26,4 @@ Here's a sample solution for the Text Diamond Kata that I'm using with
 This sample deliberately doesn't used recursion (the group is learning basic 
 algorithm handling), and is written in C# using MsTest as the test framework.
 
-{% gist 9806070 %}
+{ % gist 9806070 %}

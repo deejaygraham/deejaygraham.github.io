@@ -15,7 +15,7 @@ how far away they are from it. The "game" ends when they dig up the block.
 
 ```python
 
-{% include code/python/minecraft/detectorists.py %}
+{ % include code/python/minecraft/detectorists.py %}
 
 ```
 

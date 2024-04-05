@@ -22,7 +22,7 @@ alarm, display a message, whatever. Something like this:
 
 ```python
 
-{% include code/python/microbit/burglar-alarm.py %}
+{ % include code/python/microbit/burglar-alarm.py %}
 
 ```
 
@@ -50,7 +50,7 @@ knows what the outside light is like without actually seeing it.
 
 ```python
 
-{% include code/python/microbit/psychic-nightlight-sensor.py %}
+{ % include code/python/microbit/psychic-nightlight-sensor.py %}
 
 ```
 
@@ -60,6 +60,6 @@ I also added a configurable darkness level so we can adjust for variations throu
 
 ```python
 
-{% include code/python/microbit/psychic-nightlight.py %}
+{ % include code/python/microbit/psychic-nightlight.py %}
 
 ```

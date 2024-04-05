@@ -19,7 +19,7 @@ I used obsidian blocks to build the creeper but could have used green wool or so
 
 ```python
 
-{% include code/python/minecraft/creeper.py %}
+{ % include code/python/minecraft/creeper.py %}
 
 ```
 

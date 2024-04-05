@@ -41,7 +41,7 @@ commands I added a watchdog 'hi' to send out to the car approximately every 5 se
 
 ```python
 
-{% include code/python/microbit/bitbot-rc3-1.py %}
+{ % include code/python/microbit/bitbot-rc3-1.py %}
 
 ```
 
@@ -72,7 +72,7 @@ inner while loop, stop the motors and wait for contact to be established again a
 
 ```python
 
-{% include code/python/microbit/bitbot-rc3-2.py %}
+{ % include code/python/microbit/bitbot-rc3-2.py %}
 
 ```
 

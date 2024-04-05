@@ -31,7 +31,7 @@ The last bit of formatting was to add in the colons between each row and that wa
 
 ```python
 
-{% include code/python/binary-clock.py %}
+{ % include code/python/binary-clock.py %}
 
 ```
 

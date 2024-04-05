@@ -35,7 +35,7 @@ PWM values range between 0 (off) and 1023 (on). For reverse mode, we need to pro
 
 ```python
 
-{% include code/python/microbit/bitbot-motor-1.py %}
+{ % include code/python/microbit/bitbot-motor-1.py %}
 
 ```
 
@@ -46,7 +46,7 @@ motors together, forward or reverse, or independently to turn in a circle.
 
 ```python
 
-{% include code/python/microbit/bitbot-motor-2.py %}
+{ % include code/python/microbit/bitbot-motor-2.py %}
 
 ```
 
@@ -59,6 +59,6 @@ The client program becomes a bit easier to read and understand
 
 ```python
 
-{% include code/python/microbit/bitbot-motor-3.py %}
+{ % include code/python/microbit/bitbot-motor-3.py %}
 
 ```

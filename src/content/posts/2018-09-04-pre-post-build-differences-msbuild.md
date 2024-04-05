@@ -16,7 +16,7 @@ correspondingly named files. Then we can use a diff tool to look at, well, the d
 
 ~~~xml
 
-{% include code/msbuild/build-snapshot.xml %}
+{ % include code/msbuild/build-snapshot.xml %}
 
 ~~~
 

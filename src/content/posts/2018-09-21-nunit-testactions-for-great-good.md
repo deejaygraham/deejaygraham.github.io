@@ -12,13 +12,13 @@ attribute that allows code to be run before and/or after all the tests in that t
 
 ~~~cs 
 
-{% include code/csharp/nunit-testaction-use.cs %}
+{ % include code/csharp/nunit-testaction-use.cs %}
 
 ~~~
 
 ~~~cs 
 
-{% include code/csharp/nunit-testaction-attribute.cs %}
+{ % include code/csharp/nunit-testaction-attribute.cs %}
 
 ~~~
 

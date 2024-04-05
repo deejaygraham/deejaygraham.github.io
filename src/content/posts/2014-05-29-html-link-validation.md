@@ -20,7 +20,7 @@ First of a little class to find all html-like files in a given folder and sub fo
 
 ~~~csharp
 
-{% include code/csharp/HtmlFileFinder.cs %}
+{ % include code/csharp/HtmlFileFinder.cs %}
 
 ~~~
 
@@ -28,7 +28,7 @@ Next we need an event to represent a link found in an html document:
 
 ~~~csharp
 
-{% include code/csharp/HyperLinkEventArgs.cs %}
+{ % include code/csharp/HyperLinkEventArgs.cs %}
 
 ~~~
 
@@ -37,7 +37,7 @@ event each time an anchor is found.
 
 ~~~csharp
 
-{% include code/csharp/AnchorFinder.cs %}
+{ % include code/csharp/AnchorFinder.cs %}
 
 ~~~
 
@@ -48,7 +48,7 @@ Finally the Main class to use all the preceding pieces.
 
 ~~~csharp
 
-{% include code/csharp/HtmlLinkValidation.cs %}
+{ % include code/csharp/HtmlLinkValidation.cs %}
 
 ~~~
 

@@ -45,7 +45,7 @@ Here's the finished code:
 
 ```python
 
-{% include code/python/microbit/tiny-asteroids.py %}
+{ % include code/python/microbit/tiny-asteroids.py %}
 
 ```
 

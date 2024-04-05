@@ -11,6 +11,6 @@ listing all natural numbers under 1000 and summing those divisible by 3 or 5. Ki
 
 ```elixir
 
-{% include code/elixir/euler-1.exs %}
+{ % include code/elixir/euler-1.exs %}
 
 ```

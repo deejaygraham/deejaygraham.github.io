@@ -42,7 +42,7 @@ separated from the others by a comma.
 
 ```txt
 
-{% include code/python/microbit/score.txt %}
+{ % include code/python/microbit/score.txt %}
 
 ```
 
@@ -65,7 +65,7 @@ include more microbits in the orchestra, the beauty of more sophisticated pieces
 
 ```python
 
-{% include code/python/microbit/load-music-file.py %}
+{ % include code/python/microbit/load-music-file.py %}
 
 ```
 

@@ -18,7 +18,7 @@ and didn't really care where. You could easily extend this code to report the fi
 
 ```powershell
 
-{% include code/powershell/Grep-Text.ps1 %}
+{ % include code/powershell/Grep-Text.ps1 %}
 
 ```
 

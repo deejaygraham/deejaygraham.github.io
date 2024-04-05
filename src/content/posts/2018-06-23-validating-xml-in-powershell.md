@@ -14,7 +14,7 @@ caused by document errors will show up as errors and break a build with an exit 
 
 ```powershell
 
-{% include code/powershell/Test-XML.ps1 %}
+{ % include code/powershell/Test-XML.ps1 %}
 
 ```
 

@@ -17,7 +17,7 @@ Stand on some grass and bounce!
 
 ```python
 
-{% include code/python/minecraft/misc-1.py %}
+{ % include code/python/minecraft/misc-1.py %}
 
 ```
 
@@ -25,7 +25,7 @@ Stand on some grass and bounce!
 
 ```python
 
-{% include code/python/minecraft/misc-2.py %}
+{ % include code/python/minecraft/misc-2.py %}
 
 ```
 
@@ -33,7 +33,7 @@ Stand on some grass and bounce!
 
 ```python
 
-{% include code/python/minecraft/misc-3.py %}
+{ % include code/python/minecraft/misc-3.py %}
 
 ```
 
@@ -41,7 +41,7 @@ Stand on some grass and bounce!
 
 ```python
 
-{% include code/python/minecraft/misc-4.py %}
+{ % include code/python/minecraft/misc-4.py %}
 
 ```
 
@@ -49,7 +49,7 @@ Stand on some grass and bounce!
 
 ```python
 
-{% include code/python/minecraft/misc-5.py %}
+{ % include code/python/minecraft/misc-5.py %}
 
 ```
 
@@ -57,6 +57,6 @@ Stand on some grass and bounce!
 
 ```python
 
-{% include code/python/minecraft/misc-6.py %}
+{ % include code/python/minecraft/misc-6.py %}
 
 ```

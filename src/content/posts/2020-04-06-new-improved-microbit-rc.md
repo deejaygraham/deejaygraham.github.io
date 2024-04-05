@@ -28,7 +28,7 @@ First, there were a couple of functions that weren't being used in the motor cla
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-1.py %}
+{ % include code/python/microbit/bitbot-rc2-1.py %}
 
 ```
 
@@ -47,7 +47,7 @@ indication, even though they don't blink they way they would in a real car.
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-2.py %}
+{ % include code/python/microbit/bitbot-rc2-2.py %}
 
 ```
 I also tried to improve the code for each of the light functions by adding a way of turning off each set of lights instead of creating two function for each 
@@ -76,7 +76,7 @@ on it's headlights automatically. This is where the ability to pass a flag to tu
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-3.py %}
+{ % include code/python/microbit/bitbot-rc2-3.py %}
 
 ```
 
@@ -104,7 +104,7 @@ with you' of this ad-hoc protocol.
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-4.py %}
+{ % include code/python/microbit/bitbot-rc2-4.py %}
 
 ```
 
@@ -115,7 +115,7 @@ drive the car. This loop is now a lot simpler than in earlier versions.
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-5.py %}
+{ % include code/python/microbit/bitbot-rc2-5.py %}
 
 ```
 
@@ -134,7 +134,7 @@ LED in the centre of the display and the matching heart icon after the handshake
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-6.py %}
+{ % include code/python/microbit/bitbot-rc2-6.py %}
 
 ```
 
@@ -149,7 +149,7 @@ I left the command variables in the handset program since this is a much smaller
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-7.py %}
+{ % include code/python/microbit/bitbot-rc2-7.py %}
 
 ```
 
@@ -165,7 +165,7 @@ I struggled a little with coming up with the right form of algorithm for which c
 
 ```python
 
-{% include code/python/microbit/bitbot-rc2-8.py %}
+{ % include code/python/microbit/bitbot-rc2-8.py %}
 
 ```
 

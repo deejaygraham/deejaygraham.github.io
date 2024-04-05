@@ -18,7 +18,7 @@ output syntax.
 
 ~~~xml
 
-{% include code/msbuild/add-tfs-tag.xml %}
+{ % include code/msbuild/add-tfs-tag.xml %}
 
 ~~~
 

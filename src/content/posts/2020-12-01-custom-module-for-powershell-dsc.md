@@ -24,7 +24,7 @@ guid etc. Note I am following the convention here of prefixing with a lower case
 cApplicationConfiguration.psd1
 ```powershell
 
-{% include code/powershell/DSC-Module.psd1 %}
+{ % include code/powershell/DSC-Module.psd1 %}
 
 ```
 
@@ -36,7 +36,7 @@ The .psm1 contains the actual code that does the work, with the class named for 
 cApplicationConfiguration.psm1
 ```powershell
 
-{% include code/powershell/DSC-Module.ps1 %}
+{ % include code/powershell/DSC-Module.ps1 %}
 
 ```
 
@@ -49,7 +49,7 @@ Here I'm importing the module into the configuration and using a dictionary to i
 dsc-example.ps1
 ```powershell
 
-{% include code/powershell/DSC-Module-Use.ps1 %}
+{ % include code/powershell/DSC-Module-Use.ps1 %}
 
 ```
 

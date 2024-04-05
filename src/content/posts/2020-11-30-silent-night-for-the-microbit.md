@@ -23,7 +23,7 @@ In normal microbit code:
 silent-night.py
 ```python
 
-{% include code/python/microbit/silent-night.py %}
+{ % include code/python/microbit/silent-night.py %}
 
 ```
 
@@ -32,7 +32,7 @@ silent-night.py
 silent-night.txt
 ```txt
 
-{% include code/python/microbit/silent-night.txt %}
+{ % include code/python/microbit/silent-night.txt %}
 
 ```
 

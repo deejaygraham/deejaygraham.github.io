@@ -23,6 +23,6 @@ Here's the less than elegant but working function followed by the tests we used 
 
 ```rust
 
-{% include code/rust/fizzbuzz.rs %}
+{ % include code/rust/fizzbuzz.rs %}
 
 ```

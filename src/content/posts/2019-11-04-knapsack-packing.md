@@ -17,7 +17,7 @@ effect that one day the objects are scattered throughout an area when they could
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-Box.cs %}
+{ % include code/csharp/Knapsack-Box.cs %}
 
 ~~~
 
@@ -25,7 +25,7 @@ effect that one day the objects are scattered throughout an area when they could
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-Bin.cs %}
+{ % include code/csharp/Knapsack-Bin.cs %}
 
 ~~~
 
@@ -47,7 +47,7 @@ For our purposes, I have set each container or bin to have a fixed size. Each bo
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-Setup.cs %}
+{ % include code/csharp/Knapsack-Setup.cs %}
 
 ~~~
 
@@ -58,7 +58,7 @@ containers or bins with a calculable wastage score.
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-PrintStats.cs %}
+{ % include code/csharp/Knapsack-PrintStats.cs %}
 
 ~~~
 
@@ -66,7 +66,7 @@ containers or bins with a calculable wastage score.
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-RandomAllocation.cs %}
+{ % include code/csharp/Knapsack-RandomAllocation.cs %}
 
 ~~~
 
@@ -84,7 +84,7 @@ of fit and create new bins as appropriate.
 
 ~~~csharp
 
-{% include code/csharp/Knapsack-GreedyAllocation.cs %}
+{ % include code/csharp/Knapsack-GreedyAllocation.cs %}
 
 ~~~
 

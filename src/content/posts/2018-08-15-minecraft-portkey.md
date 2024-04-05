@@ -15,7 +15,7 @@ teleports you to a matching location. How would we do this in Minecraft?
 
 ```python
 
-{% include code/python/minecraft/portkey.py %}
+{ % include code/python/minecraft/portkey.py %}
 
 ```
 

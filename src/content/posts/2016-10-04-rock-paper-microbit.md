@@ -69,6 +69,6 @@ Here's the finished code:
 
 ```python
 
-{% include code/python/microbit/rock-paper-scissors.py %}
+{ % include code/python/microbit/rock-paper-scissors.py %}
 
 ```

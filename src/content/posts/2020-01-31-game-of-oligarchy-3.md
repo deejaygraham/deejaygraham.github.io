@@ -26,7 +26,7 @@ animation distinct from the individual pairings.
 
 ```python
 
-{% include code/python/oligarchy-3.py %}
+{ % include code/python/oligarchy-3.py %}
 
 ```
 

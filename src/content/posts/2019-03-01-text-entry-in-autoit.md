@@ -20,7 +20,7 @@ hashes and bangs. This is where a nice typing function comes in handy.
 
 ```powershell
 
-{% include code/powershell/AutoitTyper.ps1 %}
+{ % include code/powershell/AutoitTyper.ps1 %}
 
 ```
 

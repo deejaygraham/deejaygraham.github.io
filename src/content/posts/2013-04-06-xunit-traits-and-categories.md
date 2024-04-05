@@ -29,7 +29,7 @@ I created a set of *traits* to be applied to fast and slow unit tests as appropr
 
 ```csharp
 
-{% include code/csharp/xUnitTraits.cs %}
+
 
 ```
 

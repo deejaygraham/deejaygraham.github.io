@@ -17,7 +17,7 @@ main jekyll folder, with a _posts subfolder, the post will be created there.
 
 ```csharp
 
-{% include code/csharp/Jekyll_GeneratePost.cs %}
+{ % include code/csharp/Jekyll_GeneratePost.cs %}
 
 ```
 

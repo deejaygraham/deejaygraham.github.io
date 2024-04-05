@@ -21,7 +21,7 @@ Note: Before getting into the rest of the is post, the no-function version of th
 
 ```python
 
-{% include code/python/mona-lisa-0.py %}
+{ % include code/python/mona-lisa-0.py %}
 
 ```
 
@@ -35,7 +35,7 @@ If we read from the bottom upwards we can flip the image along the horizontal ax
 
 ```python
 
-{% include code/python/mona-lisa-0a.py %}
+{ % include code/python/mona-lisa-0a.py %}
 
 ```
 
@@ -50,7 +50,7 @@ that noStroke is called so that we don't draw any boxes around our pixels.
 
 ```python
 
-{% include code/python/mona-lisa-1.py %}
+{ % include code/python/mona-lisa-1.py %}
 
 ```
 
@@ -64,7 +64,7 @@ painting some larger squares using the colour of the pixel at those random locat
 
 ```python
 
-{% include code/python/mona-lisa-2.py %}
+{ % include code/python/mona-lisa-2.py %}
 
 ```
 
@@ -96,7 +96,7 @@ in the screen image.
 
 ```python
 
-{% include code/python/mona-lisa-3.py %}
+{ % include code/python/mona-lisa-3.py %}
 
 ```
 

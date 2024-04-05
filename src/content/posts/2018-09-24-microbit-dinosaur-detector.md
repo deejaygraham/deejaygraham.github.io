@@ -18,7 +18,7 @@ start up and watch for a change.
 
 ```python
 
-{% include code/python/microbit/dinosaur-detector.py %}
+{ % include code/python/microbit/dinosaur-detector.py %}
 
 ```
 

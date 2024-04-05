@@ -28,7 +28,7 @@ create once the first time it's needed.
 
 ~~~csharp
 
-{% include code/csharp/CloudBlobClientFactory.cs %}
+{ % include code/csharp/CloudBlobClientFactory.cs %}
 
 ~~~
 
@@ -37,6 +37,6 @@ in one line.
 
 ~~~csharp
 
-{% include code/csharp/CloudBlobClientFactoryUse.cs %}
+{ % include code/csharp/CloudBlobClientFactoryUse.cs %}
 
 ~~~

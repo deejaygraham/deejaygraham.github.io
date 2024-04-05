@@ -23,7 +23,7 @@ specific program. Coincidentally, like one what I wrote :)
 
 ```csharp
 
-{% include code/csharp/Transpng.cs %}
+{ % include code/csharp/Transpng.cs %}
 
 ```
 

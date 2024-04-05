@@ -27,7 +27,7 @@ We'll start off with a simple beacon, broadcasting some text every half a second
 
 ```python
 
-{% include code/python/microbit/hot-beacon.py %}
+{ % include code/python/microbit/hot-beacon.py %}
 
 ```
 
@@ -40,7 +40,7 @@ signal strength.
 
 ```python
 
-{% include code/python/microbit/hot-receiver.py %}
+{ % include code/python/microbit/hot-receiver.py %}
 
 ```
 
@@ -63,7 +63,7 @@ Here's a simple beacon with a hard-coded id. Each beacon will need a different i
 
 ```python
 
-{% include code/python/microbit/simple-beacon.py %}
+{ % include code/python/microbit/simple-beacon.py %}
 
 ```
 
@@ -71,7 +71,7 @@ Alternatively, a slightly fancier beacon can be programmed with a dynamic id usi
 
 ```python
 
-{% include code/python/microbit/programmable-beacon.py %}
+{ % include code/python/microbit/programmable-beacon.py %}
 
 ```
 
@@ -91,7 +91,7 @@ order to make sense of the clues.
 
 ```python
 
-{% include code/python/microbit/treasure-hunt-beacon.py %}
+{ % include code/python/microbit/treasure-hunt-beacon.py %}
 
 ```
 
@@ -100,7 +100,7 @@ order to make sense of the clues.
 
 ```python
 
-{% include code/python/microbit/treasure-hunt-receiver.py %}
+{ % include code/python/microbit/treasure-hunt-receiver.py %}
 
 ```
 

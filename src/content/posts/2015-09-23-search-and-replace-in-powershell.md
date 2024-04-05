@@ -18,6 +18,6 @@ could be imported from a file as a command line param rather than being hard-cod
 
 ```powershell
 
-{% include code/powershell/Replace-ConfigSecrets.ps1 %}
+{ % include code/powershell/Replace-ConfigSecrets.ps1 %}
 
 ```

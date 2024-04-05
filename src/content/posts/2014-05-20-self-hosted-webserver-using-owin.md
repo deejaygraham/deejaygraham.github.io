@@ -22,7 +22,7 @@ to get up and running serving static files from a [console application](http://w
 
 ~~~csharp
 
-{% include code/csharp/OwinServer.cs %}
+{ % include code/csharp/OwinServer.cs %}
 
 ~~~
 

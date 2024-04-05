@@ -20,7 +20,7 @@ doesn't need an install so you can copy the folder to a machine where you need i
 
 ```powershell
 
-{% include code/powershell/AutoitNotepad-1.ps1 %}
+{ % include code/powershell/AutoitNotepad-1.ps1 %}
 
 ```
 

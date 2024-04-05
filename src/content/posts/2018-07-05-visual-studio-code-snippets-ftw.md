@@ -15,7 +15,7 @@ The original code was like this:
 
 ```csharp
 
-{% include code/csharp/ExpectedExceptionTest.cs %}
+{ % include code/csharp/ExpectedExceptionTest.cs %}
 
 ```
 
@@ -23,7 +23,7 @@ and it needed to look like this:
 
 ```csharp
 
-{% include code/csharp/AssertThatExceptionTest.cs %}
+{ % include code/csharp/AssertThatExceptionTest.cs %}
 
 ```
 
@@ -48,7 +48,7 @@ I used one of these built-in snippets as a template to create my own NUnit surro
 
 ```xml
 
-{% include code/csharp/NUnitAssertThrowsSnippet.xml %}
+{ % include code/csharp/NUnitAssertThrowsSnippet.xml %}
 
 ```
 

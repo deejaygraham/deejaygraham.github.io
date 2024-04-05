@@ -15,7 +15,7 @@ tropical fish to swim in.
 
 ```python
 
-{% include code/python/minecraft/fishtank.py %}
+{ % include code/python/minecraft/fishtank.py %}
 
 ```
 
@@ -26,6 +26,6 @@ Now that the fish are taken care of, the minecraft millionaire about town might 
 
 ```python
 
-{% include code/python/minecraft/swimming-pool.py %}
+{ % include code/python/minecraft/swimming-pool.py %}
 
 ```

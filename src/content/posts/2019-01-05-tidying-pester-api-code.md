@@ -18,7 +18,7 @@ Tests against an (imagined) rest API could look something like this
 
 ```powershell
 
-{% include code/powershell/Count-ApiFields-1.ps1 %}
+{ % include code/powershell/Count-ApiFields-1.ps1 %}
 
 ```
 
@@ -31,7 +31,7 @@ type I was expecting.
 
 ```powershell
 
-{% include code/powershell/Count-ApiFields-2.ps1 %}
+{ % include code/powershell/Count-ApiFields-2.ps1 %}
 
 ```
 
@@ -40,7 +40,7 @@ as the basis for another.
 
 ```powershell
 
-{% include code/powershell/Count-ApiFields-3.ps1 %}
+{ % include code/powershell/Count-ApiFields-3.ps1 %}
 
 ```
 
@@ -51,13 +51,13 @@ that could be used as part of an assertion.
 
 ```powershell
 
-{% include code/powershell/Count-ApiFields-4.ps1 %}
+{ % include code/powershell/Count-ApiFields-4.ps1 %}
 
 ```
 
 ```powershell
 
-{% include code/powershell/Count-ApiFields-5.ps1 %}
+{ % include code/powershell/Count-ApiFields-5.ps1 %}
 
 ```
 

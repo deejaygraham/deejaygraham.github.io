@@ -40,7 +40,7 @@ into an image.
 
 ```xml
 
-{% include code/msbuild/screenshots.xml %}
+{ % include code/msbuild/screenshots.xml %}
 
 ```
 

@@ -16,7 +16,7 @@ wood-y and leaf-y materials.
 
 ```python
 
-{% include code/python/minecraft/tree.py %}
+{ % include code/python/minecraft/tree.py %}
 
 ```
 
@@ -27,7 +27,7 @@ Square blocks of leaves aren't very realistic so we can trim off the square edge
 
 ```python
 
-{% include code/python/minecraft/tree-2.py %}
+{ % include code/python/minecraft/tree-2.py %}
 
 ```
 
@@ -38,7 +38,7 @@ Finally, we can make ourselves a nice orchard or small forest using some random 
 
 ```python
 
-{% include code/python/minecraft/tree-3.py %}
+{ % include code/python/minecraft/tree-3.py %}
 
 ```
 
@@ -66,7 +66,7 @@ change the leaf generation to work on a probability of a leaf block being at any
 
 ```python
 
-{% include code/python/minecraft/tree-4.py %}
+{ % include code/python/minecraft/tree-4.py %}
 
 ```
 

@@ -17,7 +17,7 @@ as a sort of magic wand.
 
 ```python
 
-{% include code/python/minecraft/flower-hits.py %}
+{ % include code/python/minecraft/flower-hits.py %}
 
 ```
 

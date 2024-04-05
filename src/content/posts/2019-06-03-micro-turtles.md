@@ -15,7 +15,7 @@ support, for the microbit.
 
 ```python
 
-{% include code/python/microbit/micro-turtle-1.py %}
+{ % include code/python/microbit/micro-turtle-1.py %}
 
 ```
 
@@ -24,7 +24,7 @@ a tiny 1 pixel square using dots that disappear when a new one appears:
 
 ```python
 
-{% include code/python/microbit/micro-turtle-2.py %}
+{ % include code/python/microbit/micro-turtle-2.py %}
 
 ```
 
@@ -32,6 +32,6 @@ Or we can use the pen to draw an outline around the screen from the top left cor
 
 ```python
 
-{% include code/python/microbit/micro-turtle-3.py %}
+{ % include code/python/microbit/micro-turtle-3.py %}
 
 ```

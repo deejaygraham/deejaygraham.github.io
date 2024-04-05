@@ -15,7 +15,7 @@ by SID so wrote the following cmdlet to conveniently query for the a user in a s
 GetUserSid.ps1
 ```powershell
 
-{% include code/powershell/GetUserSid.ps1 %}
+{ % include code/powershell/GetUserSid.ps1 %}
 
 ```
 
@@ -27,6 +27,6 @@ Conversely, given a user Sid (say from Get-ADUser), we can reconstruct the user 
 GetUserFromSid.ps1
 ```powershell
 
-{% include code/powershell/GetUserFromSid.ps1 %}
+{ % include code/powershell/GetUserFromSid.ps1 %}
 
 ```

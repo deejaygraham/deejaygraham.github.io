@@ -20,7 +20,7 @@ A better way to set the path is with a wildcard. The usual *.* includes everythi
 Zip.ps1
 ```powershell
 
-{% include code/powershell/CompressArchive.ps1 %}
+{ % include code/powershell/CompressArchive.ps1 %}
 
 ```
 
@@ -29,7 +29,7 @@ Unzipping a file is the reverse of the zip operation, the path is the zip file l
 UnZip.ps1
 ```powershell
 
-{% include code/powershell/ExpandArchive.ps1 %}
+{ % include code/powershell/ExpandArchive.ps1 %}
 
 ```
 

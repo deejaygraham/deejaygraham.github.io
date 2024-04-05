@@ -21,7 +21,7 @@ we need a way to signal that the game is over with. Our game loop and initial pl
 
 ```python
 
-{% include code/python/microbit/infection-1.py %}
+{ % include code/python/microbit/infection-1.py %}
 
 ```
 
@@ -38,7 +38,7 @@ looks like and the rules around transmitting it and contracting it.
 
 ```python
 
-{% include code/python/microbit/infection-2.py %}
+{ % include code/python/microbit/infection-2.py %}
 
 ```
 
@@ -53,7 +53,7 @@ Let's jump straight to the end and look at what death looks like.
 
 ```python
 
-{% include code/python/microbit/infection-3.py %}
+{ % include code/python/microbit/infection-3.py %}
 
 ```
 
@@ -67,7 +67,7 @@ need to check for this by asking if an received illness is contagious.
 
 ```python
 
-{% include code/python/microbit/infection-4.py %}
+{ % include code/python/microbit/infection-4.py %}
 
 ```
 
@@ -82,7 +82,7 @@ every time we do an incubate in the loop.
 
 ```python
 
-{% include code/python/microbit/infection-5.py %}
+{ % include code/python/microbit/infection-5.py %}
 
 ```
 
@@ -97,7 +97,7 @@ further.
 
 ```python
 
-{% include code/python/microbit/infection-6.py %}
+{ % include code/python/microbit/infection-6.py %}
 
 ```
 

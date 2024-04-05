@@ -14,7 +14,7 @@ for each type found.
 
 ```csharp
 
-{% include code/csharp/DecompileAssembly.cs %}
+{ % include code/csharp/DecompileAssembly.cs %}
 
 ```
 

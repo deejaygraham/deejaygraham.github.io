@@ -31,7 +31,7 @@ We can construct a piece of toast at a starting postion (x, y) and a speed.
 
 ```python
 
-{% include code/python/flying-toast.py %}
+{ % include code/python/flying-toast.py %}
 
 ```
 Each time through the processing draw loop, we move the sprite down and to the left using the speed value. 
@@ -60,7 +60,7 @@ in a similar way to the toast.
 
 ```python
 
-{% include code/python/flying-toaster.py %}
+{ % include code/python/flying-toaster.py %}
 
 ```
 
@@ -74,7 +74,7 @@ starting position for each sprite on the screen and the speed of each sprite.
 
 ```python
 
-{% include code/python/after-dark.py %}
+{ % include code/python/after-dark.py %}
 
 ```
 

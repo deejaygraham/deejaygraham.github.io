@@ -36,7 +36,7 @@ use print statements to pass the data back.
 
 ```python
 
-{% include code/python/microbit/microbit-repl-temp.py %}
+{ % include code/python/microbit/microbit-repl-temp.py %}
 
 ```
 
@@ -55,7 +55,7 @@ temperature.
 
 ```python
 
-{% include code/python/microbit/microbit-temp-sensor.py %}
+{ % include code/python/microbit/microbit-temp-sensor.py %}
 
 ```
 

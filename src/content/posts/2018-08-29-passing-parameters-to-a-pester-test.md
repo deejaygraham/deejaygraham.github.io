@@ -17,7 +17,7 @@ name value pairs passed as parameters to each test script.
 
 ```powershell
 
-{% include code/powershell/Pester-Parameters.ps1 %}
+{ % include code/powershell/Pester-Parameters.ps1 %}
 
 ```
 
@@ -29,7 +29,7 @@ and failing the build.
 
 ```powershell
 
-{% include code/powershell/Pester-Return.ps1 %}
+{ % include code/powershell/Pester-Return.ps1 %}
 
 ```
 
@@ -38,6 +38,6 @@ and processed by other standard tools.
 
 ```powershell
 
-{% include code/powershell/Pester-NUnit.ps1 %}
+{ % include code/powershell/Pester-NUnit.ps1 %}
 
 ```

@@ -17,7 +17,7 @@ resultant images were very pleasing and looked quite retro to the students.
 
 ```python
 
-{% include code/python/processing-shapes-1.py %}
+{ % include code/python/processing-shapes-1.py %}
 
 ```
 
@@ -30,7 +30,7 @@ of the top right corner and the bottom left corner.
 
 ```python
 
-{% include code/python/processing-shapes-2.py %}
+{ % include code/python/processing-shapes-2.py %}
 
 ```
 

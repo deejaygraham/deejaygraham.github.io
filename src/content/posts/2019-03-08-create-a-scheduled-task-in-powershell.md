@@ -24,7 +24,7 @@ work in three stages. We need:
 
 ```powershell
 
-{% include code/powershell/New-ScheduledTask.ps1 %}
+{ % include code/powershell/New-ScheduledTask.ps1 %}
 
 ```
 

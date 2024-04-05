@@ -24,7 +24,7 @@ do the job.
 
 ```csharp
 
-{% include code/csharp/OrderByDescendingExample.cs %}
+{ % include code/csharp/OrderByDescendingExample.cs %}
 
 ```
 

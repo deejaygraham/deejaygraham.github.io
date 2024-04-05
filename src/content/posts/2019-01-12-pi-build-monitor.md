@@ -39,7 +39,7 @@ right version here</a>.
 
 ```python
 
-{% include code/python/pi/blinkenlights.py %}
+{ % include code/python/pi/blinkenlights.py %}
 
 ```
 
@@ -57,6 +57,6 @@ turn on the other LED.
 
 ```python
 
-{% include code/python/pi/blinkenlights-build-monitor.py %}
+{ % include code/python/pi/blinkenlights-build-monitor.py %}
 
 ```

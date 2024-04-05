@@ -15,7 +15,7 @@ each project's build output to a minimal log.
 
 ~~~xml
 
-{% include code/msbuild/build-order.xml %}
+{ % include code/msbuild/build-order.xml %}
 
 ~~~
 

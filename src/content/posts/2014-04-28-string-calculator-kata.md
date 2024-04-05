@@ -11,6 +11,6 @@ in C# using NUnit as the test framework.
 
 ```csharp
 
-{% include code/csharp/StringCalculator.cs %}
+{ % include code/csharp/StringCalculator.cs %}
 
 ```

@@ -25,7 +25,7 @@ Linq makes this easy using the Zip and Average extension methods for IEnumerable
 
 ```csharp
 
-{% include code/csharp/DatePrediction.cs %}
+{ % include code/csharp/DatePrediction.cs %}
 
 ```
 

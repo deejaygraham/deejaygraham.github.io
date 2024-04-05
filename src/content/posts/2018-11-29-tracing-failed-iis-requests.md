@@ -12,7 +12,7 @@ Here's how I did it in code.
 
 ```csharp
 
-{% include code/csharp/TraceFailedIISRequests.cs %}
+{ % include code/csharp/TraceFailedIISRequests.cs %}
 
 ```
 

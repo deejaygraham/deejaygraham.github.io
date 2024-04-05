@@ -16,7 +16,7 @@ This is a snippet of a [Pester](https://pester.dev) test I wrote to make sure th
 
 ```powershell
 
-{% include code/powershell/Test-FileContent.ps1 %}
+{ % include code/powershell/Test-FileContent.ps1 %}
 
 ```
 

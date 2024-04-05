@@ -16,6 +16,6 @@ Here's a snippet to illustrate sending a piece of data to an event hub.
 
 ```csharp
 
-{% include code/csharp/SendToEventHub.cs %}
+{ % include code/csharp/SendToEventHub.cs %}
 
 ```

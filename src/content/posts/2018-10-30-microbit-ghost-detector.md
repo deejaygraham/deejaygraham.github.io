@@ -34,7 +34,7 @@ a temperature drop.
 
 ```python
 
-{% include code/python/microbit/ghost-detector.py %}
+{ % include code/python/microbit/ghost-detector.py %}
 
 ```
 

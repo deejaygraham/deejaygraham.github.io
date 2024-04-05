@@ -16,7 +16,7 @@ because ASP.Net is ignoring your lovely new code in favour of the version it has
 
 ```powershell
 
-{% include code/powershell/Remove-TempAspNet.ps1 %}
+{ % include code/powershell/Remove-TempAspNet.ps1 %}
 
 ```
 

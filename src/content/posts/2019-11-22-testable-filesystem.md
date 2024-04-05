@@ -45,7 +45,7 @@ So, an IFileSystem that can tell us if a high level directory exists as a way to
 
 ~~~csharp
 
-{% include code/csharp/TDD-FileSystem/IFileSystem-1.cs %}
+{ % include code/csharp/TDD-FileSystem/IFileSystem-1.cs %}
 
 ~~~
 
@@ -53,7 +53,7 @@ and a rough test-as-spec...
 
 ~~~csharp
 
-{% include code/csharp/TDD-FileSystem/IFileSystemSepcs-1.cs %}
+{ % include code/csharp/TDD-FileSystem/IFileSystemSepcs-1.cs %}
 
 ~~~
 
@@ -64,7 +64,7 @@ That looks like how we would want the simplest sort of use case and it's then ea
 
 ~~~csharp
 
-{% include code/csharp/TDD-FileSystem/LocalFileSystem-1.cs %}
+{ % include code/csharp/TDD-FileSystem/LocalFileSystem-1.cs %}
 
 ~~~
 

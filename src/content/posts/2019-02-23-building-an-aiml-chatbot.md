@@ -16,7 +16,7 @@ with the AIMLBot binary.
 
 ```csharp
 
-{% include code/csharp/AIMLBot.cs %}
+{ % include code/csharp/AIMLBot.cs %}
 
 ```
 

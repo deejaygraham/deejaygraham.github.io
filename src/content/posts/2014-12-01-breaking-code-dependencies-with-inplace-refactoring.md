@@ -36,13 +36,13 @@ that cannot be unit tested.
 
 ```csharp
 
-{% include code/csharp/InplaceRefactor_GodClass.cs %}
+{ % include code/csharp/InplaceRefactor_GodClass.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/InplaceRefactor_GodMain.cs %}
+{ % include code/csharp/InplaceRefactor_GodMain.cs %}
 
 ```
 
@@ -92,7 +92,7 @@ frameworks are available and the principles will remain the same.
 
 ```csharp
 
-{% include code/csharp/InplaceRefactor_Fx.cs %}
+{ % include code/csharp/InplaceRefactor_Fx.cs %}
 
 ```
 
@@ -106,7 +106,7 @@ Then you can add characterisation or specific scenario tests to the class (here 
 
 ```csharp
 
-{% include code/csharp/InplaceRefactor_AttributedClass.cs %}
+{ % include code/csharp/InplaceRefactor_AttributedClass.cs %}
 
 ```
 
@@ -116,7 +116,7 @@ your "main" method like this :
 
 ```csharp
 
-{% include code/csharp/InplaceRefactor_TestMain.cs %}
+{ % include code/csharp/InplaceRefactor_TestMain.cs %}
 
 ```
 

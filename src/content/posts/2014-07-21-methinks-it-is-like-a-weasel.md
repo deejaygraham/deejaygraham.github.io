@@ -30,31 +30,31 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 ```csharp
 
-{% include code/csharp/Weasel_ICrossover_T.cs %}
+{ % include code/csharp/Weasel_ICrossover_T.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_IMutator_T.cs %}
+{ % include code/csharp/Weasel_IMutator_T.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_IPopulationFactory_T.cs %}
+{ % include code/csharp/Weasel_IPopulationFactory_T.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_IFitnessScore_T.cs %}
+{ % include code/csharp/Weasel_IFitnessScore_T.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_IMatchesTarget_T.cs %}
+{ % include code/csharp/Weasel_IMatchesTarget_T.cs %}
 
 ```
 
@@ -62,19 +62,19 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 ```csharp
 
-{% include code/csharp/Weasel_WeaselMutator.cs %}
+{ % include code/csharp/Weasel_WeaselMutator.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_WeaselPopulationFactory.cs %}
+{ % include code/csharp/Weasel_WeaselPopulationFactory.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_WeaselFitnessScore.cs %}
+{ % include code/csharp/Weasel_WeaselFitnessScore.cs %}
 
 ```
 
@@ -82,7 +82,7 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 ```csharp
 
-{% include code/csharp/Weasel_RandomExtensions.cs %}
+{ % include code/csharp/Weasel_RandomExtensions.cs %}
 
 ```
 
@@ -90,19 +90,19 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 ```csharp
 
-{% include code/csharp/Weasel_InitialConditionEventArgs_T.cs %}
+{ % include code/csharp/Weasel_InitialConditionEventArgs_T.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_FitnessProgressEventArgs_T.cs %}
+{ % include code/csharp/Weasel_FitnessProgressEventArgs_T.cs %}
 
 ```
 
 ```csharp
 
-{% include code/csharp/Weasel_FinalConditionEventArgs_T.cs %}
+{ % include code/csharp/Weasel_FinalConditionEventArgs_T.cs %}
 
 ```
 
@@ -110,7 +110,7 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 ```csharp
 
-{% include code/csharp/Weasel_GeneticAlgorithm_T.cs %}
+{ % include code/csharp/Weasel_GeneticAlgorithm_T.cs %}
 
 ```
 
@@ -118,7 +118,7 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 ```csharp
 
-{% include code/csharp/Weasel_Program.cs %}
+{ % include code/csharp/Weasel_Program.cs %}
 
 ```
 

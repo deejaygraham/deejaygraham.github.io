@@ -49,7 +49,7 @@ complete the circuit.
 
 ```python
 
-{% include code/python/microbit/digital-io-led.py %}
+{ % include code/python/microbit/digital-io-led.py %}
 
 ```
 
@@ -73,6 +73,6 @@ example where we cycle between green, red, amber and back to green, each LED has
 
 ```python
 
-{% include code/python/microbit/traffic-lights.py %}
+{ % include code/python/microbit/traffic-lights.py %}
 
 ```

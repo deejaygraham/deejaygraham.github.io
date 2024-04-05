@@ -22,7 +22,7 @@ pairs we are going to build. I use random to pick each player out of the unpaire
 
 ```python
 
-{% include code/python/oligarchy-draw-2.py %}
+{ % include code/python/oligarchy-draw-2.py %}
 
 ```
 

@@ -15,6 +15,6 @@ I came up with a similar idea to simulate a coin toss using shaking and showing 
 
 ```python
 
-{% include code/python/microbit/coin-flipper.py %}
+{ % include code/python/microbit/coin-flipper.py %}
 
 ```

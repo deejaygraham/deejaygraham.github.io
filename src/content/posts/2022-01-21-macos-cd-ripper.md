@@ -14,7 +14,7 @@ Starting with the script
 
 ```python
 
-{% include code/python/cd-ripper.py %}
+{ % include code/python/cd-ripper.py %}
 
 ```
 
@@ -22,7 +22,7 @@ and the .abcde.conf file in the home directory
 
 ```
 
-{% include code/python/abcde.conf %}
+{ % include code/python/abcde.conf %}
 
 ```
 

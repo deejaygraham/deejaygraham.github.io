@@ -21,7 +21,7 @@ built-in .Net goodness.
 
 ~~~csharp
 
-{% include code/csharp/LevenshteinDistance.cs %}
+{ % include code/csharp/LevenshteinDistance.cs %}
 
 ~~~
 

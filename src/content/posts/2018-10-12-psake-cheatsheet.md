@@ -21,7 +21,7 @@ The basic unit of execution in PSake is the Task:
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-1.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-1.ps1 %}
 
 ```
 
@@ -35,7 +35,7 @@ We run the task by invoking PSake (after Importing the module if we need to):
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-2.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-2.ps1 %}
 
 ```
 
@@ -51,7 +51,7 @@ your Tasks and their dependencies using the -docs switch:
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-3.ps1 %} 
+{ % include code/powershell/PSake-Cheatsheet-3.ps1 %} 
 
 ```
 
@@ -64,7 +64,7 @@ execution to honour each dependency statement.
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-4.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-4.ps1 %}
 
 ```
 
@@ -76,7 +76,7 @@ A default task can be run if nothing is specified from the command line.
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-5.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-5.ps1 %}
 
 ```
 
@@ -88,7 +88,7 @@ PSake can accept parameters that it makes available as variables in your tasks t
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-6.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-6.ps1 %}
 
 ```
 
@@ -100,7 +100,7 @@ A task can have more than one name.
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-7.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-7.ps1 %}
 
 ```
 
@@ -113,7 +113,7 @@ also check that a condition is met inside a task by using the Assert statement.
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-8.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-8.ps1 %}
 
 ```
 
@@ -125,7 +125,7 @@ PSake will skip a Task if the precondition is not met.
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-9.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-9.ps1 %}
 
 ```
 
@@ -138,7 +138,7 @@ by setting FormatTaskName with a string or a code block.
 
 ```powershell
 
-{% include code/powershell/PSake-Cheatsheet-10.ps1 %}
+{ % include code/powershell/PSake-Cheatsheet-10.ps1 %}
 
 ```
 

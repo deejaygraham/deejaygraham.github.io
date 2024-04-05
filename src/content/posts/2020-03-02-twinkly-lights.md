@@ -15,7 +15,7 @@ This sample uses randomisation to turn on pixels on the microbit display and the
 
 ```python
 
-{% include code/python/microbit/twinkly.py %}
+{ % include code/python/microbit/twinkly.py %}
 
 ```
 

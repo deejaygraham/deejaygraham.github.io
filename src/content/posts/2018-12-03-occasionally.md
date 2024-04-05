@@ -14,7 +14,7 @@ An occasional task runs as part of a while loop, single threaded whenever it fee
 
 ```csharp
 
-{% include code/csharp/OccasionalAction.cs %}
+{ % include code/csharp/OccasionalAction.cs %}
 
 ```
 
@@ -22,7 +22,7 @@ Tests confirm the shape of the client code I was shooting for:
 
 ```csharp
 
-{% include code/csharp/OccasionalActionTests.cs %}
+{ % include code/csharp/OccasionalActionTests.cs %}
 
 ```
 
@@ -31,7 +31,7 @@ And a collection of occasional tasks to round things off:
 
 ```csharp
 
-{% include code/csharp/OccasionalActions.cs %}
+{ % include code/csharp/OccasionalActions.cs %}
 
 ```
 

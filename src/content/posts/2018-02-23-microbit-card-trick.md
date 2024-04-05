@@ -37,7 +37,7 @@ are happy with. You will notice that when the card selection happens, it's immed
 
 ```python
 
-{% include code/python/microbit/mentalism-volunteer.py %}
+{ % include code/python/microbit/mentalism-volunteer.py %}
 
 ```
 
@@ -54,7 +54,7 @@ The robot code listens for a card selection and stores it away waiting to announ
 
 ```python
 
-{% include code/python/microbit/mentalism-robot.py %}
+{ % include code/python/microbit/mentalism-robot.py %}
 
 ```
 
@@ -67,7 +67,7 @@ The facilitator in the trick is the person holding everything together, introduc
 
 ```python
 
-{% include code/python/microbit/mentalism-facilitator.py %}
+{ % include code/python/microbit/mentalism-facilitator.py %}
 
 ```
 
