@@ -4,19 +4,20 @@ const posts = require("./src/_11ty/collections/posts.js");
 module.exports = function (eleventyConfig) {
     
   // collections
-  eleventyConfig.addCollection("posts", posts;
+  eleventyConfig.addCollection("posts", posts);
 
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");
 
   // passthrough copy
-  eleventyConfig.addPassthroughCopy("./src/assets/img/");
-  eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
+  eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
     
 return {
     dir: {
       input: "src/content",
+      layouts: '../_includes/layouts',
       output: '_site'
     },
     templateFormats: ["md", "njk", "html", ],
