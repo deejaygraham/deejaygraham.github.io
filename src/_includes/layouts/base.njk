@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{ title }}</title>
   </head>
   <body>
     {% include "partials/siteheader.njk" %}
-
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
     {% include "partials/sitefooter.njk" %}
   </body>
 </htnl>
