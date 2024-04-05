@@ -1,7 +1,6 @@
+node_modules
+
 _site/
 .sass-cache/
 *.db
-*.exe
-*.bak
 .DS_Store
-Gemfile.lock
