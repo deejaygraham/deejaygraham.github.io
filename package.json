@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
     "test": "npx cypress run --e2e --browser chrome"
   },
   "dependencies": {
