@@ -36,13 +36,19 @@ describe('home page', () => {
     it('contains list of posts', () => {
       cy.get('article')
       .should('have.length', 36);
+
+      cy.get('.post-summary').first().then(($p) => {
+        cy.wrap($p).get('header > .tile-tags');
+        cy.wrap($p).get('header > .tile-thumbnail');
+        cy.wrap($p).get('header > .title');
+      });
     });
   
     it('contains footer', () => {
       cy.get('.footer')
       .scrollIntoView();
 
-      cy.get('.footer > nav-item').should('have.length', 3);
+      cy.get('.footer .nav-item').should('have.length', 6);
     });
   });
   
