@@ -18,36 +18,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-
-07-2020
-Repo
-Maybe you've already noticed, I'm an eleventy js fan. It’s my answer to everything right now. Ok not everything, but, I mean, most of the time that’s the best way to go. Last week, my friend, who have a GitHub pages site told me she was having trouble with updating her Jekyll theme… She asked me if I could help her. Since she’s not going to update her website every day, not even every month, my first thought was… wait for it… Eleventy!
-Github pages is a free way to make a website based on a github repo. You can add a simple index.html file or use one of their jekyll theme. For the eleventy part, i am presuming that you already know eleventy js. If not go check it out.
-The first thing I did was to search on google if anyone had already tried to do it and checked what was possible.
-The most used (deploy key, actions and gh-pages)
-Create a local repo
-Create an eleventy structure.
-Tell github you don't want to use Jekyll by adding a .nojekyll empty file at the root of the project folder.
-Add a scripts command in your package.json file to run eleventy.
-Add a workflow file (actions script) so everytime you push your master branch it tells github do some stuff before publishing.
-Create a deploy key for your repo to use your action script.
-Ok! So, first parts are pretty easy, create a project folder and create an empty file called .nojekyll at the root of this project folder.
-Then in package.json file, add a script to build eleventy that you can use later inside your workflow file.
-package.json
-[...]
-"scripts": {
-  "build": "eleventy" },
-[...]
-Please note that you have to push your package.json AND package-lock.json files. If not, the deploy will fail.
-After that, you need to create a workflow file from the root of your project folder with this path .github/workflows/eleventy_build.yml (you can call the file whatever you want, only the path and extension matter). You can do this from github directly, click on your repo actions tabs then "set up a workflow yourself" link.
-eleventy_build.yml
-name: Eleventy Build
-
-on:
-  push:
-    branches:
-      - master
-      
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -58,8 +28,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-
-      - run: npm ci
 
       - run: npm run build
 
