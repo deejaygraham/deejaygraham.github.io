@@ -1,6 +1,6 @@
 ---
 title: projects
-layout: index
+layout: base.njk
 ---
 
 <header>
