@@ -1,6 +1,6 @@
 ---
 title: about d.j.graham
-layout: index
+layout: base.njk
 hero: makers
 ---
 
