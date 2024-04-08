@@ -18,7 +18,7 @@ return {
     dir: {
       input: "src/content",
       layouts: '../_includes/layouts',
-      output: '_site'
+      output: 'public'
     },
     templateFormats: ["md", "njk", "html", ],
     markdownTemplateEngine: "njk",
