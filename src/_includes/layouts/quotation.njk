@@ -1,17 +1,5 @@
-<!DOCTYPE hmtl>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+layout: base.njk
+---
 
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    <header>
-      <h1>{{ title }}</h1>
-    </header>
-    <main>
-      {{ content | safe }}
-    </main>
-  </body>
-</htnl>
+<article>{{ content | safe}}</article>
