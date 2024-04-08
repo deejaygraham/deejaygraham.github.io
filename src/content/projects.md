@@ -1,7 +1,7 @@
----
+- --
 title: projects
 layout: base.njk
----
+- --
 
 <header>
 	<h1 class="title">Things What I Have Made</h1>
