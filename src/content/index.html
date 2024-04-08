@@ -2,7 +2,7 @@
 title: d.j.graham's blog
 layout: base.njk
 ---
-
+{{ collections | log }}
 <ul>
     {%- for post in collections.post -%}
       <li>{{ post.data.title }}</li>
