@@ -17,8 +17,7 @@ module.exports = function (eleventyConfig) {
 return {
     dir: {
       input: "src/content",
-      layouts: '../_includes/layouts',
-      output: 'docs'
+      layouts: '../_includes/layouts'
     },
     templateFormats: ["md", "njk", "html", ],
     markdownTemplateEngine: "njk",
