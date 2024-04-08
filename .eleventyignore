@@ -4,4 +4,3 @@ _includes/**/*.*
 _layouts/**/*.*
 cypress/
 talks/
-src/content/**/*.md
