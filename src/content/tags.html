@@ -2,47 +2,16 @@
 title: deejaygraham - Blog Entries by Tag
 layout: base.njk
 - --
-{% assign sorted_cats = site.categories | sort %}
-
-{% assign tags_per_row = 10 %}
-{% assign tag_count = 0 %}
 
 <header>
     <h1 class="title is-size-1" id="top">Blog Entries by Tag</h1>
-
-{% for cat in sorted_cats %}
-    {% if tag_count == 0 %}
-    <nav class="level is-mobile tile-tags">
-        <div class="level-left">
-    {% endif %}
-            <div class="level-item">
-                <a title="go to posts tagged with &quot;{{ cat[0] }}&quot;" class="tag is-light" href="#{{ cat[0] }}">{{ cat[0] }}</a>
-            </div>
-    {% assign tag_count = tag_count | plus:1 %}
-    {% if tag_count >= tags_per_row %}
-        {% assign tag_count = 0 %}
-        </div>
-    </nav>    
-    {% endif %}
-    
-{% endfor %}
-{% if tag_count > 0 %}
-        </div>
-    </nav>    
-{% endif %}
 </header>
 
 
 <div class="content">
-{% for cat in sorted_cats %}
-    <div id="{{ cat[0] }}" class="has-vertical-spacing">
-      <h2 class="is-size-3">{{ cat[0] }}</h2>
-      <ul>
-    {% for post in cat[1]] %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-      </ul>
-      <p><a href="#top">Back to top</a></p>
-    </div>
-{% endfor %}
+    <ul>
+        {%- for post in collections.post -%}
+          <li>{{ post.data.title }}</li>
+        {%- endfor -%}
+    </ul>
 </div>
