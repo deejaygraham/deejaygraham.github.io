@@ -1,5 +1,6 @@
 node_modules
 
+cypress/screenshots/
 _site/
 .sass-cache/
 *.db
