@@ -1,8 +1,8 @@
----
+- --
 title: about d.j.graham
 layout: base.njk
 hero: makers
----
+- --
 
 <h1 class="is-size-1">Hey, Hi, Hello.</h1>
 
