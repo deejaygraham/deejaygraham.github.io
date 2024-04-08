@@ -1,7 +1,7 @@
----
+- --
 layout: index
 title: talks
----
+-- -
 
 <div class="content">
 
