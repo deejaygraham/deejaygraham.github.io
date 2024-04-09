@@ -16,14 +16,25 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
     
 return {
+    
     dir: {
       input: "src/content",
-      layouts: '../_includes/layouts'
+      inclludes: '../_includes',
+      layouts: '../_includes/layouts',
+      data: '../data'
     },
-    templateFormats: ["md", "njk", "html", ],
+
+    templateFormats: [
+      "md", 
+      "njk", 
+      "html", 
+      "liquid"
+    ],
+
     markdownTemplateEngine: "njk",
+    
     htmlTemplateEngine: "njk",
+    
     dataTemplateEngine: "njk",
-    html: true
   };
 };
