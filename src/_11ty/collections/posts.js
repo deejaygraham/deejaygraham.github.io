@@ -1,10 +1,8 @@
+const now = new Date();
+
 module.exports = function (collection) {
   return collection
     .getFilteredByGlob("./src/content/posts/*.md")
-    .sort((a, b) => {
-      let yearA = parseInt(a.data.year, 10);
-      let yearB = parseInt(b.data.year, 10);
-      return yearA - yearB;
-    })
+    ..filter((item) => item.data.draft !== true && item.date <= now)
     .reverse();
 }
