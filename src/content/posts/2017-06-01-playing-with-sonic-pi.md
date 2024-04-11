@@ -14,7 +14,7 @@ The first and simplest program you can write is a one liner to play a single not
 
 ```ruby
 
-{ % include code/ruby/sonicpi_1.rb %}
+{% include 'code/ruby/sonicpi_1.rb' %}
 
 ```
 
@@ -24,7 +24,7 @@ You can play two notes separated by small pause like this:
 
 ```ruby
 
-{ % include code/ruby/sonicpi_2.rb %}
+{% include 'code/ruby/sonicpi_2.rb' %}
 
 ```
 
@@ -41,7 +41,7 @@ Music is often about repetition so it's good to be able to repeat phrases and th
 
 ```ruby
 
-{ % include code/ruby/sonicpi_3.rb %}
+{% include 'code/ruby/sonicpi_3.rb' %}
 
 ```
 
@@ -49,7 +49,7 @@ Maybe not terribly exciting but we can move on from there to do scales:
 
 ```ruby
 
-{ % include code/ruby/sonicpi_4.rb %}
+{% include 'code/ruby/sonicpi_4.rb' %}
 
 ```
 
@@ -57,12 +57,12 @@ Maybe not terribly exciting but we can move on from there to do scales:
 
 ```ruby
 
-{ % include code/ruby/sonicpi_5.rb %}
+{% include 'code/ruby/sonicpi_5.rb' %}
 
 ```
 
 ```ruby
 
-{ % include code/ruby/sonicpi_6.rb %}
+{% include 'code/ruby/sonicpi_6.rb' %}
 
 ```

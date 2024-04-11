@@ -20,7 +20,7 @@ microbotchi if you will, in which the microbit 'sleeps' until it's woken up by s
 
 ```python
 
-{ % include code/python/microbit/microbotchi-1.py %}
+{% include 'code/python/microbit/microbotchi-1.py' %}
 
 ```
 
@@ -37,7 +37,7 @@ a morbid touch we'll make provision for it's eventual death when we exit the whi
 
 ```python
 
-{ % include code/python/microbit/microbotchi-2.py %}
+{% include 'code/python/microbit/microbotchi-2.py' %}
 
 ```
 
@@ -50,7 +50,7 @@ it will die on it's own. We don't want it to leak away too soon so I've put a de
 
 ```python
 
-{ % include code/python/microbit/microbotchi-3.py %}
+{% include 'code/python/microbit/microbotchi-3.py' %}
 
 ```
 
@@ -63,7 +63,7 @@ amount.
 
 ```python
 
-{ % include code/python/microbit/microbotchi-4.py %}
+{% include 'code/python/microbit/microbotchi-4.py' %}
 
 ```
 
@@ -78,7 +78,7 @@ that can be using gestures to interact.
 
 ```python
 
-{ % include code/python/microbit/microbotchi-4.py %}
+{% include 'code/python/microbit/microbotchi-4.py' %}
 
 ```
 
@@ -90,7 +90,7 @@ will wake it up for a while.
 
 ```python
 
-{ % include code/python/microbit/microbotchi-5.py %}
+{% include 'code/python/microbit/microbotchi-5.py' %}
 
 ```
 
@@ -102,7 +102,7 @@ we can do some animation around playing, eating and dying.
 
 ```python
 
-{ % include code/python/microbit/microbotchi-6.py %}
+{% include 'code/python/microbit/microbotchi-6.py' %}
 
 ```
 

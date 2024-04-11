@@ -14,7 +14,7 @@ well for simple applications where there isn't a lot of choice required for work
 
 ```powershell
 
-{ % include code/powershell/NaiveAutomation-1.ps1 %}
+{% include 'code/powershell/NaiveAutomation-1.ps1' %}
 
 ```
 
@@ -24,7 +24,7 @@ Occasionally, the shell implementation can get confused, in which case the alter
 
 ```powershell
 
-{ % include code/powershell/NaiveAutomation-2.ps1 %}
+{% include 'code/powershell/NaiveAutomation-2.ps1' %}
 
 ```
 

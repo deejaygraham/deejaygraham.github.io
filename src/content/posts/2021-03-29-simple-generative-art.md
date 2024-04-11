@@ -25,7 +25,7 @@ at least for the time being.
 
 ```python
 
-{ % include code/python/gen-art-1.py %}
+{% include 'code/python/gen-art-1.py' %}
 
 ```
 
@@ -43,7 +43,7 @@ we can talk about injecting some variation into our code and even select what pr
 
 ```python
 
-{ % include code/python/gen-art-2.py %}
+{% include 'code/python/gen-art-2.py' %}
 
 ```
 
@@ -59,7 +59,7 @@ introduce a variable which is the size of each tile. Moving from one tile to the
 
 ```python
 
-{ % include code/python/gen-art-3.py %}
+{% include 'code/python/gen-art-3.py' %}
 
 ```
 
@@ -90,7 +90,7 @@ The advantage of the function we created is that we can make the change in that 
 
 ```python
 
-{ % include code/python/gen-art-4.py %}
+{% include 'code/python/gen-art-4.py' %}
 
 ```
 

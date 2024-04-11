@@ -14,7 +14,7 @@ just so that the display would be bright enough.
 
 ```python
 
-{ % include code/python/microbit/binary-clock.py %}
+{% include 'code/python/microbit/binary-clock.py' %}
 
 ```
 

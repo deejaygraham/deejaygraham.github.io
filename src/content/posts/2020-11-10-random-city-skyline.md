@@ -21,7 +21,7 @@ screen.
 
 ```python
 
-{ % include code/python/skyline-1.py %}
+{% include 'code/python/skyline-1.py' %}
 
 ```
 
@@ -30,7 +30,7 @@ This line will carry on forever so it would be nice to reset it when we reach th
 
 ```python
 
-{ % include code/python/skyline-2.py %}
+{% include 'code/python/skyline-2.py' %}
 
 ```
 
@@ -44,7 +44,7 @@ Introducing some randomness into the height of the line as it crosses the screen
 
 ```python
 
-{ % include code/python/skyline-3.py %}
+{% include 'code/python/skyline-3.py' %}
 
 ```
 
@@ -58,7 +58,7 @@ In homeage to the Ben Gibbard song "Crooked Teeth" about a city skyline, if we f
 
 ```python
 
-{ % include code/python/skyline-4.py %}
+{% include 'code/python/skyline-4.py' %}
 
 ```
 
@@ -72,7 +72,7 @@ buildings we can see.
 
 ```python
 
-{ % include code/python/skyline-5.py %}
+{% include 'code/python/skyline-5.py' %}
 
 ```
 
@@ -88,7 +88,7 @@ As a final, final experiment I added another layer of buildings behind the main 
 
 ```python
 
-{ % include code/python/skyline-6.py %}
+{% include 'code/python/skyline-6.py' %}
 
 ```
 

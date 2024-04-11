@@ -13,6 +13,6 @@ of the OS.
 
 ```bat
 
-{ % include code/csharp/MsBuildMake.cmd %}
+{% include 'code/csharp/MsBuildMake.cmd' %}
 
 ```

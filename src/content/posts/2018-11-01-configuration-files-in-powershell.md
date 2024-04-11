@@ -17,7 +17,7 @@ generate it from a scratch script using a here string:
 
 ```powershell
 
-{ % include code/powershell/Create-TemplateConfig.ps1 %}
+{% include 'code/powershell/Create-TemplateConfig.ps1' %}
 
 ```
 
@@ -26,7 +26,7 @@ Then read it back in in the worker script and reference sub-objects using normal
 
 ```powershell
 
-{ % include code/powershell/Import-Config.ps1 %}
+{% include 'code/powershell/Import-Config.ps1' %}
 
 ```
 
@@ -41,7 +41,7 @@ For example, a data file may contain urls which differ according to the deployme
 
 ```powershell
 
-{ % include code/powershell/Create-TemplateConfig2.ps1 %}
+{% include 'code/powershell/Create-TemplateConfig2.ps1' %}
 
 ```
 
@@ -49,7 +49,7 @@ We can then get the current environment at runtime and use that to key the hasht
 
 ```powershell
 
-{ % include code/powershell/Import-Config2.ps1 %}
+{% include 'code/powershell/Import-Config2.ps1' %}
 
 ```
 
@@ -66,6 +66,6 @@ never worry about the two drifting apart and the tests breaking.
 
 ```powershell
 
-{ % include code/powershell/Import-Config3.ps1 %}
+{% include 'code/powershell/Import-Config3.ps1' %}
 
 ```

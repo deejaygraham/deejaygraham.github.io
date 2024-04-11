@@ -14,7 +14,7 @@ Here's a card class I came up with to model the suit and rank of an instance alo
 
 ```python
 
-{ % include code/python/cards-1.py %}
+{% include 'code/python/cards-1.py' %}
 
 ```
 
@@ -24,7 +24,7 @@ Next we need to collect the cards into a deck so we can order, shuffle, add and 
 
 ```python
 
-{ % include code/python/cards-2.py %}
+{% include 'code/python/cards-2.py' %}
 
 ```
 
@@ -50,7 +50,7 @@ For our deck of cards we want to be able to cut the cards into two stacks and pl
 
 ```python
 
-{ % include code/python/cards-3.py %}
+{% include 'code/python/cards-3.py' %}
 
 ```
 
@@ -60,6 +60,6 @@ Now if we implement the Si Stebbins ordering algorithm, we can cut the cards and
 
 ```python
 
-{ % include code/python/cards-4.py %}
+{% include 'code/python/cards-4.py' %}
 
 ```

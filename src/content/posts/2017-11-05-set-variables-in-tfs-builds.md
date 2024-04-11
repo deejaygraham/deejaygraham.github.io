@@ -23,7 +23,7 @@ First, setting an environment variable from MsBuild:
 
 ```xml
 
-{ % include code/msbuild/environment-variable.xml %}
+{% include 'code/msbuild/environment-variable.xml' %}
 
 ```
 
@@ -34,7 +34,7 @@ Include the task then call it from the running script like this.
 
 ```xml
 
-{ % include code/msbuild/set-environment-variable.xml %}
+{% include 'code/msbuild/set-environment-variable.xml' %}
 
 ```
 
@@ -43,7 +43,7 @@ command line, you have to pull a weird trick by writing to output with a special
 
 ```xml
 
-{ % include code/msbuild/tfs-variable.xml %}
+{% include 'code/msbuild/tfs-variable.xml' %}
 
 ```
 
@@ -55,7 +55,7 @@ Happily, that can also be hidden behind an inline task and called from a script:
 
 ```xml
 
-{ % include code/msbuild/set-tfs-variable.xml %}
+{% include 'code/msbuild/set-tfs-variable.xml' %}
 
 ```
 
@@ -63,7 +63,7 @@ You can also do the same thing in a PowerShell task in Tfs using Write-Host rath
 
 ```powershell
 
-{ % include code/powershell/Set-Variable.ps1 %}
+{% include 'code/powershell/Set-Variable.ps1' %}
 
 ```
 
@@ -73,7 +73,7 @@ Once we have created a variable, we can read it back in PowerShell as an environ
 
 ```powershell
 
-{ % include code/powershell/Get-Variable.ps1 %}
+{% include 'code/powershell/Get-Variable.ps1' %}
 
 ```
 

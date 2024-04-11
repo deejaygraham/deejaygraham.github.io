@@ -20,19 +20,19 @@ similar long-winded names to avoid namespace clashes when each file was included
 
 ```powershell
 
-{ % include code/powershell/PSake-Turtles-Include-1.ps1 %}
+{% include 'code/powershell/PSake-Turtles-Include-1.ps1' %}
 
 ```
 
 ```powershell
 
-{ % include code/powershell/PSake-Turtles-Include-2.ps1 %}
+{% include 'code/powershell/PSake-Turtles-Include-2.ps1' %}
 
 ```
 
 ```powershell
 
-{ % include code/powershell/PSake-Turtles-Scenario-1.ps1 %}
+{% include 'code/powershell/PSake-Turtles-Scenario-1.ps1' %}
 
 ```
 
@@ -47,19 +47,19 @@ task names from the calling scripts while still preserving the reuse of scripts 
 
 ```powershell
 
-{ % include code/powershell/PSake-Turtles-Include-3.ps1 %}
+{% include 'code/powershell/PSake-Turtles-Include-3.ps1' %}
 
 ```
 
 ```powershell
 
-{ % include code/powershell/PSake-Turtles-Include-4.ps1 %}
+{% include 'code/powershell/PSake-Turtles-Include-4.ps1' %}
 
 ```
 
 ```powershell
 
-{ % include code/powershell/PSake-Turtles-Scenario-2.ps1 %}
+{% include 'code/powershell/PSake-Turtles-Scenario-2.ps1' %}
 
 ```
 

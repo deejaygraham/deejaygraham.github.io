@@ -16,7 +16,7 @@ First the original version...
 
 ```python
 
-{ % include code/python/microbit/pixel-for-loop.py %}
+{% include 'code/python/microbit/pixel-for-loop.py' %}
 
 ```
 
@@ -26,7 +26,7 @@ bottom right.
 
 ```python
 
-{ % include code/python/microbit/pixel-list-comp-1.py %}
+{% include 'code/python/microbit/pixel-list-comp-1.py' %}
 
 ```
 
@@ -35,7 +35,7 @@ but in the opposite sense.
 
 ```python
 
-{ % include code/python/microbit/pixel-list-comp-2.py %}
+{% include 'code/python/microbit/pixel-list-comp-2.py' %}
 
 ```
 

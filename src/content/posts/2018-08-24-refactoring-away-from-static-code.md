@@ -15,7 +15,7 @@ before we have a chance to intervene for testing purposes.
 
 ```csharp
 
-{ % include code/csharp/static-logger-class.cs %}
+{% include 'code/csharp/static-logger-class.cs' %}
 
 ```
 
@@ -30,7 +30,7 @@ that class, forwarding those static calls to the instance we create in the stati
 
 ```csharp
 
-{ % include code/csharp/instance-logger.cs %}
+{% include 'code/csharp/instance-logger.cs' %}
 
 ```
 

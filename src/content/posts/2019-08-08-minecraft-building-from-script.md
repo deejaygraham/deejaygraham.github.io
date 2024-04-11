@@ -27,7 +27,7 @@ Here's the script:
 
 ```python
 
-{ % include code/python/minecraft/builder-1.py %}
+{% include 'code/python/minecraft/builder-1.py' %}
 
 ```
 
@@ -35,6 +35,6 @@ and an example script to flatten the ground, lay down some earth and grass prior
 
 ```
 
-{ % include code/python/minecraft/build.txt %}
+{% include 'code/python/minecraft/build.txt' %}
 
 ```

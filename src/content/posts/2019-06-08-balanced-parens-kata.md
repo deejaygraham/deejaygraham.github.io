@@ -40,7 +40,7 @@ First pass looked like this with lots of repeated code in brace comparisons:
 
 ```python
 
-{ % include code/python/balanced-parens-naive.py %}
+{% include 'code/python/balanced-parens-naive.py' %}
 
 ```
 
@@ -49,7 +49,7 @@ We can also neatly match up opening and closing pairs by using a dictionary.
 
 ```python
 
-{ % include code/python/balanced-parens-kata.py %}
+{% include 'code/python/balanced-parens-kata.py' %}
 
 ```
 
@@ -62,6 +62,6 @@ don't match, that's an unbalanced case.
 
 ```python
 
-{ % include code/python/balanced-parens-tests.py %}
+{% include 'code/python/balanced-parens-tests.py' %}
 
 ```

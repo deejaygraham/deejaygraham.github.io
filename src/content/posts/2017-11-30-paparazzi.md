@@ -12,6 +12,6 @@ Another small bit of code, similar to blinkenlights, that turns on a random pixe
 
 ```python
 
-{ % include code/python/microbit/paparazzi.py %}
+{% include 'code/python/microbit/paparazzi.py' %}
 
 ```

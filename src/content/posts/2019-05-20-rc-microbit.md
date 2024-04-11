@@ -26,7 +26,7 @@ made pressing a button or flattening the controller the command for 'stop'.
 
 ```python
 
-{ % include code/python/microbit/bitbot-rc-1.py %}
+{% include 'code/python/microbit/bitbot-rc-1.py' %}
 
 ```
 
@@ -37,7 +37,7 @@ check for a new command and react to it with directions.
 
 ```python
 
-{ % include code/python/microbit/bitbot-rc-2.py %}
+{% include 'code/python/microbit/bitbot-rc-2.py' %}
 
 ```
 

@@ -1,0 +1,5 @@
+<HelloWorld Person="Brian" Greeting="Hi!" >  
+	<Output TaskParameter="FullSentence" PropertyName="WhatWeWroteToTheLog" />
+</HelloWorld>
+
+<Message Text="We said $(WhatWeWroteToTheLog)" />

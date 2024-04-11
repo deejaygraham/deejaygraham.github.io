@@ -52,7 +52,7 @@ So for the snippet of music above, the score would work like this:
 
 ```txt
 
-{ % include code/python/microbit/mysterioso.txt %}
+{% include 'code/python/microbit/mysterioso.txt' %}
 
 ```
 

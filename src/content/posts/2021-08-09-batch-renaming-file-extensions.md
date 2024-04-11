@@ -13,7 +13,7 @@ Get-ChildItem works:)
 
 ```powershell
 
-{ % include code/powershell/Rename-Files.ps1 %}
+{% include 'code/powershell/Rename-Files.ps1' %}
 
 ```
 

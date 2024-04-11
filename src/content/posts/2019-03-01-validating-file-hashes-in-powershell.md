@@ -20,6 +20,6 @@ to the screen and using red for failures, green for each match and yellow for ne
 
 ```powershell
 
-{ % include code/powershell/Validate-Hash.ps1 %}
+{% include 'code/powershell/Validate-Hash.ps1' %}
 
 ```

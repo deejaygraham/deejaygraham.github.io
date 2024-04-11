@@ -32,7 +32,7 @@ So here, our first attempt with an empty board and a single block floating at th
 
 ```python
 
-{ % include code/python/microbit/tiny-tetris-01.py %}
+{% include 'code/python/microbit/tiny-tetris-01.py' %}
 
 ```
 
@@ -50,7 +50,7 @@ be sure we haven't dropped off the bottom of the screen.
 
 ```python
 
-{ % include code/python/microbit/tiny-tetris-02.py %}
+{% include 'code/python/microbit/tiny-tetris-02.py' %}
 
 ```
 
@@ -67,7 +67,7 @@ ownership to the board and create a new block back up at the top of the screen.
 
 ```python
 
-{ % include code/python/microbit/tiny-tetris-03.py %}
+{% include 'code/python/microbit/tiny-tetris-03.py' %}
 
 ```
 
@@ -81,7 +81,7 @@ a hole and we shouldn't remove it. If we do find a full row, we remove it and ad
 
 ```python
 
-{ % include code/python/microbit/tiny-tetris-04.py %}
+{% include 'code/python/microbit/tiny-tetris-04.py' %}
 
 ```
 
@@ -92,7 +92,7 @@ Notice that the incomplete rows don't "fall" down into the newly emptied rows so
 
 ```python
 
-{ % include code/python/microbit/tiny-tetris-05.py %}
+{% include 'code/python/microbit/tiny-tetris-05.py' %}
 
 ```
 
@@ -103,7 +103,7 @@ Finally, we need a way to get out of the game and show the score at the end. Her
 
 ```python
 
-{ % include code/python/microbit/tiny-tetris-06.py %}
+{% include 'code/python/microbit/tiny-tetris-06.py' %}
 
 ```
 

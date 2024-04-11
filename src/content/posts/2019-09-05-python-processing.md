@@ -29,7 +29,7 @@ Here you can set the screen size using specific pixel values or set it to full s
 
 ```python
 
-{ % include code/python/processing-setup.py %}
+{% include 'code/python/processing-setup.py' %}
 
 ```
 
@@ -41,7 +41,7 @@ In draw, you can set a background image, draw lines or any
 
 ```python
 
-{ % include code/python/processing-draw.py %}
+{% include 'code/python/processing-draw.py' %}
 
 ```
 
@@ -54,7 +54,7 @@ user interactions - mouse or keyboard - trigger two functions mousePressed() and
 
 ```python
 
-{ % include code/python/processing-mouse.py %}
+{% include 'code/python/processing-mouse.py' %}
 
 ```
 

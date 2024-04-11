@@ -23,7 +23,7 @@ and sends <code>Microsoft.ServiceBus.Messaging.BrokeredMessage</code>s using the
 
 ```csharp
 
-{ % include code/csharp/AzureServiceBusWriter.cs %}
+{% include 'code/csharp/AzureServiceBusWriter.cs' %}
 
 ```
 
@@ -39,7 +39,7 @@ class.
 
 ```csharp
 
-{ % include code/csharp/AzureServiceBusReader.cs %}
+{% include 'code/csharp/AzureServiceBusReader.cs' %}
 
 ```
 

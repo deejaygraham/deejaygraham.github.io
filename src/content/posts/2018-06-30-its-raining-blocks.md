@@ -12,7 +12,7 @@ A super simple rain simulator creates blocks at random positions in the sky and 
 
 ```python
 
-{ % include code/python/minecraft/rain.py %}
+{% include 'code/python/minecraft/rain.py' %}
 
 ```
 

@@ -14,7 +14,7 @@ before loading the new version into memory.
 
 ```powershell
 
-{ % include code/powershell/Import-DevModule.ps1 %}
+{% include 'code/powershell/Import-DevModule.ps1' %}
 
 ```
 

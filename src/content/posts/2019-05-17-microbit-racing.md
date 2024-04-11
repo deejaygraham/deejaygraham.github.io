@@ -20,7 +20,7 @@ column is number 4.
 
 ```python
 
-{ % include code/python/microbit/flea-race-1.py %}
+{% include 'code/python/microbit/flea-race-1.py' %}
 
 ```
 
@@ -28,7 +28,7 @@ Now we can race one flea across the screen.
 
 ```python
 
-{ % include code/python/microbit/flea-race-2.py %}
+{% include 'code/python/microbit/flea-race-2.py' %}
 
 ```
 
@@ -41,7 +41,7 @@ a little bit.
 
 ```python
 
-{ % include code/python/microbit/flea-race-3.py %}
+{% include 'code/python/microbit/flea-race-3.py' %}
 
 ```
 
@@ -63,7 +63,7 @@ fourth column by using the min function.
 
 ```python
 
-{ % include code/python/microbit/flea-race-4.py %}
+{% include 'code/python/microbit/flea-race-4.py' %}
 
 ```
 
@@ -76,7 +76,7 @@ So after we created a single flea, let’s create a collection and add the flea 
 
 ```python
 
-{ % include code/python/microbit/flea-race-5.py %}
+{% include 'code/python/microbit/flea-race-5.py' %}
 
 ```
 
@@ -85,7 +85,7 @@ Then we can expand our initial code to draw the fleas at their starting points.
 
 ```python
 
-{ % include code/python/microbit/flea-race-6.py %}
+{% include 'code/python/microbit/flea-race-6.py' %}
 
 ```
 
@@ -93,7 +93,7 @@ And change the main movement and drawing code to use a collection:
 
 ```python
 
-{ % include code/python/microbit/flea-race-7.py %}
+{% include 'code/python/microbit/flea-race-7.py' %}
 
 ```
 
@@ -103,7 +103,7 @@ descriptive names:
 
 ```python
 
-{ % include code/python/microbit/flea-race-8.py %}
+{% include 'code/python/microbit/flea-race-8.py' %}
 
 ```
 
@@ -125,7 +125,7 @@ We can use the flea object to store a chance value as well as the x and y coordi
 
 ```python
 
-{ % include code/python/microbit/flea-race-9.py %}
+{% include 'code/python/microbit/flea-race-9.py' %}
 
 ```
 
@@ -133,7 +133,7 @@ Now we can change the random code to use the new chance value:
 
 ```python
 
-{ % include code/python/microbit/flea-race-10.py %}
+{% include 'code/python/microbit/flea-race-10.py' %}
 
 ```
 
@@ -145,7 +145,7 @@ eleanor has the worst (but not impossible) chance of winning with only 1 chance 
 
 ```python
 
-{ % include code/python/microbit/flea-race-11.py %}
+{% include 'code/python/microbit/flea-race-11.py' %}
 
 ```
 

@@ -13,6 +13,6 @@ folders masquerading as *ITaskItem* objects.
 
 ```csharp
 
-{ % include code/csharp/ITaskItemExtensions.cs %}
+{% include 'code/csharp/ITaskItemExtensions.cs' %}
 
 ```

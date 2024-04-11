@@ -19,6 +19,6 @@ across the image, reading each pixel and building up a string in the correct for
 
 ```python
 
-{ % include code/python/microbit/old-timey-snapchat.py %}
+{% include 'code/python/microbit/old-timey-snapchat.py' %}
 
 ```

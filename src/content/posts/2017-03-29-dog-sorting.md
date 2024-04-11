@@ -16,7 +16,7 @@ identify by name, breed and age.
 
 ~~~csharp
 
-{ % include code/csharp/GroupBy-Dog.cs %}
+{% include 'code/csharp/GroupBy-Dog.cs' %}
 
 ~~~
 
@@ -24,7 +24,7 @@ and a list of dogs at random...
 
 ~~~csharp
 
-{ % include code/csharp/GroupBy-DogList.cs %}
+{% include 'code/csharp/GroupBy-DogList.cs' %}
 
 ~~~
 
@@ -39,7 +39,7 @@ compare items in the list. We do this with a custom type I've called DogKey.
 
 ~~~csharp
 
-{ % include code/csharp/GroupBy-DogKey.cs %}
+{% include 'code/csharp/GroupBy-DogKey.cs' %}
 
 ~~~
 
@@ -49,7 +49,7 @@ according to the comparision will be placed into the same group.
 
 ~~~csharp
 
-{ % include code/csharp/GroupBy-GroupByBreed.cs %}
+{% include 'code/csharp/GroupBy-GroupByBreed.cs' %}
 
 ~~~
 
@@ -58,7 +58,7 @@ Then actually implementing the grouping comes out into a single function call. W
 
 ~~~csharp
 
-{ % include code/csharp/GroupBy-GroupAndPrint.cs %}
+{% include 'code/csharp/GroupBy-GroupAndPrint.cs' %}
 
 ~~~
 

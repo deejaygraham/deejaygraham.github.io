@@ -18,7 +18,7 @@ moved about - hence the name of this example.
 
 ```python
 
-{ % include code/python/xmas-fireflies.py %}
+{% include 'code/python/xmas-fireflies.py' %}
 
 ```
 

@@ -17,7 +17,7 @@ very comfortable with in the .Net space but had no clue previously in ruby.
 
 ```ruby
 
-{ % include code/ruby/post.rb %}
+{% include 'code/ruby/post.rb' %}
 
 ```
 

@@ -18,7 +18,7 @@ Then we can set colour using an rgb tuple.
 
 ```python
 
-{ % include code/python/microbit/bitbot-neopixels-1.py %}
+{% include 'code/python/microbit/bitbot-neopixels-1.py' %}
 
 ```
 
@@ -26,7 +26,7 @@ We can set all pixels to the same colour easily too.
 
 ```python
 
-{ % include code/python/microbit/bitbot-neopixels-2.py %}
+{% include 'code/python/microbit/bitbot-neopixels-2.py' %}
 
 ```
 
@@ -35,7 +35,7 @@ so that turning off all LEDs is a good practice before changing which LEDs are s
 
 ```python
 
-{ % include code/python/microbit/bitbot-neopixels-3.py %}
+{% include 'code/python/microbit/bitbot-neopixels-3.py' %}
 
 ```
 
@@ -45,7 +45,7 @@ We can add this NeoPixel functionality to the BitBot vehicle so that we can have
 
 ```python
 
-{ % include code/python/microbit/bitbot-neopixels-4.py %}
+{% include 'code/python/microbit/bitbot-neopixels-4.py' %}
 
 ```
 
@@ -58,7 +58,7 @@ We can add this code into the [BitBot class]({ FIX % link _posts/2019-05-16-micr
 
 ```python
 
-{ % include code/python/microbit/bitbot-neopixels-5.py %}
+{% include 'code/python/microbit/bitbot-neopixels-5.py' %}
 
 ```
 

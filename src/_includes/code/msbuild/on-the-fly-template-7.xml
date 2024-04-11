@@ -1,0 +1,16 @@
+<ParameterGroup>
+	<Person ParameterType="System.String" Required="true" />
+	<Greeting ParameterType="System.String" Required="true" />
+	<FullSentence ParameterType="System.String" Output="true" />
+</ParameterGroup>
+
+<!-- More code here ... -->
+
+<Code Type="Fragment" Language="cs">
+	<![CDATA[
+		FullSentence = String.Format("{0} {1}" Greeting, Person);
+		Log.LogMessage(MessageImportance.Normal, FullSentence);
+	]]>
+</Code>
+
+

@@ -30,19 +30,19 @@ other end of the wire.
 
 ~~~csharp
 
-{ % include code/csharp/HttpClientClientCode.cs %}
+{% include 'code/csharp/HttpClientClientCode.cs' %}
 
 ~~~
 
 ~~~csharp
 
-{ % include code/csharp/FakeHttpMessageHandler.cs %}
+{% include 'code/csharp/FakeHttpMessageHandler.cs' %}
 
 ~~~
 
 ~~~csharp
 
-{ % include code/csharp/HttpClientTestCode.cs %}
+{% include 'code/csharp/HttpClientTestCode.cs' %}
 
 ~~~
 

@@ -13,6 +13,6 @@ think there's an old Nokia mobile phone ringing somewhere in the room.
 
 ```python
 
-{ % include code/python/microbit/nokia-theme.py %}
+{% include 'code/python/microbit/nokia-theme.py' %}
 
 ```

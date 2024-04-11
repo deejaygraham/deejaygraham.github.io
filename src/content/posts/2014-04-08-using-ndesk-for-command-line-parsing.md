@@ -22,7 +22,7 @@ command line:
 
 ```csharp
 
-{ % include code/csharp/NDeskCommandLineOptions.cs %}
+{% include 'code/csharp/NDeskCommandLineOptions.cs' %}
 
 ```
 
@@ -30,7 +30,7 @@ And here's the super simple code to parse out arguments into properties in the o
 
 ```csharp
 
-{ % include code/csharp/UsingNDesk.Options.cs %}
+{% include 'code/csharp/UsingNDesk.Options.cs' %}
 
 ```
 

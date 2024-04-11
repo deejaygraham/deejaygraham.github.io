@@ -22,7 +22,7 @@ From that post:
 
 ```powershell
 
-{ % include code/powershell/Secret-Azure-Tools.ps1 %}
+{% include 'code/powershell/Secret-Azure-Tools.ps1' %}
 
 ```
 

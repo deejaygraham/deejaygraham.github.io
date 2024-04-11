@@ -24,7 +24,7 @@ it reaches the outside of the canvas, it re-contracts and starts again.
 
 ```python
 
-{ % include code/python/perlin-noise-flower.py %}
+{% include 'code/python/perlin-noise-flower.py' %}
 
 ```
 

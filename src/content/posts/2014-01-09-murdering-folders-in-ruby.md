@@ -11,6 +11,6 @@ them unoccupied and unloved, I use this script to "tidy them up". By killing the
 
 ```ruby
 
-{ % include code/ruby/clean.rb %}
+{% include 'code/ruby/clean.rb' %}
 
 ```

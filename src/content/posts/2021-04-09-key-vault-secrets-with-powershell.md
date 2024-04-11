@@ -32,7 +32,7 @@ to create and delete too to show the range of features but in practice I would o
 AddSecretsToKeyVault.ps1
 ```powershell
 
-{ % include code/powershell/AddSecretsToKeyVault.ps1 %}
+{% include 'code/powershell/AddSecretsToKeyVault.ps1' %}
 
 ```
 
@@ -52,7 +52,7 @@ Each secret can then be read back, again as a secure string, given the name of t
 ReadSecretsFromKeyVault.ps1
 ```powershell
 
-{ % include code/powershell/ReadSecretsFromKeyVault.ps1 %}
+{% include 'code/powershell/ReadSecretsFromKeyVault.ps1' %}
 
 ```
 

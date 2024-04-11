@@ -1,0 +1,11 @@
+<UsingTask TaskName="HelloWorld" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+	<Task>
+		<Using Namespace="System"/>
+		<Code Type="Fragment" Language="cs">
+			<![CDATA[
+
+			]]>
+		</Code>
+	</Task>
+</UsingTask>
+

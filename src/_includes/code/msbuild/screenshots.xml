@@ -1,0 +1,35 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <PropertyGroup>
+    <PathToCpdf>"C:\bin\cpdf.exe"</PathToCpdf>
+    <PathToInkscape>"C:\Program Files (x86)\Inkscape\inkscape.exe"</PathToInkscape>
+    <PathToPdfToSvg>"C:\bin\pdf2svg.exe"</PathToPdfToSvg>
+    <ExportViaSvg>true</ExportViaSvg>
+  </PropertyGroup>
+
+  <Target Name="GenerateSinglePagePdfs">
+
+    <ItemGroup>
+      <Slides Include="$(MSBuildThisFileDirectory)*.pdf" />
+    </ItemGroup>
+
+    <Exec Command='$(PathToCpdf) -split %(Slides.Identity) -o %(Slides.Filename)%%%%.pdf' />
+
+  </Target>
+
+  <Target Name="GenerateImagesFromPdfs">
+
+    <ItemGroup>
+      <SingleSlides Include="$(MSBuildThisFileDirectory)*.pdf" />
+    </ItemGroup>
+
+    <Exec Condition="$(ExportViaSvg)" Command='$(PathToPdfToSvg) %(SingleSlides.Identity) "%(SingleSlides.Filename).svg" 1' ContinueOnError="true" />
+    <Exec Condition="$(ExportViaSvg)" Command='$(PathToInkscape) -f "%(SingleSlides.Filename).svg" -e "%(SingleSlides.Filename).png" ' ContinueOnError="true" />
+    <Exec Condition="!$(ExportViaSvg)" Command='$(PathToInkscape) %(SingleSlides.Identity) --export-png="%(SingleSlides.Filename).png"' ContinueOnError="true" />
+
+  </Target>
+
+  <Target Name="Build" DependsOnTargets="GenerateSinglePagePdfs;GenerateImagesFromPdfs" />
+
+
+</Project>

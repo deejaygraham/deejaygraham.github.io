@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+<Target Name="SnapshotBeforeBuild" BeforeTargets="BeforeBuild">
+
+	<PropertyGroup>
+		<PreBinariesDir>$(TargetDir)\</PreBinariesDir>
+		<SnapshotOutput>$(SolutionDir)\$(ProjectName).Pre.Snapshot.txt</SnapshotOutput>
+	</PropertyGroup>	
+
+	<ItemGroup>
+		<PreBinaries Include="$(PreBinariesDir)**\*.*" />
+	</ItemGroup>
+	
+	<WriteLinesToFile 
+		Lines="@(PreBinaries)" 
+		File="$(SnapshotOutput)" 
+		Encoding="Unicode" 
+		Overwrite="true"
+		/>
+</Target>
+
+<Target Name="SnapshotAfterBuild" AfterTargets="AfterBuild">
+
+	<PropertyGroup>
+		<PostBinariesDir>$(TargetDir)\</PostBinariesDir>
+		<SnapshotOutput>$(SolutionDir)\$(ProjectName).Post.Snapshot.txt</SnapshotOutput>
+	</PropertyGroup>	
+
+	<ItemGroup>
+		<PostBinaries Include="$(PostBinariesDir)**\*.*" />
+	</ItemGroup>
+	
+	<WriteLinesToFile 
+		Lines="@(PostBinaries)" 
+		File="$(SnapshotOutput)" 
+		Encoding="Unicode" 
+		Overwrite="true"
+		/>
+</Target>
+
+</Project>

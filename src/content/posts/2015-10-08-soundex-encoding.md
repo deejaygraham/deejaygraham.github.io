@@ -13,14 +13,14 @@ name on the internet and be reasonably sure to find them, even if you don't know
 
 ```csharp
 
-{ % include code/csharp/SoundexTests.cs %}
+{% include 'code/csharp/SoundexTests.cs' %}
 
 ```
 
 
 ```csharp
 
-{ % include code/csharp/Soundex.cs %}
+{% include 'code/csharp/Soundex.cs' %}
 
 ```
 

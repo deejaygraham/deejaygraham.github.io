@@ -17,7 +17,7 @@ shining fully on the face.
 
 ```python
 
-{ % include code/python/microbit/sunshine-detector.py %}
+{% include 'code/python/microbit/sunshine-detector.py' %}
 
 ```
 I am going to include a snippet like this in the auto driving car so that it will turn its headlights on when it starts getting dark. 

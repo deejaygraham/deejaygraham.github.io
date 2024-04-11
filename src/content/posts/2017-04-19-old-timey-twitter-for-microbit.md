@@ -20,6 +20,6 @@ I made an off-the-cuff comment that the example I had just written up on the boa
 
 ```python
 
-{ % include code/python/microbit/old-timey-twitter.py %}
+{% include 'code/python/microbit/old-timey-twitter.py' %}
 
 ```

@@ -17,7 +17,7 @@ We can assign a single value to more than one variable.
 
 ```python
 
-{ % include code/python/idioms-4.py %}
+{% include 'code/python/idioms-4.py' %}
 
 ```
 
@@ -28,7 +28,7 @@ comparisons together is much more natural for a single value.
 
 ```python
 
-{ % include code/python/idioms-1.py %}
+{% include 'code/python/idioms-1.py' %}
 
 ```
 
@@ -39,7 +39,7 @@ languages
 
 ```python
 
-{ % include code/python/idioms-2.py %}
+{% include 'code/python/idioms-2.py' %}
 
 ```
 
@@ -49,7 +49,7 @@ Testing if a value exists in a set of options, or for iterating through a set of
 
 ```python
 
-{ % include code/python/idioms-3.py %}
+{% include 'code/python/idioms-3.py' %}
 
 ```
 
@@ -57,6 +57,6 @@ Testing if a value exists in a set of options, or for iterating through a set of
 
 ```python
 
-{ % include code/python/idioms-5.py %}
+{% include 'code/python/idioms-5.py' %}
 
 ```

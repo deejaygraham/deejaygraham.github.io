@@ -15,7 +15,7 @@ from the actual build script.
 
 ~~~xml
 
-{ % include code/msbuild/on-the-fly-template-1.xml %}
+{% include 'code/msbuild/on-the-fly-template-1.xml' %}
 
 ~~~
 
@@ -25,7 +25,7 @@ Give it a name and fill in the basic boilerplate required by msbuild:
 
 ~~~xml
 
-{ % include code/msbuild/on-the-fly-template-2.xml %}
+{% include 'code/msbuild/on-the-fly-template-2.xml' %}
 
 ~~~
 
@@ -37,7 +37,7 @@ interesting;
 
 ~~~xml
 
-{ % include code/msbuild/on-the-fly-template-3.xml %}
+{% include 'code/msbuild/on-the-fly-template-3.xml' %}
 
 ~~~
 
@@ -48,7 +48,7 @@ task file. Then use it in a target.
 
 ~~~xml
 
-{ % include code/msbuild/on-the-fly-template-4.xml %}
+{% include 'code/msbuild/on-the-fly-template-4.xml' %}
 
 ~~~
 
@@ -64,7 +64,7 @@ ParameterGroup in the UsingTask.
 
 ~~~xml
 
-{ % include code/msbuild/on-the-fly-template-5.xml %}
+{% include 'code/msbuild/on-the-fly-template-5.xml' %}
 
 ~~~
 
@@ -72,7 +72,7 @@ and invoke it in the same way you would with built-in tasks:
 
 ~~~xml
 
-{ % include code/msbuild/on-the-fly-template-6.xml %}
+{% include 'code/msbuild/on-the-fly-template-6.xml' %}
 
 ~~~
 
@@ -84,7 +84,7 @@ c# syntax.
 
 ~~~xml
 
-{ % include code/msbuild/on-the-fly-template-7.xml %}
+{% include 'code/msbuild/on-the-fly-template-7.xml' %}
 
 ~~~
 
@@ -95,6 +95,6 @@ using dollar notation.
 
 ~~~
 
-{ % include code/msbuild/on-the-fly-template-8.xml %}
+{% include 'code/msbuild/on-the-fly-template-8.xml' %}
 
 ~~~

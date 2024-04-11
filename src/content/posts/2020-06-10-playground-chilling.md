@@ -63,7 +63,7 @@ Each time round the loop we calculate a new colour and update the pixels. The st
 
 ```python
 
-{ % include code/python/playground/mood-lights.py %}
+{% include 'code/python/playground/mood-lights.py' %}
 
 ```
 

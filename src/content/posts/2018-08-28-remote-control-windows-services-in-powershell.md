@@ -16,7 +16,7 @@ pool. Whether a machine is available to take builds from TFS is controlled by th
 
 ```powershell
 
-{ % include code/powershell/Remote-Service.ps1 %}
+{% include 'code/powershell/Remote-Service.ps1' %}
 
 ```
 I use -Status Stopped to stop each agent and -Status Running to restart.

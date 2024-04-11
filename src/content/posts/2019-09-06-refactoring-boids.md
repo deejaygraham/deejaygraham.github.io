@@ -22,7 +22,7 @@ Here's the original code from the processing website:
 
 ```java
 
-{ % include code/java/boids_original/boids_original.pde %}
+{% include 'code/java/boids_original/boids_original.pde' %}
 
 ```
 
@@ -47,7 +47,7 @@ In setup(), we set full screen, then create our initial flock (and we let the fl
 
 ```python
 
-{ % include code/python/boids-game.py %}
+{% include 'code/python/boids-game.py' %}
 
 ```
 
@@ -62,7 +62,7 @@ about running, drawing and addingBoid from the original version.
 
 ```python
 
-{ % include code/python/boids-flock-1.py %}
+{% include 'code/python/boids-flock-1.py' %}
 
 ```
 
@@ -74,7 +74,7 @@ never moves but just draws a black line from the original to its position to sho
 
 ```python
 
-{ % include code/python/boids-boid-1.py %}
+{% include 'code/python/boids-boid-1.py' %}
 
 ```
 
@@ -94,7 +94,7 @@ Here's a pretty straight rewrite of the original code from Java to Python and by
 
 ```python
 
-{ % include code/python/boids-boid-2.py %}
+{% include 'code/python/boids-boid-2.py' %}
 
 ```
 

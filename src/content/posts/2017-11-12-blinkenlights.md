@@ -14,7 +14,7 @@ in the background - like it's broadcasting on radio.
 
 ```python
 
-{ % include code/python/microbit/blinkenlights.py %}
+{% include 'code/python/microbit/blinkenlights.py' %}
 
 ```
 

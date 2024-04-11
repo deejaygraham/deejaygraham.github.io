@@ -21,7 +21,7 @@ Once this module is loaded, the Set-Location works for IIS as if it was a drive 
 
 ```powershell
 
-{ % include code/powershell/Iterating-IISAppPools.ps1 %}
+{% include 'code/powershell/Iterating-IISAppPools.ps1' %}
 
 ```
 
@@ -29,7 +29,7 @@ Config can be read, created or updated using the ItemProperties cmdlets and prov
 
 ```powershell
 
-{ % include code/powershell/Set-IISAppPoolRecycle.ps1 %}
+{% include 'code/powershell/Set-IISAppPoolRecycle.ps1' %}
 
 ```
 
@@ -43,12 +43,12 @@ Get-ChildItem works equally well for Web sites in IIS.
 
 ```powershell
 
-{ % include code/powershell/Stop-IISSites.ps1 %}
+{% include 'code/powershell/Stop-IISSites.ps1' %}
 
 ```
 
 ```powershell
 
-{ % include code/powershell/Start-IISSites.ps1 %}
+{% include 'code/powershell/Start-IISSites.ps1' %}
 
 ```

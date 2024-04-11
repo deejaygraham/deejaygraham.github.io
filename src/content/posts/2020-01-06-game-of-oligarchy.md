@@ -34,7 +34,7 @@ coding to denote how well they are doing. Bright green for lots of money, darker
 
 ```python
 
-{ % include code/python/oligarchy-1.py %}
+{% include 'code/python/oligarchy-1.py' %}
 
 ```
 
@@ -57,7 +57,7 @@ whether heads or tails was returned.
 
 ```python
 
-{ % include code/python/oligarchy-2.py %}
+{% include 'code/python/oligarchy-2.py' %}
 
 ```
 

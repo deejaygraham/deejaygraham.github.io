@@ -14,7 +14,7 @@ then creates the website (and deletes existing app pool and website if they alre
 
 ```powershell
 
-{ % include code/powershell/CreateIISWebsite.ps1 %}
+{% include 'code/powershell/CreateIISWebsite.ps1' %}
 
 ```
 

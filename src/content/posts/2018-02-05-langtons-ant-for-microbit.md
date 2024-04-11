@@ -15,7 +15,7 @@ there is an intelligence behind the process, guiding it.
 
 ```python
 
-{ % include code/python/microbit/langtons-ant.py %}
+{% include 'code/python/microbit/langtons-ant.py' %}
 
 ```
 

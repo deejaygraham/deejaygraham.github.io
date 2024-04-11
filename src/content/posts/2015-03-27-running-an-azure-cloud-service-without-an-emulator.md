@@ -42,7 +42,7 @@ into constructors.
 
 ```csharp
 
-{ % include code/csharp/AzureEmulator_IRoleSettings.cs %}
+{% include 'code/csharp/AzureEmulator_IRoleSettings.cs' %}
 
 ```
 
@@ -51,7 +51,7 @@ When can then create an `AzureRoleSettings` implementation that delegates to
 
 ```csharp
 
-{ % include code/csharp/AzureEmulator_AzureRoleSettings.cs %}
+{% include 'code/csharp/AzureEmulator_AzureRoleSettings.cs' %}
 
 ```
 
@@ -60,7 +60,7 @@ that uses a `Dictionary` to store name value pairs.
 
 ```csharp
 
-{ % include code/csharp/AzureEmulator_StubRoleSettings.cs %}
+{% include 'code/csharp/AzureEmulator_StubRoleSettings.cs' %}
 
 ```
 
@@ -72,6 +72,6 @@ name value pairs.
 
 ```csharp
 
-{ % include code/csharp/AzureEmulator_LocalRoleSettings.cs %}
+{% include 'code/csharp/AzureEmulator_LocalRoleSettings.cs' %}
 
 ```

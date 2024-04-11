@@ -33,7 +33,7 @@ When we see a difference in sensors we know we have hit an edge and need to corr
 
 ```python
 
-{ % include code/python/microbit/bitbot-linesensor-1.py %}
+{% include 'code/python/microbit/bitbot-linesensor-1.py' %}
 
 ```
 
@@ -44,7 +44,7 @@ mode and watch while it "feels" its way around any sort of track we can devise.
 
 ```python
 
-{ % include code/python/microbit/bitbot-linesensor-2.py %}
+{% include 'code/python/microbit/bitbot-linesensor-2.py' %}
 
 ```
 

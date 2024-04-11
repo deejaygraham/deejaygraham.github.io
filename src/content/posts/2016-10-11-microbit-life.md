@@ -41,7 +41,7 @@ So, what I have as a working solution can be seen below.
 
 ```python
 
-{ % include code/python/microbit/game-of-life.py %}
+{% include 'code/python/microbit/game-of-life.py' %}
 
 ```
 

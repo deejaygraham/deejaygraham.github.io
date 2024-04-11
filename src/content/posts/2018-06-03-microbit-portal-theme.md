@@ -16,7 +16,7 @@ I thought it would be fun to write a program to play <a href="https://www.jonath
 
 ```python
 
-{ % include code/python/microbit/portal-theme.py %}
+{% include 'code/python/microbit/portal-theme.py' %}
 
 ```
 

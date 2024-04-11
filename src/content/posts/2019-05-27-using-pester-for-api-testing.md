@@ -33,7 +33,7 @@ aren't repeating information or having to use methods not related to the task at
 
 ```powershell
 
-{ % include code/powershell/Pester-RestAPI-Module.psm1 %}
+{% include 'code/powershell/Pester-RestAPI-Module.psm1' %}
 
 ```
 
@@ -42,7 +42,7 @@ I can now define a smoke test script which we can run to set everything up prior
 
 ```powershell
 
-{ % include code/powershell/Pester-RestAPI-Start.ps1 %}
+{% include 'code/powershell/Pester-RestAPI-Start.ps1' %}
 
 ```
 
@@ -57,14 +57,14 @@ avoid bogging down the example tests in archaic dommains. You could use any numb
 
 ```powershell
 
-{ % include code/powershell/Pester-RestAPI-Luke.Tests.ps1 %}
+{% include 'code/powershell/Pester-RestAPI-Luke.Tests.ps1' %}
 
 ```
 
 
 ```powershell
 
-{ % include code/powershell/Pester-RestAPI-Films.Tests.ps1 %}
+{% include 'code/powershell/Pester-RestAPI-Films.Tests.ps1' %}
 
 ```
 

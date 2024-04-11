@@ -19,7 +19,7 @@ of the tool without the SDK is to create some registry keys. There are a few fla
 
 ```powershell
 
-{ % include code/powershell/EnableAssemblyBindingDebug.ps1 %}
+{% include 'code/powershell/EnableAssemblyBindingDebug.ps1' %}
 
 ```
 

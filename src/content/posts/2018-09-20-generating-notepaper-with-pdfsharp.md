@@ -10,7 +10,7 @@ easy to work with once the basics of the objects are understood. We need to crea
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-create-save.cs %}
+{% include 'code/csharp/pdf-create-save.cs' %}
 
 ~~~
 
@@ -19,7 +19,7 @@ The next obvious thing is to add some pages. Each page can have it's own size an
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-add-page.cs %}
+{% include 'code/csharp/pdf-add-page.cs' %}
 
 ~~~
 
@@ -31,7 +31,7 @@ print an A5 signature as two halves of a landscape A4 page. This meant I needed 
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-printable-area.cs %}
+{% include 'code/csharp/pdf-printable-area.cs' %}
 
 ~~~
 
@@ -39,7 +39,7 @@ Each kind of paper - graph, dotted, music manuscript, lined - implies an interfa
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-page-renderer.cs %}
+{% include 'code/csharp/pdf-page-renderer.cs' %}
 
 ~~~
 
@@ -47,7 +47,7 @@ So now we can treat a list of renderings as a group using a page generator.
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-page-generator.cs %}
+{% include 'code/csharp/pdf-page-generator.cs' %}
 
 ~~~
 
@@ -59,7 +59,7 @@ Finally, the implementation of each of the different types of renderer.
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-manuscript-renderer.cs %}
+{% include 'code/csharp/pdf-manuscript-renderer.cs' %}
 
 ~~~
 
@@ -69,7 +69,7 @@ Finally, the implementation of each of the different types of renderer.
  
 ~~~csharp 
 
-{ % include code/csharp/pdf-dotted-renderer.cs %}
+{% include 'code/csharp/pdf-dotted-renderer.cs' %}
 
 ~~~
 
@@ -79,7 +79,7 @@ Finally, the implementation of each of the different types of renderer.
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-lined-renderer.cs %}
+{% include 'code/csharp/pdf-lined-renderer.cs' %}
 
 ~~~
 
@@ -89,7 +89,7 @@ Finally, the implementation of each of the different types of renderer.
 
 ~~~csharp 
 
-{ % include code/csharp/pdf-graph-renderer.cs %}
+{% include 'code/csharp/pdf-graph-renderer.cs' %}
 
 ~~~
 

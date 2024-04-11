@@ -25,7 +25,7 @@ any particular cell by using get_pixel.
 
 ```python
 
-{ % include code/python/microbit/game-of-life-2.py %}
+{% include 'code/python/microbit/game-of-life-2.py' %}
 
 ```
 
@@ -48,7 +48,7 @@ work our way through the cells, then use display.show at the end to make this im
 
 ```python
 
-{ % include code/python/microbit/game-of-life-3.py %}
+{% include 'code/python/microbit/game-of-life-3.py' %}
 
 ```
 

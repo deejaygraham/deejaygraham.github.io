@@ -30,7 +30,7 @@ To help make this task of keeping both in sync a bit easier, I came up with the 
 Get-CompatibleChromeDriver.ps1
 ```powershell
 
-{ % include code/powershell/GetCompatibleChromeDriver.ps1 %}
+{% include 'code/powershell/GetCompatibleChromeDriver.ps1' %}
 
 ```
 

@@ -15,6 +15,6 @@ TFS server or Developer Studio.
 
 ```csharp
 
-{ % include code/csharp/MsBuildMostRecentFolder.cs %}
+{% include 'code/csharp/MsBuildMostRecentFolder.cs' %}
 
 ```

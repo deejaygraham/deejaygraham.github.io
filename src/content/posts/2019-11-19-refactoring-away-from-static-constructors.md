@@ -17,7 +17,7 @@ would look like this.
 
 ~~~csharp
 
-{ % include code/csharp/Static-Constructor.cs %}
+{% include 'code/csharp/Static-Constructor.cs' %}
 
 ~~~
 
@@ -36,7 +36,7 @@ initialization sequence and more opportunities to refactor the static code into 
 
 ~~~csharp
 
-{ % include code/csharp/Static-FactoryWrapper.cs %}
+{% include 'code/csharp/Static-FactoryWrapper.cs' %}
 
 ~~~
 

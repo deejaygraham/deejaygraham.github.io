@@ -14,7 +14,7 @@ it seems, can do pretty much the same job for .ps1 files. Here I wrote a simple 
 
 ```powershell
 
-{ % include code/powershell/Lint-Scripts.ps1 %}
+{% include 'code/powershell/Lint-Scripts.ps1' %}
 
 ```
 
@@ -24,7 +24,7 @@ We do this by creating a config file with ExcludeRules
 
 ```powershell
 
-{ % include code/powershell/Lint-Config.ps1 %}
+{% include 'code/powershell/Lint-Config.ps1' %}
 
 ```
 
@@ -33,6 +33,6 @@ and use it when we invoke.
 
 ```powershell
 
-{ % include code/powershell/Lint-Scripts-2.ps1 %}
+{% include 'code/powershell/Lint-Scripts-2.ps1' %}
 
 ```

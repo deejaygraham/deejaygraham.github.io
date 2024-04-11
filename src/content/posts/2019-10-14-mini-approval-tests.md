@@ -38,7 +38,7 @@ reflecting on the page object's gettable properties.
 
 ```csharp
 
-{ % include code/csharp/ApprovalTests-ObjectMetadata-1.cs %}
+{% include 'code/csharp/ApprovalTests-ObjectMetadata-1.cs' %}
 
 ```
 We also need a way to persist the snapshot so the ToString method gives us the simplest possible rendering. 
@@ -47,7 +47,7 @@ Conversely, if we render to a file, we need to be able to reconstruct so I added
 
 ```csharp
 
-{ % include code/csharp/ApprovalTests-ObjectMetadata-2.cs %}
+{% include 'code/csharp/ApprovalTests-ObjectMetadata-2.cs' %}
 
 ```
 
@@ -58,7 +58,7 @@ expected value from the original object and the actual value from the new object
 
 ```csharp
 
-{ % include code/csharp/ApprovalTests-Difference.cs %}
+{% include 'code/csharp/ApprovalTests-Difference.cs' %}
 
 ```
 
@@ -66,7 +66,7 @@ And the compare method so we can compare an existing "golden" image of an instan
 
 ```csharp
 
-{ % include code/csharp/ApprovalTests-Compare.cs %}
+{% include 'code/csharp/ApprovalTests-Compare.cs' %}
 
 ```
 
@@ -81,7 +81,7 @@ framework of choice to generate test errors. In this case, NUnit.
 
 ```csharp
 
-{ % include code/csharp/ApprovalTests-Assert.cs %}
+{% include 'code/csharp/ApprovalTests-Assert.cs' %}
 
 ```
 
@@ -93,7 +93,7 @@ all be wrapped up in a handy class called Approve so we can use it to approve an
 
 ```csharp
 
-{ % include code/csharp/ApprovalTests-Approve.cs %}
+{% include 'code/csharp/ApprovalTests-Approve.cs' %}
 
 ```
 I included an optional hint parameter to the Instance method so we can distinguish between difference scenarios for instances of the same type 

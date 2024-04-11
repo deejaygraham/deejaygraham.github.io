@@ -23,7 +23,7 @@ Write a PowerShell script like this to post to the webhook and you're done.
 
 ```powershell
 
-{ % include code/powershell/Post-MessageToTeams.ps1 %}
+{% include 'code/powershell/Post-MessageToTeams.ps1' %}
 
 ```
 

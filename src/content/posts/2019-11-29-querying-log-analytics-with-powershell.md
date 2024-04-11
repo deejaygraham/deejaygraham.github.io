@@ -22,7 +22,7 @@ blade in the portal, and away you go.
 Query-LogAnalytics.ps1
 ```powershell
 
-{ % include code/powershell/Query-LogAnalytics.ps1 %}
+{% include 'code/powershell/Query-LogAnalytics.ps1' %}
 
 ```
 
@@ -37,6 +37,6 @@ The AzureRm module is now obsolete and has been replaced with the new <a href="d
 AzQuery-LogAnalytics.ps1
 ```powershell
 
-{ % include code/powershell/AzQuery-LogAnalytics.ps1 %}
+{% include 'code/powershell/AzQuery-LogAnalytics.ps1' %}
 
 ```
