@@ -1,5 +1,0 @@
-Dir['**/*'] \
-	.select { |d| File.directory?(d) } \
-	.select { |d| (Dir.entries(d) - %w[ . .. ]).empty? } \
-	.each { |d| Dir.rmdir d }
-	

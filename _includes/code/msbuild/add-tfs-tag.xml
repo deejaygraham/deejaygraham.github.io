@@ -1,5 +1,0 @@
-
-<Message Importance="high" 
-    Text="##vso[build.addbuildtag]UnitTestsFailed" 
-    Condition="@(NUnitExitCode) gt; 0" 
-    />
