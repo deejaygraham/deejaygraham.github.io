@@ -1,0 +1,16 @@
+export default {
+  title: "invalid argument",
+  description: "a triumph of style over substance",
+  url: "https://deejaygraham.github.io",
+  baseUrl: "/",
+  author: "Derek Graham",
+  buildTime: new Date(),
+  permalink: "/:year/:month/:day/:title/",
+  paginate: "36",
+  email: "deejaygraham@gmail.com",
+  emaillink: "mailto:deejaygraham@gmail.com",
+  githuburl: "https://github.com/deejaygraham",
+  gisturl: "https://gist.github.com/deejaygraham",
+  linkedinurl: "https://uk.linkedin.com/in/derekjohngraham",
+  slideshareurl: "https://www.slideshare.net/deejaygraham",
+};
