@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
     <pubDate>{{ site.buildTime | dateFeed }}</pubDate>
     <lastBuildDate>{{ site.buildTime | dateFeed }}</lastBuildDate>
     <generator>Eleventy</generator>
-    {% for post in collections.blogposts | limit(10) %}
+    {% for post in collections.posts | limit(10) %}
       <item>
         <title>{{ post.data.title }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
