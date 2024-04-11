@@ -19,7 +19,7 @@ return {
     
     dir: {
       input: "src/content",
-      inclludes: '../_includes',
+      includes: '../_includes',
       layouts: '../_includes/layouts',
       data: '../data'
     },
