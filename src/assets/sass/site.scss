@@ -1,1 +1,9 @@
+// Set your brand colors
+
+
+// Override global Sass variables from the /utilities folder
+@use "../../../node_modules/bulma/sass/utilities" with (
+  $family-primary: '"Georgia", Times, serif'
+);
+
 @import "../../../node_modules/bulma/bulma.scss"
