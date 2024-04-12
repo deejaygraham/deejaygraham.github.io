@@ -5,7 +5,7 @@
 @use "../../../node_modules/bulma/sass/utilities" with (
   $family-primary: '"Georgia", Times, serif',
   $family-secondary: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, "Droid Sans", "Helvetica Neue", sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol',
-  $family-code: Menlo, Monaco, Consolas, 'Andale Mono', 'Courier New', monospace;
+  $family-code: 'Menlo, Monaco, Consolas, "Andale Mono", "Courier New", monospace';
 );
 
 @import "../../../node_modules/bulma/bulma.scss"
