@@ -1,7 +1,10 @@
 {
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve",
+    "sass": "sass --style=compressed src/assets/sass/site.scss _site/css/site.css",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass --watch",
+    "build": "npm run sass && @11ty/eleventy",
+    "start": "npm-run-all sass --parallel watch:*",
     "test": "npx cypress run --e2e --browser chrome"
   },
   "dependencies": {
@@ -10,6 +13,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "luxon": "^3.4.4"
+    "luxon": "^3.4.4",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.75.0"
   }
 }
