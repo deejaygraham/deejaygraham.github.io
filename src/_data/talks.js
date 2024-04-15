@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = [
   {
     title="no SOLID evidence",
     subtitle="NE Remote Programming Conference",
@@ -48,4 +48,4 @@ module.exports = {
     url="https://www.slideshare.net/deejaygraham/sketchnoting-for-developers-at-ddd-north-2015",
     thumbnail="/img/posts/talks/sketchnoting-for-developers.webp"
   }
-}
+]
