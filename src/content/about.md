@@ -1,4 +1,5 @@
 ---
+permalink: about/index.html
 layout: base.njk
 title: about 
 hero: makers
