@@ -1,4 +1,5 @@
 - --
+permalink: projects/index.html
 title: projects
 layout: base.njk
 - --
