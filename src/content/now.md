@@ -1,4 +1,5 @@
 - --
+permalink: about/index.html
 title: What I'm doing now
 layout: post
 - --
