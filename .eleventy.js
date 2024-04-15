@@ -31,7 +31,7 @@ return {
       input: "src/content",
       includes: '../_includes',
       layouts: '../_includes/layouts',
-      data: '../data'
+      data: 'src/_data'
     },
 
     templateFormats: [
