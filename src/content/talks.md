@@ -1,4 +1,5 @@
 ---
+permalink: talks/index.html
 layout: base.njk
 title: talks
 ---
