@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     name: "RSS",
     url: "/rss.xml",
