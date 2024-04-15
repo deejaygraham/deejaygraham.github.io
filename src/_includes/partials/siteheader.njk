@@ -1,1 +1,29 @@
-
+<!-- partials/siteheader -->
+<header class="header" role="banner">
+  <nav class="navbar" role="navigation" aria-label="main navigation" tabindex="-1">
+      <div class="container">
+          <div class="navbar-brand">
+              <a class="navbar-item has-background-white" title="{{ site.name }}" href="/">
+                  <img src="/img/avatar-small.webp" alt="{{ site.description }}" />
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </span>
+          </div>
+          <div id="navbarMenu"class="navbar-menu">
+              <div class="navbar-end">
+                  <a class="navbar-item" title="home" href="{{ site.url }}/">home</a>
+                  <a class="navbar-item" title="articles by tag" href="{{ site.url }}/tags">tags</a>
+                  <a class="navbar-item" title="all articles" href="{{ site.url }}/archive">archive</a>
+                  <a class="navbar-item" title="my projects" href="{{ site.url }}/projects">projects</a>
+                  <a class="navbar-item" title="my talks" href="{{ site.url }}/talks">talks</a>
+                  <a class="navbar-item" title="about me" href="{{ site.url }}/about">about</a>
+                  {% include search-box.html %}
+              </div>
+          </div>
+      </div>
+  </nav>
+</header>
+<!-- partials/siteheader -->
