@@ -14,10 +14,12 @@
     {% include "partials/meta.njk" %}
   </head>
   <body>
-    <header>
+    <header role="banner">
+<!-- brand -->
+<!-- nav -->
       <h1>{{ title }}</h1>
     </header>
-    <main class="main container" role="main" tablindex="-1">
+    <main class="main container" role="main" id="main" tablindex="-1">
       {{ content | safe }}
     </main>
 
