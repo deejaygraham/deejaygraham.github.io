@@ -17,6 +17,9 @@ function dateFeed(date) {
 /**
  * Format date: Luxon format string
  *
+ * use:
+ *  {{ "2021-08-06" | formatDate("DDD") }}
+ *  <time datetime="{{ post.date | formatDate('yyyy-MM-dd') }}">{{ post.date | formatDate("DDD", "fr") }}</time>
  * @param {Date} date - JS date
  * @param {String} format - Luxon format string
  * @param {String} locale - locale code
