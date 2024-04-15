@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   title: "invalid argument",
   description: "a triumph of style over substance",
   url: "https://deejaygraham.github.io",
