@@ -14,10 +14,11 @@
           </div>
           <div id="navbarMenu"class="navbar-menu">
               <div class="navbar-end">
+<!-- nav items -->
               {% for item in nav %}
                   <a class="navbar-item" title="{{ nav.navLabel }}" href="{{ site.url }}{{ nav.navUrl }}">{{ nav.navLabel }}</a>
               {% endfor %}
-              
+              <!-- /nav items -->
               {% include "partials/searchbox.njk" %}
               </div>
           </div>
