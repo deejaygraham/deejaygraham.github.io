@@ -14,13 +14,16 @@
           </div>
           <div id="navbarMenu"class="navbar-menu">
               <div class="navbar-end">
+              {% for item in nav %}
                   <a class="navbar-item" title="home" href="{{ site.url }}/">home</a>
                   <a class="navbar-item" title="articles by tag" href="{{ site.url }}/tags">tags</a>
                   <a class="navbar-item" title="all articles" href="{{ site.url }}/archive">archive</a>
                   <a class="navbar-item" title="my projects" href="{{ site.url }}/projects">projects</a>
                   <a class="navbar-item" title="my talks" href="{{ site.url }}/talks">talks</a>
                   <a class="navbar-item" title="about me" href="{{ site.url }}/about">about</a>
-                  {% include "partials/searchbox.njk" %}
+              {% endfor %}
+              
+              {% include "partials/searchbox.njk" %}
               </div>
           </div>
       </div>
