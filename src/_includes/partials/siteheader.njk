@@ -15,12 +15,7 @@
           <div id="navbarMenu"class="navbar-menu">
               <div class="navbar-end">
               {% for item in nav %}
-                  <a class="navbar-item" title="home" href="{{ site.url }}/">home</a>
-                  <a class="navbar-item" title="articles by tag" href="{{ site.url }}/tags">tags</a>
-                  <a class="navbar-item" title="all articles" href="{{ site.url }}/archive">archive</a>
-                  <a class="navbar-item" title="my projects" href="{{ site.url }}/projects">projects</a>
-                  <a class="navbar-item" title="my talks" href="{{ site.url }}/talks">talks</a>
-                  <a class="navbar-item" title="about me" href="{{ site.url }}/about">about</a>
+                  <a class="navbar-item" title="{{ nav.navLabel }}" href="{{ site.url }}{{ nav.navUrl }}">{{ nav.navLabel }}</a>
               {% endfor %}
               
               {% include "partials/searchbox.njk" %}
