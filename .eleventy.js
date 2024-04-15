@@ -28,10 +28,10 @@ module.exports = function (eleventyConfig) {
 return {
     
     dir: {
-      input: "src/content",
-      includes: '../_includes',
-      layouts: '../_includes/layouts',
-      data: 'src/_data'
+      input: "src",
+      includes: '_includes',
+      layouts: '_includes/layouts',
+      data: '_data'
     },
 
     templateFormats: [
