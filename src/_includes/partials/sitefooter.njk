@@ -1,4 +1,20 @@
 <footer class="footer">
+  <div class="content has-text-centered">
+    {% for item in socialmedia %}
+{# include fa classes  <i class="fas fa-3x fa-rss" aria-hidden="true"></i> #}
+			<a title="{{ item.name }}" href="{{ site.url }}/{{ item.url }}" target="_blank" rel="noreferrer">{{ item.name }}</a>
+{#
+			href="{{ site.githuburl }}"     target="_blank" rel="noreferrer"><i class="fab fa-3x fa-github" aria-hidden="true"></i></a>
+			href="https://www.polywork.com/deejaygraham/" target="_blank" rel="noreferrer"><i class="fas fa-3x fa-draw-polygon" aria-hidden="true"></i></a>
+			href="{{ site.linkedinurl }}" ><i class="fab fa-3x fa-linkedin" aria-hidden="true"></i></a>
+			href="{{ site.slideshareurl }}" ><i class="fab fa-3x fa-slideshare" aria-hidden="true"></i></a>
+			href="https://sessionize.com/deejaygraham/" ><i class="fas fa-3x fa-chalkboard" aria-hidden="true"></i></a>
+#}
+    {% endfor %}
+	</div>
+	<div class="content has-text-centered">
+		<!-- hosting etc -->
+	</div>
 </footer>
 
 {# Scripts #}
