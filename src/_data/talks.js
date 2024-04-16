@@ -1,5 +1,17 @@
 module.exports = [
   {
+    title:"Testing at Both Ends of the Triangle",
+    subtitle:"Tech on the Tyne March 2023",
+    url:"https://www.slideshare.net/deejaygraham/testing-at-both-ends-of-the-triangle-257130513",
+    thumbnail:"/img/posts/talks/no-solid-evidence.webp",
+  },
+  {
+    title:"How to be PSYCHIC",
+    subtitle:"DDD North 2022",
+    url:"https://www.slideshare.net/deejaygraham/how-to-be-psychic",
+    thumbnail:"/img/posts/talks/no-solid-evidence.webp",
+  },
+  {
     title:"no SOLID evidence",
     subtitle:"NE Remote Programming Conference",
     url:"https://www.slideshare.net/deejaygraham/no-solid-evidence",
