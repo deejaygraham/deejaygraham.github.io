@@ -28,7 +28,7 @@ module.exports = [
     thumbnail:"/img/posts/talks/physical-computing.webp",
   },
   {
-    title="Married to the Mob (programming)",
+    title:"Married to the Mob (programming)",
     subtitle:"DDD North 2017",
     url:"https://www.slideshare.net/deejaygraham/married-to-the-mob-programming",
     thumbnail:"/img/posts/talks/married-to-the-mob-programming.webp",
