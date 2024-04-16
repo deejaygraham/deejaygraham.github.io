@@ -1,28 +1,26 @@
 <!-- partials/siteheader -->
 <header class="header" role="banner">
   <nav class="navbar" role="navigation" aria-label="main navigation" tabindex="-1">
-      <div class="container">
-          <div class="navbar-brand">
-              <a class="navbar-item has-background-white" title="{{ site.name }}" href="/">
-                  <img src="/img/avatar-small.webp" alt="{{ site.description }}" />
-              </a>
-              <span class="navbar-burger burger" data-target="navbarMenu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </span>
-          </div>
-          <div id="navbarMenu"class="navbar-menu">
-              <div class="navbar-end">
-<!-- nav items -->
-              {% for item in nav %}
-                  <a class="navbar-item" title="{{ item.navLabel }}" href="{{ site.url }}{{ item.navUrl }}">{{ item.navLabel }}</a>
-              {% endfor %}
-              <!-- /nav items -->
-              {% include "partials/searchbox.njk" %}
-              </div>
-          </div>
+    <div class="navbar-brand">
+      <a class="navbar-item has-background-white" title="{{ site.name }}" href="/">
+        <img src="/img/avatar-small.webp" alt="{{ site.description }}" />
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expandable="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+      {% for item in nav %}
+        <a class="navbar-item" title="{{ item.navLabel }}" href="{{ site.url }}{{ item.navUrl }}">{{ item.navLabel }}</a>
+      {% endfor %}
+      {% include "partials/searchbox.njk" %}
       </div>
+    </div>
   </nav>
 </header>
 <!-- partials/siteheader -->
