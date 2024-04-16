@@ -1,5 +1,10 @@
+<div class="grid">
 <ul>
 {% for post in collections.posts | limit(12) %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  <div class="cell">
+    <article class="box">
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </article>
+  </div>
 {% endfor %}
-</ul>
+</div>
