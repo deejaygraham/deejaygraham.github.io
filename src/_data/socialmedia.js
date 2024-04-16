@@ -32,9 +32,4 @@ module.exports = [
     url: "https://sessionize.com/deejaygraham/",
     fa: "fas fa-3x fa-chalkboard"
   },
-  {
-    name: "rss",
-    url: "/rss.xml",
-    fa: "fa-rss"
-  },
 ];
