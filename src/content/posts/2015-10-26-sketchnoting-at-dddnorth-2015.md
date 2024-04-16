@@ -1,5 +1,5 @@
 ---
-permalink: 2015/10/26/sketchnoting-at-dddnorth-2015.html
+permalink: 2015/10/26/sketchnoting-at-dddnorth-2015/
 layout: post
 title: Sketchnoting at DDDNorth 2015
 published: true 

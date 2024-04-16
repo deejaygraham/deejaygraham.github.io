@@ -1,5 +1,5 @@
 ---
-permalink: 2020/04/12/microbit-game-of-life.html
+permalink: 2020/04/12/microbit-game-of-life/
 layout: post
 title: Game of Life 2
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/05/22/no-i-in-agile.html
+permalink: 2018/05/22/no-i-in-agile/
 layout: sketchnote
 title: There's No 'I' in Agile
 categories: [ sketchnotes, presentations, agile  ]

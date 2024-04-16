@@ -1,5 +1,5 @@
 ---
-permalink: 2020/06/14/playground-comet.html
+permalink: 2020/06/14/playground-comet/
 layout: post
 title: Circuit Playground Express Comet
 published: true

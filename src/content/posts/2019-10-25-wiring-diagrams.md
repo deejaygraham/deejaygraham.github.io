@@ -1,5 +1,5 @@
 ---
-permalink: 2019/10/25/wiring-diagrams.html
+permalink: 2019/10/25/wiring-diagrams/
 layout: post
 title: Wiring Diagrams
 published: true

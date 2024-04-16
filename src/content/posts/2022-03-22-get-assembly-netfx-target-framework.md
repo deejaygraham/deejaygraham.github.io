@@ -1,5 +1,5 @@
 ---
-permalink: 2022/03/22/get-assembly-netfx-target-framework.html
+permalink: 2022/03/22/get-assembly-netfx-target-framework/
 layout: post
 title: Read TargetFramework of Assembly in PowerShell
 published: true 

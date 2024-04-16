@@ -1,5 +1,5 @@
 ---
-permalink: 2020/04/08/advanced-react-recipes.html
+permalink: 2020/04/08/advanced-react-recipes/
 layout: post
 title:  React Cookbook Advanced Recipes
 published: true

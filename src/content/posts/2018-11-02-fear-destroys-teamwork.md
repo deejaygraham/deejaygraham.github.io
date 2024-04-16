@@ -1,5 +1,5 @@
 ---
-permalink: 2018/11/02/fear-destroys-teamwork.html
+permalink: 2018/11/02/fear-destroys-teamwork/
 layout: quotation
 title: Fear Destroys Teamwork
 published: true

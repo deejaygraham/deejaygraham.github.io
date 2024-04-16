@@ -1,5 +1,5 @@
 ---
-permalink: 2014/12/01/breaking-code-dependencies-with-inplace-refactoring.html
+permalink: 2014/12/01/breaking-code-dependencies-with-inplace-refactoring/
 layout: post
 title: Breaking code dependencies with inplace refactoring
 published: true

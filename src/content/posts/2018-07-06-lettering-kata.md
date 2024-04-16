@@ -1,5 +1,5 @@
 ---
-permalink: 2018/07/06/lettering-kata.html
+permalink: 2018/07/06/lettering-kata/
 layout: post
 title: Lettering Kata
 categories: [ sketchnotes ]

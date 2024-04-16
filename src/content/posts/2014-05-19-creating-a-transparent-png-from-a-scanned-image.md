@@ -1,5 +1,5 @@
 ---
-permalink: 2014/05/19/creating-a-transparent-png-from-a-scanned-image.html
+permalink: 2014/05/19/creating-a-transparent-png-from-a-scanned-image/
 layout: post
 title: Creating a Transparent PNG from a Scanned Image
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2019/11/11/tagging-tfs-builds-msbuild.html
+permalink: 2019/11/11/tagging-tfs-builds-msbuild/
 layout: post
 title: Tagging TFS builds from MSBuild
 published: true

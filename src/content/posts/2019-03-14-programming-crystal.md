@@ -1,5 +1,5 @@
 ---
-permalink: 2019/03/14/programming-crystal.html
+permalink: 2019/03/14/programming-crystal/
 layout: post
 title: Programming Crystal
 published: true

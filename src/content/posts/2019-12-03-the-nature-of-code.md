@@ -1,5 +1,5 @@
 ---
-permalink: 2019/12/03/the-nature-of-code.html
+permalink: 2019/12/03/the-nature-of-code/
 layout: post
 title: The Nature of Code
 published: true

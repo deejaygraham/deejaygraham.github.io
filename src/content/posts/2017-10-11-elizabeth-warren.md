@@ -1,5 +1,5 @@
 ---
-permalink: 2017/10/11/elizabeth-warren.html
+permalink: 2017/10/11/elizabeth-warren/
 layout: quotation
 title: Elizabeth Warren, Hero
 published: true

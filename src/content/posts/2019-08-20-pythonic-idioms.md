@@ -1,5 +1,5 @@
 ---
-permalink: 2019/08/20/pythonic-idioms.html
+permalink: 2019/08/20/pythonic-idioms/
 layout: post
 title: Pythonic Idioms
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2021/03/08/catalytic-skills-for-developers.html
+permalink: 2021/03/08/catalytic-skills-for-developers/
 layout: sketchnote
 title: Catalytic Skills for Developers
 categories: [ sketchnotes, presentations ]

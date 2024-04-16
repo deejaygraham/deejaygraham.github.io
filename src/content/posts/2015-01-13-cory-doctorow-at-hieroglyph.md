@@ -1,5 +1,5 @@
 ---
-permalink: 2015/01/13/cory-doctorow-at-hieroglyph.html
+permalink: 2015/01/13/cory-doctorow-at-hieroglyph/
 layout: sketchnote
 title: Cory Doctorow at Hieroglyph
 published: true

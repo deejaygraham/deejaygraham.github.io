@@ -1,5 +1,5 @@
 ---
-permalink: 2019/04/05/reinventing-pair-programming.html
+permalink: 2019/04/05/reinventing-pair-programming/
 layout: post
 title: Re-inventing Pair Programming
 published: false

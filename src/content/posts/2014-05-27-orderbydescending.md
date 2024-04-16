@@ -1,5 +1,5 @@
 ---
-permalink: 2014/05/27/orderbydescending.html
+permalink: 2014/05/27/orderbydescending/
 layout: post
 title: OrderByDescending
 published: true

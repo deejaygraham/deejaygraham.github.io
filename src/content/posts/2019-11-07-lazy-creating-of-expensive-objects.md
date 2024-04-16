@@ -1,5 +1,5 @@
 ---
-permalink: 2019/11/07/lazy-creating-of-expensive-objects.html
+permalink: 2019/11/07/lazy-creating-of-expensive-objects/
 layout: post
 title: Lazy Creating Expensive Objects
 published: true

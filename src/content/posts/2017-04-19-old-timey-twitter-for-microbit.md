@@ -1,5 +1,5 @@
 ---
-permalink: 2017/04/19/old-timey-twitter-for-microbit.html
+permalink: 2017/04/19/old-timey-twitter-for-microbit/
 layout: post
 title: Old-Timey Twitter for the Microbit
 categories: [ code, microbit ]

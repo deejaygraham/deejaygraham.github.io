@@ -1,5 +1,5 @@
 ---
-permalink: 2018/06/10/tell-people-why.html
+permalink: 2018/06/10/tell-people-why/
 layout: quotation
 title: Tell people why
 categories: [ quote, code ]

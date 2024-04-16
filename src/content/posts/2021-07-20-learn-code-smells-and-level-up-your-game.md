@@ -1,5 +1,5 @@
 ---
-permalink: 2021/07/20/learn-code-smells-and-level-up-your-game.html
+permalink: 2021/07/20/learn-code-smells-and-level-up-your-game/
 layout: post
 title:  Learn Code Smells And Level Up Your Game
 published: true

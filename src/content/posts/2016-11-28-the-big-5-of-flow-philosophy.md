@@ -1,5 +1,5 @@
 ---
-permalink: 2016/11/28/the-big-5-of-flow-philosophy.html
+permalink: 2016/11/28/the-big-5-of-flow-philosophy/
 layout: sketchnote
 title: The Big 5 of Flow Philosophy
 categories: [ sketchnotes, presentations, agile  ]

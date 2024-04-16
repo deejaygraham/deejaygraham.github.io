@@ -1,5 +1,5 @@
 ---
-permalink: 2022/02/18/linting-markdown.html
+permalink: 2022/02/18/linting-markdown/
 layout: post
 title: Linting Markdown
 published: true

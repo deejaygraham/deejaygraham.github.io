@@ -1,5 +1,5 @@
 ---
-permalink: 2018/12/07/pattern-on-the-stone.html
+permalink: 2018/12/07/pattern-on-the-stone/
 layout: quotation
 title: Computer Witchcraft
 attribution: Danny Hillis

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/05/26/reducing-non-value-adding-waste.html
+permalink: 2018/05/26/reducing-non-value-adding-waste/
 layout: quotation
 title: Reducing Non-Value Adding Waste
 published: true

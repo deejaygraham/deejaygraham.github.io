@@ -1,5 +1,5 @@
 ---
-permalink: 2016/07/25/protect-your-magic.html
+permalink: 2016/07/25/protect-your-magic/
 layout: post
 title: Protect Your Magic
 published: true

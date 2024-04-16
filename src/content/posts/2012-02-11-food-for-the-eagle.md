@@ -1,5 +1,5 @@
 ---
-permalink: 2012/02/11/food-for-the-eagle.html
+permalink: 2012/02/11/food-for-the-eagle/
 layout: quotation
 title: Food for the Eagle
 attribution: Adam Savage

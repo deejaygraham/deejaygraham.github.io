@@ -1,5 +1,5 @@
 ---
-permalink: 2011/12/18/why-i-am-an-agnostic.html
+permalink: 2011/12/18/why-i-am-an-agnostic/
 layout: quotation
 title: Why I am an Agnostic
 published: true

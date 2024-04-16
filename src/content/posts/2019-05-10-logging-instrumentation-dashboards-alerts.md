@@ -1,5 +1,5 @@
 ---
-permalink: 2019/05/10/logging-instrumentation-dashboards-alerts.html
+permalink: 2019/05/10/logging-instrumentation-dashboards-alerts/
 layout: post
 title: Logging, Instrumentation, Dashboards, Alerts
 published: true 

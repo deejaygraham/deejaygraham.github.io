@@ -1,5 +1,5 @@
 ---
-permalink: 2017/05/12/a-tiny-introduction-to-python-unit-testing.html
+permalink: 2017/05/12/a-tiny-introduction-to-python-unit-testing/
 layout: post
 title: A tiny introduction to Python unit testing
 categories: [ code, python, tdd ]

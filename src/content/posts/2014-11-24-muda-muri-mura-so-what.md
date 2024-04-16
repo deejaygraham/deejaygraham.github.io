@@ -1,5 +1,5 @@
 ---
-permalink: 2014/11/24/muda-muri-mura-so-what.html
+permalink: 2014/11/24/muda-muri-mura-so-what/
 layout: sketchnote
 title: Muda Muri Mura, so what?
 categories: [ lean, sketchnotes, illustration ]

@@ -1,5 +1,5 @@
 ---
-permalink: 2015/01/12/updating-web.config-settings-with-msbuild.html
+permalink: 2015/01/12/updating-web.config-settings-with-msbuild/
 layout: post
 title: Updating web.config Settings with MsBuild
 published: true

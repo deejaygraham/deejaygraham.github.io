@@ -1,5 +1,5 @@
 ---
-permalink: 2016/06/09/verifying-azure-build-output.html
+permalink: 2016/06/09/verifying-azure-build-output/
 layout: post
 title: Verifying Azure Build Output
 published: true 

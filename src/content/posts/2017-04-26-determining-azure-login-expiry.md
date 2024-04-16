@@ -1,5 +1,5 @@
 ---
-permalink: 2017/04/26/determining-azure-login-expiry.html
+permalink: 2017/04/26/determining-azure-login-expiry/
 layout: post
 title: Determining when your Azure session has expired
 published: true

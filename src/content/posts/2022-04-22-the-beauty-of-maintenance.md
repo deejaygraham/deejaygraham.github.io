@@ -1,5 +1,5 @@
 ---
-permalink: 2022/04/22/the-beauty-of-maintenance.html
+permalink: 2022/04/22/the-beauty-of-maintenance/
 layout: post
 title: The Beauty of Maintenance
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2019/03/11/enable-assembly-binding-logging-without-fuslogvw.html
+permalink: 2019/03/11/enable-assembly-binding-logging-without-fuslogvw/
 layout: post
 title: Enable Assembly Binding Logging without FusLogVw
 published: true 

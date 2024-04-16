@@ -1,5 +1,5 @@
 ---
-permalink: 2011/12/06/dirge-without-music.html
+permalink: 2011/12/06/dirge-without-music/
 layout: quotation
 size: medium
 title: Dirge Without Music

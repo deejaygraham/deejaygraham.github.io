@@ -1,5 +1,5 @@
 ---
-permalink: 2016/01/10/world-sketchnote-day-2016.html
+permalink: 2016/01/10/world-sketchnote-day-2016/
 layout: post
 title: World Sketchnote Day 2016
 published: true 

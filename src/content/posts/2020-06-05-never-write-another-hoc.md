@@ -1,5 +1,5 @@
 ---
-permalink: 2020/06/05/never-write-another-hoc.html
+permalink: 2020/06/05/never-write-another-hoc/
 layout: post
 title:  Never Write Another HoC
 published: true

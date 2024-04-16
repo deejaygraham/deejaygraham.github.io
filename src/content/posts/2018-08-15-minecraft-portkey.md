@@ -1,5 +1,5 @@
 ---
-permalink: 2018/08/15/minecraft-portkey.html
+permalink: 2018/08/15/minecraft-portkey/
 layout: post
 title: Minecraft PortKey
 categories: [ minecraft, code ]

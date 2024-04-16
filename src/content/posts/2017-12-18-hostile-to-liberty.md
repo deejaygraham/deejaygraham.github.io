@@ -1,5 +1,5 @@
 ---
-permalink: 2017/12/18/hostile-to-liberty.html
+permalink: 2017/12/18/hostile-to-liberty/
 layout: quotation
 title: Hostile to Liberty
 published: true

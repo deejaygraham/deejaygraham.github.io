@@ -1,5 +1,5 @@
 ---
-permalink: 2018/11/15/unix-philosophy.html
+permalink: 2018/11/15/unix-philosophy/
 layout: quotation
 title: More Unix Philosophy
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2017/02/05/creating-builds-in-tfs-vnext.html
+permalink: 2017/02/05/creating-builds-in-tfs-vnext/
 layout: post
 title: Creating Builds in TFS 2015
 published: true

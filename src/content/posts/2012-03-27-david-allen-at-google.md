@@ -1,5 +1,5 @@
 ---
-permalink: 2012/03/27/david-allen-at-google.html
+permalink: 2012/03/27/david-allen-at-google/
 layout: post
 title: David Allen at Google
 published: true 

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/12/05/test-driving-poweshell-with-pester.html
+permalink: 2018/12/05/test-driving-poweshell-with-pester/
 layout: post
 title: Test Driving PowerShell with Pester
 published: true

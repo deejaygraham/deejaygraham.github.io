@@ -1,5 +1,5 @@
 ---
-permalink: 2023/06/11/cypress-approval-testing.html
+permalink: 2023/06/11/cypress-approval-testing/
 layout: post
 title: Approval Testing in Cypress
 published: true 

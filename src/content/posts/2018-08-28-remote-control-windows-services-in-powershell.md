@@ -1,5 +1,5 @@
 ---
-permalink: 2018/08/28/remote-control-windows-services-in-powershell.html
+permalink: 2018/08/28/remote-control-windows-services-in-powershell/
 layout: post
 title: Remote Controlling Windows Services in PowerShell
 published: true 

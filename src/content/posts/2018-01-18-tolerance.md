@@ -1,5 +1,5 @@
 ---
-permalink: 2018/01/18/tolerance.html
+permalink: 2018/01/18/tolerance/
 layout: quotation
 title: Tolerance
 published: true

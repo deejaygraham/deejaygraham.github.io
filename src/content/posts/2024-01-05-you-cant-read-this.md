@@ -1,5 +1,5 @@
 ---
-permalink: 2024/01/05/you-cant-read-this.html
+permalink: 2024/01/05/you-cant-read-this/
 layout: post
 title: You Cant Read This
 published: true 

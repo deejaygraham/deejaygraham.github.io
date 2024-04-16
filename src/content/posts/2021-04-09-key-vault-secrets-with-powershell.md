@@ -1,5 +1,5 @@
 ---
-permalink: 2021/04/09/key-vault-secrets-with-powershell.html
+permalink: 2021/04/09/key-vault-secrets-with-powershell/
 layout: post
 title: KeyVault Secrets with PowerShell
 published: true 

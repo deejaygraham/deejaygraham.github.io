@@ -1,5 +1,5 @@
 ---
-permalink: 2016/12/04/hello-minecraft.html
+permalink: 2016/12/04/hello-minecraft/
 layout: post
 title: Hello, Minecraft
 published: true

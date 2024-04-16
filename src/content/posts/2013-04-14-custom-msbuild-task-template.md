@@ -1,5 +1,5 @@
 ---
-permalink: 2013/04/14/custom-msbuild-task-template.html
+permalink: 2013/04/14/custom-msbuild-task-template/
 layout: post
 title: Custom MsBuild Task Template
 published: true

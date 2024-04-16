@@ -1,5 +1,5 @@
 ---
-permalink: 2014/04/25/bootstrapping-jekyll-tag-generation.html
+permalink: 2014/04/25/bootstrapping-jekyll-tag-generation/
 layout: post
 title: Bootstrapping Jekyll Tag Generation
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2014/01/15/do-more-deliberate-practice.html
+permalink: 2014/01/15/do-more-deliberate-practice/
 layout: post
 title: Do More Deliberate Practice
 published: true

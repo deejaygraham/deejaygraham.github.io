@@ -1,5 +1,5 @@
 ---
-permalink: 2015/05/07/sample-powershell-cmdlet-in-c#.html
+permalink: 2015/05/07/sample-powershell-cmdlet-in-c#/
 layout: post
 title: Sample Powershell Cmdlet in C#
 published: true 

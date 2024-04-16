@@ -1,5 +1,5 @@
 ---
-permalink: 2023/06/06/api-testing-in-cypress.html
+permalink: 2023/06/06/api-testing-in-cypress/
 layout: post
 title: Api Testing in Cypress
 published: true 

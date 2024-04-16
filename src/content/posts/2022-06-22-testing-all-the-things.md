@@ -1,5 +1,5 @@
 ---
-permalink: 2022/06/22/testing-all-the-things.html
+permalink: 2022/06/22/testing-all-the-things/
 layout: post
 title: Testing All The Things
 published: true

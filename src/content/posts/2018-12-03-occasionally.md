@@ -1,5 +1,5 @@
 ---
-permalink: 2018/12/03/occasionally.html
+permalink: 2018/12/03/occasionally/
 layout: post
 title: Occasionally...
 categories: [ code ]

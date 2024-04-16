@@ -1,5 +1,5 @@
 ---
-permalink: 2022/02/15/11ty-shortcode-picture.html
+permalink: 2022/02/15/11ty-shortcode-picture/
 layout: post
 title: 11ty Picture Shortcode
 published: true

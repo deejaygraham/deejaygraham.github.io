@@ -1,5 +1,5 @@
 ---
-permalink: 2015/06/18/secret-azure-debugging-tools.html
+permalink: 2015/06/18/secret-azure-debugging-tools/
 layout: post
 title: Secret Azure Debugging Tools
 published: true 

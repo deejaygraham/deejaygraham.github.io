@@ -1,5 +1,5 @@
 ---
-permalink: 2022/09/22/micro-pomodoro.html
+permalink: 2022/09/22/micro-pomodoro/
 layout: post
 title: Micro Pomodoro
 published: true

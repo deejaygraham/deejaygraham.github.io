@@ -1,5 +1,5 @@
 ---
-permalink: 2019/05/27/using-pester-for-api-testing.html
+permalink: 2019/05/27/using-pester-for-api-testing/
 layout: post
 title: Using Pester for API Testing
 published: true 

@@ -1,5 +1,5 @@
 ---
-permalink: 2014/03/19/the-magic-tricks-of-testing.html
+permalink: 2014/03/19/the-magic-tricks-of-testing/
 layout: post
 title: The Magic Tricks of Testing
 published: true

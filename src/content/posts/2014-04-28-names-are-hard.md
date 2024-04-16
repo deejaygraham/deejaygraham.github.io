@@ -1,5 +1,5 @@
 ---
-permalink: 2014/04/28/names-are-hard.html
+permalink: 2014/04/28/names-are-hard/
 layout: post
 title: Names Are Hard
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/07/20/perfecting-code-reviews.html
+permalink: 2018/07/20/perfecting-code-reviews/
 layout: post
 title: Perfecting Code Reviews
 published: true

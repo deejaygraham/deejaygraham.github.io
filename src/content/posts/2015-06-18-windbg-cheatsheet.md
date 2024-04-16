@@ -1,5 +1,5 @@
 ---
-permalink: 2015/06/18/windbg-cheatsheet.html
+permalink: 2015/06/18/windbg-cheatsheet/
 layout: post
 title: Windbg Cheatsheet
 published: true 

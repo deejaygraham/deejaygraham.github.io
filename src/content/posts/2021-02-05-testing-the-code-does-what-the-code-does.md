@@ -1,5 +1,5 @@
 ---
-permalink: 2021/02/05/testing-the-code-does-what-the-code-does.html
+permalink: 2021/02/05/testing-the-code-does-what-the-code-does/
 layout: sketchnote
 title: Testing the Code Does What the Code Does
 categories: [ sketchnotes, presentations ]

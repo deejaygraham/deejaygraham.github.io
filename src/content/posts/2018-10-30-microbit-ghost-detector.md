@@ -1,5 +1,5 @@
 ---
-permalink: 2018/10/30/microbit-ghost-detector.html
+permalink: 2018/10/30/microbit-ghost-detector/
 layout: post
 title: Microbit Ghost Detector
 categories: [ code, microbit ]

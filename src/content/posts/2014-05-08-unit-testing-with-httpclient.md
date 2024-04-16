@@ -1,5 +1,5 @@
 ---
-permalink: 2014/05/08/unit-testing-with-httpclient.html
+permalink: 2014/05/08/unit-testing-with-httpclient/
 layout: post
 title: Unit Testing with HttpClient
 published: true

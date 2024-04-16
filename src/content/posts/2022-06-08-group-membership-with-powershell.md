@@ -1,5 +1,5 @@
 ---
-permalink: 2022/06/08/group-membership-with-powershell.html
+permalink: 2022/06/08/group-membership-with-powershell/
 layout: post
 title: How to find AD group membership with PowerShell
 published: true 

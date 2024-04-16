@@ -1,5 +1,5 @@
 ---
-permalink: 2011/12/19/emily-remler.html
+permalink: 2011/12/19/emily-remler/
 layout: quotation
 size: large
 title: Emily Remler

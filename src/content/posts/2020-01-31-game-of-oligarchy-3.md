@@ -1,5 +1,5 @@
 ---
-permalink: 2020/01/31/game-of-oligarchy-3.html
+permalink: 2020/01/31/game-of-oligarchy-3/
 layout: post
 title: Game of Oligarchy Part 3
 published: true

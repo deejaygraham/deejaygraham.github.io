@@ -1,5 +1,5 @@
 ---
-permalink: 2020/11/05/move-slow-and-mend-things.html
+permalink: 2020/11/05/move-slow-and-mend-things/
 layout: post
 title:  Move Slow and Mend Things
 published: true

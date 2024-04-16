@@ -1,5 +1,5 @@
 ---
-permalink: 2018/07/05/visual-studio-code-snippets-ftw.html
+permalink: 2018/07/05/visual-studio-code-snippets-ftw/
 layout: post
 title: Visual Studio Code Snippets FTW
 categories: [ code ]

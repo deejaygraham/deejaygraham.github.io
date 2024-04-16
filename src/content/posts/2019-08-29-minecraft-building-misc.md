@@ -1,5 +1,5 @@
 ---
-permalink: 2019/08/29/minecraft-building-misc.html
+permalink: 2019/08/29/minecraft-building-misc/
 layout: post
 title: Minecraft Building Miscellanea
 published: true

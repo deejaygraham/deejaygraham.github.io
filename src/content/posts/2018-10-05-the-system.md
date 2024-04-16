@@ -1,5 +1,5 @@
 ---
-permalink: 2018/10/05/the-system.html
+permalink: 2018/10/05/the-system/
 layout: quotation
 size: large
 title: The System

@@ -1,5 +1,5 @@
 ---
-permalink: 2015/04/10/mocking-multiple-return-values-with-rhino-mocks.html
+permalink: 2015/04/10/mocking-multiple-return-values-with-rhino-mocks/
 layout: post
 title: Mocking Multiple Return Values with Rhino Mocks
 published: true 

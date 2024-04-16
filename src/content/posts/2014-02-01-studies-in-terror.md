@@ -1,5 +1,5 @@
 ---
-permalink: 2014/02/01/studies-in-terror.html
+permalink: 2014/02/01/studies-in-terror/
 layout: post
 title: Studies in Terror
 published: true

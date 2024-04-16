@@ -1,5 +1,5 @@
 ---
-permalink: 2022/02/03/binary-clock.html
+permalink: 2022/02/03/binary-clock/
 layout: post
 title: Binary Clock
 published: true

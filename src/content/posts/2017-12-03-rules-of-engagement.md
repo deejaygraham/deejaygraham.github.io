@@ -1,5 +1,5 @@
 ---
-permalink: 2017/12/03/rules-of-engagement.html
+permalink: 2017/12/03/rules-of-engagement/
 layout: post
 title: Rules of Engagement
 published: true

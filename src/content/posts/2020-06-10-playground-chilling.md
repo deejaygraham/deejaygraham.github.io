@@ -1,5 +1,5 @@
 ---
-permalink: 2020/06/10/playground-chilling.html
+permalink: 2020/06/10/playground-chilling/
 layout: post
 title: Circuit Playground Express Moods
 published: true

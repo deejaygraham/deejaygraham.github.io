@@ -1,5 +1,5 @@
 ---
-permalink: 2021/08/20/check-file-content-with-powershell.html
+permalink: 2021/08/20/check-file-content-with-powershell/
 layout: post
 title: Check File Content with PowerShell
 published: true 

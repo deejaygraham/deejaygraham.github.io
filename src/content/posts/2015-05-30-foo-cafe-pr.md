@@ -1,5 +1,5 @@
 ---
-permalink: 2015/05/30/foo-cafe-pr.html
+permalink: 2015/05/30/foo-cafe-pr/
 layout: post
 title: Promoting the Foo Cafe 
 published: true 

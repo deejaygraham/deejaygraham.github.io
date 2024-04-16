@@ -1,5 +1,5 @@
 ---
-permalink: 2019/08/08/minecraft-building-from-script.html
+permalink: 2019/08/08/minecraft-building-from-script/
 layout: post
 title: Minecraft Building from Script
 published: true

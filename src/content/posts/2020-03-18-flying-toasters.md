@@ -1,5 +1,5 @@
 ---
-permalink: 2020/03/18/flying-toasters.html
+permalink: 2020/03/18/flying-toasters/
 layout: post
 title: Flying Toasters
 published: true

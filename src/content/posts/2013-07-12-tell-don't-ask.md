@@ -1,5 +1,5 @@
 ---
-permalink: 2013/07/12/tell-don't-ask.html
+permalink: 2013/07/12/tell-don't-ask/
 layout: post
 title: Tell Don't Ask
 published: true

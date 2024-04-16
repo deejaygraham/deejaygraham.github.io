@@ -1,5 +1,5 @@
 ---
-permalink: 2012/02/16/charles-chilton-moore.html
+permalink: 2012/02/16/charles-chilton-moore/
 layout: quotation
 title: Charles Chilton Moore
 published: true 

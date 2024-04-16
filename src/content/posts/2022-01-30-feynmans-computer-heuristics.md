@@ -1,5 +1,5 @@
 ---
-permalink: 2022/01/30/feynmans-computer-heuristics.html
+permalink: 2022/01/30/feynmans-computer-heuristics/
 layout: post
 title:  Feynman's Computer Heuristics
 published: true

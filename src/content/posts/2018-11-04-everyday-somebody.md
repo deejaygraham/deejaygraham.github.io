@@ -1,5 +1,5 @@
 ---
-permalink: 2018/11/04/everyday-somebody.html
+permalink: 2018/11/04/everyday-somebody/
 layout: quotation
 title: Every day, somebody
 published: true

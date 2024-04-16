@@ -1,5 +1,5 @@
 ---
-permalink: 2021/04/01/xmas-fireflies.html
+permalink: 2021/04/01/xmas-fireflies/
 layout: post
 title: Christmas Fireflies
 published: true

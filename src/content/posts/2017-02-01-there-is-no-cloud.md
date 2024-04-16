@@ -1,5 +1,5 @@
 ---
-permalink: 2017/02/01/there-is-no-cloud.html
+permalink: 2017/02/01/there-is-no-cloud/
 layout: quotation
 title: There is no Cloud
 attribution: Free Software Foundation

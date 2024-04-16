@@ -1,5 +1,5 @@
 ---
-permalink: 2016/09/23/balancing-ball-game-on-the-microbit.html
+permalink: 2016/09/23/balancing-ball-game-on-the-microbit/
 layout: post
 title: Balancing Ball - Writing a Game for the BBC Micro:bit
 categories: [ code, microbit ]

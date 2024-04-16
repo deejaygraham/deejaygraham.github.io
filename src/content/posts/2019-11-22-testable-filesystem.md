@@ -1,5 +1,5 @@
 ---
-permalink: 2019/11/22/testable-filesystem.html
+permalink: 2019/11/22/testable-filesystem/
 layout: post
 title: Test-Driving a File System
 published: false

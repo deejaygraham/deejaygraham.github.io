@@ -1,5 +1,5 @@
 ---
-permalink: 2017/02/26/parasitism.html
+permalink: 2017/02/26/parasitism/
 layout: quotation
 title: Jason Read
 attribution: Jason Read

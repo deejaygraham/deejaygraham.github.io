@@ -1,5 +1,5 @@
 ---
-permalink: 2023/02/20/add-auto-generated-search-to-11ty.html
+permalink: 2023/02/20/add-auto-generated-search-to-11ty/
 layout: post
 title: Add Auto-generated Search to 11ty
 published: true

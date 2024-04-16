@@ -1,5 +1,5 @@
 ---
-permalink: 2016/10/28/tiny-asteroids-for-microbit.html
+permalink: 2016/10/28/tiny-asteroids-for-microbit/
 layout: post
 title: Tiny Asteroids for Microbit
 categories: [ code, microbit ]

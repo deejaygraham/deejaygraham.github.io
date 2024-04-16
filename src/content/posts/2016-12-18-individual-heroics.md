@@ -1,5 +1,5 @@
 ---
-permalink: 2016/12/18/individual-heroics.html
+permalink: 2016/12/18/individual-heroics/
 layout: quotation
 title: Individual Heroics
 publication: anon

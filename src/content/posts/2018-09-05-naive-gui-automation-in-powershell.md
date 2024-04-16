@@ -1,5 +1,5 @@
 ---
-permalink: 2018/09/05/naive-gui-automation-in-powershell.html
+permalink: 2018/09/05/naive-gui-automation-in-powershell/
 layout: post
 title: Naive GUI Automation in PowerShell
 published: true 

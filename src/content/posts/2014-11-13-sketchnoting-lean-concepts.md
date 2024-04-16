@@ -1,5 +1,5 @@
 ---
-permalink: 2014/11/13/sketchnoting-lean-concepts.html
+permalink: 2014/11/13/sketchnoting-lean-concepts/
 layout: sketchnote
 title: Sketchnoting Lean Concepts
 categories: [ sketchnotes, presentations, lean, agile ]

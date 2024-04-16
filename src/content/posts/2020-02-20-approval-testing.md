@@ -1,5 +1,5 @@
 ---
-permalink: 2020/02/20/approval-testing.html
+permalink: 2020/02/20/approval-testing/
 layout: post
 title: Approval Testing
 categories: [ agile, xp ]

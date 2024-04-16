@@ -1,5 +1,5 @@
 ---
-permalink: 2014/03/04/my-coding-dojo-checklist.html
+permalink: 2014/03/04/my-coding-dojo-checklist/
 layout: post
 title: My Coding Dojo Checklist
 published: true

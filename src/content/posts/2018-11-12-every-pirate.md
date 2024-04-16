@@ -1,5 +1,5 @@
 ---
-permalink: 2018/11/12/every-pirate.html
+permalink: 2018/11/12/every-pirate/
 layout: quotation
 size: large
 title: Every Pirate

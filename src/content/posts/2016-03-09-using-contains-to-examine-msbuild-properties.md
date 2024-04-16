@@ -1,5 +1,5 @@
 ---
-permalink: 2016/03/09/using-contains-to-examine-msbuild-properties.html
+permalink: 2016/03/09/using-contains-to-examine-msbuild-properties/
 layout: post
 title: Using Contains to Examine MSBuild Properties
 published: true 

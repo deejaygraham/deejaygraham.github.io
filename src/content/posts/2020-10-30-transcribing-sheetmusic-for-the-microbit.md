@@ -1,5 +1,5 @@
 ---
-permalink: 2020/10/30/transcribing-sheetmusic-for-the-microbit.html
+permalink: 2020/10/30/transcribing-sheetmusic-for-the-microbit/
 layout: post
 title: Transcribing Sheet Music for the Microbit
 published: true

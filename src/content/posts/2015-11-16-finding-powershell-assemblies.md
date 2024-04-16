@@ -1,5 +1,5 @@
 ---
-permalink: 2015/11/16/finding-powershell-assemblies.html
+permalink: 2015/11/16/finding-powershell-assemblies/
 layout: post
 title: Finding Powershell Assemblies
 published: true 

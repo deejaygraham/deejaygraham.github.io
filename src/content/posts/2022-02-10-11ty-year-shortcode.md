@@ -1,5 +1,5 @@
 ---
-permalink: 2022/02/10/11ty-year-shortcode.html
+permalink: 2022/02/10/11ty-year-shortcode/
 layout: post
 title: 11ty Year Shortcode
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/09/21/nunit-testactions-for-great-good.html
+permalink: 2018/09/21/nunit-testactions-for-great-good/
 layout: post
 title: NUnit Test Actions for Great Good
 categories: [ code ]

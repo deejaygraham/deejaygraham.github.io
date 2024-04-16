@@ -1,5 +1,5 @@
 ---
-permalink: 2019/06/19/ill-let-myself-in.html
+permalink: 2019/06/19/ill-let-myself-in/
 layout: post
 title: I'll Let Myself In
 published: true

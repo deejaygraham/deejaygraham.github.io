@@ -1,5 +1,5 @@
 ---
-permalink: 2021/10/15/beyond-transactions.html
+permalink: 2021/10/15/beyond-transactions/
 layout: post
 title: Beyond Transactions in Code and Life
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/08/12/new-favourite-figure-of-speech.html
+permalink: 2018/08/12/new-favourite-figure-of-speech/
 layout: quotation
 title: My New Favourite Figure of Speech
 published: true

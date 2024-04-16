@@ -1,5 +1,5 @@
 ---
-permalink: 2013/10/01/sketchnoting-in-reverse.html
+permalink: 2013/10/01/sketchnoting-in-reverse/
 layout: post
 title: Sketchnoting in Reverse
 categories: [ sketchnotes, deliberate-practice, presentations ]

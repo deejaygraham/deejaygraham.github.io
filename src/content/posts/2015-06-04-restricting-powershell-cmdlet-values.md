@@ -1,5 +1,5 @@
 ---
-permalink: 2015/06/04/restricting-powershell-cmdlet-values.html
+permalink: 2015/06/04/restricting-powershell-cmdlet-values/
 layout: post
 title: Restricting Powershell Cmdlet Values
 published: true 

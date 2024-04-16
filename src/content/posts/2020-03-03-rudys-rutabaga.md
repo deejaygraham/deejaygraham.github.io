@@ -1,5 +1,5 @@
 ---
-permalink: 2020/03/03/rudys-rutabaga.html
+permalink: 2020/03/03/rudys-rutabaga/
 layout: quotation
 size: large
 title: Rudy's Rutabaga Rule

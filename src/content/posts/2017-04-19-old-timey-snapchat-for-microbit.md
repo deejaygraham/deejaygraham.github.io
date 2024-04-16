@@ -1,5 +1,5 @@
 ---
-permalink: 2017/04/19/old-timey-snapchat-for-microbit.html
+permalink: 2017/04/19/old-timey-snapchat-for-microbit/
 layout: post
 title: Old-Timey Snapchat for the Microbit
 categories: [ code, microbit ]

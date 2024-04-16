@@ -1,5 +1,5 @@
 ---
-permalink: 2018/12/12/look-for-the-helpers.html
+permalink: 2018/12/12/look-for-the-helpers/
 layout: quotation
 size: large
 title: Look for the Helpers

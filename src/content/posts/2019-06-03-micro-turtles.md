@@ -1,5 +1,5 @@
 ---
-permalink: 2019/06/03/micro-turtles.html
+permalink: 2019/06/03/micro-turtles/
 layout: post
 title: Microbit Turtles
 published: true

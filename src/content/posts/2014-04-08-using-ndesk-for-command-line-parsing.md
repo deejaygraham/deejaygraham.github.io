@@ -1,5 +1,5 @@
 ---
-permalink: 2014/04/08/using-ndesk-for-command-line-parsing.html
+permalink: 2014/04/08/using-ndesk-for-command-line-parsing/
 layout: post
 title: Using NDesk.Options for Command Line Parsing
 published: true

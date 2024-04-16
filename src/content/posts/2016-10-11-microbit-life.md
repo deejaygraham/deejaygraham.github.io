@@ -1,5 +1,5 @@
 ---
-permalink: 2016/10/11/microbit-life.html
+permalink: 2016/10/11/microbit-life/
 layout: post
 title: Microbit Life
 categories: [ code, microbit ]

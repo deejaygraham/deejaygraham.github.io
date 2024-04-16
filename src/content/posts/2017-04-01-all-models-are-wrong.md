@@ -1,5 +1,5 @@
 ---
-permalink: 2017/04/01/all-models-are-wrong.html
+permalink: 2017/04/01/all-models-are-wrong/
 layout: quotation
 title: All Models are Wrong
 attribution: George E. P. Box

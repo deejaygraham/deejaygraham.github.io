@@ -1,5 +1,5 @@
 ---
-permalink: 2018/06/22/coin-flipper.html
+permalink: 2018/06/22/coin-flipper/
 layout: post
 title: Microbit coin flipper
 categories: [ code, microbit ]

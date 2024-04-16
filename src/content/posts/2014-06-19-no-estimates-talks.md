@@ -1,5 +1,5 @@
 ---
-permalink: 2014/06/19/no-estimates-talks.html
+permalink: 2014/06/19/no-estimates-talks/
 layout: post
 title: No Estimates Talks
 published: true

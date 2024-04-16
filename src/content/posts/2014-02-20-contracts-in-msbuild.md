@@ -1,5 +1,5 @@
 ---
-permalink: 2014/02/20/contracts-in-msbuild.html
+permalink: 2014/02/20/contracts-in-msbuild/
 layout: post
 title: Programming by Contract in MsBuild
 published: true

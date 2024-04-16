@@ -1,5 +1,5 @@
 ---
-permalink: 2019/10/05/to-show-our-friendship.html
+permalink: 2019/10/05/to-show-our-friendship/
 layout: quotation
 size: large
 title: To Show our Friendship

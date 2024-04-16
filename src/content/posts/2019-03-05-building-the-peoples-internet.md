@@ -1,5 +1,5 @@
 ---
-permalink: 2019/03/05/building-the-peoples-internet.html
+permalink: 2019/03/05/building-the-peoples-internet/
 layout: post
 title: Building the Peoples Internet
 published: true 

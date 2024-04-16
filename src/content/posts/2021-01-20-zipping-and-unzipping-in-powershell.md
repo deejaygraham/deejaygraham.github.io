@@ -1,5 +1,5 @@
 ---
-permalink: 2021/01/20/zipping-and-unzipping-in-powershell.html
+permalink: 2021/01/20/zipping-and-unzipping-in-powershell/
 layout: post
 title: Zipping and Unzipping in PowerShell
 published: true 

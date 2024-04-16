@@ -1,5 +1,5 @@
 ---
-permalink: 2021/08/09/batch-renaming-file-extensions.html
+permalink: 2021/08/09/batch-renaming-file-extensions/
 layout: post
 title: Batch Renaming File Extensions
 published: true 

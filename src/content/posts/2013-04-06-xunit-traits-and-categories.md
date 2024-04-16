@@ -1,5 +1,5 @@
 ---
-permalink: 2013/04/06/xunit-traits-and-categories.html
+permalink: 2013/04/06/xunit-traits-and-categories/
 layout: post
 title: XUnit Traits and Categories
 published: true

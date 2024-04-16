@@ -1,5 +1,5 @@
 ---
-permalink: 2017/08/16/newspapers.html
+permalink: 2017/08/16/newspapers/
 layout: quotation
 title: Newspapers
 published: true

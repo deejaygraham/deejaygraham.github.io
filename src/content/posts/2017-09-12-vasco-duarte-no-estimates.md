@@ -1,5 +1,5 @@
 ---
-permalink: 2017/09/12/vasco-duarte-no-estimates.html
+permalink: 2017/09/12/vasco-duarte-no-estimates/
 layout: sketchnote
 title: No Estimates
 categories: [ sketchnotes, presentations, agile  ]

@@ -1,5 +1,5 @@
 ---
-permalink: 2017/05/26/five-questions.html
+permalink: 2017/05/26/five-questions/
 layout: quotation
 title: Ask the powerful five questions
 attribution: Tony Benn

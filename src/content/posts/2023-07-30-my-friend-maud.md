@@ -1,5 +1,5 @@
 ---
-permalink: 2023/07/30/my-friend-maud.html
+permalink: 2023/07/30/my-friend-maud/
 layout: quotation
 title: My Friend Maud
 published: true

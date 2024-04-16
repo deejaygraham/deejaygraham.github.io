@@ -1,5 +1,5 @@
 ---
-permalink: 2012/04/25/excellent-foppery.html
+permalink: 2012/04/25/excellent-foppery/
 layout: quotation
 title: Excellent Foppery
 attribution: William Shakespeare

@@ -1,5 +1,5 @@
 ---
-permalink: 2015/08/05/azure-subscription-management-with-powershell.html
+permalink: 2015/08/05/azure-subscription-management-with-powershell/
 layout: post
 title: Azure subscription management with PowerShell
 published: true 

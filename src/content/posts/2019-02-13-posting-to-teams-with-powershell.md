@@ -1,5 +1,5 @@
 ---
-permalink: 2019/02/13/posting-to-teams-with-powershell.html
+permalink: 2019/02/13/posting-to-teams-with-powershell/
 layout: post
 title: Posting Messages to MS Teams with PowerShell
 published: true 

@@ -1,5 +1,5 @@
 ---
-permalink: 2020/10/05/never-done-before.html
+permalink: 2020/10/05/never-done-before/
 layout: quotation
 size: large
 title: Never Done Before

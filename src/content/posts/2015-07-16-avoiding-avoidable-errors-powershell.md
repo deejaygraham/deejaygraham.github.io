@@ -1,5 +1,5 @@
 ---
-permalink: 2015/07/16/avoiding-avoidable-errors-powershell.html
+permalink: 2015/07/16/avoiding-avoidable-errors-powershell/
 layout: post
 title: Avoiding avoidable errors in PowerShell
 published: true 

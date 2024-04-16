@@ -1,5 +1,5 @@
 ---
-permalink: 2017/11/16/hofstadters-law.html
+permalink: 2017/11/16/hofstadters-law/
 layout: quotation
 title: Hofstadter's Law
 published: true

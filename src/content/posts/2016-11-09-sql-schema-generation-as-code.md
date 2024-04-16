@@ -1,5 +1,5 @@
 ---
-permalink: 2016/11/09/sql-schema-generation-as-code.html
+permalink: 2016/11/09/sql-schema-generation-as-code/
 layout: post
 title: SQL Schema Generation as Code
 published: true

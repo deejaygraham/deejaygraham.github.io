@@ -1,5 +1,5 @@
 ---
-permalink: 2020/04/06/new-improved-microbit-rc.html
+permalink: 2020/04/06/new-improved-microbit-rc/
 layout: post
 title: New, Improved, Microbit RC
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/06/26/nothing-quite-so-useless.html
+permalink: 2018/06/26/nothing-quite-so-useless/
 layout: quotation
 title: Nothing Quite So Useless
 published: true

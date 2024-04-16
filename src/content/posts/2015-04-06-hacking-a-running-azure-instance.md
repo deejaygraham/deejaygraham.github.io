@@ -1,5 +1,5 @@
 ---
-permalink: 2015/04/06/hacking-a-running-azure-instance.html
+permalink: 2015/04/06/hacking-a-running-azure-instance/
 layout: post
 title: Hacking a Running Azure Instance
 published: true 

@@ -1,5 +1,5 @@
 ---
-permalink: 2019/12/11/the-first-revolution.html
+permalink: 2019/12/11/the-first-revolution/
 layout: post
 title: The First Revolution
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2017/11/30/estimating-complexity.html
+permalink: 2017/11/30/estimating-complexity/
 layout: post
 title: Estimating Complexity
 published: true 

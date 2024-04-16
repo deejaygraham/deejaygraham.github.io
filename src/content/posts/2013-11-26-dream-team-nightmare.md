@@ -1,5 +1,5 @@
 ---
-permalink: 2013/11/26/dream-team-nightmare.html
+permalink: 2013/11/26/dream-team-nightmare/
 layout: post
 title: The Dream Team Nightmare by Portia Tung
 published: true

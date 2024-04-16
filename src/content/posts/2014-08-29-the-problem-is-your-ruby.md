@@ -1,5 +1,5 @@
 ---
-permalink: 2014/08/29/the-problem-is-your-ruby.html
+permalink: 2014/08/29/the-problem-is-your-ruby/
 layout: post
 title: The Problem is Your Ruby
 published: true

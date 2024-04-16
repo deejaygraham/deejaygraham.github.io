@@ -1,5 +1,5 @@
 ---
-permalink: 2018/11/01/linting-in-powershell.html
+permalink: 2018/11/01/linting-in-powershell/
 layout: post
 title: Linting in PowerShell
 published: true 

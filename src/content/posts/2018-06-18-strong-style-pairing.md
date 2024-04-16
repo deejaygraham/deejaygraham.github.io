@@ -1,5 +1,5 @@
 ---
-permalink: 2018/06/18/strong-style-pairing.html
+permalink: 2018/06/18/strong-style-pairing/
 layout: post
 title: Strong Style Pairing
 categories: [ sketchnotes ]

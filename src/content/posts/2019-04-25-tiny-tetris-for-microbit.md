@@ -1,5 +1,5 @@
 ---
-permalink: 2019/04/25/tiny-tetris-for-microbit.html
+permalink: 2019/04/25/tiny-tetris-for-microbit/
 layout: post
 title: Tiny Tetris for Microbit
 categories: [ code, microbit ]

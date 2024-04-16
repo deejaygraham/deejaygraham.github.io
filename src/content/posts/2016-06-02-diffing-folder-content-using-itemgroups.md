@@ -1,5 +1,5 @@
 ---
-permalink: 2016/06/02/diffing-folder-content-using-itemgroups.html
+permalink: 2016/06/02/diffing-folder-content-using-itemgroups/
 layout: post
 title: Diffing Folder Content using ItemGroups
 published: true 

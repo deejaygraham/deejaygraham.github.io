@@ -1,5 +1,5 @@
 ---
-permalink: 2019/06/11/practical-tips-for-playing-well-with-others.html
+permalink: 2019/06/11/practical-tips-for-playing-well-with-others/
 layout: sketchnote
 title: Practical Tips for Playing Well with Others
 categories: [ sketchnotes, presentations ]

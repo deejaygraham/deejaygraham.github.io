@@ -1,5 +1,5 @@
 ---
-permalink: 2020/03/09/evolving-a-clean-pragmatic-architecture.html
+permalink: 2020/03/09/evolving-a-clean-pragmatic-architecture/
 layout: post
 title:  Evolving a Clean, Pragmatic Architecture 
 published: true

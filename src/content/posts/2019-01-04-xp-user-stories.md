@@ -1,5 +1,5 @@
 ---
-permalink: 2019/01/04/xp-user-stories.html
+permalink: 2019/01/04/xp-user-stories/
 layout: post
 title: XP User Stories
 categories: [ sketchnotes, xp ]

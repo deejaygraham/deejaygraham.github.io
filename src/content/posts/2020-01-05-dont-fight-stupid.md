@@ -1,5 +1,5 @@
 ---
-permalink: 2020/01/05/dont-fight-stupid.html
+permalink: 2020/01/05/dont-fight-stupid/
 layout: quotation
 size: large
 title: Dont Fight Stupid

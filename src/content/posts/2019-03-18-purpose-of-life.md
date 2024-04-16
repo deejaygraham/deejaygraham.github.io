@@ -1,5 +1,5 @@
 ---
-permalink: 2019/03/18/purpose-of-life.html
+permalink: 2019/03/18/purpose-of-life/
 layout: quotation
 size: large
 title: The Purpose of Life

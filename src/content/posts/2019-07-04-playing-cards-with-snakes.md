@@ -1,5 +1,5 @@
 ---
-permalink: 2019/07/04/playing-cards-with-snakes.html
+permalink: 2019/07/04/playing-cards-with-snakes/
 layout: post
 title: Playing Cards with Snakes
 published: true

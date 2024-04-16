@@ -1,5 +1,5 @@
 ---
-permalink: 2022/09/30/improved-ghost-detector.html
+permalink: 2022/09/30/improved-ghost-detector/
 layout: post
 title: Improved Ghost Detector
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2019/06/10/microbit-beacons.html
+permalink: 2019/06/10/microbit-beacons/
 layout: post
 title: Microbit Beacons
 published: true

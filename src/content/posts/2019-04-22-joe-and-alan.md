@@ -1,5 +1,5 @@
 ---
-permalink: 2019/04/22/joe-and-alan.html
+permalink: 2019/04/22/joe-and-alan/
 layout: post
 title: Joe and Alan
 published: true 

@@ -1,5 +1,5 @@
 ---
-permalink: 2017/08/26/programming-is-like.html
+permalink: 2017/08/26/programming-is-like/
 layout: quotation
 title: Programming is like...
 published: true

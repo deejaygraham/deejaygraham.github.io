@@ -1,5 +1,5 @@
 ---
-permalink: 2015/01/12/refreshing-folder-contents.html
+permalink: 2015/01/12/refreshing-folder-contents/
 layout: post
 title: Refreshing Folder Contents
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2017/11/30/paparazzi.html
+permalink: 2017/11/30/paparazzi/
 layout: post
 title: microbit Paparazzi Simulator
 categories: [ code, microbit ]

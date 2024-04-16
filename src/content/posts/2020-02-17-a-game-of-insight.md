@@ -1,5 +1,5 @@
 ---
-permalink: 2020/02/17/a-game-of-insight.html
+permalink: 2020/02/17/a-game-of-insight/
 layout: quotation
 size: large
 title: A Game of Insight

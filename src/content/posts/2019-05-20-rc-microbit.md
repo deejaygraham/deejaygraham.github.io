@@ -1,5 +1,5 @@
 ---
-permalink: 2019/05/20/rc-microbit.html
+permalink: 2019/05/20/rc-microbit/
 layout: post
 title: Remote Control Microbit
 published: true

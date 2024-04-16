@@ -1,5 +1,5 @@
 ---
-permalink: 2020/01/17/for-loops-to-list-comprehensions.html
+permalink: 2020/01/17/for-loops-to-list-comprehensions/
 layout: post
 title: Refactoring Nested For Loops to List Comprehensions
 published: true

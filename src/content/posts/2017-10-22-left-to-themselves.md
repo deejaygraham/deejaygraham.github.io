@@ -1,5 +1,5 @@
 ---
-permalink: 2017/10/22/left-to-themselves.html
+permalink: 2017/10/22/left-to-themselves/
 layout: quotation
 title: Left to themselves
 published: true

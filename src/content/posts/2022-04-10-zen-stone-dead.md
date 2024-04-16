@@ -1,5 +1,5 @@
 ---
-permalink: 2022/04/10/zen-stone-dead.html
+permalink: 2022/04/10/zen-stone-dead/
 layout: post
 title: Zen Stone Dead
 categories: [music]

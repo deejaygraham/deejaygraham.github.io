@@ -1,5 +1,5 @@
 ---
-permalink: 2019/01/31/the-future-of-programming.html
+permalink: 2019/01/31/the-future-of-programming/
 layout: post
 title: The Future of Programming
 published: true 

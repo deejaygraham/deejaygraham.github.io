@@ -1,5 +1,5 @@
 ---
-permalink: 2014/07/05/angela-harms-on-pair-programming.html
+permalink: 2014/07/05/angela-harms-on-pair-programming/
 layout: post
 title: Angela Harms on Pair Programming
 published: true

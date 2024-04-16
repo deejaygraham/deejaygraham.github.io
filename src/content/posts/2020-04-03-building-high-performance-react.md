@@ -1,5 +1,5 @@
 ---
-permalink: 2020/04/03/building-high-performance-react.html
+permalink: 2020/04/03/building-high-performance-react/
 layout: post
 title:  Building High Performance React Applications 
 published: true

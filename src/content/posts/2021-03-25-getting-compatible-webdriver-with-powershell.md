@@ -1,5 +1,5 @@
 ---
-permalink: 2021/03/25/getting-compatible-webdriver-with-powershell.html
+permalink: 2021/03/25/getting-compatible-webdriver-with-powershell/
 layout: post
 title: Getting the right Selenium driver 
 published: true 

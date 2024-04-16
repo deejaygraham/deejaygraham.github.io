@@ -1,5 +1,5 @@
 ---
-permalink: 2018/04/15/software-is-not-a-craft.html
+permalink: 2018/04/15/software-is-not-a-craft/
 layout: quotation
 size: large
 title: Software is not a Craft

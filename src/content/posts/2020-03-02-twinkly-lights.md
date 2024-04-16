@@ -1,5 +1,5 @@
 ---
-permalink: 2020/03/02/twinkly-lights.html
+permalink: 2020/03/02/twinkly-lights/
 layout: post
 title: Microbit Twinkly Lights
 published: true

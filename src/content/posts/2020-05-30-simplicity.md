@@ -1,5 +1,5 @@
 ---
-permalink: 2020/05/30/simplicity.html
+permalink: 2020/05/30/simplicity/
 layout: quotation
 size: large
 title: Simplicity

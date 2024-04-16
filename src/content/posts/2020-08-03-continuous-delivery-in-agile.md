@@ -1,5 +1,5 @@
 ---
-permalink: 2020/08/03/continuous-delivery-in-agile.html
+permalink: 2020/08/03/continuous-delivery-in-agile/
 layout: post
 title:  Continuous Delivery In Agile
 published: true

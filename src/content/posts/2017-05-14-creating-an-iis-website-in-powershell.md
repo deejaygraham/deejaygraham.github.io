@@ -1,5 +1,5 @@
 ---
-permalink: 2017/05/14/creating-an-iis-website-in-powershell.html
+permalink: 2017/05/14/creating-an-iis-website-in-powershell/
 layout: post
 title: Building an IIS website in PowerShell
 published: true

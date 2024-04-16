@@ -1,5 +1,5 @@
 ---
-permalink: 2020/07/11/code-that-works.html
+permalink: 2020/07/11/code-that-works/
 layout: quotation
 size: large
 title: Code That Works

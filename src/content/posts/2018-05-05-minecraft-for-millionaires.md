@@ -1,5 +1,5 @@
 ---
-permalink: 2018/05/05/minecraft-for-millionaires.html
+permalink: 2018/05/05/minecraft-for-millionaires/
 layout: post
 title: Minecraft Pi for Millionaires
 categories: [ code, minecraft ]

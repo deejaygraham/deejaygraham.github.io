@@ -1,5 +1,5 @@
 ---
-permalink: 2020/02/25/more-testable-code-with-hexagonal-architecture.html
+permalink: 2020/02/25/more-testable-code-with-hexagonal-architecture/
 layout: post
 title:  More Testable Code with the Hexagonal Architecture
 published: true

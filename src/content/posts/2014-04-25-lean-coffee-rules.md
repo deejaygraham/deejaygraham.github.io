@@ -1,5 +1,5 @@
 ---
-permalink: 2014/04/25/lean-coffee-rules.html
+permalink: 2014/04/25/lean-coffee-rules/
 layout: sketchnote
 title: Lean Coffee Rules
 categories: [sketchnotes, presentations ]

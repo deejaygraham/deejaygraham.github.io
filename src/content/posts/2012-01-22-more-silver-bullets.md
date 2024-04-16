@@ -1,5 +1,5 @@
 ---
-permalink: 2012/01/22/more-silver-bullets.html
+permalink: 2012/01/22/more-silver-bullets/
 layout: quotation
 title: More Silver Bullets
 published: true 

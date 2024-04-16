@@ -1,5 +1,5 @@
 ---
-permalink: 2012/03/10/james-randi-at-ted.html
+permalink: 2012/03/10/james-randi-at-ted/
 layout: post
 title: James Randi at TED
 published: true 

@@ -1,5 +1,5 @@
 ---
-permalink: 2019/05/16/microbit-motoring.html
+permalink: 2019/05/16/microbit-motoring/
 layout: post
 title: Microbit Motoring
 published: true

@@ -1,5 +1,5 @@
 ---
-permalink: 2018/11/26/testing-and-refactoring-legacy-code.html
+permalink: 2018/11/26/testing-and-refactoring-legacy-code/
 layout: sketchnote
 title: Testing and Refactoring Legacy Code
 categories: [ sketchnotes, presentations, agile, tdd, xp  ]

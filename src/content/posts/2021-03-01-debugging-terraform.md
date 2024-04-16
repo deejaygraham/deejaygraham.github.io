@@ -1,5 +1,5 @@
 ---
-permalink: 2021/03/01/debugging-terraform.html
+permalink: 2021/03/01/debugging-terraform/
 layout: post
 title: Debugging Terraform
 published: true 

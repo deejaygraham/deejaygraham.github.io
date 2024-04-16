@@ -1,5 +1,5 @@
 ---
-permalink: 2016/10/04/rock-paper-microbit.html
+permalink: 2016/10/04/rock-paper-microbit/
 layout: post
 title: Rock, Paper, Microbit
 published: true

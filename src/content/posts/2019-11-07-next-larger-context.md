@@ -1,5 +1,5 @@
 ---
-permalink: 2019/11/07/next-larger-context.html
+permalink: 2019/11/07/next-larger-context/
 layout: quotation
 size: medium
 title: Design for the Next Larger Context

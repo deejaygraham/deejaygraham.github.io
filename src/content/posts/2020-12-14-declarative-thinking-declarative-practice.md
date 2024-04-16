@@ -1,5 +1,5 @@
 ---
-permalink: 2020/12/14/declarative-thinking-declarative-practice.html
+permalink: 2020/12/14/declarative-thinking-declarative-practice/
 layout: post
 title:  Declarative Thinking Declarative Practice
 published: true

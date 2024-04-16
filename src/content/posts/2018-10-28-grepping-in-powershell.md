@@ -1,5 +1,5 @@
 ---
-permalink: 2018/10/28/grepping-in-powershell.html
+permalink: 2018/10/28/grepping-in-powershell/
 layout: post
 title: Grepping in PowerShell
 published: true 

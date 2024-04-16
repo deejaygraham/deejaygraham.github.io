@@ -1,5 +1,5 @@
 ---
-permalink: 2019/03/01/validating-file-hashes-in-powershell.html
+permalink: 2019/03/01/validating-file-hashes-in-powershell/
 layout: post
 title: Validating File Hashes in PowerShell
 published: true 

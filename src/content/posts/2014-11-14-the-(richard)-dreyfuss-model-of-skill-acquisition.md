@@ -1,5 +1,5 @@
 ---
-permalink: 2014/11/14/the-(richard)-dreyfuss-model-of-skill-acquisition.html
+permalink: 2014/11/14/the-(richard)-dreyfuss-model-of-skill-acquisition/
 layout: sketchnote
 title: The (Richard) Dreyfuss Model of Skill Acquisition
 categories: [ sketchnotes, illustration ]

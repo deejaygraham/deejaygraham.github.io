@@ -1,5 +1,5 @@
 ---
-permalink: 2015/03/27/running-an-azure-cloud-service-without-an-emulator.html
+permalink: 2015/03/27/running-an-azure-cloud-service-without-an-emulator/
 layout: post
 title: Running an Azure Cloud Service without an Emulator
 published: true 

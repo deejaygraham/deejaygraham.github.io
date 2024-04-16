@@ -1,5 +1,5 @@
 ---
-permalink: 2018/03/22/seven-minutes-twenty-six-seconds.html
+permalink: 2018/03/22/seven-minutes-twenty-six-seconds/
 layout: sketchnote
 title: 7 minutes, 26 seconds
 categories: [ sketchnotes, presentations, agile, tdd, xp  ]

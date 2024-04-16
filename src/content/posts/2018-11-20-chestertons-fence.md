@@ -1,5 +1,5 @@
 ---
-permalink: 2018/11/20/chestertons-fence.html
+permalink: 2018/11/20/chestertons-fence/
 layout: quotation
 size: medium
 title: Chestertons Fence
