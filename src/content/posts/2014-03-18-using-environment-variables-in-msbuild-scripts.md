@@ -1,4 +1,5 @@
 ---
+permalink: 2014/03/18/using-environment-variables-in-msbuild-scripts.html
 layout: post
 title: Using Environment Variables in MsBuild Scripts
 published: true

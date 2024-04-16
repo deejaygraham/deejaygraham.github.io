@@ -1,4 +1,5 @@
 ---
+permalink: 2012/01/07/no-silver-bullet.html
 layout: quotation
 title: No Silver Bullet
 published: true 

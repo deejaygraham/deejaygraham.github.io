@@ -1,4 +1,5 @@
 ---
+permalink: 2015/05/27/devopsing-an-azure-servicebus.html
 layout: post
 title: DevOpsing an Azure ServiceBus
 published: true 

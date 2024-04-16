@@ -1,4 +1,5 @@
 ---
+permalink: 2013/12/15/stop-using-development-mode.html
 layout: post
 title: Stop Using Development Mode
 published: true

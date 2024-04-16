@@ -1,4 +1,5 @@
 ---
+permalink: 2020/05/26/remove-temp-aspnet-files.html
 layout: post
 title: Remove Temporary ASP.Net Files in PowerShell
 published: true 

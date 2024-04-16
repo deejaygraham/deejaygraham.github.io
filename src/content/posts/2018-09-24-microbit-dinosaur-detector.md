@@ -1,4 +1,5 @@
 ---
+permalink: 2018/09/24/microbit-dinosaur-detector.html
 layout: post
 title: Microbit Dinosaur Detector
 categories: [ code, microbit ]

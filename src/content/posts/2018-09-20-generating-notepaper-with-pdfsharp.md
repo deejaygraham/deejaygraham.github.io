@@ -1,4 +1,5 @@
 ---
+permalink: 2018/09/20/generating-notepaper-with-pdfsharp.html
 layout: post
 title: Generating Notepaper with PdfSharp
 categories: [ code ]

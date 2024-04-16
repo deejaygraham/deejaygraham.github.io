@@ -1,4 +1,5 @@
 ---
+permalink: 2020/05/15/dino-quiz-in-scratch.html
 layout: post
 title: Dino Quiz in Scratch
 published: true

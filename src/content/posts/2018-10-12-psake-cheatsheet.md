@@ -1,4 +1,5 @@
 ---
+permalink: 2018/10/12/psake-cheatsheet.html
 layout: post
 title: PSake Cheatsheet
 published: true 

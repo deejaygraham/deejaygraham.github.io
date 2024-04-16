@@ -1,4 +1,5 @@
 ---
+permalink: 2022/05/18/simple-thumbnail-generator.html
 layout: post
 title: Simple Thumbnail Generator
 published: true

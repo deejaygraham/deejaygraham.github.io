@@ -1,4 +1,5 @@
 ---
+permalink: 2019/05/05/reliability-engineering-for-humans.html
 layout: post
 title: Reliability Engineering for Humans
 published: true 

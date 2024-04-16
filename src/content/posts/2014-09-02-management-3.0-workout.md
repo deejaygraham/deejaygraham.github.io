@@ -1,4 +1,5 @@
 ---
+permalink: 2014/09/02/management-3.0-workout.html
 layout: post
 title: Management 3.0 Workout
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2022/08/13/secret-sketchnoter-2.html
 layout: sketchnote
 title: Secret Sketchnoter 2
 categories: [ sketchnotes ]

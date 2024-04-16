@@ -1,4 +1,5 @@
 ---
+permalink: 2015/06/01/testing-azure-servicebus-queues.html
 layout: post
 title: Testing Azure ServiceBus Queues
 published: true 

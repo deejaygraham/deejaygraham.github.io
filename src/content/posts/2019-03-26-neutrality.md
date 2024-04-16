@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/26/neutrality.html
 layout: quotation
 title: Neutrality
 published: true

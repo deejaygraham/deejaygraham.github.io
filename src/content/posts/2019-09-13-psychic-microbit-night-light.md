@@ -1,4 +1,5 @@
 ---
+permalink: 2019/09/13/psychic-microbit-night-light.html
 layout: post
 title: Psychic Microbit Night Light
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2014/12/15/sketchnotes-from-ace-2014.html
 layout: post
 title: Sketchnotes from ACE! 2014
 published: true

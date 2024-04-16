@@ -1,4 +1,5 @@
 ---
+permalink: 2018/05/28/the-best-plan-for-a-system.html
 layout: quotation
 title: The Best Plan for a System
 published: true

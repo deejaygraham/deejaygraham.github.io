@@ -1,4 +1,5 @@
 ---
+permalink: 2022/05/03/windows-auth-http-client.html
 layout: post
 title: HttpClient with Windows Auth
 published: true

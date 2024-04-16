@@ -1,4 +1,5 @@
 ---
+permalink: 2013/04/29/scrum-assessments.html
 layout: post
 title: Scrum.org Open Assessments
 published: true

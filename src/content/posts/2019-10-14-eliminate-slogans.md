@@ -1,4 +1,5 @@
 ---
+permalink: 2019/10/14/eliminate-slogans.html
 layout: quotation
 size: medium
 title: Eliminate Slogans

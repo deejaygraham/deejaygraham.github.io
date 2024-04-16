@@ -1,4 +1,5 @@
 ---
+permalink: 2019/11/08/commitment.html
 layout: quotation
 size: medium
 title: Commitment

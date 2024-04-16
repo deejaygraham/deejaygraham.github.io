@@ -1,4 +1,5 @@
 ---
+permalink: 2015/10/20/prime-directive.html
 layout: quotation
 title: Prime Directive
 attribution: Norm Kerth

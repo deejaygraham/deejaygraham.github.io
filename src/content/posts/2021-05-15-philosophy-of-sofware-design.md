@@ -1,4 +1,5 @@
 ---
+permalink: 2021/05/15/philosophy-of-sofware-design.html
 layout: post
 title: A Philosophy of Software Design
 published: true

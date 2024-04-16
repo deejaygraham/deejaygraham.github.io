@@ -1,4 +1,5 @@
 ---
+permalink: 2016/07/13/rolling-rocks-in-newcastle.html
 layout: post
 title: Rolling Rocks in Newcastle
 categories: [ agile, presentations, sketchnotes ]

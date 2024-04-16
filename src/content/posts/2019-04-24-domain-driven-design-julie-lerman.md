@@ -1,4 +1,5 @@
 ---
+permalink: 2019/04/24/domain-driven-design-julie-lerman.html
 layout: post
 title: Domain-Driven Design for the Database Driven Mind
 published: true 

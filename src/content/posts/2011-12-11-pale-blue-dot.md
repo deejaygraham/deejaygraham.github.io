@@ -1,4 +1,5 @@
 ---
+permalink: 2011/12/11/pale-blue-dot.html
 layout: post
 title: Pale Blue Dot
 published: true 

@@ -1,4 +1,5 @@
 ---
+permalink: 2017/10/18/bcn-craftsmanship-sketchnote.html
 layout: post
 title: Two Examples of Sketchnoting Inception
 published: true

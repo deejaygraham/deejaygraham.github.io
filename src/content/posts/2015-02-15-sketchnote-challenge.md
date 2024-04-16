@@ -1,4 +1,5 @@
 ---
+permalink: 2015/02/15/sketchnote-challenge.html
 layout: sketchnote
 title: Sketchnoting Challenge
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2015/10/30/executing-sql-scripts-in-powershell-are-go.html
 layout: post
 title: Executing SQL Scripts in PowerShell are GO
 published: true

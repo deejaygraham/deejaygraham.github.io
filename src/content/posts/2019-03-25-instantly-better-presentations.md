@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/25/instantly-better-presentations.html
 layout: post
 title: Instantly Better Presentations
 published: true 

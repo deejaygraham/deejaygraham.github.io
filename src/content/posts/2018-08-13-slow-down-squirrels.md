@@ -1,4 +1,5 @@
 ---
+permalink: 2018/08/13/slow-down-squirrels.html
 layout: post
 title: Slow Down, Red Squirrels
 published: true

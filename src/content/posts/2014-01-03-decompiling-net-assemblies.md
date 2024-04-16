@@ -1,4 +1,5 @@
 ---
+permalink: 2014/01/03/decompiling-net-assemblies.html
 layout: post
 title: Decompiling .Net Assemblies
 published: true

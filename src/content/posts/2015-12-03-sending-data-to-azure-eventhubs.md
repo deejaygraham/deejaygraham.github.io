@@ -1,4 +1,5 @@
 ---
+permalink: 2015/12/03/sending-data-to-azure-eventhubs.html
 layout: post
 title: Sending data to Azure EventHubs
 published: true 

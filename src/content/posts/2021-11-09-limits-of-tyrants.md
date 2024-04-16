@@ -1,4 +1,5 @@
 ---
+permalink: 2021/11/09/limits-of-tyrants.html
 layout: quotation
 title: Limits of Tyrants
 published: true

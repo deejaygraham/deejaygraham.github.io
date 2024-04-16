@@ -1,4 +1,5 @@
 ---
+permalink: 2017/04/11/lightning-calculator-for-microbit.html
 layout: post
 title: Lightning Calculator for the Microbit
 categories: [ code, microbit ]

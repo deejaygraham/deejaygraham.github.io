@@ -1,4 +1,5 @@
 ---
+permalink: 2017/03/21/how-to-bullet-journal.html
 layout: post
 title: How to Bullet Journal
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2017/01/20/people-work-within-the-system.html
 layout: post
 title: People Work Within the System
 published: true

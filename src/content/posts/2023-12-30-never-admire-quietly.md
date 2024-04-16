@@ -1,4 +1,5 @@
 ---
+permalink: 2023/12/30/never-admire-quietly.html
 layout: quotation
 size: large
 title: Never Admire Quietly

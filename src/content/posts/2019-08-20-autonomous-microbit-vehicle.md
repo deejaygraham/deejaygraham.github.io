@@ -1,4 +1,5 @@
 ---
+permalink: 2019/08/20/autonomous-microbit-vehicle.html
 layout: post
 title: Autonomous Microbit Vehicle
 published: true

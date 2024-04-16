@@ -1,4 +1,5 @@
 ---
+permalink: 2018/04/03/always-a-people-problem.html
 layout: quotation
 title: Always a People Problem
 published: true

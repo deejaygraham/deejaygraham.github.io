@@ -1,4 +1,5 @@
 ---
+permalink: 2012/02/03/discreet-sheep.html
 layout: quotation
 title: Discreet Sheep
 published: true 

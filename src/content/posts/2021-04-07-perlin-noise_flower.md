@@ -1,4 +1,5 @@
 ---
+permalink: 2021/04/07/perlin-noise_flower.html
 layout: post
 title: Perlin Noise Flower
 published: true

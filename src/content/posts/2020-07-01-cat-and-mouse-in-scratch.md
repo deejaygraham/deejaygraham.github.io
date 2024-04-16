@@ -1,4 +1,5 @@
 ---
+permalink: 2020/07/01/cat-and-mouse-in-scratch.html
 layout: post
 title: Cat and Mouse Game in Scratch
 published: true

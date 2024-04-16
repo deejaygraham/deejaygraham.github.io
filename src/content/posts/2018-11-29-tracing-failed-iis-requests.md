@@ -1,4 +1,5 @@
 ---
+permalink: 2018/11/29/tracing-failed-iis-requests.html
 layout: post
 title: Tracing Failed IIS Requests
 categories: [ code ]

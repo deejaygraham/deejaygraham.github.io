@@ -1,4 +1,5 @@
 ---
+permalink: 2017/03/01/passing-msbuild-variables-to-wix.html
 layout: post
 title: Passing MsBuild Variables to Wix
 published: true

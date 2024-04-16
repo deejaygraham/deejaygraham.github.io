@@ -1,4 +1,5 @@
 ---
+permalink: 2019/08/10/microbit-with-neopixels.html
 layout: post
 title: Microbit with NeoPixels
 published: true

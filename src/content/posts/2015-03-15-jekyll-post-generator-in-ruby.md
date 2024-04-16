@@ -1,4 +1,5 @@
 ---
+permalink: 2015/03/15/jekyll-post-generator-in-ruby.html
 layout: post
 title: Jekyll Post Generator in Ruby
 published: true 

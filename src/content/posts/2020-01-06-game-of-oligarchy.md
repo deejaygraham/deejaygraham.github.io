@@ -1,4 +1,5 @@
 ---
+permalink: 2020/01/06/game-of-oligarchy.html
 layout: post
 title: Game of Oligarchy
 published: true

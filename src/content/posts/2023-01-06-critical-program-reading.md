@@ -1,4 +1,5 @@
 ---
+permalink: 2023/01/06/critical-program-reading.html
 layout: post
 title:  Critical Program Reading
 published: true

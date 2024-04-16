@@ -1,4 +1,5 @@
 ---
+permalink: 2016/09/09/mobprogramming-in-newcastle.html
 layout: post
 title: MobProgramming comes to Newcastle
 categories: [ agile ]

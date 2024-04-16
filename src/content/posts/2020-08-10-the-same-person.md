@@ -1,4 +1,5 @@
 ---
+permalink: 2020/08/10/the-same-person.html
 layout: quotation
 size: large
 title: The Same Person

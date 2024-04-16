@@ -1,4 +1,5 @@
 ---
+permalink: 2015/06/25/better-powershell-help.html
 layout: post
 title: Better PowerShell Help
 published: true 

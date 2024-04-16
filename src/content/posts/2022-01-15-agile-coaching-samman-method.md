@@ -1,4 +1,5 @@
 ---
+permalink: 2022/01/15/agile-coaching-samman-method.html
 layout: post
 title:  Technical Agile Coaching With the Samman Method
 published: true

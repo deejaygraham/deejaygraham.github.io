@@ -1,4 +1,5 @@
 ---
+permalink: 2019/11/29/querying-log-analytics-with-powershell.html
 layout: post
 title: Querying Azure Log Analytics with PowerShell
 published: true 

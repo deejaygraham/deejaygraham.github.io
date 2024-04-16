@@ -1,4 +1,5 @@
 ---
+permalink: 2014/01/28/creating-jekyll-posts.html
 layout: post
 title: Creating Jekyll Posts
 published: true

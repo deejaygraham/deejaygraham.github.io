@@ -1,4 +1,5 @@
 ---
+permalink: 2018/06/07/palomino-blackwing.html
 layout: post
 title: Palomino Blackwing
 categories: [ sketchnotes ]

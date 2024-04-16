@@ -1,4 +1,5 @@
 ---
+permalink: 2014/08/01/but-really-you-should-learn-smalltalk.html
 layout: post
 title: But Really You Should Learn Smalltalk
 published: true

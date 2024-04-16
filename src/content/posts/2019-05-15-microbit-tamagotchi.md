@@ -1,4 +1,5 @@
 ---
+permalink: 2019/05/15/microbit-tamagotchi.html
 layout: post
 title: Microbotchi
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2024/03/01/microbit-sound-meter.html
 layout: post
 title:  Microbit Sound Meter
 published: true

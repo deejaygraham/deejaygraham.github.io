@@ -1,4 +1,5 @@
 ---
+permalink: 2020/05/18/disagreement.html
 layout: quotation
 size: large
 title: Disagreement

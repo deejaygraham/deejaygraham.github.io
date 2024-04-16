@@ -1,4 +1,5 @@
 ---
+permalink: 2014/08/18/generating-file-content-in-the-build.html
 layout: post
 title: Generating File Content in the Build
 published: true

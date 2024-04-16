@@ -1,4 +1,5 @@
 ---
+permalink: 2021/01/27/stop-obsessing-about-primitives.html
 layout: post
 title:  Stop Obsessing About Primitives
 published: true

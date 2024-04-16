@@ -1,4 +1,5 @@
 ---
+permalink: 2018/07/09/extreme-portraiture.html
 layout: post
 title: XP - Extreme Portraiture
 published: true

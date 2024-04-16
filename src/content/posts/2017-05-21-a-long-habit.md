@@ -1,4 +1,5 @@
 ---
+permalink: 2017/05/21/a-long-habit.html
 layout: quotation
 title: A Long Habit
 attribution: Tom Paine

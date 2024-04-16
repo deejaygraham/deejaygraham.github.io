@@ -1,4 +1,5 @@
 ---
+permalink: 2014/10/23/sketchote2-from-ddd-north-2014.html
 layout: sketchnote
 title: Sketchnote 2 from DDDNorth 2014
 categories: [ sketchnotes, presentations ]

@@ -1,4 +1,5 @@
 ---
+permalink: 2014/02/15/msbuild-target-order.html
 layout: post
 title: MsBuild Target Order
 published: true

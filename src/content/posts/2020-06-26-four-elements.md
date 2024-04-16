@@ -1,4 +1,5 @@
 ---
+permalink: 2020/06/26/four-elements.html
 layout: sketchnote
 title: The Four Elements of Simple Design
 categories: [ sketchnotes ]

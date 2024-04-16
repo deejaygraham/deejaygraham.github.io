@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/08/create-a-scheduled-task-in-powershell.html
 layout: post
 title: Create a Scheduled Task in PowerShell
 published: true 

@@ -1,4 +1,5 @@
 ---
+permalink: 2020/06/30/alternative-programming-languages.html
 layout: post
 title: Alternative Programming Languages
 published: true

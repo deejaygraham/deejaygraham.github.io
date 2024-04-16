@@ -1,4 +1,5 @@
 ---
+permalink: 2018/11/18/be-where-your-feet-are.html
 layout: quotation
 title: Be Where Your Feet Are
 published: true

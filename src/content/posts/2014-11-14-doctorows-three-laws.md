@@ -1,4 +1,5 @@
 ---
+permalink: 2014/11/14/doctorows-three-laws.html
 layout: sketchnote
 title: Doctorow's Three Laws
 categories: [ video, sketchnotes, open-source, illustration ]

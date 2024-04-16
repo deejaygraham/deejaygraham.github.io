@@ -1,4 +1,5 @@
 ---
+permalink: 2023/08/11/dont-be-in-a-hurry.html
 layout: quotation
 title: Don't Be in a Hurry
 published: true

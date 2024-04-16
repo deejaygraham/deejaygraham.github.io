@@ -1,4 +1,5 @@
 ---
+permalink: 2015/12/02/sketchnotes-ebook-from-dddnorth-2015.html
 layout: post
 title: Ebook of Sketchnotes from DDDNorth 2015 now available!
 categories: [ sketchnotes, presentations ]

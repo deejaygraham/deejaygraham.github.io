@@ -1,4 +1,5 @@
 ---
+permalink: 2020/04/30/taming-forms-in-react.html
 layout: post
 title:  Taming Forms in React
 published: true

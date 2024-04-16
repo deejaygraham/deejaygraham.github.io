@@ -1,4 +1,5 @@
 ---
+permalink: 2019/05/22/life-as-a-developer.html
 layout: post
 title: Life as a Developer
 published: true 

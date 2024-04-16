@@ -1,4 +1,5 @@
 ---
+permalink: 2015/04/24/powershell-training-recommendations.html
 layout: post
 title: PowerShell Training Recommendations
 published: true 

@@ -1,4 +1,5 @@
 ---
+permalink: 2019/06/08/balanced-parens-kata.html
 layout: post
 title: Balanced Parentheses Kata
 published: true

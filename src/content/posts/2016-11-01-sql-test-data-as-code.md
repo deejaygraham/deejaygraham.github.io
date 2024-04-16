@@ -1,4 +1,5 @@
 ---
+permalink: 2016/11/01/sql-test-data-as-code.html
 layout: post
 title: SQL Test Data as Code
 published: true

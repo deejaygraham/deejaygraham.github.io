@@ -1,4 +1,5 @@
 ---
+permalink: 2018/07/23/good-employees.html
 layout: quotation
 title: Good Employees
 published: true

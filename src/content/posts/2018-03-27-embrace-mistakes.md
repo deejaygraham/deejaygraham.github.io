@@ -1,4 +1,5 @@
 ---
+permalink: 2018/03/27/embrace-mistakes.html
 layout: post
 title: Embrace Your Mistakes
 published: true

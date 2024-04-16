@@ -1,4 +1,5 @@
 ---
+permalink: 2019/12/07/our-greatest-asset.html
 layout: quotation
 size: medium
 title: Our Greatest Asset

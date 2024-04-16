@@ -1,4 +1,5 @@
 ---
+permalink: 2019/09/20/how-to-steal-an-election.html
 layout: post
 title: How to Steal an Election
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2012/04/10/man's-original-virtue.html
 layout: quotation
 title: Man's Original Virtue
 published: true 

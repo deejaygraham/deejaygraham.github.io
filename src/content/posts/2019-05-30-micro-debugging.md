@@ -1,4 +1,5 @@
 ---
+permalink: 2019/05/30/micro-debugging.html
 layout: post
 title: Debugging Microbit Sensors
 published: true

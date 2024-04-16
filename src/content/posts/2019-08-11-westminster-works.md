@@ -1,4 +1,5 @@
 ---
+permalink: 2019/08/11/westminster-works.html
 layout: post
 title: Westminster Works
 published: true

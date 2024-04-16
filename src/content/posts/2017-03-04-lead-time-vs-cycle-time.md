@@ -1,4 +1,5 @@
 ---
+permalink: 2017/03/04/lead-time-vs-cycle-time.html
 layout: sketchnote
 title: Lead Time vs Cycle Time
 categories: [ lean, sketchnotes, illustration ]

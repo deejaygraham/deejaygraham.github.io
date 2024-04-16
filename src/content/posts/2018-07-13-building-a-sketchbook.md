@@ -1,4 +1,5 @@
 ---
+permalink: 2018/07/13/building-a-sketchbook.html
 layout: post
 title: Building a sketchbook
 categories: [sketchnotes]

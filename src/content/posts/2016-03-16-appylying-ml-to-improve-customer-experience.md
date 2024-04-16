@@ -1,4 +1,5 @@
 ---
+permalink: 2016/03/16/appylying-ml-to-improve-customer-experience.html
 layout: post
 title: Applying AML to Improve Customer Experience
 categories: [ code, presentations ]

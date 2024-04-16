@@ -1,4 +1,5 @@
 ---
+permalink: 2018/05/12/simulated-minecraft-creeper.html
 layout: post
 title: Simulating Minecraft Creeper on Pi
 categories: [ code, minecraft ]

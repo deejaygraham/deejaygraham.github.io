@@ -1,4 +1,5 @@
 ---
+permalink: 2019/12/12/fail-better-with-qa-in-production.html
 layout: post
 title: Fail better with QA in Production
 published: true

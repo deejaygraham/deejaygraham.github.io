@@ -1,4 +1,5 @@
 ---
+permalink: 2019/10/14/mini-approval-tests.html
 layout: post
 title: Mini Approval Testing
 published: true

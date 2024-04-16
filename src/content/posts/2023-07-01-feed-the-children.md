@@ -1,4 +1,5 @@
 ---
+permalink: 2023/07/01/feed-the-children.html
 layout: quotation
 size: large
 title: Feed the Children

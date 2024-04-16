@@ -1,4 +1,5 @@
 ---
+permalink: 2018/06/30/its-raining-blocks.html
 layout: post
 title: It's Raining Blocks
 categories: [ code, minecraft ]

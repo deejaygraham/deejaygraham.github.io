@@ -1,4 +1,5 @@
 ---
+permalink: 2020/11/10/random-city-skyline.html
 layout: post
 title: Random City Skyline
 published: true

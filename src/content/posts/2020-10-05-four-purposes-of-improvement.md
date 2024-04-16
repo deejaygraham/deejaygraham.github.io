@@ -1,4 +1,5 @@
 ---
+permalink: 2020/10/05/four-purposes-of-improvement.html
 layout: quotation
 size: large
 title: Four Purposes of Improvement

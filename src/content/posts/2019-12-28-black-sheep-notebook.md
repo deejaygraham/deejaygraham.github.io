@@ -1,4 +1,5 @@
 ---
+permalink: 2019/12/28/black-sheep-notebook.html
 layout: post
 title: Black Sheep Notebook
 published: true

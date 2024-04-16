@@ -1,4 +1,5 @@
 ---
+permalink: 2015/06/15/orwell's-hen-house.html
 layout: quotation
 title: Orwell's Hen-House
 attribution: George Orwell

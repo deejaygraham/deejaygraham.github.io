@@ -1,4 +1,5 @@
 ---
+permalink: 2018/09/05/powershell-so-you-dont-have-to.html
 layout: post
 title: 12 Things that Powershell can do (so you don't have to)
 tags: [ presentations ]

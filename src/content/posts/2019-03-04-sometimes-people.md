@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/04/sometimes-people.html
 layout: quotation
 size: medium
 title: Sometimes People

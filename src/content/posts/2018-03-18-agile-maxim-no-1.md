@@ -1,4 +1,5 @@
 ---
+permalink: 2018/03/18/agile-maxim-no-1.html
 layout: post
 title: Agile Maxim No.1
 published: true

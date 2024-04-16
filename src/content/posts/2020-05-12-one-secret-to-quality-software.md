@@ -1,4 +1,5 @@
 ---
+permalink: 2020/05/12/one-secret-to-quality-software.html
 layout: post
 title: One Secret to Quality Software
 published: true

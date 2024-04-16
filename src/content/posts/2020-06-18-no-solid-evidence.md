@@ -1,4 +1,5 @@
 ---
+permalink: 2020/06/18/no-solid-evidence.html
 layout: post
 title: no SOLID evidence
 published: true

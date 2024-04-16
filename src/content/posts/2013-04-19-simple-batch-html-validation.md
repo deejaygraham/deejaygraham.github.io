@@ -1,4 +1,5 @@
 ---
+permalink: 2013/04/19/simple-batch-html-validation.html
 layout: post
 title: Simple Batch Html Validation
 published: true

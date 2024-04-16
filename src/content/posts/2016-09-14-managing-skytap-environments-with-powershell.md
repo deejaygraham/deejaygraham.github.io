@@ -1,4 +1,5 @@
 ---
+permalink: 2016/09/14/managing-skytap-environments-with-powershell.html
 layout: post
 title: Managing Skytap environments with PowerShell
 categories: [ powershell ]

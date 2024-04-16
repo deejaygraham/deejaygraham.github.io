@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/21/fools-plan.html
 layout: quotation
 size: large
 title: Fool's Plan

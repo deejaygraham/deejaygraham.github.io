@@ -1,4 +1,5 @@
 ---
+permalink: 2014/06/14/how-to-learn-anything.html
 layout: sketchnote
 title: How to Learn Anything
 published: true

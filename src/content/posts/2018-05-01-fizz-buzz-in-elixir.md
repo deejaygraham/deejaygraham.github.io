@@ -1,4 +1,5 @@
 ---
+permalink: 2018/05/01/fizz-buzz-in-elixir.html
 layout: post
 title: FizzBuzz in Elixir
 categories: [ code ]

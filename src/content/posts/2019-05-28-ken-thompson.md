@@ -1,4 +1,5 @@
 ---
+permalink: 2019/05/28/ken-thompson.html
 layout: post
 title: Interview with Ken Thompson  
 published: true 

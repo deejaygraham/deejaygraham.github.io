@@ -1,4 +1,5 @@
 ---
+permalink: 2014/10/01/extracing-slide-images-from-a-pdf.html
 layout: post
 title: Extracting Slide Images from a Pdf
 published: true

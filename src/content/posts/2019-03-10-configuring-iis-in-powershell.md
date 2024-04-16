@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/10/configuring-iis-in-powershell.html
 layout: post
 title: Configuring IIS in PowerShell
 published: true 

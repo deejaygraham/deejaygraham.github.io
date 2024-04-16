@@ -1,4 +1,5 @@
 ---
+permalink: 2016/03/17/github-pages-post-dates.html
 layout: post
 title: The Case of the Disappearing Github Pages
 published: true 

@@ -1,4 +1,5 @@
 ---
+permalink: 2015/11/01/azure-startup-taks.html
 layout: post
 title: Azure Startup Tasks
 published: true

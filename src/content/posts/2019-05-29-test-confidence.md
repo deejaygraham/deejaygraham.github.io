@@ -1,4 +1,5 @@
 ---
+permalink: 2019/05/29/test-confidence.html
 layout: quotation
 title: Test Confidence
 published: true

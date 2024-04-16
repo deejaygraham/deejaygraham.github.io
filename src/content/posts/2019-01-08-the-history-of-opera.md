@@ -1,4 +1,5 @@
 ---
+permalink: 2019/01/08/the-history-of-opera.html
 layout: post
 title: The History of Opera and the Future of Programming
 published: true 

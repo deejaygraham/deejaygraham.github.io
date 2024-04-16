@@ -1,4 +1,5 @@
 ---
+permalink: 2021/01/04/sketchnoting-for-science.html
 layout: sketchnote
 title: Sketchoting for Science
 categories: [ sketchnotes ]

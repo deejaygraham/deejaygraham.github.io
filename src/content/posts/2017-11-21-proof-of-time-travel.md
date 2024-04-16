@@ -1,4 +1,5 @@
 ---
+permalink: 2017/11/21/proof-of-time-travel.html
 layout: post
 title: Proof of Time Travel
 published: true

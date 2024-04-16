@@ -1,4 +1,5 @@
 ---
+permalink: 2020/10/18/hand-binding-a-sketchbook.html
 layout: post
 title: Hand Binding a sketchbook
 categories: [sketchnotes]

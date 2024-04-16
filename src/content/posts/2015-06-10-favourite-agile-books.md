@@ -1,4 +1,5 @@
 ---
+permalink: 2015/06/10/favourite-agile-books.html
 layout: post
 title: Favourite Books
 published: true

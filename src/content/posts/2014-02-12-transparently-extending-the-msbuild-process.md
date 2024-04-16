@@ -1,4 +1,5 @@
 ---
+permalink: 2014/02/12/transparently-extending-the-msbuild-process.html
 layout: post
 title: Transparently Extending the MsBuild Process
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2019/02/01/gui-automation-in-powershell-using-autoit.html
 layout: post
 title: GUI Automation in PowerShell using AutoIt
 published: true 

@@ -1,4 +1,5 @@
 ---
+permalink: 2018/06/12/alan-kay-oop.html
 layout: quotation
 title: Alan Kay and OOP
 categories: [ quote, code ]

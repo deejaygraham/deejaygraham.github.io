@@ -1,4 +1,5 @@
 ---
+permalink: 2017/07/11/cult-of-ignorance.html
 layout: quotation
 title: Cult of Ignorance
 published: true

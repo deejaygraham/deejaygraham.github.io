@@ -1,4 +1,5 @@
 ---
+permalink: 2019/01/05/user-story-strategies.html
 layout: post
 title: User Story Strategies
 categories: [ sketchnotes, xp ]

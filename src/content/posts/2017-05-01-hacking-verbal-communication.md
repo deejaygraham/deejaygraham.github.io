@@ -1,4 +1,5 @@
 ---
+permalink: 2017/05/01/hacking-verbal-communication.html
 layout: sketchnote
 title: Hacking Verbal Communication
 categories: [ sketchnotes, presentations, agile  ]

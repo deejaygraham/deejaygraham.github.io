@@ -1,4 +1,5 @@
 ---
+permalink: 2014/04/09/kill-all-your-managers.html
 layout: post
 title: Kill All Your Managers
 published: true

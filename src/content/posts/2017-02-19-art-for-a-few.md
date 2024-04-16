@@ -1,4 +1,5 @@
 ---
+permalink: 2017/02/19/art-for-a-few.html
 layout: quotation
 title: Art for a Few
 attribution: William Morris

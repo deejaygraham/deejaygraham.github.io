@@ -1,4 +1,5 @@
 ---
+permalink: 2018/09/03/lightweight-build-order-logging-msbuild.html
 layout: post
 title: Lightweight Build Order Logging in MSBuild
 published: true

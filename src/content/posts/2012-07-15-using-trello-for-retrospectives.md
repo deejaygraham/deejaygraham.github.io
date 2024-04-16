@@ -1,4 +1,5 @@
 ---
+permalink: 2012/07/15/using-trello-for-retrospectives.html
 layout: post
 title: Using Trello for Retrospectives
 published: true

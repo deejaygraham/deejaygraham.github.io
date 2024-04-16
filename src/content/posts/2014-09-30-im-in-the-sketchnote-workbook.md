@@ -1,4 +1,5 @@
 ---
+permalink: 2014/09/30/im-in-the-sketchnote-workbook.html
 layout: post
 title: I'm in the Sketchnote Workbook!
 published: true

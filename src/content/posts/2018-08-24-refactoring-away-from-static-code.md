@@ -1,4 +1,5 @@
 ---
+permalink: 2018/08/24/refactoring-away-from-static-code.html
 layout: post
 title: Refactoring Away from Static Code
 published: true

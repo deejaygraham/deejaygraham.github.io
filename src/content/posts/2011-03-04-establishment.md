@@ -1,4 +1,5 @@
 ---
+permalink: 2011/03/04/establishment.html
 layout: quotation
 size: medium
 title: Establishment

@@ -1,4 +1,5 @@
 ---
+permalink: 2023/06/22/create-cypress-environment-vars.html
 layout: post
 title: Create Environment Variables in Cypress
 published: true

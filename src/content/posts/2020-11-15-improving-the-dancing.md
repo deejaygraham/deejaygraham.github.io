@@ -1,4 +1,5 @@
 ---
+permalink: 2020/11/15/improving-the-dancing.html
 layout: quotation
 size: large
 title: Improving the Dancing

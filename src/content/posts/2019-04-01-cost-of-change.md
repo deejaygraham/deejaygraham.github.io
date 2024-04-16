@@ -1,4 +1,5 @@
 ---
+permalink: 2019/04/01/cost-of-change.html
 layout: quotation
 size: large
 title: The Cost of Change

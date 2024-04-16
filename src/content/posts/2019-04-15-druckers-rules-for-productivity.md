@@ -1,4 +1,5 @@
 ---
+permalink: 2019/04/15/druckers-rules-for-productivity.html
 layout: post
 title: Druckers Rules for Productivity
 published: true 

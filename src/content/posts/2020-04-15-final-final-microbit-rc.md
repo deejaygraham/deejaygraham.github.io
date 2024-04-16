@@ -1,4 +1,5 @@
 ---
+permalink: 2020/04/15/final-final-microbit-rc.html
 layout: post
 title: Final, Final, Microbit RC
 published: true

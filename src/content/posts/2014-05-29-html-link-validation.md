@@ -1,4 +1,5 @@
 ---
+permalink: 2014/05/29/html-link-validation.html
 layout: post
 title: Html Link Validation
 published: true

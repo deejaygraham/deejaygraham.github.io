@@ -1,4 +1,5 @@
 ---
+permalink: 2018/11/28/metaphors-we-compute-by.html
 layout: post
 title: Metaphors We Compute By
 published: true 

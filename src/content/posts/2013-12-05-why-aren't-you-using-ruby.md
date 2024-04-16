@@ -1,4 +1,5 @@
 ---
+permalink: 2013/12/05/why-aren't-you-using-ruby.html
 layout: post
 title: Why Aren't You Using Ruby
 published: true

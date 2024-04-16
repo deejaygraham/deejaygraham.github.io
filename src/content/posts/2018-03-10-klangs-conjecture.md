@@ -1,4 +1,5 @@
 ---
+permalink: 2018/03/10/klangs-conjecture.html
 layout: post
 title: Klang's Conjecture
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2018/02/22/nothing-is-more-dangerous.html
 layout: quotation
 title: Nothing is more dangerous
 published: true

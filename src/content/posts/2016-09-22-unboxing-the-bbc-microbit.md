@@ -1,4 +1,5 @@
 ---
+permalink: 2016/09/22/unboxing-the-bbc-microbit.html
 layout: post
 title: Unboxing the BBC Micro:bit
 categories: [ code, microbit ]

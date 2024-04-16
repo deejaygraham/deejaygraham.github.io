@@ -1,4 +1,5 @@
 ---
+permalink: 2019/08/20/pythonic-idioms.html
 layout: post
 title: Pythonic Idioms
 published: true

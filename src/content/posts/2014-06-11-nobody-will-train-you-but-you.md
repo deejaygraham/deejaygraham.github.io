@@ -1,4 +1,5 @@
 ---
+permalink: 2014/06/11/nobody-will-train-you-but-you.html
 layout: post
 title: Nobody will Train You but You
 published: true

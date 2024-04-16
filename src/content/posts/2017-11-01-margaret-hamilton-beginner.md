@@ -1,4 +1,5 @@
 ---
+permalink: 2017/11/01/margaret-hamilton-beginner.html
 layout: quotation
 title: Margaret Hamilton, Beginner
 published: true

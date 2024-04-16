@@ -1,4 +1,5 @@
 ---
+permalink: 2017/06/21/evaporating-clouds.html
 layout: post
 title: Evaporating Clouds
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2014/07/02/perils-of-the-anti-agile-mindset.html
 layout: post
 title: Perils of the Anti-Agile Mindset
 published: true

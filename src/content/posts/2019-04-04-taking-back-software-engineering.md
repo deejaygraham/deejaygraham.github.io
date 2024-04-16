@@ -1,4 +1,5 @@
 ---
+permalink: 2019/04/04/taking-back-software-engineering.html
 layout: sketchnote
 title: Taking Back Software Engineering
 categories: [ sketchnotes, presentations ]

@@ -1,4 +1,5 @@
 ---
+permalink: 2021/02/20/autoit-extensions.html
 layout: post
 title: AutoIt Extensions
 published: true 

@@ -1,4 +1,5 @@
 ---
+permalink: 2013/10/15/team-working-agreements.html
 layout: post
 title: Team Working Agreements
 published: true 

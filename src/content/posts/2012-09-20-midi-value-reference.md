@@ -1,4 +1,5 @@
 ---
+permalink: 2012/09/20/midi-value-reference.html
 layout: post
 title: Midi Value Reference
 published: true

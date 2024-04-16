@@ -1,4 +1,5 @@
 ---
+permalink: 2020/09/04/crossing-the-river-by-feeling-the-stones.html
 layout: post
 title:  Crossing the River by Feeling the Stones
 published: true

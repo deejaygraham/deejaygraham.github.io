@@ -1,4 +1,5 @@
 ---
+permalink: 2014/05/20/self-hosted-webserver-using-owin.html
 layout: post
 title: Self Hosted WebServer using OWIN
 published: true

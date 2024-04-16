@@ -1,4 +1,5 @@
 ---
+permalink: 2014/03/11/msbuild-recursive-import-snippet.html
 layout: post
 title: MsBuild Recursive Import Snippet
 published: true

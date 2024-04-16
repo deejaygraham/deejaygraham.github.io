@@ -1,4 +1,5 @@
 ---
+permalink: 2018/09/09/how-to-draw-faces.html
 layout: post
 title: How to Draw Faces
 published: true

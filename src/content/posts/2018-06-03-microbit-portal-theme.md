@@ -1,4 +1,5 @@
 ---
+permalink: 2018/06/03/microbit-portal-theme.html
 layout: post
 title: Portal Theme on Microbit
 categories: [ code, microbit ]

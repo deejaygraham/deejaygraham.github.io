@@ -1,4 +1,5 @@
 ---
+permalink: 2017/01/30/building-a-custom-powershell-cmdlet-in-csharp.html
 layout: post
 title: Building a Custom PowerShell Cmdlet in C#
 published: true

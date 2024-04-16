@@ -1,4 +1,5 @@
 ---
+permalink: 2017/07/19/honest-shop.html
 layout: post
 title: Honest Shop
 published: true

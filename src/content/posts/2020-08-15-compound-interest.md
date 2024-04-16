@@ -1,4 +1,5 @@
 ---
+permalink: 2020/08/15/compound-interest.html
 layout: quotation
 size: large
 title: Compound Interest

@@ -1,4 +1,5 @@
 ---
+permalink: 2015/02/25/travis-supports-csharp-ci.html
 layout: post
 title: Travis supports C# CI
 published: true

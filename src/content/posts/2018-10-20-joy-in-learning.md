@@ -1,4 +1,5 @@
 ---
+permalink: 2018/10/20/joy-in-learning.html
 layout: quotation
 title: Joy in Learning
 published: true

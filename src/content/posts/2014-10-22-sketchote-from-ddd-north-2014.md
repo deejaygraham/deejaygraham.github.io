@@ -1,4 +1,5 @@
 ---
+permalink: 2014/10/22/sketchote-from-ddd-north-2014.html
 layout: sketchnote
 title: Sketchnote from DDDNorth 2014
 categories: [ sketchnotes, presentations, ruby, csharp ]

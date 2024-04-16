@@ -1,4 +1,5 @@
 ---
+permalink: 2017/01/11/making-animal-farm-great-again.html
 layout: post
 title: Making Animal Farm Great Again
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2020/02/20/approval-testing.html
 layout: post
 title: Approval Testing
 categories: [ agile, xp ]

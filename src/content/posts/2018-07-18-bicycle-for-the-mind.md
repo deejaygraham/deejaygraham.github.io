@@ -1,4 +1,5 @@
 ---
+permalink: 2018/07/18/bicycle-for-the-mind.html
 layout: quotation
 title: A Bicycle for the Mind
 attribution: Steve Jobs

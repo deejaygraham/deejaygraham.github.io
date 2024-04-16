@@ -1,4 +1,5 @@
 ---
+permalink: 2017/09/30/aneurin-bevan.html
 layout: quotation
 title: Aneurin Bevan
 published: true

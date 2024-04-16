@@ -1,4 +1,5 @@
 ---
+permalink: 2018/02/05/langtons-ant-for-microbit.html
 layout: post
 title: Langton's Ant
 categories: [ code, microbit ]

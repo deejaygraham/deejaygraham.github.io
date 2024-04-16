@@ -1,4 +1,5 @@
 ---
+permalink: 2020/03/25/common-sense-guide-ds-and-a-2nd.html
 layout: post
 title: A Common-Sense Guide to Data Structures and Algorithms 2nd Edition
 published: true

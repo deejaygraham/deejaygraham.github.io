@@ -1,4 +1,5 @@
 ---
+permalink: 2017/10/30/battles-with-giant-fish.html
 layout: post
 title: Battles with Giant Fish
 published: true

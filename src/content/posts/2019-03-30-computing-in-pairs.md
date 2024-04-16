@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/30/computing-in-pairs.html
 layout: quotation
 title: Computing in Pairs
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2020/02/14/back-to-rust.html
 layout: post
 title: Getting Back to Rust
 published: true

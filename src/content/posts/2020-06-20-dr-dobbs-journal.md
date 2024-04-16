@@ -1,4 +1,5 @@
 ---
+permalink: 2020/06/20/dr-dobbs-journal.html
 layout: post
 title: Dr Dobbs Journal
 published: true

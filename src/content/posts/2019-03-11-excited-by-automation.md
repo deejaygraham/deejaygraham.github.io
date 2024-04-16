@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/11/excited-by-automation.html
 layout: quotation
 title: Excited by Automation
 attribution: Alexandria Ocasio-Cortez

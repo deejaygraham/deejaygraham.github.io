@@ -1,4 +1,5 @@
 ---
+permalink: 2016/12/10/minecraft-blocks-cheatsheet.html
 layout: post
 title: Minecraft Blocks Cheatsheet
 published: true

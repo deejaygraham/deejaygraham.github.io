@@ -1,4 +1,5 @@
 ---
+permalink: 2019/09/05/python-processing.html
 layout: post
 title: Processing with Python
 published: true

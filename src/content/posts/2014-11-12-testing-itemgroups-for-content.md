@@ -1,4 +1,5 @@
 ---
+permalink: 2014/11/12/testing-itemgroups-for-content.html
 layout: post
 title: Testing ItemGroups for Content
 published: true

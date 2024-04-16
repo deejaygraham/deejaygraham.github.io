@@ -1,4 +1,5 @@
 ---
+permalink: 2023/07/08/unreasonable-architecture.html
 layout: post
 title: Unreasonable Architecture
 published: true

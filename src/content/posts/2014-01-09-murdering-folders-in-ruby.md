@@ -1,4 +1,5 @@
 ---
+permalink: 2014/01/09/murdering-folders-in-ruby.html
 layout: post
 title: Murdering Folders. In Ruby
 published: true

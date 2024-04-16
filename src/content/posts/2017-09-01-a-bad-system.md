@@ -1,4 +1,5 @@
 ---
+permalink: 2017/09/01/a-bad-system.html
 layout: post
 title: A Bad System...
 published: true

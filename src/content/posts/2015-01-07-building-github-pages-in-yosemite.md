@@ -1,4 +1,5 @@
 ---
+permalink: 2015/01/07/building-github-pages-in-yosemite.html
 layout: post
 title: Building Github Pages in OSX Yosemite
 published: true

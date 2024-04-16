@@ -1,4 +1,5 @@
 ---
+permalink: 2014/04/10/code-kata-resources.html
 layout: post
 title: Code Kata Resources
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2018/11/01/configuration-files-in-powershell.html
 layout: post
 title: Configuration Files in PowerShell
 published: true 

@@ -1,4 +1,5 @@
 ---
+permalink: 2014/04/15/cleaning-msbuild-itemgroup-includes.html
 layout: post
 title: Cleaning MsBuild ItemGroup Includes
 published: true

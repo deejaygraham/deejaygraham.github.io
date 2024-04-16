@@ -1,4 +1,5 @@
 ---
+permalink: 2023/07/31/tiny-city-layout.html
 layout: post
 title: Tiny City Layout
 published: true

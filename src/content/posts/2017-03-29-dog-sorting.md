@@ -1,4 +1,5 @@
 ---
+permalink: 2017/03/29/dog-sorting.html
 layout: post
 title: Dog Sort
 published: true

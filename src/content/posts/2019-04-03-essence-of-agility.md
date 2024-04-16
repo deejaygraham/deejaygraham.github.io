@@ -1,4 +1,5 @@
 ---
+permalink: 2019/04/03/essence-of-agility.html
 layout: quotation
 title: The Essence of Agility
 attribution: Allen Holub

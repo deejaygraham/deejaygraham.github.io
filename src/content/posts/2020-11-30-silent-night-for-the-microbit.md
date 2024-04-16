@@ -1,4 +1,5 @@
 ---
+permalink: 2020/11/30/silent-night-for-the-microbit.html
 layout: post
 title: Silent Night for the Microbit
 published: true

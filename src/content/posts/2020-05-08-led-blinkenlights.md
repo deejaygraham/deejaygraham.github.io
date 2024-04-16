@@ -1,4 +1,5 @@
 ---
+permalink: 2020/05/08/led-blinkenlights.html
 layout: post
 title: Microbit LED blinkenlights
 published: true

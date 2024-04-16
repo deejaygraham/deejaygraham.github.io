@@ -1,4 +1,5 @@
 ---
+permalink: 2020/04/15/effective-debugging.html
 layout: quotation
 size: large
 title: Effective Debugging

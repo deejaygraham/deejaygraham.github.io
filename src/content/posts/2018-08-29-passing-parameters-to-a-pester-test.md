@@ -1,4 +1,5 @@
 ---
+permalink: 2018/08/29/passing-parameters-to-a-pester-test.html
 layout: post
 title: Passing Parameters to a Pester Test
 published: true 

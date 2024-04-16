@@ -1,4 +1,5 @@
 ---
+permalink: 2015/10/08/soundex-encoding.html
 layout: post
 title: Soundex Encoding Text in C Sharp
 categories: [ code ]

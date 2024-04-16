@@ -1,4 +1,5 @@
 ---
+permalink: 2020/10/22/microbit-musicians.html
 layout: post
 title: Microbit Musicians
 published: true

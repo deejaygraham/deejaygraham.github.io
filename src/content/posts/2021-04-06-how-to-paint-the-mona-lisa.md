@@ -1,4 +1,5 @@
 ---
+permalink: 2021/04/06/how-to-paint-the-mona-lisa.html
 layout: post
 title: How to Paint the Mona Lisa
 published: true

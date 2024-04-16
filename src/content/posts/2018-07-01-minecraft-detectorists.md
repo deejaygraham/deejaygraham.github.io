@@ -1,4 +1,5 @@
 ---
+permalink: 2018/07/01/minecraft-detectorists.html
 layout: post
 title: Minecraft Detectorists
 categories: [ code, minecraft ]

@@ -1,4 +1,5 @@
 ---
+permalink: 2014/08/10/think-different.html
 layout: post
 title: Think Different
 published: true

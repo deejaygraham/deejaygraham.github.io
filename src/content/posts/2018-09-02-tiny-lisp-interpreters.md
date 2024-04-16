@@ -1,4 +1,5 @@
 ---
+permalink: 2018/09/02/tiny-lisp-interpreters.html
 layout: post
 title: Tiny Lisp Implementations
 published: true 

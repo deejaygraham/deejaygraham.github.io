@@ -1,4 +1,5 @@
 ---
+permalink: 2019/11/04/knapsack-packing.html
 layout: post
 title: Knapsack Packing
 published: true

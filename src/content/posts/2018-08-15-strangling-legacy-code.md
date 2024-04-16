@@ -1,4 +1,5 @@
 ---
+permalink: 2018/08/15/strangling-legacy-code.html
 layout: post
 title: Strangling Legacy Code
 categories: [ agile, presentations ]

@@ -1,4 +1,5 @@
 ---
+permalink: 2019/09/06/refactoring-boids.html
 layout: post
 title: Refactoring Boids
 published: true

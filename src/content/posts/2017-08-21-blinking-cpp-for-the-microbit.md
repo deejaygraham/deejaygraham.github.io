@@ -1,4 +1,5 @@
 ---
+permalink: 2017/08/21/blinking-cpp-for-the-microbit.html
 layout: post
 title: Blinking C++
 published: true

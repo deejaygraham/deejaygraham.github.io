@@ -1,4 +1,5 @@
 ---
+permalink: 2017/09/05/management-is-responsible-for-the-system.html
 layout: post
 title: Management is Responsible for the System
 published: true

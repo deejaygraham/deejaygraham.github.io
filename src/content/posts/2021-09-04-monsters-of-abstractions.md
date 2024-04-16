@@ -1,4 +1,5 @@
 ---
+permalink: 2021/09/04/monsters-of-abstractions.html
 layout: quotation
 title: Monsters of Abstractions
 published: true

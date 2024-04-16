@@ -1,4 +1,5 @@
 ---
+permalink: 2011/11/23/merlin-mann-at-webstock-2011.html
 layout: post
 title: Merlin Mann at Webstock 2011
 published: true 

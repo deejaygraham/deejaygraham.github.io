@@ -1,4 +1,5 @@
 ---
+permalink: 2020/03/29/when-they-jump-you.html
 layout: quotation
 size: large
 title: When they jump you...

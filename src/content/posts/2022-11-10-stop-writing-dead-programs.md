@@ -1,4 +1,5 @@
 ---
+permalink: 2022/11/10/stop-writing-dead-programs.html
 layout: post
 title: Stop Writing Dead Programs
 published: true

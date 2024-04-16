@@ -1,4 +1,5 @@
 ---
+permalink: 2017/11/12/blinkenlights.html
 layout: post
 title: microbit Blinkenlights
 categories: [ code, microbit ]

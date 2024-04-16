@@ -1,4 +1,5 @@
 ---
+permalink: 2017/12/10/making-american-toast.html
 layout: quotation
 title: Making American Toast
 published: true

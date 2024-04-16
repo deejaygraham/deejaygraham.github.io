@@ -1,4 +1,5 @@
 ---
+permalink: 2022/02/01/turning-it-up-to-11ty.html
 layout: post
 title: Turning It Up to 11ty
 published: true

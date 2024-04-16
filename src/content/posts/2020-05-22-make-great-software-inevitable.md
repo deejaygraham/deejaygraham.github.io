@@ -1,4 +1,5 @@
 ---
+permalink: 2020/05/22/make-great-software-inevitable.html
 layout: quotation
 size: large
 title: Make Great Software Inevitable

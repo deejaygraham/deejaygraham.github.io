@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/19/there-are-more-things.html
 layout: quotation
 title: There are More Things
 attribution: Seneca the Younger

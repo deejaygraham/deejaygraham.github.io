@@ -1,4 +1,5 @@
 ---
+permalink: 2021/01/29/find-user-sid-in-powershell.html
 layout: post
 title: Find a User SID in PowerShell
 published: true 

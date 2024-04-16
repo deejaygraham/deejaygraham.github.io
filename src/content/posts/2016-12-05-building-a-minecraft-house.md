@@ -1,4 +1,5 @@
 ---
+permalink: 2016/12/05/building-a-minecraft-house.html
 layout: post
 title: Building a house in Minecraft
 published: true

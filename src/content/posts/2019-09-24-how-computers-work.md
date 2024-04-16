@@ -1,4 +1,5 @@
 ---
+permalink: 2019/09/24/how-computers-work.html
 layout: post
 title: How Computers Work
 published: true

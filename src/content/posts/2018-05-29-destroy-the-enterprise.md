@@ -1,4 +1,5 @@
 ---
+permalink: 2018/05/29/destroy-the-enterprise.html
 layout: quotation
 title: Destroy the Enterprise
 published: true

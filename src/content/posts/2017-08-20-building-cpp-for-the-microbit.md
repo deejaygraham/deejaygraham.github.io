@@ -1,4 +1,5 @@
 ---
+permalink: 2017/08/20/building-cpp-for-the-microbit.html
 layout: post
 title: Building C++ for the BBC Micro:bit
 published: true

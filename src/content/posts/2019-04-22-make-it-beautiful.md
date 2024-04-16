@@ -1,4 +1,5 @@
 ---
+permalink: 2019/04/22/make-it-beautiful.html
 layout: quotation
 size: medium
 title: Make It Beautiful

@@ -1,4 +1,5 @@
 ---
+permalink: 2020/10/22/load-music-files.html
 layout: post
 title: Microbit LED blinkenlights
 published: true

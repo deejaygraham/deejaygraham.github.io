@@ -1,4 +1,5 @@
 ---
+permalink: 2012/04/02/begin-taking-action.html
 layout: quotation
 title: Begin Taking Action
 attribution: Shoma Morita

@@ -1,4 +1,5 @@
 ---
+permalink: 2020/03/12/microbit-timer.html
 layout: post
 title: Microbit Timer
 published: true

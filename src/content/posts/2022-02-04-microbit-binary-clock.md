@@ -1,4 +1,5 @@
 ---
+permalink: 2022/02/04/microbit-binary-clock.html
 layout: post
 title: Microbit Binary Clock
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2017/01/05/finding-differences-in-folder-content.html
 layout: post
 title: Finding Differences in Folder Content
 published: true

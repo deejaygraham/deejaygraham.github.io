@@ -1,4 +1,5 @@
 ---
+permalink: 2014/08/13/building-ndifference-in-the-cloud.html
 layout: post
 title: Building NDifference in the Cloud
 published: true

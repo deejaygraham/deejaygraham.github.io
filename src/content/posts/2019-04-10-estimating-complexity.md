@@ -1,4 +1,5 @@
 ---
+permalink: 2019/04/10/estimating-complexity.html
 layout: post
 title: Estimating Complexity
 published: true 

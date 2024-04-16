@@ -1,4 +1,5 @@
 ---
+permalink: 2017/06/12/hello-pygame.html
 layout: post
 title: Hello, Pygame
 published: true

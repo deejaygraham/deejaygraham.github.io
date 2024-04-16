@@ -1,4 +1,5 @@
 ---
+permalink: 2022/11/15/how-to-be-psychic.html
 layout: post
 title: How to be Psychic
 published: false

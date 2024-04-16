@@ -1,4 +1,5 @@
 ---
+permalink: 2023/06/09/better-cypress-date-handling.html
 layout: post
 title: Better Date Handling in Cypress
 published: true 

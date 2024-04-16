@@ -1,4 +1,5 @@
 ---
+permalink: 2021/02/01/documenting-software-with-c4.html
 layout: post
 title: Documenting Software with C4
 published: true 

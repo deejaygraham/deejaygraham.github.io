@@ -1,4 +1,5 @@
 ---
+permalink: 2020/04/18/stop-trying-to-borrow-wisdom.html
 layout: quotation
 size: large
 title: Stop Trying to Borrow Wisdom

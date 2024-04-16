@@ -1,4 +1,5 @@
 ---
+permalink: 2019/06/24/what-do-you-mean.html
 layout: post
 title: What do you mean
 published: true

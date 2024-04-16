@@ -1,4 +1,5 @@
 ---
+permalink: 2014/05/10/all-the-little-things.html
 layout: post
 title: All the Little Things
 published: true

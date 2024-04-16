@@ -1,4 +1,5 @@
 ---
+permalink: 2016/07/01/language-in-thought-and-action.html
 layout: quotation
 title: Language in Thought and Action
 attribution: S.I. Hayakawa

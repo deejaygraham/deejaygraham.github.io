@@ -1,4 +1,5 @@
 ---
+permalink: 2023/10/01/think-of-yourself.html
 layout: quotation
 size: large
 title: Think of Yourself

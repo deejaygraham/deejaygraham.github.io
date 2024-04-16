@@ -1,4 +1,5 @@
 ---
+permalink: 2014/11/03/super-technical-sketchnoting.html
 layout: sketchnote
 title: Super-Technical Sketchnoting
 categories: [ sketchnotes, presentations, ruby ]

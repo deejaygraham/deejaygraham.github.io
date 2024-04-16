@@ -1,4 +1,5 @@
 ---
+permalink: 2015/10/30/sketchnotes-from-dddnorth-2015.html
 layout: post
 title: Sketchnotes from DDDNorth 2015
 published: true 

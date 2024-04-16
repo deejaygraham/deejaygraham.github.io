@@ -1,4 +1,5 @@
 ---
+permalink: 2014/09/24/msbuild-task-project-on-github.html
 layout: post
 title: MsBuild Task Project on Github
 published: true

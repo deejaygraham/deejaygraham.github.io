@@ -1,4 +1,5 @@
 ---
+permalink: 2020/07/14/trex-runner-in-scratch.html
 layout: post
 title: T-Rex Runner Game in Scratch
 published: true

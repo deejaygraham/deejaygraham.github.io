@@ -1,4 +1,5 @@
 ---
+permalink: 2013/10/10/team-definition-of-done.html
 layout: post
 title: Team Definitions of Done
 published: true 

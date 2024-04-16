@@ -1,4 +1,5 @@
 ---
+permalink: 2015/04/30/logging-from-msbuild-commandline.html
 layout: post
 title: Logging from MsBuild's Commandline
 published: true

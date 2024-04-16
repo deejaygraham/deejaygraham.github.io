@@ -1,4 +1,5 @@
 ---
+permalink: 2019/02/20/first-days-of-a-better-nation.html
 layout: quotation
 title: First Days of a Better Nation
 attribution: Cory Doctorow

@@ -1,4 +1,5 @@
 ---
+permalink: 2019/11/02/confident-code.html
 layout: post
 title: Confident Code
 published: true

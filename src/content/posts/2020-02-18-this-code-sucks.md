@@ -1,4 +1,5 @@
 ---
+permalink: 2020/02/18/this-code-sucks.html
 layout: post
 title:  This Code Sucks
 published: true

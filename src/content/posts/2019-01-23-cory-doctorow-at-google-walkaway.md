@@ -1,4 +1,5 @@
 ---
+permalink: 2019/01/23/cory-doctorow-at-google-walkaway.html
 layout: post
 title: Cory Doctorow at Google
 published: true 

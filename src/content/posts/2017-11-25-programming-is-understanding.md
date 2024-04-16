@@ -1,4 +1,5 @@
 ---
+permalink: 2017/11/25/programming-is-understanding.html
 layout: quotation
 size: large
 title: Programming is Understanding

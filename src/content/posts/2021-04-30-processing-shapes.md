@@ -1,4 +1,5 @@
 ---
+permalink: 2021/04/30/processing-shapes.html
 layout: post
 title: Processing Shapes and Colours
 published: true

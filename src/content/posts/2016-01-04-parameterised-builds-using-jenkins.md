@@ -1,4 +1,5 @@
 ---
+permalink: 2016/01/04/parameterised-builds-using-jenkins.html
 layout: post
 title: Parameterised Builds using Jenkins
 published: true 

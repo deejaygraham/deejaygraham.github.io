@@ -1,4 +1,5 @@
 ---
+permalink: 2023/04/10/most-recent-folder-with-powershell.html
 layout: post
 title: How to find the most recent folder with PowerShell
 published: true 

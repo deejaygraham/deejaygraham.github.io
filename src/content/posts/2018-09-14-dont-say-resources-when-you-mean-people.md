@@ -1,4 +1,5 @@
 ---
+permalink: 2018/09/14/dont-say-resources-when-you-mean-people.html
 layout: post
 title: Dont Say Resources When You Mean People
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2020/01/22/tdd-a-love-story.html
 layout: post
 title:  Test Driven Development - A Love Story
 published: true

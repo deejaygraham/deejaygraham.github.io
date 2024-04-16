@@ -1,4 +1,5 @@
 ---
+permalink: 2021/12/09/spectacular-life.html
 layout: quotation
 title: Spectacular Life
 published: true

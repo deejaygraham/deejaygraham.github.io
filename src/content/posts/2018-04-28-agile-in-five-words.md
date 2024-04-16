@@ -1,4 +1,5 @@
 ---
+permalink: 2018/04/28/agile-in-five-words.html
 layout: post
 title: Agile in 5 Words
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2013/07/08/another-inversion-of-control-project.html
 layout: post
 title: What the World Needs Now is Another IoC project
 published: true

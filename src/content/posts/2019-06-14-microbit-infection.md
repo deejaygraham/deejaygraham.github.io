@@ -1,4 +1,5 @@
 ---
+permalink: 2019/06/14/microbit-infection.html
 layout: post
 title: Microbit Infection
 published: true

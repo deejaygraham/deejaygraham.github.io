@@ -1,4 +1,5 @@
 ---
+permalink: 2014/05/30/computing-text-similarity.html
 layout: post
 title: Computing Text Similarity
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2013/05/29/most-recent-folder-msbuild-task.html
 layout: post
 title: Most Recent Folder MsBuild Task
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2013/10/18/moving-to-github.html
 layout: post
 title: Moving to Github
 published: true

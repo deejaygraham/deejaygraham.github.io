@@ -1,4 +1,5 @@
 ---
+permalink: 2017/06/01/playing-with-sonic-pi.html
 layout: post
 title: Playing with Sonic Pi
 categories: [ code, music ]

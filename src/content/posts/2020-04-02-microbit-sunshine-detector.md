@@ -1,4 +1,5 @@
 ---
+permalink: 2020/04/02/microbit-sunshine-detector.html
 layout: post
 title: Microbit Sunshine Detector
 published: true

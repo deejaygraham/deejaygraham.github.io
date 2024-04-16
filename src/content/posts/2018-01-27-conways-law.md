@@ -1,4 +1,5 @@
 ---
+permalink: 2018/01/27/conways-law.html
 layout: quotation
 title: Conway's Law
 published: true

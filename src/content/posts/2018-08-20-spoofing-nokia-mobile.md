@@ -1,4 +1,5 @@
 ---
+permalink: 2018/08/20/spoofing-nokia-mobile.html
 layout: post
 title: Spoofing Nokia mobile on the Microbit
 categories: [ microbit, code ]

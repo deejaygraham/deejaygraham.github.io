@@ -1,4 +1,5 @@
 ---
+permalink: 2013/08/01/timestamps-in-msbuild.html
 layout: post
 title: Timestamps in MsBuild
 published: true

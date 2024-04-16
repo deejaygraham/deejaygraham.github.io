@@ -1,4 +1,5 @@
 ---
+permalink: 2015/07/16/listing-user-certificates-in-powershell.html
 layout: post
 title: Finding and using user certificates in PowerShell
 published: true 

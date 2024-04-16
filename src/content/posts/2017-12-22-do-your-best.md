@@ -1,4 +1,5 @@
 ---
+permalink: 2017/12/22/do-your-best.html
 layout: quotation
 title: Do Your Best
 published: true

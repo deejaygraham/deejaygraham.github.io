@@ -1,4 +1,5 @@
 ---
+permalink: 2018/02/12/safety-first.html
 layout: post
 title: Safety First
 published: true

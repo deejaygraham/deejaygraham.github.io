@@ -1,4 +1,5 @@
 ---
+permalink: 2020/03/04/all-the-programming-languages.html
 layout: post
 title: All the Programming Languages
 published: true

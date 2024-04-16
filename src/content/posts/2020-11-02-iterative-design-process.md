@@ -1,4 +1,5 @@
 ---
+permalink: 2020/11/02/iterative-design-process.html
 layout: quotation
 size: large
 title: Iterative Design Process

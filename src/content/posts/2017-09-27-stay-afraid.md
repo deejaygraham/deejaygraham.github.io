@@ -1,4 +1,5 @@
 ---
+permalink: 2017/09/27/stay-afraid.html
 layout: quotation
 title: Stay Afraid
 published: true

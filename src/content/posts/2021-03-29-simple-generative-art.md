@@ -1,4 +1,5 @@
 ---
+permalink: 2021/03/29/simple-generative-art.html
 layout: post
 title: Simple Generative Art
 published: true

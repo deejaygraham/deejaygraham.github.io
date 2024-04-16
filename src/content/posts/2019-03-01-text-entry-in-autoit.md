@@ -1,4 +1,5 @@
 ---
+permalink: 2019/03/01/text-entry-in-autoit.html
 layout: post
 title: Text Entry in AutoIt
 published: true 

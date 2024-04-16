@@ -1,4 +1,5 @@
 ---
+permalink: 2018/08/14/minecraft-forestry.html
 layout: post
 title: Minecraft Forestry
 categories: [ minecraft, code ]

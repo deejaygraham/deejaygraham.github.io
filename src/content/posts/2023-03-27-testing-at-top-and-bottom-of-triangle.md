@@ -1,4 +1,5 @@
 ---
+permalink: 2023/03/27/testing-at-top-and-bottom-of-triangle.html
 layout: post
 title: Testing at Both Ends of the Triangle
 published: true

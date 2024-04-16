@@ -1,4 +1,5 @@
 ---
+permalink: 2019/02/23/building-an-aiml-chatbot.html
 layout: post
 title: Building a Chat Bot
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: 2018/02/23/microbit-card-trick.html
 layout: post
 title: Microbit Mentalism
 categories: [ code, microbit ]
