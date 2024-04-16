@@ -1,5 +1,5 @@
 - --
-permalink: about/index.html
+permalink: now/index.html
 title: What I'm doing now
 layout: post
 - --
