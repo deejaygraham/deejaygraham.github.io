@@ -17,6 +17,9 @@
 	<span class="tag">{{ category }}</span>
 {% endfor %}
 {% endif %}
+{% if post.date %}
+<time datetime="{{ post.date }}">{{ post.date }}</time>
+{% endif %}
 {# date #}
     			</div>
 			</a>
