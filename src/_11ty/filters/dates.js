@@ -25,7 +25,7 @@ function dateFeed(date) {
  * @param {String} locale - locale code
  * @returns {String} - formatted date
  */
-function dateFormat(date, format, locale = "en") {
+function dateFormat(date, format, locale = "en-GB") {
   const jsDate = new Date(date);
   const dt = DateTime.fromJSDate(jsDate);
   return dt.setLocale(locale).toFormat(format);
@@ -38,7 +38,7 @@ function dateFormat(date, format, locale = "en") {
  * @param {String} locale - locale code
  * @returns {String} - formatted date
  */
-function dateFull(date, locale = "en") {
+function dateFull(date, locale = "en-GB") {
   const jsDate = new Date(date);
   const dt = DateTime.fromJSDate(jsDate);
   return dt.setLocale(locale).toLocaleString(DateTime.DATE_FULL);
