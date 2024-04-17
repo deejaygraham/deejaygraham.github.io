@@ -2,6 +2,17 @@
 layout: base.njk
 ---
 <article class="message is-large">
+  <div class="message-header">
+    <p>{{ page.title }} 
+{% if page.data.attribution %}
+- {{ page.data.attribution }}
+{% endif %}
+{% if page.data.publication %}
+in {{ page.data.publication }}
+{% endif %}
+    </p>
+    <button class="delete" aria-label="delete"></button>
+  </div>
   <div class="message-body">
     {{ content | safe }}
   </div>
