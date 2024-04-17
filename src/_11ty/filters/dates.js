@@ -1,4 +1,4 @@
-const luxon = require("luxon");
+const { DateTime } = require("luxon");
 
 // thanks to jerome coupe
 
@@ -10,7 +10,7 @@ const luxon = require("luxon");
  */
 function dateFeed(date) {
   const jsDate = new Date(date);
-  const dt = luxon.DateTime.fromJSDate(jsDate);
+  const dt = DateTime.fromJSDate(jsDate);
   return dt.toRFC2822();
 }
 
@@ -27,7 +27,7 @@ function dateFeed(date) {
  */
 function dateFormat(date, format, locale = "en") {
   const jsDate = new Date(date);
-  const dt = luxon.DateTime.fromJSDate(jsDate);
+  const dt = DateTime.fromJSDate(jsDate);
   return dt.setLocale(locale).toFormat(format);
 }
 
@@ -40,7 +40,7 @@ function dateFormat(date, format, locale = "en") {
  */
 function dateFull(date, locale = "en") {
   const jsDate = new Date(date);
-  const dt = luxon.DateTime.fromJSDate(jsDate);
+  const dt = DateTime.fromJSDate(jsDate);
   return dt.setLocale(locale).toLocaleString(DateTime.DATE_FULL);
 }
 
@@ -51,7 +51,7 @@ function dateFull(date, locale = "en") {
  */
 function dateISO(date) {
   const jsDate = new Date(date);
-  const dt = luxon.DateTime.fromJSDate(jsDate);
+  const dt = DateTime.fromJSDate(jsDate);
   return dt.toISO();
 }
 
