@@ -7,11 +7,12 @@ title: talks
 {% for item in talks %}
 	<div class="cell">
 		<div class="card">
-  			<div class="card-image">
+  			{#<div class="card-image">
 				<figure class="image is-128x128">
   					<img src="{{ item.thumbnail }}" />
 				</figure>
 			</div>
+   #}
 			
 	  		<div class="card-content">
     				<p class="title">{{ item.title }}</p>
