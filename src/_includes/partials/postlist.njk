@@ -12,9 +12,9 @@
 			{% endif %}   			
 	  		<div class="card-content">
     				<p class="title">{{ post.data.title }}</p>
-{% if post.data.tags %}
-{% for tag in post.data.tags %}
-	<span class="tag">{{ tag }}</span>
+{% if post.data.categories %}
+{% for category in post.data.categories %}
+	<span class="tag">{{ category }}</span>
 {% endfor %}
 {% endif %}
 {# date #}
