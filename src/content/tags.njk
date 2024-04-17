@@ -1,0 +1,11 @@
+---
+permalink: tags/index.html
+title: deejaygraham - Blog Entries by Tag
+layout: base.njk
+---
+<ul>
+{% for tag in collections.all | getAllTags | filterTagList %}
+	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	<li><a href="{{ tagUrl }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>
