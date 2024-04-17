@@ -3,17 +3,17 @@ permalink: talks/index.html
 layout: base.njk
 title: talks
 ---
+{# njk file helps with bulma rendering #}
 <div class="grid">
 {% for item in talks %}
 	<div class="cell">
-		<div class="card">
-  			{#<div class="card-image">
-				<figure class="image is-128x128">
+    		<div class="card">
+  			<div class="card-image">
+				<figure class="image">
   					<img src="{{ item.thumbnail }}" />
 				</figure>
 			</div>
-   #}
-			
+   			
 	  		<div class="card-content">
     				<p class="title">{{ item.title }}</p>
 				{% if item.subtitle %}
