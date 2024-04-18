@@ -21,7 +21,7 @@ module.exports = [
   },
   {
     name: "linkedin",
-    url: "https://www.linked.com/derekjohngraham/",
+    url: "https://www.linkedin.com/derekjohngraham/",
     icon: "linkedin.svg"
   },
   {
