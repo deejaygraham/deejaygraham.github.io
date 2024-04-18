@@ -1,27 +1,29 @@
+{# Requires a global variable to be set "postlist" #}
+
 <div class="grid is-col-min-12">
-{% for post in collections.posts | limit(12) %}
+{% for post in postlist %}
 	<div class="cell">
     		<div class="card">
 			<a href="{{ post.url }}">
-			{% if post.data.thumbnail %}
-  			<div class="card-image">
-				<figure class="image">
-  					<img src="{{ post.data.thumbnail }}" />
-				</figure>
-			</div>
-			{% endif %}   			
-	  		<div class="card-content">
-    				<p class="title">{{ post.data.title }}</p>
-{% if post.data.categories %}
-{% for category in post.data.categories %}
-	<span class="tag">{{ category }}</span>
-{% endfor %}
-{% endif %}
-{% if post.date %}
-<p><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
-{% endif %}
-{# date #}
-    			</div>
+				{% if post.data.thumbnail %}
+  				<div class="card-image">
+					<figure class="image">
+  						<img src="{{ post.data.thumbnail }}" />
+					</figure>
+				</div>
+				{% endif %}   			
+	  		
+				<div class="card-content">
+    					<p class="title">{{ post.data.title }}</p>
+					{% if post.data.categories %}
+						{% for category in post.data.categories %}
+						<span class="tag">{{ category }}</span>
+						{% endfor %}
+					{% endif %}
+					{% if post.date %}
+						<p><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
+					{% endif %}
+    				</div>
 			</a>
   		</div>
 	</div>  
