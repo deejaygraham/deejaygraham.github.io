@@ -3,7 +3,7 @@
 	<nav aria-label="social media">
         	<ul>
           {% for item in socialmedia %}
-            <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer"><span></span>{{ site.url }}/img/{{ item.icon }}</a></li>
+            <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer"><img src="{{ site.url }}/img/{{ item.icon }}" /></li>
           {% endfor %}
         </ul>
       </nav>
