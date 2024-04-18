@@ -2,7 +2,7 @@
   <div class="content has-text-centered">
 	<nav aria-label="footer navigation">
           {% for item in nav %}
-            <a href="{{ item.url }}" aria-label="{{ item.name }}">{{ item.name }}</a>
+        <a class="navbar-item" title="{{ item.navLabel }}" href="{{ site.url }}{{ item.navUrl }}">{{ item.navLabel }}</a>
           {% endfor %}
       </nav>
 
