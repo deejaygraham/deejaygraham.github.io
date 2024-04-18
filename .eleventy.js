@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
     for(let item of collection) {
      (item.data.tags || []).forEach(tag => tagSet.add(tag));
     }
-    return Array.from(tagSet);
+    return Array.from(tagSet).sort();
   });
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
