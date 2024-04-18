@@ -15,7 +15,10 @@ layout: base.njk
 			<a href="{{ tagUrl }}">
 				<div class="card-content">
     			<p class="title">#{{ tag }}</p>
-					<progress class="progress is-small is-info" value="{{ tagCount }}" max="{{ postsCount }}">{{ postsCount }}%</progress>
+			<p>{{ tagCount }} post{% if tagCount != 1 %}s{% endif %}</p>
+			<p>
+			<progress class="progress is-small is-info" value="{{ tagCount }}" max="{{ postsCount }}">{{ postsCount }}%</progress>
+			</p>
     		</div>
 			</a>
   	</div>
