@@ -3,9 +3,19 @@ permalink: tags/index.html
 title: deejaygraham - Blog Entries by Tag
 layout: base.njk
 ---
-<ul>
+
+<div class="grid is-col-min-12">
 {% for tag in collections.all | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}">{{ tag }}</a></li>
+	<div class="cell">
+    <div class="card">
+			{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+			<a href="{{ tagUrl }}">
+				<div class="card-content">
+    			<p class="title">{{ {{ tag }} }}</p>
+    		</div>
+			</a>
+  	</div>
+	</div>  
 {% endfor %}
-</ul>
+</div>
+
