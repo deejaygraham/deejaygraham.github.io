@@ -3,9 +3,8 @@ permalink: index.html
 title: d.j.graham's blog
 layout: base.njk
 ---
-<section class="section">
+
 {% set postlist = collections.posts | limit(12) %}
 {% include "partials/postlist.njk" %}
 
 <p class="has-text-right"><a href="{{ site.url }}/archive/">See All Posts</a></p>
-</section>
