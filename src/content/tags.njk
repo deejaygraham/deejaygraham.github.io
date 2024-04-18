@@ -5,11 +5,11 @@ pagination:
   alias: tag
 layout: base.njk
 eleventyComputed:
-  title: Tagged “#{{ tag }}”
+  title: Posts tagged #{{ tag }}
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-<h1>Posts Tagged “#{{ tag }}”</h1>
+<h1>Posts tagged #{{ tag }}</h1>
 
 <ol>
 {% set taglist = collections[ tag ] %}
