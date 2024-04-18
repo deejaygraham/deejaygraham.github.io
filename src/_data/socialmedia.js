@@ -2,34 +2,36 @@ module.exports = [
   {
     name: "github",
     url: "https://github.com/deejaygraham",
-    fa: "fab fa-3x fa-github"
+    icon: "github.svg"
   },
   {
     name: "mastodon",
     url: "https://hachyderm.io/@deejaygraham",
+    icon: "mastodon.svg"
   },
   {
     name: "bluesky",
     url: "https://bsky.app/profile/deejaygraham.bsky.social",
+    icon: "bluesky.svg"
   },
   {
     name: "polywork",
     url: "https://www.polywork.com/deejaygraham/",
-    fa: "fas fa-3x fa-draw-polygon"
+    icon: "polywork.svg"
   },
   {
     name: "linkedin",
     url: "https://www.linked.com/derekjohngraham/",
-    fa: "fab fa-3x fa-linkedin"
+    icon: "linkedin.svg"
   },
   {
     name: "slideshare",
     url: "https://www.slideshare.net/deejaygraham",
-    fa: "fab fa-3x fa-slideshare"
+    icon: "slideshare.svg"
   },
   {
     name: "sessionize",
     url: "https://sessionize.com/deejaygraham/",
-    fa: "fas fa-3x fa-chalkboard"
+    icon: "sessionize.svg"
   },
 ];
