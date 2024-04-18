@@ -1,17 +1,13 @@
 <footer class="footer">
   <div class="content has-text-centered">
 	<nav aria-label="social media">
-        	<ul>
           {% for item in socialmedia %}
-<li>
             <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
 		<figure class="image is-24x24">
 			<img src="{{ site.url }}/img/{{ item.icon }}" />
 		</figure>
 	    </a>
-</li>
           {% endfor %}
-        </ul>
       </nav>
 
 	<div class="content has-text-centered">
