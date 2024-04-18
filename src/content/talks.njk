@@ -3,24 +3,26 @@ permalink: talks/index.html
 layout: base.njk
 title: talks
 ---
-{# njk file helps with bulma rendering #}
+
 <div class="grid is-col-min-12">
 {% for item in talks %}
 	<div class="cell">
     		<div class="card">
-  			<div class="card-image">
-				<figure class="image">
-  					<img src="{{ item.thumbnail }}" />
-				</figure>
-			</div>
-   			
-	  		<div class="card-content">
-    				<p class="title">{{ item.title }}</p>
-				{% if item.subtitle %}
-    				<p class="subtitle">{{ item.subtitle }}</p>
-    				{% endif %}
-				<p><a href="{{ item.url }}">{{ item.title }}</a></p>
-    			</div>
+			<a href="{{ item.url }}">
+	  			<div class="card-image">
+					<figure class="image">
+	  					<img src="{{ item.thumbnail }}" />
+					</figure>
+				</div>
+	   			
+		  		<div class="card-content">
+	    				<p class="title">{{ item.title }}</p>
+					{% if item.subtitle %}
+	    				<p class="subtitle">{{ item.subtitle }}</p>
+	    				{% endif %}
+					<p><a href="{{ item.url }}">{{ item.title }}</a></p>
+	    			</div>
+			</a>
   		</div>
 	</div>  
 {% endfor %}
