@@ -1,9 +1,7 @@
 <footer class="footer">
   <div class="content has-text-centered">
-    {% for item in socialmedia %}
-
-<nav aria-label="social media">
-        <ul>
+	<nav aria-label="social media">
+        	<ul>
           {% for item in socialmedia %}
             <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer"><span></span>{{ site.url }}/img/{{ item.icon }}</a></li>
           {% endfor %}
