@@ -3,7 +3,11 @@
 	<nav aria-label="social media">
         	<ul>
           {% for item in socialmedia %}
-            <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer"><img src="{{ site.url }}/img/{{ item.icon }}" /></li>
+            <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
+		<figure class="image is-24x24">
+			<img src="{{ site.url }}/img/{{ item.icon }}" />
+		</figure>
+	    </a>
           {% endfor %}
         </ul>
       </nav>
