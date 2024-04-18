@@ -6,16 +6,15 @@ layout: base.njk
 
 <div class="grid is-col-min-12">
 {% for tag in collections.all | getAllTags | filterTagList %}
+	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<div class="cell">
     <div class="card">
-			{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 			<a href="{{ tagUrl }}">
 				<div class="card-content">
-    			<p class="title">{{ {{ tag }} }}</p>
+    			<p class="title">{{ tag }}</p>
     		</div>
 			</a>
   	</div>
 	</div>  
 {% endfor %}
 </div>
-
