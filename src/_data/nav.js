@@ -8,10 +8,6 @@ module.exports = [
     navUrl: "/tags",
   },
   {
-    navLabel: "archive",
-    navUrl: "/archive",
-  },
-  {
     navLabel: "projects",
     navUrl: "/projects",
   },
