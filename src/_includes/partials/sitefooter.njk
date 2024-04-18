@@ -1,20 +1,22 @@
 <footer class="footer">
-  <div class="content has-text-centered">
-	<nav aria-label="footer navigation">
-          {% for item in nav %}
-        <a class="navbar-item" title="{{ item.navLabel }}" href="{{ site.url }}{{ item.navUrl }}">{{ item.navLabel }}</a>
-          {% endfor %}
-      </nav>
-
-	<nav aria-label="social media">
-          {% for item in socialmedia %}
-            <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
-		<figure class="image is-24x24">
-			<img src="{{ site.url }}/img/{{ item.icon }}" />
-		</figure>
-	    </a>
-          {% endfor %}
-      </nav>
+	<nav class="level" aria-label="footer navigation">
+		{# site navigation #}
+		<div class="level-left">
+          	{% for item in nav %}
+        		<a class="level-item" title="{{ item.navLabel }}" href="{{ site.url }}{{ item.navUrl }}">{{ item.navLabel }}</a>
+          	{% endfor %}
+		</div>
+		{# social media #}
+		<div class="level-right">
+		{% for item in socialmedia %}
+            		<a class="level-item" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
+				<figure class="image is-24x24">
+					<img src="{{ site.url }}/img/{{ item.icon }}" />
+				</figure>
+	    		</a>
+          	{% endfor %}
+		</div>
+      	</nav>
 
 	<div class="content has-text-centered">
 		<!-- hosting etc -->
