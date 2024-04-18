@@ -13,4 +13,5 @@ module.exports = {
   gisturl: "https://gist.github.com/deejaygraham",
   linkedinurl: "https://uk.linkedin.com/in/derekjohngraham",
   slideshareurl: "https://www.slideshare.net/deejaygraham",
+  buildTime: new Date(),
 };
