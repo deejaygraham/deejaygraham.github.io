@@ -4,14 +4,18 @@ title: deejaygraham - Blog Entries by Tag
 layout: base.njk
 ---
 
+{% set postsCount = collections.posts | length %}
+
 <div class="grid is-col-min-12">
-{% for tag in collections.all | getAllTags | filterTagList %}
+{% for tag in collections.posts | getAllTags | filterTagList %}
 	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	{% set tagCount = collections[tag] | length %}
 	<div class="cell">
     <div class="card">
 			<a href="{{ tagUrl }}">
 				<div class="card-content">
     			<p class="title">{{ tag }}</p>
+					<progress class="progress" value="{{ tagCount }}" max="{{ postsCount }}">{{ postsCount }}%</progress>
     		</div>
 			</a>
   	</div>
