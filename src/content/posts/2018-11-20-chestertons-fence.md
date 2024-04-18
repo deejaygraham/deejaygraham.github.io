@@ -6,7 +6,7 @@ title: Chestertons Fence
 published: true
 attribution: G K Chesterton
 publication: The Thing 1929
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

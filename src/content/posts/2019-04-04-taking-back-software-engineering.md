@@ -2,7 +2,7 @@
 permalink: 2019/04/04/taking-back-software-engineering/
 layout: sketchnote
 title: Taking Back Software Engineering
-categories: [ sketchnotes, presentations ]
+tags: [ sketchnotes, presentations ]
 tweetable: true
 thumbnail: "/img/posts/taking-back-software-engineering/thumbnail-420x255.webp"
 sketchnote:

@@ -6,7 +6,7 @@ title: Establishment
 published: true
 attribution: Tony Benn
 publication:
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

@@ -3,7 +3,7 @@ permalink: 2015/07/16/avoiding-avoidable-errors-powershell/
 layout: post
 title: Avoiding avoidable errors in PowerShell
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

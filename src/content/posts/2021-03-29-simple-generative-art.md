@@ -3,7 +3,7 @@ permalink: 2021/03/29/simple-generative-art/
 layout: post
 title: Simple Generative Art
 published: true
-categories: [code, processing, python]
+tags: [code, processing, python]
 thumbnail: img/posts/simple-generative-art/simple-generative-art-420x255.webp
 alttext: screenshot
 ---

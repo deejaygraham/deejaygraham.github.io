@@ -3,7 +3,7 @@ permalink: 2020/02/25/more-testable-code-with-hexagonal-architecture/
 layout: post
 title:  More Testable Code with the Hexagonal Architecture
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: img/posts/more-testable-hexagonal-architecture/thumbnail-420x255.webp
 alttext: Ted Young
 ---

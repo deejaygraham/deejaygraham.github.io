@@ -2,7 +2,7 @@
 permalink: 2015/05/15/deliberate-learning-sketchnote/
 layout: sketchnote
 title: Dan North on Deliberate Learning @ Foo Cafe
-categories: [ presentations, sketchnotes ]
+tags: [ presentations, sketchnotes ]
 sketchnote:
   url: "/img/posts/deliberate-learning-sketchnote/dan-north-deliberate-learning.webp"
   alt: "deliberate practice"

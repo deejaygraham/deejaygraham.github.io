@@ -3,7 +3,7 @@ permalink: 2014/02/20/contracts-in-msbuild/
 layout: post
 title: Programming by Contract in MsBuild
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 One of the great ways to prevent bugs creeping into your code during development 

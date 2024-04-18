@@ -6,7 +6,7 @@ attribution: Cory Doctorow
 publication: Overclocked
 comment: Variations on this quote keep turning up in Corys work including Walkaway 
 published: true
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

@@ -3,7 +3,7 @@ permalink: 2024/03/01/microbit-sound-meter/
 layout: post
 title:  Microbit Sound Meter
 published: true
-categories: [code, microbit, python]
+tags: [code, microbit, python]
 ---
 
 The new (to me) v2 of the microbit has a built-in microphone to allow it to "listen" to it's surroundings. 

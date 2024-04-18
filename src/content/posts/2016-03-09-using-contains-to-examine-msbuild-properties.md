@@ -3,7 +3,7 @@ permalink: 2016/03/09/using-contains-to-examine-msbuild-properties/
 layout: post
 title: Using Contains to Examine MSBuild Properties
 published: true 
-categories: [ msbuild  ]
+tags: [ msbuild  ]
 ---
 
 Sometimes I see MsBuild scripts which seem to be trying to treat it more 

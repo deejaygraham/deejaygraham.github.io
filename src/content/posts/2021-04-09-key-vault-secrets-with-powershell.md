@@ -3,7 +3,7 @@ permalink: 2021/04/09/key-vault-secrets-with-powershell/
 layout: post
 title: KeyVault Secrets with PowerShell
 published: true 
-categories: [ powershell, code ] 
+tags: [ powershell, code ] 
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: logs

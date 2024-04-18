@@ -3,7 +3,7 @@ permalink: 2014/03/18/using-environment-variables-in-msbuild-scripts/
 layout: post
 title: Using Environment Variables in MsBuild Scripts
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 It is only recently I realised you can use Windows environment variables 

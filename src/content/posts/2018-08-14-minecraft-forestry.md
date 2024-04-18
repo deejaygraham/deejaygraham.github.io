@@ -2,7 +2,7 @@
 permalink: 2018/08/14/minecraft-forestry/
 layout: post
 title: Minecraft Forestry
-categories: [ minecraft, code ]
+tags: [ minecraft, code ]
 published: true
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

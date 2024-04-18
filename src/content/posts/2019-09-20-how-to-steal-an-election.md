@@ -3,7 +3,7 @@ permalink: 2019/09/20/how-to-steal-an-election/
 layout: post
 title: How to Steal an Election
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: img/posts/how-to-steal-an-election/screenshot-420x255.webp
 alttext: how to steal an election
 ---

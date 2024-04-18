@@ -3,7 +3,7 @@ permalink: 2013/10/15/team-working-agreements/
 layout: post
 title: Team Working Agreements
 published: true 
-categories: [ agile ]
+tags: [ agile ]
 hero: agile
 ---
 

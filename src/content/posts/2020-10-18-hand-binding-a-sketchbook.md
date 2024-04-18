@@ -2,7 +2,7 @@
 permalink: 2020/10/18/hand-binding-a-sketchbook/
 layout: post
 title: Hand Binding a sketchbook
-categories: [sketchnotes]
+tags: [sketchnotes]
 published: true
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

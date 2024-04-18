@@ -3,7 +3,7 @@ permalink: 2014/02/19/learning-to-program-again/
 layout: post
 title: Learning to Program, Again
 published: true
-categories: [ ruby, books ]
+tags: [ ruby, books ]
 ---
 
 I have wanted to learn ruby in anger for a long time and have had many false starts. 

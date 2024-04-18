@@ -3,7 +3,7 @@ permalink: 2015/03/15/jekyll-post-generator-in-ruby/
 layout: post
 title: Jekyll Post Generator in Ruby
 published: true 
-categories: [ ruby, meta, csharp, code ]
+tags: [ ruby, meta, csharp, code ]
 ---
 
 A while ago, I blogged a quick console application to create a blog post outline, 

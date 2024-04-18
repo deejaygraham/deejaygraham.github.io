@@ -2,7 +2,7 @@
 permalink: 2018/06/30/its-raining-blocks/
 layout: post
 title: It's Raining Blocks
-categories: [ code, minecraft ]
+tags: [ code, minecraft ]
 published: true
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

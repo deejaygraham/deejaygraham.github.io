@@ -3,7 +3,7 @@ permalink: 2018/02/22/nothing-is-more-dangerous/
 layout: quotation
 title: Nothing is more dangerous
 published: true
-categories: [ quote, agile ]
+tags: [ quote, agile ]
 attribution: Emile Auguste Chartier
 comment: This is from a Kevlin Henney talk a while ago.
 size: large

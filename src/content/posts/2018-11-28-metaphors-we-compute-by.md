@@ -3,7 +3,7 @@ permalink: 2018/11/28/metaphors-we-compute-by/
 layout: post
 title: Metaphors We Compute By
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 A great talk by <a href="https://twitter.com/old_sound">Alvaro Videla</a> from jsconf eu 2018 

@@ -3,7 +3,7 @@ permalink: 2014/05/09/text-diamond-kata/
 layout: post
 title: Text Diamond Kata
 published: true
-categories: [ tdd, deliberate-practice ]
+tags: [ tdd, deliberate-practice ]
 ---
 
 Here's a sample solution for the Text Diamond Kata that I'm using with 

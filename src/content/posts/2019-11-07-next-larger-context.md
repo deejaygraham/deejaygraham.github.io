@@ -6,7 +6,7 @@ title: Design for the Next Larger Context
 published: true
 attribution: Eliel Saarinen
 publication:
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

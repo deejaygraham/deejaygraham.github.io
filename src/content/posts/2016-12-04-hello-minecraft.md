@@ -3,7 +3,7 @@ permalink: 2016/12/04/hello-minecraft/
 layout: post
 title: Hello, Minecraft
 published: true
-categories: [ code, minecraft ]
+tags: [ code, minecraft ]
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi

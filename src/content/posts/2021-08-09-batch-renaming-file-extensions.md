@@ -3,7 +3,7 @@ permalink: 2021/08/09/batch-renaming-file-extensions/
 layout: post
 title: Batch Renaming File Extensions
 published: true 
-categories: [ powershell, code ] 
+tags: [ powershell, code ] 
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: batches

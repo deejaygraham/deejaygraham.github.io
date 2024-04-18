@@ -3,7 +3,7 @@ permalink: 2014/03/04/my-coding-dojo-checklist/
 layout: post
 title: My Coding Dojo Checklist
 published: true
-categories: [ tdd, deliberate-practice ]
+tags: [ tdd, deliberate-practice ]
 ---
 I have been running a series of TDD-focussed coding dojos for a while now, 
 mainly using the brilliant [cyber-dojo](http://www.cyber-dojo.com/) platform 

@@ -6,7 +6,7 @@ published: true
 attribution: Charles Chilton Moore
 publication: (1837 - 1906)
 size: medium
-categories: [  quote  ]
+tags: [  quote  ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

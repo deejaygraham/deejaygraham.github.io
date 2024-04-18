@@ -3,7 +3,7 @@ permalink: 2017/11/30/estimating-complexity/
 layout: post
 title: Estimating Complexity
 published: true 
-categories: [  agile  ]
+tags: [  agile  ]
 ---
 
 Here's a scale that I've seen <a href="https://twitter.com/lunivore">Liz Keogh</a> use in a couple of talks about 

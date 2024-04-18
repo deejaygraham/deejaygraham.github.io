@@ -3,7 +3,7 @@ permalink: 2018/01/09/campus-north-murals/
 layout: post
 title: Campus North Murals
 published: true
-categories: [ illustration  ]
+tags: [ illustration  ]
 ---
 
 Here are a couple of murals that were on the walls in the class room at <a href="http://campusnorth.co.uk/">campus north</a> 

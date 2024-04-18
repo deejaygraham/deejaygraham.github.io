@@ -3,7 +3,7 @@ permalink: 2018/11/01/linting-in-powershell/
 layout: post
 title: Linting in PowerShell
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell

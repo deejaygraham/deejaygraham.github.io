@@ -3,7 +3,7 @@ permalink: 2023/03/01/generate-playlist/
 layout: post
 title:  Generate mp3 Playlists
 published: true
-categories: [code, python]
+tags: [code, python]
 ---
 
 Dumping a simple script here for posterity and if I need to revisit sometime. Just playing with a new device for 

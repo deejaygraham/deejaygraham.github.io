@@ -3,7 +3,7 @@ permalink: 2017/09/30/aneurin-bevan/
 layout: quotation
 title: Aneurin Bevan
 published: true
-categories: [ quote ]
+tags: [ quote ]
 attribution: Aneurin Bevan
 size: large
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

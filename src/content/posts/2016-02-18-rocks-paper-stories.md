@@ -2,7 +2,7 @@
 permalink: 2016/02/18/rocks-paper-stories/
 layout: sketchnote
 title: Rocks, Paper ... Stories
-categories: [ sketchnotes, presentations, agile  ]
+tags: [ sketchnotes, presentations, agile  ]
 tweetable: true
 thumbnail: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.webp"
 sketchnote:

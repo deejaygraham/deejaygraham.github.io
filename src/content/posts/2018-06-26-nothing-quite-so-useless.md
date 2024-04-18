@@ -5,7 +5,7 @@ title: Nothing Quite So Useless
 published: true
 attribution: Peter Drucker
 size: large
-categories: [ agile, quote ]
+tags: [ agile, quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

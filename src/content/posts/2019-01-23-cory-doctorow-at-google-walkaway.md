@@ -3,7 +3,7 @@ permalink: 2019/01/23/cory-doctorow-at-google-walkaway/
 layout: post
 title: Cory Doctorow at Google
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 Cory Doctorow in 2017 talking about his most recent book at the time, Walkaway, at the google.

@@ -3,7 +3,7 @@ permalink: 2015/05/07/sample-powershell-cmdlet-in-c#/
 layout: post
 title: Sample Powershell Cmdlet in C#
 published: true 
-categories: [ csharp, code, powershell ]
+tags: [ csharp, code, powershell ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

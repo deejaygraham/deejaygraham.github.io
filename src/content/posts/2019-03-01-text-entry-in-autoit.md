@@ -3,7 +3,7 @@ permalink: 2019/03/01/text-entry-in-autoit/
 layout: post
 title: Text Entry in AutoIt
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell

@@ -2,7 +2,7 @@
 permalink: 2013/10/01/sketchnoting-in-reverse/
 layout: post
 title: Sketchnoting in Reverse
-categories: [ sketchnotes, deliberate-practice, presentations ]
+tags: [ sketchnotes, deliberate-practice, presentations ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

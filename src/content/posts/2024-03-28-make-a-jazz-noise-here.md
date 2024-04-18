@@ -3,7 +3,7 @@ permalink: 2024/03/28/make-a-jazz-noise-here/
 layout: post
 title:  Make A Jazz Noise Here
 published: true
-categories: [code, microbit, python]
+tags: [code, microbit, python]
 ---
 
 Inspired by the [Frank Zappa album of the same name](https://en.wikipedia.org/wiki/Make_a_Jazz_Noise_Here), here is a 

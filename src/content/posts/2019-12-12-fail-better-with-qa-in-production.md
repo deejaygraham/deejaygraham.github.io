@@ -3,7 +3,7 @@ permalink: 2019/12/12/fail-better-with-qa-in-production/
 layout: post
 title: Fail better with QA in Production
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: img/posts/fail-better-with-qa-in-production/thumbnail-420x255.webp
 alttext: Rouan
 ---

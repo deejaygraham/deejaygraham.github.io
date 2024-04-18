@@ -2,7 +2,7 @@
 permalink: 2019/01/05/user-story-strategies/
 layout: post
 title: User Story Strategies
-categories: [ sketchnotes, xp ]
+tags: [ sketchnotes, xp ]
 published: true
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

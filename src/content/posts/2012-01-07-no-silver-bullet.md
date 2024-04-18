@@ -6,7 +6,7 @@ published: true
 attribution: Frederick P. Brooks
 publication: No silver bullet, 1987
 size: medium
-categories: [  quote  ]
+tags: [  quote  ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

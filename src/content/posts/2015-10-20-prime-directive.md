@@ -6,7 +6,7 @@ attribution: Norm Kerth
 publication: Project Retrospectives - A Handbook for Team Review
 published: true
 size: medium
-categories: [ agile, quote ]
+tags: [ agile, quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

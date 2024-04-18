@@ -3,7 +3,7 @@ permalink: 2018/12/19/a-history-of-bias-and-oppression-in-computing/
 layout: post
 title: A History of Bias and Oppression in Computing
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 <iframe src="https://player.vimeo.com/video/300987273" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

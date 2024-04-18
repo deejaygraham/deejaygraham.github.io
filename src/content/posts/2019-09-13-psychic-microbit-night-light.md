@@ -3,7 +3,7 @@ permalink: 2019/09/13/psychic-microbit-night-light/
 layout: post
 title: Psychic Microbit Night Light
 published: true
-categories: [code, microbit]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

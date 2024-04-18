@@ -3,7 +3,7 @@ permalink: 2018/10/12/psake-cheatsheet/
 layout: post
 title: PSake Cheatsheet
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell

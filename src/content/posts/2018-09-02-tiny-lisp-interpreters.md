@@ -3,7 +3,7 @@ permalink: 2018/09/02/tiny-lisp-interpreters/
 layout: post
 title: Tiny Lisp Implementations
 published: true 
-categories: [ code ]
+tags: [ code ]
 ---
 
 I wanted to mention a couple of awesome walkthroughs - one old, one newer - dealing with a subject I always find fascinating, 

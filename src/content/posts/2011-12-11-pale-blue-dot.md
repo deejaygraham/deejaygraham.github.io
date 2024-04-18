@@ -3,7 +3,7 @@ permalink: 2011/12/11/pale-blue-dot/
 layout: post
 title: Pale Blue Dot
 published: true 
-categories: [ video ]
+tags: [ video ]
 ---
 
 A lovely animation of Carl Sagan's "Pale Blue Dot"...

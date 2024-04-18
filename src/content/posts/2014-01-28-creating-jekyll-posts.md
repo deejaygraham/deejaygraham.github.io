@@ -3,7 +3,7 @@ permalink: 2014/01/28/creating-jekyll-posts/
 layout: post
 title: Creating Jekyll Posts
 published: true
-categories: [ meta, csharp, code ]
+tags: [ meta, csharp, code ]
 ---
 
 Being a good programmer, [I am told](http://c2.com/cgi/wiki?LazinessImpatienceHubris), 

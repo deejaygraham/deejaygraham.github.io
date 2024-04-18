@@ -3,7 +3,7 @@ permalink: 2014/05/29/html-link-validation/
 layout: post
 title: Html Link Validation
 published: true
-categories: [ csharp, code ]
+tags: [ csharp, code ]
 ---
 
 Writing documentation in html for processing into help files with tools like 

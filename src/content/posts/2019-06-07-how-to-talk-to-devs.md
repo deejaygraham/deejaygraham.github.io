@@ -3,7 +3,7 @@ permalink: 2019/06/07/how-to-talk-to-devs/
 layout: post
 title: How to talk to Developers
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 An "old" talk from Rails Conf 2013 I had forgotten about. <a href="https://twitter.com/r00k">Ben Orenstein</a> on How to 

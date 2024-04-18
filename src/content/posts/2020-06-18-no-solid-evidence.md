@@ -3,7 +3,7 @@ permalink: 2020/06/18/no-solid-evidence/
 layout: post
 title: no SOLID evidence
 published: true
-categories: [xp]
+tags: [xp]
 thumbnail: "img/posts/no-solid-evidence/thumbnail-420x255.webp"
 alttext: SOLID
 ---

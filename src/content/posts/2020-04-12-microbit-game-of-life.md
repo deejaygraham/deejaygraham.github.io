@@ -3,7 +3,7 @@ permalink: 2020/04/12/microbit-game-of-life/
 layout: post
 title: Game of Life 2
 published: true
-categories: [code, microbit]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

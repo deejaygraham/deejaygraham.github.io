@@ -2,7 +2,7 @@
 permalink: 2018/06/03/microbit-portal-theme/
 layout: post
 title: Portal Theme on Microbit
-categories: [ code, microbit ]
+tags: [ code, microbit ]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

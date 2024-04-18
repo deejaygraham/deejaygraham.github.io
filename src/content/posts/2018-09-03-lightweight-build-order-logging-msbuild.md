@@ -3,7 +3,7 @@ permalink: 2018/09/03/lightweight-build-order-logging-msbuild/
 layout: post
 title: Lightweight Build Order Logging in MSBuild
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 If you have a lot of .Net code, projects and solutions to build, it can sometimes be difficult to see the order 

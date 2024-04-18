@@ -2,7 +2,7 @@
 permalink: 2018/08/20/spoofing-nokia-mobile/
 layout: post
 title: Spoofing Nokia mobile on the Microbit
-categories: [ microbit, code ]
+tags: [ microbit, code ]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

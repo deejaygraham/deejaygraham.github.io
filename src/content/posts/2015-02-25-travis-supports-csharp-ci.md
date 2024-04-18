@@ -3,7 +3,7 @@ permalink: 2015/02/25/travis-supports-csharp-ci/
 layout: post
 title: Travis supports C# CI
 published: true
-categories: [ code, open-source, ndifference, csharp, cloud ]
+tags: [ code, open-source, ndifference, csharp, cloud ]
 hero: cloud
 ---
 

@@ -3,7 +3,7 @@ permalink: 2024/01/05/you-cant-read-this/
 layout: post
 title: You Cant Read This
 published: true 
-categories: [ csharp, javascript, code ] 
+tags: [ csharp, javascript, code ] 
 ---
 
 Of course, you can. This is plain text. What I was playing with recently was a means to take ordinary, everyday

@@ -6,7 +6,7 @@ title: Our Greatest Asset
 published: true
 attribution: Bob Marshall
 publication:
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

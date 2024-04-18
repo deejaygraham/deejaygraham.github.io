@@ -3,7 +3,7 @@ permalink: 2013/04/19/simple-batch-html-validation/
 layout: post
 title: Simple Batch Html Validation
 published: true
-categories: [ code, csharp, open-source ]
+tags: [ code, csharp, open-source ]
 ---
 
 After struggling with writing a suitable html parser, I began to feel 

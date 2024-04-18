@@ -5,7 +5,7 @@ title: Computing in Pairs
 published: true
 attribution: Jean Bartik
 publication: Interview with Computer History Museum
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

@@ -5,7 +5,7 @@ title: The Essence of Agility
 attribution: Allen Holub
 publication: via Twitter
 published: true
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

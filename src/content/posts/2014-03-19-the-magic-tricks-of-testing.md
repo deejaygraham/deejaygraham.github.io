@@ -3,7 +3,7 @@ permalink: 2014/03/19/the-magic-tricks-of-testing/
 layout: post
 title: The Magic Tricks of Testing
 published: true
-categories: [ video, presentations, tdd ]
+tags: [ video, presentations, tdd ]
 ---
 
 Here's a video of [Sandi Metz's](http://twitter.com/sandimetz/) presentation

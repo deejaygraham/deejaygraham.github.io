@@ -6,7 +6,7 @@ title: Look for the Helpers
 published: true
 attribution: Fred Rogers
 publication: 
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

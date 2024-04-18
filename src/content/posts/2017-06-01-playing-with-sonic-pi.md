@@ -2,7 +2,7 @@
 permalink: 2017/06/01/playing-with-sonic-pi/
 layout: post
 title: Playing with Sonic Pi
-categories: [ code, music ]
+tags: [ code, music ]
 published: false
 ---
 

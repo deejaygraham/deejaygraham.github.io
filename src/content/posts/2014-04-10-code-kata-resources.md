@@ -3,7 +3,7 @@ permalink: 2014/04/10/code-kata-resources/
 layout: post
 title: Code Kata Resources
 published: true
-categories: [ deliberate-practice, tdd ]
+tags: [ deliberate-practice, tdd ]
 ---
 
 I've been accumulating resources for code katas recently so I'm posting 

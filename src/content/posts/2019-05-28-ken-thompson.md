@@ -3,7 +3,7 @@ permalink: 2019/05/28/ken-thompson/
 layout: post
 title: Interview with Ken Thompson  
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 Legends Brian Kernighan (of the original C book fame) and Ken Thompson talk 

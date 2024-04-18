@@ -2,7 +2,7 @@
 permalink: 2020/04/03/high-performance-react-sketchnote/
 layout: sketchnote
 title: Building High Performance React Applications
-categories: [ sketchnotes, presentations ]
+tags: [ sketchnotes, presentations ]
 tweetable: true
 thumbnail: "/img/posts/high-performance-react-sketchnote/thumbnail-420x255.webp"
 sketchnote:

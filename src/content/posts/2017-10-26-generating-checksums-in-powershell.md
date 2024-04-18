@@ -3,7 +3,7 @@ permalink: 2017/10/26/generating-checksums-in-powershell/
 layout: post
 title: Generating Checksums in PowerShell
 published: true
-categories: [ powershell ]
+tags: [ powershell ]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---

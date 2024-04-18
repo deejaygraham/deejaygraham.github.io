@@ -3,7 +3,7 @@ permalink: 2014/05/10/all-the-little-things/
 layout: post
 title: All the Little Things
 published: true
-categories: [ video, presentations, oo, kata ]
+tags: [ video, presentations, oo, kata ]
 ---
 
 Carrying on the series of [Sandi Metz's](http://twitter.com/sandimetz/) talks, here's

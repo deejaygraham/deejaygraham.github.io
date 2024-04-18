@@ -3,7 +3,7 @@ permalink: 2018/09/04/pre-post-build-differences-msbuild/
 layout: post
 title: Pre- and Post- Build Differences in MSBuild
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 Again with the large codebases. Along with many other problems, it can be difficult to see what physical binaries 

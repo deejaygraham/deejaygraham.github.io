@@ -2,7 +2,7 @@
 permalink: 2014/04/10/my-sketchnoting-workflow-for-presentations/
 layout: sketchnote
 title: My Sketchnoting Workflow for Presentations
-categories: [ sketchnotes, presentations ]
+tags: [ sketchnotes, presentations ]
 sketchnote:
   url: "/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.webp"
   alt: "Sketchnote process"

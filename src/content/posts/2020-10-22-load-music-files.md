@@ -3,7 +3,7 @@ permalink: 2020/10/22/load-music-files/
 layout: post
 title: Microbit LED blinkenlights
 published: true
-categories: [code, microbit]
+tags: [code, microbit]
 hero: microbit
 thumbnail: img/posts/led-blinkenlights/thumbnail-420x255.webp
 alttext: microbit

@@ -5,7 +5,7 @@ size: large
 title: Think of Yourself
 published: true
 attribution: Marcus Aurelius
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

@@ -3,7 +3,7 @@ permalink: 2016/11/09/sql-schema-generation-as-code/
 layout: post
 title: SQL Schema Generation as Code
 published: true
-categories: [ cloud, powershell  ]
+tags: [ cloud, powershell  ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

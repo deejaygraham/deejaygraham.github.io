@@ -2,7 +2,7 @@
 permalink: 2014/11/13/sketchnoting-lean-concepts/
 layout: sketchnote
 title: Sketchnoting Lean Concepts
-categories: [ sketchnotes, presentations, lean, agile ]
+tags: [ sketchnotes, presentations, lean, agile ]
 sketchnote:
   url: "/img/posts/sketchnoting-lean-concepts/sketchnoting-lean-concepts-hifi.webp"
   alt: "sketchnote"

@@ -3,7 +3,7 @@ permalink: 2014/08/18/generating-file-content-in-the-build/
 layout: post
 title: Generating File Content in the Build
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 Whether your build system was developed by [Heath Robinson](en.wikipedia.org/wiki/W._Heath_Robinson) 

@@ -3,7 +3,7 @@ permalink: 2014/05/09/go-ahead-make-a-mess/
 layout: post
 title: Go Ahead Make a Mess
 published: true
-categories: [ video, presentations, oo ]
+tags: [ video, presentations, oo ]
 ---
 
 Another of [Sandi Metz's](http://twitter.com/sandimetz/) talks, 

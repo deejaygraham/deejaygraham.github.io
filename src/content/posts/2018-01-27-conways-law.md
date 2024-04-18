@@ -3,7 +3,7 @@ permalink: 2018/01/27/conways-law/
 layout: quotation
 title: Conway's Law
 published: true
-categories: [ agile, quote ]
+tags: [ agile, quote ]
 attribution: Melvin Conway
 publication: How Do Committees Invent?
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

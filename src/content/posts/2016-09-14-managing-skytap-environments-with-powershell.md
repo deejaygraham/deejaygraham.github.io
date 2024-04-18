@@ -2,7 +2,7 @@
 permalink: 2016/09/14/managing-skytap-environments-with-powershell/
 layout: post
 title: Managing Skytap environments with PowerShell
-categories: [ powershell ]
+tags: [ powershell ]
 published: true
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

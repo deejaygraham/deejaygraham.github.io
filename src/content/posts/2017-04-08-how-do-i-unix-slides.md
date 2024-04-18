@@ -3,7 +3,7 @@ permalink: 2017/04/08/how-do-i-unix-slides/
 layout: post
 title: How Do I Unix?
 published: true
-categories: [ presentations  ]
+tags: [ presentations  ]
 ---
 
 Slides for a presentation I did to some Windows-only junior devs on the joys of Linux

@@ -3,7 +3,7 @@ permalink: 2018/05/26/reducing-non-value-adding-waste/
 layout: quotation
 title: Reducing Non-Value Adding Waste
 published: true
-categories: [ agile, quote ]
+tags: [ agile, quote ]
 attribution: Taiichi Ohno
 size: medium
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

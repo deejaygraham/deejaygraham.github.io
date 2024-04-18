@@ -2,7 +2,7 @@
 permalink: 2020/06/26/four-elements/
 layout: sketchnote
 title: The Four Elements of Simple Design
-categories: [ sketchnotes ]
+tags: [ sketchnotes ]
 thumbnail: "/img/posts/four-elements/thumbnail-420x255.webp"
 tweetable: true
 sketchnote:

@@ -3,7 +3,7 @@ permalink: 2018/08/24/refactoring-away-from-static-code/
 layout: post
 title: Refactoring Away from Static Code
 published: true
-categories: [ code, refactoring ]
+tags: [ code, refactoring ]
 ---
 
 A common problem with many c# codebases I see is a lot reliance on static classes and 

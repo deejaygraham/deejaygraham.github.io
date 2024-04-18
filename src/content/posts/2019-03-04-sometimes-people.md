@@ -6,7 +6,7 @@ title: Sometimes People
 published: true
 attribution: Kristen Butler
 publication:
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

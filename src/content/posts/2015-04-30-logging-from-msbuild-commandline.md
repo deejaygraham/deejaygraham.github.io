@@ -3,7 +3,7 @@ permalink: 2015/04/30/logging-from-msbuild-commandline/
 layout: post
 title: Logging from MsBuild's Commandline
 published: true
-categories: [ msbuild ]
+tags: [ msbuild ]
 ---
 
 There's a fair bit of flexibility built into msbuild's logging that goes under 

@@ -3,7 +3,7 @@ permalink: 2014/04/28/names-are-hard/
 layout: post
 title: Names Are Hard
 published: true
-categories: [ code, naming, open-source, ndifference ]
+tags: [ code, naming, open-source, ndifference ]
 ---
 
 It's a common complaint in writing software in general and one of the difficulties 

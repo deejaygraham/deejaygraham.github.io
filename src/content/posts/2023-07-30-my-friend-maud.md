@@ -3,7 +3,7 @@ permalink: 2023/07/30/my-friend-maud/
 layout: quotation
 title: My Friend Maud
 published: true
-categories: [ quote ]
+tags: [ quote ]
 size: medium
 attribution: Melissa McEwan
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

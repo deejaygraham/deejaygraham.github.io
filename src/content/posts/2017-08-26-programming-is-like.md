@@ -3,7 +3,7 @@ permalink: 2017/08/26/programming-is-like/
 layout: quotation
 title: Programming is like...
 published: true
-categories: [ quote ]
+tags: [ quote ]
 attribution: anon
 size: large
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

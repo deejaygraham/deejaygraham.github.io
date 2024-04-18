@@ -3,7 +3,7 @@ permalink: 2021/11/09/limits-of-tyrants/
 layout: quotation
 title: Limits of Tyrants
 published: true
-categories: [ quote ]
+tags: [ quote ]
 size: medium
 attribution: Frederick Douglass
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

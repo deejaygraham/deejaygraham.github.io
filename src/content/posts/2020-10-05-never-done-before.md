@@ -5,7 +5,7 @@ size: large
 title: Never Done Before
 published: true
 attribution: Shigeo Shingo
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

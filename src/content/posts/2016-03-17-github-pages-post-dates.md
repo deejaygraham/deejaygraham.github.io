@@ -3,7 +3,7 @@ permalink: 2016/03/17/github-pages-post-dates/
 layout: post
 title: The Case of the Disappearing Github Pages
 published: true 
-categories: [ meta, powershell, presentations ]
+tags: [ meta, powershell, presentations ]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---

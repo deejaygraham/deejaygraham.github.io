@@ -5,7 +5,7 @@ title: Ask the powerful five questions
 attribution: Tony Benn
 publication: (1925 - 2014)
 published: true
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

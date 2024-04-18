@@ -6,7 +6,7 @@ published: true
 attribution: Ed Harris
 publication: BBC Radio 4 play Dot
 size: large
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

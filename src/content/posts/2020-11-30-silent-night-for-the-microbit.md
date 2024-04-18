@@ -3,7 +3,7 @@ permalink: 2020/11/30/silent-night-for-the-microbit/
 layout: post
 title: Silent Night for the Microbit
 published: true
-categories: [code, microbit, music]
+tags: [code, microbit, music]
 hero: microbit
 thumbnail: img/posts/silent-night-for-microbit/thumbnail-420x255.webp
 alttext: microbit

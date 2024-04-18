@@ -3,7 +3,7 @@ permalink: 2018/03/18/agile-maxim-no-1/
 layout: post
 title: Agile Maxim No.1
 published: true
-categories: [ agile, sketchnotes ]
+tags: [ agile, sketchnotes ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

@@ -3,7 +3,7 @@ permalink: 2012/09/20/midi-value-reference/
 layout: post
 title: Midi Value Reference
 published: true
-categories: [ music ]
+tags: [ music ]
 ---
 
 A quick post, mainly for me, because I always have trouble remembering or 

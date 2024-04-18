@@ -3,7 +3,7 @@ permalink: 2017/10/11/elizabeth-warren/
 layout: quotation
 title: Elizabeth Warren, Hero
 published: true
-categories: [ quote ]
+tags: [ quote ]
 attribution: Elizabeth Warren
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

@@ -3,7 +3,7 @@ permalink: 2020/02/14/back-to-rust/
 layout: post
 title: Getting Back to Rust
 published: true
-categories: [code]
+tags: [code]
 thumbnail: "/img/thumbnails/rust-420x255.webp"
 alttext: rust
 ---

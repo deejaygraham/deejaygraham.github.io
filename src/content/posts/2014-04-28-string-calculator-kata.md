@@ -3,7 +3,7 @@ permalink: 2014/04/28/string-calculator-kata/
 layout: post
 title: String Calculator Kata
 published: true
-categories: [ tdd, deliberate-practice ]
+tags: [ tdd, deliberate-practice ]
 ---
 
 Here's a sample solution for the String Calculator Kata that I'm using with 

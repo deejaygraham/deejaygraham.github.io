@@ -3,7 +3,7 @@ permalink: 2019/05/27/using-pester-for-api-testing/
 layout: post
 title: Using Pester for API Testing
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell

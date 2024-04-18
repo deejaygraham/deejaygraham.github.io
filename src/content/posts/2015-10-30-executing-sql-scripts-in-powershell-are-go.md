@@ -3,7 +3,7 @@ permalink: 2015/10/30/executing-sql-scripts-in-powershell-are-go/
 layout: post
 title: Executing SQL Scripts in PowerShell are GO
 published: true
-categories: [ powershell  ]
+tags: [ powershell  ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

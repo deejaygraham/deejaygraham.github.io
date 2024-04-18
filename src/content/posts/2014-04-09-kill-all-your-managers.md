@@ -3,7 +3,7 @@ permalink: 2014/04/09/kill-all-your-managers/
 layout: post
 title: Kill All Your Managers
 published: true
-categories: [ naming, code, oo ]
+tags: [ naming, code, oo ]
 ---
 
 Not your line manager, obviously. I mean your Manager classes.

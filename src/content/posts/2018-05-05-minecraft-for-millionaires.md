@@ -2,7 +2,7 @@
 permalink: 2018/05/05/minecraft-for-millionaires/
 layout: post
 title: Minecraft Pi for Millionaires
-categories: [ code, minecraft ]
+tags: [ code, minecraft ]
 published: true
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

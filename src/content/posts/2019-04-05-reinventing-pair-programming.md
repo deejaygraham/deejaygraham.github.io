@@ -3,7 +3,7 @@ permalink: 2019/04/05/reinventing-pair-programming/
 layout: post
 title: Re-inventing Pair Programming
 published: false
-categories: [xp, code]
+tags: [xp, code]
 ---
 
 Pair programming

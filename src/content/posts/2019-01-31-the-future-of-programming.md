@@ -3,7 +3,7 @@ permalink: 2019/01/31/the-future-of-programming/
 layout: post
 title: The Future of Programming
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 An awesome talk by Bret Victor on <a href="https://vimeo.com/71278954">The Future of Programming</a>

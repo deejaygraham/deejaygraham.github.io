@@ -3,7 +3,7 @@ permalink: 2014/04/15/cleaning-msbuild-itemgroup-includes/
 layout: post
 title: Cleaning MsBuild ItemGroup Includes
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 Here's a neat solution (that I totally stole from [Sayed Ibrahim Hashimi](http://sedodream.com/) ) 

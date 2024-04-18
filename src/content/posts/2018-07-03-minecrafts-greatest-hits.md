@@ -2,7 +2,7 @@
 permalink: 2018/07/03/minecrafts-greatest-hits/
 layout: post
 title: Minecraft's Greatest Hits
-categories: [ minecraft, code ]
+tags: [ minecraft, code ]
 published: true
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

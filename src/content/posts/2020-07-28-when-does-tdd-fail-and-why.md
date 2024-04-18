@@ -2,7 +2,7 @@
 permalink: 2020/07/28/when-does-tdd-fail-and-why/
 layout: sketchnote
 title: When Does TDD Fail and Why
-categories: [ tdd, sketchnotes, xp ]
+tags: [ tdd, sketchnotes, xp ]
 tweetable: true
 thumbnail: "/img/posts/tdd-live-1/thumbnail-420x255.webp"
 sketchnote:

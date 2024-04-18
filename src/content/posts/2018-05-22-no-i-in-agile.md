@@ -2,7 +2,7 @@
 permalink: 2018/05/22/no-i-in-agile/
 layout: sketchnote
 title: There's No 'I' in Agile
-categories: [ sketchnotes, presentations, agile  ]
+tags: [ sketchnotes, presentations, agile  ]
 tweetable: true
 thumbnail: "/img/posts/no-i-in-agile/no-i-in-agile.webp"
 sketchnote:

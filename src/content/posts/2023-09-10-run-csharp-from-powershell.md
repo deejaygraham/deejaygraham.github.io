@@ -3,7 +3,7 @@ permalink: 2023/09/10/run-csharp-from-powershell/
 layout: post
 title: Running CSharp code from PowerShell
 published: true
-categories: [ csharp, code ]
+tags: [ csharp, code ]
 ---
 
 For nearly all the time that I have been using PowerShell I have used advanced cmdlets to do stuff not included directly. 

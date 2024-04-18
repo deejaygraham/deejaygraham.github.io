@@ -3,7 +3,7 @@ permalink: 2020/03/02/twinkly-lights/
 layout: post
 title: Microbit Twinkly Lights
 published: true
-categories: [code, microbit]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

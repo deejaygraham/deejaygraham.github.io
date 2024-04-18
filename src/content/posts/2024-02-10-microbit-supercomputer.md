@@ -3,7 +3,7 @@ permalink: 2024/02/10/microbit-supercomputer/
 layout: post
 title:  Microbit Super Computer
 published: true
-categories: [code, microbit, python]
+tags: [code, microbit, python]
 ---
 
 A slightly larger microbit application today with an homage to the [Connection Machine](https://en.wikipedia.org/wiki/Connection_Machine)

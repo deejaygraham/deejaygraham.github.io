@@ -3,7 +3,7 @@ permalink: 2019/06/24/what-do-you-mean/
 layout: post
 title: What do you mean
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: "/img/posts/what-do-you-mean/thumbnail-420x255.webp"
 ---
 

@@ -3,7 +3,7 @@ permalink: 2017/06/12/hello-pygame/
 layout: post
 title: Hello, Pygame
 published: true
-categories: [ code ]
+tags: [ code ]
 ---
 
 Having exhausted everything there is to do with plain old Python, the Raspberry Pi,

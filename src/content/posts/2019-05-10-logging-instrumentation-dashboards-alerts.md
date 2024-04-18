@@ -3,7 +3,7 @@ permalink: 2019/05/10/logging-instrumentation-dashboards-alerts/
 layout: post
 title: Logging, Instrumentation, Dashboards, Alerts
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 <a href="https://twitter.com/henry_been">Henry Been</a> on monitoring & logging in software development and DevOps.

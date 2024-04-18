@@ -2,7 +2,7 @@
 permalink: 2014/11/03/super-technical-sketchnoting/
 layout: sketchnote
 title: Super-Technical Sketchnoting
-categories: [ sketchnotes, presentations, ruby ]
+tags: [ sketchnotes, presentations, ruby ]
 sketchnote:
   url: "/img/posts/super-technical-sketchnoting/super-technical-sketchnoting-hifi.webp" 
   alt: "sketchnote"

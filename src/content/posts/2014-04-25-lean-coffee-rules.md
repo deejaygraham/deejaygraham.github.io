@@ -2,7 +2,7 @@
 permalink: 2014/04/25/lean-coffee-rules/
 layout: sketchnote
 title: Lean Coffee Rules
-categories: [sketchnotes, presentations ]
+tags: [sketchnotes, presentations ]
 hero: agile
 sketchnote:
   url: "/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.webp"

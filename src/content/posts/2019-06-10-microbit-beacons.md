@@ -3,7 +3,7 @@ permalink: 2019/06/10/microbit-beacons/
 layout: post
 title: Microbit Beacons
 published: true
-categories: [ code, microbit ]
+tags: [ code, microbit ]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

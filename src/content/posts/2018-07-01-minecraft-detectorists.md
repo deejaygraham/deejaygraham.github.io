@@ -2,7 +2,7 @@
 permalink: 2018/07/01/minecraft-detectorists/
 layout: post
 title: Minecraft Detectorists
-categories: [ code, minecraft ]
+tags: [ code, minecraft ]
 published: true
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

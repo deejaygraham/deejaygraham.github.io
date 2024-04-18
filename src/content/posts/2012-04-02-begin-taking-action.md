@@ -5,7 +5,7 @@ title: Begin Taking Action
 attribution: Shoma Morita
 published: true 
 size: medium
-categories: [  quote  ]
+tags: [  quote  ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

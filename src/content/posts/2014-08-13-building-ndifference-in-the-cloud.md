@@ -3,7 +3,7 @@ permalink: 2014/08/13/building-ndifference-in-the-cloud/
 layout: post
 title: Building NDifference in the Cloud
 published: true
-categories: [ code, open-source, ndifference, csharp, cloud ]
+tags: [ code, open-source, ndifference, csharp, cloud ]
 hero: cloud
 ---
 

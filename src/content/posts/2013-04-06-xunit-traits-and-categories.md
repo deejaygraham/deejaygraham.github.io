@@ -3,7 +3,7 @@ permalink: 2013/04/06/xunit-traits-and-categories/
 layout: post
 title: XUnit Traits and Categories
 published: true
-categories: [ tdd, code ]
+tags: [ tdd, code ]
 ---
 
 One of the things I love about [xUnit.net](xunit.codeplex.com) is how small

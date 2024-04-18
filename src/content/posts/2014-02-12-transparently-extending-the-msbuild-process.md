@@ -3,7 +3,7 @@ permalink: 2014/02/12/transparently-extending-the-msbuild-process/
 layout: post
 title: Transparently Extending the MsBuild Process
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 It's often the case that you need to extend your normal build process. To copy

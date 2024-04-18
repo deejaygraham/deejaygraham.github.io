@@ -3,7 +3,7 @@ permalink: 2022/02/15/11ty-shortcode-picture/
 layout: post
 title: 11ty Picture Shortcode
 published: true
-categories: [code, javascript, 11ty]
+tags: [code, javascript, 11ty]
 thumbnail: img/thumbnails/eleventy-alt-420x255.png
 alttext: 11ty
 ---

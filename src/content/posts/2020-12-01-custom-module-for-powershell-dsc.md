@@ -3,7 +3,7 @@ permalink: 2020/12/01/custom-module-for-powershell-dsc/
 layout: post
 title: Custom Module for PowerShell DSC
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell

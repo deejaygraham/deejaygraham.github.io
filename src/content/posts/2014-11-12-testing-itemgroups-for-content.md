@@ -3,7 +3,7 @@ permalink: 2014/11/12/testing-itemgroups-for-content/
 layout: post
 title: Testing ItemGroups for Content
 published: true
-categories: [ msbuild ]
+tags: [ msbuild ]
 ---
 
 If you are writing MsBuild scripts that are expected to work consistently 

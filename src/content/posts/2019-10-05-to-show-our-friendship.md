@@ -6,7 +6,7 @@ title: To Show our Friendship
 published: true
 attribution: F Scott Fitzgerald
 publication: The Great Gatsby
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

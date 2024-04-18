@@ -2,7 +2,7 @@
 permalink: 2014/10/23/sketchote2-from-ddd-north-2014/
 layout: sketchnote
 title: Sketchnote 2 from DDDNorth 2014
-categories: [ sketchnotes, presentations ]
+tags: [ sketchnotes, presentations ]
 sketchnote:
   url: "/img/posts/sketchote2-from-ddd-north-2014/dddnorth-2014-burn-out-talk-vanilla-lofi.webp"
   alt: "ddd north sketchnote"

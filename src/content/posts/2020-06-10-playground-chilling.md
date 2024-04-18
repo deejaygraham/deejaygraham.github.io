@@ -3,7 +3,7 @@ permalink: 2020/06/10/playground-chilling/
 layout: post
 title: Circuit Playground Express Moods
 published: true
-categories: [code, playground]
+tags: [code, playground]
 thumbnail: "/img/thumbnails/playground-420x255.webp"
 alttext: circuit playground
 ---

@@ -3,7 +3,7 @@ permalink: 2013/10/18/moving-to-github/
 layout: post
 title: Moving to Github
 published: true
-categories: [ open-source ]
+tags: [ open-source ]
 ---
 
 A long, long time ago, my initial forays into the open source .Net eco-system 

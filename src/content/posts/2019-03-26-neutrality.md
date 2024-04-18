@@ -3,7 +3,7 @@ permalink: 2019/03/26/neutrality/
 layout: quotation
 title: Neutrality
 published: true
-categories: [ quote ]
+tags: [ quote ]
 size: medium
 attribution: Desmond Tutu
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

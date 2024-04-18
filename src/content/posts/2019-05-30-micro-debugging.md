@@ -3,7 +3,7 @@ permalink: 2019/05/30/micro-debugging/
 layout: post
 title: Debugging Microbit Sensors
 published: true
-categories: [microbit]
+tags: [microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

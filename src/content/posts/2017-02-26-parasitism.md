@@ -5,7 +5,7 @@ title: Jason Read
 attribution: Jason Read
 size: medium
 published: true
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

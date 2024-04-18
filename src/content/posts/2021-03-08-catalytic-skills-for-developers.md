@@ -2,7 +2,7 @@
 permalink: 2021/03/08/catalytic-skills-for-developers/
 layout: sketchnote
 title: Catalytic Skills for Developers
-categories: [ sketchnotes, presentations ]
+tags: [ sketchnotes, presentations ]
 tweetable: true
 thumbnail: "/img/posts/catalytic-skills-for-developers/thumbnail-420x255.webp"
 sketchnote:

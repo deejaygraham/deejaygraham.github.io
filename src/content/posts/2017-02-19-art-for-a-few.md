@@ -4,7 +4,7 @@ layout: quotation
 title: Art for a Few
 attribution: William Morris
 published: true
-categories: [ quote ]
+tags: [ quote ]
 size: large
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

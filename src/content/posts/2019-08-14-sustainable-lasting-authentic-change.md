@@ -2,7 +2,7 @@
 permalink: 2019/08/14/sustainable-lasting-authentic-change/
 layout: sketchnote
 title: Sustainable, Lasting, Authentic Change
-categories: [sketchnotes, presentations]
+tags: [sketchnotes, presentations]
 tweetable: true
 thumbnail: "/img/posts/sustainable-lasting-authentic-change/john-420x255.webp"
 alttext: john le drew talking

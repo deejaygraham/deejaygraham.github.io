@@ -3,7 +3,7 @@ permalink: 2013/11/26/dream-team-nightmare/
 layout: post
 title: The Dream Team Nightmare by Portia Tung
 published: true
-categories: [ agile, books ]
+tags: [ agile, books ]
 hero: agile
 ---
 Imagine for a moment, you are writing a book about agile techniques and 

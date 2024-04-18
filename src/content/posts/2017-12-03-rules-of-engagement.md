@@ -3,7 +3,7 @@ permalink: 2017/12/03/rules-of-engagement/
 layout: post
 title: Rules of Engagement
 published: true
-categories: [ agile, signs ]
+tags: [ agile, signs ]
 ---
 
 How close are these to your team's agreed working practices? 

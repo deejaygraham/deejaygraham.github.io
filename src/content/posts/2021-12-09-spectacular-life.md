@@ -3,7 +3,7 @@ permalink: 2021/12/09/spectacular-life/
 layout: quotation
 title: Spectacular Life
 published: true
-categories: [ quote ]
+tags: [ quote ]
 size: medium
 attribution: Robin Williams
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

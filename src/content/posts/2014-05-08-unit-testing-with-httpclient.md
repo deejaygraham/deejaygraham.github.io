@@ -3,7 +3,7 @@ permalink: 2014/05/08/unit-testing-with-httpclient/
 layout: post
 title: Unit Testing with HttpClient
 published: true
-categories: [ csharp, code, tdd ]
+tags: [ csharp, code, tdd ]
 ---
 
 I've been moving some code away from depending on [RestSharp](https://github.com/restsharp/RestSharp) 

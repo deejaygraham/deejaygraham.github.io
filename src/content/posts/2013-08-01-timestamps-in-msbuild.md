@@ -3,7 +3,7 @@ permalink: 2013/08/01/timestamps-in-msbuild/
 layout: post
 title: Timestamps in MsBuild
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 I often need to include a timestamp in a build, either in naming a file 

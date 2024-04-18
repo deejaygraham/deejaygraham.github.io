@@ -2,7 +2,7 @@
 permalink: 2022/08/12/secret-sketchnoter/
 layout: sketchnote
 title: Secret Sketchnoter
-categories: [ sketchnotes ]
+tags: [ sketchnotes ]
 tweetable: true
 thumbnail: "/img/posts/secret-sketchnoter/thumbnail-420x255.jpg"
 sketchnote:

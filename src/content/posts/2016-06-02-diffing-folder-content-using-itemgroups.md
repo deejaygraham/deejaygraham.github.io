@@ -3,7 +3,7 @@ permalink: 2016/06/02/diffing-folder-content-using-itemgroups/
 layout: post
 title: Diffing Folder Content using ItemGroups
 published: true 
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 More on complicated build systems. This time, I was attempting to make the complicated 

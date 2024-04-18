@@ -3,7 +3,7 @@ permalink: 2014/03/11/msbuild-recursive-import-snippet/
 layout: post
 title: MsBuild Recursive Import Snippet
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 Here's a neat snippet to add to an msbuild script to import all scripts 

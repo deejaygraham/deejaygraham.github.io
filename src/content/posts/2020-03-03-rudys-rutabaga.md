@@ -6,7 +6,7 @@ title: Rudy's Rutabaga Rule
 published: true
 attribution: Gerald M Weinberg
 publication:
-categories: [ quote, xp ]
+tags: [ quote, xp ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

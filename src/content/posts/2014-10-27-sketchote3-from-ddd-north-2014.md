@@ -2,7 +2,7 @@
 permalink: 2014/10/27/sketchote3-from-ddd-north-2014/
 layout: sketchnote
 title: Final sketchnote from DDDNorth 2014
-categories: [ sketchnotes, presentations, management ]
+tags: [ sketchnotes, presentations, management ]
 sketchnote:
   url: "/img/posts/sketchote3-from-ddd-north-2014/dddnorth-2014-tech-lead-talk-vanilla.webp"
   alt: "ddd north sketchnote"

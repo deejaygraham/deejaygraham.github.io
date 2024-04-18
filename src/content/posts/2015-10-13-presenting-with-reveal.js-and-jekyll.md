@@ -3,7 +3,7 @@ permalink: 2015/10/13/presenting-with-reveal.js-and-jekyll/
 layout: post
 title: Presenting with Reveal.js and Jekyll
 published: true 
-categories: [ meta, ruby, presentations ]
+tags: [ meta, ruby, presentations ]
 ---
 
 I am giving a talk at [DDDNorth 2015](http://www.dddnorth.co.uk/) and wanted to use something other than  

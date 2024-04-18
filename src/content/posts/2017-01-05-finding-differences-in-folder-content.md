@@ -3,7 +3,7 @@ permalink: 2017/01/05/finding-differences-in-folder-content/
 layout: post
 title: Finding Differences in Folder Content
 published: true
-categories: [ powershell  ]
+tags: [ powershell  ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

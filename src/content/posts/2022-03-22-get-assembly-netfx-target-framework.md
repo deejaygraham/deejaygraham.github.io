@@ -3,7 +3,7 @@ permalink: 2022/03/22/get-assembly-netfx-target-framework/
 layout: post
 title: Read TargetFramework of Assembly in PowerShell
 published: true 
-categories: [ powershell, code ] 
+tags: [ powershell, code ] 
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: logs

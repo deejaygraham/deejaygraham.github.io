@@ -3,7 +3,7 @@ permalink: 2017/03/01/passing-msbuild-variables-to-wix/
 layout: post
 title: Passing MsBuild Variables to Wix
 published: true
-categories: [ msbuild ]
+tags: [ msbuild ]
 ---
 
 It almost seems like it would be an easy thing to have wix (an xml file-based installer build system)

@@ -5,7 +5,7 @@ size: large
 title: The Same Person
 published: true
 attribution: Charlie Tremendous Jones
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

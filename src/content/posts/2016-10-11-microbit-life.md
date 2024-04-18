@@ -2,7 +2,7 @@
 permalink: 2016/10/11/microbit-life/
 layout: post
 title: Microbit Life
-categories: [ code, microbit ]
+tags: [ code, microbit ]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

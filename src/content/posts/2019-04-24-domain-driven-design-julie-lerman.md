@@ -3,7 +3,7 @@ permalink: 2019/04/24/domain-driven-design-julie-lerman/
 layout: post
 title: Domain-Driven Design for the Database Driven Mind
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 <a href="https://twitter.com/julielerman">Julie Lerman</a>'s presentation from Microsoft Ignite 2015 on adapting a typical n-tier, 

@@ -3,7 +3,7 @@ permalink: 2013/04/29/scrum-assessments/
 layout: post
 title: Scrum.org Open Assessments
 published: true
-categories: [ agile ]
+tags: [ agile ]
 hero: agile
 ---
 

@@ -3,7 +3,7 @@ permalink: 2014/04/02/zipping-folder-contents-using-msbuild/
 layout: post
 title: Zipping Folder Contents Using MsBuild
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 Here's a script to zip the contents of a folder. Again, this is posted more

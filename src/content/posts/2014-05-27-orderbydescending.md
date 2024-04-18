@@ -3,7 +3,7 @@ permalink: 2014/05/27/orderbydescending/
 layout: post
 title: OrderByDescending
 published: true
-categories: [ csharp, code, cloud ]
+tags: [ csharp, code, cloud ]
 hero: cloud
 ---
 

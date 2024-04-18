@@ -5,7 +5,7 @@ size: medium
 title: Commitment
 published: true
 attribution: Esther Derby
-categories: [ quote, lean ]
+tags: [ quote, lean ]
 thumbnail: img/posts/commitment/commitment-420x255.webp
 alttext: quote
 ---

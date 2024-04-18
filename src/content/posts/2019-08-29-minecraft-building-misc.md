@@ -3,7 +3,7 @@ permalink: 2019/08/29/minecraft-building-misc/
 layout: post
 title: Minecraft Building Miscellanea
 published: true
-categories: [code, minecraft]
+tags: [code, minecraft]
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi

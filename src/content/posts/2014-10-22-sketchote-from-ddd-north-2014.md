@@ -2,7 +2,7 @@
 permalink: 2014/10/22/sketchote-from-ddd-north-2014/
 layout: sketchnote
 title: Sketchnote from DDDNorth 2014
-categories: [ sketchnotes, presentations, ruby, csharp ]
+tags: [ sketchnotes, presentations, ruby, csharp ]
 sketchnote:
   url: "/img/posts/sketchote-from-ddd-north-2014/dddnorth-2014-ruby-dotnet-talk-lofi.webp"
   alt: "ddd north sketchnote"

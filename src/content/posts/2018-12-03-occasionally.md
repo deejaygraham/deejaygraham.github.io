@@ -2,7 +2,7 @@
 permalink: 2018/12/03/occasionally/
 layout: post
 title: Occasionally...
-categories: [ code ]
+tags: [ code ]
 published: true
 ---
 

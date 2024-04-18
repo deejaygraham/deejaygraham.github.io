@@ -3,7 +3,7 @@ permalink: 2020/02/18/this-code-sucks/
 layout: post
 title:  This Code Sucks
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: img/posts/this-code-sucks/thumbnail-420x255.webp
 alttext: Nadia Odunayo
 ---

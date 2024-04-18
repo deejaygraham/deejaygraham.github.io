@@ -3,7 +3,7 @@ permalink: 2015/09/24/loading-hashtables-from-csv-in-powershell/
 layout: post
 title: Loading Hashtables from CSV in Powershell
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

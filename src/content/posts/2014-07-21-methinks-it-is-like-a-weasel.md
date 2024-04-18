@@ -3,7 +3,7 @@ permalink: 2014/07/21/methinks-it-is-like-a-weasel/
 layout: post
 title: Methinks it is like a Weasel
 published: true
-categories: [ code, csharp ]
+tags: [ code, csharp ]
 ---
 
 I'm posting this older code example of a simple evolutionary algorithm to get 

@@ -3,7 +3,7 @@ permalink: 2014/04/25/bootstrapping-jekyll-tag-generation/
 layout: post
 title: Bootstrapping Jekyll Tag Generation
 published: true
-categories: [ meta, code, msbuild ]
+tags: [ meta, code, msbuild ]
 ---
 
 I love working with Jekyll and Github to produce this blog as if it were software.

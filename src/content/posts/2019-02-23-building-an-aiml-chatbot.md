@@ -3,7 +3,7 @@ permalink: 2019/02/23/building-an-aiml-chatbot/
 layout: post
 title: Building a Chat Bot
 published: true
-categories: [ csharp, code ]
+tags: [ csharp, code ]
 ---
 
 Clearing out some old projects from years ago, I came across a console app that uses <a href="http://sourceforge.net/projects/aimlbot">AIML bot</a>, 

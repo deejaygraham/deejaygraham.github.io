@@ -3,7 +3,7 @@ permalink: 2017/08/16/newspapers/
 layout: quotation
 title: Newspapers
 published: true
-categories: [ quote ]
+tags: [ quote ]
 attribution: Malcolm X
 size: large
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

@@ -3,7 +3,7 @@ permalink: 2014/01/03/decompiling-net-assemblies/
 layout: post
 title: Decompiling .Net Assemblies
 published: true
-categories: [ csharp, code, open-source ]
+tags: [ csharp, code, open-source ]
 ---
 
 Another entry from the "Combatting Not-Invented-Here Syndrome" department.

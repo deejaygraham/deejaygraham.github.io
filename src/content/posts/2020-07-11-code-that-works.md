@@ -5,7 +5,7 @@ size: large
 title: Code That Works
 published: true
 attribution: Kent Beck
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

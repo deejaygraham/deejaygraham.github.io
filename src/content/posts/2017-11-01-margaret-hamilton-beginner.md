@@ -3,7 +3,7 @@ permalink: 2017/11/01/margaret-hamilton-beginner/
 layout: quotation
 title: Margaret Hamilton, Beginner
 published: true
-categories: [ quote ]
+tags: [ quote ]
 attribution: Margaret Hamilton
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

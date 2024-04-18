@@ -5,7 +5,7 @@ size: large
 title: Disagreement
 published: true
 attribution: James Baldwin
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

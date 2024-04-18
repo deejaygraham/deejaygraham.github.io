@@ -3,7 +3,7 @@ permalink: 2017/07/26/creating-jekyll-collections-for-github-pages/
 layout: post
 title: Creating Jekyll Collections
 published: true
-categories: [ code, meta ]
+tags: [ code, meta ]
 ---
 
 So far with this personal site, I have stuck to the bog-standard way of putting all

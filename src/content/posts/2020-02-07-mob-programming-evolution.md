@@ -2,7 +2,7 @@
 permalink: 2020/02/07/mob-programming-evolution/
 layout: sketchnote
 title: Mob Programming Evolution
-categories: [ sketchnotes ]
+tags: [ sketchnotes ]
 tweetable: true
 thumbnail: "/img/posts/mob-programming-evolution/thumbnail-420x255.webp"
 sketchnote:

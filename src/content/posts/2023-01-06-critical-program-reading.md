@@ -3,7 +3,7 @@ permalink: 2023/01/06/critical-program-reading/
 layout: post
 title:  Critical Program Reading
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: img/posts/critical-program-reading/thumbnail-420x255.png
 alttext: 16mm Film restored
 --- 

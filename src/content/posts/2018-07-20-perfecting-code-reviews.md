@@ -3,7 +3,7 @@ permalink: 2018/07/20/perfecting-code-reviews/
 layout: post
 title: Perfecting Code Reviews
 published: true
-categories: [ code, agile ]
+tags: [ code, agile ]
 ---
 
 I first read about the Core Protocols way back in the early 2000s from 

@@ -3,7 +3,7 @@ permalink: 2020/05/12/one-secret-to-quality-software/
 layout: post
 title: One Secret to Quality Software
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: img/posts/one-secret-to-quality-software/thumbnail-420x255.webp
 alttext: Jessica Kerr
 --- 

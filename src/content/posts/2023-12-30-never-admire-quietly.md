@@ -5,7 +5,7 @@ size: large
 title: Never Admire Quietly
 published: true
 attribution: Chimamanda Ngozi Adichie
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

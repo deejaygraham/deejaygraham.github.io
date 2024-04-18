@@ -3,7 +3,7 @@ permalink: 2015/06/10/favourite-agile-books/
 layout: post
 title: Favourite Books
 published: true
-categories: [ agile, books ]
+tags: [ agile, books ]
 ---
 
 Not all super-specifically all agile related but I thought I would put them all down in a list.

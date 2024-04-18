@@ -3,7 +3,7 @@ permalink: 2019/06/08/balanced-parens-kata/
 layout: post
 title: Balanced Parentheses Kata
 published: true
-categories: [ code, deliberate-practice, tdd ]
+tags: [ code, deliberate-practice, tdd ]
 ---
 
 Here's a quick solution to the balanced parentheses kata. The problem statement is:

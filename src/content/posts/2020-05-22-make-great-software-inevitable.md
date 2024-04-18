@@ -5,7 +5,7 @@ size: large
 title: Make Great Software Inevitable
 published: true
 attribution: Woody Zuill
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

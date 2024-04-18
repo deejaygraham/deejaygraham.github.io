@@ -3,7 +3,7 @@ permalink: 2019/05/16/microbit-motoring/
 layout: post
 title: Microbit Motoring
 published: true
-categories: [code, microbit]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

@@ -5,7 +5,7 @@ title: Why I am an Agnostic
 published: true
 attribution: Robert Ingersoll (1833 - 1899)
 publication: Why I am an Agnostic
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

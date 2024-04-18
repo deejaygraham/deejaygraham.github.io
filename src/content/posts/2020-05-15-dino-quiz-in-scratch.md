@@ -3,7 +3,7 @@ permalink: 2020/05/15/dino-quiz-in-scratch/
 layout: post
 title: Dino Quiz in Scratch
 published: true
-categories: [code, scratch]
+tags: [code, scratch]
 thumbnail: img/posts/dino-quiz-in-scratch/thumbnail-420x255.webp
 alttext: scratch
 ---

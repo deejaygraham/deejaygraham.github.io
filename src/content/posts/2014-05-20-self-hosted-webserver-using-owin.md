@@ -3,7 +3,7 @@ permalink: 2014/05/20/self-hosted-webserver-using-owin/
 layout: post
 title: Self Hosted WebServer using OWIN
 published: true
-categories: [ csharp, code ]
+tags: [ csharp, code ]
 ---
 
 I've been playing about with [OWIN](http://owin.org/) and [Katana](http://msdn.microsoft.com/en-us/magazine/dn451439.aspx) 

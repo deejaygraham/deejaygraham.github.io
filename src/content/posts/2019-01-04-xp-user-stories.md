@@ -2,7 +2,7 @@
 permalink: 2019/01/04/xp-user-stories/
 layout: post
 title: XP User Stories
-categories: [ sketchnotes, xp ]
+tags: [ sketchnotes, xp ]
 published: true
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

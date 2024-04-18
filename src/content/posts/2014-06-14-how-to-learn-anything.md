@@ -3,7 +3,7 @@ permalink: 2014/06/14/how-to-learn-anything/
 layout: sketchnote
 title: How to Learn Anything
 published: true
-categories: [ sketchnotes, deliberate-practice, presentations]
+tags: [ sketchnotes, deliberate-practice, presentations]
 sketchnote:
   url: "/img/posts/how-to-learn-anything/how-to-learn-anything-bw-lofi.webp"
   alt: "How to Learn Anything"

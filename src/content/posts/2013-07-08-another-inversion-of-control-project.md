@@ -3,7 +3,7 @@ permalink: 2013/07/08/another-inversion-of-control-project/
 layout: post
 title: What the World Needs Now is Another IoC project
 published: true
-categories: [ tdd, open-source ]
+tags: [ tdd, open-source ]
 ---
 
 Ok, I admit it. In a moment of weakness I created an IoC framework, br**IoC**he. 

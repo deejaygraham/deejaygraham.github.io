@@ -3,7 +3,7 @@ permalink: 2014/06/27/starting-c#-development-on-raspberry-pi/
 layout: post
 title: Starting C# Development on Raspberry Pi
 published: true
-categories: [ csharp, raspberry-pi, mono ]
+tags: [ csharp, raspberry-pi, mono ]
 ---
 
 Youngest child and I have been playing around with the Raspberry Pi using 

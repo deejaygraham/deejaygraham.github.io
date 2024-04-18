@@ -3,7 +3,7 @@ permalink: 2019/08/30/respect-the-land-yo/
 layout: post
 title: Respect the Land Yo
 published: true
-categories: [signs]
+tags: [signs]
 thumbnail: /img/posts/respect-the-land-yo/respect-the-land-yo-420x255.webp
 alttext: respect sign
 ---

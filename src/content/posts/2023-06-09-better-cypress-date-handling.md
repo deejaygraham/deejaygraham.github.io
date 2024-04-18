@@ -3,7 +3,7 @@ permalink: 2023/06/09/better-cypress-date-handling/
 layout: post
 title: Better Date Handling in Cypress
 published: true 
-categories: [ cypress, javascript, code ] 
+tags: [ cypress, javascript, code ] 
 hero: power
 thumbnail: "/img/thumbnails/cypress-420x255.png"
 alttext: cypress

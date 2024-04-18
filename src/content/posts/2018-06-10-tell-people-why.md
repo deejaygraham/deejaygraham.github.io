@@ -2,7 +2,7 @@
 permalink: 2018/06/10/tell-people-why/
 layout: quotation
 title: Tell people why
-categories: [ quote, code ]
+tags: [ quote, code ]
 published: true
 comment: Heard on the <a href="https://rework.fm/">rework podcast</a> ...
 size: large

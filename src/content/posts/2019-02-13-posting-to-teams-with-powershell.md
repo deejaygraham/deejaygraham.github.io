@@ -3,7 +3,7 @@ permalink: 2019/02/13/posting-to-teams-with-powershell/
 layout: post
 title: Posting Messages to MS Teams with PowerShell
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell

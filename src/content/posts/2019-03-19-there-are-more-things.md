@@ -5,7 +5,7 @@ title: There are More Things
 attribution: Seneca the Younger
 publication: 
 published: true
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

@@ -3,7 +3,7 @@ permalink: 2019/08/08/minecraft-building-from-script/
 layout: post
 title: Minecraft Building from Script
 published: true
-categories: [code, minecraft]
+tags: [code, minecraft]
 hero: minecraft 
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi

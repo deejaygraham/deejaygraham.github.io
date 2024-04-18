@@ -3,7 +3,7 @@ permalink: 2015/08/24/enabling-rdp-access-to-azure-instances/
 layout: post
 title: Enabling RDP Access to Azure Instances
 published: true 
-categories: [ cloud ]
+tags: [ cloud ]
 hero: cloud
 ---
 

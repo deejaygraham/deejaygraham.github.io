@@ -6,7 +6,7 @@ title: Fool's Plan
 published: true
 attribution: Terry Prachett
 publication: Making Money
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

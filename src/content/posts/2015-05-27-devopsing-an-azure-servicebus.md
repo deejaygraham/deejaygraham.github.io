@@ -3,7 +3,7 @@ permalink: 2015/05/27/devopsing-an-azure-servicebus/
 layout: post
 title: DevOpsing an Azure ServiceBus
 published: true 
-categories: [ cloud, powershell ]
+tags: [ cloud, powershell ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

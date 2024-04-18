@@ -3,7 +3,7 @@ permalink: 2019/04/10/estimating-complexity/
 layout: post
 title: Estimating Complexity
 published: true 
-categories: [ xp, agile ]
+tags: [ xp, agile ]
 ---
 
 I really like (and find endlessly useful) <a href="https://twitter.com/lunivore">Liz Keogh's</a> scale for 

@@ -2,7 +2,7 @@
 permalink: 2021/01/04/sketchnoting-for-science/
 layout: sketchnote
 title: Sketchoting for Science
-categories: [ sketchnotes ]
+tags: [ sketchnotes ]
 tweetable: true
 thumbnail: "/img/posts/sketchnoting-for-science/thumbnail-420x255.webp"
 sketchnote:

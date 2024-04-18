@@ -2,7 +2,7 @@
 permalink: 2018/06/15/everything-has-already-been-said/
 layout: quotation
 title: Everything has already been said...
-categories: [ quote, code ]
+tags: [ quote, code ]
 published: true
 attribution: André Gide
 size: large

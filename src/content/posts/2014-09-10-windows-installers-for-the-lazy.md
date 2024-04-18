@@ -3,7 +3,7 @@ permalink: 2014/09/10/windows-installers-for-the-lazy/
 layout: post
 title: Windows Installers for the Lazy
 published: true
-categories: [ code ]
+tags: [ code ]
 ---
 
 If you've ever installed any software for Windows using an installer wizard, 

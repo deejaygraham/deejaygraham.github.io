@@ -4,7 +4,7 @@ layout: quotation
 title: A Bicycle for the Mind
 attribution: Steve Jobs
 published: true
-categories: [ quote ]
+tags: [ quote ]
 size: medium
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

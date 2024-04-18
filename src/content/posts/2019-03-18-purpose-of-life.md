@@ -6,7 +6,7 @@ title: The Purpose of Life
 published: true
 attribution: Ralph Waldo Emerson
 publication: 
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

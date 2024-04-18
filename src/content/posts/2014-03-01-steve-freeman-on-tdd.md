@@ -3,7 +3,7 @@ permalink: 2014/03/01/steve-freeman-on-tdd/
 layout: post
 title: Steve Freeman on TDD
 published: true
-categories: [ video, presentations, tdd ]
+tags: [ video, presentations, tdd ]
 hero: agile
 ---
 

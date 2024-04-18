@@ -2,7 +2,7 @@
 permalink: 2020/04/23/lets-make-a-zine/
 layout: sketchnote
 title: Lets make a tiny zine
-categories: [ sketchnotes ]
+tags: [ sketchnotes ]
 tweetable: true
 thumbnail: "/img/posts/lets-make-a-zine/thumbnail-420x255.webp"
 sketchnote:

@@ -3,7 +3,7 @@ permalink: 2019/04/22/joe-and-alan/
 layout: post
 title: Joe and Alan
 published: true 
-categories: [ video, presentations ]
+tags: [ video, presentations ]
 ---
 
 A nice interview/conversation between the late Joe 

@@ -3,7 +3,7 @@ permalink: 2020/06/14/playground-comet/
 layout: post
 title: Circuit Playground Express Comet
 published: true
-categories: [code, playground]
+tags: [code, playground]
 thumbnail: "/img/thumbnails/playground-420x255.webp"
 alttext: circuit playground
 ---

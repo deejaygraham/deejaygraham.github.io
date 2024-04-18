@@ -6,7 +6,7 @@ attribution: Danny Hillis
 publication: The Pattern on the Stone
 comment: Rediscovered the opening few sentences from one of my favourite books
 published: true
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

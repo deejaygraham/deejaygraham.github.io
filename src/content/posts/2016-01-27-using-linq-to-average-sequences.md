@@ -3,7 +3,7 @@ permalink: 2016/01/27/using-linq-to-average-sequences/
 layout: post
 title: Using Linq to Average Sequences
 published: true 
-categories: [ csharp ]
+tags: [ csharp ]
 ---
 
 One of my standard application scenarios when learning a technology or a language is 

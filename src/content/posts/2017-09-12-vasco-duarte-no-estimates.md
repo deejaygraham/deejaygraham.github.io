@@ -2,7 +2,7 @@
 permalink: 2017/09/12/vasco-duarte-no-estimates/
 layout: sketchnote
 title: No Estimates
-categories: [ sketchnotes, presentations, agile  ]
+tags: [ sketchnotes, presentations, agile  ]
 tweetable: true
 thumbnail: "/img/posts/vasco-duarte-no-estimates/no-estimates.webp"
 sketchnote:

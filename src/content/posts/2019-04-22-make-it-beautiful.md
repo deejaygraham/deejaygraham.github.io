@@ -6,7 +6,7 @@ title: Make It Beautiful
 published: true
 attribution: Joe Armstrong
 publication: 
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

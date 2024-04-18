@@ -3,7 +3,7 @@ permalink: 2017/03/14/installing-package-in-elementary-os/
 layout: post
 title: Installing .deb Packages in Elementary OS
 published: true
-categories: [ linux, elementary-os ]
+tags: [ linux, elementary-os ]
 ---
 
 I've been getting more and more frustrated with Windows 10 marketing features to me during

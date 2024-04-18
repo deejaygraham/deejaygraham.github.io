@@ -3,7 +3,7 @@ permalink: 2013/07/12/tell-don't-ask/
 layout: post
 title: Tell Don't Ask
 published: true
-categories: [ oo, books ]
+tags: [ oo, books ]
 ---
 
 Inspired by the [GOOS book](http://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) 

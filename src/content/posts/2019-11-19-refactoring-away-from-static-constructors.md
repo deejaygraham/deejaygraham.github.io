@@ -3,7 +3,7 @@ permalink: 2019/11/19/refactoring-away-from-static-constructors/
 layout: post
 title: Refactoring Away from Static Constructors
 published: true
-categories: [ csharp, code, tdd ]
+tags: [ csharp, code, tdd ]
 thumbnail: img/posts/refactoring-away-from-static-constructors/static-constructors-420x255.webp
 alttext: static
 ---

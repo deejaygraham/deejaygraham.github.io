@@ -3,7 +3,7 @@ permalink: 2021/01/27/stop-obsessing-about-primitives/
 layout: post
 title:  Stop Obsessing About Primitives
 published: true
-categories: [video, presentations]
+tags: [video, presentations]
 thumbnail: img/posts/stop-obsessing-about-primitives/thumbnail-420x255.webp
 alttext: Ted M Young
 --- 

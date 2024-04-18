@@ -3,7 +3,7 @@ permalink: 2020/10/22/microbit-musicians/
 layout: post
 title: Microbit Musicians
 published: true
-categories: [code, microbit, music]
+tags: [code, microbit, music]
 hero: microbit
 thumbnail: img/posts/microbit-musicians/thumbnail-420x255.webp
 alttext: microbit

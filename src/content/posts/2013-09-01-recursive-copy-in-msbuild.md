@@ -3,7 +3,7 @@ permalink: 2013/09/01/recursive-copy-in-msbuild/
 layout: post
 title: Recursive Copy in MsBuild
 published: true
-categories: [ msbuild, code ]
+tags: [ msbuild, code ]
 ---
 
 Simply because I always forget the syntax for this, here's how to recursively 

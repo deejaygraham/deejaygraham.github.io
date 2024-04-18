@@ -3,7 +3,7 @@ permalink: 2019/04/15/druckers-rules-for-productivity/
 layout: post
 title: Druckers Rules for Productivity
 published: true 
-categories: [ xp, agile ]
+tags: [ xp, agile ]
 ---
 
 I've been re-reading some of Peter Druckers work and particularly his paper 

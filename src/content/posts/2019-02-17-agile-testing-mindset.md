@@ -2,7 +2,7 @@
 permalink: 2019/02/17/agile-testing-mindset/
 layout: sketchnote
 title: Agile Testing Mindset
-categories: [ sketchnotes, presentations, tdd, xp  ]
+tags: [ sketchnotes, presentations, tdd, xp  ]
 tweetable: true
 thumbnail: "/img/posts/agile-testing-mindset/agile-testing-mindset.webp"
 sketchnote:

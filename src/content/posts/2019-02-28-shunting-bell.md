@@ -3,7 +3,7 @@ permalink: 2019/02/28/shunting-bell/
 layout: post
 title: Shunting Bell
 published: true
-categories: [ signs ]
+tags: [ signs ]
 ---
 
 Found in an architectural salvage yard in Penrith, it's either a polite expression of 

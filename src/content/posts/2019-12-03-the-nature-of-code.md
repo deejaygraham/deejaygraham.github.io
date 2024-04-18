@@ -3,7 +3,7 @@ permalink: 2019/12/03/the-nature-of-code/
 layout: post
 title: The Nature of Code
 published: true
-categories: [ code, books ]
+tags: [ code, books ]
 thumbnail: img/posts/the-nature-of-code/noc-420x255.webp
 alttext: code
 ---

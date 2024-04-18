@@ -3,7 +3,7 @@ permalink: 2017/03/06/growing-a-garden/
 layout: post
 title: Growing a Garden
 published: true
-categories: [ agile, illustration  ]
+tags: [ agile, illustration  ]
 ---
 
 A favourite anti-analogy I was reminded of recently which I converted into a

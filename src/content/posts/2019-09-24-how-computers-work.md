@@ -3,7 +3,7 @@ permalink: 2019/09/24/how-computers-work/
 layout: post
 title: How Computers Work
 published: true
-categories: [signs]
+tags: [signs]
 thumbnail: img/posts/how-computers-work/how-computers-work-420x255.webp
 alttext: how computers work ladybird book
 ---

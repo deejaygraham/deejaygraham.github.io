@@ -3,7 +3,7 @@ permalink: 2019/08/20/pythonic-idioms/
 layout: post
 title: Pythonic Idioms
 published: true
-categories: [code, microbit]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

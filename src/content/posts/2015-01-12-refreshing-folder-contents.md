@@ -3,7 +3,7 @@ permalink: 2015/01/12/refreshing-folder-contents/
 layout: post
 title: Refreshing Folder Contents
 published: true
-categories: [ msbuild ]
+tags: [ msbuild ]
 ---
 
 The traditional method of copying content from one folder to another is fairly 

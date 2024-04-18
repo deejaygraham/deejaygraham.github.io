@@ -2,7 +2,7 @@
 permalink: 2019/12/16/fail-better-with-qa-in-production/
 layout: sketchnote
 title: Fail better with QA in production
-categories: [ sketchnotes, presentations ]
+tags: [ sketchnotes, presentations ]
 tweetable: true
 thumbnail: "/img/posts/fail-better-with-qa/thumbnail-420x255.webp"
 sketchnote:

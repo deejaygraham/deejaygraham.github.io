@@ -3,7 +3,7 @@ permalink: 2014/09/02/management-3.0-workout/
 layout: post
 title: Management 3.0 Workout
 published: true
-categories: [ agile, management, books ]
+tags: [ agile, management, books ]
 ---
 
 ![cover](/img/posts/management-30-workout/management-30-workout.webp)

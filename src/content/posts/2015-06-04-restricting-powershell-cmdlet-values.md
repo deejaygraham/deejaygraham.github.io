@@ -3,7 +3,7 @@ permalink: 2015/06/04/restricting-powershell-cmdlet-values/
 layout: post
 title: Restricting Powershell Cmdlet Values
 published: true 
-categories: [ powershell ]
+tags: [ powershell ]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

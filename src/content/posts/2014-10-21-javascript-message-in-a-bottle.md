@@ -3,7 +3,7 @@ permalink: 2014/10/21/javascript-message-in-a-bottle/
 layout: post
 title: Javascript Message in a Bottle
 published: true
-categories: [ code ]
+tags: [ code ]
 ---
    
 Another from the department of uses-the-syntax-so-infrequentyly-I-nearly-always-forget.

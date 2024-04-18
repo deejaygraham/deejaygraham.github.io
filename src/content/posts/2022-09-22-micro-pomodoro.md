@@ -3,7 +3,7 @@ permalink: 2022/09/22/micro-pomodoro/
 layout: post
 title: Micro Pomodoro
 published: true
-categories: [code, microbit]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit

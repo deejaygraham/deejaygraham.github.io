@@ -3,7 +3,7 @@ permalink: 2014/02/21/my-first-ruby-unit-test/
 layout: post
 title: My First Ruby Unit Test
 published: true
-categories: [ ruby, tdd, code ]
+tags: [ ruby, tdd, code ]
 ---
 
 I have an on-going project to trick myself into learning Ruby by accident.

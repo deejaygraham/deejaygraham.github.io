@@ -2,7 +2,7 @@
 permalink: 2017/04/19/old-timey-twitter-for-microbit/
 layout: post
 title: Old-Timey Twitter for the Microbit
-categories: [ code, microbit ]
+tags: [ code, microbit ]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

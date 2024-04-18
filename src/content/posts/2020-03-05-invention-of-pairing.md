@@ -3,7 +3,7 @@ permalink: 2020/03/05/invention-of-pairing/
 layout: post
 title: The Invention of Pairing
 published: true
-categories: [code, xp]
+tags: [code, xp]
 thumbnail: "/img/posts/invention-of-pairing/thumbnail-420x255.webp"
 alttext: pairing
 ---

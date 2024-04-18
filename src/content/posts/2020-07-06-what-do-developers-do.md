@@ -2,7 +2,7 @@
 permalink: 2020/07/06/what-do-developers-do/
 layout: sketchnote
 title: What do developers do all day?
-categories: [ sketchnotes ]
+tags: [ sketchnotes ]
 tweetable: true
 thumbnail: "/img/posts/what-do-developers-do/thumbnail-420x255.webp"
 sketchnote:

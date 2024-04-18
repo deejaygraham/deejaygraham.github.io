@@ -3,7 +3,7 @@ permalink: 2021/02/01/documenting-software-with-c4/
 layout: post
 title: Documenting Software with C4
 published: true 
-categories: [ xp ]
+tags: [ xp ]
 thumbnail: img/posts/documenting-software-with-c4/thumbnail-420x255.webp
 alttext: architecture
 

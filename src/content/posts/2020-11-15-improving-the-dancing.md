@@ -5,7 +5,7 @@ size: large
 title: Improving the Dancing
 published: true
 attribution: Russel L. Ackoff
-categories: [ quote ]
+tags: [ quote ]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
