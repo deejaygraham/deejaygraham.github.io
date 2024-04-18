@@ -1,10 +1,15 @@
 <footer class="footer">
   <div class="content has-text-centered">
     {% for item in socialmedia %}
-{# include fa classes  <i class="fas fa-3x fa-rss" aria-hidden="true"></i> #}
-	<a title="{{ item.name }}" href="{{ item.url }}" target="_blank" rel="noreferrer">{{ item.name }}</a>
-    {% endfor %}
-	</div>
+
+<nav aria-label="social media">
+        <ul>
+          {% for item in socialmedia %}
+            <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer"><span></span>{{ site.url }}/img/{{ item.icon }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+
 	<div class="content has-text-centered">
 		<!-- hosting etc -->
 	</div>
