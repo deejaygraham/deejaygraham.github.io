@@ -40,11 +40,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.watchIgnores.add("src/assets/**/*");
 
   // passthrough copy
+  
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
+  eleventyConfig.addPassthroughCopy({ "./node_modules/elasticlunr/elasticlunr.min.js": "/js"});
   eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
-    
+  
 return {
     
     dir: {

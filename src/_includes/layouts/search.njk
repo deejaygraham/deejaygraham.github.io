@@ -1,6 +1,17 @@
+{% extends 'base.njk' %}
+{% set title = "Search " %}
 
+{% block content %}
+<ol id="search-results">
+<div id="no-results-found" style="display: none">
+<p>No results found</p>
+</div>
+</ol>
+{% endblock %}
 
-
+{% block javascripts %}
 
 <script type="text/javascript" src="/js/elasticlunr.min.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
+
+{% endblock %}
