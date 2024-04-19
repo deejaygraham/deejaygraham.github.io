@@ -18,7 +18,9 @@
 
     <main class="main container mb-6" role="main" id="main" tablindex="-1">
       <section class="section">
+      {% block content %}
       {{ content | safe }}
+      {% endblock %}
       </section>
     </main>
     
