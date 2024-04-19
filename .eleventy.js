@@ -29,6 +29,9 @@ module.exports = function (eleventyConfig) {
     return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
   });
 
+  // plugins
+  eleventyConfig.on('eleventy.after', require("./_11ty/plugins/search-index-generator"));
+    
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");
