@@ -1,22 +1,26 @@
 module.exports = [
   {
-    navLabel: "home",
+    name: "home",
     navUrl: "/",
   },
   {
-    navLabel: "tags",
-    navUrl: "/tags",
+    name: "search",
+    url: "/search.html",
   },
   {
-    navLabel: "projects",
-    navUrl: "/projects",
+    name: "tags",
+    url: "/tags",
   },
   {
-    navLabel: "talks",
-    navUrl: "/talks",
+    name: "projects",
+    url: "/projects",
   },
   {
-    navLabel: "about",
-    navUrl: "/about/",
+    name: "talks",
+    url: "/talks",
+  },
+  {
+    name: "about",
+    url: "/about/",
   },
 ];
