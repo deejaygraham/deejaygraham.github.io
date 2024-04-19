@@ -4,7 +4,7 @@ layout: post
 title: Programming Crystal
 published: true
 tags: [ code, books ]
-thumbnail: img/posts/programming-crystal/programming-crystal-book-420x255.webp
+thumbnail: /img/posts/programming-crystal/programming-crystal-book-420x255.webp
 alttext: book cover
 
 ---

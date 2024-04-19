@@ -4,7 +4,7 @@ layout: post
 title:  Test Driven Development - A Love Story
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/tdd-a-love-story/thumbnail-420x255.webp
+thumbnail: /img/posts/tdd-a-love-story/thumbnail-420x255.webp
 alttext: Nell Shamrell
 ---
 

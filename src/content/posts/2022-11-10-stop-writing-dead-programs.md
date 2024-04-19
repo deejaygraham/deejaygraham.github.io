@@ -4,7 +4,7 @@ layout: post
 title: Stop Writing Dead Programs
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/stop-writing-dead-programs/thumbnail-420x255.png
+thumbnail: /img/posts/stop-writing-dead-programs/thumbnail-420x255.png
 alttext: Jack Rusher
 ---
 

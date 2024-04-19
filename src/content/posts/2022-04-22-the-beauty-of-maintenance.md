@@ -4,7 +4,7 @@ layout: post
 title: The Beauty of Maintenance
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/beauty-of-maintenance/thumbnail-420x255.png
+thumbnail: /img/posts/beauty-of-maintenance/thumbnail-420x255.png
 alttext: kent beck
 ---
 

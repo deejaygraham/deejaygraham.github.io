@@ -4,7 +4,7 @@ layout: post
 title: Christmas Fireflies
 published: true
 tags: [code, processing, python]
-thumbnail: img/posts/xmas-fireflies/xmas-fireflies-420x255.webp
+thumbnail: /img/posts/xmas-fireflies/xmas-fireflies-420x255.webp
 alttext: screenshot
 ---
 

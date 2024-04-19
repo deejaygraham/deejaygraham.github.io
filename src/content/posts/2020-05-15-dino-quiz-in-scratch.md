@@ -4,7 +4,7 @@ layout: post
 title: Dino Quiz in Scratch
 published: true
 tags: [code, scratch]
-thumbnail: img/posts/dino-quiz-in-scratch/thumbnail-420x255.webp
+thumbnail: /img/posts/dino-quiz-in-scratch/thumbnail-420x255.webp
 alttext: scratch
 ---
 

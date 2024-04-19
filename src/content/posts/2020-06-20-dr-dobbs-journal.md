@@ -4,7 +4,7 @@ layout: post
 title: Dr Dobbs Journal
 published: true
 tags: [code]
-thumbnail: img/posts/dr-dobbs-journal/thumbnail-420x255.webp
+thumbnail: /img/posts/dr-dobbs-journal/thumbnail-420x255.webp
 alttext: cd-rom
 ---
 

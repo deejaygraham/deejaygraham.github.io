@@ -4,7 +4,7 @@ layout: post
 title:  Critical Program Reading
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/critical-program-reading/thumbnail-420x255.png
+thumbnail: /img/posts/critical-program-reading/thumbnail-420x255.png
 alttext: 16mm Film restored
 --- 
 

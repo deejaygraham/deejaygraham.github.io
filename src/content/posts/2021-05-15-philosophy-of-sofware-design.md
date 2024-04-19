@@ -4,7 +4,7 @@ layout: post
 title: A Philosophy of Software Design
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/a-philosophy-of-software-design/thumbnail-420x255.png
+thumbnail: /img/posts/a-philosophy-of-software-design/thumbnail-420x255.png
 alttext: avdi grimm
 ---
 

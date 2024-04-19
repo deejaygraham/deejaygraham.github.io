@@ -4,7 +4,7 @@ layout: post
 title: HttpClient with Windows Auth
 published: true
 tags: [code, csharp]
-thumbnail: img/posts/windows-auth-http-client/thumbnail-420x255.jpg
+thumbnail: /img/posts/windows-auth-http-client/thumbnail-420x255.jpg
 alttext: screenshot
 ---
 

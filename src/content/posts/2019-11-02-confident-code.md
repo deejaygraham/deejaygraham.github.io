@@ -4,7 +4,7 @@ layout: post
 title: Confident Code
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/confident-code/confident-code-420x255.webp
+thumbnail: /img/posts/confident-code/confident-code-420x255.webp
 alttext: avdi grimm
 ---
 

@@ -4,7 +4,7 @@ layout: post
 title: How to Steal an Election
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/how-to-steal-an-election/screenshot-420x255.webp
+thumbnail: /img/posts/how-to-steal-an-election/screenshot-420x255.webp
 alttext: how to steal an election
 ---
 

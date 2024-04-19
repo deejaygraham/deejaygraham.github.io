@@ -4,7 +4,7 @@ layout: post
 title:  This Code Sucks
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/this-code-sucks/thumbnail-420x255.webp
+thumbnail: /img/posts/this-code-sucks/thumbnail-420x255.webp
 alttext: Nadia Odunayo
 ---
 

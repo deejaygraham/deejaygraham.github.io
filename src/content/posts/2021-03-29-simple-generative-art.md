@@ -4,7 +4,7 @@ layout: post
 title: Simple Generative Art
 published: true
 tags: [code, processing, python]
-thumbnail: img/posts/simple-generative-art/simple-generative-art-420x255.webp
+thumbnail: /img/posts/simple-generative-art/simple-generative-art-420x255.webp
 alttext: screenshot
 ---
 

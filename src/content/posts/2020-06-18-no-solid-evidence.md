@@ -4,7 +4,7 @@ layout: post
 title: no SOLID evidence
 published: true
 tags: [xp]
-thumbnail: "img/posts/no-solid-evidence/thumbnail-420x255.webp"
+thumbnail: "/img/posts/no-solid-evidence/thumbnail-420x255.webp"
 alttext: SOLID
 ---
 

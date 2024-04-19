@@ -4,7 +4,7 @@ layout: post
 title:  More Testable Code with the Hexagonal Architecture
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/more-testable-hexagonal-architecture/thumbnail-420x255.webp
+thumbnail: /img/posts/more-testable-hexagonal-architecture/thumbnail-420x255.webp
 alttext: Ted Young
 ---
 

@@ -4,7 +4,7 @@ layout: post
 title: Beyond Transactions in Code and Life
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/beyond-transactions/thumbnail-420x255.png
+thumbnail: /img/posts/beyond-transactions/thumbnail-420x255.png
 alttext: avdi grimm
 ---
 

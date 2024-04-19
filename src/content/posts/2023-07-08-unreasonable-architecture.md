@@ -4,7 +4,7 @@ layout: post
 title: Unreasonable Architecture
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/unreasonable-architecture/thumbnail-420x255.png
+thumbnail: /img/posts/unreasonable-architecture/thumbnail-420x255.png
 alttext: Kevlin Henney
 ---
 

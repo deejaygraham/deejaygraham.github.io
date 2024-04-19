@@ -4,7 +4,7 @@ layout: post
 title:  Continuous Delivery In Agile
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/continuous-delivery-in-agile/thumbnail-420x255.webp
+thumbnail: /img/posts/continuous-delivery-in-agile/thumbnail-420x255.webp
 alttext: Jez Humble
 --- 
 

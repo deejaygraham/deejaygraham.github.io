@@ -4,7 +4,7 @@ layout: post
 title: Simple Thumbnail Generator
 published: true
 tags: [code, python, processing]
-thumbnail: img/posts/simple-thumbnail-generator/thumbnail-420x255.png
+thumbnail: /img/posts/simple-thumbnail-generator/thumbnail-420x255.png
 alttext: screenshot
 ---
 

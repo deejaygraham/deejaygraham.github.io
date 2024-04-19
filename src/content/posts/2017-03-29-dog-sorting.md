@@ -4,7 +4,7 @@ layout: post
 title: Dog Sort
 published: true
 tags: [ csharp, code, tdd ]
-thumbnail: img/posts/dog-sorting/dog-sorting-420x255.webp
+thumbnail: /img/posts/dog-sorting/dog-sorting-420x255.webp
 alttext: sorting
 ---
 

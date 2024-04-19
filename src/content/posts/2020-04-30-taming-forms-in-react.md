@@ -4,7 +4,7 @@ layout: post
 title:  Taming Forms in React
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/taming-forms-in-react/thumbnail-420x255.webp
+thumbnail: /img/posts/taming-forms-in-react/thumbnail-420x255.webp
 alttext: Jared Palmer
 --- 
 

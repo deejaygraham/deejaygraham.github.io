@@ -4,7 +4,7 @@ layout: post
 title: Perlin Noise Flower
 published: true
 tags: [code, processing, python]
-thumbnail: img/posts/perlin-noise-flower/perlin-noise-flower-420x255.webp
+thumbnail: /img/posts/perlin-noise-flower/perlin-noise-flower-420x255.webp
 alttext: screenshot
 ---
 

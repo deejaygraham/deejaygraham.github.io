@@ -4,7 +4,7 @@ layout: post
 title: Lazy Creating Expensive Objects
 published: true
 tags: [ csharp, code, tdd ]
-thumbnail: img/posts/lazy-creating-of-expensive-objects/expensive-object-420x255.webp
+thumbnail: /img/posts/lazy-creating-of-expensive-objects/expensive-object-420x255.webp
 alttext: expensive
 ---
 

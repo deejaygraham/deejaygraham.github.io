@@ -4,7 +4,7 @@ layout: post
 title: T-Rex Runner Game in Scratch
 published: true
 tags: [code, scratch]
-thumbnail: img/posts/scratch-t-rex-runner/thumbnail-420x255.webp
+thumbnail: /img/posts/scratch-t-rex-runner/thumbnail-420x255.webp
 alttext: scratch
 ---
 

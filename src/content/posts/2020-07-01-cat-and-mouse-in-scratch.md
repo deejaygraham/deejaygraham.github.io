@@ -4,7 +4,7 @@ layout: post
 title: Cat and Mouse Game in Scratch
 published: true
 tags: [code, scratch]
-thumbnail: img/posts/scratch-cat-and-mouse/thumbnail-420x255.webp
+thumbnail: /img/posts/scratch-cat-and-mouse/thumbnail-420x255.webp
 alttext: scratch
 ---
 

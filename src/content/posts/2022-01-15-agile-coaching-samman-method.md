@@ -4,7 +4,7 @@ layout: post
 title:  Technical Agile Coaching With the Samman Method
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/agile-coaching-samman-method/thumbnail-420x255.webp
+thumbnail: /img/posts/agile-coaching-samman-method/thumbnail-420x255.webp
 alttext: Emily Bache
 --- 
 

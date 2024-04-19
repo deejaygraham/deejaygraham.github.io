@@ -4,7 +4,7 @@ layout: post
 title: How to be Psychic
 published: false
 tags: [ presentations ]
-thumbnail: img/posts/dddnorth-2022/thumbnail-420x255.png
+thumbnail: /img/posts/dddnorth-2022/thumbnail-420x255.png
 alttext: DDD North 2022
 ---
 

@@ -4,7 +4,7 @@ layout: post
 title:  Declarative Thinking Declarative Practice
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/declarative-thinking-declarative-practice/thumbnail-420x255.webp
+thumbnail: /img/posts/declarative-thinking-declarative-practice/thumbnail-420x255.webp
 alttext: Kevlin Henney
 --- 
 

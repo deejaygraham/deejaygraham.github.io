@@ -5,7 +5,7 @@ title: Microbit LED blinkenlights
 published: true
 tags: [code, microbit]
 hero: microbit
-thumbnail: img/posts/led-blinkenlights/thumbnail-420x255.webp
+thumbnail: /img/posts/led-blinkenlights/thumbnail-420x255.webp
 alttext: microbit
 ---
 

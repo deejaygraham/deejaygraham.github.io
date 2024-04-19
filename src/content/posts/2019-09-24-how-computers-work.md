@@ -4,7 +4,7 @@ layout: post
 title: How Computers Work
 published: true
 tags: [signs]
-thumbnail: img/posts/how-computers-work/how-computers-work-420x255.webp
+thumbnail: /img/posts/how-computers-work/how-computers-work-420x255.webp
 alttext: how computers work ladybird book
 ---
 

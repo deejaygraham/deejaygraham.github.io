@@ -4,7 +4,7 @@ layout: post
 title: Documenting Software with C4
 published: true 
 tags: [ xp ]
-thumbnail: img/posts/documenting-software-with-c4/thumbnail-420x255.webp
+thumbnail: /img/posts/documenting-software-with-c4/thumbnail-420x255.webp
 alttext: architecture
 
 ---

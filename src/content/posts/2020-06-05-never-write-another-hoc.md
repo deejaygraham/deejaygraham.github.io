@@ -4,7 +4,7 @@ layout: post
 title:  Never Write Another HoC
 published: true
 tags: [video, presentations]
-thumbnail: img/posts/never-write-another-hoc/thumbnail-420x255.webp
+thumbnail: /img/posts/never-write-another-hoc/thumbnail-420x255.webp
 alttext: Jared Palmer
 --- 
 

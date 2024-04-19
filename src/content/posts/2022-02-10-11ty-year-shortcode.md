@@ -4,7 +4,7 @@ layout: post
 title: 11ty Year Shortcode
 published: true
 tags: [code, javascript, 11ty]
-thumbnail: img/thumbnails/eleventy-alt-420x255.png
+thumbnail: /img/thumbnails/eleventy-alt-420x255.png
 alttext: 11ty
 ---
 

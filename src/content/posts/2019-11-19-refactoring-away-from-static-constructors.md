@@ -4,7 +4,7 @@ layout: post
 title: Refactoring Away from Static Constructors
 published: true
 tags: [ csharp, code, tdd ]
-thumbnail: img/posts/refactoring-away-from-static-constructors/static-constructors-420x255.webp
+thumbnail: /img/posts/refactoring-away-from-static-constructors/static-constructors-420x255.webp
 alttext: static
 ---
 
