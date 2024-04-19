@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "bulma": "^1.0.0",
-    "cypress": "^13.7.2"
+    "cypress": "^13.7.2",
+    "elasticlunr": "^0.9.5"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
