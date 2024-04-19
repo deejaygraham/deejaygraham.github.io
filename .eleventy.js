@@ -3,7 +3,6 @@ const posts = require("./src/_11ty/collections/posts.js");
 
 // filters
 const dates = require("./src/_11ty/filters/dates.js");
-const searchFilter = require("./src/_11ty/filters/searchFilter");
 
 module.exports = function (eleventyConfig) {
     
@@ -31,9 +30,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
     return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
   });
-
-  // plugins
-  // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/search-index-generator"));
     
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
