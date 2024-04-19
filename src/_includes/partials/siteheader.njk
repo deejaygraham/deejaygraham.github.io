@@ -16,7 +16,7 @@
     <div id="navbarMenu" class="navbar-menu">
       <div class="navbar-end">
       {% for item in nav %}
-        <a class="navbar-item" title="{{ item.navLabel }}" href="{{ site.url }}{{ item.navUrl }}">{{ item.navLabel }}</a>
+        <a class="navbar-item" title="{{ item.name }}" href="{{ site.url }}{{ item.url }}">{{ item.name }}</a>
       {% endfor %}
       </div>
     </div>
