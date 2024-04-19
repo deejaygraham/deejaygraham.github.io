@@ -1,4 +1,21 @@
----
-layout: base.njk
----
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
 <article>{{ content | safe }}</article>
+
+
+{% endblock %}
+
+{% set relatedPosts = collections.posts | filterByTags(tags) | excludeFromCollection(page.url) %}
+{% if relatedPosts.length %}
+<aside>
+  <h1 data-tags="{{ tags | join(',') }}">Related posts</h1>
+  <ul>
+    {% for post in relatedPosts %}
+    <li><a href="{{ post.url }}" data-tags="{{ post.data.tags | join(',') }}">{{ post.data.title }}</a></li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
+
