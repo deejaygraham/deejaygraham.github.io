@@ -5,7 +5,7 @@ module.exports = [
   },
   {
     name: "search",
-    url: "/search.html",
+    url: "/search/",
   },
   {
     name: "tags",
