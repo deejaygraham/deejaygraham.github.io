@@ -1,5 +1,4 @@
 {% extends 'layouts/base.njk' %}
-{% set title = "Search the blog " %}
 
 {% block content %}
 
@@ -7,7 +6,7 @@
 
 {% endblock %}
 
-{% set relatedPosts = collections.posts | filterByTags(tags) | limit(4) %}
+{% set relatedPosts = collections.all | filterByTags(tags) | limit(4) %}
 {#| excludeFromCollection(page.url) #}
 {% if relatedPosts.length %}
 <aside>
