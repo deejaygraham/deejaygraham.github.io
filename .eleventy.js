@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // plugins
-  eleventyConfig.on('eleventy.after', require("./_11ty/plugins/search-index-generator"));
+  eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/search-index-generator"));
     
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
