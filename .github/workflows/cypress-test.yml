@@ -1,5 +1,5 @@
 name: Cypress End-to-end tests
-on: push
+on: workflow_dispatch
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
