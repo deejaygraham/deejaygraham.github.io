@@ -12,30 +12,17 @@
     });
 	  
     if (results) {
-      results.map((result) => {
+      results.map(({ ref, score }) => {
+	const doc = window.searchIndex.documentStore.getDoc(ref);
 
-        if (result.doc){
-          const { id, title } = result.doc;
-          const el = document.createElement("li");
-          container.appendChild(el);
-  
-          const h3 = document.createElement("h3");
-          el.appendChild(h3);
-  
-          const a = document.createElement("a");
-          a.setAttribute("href", id);
-          a.textContent = title;
-          h3.appendChild(a);
-  
-          //const p = document.createElement("p");
-          //p.textContent = description;
-          //el.appendChild(p);
-  
-        }
-        else {
-          const el = document.createElement("li");
-          container.appendChild(el);
-        }
+	const articleLink = document.createElement("a");
+        articleLink.setAttribute("href", doc.id);
+        articleLink.textContent = doc.title;
+	      
+	const listItem = document.createElement("li");
+	listItem.appendChild(articleLink);
+        
+	container.appendChild(listItem);
       });
     } else {
       container.innerHTML = "<p>No results found</p>";
