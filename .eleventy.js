@@ -41,10 +41,20 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("filterByTags", function(collection = [], ...requiredTags) {
-      const flatTags = requiredTags.flat();
-      console.log('WAITTTTT ', flatTags);
+      if(requiredTags) {
+          const flatTags = requiredTags.flat();
+          return collection.filter(post => {
+              return flatTags.every(tag => post.data.tags?.includes(tag));
+          });
+      }
+
+      return [];
+  });
+
+  eleventyConfig.addNunjucksFilter("related", function(collection = []) {
+      const { tags: requiredTags, page } = this.ctx;
       return collection.filter(post => {
-          return flatTags.every(tag => post.data.tags.includes(tag));
+          return post.url !== page.url && requiredTags?.every(tag => post.data.tags?.includes(tag));
       });
   });
     
