@@ -2,7 +2,15 @@
 {% set title = "Search the blog " %}
 
 {% block content %}
-<h1>Search Results</h1>
+<!-- Search form -->
+<form>
+	<div class="field">
+		<div class="control">
+			<input type="text" id="search-box" class="input search-box" name="query" placeholder="search">
+		</div>
+	</div>
+</form>
+<!-- end search form -->
 <div id="search-results">
 <ul>
 </ul>
