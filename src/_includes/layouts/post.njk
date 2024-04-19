@@ -6,8 +6,7 @@
 
 {% endblock %}
 
-{% set relatedPosts = collections.all | filterByTags(tags) | limit(4) %}
-{#| excludeFromCollection(page.url) #}
+{% set relatedPosts = collections.all | related | limit(4) %}
 {% if relatedPosts.length %}
 <aside>
   <h1 data-tags="{{ tags | join(',') }}">Related posts</h1>
