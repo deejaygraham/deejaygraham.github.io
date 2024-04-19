@@ -1,7 +1,9 @@
 // collections
 const posts = require("./src/_11ty/collections/posts.js");
-const limit = require("./src/_11ty/filters/limit.js");
+
+// filters
 const dates = require("./src/_11ty/filters/dates.js");
+const searchFilter = require("./src/_11ty/filters/searchFilter");
 
 module.exports = function (eleventyConfig) {
     
@@ -9,12 +11,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("posts", posts);
 
   // filters
-  eleventyConfig.addFilter("limit", limit);
+  eleventyConfig.addFilter("limit", require("./src/_11ty/filters/limit.js"));
   eleventyConfig.addFilter("dateISO", dates.dateISO);
   eleventyConfig.addFilter("dateFeed", dates.dateFeed);
   eleventyConfig.addFilter("dateFull", dates.dateFull);
   eleventyConfig.addFilter("dateFormat", dates.dateFormat);
   eleventyConfig.addFilter("dateYear", dates.dateYear);
+  eleventyConfig.addFilter("search", require("./src/_11ty/filters/searchFilter"));
 
   // Return all the tags used in a collection
   eleventyConfig.addFilter("getAllTags", collection => {
@@ -30,7 +33,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // plugins
-  eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/search-index-generator"));
+  // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/search-index-generator"));
     
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
