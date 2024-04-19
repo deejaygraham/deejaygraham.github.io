@@ -42,6 +42,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("filterByTags", function(collection = [], ...requiredTags) {
       const flatTags = requiredTags.flat();
+      console.log('WAITTTTT ', flatTags);
       return collection.filter(post => {
           return flatTags.every(tag => post.data.tags.includes(tag));
       });
