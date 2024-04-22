@@ -1,5 +1,10 @@
 module.exports = [
   {
+    name: "rss",
+    url: "https://deejaygraham.github.io/rss.xml",
+    icon: "rss.svg"
+  },
+  {
     name: "github",
     url: "https://github.com/deejaygraham",
     icon: "github.svg"
