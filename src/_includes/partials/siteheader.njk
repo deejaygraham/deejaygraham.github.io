@@ -24,4 +24,11 @@
     </div>
   </nav>
 </header>
+
+{% if hero %}
+<section class="hero is-large {{ hero }}">
+    <div class="hero-body {{ hero }}" />
+</section>
+{% endif %}
+
 <!-- partials/siteheader -->
