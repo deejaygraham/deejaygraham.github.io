@@ -20,7 +20,10 @@
       	</nav>
 
 	<div class="content has-text-centered">
-		<!-- hosting etc -->
+		Powered by:
+		{% for item in poweredby %}
+			<a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">{{ item.name }}</a> 
+		{% endfor %}
 	</div>
 	<div class="content has-text-centered mt-6">
       		<p>&copy; deejaygraham 2011 - <time datetime="{{ site.buildTime | dateISO }}">{{ site.buildTime | dateYear }}</time></p>
