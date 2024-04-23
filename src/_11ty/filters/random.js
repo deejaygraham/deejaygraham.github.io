@@ -1,5 +1,5 @@
 module.exports = function(array) {
-  arrary.sort(() => {
+  array.sort(() => {
     return 0.5 - Math.random();
   });
   return array.slice(0, 1);
