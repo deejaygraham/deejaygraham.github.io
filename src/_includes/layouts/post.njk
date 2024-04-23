@@ -6,6 +6,23 @@
 
 {% endblock %}
 
+<!-- post-related.html -->
+{% set firstCategory = tags | first %}
+
+{% if collections.posts[firstCategory].size > 1 %}
+<div class="related-posts">
+	<h3 class="is-size-3">Other posts tagged with #{{ firstCategory }}</h3>
+	<ul>
+{% for related in collections.posts[firstCategory] | limit(6) %}
+	{# unless include.url == related.url #}
+		<li><a title="read post" href="{{ related.url }}">{{ related.title }}</a></li>
+	{# endunless #}
+{% endfor %}
+	</ul>
+</div>
+{% endif %}
+<!-- post-related.html -->
+
 {% set relatedPosts = collections.all | related | limit(4) %}
 {# collections.all | related | dump #}
 {% if relatedPosts.length %}
