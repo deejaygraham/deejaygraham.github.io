@@ -22,6 +22,10 @@
       {{ content | safe }}
       {% endblock %}
       </section>
+
+      <section class="section">
+      {% block postcontent %}{% endblock %}
+      </section>
     </main>
     
     {% include "partials/sitefooter.njk" %}

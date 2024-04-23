@@ -6,35 +6,20 @@
 
 {% endblock %}
 
-<!-- post-related.html -->
-{{ tags | first | dump }}
-{#{% set firstCategory = tags | first %}
+{% block postcontent %}
 
-{% if collections.posts[firstCategory].size > 1 %}
-<div class="related-posts">
-	<h3 class="is-size-3">Other posts tagged with #{{ firstCategory }}</h3>
-	<ul>
-{% for related in collections.posts[firstCategory] | limit(6) %}
-	{# unless include.url == related.url #}
-		<li><a title="read post" href="{{ related.url }}">{{ related.title }}</a></li>
-	{# endunless #}
-{% endfor %}
-	</ul>
-</div>
-{% endif %}
-#}
-<!-- post-related.html -->
-
-{% set relatedPosts = collections.all | related | limit(4) %}
-{# collections.all | related | dump #}
-{% if relatedPosts.length %}
+{% set relatedTag = tags | randomItem %}
+{% if collections[relatedTag].length > 1 %}
 <aside>
-  <h1 data-tags="{{ tags | join(',') }}">Related posts</h1>
-  <ul>
-    {% for post in relatedPosts %}
-    <li><a href="{{ post.url }}" data-tags="{{ post.data.tags | join(',') }}">{{ post.data.title }}</a></li>
+  <div class="related-posts>
+    <h3 class="is-size-3">More posts tagged with #{{ relatedTag }}</h3>
+    <ul>
+    {% for item in collections[relatedTag] | limit(6) %}
+      <li><a title="read post" href="{{ item.url }}">{{ item.data.title }}</a></li>
     {% endfor %}
-  </ul>
+    </ul>
+  </div>
 </aside>
 {% endif %}
 
+{% endblock %}

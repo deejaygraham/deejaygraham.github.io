@@ -39,11 +39,11 @@ module.exports = function (eleventyConfig) {
 
   // exclude a page from a collection so that we don't have self-referential data.
   // must be a nunjucks filter to allow use of default page url.
-  eleventyConfig.addNunjucksFilter("excludeFromCollection", function(collection = [], pageUrl = this.ctx.page.url) {
+  /*eleventyConfig.addNunjucksFilter("excludeFromCollection", function(collection = [], pageUrl = this.ctx.page.url) {
       return collection.filter(post => post.url !== pageUrl);
   });
-
-  eleventyConfig.addFilter("filterByTags", function(collection = [], ...requiredTags) {
+*/
+  /*eleventyConfig.addFilter("filterByTags", function(collection = [], ...requiredTags) {
       if(requiredTags) {
           const flatTags = requiredTags.flat();
           return collection.filter(post => {
@@ -53,13 +53,14 @@ module.exports = function (eleventyConfig) {
 
       return [];
   });
+*/
 
-  eleventyConfig.addNunjucksFilter("related", function(collection = []) {
-      const { tags: requiredTags, page } = this.ctx;
-      return collection.filter(post => {
-          return post.url !== page.url && requiredTags?.some(tag => post.data.tags?.includes(tag));
-      });
-  });
+  //eleventyConfig.addNunjucksFilter("related", function(collection = []) {
+  //    const { tags: requiredTags, page } = this.ctx;
+  //    return collection.filter(post => {
+  //        return post.url !== page.url && requiredTags?.some(tag => post.data.tags?.includes(tag));
+  //    });
+  //});
     
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
