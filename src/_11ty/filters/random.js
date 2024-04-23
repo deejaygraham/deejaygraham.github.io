@@ -1,6 +1,4 @@
 module.exports = function(array) {
-  array.sort(() => {
-    return 0.5 - Math.random();
-  });
-  return array.slice(0, 1);
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
 }
