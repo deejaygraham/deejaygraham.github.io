@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
 
   // filters
   eleventyConfig.addFilter("limit", require("./src/_11ty/filters/limit.js"));
+  eleventyConfig.addFilter("excerpt", require("./src/_11ty/filters/excerpt.js"));
   eleventyConfig.addFilter("dateISO", dates.dateISO);
   eleventyConfig.addFilter("dateFeed", dates.dateFeed);
   eleventyConfig.addFilter("dateFull", dates.dateFull);
