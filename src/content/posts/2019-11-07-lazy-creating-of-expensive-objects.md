@@ -27,17 +27,17 @@ factory pattern. In Azure, for instance, the CloudBlobClient is one such expensi
 create once the first time it's needed.
 
 
-~~~csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/CloudBlobClientFactory.cs' %}
 
-~~~
+{% endhighlight %}
 
 When we need to use it, we do it like this. Instantiation first time, if it does not already exist, and use together
 in one line.
 
-~~~csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/CloudBlobClientFactoryUse.cs' %}
 
-~~~
+{% endhighlight %}

@@ -12,8 +12,8 @@ commonly coded as ITaskItem properties in your task so they are accessible by a 
 Here are a couple of extension methods that I have found useful when working with files and 
 folders masquerading as *ITaskItem* objects.
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/ITaskItemExtensions.cs' %}
 
-```
+{% endhighlight %}

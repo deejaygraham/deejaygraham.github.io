@@ -31,11 +31,11 @@ The last thing is to use Set-AzKeyVaultAccessPolicy to allow the service princip
 to create and delete too to show the range of features but in practice I would only grant read access and have a pre-defined list of keys I want to read from. 
 
 AddSecretsToKeyVault.ps1
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/AddSecretsToKeyVault.ps1' %}
 
-```
+{% endhighlight %}
 
 That completes the storage and setup of the secrets, now some time later, we want to be able to read them back. 
 
@@ -51,9 +51,9 @@ principal details from earlier but call the same cmdlet Connect-AzAccount and ma
 Each secret can then be read back, again as a secure string, given the name of the key vault and the name of the secret we setup originally. 
 
 ReadSecretsFromKeyVault.ps1
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/ReadSecretsFromKeyVault.ps1' %}
 
-```
+{% endhighlight %}
 

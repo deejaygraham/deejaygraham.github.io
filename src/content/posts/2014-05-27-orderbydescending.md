@@ -23,11 +23,11 @@ As usual, if your goto is Linq for this kind of algorithm, the code is pretty
 minimal. The example code below has more in the setup than the code needed to 
 do the job.
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/OrderByDescendingExample.cs' %}
 
-```
+{% endhighlight %}
 
 Note, blobs in Azure storage terms are represented as discrete urls, there is no 
 concept of deleting a folder and that delete cascading to all files it contains.

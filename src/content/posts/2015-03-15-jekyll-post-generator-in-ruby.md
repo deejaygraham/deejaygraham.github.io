@@ -16,11 +16,11 @@ As code goes, I don't consider it my best work but it helped me explore command
 line parsing, file and folder manipulation and content generation, all things I'm 
 very comfortable with in the .Net space but had no clue previously in ruby. 
 
-```ruby
+{% highlight "ruby" %}
 
 {% include 'code/ruby/post.rb' %}
 
-```
+{% endhighlight %}
 
 ## File System
 
@@ -38,9 +38,9 @@ Running the tool with no arguments, prompts with the available options:
 
 and here's a typical use:
 
-``` 
+{% endhighlight %} 
 ruby post.rb "Jekyll Post Generator in Ruby" -t "jekyll, ruby, meta, snippets"
-```
+{% endhighlight %}
 
 The options code follows a similar pattern to .Net libraries like NDesk but adding 
 options and sensible defaults ended up taking more code than the main work of 

@@ -40,11 +40,11 @@ with disasterous results. I decided that a cut off would be useful if the two ha
 commands I added a watchdog 'hi' to send out to the car approximately every 5 seconds even when no control commands are being sent. 
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc3-1.py' %}
 
-```
+{% endhighlight %}
 
 ## Car
 
@@ -71,11 +71,11 @@ The final feature was implementing a more sophisticated run loop. The outer loop
 inner while loop, stop the motors and wait for contact to be established again at the top of the outer loop.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc3-2.py' %}
 
-```
+{% endhighlight %}
 
 
 I had anticipated the code for the car to be much longer in the non-class version but it turned out to be about 200 lines so well within manageable 

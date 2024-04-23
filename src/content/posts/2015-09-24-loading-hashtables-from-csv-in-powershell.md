@@ -14,19 +14,19 @@ of the PowerShell script itself. Of course, this is good advice in any case so t
 the script and keep the configuration values somewhere secure. If these configuration values are kept in a 
 CSV file like this...
 
-~~~
+{% endhighlight %}
 
 Placeholder, Value
 ##MY_CREDENTIALS_USERNAME##, This is not my user name 
 ##MY_CREDENTIALS_PASSWORD##, This might be my password
 
-~~~
+{% endhighlight %}
 
 ...then the PowerShell turns out to be a one-liner:
 
-~~~
+{% endhighlight %}
 
 $Replacements = (Import-Csv $PathToMyCsvFile) | Group-Object -AsHashTable -AsString -Property Placeholder
 
-~~~
+{% endhighlight %}
 

@@ -17,11 +17,11 @@ stranded Jeep. As the dinosaur approaches, the vibrations from it's stamping cau
 The accelerometer in the microbit works well as a crude vibration detector. We note the current x and y orientation of the microbit at 
 start up and watch for a change. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/dinosaur-detector.py' %}
 
-```
+{% endhighlight %}
 
 The "pinger" is a battlestar galactica style roving pixel to show that the microbit is alive and monitoring 
 it's environment for dinosaurs. The water ripple animation is there in place of the dashboard water and the giraffe icon is the closest 

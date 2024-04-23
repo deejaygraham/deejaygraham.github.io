@@ -22,11 +22,11 @@ and sends <code>Microsoft.ServiceBus.Messaging.BrokeredMessage</code>s using the
 
 ### Writer
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/AzureServiceBusWriter.cs' %}
 
-```
+{% endhighlight %}
 
 ![writer](/img/posts/testing-azure-servicebus-queues/writer.webp "writer")
 
@@ -38,11 +38,11 @@ class.
 
 ### Reader 
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/AzureServiceBusReader.cs' %}
 
-```
+{% endhighlight %}
 
 ![reader 1](/img/posts/testing-azure-servicebus-queues/reader-1.webp "reader 1")
 

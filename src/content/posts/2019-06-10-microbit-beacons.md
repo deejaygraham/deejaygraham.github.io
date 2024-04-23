@@ -26,11 +26,11 @@ score from 0 (strongest) down to -255 (weakest).
 
 We'll start off with a simple beacon, broadcasting some text every half a second. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/hot-beacon.py' %}
 
-```
+{% endhighlight %}
 
 
 ### Receiver
@@ -39,11 +39,11 @@ Our receiver shouldn't care what the message is, just how strong the signal is. 
 signal strength. 
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/hot-receiver.py' %}
 
-```
+{% endhighlight %}
 
 Place the beacon somewhere out of the way (or have someone else place it) then walk around and try to find it based 
 purely on signal strength. You can use the radio config option to change the radio power to suit the size of 
@@ -62,19 +62,19 @@ and completes the "hunt" by checking off each of the beacons that they find.
 
 Here's a simple beacon with a hard-coded id. Each beacon will need a different id flashed onto it. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/simple-beacon.py' %}
 
-```
+{% endhighlight %}
 
 Alternatively, a slightly fancier beacon can be programmed with a dynamic id using the a and b buttons like this:
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/programmable-beacon.py' %}
 
-```
+{% endhighlight %}
 
 Each beacon is flashed with the same code and it's up to the person doing the hiding to program each one with a 
 unique number before hiding them. 
@@ -90,20 +90,20 @@ order to make sense of the clues.
 
 ### Beacon 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/treasure-hunt-beacon.py' %}
 
-```
+{% endhighlight %}
 
 
 ### Receiver
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/treasure-hunt-receiver.py' %}
 
-```
+{% endhighlight %}
 
 There are lots of variations you can explore once the system is up and running:
 

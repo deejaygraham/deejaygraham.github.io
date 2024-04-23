@@ -16,19 +16,19 @@ wanted this to work on a local (dev) machine *and* on a build machine running a 
 
 So for a "BuildNumber" maybe an environment variable:
 
-~~~
+{% endhighlight %}
 
   $(env.BuildNumber)
 
-~~~
+{% endhighlight %}
 
 or a plain old wix variable:
 
-~~~  
+{% endhighlight %}  
 
   $(env.BuildNumber)
 
-~~~
+{% endhighlight %}
 
 Now, we can define a variable in the .wxs source or .wxi include file but none of those
 are settable from "the outside world" of msbuild or the command line. We have to rely on a
@@ -48,28 +48,28 @@ to only set it if it doesn't already have a value.
 
 DefineConstants looks like this in the project file:
 
-~~~
+{% endhighlight %}
 
   <PropertyGroup>
     <DefineConstants>Debug;NAME=Rob;JOB=Dev;BUILDNUMBER=$(BUILDNUMBER)</DefineConstants>
   </PropertyGroup>
 
-~~~
+{% endhighlight %}
 
 We need to define a property upstream of this:
 
-~~~
+{% endhighlight %}
 
   <PropertyGroup>
     <BuildNumber Condition=" '$(BuildNumber)' == '' ">1.0.0.9</DefineConstants>
   </PropertyGroup>
 
-~~~
+{% endhighlight %}
 
 In the calling MsBuild script we can use the <code>AdditionalProperties</code> meta data
 for a project to pass the variable to wix.
 
-~~~
+{% endhighlight %}
 
   <ItemGroup>
       <ProjectList Include="SetupProject1.sln">
@@ -81,7 +81,7 @@ for a project to pass the variable to wix.
 
   <MSBuild Projects="@(ProjectList)"/>
 
-~~~
+{% endhighlight %}
 
 Then we can pull the build number in by reading a text file or reflecting on an assembly
 version or by reading it from the command line.

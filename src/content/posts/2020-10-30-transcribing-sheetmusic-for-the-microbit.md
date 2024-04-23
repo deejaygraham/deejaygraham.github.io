@@ -51,10 +51,10 @@ across bars or dotted to extend their duration.
 
 So for the snippet of music above, the score would work like this:
 
-```txt
+{% highlight "txt" %}
 
 {% include 'code/python/microbit/mysterioso.txt' %}
 
-```
+{% endhighlight %}
 
 Note how each bar adds up to 16 beats each.

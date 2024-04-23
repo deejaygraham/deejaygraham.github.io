@@ -18,7 +18,7 @@ the security of the API, that would be swapped back in later for the "real" buil
 That still left the issue of authenticating as the current user without getting a 401 and without having to hard code user 
 credentials in the code or in a config file. Happily HttpClient allows for this using the Handler chaining mechanism. 
 
-```csharp
+{% highlight "csharp" %}
 
 class LocalAPIClient
 {
@@ -49,6 +49,6 @@ class LocalAPIClient
     }
 }
 
-```
+{% endhighlight %}
 
 Setting credentials on a HttpClientHandler using the default network credential means that it all just magically works.

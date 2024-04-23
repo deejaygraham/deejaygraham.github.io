@@ -21,11 +21,11 @@ From that post:
 - Paste and run the command
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Secret-Azure-Tools.ps1' %}
 
-```
+{% endhighlight %}
 
 [Download](https://gist.github.com/deejaygraham/d1c6d861d971a0f86094)
 

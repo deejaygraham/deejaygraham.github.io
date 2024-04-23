@@ -16,9 +16,9 @@ has been hit for a while, the list may be empty. We can use it in a script to do
 as a sort of magic wand.  
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/minecraft/flower-hits.py' %}
 
-```
+{% endhighlight %}
 

@@ -30,11 +30,11 @@ write my own version.
 The last bit of formatting was to add in the colons between each row and that was another function required. 
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/binary-clock.py' %}
 
-```
+{% endhighlight %}
 
 Because a 25 bit clock would take a long-ish time to roll around, I opted for a test value of just the first two rows to be filled 
 before resetting. This will be adjusted on the final project. Another thing to note about the display, the print out is printing 

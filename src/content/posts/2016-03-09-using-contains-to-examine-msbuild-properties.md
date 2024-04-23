@@ -19,18 +19,18 @@ Using a Property Function makes this so much more elegant and snappier if you ar
 use MsBuild with .Net 4 or 4.5. Here's an example of a Condition checking the content of 
 a property using the String property function Contains.
 
-~~~xml
+{% highlight "xml" %}
 
   <Warning Text="This is a debug build " Condition=" $(Configuration.Contains('Debug')) " />
 
-~~~
+{% endhighlight %}
 
 You can also use static .Net methods like DateTime.Now using this syntax:
 
-~~~xml
+{% highlight "xml" %}
 
     <PropertyGroup>
         <BuildTime>$([System.DateTime]::Now)</BuildTime>
     </PropertyGroup>    
 
-~~~
+{% endhighlight %}

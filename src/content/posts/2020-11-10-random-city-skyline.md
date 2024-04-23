@@ -20,20 +20,20 @@ This turned into how to build a random cityscape and a city skyline at sunset.
 Since this was going to be done in processing I started off with a sketch that had an orange-y background and added a single line crossing the 
 screen.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/skyline-1.py' %}
 
-```
+{% endhighlight %}
 
 This line will carry on forever so it would be nice to reset it when we reach the far edge of the screen.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/skyline-2.py' %}
 
-```
+{% endhighlight %}
 
 This is all wonderful to get started but there's not a lot of variety yet and it doesn't look much like a city yet.
 
@@ -43,11 +43,11 @@ This is all wonderful to get started but there's not a lot of variety yet and it
 Introducing some randomness into the height of the line as it crosses the screen makes things a bit more interesting.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/skyline-3.py' %}
 
-```
+{% endhighlight %}
 
 That is starting to look like a city skyline. We can do more by filling in the bottom half of the rectangles to make them 
 black as if the sunset is casting a shadow.
@@ -57,11 +57,11 @@ black as if the sunset is casting a shadow.
 
 In homeage to the Ben Gibbard song "Crooked Teeth" about a city skyline, if we fill in the buildings in black we get this.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/skyline-4.py' %}
 
-```
+{% endhighlight %}
 
 Note I have left the white line around the buildings as a highlight from the setting sun.
 
@@ -71,11 +71,11 @@ Note I have left the white line around the buildings as a highlight from the set
 The last detail to add in this scenario as the city is getting ready for night, is the appearance of lights in a few windows in the 
 buildings we can see.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/skyline-5.py' %}
 
-```
+{% endhighlight %}
 
 In the same way that each call to draw adds a new section of building, I add a random window to the scene as well now.
 
@@ -87,9 +87,9 @@ Depending on how fast this runs, you may want to change the frame rate so that i
 As a final, final experiment I added another layer of buildings behind the main layer. Not sure how well this works.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/skyline-6.py' %}
 
-```
+{% endhighlight %}
 

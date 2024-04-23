@@ -19,19 +19,19 @@ We can represent a flea moving about on the micro:bit screen using a single pixe
 items that will represent the flea’s x and y position on the screen. Remember, the left column is 0 and the right 
 column is number 4.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-1.py' %}
 
-```
+{% endhighlight %}
 
 Now we can race one flea across the screen.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-2.py' %}
 
-```
+{% endhighlight %}
 
 ### Randomness
 
@@ -40,11 +40,11 @@ about if we made it different every time? We can use random (and remember to imp
 a little bit.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-3.py' %}
 
-```
+{% endhighlight %}
 
 The random.randint function returns a random value between the two values given (0 and 1 in this case) each time 
 it is called in the for loop and we use that value to see if we have been given a 1 value. If so, we can move the 
@@ -62,11 +62,11 @@ There's a problem with this code, though. Can you find it?
 In between moving the flea and actually drawing on the screen, we can make sure we don't go beyond the 
 fourth column by using the min function.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-4.py' %}
 
-```
+{% endhighlight %}
 
 Now we have one flea racing with a different outcome every time, we can make preparations to race a lot of fleas.
 
@@ -75,38 +75,38 @@ to work on the collection and don’t have to worry about how many fleas (within
 
 So after we created a single flea, let’s create a collection and add the flea to it.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-5.py' %}
 
-```
+{% endhighlight %}
 
 Then we can expand our initial code to draw the fleas at their starting points.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-6.py' %}
 
-```
+{% endhighlight %}
 
 And change the main movement and drawing code to use a collection:
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-7.py' %}
 
-```
+{% endhighlight %}
 
 Be careful to keep the sleep in line with the for loop so that the half-second delay is only done once 
 around the loop. Now that we have things set up, we can add more fleas. Let’s given them more 
 descriptive names:
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-8.py' %}
 
-```
+{% endhighlight %}
 
 That’s the only change we need to have 5 fleas, all racing in their own lane (y coordinate).
 
@@ -124,19 +124,19 @@ in 4 (25%) chance of advancing would probably not win against a flea which had a
 
 We can use the flea object to store a chance value as well as the x and y coordinates.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-9.py' %}
 
-```
+{% endhighlight %}
 
 Now we can change the random code to use the new chance value:
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-10.py' %}
 
-```
+{% endhighlight %}
 
 If you run the code again, you should see that alice and dave have the best chance of winning while poor 
 eleanor has the worst (but not impossible) chance of winning with only 1 chance in 10 of moving for each turn.
@@ -144,9 +144,9 @@ eleanor has the worst (but not impossible) chance of winning with only 1 chance 
 
 ### Finish
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/flea-race-11.py' %}
 
-```
+{% endhighlight %}
 

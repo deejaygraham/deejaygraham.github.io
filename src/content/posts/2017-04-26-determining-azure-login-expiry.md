@@ -34,7 +34,7 @@ If we combine <code>Get-AzureSubscription</code> with the ExtendedDetails switch
 ErrorAction Stop, we instantly get an exception if the session is not valid and we are
 then able to prompt for login as before.
 
-~~~
+{% endhighlight %}
 
 Try {
 	# Check current session to see if we are currently logged into Azure
@@ -45,4 +45,4 @@ Catch {
 	Add-AzureAccount
 }
 
-~~~
+{% endhighlight %}

@@ -21,11 +21,11 @@ to get up and running serving static files from a [console application](http://w
 
 ![console](/img/posts/self-hosted-webserver-using-owin/console.webp)
 
-~~~csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/OwinServer.cs' %}
 
-~~~
+{% endhighlight %}
 
 The example above shows a method of using different *OwinStartup* attributes 
 to identify which startup object to use. 

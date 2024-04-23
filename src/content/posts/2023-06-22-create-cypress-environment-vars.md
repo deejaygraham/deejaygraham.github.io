@@ -15,25 +15,25 @@ file but it's not super clear how to import settings from an external source int
 
 Cypress does support adding environment variables from the command line:
 
-```
+{% endhighlight %}
 
 npx cypress run --env deployment=QA
 npx cypress run --env deployment=PRODUCTION
 
-```
+{% endhighlight %}
 
 Which turns up in the test like this:
 
-```javascript
+{% highlight "javascript" %}
 
 const deployment = Cypress.env("deployment");
 
-```
+{% endhighlight %}
 
 ### Configuration
 
-A less well known way of adding environment variables is from within the cypress.config.js file and the ```setupNodEvents``` 
-handler in the ```e2e``` block within ```defineConfig```. As in the previous example, variables created this way are 
+A less well known way of adding environment variables is from within the cypress.config.js file and the {% endhighlight %}setupNodEvents{% endhighlight %} 
+handler in the {% endhighlight %}e2e{% endhighlight %} block within {% endhighlight %}defineConfig{% endhighlight %}. As in the previous example, variables created this way are 
 available in the tests using the Cypress.env function.
 
 Here I am reading values from a postman environment file (currently moving from Postman to Cypress for API testing) and 
@@ -41,7 +41,7 @@ exposing the values within that file as environment variables.
 
 #### cypress.Config.js
 
-```javascript
+{% highlight "javascript" %}
 
 const {
     defineConfig
@@ -66,4 +66,4 @@ module.exports = defineConfig({
     },
 });
 
-```
+{% endhighlight %}

@@ -17,7 +17,7 @@ are played in the order they appear in the file.
 Of course, I had to write a script to run through my music folder and generate one playlist per album where I have the music 
 organized by artist then subfolders containing each individual album. 
 
-```python
+{% highlight "python" %}
 
 import os
 import glob 
@@ -45,7 +45,7 @@ for (path, subdirs, files) in os.walk(music_folder):
     
 os.chdir(music_folder)
 
-```
+{% endhighlight %}
 
 Here I am writing the m3u file into the same directory as the mp3s but I am adding a relative path to each file because 
 the player I am now using requires m3u files to be in the root and music to be in folders. 

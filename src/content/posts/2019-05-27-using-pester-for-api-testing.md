@@ -32,20 +32,20 @@ authentication, picking the right endpoint etc. can be done once in the startup 
 aren't repeating information or having to use methods not related to the task at hand. 
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Pester-RestAPI-Module.psm1' %}
 
-```
+{% endhighlight %}
 
 I can now define a smoke test script which we can run to set everything up prior to running each Pester test. 
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Pester-RestAPI-Start.ps1' %}
 
-```
+{% endhighlight %}
 
 Which makes for a reasonably compact but focussed test which can be written by a team member without what they 
 see as unecessary "plumbing" on show. Note here I am using the <a href="https://swapi.co/">Star Wars API</a> to 
@@ -56,18 +56,18 @@ avoid bogging down the example tests in archaic dommains. You could use any numb
 
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Pester-RestAPI-Luke.Tests.ps1' %}
 
-```
+{% endhighlight %}
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Pester-RestAPI-Films.Tests.ps1' %}
 
-```
+{% endhighlight %}
 
 
 

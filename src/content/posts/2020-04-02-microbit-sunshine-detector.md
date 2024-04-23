@@ -16,10 +16,10 @@ if enough light is falling on the screen. In dark environments, you can go down 
 you can adjust upwards so that you can tell the difference between light falling on an angle on the screen compared to 
 shining fully on the face. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/sunshine-detector.py' %}
 
-```
+{% endhighlight %}
 I am going to include a snippet like this in the auto driving car so that it will turn its headlights on when it starts getting dark. 
 Microbit safety first :)

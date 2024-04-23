@@ -227,7 +227,7 @@ Before we run our first test, let's just talk about the format of the tests. The
 will be familiar to anyone using mocha or chai in the js world or anyone using PowerShell Pester,
 Ruby RSpec etc. 
 
-```js
+{% highlight "javascript" %}
 describe('The thing I am testing', () => { 
     it('should do this', () => {
         expect(1 + 1).toBe(2); 
@@ -237,11 +237,11 @@ describe('The thing I am testing', () => {
         expect('red').toBe('green');
     });
 });
-```
+{% endhighlight %}
 
 ## First Test
 
-```js
+{% highlight "javascript" %}
 
 describe('Google', () => {
     it('Knows about Tech on the Tyne', () => {
@@ -263,7 +263,7 @@ describe('Google', () => {
     });
   });
 
-```
+{% endhighlight %}
 
 Let's talk about what's going on here because there's a lot.
 
@@ -280,37 +280,37 @@ Let's talk about what's going on here because there's a lot.
 Make some action, visit a site, or load a component (later),
 setup viewport, setup interception etc. 
 
-```js 
+{% highlight "javascript" %} 
     cy.visit('/stuff');
-```
+{% endhighlight %}
 
 ## Act 
 
 Find by text content on a page
 
 
-```js
+{% highlight "javascript" %}
 
     cy.contains('Google');
     cy.contains('google', { matchCase: false });
 
-```
+{% endhighlight %}
 
 Find by css selector: id or by class
 
-```js
+{% highlight "javascript" %}
 
     cy.get('#password');
 
-```
+{% endhighlight %}
 
 Find by XPath
 
-```js
+{% highlight "javascript" %}
 
     cy.get('input[type=submit]');
 
-```
+{% endhighlight %}
 
 Will throw if it can't find the password
 
@@ -319,16 +319,16 @@ Will throw if it can't find the password
 
 We can chain commands together
 
-```js
+{% highlight "javascript" %}
 
     cy.get('#password')
         .type('random password');
 
-```
+{% endhighlight %}
 
 ## Assertions 
 
-```js
+{% highlight "javascript" %}
 
     cy.title().should('contain', 'Google is Awesome');
     cy.get('#password').should('not.contain', 'swordfish');
@@ -340,7 +340,7 @@ We can chain commands together
     cy.get('#password')
         .type('random password')
         .should('have.value', 'random password');
-```
+{% endhighlight %}
 
 ## Common Assertions to Should
 
@@ -351,17 +351,17 @@ We can chain commands together
 * not.exist
 
 
-```js
+{% highlight "javascript" %}
 
 cy.get('h1')
     .invoke('attr', 'class')
     .should('eq', 'title');
 
-```
+{% endhighlight %}
 
 Find broken images 
 
-```js
+{% highlight "javascript" %}
 
     cy.get('.article').within(($article) => {
 
@@ -375,11 +375,11 @@ Find broken images
     }
 });
 
-```
+{% endhighlight %}
 
 Assign items to variables and use just like normal js.
 
-```js
+{% highlight "javascript" %}
 
     const block = cy.get('#doc-content')
       .find('div.notification.is-info.hint-box');
@@ -391,9 +391,9 @@ Assign items to variables and use just like normal js.
           cy.get('p:last').contains('When you deploy your application you will not need to include any of the Sage assemblies.');
       });
 
-```
+{% endhighlight %}
 
-```js
+{% highlight "javascript" %}
 
 const anchor = cy.get('a');
 
@@ -405,11 +405,11 @@ const anchor = cy.get('a');
             // example button is not active
             cy.get('span.is-static').contains('Example');
 
-```
+{% endhighlight %}
 
 Before and After, beforeEach, afterEach 
 
-```js
+{% highlight "javascript" %}
 
 before(() => {
   cy.clearLocalStorage();
@@ -417,11 +417,11 @@ before(() => {
 });
 
 
-```
+{% endhighlight %}
 
 Search within a page element.
 
-```js
+{% highlight "javascript" %}
 
 const screenshot = cy.get('figure.screenshot').first();
     screenshot.scrollIntoView();
@@ -433,9 +433,9 @@ const screenshot = cy.get('figure.screenshot').first();
       cy.get('figcaption').contains('Figure 1: Sage 200 On Premise Architecture');
     });
 
-```
+{% endhighlight %}
 
-```js
+{% highlight "javascript" %}
 describe('Weather', () => {
     beforeEach(() => {
         cy.visit('https://bbc.co.uk/weather');
@@ -470,13 +470,13 @@ describe('Weather', () => {
     });
 
 });
-```
+{% endhighlight %}
 
 ## API requests 
 
 We can validate API requests to our backend services if we need to get an auth token.
 
-```js
+{% highlight "javascript" %}
 
     it('Gets Star Wars Characters', () => {
         cy.request({
@@ -488,22 +488,22 @@ We can validate API requests to our backend services if we need to get an auth t
           name: 'Anakin Skywalker'
         })
     })
-```
+{% endhighlight %}
 
 ## Intercept requests made by components
 
-```js
+{% highlight "javascript" %}
 cy.intercept('GET', 'https://swapi.dev/api/people/1', {
             statusCode: 200,
             body: {
               name: 'Peter Pan',
             },
           })
-```
+{% endhighlight %}
 
 ## Clipboard 
 
-```js
+{% highlight "javascript" %}
 
     cy.window().then((win) => {
         win.navigator.clipboard.readText().then((text) => {
@@ -511,7 +511,7 @@ cy.intercept('GET', 'https://swapi.dev/api/people/1', {
         });
     });
 
-```
+{% endhighlight %}
 
 
 const { defineConfig } = require("cypress");
@@ -536,7 +536,7 @@ module.exports = defineConfig({
 https://github.com/deejaygraham/calendar
 
 
-```js
+{% highlight "javascript" %}
 
 import Calendar from '../Calendar';
 
@@ -567,9 +567,9 @@ cy.get("input")
 
          cy.get('input').should('be.disabled');
          cy.get('input').should('have.attr', 'readonly', 'readonly');
-```
+{% endhighlight %}
 
-```js
+{% highlight "javascript" %}
 
 it('Will call onClick function if no "canClick" prop is provided', () => {
     const onClick = cy.stub();
@@ -590,38 +590,38 @@ it('Will call onClick function if no "canClick" prop is provided', () => {
     });
   });
 
-```
+{% endhighlight %}
 
 ## Spying 
 
-```js
+{% highlight "javascript" %}
 
  const onChangeSpy = cy.spy().as('onChangeSpy')
   cy.mount(<Stepper onChange={onChangeSpy} />)
   cy.get('[data-cy=increment]').click()
   cy.get('@onChangeSpy').should('have.been.calledWith', 1)
-```
+{% endhighlight %}
 
-```js
+{% highlight "javascript" %}
 
 cy.store().dispatch({type: 'order-date', value: '2022-04-30'});
  cy.store().getState('credit_limit').should('equal', '0.00000');
 
-```
+{% endhighlight %}
 
 
 ## Custom Commands 
 
 
-```js
+{% highlight "javascript" %}
 cy.window().its('store').invoke('dispatch', {type: 'description', value: 'my store description'});
-```
+{% endhighlight %}
 
 
 
 cy.log(hello tech on the tyne)
 
-```js
+{% highlight "javascript" %}
     it('Gets Luke Skywalker', () => {
 
         cy.intercept('GET', 'https://swapi.dev/api/people/1', {
@@ -641,7 +641,7 @@ cy.log(hello tech on the tyne)
             name: 'Anakin Skywalker'
           })
       })
-```
+{% endhighlight %}
 
 ## Component Testing
 
@@ -655,7 +655,7 @@ subfolder and the usual support and fixtures folders are there too.
 My desk calendar control is a simple display of today's day and date with a way to scrolling back and forward through the month. 
 We can create a calendar.cy.js file to test it and run cypress to see it pick it up.
 
-```js
+{% highlight "javascript" %}
 
 import React from 'react';
 import DeskCalendar from './pathtoo/Calendar';
@@ -694,7 +694,7 @@ describe('DeskCalendar component', () => {
     });
 });
 
-```
+{% endhighlight %}
 
 ## Component-Index.html
 
@@ -703,7 +703,7 @@ Before we look at the tests...
 Immediately there are a couple of problems evident. The control has no styling and looks a bit disappointing.
 We can provide some styling and html context for a control, but editing te component-index.html file. 
 
-```html
+{% highlight "html" %}
 
 <!DOCTYPE html>
 <html>
@@ -769,18 +769,18 @@ We can provide some styling and html context for a control, but editing te compo
   </body>
 </html>
 
-```
+{% endhighlight %}
 
 With the styling fixed we can see that the viewport isnt what we need to be (500 x500) so we can either change it 
 in the config or we can use the viewport command :
 
-```js
+{% highlight "javascript" %}
 
   beforeEach(() => {
     cy.viewport(1280, 720);
   });
 
-```
+{% endhighlight %}
 
 Now we'll move onto the tests. Each one runs and we can see them in the editor, we can expand each one and step 
 through them to see before and after states. We can examine the DOM using dev tools and look at failures. 
@@ -789,35 +789,35 @@ through them to see before and after states. We can examine the DOM using dev to
 
 Similar to console.log(args);
 
-```js
+{% highlight "javascript" %}
 
 cy.log('hello');
 
-```
+{% endhighlight %}
 
 ## Its and Invoke
 
 Get a Property, Call a function
 Example, get sessionStorage property of a window
 
-```js
+{% highlight "javascript" %}
 cy.window().its('sessionStorage');
 
-```
+{% endhighlight %}
 
 Redux
 
-```js
+{% highlight "javascript" %}
   
   cy.window().its('store');
 
-```
+{% endhighlight %}
 
-```js
+{% highlight "javascript" %}
 
   cy.window().its('store').invoke('dispatch', {type: 'description', value: 'smol'});
 
-```
+{% endhighlight %}
 
 ## Commands in Component.js
 
@@ -826,7 +826,7 @@ some things you can do with its
 
 E.g. 
 
-```js
+{% highlight "javascript" %}
 
 // get redux store
 // e.g.
@@ -854,4 +854,4 @@ Cypress.Commands.add('dispatch', (obj) => {
         .invoke('dispatch', obj);
 });
 
-```
+{% endhighlight %}

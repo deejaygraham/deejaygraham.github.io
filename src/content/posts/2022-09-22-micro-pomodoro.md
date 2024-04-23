@@ -18,7 +18,7 @@ I wrote this little microbit script to act as a pomodoro, cycling between 25 min
 the work phase, the screen fills up with dots once per minute (handy for the 5x5 screen) then, during the rest phase, fills
 up again once every 12 seconds until the screen if full again at the start of the next work phase. 
 
-```python
+{% highlight "python" %}
 
 from microbit import *
 import music
@@ -61,7 +61,7 @@ while True:
     work_phase = not work_phase
 
 
-```
+{% endhighlight %}
 
 A last small feature I added was to play a sound at the end of each phase so that you don't miss 
 the transition to the new phase of work.

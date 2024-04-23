@@ -28,11 +28,11 @@ A <a href="https://py.processing.org/reference/setup.html">setup</a> method is t
 Here you can set the screen size using specific pixel values or set it to full screen. This **must** be the first line of code within the setup function. You can also use this time to set a background colour (a nice orange here), line colour (white) and also to load any images you might want to use.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/processing-setup.py' %}
 
-```
+{% endhighlight %}
 
 ### Draw
 
@@ -40,11 +40,11 @@ Draw is effectively the main loop of the application and it gets called repeated
 
 In draw, you can set a background image, draw lines or any 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/processing-draw.py' %}
 
-```
+{% endhighlight %}
 
 Draw **must** be included, even if there is no explicit drawing to do because it is used to process user events.
 
@@ -53,11 +53,11 @@ Draw **must** be included, even if there is no explicit drawing to do because it
 
 user interactions - mouse or keyboard - trigger two functions mousePressed() and keyPressed(). You can use mouseX and mouseY to access the current mouse position and mouseButton to check for left and right presses. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/processing-mouse.py' %}
 
-```
+{% endhighlight %}
 
 Another great feature of processing is that you can take a screenshot of the current application by using the saveFrame() 
 function. Hashes in the file name are used to create sequences of images and they are saved to the sketch folder. Be 

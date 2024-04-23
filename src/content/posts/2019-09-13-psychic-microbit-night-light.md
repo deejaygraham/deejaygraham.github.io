@@ -21,11 +21,11 @@ An early idea for an experiment was to create a simple burglar alarm. The idea w
 a closed box, that you want to protect. Monitor the light level and if it goes up beyond a specific threshold, then sound an
 alarm, display a message, whatever. Something like this:
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/burglar-alarm.py' %}
 
-```
+{% endhighlight %}
 
 The print statement is useful in the REPL for working out a suitable light level threshold for triggering.
 
@@ -49,18 +49,18 @@ knows what the outside light is like without actually seeing it.
 
 ## Sensor
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/psychic-nightlight-sensor.py' %}
 
-```
+{% endhighlight %}
 
 I also added a configurable darkness level so we can adjust for variations throughout the year.
 
 ## Nightlight
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/psychic-nightlight.py' %}
 
-```
+{% endhighlight %}

@@ -18,11 +18,11 @@ Having used [Rhino Mocks](http://hibernatingrhinos.com/oss/rhino-mocks)
 before I fell naturally into using the 
 	
 
-```csharp	
+{% highlight "csharp" %}	
 
 	MockRepository.GenerateMock<IMyInterface>() 
 
-```
+{% endhighlight %}
 
 	
 syntax.
@@ -35,11 +35,11 @@ involved logic but I was surprised to find Rhino gives you this *Repeat* control
 relatively easily.
 
 
-```csharp	
+{% highlight "csharp" %}	
 
 	var mockRepo = MockRepository.GenerateMock<IMyMultiStageInterface>();
 	
 	mockRepo.Expect(r => r.WorkHasBeenDone()).Return(false).Repeat.Once();
 	mockRepo.Expect(r => r.WorkHasBeenDone()).Return(true);
 		
-```	
+{% endhighlight %}	

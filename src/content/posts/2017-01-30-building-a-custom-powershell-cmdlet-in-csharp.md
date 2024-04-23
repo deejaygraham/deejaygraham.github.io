@@ -39,7 +39,7 @@ As an example, I want to build a simple fortune cookie generator, like the unix 
 There is a great selection of fortunes collected on [github](https://github.com/bmc/fortunes/blob/master/fortunes), so
 I borrowed a few and created a list of them to select from:
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,7 +60,7 @@ namespace ExampleCmdlet
 		};
     }
 }
-```
+{% endhighlight %}
 
 To make this class into a Cmdlet, I need to derive the class from <code class="powershell">System.Management.Automation.Cmdlet</code>. I also need
 to decide what the class name is going to be and what it should be called in PowerShell.
@@ -76,7 +76,7 @@ with <code>CmdletAttribute</code>.
 If you have selected a common verb, you can use the <code>VerbsCommon</code> enum or, if not,
 use the two string version of the attribute to provide the verb as text.
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -100,7 +100,7 @@ namespace ExampleCmdlet
 		};
     }
 }
-```
+{% endhighlight %}
 
 Building the project into an assembly will let you write the PowerShell to use it. In a plain vanilla
 console, we can run <code class="powershell">Get-Module</code> and see this:
@@ -121,7 +121,7 @@ to actually execute some code...
 To execute actual code, we need to override the <code>ProcessRecord()</code> method. The
 simplest thing we could do is write out the first fortune cookie. Like this:
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -150,7 +150,7 @@ namespace ExampleCmdlet
 		}
 	}
 }
-```
+{% endhighlight %}
 
 As you would expect, that writes out to the console:
 
@@ -158,7 +158,7 @@ As you would expect, that writes out to the console:
 
 Now that we have some kind of output, it's not a massive leap to add in some randomness.
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -191,7 +191,7 @@ namespace ExampleCmdlet
 		}
 	}
 }
-```
+{% endhighlight %}
 
 Running the command multiple times, behaves as expected.
 
@@ -204,7 +204,7 @@ Maybe now is a good time to add some debug logging. The <code>WriteDebug()</code
 gives us what we want here. We could also add some verbose information when the user
 runs our cmdlet with the <code>-Verbose</code> switch.
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -246,7 +246,7 @@ namespace ExampleCmdlet
 		}
 	}
 }
-```
+{% endhighlight %}
 
 
 ### Returning Data
@@ -257,7 +257,7 @@ Second we need to refactor the internal code to deal in FortuneCookie objects. F
 need to tell PowerShell that we want to return that type from the cmdlet. Note, we leave the
 call to <code>WriteObject</code> since PowerShell will now understand something about our new type.
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -310,7 +310,7 @@ namespace ExampleCmdlet
 		public string Author { get; set; }
 	}
 }
-```
+{% endhighlight %}
 
 ![output](/img/posts/building-a-custom-powershell-cmdlet-in-csharp/output-type.webp)
 
@@ -323,7 +323,7 @@ Get-FortuneCookie will return all the cookies and we can pick a random cookie by
 -Random switch? First we create a member property to hold the setting and apply a <code>Parameter</code>
 attribute to alert PowerShell to it.
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -397,7 +397,7 @@ namespace ExampleCmdlet
 		public string Author { get; set; }
 	}
 }
-```
+{% endhighlight %}
 
 So running with no parameters as before we get:
 
@@ -411,9 +411,9 @@ and running it with the -Random switch returns to the original functionality:
 Most parameters are native types but the <code>SwitchParameter</code> type allows us to pass the
 name of the option. If we had declared Random to be a <code>bool</code> we would have been forced to write:
 
-```powershell
+{% highlight "powershell" %}
 Get-FortuneCookie -Random $true
-```
+{% endhighlight %}
 
 Which I think we can all agree is not an elegant experience for the user.
 
@@ -425,7 +425,7 @@ because it allows you to try out a dummy run of a scary command like <code class
 actually doing anything. A well written but potentially high risk cmdlet will implement this
 option to allow someone to make sure all their parameters are correct before running it for real.
 
-```csharp
+{% highlight "csharp" %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -502,7 +502,7 @@ namespace ExampleCmdlet
 		public string Author { get; set; }
 	}
 }
-```
+{% endhighlight %}
 
 
 ### Done

@@ -17,8 +17,8 @@ This little script is aimed at a quick and dirty solution to that problem, repla
 keys in the hash with the "production" values. Of course, for a production system the actual settings 
 could be imported from a file as a command line param rather than being hard-coded.    
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Replace-ConfigSecrets.ps1' %}
 
-```
+{% endhighlight %}

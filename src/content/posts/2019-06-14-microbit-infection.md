@@ -20,11 +20,11 @@ We can start with a player class to model how we think about progression of the 
 with an infected person and need to decide if we pick up the infection from them. Once infected we will pass on the infection and
 we need a way to signal that the game is over with. Our game loop and initial player looks like this.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/infection-1.py' %}
 
-```
+{% endhighlight %}
 
 Contract and Incubate methods are opportunities for a state change so in the normal case we just return "ourselves" but we have the
 option to override this behaviour in subclasses to return a different patient "state". We will derive new states from the Player to
@@ -37,11 +37,11 @@ looks like and the rules around transmitting it and contracting it.
 
 ## Illness
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/infection-2.py' %}
 
-```
+{% endhighlight %}
 
 Sending the virus is easy, we broadcast the word virus to all those around us. Checking whether an virus is contagious gives us
 some space to get creative. We can just identify the word as the easiest thing or use a combination of random chance, look at the
@@ -52,11 +52,11 @@ decision logic is encapsulated within the Illness itself.
 
 Let's jump straight to the end and look at what death looks like.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/infection-3.py' %}
 
-```
+{% endhighlight %}
 
 For this case we are saying a dead patient is shown by the ghost and the "done" flag tells us the game is over.
 
@@ -66,11 +66,11 @@ Turning our attention to the healthy player, we can instantiate one in the place
 start off the game in a good state. Healthy players are happy but also have a chance of catching an infection so we
 need to check for this by asking if an received illness is contagious.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/infection-4.py' %}
 
-```
+{% endhighlight %}
 
 We also override the incubate method to give us a quick way of simulating a patient zero condition. Pressing both
 buttons will turn a healthy person into a suitably infected person.
@@ -81,11 +81,11 @@ An infected person is able to transmit an illness to those around them according
 incubate for a set period of time before transitioning into a Sick person so we setup a timer and increment it
 every time we do an incubate in the loop.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/infection-5.py' %}
 
-```
+{% endhighlight %}
 
 Note I am using the confused icon to represent this state for debugging but in a real game this would be replaced with
 the happy icon so no one is able to tell that you are a contagious person, in line with the original rules.
@@ -96,11 +96,11 @@ Similar to the Infected role, a sick person has a timer associated with it so th
 They have a different icon so we can tell they are sick but they are no longer infectious so don't spread the disease any
 further.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/infection-6.py' %}
 
-```
+{% endhighlight %}
 
 And that's it for all the stages of the game. We need an initiator to kick off the first sick person but that can be done
 without the healthy person test code and could be done with some bespoke code run on a separate device. It might also be

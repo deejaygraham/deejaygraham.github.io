@@ -16,13 +16,13 @@ ready to pass to the external application:
 
 ### Concatenation
 
-~~~
+{% endhighlight %}
 
   $ShellArguments = ' /p=' + $MyArg1 + ' /v' + ' /s' + $MyArg2 + ' ' + $MyArg3
 
   & RunMyProgram.exe $ShellArguments Split(" ")
 
-~~~
+{% endhighlight %}
 
 So in this example, we're building a set of command line switches by concatenating text and
 variables together to form a single string. Running the program has more belt-and-braces by
@@ -36,7 +36,7 @@ they are to be used in, plus it's not very easy to read and understand as a whol
 Least attractive of the solutions is forming arguments individually and passing them all
 to the program...
 
-~~~
+{% endhighlight %}
 
   $Arg1 = '/p=1234'
   $Arg2 = '/v'
@@ -45,7 +45,7 @@ to the program...
 
   & RunMyProgram.exe $Arg1 $Arg2 $Arg3 $Arg4
 
-~~~
+{% endhighlight %}
 
 This approach removes the need for separating whitespace but doesn't have much else to
 recommend it.
@@ -54,13 +54,13 @@ recommend it.
 
 A slightly neater solution I discovered was using a list as a way to collect and order arguments.
 
-~~~
+{% endhighlight %}
 
   $ShellArguments = @( "/p=$MyArg1", '/v', "/s=$MyArg2", "$MyArg3" )
 
   & RunMyProgram.exe $ShellArguments
 
-~~~
+{% endhighlight %}
 
 PowerShell is clever enough to recognize it's running an external program and has a list, so it
 can make sure each argument gets sent to the application correctly. A benefit of this is that
@@ -79,11 +79,11 @@ The "correct" approach, I just discovered, is to let PowerShell work it out by e
 arguments directly into the program call as if you were typing them on the command line - no need
 for string concatenation or expanding string variables before calling the program.
 
-~~~
+{% endhighlight %}
 
   & RunMyProgram.exe /p="$MyArg1" /v /s="$MyArg2" $MyArg3
 
-~~~
+{% endhighlight %}
 
 Variable values are expanded correctly, literal values are passed correctly without needing to be
 explicitly made string values, the arguments are directly there with the call to the program and, best

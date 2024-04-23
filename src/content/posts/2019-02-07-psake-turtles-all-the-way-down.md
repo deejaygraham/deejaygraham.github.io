@@ -19,23 +19,23 @@ the component and the action. For example, Component1-CopyLocal and Component1-R
 similar long-winded names to avoid namespace clashes when each file was included the larger scenario/parent script. 
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/PSake-Turtles-Include-1.ps1' %}
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/PSake-Turtles-Include-2.ps1' %}
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/PSake-Turtles-Scenario-1.ps1' %}
 
-```
+{% endhighlight %}
 
 This arrangement had three particular disadvantages, task names were particularly long but not really descriptive or helpful, 
 the calling script had to know the names of each of the child tasks (or at least the names of all of the initiating tasks) making 
@@ -46,23 +46,23 @@ That all changed when I discovered PSake has support for <a href="https://psake.
 We can redesign each component to be standalone, reduce the names of each task so they make sense at the component level, hide all of the 
 task names from the calling scripts while still preserving the reuse of scripts and the mix-and-match nature that I wanted to begin with. 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/PSake-Turtles-Include-3.ps1' %}
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/PSake-Turtles-Include-4.ps1' %}
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/PSake-Turtles-Scenario-2.ps1' %}
 
-```
+{% endhighlight %}
 
 And of course, we can repeat this nesting as needed with each component. 
 

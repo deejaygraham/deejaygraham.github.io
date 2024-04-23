@@ -13,21 +13,21 @@ I'm teaching some more 101 level programmer classes and this time we're looking 
 
 The first and simplest program you can write is a one liner to play a single note. Like this
 
-```ruby
+{% highlight "ruby" %}
 
 {% include 'code/ruby/sonicpi_1.rb' %}
 
-```
+{% endhighlight %}
 
 Changing the numeric value changes the pitch of the note, lower values are lower in pitch, higher values are higher in pitch.
 
 You can play two notes separated by small pause like this:
 
-```ruby
+{% highlight "ruby" %}
 
 {% include 'code/ruby/sonicpi_2.rb' %}
 
-```
+{% endhighlight %}
 
 Notes are processed top to bottom in order. Sleep puts a pause in the program of that many seconds before playing the next note. If the sleep wasn't there, both notes would play together. Increasing and decreasing the sleep value changes length of the piece.
 
@@ -40,30 +40,30 @@ One thing to mention before we go too far, as this is a text based language, spe
 
 Music is often about repetition so it's good to be able to repeat phrases and there are a number of different ways that Sonic Pi supports this. An easy one is repeating something a number of times:
 
-```ruby
+{% highlight "ruby" %}
 
 {% include 'code/ruby/sonicpi_3.rb' %}
 
-```
+{% endhighlight %}
 
 Maybe not terribly exciting but we can move on from there to do scales:
 
-```ruby
+{% highlight "ruby" %}
 
 {% include 'code/ruby/sonicpi_4.rb' %}
 
-```
+{% endhighlight %}
 
 # C Chromatic scale
 
-```ruby
+{% highlight "ruby" %}
 
 {% include 'code/ruby/sonicpi_5.rb' %}
 
-```
+{% endhighlight %}
 
-```ruby
+{% highlight "ruby" %}
 
 {% include 'code/ruby/sonicpi_6.rb' %}
 
-```
+{% endhighlight %}

@@ -13,6 +13,6 @@ Invented Here" syndrome, I discovered <a href="http://html-agility-pack.net/" al
 which seems a nice compromise between a lashed-together home-brew solution 
 and an HtmlTidy root-and-branch linting.
 
-```csharp
+{% highlight "csharp" %}
 
-```
+{% endhighlight %}

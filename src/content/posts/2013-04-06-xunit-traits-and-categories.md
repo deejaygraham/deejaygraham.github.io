@@ -9,7 +9,7 @@ tags: [ tdd, code ]
 One of the things I love about [xUnit.net](xunit.codeplex.com) is how small
 the feature set is while allowing you to extend it with the minimum of effort.
 
-One project had a number of [**bad** unit tests](http://www.artima.com/weblogs/viewpost.jsp?thread=126923) 
+One project had a number of [unit tests](http://www.artima.com/weblogs/viewpost.jsp?thread=126923) 
 that needed to touch the file system - write a file and then read it back in.
 The functionality I wanted to test was interesting enough to warrant a set of tests
 and yet if I stubbed out the file system part I was removing most of the value
@@ -28,9 +28,9 @@ can filter tests based on the name "Category".
 
 I created a set of *traits* to be applied to fast and slow unit tests as appropriate.
 
-```csharp
+{% highlight "csharp" %}
 
 
 
-```
+{% endhighlight %}
 

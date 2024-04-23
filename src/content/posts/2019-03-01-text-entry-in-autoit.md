@@ -19,10 +19,10 @@ One scenario where you might run into this is in entering user credentials where
 hashes and bangs. This is where a nice typing function comes in handy. 
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/AutoitTyper.ps1' %}
 
-```
+{% endhighlight %}
 
 We 'type' each character via AutoIt but check to make sure that we escape any of the special characters.

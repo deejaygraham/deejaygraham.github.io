@@ -36,11 +36,11 @@ If everything goes wrong, the facilitator can use their hidden microbit to sneak
 So, here's the code for the audience volunteer microbit. The audience member will press the 'A' button to select a card at random and keep pressing the button until they find one they 
 are happy with. You will notice that when the card selection happens, it's immediately broadcast to the other roles and overwritten each time a new selection is made. Pressing the 'B' button lets the audience member "lock in" their selection but in reality triggers the robot to speak aloud the last card selected.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/mentalism-volunteer.py' %}
 
-```
+{% endhighlight %}
 
 Notice that some of the card suits are spelled strangely, this is because we are sending the words to the robot to speak aloud and some of the words didn't sound correct over the speaker when they were spelled correctly.
 
@@ -53,11 +53,11 @@ It was for this reason that I felt I had to name my robot magician *Robot Houdin
 
 The robot code listens for a card selection and stores it away waiting to announce the card as if by magic. Once it gets the 'announcement' message, it uses the voice synth to say a ramdp, variation on a sentence that announces the card that was picked.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/mentalism-robot.py' %}
 
-```
+{% endhighlight %}
 
 Again, I've taken some liberties with spelling the robot's words to make pronounciation a bit clearer. 
 
@@ -66,11 +66,11 @@ Again, I've taken some liberties with spelling the robot's words to make pronoun
 
 The facilitator in the trick is the person holding everything together, introducing the trick and the robot and is really half of the magician role that the robot plays outwardly. I wrote this code as a get out of jail in case everything went wrong or the robot batteries died or whatever. The facilitator device is there to read the card selection, so I can announce the card instead of the robot, and/or trigger the robot to announce the card itself.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/mentalism-facilitator.py' %}
 
-```
+{% endhighlight %}
 
 Make sure that each microbit is programmed with the correct program and they don't get mixed up before the trick starts. 
 

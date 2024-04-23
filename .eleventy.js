@@ -6,6 +6,8 @@ const dates = require("./src/_11ty/filters/dates.js");
 
 module.exports = function (eleventyConfig) {
     
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
+
   // collections
   eleventyConfig.addCollection("posts", posts);
 
@@ -72,6 +74,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/css/prism.css": "/css/prism.css"});
   
 return {
     

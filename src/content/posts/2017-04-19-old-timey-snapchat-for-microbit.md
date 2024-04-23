@@ -18,8 +18,8 @@ of an image such that I could send it to another device. Unfortunately the text 
 functions wasn't the right format to be imported directly by another microbit. I had to create my own function to iterate 
 across the image, reading each pixel and building up a string in the correct format.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/old-timey-snapchat.py' %}
 
-```
+{% endhighlight %}

@@ -41,11 +41,11 @@ separated from the others by a comma.
 
 #### score.txt 
 
-```txt
+{% highlight "txt" %}
 
 {% include 'code/python/microbit/score.txt' %}
 
-```
+{% endhighlight %}
 
 Here I've taken the microbit documentation example of the beginning of Beethoven's fifth symphony as a test file. 
 
@@ -64,10 +64,10 @@ include more microbits in the orchestra, the beauty of more sophisticated pieces
 
 ### Code
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/load-music-file.py' %}
 
-```
+{% endhighlight %}
 
 Next will be assignment of roles for each musician and coordinating the piece from a central conductor.

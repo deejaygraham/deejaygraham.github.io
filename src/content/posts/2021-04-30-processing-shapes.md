@@ -16,11 +16,11 @@ resultant images were very pleasing and looked quite retro to the students.
 
 ![first](/img/posts/processing-shapes/processing-shapes-1.webp)
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/processing-shapes-1.py' %}
 
-```
+{% endhighlight %}
 
 Next, instead of using lines that we had for the last several weeks, we experimented with shapes and vertices and each student came up with their 
 own version of a figure to draw on each tile. Here I am drawing boxes with a slight skew the further down the page the boxes go, by modifying the position
@@ -29,10 +29,10 @@ of the top right corner and the bottom left corner.
 ![second](/img/posts/processing-shapes/processing-shapes-2.webp)
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/processing-shapes-2.py' %}
 
-```
+{% endhighlight %}
 
 

@@ -16,11 +16,11 @@ format (today's date is assumed), and a list of tags.
 Many of the refinements are based on my own setup, so if it's run from the 
 main jekyll folder, with a _posts subfolder, the post will be created there.
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/Jekyll_GeneratePost.cs' %}
 
-```
+{% endhighlight %}
 
 One important feature to note is jekyll *really, really* doesn't like [Unicode with BOM](en.wikipedia.org/wiki/Byte_order_mark), so 
 you have to be careful to explicitly create a UTF8Encoding object (with BOM turned off) 

@@ -39,20 +39,20 @@ function if the stack is empty - that is, we have popped as many closing parenth
 
 First pass looked like this with lots of repeated code in brace comparisons:
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/balanced-parens-naive.py' %}
 
-```
+{% endhighlight %}
 
 We can also neatly match up opening and closing pairs by using a dictionary. 
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/balanced-parens-kata.py' %}
 
-```
+{% endhighlight %}
 
 If we find a closing character, we look at the previous 
 paren and look up what we think should be the matching closing character and compare it to the one we have just read. If they 
@@ -61,8 +61,8 @@ don't match, that's an unbalanced case.
 
 ### Unit Tests
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/balanced-parens-tests.py' %}
 
-```
+{% endhighlight %}

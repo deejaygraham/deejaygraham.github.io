@@ -38,11 +38,11 @@ right version here</a>.
 
 ### Code
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/pi/blinkenlights.py' %}
 
-```
+{% endhighlight %}
 
 Running the code, you should see the LED blinking on and off.
 
@@ -56,8 +56,8 @@ We can add a second coloured LED to the circuit and attach it to a different out
 good build (controlled by a variable for now) will show one LED and a bad build will turn that off and 
 turn on the other LED.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/pi/blinkenlights-build-monitor.py' %}
 
-```
+{% endhighlight %}

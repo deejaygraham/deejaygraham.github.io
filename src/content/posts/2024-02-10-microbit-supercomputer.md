@@ -18,7 +18,7 @@ and shift_left functions on image. New stripes of pixels are created to fill in 
 is recomposed by bit blitting (not a thing I've done since my younger days as a windows programmer) part of the bottom image
 onto the top image to create a sort of sliding conveyor belt effect.
 
-```python
+{% highlight "python" %}
 
 # Randomly generate an evolving pixel 
 # pattern reminiscent of the Connection Machine
@@ -68,6 +68,6 @@ while True:
     display.show(frame)
     sleep(speed)
 
-```
+{% endhighlight %}
 
 

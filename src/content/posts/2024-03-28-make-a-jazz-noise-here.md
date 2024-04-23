@@ -18,7 +18,7 @@ in some reduced randomness by only changing the octave 10% of the time and chang
 While not remotely music, some small snatches of 2 or 3 notes played in succession do sound musical occasionally. The rest of 
 the time, it's more like an elongated conversation with R2D2.
 
-```python
+{% highlight "python" %}
 from microbit import *
 import random
 import music
@@ -66,7 +66,7 @@ while True:
         if visualize:
             display.set_pixel(x, y, 0)
 
-```
+{% endhighlight %}
 
 I added some code to visualize the notes as they were played by showing high notes higher up the screen and low notes at the bottom
 with random positions to again emphasise the random nature of the "music".

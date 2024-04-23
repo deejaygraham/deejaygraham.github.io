@@ -27,11 +27,11 @@ motors attached to the rear wheels.
 
 First, there were a couple of functions that weren't being used in the motor class so I removed those. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-1.py' %}
 
-```
+{% endhighlight %}
 
 ### Memories
 
@@ -46,11 +46,11 @@ remove anything extraneous to leave me some space for extra features.
 Next, I added the neopixels in as a permanent addition to the car with forward headlights, reverse and brake lights and "blinkers" for left and right 
 indication, even though they don't blink they way they would in a real car.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-2.py' %}
 
-```
+{% endhighlight %}
 I also tried to improve the code for each of the light functions by adding a way of turning off each set of lights instead of creating two function for each 
 light arrangement. Setting the "colour" of a led to be (0, 0, 0) turns the led off.
 
@@ -75,11 +75,11 @@ corresponding leds on the side lighting up in orange.
 Finally, the headlights are automatically controlled by using the light sensor on the microbit display. With not enough light falling on the car, it will turn 
 on it's headlights automatically. This is where the ability to pass a flag to turn off the lights came into its own. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-3.py' %}
 
-```
+{% endhighlight %}
 
 
 #### Steering 
@@ -103,22 +103,22 @@ with you' of this ad-hoc protocol.
 ![microbit heart](/img/posts/new-improved-microbit-rc/rc-heart.webp)
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-4.py' %}
 
-```
+{% endhighlight %}
 
 ### Driving
 
 Following the handshake comes the main loop which interprets the single letter commands coming from the handset controller and forwards to the bitbot class to 
 drive the car. This loop is now a lot simpler than in earlier versions.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-5.py' %}
 
-```
+{% endhighlight %}
 
 
 ## Handset
@@ -133,11 +133,11 @@ The complementary program on the "handset" microbit has been less rigourously ov
 Again, we have a similar pinging mechanism from the handset, broadcasting hello and waiting for a response from the car before starting. I used the same blinking 
 LED in the centre of the display and the matching heart icon after the handshake has completed. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-6.py' %}
 
-```
+{% endhighlight %}
 
 ![microbit heart](/img/posts/new-improved-microbit-rc/handset-heart.webp)
 
@@ -148,11 +148,11 @@ LED in the centre of the display and the matching heart icon after the handshake
 
 I left the command variables in the handset program since this is a much smaller program and hadn't shown any signs of running out of memory. I think the variables do make the code easier to understand. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-7.py' %}
 
-```
+{% endhighlight %}
 
 I split out the forward/backward and side tilt values even though they ended up being the same. I had a lot of test driving and experimented with a few settings 
 to see which felt most natural when just trying to control the car without it being too sensitive to hand movements in either direction. The values I came up 
@@ -164,11 +164,11 @@ with seem to work well to allow for some margin of error and to respond to inten
 I struggled a little with coming up with the right form of algorithm for which command to send when the device is tilted. In testing I found that I was trying to corner but because the controller was not completely flat on the forward axis, the handset would ignore the steering command and send a forward or reverse command instead. I ended up just looking at which of the non-zero tilts was the greatest and using that to decide which one to send out to the car.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/bitbot-rc2-8.py' %}
 
-```
+{% endhighlight %}
 
 ![microbit reverse](/img/posts/new-improved-microbit-rc/handset-reverse.webp)
 

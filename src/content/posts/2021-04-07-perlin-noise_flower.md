@@ -23,11 +23,11 @@ Where I have modified the code Emily presented, it was to keep going after the d
 it reaches the outside of the canvas, it re-contracts and starts again. 
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/perlin-noise-flower.py' %}
 
-```
+{% endhighlight %}
 
 ![third](/img/posts/perlin-noise-flower/flower-3.webp)
 

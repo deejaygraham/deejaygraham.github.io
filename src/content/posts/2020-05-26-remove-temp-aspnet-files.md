@@ -15,10 +15,10 @@ cache files for performance reasons. Fine in normal circumstances but for develo
 you are writing and compiling code on a local machine and yet the behaviour you are seeing in the browser isn't changing. Often its
 because ASP.Net is ignoring your lovely new code in favour of the version it has cached. 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Remove-TempAspNet.ps1' %}
 
-```
+{% endhighlight %}
 
 Often you need to make sure that IIS isn't holding onto the contents of the temp folder before you attempt to delete them.

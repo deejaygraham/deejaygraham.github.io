@@ -19,8 +19,8 @@ potentially destructive tool and re-examine the files and report on changes. For
 to the screen and using red for failures, green for each match and yellow for new files created in the mystery process.
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Validate-Hash.ps1' %}
 
-```
+{% endhighlight %}

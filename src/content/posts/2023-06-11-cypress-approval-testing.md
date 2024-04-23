@@ -21,7 +21,7 @@ and attach them to the Cypress object.
 
 #### e2e.js
 
-```javascript
+{% highlight "javascript" %}
 
 const compare = require('./compare');
 
@@ -29,13 +29,13 @@ const compare = require('./compare');
 
 Cypress.compare = compare;
 
-```
+{% endhighlight %}
 
 That was the easy part. The slightly more awkward part is the comparison function itself. We'd like to be able to write a test like this:
 
 #### test.cy.js
 
-```javascript
+{% highlight "javascript" %}
 
 it('objects match', () => {
 
@@ -52,7 +52,7 @@ it('objects match', () => {
   Cypress.compare.match(api_data, golden);
 });
 
-```
+{% endhighlight %}
 
 The comparison function needs to use the golden (expected) object as a reference, iterate through it's properties and find the matching property on the 
 actual object. 
@@ -60,7 +60,7 @@ actual object.
 
 #### compare.js
 
-```javascript
+{% highlight "javascript" %}
 
 export const match = (actual, expected, options = {}) => {
 
@@ -125,7 +125,7 @@ export const match = (actual, expected, options = {}) => {
     }
 };
 
-```
+{% endhighlight %}
 
 I spent quite a bit of time trying to get the error messages to help as much as possible when there is a failure. The path helps to 
 identify array indexes and nested objects when the api data and the compared object are large and could contain many elements.

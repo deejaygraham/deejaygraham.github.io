@@ -15,9 +15,9 @@ meaningful, if not Turing-like, responses.
 The project needs the AIMLBot.dll and the aiml (subject matter markup) and config (settings and word substitutions) folders shipped 
 with the AIMLBot binary.
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/AIMLBot.cs' %}
 
-```
+{% endhighlight %}
 

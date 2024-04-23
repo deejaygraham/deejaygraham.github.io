@@ -19,7 +19,7 @@ we want to be able to pick up when we copy the next build 1.2.4 and copy stuff f
 
 Here SourcePath is the parent folder and SubFolder is the folder that exists inside the folder we are trying to find. 
 
-```powershell
+{% highlight "powershell" %}
 
 $MostRecentFolderName = (Get-ChildItem $SourcePath -Directory | Sort-Object CreationTime -desc | Select-Object -First 1).Name
 Write-Verbose "Most recent folder $MostRecentFolderName in $SourcePath"
@@ -27,4 +27,4 @@ Write-Verbose "Most recent folder $MostRecentFolderName in $SourcePath"
 $MostRecentFolder = Join-Path $SourcePath -ChildPath $MostRecentFolderName
 $FullSourcePath = Join-Path $MostRecentFolder -ChildPath $SubFolder
 
-```
+{% endhighlight %}

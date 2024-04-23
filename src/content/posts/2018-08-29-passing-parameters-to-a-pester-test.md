@@ -16,11 +16,11 @@ at runtime. Pester normally takes a Script parameter as a string to a single tes
 it also accepts a hash with the Path mapping to the original script argument and Parameters as a nested hash of 
 name value pairs passed as parameters to each test script. 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Pester-Parameters.ps1' %}
 
-```
+{% endhighlight %}
 
 The parameters surface in the test script using the usual param block. If you need positional parameters in a script (but why 
 would you?) you can pass a comma separated list using the Arguments property in the hash.
@@ -28,17 +28,17 @@ would you?) you can pass a comma separated list using the Arguments property in 
 If Pester is running as part of a CI build, you can also use the return value from Pester to trigger exiting the script with a return value 
 and failing the build.
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Pester-Return.ps1' %}
 
-```
+{% endhighlight %}
 
 Speaking of integrating with CI builds, Pester also supports writing out test results in NUnit xml format so that they can be ingested 
 and processed by other standard tools. 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Pester-NUnit.ps1' %}
 
-```
+{% endhighlight %}

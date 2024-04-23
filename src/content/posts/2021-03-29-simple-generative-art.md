@@ -24,11 +24,11 @@ The starting point is drawing a line from one point to another. First we setup t
 and the line colour to black. We also want to have the code generate the art once so I'm using the linear setup of processing rather than using the setup and draw functions, 
 at least for the time being.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/gen-art-1.py' %}
 
-```
+{% endhighlight %}
 
 I have separated the tile drawing code into it's own function to make expanding this easier in the next step. It means I can talk about functions but wave my hands over much of this until 
 the students can see the benefit from it coming up very soon. Since we are only drawing a single tile at this point, I am setting the tile size to be the whole of the square canvas.
@@ -42,11 +42,11 @@ the students can see the benefit from it coming up very soon. Since we are only 
 A small change to the draw_tile function lets us decide if a tile should be drawn from top left to bottom right or from top right to bottom left. By using the random function 
 we can talk about injecting some variation into our code and even select what probability we want, a straight 50% or something else? This is also the point where we introduce 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/gen-art-2.py' %}
 
-```
+{% endhighlight %}
 
 ![screenshot](/img/posts/simple-generative-art/art-2.webp)
 
@@ -58,11 +58,11 @@ Each time the code runs now, the square has a diagonal line drawn one way or the
 Next, we want to be able to draw more than one tile per canvas which means we have to split up the canvas into a number of discrete units. For this we 
 introduce a variable which is the size of each tile. Moving from one tile to the next lets us introduce the idea of loops with the range function. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/gen-art-3.py' %}
 
-```
+{% endhighlight %}
 
 We start off 
 small so that it's easier to see that we are moving from one place to another on screen by substituting values for x and y and seeing that the tile size doesn't change. 
@@ -89,11 +89,11 @@ diagonal?
 
 The advantage of the function we created is that we can make the change in that function and none of the other parts of the code need to change. 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/gen-art-4.py' %}
 
-```
+{% endhighlight %}
 
 
 And we get this rather lovely basket weave effect.

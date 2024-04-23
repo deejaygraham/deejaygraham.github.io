@@ -33,11 +33,11 @@ The main body of the program puts those two elements together and reacts with a 
 a temperature drop.
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/ghost-detector.py' %}
 
-```
+{% endhighlight %}
 
 ## Trick
 

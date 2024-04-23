@@ -11,11 +11,11 @@ alttext: raspberry pi
 
 A super simple rain simulator creates blocks at random positions in the sky and lets them fall to the ground under minecraft physics.
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/minecraft/rain.py' %}
 
-```
+{% endhighlight %}
 
 The slightly weird thing about this is the "rain" is much more like a waterfall. A single block stays in place in the sky and 
 just leaks water downwards until it reaches the ground and then just sort of pools. 

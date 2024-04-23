@@ -17,11 +17,11 @@ document so that tests can use the returned object directly rather than searchin
 
 Tests against an (imagined) rest API could look something like this
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Count-ApiFields-1.ps1' %}
 
-```
+{% endhighlight %}
 
 Given that you now have a nice object handed to you by Invoke-RestMethod, it's easy to see that specific fields are present with the 
 correct values but it's difficult to work out if you have the right size of object - that a field hasn't been added or removed by accident. 
@@ -30,35 +30,35 @@ Luckily, thanks to the introspective nature of PowerShell, you can use Get-Membe
 and converted to properties on the custom object. These properties seem to be a special type of NoteProperty rather than the plain Property 
 type I was expecting.
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Count-ApiFields-2.ps1' %}
 
-```
+{% endhighlight %}
 
 Putting that into the body of our test works but it's a bit complex to read and would probably not fair very well if someone was to copy this test 
 as the basis for another. 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Count-ApiFields-3.ps1' %}
 
-```
+{% endhighlight %}
 
 To address this, I thought first off to add a custom Pester assertion, as <a href="https://mathieubuisson.github.io/pester-custom-assertions/">outlined here</a>. That seemed to 
 be too much effort for the tiny bit of tidying I though was warranted by the code so I converted the Get-Member snippet into a cmdlet, Get-FieldCount, 
 that could be used as part of an assertion.  
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Count-ApiFields-4.ps1' %}
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Count-ApiFields-5.ps1' %}
 
-```
+{% endhighlight %}
 

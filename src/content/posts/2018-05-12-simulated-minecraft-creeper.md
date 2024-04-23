@@ -18,11 +18,11 @@ I used obsidian blocks to build the creeper but could have used green wool or so
 
 <img src="/img/posts/simulated-minecraft-creeper/creeper-1.webp" alt="creeper" class="u-max-full-width" />
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/minecraft/creeper.py' %}
 
-```
+{% endhighlight %}
 
 <img src="/img/posts/simulated-minecraft-creeper/creeper-2.webp" alt="creeper" class="u-max-full-width" />
 

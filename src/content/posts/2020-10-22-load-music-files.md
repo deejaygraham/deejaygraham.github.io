@@ -48,11 +48,11 @@ complete the circuit.
 
 ### Code
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/digital-io-led.py' %}
 
-```
+{% endhighlight %}
 
 As a debugging aid, I elected to wrap the digital IO functionality in a function so that I could blink the central LED on the internal display at the 
 same time as I was turning on and off the output pin. 
@@ -72,8 +72,8 @@ From one LED to a number of them is a matter of replicating what we have already
 example where we cycle between green, red, amber and back to green, each LED has to be assigned to a workable digital io pin (see <a href="https://microbit-micropython.readthedocs.io/en/latest/pin.html" >here for reference</a>) on a separate portion of the breadboard. 
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/traffic-lights.py' %}
 
-```
+{% endhighlight %}

@@ -17,11 +17,11 @@ containing matching text.
 In this most recent episode of pining for grep, I was only interested in finding out if a particular namespace was being used anywhere in my code 
 and didn't really care where. You could easily extend this code to report the file name when it finds a match.
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Grep-Text.ps1' %}
 
-```
+{% endhighlight %}
 
 Additionally, I used a list of search terms but that could be replaced with a simple string search variable. 
 

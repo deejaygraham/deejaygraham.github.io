@@ -16,20 +16,20 @@ in the shape of a psd (PowerShell Data) file - .psd1. Data can be structured hie
 generate it from a scratch script using a here string:
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Create-TemplateConfig.ps1' %}
 
-```
+{% endhighlight %}
 
 Then read it back in in the worker script and reference sub-objects using normal dot notation. 
 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Import-Config.ps1' %}
 
-```
+{% endhighlight %}
 
 ### Update
 
@@ -40,19 +40,19 @@ A final note, on the setup of a configuration data file. When deciding between s
 
 For example, a data file may contain urls which differ according to the deployment environment:
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Create-TemplateConfig2.ps1' %}
 
-```
+{% endhighlight %}
 
 We can then get the current environment at runtime and use that to key the hashtable we made in the psd1.
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Import-Config2.ps1' %}
 
-```
+{% endhighlight %}
 
 ### Update 2 - December 2020
 
@@ -65,8 +65,8 @@ Instead of having a hard coded file name, you can use the Invocation Name and re
 you maintain the naming convention where the script and data files are named the same apart from the extension, you need 
 never worry about the two drifting apart and the tests breaking. 
 
-```powershell
+{% highlight "powershell" %}
 
 {% include 'code/powershell/Import-Config3.ps1' %}
 
-```
+{% endhighlight %}

@@ -35,17 +35,17 @@ A monolithic application, for my purposes here, is definded as a single executab
 containing lots of functionality, perhaps in Windows Forms code-behind style,
 that cannot be unit tested.
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/InplaceRefactor_GodClass.cs' %}
 
-```
+{% endhighlight %}
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/InplaceRefactor_GodMain.cs' %}
 
-```
+{% endhighlight %}
 
 ## Refactoring
 
@@ -91,11 +91,11 @@ test code shouldn't need to change and you just need to add the correct referenc
 Currently, I have only supported a subset of the features available from MsTest and NUnit. Other 
 frameworks are available and the principles will remain the same. 
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/InplaceRefactor_Fx.cs' %}
 
-```
+{% endhighlight %}
 
 ## The Process
 
@@ -105,21 +105,21 @@ or just in the same file as the problem code.
 
 Then you can add characterisation or specific scenario tests to the class (here using a simulation of MsTest).
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/InplaceRefactor_AttributedClass.cs' %}
 
-```
+{% endhighlight %}
 
 Then, before any other code is loaded, you can make a call to the inplace test runner from 
 your "main" method like this :
 
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/InplaceRefactor_TestMain.cs' %}
 
-```
+{% endhighlight %}
 
 The next step is to identify some candidate functionality that could be refactored. Wherever this
 code happens to be, create a test for it in a separate method, named and attributed

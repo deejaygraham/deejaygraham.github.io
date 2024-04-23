@@ -15,7 +15,7 @@ A tiny snippet I needed today to check the target version of the .Net framework 
 
 Reading the value of the attribute is a bit involved, loading custom attributes from the assembly and finding the one called TargetFramework.
 
-```powershell
+{% highlight "powershell" %}
 
 [string]$NewVersionAssembly = Join-Path -Path $MyFolder -ChildPath $MyReferenceAssembly
 [string]$TargetFramework = [Reflection.Assembly]::ReflectionOnlyLoadFrom($NewVersionAssembly).CustomAttributes |
@@ -23,6 +23,6 @@ Where-Object { $_.AttributeType.Name -eq 'TargetFrameworkAttribute' } |
 Select -ExpandProperty ConstructorArguments |
 Select -ExpandProperty value
 
-```
+{% endhighlight %}
 
 The $TargetFramework will now contain `.NETFramework,Version=v4.7.2`.

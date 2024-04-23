@@ -14,9 +14,9 @@ If we use the trick of putting a script into the msbuild *ImportAfter* folder, w
 each project's build output to a minimal log.
 
 
-~~~xml
+{% highlight "xml" %}
 
 {% include 'code/msbuild/build-order.xml' %}
 
-~~~
+{% endhighlight %}
 

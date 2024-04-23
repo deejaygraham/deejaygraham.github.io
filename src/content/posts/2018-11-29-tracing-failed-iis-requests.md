@@ -11,10 +11,10 @@ IIS can log out the match process and give a break to someone trying to psychica
 
 Here's how I did it in code.
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/TraceFailedIISRequests.cs' %}
 
-```
+{% endhighlight %}
 
 

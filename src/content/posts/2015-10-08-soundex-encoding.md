@@ -12,17 +12,17 @@ spelled very differently. This sort of phonetic algorithm is what makes it possi
 name on the internet and be reasonably sure to find them, even if you don't know the exact spelling.
 
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/SoundexTests.cs' %}
 
-```
+{% endhighlight %}
 
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/Soundex.cs' %}
 
-```
+{% endhighlight %}
 
 

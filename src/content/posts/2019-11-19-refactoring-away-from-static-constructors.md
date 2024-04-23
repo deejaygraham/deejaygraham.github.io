@@ -16,11 +16,11 @@ copies of essentially the same thing.
 Imagine a telemetry service in which we need to create a connection to a client library. The static constructor version 
 would look like this.
 
-~~~csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/Static-Constructor.cs' %}
 
-~~~
+{% endhighlight %}
 
 Unfortunately, because this constructor code is invoked as soon as anything about that class is touched by other code, unit tests 
 which might want to sneak in and replace a concrete (think database, network, file system) connection with a fake or a mock, end up 
@@ -35,11 +35,11 @@ A slightly nicer pattern, if we have to use static instances of services is to u
 constructor and wrap it with a static initialization function in a factory. This may provide a stepping stone to a better, more explicit 
 initialization sequence and more opportunities to refactor the static code into instance based code. 
 
-~~~csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/Static-FactoryWrapper.cs' %}
 
-~~~
+{% endhighlight %}
 
 Interposing a factory-like object which takes up the static-ness allows us to unit test the interesting instance of the internal class while 
 maintaining a simple version of the factory whose only responsbility is creating and maintaining the instance and providing access to it 

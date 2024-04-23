@@ -49,7 +49,7 @@ Set-Content
 
 ### RSpec
 
-```ruby
+{% highlight "ruby" %}
 
 require 'rack/test'
 require 'json'
@@ -66,14 +66,14 @@ module ExpenseTracker
 	end
 end
 
-```
+{% endhighlight %}
 
 
 ### Describe It and Should
 
 Easy to get started, let's try running vs code and typing a simple test.
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -85,12 +85,12 @@ Describe 'Pester' {
     }
 }   
 
-```
+{% endhighlight %}
 
 We can try Should Not Be, Be Like Be LikeExactly
 
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -103,12 +103,12 @@ Describe 'Presenting in public' {
 	}
 }
 
-```
+{% endhighlight %}
 
 Ok, that fails, let's fix the test to make it more representative of reality.
 
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -121,10 +121,10 @@ Describe 'Presenting in public' {
 	}
 }
 
-```
+{% endhighlight %}
 
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -137,7 +137,7 @@ Describe 'Presenting in public' {
 	}
 }
 
-```
+{% endhighlight %}
 
 ### Refactoring
 
@@ -146,7 +146,7 @@ We can have multiple describe blocks and multiple It blocks or collapse into one
 So we can test a website..
 
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 Set-StrictMode -Version Latest
@@ -185,7 +185,7 @@ Describe 'Externally Referenced Links' {
     }
 }
 
-```
+{% endhighlight %}
 
 ### Documenting Web APIs
 
@@ -193,7 +193,7 @@ We can setup a test context for a specific Rest API - get and post.
 
 ### Test Suite
 
-```powershell
+{% highlight "powershell" %}
 
 Param (
 	[Parameter(Mandatory=$True)]
@@ -253,10 +253,10 @@ Describe "People in Star Wars" {
 	}
 }
 
-```
+{% endhighlight %}
 
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -274,12 +274,12 @@ Invoke-Pester -Script @{
 	}
 }
 
-```
+{% endhighlight %}
 
 
 We can then invoke tests from a controlling script that will execute against all tests in a directory.
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -287,12 +287,12 @@ $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
 Invoke-Pester -Script "$here\*.Tests.ps1"
 
-```
+{% endhighlight %}
 
 We can even pass parameters to each script, like the base uri
 
 
-```powershell
+{% highlight "powershell" %}
 
 Param (
 	[Parameter()]
@@ -314,7 +314,7 @@ Invoke-Pester -Script @{
 	}
 }
 
-```
+{% endhighlight %}
 
 ### Christmas Driven Development
 
@@ -323,7 +323,7 @@ Now to the serious stuff
 Like scrooge (more on him later), I need to know when Christmas is coming so I can make preparations.
 Let's write two functions, one to get some content from a website, and another to parse the text and find the value.
 
-```powershell
+{% highlight "powershell" %}
 
 $SantaUrl = 'https://www.emailsanta.com/clock.asp'
 $HtmlToMatch = '<span class="XmasDayemph">(.*)</span>'
@@ -350,13 +350,13 @@ Function Get-HowLongUntilChristmas {
 }
 
 
-```
+{% endhighlight %}
 
 ### Mocking
 
 Initial set of tests...
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -374,13 +374,13 @@ Describe 'Email Santa Service' {
     }
 }
 
-```
+{% endhighlight %}
 
 Fails. We need some way to make this test work for every day of the year. Mock the content function and return a
 known value. Works all of the time.
 
 
-```powershell
+{% highlight "powershell" %}
 
 Import-Module Pester
 
@@ -409,7 +409,7 @@ Mock Select-String
 		
 		
 
-```
+{% endhighlight %}
 
 ### SDD
 
@@ -421,7 +421,7 @@ Albert Finney (and my pop-in-law whose birthday it is) are both interested in wh
 To save them shouting out of the window to a passing urchin, I have written a function.
 
 
-```powershell
+{% highlight "powershell" %}
 
 Function Test-ChristmasDay {
 
@@ -434,12 +434,12 @@ Function Test-ChristmasDay {
     }
 }
 
-```
+{% endhighlight %}
 
 So I know I should test that difficult logic:
 
 
-```powershell
+{% highlight "powershell" %}
 
 Describe 'Scrooge' {
 
@@ -459,9 +459,9 @@ Describe 'Scrooge' {
     }
 }
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 Describe 'Scrooge' {
 
@@ -487,7 +487,7 @@ Describe 'Scrooge' {
     }
 }
 
-```
+{% endhighlight %}
 
 Made tests independent of dates and times. We can expect that our code is much more likely to succeed when
 put into a real environment. We can also make sure that the internals we are expecting are called the right
@@ -499,14 +499,14 @@ Testing modules and developing them side by side with the tests, it's a good ide
 with the most up to date version
 
 
-```powershell
+{% highlight "powershell" %}
 
 Get-Module Scrooge | Remove-Module -Force
 Import-Module $here\Scrooge.psm1 -Force
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 Set-StrictMode -Version Latest
 
@@ -521,9 +521,9 @@ Function Get-Ghost {
 
 Export-ModuleMember -Function *
 
-```
+{% endhighlight %}
 
-```powershell
+{% highlight "powershell" %}
 
 Describe 'Get-ChristmasCarolGhost' {
 
@@ -539,12 +539,12 @@ Describe 'Get-ChristmasCarolGhost' {
 	}
 }
 
-```
+{% endhighlight %}
 
 ### Driving Home For Christmas
 
 
-```powershell
+{% highlight "powershell" %}
 
 $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
@@ -563,12 +563,12 @@ Describe 'Chris Rea' {
 	}
 }
 
-```
+{% endhighlight %}
 
 Write a function that prints the lyrics to a christmas song.
 
 
-```powershell
+{% highlight "powershell" %}
 
 Set-StrictMode -Version Latest
 
@@ -584,11 +584,11 @@ Function Get-ChristmasSong {
 
 Export-ModuleMember -Function *
 
-```
+{% endhighlight %}
 
 ### CI
 
-```powershell
+{% highlight "powershell" %}
 
 Invoke-Pester -OutputFile 'PesterResults.xml' -OutputFormat NUnitXml
 
@@ -605,12 +605,12 @@ Invoke-Pester -Script @{
 	}
 }
 
-```
+{% endhighlight %}
 
 ### Code Coverage
 
-```powershell
+{% highlight "powershell" %}
 
 Invoke-Pester -Script Demo.Tests.ps1 -CodeCoverage Demo.ps1
 
-```
+{% endhighlight %}

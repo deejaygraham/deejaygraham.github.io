@@ -22,8 +22,8 @@ handles documentation of types - value : type.
 
 Here's the less than elegant but working function followed by the tests we used to drive it. 
 
-```rust
+{% highlight "rust" %}
 
 {% include 'code/rust/fizzbuzz.rs' %}
 
-```
+{% endhighlight %}

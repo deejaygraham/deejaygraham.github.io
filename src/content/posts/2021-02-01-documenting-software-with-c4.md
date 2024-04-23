@@ -30,7 +30,7 @@ inclusion in slides or documents, and the source description can be checked into
 Each diagram is bracketed with a startuml and enduml tag. The start tag can include a suggested file name for generation. The first statement should be an include statement for the type of diagram - Context, Container, Component, Dynamic or Deployment Diagram. 
 
 
-```
+{% endhighlight %}
 @startuml "Cloud-Service-Roles-Context"
 
 !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Context.puml
@@ -54,7 +54,7 @@ Rel(customer, web, "Uses")
 Rel(web, billing, "Usage")
 
 @enduml
-```
+{% endhighlight %}
 
 Each document or diagram type supports different macros used to define the objects with the diagram. Relationships can be set losely so that the rendering engine decides how best to layout and structure the diagram, or you can hint to the renderer that blocks should be laid out in relation to each other.
 
@@ -70,15 +70,15 @@ VS Code, if that's your preferred editor, has an extension to generate PlantUML 
 Outside of the editor preview, PlantUML is a java .jar application and can generate images for one document or all documents in a folder
 
 single document
-```
+{% endhighlight %}
 java -jar plantuml.jar ContextDiagram.puml
 
-```
+{% endhighlight %}
 
 all documents
-```
+{% endhighlight %}
 java -jar plantuml.jar ContextDiagram.puml
 
-```
+{% endhighlight %}
 
 I should say, Plant UML isn't just great for constructing these C4 diagrams, I have also stared using it for sequence diagrams, class diagrams and activity diagrams. I find the default colour scheme a little annoying since it harps back to the old days of Rational Rose but there are options to configure the look of the generated graphics for font, colour etc. 

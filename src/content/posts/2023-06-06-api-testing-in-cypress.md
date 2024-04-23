@@ -26,7 +26,7 @@ I would like to be able to, at it's simplest, call an api like this:
 
 #### test.cy.js
 
-```javascript
+{% highlight "javascript" %}
 
 it('calls simple endpoint', () => {
 
@@ -36,11 +36,11 @@ it('calls simple endpoint', () => {
 
 });
 
-```
+{% endhighlight %}
 
 I also wanted to be more fine-grained and control all aspects of the request, query parameters for example:
 
-```javascript
+{% highlight "javascript" %}
 
 it('adds query to request', () => {
     cy.api({
@@ -52,11 +52,11 @@ it('adds query to request', () => {
     });
 });
 
-```
+{% endhighlight %}
 
 Also, to allow for PUT and POST operations requiring a payload:
 
-```javascript
+{% highlight "javascript" %}
 
 it('puts data back to the api', () => {
     cy.api({
@@ -71,13 +71,13 @@ it('puts data back to the api', () => {
     });
 });
 
-```
+{% endhighlight %}
 
 For the implementation, custom commands are added to Cypress in the e2e.js file in the support folder:
 
 #### e2e.js
 
-```javascript
+{% highlight "javascript" %}
 
 Cypress.Commands.add('api', (requestOptions) => {
 
@@ -160,7 +160,7 @@ Cypress.Commands.add('api', (requestOptions) => {
     });
 });
 
-```
+{% endhighlight %}
 
 I spent a long time trying to get the logging correct, or to be as useful as possible to help 
 with debugging when the cy.request function doesn't show up in the network tab in the browser's dev tools window. I used
@@ -171,7 +171,7 @@ what's happening at the api.
 
 I also wanted a clean-ish log of headers and data so had to build that in:
 
-```javascript
+{% highlight "javascript" %}
 
 const buildLoggableHeader = (header) => {
     const loggable = Object.assign(Object.create(null), header);
@@ -185,12 +185,12 @@ const buildLoggablePayload = (data) => {
     return loggable;
 }
 
-```
+{% endhighlight %}
 
 One of the critical features was having a set of headers that were added to any request by default, not explicitly added 
 for every test. Here I use the Cypress environment to search for values and add them to the request:
 
-```javascript
+{% highlight "javascript" %}
 
 const buildDefaultHeadersFromEnvironment = () => {
 
@@ -215,11 +215,11 @@ const buildDefaultHeadersFromEnvironment = () => {
     return defaultHeaders;
 }
 
-```
+{% endhighlight %}
 
 Of course, if you want to specify individual headers, you can supply an object as part of the request:
 
-```javascript
+{% highlight "javascript" %}
 
 it('overrides default headers', () => {
     cy.api({
@@ -231,4 +231,4 @@ it('overrides default headers', () => {
     });
 });
 
-```
+{% endhighlight %}

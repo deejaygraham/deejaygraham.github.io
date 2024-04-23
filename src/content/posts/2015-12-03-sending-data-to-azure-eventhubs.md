@@ -15,8 +15,8 @@ it has much better performance characteristics than table storage.
 
 Here's a snippet to illustrate sending a piece of data to an event hub.
 
-```csharp
+{% highlight "csharp" %}
 
 {% include 'code/csharp/SendToEventHub.cs' %}
 
-```
+{% endhighlight %}

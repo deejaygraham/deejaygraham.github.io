@@ -62,10 +62,10 @@ Each time round the loop we calculate a new colour and update the pixels. The st
 
 ## Code 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/playground/mood-lights.py' %}
 
-```
+{% endhighlight %}
 
 ![green](/img/posts/playground-chilling/green.webp)

@@ -50,7 +50,7 @@ Images on the microbit are represented as a single string of numeric characters,
 LED "pixel" - 0 is off and 9 is full brightness. For example, a square would be shown
 by lighting up the edges of the grid and leaving the inside of the grid dark. Like this:
 
-~~~
+{% endhighlight %}
 
 Image("99999:"
       "90009:"
@@ -58,7 +58,7 @@ Image("99999:"
       "90009:"
       "99999")
 
-~~~
+{% endhighlight %}
 
 ### Clues
 
@@ -68,8 +68,8 @@ at the start of the game using display.show with the list of images.
 Here's the finished code:
 
 
-```python
+{% highlight "python" %}
 
 {% include 'code/python/microbit/rock-paper-scissors.py' %}
 
-```
+{% endhighlight %}
