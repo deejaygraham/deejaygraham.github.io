@@ -41,7 +41,7 @@ deliberate <strong>learning</strong>, <strong>visual</strong> thinking, design a
 site for non-commercial uses. I try to make sure all posts that contain any "art"
 work are marked with a creative commons licence:</p>
 
-FIX include licence-boilerplate.html
+{% include "partials/ccboilerplate.njk" %}
 
 <p class="has-vertical-spacing">If you follow the link to creative commons, there is a section that describes what
 you can and cannot use the material for. In short:</p>
