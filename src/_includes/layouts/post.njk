@@ -7,7 +7,7 @@
 {% endblock %}
 
 <!-- post-related.html -->
-{{ tags | first }}
+{{ tags | first | dump }}
 {#{% set firstCategory = tags | first %}
 
 {% if collections.posts[firstCategory].size > 1 %}
