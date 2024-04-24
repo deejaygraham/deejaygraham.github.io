@@ -1,5 +1,10 @@
----
-layout: base.njk
----
+{% extends 'layouts/base.njk' %}
 
-<article>{{ content | safe }}</article>
+{% block content %}
+
+<article >
+    {{ content | safe }}
+</article>
+
+{# put in attribution etc. here #}
+{% endblock %}
