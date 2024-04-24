@@ -1,3 +1,7 @@
 module.exports = function (array) {
-  return array[0];
+  if (Array.isArray(array) && array.length > 0) {
+    return array[0];
+  }
+  
+  return null;
 };
