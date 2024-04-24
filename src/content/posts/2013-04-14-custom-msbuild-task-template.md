@@ -3,11 +3,12 @@ permalink: 2013/04/14/custom-msbuild-task-template/
 layout: post
 title: Custom MsBuild Task Template
 published: true
-tags: [ msbuild, code ]
+tags: [msbuild, code]
 ---
-Creating customs tasks for MsBuild is relatively easy provided you follow a few steps. 
 
-The example below assumes you are familiar with .Net - specifically C# in this case - and 
+Creating customs tasks for MsBuild is relatively easy provided you follow a few steps.
+
+The example below assumes you are familiar with .Net - specifically C# in this case - and
 Visual Studio:
 
 ## 1. Create a new class library project
@@ -15,22 +16,20 @@ Visual Studio:
 ![New Project](/img/posts/custom-msbuild-task-template/vs-new-project.webp)
 
 ## 2. Add references to MsBuild
-	
-	Microsoft.Build.Framework
+
+    Microsoft.Build.Framework
     Microsoft.Build.Tasks.v4.0
-    Microsoft.Build.Utilities.v4.0 
+    Microsoft.Build.Utilities.v4.0
 
 ## 3. Add a new class derived from Task
-	
+
 Add required input properties and override the Execute method
-	
-	using Microsoft.Build.Framework;
-	using Microsoft.Build.Utilities;
-	
-	public class MyTask : Task
-	{
-        [Required]
-        public ITaskItem[] Files { get; set; }
+using Microsoft.Build.Framework;
+using Microsoft.Build.Utilities;
+public class MyTask : Task
+{
+[Required]
+public ITaskItem[] Files { get; set; }
 
         [Required]
         public ITaskItem OutputFolder { get; set; }
@@ -74,24 +73,22 @@ Add required input properties and override the Execute method
                 }
             }
 
-			// other useful stuff...
+    		// other useful stuff...
 
             return true;
         }
-	}
+    }
 
-## 4. Use it in your scripts	
+## 4. Use it in your scripts
 
-	<!-- Change this path to point to installed dll -->	
-	<UsingTask AssemblyFile="$(MSBuildProjectDirectory)MyTasks.dll" TaskName="MyTask"/>
+    <!-- Change this path to point to installed dll -->
+    <UsingTask AssemblyFile="$(MSBuildProjectDirectory)MyTasks.dll" TaskName="MyTask"/>
 
-	<Target Name="Example">
+    <Target Name="Example">
 
-		<!-- Change parameters to reflect your project -->	
-		<MyTask 
-			Files="@(ProcessFiles)" 
-			Folder="$(OutputFolder)" 
-			/>
-	</Target>
-
-	
+    	<!-- Change parameters to reflect your project -->
+    	<MyTask
+    		Files="@(ProcessFiles)"
+    		Folder="$(OutputFolder)"
+    		/>
+    </Target>

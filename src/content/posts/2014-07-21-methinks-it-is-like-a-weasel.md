@@ -3,19 +3,19 @@ permalink: 2014/07/21/methinks-it-is-like-a-weasel/
 layout: post
 title: Methinks it is like a Weasel
 published: true
-tags: [ code, csharp ]
+tags: [code, csharp]
 ---
 
-I'm posting this older code example of a simple evolutionary algorithm to get 
-it off my hard drive :) 
+I'm posting this older code example of a simple evolutionary algorithm to get
+it off my hard drive :)
 
-I've been interested in [evolutionary algorithms](http://en.wikipedia.org/wiki/Evolutionary_algorithm) 
+I've been interested in [evolutionary algorithms](http://en.wikipedia.org/wiki/Evolutionary_algorithm)
 for a while now with an idea of using them to solve some interesting puzzles
 (more of that in a later post, honest).
 
-This is the canonical example provided by Richard Dawkins in his book 
-[The Blind Watchmaker](http://en.wikipedia.org/wiki/The_Blind_Watchmaker) 
-which attempts to start with a random series of letters of the right length and 
+This is the canonical example provided by Richard Dawkins in his book
+[The Blind Watchmaker](http://en.wikipedia.org/wiki/The_Blind_Watchmaker)
+which attempts to start with a random series of letters of the right length and
 by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 <blockquote>
@@ -27,7 +27,7 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 <p>Methinks it is like a weasel.</p>
 </blockquote>
 
-## Interfaces 
+## Interfaces
 
 {% highlight "csharp" %}
 
@@ -59,7 +59,7 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 {% endhighlight %}
 
-## Implementations 
+## Implementations
 
 {% highlight "csharp" %}
 
@@ -123,6 +123,6 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 {% endhighlight %}
 
-Using as many interfaces as I have and using generic types may seem a little like 
-overkill but, as I said, I am hoping to complete a project using some alternate 
+Using as many interfaces as I have and using generic types may seem a little like
+overkill but, as I said, I am hoping to complete a project using some alternate
 implementations for a more interesting purpose. Stay tuned :)

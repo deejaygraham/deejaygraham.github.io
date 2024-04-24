@@ -3,12 +3,12 @@ permalink: 2013/07/12/tell-don't-ask/
 layout: post
 title: Tell Don't Ask
 published: true
-tags: [ oo, books ]
+tags: [oo, books]
 ---
 
-Inspired by the [GOOS book](http://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627) 
-and retro propaganda posters, I wondered what a government with a strict 
-focus on the principles of good object-oriented design would produce to inspire 
+Inspired by the [GOOS book](http://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627)
+and retro propaganda posters, I wondered what a government with a strict
+focus on the principles of good object-oriented design would produce to inspire
 it's citizens.
 
 ![tell don't ask](/img/posts/tell-dont-ask/tell-dont-ask.webp)
@@ -218,7 +218,3 @@ l6 -21 18 22 c12 16 24 21 38 17 12 -3 25 -1 28 5 10 16 20 14 49 -9z"/>
 -12z"/>
 </g>
 </svg>
-
-
-
-

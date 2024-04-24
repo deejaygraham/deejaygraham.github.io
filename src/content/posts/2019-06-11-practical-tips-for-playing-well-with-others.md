@@ -2,7 +2,7 @@
 permalink: 2019/06/11/practical-tips-for-playing-well-with-others/
 layout: sketchnote
 title: Practical Tips for Playing Well with Others
-tags: [ sketchnotes, presentations ]
+tags: [sketchnotes, presentations]
 tweetable: true
 thumbnail: "/img/posts/playing-well-with-others/thumbnail-420x255.webp"
 sketchnote:

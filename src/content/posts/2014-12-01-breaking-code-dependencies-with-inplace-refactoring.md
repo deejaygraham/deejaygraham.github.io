@@ -3,11 +3,10 @@ permalink: 2014/12/01/breaking-code-dependencies-with-inplace-refactoring/
 layout: post
 title: Breaking code dependencies with inplace refactoring
 published: true
-tags: [ tdd, csharp, refactoring ]
+tags: [tdd, csharp, refactoring]
 ---
 
-
-### or, How to TDD Inside a Legacy Application 
+### or, How to TDD Inside a Legacy Application
 
 There's a common symptom of monolithic applications that I see fairly
 frequently. First, a developer writes a simple little program to solve a
@@ -68,7 +67,6 @@ the UI code with us into the new, refactored code.
 Add to this, the majority of the unit test frameworks I have used don't
 support testing code in executables.
 
-
 ## In-Place Refactoring
 
 One way around this is to use an inplace refactoring technique. I've used this
@@ -81,15 +79,15 @@ statements found in MsTest or NUnit.
 
 In this way, you can create the tests in your application so, at the source
 code level, they look like they are targetting your favourite framework (but
-you're really using the inplace, lightweight one) and other developers will be immmediately 
+you're really using the inplace, lightweight one) and other developers will be immmediately
 familiar with the behaviour of the tests. When you come to move the
 code into a separate assembly and are ready to use the real framework, the
 test code shouldn't need to change and you just need to add the correct references.
 
 ## Framework
 
-Currently, I have only supported a subset of the features available from MsTest and NUnit. Other 
-frameworks are available and the principles will remain the same. 
+Currently, I have only supported a subset of the features available from MsTest and NUnit. Other
+frameworks are available and the principles will remain the same.
 
 {% highlight "csharp" %}
 
@@ -100,8 +98,8 @@ frameworks are available and the principles will remain the same.
 ## The Process
 
 Step 0 in this approach is to include (copy and paste is your friend in this situation)
-the code below somewhere in your application. Either as a separate file in the project 
-or just in the same file as the problem code. 
+the code below somewhere in your application. Either as a separate file in the project
+or just in the same file as the problem code.
 
 Then you can add characterisation or specific scenario tests to the class (here using a simulation of MsTest).
 
@@ -111,9 +109,8 @@ Then you can add characterisation or specific scenario tests to the class (here 
 
 {% endhighlight %}
 
-Then, before any other code is loaded, you can make a call to the inplace test runner from 
+Then, before any other code is loaded, you can make a call to the inplace test runner from
 your "main" method like this :
-
 
 {% highlight "csharp" %}
 

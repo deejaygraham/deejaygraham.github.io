@@ -2,32 +2,32 @@
 permalink: 2015/10/26/sketchnoting-at-dddnorth-2015/
 layout: post
 title: Sketchnoting at DDDNorth 2015
-published: true 
-tags: [ presentations, sketchnotes  ]
+published: true
+tags: [presentations, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 
 <img src="/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.webp" class="u-max-full-width" alt="DDD North" />
 
-This year's [Developer Developer Developer North conference](http://www.dddnorth.co.uk) ran on the 24th 
-of October 2015. I was speaking there for the first time and chose [sketchnoting for developers](http://deejaygraham.github.io/sketchnoting-for-developers) 
-as my topic. At [Richard Dalton](http://twitter.com/richardadalton)'s suggestion, the organizers put my 
-talk right at the start of the conference so delegates would get the chance to try out their new skills 
-for rest of the day. 
+This year's [Developer Developer Developer North conference](http://www.dddnorth.co.uk) ran on the 24th
+of October 2015. I was speaking there for the first time and chose [sketchnoting for developers](http://deejaygraham.github.io/sketchnoting-for-developers)
+as my topic. At [Richard Dalton](http://twitter.com/richardadalton)'s suggestion, the organizers put my
+talk right at the start of the conference so delegates would get the chance to try out their new skills
+for rest of the day.
 
-![agenda](/img/posts/sketchnoting-at-dddnorth-2015/agenda.webp "Agenda") 
+![agenda](/img/posts/sketchnoting-at-dddnorth-2015/agenda.webp "Agenda")
 
-I pitched this talk for all developers regardless of drawing ability so I thought it would be fun to encourage 
-everyone at the talk to try it out at at least once. 
+I pitched this talk for all developers regardless of drawing ability so I thought it would be fun to encourage
+everyone at the talk to try it out at at least once.
 
-![abstract](/img/posts/sketchnoting-at-dddnorth-2015/abstract.webp "Abstract") 
+![abstract](/img/posts/sketchnoting-at-dddnorth-2015/abstract.webp "Abstract")
 
-A few weeks before, Mike Rohde had offered me a copy of the 
-Sketchnote Handbook to give away so I set up a challenge at the end of my talk. The challenge was to sketchnote any 
-talk during the conference and tweet a picture of it with the *#dddnorth* hashtag, I would then pick one at random 
+A few weeks before, Mike Rohde had offered me a copy of the
+Sketchnote Handbook to give away so I set up a challenge at the end of my talk. The challenge was to sketchnote any
+talk during the conference and tweet a picture of it with the _#dddnorth_ hashtag, I would then pick one at random
 to win the book. Here are the submissions we had:
-      
+
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sketchnotingwith <a href="https://twitter.com/deejaygraham">@deejaygraham</a> at <a href="https://twitter.com/hashtag/dddnorth?src=hash">#dddnorth</a> <a href="https://t.co/LwAVCGRVKi">pic.twitter.com/LwAVCGRVKi</a></p>&mdash; Simon Harriyott(@harriyott) <a href="https://twitter.com/harriyott/status/657851723357278208">October 24, 2015</a></blockquote> <script asyncsrc="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	  
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/deejaygraham">@deejaygraham</a> My Sketchnoteof your session <a href="https://twitter.com/hashtag/DDDNorth?src=hash">#DDDNorth</a> <a href="https://twitter.com/hashtag/DDDSage?src=hash">#DDDSage</a> <a href="https://twitter.com/DDDNorth">@DDDNorth</a> Sketchnotingfor Developers <a href="https://t.co/5A760MIbR4">pic.twitter.com/5A760MIbR4</a></p>&mdash; Bill Beckett (@billybeckett) <a href="https://twitter.com/billybeckett/status/657852151734120448">October 24, 2015</a></blockquote> <script asyncsrc="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -42,7 +42,7 @@ to win the book. Here are the submissions we had:
  
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/deejaygraham">@deejaygraham</a> Started adding a few sketches into my text notes as the talk went on. <a href="https://twitter.com/hashtag/dddnorth?src=hash">#dddnorth</a> <a href="https://twitter.com/hashtag/3sqdddnorth?src=hash">#3sqdddnorth</a> <a href="https://t.co/cuHJI7IBtS">pic.twitter.com/cuHJI7IBtS</a></p>&mdash; Luke Stringer (@lukestringer90) <a href="https://twitter.com/lukestringer90/status/657876591570194432">October 24, 2015</a></blockquote> <script asyncsrc="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/dddnorth?src=hash">#dddnorth</a> <a href="https://twitter.com/hashtag/sketchnote?src=hash">#sketchnote</a> why service architecture Matters 1st sketch note attempt <a href="https://t.co/FlWOcUtUL9">pic.twitter.com/FlWOcUtUL9</a></p>&mdash; laitang (@LaiTang) <a href="https://twitter.com/LaiTang/status/657877804835602432">October 24, 2015</a></blockquote> <script asyncsrc="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/dddnorth?src=hash">#dddnorth</a> <a href="https://twitter.com/hashtag/sketchnote?src=hash">#sketchnote</a> why service architecture Matters 1st sketch note attempt <a href="https://t.co/FlWOcUtUL9">pic.twitter.com/FlWOcUtUL9</a></p>&mdash; laitang (@LaiTang) <a href="https://twitter.com/LaiTang/status/657877804835602432">October 24, 2015</a></blockquote> <script asyncsrc="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/DDDNorth">@dddnorth</a> <a href="https://twitter.com/hashtag/sketchnoting?src=hash">#sketchnoting</a> <a href="https://t.co/8aFng2fkEt">pic.twitter.com/8aFng2fkEt</a></p>&mdash; Matt Ferron (@Matt_Ferron) <a href="https://twitter.com/Matt_Ferron/status/657869024022392832">October 24, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -60,16 +60,16 @@ to win the book. Here are the submissions we had:
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/deejaygraham">@deejaygraham</a> I&#39;ve been having a go at sketchnotingafter your talk - here&#39;s your talk, and <a href="https://twitter.com/garyshort">@garyshort</a>&#39;s <a href="https://twitter.com/hashtag/dddnorth?src=hash">#dddnorth</a> <a href="https://t.co/Khnex5JvHQ">pic.twitter.com/Khnex5JvHQ</a></p>&mdash; Ian Oxley (@ianoxley) <a href="https://twitter.com/ianoxley/status/657938854230536192">October 24, 2015</a></blockquote> <script asyncsrc="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I picked one at random and it was [Luke Stringer](https://twitter.com/lukestringer90)'s tweet that won. 
+I picked one at random and it was [Luke Stringer](https://twitter.com/lukestringer90)'s tweet that won.
 
 ![Luke with his prize](/img/posts/sketchnoting-at-dddnorth-2015/luke-stringer.webp "Luke with his prize")
- 
-Thanks to [Mike Rohde](http://rohdesign.com/) and the good folk at [Pearson Education](http://www.pearsoned.co.uk/) for the book and to 
-[Andrew Westgarth and the whole DDDNorth team](http://wwww.dddnorth.co.uk/) for 
-another excellent conference. Thanks also to [Jeannel King](https://twitter.com/jeannelking), 
-[Nadine Rossa](https://twitter.com/nadrosia) and all the sketchnoters who gave permission to include 
+
+Thanks to [Mike Rohde](http://rohdesign.com/) and the good folk at [Pearson Education](http://www.pearsoned.co.uk/) for the book and to
+[Andrew Westgarth and the whole DDDNorth team](http://wwww.dddnorth.co.uk/) for
+another excellent conference. Thanks also to [Jeannel King](https://twitter.com/jeannelking),
+[Nadine Rossa](https://twitter.com/nadrosia) and all the sketchnoters who gave permission to include
 examples of their work in my talk.
-  
+
 ### Update
 
 The story was featured at [Sketchnote Army](http://sketchnotearmy.com/blog/2015/10/30/sketchnoting-at-dddnorth-2015-derek-graham.html) :)

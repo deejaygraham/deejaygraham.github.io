@@ -3,12 +3,11 @@ permalink: 2016/10/04/rock-paper-microbit/
 layout: post
 title: Rock, Paper, Microbit
 published: true
-tags: [ code, microbit ]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
 ---
-
 
 I saw a tweet from <a href="https://twitter.com/TechForLifeUK/">@TechForLifeUK</a> the other day
 which said they were going to run a code dojo where they would be writing the game of rock, paper,
@@ -39,7 +38,7 @@ I have a background in creating icons for Windows application but even that is n
 is constrained to a 5 x 5 LED grid.
 
 Eventually I settled on an oval shape to represent the rock, a document
-kind of icon to represent paper, and an extremely rough approximation of a pair of scissors.  
+kind of icon to represent paper, and an extremely rough approximation of a pair of scissors.
 
 ![scissors](/img/posts/rock-paper-microbit/rps-scissors.webp)
 
@@ -53,10 +52,10 @@ by lighting up the edges of the grid and leaving the inside of the grid dark. Li
 {% endhighlight %}
 
 Image("99999:"
-      "90009:"
-      "90009:"
-      "90009:"
-      "99999")
+"90009:"
+"90009:"
+"90009:"
+"99999")
 
 {% endhighlight %}
 
@@ -66,7 +65,6 @@ To provide a little bit of a clue to what the player can expect, I cycle through
 at the start of the game using display.show with the list of images.
 
 Here's the finished code:
-
 
 {% highlight "python" %}
 

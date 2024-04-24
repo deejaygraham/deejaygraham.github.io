@@ -3,13 +3,13 @@ permalink: 2018/08/13/slow-down-squirrels/
 layout: post
 title: Slow Down, Red Squirrels
 published: true
-tags: [ agile, code, signs ]
+tags: [agile, code, signs]
 ---
 
-Another in the continuing series of requests for slowness. 
+Another in the continuing series of requests for slowness.
 
 Someone clearly thought that the original sign was both not polite enough and not
-specific enough about where you would expect to find the squirrels. 
+specific enough about where you would expect to find the squirrels.
 
 ![please slow down](/img/posts/slow-down-red-squirrels/red-squirrels-ont-road.webp)
 

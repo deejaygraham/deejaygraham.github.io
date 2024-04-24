@@ -2,7 +2,7 @@
 permalink: 2020/04/03/high-performance-react-sketchnote/
 layout: sketchnote
 title: Building High Performance React Applications
-tags: [ sketchnotes, presentations ]
+tags: [sketchnotes, presentations]
 tweetable: true
 thumbnail: "/img/posts/high-performance-react-sketchnote/thumbnail-420x255.webp"
 sketchnote:
@@ -13,8 +13,7 @@ sketchnote:
     url: "https://youtu.be/xJYOipHkwNM"
   event:
     name: "Node + JS Interactive"
-  speaker: 
+  speaker:
     name: "Joe Karlsson"
     url: "https://twitter.com/joekarlsson1"
 ---
-

@@ -4,7 +4,7 @@ layout: quotation
 title: Individual Heroics
 publication: anon
 published: true
-tags: [ quote ]
+tags: [quote]
 size: large
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

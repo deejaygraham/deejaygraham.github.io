@@ -3,7 +3,7 @@ permalink: 2016/06/14/playing-with-sonic-pi/
 layout: post
 title: Playing with Sonic Pi
 published: true
-tags: [ raspberry-pi, music  ]
+tags: [raspberry-pi, music]
 ---
 
 There are several ways to play notes using sonic pi, not all of them obvious from the
@@ -11,8 +11,8 @@ start.
 
 ### Single Notes
 
-Single notes are played using the *play* function but the arguments can be formulated in a
-couple of different ways.  
+Single notes are played using the _play_ function but the arguments can be formulated in a
+couple of different ways.
 
 First, there's the obvious one, found in all the tutorials, where you define the note to play
 using an integer value:
@@ -35,14 +35,14 @@ flats use a 'b'.
     sleep 0.5
 
 Finally, especially if you are delving into algorithmic composition, you can play with a note
-value defined in a variable:    
+value defined in a variable:
 
     middle_c = 60
 
     play middle_c
     sleep 0.5
 
-### Sequences    
+### Sequences
 
 Sequences of single notes are played using play_pattern or play_pattern_timed. If you are using
 a specific tempo, you can use play_timed to play a sequence of notes using the current tempo. The
@@ -52,7 +52,6 @@ notes are written as a comma delimited list:
 
 If you prefer to explicitly specify timing, you can use play_pattern_timed and give individual
 delays between each pair of notes. Playing these two notes one after another:
-
 
     play 60
     sleep 0.5
@@ -68,7 +67,7 @@ If the delay between notes is the same we can shorten it to:
     play_pattern_timed [60, 65], 0.5
 
 We can also cycle the timing between values in the timing list by providing fewer timing values
-than note values.  
+than note values.
 
     play_pattern_timed [60, 65, 60, 62], [0.5, 0.2]
 
@@ -76,7 +75,7 @@ will alternate between delays of 0.5 and 0.2 seconds for each pair of notes. Usi
 makes the code more readable, you can keep related groups of notes together rather than long
 passages of single play/sleep pairs.
 
-### Chords  
+### Chords
 
 A chord is a collection of notes played at the same time. Because it is a collection, sonic pi
 uses the same list notation that the play_pattern function used:

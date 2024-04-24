@@ -6,10 +6,10 @@ title: Our Greatest Asset
 published: true
 attribution: Bob Marshall
 publication:
-tags: [ quote ]
+tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 
-People are NOT our greatest asset. In collaborative knowledge work particularly, 
+People are NOT our greatest asset. In collaborative knowledge work particularly,
 it is the relationships BETWEEN people that are our greatest asset.

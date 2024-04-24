@@ -3,7 +3,7 @@ permalink: 2014/07/02/perils-of-the-anti-agile-mindset/
 layout: post
 title: Perils of the Anti-Agile Mindset
 published: true
-tags: [ agile, illustration ]
+tags: [agile, illustration]
 hero: agile
 ---
 

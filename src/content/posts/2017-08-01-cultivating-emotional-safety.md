@@ -2,7 +2,7 @@
 permalink: 2017/08/01/cultivating-emotional-safety/
 layout: sketchnote
 title: Cultivating Emotional Safety
-tags: [ sketchnotes, presentations, agile  ]
+tags: [sketchnotes, presentations, agile]
 tweetable: true
 thumbnail: "/img/posts/cultivating-emotional-safety/cultivating-emotional-safety.webp"
 sketchnote:

@@ -2,7 +2,7 @@
 permalink: 2021/03/08/catalytic-skills-for-developers/
 layout: sketchnote
 title: Catalytic Skills for Developers
-tags: [ sketchnotes, presentations ]
+tags: [sketchnotes, presentations]
 tweetable: true
 thumbnail: "/img/posts/catalytic-skills-for-developers/thumbnail-420x255.webp"
 sketchnote:
@@ -12,8 +12,7 @@ sketchnote:
     name: "Catalytic Skills for Developers"
   event:
     name: "Pluralsight LIVE 2018"
-  speaker: 
+  speaker:
     name: "April Wensel"
     url: "https://twitter.com/aprilwensel"
 ---
-

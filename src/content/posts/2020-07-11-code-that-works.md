@@ -5,10 +5,10 @@ size: large
 title: Code That Works
 published: true
 attribution: Kent Beck
-tags: [ quote ]
+tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 
-I get paid for code that works, not for tests, so my philosophy is to 
+I get paid for code that works, not for tests, so my philosophy is to
 test as little as possible to reach a given level of confidence.

@@ -3,8 +3,8 @@ permalink: 2016/12/04/hello-minecraft/
 layout: post
 title: Hello, Minecraft
 published: true
-tags: [ code, minecraft ]
-hero: minecraft 
+tags: [code, minecraft]
+hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---
@@ -13,7 +13,6 @@ I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifi
 writing some code to do some building using the Python interface.
 
 ![boot](/img/posts/hello--minecraft/boot-sequence.webp)
-
 
 ### For Older Installations...
 
@@ -47,7 +46,7 @@ tar -zxvf minecraft-pi-0.1.1.tar.gz
 
 {% endhighlight %}
 
-This will create an *mcpi* (minecraft pi) sub-folder. If you cd into this folder you can
+This will create an _mcpi_ (minecraft pi) sub-folder. If you cd into this folder you can
 start a minecraft session by typing:
 
 {% endhighlight %}
@@ -59,25 +58,23 @@ start a minecraft session by typing:
 Newer Pi images have a desktop shortcut or menu item so you can start Minecraft directly
 from the UI.
 
-
 ### Navigation
 
 Navigating in minecraft isn't totally obvious. Here are the default keybindings:
 
-Command | Action
-------- | ------
-**W** | Move forward
-**A** | Move left
-**S** | Move backwards
-**D** | Move right
-**E** | Show block inventory
-**ESC** | Pause/Menu
-**1-8** | Select items in the quick-bar
-**Left Click** | Destroy block
-**Right Click** | Place block
-**Space bar** | Jump
-**Tab** | Release mouse
-
+| Command         | Action                        |
+| --------------- | ----------------------------- |
+| **W**           | Move forward                  |
+| **A**           | Move left                     |
+| **S**           | Move backwards                |
+| **D**           | Move right                    |
+| **E**           | Show block inventory          |
+| **ESC**         | Pause/Menu                    |
+| **1-8**         | Select items in the quick-bar |
+| **Left Click**  | Destroy block                 |
+| **Right Click** | Place block                   |
+| **Space bar**   | Jump                          |
+| **Tab**         | Release mouse                 |
 
 ### Python
 
@@ -88,7 +85,7 @@ you can run a script from any folder and it will work.
 
 {% endhighlight %}
 
-cp -r ~/mcpi/api/python/* .
+cp -r ~/mcpi/api/python/\* .
 
 {% endhighlight %}
 

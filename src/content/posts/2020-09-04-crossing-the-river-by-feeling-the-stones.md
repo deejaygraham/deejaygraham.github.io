@@ -1,12 +1,12 @@
 ---
 permalink: 2020/09/04/crossing-the-river-by-feeling-the-stones/
 layout: post
-title:  Crossing the River by Feeling the Stones
+title: Crossing the River by Feeling the Stones
 published: true
 tags: [video, presentations]
 thumbnail: /img/posts/crossing-the-river-by-feeling-the-stones/thumbnail-420x255.webp
 alttext: Simon Wardley
---- 
+---
 
 Simon Wardley on the evolution of Wardley maps with examples.
 

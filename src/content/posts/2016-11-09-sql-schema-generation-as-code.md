@@ -3,7 +3,7 @@ permalink: 2016/11/09/sql-schema-generation-as-code/
 layout: post
 title: SQL Schema Generation as Code
 published: true
-tags: [ cloud, powershell  ]
+tags: [cloud, powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
@@ -18,7 +18,7 @@ you shouldn't have.
 
 Plus the bug in a lot of versions of SQL server that means that the order that the tables are
 scripted in is entirely random so that seeing changes between one version and the other is
-all but impossible.  
+all but impossible.
 
 What we'd really like is a repeatable, source-controllable means of creating a database schema...? Well, I'm
 glad you asked. Here's a script to do just that :)

@@ -3,7 +3,7 @@ permalink: 2019/06/08/balanced-parens-kata/
 layout: post
 title: Balanced Parentheses Kata
 published: true
-tags: [ code, deliberate-practice, tdd ]
+tags: [code, deliberate-practice, tdd]
 ---
 
 Here's a quick solution to the balanced parentheses kata. The problem statement is:
@@ -27,13 +27,13 @@ For example:
 {()}[[{}]] is balanced
 
 {% endraw %}
-</pre>   
+</pre>
 
-In a recent dojo we did some investigation of this, trying to find the best way to model the inner set of parentheses, maybe 
-how to split the string and compare front and back halves, how to count the number of opening and closing but it struck me 
-that we can model it very well by using a stack metaphor. When we open a parenthesis we push it onto the stack and when we 
-close one we should have seen a matching open otherwise we consider it unbalanced. We know we have a balance at the end of the 
-function if the stack is empty - that is, we have popped as many closing parentheses as we have pushed opening ones. 
+In a recent dojo we did some investigation of this, trying to find the best way to model the inner set of parentheses, maybe
+how to split the string and compare front and back halves, how to count the number of opening and closing but it struck me
+that we can model it very well by using a stack metaphor. When we open a parenthesis we push it onto the stack and when we
+close one we should have seen a matching open otherwise we consider it unbalanced. We know we have a balance at the end of the
+function if the stack is empty - that is, we have popped as many closing parentheses as we have pushed opening ones.
 
 ### Code
 
@@ -45,8 +45,7 @@ First pass looked like this with lots of repeated code in brace comparisons:
 
 {% endhighlight %}
 
-We can also neatly match up opening and closing pairs by using a dictionary. 
-
+We can also neatly match up opening and closing pairs by using a dictionary.
 
 {% highlight "python" %}
 
@@ -54,10 +53,9 @@ We can also neatly match up opening and closing pairs by using a dictionary.
 
 {% endhighlight %}
 
-If we find a closing character, we look at the previous 
-paren and look up what we think should be the matching closing character and compare it to the one we have just read. If they 
-don't match, that's an unbalanced case. 
-
+If we find a closing character, we look at the previous
+paren and look up what we think should be the matching closing character and compare it to the one we have just read. If they
+don't match, that's an unbalanced case.
 
 ### Unit Tests
 

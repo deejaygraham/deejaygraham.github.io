@@ -5,8 +5,8 @@ size: large
 title: Every Pirate
 published: true
 attribution: Cory Doctorow
-publication: 
-tags: [ quote ]
+publication:
+tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

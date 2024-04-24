@@ -3,11 +3,11 @@ permalink: 2014/04/28/string-calculator-kata/
 layout: post
 title: String Calculator Kata
 published: true
-tags: [ tdd, deliberate-practice ]
+tags: [tdd, deliberate-practice]
 ---
 
-Here's a sample solution for the String Calculator Kata that I'm using with 
-<a href="http://cyber-dojo.com" alt="link to cyber dojo">cyber-dojo</a>, 
+Here's a sample solution for the String Calculator Kata that I'm using with
+<a href="http://cyber-dojo.com" alt="link to cyber dojo">cyber-dojo</a>,
 in C# using NUnit as the test framework.
 
 {% highlight "csharp" %}

@@ -11,18 +11,18 @@ alttext: screenshot
 Working with WebAPI in .net, I was writing some client-focussed tests that meant I was unable/unwilling to use the standard
 testing tool we all know and love - Postman - and instead needed to run NUnit against the API all on the local dev machine.
 
-Because it was all on the one machine, I had an authenticaton scheme setup in IIS so that local windows users could connect 
-without having to use access tokens etc. This was for development only and I was focussed on the API behaviour rather than on 
+Because it was all on the one machine, I had an authenticaton scheme setup in IIS so that local windows users could connect
+without having to use access tokens etc. This was for development only and I was focussed on the API behaviour rather than on
 the security of the API, that would be swapped back in later for the "real" build.
 
-That still left the issue of authenticating as the current user without getting a 401 and without having to hard code user 
-credentials in the code or in a config file. Happily HttpClient allows for this using the Handler chaining mechanism. 
+That still left the issue of authenticating as the current user without getting a 401 and without having to hard code user
+credentials in the code or in a config file. Happily HttpClient allows for this using the Handler chaining mechanism.
 
 {% highlight "csharp" %}
 
 class LocalAPIClient
 {
-    private readonly HttpClient _client;
+private readonly HttpClient \_client;
 
     public LocalAPIClient()
     {
@@ -47,6 +47,7 @@ class LocalAPIClient
 
         // stuff
     }
+
 }
 
 {% endhighlight %}

@@ -2,7 +2,7 @@
 permalink: 2017/05/12/a-tiny-introduction-to-python-unit-testing/
 layout: post
 title: A tiny introduction to Python unit testing
-tags: [ code, python, tdd ]
+tags: [code, python, tdd]
 published: true
 ---
 
@@ -26,7 +26,7 @@ before and after each test.
 As you might expect from xUnit frameworks, assertions are the way to test your code. unittest
 provides some nicely familiar <code>assertEqual</code>, <code>assertNotEqual</code>,
 <code>assertTrue</code>, <code>assertFalse</code> among others. Be careful to use
-self.assert* to make sure that python knows which function you are invoking, otherwise
+self.assert\* to make sure that python knows which function you are invoking, otherwise
 you will get see something like:
 
 {% endhighlight %}
@@ -37,7 +37,6 @@ NameError: global name 'assertEqual' is not defined
 
 and your unit test will be failing for the wrong reason.
 
-
 ### Code
 
 {% endhighlight %}
@@ -45,20 +44,19 @@ and your unit test will be failing for the wrong reason.
 import unittest
 
 # All these tests will fail !
+
 class TestMyCode(unittest.TestCase):
 
-  def test_jimi_hendrix_lyrics(self):
+def test_jimi_hendrix_lyrics(self):
 
     self.assertNotEqual(6, 9)
     self.assertEqual(6, 9)
 
-
-  def test_black_is_white(self):
+def test_black_is_white(self):
 
     self.assertTrue('black' == 'white')
 
-
-  def test_up_is_down(self):
+def test_up_is_down(self):
 
     self.assertFalse('up' != 'down')
 

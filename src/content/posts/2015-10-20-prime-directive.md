@@ -6,12 +6,12 @@ attribution: Norm Kerth
 publication: Project Retrospectives - A Handbook for Team Review
 published: true
 size: medium
-tags: [ agile, quote ]
+tags: [agile, quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 
-Regardless of what we discover, we understand and truly believe 
-that everyone did the best job they could, given what they knew 
-at the time, their skills and abilities, the resources available, 
+Regardless of what we discover, we understand and truly believe
+that everyone did the best job they could, given what they knew
+at the time, their skills and abilities, the resources available,
 and the situation at hand.

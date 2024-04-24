@@ -1,53 +1,51 @@
 /// <reference types="cypress" />
 
-describe('deployed site', () => {
-
-    context('images', () => {
-        it('contains favicon', () => {
-            cy.request('/favicon.ico');
-        });
-    
-        it('contains avatar images', () => {
-            cy.request('/img/avatar.jpg');
-            cy.request('/img/avatar.png');
-        });
-    
-        it('contains hero images', () => {
-            cy.request('/img/heroes/hero-secret-harbour.jpg');
-            cy.request('/img/heroes/makers-and-creators.jpg');
-        });
+describe("deployed site", () => {
+  context("images", () => {
+    it("contains favicon", () => {
+      cy.request("/favicon.ico");
     });
 
-    context('javascript', () => {
-        it('contains search scripts', () => {
-            cy.request('/js/search.js');
-            cy.request('/js/lunr.js');
-        });
+    it("contains avatar images", () => {
+      cy.request("/img/avatar.jpg");
+      cy.request("/img/avatar.png");
     });
 
-    context('fonts', () => {
-        it('contains fontawesome font', () => {
-            cy.request('/webfonts/fa-regular-400.woff');
-        });
+    it("contains hero images", () => {
+      cy.request("/img/heroes/hero-secret-harbour.jpg");
+      cy.request("/img/heroes/makers-and-creators.jpg");
     });
+  });
 
-    context('feeds', () => {
-        it('contains xml feeds', () => {
-            cy.request('/rss.xml');
-            cy.request('/atom.xml');
-        });
+  context("javascript", () => {
+    it("contains search scripts", () => {
+      cy.request("/js/search.js");
+      cy.request("/js/lunr.js");
     });
+  });
 
-    context('stylesheets', () => {
-        it('contains css', () => {
-            cy.request('/css/site.css');
-        });
+  context("fonts", () => {
+    it("contains fontawesome font", () => {
+      cy.request("/webfonts/fa-regular-400.woff");
     });
+  });
 
-    context('downloads', () => {
-        it('contains download for ndifference installer', () => {
-            cy.request('/downloads/ndifference/NDifference.0.0.0.1.Installer.msi');
-        });
+  context("feeds", () => {
+    it("contains xml feeds", () => {
+      cy.request("/rss.xml");
+      cy.request("/atom.xml");
     });
+  });
+
+  context("stylesheets", () => {
+    it("contains css", () => {
+      cy.request("/css/site.css");
+    });
+  });
+
+  context("downloads", () => {
+    it("contains download for ndifference installer", () => {
+      cy.request("/downloads/ndifference/NDifference.0.0.0.1.Installer.msi");
+    });
+  });
 });
-  

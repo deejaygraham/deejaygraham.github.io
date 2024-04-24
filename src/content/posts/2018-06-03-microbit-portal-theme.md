@@ -2,7 +2,7 @@
 permalink: 2018/06/03/microbit-portal-theme/
 layout: post
 title: Portal Theme on Microbit
-tags: [ code, microbit ]
+tags: [code, microbit]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
@@ -12,8 +12,7 @@ alttext: microbit sorting hat
 One feature of the microbit I haven't explored too much in the past was the
 music module. This module lets you play simple tunes using a dsl for pitches, octaves and durations (and, of course, rests). You can read the details of the API <a href="https://microbit-micropython.readthedocs.io/en/latest/music.html">here</a>.
 
-I thought it would be fun to write a program to play <a href="https://www.jonathancoulton.com/">Jonathan Coulton's</a> end theme from the game <a href="https://en.wikipedia.org/wiki/Portal_(video_game)">Portal</a>.  
-
+I thought it would be fun to write a program to play <a href="https://www.jonathancoulton.com/">Jonathan Coulton's</a> end theme from the game <a href="https://en.wikipedia.org/wiki/Portal_(video_game)">Portal</a>.
 
 {% highlight "python" %}
 

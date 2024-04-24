@@ -2,11 +2,10 @@
 permalink: 2018/09/05/powershell-so-you-dont-have-to/
 layout: post
 title: 12 Things that Powershell can do (so you don't have to)
-tags: [ presentations ]
+tags: [presentations]
 published: false
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
-
 ---
 
 12 Things that Powershell can do (so you don't have to)
@@ -15,9 +14,9 @@ Refactoring powershell to delete code.
 Garbage in, Garbage out
 
 1. CmdLetBinding
-Write-Verbose
-Write-Debug
-Write-error
+   Write-Verbose
+   Write-Debug
+   Write-error
 
 Write-Host
 Write-Output
@@ -31,7 +30,7 @@ Write-Output
 5. Parameter validation ValidateNotNullOrEmpty()]
 
 6. Validation Set ["Prod", "Staging", "Dev"]
-Validation script
+   Validation script
 
 7. Write Output Objects
 
@@ -44,10 +43,9 @@ Validation script
 11. Execution of script, function or command line tool & - not using strings
 
 12. External functions - psm1 or ps1
-Easy imports - dot sourcing
+    Easy imports - dot sourcing
 
 13 Test - Pester to test your code.
-
 
 Import from dll.
 

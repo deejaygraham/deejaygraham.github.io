@@ -3,7 +3,7 @@ permalink: 2017/10/26/generating-checksums-in-powershell/
 layout: post
 title: Generating Checksums in PowerShell
 published: true
-tags: [ powershell ]
+tags: [powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
@@ -25,4 +25,4 @@ Get-FileHash returns an object containing the path, the hash algorithm and the a
 value. Since I'm only really interested in the value and saving it alongside the
 original source, I use Select to only write the hash property to the file. This is a
 little more elegant and, more importantly, doesn't reveal the full path of where the
-command was run (which may be deep in a development source stack or on a build server). 
+command was run (which may be deep in a development source stack or on a build server).

@@ -8,13 +8,13 @@ thumbnail: /img/posts/how-to-paint-the-mona-lisa/mona-lisa-420x255.webp
 alttext: screenshot
 ---
 
-Continuing on with intro to coding, I wanted to show some randomisation related to an identifiable image. The Mona Lisa is supposed to be one of the most well 
-recognized pieces of western art so I thought that might be a good place to begin. 
+Continuing on with intro to coding, I wanted to show some randomisation related to an identifiable image. The Mona Lisa is supposed to be one of the most well
+recognized pieces of western art so I thought that might be a good place to begin.
 
 ![original](/img/posts/how-to-paint-the-mona-lisa/mona-lisa.webp)
 
-This version was the first result from my image search which happened to be small but still recognisable with enough detail. All the way through this set of exercises, 
-we won't be drawing the original image, we will always have it memory as a reference and paint onto the screen a modified represenation. 
+This version was the first result from my image search which happened to be small but still recognisable with enough detail. All the way through this set of exercises,
+we won't be drawing the original image, we will always have it memory as a reference and paint onto the screen a modified represenation.
 
 ### No Functions
 
@@ -28,11 +28,10 @@ Note: Before getting into the rest of the is post, the no-function version of th
 
 Once the shapes are worked out, we can change up the size of pixels and change the shape of the pixels to circles or triangles. This also helps with understanding what happens with the structure of the code.
 
-
 ### Flipping Marvellous
 
-An entertaining further step to take before we start "destroying" the image, is to flip the image around by changing where we sample from in the image. If we keep the loop the same but sample from the right side of the image working towards the left, we can flip the image along the vertical axis. 
-If we read from the bottom upwards we can flip the image along the horizontal axis and make it upside down. If we do both, we can reverse the image on both axes. 
+An entertaining further step to take before we start "destroying" the image, is to flip the image around by changing where we sample from in the image. If we keep the loop the same but sample from the right side of the image working towards the left, we can flip the image along the vertical axis.
+If we read from the bottom upwards we can flip the image along the horizontal axis and make it upside down. If we do both, we can reverse the image on both axes.
 
 {% highlight "python" %}
 
@@ -42,12 +41,10 @@ If we read from the bottom upwards we can flip the image along the horizontal ax
 
 Ta-da, an original/fake artwork. Now to the function-based version
 
+### Loading ...
 
-### Loading ... 
-
-First, we'll use processing to load the image into memory (remembering to copy the original image into the sketch folder). We also set the background to be white and make sure 
-that noStroke is called so that we don't draw any boxes around our pixels. 
-
+First, we'll use processing to load the image into memory (remembering to copy the original image into the sketch folder). We also set the background to be white and make sure
+that noStroke is called so that we don't draw any boxes around our pixels.
 
 {% highlight "python" %}
 
@@ -57,10 +54,9 @@ that noStroke is called so that we don't draw any boxes around our pixels.
 
 At this point we don't expect to see anything on the screen at all if we press "run".
 
-
 ### Random Pixels
 
-Next, we'd like to fill in the picture bit by bit by sampling the original image at random locations and 
+Next, we'd like to fill in the picture bit by bit by sampling the original image at random locations and
 painting some larger squares using the colour of the pixel at those random locations.
 
 {% highlight "python" %}
@@ -71,29 +67,27 @@ painting some larger squares using the colour of the pixel at those random locat
 
 ![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-1.webp)
 
-
-The familiar image gradually appears as we let the process progress. 
+The familiar image gradually appears as we let the process progress.
 
 ![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-2.webp)
 
-I found making the pixel size 10 to be a good compromise between fidelity to the 
-original image and speed of the image appearing from what looks like random noise to begin with. 
+I found making the pixel size 10 to be a good compromise between fidelity to the
+original image and speed of the image appearing from what looks like random noise to begin with.
 
 ![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-3.webp)
 
-There is a sort of disturbing quality to the picture constantly fluctuating as the image is built and fills out, 
+There is a sort of disturbing quality to the picture constantly fluctuating as the image is built and fills out,
 particularly around the face and especially the eyes.
-
 
 ### Pixelation
 
 Another approach might be rendering the image all at once, without the random factor to it but keeping some aspects of pixelation to the image.
-We can then play with some other parts of the image. 
+We can then play with some other parts of the image.
 
-Sticking with the same setup function, we need to do something different when we are drawing and a different processing function. 
+Sticking with the same setup function, we need to do something different when we are drawing and a different processing function.
 
-This time, the processing function, pixelate, works across the image and down in rows, sampling a pixel and then filling a larger version of that pixel 
-in the screen image. 
+This time, the processing function, pixelate, works across the image and down in rows, sampling a pixel and then filling a larger version of that pixel
+in the screen image.
 
 {% highlight "python" %}
 
@@ -109,16 +103,14 @@ And without boxes:
 
 ![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-5.webp)
 
-I think both have interesting qualities but I think as you go down in resolution, then having boxes around each pixel makes for a less well defined image, even taking into 
+I think both have interesting qualities but I think as you go down in resolution, then having boxes around each pixel makes for a less well defined image, even taking into
 account the pixelation.
-
 
 ### Circles
 
 Of course, pixelation doesn't have to be restricted to squares, we can use circles if we want to by replacing the call to rect() with circle()
 
 ![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-6.webp)
-
 
 ### Offsets
 

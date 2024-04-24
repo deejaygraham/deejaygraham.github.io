@@ -1,7 +1,7 @@
 ---
 permalink: about/index.html
 layout: base.njk
-title: about 
+title: about
 hero: makers
 ---
 

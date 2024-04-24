@@ -1,7 +1,7 @@
 ---
 permalink: 2020/02/18/this-code-sucks/
 layout: post
-title:  This Code Sucks
+title: This Code Sucks
 published: true
 tags: [video, presentations]
 thumbnail: /img/posts/this-code-sucks/thumbnail-420x255.webp

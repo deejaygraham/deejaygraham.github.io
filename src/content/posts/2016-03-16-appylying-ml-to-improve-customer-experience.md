@@ -2,11 +2,11 @@
 permalink: 2016/03/16/appylying-ml-to-improve-customer-experience/
 layout: post
 title: Applying AML to Improve Customer Experience
-tags: [ code, presentations ]
+tags: [code, presentations]
 published: true
 ---
 
-Tonight, I'm doing a presentation at our local <a href="http://nebytes.net">NE Bytes</a> developer meetup on using 
+Tonight, I'm doing a presentation at our local <a href="http://nebytes.net">NE Bytes</a> developer meetup on using
 Machine Learning in Azure to improve customer experience. The talk abstract is below:
 
 <blockquote>
@@ -22,6 +22,5 @@ we'll look at an application of AML, in combination with other Azure services, t
 about customer behaviour and scale out to provide a better customer experience without breaking the bank.
 </blockquote>
 
-I have uploaded the slides to 
+I have uploaded the slides to
 <a target="_blank" href="https://www.slideshare.net/deejaygraham/adventures-in-azure-machine-learning-from-ne-bytes" rel="noreferrer">slideshare</a>.
-

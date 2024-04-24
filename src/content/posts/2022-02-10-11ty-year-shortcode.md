@@ -8,17 +8,17 @@ thumbnail: /img/thumbnails/eleventy-alt-420x255.png
 alttext: 11ty
 ---
 
-This is the tiniest [11ty](https://www.11ty.dev) shortcode I can come up with while gaining experience for all the 
+This is the tiniest [11ty](https://www.11ty.dev) shortcode I can come up with while gaining experience for all the
 potentially weird things I'm going to have to do for these new site migrations.
 
-Lots of places we need a copyright or something similar where we just need the current year when the page was generated. 
+Lots of places we need a copyright or something similar where we just need the current year when the page was generated.
 
-### _1tty/shortcodes/year.js 
+### \_1tty/shortcodes/year.js
 
 {% highlight "javascript" %}
 
 module.exports = function() {
-    return `${new Date().getFullYear()}`;
+return `${new Date().getFullYear()}`;
 }
 
 {% endhighlight %}

@@ -3,7 +3,7 @@ permalink: 2017/11/24/on-the-fly-custom-msbuild-task-template/
 layout: post
 title: On-the-fly MsBuild Task Template
 published: true
-tags: [ msbuild, code ]
+tags: [msbuild, code]
 ---
 
 I've written earlier about creating a custom MsBuild task in C# and building it into
@@ -34,7 +34,6 @@ Give it a name and fill in the basic boilerplate required by msbuild:
 
 Here I'm just writing to the msbuild log, use your imagination to do something more
 interesting;
-
 
 {% highlight "xml" %}
 

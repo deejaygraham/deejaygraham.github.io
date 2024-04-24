@@ -3,7 +3,7 @@ permalink: 2017/08/20/building-cpp-for-the-microbit/
 layout: post
 title: Building C++ for the BBC Micro:bit
 published: true
-tags: [ code, microbit ]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
@@ -24,7 +24,7 @@ is that it is an ARM-based machine and therefore a traditional language for low
 level systems programming like C (and C++) should be an appropriate alternative. Luckily,
 the [mbed compiler](https://developer.mbed.org/platforms/Microbit/) is an online
 C/C++ development environment which is free to use and officially  
-supports the BBC micro:bit as a platform.  
+supports the BBC micro:bit as a platform.
 
 ![mbed site](/img/posts/building-cpp-for-the-microbit/mbed-website.webp))
 
@@ -32,11 +32,11 @@ supports the BBC micro:bit as a platform.
 
 To get started:
 
-* [Create an account](https://developer.mbed.org/account/signup) on mbed.
-* Add the [microbit as a target](https://developer.mbed.org/platforms/Microbit/) to your
-mbed compiler.
-* Open the [compiler](https://developer.mbed.org/compiler/)
-* Notice that micro:bit is selected in the top right hand corner.
+- [Create an account](https://developer.mbed.org/account/signup) on mbed.
+- Add the [microbit as a target](https://developer.mbed.org/platforms/Microbit/) to your
+  mbed compiler.
+- Open the [compiler](https://developer.mbed.org/compiler/)
+- Notice that micro:bit is selected in the top right hand corner.
 
 ![compiler](/img/posts/building-cpp-for-the-microbit/mbed-compiler.webp)
 
@@ -47,11 +47,11 @@ pick the create new program option and fill in the details in the popup.
 
 ![new project](/img/posts/building-cpp-for-the-microbit/create-new-program.webp)
 
-* Confirm the platform is BBC micro:bit
-* Select a suitable template
-* Name the program
-* Click OK
-* Wait a few seconds while the project is created.
+- Confirm the platform is BBC micro:bit
+- Select a suitable template
+- Name the program
+- Click OK
+- Wait a few seconds while the project is created.
 
 You should now see something that will be familiar to most users of IDEs with project
 contents down the left hand side, current program source in the middle and an area
@@ -67,16 +67,16 @@ The generated main function looks like this...
 
 Before we go any further, here's a few things to note about this code.
 
-* An instance of the Microbit class is created outside of the *main* function.
-* First off in *main*, we need to initialise all the services on the microbit by calling
-the init method.
-* Pieces of functionality or components of the microbit are available as sub-objects
-of the MicroBit class so displaying a piece of scrolling text is done by calling the *scroll*
-method on the *display* object.
+- An instance of the Microbit class is created outside of the _main_ function.
+- First off in _main_, we need to initialise all the services on the microbit by calling
+  the init method.
+- Pieces of functionality or components of the microbit are available as sub-objects
+  of the MicroBit class so displaying a piece of scrolling text is done by calling the _scroll_
+  method on the _display_ object.
 
 ### More Fiber
 
-At the end of the code is the mysterious *release_fiber* call. Fibers are a lightweight
+At the end of the code is the mysterious _release_fiber_ call. Fibers are a lightweight
 equivalent to operating system threads (hence the name) that are used by the micro:bit runtime
 to allow asynchronous operation.
 
@@ -91,7 +91,6 @@ the main method from the currently running fibers managed by the micro:bit sched
 but the program doesn't end - event handlers etc. can still process messages happily in the background.
 If you omit the call, running off the end of the main method will actually kill the rest of the
 program and everything will stop.
-
 
 ### Building
 

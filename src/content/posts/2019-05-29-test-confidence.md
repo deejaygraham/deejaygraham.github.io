@@ -3,7 +3,7 @@ permalink: 2019/05/29/test-confidence/
 layout: quotation
 title: Test Confidence
 published: true
-tags: [ quote ]
+tags: [quote]
 size: large
 attribution: Ron Jeffries
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

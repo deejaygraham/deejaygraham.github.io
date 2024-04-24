@@ -3,7 +3,7 @@ permalink: 2017/09/01/a-bad-system/
 layout: post
 title: A Bad System...
 published: true
-tags: [ agile, illustration  ]
+tags: [agile, illustration]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

@@ -5,7 +5,7 @@ title: Making Animal Farm Great Again
 published: true
 ---
 
-Apropos of nothing, here's a splendid old, orangey pig standing proudly on his wall. A wall that separates him from all 
+Apropos of nothing, here's a splendid old, orangey pig standing proudly on his wall. A wall that separates him from all
 those bad hombres in the farmyard.
 
 ![pig](/img/posts/making-animal-farm-great-again/mafga.webp)

@@ -2,7 +2,7 @@
 permalink: 2017/11/12/blinkenlights/
 layout: post
 title: microbit Blinkenlights
-tags: [ code, microbit ]
+tags: [code, microbit]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
@@ -19,4 +19,4 @@ in the background - like it's broadcasting on radio.
 
 {% endhighlight %}
 
-It turns the centre pixel of the display on and off at a frequency decided by the polling interval. 
+It turns the centre pixel of the display on and off at a frequency decided by the polling interval.

@@ -5,7 +5,7 @@ size: large
 title: Feed the Children
 published: true
 attribution: Michael Parenti
-tags: [ quote ]
+tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

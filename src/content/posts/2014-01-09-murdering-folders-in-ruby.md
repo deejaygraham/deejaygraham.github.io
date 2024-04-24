@@ -3,12 +3,12 @@ permalink: 2014/01/09/murdering-folders-in-ruby/
 layout: post
 title: Murdering Folders. In Ruby
 published: true
-tags: [ ruby, code ]
+tags: [ruby, code]
 ---
 
-My mp3 player tends to accumulate sub-folders in my podcast folder as my 
-podcast app syncs with it and podcast episodes come and go. Rather than leave 
-them unoccupied and unloved, I use this script to "tidy them up". By killing them.   
+My mp3 player tends to accumulate sub-folders in my podcast folder as my
+podcast app syncs with it and podcast episodes come and go. Rather than leave
+them unoccupied and unloved, I use this script to "tidy them up". By killing them.
 
 {% highlight "ruby" %}
 

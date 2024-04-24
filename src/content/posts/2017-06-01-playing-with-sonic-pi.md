@@ -2,12 +2,11 @@
 permalink: 2017/06/01/playing-with-sonic-pi/
 layout: post
 title: Playing with Sonic Pi
-tags: [ code, music ]
+tags: [code, music]
 published: false
 ---
 
 I'm teaching some more 101 level programmer classes and this time we're looking at <a href="http://sonic-pi.net/">Sonic Pi</a> as an introduction to text-based languages after playing with the building blocks of <a href="http://scratch.mit.edu/">Scratch</a>. I chose Sonic Pi because of it's immediacy of interaction and fast feedback going from typing code to seeing (or hearing) a result.
-
 
 ## First Steps
 
@@ -34,7 +33,6 @@ Notes are processed top to bottom in order. Sleep puts a pause in the program of
 ## Columbo Moment
 
 One thing to mention before we go too far, as this is a text based language, spelling, case (upper and lower and mixed) and punctuation really matter. Things which are spelled differently really are different things to the computer, even if you didn't intend them to be different.
-
 
 ## Repeats
 

@@ -2,11 +2,11 @@
 permalink: 2019/04/10/estimating-complexity/
 layout: post
 title: Estimating Complexity
-published: true 
-tags: [ xp, agile ]
+published: true
+tags: [xp, agile]
 ---
 
-I really like (and find endlessly useful) <a href="https://twitter.com/lunivore">Liz Keogh's</a> scale for 
+I really like (and find endlessly useful) <a href="https://twitter.com/lunivore">Liz Keogh's</a> scale for
 <a href="https://lizkeogh.com/2013/07/21/estimating-complexity/">estimating complexity of work</a>.
 
 <ol>
@@ -17,6 +17,5 @@ I really like (and find endlessly useful) <a href="https://twitter.com/lunivore"
 <li>Nobody in the world has ever done this before. - Spike or experimentation needed</li>
 </ol>
 
-
-*JFDI - Just Flipping Do It. Something well understood that has no complexity or dependency on externality, 
+\*JFDI - Just Flipping Do It. Something well understood that has no complexity or dependency on externality,
 just needs the time to physically do it.

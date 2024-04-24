@@ -2,7 +2,7 @@
 permalink: 2016/10/28/tiny-asteroids-for-microbit/
 layout: post
 title: Tiny Asteroids for Microbit
-tags: [ code, microbit ]
+tags: [code, microbit]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
@@ -31,7 +31,7 @@ position at the top of the screen, travelling down the screen until the reach th
 Each time an asteroid reaches the bottom of the screen, a new one is generated at the top.
 
 The ship is represented as a fully bright dot in the centre at the bottom of the screen. The buttons
-*A* and *B* can be used to move the ship left and right to avoid the moving asteroids.
+_A_ and _B_ can be used to move the ship left and right to avoid the moving asteroids.
 
 ### Animation
 

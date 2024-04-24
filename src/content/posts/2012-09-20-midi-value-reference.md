@@ -3,11 +3,11 @@ permalink: 2012/09/20/midi-value-reference/
 layout: post
 title: Midi Value Reference
 published: true
-tags: [ music ]
+tags: [music]
 ---
 
-A quick post, mainly for me, because I always have trouble remembering or 
-finding the correct reference midi values for standard tuning on the 
+A quick post, mainly for me, because I always have trouble remembering or
+finding the correct reference midi values for standard tuning on the
 guitar or ukulele.
 
 I should know them off by heart by now.
@@ -35,5 +35,3 @@ I should know them off by heart by now.
 <tr><td>2</td><td>B</td><td>E4</td><td>52</td></tr>
 <tr><td>1</td><td>E</td><td>A4</td><td>57</td></tr>
 </table>
-
-

@@ -2,16 +2,15 @@
 permalink: 2022/06/08/group-membership-with-powershell/
 layout: post
 title: How to find AD group membership with PowerShell
-published: true 
-tags: [ powershell, code ] 
+published: true
+tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: logs
 ---
 
-A tiny snippet I always forget when swapping identities and using service accounts for things like IIS App Pools. The problem: given a user name how do I work 
+A tiny snippet I always forget when swapping identities and using service accounts for things like IIS App Pools. The problem: given a user name how do I work
 out which AD groups they belong to?
-
 
 ## Activate Active Directory
 
@@ -42,7 +41,6 @@ Get-ADPrincipalGroupMembership MyUser.Name | select name
 {% endhighlight %}
 
 Piping to Select name strips away the cruft we generally don't care about and gives us a nice list of the groups.
-
 
 ## Who Is In This Group?
 

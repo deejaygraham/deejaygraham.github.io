@@ -3,7 +3,7 @@ permalink: 2017/11/16/hofstadters-law/
 layout: quotation
 title: Hofstadter's Law
 published: true
-tags: [ agile, quote ]
+tags: [agile, quote]
 attribution: Douglas Hofstadter
 size: large
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

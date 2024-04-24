@@ -2,7 +2,7 @@
 permalink: 2017/02/20/how-to-crash-an-airplane/
 layout: sketchnote
 title: How to Crash an Airplane
-tags: [ sketchnotes, presentations, agile  ]
+tags: [sketchnotes, presentations, agile]
 tweetable: true
 thumbnail: "/img/posts/how-to-crash-an-airplane/how-to-crash-an-airplane.webp"
 sketchnote:

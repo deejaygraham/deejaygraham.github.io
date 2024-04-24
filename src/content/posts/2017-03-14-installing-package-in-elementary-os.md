@@ -3,7 +3,7 @@ permalink: 2017/03/14/installing-package-in-elementary-os/
 layout: post
 title: Installing .deb Packages in Elementary OS
 published: true
-tags: [ linux, elementary-os ]
+tags: [linux, elementary-os]
 ---
 
 I've been getting more and more frustrated with Windows 10 marketing features to me during
@@ -34,7 +34,7 @@ No? Ok, how about cracking open the terminal and the often popular <code>apt-get
 
 {% endhighlight %}
 
-  sudo apt-get install brave_0.13.5_amd64.deb
+sudo apt-get install brave_0.13.5_amd64.deb
 
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ No? Because it's a Debian package we have to use <code>gdebi</code>:
 
 {% endhighlight %}
 
-  sudo gdebi brave_0.13.5_amd64.deb
+sudo gdebi brave_0.13.5_amd64.deb
 
 {% endhighlight %}
 

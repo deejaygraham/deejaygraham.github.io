@@ -2,16 +2,15 @@
 permalink: 2018/11/01/linting-in-powershell/
 layout: post
 title: Linting in PowerShell
-published: true 
-tags: [ powershell ]
+published: true
+tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell
-
 ---
 
-Continuing the theme of C++ flavoured tools I miss, lint is another essential that doesn't appear to exist in the PowerShell world. Until I discovered ScriptAnalyzer which, 
-it seems, can do pretty much the same job for .ps1 files. Here I wrote a simple loop to check all files in the same directory. 
+Continuing the theme of C++ flavoured tools I miss, lint is another essential that doesn't appear to exist in the PowerShell world. Until I discovered ScriptAnalyzer which,
+it seems, can do pretty much the same job for .ps1 files. Here I wrote a simple loop to check all files in the same directory.
 
 {% highlight "powershell" %}
 
@@ -20,8 +19,8 @@ it seems, can do pretty much the same job for .ps1 files. Here I wrote a simple 
 {% endhighlight %}
 
 As with all lint tools, we sometimes need to suppress errors that don't matter to our current domain.
- 
-We do this by creating a config file with ExcludeRules 
+
+We do this by creating a config file with ExcludeRules
 
 {% highlight "powershell" %}
 
@@ -29,8 +28,7 @@ We do this by creating a config file with ExcludeRules
 
 {% endhighlight %}
 
-
-and use it when we invoke. 
+and use it when we invoke.
 
 {% highlight "powershell" %}
 

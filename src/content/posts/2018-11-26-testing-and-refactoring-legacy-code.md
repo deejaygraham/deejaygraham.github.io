@@ -2,7 +2,7 @@
 permalink: 2018/11/26/testing-and-refactoring-legacy-code/
 layout: sketchnote
 title: Testing and Refactoring Legacy Code
-tags: [ sketchnotes, presentations, agile, tdd, xp  ]
+tags: [sketchnotes, presentations, agile, tdd, xp]
 tweetable: true
 thumbnail: "/img/posts/testing-and-refactoring-legacy-code/testing-and-refactoring-legacy-code-tn.webp"
 sketchnote:
@@ -18,4 +18,3 @@ sketchnote:
     name: "Sandro Mancuso"
     url: "https://twitter.com/sandromancuso"
 ---
-

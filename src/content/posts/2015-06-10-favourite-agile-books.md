@@ -3,12 +3,13 @@ permalink: 2015/06/10/favourite-agile-books/
 layout: post
 title: Favourite Books
 published: true
-tags: [ agile, books ]
+tags: [agile, books]
 ---
 
 Not all super-specifically all agile related but I thought I would put them all down in a list.
 
 ### Growing Object Oriented Software Guided by Tests
+
 [Nat Pryce and Steve Freeman](http://www.growing-object-oriented-software.com/)
 
 ![goos](/img/posts/favourite-agile-books/goos.webp)
@@ -16,6 +17,7 @@ Not all super-specifically all agile related but I thought I would put them all 
 ---
 
 ### Practical Object Oriented Design in Ruby
+
 [Sandi Metz](http://www.sandimetz.com/)
 
 ![poodr](/img/posts/favourite-agile-books/poodr.webp)
@@ -26,14 +28,16 @@ Not all super-specifically all agile related but I thought I would put them all 
 ---
 
 ### Test Driven Development
-*By Example*
+
+_By Example_
 Kent Beck
 
 ![tdd](/img/posts/favourite-agile-books/test-driven-development-by-example.webp)
 
 ---
 
-### The Pragmatic Programmer 
+### The Pragmatic Programmer
+
 Andy Hunt & David Thomas
 
 ![pragmatic programmer](/img/posts/favourite-agile-books/pragmatic-programmer.webp)
@@ -41,6 +45,7 @@ Andy Hunt & David Thomas
 ---
 
 ### Pragmatic Thinking and Learning
+
 Andy Hunt
 
 ![pragmatic thinking learning](/img/posts/favourite-agile-books/pragmatic-thinking-and-learning.webp)
@@ -48,6 +53,7 @@ Andy Hunt
 ---
 
 ### The Elements of Style
+
 William Strunk Jr and E.B. White
 
 ![elements of style](/img/posts/favourite-agile-books/elements-of-style.webp)
@@ -55,6 +61,7 @@ William Strunk Jr and E.B. White
 ---
 
 ### Managing Humans
+
 Michael Lopp
 
 ![managing humans](/img/posts/favourite-agile-books/managing-humans.webp)
@@ -62,6 +69,7 @@ Michael Lopp
 ---
 
 ### Clean Code
+
 Robert Martin
 
 ![clean code](/img/posts/favourite-agile-books/clean-code.webp)
@@ -69,6 +77,7 @@ Robert Martin
 ---
 
 ### The Clean Coder
+
 Robert Martin
 
 ![clean coder](/img/posts/favourite-agile-books/clean-coder.webp)
@@ -76,20 +85,22 @@ Robert Martin
 ---
 
 ### Agile Coaching
+
 [Rachel Davies](http://rachelcdavies.github.io) and Liz Sedley
 
 ![agile coaching](/img/posts/favourite-agile-books/agile-coaching.webp)
 
 > To help agile teams improve, you need to work with the individuals
 > in the team. They’re the number one experts on how they work and
-> why. Tap into their expertise to reveal what’s holding them back. 
-> Listen to their concerns and ideas one-on-one to give you insights 
-> on how they can improve. Give them feedback to help them see where 
+> why. Tap into their expertise to reveal what’s holding them back.
+> Listen to their concerns and ideas one-on-one to give you insights
+> on how they can improve. Give them feedback to help them see where
 > they can improve
 
 ---
 
 ### Agile Retrospectives
+
 Esther Derby and Diana Larsen
 
 ![agile coaching](/img/posts/favourite-agile-books/agile-retrospectives.webp)
@@ -97,22 +108,25 @@ Esther Derby and Diana Larsen
 ---
 
 ### Coaching Agile Teams
+
 Lyssa Adkins
 
 ![agile teams](/img/posts/favourite-agile-books/coaching-agile-teams.webp)
 
 ---
 
-### Release It! 
-*Design and Deploy Production-Ready Software* 
+### Release It!
+
+_Design and Deploy Production-Ready Software_
 Michael T. Nygard
 
 ![release it](/img/posts/favourite-agile-books/release-it.webp)
 
 ---
 
-### eXtreme Programming Explained 
-*Embrace Change*
+### eXtreme Programming Explained
+
+_Embrace Change_
 Kent Beck
 
 ![xp explained](/img/posts/favourite-agile-books/extreme-programming-explained.webp)
@@ -120,7 +134,8 @@ Kent Beck
 ---
 
 ### Peopleware
-*Productive Projects & Teams* 
+
+_Productive Projects & Teams_
 Tom DeMarco and Timothy Lister
 
 ![peopleware](/img/posts/favourite-agile-books/peopleware.webp)
@@ -128,6 +143,7 @@ Tom DeMarco and Timothy Lister
 ---
 
 ### Behind Closed Doors
+
 [Johanna Rothman](http://www.jrothman.com/)
 
 ![behind closed doors](/img/posts/favourite-agile-books/behind-closed-doors.webp)
@@ -135,6 +151,7 @@ Tom DeMarco and Timothy Lister
 ---
 
 ### Manage It!
+
 [Johanna Rothman](http://www.jrothman.com/)
 
 ![manage it!](/img/posts/favourite-agile-books/manage-it.webp)
@@ -142,21 +159,23 @@ Tom DeMarco and Timothy Lister
 ---
 
 ### Manage Your Project Portfolio
+
 [Johanna Rothman](http://www.jrothman.com/)
 
 ![manage your project portfolio](/img/posts/favourite-agile-books/manage-your-project-portfolio.webp)
 
 ---
 
-
 ### Management 3.0
+
 [Jurgen Appelo](http://www.jurgenappelo.com)
 
 ![management 3.0](/img/posts/favourite-agile-books/management-3.0.webp)
 
 ---
 
-### The Practice of Programming 
+### The Practice of Programming
+
 Brian W. Kernighan & Rob Pike
 
 ![p of p](/img/posts/favourite-agile-books/practice-of-programming.webp)
@@ -164,7 +183,8 @@ Brian W. Kernighan & Rob Pike
 ---
 
 ### Refactoring
-*Improving the Design of Existing Code* 
+
+_Improving the Design of Existing Code_
 Martin Fowler
 
 ![refactoring](/img/posts/favourite-agile-books/refactoring.webp)
@@ -172,22 +192,24 @@ Martin Fowler
 ---
 
 ### Object Modelling
-*Strategies, Patterns & Applications*
+
+_Strategies, Patterns & Applications_
 Peter Coad, David North, Mark Mayfield
 
 ![strapat](/img/posts/favourite-agile-books/object-models-strategies-patterns-applications.webp)
 
 ---
 
-### Working Effectively with Legacy Code 
+### Working Effectively with Legacy Code
+
 Michael Feathers
 
 ![working effectively](/img/posts/favourite-agile-books/working-effectively-with-legacy-code.webp)
 
 ---
 
-
 ### 97 Things Every Programmer Should Know
+
 Ed. Kevlin Henney
 
 ![97 things](/img/posts/favourite-agile-books/ninety-seven-things.webp)
@@ -195,6 +217,7 @@ Ed. Kevlin Henney
 ---
 
 ### Structure and Interpretation of Computer Programs
+
 Harold Abelson
 
 ![SICP](/img/posts/favourite-agile-books/structure-interpretation-computer-programs.webp)
@@ -202,6 +225,7 @@ Harold Abelson
 ---
 
 ### The Sketchnote Handbook
+
 Mike Rohde
 
 ![sketchnote](/img/posts/favourite-agile-books/sketchnote-handbook.webp)
@@ -209,6 +233,7 @@ Mike Rohde
 ---
 
 ### Brain Rules
+
 John Medina
 
 ![brain rules](/img/posts/favourite-agile-books/brain-rules.webp)
@@ -216,6 +241,7 @@ John Medina
 ---
 
 ### A Mind of it's Own
+
 Cordelia Fine
 
 ![Mind](/img/posts/favourite-agile-books/a-mind-of-its-own.webp)
@@ -223,9 +249,10 @@ Cordelia Fine
 ---
 
 ### The Mythical Man-month
-*Essays on Software Engineering* 
+
+_Essays on Software Engineering_
 Frederick P. Brooks Jr.
 
 ![mythical man month](/img/posts/favourite-agile-books/mythical-man-month.webp)
 
---- 
+---

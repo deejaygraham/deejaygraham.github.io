@@ -2,7 +2,7 @@
 permalink: 2016/09/22/unboxing-the-bbc-microbit/
 layout: post
 title: Unboxing the BBC Micro:bit
-tags: [ code, microbit ]
+tags: [code, microbit]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
@@ -33,7 +33,7 @@ Type this:
 
 {% endhighlight %}
 
-from microbit import *
+from microbit import \*
 
 display.show(Image.DUCK)
 

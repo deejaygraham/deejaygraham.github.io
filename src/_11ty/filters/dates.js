@@ -67,10 +67,10 @@ function dateYear(date) {
   return fullYear;
 }
 
-module.exports = { 
-    dateFeed, 
-    dateFormat, 
-    dateFull, 
-    dateISO, 
-    dateYear 
+module.exports = {
+  dateFeed,
+  dateFormat,
+  dateFull,
+  dateISO,
+  dateYear,
 };

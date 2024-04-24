@@ -3,7 +3,7 @@ permalink: 2017/01/12/having-the-right-kind-of-arguments/
 layout: post
 title: Having the Right Kind of Argument(s)
 published: true
-tags: [ powershell ]
+tags: [powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
@@ -18,9 +18,9 @@ ready to pass to the external application:
 
 {% endhighlight %}
 
-  $ShellArguments = ' /p=' + $MyArg1 + ' /v' + ' /s' + $MyArg2 + ' ' + $MyArg3
+$ShellArguments = ' /p=' + $MyArg1 + ' /v' + ' /s' + $MyArg2 + ' ' + $MyArg3
 
-  & RunMyProgram.exe $ShellArguments Split(" ")
+& RunMyProgram.exe $ShellArguments Split(" ")
 
 {% endhighlight %}
 
@@ -38,12 +38,12 @@ to the program...
 
 {% endhighlight %}
 
-  $Arg1 = '/p=1234'
-  $Arg2 = '/v'
-  $Arg3 = ' /sABC'
-  $Arg4 = '0xDeadBeef'
+$Arg1 = '/p=1234'
+$Arg2 = '/v'
+$Arg3 = ' /sABC'
+$Arg4 = '0xDeadBeef'
 
-  & RunMyProgram.exe $Arg1 $Arg2 $Arg3 $Arg4
+& RunMyProgram.exe $Arg1 $Arg2 $Arg3 $Arg4
 
 {% endhighlight %}
 
@@ -56,9 +56,9 @@ A slightly neater solution I discovered was using a list as a way to collect and
 
 {% endhighlight %}
 
-  $ShellArguments = @( "/p=$MyArg1", '/v', "/s=$MyArg2", "$MyArg3" )
+$ShellArguments = @( "/p=$MyArg1", '/v', "/s=$MyArg2", "$MyArg3" )
 
-  & RunMyProgram.exe $ShellArguments
+& RunMyProgram.exe $ShellArguments
 
 {% endhighlight %}
 
@@ -68,7 +68,6 @@ we don't need to worry about surrounding each argument with whitespace so it's a
 the order and type of each argument. Still, we have the problem that the arguments and the calling
 site are potentially distanced from each other. Fortunately, there turns out to be an even  
 better way.
-
 
 ### The PowerShell Way
 
@@ -81,7 +80,7 @@ for string concatenation or expanding string variables before calling the progra
 
 {% endhighlight %}
 
-  & RunMyProgram.exe /p="$MyArg1" /v /s="$MyArg2" $MyArg3
+& RunMyProgram.exe /p="$MyArg1" /v /s="$MyArg2" $MyArg3
 
 {% endhighlight %}
 

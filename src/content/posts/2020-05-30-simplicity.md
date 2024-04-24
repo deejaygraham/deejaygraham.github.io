@@ -6,7 +6,7 @@ title: Simplicity
 published: true
 attribution: Kevlin Henney
 publication: 97 Things Every Software Architect Should Know
-tags: [ quote ]
+tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---

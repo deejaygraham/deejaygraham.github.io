@@ -5,7 +5,7 @@ title: There is no Cloud
 attribution: Free Software Foundation
 published: true
 size: large
-tags: [ quote ]
+tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

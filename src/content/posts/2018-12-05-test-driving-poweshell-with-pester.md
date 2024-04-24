@@ -3,7 +3,7 @@ permalink: 2018/12/05/test-driving-poweshell-with-pester/
 layout: post
 title: Test Driving PowerShell with Pester
 published: true
-tags: [ powershell ]
+tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell
@@ -13,39 +13,37 @@ Work in progress text and examples from an upcoming presentation.
 
 Test Driven Development is Christmas themed - red green refactor cycle.
 
-* Why Pester
-* What is Pester
-* Describe (01Structure)
-* It
-* Should (02Should)
-* Formatted Output
-	- Success
-	- Failures
+- Why Pester
+- What is Pester
+- Describe (01Structure)
+- It
+- Should (02Should)
+- Formatted Output
 
-* Simplest testing
-* Url testing (03Web) (04Links)
-* Testing & Documenting Webservices  (05 StarWars) 
-* Running suites of tests Invoke-Pester
-Pass variables.
+  - Success
+  - Failures
+
+- Simplest testing
+- Url testing (03Web) (04Links)
+- Testing & Documenting Webservices (05 StarWars)
+- Running suites of tests Invoke-Pester
+  Pass variables.
 
 -Tag Films | People | Planets - only runs those tags
-* Output Format -File -OutputFormat xml - understood by CI tools - VSTS etc. 
 
+- Output Format -File -OutputFormat xml - understood by CI tools - VSTS etc.
 
 Christmas - Red Green is very festive. Let's look at import stuff.
 Write-Christmas module and test it.
 
-* Code Coverage Running any tests for christmas
+- Code Coverage Running any tests for christmas
 
-* TestDrive
-Set-Content 
+- TestDrive
+  Set-Content
 
-* Mocking to make tests reliable
+- Mocking to make tests reliable
 
-* Code Coverage
-
-
-
+- Code Coverage
 
 ### RSpec
 
@@ -56,18 +54,18 @@ require 'json'
 
 module ExpenseTracker
 
-	RSpec.describe 'Expense Tracker API' do
+    RSpec.describe 'Expense Tracker API' do
 
-		it 'records submitted expenses' do
+    	it 'records submitted expenses' do
 
-			post '/expenses', JSON.generate(receipt)
+    		post '/expenses', JSON.generate(receipt)
 
-		end
-	end
+    	end
+    end
+
 end
 
 {% endhighlight %}
-
 
 ### Describe It and Should
 
@@ -83,12 +81,12 @@ Describe 'Pester' {
 
         'toast' | Should Be 'test'
     }
-}   
+
+}
 
 {% endhighlight %}
 
 We can try Should Not Be, Be Like Be LikeExactly
-
 
 {% highlight "powershell" %}
 
@@ -96,45 +94,46 @@ Import-Module Pester
 
 Describe 'Presenting in public' {
 
-	It 'Emotion should be positive' {
+    It 'Emotion should be positive' {
 
-		$Emotion = 'Kacking It'
-		$Emotion | Should Be 'Joy'
-	}
+    	$Emotion = 'Kacking It'
+    	$Emotion | Should Be 'Joy'
+    }
+
 }
 
 {% endhighlight %}
 
 Ok, that fails, let's fix the test to make it more representative of reality.
 
-
 {% highlight "powershell" %}
 
 Import-Module Pester
 
 Describe 'Presenting in public' {
 
-	It 'Emotion may not be positive' {
+    It 'Emotion may not be positive' {
 
-		$Emotion = 'Kacking It'
-		$Emotion | Should Not Be 'Joy'
-	}
+    	$Emotion = 'Kacking It'
+    	$Emotion | Should Not Be 'Joy'
+    }
+
 }
 
 {% endhighlight %}
 
-
 {% highlight "powershell" %}
 
 Import-Module Pester
 
 Describe 'Presenting in public' {
 
-	It 'should be like Macdonalds' {
+    It 'should be like Macdonalds' {
 
-		$Emotion = "I'm Loathing It"
-		$Emotion | Should BeLike "I'm Lo*ing It"
-	}
+    	$Emotion = "I'm Loathing It"
+    	$Emotion | Should BeLike "I'm Lo*ing It"
+    }
+
 }
 
 {% endhighlight %}
@@ -145,7 +144,6 @@ We can have multiple describe blocks and multiple It blocks or collapse into one
 
 So we can test a website..
 
-
 {% highlight "powershell" %}
 
 Import-Module Pester
@@ -155,21 +153,21 @@ Describe 'Google' {
 
     It 'Serves pages over http' {
         Invoke-WebRequest -Uri 'http://google.com/' -UseBasicParsing |
-		Select-Object -ExpandProperty StatusCode |
-		Should Be 200
+    	Select-Object -ExpandProperty StatusCode |
+    	Should Be 200
     }
 
     It 'Serves pages over https' {
         Invoke-WebRequest -Uri 'https://google.co.uk/' -UseBasicParsing |
-		Select-Object -ExpandProperty StatusCode |
-		Should Be 200
+    	Select-Object -ExpandProperty StatusCode |
+    	Should Be 200
     }
+
 }
 
-
 $ImportantLinks = @(
-    'https://deejaygraham.github.io/2015/02/15/sketchnote-challenge/',
-    'https://deejaygraham.github.io/img/posts/sketchnoting-challenge/mac-power-users.webp'
+'https://deejaygraham.github.io/2015/02/15/sketchnote-challenge/',
+'https://deejaygraham.github.io/img/posts/sketchnoting-challenge/mac-power-users.webp'
 )
 
 Describe 'Externally Referenced Links' {
@@ -183,6 +181,7 @@ Describe 'Externally Referenced Links' {
             Should Be 200
         }
     }
+
 }
 
 {% endhighlight %}
@@ -196,65 +195,67 @@ We can setup a test context for a specific Rest API - get and post.
 {% highlight "powershell" %}
 
 Param (
-	[Parameter(Mandatory=$True)]
-	[string]$BaseUri
+[Parameter(Mandatory=$True)]
+[string]$BaseUri
 )
 
 [string]$Resource = "$($BaseUri)films/"
 
 Describe "Films in the Star Wars Universe" {
 
-	$AllFilms = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
+    $AllFilms = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
 
-	It 'Contains all 7 films' {
+    It 'Contains all 7 films' {
 
-		$AllFilms.Count | Should Be 7
-	}
+    	$AllFilms.Count | Should Be 7
+    }
+
 }
 
 Param (
-	[Parameter(Mandatory=$True)]
-	[string]$BaseUri
+[Parameter(Mandatory=$True)]
+[string]$BaseUri
 )
 
 [string]$Resource = "$($BaseUri)planets/"
 
 Describe "Planets in Star Wars" {
 
-	$AllPlanets = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
+    $AllPlanets = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
 
-	It 'Contains a lot of planets' {
+    It 'Contains a lot of planets' {
 
-		$AllPlanets.Count | Should Be 61
-	}
+    	$AllPlanets.Count | Should Be 61
+    }
+
 }
 
 Param (
-	[Parameter(Mandatory=$True)]
-	[string]$BaseUri
+[Parameter(Mandatory=$True)]
+[string]$BaseUri
 )
 
 [string]$Resource = "$($BaseUri)people/"
 
 Describe "People in Star Wars" {
 
-	$Everyone = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
+    $Everyone = Invoke-RestMethod -Method Get -Uri $Resource -UseBasicParsing
 
-	It 'Contains a lot of people' {
+    It 'Contains a lot of people' {
 
-		$Everyone.Count | Should Be 87
-	}
+    	$Everyone.Count | Should Be 87
+    }
 
-	It 'Luke Skywalker is Id = 1' {
+    It 'Luke Skywalker is Id = 1' {
 
-		$Luke = Invoke-RestMethod -Method Get -Uri "$($Resource)1" -UseBasicParsing
+    	$Luke = Invoke-RestMethod -Method Get -Uri "$($Resource)1" -UseBasicParsing
 
-		$Luke.name | Should Be 'Luke Skywalker'
-	}
+    	$Luke.name | Should Be 'Luke Skywalker'
+    }
+
 }
 
 {% endhighlight %}
-
 
 {% highlight "powershell" %}
 
@@ -267,15 +268,15 @@ Import-Module Pester
 
 Invoke-Pester -Script @{
 
-	Path = "$here\*.Tests.ps1"
+    Path = "$here\*.Tests.ps1"
 
-	Parameters = @{
-		BaseUri = $BaseUri
-	}
+    Parameters = @{
+    	BaseUri = $BaseUri
+    }
+
 }
 
 {% endhighlight %}
-
 
 We can then invoke tests from a controlling script that will execute against all tests in a directory.
 
@@ -291,12 +292,11 @@ Invoke-Pester -Script "$here\*.Tests.ps1"
 
 We can even pass parameters to each script, like the base uri
 
-
 {% highlight "powershell" %}
 
 Param (
-	[Parameter()]
-	[string]$BaseUri = 'https://swapi.co/api/'
+[Parameter()]
+[string]$BaseUri = 'https://swapi.co/api/'
 )
 
 Import-Module Pester
@@ -307,11 +307,12 @@ $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
 Invoke-Pester -Script @{
 
-	Path = "$here\*.Tests.ps1"
+    Path = "$here\*.Tests.ps1"
 
-	Parameters = @{
-		BaseUri = $BaseUri
-	}
+    Parameters = @{
+    	BaseUri = $BaseUri
+    }
+
 }
 
 {% endhighlight %}
@@ -326,7 +327,7 @@ Let's write two functions, one to get some content from a website, and another t
 {% highlight "powershell" %}
 
 $SantaUrl = 'https://www.emailsanta.com/clock.asp'
-$HtmlToMatch = '<span class="XmasDayemph">(.*)</span>'
+$HtmlToMatch = '<span class="XmasDayemph">(.\*)</span>'
 
 Function Get-WebPageContent {
 
@@ -337,6 +338,7 @@ Function Get-WebPageContent {
 
     $response = Invoke-WebRequest -Uri $url -UseBasicParsing
     Write-Output $response.RawContent
+
 }
 
 Function Get-HowLongUntilChristmas {
@@ -347,8 +349,8 @@ Function Get-HowLongUntilChristmas {
 
         Write-Output $matches[1]
     }
-}
 
+}
 
 {% endhighlight %}
 
@@ -365,20 +367,20 @@ Describe 'Email Santa Service' {
     Context 'Countdown to Christmas' {
 
         It 'Expressed in days' {
-            Get-HowLongUntilChristmas | Should BeLike '* days'               
+            Get-HowLongUntilChristmas | Should BeLike '* days'
         }
 
         It 'Calculates correctly' {
-            Get-HowLongUntilChristmas | Should Be '24 days'               
+            Get-HowLongUntilChristmas | Should Be '24 days'
         }
     }
+
 }
 
 {% endhighlight %}
 
 Fails. We need some way to make this test work for every day of the year. Mock the content function and return a
 known value. Works all of the time.
-
 
 {% highlight "powershell" %}
 
@@ -388,26 +390,25 @@ Describe 'Email Santa Service' {
 
     Context 'Countdown to Christmas' {
 
-		$FakeWebPage = '<html><span class="XmasDayemph">24 days</span>'
+    	$FakeWebPage = '<html><span class="XmasDayemph">24 days</span>'
         Mock Get-WebPageContent { return $FakeWebPage }
 
         It 'Expressed in days' {
-            Get-HowLongUntilChristmas | Should BeLike '* days'               
+            Get-HowLongUntilChristmas | Should BeLike '* days'
         }
 
         It 'Calculates correctly' {
-            Get-HowLongUntilChristmas | Should Be '24 days'               
+            Get-HowLongUntilChristmas | Should Be '24 days'
         }
     }
+
 }
 
+# Evaluated in order
 
-# Evaluated in order 
 $filter = '(B|D|E)$'
 Mock Select-String { "matched!" } -ParameterFilter { $Path -match $filter }
-Mock Select-String 
-		
-		
+Mock Select-String
 
 {% endhighlight %}
 
@@ -420,7 +421,6 @@ Albert Finney (and my pop-in-law whose birthday it is) are both interested in wh
 
 To save them shouting out of the window to a passing urchin, I have written a function.
 
-
 {% highlight "powershell" %}
 
 Function Test-ChristmasDay {
@@ -432,12 +432,12 @@ Function Test-ChristmasDay {
     } Else {
         Write-Output $False
     }
+
 }
 
 {% endhighlight %}
 
 So I know I should test that difficult logic:
-
 
 {% highlight "powershell" %}
 
@@ -446,7 +446,7 @@ Describe 'Scrooge' {
     Context 'Before the Ghosts Visit' {
 
         It 'Doesn't care about Christmas day' {
-			# when will this work, when will it not work
+    		# when will this work, when will it not work
             Test-ChristmasDay | Should Be $false
         }
     }
@@ -457,6 +457,7 @@ Describe 'Scrooge' {
             Test-ChristmasDay | Should Be $True
         }
     }
+
 }
 
 {% endhighlight %}
@@ -476,8 +477,8 @@ Describe 'Scrooge' {
 
     Context 'The Spirits have done it all in one night' {
 
-		# Wizzard way of doing it.
-		Mock Get-Date { New-Object DateTime (2018, 12, 25) }
+    	# Wizzard way of doing it.
+    	Mock Get-Date { New-Object DateTime (2018, 12, 25) }
 
         It 'It is Christmas Day' {
 
@@ -485,6 +486,7 @@ Describe 'Scrooge' {
             Assert-MockCalled Get-Date -Times 2 -Exactly
         }
     }
+
 }
 
 {% endhighlight %}
@@ -498,7 +500,6 @@ number of times.
 Testing modules and developing them side by side with the tests, it's a good idea to make sure we are working
 with the most up to date version
 
-
 {% highlight "powershell" %}
 
 Get-Module Scrooge | Remove-Module -Force
@@ -511,15 +512,15 @@ Import-Module $here\Scrooge.psm1 -Force
 Set-StrictMode -Version Latest
 
 Function Get-Ghost {
-  [CmdletBinding()]
-  Param()
+[CmdletBinding()]
+Param()
 
-  $Ghosts = @( 'Jacob Marley', 'Christmas Past', 'Christmas Present', 'Christmas Future', 'Patrick Swayze', '' )
+$Ghosts = @( 'Jacob Marley', 'Christmas Past', 'Christmas Present', 'Christmas Future', 'Patrick Swayze', '' )
 
-  Write-Output $Ghosts
+Write-Output $Ghosts
 }
 
-Export-ModuleMember -Function *
+Export-ModuleMember -Function \*
 
 {% endhighlight %}
 
@@ -527,7 +528,7 @@ Export-ModuleMember -Function *
 
 Describe 'Get-ChristmasCarolGhost' {
 
-	$Ghosts = Get-ChristmasCarolGhost
+    $Ghosts = Get-ChristmasCarolGhost
     $FirstGhost = $Ghosts | Select-Object -First 1
 
     It 'Three spirits shall visit scrooge' {
@@ -536,13 +537,13 @@ Describe 'Get-ChristmasCarolGhost' {
 
     It 'First Ghost is Marley' {
         $FirstGhost | Should -Be Like '*Marley'
-	}
+    }
+
 }
 
 {% endhighlight %}
 
 ### Driving Home For Christmas
-
 
 {% highlight "powershell" %}
 
@@ -555,34 +556,34 @@ Import-Module Pester
 
 Describe 'Chris Rea' {
 
-	$Path = Join-Path $TestDrive -ChildPath 'ChrisRea.txt'
-	Set-Content -Path $Path -Content "I'm driving home for Christmas, Oh, I can't wait to see those faces"
+    $Path = Join-Path $TestDrive -ChildPath 'ChrisRea.txt'
+    Set-Content -Path $Path -Content "I'm driving home for Christmas, Oh, I can't wait to see those faces"
 
-	It 'Song lyrics can be read from a local file' {
-	  Get-ChristmasSong -Path $Path | Should Contain 'faces'
-	}
+    It 'Song lyrics can be read from a local file' {
+      Get-ChristmasSong -Path $Path | Should Contain 'faces'
+    }
+
 }
 
 {% endhighlight %}
 
 Write a function that prints the lyrics to a christmas song.
 
-
 {% highlight "powershell" %}
 
 Set-StrictMode -Version Latest
 
 Function Get-ChristmasSong {
-  [CmdletBinding()]
-  Param(
-    [Parameter(Mandatory=$True)]
-    [string]$Path
-  )
+[CmdletBinding()]
+Param(
+[Parameter(Mandatory=$True)]
+[string]$Path
+)
 
-  Write-Output (Get-Content -Path $Path)
+Write-Output (Get-Content -Path $Path)
 }
 
-Export-ModuleMember -Function *
+Export-ModuleMember -Function \*
 
 {% endhighlight %}
 
@@ -598,11 +599,12 @@ $here = Split-Path -Path $MyInvocation.MyCommand.Path
 
 Invoke-Pester -Script @{
 
-	Path = "$here\*.Tests.ps1"
+    Path = "$here\*.Tests.ps1"
 
-	Parameters = @{
-		BaseUri = $BaseUri
-	}
+    Parameters = @{
+    	BaseUri = $BaseUri
+    }
+
 }
 
 {% endhighlight %}

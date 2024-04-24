@@ -2,8 +2,8 @@
 permalink: 2021/08/09/batch-renaming-file-extensions/
 layout: post
 title: Batch Renaming File Extensions
-published: true 
-tags: [ powershell, code ] 
+published: true
+tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: batches
@@ -18,5 +18,5 @@ Get-ChildItem works:)
 
 {% endhighlight %}
 
-Most recently I needed to batch change several hundred .html files as .markdown and didn't fancy 
-doing that by hand. 
+Most recently I needed to batch change several hundred .html files as .markdown and didn't fancy
+doing that by hand.

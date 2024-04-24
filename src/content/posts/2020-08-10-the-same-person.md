@@ -5,10 +5,10 @@ size: large
 title: The Same Person
 published: true
 attribution: Charlie Tremendous Jones
-tags: [ quote ]
+tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: quote
 ---
 
-You will be the same person in five years as you are today 
+You will be the same person in five years as you are today
 except for the people you meet and the books you read.

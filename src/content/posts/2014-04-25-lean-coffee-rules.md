@@ -2,7 +2,7 @@
 permalink: 2014/04/25/lean-coffee-rules/
 layout: sketchnote
 title: Lean Coffee Rules
-tags: [sketchnotes, presentations ]
+tags: [sketchnotes, presentations]
 hero: agile
 sketchnote:
   url: "/img/posts/lean-coffee-rules/lean-coffee-presentation-notes-bw.webp"
@@ -22,5 +22,3 @@ alttext: notebook
 
 Here's a sketchnote about "Lean Coffee", an agile way of
 running a conversation or meeting.
-
-

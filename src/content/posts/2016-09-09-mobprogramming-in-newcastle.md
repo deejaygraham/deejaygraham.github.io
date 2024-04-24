@@ -2,12 +2,11 @@
 permalink: 2016/09/09/mobprogramming-in-newcastle/
 layout: post
 title: MobProgramming comes to Newcastle
-tags: [ agile ]
+tags: [agile]
 published: true
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
-
 
 On the 8th of September 2016, in a joint effort from <a href="http://nebytes.net">NE Bytes</a> and
 <a href="https://www.meetup.com/Agile-North-East/">Agile North East</a>, Woody Zuill came to talk to us about Mob Programming.

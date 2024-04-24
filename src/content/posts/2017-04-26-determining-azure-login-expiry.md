@@ -3,7 +3,7 @@ permalink: 2017/04/26/determining-azure-login-expiry/
 layout: post
 title: Determining when your Azure session has expired
 published: true
-tags: [ powershell, cloud ]
+tags: [powershell, cloud]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---
@@ -36,13 +36,11 @@ then able to prompt for login as before.
 
 {% endhighlight %}
 
-Try {
-	# Check current session to see if we are currently logged into Azure
-	$Subscription = Get-AzureSubscription -ExtendedDetails -ErrorAction Stop
+Try { # Check current session to see if we are currently logged into Azure
+$Subscription = Get-AzureSubscription -ExtendedDetails -ErrorAction Stop
 }
-Catch {
-	# Exception probably means we need to login again.
-	Add-AzureAccount
+Catch { # Exception probably means we need to login again.
+Add-AzureAccount
 }
 
 {% endhighlight %}

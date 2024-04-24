@@ -2,7 +2,7 @@
 permalink: 2016/10/11/microbit-life/
 layout: post
 title: Microbit Life
-tags: [ code, microbit ]
+tags: [code, microbit]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
@@ -16,7 +16,7 @@ complicated and often beautiful behaviour. It's also a good demonstration piece 
 doesn't require any human intervention to run and will often carry on generating new patterns
 long after it has been started.
 
-You're *way* ahead of me, aren't you?
+You're _way_ ahead of me, aren't you?
 
 If it's such a programming classic, my thoughts went, it should be easy - or at least
 possible - to write it in Python for the microbit? And so the challenge began to form

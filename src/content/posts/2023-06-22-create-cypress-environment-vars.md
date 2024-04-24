@@ -8,7 +8,7 @@ thumbnail: "/img/thumbnails/cypress-420x255.png"
 alttext: cypress
 ---
 
-[Cypress](https://cypress.io) allows for greater flexibility in your tests by supporting environment variables to be accessed from a test 
+[Cypress](https://cypress.io) allows for greater flexibility in your tests by supporting environment variables to be accessed from a test
 file but it's not super clear how to import settings from an external source into Cypress and have them available to your tests.
 
 ### Command Line
@@ -32,11 +32,11 @@ const deployment = Cypress.env("deployment");
 
 ### Configuration
 
-A less well known way of adding environment variables is from within the cypress.config.js file and the {% endhighlight %}setupNodEvents{% endhighlight %} 
-handler in the {% endhighlight %}e2e{% endhighlight %} block within {% endhighlight %}defineConfig{% endhighlight %}. As in the previous example, variables created this way are 
+A less well known way of adding environment variables is from within the cypress.config.js file and the {% endhighlight %}setupNodEvents{% endhighlight %}
+handler in the {% endhighlight %}e2e{% endhighlight %} block within {% endhighlight %}defineConfig{% endhighlight %}. As in the previous example, variables created this way are
 available in the tests using the Cypress.env function.
 
-Here I am reading values from a postman environment file (currently moving from Postman to Cypress for API testing) and 
+Here I am reading values from a postman environment file (currently moving from Postman to Cypress for API testing) and
 exposing the values within that file as environment variables.
 
 #### cypress.Config.js
@@ -44,14 +44,14 @@ exposing the values within that file as environment variables.
 {% highlight "javascript" %}
 
 const {
-    defineConfig
+defineConfig
 } = require("cypress");
 const fs = require('fs');
 const path = require('path');
 
 module.exports = defineConfig({
-    e2e: {
-        setupNodeEvents(on, config) {
+e2e: {
+setupNodeEvents(on, config) {
 
             // .. code to resolve the path to the env file...
             const data = fs.readFileSync(pathToFile, 'utf-8');
@@ -64,6 +64,7 @@ module.exports = defineConfig({
             return config;
         },
     },
+
 });
 
 {% endhighlight %}

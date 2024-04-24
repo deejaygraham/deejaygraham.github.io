@@ -3,7 +3,7 @@ permalink: 2016/11/01/sql-test-data-as-code/
 layout: post
 title: SQL Test Data as Code
 published: true
-tags: [ powershell  ]
+tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
@@ -11,7 +11,6 @@ alttext: powershell
 
 I'm a big fan of driving manual, error-prone setup steps for anything into scripts and
 automated tests.
-
 
 ### Binary Test Data
 
@@ -28,9 +27,8 @@ of tests become a problem when the data can't easily be inspected for changes ac
 Add in branch-based development and you quickly have more problems where data represents a munging of schema changes
 across branches for a single source of data, or else merging between branches is impossible because of the data format.
 
-Also, running tests that mutate the data implies a golden master version of the data *and* a working copy, taken
+Also, running tests that mutate the data implies a golden master version of the data _and_ a working copy, taken
 from the master, which the tests run against.
-
 
 ### Slightly Better?
 
@@ -44,25 +42,23 @@ required to generate the data from scratch.
 
 <script src="https://gist.github.com/deejaygraham/aa43d0f560c5ed06d734b5d3d38a4726.js"></script>
 
-
 ### Processes
 
 The process during development is something like:
 
-* Run the script to create populate test data in a clean database
-* Write tests and iterate on data
-* Clean up unused data from the tests
-* Check out the generated script
-* Run the PowerShell script to re-generate SQL
-* Check in the script
+- Run the script to create populate test data in a clean database
+- Write tests and iterate on data
+- Clean up unused data from the tests
+- Check out the generated script
+- Run the PowerShell script to re-generate SQL
+- Check in the script
 
 The process running the tests in CI or regression tests becomes:
 
-* Get latest script
-* Run the script to create populate test data in a clean database
-* Run the tests
-* Delete the database
-
+- Get latest script
+- Run the script to create populate test data in a clean database
+- Run the tests
+- Delete the database
 
 ### Merges
 

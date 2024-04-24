@@ -2,7 +2,7 @@
 permalink: 2017/04/19/old-timey-twitter-for-microbit/
 layout: post
 title: Old-Timey Twitter for the Microbit
-tags: [ code, microbit ]
+tags: [code, microbit]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
@@ -13,7 +13,7 @@ Teaching some maker classes at <a href="http://campusnorth.com">campus north</a>
 
 As you might expect, the radio allows you to broadcast text to other microbits within range of the sender. The transmitter on the device is not hugely powerful, so the range works out to be about 2 metres.
 
-We all had a great time playing with this feature and sending text messages to other microbits within range. Throughout the afternoon we had lots of instances where spelling mistakes, incorrect indenting or bad logic meant that the microbit would suddenly start scrolling some error text across the screen.  
+We all had a great time playing with this feature and sending text messages to other microbits within range. Throughout the afternoon we had lots of instances where spelling mistakes, incorrect indenting or bad logic meant that the microbit would suddenly start scrolling some error text across the screen.
 
 I began to realise the students were getting comfortable with the microbit when they changed the application code to broadcast spoof python runtime errors to other devices, leading to lots of head scratching before the recipient realised that the error wasn't in their program and was instead a message from an evil neighbour!
 

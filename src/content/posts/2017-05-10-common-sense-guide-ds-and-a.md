@@ -3,18 +3,18 @@ permalink: 2017/05/10/common-sense-guide-ds-and-a/
 layout: post
 title: A Common-Sense Guide to Data Structures and Algorithms
 published: true
-tags: [ code, books ]
+tags: [code, books]
 thumbnail: "/img/posts/common-sense-guide-ds-and-a/thumbnail-420x255.webp"
 alttext: pairing
 ---
 
 ![cover](/img/posts/common-sense-guide-ds-and-a/cover.webp)
 
-In my spare time, I do pre-publication technical reviews for Pragmatic Programmer books, checking the technical consistency and accuracy, code samples etc. The process is always a delight because of the efficiency and friendliness of the editors and the high quality of the texts that we, as a panel of reviewers, get to see before a book is published. 
+In my spare time, I do pre-publication technical reviews for Pragmatic Programmer books, checking the technical consistency and accuracy, code samples etc. The process is always a delight because of the efficiency and friendliness of the editors and the high quality of the texts that we, as a panel of reviewers, get to see before a book is published.
 
 Since getting an early pdf of this book in my email it has been the one that I recommend to junior developers wanting to get a grip on some of the fundamentals of computer science, especially if they have not come from a traditional CS degree path. Almost immediately, from a first read through, I couldn't see anything wrong with the book as it stood. It was much more approachable than a few "standard" books I have felt bad recommending in the past just because they are such academic, dry texts and most of the time I don't think our juniors get any value from them and end up giving the whole thing up as "too hard". I'm sure this book will give them a much better start and a better awareness of complexity and performance issues in their code.
 
-After reading through the book again, I was confused more by the earlier chapters, in particular the consistency of the diagrams used to explain memory. 
+After reading through the book again, I was confused more by the earlier chapters, in particular the consistency of the diagrams used to explain memory.
 
 In chapter 1, there is a grid of memory locations and variations continue for the next few pages. All other diagrams in the book use a line of blocks and show them moving around (during sorting etc.) which is nice and clear but I don’t think the grid helps with anything. It is a traditional view of “memory” but I find in my teaching that it’s one of the things that causes confusion early on, why each row wraps around to the next etc. For a book on algorithms, is it important to talk about memory allocation? A lot of the diagrams assume a view from a particular programming language which is not true in all languages or across implementations of compilers (e.g. arrays allocating contiguous memory, arrays always begin at index 0) and across platforms. What do the numbers represent? If it’s memory locations then that’s not true for all cases. The diagram at the top of page six shows memory containing items from a shopping list - again this is true for c/c++ - but not for other languages. How does a string fit into a single byte of memory? I think this chapter can be cleaned up and made much simpler without the memory specific details that give too much detail for a discussion of algorithms but not enough detail to make sense - more confusion than helping. I think adopting the later approach of using each type of data as just a box is much easier to understand for this audience.
 

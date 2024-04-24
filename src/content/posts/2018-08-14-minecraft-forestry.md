@@ -2,18 +2,17 @@
 permalink: 2018/08/14/minecraft-forestry/
 layout: post
 title: Minecraft Forestry
-tags: [ minecraft, code ]
+tags: [minecraft, code]
 published: true
-hero: minecraft 
+hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---
 
-We can build very simple trees programmatically in Minecraft by stacking blocks together using 
+We can build very simple trees programmatically in Minecraft by stacking blocks together using
 wood-y and leaf-y materials.
 
 <img src="/img/posts/minecraft-forestry/simple-tree.webp" alt="simple tree" class="u-max-full-width" />
-
 
 {% highlight "python" %}
 
@@ -25,7 +24,6 @@ Square blocks of leaves aren't very realistic so we can trim off the square edge
 
 <img src="/img/posts/minecraft-forestry/better-tree.webp" alt="better tree" class="u-max-full-width" />
 
-
 {% highlight "python" %}
 
 {% include 'code/python/minecraft/tree-2.py' %}
@@ -36,19 +34,17 @@ Finally, we can make ourselves a nice orchard or small forest using some random 
 
 <img src="/img/posts/minecraft-forestry/random-forest.webp" alt="forest of trees" class="u-max-full-width" />
 
-
 {% highlight "python" %}
 
 {% include 'code/python/minecraft/tree-3.py' %}
 
 {% endhighlight %}
 
-Note by using the ground value specific to each tree location, we can get a nice effect "planting" trees on a sloping 
+Note by using the ground value specific to each tree location, we can get a nice effect "planting" trees on a sloping
 hillside.
 
-
-We can go further by changing the materials for each tree, the trunk and leaf materials, on a random basis. The **setBlock** 
-function can take an extra argument for some block types. For wood and leaves, you are able to pick the exact kind of 
+We can go further by changing the materials for each tree, the trunk and leaf materials, on a random basis. The **setBlock**
+function can take an extra argument for some block types. For wood and leaves, you are able to pick the exact kind of
 material you would like.
 
 | value | Wood |
@@ -61,8 +57,7 @@ material you would like.
 | 2 | Spruce |
 | 3 | Birch |
 
-
-In the final version, the foliage still looks a bit too false as a single monolithic block of leaves. We can 
+In the final version, the foliage still looks a bit too false as a single monolithic block of leaves. We can
 change the leaf generation to work on a probability of a leaf block being at any one position in the canopy.
 
 {% highlight "python" %}
@@ -72,4 +67,3 @@ change the leaf generation to work on a probability of a leaf block being at any
 {% endhighlight %}
 
 <img src="/img/posts/minecraft-forestry/random-leaves.webp" alt="random leaves" class="u-max-full-width" />
-

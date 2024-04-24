@@ -2,7 +2,7 @@
 permalink: 2015/05/15/deliberate-learning-sketchnote/
 layout: sketchnote
 title: Dan North on Deliberate Learning @ Foo Cafe
-tags: [ presentations, sketchnotes ]
+tags: [presentations, sketchnotes]
 sketchnote:
   url: "/img/posts/deliberate-learning-sketchnote/dan-north-deliberate-learning.webp"
   alt: "deliberate practice"
@@ -19,13 +19,12 @@ thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 
-This sketchnote is from <a href="https://twitter.com/tastapod">Dan North's</a> talk 
-from the launch of <a href="http://www.foocafe.org/">Foo Cafe</a> in 2012. 
+This sketchnote is from <a href="https://twitter.com/tastapod">Dan North's</a> talk
+from the launch of <a href="http://www.foocafe.org/">Foo Cafe</a> in 2012.
 
-The main point of Dan's talk is that as developers, deliberateness is a 
-good thing but repetition and practicing by rote is not. Concert pianists need to optimise 
-for note perfection and be able to perform the same piece again and again to the same high 
-standard. Developers hardly ever need to do the same thing twice and are always having to 
-learn and tackle new things, so we need to optimise for learning and being comfortable 
+The main point of Dan's talk is that as developers, deliberateness is a
+good thing but repetition and practicing by rote is not. Concert pianists need to optimise
+for note perfection and be able to perform the same piece again and again to the same high
+standard. Developers hardly ever need to do the same thing twice and are always having to
+learn and tackle new things, so we need to optimise for learning and being comfortable
 with unfamiliarity.
-

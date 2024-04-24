@@ -2,7 +2,7 @@
 permalink: 2018/06/18/strong-style-pairing/
 layout: post
 title: Strong Style Pairing
-tags: [ sketchnotes ]
+tags: [sketchnotes]
 published: true
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
@@ -15,13 +15,10 @@ quite a bit. At the heart of mob programming is the idea of
 <blockquote>For an idea to go from your head into the computer 
 it MUST go through someone else's hands</blockquote>
 
-
 This is how I like to think about it:
-
 
 <img src="/img/posts/strong-style-pairing/strong-style-pairing.webp" alt="strong style sketchnote"/>
 
 and in a slightly different format:
 
 <img src="/img/posts/strong-style-pairing/strong-style-pairing-landscape-lofi.webp" alt="strong style sketchnote"/>
-

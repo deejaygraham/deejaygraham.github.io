@@ -3,7 +3,7 @@ permalink: 2017/03/01/passing-msbuild-variables-to-wix/
 layout: post
 title: Passing MsBuild Variables to Wix
 published: true
-tags: [ msbuild ]
+tags: [msbuild]
 ---
 
 It almost seems like it would be an easy thing to have wix (an xml file-based installer build system)
@@ -12,21 +12,21 @@ reality is a bit more difficult.
 
 We started off wanting to have Wix build a package for us based on files in a version-dependent
 folder. As we change the version number, Wix should look in a different folder for the files. We also
-wanted this to work on a local (dev) machine *and* on a build machine running a TFS build agent.
+wanted this to work on a local (dev) machine _and_ on a build machine running a TFS build agent.
 
 So for a "BuildNumber" maybe an environment variable:
 
 {% endhighlight %}
 
-  $(env.BuildNumber)
+$(env.BuildNumber)
 
 {% endhighlight %}
 
 or a plain old wix variable:
 
-{% endhighlight %}  
+{% endhighlight %}
 
-  $(env.BuildNumber)
+$(env.BuildNumber)
 
 {% endhighlight %}
 

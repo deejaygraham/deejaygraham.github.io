@@ -2,7 +2,7 @@
 permalink: 2018/11/08/polly-want-a-message/
 layout: sketchnote
 title: Polly Want a Message
-tags: [ sketchnotes, presentations, tdd, xp  ]
+tags: [sketchnotes, presentations, tdd, xp]
 tweetable: true
 thumbnail: "/img/posts/polly-want-a-message/polly-want-a-message-tn.webp"
 sketchnote:
@@ -18,4 +18,3 @@ sketchnote:
     name: "Sandi Metz"
     url: "https://twitter.com/sandimetz"
 ---
-

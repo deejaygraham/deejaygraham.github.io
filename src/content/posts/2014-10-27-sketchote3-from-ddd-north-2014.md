@@ -2,7 +2,7 @@
 permalink: 2014/10/27/sketchote3-from-ddd-north-2014/
 layout: sketchnote
 title: Final sketchnote from DDDNorth 2014
-tags: [ sketchnotes, presentations, management ]
+tags: [sketchnotes, presentations, management]
 sketchnote:
   url: "/img/posts/sketchote3-from-ddd-north-2014/dddnorth-2014-tech-lead-talk-vanilla.webp"
   alt: "ddd north sketchnote"
@@ -17,12 +17,11 @@ alttext: notebook
 ---
 
 The third and final sketchnote (but actually from the first session of the day)
-from the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North 
-2014 conference</a>. 
+from the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North
+2014 conference</a>.
 
-This time it was a talk by [Joel Hammond-Turner](http://www.twitter.com/rammesses) on 
+This time it was a talk by [Joel Hammond-Turner](http://www.twitter.com/rammesses) on
 his opinions around what it takes to be successful as a Tech Lead.
 
-Here's the session summary: 
+Here's the session summary:
 ![ddd north](/img/posts/sketchote3-from-ddd-north-2014/session-summary.webp)
-

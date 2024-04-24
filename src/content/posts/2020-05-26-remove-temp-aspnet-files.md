@@ -2,18 +2,17 @@
 permalink: 2020/05/26/remove-temp-aspnet-files/
 layout: post
 title: Remove Temporary ASP.Net Files in PowerShell
-published: true 
-tags: [ powershell ]
+published: true
+tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
 alttext: powershell
-
 ---
 
-Tiny snippet that I always forget about and have to re-create from scratch every time. Working with ASP.Net, IIS tries really hard to 
-cache files for performance reasons. Fine in normal circumstances but for development work, it can be a frustrating behaviour if 
+Tiny snippet that I always forget about and have to re-create from scratch every time. Working with ASP.Net, IIS tries really hard to
+cache files for performance reasons. Fine in normal circumstances but for development work, it can be a frustrating behaviour if
 you are writing and compiling code on a local machine and yet the behaviour you are seeing in the browser isn't changing. Often its
-because ASP.Net is ignoring your lovely new code in favour of the version it has cached. 
+because ASP.Net is ignoring your lovely new code in favour of the version it has cached.
 
 {% highlight "powershell" %}
 

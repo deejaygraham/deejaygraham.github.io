@@ -3,7 +3,7 @@ permalink: 2017/10/01/all-my-ancestors/
 layout: quotation
 title: Suddenly
 published: true
-tags: [ quote ]
+tags: [quote]
 attribution: anon
 size: large
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

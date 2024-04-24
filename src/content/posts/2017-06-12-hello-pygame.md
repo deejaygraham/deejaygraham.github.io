@@ -3,17 +3,17 @@ permalink: 2017/06/12/hello-pygame/
 layout: post
 title: Hello, Pygame
 published: true
-tags: [ code ]
+tags: [code]
 ---
 
 Having exhausted everything there is to do with plain old Python, the Raspberry Pi,
 BBC micro:bit (ok, maybe not :), one area of Python that the students I see are interested in -
- that I know nothing about - is <a href="https://www.pygame.org/">pygame</a>. So maybe I
- need to do some investigation.
+that I know nothing about - is <a href="https://www.pygame.org/">pygame</a>. So maybe I
+need to do some investigation.
 
 First, download and install as you would expect. I went with the standard windows machine install
 as the easiest for me to get going with quickly. Then comes the canonical (or as close
-  as we can get) hello world skeleton.
+as we can get) hello world skeleton.
 
 <script src="https://gist.github.com/deejaygraham/923067d0d102011253bf8d61a357ee2f.js"></script>
 

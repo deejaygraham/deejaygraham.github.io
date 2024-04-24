@@ -2,7 +2,7 @@
 permalink: 2020/02/07/mob-programming-evolution/
 layout: sketchnote
 title: Mob Programming Evolution
-tags: [ sketchnotes ]
+tags: [sketchnotes]
 tweetable: true
 thumbnail: "/img/posts/mob-programming-evolution/thumbnail-420x255.webp"
 sketchnote:
@@ -10,5 +10,5 @@ sketchnote:
   alt: "sketchnote"
 ---
 
-A quick sketch to illustrate the point that we ought to be evolving from individual contribution 
-as the default for software development towards more collaborative models. 
+A quick sketch to illustrate the point that we ought to be evolving from individual contribution
+as the default for software development towards more collaborative models.

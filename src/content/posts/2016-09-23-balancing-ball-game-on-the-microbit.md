@@ -2,7 +2,7 @@
 permalink: 2016/09/23/balancing-ball-game-on-the-microbit/
 layout: post
 title: Balancing Ball - Writing a Game for the BBC Micro:bit
-tags: [ code, microbit ]
+tags: [code, microbit]
 published: true
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

@@ -3,11 +3,11 @@ permalink: 2014/06/19/no-estimates-talks/
 layout: post
 title: No Estimates Talks
 published: true
-tags: [ video, presentations, agile ]
+tags: [video, presentations, agile]
 hero: agile
 ---
 
-Here are a collection of some of my favourite talks on the often controversial 
+Here are a collection of some of my favourite talks on the often controversial
 subject of #NoEstimates.
 
 [Neil Killick](http://www.twitter.com/@neil_killick) - Alternatives to Agile Estimation
@@ -29,4 +29,3 @@ subject of #NoEstimates.
 [Filip van Laenen](https://twitter.com/filipvanlaenen) - #NoEstimates Lightning Talk from JavaZone 2014
 
 <iframe src="//player.vimeo.com/video/105869249" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/105869249">#NoEstimates - Filip van Laenen</a> from <a href="http://vimeo.com/javazone">JavaZone</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-

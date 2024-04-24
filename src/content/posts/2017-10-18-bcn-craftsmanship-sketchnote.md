@@ -3,7 +3,7 @@ permalink: 2017/10/18/bcn-craftsmanship-sketchnote/
 layout: post
 title: Two Examples of Sketchnoting Inception
 published: true
-tags: [ sketchnotes ]
+tags: [sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
@@ -20,7 +20,7 @@ October 2015. I had no idea that I was going to be mentioned and it was a little
 hearing my own name but still, super cool!
 
 Next, I sketchnoted a slightly [controversial talk](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong) by [Dan North](https://twitter.com/tastapod)
-about how lots of the [SOLID guidelines](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) are redundant, wrong or just overly complicated.
+about how lots of the [SOLID guidelines](<https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)>) are redundant, wrong or just overly complicated.
 
 This got a huge (for me) storm of feedback about how it was completely wrong, we didn't
 understand any of it etc. etc. One nice interaction was from [Eduardo Ferro Aldama](https://twitter.com/eferro) who asked if he could use the sketchnote to illustrate a

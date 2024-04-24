@@ -2,7 +2,7 @@
 permalink: 2014/11/14/doctorows-three-laws/
 layout: sketchnote
 title: Doctorow's Three Laws
-tags: [ video, sketchnotes, open-source, illustration ]
+tags: [video, sketchnotes, open-source, illustration]
 published: true
 sketchnote:
   url: "/img/posts/doctorows-three-laws/doctorows-three-laws-hifi.webp"
@@ -17,7 +17,6 @@ thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
 
-This illustration is based on a composite of a number of different talks 
+This illustration is based on a composite of a number of different talks
 given by Cory on the general theme of The Coming War on General Purpose Computing  
 which he writes and talks about when not writing wonderful fiction.
-

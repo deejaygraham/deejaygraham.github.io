@@ -3,14 +3,12 @@ permalink: 2019/03/14/programming-crystal/
 layout: post
 title: Programming Crystal
 published: true
-tags: [ code, books ]
+tags: [code, books]
 thumbnail: /img/posts/programming-crystal/programming-crystal-book-420x255.webp
 alttext: book cover
-
 ---
 
-Just turned in my tech book review for the <a href="https://pragprog.com/">Pragmatic Programmers</a> 
-for Programming Crystal by Ivo Balbaert and Simon St. Laurent. 
+Just turned in my tech book review for the <a href="https://pragprog.com/">Pragmatic Programmers</a>
+for Programming Crystal by Ivo Balbaert and Simon St. Laurent.
 
 ![cover](/img/posts/programming-crystal/programming-crystal-book.webp)
-

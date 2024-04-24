@@ -2,16 +2,16 @@
 permalink: 2018/07/01/minecraft-detectorists/
 layout: post
 title: Minecraft Detectorists
-tags: [ code, minecraft ]
+tags: [code, minecraft]
 published: true
-hero: minecraft 
+hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---
 
 Another simple minecraft game, this time using Pythagoras' theorem to work out distances between two points.
 
-We randomly bury a piece of treasure - a gold block, a diamond, whatever - then give the player clues about 
+We randomly bury a piece of treasure - a gold block, a diamond, whatever - then give the player clues about
 how far away they are from it. The "game" ends when they dig up the block.
 
 {% highlight "python" %}
@@ -20,5 +20,5 @@ how far away they are from it. The "game" ends when they dig up the block.
 
 {% endhighlight %}
 
-Inspired by code I originally saw at Martin O'Hanlon's excellent <a href="https://www.stuffaboutcode.com/2013/01/raspberry-pi-minecraft-hide-and-seek.html">Stuff 
+Inspired by code I originally saw at Martin O'Hanlon's excellent <a href="https://www.stuffaboutcode.com/2013/01/raspberry-pi-minecraft-hide-and-seek.html">Stuff
 About Code</a>.

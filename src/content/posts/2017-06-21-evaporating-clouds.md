@@ -3,7 +3,7 @@ permalink: 2017/06/21/evaporating-clouds/
 layout: post
 title: Evaporating Clouds
 published: true
-tags: [ agile, illustration  ]
+tags: [agile, illustration]
 ---
 
 My re-imagining of the Evaporating Clouds thinking process which I read originally in

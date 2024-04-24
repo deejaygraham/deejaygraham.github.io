@@ -2,9 +2,9 @@
 permalink: 2018/05/12/simulated-minecraft-creeper/
 layout: post
 title: Simulating Minecraft Creeper on Pi
-tags: [ code, minecraft ]
+tags: [code, minecraft]
 published: true
-hero: minecraft 
+hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
 alttext: raspberry pi
 ---

@@ -3,7 +3,7 @@ permalink: 2017/08/21/blinking-cpp-for-the-microbit/
 layout: post
 title: Blinking C++
 published: true
-tags: [ code, microbit ]
+tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
