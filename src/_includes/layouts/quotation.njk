@@ -1,14 +1,23 @@
----
-layout: base.njk
----
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+
+{% if comment %}
+<section class="section">
+<p>{{ comment }}</p>
+</section>
+{% endif %}
+
 <article class="message is-large">
   <div class="message-header">
     <p>{{ title }} 
-{% if data.attribution %}- {{ data.attribution }}{% endif %}
-{% if data.publication %}in {{ data.publication }}{% endif %}
+{% if attribution %}- {{ attribution }}{% endif %}
+{% if publication %}in {{ publication }}{% endif %}
     </p>
   </div>
   <div class="message-body">
     {{ content | safe }}
   </div>
 </article>
+
+{% endblock %}
