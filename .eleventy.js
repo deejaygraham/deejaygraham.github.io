@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dateFull", dates.dateFull);
   eleventyConfig.addFilter("dateFormat", dates.dateFormat);
   eleventyConfig.addFilter("dateYear", dates.dateYear);
-  eleventyConfig.addFilter("search", require("./src/_11ty/filters/searchFilter"));
+  eleventyConfig.addFilter("search", require("./src/_11ty/filters/searchFilter.js"));
   eleventyConfig.addFilter("array_to_comma_string", require("./src/_11ty/filters/array_to_comma_string.js"));
     
   // Return all the tags used in a collection, including the 
