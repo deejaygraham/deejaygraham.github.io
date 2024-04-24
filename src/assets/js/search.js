@@ -32,7 +32,9 @@
   fetch("/search-index.json").then((response) =>
     response.json().then((jsonIndex) => {
       window.searchIndex = elasticlunr.Index.load(jsonIndex);
-      document.getElementById("search-box").addEventListener("input", search);
+      const searchBox = document.getElementById("search-box");
+      searchBox.addEventListener("input", search);
+      searchBox.focus();
     })
   );
 })(window, document);
