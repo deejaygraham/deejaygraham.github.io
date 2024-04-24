@@ -8,6 +8,7 @@
 
 {% block postcontent %}
 
+{% if tags %}
 {% set relatedTag = tags | randomItem %}
 {% if collections[relatedTag].length > 1 %}
 <aside>
@@ -20,6 +21,7 @@
     </ul>
   </div>
 </aside>
+{% endif %}
 {% endif %}
 
 {% endblock %}
