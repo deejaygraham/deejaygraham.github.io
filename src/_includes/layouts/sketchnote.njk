@@ -4,7 +4,44 @@
 
 <article >
     {{ content | safe }}
+
+    <aside>
+    {% if sketchnote %}
+        {% if sketchnote.url %}
+            <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
+            <button class="button model-button" data-target="modal-sketch" aria-haspop="true">view</button>
+        {% endif %}
+        {% if sketchnote.source %}
+            <h4>Source</h4>
+            {% if sketchnote.source.url %}
+            <a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a>
+            {% else %}
+            {{ sketchnote.source.name }}
+            {% endif %}
+        {% endif %}
+                
+        {% if sketchnote.speaker %}
+            <h4>About the Speaker</h4>
+            {% if sketchnote.speaker.url %}
+            <a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a>
+            {% else %}
+            {{ sketchnote.speaker.name }}
+            {% endif %}
+        {% endif %}
+                        
+        {% if sketchnote.event %}
+            <h4>About the Event</h4>
+            {% if sketchnote.event.url %}
+            <a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a>
+            {% else %}
+            {{ sketchnote.event.name }}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+    
+    {% include "partials/ccboilerplate.njk" %}
+    </aside>
+
 </article>
 
-{# put in attribution etc. here #}
 {% endblock %}
