@@ -11,14 +11,14 @@ of words according to their sound so that similar sounding words can be matched 
 spelled very differently. This sort of phonetic algorithm is what makes it possible for you to search for someone's
 name on the internet and be reasonably sure to find them, even if you don't know the exact spelling.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/SoundexTests.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Soundex.cs' %}
 
-{% endhighlight %}
+```

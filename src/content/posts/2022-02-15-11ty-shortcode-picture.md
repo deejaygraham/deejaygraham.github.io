@@ -15,7 +15,7 @@ you would expect.
 
 ### \_1tty/shortcodes/picture.js
 
-{% highlight "javascript" %}
+```javascript
 
 /\*\*
 
@@ -36,7 +36,7 @@ ${caption ? `<figcaption>${caption}</figcaption>` : '' }
 </figure>`;
 };
 
-{% endhighlight %}
+```
 
 Wrapping the markup in this way means we can change the img or figure tags in one place. Not much more to
 say about it than that.

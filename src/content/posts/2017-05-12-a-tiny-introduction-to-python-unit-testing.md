@@ -29,17 +29,17 @@ provides some nicely familiar <code>assertEqual</code>, <code>assertNotEqual</co
 self.assert\* to make sure that python knows which function you are invoking, otherwise
 you will get see something like:
 
-{% endhighlight %}
+```
 
 NameError: global name 'assertEqual' is not defined
 
-{% endhighlight %}
+```
 
 and your unit test will be failing for the wrong reason.
 
 ### Code
 
-{% endhighlight %}
+```
 
 import unittest
 
@@ -60,15 +60,15 @@ def test_up_is_down(self):
 
     self.assertFalse('up' != 'down')
 
-{% endhighlight %}
+```
 
 ### Running
 
-{% endhighlight %}
+```
 
 python -m unittest test_my_code
 
-{% endhighlight %}
+```
 
 Of course, I have been a good red-green-refactor-er and written failing tests first. This is
 the output from running the tests:

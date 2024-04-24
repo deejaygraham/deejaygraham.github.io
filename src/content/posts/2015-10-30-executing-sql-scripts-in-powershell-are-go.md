@@ -12,7 +12,7 @@ alttext: powershell
 Another quick snippet showing how to split a SQL script at the GO statements to execute a potentially large set
 of script in smaller chunks - and be better able to work out which piece went wrong.
 
-{% endhighlight %}
+```
 
 Import-Module "sqlps" -DisableNameChecking
 
@@ -46,7 +46,7 @@ $SqlFiles | ForEach-Object {
 
 }
 
-{% endhighlight %}
+```
 
 This is for illustration only so I'm using Write-Host. Obviously if I was a serious PowerShell person I would
 use Write-Verbose or Write-Progress.

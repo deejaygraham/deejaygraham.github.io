@@ -17,8 +17,8 @@ Here I iterate through a folder, recording the original version of the hash agai
 potentially destructive tool and re-examine the files and report on changes. For simplicity I am just writing text out
 to the screen and using red for failures, green for each match and yellow for new files created in the mystery process.
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/Validate-Hash.ps1' %}
 
-{% endhighlight %}
+```

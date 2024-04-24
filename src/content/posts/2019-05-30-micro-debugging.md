@@ -35,11 +35,11 @@ develop code using those sensors.
 First, flash a program to the microbit. Say, one to collect magnetic field sensor data, being careful to
 use print statements to pass the data back.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/microbit-repl-temp.py' %}
 
-{% endhighlight %}
+```
 
 Wait a little while for flashing to finish and the microbit to re-establish communication with your computer.
 Open the REPL (see below) and reset the microbit using the button on the back.
@@ -54,11 +54,11 @@ before you can flash a new program to the microbit.
 Using this new found knowledge we can calibrate a thermometer where each pixel can represent so many degrees of
 temperature.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/microbit-temp-sensor.py' %}
 
-{% endhighlight %}
+```
 
 Count the pixels to know how warm (or cold) it is.
 

@@ -29,11 +29,11 @@ test run, forcing someone to go and hunt out the new driver, download it and sav
 To help make this task of keeping both in sync a bit easier, I came up with the following cmdlet which could be run each time before the tests are run.
 
 Get-CompatibleChromeDriver.ps1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/GetCompatibleChromeDriver.ps1' %}
 
-{% endhighlight %}
+```
 
 ### Parameters
 

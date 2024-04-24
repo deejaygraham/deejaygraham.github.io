@@ -14,8 +14,8 @@ I couldn't think of another way monitoring the folder and finding the most
 recent build without tightly entwining my build script with calls to the
 TFS server or Developer Studio.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/MsBuildMostRecentFolder.cs' %}
 
-{% endhighlight %}
+```

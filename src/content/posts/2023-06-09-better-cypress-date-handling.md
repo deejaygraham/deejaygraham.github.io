@@ -20,14 +20,14 @@ do that.
 
 #### e2e.js
 
-{% highlight "javascript" %}
+```javascript
 
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc'); // we handle dates in utc only
 
 dayjs.extend(utc);
 
-{% endhighlight %}
+```
 
 The main dayjs is required plus the utc plugin so we can work with UTC dates.
 
@@ -35,15 +35,15 @@ Once the utc extension has been added, we can hang dayjs on the global Cypress o
 
 #### e2e.js
 
-{% highlight "javascript" %}
+```javascript
 
 Cypress.dayjs = dayjs;
 
-{% endhighlight %}
+```
 
 and then access it in the test code like this:
 
-{% highlight "javascript" %}
+```javascript
 
 it('api can do dates', () => {
 
@@ -51,19 +51,19 @@ const today = Cypress.dayjs.utc();
 
 });
 
-{% endhighlight %}
+```
 
 This works for general exposure to the full utility but we can also set up some custom functions if we want:
 
 #### e2e.js
 
-{% highlight "javascript" %}
+```javascript
 
 Cypress.formatted_date = () => dayjs.utc().format('YYYY-MM-DD');
 
-{% endhighlight %}
+```
 
-{% highlight "javascript" %}
+```javascript
 
 it('api can do dates as text', () => {
 
@@ -71,4 +71,4 @@ const today = Cypress.formatted_date();
 
 });
 
-{% endhighlight %}
+```

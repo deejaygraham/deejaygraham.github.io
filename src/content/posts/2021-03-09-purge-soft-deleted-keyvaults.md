@@ -17,18 +17,18 @@ an error: "New-AzKeyVault : Exist soft deleted vault with the same name."
 
 The way to get rid of the "phantom" key vault is to login to Azure CLI, select the correct subscription, then run this command:
 
-{% endhighlight %}
+```
 
 az keyvault list-deleted
 
-{% endhighlight %}
+```
 
 This should bring back a list (surprisingly long in my case) of names, ids and properties for each keyvault that still exists in a "deleted" collection. Typically the properties will be the date
 that the keyvault was deleted, the location, and the date when it will be eventually purged. Find the name of the keyvault in that list
 then run this command:
 
-{% endhighlight %}
+```
 
 az keyvault purge --name <keyvault-name-here>
 
-{% endhighlight %}
+```

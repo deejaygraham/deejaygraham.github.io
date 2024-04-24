@@ -22,11 +22,11 @@ transparent. This is a painful, general purpose algorithm for a paint program
 to do - using a magic wand selection - but can be done more easily by a
 specific program. Coincidentally, like one what I wrote :)
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Transpng.cs' %}
 
-{% endhighlight %}
+```
 
 This simple console app takes the name of an image file as an argument,
 changes the background colour to transparent and then saves it again with a

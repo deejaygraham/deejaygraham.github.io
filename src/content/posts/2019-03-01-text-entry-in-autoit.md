@@ -17,10 +17,10 @@ to type is a bang/exclamation point on it's own, you need to surround it with cu
 One scenario where you might run into this is in entering user credentials where an account password might contain special characters like
 hashes and bangs. This is where a nice typing function comes in handy.
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/AutoitTyper.ps1' %}
 
-{% endhighlight %}
+```
 
 We 'type' each character via AutoIt but check to make sure that we escape any of the special characters.

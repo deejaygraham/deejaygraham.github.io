@@ -18,19 +18,19 @@ There are a couple of variations in using the path parameter. If you specify a s
 A better way to set the path is with a wildcard. The usual _._ includes everything at the top level of the folder and doesn't create the named container which seems much better to me. If you use a single star for the wildcard, all of the content in the folder and all subfolders are added to the zip file recursively.
 
 Zip.ps1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/CompressArchive.ps1' %}
 
-{% endhighlight %}
+```
 
 Unzipping a file is the reverse of the zip operation, the path is the zip file location and the destination is where to unzip to.
 
 UnZip.ps1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/ExpandArchive.ps1' %}
 
-{% endhighlight %}
+```
 
 Again, be careful of zip files with containers within them which can give you too many subfolder when they are unzipped. For example, if I zip up a folder just be specifying c:\all_my_files as the path, then the zip file will not show any contents at the top level but will contain a folder called all_my_files with the expected files within that. Unzipping to another folder, c:\copy_of_my_files will unzip all the files you expect except that they won't be in the root of the folder, they will be in a subfolder called all_my_files.

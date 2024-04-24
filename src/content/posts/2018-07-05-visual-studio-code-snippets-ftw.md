@@ -14,19 +14,19 @@ change within it.
 
 The original code was like this:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/ExpectedExceptionTest.cs' %}
 
-{% endhighlight %}
+```
 
 and it needed to look like this:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/AssertThatExceptionTest.cs' %}
 
-{% endhighlight %}
+```
 
 Not a big change, but not something that can be done as a search and replace which would have been nice given the spread of the original code throughout
 our existing tests. The code for each test needs to be inspected to see where the exception is expected and code above and below sometimes needs to be
@@ -47,11 +47,11 @@ Unfortunately, there wasn't one for what I wanted. Hmmm. Knowing Visual Studio, 
 
 I used one of these built-in snippets as a template to create my own NUnit surround. I called it
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/csharp/NUnitAssertThrowsSnippet.xml' %}
 
-{% endhighlight %}
+```
 
 You can save it to the same folder as Visual Studio's (under program files) or put it under My Code Snippets (under My Documents).
 

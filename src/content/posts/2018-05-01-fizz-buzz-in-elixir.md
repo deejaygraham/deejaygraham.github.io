@@ -8,11 +8,11 @@ published: true
 
 Here's the result of a recent junior dev coding dojo, tackling fizz buzz in a totally new language for us - elixir.
 
-{% highlight "elixir" %}
+```elixir
 
 {% include 'code/elixir/fizzbuzz.exs' %}
 
-{% endhighlight %}
+```
 
 Everyone's minds were blown with the inside-out-ness of the solution, providing several different implementations with
 the matching code "outside" of the body of the function.

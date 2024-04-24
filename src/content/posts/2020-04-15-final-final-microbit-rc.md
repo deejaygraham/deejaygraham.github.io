@@ -37,11 +37,11 @@ I also noticed during testing that if I pulled the plug on the handset, the car 
 with disasterous results. I decided that a cut off would be useful if the two halves ever lost contact with each other. As well as the normal movement
 commands I added a watchdog 'hi' to send out to the car approximately every 5 seconds even when no control commands are being sent.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-rc3-1.py' %}
 
-{% endhighlight %}
+```
 
 ## Car
 
@@ -64,11 +64,11 @@ Just like a real car!
 The final feature was implementing a more sophisticated run loop. The outer loop still runs forever but I added an inner loop to wait for initial contact, then run as long as the handset was in communication with the car. Either by sending a movement command or by the special 'hi' command. We increment the watchdog count every time through the loop and reset the count when we get another message over the radio. If we go too long without contact, we drop out of the
 inner while loop, stop the motors and wait for contact to be established again at the top of the outer loop.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-rc3-2.py' %}
 
-{% endhighlight %}
+```
 
 I had anticipated the code for the car to be much longer in the non-class version but it turned out to be about 200 lines so well within manageable
 limits for future maintenance. Now that I have promised myself I am done with features, that shouldn't be a concern :)

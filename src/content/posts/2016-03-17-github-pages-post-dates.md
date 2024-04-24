@@ -40,11 +40,11 @@ At this point I had something like 50 files/slides so I didn't fancy renumbering
 and with the deadline of the talk looming. Luckily, I remembered my old friend PowerShell
 and the implementation took a minute or two and saved me a lot of stress.
 
-{% highlight "powershell" %}
+```powershell
 
 Get-ChildItem -Path .\_posts\*.html | Rename-Item -NewName { $\_.name -Replace "2016-", "2015-" }
 
-{% endhighlight %}
+```
 
 Jekyll is quite happy for all the dates to be in the past so changing all the dates from 2016 to
 2015 took the problem away and I could concentrate on the content I wanted to present.

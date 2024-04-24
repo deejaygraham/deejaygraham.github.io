@@ -76,11 +76,11 @@ the code I was about to write that would extract the data? Upgrading from v1.som
 
 #### .elevent.js
 
-{% highlight "javascript" %}
+```javascript
 
     eleventyConfig.on('eleventy.after', require("./_11ty/plugins/search-index-generator"));
 
-{% endhighlight %}
+```
 
 In the after event we get an array of all the pages that have been built and, crucially, the finished content of each page.
 This means we don't need to inspect keywords in the front matter but can make use of the full text to add to the search.
@@ -95,7 +95,7 @@ which does the job admirably.
 
 #### \_11ty/plugins/search-index-generator/index.js
 
-{% highlight "javascript" %}
+```javascript
 
 const elasticlunr = require('elasticlunr');
 const HTMLParser = require('node-html-parser');
@@ -139,7 +139,7 @@ fs.writeFileSync(dir.output + '/search-index.json', json);
 console.log("Search index complete");
 };
 
-{% endhighlight %}
+```
 
 Given the full html content, I extract the most important parts of each page and use those as the keywords for that page.
 Finally, I write out the json search index into the site output with the html files.
@@ -158,7 +158,7 @@ Next I removed duplicated words from the list and replaced a lot of common engli
 common progamming words to try to declutter the output a bit more. The list shown is a bit shorter than
 the real one, just so it can fit on the page :)
 
-{% highlight "javascript" %}
+```javascript
 
 const squash = (text) => {
 const lowerCased = new String(text).toLowerCase();
@@ -190,7 +190,7 @@ interestingWords = interestingWords.replace(/[ ]{2,}/g, ' ');
 return interestingWords;
 };
 
-{% endhighlight %}
+```
 
 Last thing was to remove double spaces and replace with single spaces and return the final string.
 

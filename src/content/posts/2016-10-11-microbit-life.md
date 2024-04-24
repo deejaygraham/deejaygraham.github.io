@@ -40,11 +40,11 @@ could generate an initial pattern that could crash the interpreter.
 
 So, what I have as a working solution can be seen below.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/game-of-life.py' %}
 
-{% endhighlight %}
+```
 
 It's true that there is a lot of repeated list iteration code and it feels like it could
 be shorter but I have left it like this based on feedback from some beginning coders who

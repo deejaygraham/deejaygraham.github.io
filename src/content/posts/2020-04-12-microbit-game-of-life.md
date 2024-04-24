@@ -22,11 +22,11 @@ to the rules of the game then mapped to the 5 x 5 led display to show the curren
 intermediate representation, then the display can be lit with the live cells and we can read the state of
 any particular cell by using get_pixel.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/game-of-life-2.py' %}
 
-{% endhighlight %}
+```
 
 Removing the population variables and passing objects around in the code tidies things up a bit at the
 expense of having a "global" display variable used to hold the internal game state. I think that the code is
@@ -44,10 +44,10 @@ There is one weakness with this implementation. Because we are updating the disp
 It turns out that is really easy to do. We create a new image in the apply rules function, update it with set_pixel as we
 work our way through the cells, then use display.show at the end to make this image the new state of the game.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/game-of-life-3.py' %}
 
-{% endhighlight %}
+```
 
 Once this is addressed, the shapes that appear are subtly different and the stable and unstable end states are different too.

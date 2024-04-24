@@ -17,19 +17,19 @@ that Terraform has a set of logging levels that can be turned on and adjusted th
 The latest version of the tool says that TRACE is the only level that is well supported but I found that DEBUG worked fine for my purposes. Before running the terraform cli, set these two
 options: the debug level and the path.
 
-{% highlight "powershell" %}
+```powershell
 
 $env:TF_LOG="TRACE"
 $env:TF_LOG_PATH="terraform.txt"
 
-{% endhighlight %}
+```
 
 This creates a terraform log and fills it with all sorts of useful information. You can see the versions of the plugins loaded by terraform init, which http calls are made to services, and crucially
 arguments passed that are built from explicit vars or queried variables where typos or bad logic may have introduced a bug in the data.
 
 Below is an extract from the beginning of one of those logs.
 
-{% endhighlight %}
+```
 2021/03/09 13:08:50 [INFO] Terraform version: 0.14.7  
 2021/03/09 13:08:50 [INFO] Go runtime version: go1.15.6
 2021/03/09 13:08:50 [INFO] CLI args: []string{"C:\\Program Files\\Terraform\\terraform.exe", "init"}
@@ -56,6 +56,6 @@ Below is an extract from the beginning of one of those logs.
   2021/03/09 13:08:50 [TRACE] statemgr.Filesystem: read nil snapshot
   2021/03/09 13:08:50 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
   2021/03/09 13:08:50 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
-  {% endhighlight %}
+  ```
 
 Terraform has a great <a href="https://learn.hashicorp.com/collections/terraform/azure-get-started">introduction to using it with Azure</a>.

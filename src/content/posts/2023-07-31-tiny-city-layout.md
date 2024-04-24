@@ -13,7 +13,7 @@ snippet of code and some suggestions for alternatives. I thought that this might
 
 Here is the Python version of Martin's original code.
 
-{% highlight "python" %}
+```python
 
 size(1024, 1024)
 background(0)
@@ -23,7 +23,7 @@ for y in range(0, 256):
 if (x ^ y) % 9:
 rect(x _ 4, y _ 4, 4, 4)
 
-{% endhighlight %}
+```
 
 Martin suggested replacing 9 with 5, 17 or 33 to get different patterns but I think the original works very nicely.
 

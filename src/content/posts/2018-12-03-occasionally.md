@@ -13,24 +13,24 @@ creating a thread per action and blocking for a set amount of time in each threa
 
 An occasional task runs as part of a while loop, single threaded whenever it feels like the next run is required:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/OccasionalAction.cs' %}
 
-{% endhighlight %}
+```
 
 Tests confirm the shape of the client code I was shooting for:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/OccasionalActionTests.cs' %}
 
-{% endhighlight %}
+```
 
 And a collection of occasional tasks to round things off:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/OccasionalActions.cs' %}
 
-{% endhighlight %}
+```

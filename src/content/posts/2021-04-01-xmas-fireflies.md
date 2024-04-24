@@ -17,11 +17,11 @@ I stared with plain white circles but then thought it might be more fun to try u
 house fly or fire fly flying around the screen and leaving coloured dots behind, almost as if they were stringing up Christmas lights as they
 moved about - hence the name of this example.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/xmas-fireflies.py' %}
 
-{% endhighlight %}
+```
 
 ![second](/img/posts/xmas-fireflies/xmas-fireflies-2.webp)
 

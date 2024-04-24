@@ -44,11 +44,11 @@ to nothing.
 
 Here's the finished code:
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/tiny-asteroids.py' %}
 
-{% endhighlight %}
+```
 
 This might be my most ambitious game for the microbit even though the tiny screen does
 mean that representing the ship and the asteroids are not a satisfying as I would have

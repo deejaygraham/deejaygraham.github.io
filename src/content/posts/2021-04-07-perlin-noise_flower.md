@@ -21,11 +21,11 @@ circle on each frame. The undulation caused by the perlin noise generator gives 
 Where I have modified the code Emily presented, it was to keep going after the drawing collapses into the centre, and reverses the direction of the radius so that it starts growing outwards again. Once
 it reaches the outside of the canvas, it re-contracts and starts again.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/perlin-noise-flower.py' %}
 
-{% endhighlight %}
+```
 
 ![third](/img/posts/perlin-noise-flower/flower-3.webp)
 

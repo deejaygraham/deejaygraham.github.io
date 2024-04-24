@@ -15,11 +15,11 @@ Two more snippets I always need when doing security reviews. I'm thinking of on-
 
 The simplest example is to use Get-ACL. Here we want to look at access rights for a single UNC path shared on a network.
 
-{% highlight "powershell" %}
+```powershell
 
 (Get-Acl '\\MyUNCPath\Goes\Here').Access | Out-GridView
 
-{% endhighlight %}
+```
 
 Often, this type of query is an ad-hoc one so I find using the pop-out GridView useful, and preferable to looking through a long list of information in the terminal.
 
@@ -28,7 +28,7 @@ Often, this type of query is an ad-hoc one so I find using the pop-out GridView 
 The slightly more involved option, if needed is to iterate all through the files and folders
 accessible through the share and list out each one of it's permissions.
 
-{% highlight "powershell" %}
+```powershell
 
 $UNCPath = '\\MyUNCFolder\Stuff'
 $Permissions = @()
@@ -50,4 +50,4 @@ $Permissions += New-Object -TypeName PSObject -Property $Properties
 
 $Permissions | Out-GridView
 
-{% endhighlight %}
+```

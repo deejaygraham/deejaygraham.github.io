@@ -14,11 +14,11 @@ For example, a logger class which instantiates a Windows event log object in the
 but could just as easily created a new file, read from a file or made a network call to initialize code
 before we have a chance to intervene for testing purposes.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/static-logger-class.cs' %}
 
-{% endhighlight %}
+```
 
 There is a little refactoring that we can use to make this situation a little bit more testable while still
 preserving the horrific static outer we present to the world. I don't
@@ -29,11 +29,11 @@ sure we won't mess up.
 Bit by bit we can create a new instance of a core class and gradually move properties and methods across to
 that class, forwarding those static calls to the instance we create in the static constructor.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/instance-logger.cs' %}
 
-{% endhighlight %}
+```
 
 This way, we can write tests against instances of the core class and be sure the functionality is what we
 expect but also preserve the interface to the outside world with the simpler implementation in the static wrapper

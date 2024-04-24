@@ -14,10 +14,10 @@ music module. This module lets you play simple tunes using a dsl for pitches, oc
 
 I thought it would be fun to write a program to play <a href="https://www.jonathancoulton.com/">Jonathan Coulton's</a> end theme from the game <a href="https://en.wikipedia.org/wiki/Portal_(video_game)">Portal</a>.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/portal-theme.py' %}
 
-{% endhighlight %}
+```
 
 The challenge was in notating it correctly with the right timings and pitches. Having everything in one list makes it a little bit difficult to maintain and to work out where you are if there is a problem but it does give you a nice compact music format very similar to the <a href="https://sonic-pi.net/">sonic pi</a> dsl.

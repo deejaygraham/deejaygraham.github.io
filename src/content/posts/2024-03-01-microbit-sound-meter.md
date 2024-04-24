@@ -18,7 +18,7 @@ five carefully crafted bitmaps ;). The microbit documentation mentions that ther
 The values from the microphone are between 0 and 255 as you might expect but I haven't been able to find any
 spec on what that maps to in terms of dBm levels.
 
-{% highlight "python" %}
+```python
 
 from microbit import \*
 
@@ -42,4 +42,4 @@ while True:
 soundLevel = int(map_value(microphone.sound_level(), 0, 255, 0, 5))
 display.show(sound_meter[soundLevel])
 
-{% endhighlight %}
+```

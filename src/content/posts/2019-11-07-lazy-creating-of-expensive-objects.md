@@ -26,17 +26,17 @@ A better way to approach it is to follow the example of .net source itself and l
 factory pattern. In Azure, for instance, the CloudBlobClient is one such expensive object that we would like to only
 create once the first time it's needed.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/CloudBlobClientFactory.cs' %}
 
-{% endhighlight %}
+```
 
 When we need to use it, we do it like this. Instantiation first time, if it does not already exist, and use together
 in one line.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/CloudBlobClientFactoryUse.cs' %}
 
-{% endhighlight %}
+```

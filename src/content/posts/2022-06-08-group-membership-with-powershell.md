@@ -16,29 +16,29 @@ out which AD groups they belong to?
 
 First, we need to make sure that the ActiveDirectory module is available. On Windows 10, this is a capability:
 
-{% highlight "powershell" %}
+```powershell
 
-Add-WindowsCapability -Name Rsat.ActiveDirectory.DS-LDS.Tools{% endhighlight %}~0.0.1.0 -Online
+Add-WindowsCapability -Name Rsat.ActiveDirectory.DS-LDS.Tools```~0.0.1.0 -Online
 
-{% endhighlight %}
+```
 
 Confusingly, for Windows Server OS' it's a windows feature:
 
-{% highlight "powershell" %}
+```powershell
 
 Install-WindowsFeature -Name "RSAT-AD-PowerShell" -IncludeAllSubFeature
 
-{% endhighlight %}
+```
 
 ## Which Groups Am I In?
 
-{% highlight "powershell" %}
+```powershell
 
 Import-Module ActiveDirectory
 
 Get-ADPrincipalGroupMembership MyUser.Name | select name
 
-{% endhighlight %}
+```
 
 Piping to Select name strips away the cruft we generally don't care about and gives us a nice list of the groups.
 
@@ -46,10 +46,10 @@ Piping to Select name strips away the cruft we generally don't care about and gi
 
 The other side of this problem is looking at a group and getting the members of that group.
 
-{% highlight "powershell" %}
+```powershell
 
 Import-Module ActiveDirectory
 
 Get-ADGroupMember -Identity "MyADGroupName"
 
-{% endhighlight %}
+```

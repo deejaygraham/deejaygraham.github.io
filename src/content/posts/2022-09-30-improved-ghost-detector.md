@@ -14,7 +14,7 @@ demo for the microbit temperature sensor. Now that's it's almost Spooky
 season again, I have updated it to make some refinements and to add some
 animation to the ghost.
 
-{% highlight "python" %}
+```python
 
 # ghost-detector.py
 
@@ -123,7 +123,7 @@ detector.reset()
 if button_a.was_pressed():
 detector.reset()
 
-{% endhighlight %}
+```
 
 The most obvious change is that I have added a ghost class
 to handle the image manipulation required to animate it "walking"

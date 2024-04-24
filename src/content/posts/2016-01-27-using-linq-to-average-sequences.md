@@ -23,11 +23,11 @@ from the most recent episode.
 
 Linq makes this easy using the Zip and Average extension methods for IEnumerable<T>.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/DatePrediction.cs' %}
 
-{% endhighlight %}
+```
 
 Here we build a list of TimeSpan objects to represent the differences between successive
 episodes, comparing 1st to 2nd, 2nd to 3rd etc. using the offset given by Skip(1). Then,

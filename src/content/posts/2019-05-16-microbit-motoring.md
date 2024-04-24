@@ -34,22 +34,22 @@ for 50% of the time and off for the other 50% will give us 50% of the speed.
 PWM values range between 0 (off) and 1023 (on). For reverse mode, we need to provide the complement of the forward value, so a
 75% speed forward would be a 25% PWM in reverse.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-motor-1.py' %}
 
-{% endhighlight %}
+```
 
 ### BitBot
 
 Now we can create a BitBot class which will, at it's simplest, let us display the direction we are moving in and move the
 motors together, forward or reverse, or independently to turn in a circle.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-motor-2.py' %}
 
-{% endhighlight %}
+```
 
 During development I found displaying an icon on the microbit to indicate the desired direction hugely useful in debugging when
 the bitbot would veer away from my intended track.
@@ -58,8 +58,8 @@ the bitbot would veer away from my intended track.
 
 The client program becomes a bit easier to read and understand
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-motor-3.py' %}
 
-{% endhighlight %}
+```

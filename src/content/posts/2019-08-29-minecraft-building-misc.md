@@ -16,48 +16,48 @@ few of the examples.
 
 Stand on some grass and bounce!
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/misc-1.py' %}
 
-{% endhighlight %}
+```
 
 ### Treasure Hunt
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/misc-2.py' %}
 
-{% endhighlight %}
+```
 
 ### Frozen
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/misc-3.py' %}
 
-{% endhighlight %}
+```
 
 ### Pyramid
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/misc-4.py' %}
 
-{% endhighlight %}
+```
 
 ### Castle
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/misc-5.py' %}
 
-{% endhighlight %}
+```
 
 ### Clearing Changes
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/misc-6.py' %}
 
-{% endhighlight %}
+```

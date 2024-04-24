@@ -20,11 +20,11 @@ I needed to change the algorithm for play within the draw method but the changes
 Rather than play each player every time, we start off the draw method with a list of unpaired players (the players still in the game) and an empty dictionary of the
 pairs we are going to build. I use random to pick each player out of the unpaired list and then remove them so we don't accidentally pick them twice.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/oligarchy-draw-2.py' %}
 
-{% endhighlight %}
+```
 
 I had to add in a couple of lines to work with only the paired players, agree on a bet amount and then award a win and a lose based on the same coin toss code from last time.
 We then have to make sure to display all the players with their current status.

@@ -16,48 +16,48 @@ create a little cheatsheet for myself (and anyone else for that matter).
 
 We can assign a single value to more than one variable.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/idioms-4.py' %}
 
-{% endhighlight %}
+```
 
 ### Comparison
 
 I have always done explicit, separate comparisons in an if, probably because I came from a C background. Chaining
 comparisons together is much more natural for a single value.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/idioms-1.py' %}
 
-{% endhighlight %}
+```
 
 ### Ternary Operators
 
 Slightly more arcane to my mind but reminiscent of ruby syntax, ternary operators work a little different from C-like
 languages
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/idioms-2.py' %}
 
-{% endhighlight %}
+```
 
 ### In With the In Crowd
 
 Testing if a value exists in a set of options, or for iterating through a set of values.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/idioms-3.py' %}
 
-{% endhighlight %}
+```
 
 ### String Placeholders
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/idioms-5.py' %}
 
-{% endhighlight %}
+```

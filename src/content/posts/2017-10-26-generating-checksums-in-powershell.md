@@ -13,13 +13,13 @@ then write out that value to a file suitable for shipping to the customer. Origi
 this was invoked via an MsBuild Exec command but it works equally well as a standalone
 chunk.
 
-{% endhighlight %}
+```
 
 Get-FileHash -Path MyLovelyFile.zip -Algorithm SHA256 |
 Select -ExpandProperty "Hash" |
 Out-File MyLovelyFile.SHA256.txt
 
-{% endhighlight %}
+```
 
 Get-FileHash returns an object containing the path, the hash algorithm and the actual
 value. Since I'm only really interested in the value and saving it alongside the

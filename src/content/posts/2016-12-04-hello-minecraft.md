@@ -21,39 +21,39 @@ Raspbian images have the API installed by default so that you can write and run 
 from anywhere. If you have an older image without the API, you can get it either by opening
 a terminal and typing:
 
-{% endhighlight %}
+```
 
 sudo apt-get update
 sudo apt-get install minecraft-pi
 
-{% endhighlight %}
+```
 
 or by downloading the <a href="https://s3.amazonaws.com/assets.minecraft.net/pi/minecraft-pi-0.1.1.tar.gz">PI
 Edition of Minecraft here</a> using the Pi web browser. Or you can use wget from the console:
 
-{% endhighlight %}
+```
 
 wget https://s3.amazonaws.com/assets.minecraft.net/pi/minecraft-pi-0.1.1.tar.gz
 
-{% endhighlight %}
+```
 
 Once it's downloaded, you can move it to a convenient folder, open a terminal window and
 expand the file using:
 
-{% endhighlight %}
+```
 
 tar -zxvf minecraft-pi-0.1.1.tar.gz
 
-{% endhighlight %}
+```
 
 This will create an _mcpi_ (minecraft pi) sub-folder. If you cd into this folder you can
 start a minecraft session by typing:
 
-{% endhighlight %}
+```
 
 ./minecraft-pi
 
-{% endhighlight %}
+```
 
 Newer Pi images have a desktop shortcut or menu item so you can start Minecraft directly
 from the UI.
@@ -83,16 +83,16 @@ new folder to store your python scripts. For ease, we can copy the contents of t
 mcpi folder into the new code folder. If you have a more recent version of Raspbian,
 you can run a script from any folder and it will work.
 
-{% endhighlight %}
+```
 
 cp -r ~/mcpi/api/python/\* .
 
-{% endhighlight %}
+```
 
 Once that's done, we are ready to start programming in Minecraft. First you will need
 to create a new python source file, say hello.py, like this:
 
-{% endhighlight %}
+```
 
 from mcpi.minecraft import Minecraft
 
@@ -100,13 +100,13 @@ world = Minecraft.create()
 
 world.postToChat("Hello minecraft")
 
-{% endhighlight %}
+```
 
 To run it, open another terminal window (Minecraft is running from the original) and
 type:
 
-{% endhighlight %}
+```
 
 python hello.py
 
-{% endhighlight %}
+```

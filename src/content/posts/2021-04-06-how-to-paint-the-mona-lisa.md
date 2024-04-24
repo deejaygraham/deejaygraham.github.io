@@ -20,11 +20,11 @@ we won't be drawing the original image, we will always have it memory as a refer
 
 Note: Before getting into the rest of the is post, the no-function version of the this concept is as below. The code is easier for a beginner to understand and follow through the idea of x and y coordinates.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/mona-lisa-0.py' %}
 
-{% endhighlight %}
+```
 
 Once the shapes are worked out, we can change up the size of pixels and change the shape of the pixels to circles or triangles. This also helps with understanding what happens with the structure of the code.
 
@@ -33,11 +33,11 @@ Once the shapes are worked out, we can change up the size of pixels and change t
 An entertaining further step to take before we start "destroying" the image, is to flip the image around by changing where we sample from in the image. If we keep the loop the same but sample from the right side of the image working towards the left, we can flip the image along the vertical axis.
 If we read from the bottom upwards we can flip the image along the horizontal axis and make it upside down. If we do both, we can reverse the image on both axes.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/mona-lisa-0a.py' %}
 
-{% endhighlight %}
+```
 
 Ta-da, an original/fake artwork. Now to the function-based version
 
@@ -46,11 +46,11 @@ Ta-da, an original/fake artwork. Now to the function-based version
 First, we'll use processing to load the image into memory (remembering to copy the original image into the sketch folder). We also set the background to be white and make sure
 that noStroke is called so that we don't draw any boxes around our pixels.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/mona-lisa-1.py' %}
 
-{% endhighlight %}
+```
 
 At this point we don't expect to see anything on the screen at all if we press "run".
 
@@ -59,11 +59,11 @@ At this point we don't expect to see anything on the screen at all if we press "
 Next, we'd like to fill in the picture bit by bit by sampling the original image at random locations and
 painting some larger squares using the colour of the pixel at those random locations.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/mona-lisa-2.py' %}
 
-{% endhighlight %}
+```
 
 ![screenshot](/img/posts/how-to-paint-the-mona-lisa/art-1.webp)
 
@@ -89,11 +89,11 @@ Sticking with the same setup function, we need to do something different when we
 This time, the processing function, pixelate, works across the image and down in rows, sampling a pixel and then filling a larger version of that pixel
 in the screen image.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/mona-lisa-3.py' %}
 
-{% endhighlight %}
+```
 
 I have experimented witht the noStroke function to see what the difference was between including it and commenting it out. First with boxes around each "pixel":
 

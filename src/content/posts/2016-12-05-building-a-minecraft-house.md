@@ -42,7 +42,7 @@ along the North-South axis.
 Let's make a cube of stone, defined by the player's current position, and put them
 on top of it:
 
-{% endhighlight %}
+```
 
 import mcpi.minecraft as minecraft
 import mcpi.block as block
@@ -55,7 +55,7 @@ playerPosition.x + 1, playerPosition.y + 2, playerPosition.z + 1, block.STONE.id
 
 world.player.setPos(playerPosition.x, playerPosition.y + 3, playerPosition.z)
 
-{% endhighlight %}
+```
 
 ### Gonna Build a House
 
@@ -65,7 +65,7 @@ around the player.
 Probably the easiest way to do that is to trace the outline of the building and
 drop a block at each position.
 
-{% endhighlight %}
+```
 
 import mcpi.minecraft as minecraft
 import mcpi.block as block
@@ -82,6 +82,6 @@ world.setBlocks(x, y, z, x + house_width, y + house_height, z + house_depth, blo
 world.setBlocks(x + wall_thickness, y, z + wall_thickness,
 x + house_width - wall_thickness, y + house_height, z + house_depth - wall_thickness,
 block.STONE_BRICK.id)
-{% endhighlight %}
+```
 
 Nice and easy but now we need a roof and a doorway and a swimming pool and maybe a lava moat...

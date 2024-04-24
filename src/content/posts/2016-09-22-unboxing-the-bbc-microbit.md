@@ -31,13 +31,13 @@ Perhaps the easiest thing to do on the micro:bit is to display <a href="http://m
 
 Type this:
 
-{% endhighlight %}
+```
 
 from microbit import \*
 
 display.show(Image.DUCK)
 
-{% endhighlight %}
+```
 
 Press the flash button and wait for the yellow light to stop flashing. And behold,
 a pixelated duck!

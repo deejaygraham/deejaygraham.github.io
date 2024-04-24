@@ -30,11 +30,11 @@ show the board and the block.
 
 So here, our first attempt with an empty board and a single block floating at the start position.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/tiny-tetris-01.py' %}
 
-{% endhighlight %}
+```
 
 I have given the "live" and "dead" blocks different LED intensities since we can't have
 different colours.
@@ -47,11 +47,11 @@ value, the redraw at the new position. We also need to be able to check that the
 current position for the block to drop. We ask the board if the pixel below us is empty. We also want to
 be sure we haven't dropped off the bottom of the screen.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/tiny-tetris-02.py' %}
 
-{% endhighlight %}
+```
 
 ### Buttons
 
@@ -63,11 +63,11 @@ before we change the x value of the block. Once a block can't move any further d
 it has hit the bottom or landed on another block, we need to convert that "live" block to a "dead" one, transfer
 ownership to the board and create a new block back up at the top of the screen.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/tiny-tetris-03.py' %}
 
-{% endhighlight %}
+```
 
 ### Clearing
 
@@ -75,31 +75,31 @@ Another characteristic of Tetris we would like to preserve is scoring points whe
 To know if we should clear a row, we need to make sure that all pixels in that row are non-zero, any zeroes tell us there is
 a hole and we shouldn't remove it. If we do find a full row, we remove it and add to the score for this game.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/tiny-tetris-04.py' %}
 
-{% endhighlight %}
+```
 
 ### Collapse
 
 Notice that the incomplete rows don't "fall" down into the newly emptied rows so we need to tackle that next.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/tiny-tetris-05.py' %}
 
-{% endhighlight %}
+```
 
 ### Finished
 
 Finally, we need a way to get out of the game and show the score at the end. Here is the finished code:
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/tiny-tetris-06.py' %}
 
-{% endhighlight %}
+```
 
 ### Improvements
 

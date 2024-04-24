@@ -13,8 +13,8 @@ and [Mono's](http://www.mono-project.com/Main_Page) Cecil library to load
 a managed assembly (or folder's worth of assemblies) and generate a code file
 for each type found.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/DecompileAssembly.cs' %}
 
-{% endhighlight %}
+```

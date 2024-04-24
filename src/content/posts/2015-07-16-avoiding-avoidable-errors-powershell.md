@@ -14,11 +14,11 @@ cmdlet **Set-PSDebug**
 
 ##Tracing some of the things
 
-{% endhighlight %}
+```
 
 PS C:\>Set-PSDebug -Trace 1
 
-{% endhighlight %}
+```
 
 Trace level 1 gives you an idea of the execution of a script, like which path is taken after a
 conditional is evaluated.
@@ -28,21 +28,21 @@ conditional is evaluated.
 Even better is level 2 which shows everything level 1 does plus variable assignments (**! SET** ) and function calls
 (**! CALL**).
 
-{% endhighlight %}
+```
 
 PS C:\>Set-PSDebug -Trace 2
 
-{% endhighlight %}
+```
 
 ##Strict all the things
 
 The other nice feature of Set-PSDebug is the strict option:
 
-{% endhighlight %}
+```
 
 PS C:\>Set-PSDebug -Strict
 
-{% endhighlight %}
+```
 
 Strict will raise an error if you accidentally mistype the name of a variable
 thereby creating a new, uninitialised one with a slightly different name.
@@ -57,19 +57,19 @@ and can be applied to single functions rather than the global reach of **Set-PSD
 StrictMode comes in two flavours, **version 1** works in the same way as the Set-PSDebug -Strict  
 switch and suffers from the same gotcha in expanded strings.
 
-{% endhighlight %}
+```
 
 PS C:\>Set-StrictMode -Version 1
 
-{% endhighlight %}
+```
 
 As you might have guessed, StrictMode also has a **version 2** setting.
 
-{% endhighlight %}
+```
 
 PS C:\>Set-StrictMode -Version 2
 
-{% endhighlight %}
+```
 
 Version 2 **does** catch uninitialized variables in expanded strings as well as in normal code. It also
 looks for functions being called as methods, unnamed variables, mistyped object properties.
@@ -78,16 +78,16 @@ looks for functions being called as methods, unnamed variables, mistyped object 
 
 Turn off strict mode again using:
 
-{% endhighlight %}
+```
 
 PS C:\>Set-PSDebug -Off
 
-{% endhighlight %}
+```
 
 or
 
-{% endhighlight %}
+```
 
 PS C:\>Set-StrictMode -Off
 
-{% endhighlight %}
+```

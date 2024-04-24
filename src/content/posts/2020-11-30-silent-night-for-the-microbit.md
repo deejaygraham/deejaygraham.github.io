@@ -21,20 +21,20 @@ tiny speaker.
 In normal microbit code:
 
 silent-night.py
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/silent-night.py' %}
 
-{% endhighlight %}
+```
 
 ... and using the technique from the [last post](/2020/10/30/transcribing-sheetmusic-for-the-microbit/)
 
 silent-night.txt
-{% highlight "txt" %}
+```txt
 
 {% include 'code/python/microbit/silent-night.txt' %}
 
-{% endhighlight %}
+```
 
 The advantage with the second apparoach is that the music isn't hardcoded and can be changed by copying
 a new file with different content onto the microbit and resetting it.

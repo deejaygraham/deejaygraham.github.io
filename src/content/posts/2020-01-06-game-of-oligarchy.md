@@ -33,11 +33,11 @@ The player has a location on the board, a number for identification, and a sum o
 Rather than getting too fancy to begin with, I represent each player as a square with their number in the centre and use colour
 coding to denote how well they are doing. Bright green for lots of money, darker green for modest amounts, red for close to losing, and grey for out of the game.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/oligarchy-1.py' %}
 
-{% endhighlight %}
+```
 
 The rules also call for each player to declare how much they are willing to bet (half their pot of money) and be able to win
 or lose that amount.
@@ -55,11 +55,11 @@ The original game calls for players to play against a random opponent selected f
 I elected not to do that but just to try things out with a simple coin toss for each player and award a win or a loss depending on
 whether heads or tails was returned.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/oligarchy-2.py' %}
 
-{% endhighlight %}
+```
 
 I also added in some code to capture each frame so you can see how the game proceeds through each turn.
 

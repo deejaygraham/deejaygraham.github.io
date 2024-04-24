@@ -17,38 +17,38 @@ arms of the robot - 6 each side. Each one is individually addressable (0 .. 11) 
 Importing the neopixel library is a required step because it doesn't come in with the traditional blank microbit star import.
 Then we can set colour using an rgb tuple.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-neopixels-1.py' %}
 
-{% endhighlight %}
+```
 
 We can set all pixels to the same colour easily too.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-neopixels-2.py' %}
 
-{% endhighlight %}
+```
 
 All changes to the pixel values have to be followed up with a call to show(). Pixel values also persist between calls to show()
 so that turning off all LEDs is a good practice before changing which LEDs are shown.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-neopixels-3.py' %}
 
-{% endhighlight %}
+```
 
 ### Microbit LEDs
 
 We can add this NeoPixel functionality to the BitBot vehicle so that we can have headlights, reverse lights, brake lights...
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-neopixels-4.py' %}
 
-{% endhighlight %}
+```
 
 I also added functions to light the left and right arms of the vehicle independently and two cool effects -
 swiping a colour from the back LEDs all the way to the front one (and the reverse effect) just to show off.
@@ -57,11 +57,11 @@ swiping a colour from the back LEDs all the way to the front one (and the revers
 
 We can add this code into the [BitBot class]({ FIX % link \_posts/2019-05-16-microbit-motoring.md %}) like this:
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-neopixels-5.py' %}
 
-{% endhighlight %}
+```
 
 ### Rainbows
 

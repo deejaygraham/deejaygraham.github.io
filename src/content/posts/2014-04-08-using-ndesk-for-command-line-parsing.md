@@ -21,16 +21,16 @@ it makes it very easy to see which string option relates to which field.
 Here's a set of command line options for an application we'd like to set from the
 command line:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/NDeskCommandLineOptions.cs' %}
 
-{% endhighlight %}
+```
 
 And here's the super simple code to parse out arguments into properties in the object:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/UsingNDesk.Options.cs' %}
 
-{% endhighlight %}
+```

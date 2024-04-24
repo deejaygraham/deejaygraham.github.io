@@ -20,8 +20,8 @@ Shaking the device starts the timer and we display an animated clock moving once
 
 Once we get to the full time, we stop the timer and display a smiley face.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/microbit-timer.py' %}
 
-{% endhighlight %}
+```

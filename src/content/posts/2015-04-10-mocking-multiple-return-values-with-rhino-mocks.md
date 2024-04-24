@@ -17,11 +17,11 @@ right order.
 Having used [Rhino Mocks](http://hibernatingrhinos.com/oss/rhino-mocks)
 before I fell naturally into using the
 
-{% highlight "csharp" %}
+```csharp
 
     MockRepository.GenerateMock<IMyInterface>()
 
-{% endhighlight %}
+```
 
 syntax.
 
@@ -32,7 +32,7 @@ is done, move on to the next stage). I thought this might mean a nasty bit of
 involved logic but I was surprised to find Rhino gives you this _Repeat_ control
 relatively easily.
 
-{% highlight "csharp" %}
+```csharp
 
     var mockRepo = MockRepository.GenerateMock<IMyMultiStageInterface>();
 
@@ -40,4 +40,4 @@ relatively easily.
     mockRepo.Expect(r => r.WorkHasBeenDone()).Return(true);
 
 
-{% endhighlight %}
+```

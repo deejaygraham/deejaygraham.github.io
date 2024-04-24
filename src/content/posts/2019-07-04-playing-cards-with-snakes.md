@@ -13,21 +13,21 @@ Another random discussion in our regular coding dojo led me to think about repre
 
 Here's a card class I came up with to model the suit and rank of an instance along with string conversion and comparison operators - which seem to make sense for cards so that they can be sorted or we can tell if they aren't in order.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/cards-1.py' %}
 
-{% endhighlight %}
+```
 
 ### Deck
 
 Next we need to collect the cards into a deck so we can order, shuffle, add and remove cards from the collection.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/cards-2.py' %}
 
-{% endhighlight %}
+```
 
 ### Magic
 
@@ -49,18 +49,18 @@ One of the magical properties of this ordering is that the pattern rolls over at
 
 For our deck of cards we want to be able to cut the cards into two stacks and place the bottom stack onto the top stack.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/cards-3.py' %}
 
-{% endhighlight %}
+```
 
 ### Si Stebbins Order
 
 Now if we implement the Si Stebbins ordering algorithm, we can cut the cards and demonstrate that the ordering still works. Magic!
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/cards-4.py' %}
 
-{% endhighlight %}
+```

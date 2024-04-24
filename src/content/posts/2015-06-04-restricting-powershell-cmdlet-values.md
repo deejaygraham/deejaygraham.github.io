@@ -18,22 +18,22 @@ I use PowerShell enough nowadays that I know the syntax exists but not enough
 that it's made it's way into my long term memory. So this is more for me
 than it is for you :)
 
-{% endhighlight %}
+```
 Param (
 [Parameter(Position=0)]
 [ValidateSet("Fee","Fi","Fo","Fum")]
 [string]$Giant,
 ...
 )
-{% endhighlight %}
+```
 
 The other common use case is limiting input to a range of values. For this we
 need the ValidateRange attribute.
 
-{% endhighlight %}
+```
 ...
 [Parameter(Position=1)]
 [ValidateRange(1,100)]
 [int]$Percent=100,
 ...
-{% endhighlight %}
+```

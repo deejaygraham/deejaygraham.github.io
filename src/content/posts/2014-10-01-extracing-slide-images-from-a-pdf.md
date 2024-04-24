@@ -39,11 +39,11 @@ Once I had the syntax of the two command line building blocks I used a bit
 of MsBuild batching magic to handle the conversion of each individual page
 into an image.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/screenshots.xml' %}
 
-{% endhighlight %}
+```
 
 ## Update
 

@@ -13,8 +13,8 @@ in msbuild.
 If we use the trick of putting a script into the msbuild _ImportAfter_ folder, we can hook into every build and append
 each project's build output to a minimal log.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/build-order.xml' %}
 
-{% endhighlight %}
+```

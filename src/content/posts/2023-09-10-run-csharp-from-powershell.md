@@ -20,7 +20,7 @@ as any other .net code.
 
 Rather than importing an assembly as a module, you can use the Add-Type cmdlet to add code as plain source code and have it compiled and invokable.
 
-{% highlight "csharp" %}
+```csharp
 
 $Source = @"
 using System;
@@ -38,18 +38,18 @@ Add-Type -TypeDefinition $Source -Language CSharp
 
 [Hello]: :World()
 
-{% endhighlight %}
+```
 
 Of course, this had to be a hello world example. Source can be inline as above or it can be loaded from an external file:
 
-{% highlight "csharp" %}
+```csharp
 
 $Source = Get-Content -Path "C:\Dev\MyAwesomeCode.cs"
 Add-Type -TypeDefinition $Source -Language CSharp
 
 [Hello]: :World()
 
-{% endhighlight %}
+```
 
 Using an external file means that I can share a source code file between the heavyweight .net assembly and a ps1 script. Very happy
 and only a little embarrassed that it took me until now to find out about this :).

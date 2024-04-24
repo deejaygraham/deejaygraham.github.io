@@ -19,11 +19,11 @@ As a challenge from a colleague I wanted to see how I could refactor the code fr
 
 Here's the original code from the processing website:
 
-{% highlight "java" %}
+```java
 
 {% include 'code/java/boids_original/boids_original.pde' %}
 
-{% endhighlight %}
+```
 
 ### Python
 
@@ -43,11 +43,11 @@ saved version which can be a bit confusing. The modified indicator in processing
 
 In setup(), we set full screen, then create our initial flock (and we let the flock itself decide how big it's going to be).
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/boids-game.py' %}
 
-{% endhighlight %}
+```
 
 In draw(), we have to let the flock move itself and I much prefer the function to be fly() rather than run(). Flying birds aren't usually that great at running :). When a mouse button is pressed, we add a new member to the flock at the
 current mouse position. That seems to work fine. Let's move onto the Flock itself.
@@ -57,22 +57,22 @@ current mouse position. That seems to work fine. Let's move onto the Flock itsel
 As mentioned above, I have chosen to describe the flock in terms of it's members - adding, flying - rather than talking
 about running, drawing and addingBoid from the original version.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/boids-flock-1.py' %}
 
-{% endhighlight %}
+```
 
 ### Boid
 
 To get started, I have opted for a super simple version of the boid implementation. It records where it was created and
 never moves but just draws a black line from the original to its position to show itself.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/boids-boid-1.py' %}
 
-{% endhighlight %}
+```
 
 ### Debug
 
@@ -88,11 +88,11 @@ of the boid itself and the rules it uses to interact with the flock-mates.
 
 Here's a pretty straight rewrite of the original code from Java to Python and by far the biggest bit of the rewrite before the actual refactor:
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/boids-boid-2.py' %}
 
-{% endhighlight %}
+```
 
 One consequence of splitting the code up into separate modules is not having access to width and height properties inside the flock or the boid class. We need those
 values so we can implement the border behaviour where a boid flying off one side of the screen wraps around and flies in from the opposite side.

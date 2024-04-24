@@ -10,8 +10,8 @@ Here's a sample solution for the String Calculator Kata that I'm using with
 <a href="http://cyber-dojo.com" alt="link to cyber dojo">cyber-dojo</a>,
 in C# using NUnit as the test framework.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/StringCalculator.cs' %}
 
-{% endhighlight %}
+```

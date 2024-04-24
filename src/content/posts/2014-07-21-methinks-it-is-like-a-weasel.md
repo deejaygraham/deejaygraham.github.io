@@ -29,99 +29,99 @@ by random mutation, generates a quote from Act 3 Scene 2 of Hamlet:
 
 ## Interfaces
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_ICrossover_T.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_IMutator_T.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_IPopulationFactory_T.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_IFitnessScore_T.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_IMatchesTarget_T.cs' %}
 
-{% endhighlight %}
+```
 
 ## Implementations
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_WeaselMutator.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_WeaselPopulationFactory.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_WeaselFitnessScore.cs' %}
 
-{% endhighlight %}
+```
 
 ## Extension Methods
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_RandomExtensions.cs' %}
 
-{% endhighlight %}
+```
 
 ## Events
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_InitialConditionEventArgs_T.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_FitnessProgressEventArgs_T.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_FinalConditionEventArgs_T.cs' %}
 
-{% endhighlight %}
+```
 
 ## Algorithm
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_GeneticAlgorithm_T.cs' %}
 
-{% endhighlight %}
+```
 
 ## Main
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Weasel_Program.cs' %}
 
-{% endhighlight %}
+```
 
 Using as many interfaces as I have and using generic types may seem a little like
 overkill but, as I said, I am hoping to complete a project using some alternate

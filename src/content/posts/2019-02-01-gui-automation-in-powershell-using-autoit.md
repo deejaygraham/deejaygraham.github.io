@@ -17,11 +17,11 @@ so it's no surprise that I never thought to check for updates to it and if it no
 Part of the download from AutoIt now is a folder called AutoItX which you can use to do automation from PowerShell. It
 doesn't need an install so you can copy the folder to a machine where you need it and just import the .psd1 file.
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/AutoitNotepad-1.ps1' %}
 
-{% endhighlight %}
+```
 
 The core AutoIt assemblies are loaded via the PowerShell cmdlet assembly AutoItX3.PowerShell.dll.
 I'm not a huge fan of the naming used for the cmdlets, they seem very clunky to me but probably as a result of trying to

@@ -14,8 +14,8 @@ with the tamagotchi example that uses the accelerometer gestures (shake) to wake
 
 I came up with a similar idea to simulate a coin toss using shaking and showing one of two images based on heads or tails.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/coin-flipper.py' %}
 
-{% endhighlight %}
+```

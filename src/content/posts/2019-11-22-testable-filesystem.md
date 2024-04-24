@@ -43,30 +43,30 @@ class that can be implemented as real or fake or mocked.
 
 So, an IFileSystem that can tell us if a high level directory exists as a way to kick things off.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/TDD-FileSystem/IFileSystem-1.cs' %}
 
-{% endhighlight %}
+```
 
 and a rough test-as-spec...
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/TDD-FileSystem/IFileSystemSpecs-1.cs' %}
 
-{% endhighlight %}
+```
 
 Here I'm using a library called NSubstitute to help me define what the shape of these initial interfaces should look like using
 mocks (the only use case for using mocks in my opinion). Essentially, it's a noop test that just gets our feet wet with defining what the interface should be.
 
 That looks like how we would want the simplest sort of use case and it's then easily translatable to an actual implementation.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/TDD-FileSystem/LocalFileSystem-1.cs' %}
 
-{% endhighlight %}
+```
 
 ## Finally
 

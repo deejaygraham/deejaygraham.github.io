@@ -14,43 +14,43 @@ an assembly that we can load during a build. An alternative to a compiled assemb
 This is where the custom tasks will live. I prefer to keep the custom code separated
 from the actual build script.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-1.xml' %}
 
-{% endhighlight %}
+```
 
 ### 2. Create your task
 
 Give it a name and fill in the basic boilerplate required by msbuild:
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-2.xml' %}
 
-{% endhighlight %}
+```
 
 ### 3. Write the code
 
 Here I'm just writing to the msbuild log, use your imagination to do something more
 interesting;
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-3.xml' %}
 
-{% endhighlight %}
+```
 
 ### 4. Use it in your scripts
 
 Add an import statement pointing to the correct relative path for your new
 task file. Then use it in a target.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-4.xml' %}
 
-{% endhighlight %}
+```
 
 MsBuild will compile and load a temporary assembly containing the custom tasks the
 first time the target is hit during a build. If there are compilation errors, you will
@@ -62,19 +62,19 @@ assembly compilation log which you can use to fix your broken code.
 Like any other task, you can code the on-the-fly task to accept parameters by defining a
 ParameterGroup in the UsingTask.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-5.xml' %}
 
-{% endhighlight %}
+```
 
 and invoke it in the same way you would with built-in tasks:
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-6.xml' %}
 
-{% endhighlight %}
+```
 
 ### 6. Pass data back
 
@@ -82,19 +82,19 @@ We can also write the task to pass data back to the calling script. The Paramete
 can accept output parameters too and they are assigned in the script in standard
 c# syntax.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-7.xml' %}
 
-{% endhighlight %}
+```
 
 We can then (optionally) capture the output from that task as a new variable in the
 calling script. TaskParameter is the name of the local task variable and PropertyName is
 the name of the new variable to create in the calling script that we can then reference
 using dollar notation.
 
-{% endhighlight %}
+```
 
 {% include 'code/msbuild/on-the-fly-template-8.xml' %}
 
-{% endhighlight %}
+```

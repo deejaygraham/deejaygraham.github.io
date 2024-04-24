@@ -32,11 +32,11 @@ drops by one degree or more from the reference.
 The main body of the program puts those two elements together and reacts with a ghost image every time it senses
 a temperature drop.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/ghost-detector.py' %}
 
-{% endhighlight %}
+```
 
 ## Trick
 

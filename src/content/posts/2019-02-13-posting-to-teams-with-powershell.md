@@ -20,10 +20,10 @@ url that is generated.
 
 Write a PowerShell script like this to post to the webhook and you're done.
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/Post-MessageToTeams.ps1' %}
 
-{% endhighlight %}
+```
 
 So, the moral of the story is, try a project you know nothing about how to do, it may not be as bad as you thought.

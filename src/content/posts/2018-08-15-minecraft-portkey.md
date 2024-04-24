@@ -14,11 +14,11 @@ What's programming without an occasional Harry Potter/Minecraft mashup? In the H
 magical teleportation device which is disguised as an ordinary, everyday object. Touch the object and it automatically
 teleports you to a matching location. How would we do this in Minecraft?
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/portkey.py' %}
 
-{% endhighlight %}
+```
 
 The portkey is triggered if you stand on the object. The other way we could trigger it is by hitting the object and poll for
 the hits using the world.events.pollBlockHits() API.

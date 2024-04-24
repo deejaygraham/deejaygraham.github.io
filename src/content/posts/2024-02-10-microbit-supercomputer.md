@@ -18,7 +18,7 @@ and shift_left functions on image. New stripes of pixels are created to fill in 
 is recomposed by bit blitting (not a thing I've done since my younger days as a windows programmer) part of the bottom image
 onto the top image to create a sort of sliding conveyor belt effect.
 
-{% highlight "python" %}
+```python
 
 # Randomly generate an evolving pixel
 
@@ -72,4 +72,4 @@ frame = top
 display.show(frame)
 sleep(speed)
 
-{% endhighlight %}
+```

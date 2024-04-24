@@ -23,7 +23,7 @@ intevening windows that pop up or what happens until we get to the window we are
 Here we are waiting for a window with a specific title and containing specific text to appear. There is an optional timeout
 when waiting for the window to appear as well as a retry switch to wait even longer for the window.
 
-{% highlight "powershell" %}
+```powershell
 
 Function Wait-ForWindowToBeActive {
 <#  
@@ -80,7 +80,7 @@ Param(
 
 }
 
-{% endhighlight %}
+```
 
 ### Typing
 
@@ -91,7 +91,7 @@ and sometimes to allow for network requests and background processing to occur i
 Importantly, this function also translates some special characters (bangs and hashes) into escaped characters
 so that AutoIt doesn't try to interpret them itself.
 
-{% highlight "powershell" %}
+```powershell
 
 Function Write-TextContent {
 <#
@@ -126,14 +126,14 @@ Param(
 
 }
 
-{% endhighlight %}
+```
 
 ### Keys
 
 Most automation seems to work well when driven by the keyboard (rather than using the mouse) but again in
 common with text entry, there's often the need to include explicit delays between character presses.
 
-{% highlight "powershell" %}
+```powershell
 
 Function Invoke-KeyPress {
 <#
@@ -159,4 +159,4 @@ Param(
 
 }
 
-{% endhighlight %}
+```

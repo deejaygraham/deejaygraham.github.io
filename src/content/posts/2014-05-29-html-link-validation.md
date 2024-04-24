@@ -19,36 +19,36 @@ I assume these are correct.
 
 First of a little class to find all html-like files in a given folder and sub folders.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/HtmlFileFinder.cs' %}
 
-{% endhighlight %}
+```
 
 Next we need an event to represent a link found in an html document:
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/HyperLinkEventArgs.cs' %}
 
-{% endhighlight %}
+```
 
 Now, the _AnchorFinder_ which processes a single html document and fires an
 event each time an anchor is found.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/AnchorFinder.cs' %}
 
-{% endhighlight %}
+```
 
 I added the ability to ignore certain url prefixes so we can ignore _mailto_
 and local file links.
 
 Finally the Main class to use all the preceding pieces.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/HtmlLinkValidation.cs' %}
 
-{% endhighlight %}
+```

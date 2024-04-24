@@ -20,10 +20,10 @@ rate determines the speed of the rotation of the "comet" around the board.
 
 ## Code
 
-{% highlight "python" %}
+```python
 
 # comet.py
 
 {% include 'code/python/playground/comet.py' %}
 
-{% endhighlight %}
+```

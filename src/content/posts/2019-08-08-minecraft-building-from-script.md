@@ -26,16 +26,16 @@ get too hot.
 
 Here's the script:
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/builder-1.py' %}
 
-{% endhighlight %}
+```
 
 and an example script to flatten the ground, lay down some earth and grass prior to building:
 
-{% endhighlight %}
+```
 
 {% include 'code/python/minecraft/build.txt' %}
 
-{% endhighlight %}
+```

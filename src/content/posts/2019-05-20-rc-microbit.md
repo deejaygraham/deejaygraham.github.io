@@ -25,22 +25,22 @@ I applied a threshold to the tilt because it's difficult to maintain the remote 
 to natural wobble in your hands. Because the bitbot will continue in one direction until given another command, I
 made pressing a button or flattening the controller the command for 'stop'.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-rc-1.py' %}
 
-{% endhighlight %}
+```
 
 ### BitBot
 
 The hard work is mostly done by the remote and the motor control classes from last time. In the bitbot, we just
 check for a new command and react to it with directions.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/bitbot-rc-2.py' %}
 
-{% endhighlight %}
+```
 
 Helpful in debugging the tilting directions and thresholds, and in checking that the remote control and the bitbot were
 both in sync, I made sure that both units displayed icons corresponding to the command they were sending or

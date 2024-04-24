@@ -13,10 +13,10 @@ A tiny script to create a local website in IIS just so I could test out a set of
 html pages to make sure they were correct before checking them in. Creates a named app pool
 then creates the website (and deletes existing app pool and website if they already exist).
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/CreateIISWebsite.ps1' %}
 
-{% endhighlight %}
+```
 
 Finally, I fire up a browser window to see what the index page looks like.

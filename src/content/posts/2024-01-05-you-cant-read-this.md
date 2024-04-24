@@ -23,7 +23,7 @@ a single line and remove all whitespace. This probably has most effect in terms 
 schema I was thinking of was best understood with lots of whitespace. Second, to optionally base 64 encode the minified text
 to pretend "encrypt" it.
 
-{% highlight "csharp" %}
+```csharp
 
 internal class Obfuscator
 {
@@ -72,7 +72,7 @@ private readonly Encoding \_encoding = System.Text.Encoding.UTF8;
 
 }
 
-{% endhighlight %}
+```
 
 Note that the text doesn't have to be just ascii format, here it's treated as utf-8. This is not normally a concern
 when just dealing in .Net but becomes an important wrinkle when we are working "cross-platform" on the server and
@@ -82,7 +82,7 @@ browser environments.
 
 We need tests to make sure the minification and encoding work as expected and can be round-tripped.
 
-{% highlight "csharp" %}
+```csharp
 
     [TestFixture]
     public class ObfuscatorTests
@@ -144,14 +144,14 @@ We need tests to make sure the minification and encoding work as expected and ca
         }
     }
 
-{% endhighlight %}
+```
 
 ### Client
 
 Thanks to MDN saving the day again, I found an [article](https://developer.mozilla.org/en-US/docs/Glossary/Base64#the_unicode_problem) that showed how to handle utf-8
 encoding not just ascii text.
 
-{% highlight "javascript" %}
+```javascript
 
 /\*\*
 
@@ -175,11 +175,11 @@ return text;
 }
 }
 
-{% endhighlight %}
+```
 
 ### Tests
 
-{% highlight "javascript" %}
+```javascript
 
 import { decodeScript } from '../scriptDecoder';
 import { TextEncoder, TextDecoder } from 'util';
@@ -205,7 +205,7 @@ expect(decodeScript(utf8EncodedScript)).toBe(plainTextScript);
 });
 });
 
-{% endhighlight %}
+```
 
 ### Refactor
 
@@ -213,7 +213,7 @@ Once I'd got this working I refactored to make it slightly easier to understand 
 
 Started with an interface to apply a modification to the text and also, if possible, undo it.
 
-{% highlight "csharp" %}
+```csharp
 
 interface IModifyJson
 {
@@ -221,12 +221,12 @@ string Do(string s);
 string Undo(string s);
 }
 
-{% endhighlight %}
+```
 
 Which means we can make a more general version of the Obfuscator class which looks
 a bit simpler and pushes the implementation of each step into a separate class.
 
-{% highlight "csharp" %}
+```csharp
 
 internal class Obfuscator
 {
@@ -262,12 +262,12 @@ new Base64Encoder()
 
 }
 
-{% endhighlight %}
+```
 
 The minifier is nice and small, although the undo didn't seem to be useful so is
 effectively a no-op.
 
-{% highlight "csharp" %}
+```csharp
 
 class TextMinifier : IModifyJson
 {
@@ -287,11 +287,11 @@ return s;
 
 }
 
-{% endhighlight %}
+```
 
 And in a similar way, the encoding is nice and self contained
 
-{% highlight "csharp" %}
+```csharp
 
 class Base64Encoder : IModifyJson
 {
@@ -312,7 +312,7 @@ private readonly Encoding \_encoding = System.Text.Encoding.UTF8;
 
 }
 
-{% endhighlight %}
+```
 
 This approach perhaps smells a little over-engineered but at the moment I'm not sure
 how far to take the obfuscation so having a list of steps means they can be added, removed

@@ -15,8 +15,8 @@ that includes the coordinate for each hit. The list is refreshed each time the f
 has been hit for a while, the list may be empty. We can use it in a script to do some planting by using the sword
 as a sort of magic wand.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/flower-hits.py' %}
 
-{% endhighlight %}
+```

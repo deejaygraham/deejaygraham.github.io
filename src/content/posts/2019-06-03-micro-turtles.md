@@ -14,25 +14,25 @@ alttext: microbit sorting hat
 Here's a small implementation of a turtle, complete with animation speed and pen
 support, for the microbit.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/micro-turtle-1.py' %}
 
-{% endhighlight %}
+```
 
 The turtle always starts off in the centre of the screen, facing up. We can draw
 a tiny 1 pixel square using dots that disappear when a new one appears:
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/micro-turtle-2.py' %}
 
-{% endhighlight %}
+```
 
 Or we can use the pen to draw an outline around the screen from the top left corner.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/microbit/micro-turtle-3.py' %}
 
-{% endhighlight %}
+```

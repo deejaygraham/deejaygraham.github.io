@@ -19,18 +19,18 @@ This lead me to finding a tool to run against all my pages to make sure that the
 stray html markup where I don't want it. The tool is a package called [markdownlint](https://github.com/DavidAnson/markdownlint)
 which I run as a script from npm using markdownlint-cli.
 
-{% highlight "javascript" %}on
+```javascripton
 {
 "scripts": {
 "lint": "markdownlint --config .markdownlint.json content/DOC\*.md"
 },
 }
-{% endhighlight %}
+```
 
 It works very much like other lint varieties in other languages but I found it very useful to (as the command line allows) use
 a config file to turn on and off issues while I make gradual improvements to the docs.
 
-{% highlight "javascript" %}on
+```javascripton
 {
 "no-trailing-spaces": false,
 "no-hard-tabs": false,
@@ -47,7 +47,7 @@ a config file to turn on and off issues while I make gradual improvements to the
 },
 "no-multiple-blanks": false
 }
-{% endhighlight %}
+```
 
 Configuration can be single options on or off or objects with embedded configuration to override the defaults, like the
 line-length and allowed_elements above.
@@ -57,26 +57,26 @@ small sections where there is no other option.
 
 Turning off checking in a draft/broken source file you can put a single comment tag at the beginning of the file like this:
 
-{% highlight "html" %}
+```html
 
 <!-- markdownlint-disable-file -->
 
 <dodgy_html />
-{% endhighlight %}
+```
 
 Specific issues can be "accepted" by adding an exception a line above:
 
-{% highlight "html" %}
+```html
 
 <!-- markdownlint-disable-next-line line-length -->
 
 This is too long a line to show up correctly in the doc....
-{% endhighlight %}
+```
 
 For more extreme cases where more than one line in a block is causing a violation, then capturing the current state,
 disabling checking then restoring at the end is a good solution.
 
-{% highlight "html" %}
+```html
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
@@ -84,4 +84,4 @@ disabling checking then restoring at the end is a good solution.
     <goeSHEere />
 </oUteRagousHtmlCode>
 <!-- markdownlint-restore -->
-{% endhighlight %}
+```

@@ -21,22 +21,22 @@ guid etc. Note I am following the convention here of prefixing with a lower case
 ### Meta
 
 cApplicationConfiguration.psd1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/DSC-Module.psd1' %}
 
-{% endhighlight %}
+```
 
 ### Class
 
 The .psm1 contains the actual code that does the work, with the class named for the module name and with properties that reflect settings in the DSC script. In this case, the path to the config file, the name of the key in appsettings and the name of the new value.
 
 cApplicationConfiguration.psm1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/DSC-Module.ps1' %}
 
-{% endhighlight %}
+```
 
 Both of these files need to be copied into a folder named the same as the module and in the PowerShell search path, typically in C:\Program Files\WindowsPowerShell\Modules
 
@@ -45,11 +45,11 @@ Both of these files need to be copied into a folder named the same as the module
 Here I'm importing the module into the configuration and using a dictionary to iteratively subsitute values in a web.config.
 
 dsc-example.ps1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/DSC-Module-Use.ps1' %}
 
-{% endhighlight %}
+```
 
 Since DSC startup a new instance of PowerShell to run under, it's enough to import the module without the usual worry
 about unloading the original during the development cycle.

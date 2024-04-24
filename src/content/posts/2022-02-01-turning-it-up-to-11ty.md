@@ -17,10 +17,10 @@ It might be worth noting that I am using a stock forlder format as recommended b
 One slight difference is in the .eleventy.js config file where I prefer not to put non-public plugins, shortocdes and filters inline in
 the config but require them from a file under the \_11ty folder.
 
-{% highlight "javascript" %}
+```javascript
 module.exports = eleventyConfig => {
 
     eleventyConfig.addShortcode('screenshot', require("./_11ty/shortcodes/screenshot.js"));
 
 }
-{% endhighlight %}
+```

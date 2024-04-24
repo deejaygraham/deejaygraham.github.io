@@ -25,11 +25,11 @@ Over time the "winners" will tend to dominate the screen and the "losers" will s
 I've included the whole code here because I needed to make changes to the Player and the Game to be able to run the inflation/deflation
 animation distinct from the individual pairings.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/oligarchy-3.py' %}
 
-{% endhighlight %}
+```
 
 I'm not super happy with the code to do the layout of the circles and them moving around dynamically in response to the wins and losses.
 This could stand to be reworked at another time when I learn more about making processing code more elegant.

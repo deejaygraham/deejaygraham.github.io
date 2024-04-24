@@ -14,31 +14,31 @@ wood-y and leaf-y materials.
 
 <img src="/img/posts/minecraft-forestry/simple-tree.webp" alt="simple tree" class="u-max-full-width" />
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/tree.py' %}
 
-{% endhighlight %}
+```
 
 Square blocks of leaves aren't very realistic so we can trim off the square edges like this.
 
 <img src="/img/posts/minecraft-forestry/better-tree.webp" alt="better tree" class="u-max-full-width" />
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/tree-2.py' %}
 
-{% endhighlight %}
+```
 
 Finally, we can make ourselves a nice orchard or small forest using some random values for each tree:
 
 <img src="/img/posts/minecraft-forestry/random-forest.webp" alt="forest of trees" class="u-max-full-width" />
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/tree-3.py' %}
 
-{% endhighlight %}
+```
 
 Note by using the ground value specific to each tree location, we can get a nice effect "planting" trees on a sloping
 hillside.
@@ -60,10 +60,10 @@ material you would like.
 In the final version, the foliage still looks a bit too false as a single monolithic block of leaves. We can
 change the leaf generation to work on a probability of a leaf block being at any one position in the canopy.
 
-{% highlight "python" %}
+```python
 
 {% include 'code/python/minecraft/tree-4.py' %}
 
-{% endhighlight %}
+```
 
 <img src="/img/posts/minecraft-forestry/random-leaves.webp" alt="random leaves" class="u-max-full-width" />

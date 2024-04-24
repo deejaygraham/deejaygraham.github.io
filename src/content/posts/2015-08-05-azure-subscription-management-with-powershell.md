@@ -32,14 +32,14 @@ automation.
 
 Create a new certificate using the **makecert.exe** utility
 
-{% endhighlight %}
+```
 
 makecert -sky exchange -r -n "CN=[My Azure Management Certificate]"
 -pe -a sha1 -len 2048 -ss My
 -sv MyAzureManagementCertificate.pvk
 MyAzureManagementCertificate.cer
 
-{% endhighlight %}
+```
 
 ![makecert](/img/posts/azure-subscription-management-with-powershell/make-cert-command-line.webp)
 
@@ -49,14 +49,14 @@ Fill in the password and confirmation at the prompt.
 
 Now, convert the .pvk to a .pfx so we can upload it to Azure.
 
-{% endhighlight %}
+```
 
 pvk2pfx –pvk MyAzureManagementCertificate.pvk
 –spc MyAzureManagementCertificate.cer
 –pfx MyAzureManagementCertificate.pfx
 –po ThisIsNotMyPassword
 
-{% endhighlight %}
+```
 
 Upload the .pfx to the cloud service using the Azure portal.
 
@@ -64,23 +64,23 @@ Upload the .pfx to the cloud service using the Azure portal.
 
 Note the certificate thumbprint using PowerShell...
 
-{% endhighlight %}
+```
 
 Get-Item Cert:\\CurrentUser\My\*
-{% endhighlight %}
+```
 
 or, more easily, copy it from the entry in th certificates page of the portal.
 
 Finally, find the certificate using the thumbprint and pass it to **Set-AzureSubscription**
 
-{% endhighlight %}
+```
 
 $SelfCert = Get-Item Cert:\CurrentUser\My\<certificate thumbprint>
 Set-AzureSubscription -SubscriptionName "My Subscription"
 -SubscriptionId "<from azure portal>"
 -Certificate $SelfCert
 
-{% endhighlight %}
+```
 
 ## ActiveDirectory
 

@@ -23,21 +23,21 @@ I setup a class to take a text description of the network quality, perhaps from 
 matching that network behaviour - network latency, download and upload speed.
 
 Throttling.cs
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Selenium_Throttling.cs' %}
 
-{% endhighlight %}
+```
 
 As part of the instantiation of the web driver we can inspect the throttling characteristics we have just built and apply them to the
 chrome driver via the NetworkConditions property.
 
 WebDriverFactory.cs
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Selenium_UseThrottling.cs' %}
 
-{% endhighlight %}
+```
 
 The differences in performance of the browser can be quite marked when going below anything but "wifi", mostly because in a desktop environment we are
 mostly used to the luxury of super fast internet. Some pages can be super annoying to wait for them to finish but it is a good thing to be brought back

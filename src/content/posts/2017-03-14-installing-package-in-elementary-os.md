@@ -32,21 +32,21 @@ option from the app center:
 
 No? Ok, how about cracking open the terminal and the often popular <code>apt-get</code>:
 
-{% endhighlight %}
+```
 
 sudo apt-get install brave_0.13.5_amd64.deb
 
-{% endhighlight %}
+```
 
 ![apt-get](/img/posts/installing-package-in-elementary-os/elementary_start_sudo-apt-get.webp)
 
 No? Because it's a Debian package we have to use <code>gdebi</code>:
 
-{% endhighlight %}
+```
 
 sudo gdebi brave_0.13.5_amd64.deb
 
-{% endhighlight %}
+```
 
 ![gdebi](/img/posts/installing-package-in-elementary-os/elementary-sudo-gdebi.webp)
 

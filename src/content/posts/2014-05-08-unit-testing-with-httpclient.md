@@ -29,22 +29,22 @@ The code below uses a fake implementation with a settable HttpResponseMessage pr
 that you can simulate different responses without needing anything on the
 other end of the wire.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/HttpClientClientCode.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/FakeHttpMessageHandler.cs' %}
 
-{% endhighlight %}
+```
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/HttpClientTestCode.cs' %}
 
-{% endhighlight %}
+```
 
 So that's 200 lines of code against 20. Win!

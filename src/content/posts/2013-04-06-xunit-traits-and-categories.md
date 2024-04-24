@@ -28,6 +28,6 @@ can filter tests based on the name "Category".
 
 I created a set of _traits_ to be applied to fast and slow unit tests as appropriate.
 
-{% highlight "csharp" %}
+```csharp
 
-{% endhighlight %}
+```

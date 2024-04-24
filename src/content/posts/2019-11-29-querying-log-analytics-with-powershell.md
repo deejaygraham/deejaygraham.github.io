@@ -21,11 +21,11 @@ answer was yes, there's a cmdlet for that. All you need is an authenticated sess
 blade in the portal, and away you go.
 
 Query-LogAnalytics.ps1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/Query-LogAnalytics.ps1' %}
 
-{% endhighlight %}
+```
 
 Anything that works in the interactive query runner will work in code. Aside from this one off use, I can see this being useful for
 pre- and post-deployment monitoring to check for errors when services start up.
@@ -35,8 +35,8 @@ pre- and post-deployment monitoring to check for errors when services start up.
 The AzureRm module is now obsolete and has been replaced with the new <a href="docs.microsoft.com/en-gb/powershell/azure/">Az module</a>. The code above works in pretty much the same way but with some renaming of the cmdlets.
 
 AzQuery-LogAnalytics.ps1
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/AzQuery-LogAnalytics.ps1' %}
 
-{% endhighlight %}
+```

@@ -21,56 +21,56 @@ future, I wrote both techniques up as either an inline msbuild task, a powershel
 
 First, setting an environment variable from MsBuild:
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/environment-variable.xml' %}
 
-{% endhighlight %}
+```
 
 The surrounding markup for the inline task is not import, the important part is the Fragment of code in the CDATA section.
 
 Include the task then call it from the running script like this.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/set-environment-variable.xml' %}
 
-{% endhighlight %}
+```
 
 Now, to create a temporary Tfs variable that MsBuild can read as a dollar variable - $(Greeting), say - as if it were set by the
 command line, you have to pull a weird trick by writing to output with a special ##vso syntax:
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/tfs-variable.xml' %}
 
-{% endhighlight %}
+```
 
 Apparently, the build system is watching for these chunks of data appearing in the output and will build a variable for you
 when it finds one. Awesome/terrible.
 
 Happily, that can also be hidden behind an inline task and called from a script:
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/set-tfs-variable.xml' %}
 
-{% endhighlight %}
+```
 
 You can also do the same thing in a PowerShell task in Tfs using Write-Host rather than MsBuild's Log:
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/Set-Variable.ps1' %}
 
-{% endhighlight %}
+```
 
 Once we have created a variable, we can read it back in PowerShell as an environment variable.
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/Get-Variable.ps1' %}
 
-{% endhighlight %}
+```
 
 I don't think I will ever feel clean again.

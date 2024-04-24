@@ -15,8 +15,8 @@ If we use the BeforeTargets and AfterTargets hooks in the msbuild pipeline we ca
 take a snapshot of the output folder immediately before the build and immediately after it and store both snapshots in
 correspondingly named files. Then we can use a diff tool to look at, well, the differences.
 
-{% highlight "xml" %}
+```xml
 
 {% include 'code/msbuild/build-snapshot.xml' %}
 
-{% endhighlight %}
+```

@@ -16,19 +16,19 @@ effect that one day the objects are scattered throughout an area when they could
 
 ## Box
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Knapsack-Box.cs' %}
 
-{% endhighlight %}
+```
 
 ## Bin
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Knapsack-Bin.cs' %}
 
-{% endhighlight %}
+```
 
 ## Greed
 
@@ -46,30 +46,30 @@ then continue with the next largest.
 For our purposes, I have set each container or bin to have a fixed size. Each box is allocated a random size between
 1 and the maximum size of the bin.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Knapsack-Setup.cs' %}
 
-{% endhighlight %}
+```
 
 ## Statistics
 
 For testing purposes we need a random ordering of the items to begin with some randomly assigned boxes and
 containers or bins with a calculable wastage score.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Knapsack-PrintStats.cs' %}
 
-{% endhighlight %}
+```
 
 ## Setup
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Knapsack-RandomAllocation.cs' %}
 
-{% endhighlight %}
+```
 
 Since the random allocation may not fill up all the bins, we remove any completely empty bins so we don't skew
 the figures too much.
@@ -83,11 +83,11 @@ in bins) for 800 boxes measured in the low thousands.
 Running the greedy approximation algorithm, first sorting the list into decreasing sizes, we allocate to bins in order
 of fit and create new bins as appropriate.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/Knapsack-GreedyAllocation.cs' %}
 
-{% endhighlight %}
+```
 
 ## Results
 

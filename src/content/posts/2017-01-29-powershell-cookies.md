@@ -13,7 +13,7 @@ post the simplest possible implementation in PowerShell first.
 
 ### Get-FortuneCookie.ps1
 
-{% highlight "powershell" %}
+```powershell
 [CmdletBinding()]
 Param (
 
@@ -28,4 +28,4 @@ $Cookie =  Get-Random -InputObject $CookieJar
 $Cookie = $Cookie -replace '%', ''
 
 Write-Output $Cookie
-{% endhighlight %}
+```

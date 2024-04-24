@@ -15,7 +15,7 @@ my imagination falls short and I can't think what to use, especially for abstrac
 So, of course, the "solution" I came up with was to write a tiny bit of processing code to generate a coloured background
 and a piece of text, at the right pixel size I use, to act as the thumbnail.
 
-{% highlight "python" %}
+```python
 
 size(420, 255)
 f = createFont("Georgia", 72)
@@ -26,7 +26,7 @@ fill(255)
 text("thumbs", 40, 210)  
 saveFrame("thumbnail-420x255.png")
 
-{% endhighlight %}
+```
 
 The code is essentially all I have described, a font for the text, a background colour, a text colour and the text
 to render at a suitable place on the block. Then we save out the graphic right at the end. The thumbnail for this
@@ -36,7 +36,7 @@ Changing the text is a matter of what works for the subject of the post but colo
 by using random foreground and background colours. I made the switch from RGB to HSB colour mode because the random
 function seemed better suited to creating nicer colours with that mode.
 
-{% highlight "python" %}
+```python
 
 size(420, 255)
 f = createFont("Georgia", 72)
@@ -49,4 +49,4 @@ fill(random(0, 255), 127, 242)
 text("lint.md", 40, 210)  
 saveFrame("thumbnail-420x255.png")
 
-{% endhighlight %}
+```

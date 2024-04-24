@@ -22,8 +22,8 @@ work in three stages. We need:
 <li>Registration of the task, bringing together the trigger, the action and a name and description.</li>
 </ol>
 
-{% highlight "powershell" %}
+```powershell
 
 {% include 'code/powershell/New-ScheduledTask.ps1' %}
 
-{% endhighlight %}
+```

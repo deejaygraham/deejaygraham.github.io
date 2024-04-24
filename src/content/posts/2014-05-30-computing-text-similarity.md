@@ -20,11 +20,11 @@ Taking the reference implementation, it seemed that it could benefit from losing
 the arrays and some of the more manual parts of the algorithm and using some
 built-in .Net goodness.
 
-{% highlight "csharp" %}
+```csharp
 
 {% include 'code/csharp/LevenshteinDistance.cs' %}
 
-{% endhighlight %}
+```
 
 For example, the first part of the algorithm is concerned with initialising
 data and in the original implementation this is 5-6 lines of very C-like code.
