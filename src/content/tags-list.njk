@@ -5,7 +5,6 @@ layout: base.njk
 ---
 
 {% set allPosts = collections.posts.length %}
-All Posts {{ allPosts }}
 
 <div class="grid is-col-min-12">
 {% for tag in collections.posts | getAllTags | filterTagList %}

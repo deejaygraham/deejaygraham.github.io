@@ -9,7 +9,7 @@ eleventyComputed:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-<h1>Posts tagged #{{ tag }}</h1>
+<h1>Posts tagged with #{{ tag }}</h1>
 
 {% set taglist = collections[ tag ] %}
 {% set postlist = taglist | reverse %}
