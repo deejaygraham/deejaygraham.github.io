@@ -22,7 +22,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dateFormat", dates.dateFormat);
   eleventyConfig.addFilter("dateYear", dates.dateYear);
   eleventyConfig.addFilter("search", require("./src/_11ty/filters/searchFilter"));
-
+  eleventyConfig.addFilter("array_to_comma_string", require("./src/_11ty/filters/array_to_comma_string.js"));
+    
   // Return all the tags used in a collection, including the 
   // 1tty tags. The list of tags is sorted into alphabetical order.
   eleventyConfig.addFilter("getAllTags", collection => {
