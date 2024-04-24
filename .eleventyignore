@@ -6,8 +6,3 @@ _layouts/**/*.*
 
 cypress/
 talks/
-
-src/content/**/posts/2021*.md
-src/content/**/posts/2022*.md
-src/content/**/posts/2023*.md
-src/content/**/posts/201*.md
