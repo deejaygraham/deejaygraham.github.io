@@ -9,8 +9,8 @@
 {% block postcontent %}
 
 {% if tags %}
-{% set relatedTag = tags | randomItem %}
-{% if collections[relatedTag].length > 1 %}
+  {% set relatedTag = tags | randomItem %}
+  {% if collections[relatedTag].length > 1 %}
 <aside>
   <div class="related-posts>
     <h3 class="is-size-3">More posts tagged with #{{ relatedTag }}</h3>
@@ -21,7 +21,7 @@
     </ul>
   </div>
 </aside>
-{% endif %}
+  {% endif %}
 {% endif %}
 
 {% endblock %}

@@ -45,7 +45,14 @@ module.exports = function (eleventyConfig) {
     "filterTagList",
     require("./src/_11ty/filters/filterTagList.js"),
   );
+  eleventyConfig.addFilter(
+    "splitlines",
+     require("./src/_11ty/filters/splitLines.js"),
+  );
 
+  // shortcodes
+  eleventyConfig.addShortcode("randomcolour", require("./src/_11ty/shortcodes/randomcolour.js"));
+  
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");
