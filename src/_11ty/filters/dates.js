@@ -19,14 +19,15 @@ function dateFeed(date) {
  *
  * use:
  *  {{ "2021-08-06" | formatDate("DDD") }}
- *  <time datetime="{{ post.date | formatDate('yyyy-MM-dd') }}">{{ post.date | formatDate("DDD", "fr") }}</time>
+ *  <time datetime="{{ post.date | dateFormat('yyyy-MM-dd') }}">{{ post.date | dateFormat("DDD", "fr") }}</time>
  * @param {Date} date - JS date
  * @param {String} format - Luxon format string
  * @param {String} locale - locale code
  * @returns {String} - formatted date
  */
 function dateFormat(date, format, locale = "en-GB") {
-  const jsDate = new Date(date);
+  console.log('date is ', date, format);
+  const jsDate = date ? new Date(date): new Date();
   const dt = DateTime.fromJSDate(jsDate);
   return dt.setLocale(locale).toFormat(format);
 }
