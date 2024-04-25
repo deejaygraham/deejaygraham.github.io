@@ -30,7 +30,7 @@ eleventyExcludeFromCollections: true
     <line x1="300" y1="80" x2="300" y2="548" stroke="black" />
 
     <text font-family="Asap, Helvetica, sans-serif" font-size="30">
-        <tspan x="350" y="{{verticalStartingPoint - 90}}">{{ preview.date | readablePostDate }}</tspan>
+        <tspan x="350" y="{{verticalStartingPoint - 90}}">{{ site.buildTime | dateISO }}</tspan>
     </text>
     
     <text id="text" font-family="Asap, Helvetica, sans-serif" font-size="80" font-weight="bold">
