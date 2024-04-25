@@ -4,8 +4,8 @@
 <meta name="description" content="{{ site.description }}" >
 <meta property="og:site_name" content="{{ site.title }}" >
 <meta property="og:title" content="{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}" >
-<meta property="og:url" content="{{ url }}" >
+<meta property="og:url" content="{{ site.url ~ page.url }}" >
 <meta itemprop="name" content="{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}" >
-<meta itemprop="url" content="{{ url }}" >
+<meta itemprop="url" content="{{ site.url ~ page.url }}" >
 {# 11ty <3 #}
 <meta name="generator" content="{{ eleventy.generator }}">
