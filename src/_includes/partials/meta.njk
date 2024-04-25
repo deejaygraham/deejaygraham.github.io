@@ -1,10 +1,11 @@
-{# Favicon #}
-<link rel="icon" type="image/png" href="{{ site.url }}/img/avatar.png">
-<link rel="shortcut icon" href="{{ site.url }}/img/favicon.ico">
-
-{# RSS Feeds #}
-<link type="application/rss+xml" rel="alternate" href="{{ site.url }}/rss.xml" title="{{ site.title }}">
-
+{% if description %}<meta name="description" content="{{ description }}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
+{% if tags %}<meta content="{{ tags | arrayToCommaString }}" name="keywords">{% endif %}
 <meta name="author" content="{{ site.author }}" >
+<meta name="description" content="{{ site.description }}" >
+<meta property="og:site_name" content="{{ site.title }}" >
+<meta property="og:title" content="{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}" >
+<meta property="og:url" content="{{ url }}" >
+<meta itemprop="name" content="{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}" >
+<meta itemprop="url" content="{%- if title -%}{{ url }}" >
 {# 11ty <3 #}
 <meta name="generator" content="{{ eleventy.generator }}">
