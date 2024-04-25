@@ -1,5 +1,6 @@
 module.exports = {
   title: "invalid argument",
+  name: "deejaygraham",
   description: "a triumph of style over substance",
   url: "https://deejaygraham.github.io",
   baseUrl: "/",
