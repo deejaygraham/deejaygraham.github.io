@@ -1,0 +1,15 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+
+{% if thumbnail %} 
+
+<section class="hero">
+<img src="{{ thumbnail }}" alt="{{ title }}">
+</section>
+
+{% endif %}
+
+<article>{{ content | safe }}</article>
+
+{% endblock %}
