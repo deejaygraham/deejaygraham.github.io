@@ -8,7 +8,7 @@
     <aside class="my-6">
         <h1 class="title">{{ title }}</h1>
         <div class="meta">
-            <span class="date"><time ></time></span>
+            <span class="date"><time datetime="{{.date | dateISO }}">{{ date | dateFull }}</time></span>
         </div>
     {% if sketchnote %}
         {% if sketchnote.url %}
