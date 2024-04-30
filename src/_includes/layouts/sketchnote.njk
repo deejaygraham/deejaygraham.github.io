@@ -6,6 +6,7 @@
     {{ content | safe }}
 
     <aside class="my-6">
+        <h1 class="title">{{ title }}</h1>
     {% if sketchnote %}
         {% if sketchnote.url %}
             <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
