@@ -21,7 +21,8 @@
   <span>{{ date }} </span>
   {% if tags %}
   {% for tag in tags %}
-  <span class="tag">{{ tag }}</span> 
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<span class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></span> 
   {% endfor %}
   {% endif %}
   <h1>{{ title }}</h1>
