@@ -7,32 +7,27 @@
 
     <title>{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
     {% include "partials/meta.njk" %}
-    <link rel="stylesheet" type="text/css" href="/css/site.css" />
-    <link rel="stylesheet" type="text/css" href="/css/prism.css" >
+    {% include "partials/stylesheets.njk" %}
   </head>
   <body>
     {% include "partials/siteheader.njk" %}
 
     <main class="main container mb-6" role="main" id="main" tablindex="-1">
-      <section class="section">
       {% block precontent %}{% endblock %}
-      </section>
 
-      <section class="section">
       {% block content %}
-      {{ content | safe }}
-      {% endblock %}
-      </section>
-
       <section class="section">
-      {% block postcontent %}{% endblock %}
+      {{ content | safe }}
       </section>
+      {% endblock %}
+
+      {% block postcontent %}{% endblock %}
     </main>
     
     {% include "partials/sitefooter.njk" %}
     
     {% block scripts %}
-    {% include "partials/basescripts.njk" %}
+      {% include "partials/basescripts.njk" %}
     {% endblock %}
   </body>
 </htnl>
