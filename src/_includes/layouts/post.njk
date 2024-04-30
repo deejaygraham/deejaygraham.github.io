@@ -8,6 +8,8 @@
 
 {% block postcontent %}
 
+{{ url }}
+
 {% if tags %}
   {% set relatedTag = tags | randomItem %}
   {% if collections[relatedTag].length > 1 %}
