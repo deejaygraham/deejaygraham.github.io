@@ -25,9 +25,9 @@
   <div class="related-posts>
     <h3 class="is-size-3">More posts tagged with #{{ relatedTag }}</h3>
     <ul>
-    {% for item in collections[relatedTag] | limit(6) %}
-      {{ item.url }}
-      {% if item.url == page.url %} {# skip #} {% else %} <li><a title="read post" href="{{ item.url }}">{{ item.data.title }}</a></li> {% endif %}
+    {% set related = collections[relatedTag] | excludePost(page) | limit(6) %}
+    {% for item in related %}
+      <li><a title="read {{ item.data.title }}" href="{{ item.url }}">{{ item.data.title }}</a></li>
     {% endfor %}
     </ul>
   </div>
