@@ -27,7 +27,7 @@
     <ul>
     {% for item in collections[relatedTag] | limit(6) %}
       {{ item.url }}
-      {% if item.url in page.url %} {# skip #} {% else %} <li><a title="read post" href="{{ item.url }}">{{ item.data.title }}</a></li> {% endif %}
+      {% if item.url == page.url %} {# skip #} {% else %} <li><a title="read post" href="{{ item.url }}">{{ item.data.title }}</a></li> {% endif %}
     {% endfor %}
     </ul>
   </div>
