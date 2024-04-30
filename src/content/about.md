@@ -5,7 +5,7 @@ title: about
 hero: makers
 ---
 
-<h1 class="is-size-1">Hey, Hi, Hello.</h1>
+<h1 class="title is-1">Hey, Hi, Hello.</h1>
 
 <p class="has-vertical-spacing">My name is Derek Graham and this is my personal blog.</p>
 
