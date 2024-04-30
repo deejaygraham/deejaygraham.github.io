@@ -49,7 +49,10 @@ module.exports = function (eleventyConfig) {
     "splitlines",
      require("./src/_11ty/filters/splitLines.js"),
   );
-
+  eleventyConfig.addFilter(
+    "excludePost",
+    require("./src/_11ty/filters/excludePost.js"),
+  );
   // shortcodes
   eleventyConfig.addShortcode("randomcolour", require("./src/_11ty/shortcodes/randomcolour.js"));
   
