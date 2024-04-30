@@ -2,6 +2,7 @@
 {% set title = "Search the blog " %}
 
 {% block content %}
+
 <h1 class="title is-1">{{ title }} </h1>
 
 <!-- Search form -->
@@ -13,12 +14,10 @@
 	</div>
 </form>
 <!-- end search form -->
+<ul id="search-results">
+{# Empty container for results #}
+</ul>
 
-<section class="section">
-	<ol id="search-results">
-		{# Empty container for results #}
-	</ol>
-</section>
 {% endblock %}
 
 {% block scripts %}
