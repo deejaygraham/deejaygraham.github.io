@@ -16,7 +16,7 @@
 
 {% block postcontent %}
 
-{{ page.url }} or {{ page.permalink }} or {{ permalink }}
+{{ page.url }} 
 
 {% if tags %}
   {% set relatedTag = tags | randomItem %}
@@ -26,7 +26,8 @@
     <h3 class="is-size-3">More posts tagged with #{{ relatedTag }}</h3>
     <ul>
     {% for item in collections[relatedTag] | limit(6) %}
-      <li><a title="read post" href="{{ item.url }}">{{ item.data.title }}</a></li>
+      {{ item.url }}
+      {% if item.url in page.url %} {# skip #} {% else %} <li><a title="read post" href="{{ item.url }}">{{ item.data.title }}</a></li> {% endif %}
     {% endfor %}
     </ul>
   </div>
