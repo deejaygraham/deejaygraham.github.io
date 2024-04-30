@@ -14,6 +14,23 @@
 
 {% endblock %}
 
+{% block content %}
+
+<section class="section">
+<div class="content is-medium">
+  <span>{{ date }} </span>
+  {% if tags %}
+  {% for tag in tags %}
+  <span class="tag">{{ tag }}</span> 
+  {% endfor %}
+  {% endif %}
+  <h1>{{ title }}</h1>
+    {{ content | safe }}
+</div>
+</section>
+
+{% endblock %}
+
 {% block postcontent %}
 
 {% if tags %}
