@@ -16,23 +16,23 @@
 
 {% block postcontent %}
 
-{{ page.url }} 
-
 {% if tags %}
+<section class="section">
   {% set relatedTag = tags | randomItem %}
   {% if collections[relatedTag].length > 1 %}
-<aside>
-  <div class="related-posts>
-    <h3 class="is-size-3">More posts tagged with #{{ relatedTag }}</h3>
-    <ul>
-    {% set related = collections[relatedTag] | excludePost(page) | limit(6) %}
-    {% for item in related %}
-      <li><a title="read {{ item.data.title }}" href="{{ item.url }}">{{ item.data.title }}</a></li>
-    {% endfor %}
-    </ul>
-  </div>
-</aside>
+  <aside>
+    <div class="related-posts>
+      <h3 class="is-size-3">More posts tagged with #{{ relatedTag }}</h3>
+      <ul>
+      {% set related = collections[relatedTag] | excludePost(page) | limit(6) %}
+      {% for item in related %}
+        <li><a title="read {{ item.data.title }}" href="{{ item.url }}">{{ item.data.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </aside>
   {% endif %}
+</section>
 {% endif %}
 
 {% endblock %}
