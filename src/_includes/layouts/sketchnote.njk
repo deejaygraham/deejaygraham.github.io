@@ -5,7 +5,7 @@
 <article >
     <h1 class="title">{{ title }}</h1>
     <div class="meta">
-        <span class="date"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></span>
+        <span class="date"><time datetime="{{ data.date | dateISO }}">{{ data.date | dateFull }}</time></span>
     </div>
 
     {{ content | safe }}
