@@ -18,13 +18,17 @@
 
 <section class="section">
 <div class="content is-medium">
-  <span>{{ date }} </span>
+  <div class="meta">
+        <span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
+
+
   {% if tags %}
   {% for tag in tags %}
     {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 		<span class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></span> 
   {% endfor %}
   {% endif %}
+    </div>
   <h1>{{ title }}</h1>
     {{ content | safe }}
 </div>
