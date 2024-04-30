@@ -3,6 +3,7 @@ permalink: about/index.html
 layout: base.njk
 title: about
 hero: makers
+thumbnail: /img/heroes/hero-makers-and-creators.webp
 ---
 
 <h1 class="title is-1">Hey, Hi, Hello.</h1>
