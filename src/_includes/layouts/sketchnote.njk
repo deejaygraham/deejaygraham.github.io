@@ -5,11 +5,10 @@
 <article >
     {{ content | safe }}
 
-    <aside>
+    <aside class="my-6">
     {% if sketchnote %}
         {% if sketchnote.url %}
             <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
-            <button class="button model-button" data-target="modal-sketch" aria-haspop="true">view</button>
         {% endif %}
         {% if sketchnote.source %}
             <h4>Source</h4>
