@@ -7,7 +7,7 @@ thumbnail: /img/heroes/hero-makers-and-creators.webp
 
 My name is Derek Graham and this is my personal blog.
 
-I'm a software Solutions Architect working for a very popular business software company in the North East of England. I can't be sure that the opinions 
+I'm a software Architect working for a very popular business software company in the North East of England. I can't be sure that the opinions 
 I have expressed here are my own so they **definitely** don't represent the views of my employer.
 
 For the last few years I have been working mostly on .Net, React and Azure Cloud projects. I have been involved  at almost every level of software development over the last 25+ years from 
