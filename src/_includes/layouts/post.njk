@@ -16,7 +16,7 @@
 
 {% block postcontent %}
 
-{{ url }}
+{{ page.url }} or {{ page.permalink }} or {{ permalink }}
 
 {% if tags %}
   {% set relatedTag = tags | randomItem %}
