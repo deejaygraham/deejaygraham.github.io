@@ -16,7 +16,7 @@ and process control in high reliability, 24-7 environments to commercial applica
 maintainable code and the cleaning, refactoring and general "gardening" needed in bringing legacy systems back to a manageable state.
 
 I co-organize [NE Bytes](https://nebytes.net), a monthly .Net community get-together hosted in Newcastle-upon-Tyne. I also speak at developer events and conferences 
-like DDD North.
+like [DDD North](https://www.dddnorth.co.uk).
 
 I am an Extreme Programmer, an Infrequent Sketchnoter, a Collector of Programming Languages, a Speaker, an Ensemble Programmer, and a Test-Driven Developer. I 
 am a second year mentor for the "We Think Code" non-profit and a STEM ambassador specialising in micro:bit hackery.
