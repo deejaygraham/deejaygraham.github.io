@@ -40,13 +40,14 @@
 
 {% block postcontent %}
 
+{# Related Content #}
 {% if tags %}
 <section class="section">
   {% set relatedTag = tags | randomItem %}
   {% if collections[relatedTag].length > 1 %}
   <aside>
     <div class="related-posts>
-      <h3 class="is-size-3">More posts tagged with #{{ relatedTag }}</h3>
+      <h2>More posts tagged with #{{ relatedTag }}</h2>
       <ul>
       {% set related = collections[relatedTag] | excludePost(page) | limit(6) %}
       {% for item in related %}
