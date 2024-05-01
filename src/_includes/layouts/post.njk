@@ -47,7 +47,7 @@
   {% set related = collections[relatedTag] | excludePost(page) | limit(6) %}
 <section class="section">
   <aside>
-    <div class="related-posts>
+    <div class="related-posts">
       <h2>More posts tagged with #{{ relatedTag }}</h2>
       <ul>
       {% for item in related %}
