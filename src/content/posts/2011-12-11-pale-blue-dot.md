@@ -8,4 +8,4 @@ tags: [video]
 
 A lovely animation of Carl Sagan's "Pale Blue Dot"...
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XEwdRE8MKQg" frameborder="0" allowfullscreen></iframe>
+{% youtube "XEwdRE8MKQg" %}

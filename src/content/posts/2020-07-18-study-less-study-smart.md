@@ -10,4 +10,4 @@ alttext: Marty Lobdell
 
 Great lecture on studying and learning from Marty Lobdell.
 
-<iframe width="917" height="688" src="https://www.youtube.com/embed/IlU-zDU6aQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "IlU-zDU6aQ0" %}

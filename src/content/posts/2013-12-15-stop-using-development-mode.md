@@ -8,4 +8,4 @@ tags: [video, presentations, deliberate-practice]
 
 From Railsberry 2012, Tom Stuart's "Stop Using Development Mode".
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/TQrEKwb5lR0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+{% youtube "TQrEKwb5lR0" %}

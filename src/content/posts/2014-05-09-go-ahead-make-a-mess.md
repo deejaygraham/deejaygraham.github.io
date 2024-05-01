@@ -11,4 +11,4 @@ Another of [Sandi Metz's](http://twitter.com/sandimetz/) talks,
 about using OO techniques to limit the impact of messy, complicated code.
 From [confreaks](http://www.confreaks.com/).
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/f5I1iyso29U?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+{% youtube "f5I1iyso29U" %}

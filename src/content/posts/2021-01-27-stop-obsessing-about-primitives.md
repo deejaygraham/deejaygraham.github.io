@@ -11,4 +11,4 @@ alttext: Ted M Young
 A great talk from Ted M. Young delivered to Canton Coders, discussing the code smell of primitive obsession and
 the complimentary feature envy.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/sTkzQaXyVFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "sTkzQaXyVFA" %}

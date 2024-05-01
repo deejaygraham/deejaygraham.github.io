@@ -11,4 +11,4 @@ alttext: avdi grimm
 Another <a href="https://twitter.com/avdi">Avdi Grimm</a> talk, this time from Goto Con 2020, discussing object oriented systems, and life, modelled
 as a series of transactions.
 
-<iframe width="1262" height="710" src="https://www.youtube.com/embed/R9FwIYAM1ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "R9FwIYAM1ao" %}

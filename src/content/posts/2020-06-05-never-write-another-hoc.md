@@ -11,4 +11,4 @@ alttext: Jared Palmer
 Michael Jackson, breaking down mixins, higher order components and the evolution to components with render props. Includes some
 interesting background on React Router.
 
-<iframe width="1230" height="692" src="https://www.youtube.com/embed/BcVAq3YFiuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "BcVAq3YFiuc" %}

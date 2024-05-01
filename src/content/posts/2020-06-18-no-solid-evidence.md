@@ -12,7 +12,7 @@ alttext: SOLID
 
 <a href="https://ne-rpc.co.uk">NE RPC conference</a> went live so my video is available:
 
-<iframe width="960" height="540" src="https://www.youtube.com/embed/0l-kX9y5IaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "0l-kX9y5IaE" %}
 
 ## Transcript
 

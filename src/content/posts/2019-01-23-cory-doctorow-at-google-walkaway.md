@@ -3,7 +3,7 @@ permalink: 2019/01/23/cory-doctorow-at-google-walkaway/
 layout: post
 title: Cory Doctorow at Google
 published: true
-tags: [video, presentations]
+tags: [video, presentations, optimism, engineering]
 ---
 
 Cory Doctorow in 2017 talking about his most recent book at the time, Walkaway, at the google.
@@ -17,4 +17,4 @@ exploding and showering all the people around them with white hot shrapnel. And 
 coasted to a stop, we can get them started again.
 </blockquote>
 
-<iframe width="695" height="391" src="https://www.youtube.com/embed/9gfHFtrM_xA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "9gfHFtrM_xA" %}

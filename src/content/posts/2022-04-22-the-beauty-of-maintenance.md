@@ -10,4 +10,4 @@ alttext: kent beck
 
 Kent Beck on coupling, cohesion, structure changes, behaviour changes and "make the change easy, then make the easy change"
 
-<iframe width="1260" height="709" src="https://www.youtube.com/embed/3gib0hKYjB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "3gib0hKYjB0" %}

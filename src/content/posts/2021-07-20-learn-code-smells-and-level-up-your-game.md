@@ -10,4 +10,4 @@ alttext: Sandi Metz
 
 The wonderful Sandi Metz talking about Code Smells and how you can apply refactoring to work your way out of trouble.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/D4auWwMsEnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% youtube "D4auWwMsEnY" %}
