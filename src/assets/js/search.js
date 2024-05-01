@@ -28,8 +28,6 @@
         
 	container.appendChild(listItem);
       });
-    } else {
-      container.innerHTML = "<p>No results found</p>";
     }
   };
 
