@@ -53,8 +53,10 @@ module.exports = function (eleventyConfig) {
     "excludePost",
     require("./src/_11ty/filters/excludePost.js"),
   );
+  
   // shortcodes
   eleventyConfig.addShortcode("randomcolour", require("./src/_11ty/shortcodes/randomcolour.js"));
+  eleventyConfig.addShortcode("youtube", require("./src/_11ty/shortcodes/youtube.js"));
   
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
