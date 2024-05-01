@@ -8,12 +8,14 @@
 	  
     console.log("searching for: ", e.target.value);
 
-    const results = window.searchIndex.search(e.target.value, {
+    const results = window.searchIndex.search(e.target.value); //, 
+   /* {
       bool: "OR",
       expand: true,
     });
+	*/
 	  
-    if (results) {
+    if (Array.isArray(results) && results.length > 0) {
       results.forEach(({ ref }) => {
 	const doc = window.searchIndex.documentStore.getDoc(ref);
 
