@@ -6,13 +6,15 @@
     const container = document.getElementById("search-results");
     container.innerHTML = "";
 	  
+    console.log("searching for: ", e.target.value);
+
     const results = window.searchIndex.search(e.target.value, {
       bool: "OR",
       expand: true,
     });
 	  
     if (results) {
-      results.map(({ ref, score }) => {
+      results.forEach(({ ref }) => {
 	const doc = window.searchIndex.documentStore.getDoc(ref);
 
 	const articleLink = document.createElement("a");
