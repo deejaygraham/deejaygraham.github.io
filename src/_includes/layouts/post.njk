@@ -17,21 +17,23 @@
 {% block content %}
 
 <section class="section">
-<div class="content is-medium">
-  <div class="meta">
-        <span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
-
-
-  {% if tags %}
-  {% for tag in tags %}
-    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<span class="tag"><a href="{{ tagUrl }}">{{ tag }}</a></span> 
-  {% endfor %}
-  {% endif %}
-    </div>
-  <h1>{{ title }}</h1>
-    {{ content | safe }}
-</div>
+	<div class="content is-medium">
+		<nav class="level is-mobile article-tags" id="article-meta">
+		{% if tags %}
+			<div class="level-left">
+  			{% for tag in tags %}
+   			{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+				<span class="tag level-item"><a href="{{ tagUrl }}">{{ tag }}</a></span> 
+  			{% endfor %}
+			</div>
+  		{% endif %}
+			<div class="level-right">
+				<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
+			</div>	
+		</nav>
+  		<h1 class="title is-1">{{ title }}</h1>
+    		{{ content | safe }}
+  	</div>
 </section>
 
 {% endblock %}
