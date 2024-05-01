@@ -57,6 +57,7 @@ module.exports = function (eleventyConfig) {
   // shortcodes
   eleventyConfig.addShortcode("randomcolour", require("./src/_11ty/shortcodes/randomcolour.js"));
   eleventyConfig.addShortcode("youtube", require("./src/_11ty/shortcodes/youtube.js"));
+  eleventyConfig.addShortcode("vimeo", require("./src/_11ty/shortcodes/vimeo.js"));
   
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
