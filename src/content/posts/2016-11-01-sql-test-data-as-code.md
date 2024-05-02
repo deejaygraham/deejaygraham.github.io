@@ -40,7 +40,58 @@ add the file(s) to source control and be able to work in branches since the diff
 The PowerShell script below takes an existing database and generates the insert statements
 required to generate the data from scratch.
 
-<script src="https://gist.github.com/deejaygraham/aa43d0f560c5ed06d734b5d3d38a4726.js"></script>
+```powershell
+<# 
+    Script data from a database into SQL
+
+    Example:
+
+    PowerShell.exe .\GenerateSqlInserts.ps1 -DatabaseServerInstanceName 'MyMachine\SQL2012' -DatabaseName 'MyLovelyDatabase' -OutputFile 'c:\MyLovelyDatabase.sql'
+
+#>
+
+Param(
+
+    [string] $DatabaseServerInstanceName,
+    [string] $DatabaseName,
+    [string] $OutputFile
+)
+
+Set-PsDebug -Strict
+$ErrorActionPreference = 'Stop'
+
+[reflection.assembly]::LoadWithPartialName("Microsoft.SqlServer.Smo")  | Out-Null
+
+$SqlInstance = New-Object ('Microsoft.SqlServer.Management.Smo.Server') $DatabaseServerInstanceName
+
+If ($SqlInstance.Version -eq  $Null ) {
+    Throw "Can't find the instance $DatabaseServerInstanceName"
+}
+
+$SqlDatabase = $SqlInstance.Databases[$DatabaseName] 
+
+If ($SqlDatabase.Name -ne $DatabaseName) {
+    Throw "Can't find the database '$DatabaseName' on server '$DatabaseServerInstanceName'"
+}
+
+$Script = New-Object('Microsoft.SqlServer.Management.Smo.Scripter') $SqlServer
+
+# Export options
+$Script.Options.ContinueScriptingOnError = $False
+
+$Script.Options.FileName = $OutputFile
+$Script.Options.AnsiFile = $True
+$Script.Options.AppendToFile = $False
+$Script.Options.ToFileOnly = $True
+
+$Script.Options.ScriptData = $True
+$Script.Options.ScriptDrops = $False
+$Script.Options.ScriptOwner = $False
+$Script.Options.ScriptSchema = $False
+
+Measure-Command { $Script.EnumScript(@($SqlDatabase.Tables)) } 
+
+```
 
 ### Processes
 

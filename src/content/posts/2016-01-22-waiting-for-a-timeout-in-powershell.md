@@ -24,4 +24,22 @@ and set a maximum wait time, after which we abandon and throw and exception.
 
 PowerShell (pseudo) code:
 
-<script src="https://gist.github.com/deejaygraham/39c822ed5ef62d89fca3.js"></script>
+```powershell
+[int]$PollingIntervalInSeconds = 30
+
+$TimeNow = Get-Date
+$MaxWaitTime = $TimeNow.AddMinutes(30)
+
+While ($TimeNow -lt $MaxWaitTime) {
+
+	# Poll status
+	# Are we done ? break out
+	# Othewise wait before polling again	
+	Start-Sleep -Seconds $PollingIntervalInSeconds
+	
+	$TimeNow = Get-Date
+	
+} # While
+
+# Throw an exception if not completed in time.
+```

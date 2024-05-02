@@ -26,4 +26,25 @@ only (I don't care about existing files that change size). After that, I make su
 the name and status (SideIndicator) so I can tell what has happened to each file. Then, it's a simple
 matter of reporting each file and whether it was added (=>) or removed (<=).
 
-<script src="https://gist.github.com/deejaygraham/82ecda64d3e9a9e6aa17414b3ca0ed95.js"></script>
+```powershell
+
+$BeforeFolderContent = Get-ChildItem -Path D:\MyFolder\*.* 
+
+# Run process to create and update files here 
+
+$AfterFolderContent = Get-ChildItem -Path D:\MyFolder\*.*
+
+$Diffs = Compare-Object -ReferenceObject $BeforeFolderContent -DifferenceObject $AfterFolderContent 
+            -Debug -SyncWindow 1000 -Property Name -PassThru | Sort-Object Name | Select-Object Name, SideIndicator
+
+$Diffs | ForEach-Object {
+
+    $FileName = $_.Name
+
+    If ($_.SideIndicator -eq '<=') {
+        Write-Host "Removed $FileName"
+    } ElseIf ($_.SideIndicator -eq '=>') {
+        Write-Host "Added $FileName"
+    }
+}
+```
