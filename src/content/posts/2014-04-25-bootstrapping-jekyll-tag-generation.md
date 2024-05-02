@@ -17,10 +17,65 @@ to keep the tags up to date before checking in a new post.
 In lieu of someone to code review my posts and commits, I wrote a little
 bit of a script in msbuild to remember for me.
 
-<script src="https://gist.github.com/deejaygraham/0fb79ff4768418c90108.js"></script>
+```xml
+<Project DefaultTargets="BuildWithJekyll" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<TagsFolder>$(MSBuildThisFileDirectory)tags\</TagsFolder>
+		<SiteTagsFolder>$(MSBuildThisFileDirectory)_site\tags\</SiteTagsFolder>
+	</PropertyGroup>
+
+	<Target Name="BuildWithJekyll"
+		DependsOnTargets="RemoveTagsFolder;
+							RunJekyll;
+							CreateTagsFolder;
+							CopyNewTags" />
+	
+	<Target Name="RemoveTagsFolder">
+		
+		<ItemGroup>
+			<FilesToDelete Include="$(TagsFolder)**\*.*" />
+		</ItemGroup>
+		
+		<Message Text="Deleting tags folder" Importance="High" />
+		
+		<Delete Files="@(FilesToDelete" />
+		<RemoveDir Directories="$(TagsFolder)" 
+				Condition="Exists('$(TagsFolder)')"/>
+		
+	</Target>
+	
+	<Target Name="CreateTagsFolder">
+
+		<MakeDir 
+				Directories="$(TagsFolder)"
+				Condition="!Exists('$(TagsFolder)')" 
+				/>
+	
+	</Target>
+	
+	<Target Name="RunJekyll">
+	
+		<Exec Command="jekyll build" />
+		
+	</Target>
+	
+	<Target Name="CopyNewTags">
+		<ItemGroup>
+			<FilesToCopy Include="$(SiteTagsFolder)**\*.*" />
+		</ItemGroup>
+		
+		<Copy SourceFiles="@(FilesToCopy)"
+			DestinationFolder="$(TagsFolder)%(RecursiveDir)" />
+	</Target>
+
+</Project>
+
+```
 
 Then I wrote a batch file to invoke this script before running the test server:
 
+```cmd
     @echo off
 
     SET MsBuildPath="%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"
@@ -32,5 +87,6 @@ Then I wrote a batch file to invoke this script before running the test server:
 
     rem Now run server
     jekyll serve
+```
 
 Now I just have to remember to commit the tag changes with the post :)

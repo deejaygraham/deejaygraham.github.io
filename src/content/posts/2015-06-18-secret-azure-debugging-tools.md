@@ -26,7 +26,6 @@ From that post:
 
 ```
 
-[Download](https://gist.github.com/deejaygraham/d1c6d861d971a0f86094)
 
 ![powershell](/img/posts/secret-azure-tools/powershell-tools-install.webp)
 

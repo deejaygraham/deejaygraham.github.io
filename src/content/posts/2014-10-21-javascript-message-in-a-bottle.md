@@ -17,4 +17,27 @@ javascript I found I couldn't remember the exact syntax in plain old javascript.
 
 So this is a message to my future self, who will forget again before too long :)
 
-<script src="https://gist.github.com/deejaygraham/b9beb6ffc1a489517ba4.js"></script>
+```html
+<html>
+<head>
+	 <script type="text/javascript" src="example.js"></script>
+</head>
+<body>
+<h1>Hello World</h1>
+</body>
+</html>
+```
+
+```javascript
+function init() {
+    alert("Window Loaded");
+}
+    
+function onClick() {
+	alert("Click");
+}
+
+window.onload = init;
+window.onclick = onClick;
+
+```
