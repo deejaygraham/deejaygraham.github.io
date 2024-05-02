@@ -5,20 +5,17 @@
 
 {% if comment %}
 <section class="section">
-<p>{{ comment }}</p>
+{{ comment }}
 </section>
 {% endif %}
 
-<article class="message is-large">
-  <div class="message-header">
-    <p>{{ title }} 
-{% if attribution %}- {{ attribution }}{% endif %}
-{% if publication %}in {{ publication }}{% endif %}
-    </p>
-  </div>
-  <div class="message-body">
-    {{ content | safe }}
-  </div>
-</article>
+<figure class="quote">
+  <blockquote>
+  {{ content | safe }}
+  </blockquote>
+  <figcaption>
+  {% if attribution %}&mdash; {{ attribution }}{% endif %}{% if publication %}, {{ publication }}{% endif %}
+   </figcaption>
+</figure>
 
 {% endblock %}
