@@ -16,7 +16,33 @@ repeatedly.
 In MicroPython we would typically create a "forever" while loop and turn on the centre LED,
 wait a while, turn it off, wait again and repeat. In C++, that translates pretty faithfully to:
 
-<script src="https://gist.github.com/deejaygraham/76e2bf80980db73e3396ab233d360e60.js"></script>
+```cpp
+
+#include "MicroBit.h"
+
+MicroBit micro_bit;
+
+int main()
+{
+  micro_bit.init();
+
+  const int delay_in_milliseconds = 1000;
+  const int full_brightness = 255;
+  const int zero_brightness = 0;
+  
+  while(1)
+  { 
+    micro_bit.display.image.setPixelValue(2, 2, full_brightness);
+    micro_bit.sleep(delay_in_milliseconds);
+    micro_bit.display.image.setPixelValue(2, 2, zero_brightness);
+    micro_bit.sleep(delay_in_milliseconds);
+  }
+  
+  // low power sleep mode.
+  release_fiber();
+}
+
+```
 
 Again, the way that the objects are built is very anti-Law-of-Demeter but at least keeps
 all the components in a sort of logical structure. Changing pixel values is done by chaining
