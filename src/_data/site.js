@@ -2,7 +2,7 @@ module.exports = {
   title: "invalid argument",
   name: "d.j. graham",
   description: "a triumph of style over substance",
-  url: "https://deejaygraham.github.io",
+  url: /serve|watch/.test(process.argv.join()) ? "http://localhost:8080" : "https://deejaygraham.github.io",
   baseUrl: "/",
   author: "Derek Graham",
   paginate: "36",
