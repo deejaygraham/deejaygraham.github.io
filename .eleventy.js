@@ -5,7 +5,12 @@ const posts = require("./src/_11ty/collections/posts.js");
 const dates = require("./src/_11ty/filters/dates.js");
 
 module.exports = function (eleventyConfig) {
+  // plugins
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
+  eleventyConfig.addPlugin(require("./src/_11ty/plugins/generatesocialimages.js"),
+  {
+    outputDir: "./_site/img/preview"
+  });
 
   // collections
   eleventyConfig.addCollection("posts", posts);
