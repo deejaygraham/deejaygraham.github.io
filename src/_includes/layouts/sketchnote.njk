@@ -2,50 +2,56 @@
 
 {% block content %}
 
-<article >
-    <h1 class="title is-1">{{ title }}</h1>
-    <div class="meta">
-        <span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
-    </div>
+<nav class="level is-mobile article-tags" id="article-meta">
+	<div class="level-left">
+		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
+	</div>	
+{% if tags %}
+	<div class="level-right">
+	{% for tag in tags %}
+   		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<span class="tag level-item"><a href="{{ tagUrl }}">{{ tag }}</a></span> 
+  	{% endfor %}
+	</div>
+{% endif %}
+</nav>
+<h1 class="title is-1">{{ title }}</h1>
+{{ content | safe }}
 
-    {{ content | safe }}
-
-    <aside class="my-6">
-    {% if sketchnote %}
-        {% if sketchnote.url %}
-            <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
-        {% endif %}
-        {% if sketchnote.source %}
-            <h4>Source</h4>
-            {% if sketchnote.source.url %}
-            <a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a>
-            {% else %}
-            {{ sketchnote.source.name }}
-            {% endif %}
-        {% endif %}
-                
-        {% if sketchnote.speaker %}
-            <h4>About the Speaker</h4>
-            {% if sketchnote.speaker.url %}
-            <a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a>
-            {% else %}
-            {{ sketchnote.speaker.name }}
-            {% endif %}
-        {% endif %}
-                        
-        {% if sketchnote.event %}
-            <h4>About the Event</h4>
-            {% if sketchnote.event.url %}
-            <a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a>
-            {% else %}
-            {{ sketchnote.event.name }}
-            {% endif %}
+<aside class="my-6">
+{% if sketchnote %}
+    {% if sketchnote.url %}
+        <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
+    {% endif %}
+    {% if sketchnote.source %}
+        <h4>Source</h4>
+        {% if sketchnote.source.url %}
+        <a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a>
+        {% else %}
+        {{ sketchnote.source.name }}
         {% endif %}
     {% endif %}
-    
-    {% include "partials/ccboilerplate.njk" %}
-    </aside>
+            
+    {% if sketchnote.speaker %}
+        <h4>About the Speaker</h4>
+        {% if sketchnote.speaker.url %}
+        <a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a>
+        {% else %}
+        {{ sketchnote.speaker.name }}
+        {% endif %}
+    {% endif %}
+                    
+    {% if sketchnote.event %}
+        <h4>About the Event</h4>
+        {% if sketchnote.event.url %}
+        <a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a>
+        {% else %}
+        {{ sketchnote.event.name }}
+        {% endif %}
+    {% endif %}
+{% endif %}
 
-</article>
+{% include "partials/ccboilerplate.njk" %}
+</aside>
 
 {% endblock %}
