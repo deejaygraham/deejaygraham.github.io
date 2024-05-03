@@ -9,22 +9,28 @@
     {% include "partials/stylesheets.njk" %}
   </head>
   <body>
+    {% block header %}
     {% include "partials/siteheader.njk" %}
+    {% endblock %}
 
     <main class="main container mb-6" id="main" >
       {% block precontent %}{% endblock %}
 
-      {% block content %}
       <section class="section">
-      {{ content | safe }}
+	      <div class="content is-medium">
+        {% block content %}
+          {{ content | safe }}
+        {% endblock %}
+        </div>
       </section>
-      {% endblock %}
 
       {% block postcontent %}{% endblock %}
     </main>
-    
+
+    {% block footer %}
     {% include "partials/sitefooter.njk" %}
-    
+    {% endblock %}
+
     {% block scripts %}
       {% include "partials/basescripts.njk" %}
     {% endblock %}
