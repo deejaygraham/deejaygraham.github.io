@@ -49,3 +49,18 @@ $heroes: (
 	}
 }
 
+// Print styling
+
+@media print  {
+	.navbar, .related-posts, .footer { 
+		display: none; 
+	}
+	
+	body {
+		font: 13pt Georgia, "Times New Roman", Times, serif;
+		line-height: 1.3;
+		background: #fff !important;
+		color: $black;
+	}
+}
+
