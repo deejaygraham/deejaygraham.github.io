@@ -136,7 +136,7 @@ Her research programming language CLU actually invented what we now know as Gene
 
 She talks about no knowing anything about the adoption of her work in SOLID until she went looking for “what was happening in modern programming” and found a load of people online debating about what she meant and whether one case or another of OO code adhered or broke her principle. She was very amused by that.
 
-## ISP
+## ISP
 
 "Many client-specific interfaces are better than one wide, general-purpose interface."
 
