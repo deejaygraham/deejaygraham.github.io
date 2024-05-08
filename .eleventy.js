@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
   
   // plugins
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
-  eleventyConfig.on('eleventy.after', require("./_11ty/plugins/generate-socials"));
+  eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
   
   // collections
   eleventyConfig.addCollection("posts", posts);
