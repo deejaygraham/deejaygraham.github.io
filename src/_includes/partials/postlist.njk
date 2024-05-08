@@ -5,13 +5,16 @@
 	<div class="cell">
     		<div class="card">
 			<a href="{{ post.url }}">
+				{% set thumbnailImage = '/img/thumbnails/notebook-420x255.webp' %}
 				{% if post.data.thumbnail %}
+					{% set thumbnailImage = post.data.thumbnail %}
+				{% endif %}
+
   				<div class="card-image">
 					<figure class="image">
-  						<img src="{{ post.data.thumbnail }}" />
+  						<img src="{{ thumbnailImage }}" />
 					</figure>
 				</div>
-				{% endif %}   			
 	  		
 				<div class="card-content">
     					<p class="title">{{ post.data.title }}</p>
