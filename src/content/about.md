@@ -19,7 +19,7 @@ I co-organize [NE Bytes](https://nebytes.net), a monthly .Net community get-toge
 like [DDD North](https://www.dddnorth.co.uk).
 
 I am an Extreme Programmer, an Infrequent Sketchnoter, a Collector of Programming Languages, a Speaker, an Ensemble Programmer, and a Test-Driven Developer. I 
-am a second year mentor for the "We Think Code" non-profit and a STEM ambassador specialising in micro:bit hackery.
+am a second year mentor for the ["We Think Code"](https://wethinkcode.co.za) non-profit in South Africa and a STEM ambassador specialising in micro:bit hackery.
 
 My main areas of interest are in using <strong>agile methods</strong> to help improve what we **ship**, **test-driven** development, unit **testing**, continuous and
 deliberate **learning**, **visual** thinking, design and, of course, **code**.
