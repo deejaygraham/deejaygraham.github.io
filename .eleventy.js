@@ -5,9 +5,13 @@ const posts = require("./src/_11ty/collections/posts.js");
 const dates = require("./src/_11ty/filters/dates.js");
 
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.setQuietMode(true);
+  
   // plugins
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
-
+  eleventyConfig.on('eleventy.after', require("./_11ty/plugins/generate-socials"));
+  
   // collections
   eleventyConfig.addCollection("posts", posts);
 
