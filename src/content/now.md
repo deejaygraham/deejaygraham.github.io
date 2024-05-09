@@ -4,17 +4,19 @@ title: What I'm doing now
 layout: post
 ---
 
+## Work
+
 - Architecting some cloud applications.
 - Archeology on some desktop applications.
 - Organizing NE Bytes, our local .Net developer meetup.
 - Looking for opportunities to talk at other developer meetups.
 
-## Currently Reading
+## WHat I'm Reading
 
 - "Life in Code, a Personal History of Technology" by Ellen Ullman
 - "Winners Take All, The Elite Charade of Changing the World" by Anand Giridharadas
 
-## Read
+## What I Have Read
 
 - "We have always lived in the castle" by Shirley Jackson
 - "Normal" by Warren Ellis
