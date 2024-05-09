@@ -4,7 +4,8 @@ title: What I'm doing now
 layout: post
 ---
 
-- Tech leading a desktop to web migration project using React & Redux.
+- Architecting some cloud applications.
+- Archeology on some desktop applications.
 - Organizing NE Bytes, our local .Net developer meetup.
 - Looking for opportunities to talk at other developer meetups.
 
@@ -20,4 +21,4 @@ layout: post
 
 #### Updated:
 
-January 2020
+May 2024
