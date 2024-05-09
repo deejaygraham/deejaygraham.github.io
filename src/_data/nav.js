@@ -23,4 +23,8 @@ module.exports = [
     name: "about",
     url: "/about/",
   },
+  {
+    name: "now",
+    url: "/now/",
+  },
 ];
