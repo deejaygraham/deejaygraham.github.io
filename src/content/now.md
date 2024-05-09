@@ -1,9 +1,7 @@
 ---
-
 permalink: now/index.html
 title: What I'm doing now
 layout: post
-
 ---
 
 - Tech leading a desktop to web migration project using React & Redux.
