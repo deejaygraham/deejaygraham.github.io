@@ -10,5 +10,5 @@ thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---
 
-The ultimat, hidden truth of the world, is that it is something that we made, 
+The ultimate, hidden truth of the world, is that it is something that we made, 
 and could just as easily make differently.
