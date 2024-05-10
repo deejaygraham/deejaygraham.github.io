@@ -11,15 +11,17 @@ layout: post
 - Organizing NE Bytes, our local .Net developer meetup.
 - Looking for opportunities to talk at other developer meetups.
 
-## WHat I'm Reading
+## What I'm Reading
 
-- "Life in Code, a Personal History of Technology" by Ellen Ullman
-- "Winners Take All, The Elite Charade of Changing the World" by Anand Giridharadas
+- "Steal Like an Artist" by Austin Kleon
+- "Windswept & Interesting" by Billy Connolly
 
 ## What I Have Read
 
-- "We have always lived in the castle" by Shirley Jackson
-- "Normal" by Warren Ellis
+- "12 Bytes" by Jeanette Winterson
+- "The Lost Cause" by Cory Doctorow
+- "Life in Code, a Personal History of Technology" by Ellen Ullman
+- "Winners Take All, The Elite Charade of Changing the World" by Anand Giridharadas
 
 #### Updated:
 
