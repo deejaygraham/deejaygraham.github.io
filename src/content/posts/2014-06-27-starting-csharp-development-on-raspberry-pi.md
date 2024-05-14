@@ -1,5 +1,5 @@
 ---
-permalink: 2014/06/27/starting-c#-development-on-raspberry-pi/
+permalink: 2014/06/27/starting-csharp-development-on-raspberry-pi/
 layout: post
 title: Starting C# Development on Raspberry Pi
 published: true
