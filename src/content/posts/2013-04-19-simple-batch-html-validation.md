@@ -15,6 +15,6 @@ and an HtmlTidy root-and-branch linting.
 
 ```csharp
 
-{% include "code/csharp/HtmlLinkValidation" %}
+{% include "code/csharp/SimpleBatchHtmlValidation.cs" %}
 
 ```
