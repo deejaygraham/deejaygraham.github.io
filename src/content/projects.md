@@ -16,5 +16,4 @@ layout: base.njk
 	<li><a href="{{ site.url }}/ndifference/">NDifference</a> - My .Net API reporting tool</li>
 	<li><a href="{{ site.githuburl }}">GitHub</a> projects</li>
 	<li><a href="{{ site.gisturl }}">GitHub Gist</a> snippets</li>
-	<li><a href="{{ site.codeplexurl }}">CodePlex</a> projects</li>
 </ul>
