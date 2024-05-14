@@ -19,7 +19,7 @@ While not remotely music, some small snatches of 2 or 3 notes played in successi
 the time, it's more like an elongated conversation with R2D2.
 
 ```python
-from microbit import \*
+from microbit import *
 import random
 import music
 
