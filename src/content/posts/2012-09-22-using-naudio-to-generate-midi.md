@@ -11,4 +11,6 @@ file processing classes to write a simple set of notes to a .mid file.
 
 ```csharp
 
+{% include "code/csharp/SimpleMidiFileWriter.cs" %}
+
 ```
