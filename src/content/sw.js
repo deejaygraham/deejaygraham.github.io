@@ -4,6 +4,7 @@
 const version = 'v1::';
 
 self.addEventListener('install', (event) => {
+  console.log('WORKER: install');
   event.waitUntil(
     caches
       .open(version + 'fundamentals')
@@ -15,10 +16,12 @@ self.addEventListener('install', (event) => {
         ]);
       });
   );
+    console.log('WORKER: installed');
 });
 
 self.addEventListener('activate', (event) => {
   // delete out of date caches by version prefix
+    console.log('WORKER: activate');
   event.waitUntil(
     caches
       .keys()
@@ -41,7 +44,7 @@ self.addEventListener("fetch", function(event) {
   if (event.request.method !== 'GET') {
     return;
   }
-  
+      console.log('WORKER: fetch');
   event.respondWith(
     caches
       .match(event.request)
