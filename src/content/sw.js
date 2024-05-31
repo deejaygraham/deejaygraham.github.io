@@ -24,12 +24,6 @@ const deleteOldCaches = async () => {
   await Promise.all(cachesToDelete.map(deleteCache));
 };
 
-const enableNavigationPreload = async () => {
-  if (self.registration.navigationPreload) {
-    await self.registration.navigationPreload.enable();
-  }
-};
-
 self.addEventListener('install', (event) => {
   console.log('WORKER: install');
   event.waitUntil(
@@ -44,7 +38,6 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(deleteOldCaches());
-  event.waitUntil(enableNavigationPreload());
 });
 
 self.addEventListener('fetch', (event) => {
