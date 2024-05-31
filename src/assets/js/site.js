@@ -29,5 +29,5 @@ const registerServiceWorker = async () => {
   }
 };
 
-//registerServiceWorker();
+registerServiceWorker();
 addBulmaBurgerMenu();
