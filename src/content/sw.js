@@ -38,8 +38,7 @@ self.addEventListener('install', (event) => {
           '/index.html',
           '/css/site.css',
           '/css/prism.css'
-        ]),
-      );
+    ]),
   );
 });
 
