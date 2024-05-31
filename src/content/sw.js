@@ -1,50 +1,59 @@
 // service worker code for site
 
 // change v1 to allow upgrade
-const version = 'v1::';
+const version = 'v1';
+
+const addResourcesToCache = async (resources) => {
+  const cache = await caches.open(version);
+  await cache.addAll(resources);
+};
+
+const putInCache = async (request, response) => {
+  const cache = await caches.open(version);
+  await cache.put(request, response);
+};
+
+const deleteCache = async (key) => {
+  await caches.delete(key);
+};
+
+const deleteOldCaches = async () => {
+  const cacheKeepList = [version];
+  const keyList = await caches.keys();
+  const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
+  await Promise.all(cachesToDelete.map(deleteCache));
+};
+
+const enableNavigationPreload = async () => {
+  if (self.registration.navigationPreload) {
+    await self.registration.navigationPreload.enable();
+  }
+};
 
 self.addEventListener('install', (event) => {
   console.log('WORKER: install');
   event.waitUntil(
-    caches
-      .open(version + 'fundamentals')
-      .then(function(cache) {
-        return cache.addAll([
+    addResourcesToCache([
           '/',
+          '/index.html',
           '/css/site.css',
           '/css/prism.css'
-        ]);
-      });
+        ]),
+      );
   );
-    console.log('WORKER: installed');
 });
 
 self.addEventListener('activate', (event) => {
-  // delete out of date caches by version prefix
-    console.log('WORKER: activate');
-  event.waitUntil(
-    caches
-      .keys()
-      .then(function (keys) {
-        return Promise.all(
-          keys
-            .filter(function (key) {
-              // Filter by keys that don't start with the latest version prefix.
-              return !key.startsWith(version);
-            })
-            .map(function (key) {
-              return caches.delete(key);
-            })
-        );
-      });
-  );
+  event.waitUntil(deleteOldCaches());
+  event.waitUntil(enableNavigationPreload());
 });
 
-self.addEventListener("fetch", function(event) {
+self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') {
     return;
   }
-      console.log('WORKER: fetch');
+  
+  console.log('WORKER: fetch');
   event.respondWith(
     caches
       .match(event.request)
@@ -66,14 +75,7 @@ self.addEventListener("fetch", function(event) {
         return cached || networked;
 
         function fetchedFromNetwork(response) {
-          var cacheCopy = response.clone();
-          caches
-            // We open a cache to store the response for this request.
-            .open(version + 'pages')
-            .then(function add(cache) {
-              cache.put(event.request, cacheCopy);
-            });
-
+          putInCache(event.request, response.clone());
           return response;
         }
 
