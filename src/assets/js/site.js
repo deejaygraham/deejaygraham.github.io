@@ -7,6 +7,8 @@ const addBulmaBurgerMenu = () => {
         burger.classList.toggle('is-active');
         menu.classList.toggle('is-active');
     });
+
+    console.log('Burger menu registered');
 };
 
 
