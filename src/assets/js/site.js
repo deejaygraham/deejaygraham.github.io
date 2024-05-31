@@ -7,20 +7,15 @@ const addBulmaBurgerMenu = () => {
         burger.classList.toggle('is-active');
         menu.classList.toggle('is-active');
     });
-
-    console.log('Burger menu registered');
 };
 
 
 const registerServiceWorker = async () => {
   if ('serviceWorker' in navigator) {
     try {
-      const registration = await navigator.serviceWorker.register(
-        'sw.js',
-        {
-          scope: './',
-        }
-      );
+      const registration = await navigator.serviceWorker.register('/sw.js', {
+          scope: '/',
+      });
       if (registration.installing) {
         console.log('Service worker installing');
       } else if (registration.waiting) {
