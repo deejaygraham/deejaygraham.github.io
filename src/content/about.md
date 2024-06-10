@@ -7,7 +7,10 @@ thumbnail: /img/heroes/hero-makers-and-creators.webp
 
 My name is Derek Graham and this is my personal blog.
 
-I'm a software Architect working for a very popular business software company in the North East of England. I can't be sure that the opinions 
+In my most pretentious moments I like to think of myself as a writer of speculative fiction for computers (what people normally call a "programmer") or a 
+"legacy code archaeologist" (someone who has to make sense of long dead codebases).
+
+In real life, I'm a software architect working for a very popular business software company in the North East of England. I can't be sure that the opinions 
 I have expressed here are my own so they **definitely** don't represent the views of my employer.
 
 For the last few years I have been working mostly on .Net, React and Azure Cloud projects. I have been involved  at almost every level of software development over the last 25+ years from 
@@ -19,9 +22,10 @@ I co-organize [NE Bytes](https://nebytes.net), a monthly .Net community get-toge
 like [DDD North](https://www.dddnorth.co.uk).
 
 I am an Extreme Programmer, an Infrequent Sketchnoter, a Collector of Programming Languages, a Speaker, an Ensemble Programmer, and a Test-Driven Developer. I 
-am a second year mentor for the ["We Think Code"](https://wethinkcode.co.za) non-profit in South Africa and a STEM ambassador specialising in micro:bit hackery.
+am a second-year mentor for cohorts attending training at the ["We Think Code"](https://wethinkcode.co.za) non-profit in South Africa 
+and a STEM ambassador specialising in micro:bit hackery.
 
-My main areas of interest are in using <strong>agile methods</strong> to help improve what we **ship**, **test-driven** development, unit **testing**, continuous and
+My main areas of interest are in using **agile methods** to help improve what we **ship**, **test-driven** development, unit **testing**, continuous and
 deliberate **learning**, **visual** thinking, design and, of course, **code**.
 
 ## A Note on Sharing
