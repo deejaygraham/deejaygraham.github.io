@@ -17,12 +17,43 @@ Microbit can handle executing code spread across multiple files but the process 
 ### Process
 
 * Write a file containing some code
-* Save that file into the mu_editor folder locally
-* import the file into the main source tab as you would with a "from microbit import *"
+
+```python
+
+# maths.py
+
+def add(first, second):
+    return first + second
+    
+def multiply(first, second):
+    return first * second
+
+```
+
+* Save that file into the mu_code folder locally (as maths.py)
+* import the file into the main source tab as you would with
+
+```python
+
+from microbit import *
+
+```
+
+```python
+
+# main.py
+
+from maths import *
+
+print(add(1, 2))
+print(multiply(2, 6))
+
+```
+
 * Flash the source to the microbit
-* Expect an error
-* Open the "Files" console in the editor
-* Drag the extra .py source file across to the microbit
+* Expect an error complaining that import does not exist
+* Open the "Files" console in the mu editor
+* Drag the maths .py source file across to the microbit
 * Restart the microbit
 * Watch the code execute!
 
