@@ -6,7 +6,7 @@ published: true
 tags: [code, processing, python]
 ---
 
-I saw a clip of videa a few days ago of an interview where the people on stage had a huge wall-sized display behind them and on which 
+I saw a clip of video a few days ago of an interview where the people on stage had a huge wall-sized display behind them and on which 
 there was a grid and of giant "pixels"/blocks. Gradually, letter by letter, a sentence was displayed on the screen in a pixelated font over 
 a period of a few seconds, paused, then disappeared again, letter by letter.
 
