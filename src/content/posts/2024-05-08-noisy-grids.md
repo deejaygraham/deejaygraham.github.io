@@ -10,6 +10,9 @@ tags: [code, processing, python]
 Thinking about flow in Processing (more on that to follow) perlin noise visualisation continues to be fascinating. Here are some examples in an x-y grid setting 
 using a basic set of points shown as circles in an arrangement across and down the screen.
 
+
+### No Noise
+
 <img src="/img/posts/noisy-grids/x-y.png" alt="grid" class="u-max-full-width" />
 
 First we have the normal grid pattern with some pleasing colour choices:
@@ -56,6 +59,9 @@ for y in range(yspacing/2, height, yspacing):
 
 Note some unused variables lastx, lasty, xoff, yoff, noise_increment are there to make the code work when we introduce some pertubation later.
 
+
+### X Perlin Noise
+
 Adding perlin noise, we map values we get from the noise function from 0..1 to the width and height of the screen. If we apply noise to the x values:
 
 ```python
@@ -69,6 +75,8 @@ Adding perlin noise, we map values we get from the noise function from 0..1 to t
 <img src="/img/posts/noisy-grids/xnoise-y.png" alt="grid with x noise" class="u-max-full-width" />
 
 
+### Y Perlin Noise
+
 Similarly if we keep x fixed and add noise to the y values:
 
 ```python
@@ -80,6 +88,9 @@ Similarly if we keep x fixed and add noise to the y values:
 ```
 
 <img src="/img/posts/noisy-grids/x-ynoise.png" alt="grid with y noise" class="u-max-full-width" />
+
+
+### X & Y Perlin Noise
 
 And as you might imagine if we add noise to both, the most interesting pattern emerges, something like a photo of the tilt of the milky way.
 
