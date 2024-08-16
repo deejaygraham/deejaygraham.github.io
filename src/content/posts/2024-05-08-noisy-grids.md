@@ -10,6 +10,8 @@ tags: [code, processing, python]
 Thinking about flow in Processing (more on that to follow) perlin noise visualisation continues to be fascinating. Here are some examples in an x-y grid setting 
 using a basic set of points shown as circles in an arrangement across and down the screen.
 
+<img src="/img/posts/noisy-grids/x-y.png" alt="grid" class="u-max-full-width" />
+
 First we have the normal grid pattern with some pleasing colour choices:
 
 ```python
@@ -64,6 +66,9 @@ Adding perlin noise, we map values we get from the noise function from 0..1 to t
             
 ```
 
+<img src="/img/posts/noisy-grids/xnoise-y.png" alt="grid with x noise" class="u-max-full-width" />
+
+
 Similarly if we keep x fixed and add noise to the y values:
 
 ```python
@@ -74,6 +79,8 @@ Similarly if we keep x fixed and add noise to the y values:
 
 ```
 
+<img src="/img/posts/noisy-grids/x-ynoise.png" alt="grid with y noise" class="u-max-full-width" />
+
 And as you might imagine if we add noise to both, the most interesting pattern emerges, something like a photo of the tilt of the milky way.
 
 ```python
@@ -83,4 +90,6 @@ And as you might imagine if we add noise to both, the most interesting pattern e
         yvalue = map(noise(x, y, yoff), 0, 1, 0, height)
 
 ```
+
+<img src="/img/posts/noisy-grids/xnoise-ynoise.png" alt="grid with x and y noise" class="u-max-full-width" />
 
