@@ -9,11 +9,22 @@ module.exports = function (collection) {
   });
 
   collection.forEach((page) => {
-    index.addDoc({
-      id: page.url,
-      title: page.template.frontMatter.data.title,
-      tags: page.template.frontMatter.data.tags,
-    });
+
+    if (page.template.frontMatter.data.layout && page.template.frontMatter.data.layout === 'quotation') {
+      let content = page.template.frontMatter.data.title + page.rawInput;
+      index.addDoc({
+        id: page.url,
+        title: content,
+        tags: page.template.frontMatter.data.tags,
+      });
+    } 
+    else {
+      index.addDoc({
+        id: page.url,
+        title: page.template.frontMatter.data.title,
+        tags: page.template.frontMatter.data.tags,
+      });
+    }
   });
 
   return index.toJSON();
