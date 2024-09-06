@@ -11,10 +11,10 @@ module.exports = function (collection) {
   collection.forEach((page) => {
 
     if (page.template.frontMatter.data.layout && page.template.frontMatter.data.layout === 'quotation') {
-      let content = page.template.frontMatter.data.title + page.rawInput;
+      let content = page.template.frontMatter.data.title;
 
       if (page.template.frontMatter.data.attribution) {
-        content += page.template.frontMatter.data.attribution;
+        content += ' ' + page.template.frontMatter.data.attribution;
       }
       
       index.addDoc({
