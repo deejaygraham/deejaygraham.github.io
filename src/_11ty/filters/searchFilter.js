@@ -12,6 +12,11 @@ module.exports = function (collection) {
 
     if (page.template.frontMatter.data.layout && page.template.frontMatter.data.layout === 'quotation') {
       let content = page.template.frontMatter.data.title + page.rawInput;
+
+      if (page.template.frontMatter.data.attribution) {
+        content += page.template.frontMatter.data.attribution;
+      }
+      
       index.addDoc({
         id: page.url,
         title: content,
