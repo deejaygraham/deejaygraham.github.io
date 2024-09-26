@@ -21,31 +21,28 @@ describe("deployed site", () => {
     it("contains search scripts", () => {
       cy.request("/js/search.js");
       cy.request("/js/elasticlunr.min.js");
-    });
-  });
-
-  context("fonts", () => {
-    it("contains fontawesome font", () => {
-      cy.request("/webfonts/fa-regular-400.woff");
+      cy.request("/sw.js");
     });
   });
 
   context("feeds", () => {
     it("contains xml feeds", () => {
       cy.request("/rss.xml");
-      cy.request("/atom.xml");
+      cy.request("/sitemap.xml");
+      cy.request("/search-index.xml");
     });
   });
 
+  context("text files", () => {
+    it("automation files", () => {
+      cy.request("/robots.txt");
+      cy.request("/humans.txt");
+    });
+  });
+  
   context("stylesheets", () => {
     it("contains css", () => {
       cy.request("/css/site.css");
-    });
-  });
-
-  context("downloads", () => {
-    it("contains download for ndifference installer", () => {
-      cy.request("/downloads/ndifference/NDifference.0.0.0.1.Installer.msi");
     });
   });
 });
