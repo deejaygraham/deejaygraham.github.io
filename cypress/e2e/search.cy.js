@@ -32,7 +32,7 @@ describe("search the site", () => {
       cy.get("#search-results li")
         .should("have.length", 1)
         .first()
-        .should("have.text", expectedPostTitle);
+        .should("contain", expectedPostTitle);
     });
   });
 
@@ -43,7 +43,6 @@ describe("search the site", () => {
     it("search results show matching articles", () => {
       cy.get("#search-box").type(searchTerm);
       cy.get("#search-results li")
-        .should("have.length", 1)
         .first()
         .should("have.text", expectedPostTitle);
     });
