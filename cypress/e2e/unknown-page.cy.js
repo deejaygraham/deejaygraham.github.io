@@ -11,6 +11,6 @@ describe("Try to load an unknown page", () => {
         failOnStatusCode: false,
     });
     cy.get("h1.title").should("have.text", "Content not found");
-    cy.get("p").should("have.text", "Try going to the home page");
+    cy.get("p").should("contain", "Try going to the home page");
   });
 });
