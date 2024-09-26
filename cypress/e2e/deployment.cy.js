@@ -20,7 +20,7 @@ describe("deployed site", () => {
   context("javascript", () => {
     it("contains search scripts", () => {
       cy.request("/js/search.js");
-      cy.request("/js/lunr.js");
+      cy.request("/js/elasticlunr.min.js");
     });
   });
 
