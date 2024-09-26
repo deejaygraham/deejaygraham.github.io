@@ -49,7 +49,7 @@ describe("blog posts", () => {
     it("contains suggested posts", () => {
       cy.get(".related-posts").should(
         "contain",
-        "Other posts tagged with #code",
+        "More posts tagged with #",
       );
     });
 
