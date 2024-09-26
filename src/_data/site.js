@@ -6,7 +6,5 @@ module.exports = {
   baseUrl: "/",
   author: "Derek Graham",
   paginate: "36",
-  email: "deejaygraham@gmail.com",
-  emaillink: "mailto:deejaygraham@gmail.com",
   buildTime: new Date(),
 };
