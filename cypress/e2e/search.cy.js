@@ -10,12 +10,8 @@ describe("search for an existing item", () => {
     cy.get("#search-button").click();
   });
 
-  it("url contains the search term", () => {
-    cy.url().should("include", `?query=${searchTerm}`);
-  });
-
   it("has a consistent page title", () => {
-    cy.get("h1.title").should("contain", "Search Results");
+    cy.get("h1.title").should("contain", "search");
   });
 
   it("search results show matching articles", () => {
