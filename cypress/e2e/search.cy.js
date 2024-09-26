@@ -58,7 +58,7 @@ describe("search for a post by tag", () => {
   });
 });
 
-describe("search for an not existing item", () => {
+describe("search for a not existing item", () => {
   const searchTerm = "blargleargle";
 
   before(() => {
