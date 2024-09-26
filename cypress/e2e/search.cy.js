@@ -16,7 +16,7 @@ describe("search the site", () => {
       const expectedPostTitle = "Make A Jazz Noise Here";
       
       cy.get("#search-box").type(searchTerm);
-      cy.get("#search-results ul li")
+      cy.get("#search-results li")
         .should("have.length", 1)
         .first()
         .should("have.text", expectedPostTitle);
@@ -29,7 +29,7 @@ describe("search the site", () => {
       const expectedPostTitle = "Meir M Lehman";
       
       cy.get("#search-box").type(searchTerm);
-      cy.get("#search-results ul li")
+      cy.get("#search-results li")
         .should("have.length", 1)
         .first()
         .should("have.text", expectedPostTitle);
@@ -42,7 +42,7 @@ describe("search the site", () => {
   
     it("search results show matching articles", () => {
       cy.get("#search-box").type(searchTerm);
-      cy.get("#search-results ul li")
+      cy.get("#search-results li")
         .should("have.length", 1)
         .first()
         .should("have.text", expectedPostTitle);
