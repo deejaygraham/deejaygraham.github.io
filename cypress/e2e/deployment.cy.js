@@ -29,10 +29,15 @@ describe("deployed site", () => {
     it("contains xml feeds", () => {
       cy.request("/rss.xml");
       cy.request("/sitemap.xml");
-      cy.request("/search-index.xml");
     });
   });
 
+  context("search", () => {
+    it("contains json search db", () => {
+      cy.request("/search-index.json");
+    });
+  });
+  
   context("text files", () => {
     it("automation files", () => {
       cy.request("/robots.txt");
