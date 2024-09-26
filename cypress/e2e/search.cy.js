@@ -34,7 +34,7 @@ describe("search for an not existing item", () => {
   it("search results not shown for nonsense term", () => {
     cy.get("#search-results").should(
       "have.text",
-      `No results found for ${searchTerm}`,
+      "Nothing to see here.",
     );
   });
 });
