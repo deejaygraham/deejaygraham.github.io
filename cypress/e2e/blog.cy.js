@@ -32,7 +32,7 @@ describe("blog posts", () => {
     });
 
     it("contains the correct date", () => {
-      cy.get("#article-meta").should("contain", "01 March 2024");
+      cy.get("#article-meta").should("contain", "1 March 2024");
     });
 
     it("contains the meta tags", () => {
