@@ -26,7 +26,7 @@ describe("search the site", () => {
   context("for a post by quotation author", () => {
     it("search results show matching articles", () => {
       const searchTerm = "Lehman";
-      const expectedPostTitle = "Meir M Lehman";
+      const expectedPostTitle = "Deteriorating Structure";
       
       cy.get("#search-box").type(searchTerm);
       cy.get("#search-results li")
