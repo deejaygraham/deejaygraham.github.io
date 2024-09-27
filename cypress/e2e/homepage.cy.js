@@ -16,7 +16,7 @@ describe("home page", () => {
   });
 
   it("contains list of posts", () => {
-    cy.get("cell").should("have.length", 12);
+    cy.get(".cell").should("have.length", 12);
   });
 
   it("contains footer", () => {
