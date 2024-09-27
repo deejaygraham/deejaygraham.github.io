@@ -25,4 +25,4 @@ Read books, read my books, you might like them. You might find something you lik
 for these things in life. Question authority, champion good causes, speak out against injustice. Do not tolerate
 bullies or bigots or racists or anti-intellectuals or the narrow minded. 
 
-Use your educationto challenge them. Broaden their perspectives. Make the world your interface with a happier place. 
+Use your education to challenge them. Broaden their perspectives. Make the world your interface with a happier place. 
