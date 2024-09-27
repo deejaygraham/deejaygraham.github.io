@@ -18,7 +18,8 @@ module.exports = function (collection) {
       }
     } else if (page.content) {
       const excerptLength = 255; // chars
-      const content = page.content.replace(/(<([^>]+)>)/gi, "");
+      let content = page.content.replace(/(<([^>]+)>)/gi, "");
+      content = content.replace(/\n/g, ' ');
       excerpt = content.substr(0, content.lastIndexOf(" ", excerptLength));
     }
     
