@@ -1,16 +1,14 @@
 <footer class="footer">
 <section class="section">
 	<nav class="level" aria-label="footer navigation">
-		{# social media #}
-		<div class="level-right">
-		{% for item in socialmedia %}
-            		<a class="level-item" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
-				<figure class="image is-24x24">
-					<img src="{{ site.url }}/img/{{ item.icon }}" alt="{{ item.name }}" >
-				</figure>
-	    		</a>
-          	{% endfor %}
-		</div>
+	{# social media #}
+	{% for item in socialmedia %}
+            	<a class="level-item" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
+			<figure class="image is-24x24">
+				<img src="{{ site.url }}/img/{{ item.icon }}" alt="{{ item.name }}" >
+			</figure>
+  		</a>
+          {% endfor %}
       	</nav>
 
 	<div class="content has-text-centered mt-6">
