@@ -16,6 +16,10 @@ module.exports = function (collection) {
       if (page.template.frontMatter.data.attribution) {
         excerpt = page.template.frontMatter.data.attribution;
       }
+    } else if (page.content) {
+      const excerptLength = 255; // chars
+      const content = page.content.replace(/(<([^>]+)>)/gi, "");
+      excerpt = content.substr(0, content.lastIndexOf(" ", excerptLength));
     }
     
     index.addDoc({
