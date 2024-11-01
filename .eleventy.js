@@ -79,7 +79,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/assets/css/prism.css": "/css/prism.css",
   });
-
+  eleventyConfig.addPassthroughCopy("./src/assets/downloads");
+  
   return {
     dir: {
       input: "src",
