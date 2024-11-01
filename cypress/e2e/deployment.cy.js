@@ -9,6 +9,7 @@ describe("deployed site", () => {
     it("contains avatar images", () => {
       cy.request("/img/avatar.jpg");
       cy.request("/img/avatar.png");
+      cy.request("/img/avatar.svg");
     });
 
     it("contains hero images", () => {
@@ -19,6 +20,7 @@ describe("deployed site", () => {
 
   context("javascript", () => {
     it("contains search scripts", () => {
+      cy.request("/js/site.js");
       cy.request("/js/search.js");
       cy.request("/js/elasticlunr.min.js");
       cy.request("/sw.js");
@@ -48,6 +50,7 @@ describe("deployed site", () => {
   context("stylesheets", () => {
     it("contains css", () => {
       cy.request("/css/site.css");
+      cy.request("/css/prism.css");
     });
   });
 });
