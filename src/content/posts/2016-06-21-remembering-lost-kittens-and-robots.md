@@ -91,4 +91,4 @@ environment.
 ![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-kitten-code.webp)
 
 If the game disappears from the MIT website, can get the scratch binary image of the game
-[here](https://github.com/deejaygraham/deejaygraham.github.io/raw/master/downloads/rfk_scratch_binary.zip)
+[here](/downloads/rfk_scratch_binary.zip)
