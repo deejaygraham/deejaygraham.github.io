@@ -85,6 +85,9 @@ Finally, the implementation of each of the different types of renderer.
 
 ```
 
-Examples of <a href="/downloads/Dotted-a4-portrait.pdf" alt="dotted">each<a/>
-<a href="/downloads/Graph-a4-portrait.pdf" alt="graph">type<a/> of
-<a href="/downloads/Manuscript-a4-portrait.pdf" alt="manuscript">paper<a/> are available for download.
+Here are some samples of each type of pdf for download:
+
+* <a href="/downloads/Dotted-a4-portrait.pdf" alt="dotted">dotted</a>
+* <a href="/downloads/Graph-a4-portrait.pdf" alt="graph">graph</a>
+* <a href="/downloads/Manuscript-a4-portrait.pdf" alt="manuscript">manuscript</a>
+
