@@ -30,6 +30,6 @@ I created a set of _traits_ to be applied to fast and slow unit tests as appropr
 
 ```csharp
 
-{% include code/csharp/xUnitTraits.cs %}
+{% include 'code/csharp/xUnitTraits.cs' %}
 
 ```
