@@ -6,7 +6,7 @@ published: true
 tags: [tdd, code]
 ---
 
-One of the things I love about [xUnit.net](xunit.codeplex.com) is how small
+One of the things I love about [xUnit.net](https://xunit.net) is how small
 the feature set is while allowing you to extend it with the minimum of effort.
 
 One project had a number of [unit tests](http://www.artima.com/weblogs/viewpost.jsp?thread=126923)
@@ -29,5 +29,7 @@ can filter tests based on the name "Category".
 I created a set of _traits_ to be applied to fast and slow unit tests as appropriate.
 
 ```csharp
+
+{% include code/csharp/xUnitTraits.cs %}
 
 ```
