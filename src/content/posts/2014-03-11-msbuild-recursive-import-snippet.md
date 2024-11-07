@@ -9,4 +9,6 @@ tags: [msbuild, code]
 Here's a neat snippet to add to an msbuild script to import all scripts
 in nested sub-folders rather than hard-coding each one.
 
+```xml
     <Import Project="*\**\*.myproject.proj" />
+```
