@@ -23,15 +23,19 @@ Since .XXproj files are just MsBuild files with a different extension, it's
 far better to remove the pre- and post-build steps and add explicit tasks into
 the project using the
 
+```xml
     <Target Name="BeforeBuild">
     	<!-- Do pre build stuff -->
     </Target>
+```
 
 and
 
+```xml
     <Target Name="AfterBuild">
     	<!-- Do post build stuff -->
     </Target>
+```
 
 targets.
 
@@ -45,6 +49,7 @@ For example, delay signing an assembly after it is built is a general purpose
 task that you wouldn't want to paste into every project. Extracting it into
 a separate script means it can be called by every project that requires it.
 
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		
 	<!-- 
@@ -96,6 +101,7 @@ a separate script means it can be called by every project that requires it.
 			
 	</Target>
 </Project>
+```
 
 Here we tap into the $(PostBuildEventDependsOn) dependency chain and insert our
 own tasks.
@@ -106,10 +112,12 @@ Refactoring into another MsBuild script is fine but requires changing each
 project file to include an _Import_ statement to refer to the new script. The path
 can be local to your source code or one of MsBuild's well-known folders:
 
+```xml
     <Import
     	Project="$(MSBuildToolsPath)\MyPostBuild.targets"
     	Condition="Exists('$(MSBuildToolsPath)\MyPostBuild.targets')"
     	/>
+```
 
 where $(MSBuildToolsPath) usually resolves to somewhere like C:\Windows\Microsoft.NET\Framework\v4.0.30128.
 Obviously, if you have a lot of projects this might not be all that appealing.
@@ -125,11 +133,15 @@ machines and ignored on developer machines.
 If you don't want to modify each project, there are two other folders that MsBuild
 uses to look for extension points for the command line:
 
+```xml
     $(MSBuildExtensionsPath)\4.0\Microsoft.Common.Targets\ImportAfter\
+```
 
 and for the IDE
 
+```xml
     $(MSBuildExtensionsPath)\12.0\Microsoft.Common.Targets\ImportAfter\
+```
 
 If you place a target file in both of these locations (first, create the folder,
 it isn't created by default) it will be imported by _every solution_ that
@@ -146,12 +158,14 @@ target into the right place in the build process. In this case, because I want t
 invoke the target after the build but before running an post-build steps, I
 use the following:
 
+```xml
     <Target Name="..."
     	AfterTargets="CopyFilesToOutputDirectory"
     	BeforeTargets="PostBuildEvent;AfterBuild"
     	>
     	...
     </Target>
+```
 
 So as long as the assembly is in the output folder (after _CopyFilesToOutputDirectory_)
 and before any kind of post build event (before _PostBuildEvent_ and _AfterBuild_ events) I
