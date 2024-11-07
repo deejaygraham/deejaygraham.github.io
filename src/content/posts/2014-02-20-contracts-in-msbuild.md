@@ -40,7 +40,7 @@ actually exists:
     	Text="The file $(FooBar) does not exist"
     	Condition=" !Exists($(FooBar)) "
     	/>
-``
+```
 
 I have found using this approach over the last couple of months has saved
 time tracking down silly bugs and made my scripts much more reliable.
