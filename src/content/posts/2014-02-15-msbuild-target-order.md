@@ -13,6 +13,7 @@ using the _DependsOnTargets_ attribute. For example, if you wanted to do
 something like print a set of configuration messages before running a build,
 you had to add that target to the list of build dependencies.
 
+```xml
     <Target Name="PrintBuildInfo" >
     	<Message
     		Text="This is a $(Configuration) build."
@@ -29,7 +30,7 @@ you had to add that target to the list of build dependencies.
     	<!-- Build Stuff -->
 
     </Target>
-
+```
 
 I'm sure you will agree that printing the build info is not really something
 that Build depends on, at least not in the same way as cleaning a directory or
@@ -43,6 +44,7 @@ With BeforeTargets the original _DependsOnTargets_ list can stay the same,
 semantically representing the important parts of the build process and self-contained
 targets can be slotted into the process as required. Magic.
 
+```xml
     <Target Name="PrintBuildInfor"
     	BeforeTargets="Build">
     	<Message
@@ -59,6 +61,7 @@ targets can be slotted into the process as required. Magic.
     	<!-- Build Stuff -->
 
     </Target>
+```
 
 One thing to note is adding BeforeTargets and AfterTargets changes how MsBuild
 derives the final build order of targets but the targets you define still
