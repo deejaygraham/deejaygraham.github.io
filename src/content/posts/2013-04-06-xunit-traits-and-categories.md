@@ -3,7 +3,7 @@ permalink: 2013/04/06/xunit-traits-and-categories/
 layout: post
 title: XUnit Traits and Categories
 published: true
-tags: [tdd, code]
+tags: [tdd, code, csharp]
 ---
 
 One of the things I love about [xUnit.net](https://xunit.net) is how small
