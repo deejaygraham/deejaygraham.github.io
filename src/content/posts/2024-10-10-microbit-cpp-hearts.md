@@ -3,7 +3,7 @@ permalink: 2024/10/10/microbit-cpp-hearts/
 layout: post
 title: Microbit Hearts Animation
 published: true
-tags: [code, microbit]
+tags: [code, microbit, cpp]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
