@@ -3,7 +3,7 @@ permalink: 2024/08/18/password-scoring-kata/
 layout: post
 title: Password Scoring Kata
 published: true
-tags: [code, deliberate-practice, tdd]
+tags: [code, deliberate-practice, tdd, python]
 ---
 
 A solution with unit tests to the password scoring kata.
