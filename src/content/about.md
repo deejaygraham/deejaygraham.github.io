@@ -28,6 +28,11 @@ and a STEM ambassador specialising in micro:bit hackery.
 My main areas of interest are in using **agile methods** to help improve what we **ship**, **test-driven** development, unit **testing**, continuous and
 deliberate **learning**, **visual** thinking, design and, of course, **code**.
 
+## On Code Samples
+
+I've had a few comments about some of the code samples you will find here. Lots, if not all, of the code is a reflection of my mentoring activities in the community. Examples are often not intended to be as efficient or elegant as they could be, rather to stimulate discussion for improvement, they can be intended to explain concepts or algorithms to less technical people (python, microbit, processing) or the starting point or results of a learning hour session. Feel free to use and adapt them for your own teaching. Do not use them for evil.
+
+
 ## A Note on Sharing
 
 I've had a few requests from people wanting to use sketchnotes or graphics from my site for non-commercial uses. I try to make sure all posts that contain any "art"
