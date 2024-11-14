@@ -5,10 +5,11 @@
 
     const container = document.getElementById("search-results");
     container.innerHTML = "";
-	  
-    console.log("searching for: ", e.target.value);
 
-    const results = window.searchIndex.search(e.target.value, 
+    const searchTerm = e.target.value;
+    //console.log("searching for: ", e.target.value);
+
+    const results = window.searchIndex.search(searchTerm, 
     {
       bool: "OR",
       expand: true,
@@ -28,8 +29,8 @@
 	container.appendChild(listItem);
       });
     } else {
-      if (e.target.value) {
-        container.innerHTML = "<p>Unable to find any posts for &quot;" + e.target.value + "&quot;.</p>";
+      if (searchTerm) {
+        container.innerHTML = "<p>Unable to find any posts for &quot;" + searchTerm + "&quot;.</p>";
       }
       else {
 	container.innerHTML = "<p>Type something into the search box above.</p>";
