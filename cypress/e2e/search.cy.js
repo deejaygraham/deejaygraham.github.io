@@ -55,8 +55,8 @@ describe("search the site", () => {
       
       cy.get("#search-box").type(searchTerm);
       cy.get("#search-results").should(
-        "have.text",
-        "Nothing to see here.",
+        "contain",
+        "Unable to find any posts for",
       );
     });
   });
