@@ -28,7 +28,12 @@
 	container.appendChild(listItem);
       });
     } else {
-      container.innerHTML = "<p>Nothing to see here.</p>";
+      if (e.target.value) {
+        container.innerHTML = "<p>Unable to find anything for &quot;" + e.target.value + "&quot;.</p>";
+      }
+      else {
+	container.innerHTML = "<p>Type something into the search box above.</p>";
+      }
     }
   };
 
