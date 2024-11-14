@@ -29,7 +29,7 @@
       });
     } else {
       if (e.target.value) {
-        container.innerHTML = "<p>Unable to find anything for &quot;" + e.target.value + "&quot;.</p>";
+        container.innerHTML = "<p>Unable to find any posts for &quot;" + e.target.value + "&quot;.</p>";
       }
       else {
 	container.innerHTML = "<p>Type something into the search box above.</p>";
