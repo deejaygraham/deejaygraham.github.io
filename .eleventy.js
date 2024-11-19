@@ -2,23 +2,23 @@
 import posts from "./src/_11ty/collections/posts.js"
 
 // filters
-import dates from "./src/_11ty/filters/dates"
-import limit from "./src/_11ty/filters/limit"
-import excerpt from "./src/_11ty/filters/excerpt"
-import firstItem from "./src/_11ty/filters/first"
-import randomItem from "./src/_11ty/filters/random"
-import searchFilter from "./src/_11ty/filters/searchFilter"
-import arrayToCommaString from "./src/_11ty/filters/arrayToCommaString"
-import getAllTags from "./src/_11ty/filters/getAllTags"
-import filterTagList from "./src/_11ty/filters/filterTagList"
-import splitLines from "./src/_11ty/filters/splitLines"  
-import excludePost from "./src/_11ty/filters/excludePost"
-import readingTime from "./src/_11ty/filters/readingTime"
+import dates from "./src/_11ty/filters/dates.js"
+import limit from "./src/_11ty/filters/limit.js"
+import excerpt from "./src/_11ty/filters/excerpt.js"
+import firstItem from "./src/_11ty/filters/first.js"
+import randomItem from "./src/_11ty/filters/random.js"
+import searchFilter from "./src/_11ty/filters/searchFilter.js"
+import arrayToCommaString from "./src/_11ty/filters/arrayToCommaString.js"
+import getAllTags from "./src/_11ty/filters/getAllTags.js"
+import filterTagList from "./src/_11ty/filters/filterTagList.js"
+import splitLines from "./src/_11ty/filters/splitLines.js"  
+import excludePost from "./src/_11ty/filters/excludePost.js"
+import readingTime from "./src/_11ty/filters/readingTime.js"
 
 // shortcodes
-import randomColour from "./src/_11ty/shortcodes/randomcolour"
-import youtube from "./src/_11ty/shortcodes/youtube"
-import vimeo from "./src/_11ty/shortcodes/vimeo"
+import randomColour from "./src/_11ty/shortcodes/randomcolour.js"
+import youtube from "./src/_11ty/shortcodes/youtube.js"
+import vimeo from "./src/_11ty/shortcodes/vimeo.js"
 
 // plugins
 import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight"
