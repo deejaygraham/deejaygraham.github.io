@@ -1,5 +1,5 @@
 // collections
-import posts from "./src/_11ty/collections/posts"
+import posts from "./src/_11ty/collections/posts.js"
 
 // filters
 import dates from "./src/_11ty/filters/dates"
