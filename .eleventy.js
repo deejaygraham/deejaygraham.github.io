@@ -58,6 +58,10 @@ module.exports = function (eleventyConfig) {
     "excludePost",
     require("./src/_11ty/filters/excludePost.js"),
   );
+  eleventyConfig.addFilter(
+    "readingTime",
+    require("./src/_11ty/filters/readingTime.js"),
+  );
   
   // shortcodes
   eleventyConfig.addShortcode("randomcolour", require("./src/_11ty/shortcodes/randomcolour.js"));
