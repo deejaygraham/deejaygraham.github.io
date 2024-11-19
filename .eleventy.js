@@ -1,72 +1,61 @@
 // collections
-const posts = require("./src/_11ty/collections/posts.js");
+import posts from "./src/_11ty/collections/posts"
 
 // filters
-const dates = require("./src/_11ty/filters/dates.js");
+import dates from "./src/_11ty/filters/dates"
+import limit from "./src/_11ty/filters/limit"
+import excerpt from "./src/_11ty/filters/excerpt"
+import firstItem from "./src/_11ty/filters/first"
+import randomItem from "./src/_11ty/filters/random"
+import searchFilter from "./src/_11ty/filters/searchFilter"
+import arrayToCommaString from "./src/_11ty/filters/arrayToCommaString"
+import getAllTags from "./src/_11ty/filters/getAllTags"
+import filterTagList from "./src/_11ty/filters/filterTagList"
+import splitLines from "./src/_11ty/filters/splitLines"  
+import excludePost from "./src/_11ty/filters/excludePost"
+import readingTime from "./src/_11ty/filters/readingTime"
 
-module.exports = function (eleventyConfig) {
+// shortcodes
+import randomColour from "./src/_11ty/shortcodes/randomcolour"
+import youtube from "./src/_11ty/shortcodes/youtube"
+import vimeo from "./src/_11ty/shortcodes/vimeo"
+
+// plugins
+import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight"
+
+export default function (eleventyConfig) {
 
   eleventyConfig.setQuietMode(true);
   
   // plugins
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
-  eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
+  eleventyConfig.addPlugin(syntaxHighlighter);
+  // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
   
   // collections
   eleventyConfig.addCollection("posts", posts);
 
   // filters
-  eleventyConfig.addFilter("limit", require("./src/_11ty/filters/limit.js"));
-  eleventyConfig.addFilter(
-    "excerpt",
-    require("./src/_11ty/filters/excerpt.js"),
-  );
-  eleventyConfig.addFilter(
-    "firstItem",
-    require("./src/_11ty/filters/first.js"),
-  );
-  eleventyConfig.addFilter(
-    "randomItem",
-    require("./src/_11ty/filters/random.js"),
-  );
+  eleventyConfig.addFilter("limit", limit);
+  eleventyConfig.addFilter("excerpt", excerpt);
+  eleventyConfig.addFilter("firstItem", firstItem);
+  eleventyConfig.addFilter("randomItem", randomItem);
   eleventyConfig.addFilter("dateISO", dates.dateISO);
   eleventyConfig.addFilter("dateFeed", dates.dateFeed);
   eleventyConfig.addFilter("dateFull", dates.dateFull);
   eleventyConfig.addFilter("dateFormat", dates.dateFormat);
   eleventyConfig.addFilter("dateYear", dates.dateYear);
-  eleventyConfig.addFilter(
-    "search",
-    require("./src/_11ty/filters/searchFilter.js"),
-  );
-  eleventyConfig.addFilter(
-    "arrayToCommaString",
-    require("./src/_11ty/filters/arrayToCommaString.js"),
-  );
-  eleventyConfig.addFilter(
-    "getAllTags",
-    require("./src/_11ty/filters/getAllTags.js"),
-  );
-  eleventyConfig.addFilter(
-    "filterTagList",
-    require("./src/_11ty/filters/filterTagList.js"),
-  );
-  eleventyConfig.addFilter(
-    "splitlines",
-     require("./src/_11ty/filters/splitLines.js"),
-  );
-  eleventyConfig.addFilter(
-    "excludePost",
-    require("./src/_11ty/filters/excludePost.js"),
-  );
-  eleventyConfig.addFilter(
-    "readingTime",
-    require("./src/_11ty/filters/readingTime.js"),
-  );
+  eleventyConfig.addFilter("search", searchFilter);
+  eleventyConfig.addFilter("arrayToCommaString", arrayToCommaString);
+  eleventyConfig.addFilter("getAllTags", getAllTags);
+  eleventyConfig.addFilter("filterTagList", filterTagList);
+  eleventyConfig.addFilter("splitlines", splitLines);
+  eleventyConfig.addFilter("excludePost", excludePost);
+  eleventyConfig.addFilter("readingTime", readingTime);
   
   // shortcodes
-  eleventyConfig.addShortcode("randomcolour", require("./src/_11ty/shortcodes/randomcolour.js"));
-  eleventyConfig.addShortcode("youtube", require("./src/_11ty/shortcodes/youtube.js"));
-  eleventyConfig.addShortcode("vimeo", require("./src/_11ty/shortcodes/vimeo.js"));
+  eleventyConfig.addShortcode("randomcolour", randomColour);
+  eleventyConfig.addShortcode("youtube", youtube);
+  eleventyConfig.addShortcode("vimeo", vimeo);
   
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
