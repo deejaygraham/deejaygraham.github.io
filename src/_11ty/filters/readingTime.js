@@ -15,7 +15,7 @@
  * @param {String} text
  */
 
-module.exports = function (text) {
+export function readingTime(text) {
   var content = new String(text);
   const speed = 240; // reading speed in words per minute
 
