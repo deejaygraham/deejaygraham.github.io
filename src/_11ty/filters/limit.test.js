@@ -1,5 +1,5 @@
-const test = require('ava');
-const limit = require('./limit.js');
+import test from 'ava';
+import limit from './limit.js';
 
 test('empty tag list returns null', t => {
     t.deepEqual(limit([], 1), []);
