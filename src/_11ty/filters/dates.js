@@ -1,4 +1,4 @@
-const { DateTime } = require("luxon");
+import { DateTime } from "luxon";
 
 // thanks to jerome coupe
 
@@ -68,7 +68,7 @@ function dateYear(date) {
   return fullYear;
 }
 
-module.exports = {
+export default {
   dateFeed,
   dateFormat,
   dateFull,
