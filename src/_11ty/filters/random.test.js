@@ -1,5 +1,5 @@
-const test = require('ava');
-const random = require('./random.js');
+import test from 'ava';
+import random from './random.js';
 
 test('empty tag list returns undefined', t => {
     t.is(random([]), undefined);
