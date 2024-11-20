@@ -1,5 +1,5 @@
-const test = require('ava');
-const excerpt = require('./excerpt.js');
+import test from 'ava';
+import excerpt from './excerpt.js';
 
 test('empty string returns elipsis only', t => {
     t.is(excerpt(''), '...');
