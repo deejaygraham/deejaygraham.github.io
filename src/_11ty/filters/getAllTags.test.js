@@ -1,5 +1,5 @@
-const test = require('ava');
-const getAllTags = require('./getAllTags.js');
+import test from 'ava';
+import getAllTags from './getAllTags.js';
 
 test('empty tag list returns empty list', t => {
     t.deepEqual(getAllTags([]), []);
