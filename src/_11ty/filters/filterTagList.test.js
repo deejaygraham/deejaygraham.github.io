@@ -1,5 +1,5 @@
-const test = require('ava');
-const filterTagList = require('./filterTagList.js');
+import test from 'ava';
+import filterTagList from './filterTagList.js';
 
 test('empty tag list returns empty list', t => {
     t.deepEqual(filterTagList([]), []);
