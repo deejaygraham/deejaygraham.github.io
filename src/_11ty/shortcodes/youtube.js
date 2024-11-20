@@ -1,4 +1,4 @@
-module.exports = function(id) {
+export default function(id) {
     return `<div style="position: relative;
 width: 100%;
 height: 0;

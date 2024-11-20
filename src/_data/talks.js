@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     title: "Testing at Both Ends of the Triangle",
     subtitle: "Tech on the Tyne March 2023",

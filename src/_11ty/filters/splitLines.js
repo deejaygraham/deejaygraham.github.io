@@ -1,4 +1,4 @@
-export function splitLines(text) {
+export default function(text) {
   const parts = text.split(' ');
   const lines = parts.reduce((prev, current) => {
 

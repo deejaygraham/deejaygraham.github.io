@@ -1,3 +1,4 @@
+import UpgradeHelper from "@11ty/eleventy-upgrade-help"
 // collections
 import posts from "./src/_11ty/collections/posts.js"
 
@@ -25,6 +26,7 @@ import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight"
 
 export default function (eleventyConfig) {
 
+  eleventyConfig.addPlugin(UpgradeHelper);
   eleventyConfig.setQuietMode(true);
   
   // plugins

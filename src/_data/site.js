@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   title: "invalid argument: a blog by d.j. graham",
   name: "d.j. graham",
   description: "a triumph of style over substance",
