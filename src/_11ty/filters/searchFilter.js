@@ -1,7 +1,7 @@
-const elasticlunr = require("elasticlunr");
+import elasticlunr from "elasticlunr";
 
 // search titles only for now.
-module.exports = function (collection) {
+export function searchFilter(collection) {
   var index = elasticlunr(function () {
     this.addField("title");
     this.addField("excerpt");
