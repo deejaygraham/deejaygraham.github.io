@@ -1,6 +1,6 @@
 import elasticlunr from "elasticlunr";
 
-// search titles only for now.
+// search on title, tags and an excerpt of each post.
 async function searchFilter(collection) {
   const index = elasticlunr(function () {
     this.addField("title");
