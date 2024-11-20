@@ -1,5 +1,5 @@
-const test = require('ava');
-const first = require('./first.js');
+import test from 'ava';
+import first from './first.js';
 
 test('empty tag list returns null', t => {
     t.is(first([]), null);
