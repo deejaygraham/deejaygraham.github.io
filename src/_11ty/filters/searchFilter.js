@@ -18,9 +18,9 @@ async function searchFilter(collection) {
       if (frontMatter.data.attribution) {
         excerpt = frontMatter.data.attribution;
       }
-    } else if (page.content) {
+    } else if (page.rawInput) {
       const excerptLength = 255; // chars
-      let content = page.content.replace(/(<([^>]+)>)/gi, "");
+      let content = page.rawInput.replace(/(<([^>]+)>)/gi, "");
       content = content.replace(/\n/g, ' ');
       excerpt = content.substr(0, content.lastIndexOf(" ", excerptLength));
     }
