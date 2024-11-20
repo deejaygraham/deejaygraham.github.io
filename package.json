@@ -9,7 +9,7 @@
     "test": "npx cypress run --e2e --browser chrome",
     "unit-test": "npx ava --verbose",
     "format": "prettier . --write",
-    "lint": "npx eslint ./src"
+    "lint": "npx eslint ./src/_11ty"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
