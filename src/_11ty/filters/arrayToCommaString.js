@@ -1,3 +1,3 @@
-module.exports = function (array) {
+export function arrayToCommaString(array) {
   return array.join();
 };
