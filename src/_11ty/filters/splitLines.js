@@ -1,4 +1,4 @@
-module.exports = function(text) {
+export function splitLines(text) {
   const parts = text.split(' ');
   const lines = parts.reduce((prev, current) => {
 
