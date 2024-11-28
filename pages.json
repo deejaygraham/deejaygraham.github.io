@@ -1,0 +1,4475 @@
+[
+{
+    "title": "Establishment",
+    "imgName": "establishment",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "JoCo covers&nbsp;TMBG",
+    "imgName": "joco-covers-tmbg",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Bugs and Exploits in Your&nbsp;Brain",
+    "imgName": "bugs-and-exploits-in-your-brain",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Merlin Mann at Webstock&nbsp;2011",
+    "imgName": "merlin-mann-at-webstock-2011",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Dirge Without&nbsp;Music",
+    "imgName": "dirge-without-music",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Pale Blue&nbsp;Dot",
+    "imgName": "pale-blue-dot",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Why I am an&nbsp;Agnostic",
+    "imgName": "why-i-am-an-agnostic",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Emily&nbsp;Remler",
+    "imgName": "emily-remler",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "No Silver&nbsp;Bullet",
+    "imgName": "no-silver-bullet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cory Doctorow Designing for Human&nbsp;Sensors",
+    "imgName": "cory-doctorow-designing-for-human-sensors",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "More Silver&nbsp;Bullets",
+    "imgName": "more-silver-bullets",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Terror",
+    "imgName": "terror",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Discreet&nbsp;Sheep",
+    "imgName": "discreet-sheep",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "History",
+    "imgName": "history",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Food for the&nbsp;Eagle",
+    "imgName": "food-for-the-eagle",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Charles Chilton&nbsp;Moore",
+    "imgName": "charles-chilton-moore",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "James Randi at&nbsp;TED",
+    "imgName": "james-randi-at-ted",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Parameterize from&nbsp;Above",
+    "imgName": "parameterize-from-above",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "David Allen at&nbsp;Google",
+    "imgName": "david-allen-at-google",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Begin Taking&nbsp;Action",
+    "imgName": "begin-taking-action",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Man's Original&nbsp;Virtue",
+    "imgName": "man&#39;s-original-virtue",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Moment of Clarity&nbsp;17",
+    "imgName": "moment-of-clarity-17",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Excellent&nbsp;Foppery",
+    "imgName": "excellent-foppery",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Using Trello for&nbsp;Retrospectives",
+    "imgName": "using-trello-for-retrospectives",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Midi Value&nbsp;Reference",
+    "imgName": "midi-value-reference",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Using NAudio to generate&nbsp;midi",
+    "imgName": "using-naudio-to-generate-midi",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Planning Poker Card&nbsp;Design",
+    "imgName": "planning-poker-card-design",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "XUnit Traits and&nbsp;Categories",
+    "imgName": "xunit-traits-and-categories",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Custom MsBuild Task&nbsp;Template",
+    "imgName": "custom-msbuild-task-template",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Simple Batch Html&nbsp;Validation",
+    "imgName": "simple-batch-html-validation",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Scrum.org Open&nbsp;Assessments",
+    "imgName": "scrum.org-open-assessments",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "ITaskItem Extension&nbsp;Methods",
+    "imgName": "itaskitem-extension-methods",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Most Recent Folder MsBuild&nbsp;Task",
+    "imgName": "most-recent-folder-msbuild-task",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Running MsBuild on 32-bit and 64-bit&nbsp;Windows",
+    "imgName": "running-msbuild-on-32-bit-and-64-bit-windows",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "What the World Needs Now is Another IoC&nbsp;project",
+    "imgName": "what-the-world-needs-now-is-another-ioc-project",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tell Don't&nbsp;Ask",
+    "imgName": "tell-don&#39;t-ask",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Timestamps in&nbsp;MsBuild",
+    "imgName": "timestamps-in-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Recursive Copy in&nbsp;MsBuild",
+    "imgName": "recursive-copy-in-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnoting in&nbsp;Reverse",
+    "imgName": "sketchnoting-in-reverse",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Team Definitions of&nbsp;Done",
+    "imgName": "team-definitions-of-done",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Team Working&nbsp;Agreements",
+    "imgName": "team-working-agreements",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Moving to&nbsp;Github",
+    "imgName": "moving-to-github",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Dream Team Nightmare by Portia&nbsp;Tung",
+    "imgName": "the-dream-team-nightmare-by-portia-tung",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Why Aren't You Using&nbsp;Ruby",
+    "imgName": "why-aren&#39;t-you-using-ruby",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "I am Designer and So Can&nbsp;You!",
+    "imgName": "i-am-designer-and-so-can-you!",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Stop Using Development&nbsp;Mode",
+    "imgName": "stop-using-development-mode",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Decompiling .Net&nbsp;Assemblies",
+    "imgName": "decompiling-.net-assemblies",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Murdering Folders. In&nbsp;Ruby",
+    "imgName": "murdering-folders.-in-ruby",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Creating Jekyll&nbsp;Posts",
+    "imgName": "creating-jekyll-posts",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Transparently Extending the MsBuild&nbsp;Process",
+    "imgName": "transparently-extending-the-msbuild-process",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "MsBuild Target&nbsp;Order",
+    "imgName": "msbuild-target-order",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Learning to Program,&nbsp;Again",
+    "imgName": "learning-to-program-again",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Programming by Contract in&nbsp;MsBuild",
+    "imgName": "programming-by-contract-in-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "My First Ruby Unit&nbsp;Test",
+    "imgName": "my-first-ruby-unit-test",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Steve Freeman on&nbsp;TDD",
+    "imgName": "steve-freeman-on-tdd",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "My Coding Dojo&nbsp;Checklist",
+    "imgName": "my-coding-dojo-checklist",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "MsBuild Recursive Import&nbsp;Snippet",
+    "imgName": "msbuild-recursive-import-snippet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Using Environment Variables in MsBuild&nbsp;Scripts",
+    "imgName": "using-environment-variables-in-msbuild-scripts",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Magic Tricks of&nbsp;Testing",
+    "imgName": "the-magic-tricks-of-testing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "TDD&nbsp;Steps",
+    "imgName": "tdd-steps",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Zipping Folder Contents Using&nbsp;MsBuild",
+    "imgName": "zipping-folder-contents-using-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Using NDesk.Options for Command Line&nbsp;Parsing",
+    "imgName": "using-ndesk.options-for-command-line-parsing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Kill All Your&nbsp;Managers",
+    "imgName": "kill-all-your-managers",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Code Kata&nbsp;Resources",
+    "imgName": "code-kata-resources",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "My Sketchnoting Workflow for&nbsp;Presentations",
+    "imgName": "my-sketchnoting-workflow-for-presentations",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cleaning MsBuild ItemGroup&nbsp;Includes",
+    "imgName": "cleaning-msbuild-itemgroup-includes",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Bootstrapping Jekyll Tag&nbsp;Generation",
+    "imgName": "bootstrapping-jekyll-tag-generation",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lean Coffee&nbsp;Rules",
+    "imgName": "lean-coffee-rules",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Names Are&nbsp;Hard",
+    "imgName": "names-are-hard",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "String Calculator&nbsp;Kata",
+    "imgName": "string-calculator-kata",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Unit Testing with&nbsp;HttpClient",
+    "imgName": "unit-testing-with-httpclient",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Go Ahead Make a&nbsp;Mess",
+    "imgName": "go-ahead-make-a-mess",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Text Diamond&nbsp;Kata",
+    "imgName": "text-diamond-kata",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "All the Little&nbsp;Things",
+    "imgName": "all-the-little-things",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Creating a Transparent PNG from a Scanned&nbsp;Image",
+    "imgName": "creating-a-transparent-png-from-a-scanned-image",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Self Hosted WebServer using&nbsp;OWIN",
+    "imgName": "self-hosted-webserver-using-owin",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "OrderByDescending",
+    "imgName": "orderbydescending",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Html Link&nbsp;Validation",
+    "imgName": "html-link-validation",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Computing Text&nbsp;Similarity",
+    "imgName": "computing-text-similarity",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Nobody will Train You but&nbsp;You",
+    "imgName": "nobody-will-train-you-but-you",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to Learn&nbsp;Anything",
+    "imgName": "how-to-learn-anything",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "No Estimates&nbsp;Talks",
+    "imgName": "no-estimates-talks",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Starting C# Development on Raspberry&nbsp;Pi",
+    "imgName": "starting-c-development-on-raspberry-pi",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Perils of the Anti-Agile&nbsp;Mindset",
+    "imgName": "perils-of-the-anti-agile-mindset",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Angela Harms on Pair&nbsp;Programming",
+    "imgName": "angela-harms-on-pair-programming",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Less",
+    "imgName": "less",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Methinks it is like a&nbsp;Weasel",
+    "imgName": "methinks-it-is-like-a-weasel",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "But Really You Should Learn&nbsp;Smalltalk",
+    "imgName": "but-really-you-should-learn-smalltalk",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Think&nbsp;Different",
+    "imgName": "think-different",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building NDifference in the&nbsp;Cloud",
+    "imgName": "building-ndifference-in-the-cloud",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Generating File Content in the&nbsp;Build",
+    "imgName": "generating-file-content-in-the-build",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Problem is Your&nbsp;Ruby",
+    "imgName": "the-problem-is-your-ruby",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Management 3.0&nbsp;Workout",
+    "imgName": "management-3.0-workout",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Windows Installers for the&nbsp;Lazy",
+    "imgName": "windows-installers-for-the-lazy",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "MsBuild Task Project on&nbsp;Github",
+    "imgName": "msbuild-task-project-on-github",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "I'm in the Sketchnote&nbsp;Workbook!",
+    "imgName": "i&#39;m-in-the-sketchnote-workbook!",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Extracting Slide Images from a&nbsp;Pdf",
+    "imgName": "extracting-slide-images-from-a-pdf",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Javascript Message in a&nbsp;Bottle",
+    "imgName": "javascript-message-in-a-bottle",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnote from DDDNorth&nbsp;2014",
+    "imgName": "sketchnote-from-dddnorth-2014",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnote 2 from DDDNorth&nbsp;2014",
+    "imgName": "sketchnote-2-from-dddnorth-2014",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Final sketchnote from DDDNorth&nbsp;2014",
+    "imgName": "final-sketchnote-from-dddnorth-2014",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Super-Technical&nbsp;Sketchnoting",
+    "imgName": "super-technical-sketchnoting",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Testing ItemGroups for&nbsp;Content",
+    "imgName": "testing-itemgroups-for-content",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnoting Lean&nbsp;Concepts",
+    "imgName": "sketchnoting-lean-concepts",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Doctorow's Three&nbsp;Laws",
+    "imgName": "doctorow&#39;s-three-laws",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The (Richard) Dreyfuss Model of Skill&nbsp;Acquisition",
+    "imgName": "the-(richard)-dreyfuss-model-of-skill-acquisition",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Muda Muri Mura, so&nbsp;what?",
+    "imgName": "muda-muri-mura-so-what",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Breaking code dependencies with inplace&nbsp;refactoring",
+    "imgName": "breaking-code-dependencies-with-inplace-refactoring",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnotes from ACE!&nbsp;2014",
+    "imgName": "sketchnotes-from-ace!-2014",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building Github Pages in OSX&nbsp;Yosemite",
+    "imgName": "building-github-pages-in-osx-yosemite",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Refreshing Folder&nbsp;Contents",
+    "imgName": "refreshing-folder-contents",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Updating web.config Settings with&nbsp;MsBuild",
+    "imgName": "updating-web.config-settings-with-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cory Doctorow at&nbsp;Hieroglyph",
+    "imgName": "cory-doctorow-at-hieroglyph",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnoting&nbsp;Challenge",
+    "imgName": "sketchnoting-challenge",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Travis supports C#&nbsp;CI",
+    "imgName": "travis-supports-c-ci",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Jekyll Post Generator in&nbsp;Ruby",
+    "imgName": "jekyll-post-generator-in-ruby",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Running an Azure Cloud Service without an&nbsp;Emulator",
+    "imgName": "running-an-azure-cloud-service-without-an-emulator",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hacking a Running Azure&nbsp;Instance",
+    "imgName": "hacking-a-running-azure-instance",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Mocking Multiple Return Values with Rhino&nbsp;Mocks",
+    "imgName": "mocking-multiple-return-values-with-rhino-mocks",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "PowerShell Training&nbsp;Recommendations",
+    "imgName": "powershell-training-recommendations",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Logging from MsBuild's&nbsp;Commandline",
+    "imgName": "logging-from-msbuild&#39;s-commandline",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sample Powershell Cmdlet in&nbsp;C#",
+    "imgName": "sample-powershell-cmdlet-in-c",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Dan North on Deliberate Learning @ Foo&nbsp;Cafe",
+    "imgName": "dan-north-on-deliberate-learning-@-foo-cafe",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "DateTime in ISO 8601&nbsp;Format",
+    "imgName": "datetime-in-iso-8601-format",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "DevOpsing an Azure&nbsp;ServiceBus",
+    "imgName": "devopsing-an-azure-servicebus",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Promoting the Foo&nbsp;Cafe",
+    "imgName": "promoting-the-foo-cafe",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Testing Azure ServiceBus&nbsp;Queues",
+    "imgName": "testing-azure-servicebus-queues",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Restricting Powershell Cmdlet&nbsp;Values",
+    "imgName": "restricting-powershell-cmdlet-values",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Favourite&nbsp;Books",
+    "imgName": "favourite-books",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Orwell's&nbsp;Hen-House",
+    "imgName": "orwell&#39;s-hen-house",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Secret Azure Debugging&nbsp;Tools",
+    "imgName": "secret-azure-debugging-tools",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Windbg&nbsp;Cheatsheet",
+    "imgName": "windbg-cheatsheet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Better PowerShell&nbsp;Help",
+    "imgName": "better-powershell-help",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Avoiding avoidable errors in&nbsp;PowerShell",
+    "imgName": "avoiding-avoidable-errors-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Finding and using user certificates in&nbsp;PowerShell",
+    "imgName": "finding-and-using-user-certificates-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Slow Down,&nbsp;Lambs",
+    "imgName": "slow-down-lambs",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Azure subscription management with&nbsp;PowerShell",
+    "imgName": "azure-subscription-management-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Enabling RDP Access to Azure&nbsp;Instances",
+    "imgName": "enabling-rdp-access-to-azure-instances",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Search and Replace in&nbsp;Powershell",
+    "imgName": "search-and-replace-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Loading Hashtables from CSV in&nbsp;Powershell",
+    "imgName": "loading-hashtables-from-csv-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Honesty",
+    "imgName": "honesty",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Reveal.js&nbsp;Cheatsheet",
+    "imgName": "reveal.js-cheatsheet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Soundex Encoding Text in C&nbsp;Sharp",
+    "imgName": "soundex-encoding-text-in-c-sharp",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Presenting with Reveal.js and&nbsp;Jekyll",
+    "imgName": "presenting-with-reveal.js-and-jekyll",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Prime&nbsp;Directive",
+    "imgName": "prime-directive",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnoting at DDDNorth&nbsp;2015",
+    "imgName": "sketchnoting-at-dddnorth-2015",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Executing SQL Scripts in PowerShell are&nbsp;GO",
+    "imgName": "executing-sql-scripts-in-powershell-are-go",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchnotes from DDDNorth&nbsp;2015",
+    "imgName": "sketchnotes-from-dddnorth-2015",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Azure Startup&nbsp;Tasks",
+    "imgName": "azure-startup-tasks",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Finding Powershell&nbsp;Assemblies",
+    "imgName": "finding-powershell-assemblies",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Ebook of Sketchnotes from DDDNorth 2015 now&nbsp;available!",
+    "imgName": "ebook-of-sketchnotes-from-dddnorth-2015-now-available!",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sending data to Azure&nbsp;EventHubs",
+    "imgName": "sending-data-to-azure-eventhubs",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Parameterised Builds using&nbsp;Jenkins",
+    "imgName": "parameterised-builds-using-jenkins",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "World Sketchnote Day&nbsp;2016",
+    "imgName": "world-sketchnote-day-2016",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Waiting for a Timeout in&nbsp;PowerShell",
+    "imgName": "waiting-for-a-timeout-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Using Linq to Average&nbsp;Sequences",
+    "imgName": "using-linq-to-average-sequences",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Rocks, Paper ...&nbsp;Stories",
+    "imgName": "rocks-paper-...-stories",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Using Contains to Examine MSBuild&nbsp;Properties",
+    "imgName": "using-contains-to-examine-msbuild-properties",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Applying AML to Improve Customer&nbsp;Experience",
+    "imgName": "applying-aml-to-improve-customer-experience",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Case of the Disappearing Github&nbsp;Pages",
+    "imgName": "the-case-of-the-disappearing-github-pages",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Diffing Folder Content using&nbsp;ItemGroups",
+    "imgName": "diffing-folder-content-using-itemgroups",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Verifying Azure Build&nbsp;Output",
+    "imgName": "verifying-azure-build-output",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Playing with Sonic&nbsp;Pi",
+    "imgName": "playing-with-sonic-pi",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Remembering Lost Kittens and&nbsp;Robots",
+    "imgName": "remembering-lost-kittens-and-robots",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Language in Thought and&nbsp;Action",
+    "imgName": "language-in-thought-and-action",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Rolling Rocks in&nbsp;Newcastle",
+    "imgName": "rolling-rocks-in-newcastle",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Protect Your&nbsp;Magic",
+    "imgName": "protect-your-magic",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "MobProgramming comes to&nbsp;Newcastle",
+    "imgName": "mobprogramming-comes-to-newcastle",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Managing Skytap environments with&nbsp;PowerShell",
+    "imgName": "managing-skytap-environments-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Unboxing the BBC&nbsp;Micro:bit",
+    "imgName": "unboxing-the-bbc-micro:bit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Balancing Ball - Writing a Game for the BBC&nbsp;Micro:bit",
+    "imgName": "balancing-ball-writing-a-game-for-the-bbc-micro:bit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Rock, Paper,&nbsp;Microbit",
+    "imgName": "rock-paper-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Life",
+    "imgName": "microbit-life",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tiny Asteroids for&nbsp;Microbit",
+    "imgName": "tiny-asteroids-for-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "SQL Test Data as&nbsp;Code",
+    "imgName": "sql-test-data-as-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "SQL Schema Generation as&nbsp;Code",
+    "imgName": "sql-schema-generation-as-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Big 5 of Flow&nbsp;Philosophy",
+    "imgName": "the-big-5-of-flow-philosophy",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hello,&nbsp;Minecraft",
+    "imgName": "hello-minecraft",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building a house in&nbsp;Minecraft",
+    "imgName": "building-a-house-in-minecraft",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft Blocks&nbsp;Cheatsheet",
+    "imgName": "minecraft-blocks-cheatsheet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Individual&nbsp;Heroics",
+    "imgName": "individual-heroics",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Finding Differences in Folder&nbsp;Content",
+    "imgName": "finding-differences-in-folder-content",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Making Animal Farm Great&nbsp;Again",
+    "imgName": "making-animal-farm-great-again",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Having the Right Kind of&nbsp;Argument(s)",
+    "imgName": "having-the-right-kind-of-argument(s)",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "People Work Within the&nbsp;System",
+    "imgName": "people-work-within-the-system",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "PowerShell Fortune&nbsp;Cookie",
+    "imgName": "powershell-fortune-cookie",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building a Custom PowerShell Cmdlet in&nbsp;C#",
+    "imgName": "building-a-custom-powershell-cmdlet-in-c",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "There is no&nbsp;Cloud",
+    "imgName": "there-is-no-cloud",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Creating Builds in TFS&nbsp;2015",
+    "imgName": "creating-builds-in-tfs-2015",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Sorting&nbsp;Hat",
+    "imgName": "microbit-sorting-hat",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Brilliant People Management with&nbsp;Agile",
+    "imgName": "brilliant-people-management-with-agile",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Art for a&nbsp;Few",
+    "imgName": "art-for-a-few",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to Crash an&nbsp;Airplane",
+    "imgName": "how-to-crash-an-airplane",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Jason&nbsp;Read",
+    "imgName": "jason-read",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Passing MsBuild Variables to&nbsp;Wix",
+    "imgName": "passing-msbuild-variables-to-wix",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lead Time vs Cycle&nbsp;Time",
+    "imgName": "lead-time-vs-cycle-time",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Growing a&nbsp;Garden",
+    "imgName": "growing-a-garden",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Being a Good Senior&nbsp;Dev",
+    "imgName": "being-a-good-senior-dev",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Installing .deb Packages in Elementary&nbsp;OS",
+    "imgName": "installing-.deb-packages-in-elementary-os",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to Bullet&nbsp;Journal",
+    "imgName": "how-to-bullet-journal",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Dog&nbsp;Sort",
+    "imgName": "dog-sort",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "All Models are&nbsp;Wrong",
+    "imgName": "all-models-are-wrong",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How Do I&nbsp;Unix?",
+    "imgName": "how-do-i-unix",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lightning Calculator for the&nbsp;Microbit",
+    "imgName": "lightning-calculator-for-the-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Old-Timey Snapchat for the&nbsp;Microbit",
+    "imgName": "old-timey-snapchat-for-the-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Old-Timey Twitter for the&nbsp;Microbit",
+    "imgName": "old-timey-twitter-for-the-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Determining when your Azure session has&nbsp;expired",
+    "imgName": "determining-when-your-azure-session-has-expired",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hacking Verbal&nbsp;Communication",
+    "imgName": "hacking-verbal-communication",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Common-Sense Guide to Data Structures and&nbsp;Algorithms",
+    "imgName": "a-common-sense-guide-to-data-structures-and-algorithms",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A tiny introduction to Python unit&nbsp;testing",
+    "imgName": "a-tiny-introduction-to-python-unit-testing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building an IIS website in&nbsp;PowerShell",
+    "imgName": "building-an-iis-website-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Long&nbsp;Habit",
+    "imgName": "a-long-habit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Ask the powerful five&nbsp;questions",
+    "imgName": "ask-the-powerful-five-questions",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Playing with Sonic&nbsp;Pi",
+    "imgName": "playing-with-sonic-pi",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hello,&nbsp;Pygame",
+    "imgName": "hello-pygame",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Evaporating&nbsp;Clouds",
+    "imgName": "evaporating-clouds",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cult of&nbsp;Ignorance",
+    "imgName": "cult-of-ignorance",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Honest&nbsp;Shop",
+    "imgName": "honest-shop",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Creating Jekyll&nbsp;Collections",
+    "imgName": "creating-jekyll-collections",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cultivating Emotional&nbsp;Safety",
+    "imgName": "cultivating-emotional-safety",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Swearing and Nudity in&nbsp;Newcastle",
+    "imgName": "swearing-and-nudity-in-newcastle",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Newspapers",
+    "imgName": "newspapers",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building C++ for the BBC&nbsp;Micro:bit",
+    "imgName": "building-c++-for-the-bbc-micro:bit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Blinking&nbsp;C++",
+    "imgName": "blinking-c++",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Programming is&nbsp;like...",
+    "imgName": "programming-is-like...",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Bad&nbsp;System...",
+    "imgName": "a-bad-system...",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Management is Responsible for the&nbsp;System",
+    "imgName": "management-is-responsible-for-the-system",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "No&nbsp;Estimates",
+    "imgName": "no-estimates",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Why Every Element of SOLID is&nbsp;Wrong",
+    "imgName": "why-every-element-of-solid-is-wrong",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Stay&nbsp;Afraid",
+    "imgName": "stay-afraid",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Aneurin&nbsp;Bevan",
+    "imgName": "aneurin-bevan",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Suddenly",
+    "imgName": "suddenly",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "DDD North&nbsp;2017",
+    "imgName": "ddd-north-2017",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Elizabeth Warren,&nbsp;Hero",
+    "imgName": "elizabeth-warren-hero",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Two Examples of Sketchnoting&nbsp;Inception",
+    "imgName": "two-examples-of-sketchnoting-inception",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Left to&nbsp;themselves",
+    "imgName": "left-to-themselves",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Generating Checksums in&nbsp;PowerShell",
+    "imgName": "generating-checksums-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Battles with Giant&nbsp;Fish",
+    "imgName": "battles-with-giant-fish",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Margaret Hamilton,&nbsp;Beginner",
+    "imgName": "margaret-hamilton-beginner",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Setting variables in TFS&nbsp;builds",
+    "imgName": "setting-variables-in-tfs-builds",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "microbit&nbsp;Blinkenlights",
+    "imgName": "microbit-blinkenlights",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hofstadter's&nbsp;Law",
+    "imgName": "hofstadter&#39;s-law",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Proof of Time&nbsp;Travel",
+    "imgName": "proof-of-time-travel",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "On-the-fly MsBuild Task&nbsp;Template",
+    "imgName": "on-the-fly-msbuild-task-template",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Programming is&nbsp;Understanding",
+    "imgName": "programming-is-understanding",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Estimating&nbsp;Complexity",
+    "imgName": "estimating-complexity",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "microbit Paparazzi&nbsp;Simulator",
+    "imgName": "microbit-paparazzi-simulator",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Rules of&nbsp;Engagement",
+    "imgName": "rules-of-engagement",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Making American&nbsp;Toast",
+    "imgName": "making-american-toast",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hostile to&nbsp;Liberty",
+    "imgName": "hostile-to-liberty",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Do Your&nbsp;Best",
+    "imgName": "do-your-best",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Products Not&nbsp;Projects",
+    "imgName": "products-not-projects",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Campus North&nbsp;Murals",
+    "imgName": "campus-north-murals",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tolerance",
+    "imgName": "tolerance",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to Work&nbsp;Better",
+    "imgName": "how-to-work-better",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Conway's&nbsp;Law",
+    "imgName": "conway&#39;s-law",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Langton's&nbsp;Ant",
+    "imgName": "langton&#39;s-ant",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Safety&nbsp;First",
+    "imgName": "safety-first",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Nothing is more&nbsp;dangerous",
+    "imgName": "nothing-is-more-dangerous",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Mentalism",
+    "imgName": "microbit-mentalism",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Klang's&nbsp;Conjecture",
+    "imgName": "klang&#39;s-conjecture",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Agile Maxim&nbsp;No.1",
+    "imgName": "agile-maxim-no.1",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "7 minutes, 26&nbsp;seconds",
+    "imgName": "7-minutes-26-seconds",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Embrace Your&nbsp;Mistakes",
+    "imgName": "embrace-your-mistakes",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Always a People&nbsp;Problem",
+    "imgName": "always-a-people-problem",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Slow&nbsp;Down",
+    "imgName": "slow-down",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Software is not a&nbsp;Craft",
+    "imgName": "software-is-not-a-craft",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Agile in 5&nbsp;Words",
+    "imgName": "agile-in-5-words",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "FizzBuzz in&nbsp;Elixir",
+    "imgName": "fizzbuzz-in-elixir",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft Pi for&nbsp;Millionaires",
+    "imgName": "minecraft-pi-for-millionaires",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Simulating Minecraft Creeper on&nbsp;Pi",
+    "imgName": "simulating-minecraft-creeper-on-pi",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "There's No 'I' in&nbsp;Agile",
+    "imgName": "there&#39;s-no-&#39;i&#39;-in-agile",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Reducing Non-Value Adding&nbsp;Waste",
+    "imgName": "reducing-non-value-adding-waste",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Best Plan for a&nbsp;System",
+    "imgName": "the-best-plan-for-a-system",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Destroy the&nbsp;Enterprise",
+    "imgName": "destroy-the-enterprise",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Elementary Programming and&nbsp;Algol",
+    "imgName": "elementary-programming-and-algol",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Portal Theme on&nbsp;Microbit",
+    "imgName": "portal-theme-on-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Palomino&nbsp;Blackwing",
+    "imgName": "palomino-blackwing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tell people&nbsp;why",
+    "imgName": "tell-people-why",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Alan Kay and&nbsp;OOP",
+    "imgName": "alan-kay-and-oop",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Everything has already been&nbsp;said...",
+    "imgName": "everything-has-already-been-said...",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Strong Style&nbsp;Pairing",
+    "imgName": "strong-style-pairing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit coin&nbsp;flipper",
+    "imgName": "microbit-coin-flipper",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Validating Xml in&nbsp;PowerShell",
+    "imgName": "validating-xml-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Nothing Quite So&nbsp;Useless",
+    "imgName": "nothing-quite-so-useless",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "It's Raining&nbsp;Blocks",
+    "imgName": "it&#39;s-raining-blocks",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft&nbsp;Detectorists",
+    "imgName": "minecraft-detectorists",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft's Greatest&nbsp;Hits",
+    "imgName": "minecraft&#39;s-greatest-hits",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Visual Studio Code Snippets&nbsp;FTW",
+    "imgName": "visual-studio-code-snippets-ftw",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lettering&nbsp;Kata",
+    "imgName": "lettering-kata",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "XP - Extreme&nbsp;Portraiture",
+    "imgName": "xp-extreme-portraiture",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Gall's&nbsp;Law",
+    "imgName": "gall&#39;s-law",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building a&nbsp;sketchbook",
+    "imgName": "building-a-sketchbook",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Bicycle for the&nbsp;Mind",
+    "imgName": "a-bicycle-for-the-mind",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Perfecting Code&nbsp;Reviews",
+    "imgName": "perfecting-code-reviews",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Good&nbsp;Employees",
+    "imgName": "good-employees",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lambs&nbsp;Oot",
+    "imgName": "lambs-oot",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "My New Favourite Figure of&nbsp;Speech",
+    "imgName": "my-new-favourite-figure-of-speech",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Slow Down, Red&nbsp;Squirrels",
+    "imgName": "slow-down-red-squirrels",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft&nbsp;Forestry",
+    "imgName": "minecraft-forestry",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft&nbsp;PortKey",
+    "imgName": "minecraft-portkey",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Strangling Legacy&nbsp;Code",
+    "imgName": "strangling-legacy-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Spoofing Nokia mobile on the&nbsp;Microbit",
+    "imgName": "spoofing-nokia-mobile-on-the-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Refactoring Away from Static&nbsp;Code",
+    "imgName": "refactoring-away-from-static-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Remote Controlling Windows Services in&nbsp;PowerShell",
+    "imgName": "remote-controlling-windows-services-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Passing Parameters to a Pester&nbsp;Test",
+    "imgName": "passing-parameters-to-a-pester-test",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Project&nbsp;Euler",
+    "imgName": "project-euler",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tiny Lisp&nbsp;Implementations",
+    "imgName": "tiny-lisp-implementations",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lightweight Build Order Logging in&nbsp;MSBuild",
+    "imgName": "lightweight-build-order-logging-in-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "It's imperative that you learn a functional&nbsp;language",
+    "imgName": "it&#39;s-imperative-that-you-learn-a-functional-language",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Pre- and Post- Build Differences in&nbsp;MSBuild",
+    "imgName": "pre-and-post-build-differences-in-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Naive GUI Automation in&nbsp;PowerShell",
+    "imgName": "naive-gui-automation-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "12 Things that Powershell can do (so you don't have&nbsp;to)",
+    "imgName": "12-things-that-powershell-can-do-(so-you-don&#39;t-have-to)",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to Draw&nbsp;Faces",
+    "imgName": "how-to-draw-faces",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Dont Say Resources When You Mean&nbsp;People",
+    "imgName": "dont-say-resources-when-you-mean-people",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Generating Notepaper with&nbsp;PdfSharp",
+    "imgName": "generating-notepaper-with-pdfsharp",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "NUnit Test Actions for Great&nbsp;Good",
+    "imgName": "nunit-test-actions-for-great-good",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Dinosaur&nbsp;Detector",
+    "imgName": "microbit-dinosaur-detector",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The&nbsp;System",
+    "imgName": "the-system",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "PSake&nbsp;Cheatsheet",
+    "imgName": "psake-cheatsheet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Joy in&nbsp;Learning",
+    "imgName": "joy-in-learning",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Grepping in&nbsp;PowerShell",
+    "imgName": "grepping-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Ghost&nbsp;Detector",
+    "imgName": "microbit-ghost-detector",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Configuration Files in&nbsp;PowerShell",
+    "imgName": "configuration-files-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Linting in&nbsp;PowerShell",
+    "imgName": "linting-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Fear Destroys&nbsp;Teamwork",
+    "imgName": "fear-destroys-teamwork",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Every day,&nbsp;somebody",
+    "imgName": "every-day-somebody",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Polly Want a&nbsp;Message",
+    "imgName": "polly-want-a-message",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Every&nbsp;Pirate",
+    "imgName": "every-pirate",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "More Unix&nbsp;Philosophy",
+    "imgName": "more-unix-philosophy",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "More Unix&nbsp;Philosophy",
+    "imgName": "more-unix-philosophy",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Be Where Your Feet&nbsp;Are",
+    "imgName": "be-where-your-feet-are",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Chestertons&nbsp;Fence",
+    "imgName": "chestertons-fence",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "ngrok",
+    "imgName": "ngrok",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Testing and Refactoring Legacy&nbsp;Code",
+    "imgName": "testing-and-refactoring-legacy-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Metaphors We Compute&nbsp;By",
+    "imgName": "metaphors-we-compute-by",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tracing Failed IIS&nbsp;Requests",
+    "imgName": "tracing-failed-iis-requests",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Occasionally...",
+    "imgName": "occasionally...",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Test Driving PowerShell with&nbsp;Pester",
+    "imgName": "test-driving-powershell-with-pester",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Computer&nbsp;Witchcraft",
+    "imgName": "computer-witchcraft",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Look for the&nbsp;Helpers",
+    "imgName": "look-for-the-helpers",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A History of Bias and Oppression in&nbsp;Computing",
+    "imgName": "a-history-of-bias-and-oppression-in-computing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "XP User&nbsp;Stories",
+    "imgName": "xp-user-stories",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tidying Pester API&nbsp;Code",
+    "imgName": "tidying-pester-api-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "User Story&nbsp;Strategies",
+    "imgName": "user-story-strategies",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The History of Opera and the Future of&nbsp;Programming",
+    "imgName": "the-history-of-opera-and-the-future-of-programming",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Build Monitor on Raspberry&nbsp;Pi",
+    "imgName": "build-monitor-on-raspberry-pi",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cory Doctorow at&nbsp;Google",
+    "imgName": "cory-doctorow-at-google",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Grand Reopening Of The Public&nbsp;Domain",
+    "imgName": "grand-reopening-of-the-public-domain",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Future of&nbsp;Programming",
+    "imgName": "the-future-of-programming",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "GUI Automation in PowerShell using&nbsp;AutoIt",
+    "imgName": "gui-automation-in-powershell-using-autoit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "PSake Turtles All The Way&nbsp;Down",
+    "imgName": "psake-turtles-all-the-way-down",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Robocopy instead of&nbsp;Copy-Item",
+    "imgName": "robocopy-instead-of-copy-item",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "DDD North&nbsp;2019",
+    "imgName": "ddd-north-2019",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Posting Messages to MS Teams with&nbsp;PowerShell",
+    "imgName": "posting-messages-to-ms-teams-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Agile Testing&nbsp;Mindset",
+    "imgName": "agile-testing-mindset",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "First Days of a Better&nbsp;Nation",
+    "imgName": "first-days-of-a-better-nation",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building a Chat&nbsp;Bot",
+    "imgName": "building-a-chat-bot",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Supply Chain Hacking with Bunnie&nbsp;Huang",
+    "imgName": "supply-chain-hacking-with-bunnie-huang",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Shunting&nbsp;Bell",
+    "imgName": "shunting-bell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Text Entry in&nbsp;AutoIt",
+    "imgName": "text-entry-in-autoit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Validating File Hashes in&nbsp;PowerShell",
+    "imgName": "validating-file-hashes-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "DDD North&nbsp;2019",
+    "imgName": "ddd-north-2019",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sometimes&nbsp;People",
+    "imgName": "sometimes-people",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building the Peoples&nbsp;Internet",
+    "imgName": "building-the-peoples-internet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Confessions of a Tech&nbsp;Lead",
+    "imgName": "confessions-of-a-tech-lead",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Create a Scheduled Task in&nbsp;PowerShell",
+    "imgName": "create-a-scheduled-task-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Configuring IIS in&nbsp;PowerShell",
+    "imgName": "configuring-iis-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Enable Assembly Binding Logging without&nbsp;FusLogVw",
+    "imgName": "enable-assembly-binding-logging-without-fuslogvw",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Excited by&nbsp;Automation",
+    "imgName": "excited-by-automation",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Programming&nbsp;Crystal",
+    "imgName": "programming-crystal",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Do&nbsp;Better",
+    "imgName": "do-better",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Purpose of&nbsp;Life",
+    "imgName": "the-purpose-of-life",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "There are More&nbsp;Things",
+    "imgName": "there-are-more-things",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Fool's&nbsp;Plan",
+    "imgName": "fool&#39;s-plan",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Kanban Push Me Pull&nbsp;You",
+    "imgName": "kanban-push-me-pull-you",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Instantly Better&nbsp;Presentations",
+    "imgName": "instantly-better-presentations",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Neutrality",
+    "imgName": "neutrality",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Computing in&nbsp;Pairs",
+    "imgName": "computing-in-pairs",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Cost of&nbsp;Change",
+    "imgName": "the-cost-of-change",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Essence of&nbsp;Agility",
+    "imgName": "the-essence-of-agility",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Taking Back Software&nbsp;Engineering",
+    "imgName": "taking-back-software-engineering",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Re-inventing Pair&nbsp;Programming",
+    "imgName": "re-inventing-pair-programming",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Fairies",
+    "imgName": "fairies",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Estimating&nbsp;Complexity",
+    "imgName": "estimating-complexity",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Druckers Rules for&nbsp;Productivity",
+    "imgName": "druckers-rules-for-productivity",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Plans",
+    "imgName": "plans",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Reliability Engineering for&nbsp;Humans",
+    "imgName": "reliability-engineering-for-humans",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Joe and&nbsp;Alan",
+    "imgName": "joe-and-alan",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Make It&nbsp;Beautiful",
+    "imgName": "make-it-beautiful",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Domain-Driven Design for the Database Driven&nbsp;Mind",
+    "imgName": "domain-driven-design-for-the-database-driven-mind",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tiny Tetris for&nbsp;Microbit",
+    "imgName": "tiny-tetris-for-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Reliability Engineering for&nbsp;Humans",
+    "imgName": "reliability-engineering-for-humans",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "100 Doors&nbsp;Kata",
+    "imgName": "100-doors-kata",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Logging, Instrumentation, Dashboards,&nbsp;Alerts",
+    "imgName": "logging-instrumentation-dashboards-alerts",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbotchi",
+    "imgName": "microbotchi",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Motoring",
+    "imgName": "microbit-motoring",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Logging, Instrumentation, Dashboards,&nbsp;Alerts",
+    "imgName": "logging-instrumentation-dashboards-alerts",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Racing",
+    "imgName": "microbit-racing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Remote Control&nbsp;Microbit",
+    "imgName": "remote-control-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Life as a&nbsp;Developer",
+    "imgName": "life-as-a-developer",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Using Pester for API&nbsp;Testing",
+    "imgName": "using-pester-for-api-testing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Interview with Ken&nbsp;Thompson",
+    "imgName": "interview-with-ken-thompson",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Test&nbsp;Confidence",
+    "imgName": "test-confidence",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Debugging Microbit&nbsp;Sensors",
+    "imgName": "debugging-microbit-sensors",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Turtles",
+    "imgName": "microbit-turtles",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to talk to&nbsp;Developers",
+    "imgName": "how-to-talk-to-developers",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Balanced Parentheses&nbsp;Kata",
+    "imgName": "balanced-parentheses-kata",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Beacons",
+    "imgName": "microbit-beacons",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Practical Tips for Playing Well with&nbsp;Others",
+    "imgName": "practical-tips-for-playing-well-with-others",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Infection",
+    "imgName": "microbit-infection",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "I'll Let Myself&nbsp;In",
+    "imgName": "i&#39;ll-let-myself-in",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "What do you&nbsp;mean",
+    "imgName": "what-do-you-mean",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Playing Cards with&nbsp;Snakes",
+    "imgName": "playing-cards-with-snakes",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft Building from&nbsp;Script",
+    "imgName": "minecraft-building-from-script",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit with&nbsp;NeoPixels",
+    "imgName": "microbit-with-neopixels",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Westminster&nbsp;Works",
+    "imgName": "westminster-works",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sustainable, Lasting, Authentic&nbsp;Change",
+    "imgName": "sustainable-lasting-authentic-change",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Autonomous Microbit&nbsp;Vehicle",
+    "imgName": "autonomous-microbit-vehicle",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Pythonic&nbsp;Idioms",
+    "imgName": "pythonic-idioms",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Minecraft Building&nbsp;Miscellanea",
+    "imgName": "minecraft-building-miscellanea",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Respect the Land&nbsp;Yo",
+    "imgName": "respect-the-land-yo",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Processing with&nbsp;Python",
+    "imgName": "processing-with-python",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Refactoring&nbsp;Boids",
+    "imgName": "refactoring-boids",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Psychic Microbit Night&nbsp;Light",
+    "imgName": "psychic-microbit-night-light",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Slowing Down Test Execution in&nbsp;Selenium",
+    "imgName": "slowing-down-test-execution-in-selenium",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to Steal an&nbsp;Election",
+    "imgName": "how-to-steal-an-election",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How Computers&nbsp;Work",
+    "imgName": "how-computers-work",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "To Show our&nbsp;Friendship",
+    "imgName": "to-show-our-friendship",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Eliminate&nbsp;Slogans",
+    "imgName": "eliminate-slogans",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Mini Approval&nbsp;Testing",
+    "imgName": "mini-approval-testing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Wiring&nbsp;Diagrams",
+    "imgName": "wiring-diagrams",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Confident&nbsp;Code",
+    "imgName": "confident-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Knapsack&nbsp;Packing",
+    "imgName": "knapsack-packing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lazy Creating Expensive&nbsp;Objects",
+    "imgName": "lazy-creating-expensive-objects",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Design for the Next Larger&nbsp;Context",
+    "imgName": "design-for-the-next-larger-context",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Commitment",
+    "imgName": "commitment",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tagging TFS builds from&nbsp;MSBuild",
+    "imgName": "tagging-tfs-builds-from-msbuild",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Refactoring Away from Static&nbsp;Constructors",
+    "imgName": "refactoring-away-from-static-constructors",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Test-Driving a File&nbsp;System",
+    "imgName": "test-driving-a-file-system",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Querying Azure Log Analytics with&nbsp;PowerShell",
+    "imgName": "querying-azure-log-analytics-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Nature of&nbsp;Code",
+    "imgName": "the-nature-of-code",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Our Greatest&nbsp;Asset",
+    "imgName": "our-greatest-asset",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The First&nbsp;Revolution",
+    "imgName": "the-first-revolution",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Fail better with QA in&nbsp;Production",
+    "imgName": "fail-better-with-qa-in-production",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Implementing the Clean Architecture in .NET&nbsp;Core",
+    "imgName": "implementing-the-clean-architecture-in-.net-core",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Fail better with QA in&nbsp;production",
+    "imgName": "fail-better-with-qa-in-production",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Black Sheep&nbsp;Notebook",
+    "imgName": "black-sheep-notebook",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Dont Fight&nbsp;Stupid",
+    "imgName": "dont-fight-stupid",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Game of&nbsp;Oligarchy",
+    "imgName": "game-of-oligarchy",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Normal by Warren&nbsp;Ellis",
+    "imgName": "normal-by-warren-ellis",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Refactoring Nested For Loops to List&nbsp;Comprehensions",
+    "imgName": "refactoring-nested-for-loops-to-list-comprehensions",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Test Driven Development - A Love&nbsp;Story",
+    "imgName": "test-driven-development-a-love-story",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Game of Oligarchy Part&nbsp;2",
+    "imgName": "game-of-oligarchy-part-2",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Game of Oligarchy Part&nbsp;3",
+    "imgName": "game-of-oligarchy-part-3",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Mob Programming&nbsp;Evolution",
+    "imgName": "mob-programming-evolution",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Getting Back to&nbsp;Rust",
+    "imgName": "getting-back-to-rust",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Game of&nbsp;Insight",
+    "imgName": "a-game-of-insight",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "This Code&nbsp;Sucks",
+    "imgName": "this-code-sucks",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Approval&nbsp;Testing",
+    "imgName": "approval-testing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "More Testable Code with the Hexagonal&nbsp;Architecture",
+    "imgName": "more-testable-code-with-the-hexagonal-architecture",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Twinkly&nbsp;Lights",
+    "imgName": "microbit-twinkly-lights",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Rudy's Rutabaga&nbsp;Rule",
+    "imgName": "rudy&#39;s-rutabaga-rule",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "All the Programming&nbsp;Languages",
+    "imgName": "all-the-programming-languages",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Invention of&nbsp;Pairing",
+    "imgName": "the-invention-of-pairing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Evolving a Clean, Pragmatic&nbsp;Architecture",
+    "imgName": "evolving-a-clean-pragmatic-architecture",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Timer",
+    "imgName": "microbit-timer",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Flying&nbsp;Toasters",
+    "imgName": "flying-toasters",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Common-Sense Guide to Data Structures and Algorithms 2nd&nbsp;Edition",
+    "imgName": "a-common-sense-guide-to-data-structures-and-algorithms-2nd-edition",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "When they jump&nbsp;you...",
+    "imgName": "when-they-jump-you...",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Sunshine&nbsp;Detector",
+    "imgName": "microbit-sunshine-detector",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building High Performance React&nbsp;Applications",
+    "imgName": "building-high-performance-react-applications",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Building High Performance React&nbsp;Applications",
+    "imgName": "building-high-performance-react-applications",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "New, Improved, Microbit&nbsp;RC",
+    "imgName": "new-improved-microbit-rc",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "React Cookbook Advanced&nbsp;Recipes",
+    "imgName": "react-cookbook-advanced-recipes",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Game of Life&nbsp;2",
+    "imgName": "game-of-life-2",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Effective&nbsp;Debugging",
+    "imgName": "effective-debugging",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Final, Final, Microbit&nbsp;RC",
+    "imgName": "final-final-microbit-rc",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Stop Trying to Borrow&nbsp;Wisdom",
+    "imgName": "stop-trying-to-borrow-wisdom",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Lets make a tiny&nbsp;zine",
+    "imgName": "lets-make-a-tiny-zine",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Taming Forms in&nbsp;React",
+    "imgName": "taming-forms-in-react",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Prisons",
+    "imgName": "prisons",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit LED&nbsp;blinkenlights",
+    "imgName": "microbit-led-blinkenlights",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "One Secret to Quality&nbsp;Software",
+    "imgName": "one-secret-to-quality-software",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Dino Quiz in&nbsp;Scratch",
+    "imgName": "dino-quiz-in-scratch",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Disagreement",
+    "imgName": "disagreement",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Make Great Software&nbsp;Inevitable",
+    "imgName": "make-great-software-inevitable",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Remove Temporary ASP.Net Files in&nbsp;PowerShell",
+    "imgName": "remove-temporary-asp.net-files-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Simplicity",
+    "imgName": "simplicity",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Never Write Another&nbsp;HoC",
+    "imgName": "never-write-another-hoc",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Circuit Playground Express&nbsp;Moods",
+    "imgName": "circuit-playground-express-moods",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Circuit Playground Express&nbsp;Comet",
+    "imgName": "circuit-playground-express-comet",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "no SOLID&nbsp;evidence",
+    "imgName": "no-solid-evidence",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Dr Dobbs&nbsp;Journal",
+    "imgName": "dr-dobbs-journal",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Four Elements of Simple&nbsp;Design",
+    "imgName": "the-four-elements-of-simple-design",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Alternative Programming&nbsp;Languages",
+    "imgName": "alternative-programming-languages",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cat and Mouse Game in&nbsp;Scratch",
+    "imgName": "cat-and-mouse-game-in-scratch",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "What do developers do all&nbsp;day?",
+    "imgName": "what-do-developers-do-all-day",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Code That&nbsp;Works",
+    "imgName": "code-that-works",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "T-Rex Runner Game in&nbsp;Scratch",
+    "imgName": "t-rex-runner-game-in-scratch",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Study Less, Study&nbsp;Smart",
+    "imgName": "study-less-study-smart",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "When Does TDD Fail and&nbsp;Why",
+    "imgName": "when-does-tdd-fail-and-why",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Continuous Delivery In&nbsp;Agile",
+    "imgName": "continuous-delivery-in-agile",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Discover",
+    "imgName": "discover",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Same&nbsp;Person",
+    "imgName": "the-same-person",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Compound&nbsp;Interest",
+    "imgName": "compound-interest",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Crossing the River by Feeling the&nbsp;Stones",
+    "imgName": "crossing-the-river-by-feeling-the-stones",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Too Smart for&nbsp;Programming",
+    "imgName": "too-smart-for-programming",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Power",
+    "imgName": "power",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Four Purposes of&nbsp;Improvement",
+    "imgName": "four-purposes-of-improvement",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Never Done&nbsp;Before",
+    "imgName": "never-done-before",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Iterating on Developing a PowerShell&nbsp;Module",
+    "imgName": "iterating-on-developing-a-powershell-module",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hand Binding a&nbsp;sketchbook",
+    "imgName": "hand-binding-a-sketchbook",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit LED&nbsp;blinkenlights",
+    "imgName": "microbit-led-blinkenlights",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Musicians",
+    "imgName": "microbit-musicians",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Transcribing Sheet Music for the&nbsp;Microbit",
+    "imgName": "transcribing-sheet-music-for-the-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Iterative Design&nbsp;Process",
+    "imgName": "iterative-design-process",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Move Slow and Mend&nbsp;Things",
+    "imgName": "move-slow-and-mend-things",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Random City&nbsp;Skyline",
+    "imgName": "random-city-skyline",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Improving the&nbsp;Dancing",
+    "imgName": "improving-the-dancing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Silent Night for the&nbsp;Microbit",
+    "imgName": "silent-night-for-the-microbit",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Custom Module for PowerShell&nbsp;DSC",
+    "imgName": "custom-module-for-powershell-dsc",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Declarative Thinking Declarative&nbsp;Practice",
+    "imgName": "declarative-thinking-declarative-practice",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Sketchoting for&nbsp;Science",
+    "imgName": "sketchoting-for-science",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Zipping and Unzipping in&nbsp;PowerShell",
+    "imgName": "zipping-and-unzipping-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Stop Obsessing About&nbsp;Primitives",
+    "imgName": "stop-obsessing-about-primitives",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Find a User SID in&nbsp;PowerShell",
+    "imgName": "find-a-user-sid-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Documenting Software with&nbsp;C4",
+    "imgName": "documenting-software-with-c4",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Testing the Code Does What the Code&nbsp;Does",
+    "imgName": "testing-the-code-does-what-the-code-does",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "AutoIt&nbsp;Extensions",
+    "imgName": "autoit-extensions",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Debugging&nbsp;Terraform",
+    "imgName": "debugging-terraform",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Catalytic Skills for&nbsp;Developers",
+    "imgName": "catalytic-skills-for-developers",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Purge a Soft-deleted Azure Key&nbsp;Vault",
+    "imgName": "purge-a-soft-deleted-azure-key-vault",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "UNICORN",
+    "imgName": "unicorn",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Getting the right Selenium&nbsp;driver",
+    "imgName": "getting-the-right-selenium-driver",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Simple Generative&nbsp;Art",
+    "imgName": "simple-generative-art",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Christmas&nbsp;Fireflies",
+    "imgName": "christmas-fireflies",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to Paint the Mona&nbsp;Lisa",
+    "imgName": "how-to-paint-the-mona-lisa",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Perlin Noise&nbsp;Flower",
+    "imgName": "perlin-noise-flower",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Some Underrated Elements of Success for the Modern&nbsp;Programmer",
+    "imgName": "some-underrated-elements-of-success-for-the-modern-programmer",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "KeyVault Secrets with&nbsp;PowerShell",
+    "imgName": "keyvault-secrets-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Processing Shapes and&nbsp;Colours",
+    "imgName": "processing-shapes-and-colours",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Philosophy of Software&nbsp;Design",
+    "imgName": "a-philosophy-of-software-design",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Learn Code Smells And Level Up Your&nbsp;Game",
+    "imgName": "learn-code-smells-and-level-up-your-game",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Batch Renaming File&nbsp;Extensions",
+    "imgName": "batch-renaming-file-extensions",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Check File Content with&nbsp;PowerShell",
+    "imgName": "check-file-content-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hidden&nbsp;Truth",
+    "imgName": "hidden-truth",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Monsters of&nbsp;Abstractions",
+    "imgName": "monsters-of-abstractions",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Predictability",
+    "imgName": "predictability",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Beyond Transactions in Code and&nbsp;Life",
+    "imgName": "beyond-transactions-in-code-and-life",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Limits of&nbsp;Tyrants",
+    "imgName": "limits-of-tyrants",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Spectacular&nbsp;Life",
+    "imgName": "spectacular-life",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Technical Agile Coaching With the Samman&nbsp;Method",
+    "imgName": "technical-agile-coaching-with-the-samman-method",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Feynman's Computer&nbsp;Heuristics",
+    "imgName": "feynman&#39;s-computer-heuristics",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Turning It Up to&nbsp;11ty",
+    "imgName": "turning-it-up-to-11ty",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Binary&nbsp;Clock",
+    "imgName": "binary-clock",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Binary&nbsp;Clock",
+    "imgName": "microbit-binary-clock",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "11ty Year&nbsp;Shortcode",
+    "imgName": "11ty-year-shortcode",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "11ty Paired Shortcode with&nbsp;Markup",
+    "imgName": "11ty-paired-shortcode-with-markup",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "11ty Picture&nbsp;Shortcode",
+    "imgName": "11ty-picture-shortcode",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Linting&nbsp;Markdown",
+    "imgName": "linting-markdown",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Read TargetFramework of Assembly in&nbsp;PowerShell",
+    "imgName": "read-targetframework-of-assembly-in-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Zen Stone&nbsp;Dead",
+    "imgName": "zen-stone-dead",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The Beauty of&nbsp;Maintenance",
+    "imgName": "the-beauty-of-maintenance",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Curse the&nbsp;Darkness",
+    "imgName": "curse-the-darkness",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Person&nbsp;Ignorant",
+    "imgName": "a-person-ignorant",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "HttpClient with Windows&nbsp;Auth",
+    "imgName": "httpclient-with-windows-auth",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Simple Thumbnail&nbsp;Generator",
+    "imgName": "simple-thumbnail-generator",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Subtle and&nbsp;Deadly",
+    "imgName": "subtle-and-deadly",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to find AD group membership with&nbsp;PowerShell",
+    "imgName": "how-to-find-ad-group-membership-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Testing All The&nbsp;Things",
+    "imgName": "testing-all-the-things",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Secret&nbsp;Sketchnoter",
+    "imgName": "secret-sketchnoter",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Secret Sketchnoter&nbsp;2",
+    "imgName": "secret-sketchnoter-2",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Micro&nbsp;Pomodoro",
+    "imgName": "micro-pomodoro",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Improved Ghost&nbsp;Detector",
+    "imgName": "improved-ghost-detector",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Stop Writing Dead&nbsp;Programs",
+    "imgName": "stop-writing-dead-programs",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "DDD North&nbsp;2022",
+    "imgName": "ddd-north-2022",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to be&nbsp;Psychic",
+    "imgName": "how-to-be-psychic",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Critical Program&nbsp;Reading",
+    "imgName": "critical-program-reading",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Adding a linter to&nbsp;11ty",
+    "imgName": "adding-a-linter-to-11ty",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Add Auto-generated Search to&nbsp;11ty",
+    "imgName": "add-auto-generated-search-to-11ty",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Generate mp3&nbsp;Playlists",
+    "imgName": "generate-mp3-playlists",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Testing at Both Ends of the&nbsp;Triangle",
+    "imgName": "testing-at-both-ends-of-the-triangle",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to find the most recent folder with&nbsp;PowerShell",
+    "imgName": "how-to-find-the-most-recent-folder-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "How to get file and folder ACL rights with&nbsp;PowerShell",
+    "imgName": "how-to-get-file-and-folder-acl-rights-with-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Api Testing in&nbsp;Cypress",
+    "imgName": "api-testing-in-cypress",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Better Date Handling in&nbsp;Cypress",
+    "imgName": "better-date-handling-in-cypress",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Approval Testing in&nbsp;Cypress",
+    "imgName": "approval-testing-in-cypress",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Create Environment Variables in&nbsp;Cypress",
+    "imgName": "create-environment-variables-in-cypress",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Feed the&nbsp;Children",
+    "imgName": "feed-the-children",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Cohesion",
+    "imgName": "cohesion",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Unreasonable&nbsp;Architecture",
+    "imgName": "unreasonable-architecture",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "My Friend&nbsp;Maud",
+    "imgName": "my-friend-maud",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tiny City&nbsp;Layout",
+    "imgName": "tiny-city-layout",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Don't Be in a&nbsp;Hurry",
+    "imgName": "don&#39;t-be-in-a-hurry",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Running CSharp code from&nbsp;PowerShell",
+    "imgName": "running-csharp-code-from-powershell",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Think of&nbsp;Yourself",
+    "imgName": "think-of-yourself",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Never Admire&nbsp;Quietly",
+    "imgName": "never-admire-quietly",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "You Cant Read&nbsp;This",
+    "imgName": "you-cant-read-this",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "A Little Advice for&nbsp;Life",
+    "imgName": "a-little-advice-for-life",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Super&nbsp;Computer",
+    "imgName": "microbit-super-computer",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Grand Unified&nbsp;Theory",
+    "imgName": "grand-unified-theory",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Nothing is&nbsp;Yours",
+    "imgName": "nothing-is-yours",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Sound&nbsp;Meter",
+    "imgName": "microbit-sound-meter",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Handling Processing&nbsp;Errors",
+    "imgName": "handling-processing-errors",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Make A Jazz Noise&nbsp;Here",
+    "imgName": "make-a-jazz-noise-here",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Gently&nbsp;Glowing",
+    "imgName": "gently-glowing",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "talks",
+    "imgName": "talks",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "",
+    "imgName": "undefined",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "New Favourite&nbsp;Notebooks",
+    "imgName": "new-favourite-notebooks",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Noisy&nbsp;Grids",
+    "imgName": "noisy-grids",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "What I'm doing&nbsp;now",
+    "imgName": "what-i&#39;m-doing-now",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Gigantic&nbsp;Undertaking",
+    "imgName": "gigantic-undertaking",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Uncoupling",
+    "imgName": "uncoupling",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Metronome",
+    "imgName": "microbit-metronome",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Custom Microbit&nbsp;Modules",
+    "imgName": "custom-microbit-modules",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Tumbling&nbsp;Arrows",
+    "imgName": "tumbling-arrows",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Emergent&nbsp;Lettering",
+    "imgName": "emergent-lettering",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Fake&nbsp;Mountains",
+    "imgName": "fake-mountains",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Roman Numerals&nbsp;Kata",
+    "imgName": "roman-numerals-kata",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Eddystone&nbsp;Beacon",
+    "imgName": "microbit-eddystone-beacon",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Deteriorating&nbsp;Structure",
+    "imgName": "deteriorating-structure",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Password Scoring&nbsp;Kata",
+    "imgName": "password-scoring-kata",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Defrag Part&nbsp;1",
+    "imgName": "defrag-part-1",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Defrag Part&nbsp;2",
+    "imgName": "defrag-part-2",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Despair",
+    "imgName": "despair",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "The&nbsp;Press",
+    "imgName": "the-press",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Co-optive&nbsp;Power",
+    "imgName": "co-optive-power",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit Hearts&nbsp;Animation",
+    "imgName": "microbit-hearts-animation",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Singing the Portal&nbsp;Theme",
+    "imgName": "singing-the-portal-theme",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Hey, Hi,&nbsp;Hello.",
+    "imgName": "hey-hi-hello.",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "posts",
+    "imgName": "posts",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "home",
+    "imgName": "home",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "search",
+    "imgName": "search",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "posts by&nbsp;tag",
+    "imgName": "posts-by-tag",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "posts tagged&nbsp;with",
+    "imgName": "posts-tagged-with",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Rocking 11ty&nbsp;v3",
+    "imgName": "rocking-11ty-v3",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "projects",
+    "imgName": "projects",
+    "variables": {
+        "postdate": ""
+    }
+},
+{
+    "title": "Microbit&nbsp;Snowglobe",
+    "imgName": "microbit-snowglobe",
+    "variables": {
+        "postdate": ""
+    }
+}
+]

@@ -22,6 +22,7 @@ import vimeo from "./src/_11ty/shortcodes/vimeo.js"
 
 // plugins
 import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight"
+import socialImages from "@11tyrocks/eleventy-plugin-social-images"
 
 export default function (eleventyConfig) {
 
@@ -30,6 +31,7 @@ export default function (eleventyConfig) {
   // plugins
   eleventyConfig.addPlugin(syntaxHighlighter);
   // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
+  eleventyConfig.addPlugin(socialImages);
   
   // collections
   eleventyConfig.addCollection("posts", posts);
