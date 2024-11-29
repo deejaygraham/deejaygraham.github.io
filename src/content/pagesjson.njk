@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
     "title": "{{ pages.data.title | addNbsp | safe }}",
     "imgName": "{{ pages.data.title | slug }}",
     "variables": {
-        "postdate": "{{ pages.data.postdate }}"
+        "postdate": "{{ pages.date | dateFull }}"
     }
 }{% if loop.last == false %},{% endif -%}
 {% endfor %}
