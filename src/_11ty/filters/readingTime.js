@@ -18,6 +18,7 @@
 export default function(text) {
   const content = new String(text);
   const speed = 240; // reading speed in words per minute
+  const emoji = ' ⏲️ ';
 
   // remove all html elements
   const re = /(&lt;.*?&gt;)|(<[^>]+>)/gi;
@@ -32,11 +33,16 @@ export default function(text) {
 
   // calculate the reading time
   const readingTime = Math.round(count / speed);
+
+  let estimate = emoji + ' Takes ';
+  
   if (readingTime === 0) {
-    return "Less than 1 minute to read";
+    estimate += "less than 1 minute to read";
   } else if (readingTime === 1) {
-    return "1 minute to read";
+    estimate += "about 1 minute to read";
   } else {
-    return readingTime + " minutes to read";
+    estimate += `about ${readingTime} minutes to read`;
   }
+
+  return estimate;
 };
