@@ -30,6 +30,7 @@ describe("deployed site", () => {
   context("feeds", () => {
     it("contains xml feeds", () => {
       cy.request("/rss.xml");
+      cy.request("/feed.json");
       cy.request("/sitemap.xml");
     });
   });
