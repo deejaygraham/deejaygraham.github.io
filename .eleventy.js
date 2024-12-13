@@ -23,6 +23,7 @@ import vimeo from "./src/_11ty/shortcodes/vimeo.js"
 // plugins
 import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight"
 import socialImages from "@11tyrocks/eleventy-plugin-social-images"
+import favicons from "eleventy-plugin-gen-favicons"
 
 export default function (eleventyConfig) {
 
@@ -32,7 +33,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlighter);
   // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
   eleventyConfig.addPlugin(socialImages);
-  
+  eleventyConfig.addPlugin(favicons);
+
   // collections
   eleventyConfig.addCollection("posts", posts);
 
@@ -67,7 +69,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
-  eleventyConfig.addPassthroughCopy({ "./src/assets/img/favicon.ico": "/favicon.ico" });
+  //eleventyConfig.addPassthroughCopy({ "./src/assets/img/favicon.ico": "/favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/sw.js": "/" });
