@@ -1,7 +1,7 @@
 ---
 permalink: 2024/11/07/two-terrors/
 layout: quotation
-size: large
+size: small
 title: Two Terrors
 published: true
 attribution: Mark Twain
