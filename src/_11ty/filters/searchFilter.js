@@ -14,15 +14,17 @@ async function searchFilter(collection) {
 
     const frontMatter = await page.template.read();
    
-    if (frontMatter.data.layout && frontMatter.data.layout === 'quotation') {
-      if (frontMatter.data.attribution) {
-        excerpt = frontMatter.data.attribution;
-      }
-    } else if (page.rawInput) {
+    if (page.rawInput) {
       const excerptLength = 255; // chars
       let content = page.rawInput.replace(/(<([^>]+)>)/gi, "");
       content = content.replace(/\n/g, ' ');
       excerpt = content.substr(0, content.lastIndexOf(" ", excerptLength));
+    }
+
+    if (frontMatter.data.layout && frontMatter.data.layout === 'quotation') {
+      if (frontMatter.data.attribution) {
+        excerpt += ' ' + frontMatter.data.attribution;
+      }
     }
 
     index.addDoc({
