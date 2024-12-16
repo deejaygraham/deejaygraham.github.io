@@ -50,7 +50,10 @@ const addCopyButtonToSourceCode = () => {
     'transition-colors',*/
   ];
 
+    console.log('Adding copy buttons');
   snippets.forEach((snippet) => {
+
+      console.log('Adding copy button to snippet');
     //snippet.classList.add('relative');
 
     const button = document.createElement('button');
@@ -63,7 +66,10 @@ const addCopyButtonToSourceCode = () => {
     });
       
     snippet.appendChild(button);
+      console.log('Added button');
   });
+
+    console.log('Added all copy buttons');
 };
 
 registerServiceWorker();
