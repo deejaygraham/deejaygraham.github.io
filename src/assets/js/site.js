@@ -31,45 +31,26 @@ const registerServiceWorker = async () => {
 
 const addCopyButtonToSourceCode = () => {
     
-    const snippets = document.querySelectorAll('pre[class*="language"]');
+  const snippets = document.querySelectorAll('pre[class*="language"]');
 
   const buttonClasses = [
     'button',
-  /*  'right-4',
-    'top-4',
-    'border',
-    'rounded-md',
-    'p-2',
-    'bg-white/80',
-    'hover:bg-white',
-    'text-slate-800',
-    'hover:text-slate-900',
-    'opacity-0',
-    'group-hover/code:opacity-100',
-    'transition-opacity',
-    'transition-colors',*/
+    'is-pulled-right',
   ];
 
-    console.log('Adding copy buttons');
+  const copyGraphicSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
+
   snippets.forEach((snippet) => {
-
-      console.log('Adding copy button to snippet');
-    //snippet.classList.add('relative');
-
     const button = document.createElement('button');
     button.classList.add(...buttonClasses);
-    button.innerHTML =
-      '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
-
+    button.innerHTML = copyGraphicSvg;
     button.addEventListener('click', () => {
       navigator.clipboard.writeText(snippet.textContent);
     });
-      
-    snippet.appendChild(button);
-      console.log('Added button');
-  });
 
-    console.log('Added all copy buttons');
+    snippet.insertBefore(button, snippet.firstChild);
+    //snippet.appendChild(button);
+  });
 };
 
 registerServiceWorker();
