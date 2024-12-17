@@ -15,10 +15,10 @@
  * @param {String} text
  */
 
-export default function(text) {
+export default function (text) {
   const content = new String(text);
   const speed = 240; // reading speed in words per minute
-  const emoji = ' ⏲️ ';
+  const emoji = " ⏲️ ";
 
   // remove all html elements
   const re = /(&lt;.*?&gt;)|(<[^>]+>)/gi;
@@ -34,8 +34,8 @@ export default function(text) {
   // calculate the reading time
   const readingTime = Math.round(count / speed);
 
-  let estimate = emoji + ' Takes ';
-  
+  let estimate = emoji + " Takes ";
+
   if (readingTime === 0) {
     estimate += "less than 1 minute to read";
   } else if (readingTime === 1) {
@@ -45,4 +45,4 @@ export default function(text) {
   }
 
   return estimate;
-};
+}

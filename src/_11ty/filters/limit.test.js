@@ -1,16 +1,16 @@
-import test from 'ava';
-import limit from './limit.js';
+import test from "ava";
+import limit from "./limit.js";
 
-test('empty tag list returns null', t => {
-    t.deepEqual(limit([], 1), []);
+test("empty tag list returns null", (t) => {
+  t.deepEqual(limit([], 1), []);
 });
 
-test('limit higher than list length returns full list', t => {
-    const tags = ['baz', 'foo', 'bar' ];
-    t.deepEqual(limit(tags, 4), tags);
+test("limit higher than list length returns full list", (t) => {
+  const tags = ["baz", "foo", "bar"];
+  t.deepEqual(limit(tags, 4), tags);
 });
 
-test('tags limit returns items from front of list', t => {
-    const tags = ['code', 'all', 'posts' ];
-    t.deepEqual(limit(tags, 2), ['code', 'all']);
+test("tags limit returns items from front of list", (t) => {
+  const tags = ["code", "all", "posts"];
+  t.deepEqual(limit(tags, 2), ["code", "all"]);
 });
