@@ -47,10 +47,7 @@ describe("blog posts", () => {
     });
 
     it("contains suggested posts", () => {
-      cy.get(".related-posts").should(
-        "contain",
-        "More posts tagged with #",
-      );
+      cy.get(".related-posts").should("contain", "More posts tagged with #");
     });
 
     it("contains footer", () => {

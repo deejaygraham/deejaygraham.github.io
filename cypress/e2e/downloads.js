@@ -5,7 +5,7 @@ describe("downloads for site", () => {
     cy.request("/downloads/Dotted-a4-portrait.pdf");
     cy.request("/downloads/Dotted-a4-landscape.pdf");
     cy.request("/downloads/Graph-a4-portrait.pdf");
-    cy.request("/downloads/Graph-a4-landscape.pdf");      
+    cy.request("/downloads/Graph-a4-landscape.pdf");
     cy.request("/downloads/Manuscript-a4-portrait.pdf");
     cy.request("/downloads/Manuscript-a4-landscape.pdf");
   });

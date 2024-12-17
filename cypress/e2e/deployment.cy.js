@@ -40,14 +40,14 @@ describe("deployed site", () => {
       cy.request("/search-index.json");
     });
   });
-  
+
   context("text files", () => {
     it("automation files", () => {
       cy.request("/robots.txt");
       cy.request("/humans.txt");
     });
   });
-  
+
   context("stylesheets", () => {
     it("contains css", () => {
       cy.request("/css/site.css");

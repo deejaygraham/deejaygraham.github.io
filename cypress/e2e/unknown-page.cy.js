@@ -6,9 +6,9 @@ describe("Try to load an unknown page", () => {
 
   it("shows a 404 page", () => {
     cy.visit({
-        method: "GET",
-        url: "/blargleargle/",
-        failOnStatusCode: false,
+      method: "GET",
+      url: "/blargleargle/",
+      failOnStatusCode: false,
     });
     cy.get("h1.title").should("have.text", "Erm...");
     cy.get("p").should("contain", "Try going to the home page");
