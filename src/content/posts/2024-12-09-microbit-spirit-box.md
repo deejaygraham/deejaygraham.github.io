@@ -23,9 +23,69 @@ Here we use temperature, sound, light and just general randomness to decide whic
 code where we then make a random choice and say that word. 
 
 ```python
+# Spirit Box - monitor a selection of sensor inputs
+# and say a random word if one of the sensors is
+# triggered
 
+from microbit import *
+import random
+import speech
+
+# Has the temperature changed?
+def temperature_trigger():
+    temp_now = temperature()
+
+    if temp_now < starting_temp:
+        return ["Cold", "Freezing"]
+    elif temp_now > starting_temp:
+        return ["Warm", "Hot"]
+    return None
+
+
+# Is there a light source?
+def light_trigger():
+    if display.read_light_level() > light_threshold:
+        return ["Light", "Bright", "See"]
+    return None
+
+
+# Is there a sound ?
+def sound_trigger():
+    if microphone.sound_level() > sound_threshold:
+        return default_word_list
+    return None
+
+
+# Randomly return a word sometimes
+def random_trigger():
+    if random.randint(1, 100) <= word_probability:
+        return default_word_list
+    return None
+
+
+word_probability = 25
+light_threshold = 100
+sound_threshold = 100
+starting_temp = temperature()
+default_word_list = ["Hello", "Yes", "No", "Maybe", "Goodbye", "Help", "Spirit", "Here"]
+triggers = [temperature_trigger, light_trigger, sound_trigger, random_trigger]
+
+display.scroll("Spirit Box")
+display.show(Image.GHOST)
+
+while True:
+
+    for trigger in triggers:
+        words = trigger()
+
+        if words:
+            word = random.choice(words)
+            speech.say(word)
+            sleep(random.randint(500, 5000))
+
+    sleep(random.randint(1000, 5000))
 
 ```
 
 The thresholds set up at the start of the program were chosen mostly at random so may need tuning when using this for a 
-teaching exercise.
+teaching exercise. Of course, more triggers and words can be added.
