@@ -38,6 +38,9 @@ while True:
 
 ```
 
+If needed, you could introduce a finite amount of pollen produced per minute or simply increase the sleep time so that a bee takes longer to fill up with pollen.
+
+
 ### Hive.py
 
 The hive listens for radio messages from bees and increases it's collection of pollen each time a message is received from a bee. For greater realism, I have added a process which 
@@ -76,7 +79,7 @@ while True:
     # receive pollen from a bee
     message = radio.receive()
     
-    if (message and message == 'pollen'):
+    if message and message == 'pollen':
         pollen = min(pollen + 1, MAX_POLLEN)
 
     if pollen == 0:
@@ -102,19 +105,19 @@ meter for the bee to show how much pollen they have collected. Crucially, the be
 from microbit import *
 import radio
 
-
-def show_meter(pollen):
+def show_pollen_level(pollen):
     count = 0
-    for x in range(4):
+    for y in range(4, -1, -1):
         count += 1
         if pollen >= count:
-            for y in range(4, 0, -1):
+            for x in range(5):
                 display.set_pixel(x, y, 9)
 
 
 display.scroll("bee")
 
 pollen = 0
+MAX_POLLEN = 5
 
 radio.on()
 
@@ -122,17 +125,18 @@ while True:
 
     if accelerometer.was_gesture("shake"):
         pollen = 0
-        
+
+    # download pollen to the hive
     if button_a.was_pressed() or button_b.was_pressed():
         radio.send("pollen")
-        pollen -= 1
-        
-    receive = radio.receive()
+        pollen = max(pollen - 1, 0)
 
-    if receive and receive == "pollen":
-        pollen += 1
-        
-    # build a pollen meter
-    show_meter(pollen)
+    # receive pollen from the flower
+    message = radio.receive()
+
+    if message and message == "pollen":
+        pollen = min(pollen + 1, MAX_POLLEN)
+
+    show_pollen_level(pollen)
 
 ```
