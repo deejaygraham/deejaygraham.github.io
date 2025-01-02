@@ -51,6 +51,7 @@ from microbit import *
 import radio
 
 def show_pollen_level(pollen):
+    display.clear()
     count = 0
     # draw from bottom up
     for y in range(4, -1, -1):
@@ -85,7 +86,6 @@ while True:
     if pollen == 0:
         display.show(Image.SAD)
     else:
-        display.clear()
         show_pollen_level(pollen)
 
     # consume some of the pollen in the hive
@@ -106,6 +106,7 @@ from microbit import *
 import radio
 
 def show_pollen_level(pollen):
+    display.clear()
     count = 0
     for y in range(4, -1, -1):
         count += 1
