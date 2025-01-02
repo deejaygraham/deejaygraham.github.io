@@ -67,3 +67,6 @@ while True:
     sleep(time_to_next_call)
 
 ```
+
+In retrospect, the voice synth on the microbit isn't very good for creating understandable words (unless you know what it's trying to say). I think this would be improved by 
+using the music API and trying to replicate at least the pitches of birdsong, if not the identical noises.
