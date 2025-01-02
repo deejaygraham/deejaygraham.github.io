@@ -6,7 +6,8 @@ published: true
 tags: [code, microbit, python]
 ---
 
-A slight variation on the treasure hunt game I posted about a long while ago. This is a game for three sets of players or can work with two "NPC" players and the bees played by humans. 
+A slight variation on the treasure hunt game I posted about a long while ago. This is a game for three sets of players or can work with two "NPC" players and the bees played by humans. It does 
+require quite a large number of microbits unfortunately, one for the hive, one per bee and one per flower so depends on class size and the space available. 
 
 ## The Setup
 
