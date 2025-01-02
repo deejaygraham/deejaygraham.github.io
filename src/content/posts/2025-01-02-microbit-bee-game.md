@@ -128,8 +128,9 @@ while True:
 
     # download pollen to the hive
     if button_a.was_pressed() or button_b.was_pressed():
-        radio.send("pollen")
-        pollen = max(pollen - 1, 0)
+        if pollen > 0:
+            radio.send("pollen")
+            pollen = max(pollen - 1, 0)
 
     # receive pollen from the flower
     message = radio.receive()
