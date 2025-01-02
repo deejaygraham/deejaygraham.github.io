@@ -1,7 +1,7 @@
 ---
 permalink: 2025/01/02/microbit-bee-game/
 layout: post
-title: Microbit Bee Game Box
+title: Microbit Bee Game
 published: true
 tags: [code, microbit, python]
 ---
@@ -27,13 +27,12 @@ from microbit import *
 import radio
 
 display.scroll('flower')
-display.show(Image.SMILE)
+display.show(Image.HAPPY)
 
 radio.on()
 radio.config(power=2)
 
 while True:
-    
     radio.send('pollen')
     sleep(1000)
 
@@ -48,10 +47,12 @@ consumes the pollen to model bees and larvae consuming what is brought in by the
 from microbit import *
 import radio
 
-def show_meter(pollen):
+def show_pollen_level(pollen):
     count = 0
-    for x in range(4):
-        for y in range(4, 0, -1):
+    # draw from bottom up
+    for y in range(4, -1, -1):
+        # draw from left to right
+        for x in range(5):
             count += 1
             if pollen >= count:
                 display.set_pixel(x, y, 9)
@@ -60,26 +61,35 @@ def show_meter(pollen):
 display.scroll('hive')
 
 pollen = 0
+MAX_POLLEN = 25
+CONSUMPTION_SPEED = 5000
 
 radio.on()
+
+time1 = running_time()
 
 while True:
 
     if accelerometer.was_gesture('shake'):
         pollen = 0
-        
-    receive = radio.receive()
+
+    # receive pollen from a bee
+    message = radio.receive()
     
-    if (receive and receive == 'pollen'):
-        pollen = pollen + 1
-        
-    # build a pollen meter
-    show_meter(pollen)
-    
-    # every minute consume a pollen grain
-    t = running_time()
-    if t % 100 == 0:
-        pollen -= 1
+    if (message and message == 'pollen'):
+        pollen = min(pollen + 1, MAX_POLLEN)
+
+    if pollen == 0:
+        display.show(Image.SAD)
+    else:
+        display.clear()
+        show_pollen_level(pollen)
+
+    # consume some of the pollen in the hive
+    time2 = running_time()
+    if time2 - time1 >= CONSUMPTION_SPEED:
+        pollen = max(pollen - 1, 0)
+        time1 = time2
     
 ```
 
