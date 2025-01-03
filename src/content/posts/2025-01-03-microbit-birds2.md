@@ -46,12 +46,13 @@ display.show(Image.DUCK)
 
 note_names = [ 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B' ]
 base_octave = random.randint(2, 8)
+note_lengths = [1, 2, 4, 8]
 song = []
 
 for x in range(random.randint(1, 8)):
   note_name = random.choice(note_names)
   octave = base_octave + random.randint(-1, 1)
-  length = random.randint(1, 8)
+  length = random.choice(note_lengths)
   song.append("{}{}:{}".format(note_name, octave, length))
 
 sound_threshold = 100  # 255 max
@@ -76,4 +77,5 @@ while True:
 
 ```
 
-Having several microbits in this bird orchestra still feels a bit like starting a 90s dialup modem but some songs can be genuinely nice or at least interesting
+Having several microbits in this bird orchestra still feels a bit like starting a 90s dialup modem but some songs can be genuinely nice or at least interesting. One thing that helped the musicality is keeping the note lengths to the more standard 1, 2, 4, and 8 note durations rather than just a 
+random number between 1 and 8.
