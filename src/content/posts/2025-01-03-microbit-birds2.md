@@ -52,7 +52,7 @@ for x in range(random.randint(1, 8)):
   note_name = random.choice(note_names)
   octave = base_octave + random.randint(-1, 1)
   length = random.randint(1, 8)
-  song.append("{}{}:{}".format(note_name, octave, length)
+  song.append("{}{}:{}".format(note_name, octave, length))
 
 sound_threshold = 100  # 255 max
 microphone.sound_level()  # discard first
