@@ -96,32 +96,34 @@ leader = False
 # harmonizer
 semi_tones = 0
 
-wallpaper = Image.MUSIC_CROTCHET
-
 display.scroll('Harmony')
-display.show(wallpaper)
-
 radio.on()
 
 while True:
 
+    wallpaper = Image.SQUARE if leader else Image.MUSIC_CROTCHET
+    display.show(wallpaper)
+
     if accelerometer.was_gesture('shake'):
         leader = not leader
-
-        wallpaper = Image.ALL_ARROWS if leader else Image.MUSIC_CROTCHET
-        display.show(wallpaper)
             
     if leader:
         
         # send out notes
         # send out go signal
         if button_a.was_pressed():
+            # upload
+            display.show(Image.ARROW_N)
             message = encode_notes_message(score)
             radio.send(message)
-            
+            sleep(2000)
+
         if button_b.was_pressed():
+            display.show(Image.ARROW_N)
             message = "PLAY"
             radio.send(message)
+            sleep(2000)
+
     else:
 
         # harmonizer
@@ -135,6 +137,8 @@ while True:
         message = radio.receive()
 
         if message:
+            # download
+            display.show(Image.ARROW_S)
             if message.startswith("NOTES"):
                 score = decode_notes_message(message)
             elif message.startswith("PLAY"):
