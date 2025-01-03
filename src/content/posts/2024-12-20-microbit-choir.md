@@ -45,7 +45,7 @@ def midi_to_note_name(midi_value):
     note_name = note_names[midi_value % 12]
     octave = (midi_value // 12) - 1
 
-    return f"{note_name}{octave}"
+    return "{}{}".format(note_name, octave)
 
 def is_rest(note):
     return note == 'R' or note == 'r'
@@ -61,7 +61,7 @@ def harmonize(note, interval):
     harmony_note = midi_to_note_name(harmony)
 
     if len(parts) == 2:
-        return f"{harmony_note}:{parts[1]}"
+        return "{}:{}".format(harmony_note, parts[1])
 
     return harmony_note
 
