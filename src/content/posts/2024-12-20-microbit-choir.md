@@ -130,7 +130,7 @@ while True:
         if button_a.was_pressed():
             semi_tones = max(0, semi_tones - 1)
         if button_b.was_pressed():
-            semi_tones = max(semi_tones + 1, 12)
+            semi_tones = min(semi_tones + 1, 12)
 
         # is this a set of notes?
         # is this a control signal
