@@ -44,7 +44,7 @@ import music
 
 display.show(Image.DUCK)
 
-note_names = []
+note_names = [ 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B' ]
 base_octave = random.randint(2, 8)
 song = []
 
