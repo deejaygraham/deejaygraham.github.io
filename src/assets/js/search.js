@@ -1,6 +1,12 @@
 (function (window, document) {
   "use strict";
 
+  const keyPress = (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+    }    
+  };
+	
   const search = (e) => {
 
     const container = document.getElementById("search-results");
@@ -43,6 +49,7 @@
       window.searchIndex = elasticlunr.Index.load(jsonIndex);
       const searchBox = document.getElementById("search-box");
       searchBox.addEventListener("input", search);
+      searchBox.addEventListener("keydown", keyPress);
       searchBox.focus();
     })
   );
