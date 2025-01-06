@@ -20,11 +20,6 @@ export default [
     icon: "bluesky.svg",
   },
   {
-    name: "polywork",
-    url: "https://www.polywork.com/deejaygraham/",
-    icon: "polywork.svg",
-  },
-  {
     name: "linkedin",
     url: "https://www.linkedin.com/derekjohngraham/",
     icon: "linkedin.svg",
