@@ -9,6 +9,13 @@ thumbnail: /img/posts/microbit-card-trick/thumbnail-420x255.webp
 alttext: microbit sorting hat
 ---
 
+### Update
+
+A version of this post was published on the microbit magazine site a while ago. Unfortunately the site has gone now but there is a 
+[version still available through the wayback machine](https://web.archive.org/web/20220316000805/https://micromag.cc/building-a-robot-magician/)
+
+## Introduction
+
 I was due to give a talk to some educators about using the BBC microbit in the computer science syllabus and was having a hard time coming up with a demonstration of the capabilities of the device, something that was short, memorable and showed off the full range of what it could do. Finally, I hit on the idea of a magic trick, it didn't need to be hugely convincing but it seemed that a form of mentalism might be what was needed.
 
 ![robot](/img/posts/microbit-card-trick/robot.webp)
