@@ -1,7 +1,7 @@
 ---
 permalink: 2025/01/07/microbit-testing/
 layout: post
-title: Microbit Testing
+title: Simple Microbit Testing
 published: true
 tags: [tdd, code, microbit, python]
 ---
@@ -24,6 +24,9 @@ particularly since there's a cycle of debugging which feels very inefficient. Th
 
 So, this has made me want to have a test framework for the microbit. Micropython does have support for "assert" but it looks like it is [turned off in the default settings](https://microbit-micropython.readthedocs.io/en/stable/micropython.html) and I didn't want to mess around with that. There is also a block available 
 as an assert in [Microsoft's Make Code](https://makecode.microbit.org/reference/control/assert) but that only applies to the block mode of programming. What I wanted was a simple library, maybe even simpler than [assertpy](https://github.com/assertpy/assertpy), that could be included in a program or even just some code that could be pasted at the top of a program to let us make some assertions about the code we want to write. 
+
+I have moved this code into it's own repository on github as [Simple Microbit Assert](https://github.com/deejaygraham/simple-microbit-assert).
+
 
 ## Failure
 
