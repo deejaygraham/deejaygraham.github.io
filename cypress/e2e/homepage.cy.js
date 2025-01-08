@@ -15,12 +15,12 @@ describe("home page", () => {
     cy.get(".navbar-end > a").last().should("have.text", "now");
   });
 
-  it("contains list of posts", () => {
+  it("contains most recent list of posts", () => {
     cy.get(".cell").should("have.length", 12);
   });
 
-  it("contains footer", () => {
+  it("contains footer with social links", () => {
     cy.get(".footer").scrollIntoView();
-    cy.get(".level-item").should("have.length", 8);
+    cy.get(".level-item").should("have.length", 7);
   });
 });
