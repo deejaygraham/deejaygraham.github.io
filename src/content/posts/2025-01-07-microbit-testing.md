@@ -45,6 +45,10 @@ In the c# world, probably what you would do would be to throw an Exception objec
 
 ## Code
 
+The assertion code could be cut and pasted into the top of a program temporarily to allow 
+for checking or it could be imported and the assert.py file copied onto the microbit
+after flashing the program.
+
 ### Assert.py
 
 ```python
@@ -53,25 +57,25 @@ from microbit import display, Image
 
 def assert_that(value, message=None):
     if not value:
-        if message == None:
+        if message is None:
             message = 'Assertion failed'
 
         raise Exception(message)
 
 def assert_true(value, message=None):
-    if message == None:
+    if message is None:
         mesage = "Expected: {}, actual: {}".format(True, value)
 
     assert_that(value, message)
 
 def assert_false(value, message=None):
-    if message == None:
+    if message is None:
         mesage = "Expected: {}, actual: {}".format(False, value)
 
     assert_that(not value, message)
 
 def assert_equal(expected, actual, message=None):
-    if message == None:
+    if message is None:
         message = "Expected: {}, actual: {}".format(expected, actual)
 
     assert_that(expected == actual, message)
@@ -79,7 +83,7 @@ def assert_equal(expected, actual, message=None):
 def assert_empty(items, message=None):
     expected = 0
     actual = len(items)
-    if message = None:
+    if message is None:
         message = "List expected: {} items, actual: {}".format(expected, actual)
 
     assert_that(expected == actual, message)
@@ -115,9 +119,15 @@ def assert_display_equal(expected):
 
 ```
 
-## Improve
+## Improvements
 
-One unfortunate thing that I have not looked too deeply into is that the exception points to the line of code in the assert when the exception is raised rather than the location where the assert was called. I have put some time into trying to compensate for this by making the error messages as good as they can be. 
+One unfortunate thing that I have not looked too deeply into is that the 
+exception points to the line of code in the assert when the exception is 
+raised i.e. in the assert code, rather than the location where the assert 
+was called. I know standard python has traceback to allow access to the callstack
+but I don't think this is available for micropython. Some experimentation is 
+needed here. 
 
-If I come up with a solution, I will document this later. For now, I have added some simple assertions: true, false, equal; and a couple of microbit specific ones 
+I have put some time into trying to compensate for this by 
+making the error messages as good as they can be. If I come up with a solution, I will document this later. For now, I have added some simple assertions: true, false, equal; and a couple of microbit specific ones 
 for image comparison and display checking. I will fill this out as I find a need to.
