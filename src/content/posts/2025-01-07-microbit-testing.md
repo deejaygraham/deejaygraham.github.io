@@ -68,13 +68,13 @@ def assert_that(value, message=None):
 
 def assert_true(value, message=None):
     if message is None:
-        mesage = "Expected: {}, actual: {}".format(True, value)
+        message = "Expected: {}, actual: {}".format(True, value)
     assert_that(value, message)
 
 
 def assert_false(value, message=None):
     if message is None:
-        mesage = "Expected: {}, actual: {}".format(False, value)
+        message = "Expected: {}, actual: {}".format(False, value)
     assert_that(not value, message)
 
 
