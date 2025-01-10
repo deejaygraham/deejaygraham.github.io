@@ -1,7 +1,7 @@
 ---
 permalink: 2021/04/23/sketchnote-ideabook/
 layout: post
-title: Skechnote Ideabook
+title: Sketchnote Ideabook
 published: true
 tags: [sketchnotes, illustration, stationery]
 ---
@@ -11,7 +11,7 @@ I recently got hold of a copy of the [Sketchnote Ideabook](https://sketchnoteide
 the cover is nice to hold and the paper is great for drawing on and nothing seems to bleed through from page to page even with a very 
 heavy ink. 
 
-<img src"/img/posts/sketchnote-ideabook/front.jpg" />
+<img src="/img/posts/sketchnote-ideabook/front.jpg" />
 
-<img src"/img/posts/sketchnote-ideabook/back.jpg" />
+<img src="/img/posts/sketchnote-ideabook/back.jpg" />
 
