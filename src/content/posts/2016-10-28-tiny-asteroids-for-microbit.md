@@ -9,6 +9,13 @@ thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
 ---
 
+## Update
+
+Marco sent me a message asking to use the explosion animation code in his [Starbit Commander II game](https://github.com/marc0janssen/Starbit-Commander-II) game for the microbit and he was nice enough to give me [credit in the post describing it](https://mjanssen.nl/2021/04/08/starbit-commander-ii/). 
+
+
+## Introduction
+
 Asteroids is a game I used to love to play on the old Atari 2600 console.
 
 ![asteroids](/img/posts/tiny-asteroids-for-microbit/asteroids.webp)
