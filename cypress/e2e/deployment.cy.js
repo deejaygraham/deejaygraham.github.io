@@ -16,6 +16,11 @@ describe("deployed site", () => {
       cy.request("/img/heroes/hero-secret-harbour.jpg");
       cy.request("/img/heroes/makers-and-creators.jpg");
     });
+
+    it("contains og social images for blog posts", () => {
+      cy.request("/img/previews/singing-the-portal-theme.png");
+      cy.request("/img/previews/microbit-bird-song2.png");
+    });
   });
 
   context("javascript", () => {
