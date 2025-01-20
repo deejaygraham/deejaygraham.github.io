@@ -36,7 +36,6 @@ jobs:
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
         with:
           node-version: current
-          args: install
 
       - name: Install dependencies and build, run unit tests for filters
         run: |
