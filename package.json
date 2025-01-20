@@ -5,7 +5,7 @@
     "social-images": "eleventy-social-images --siteName 'deejaygraham.github.io' --theme 'minimal'  --outputDir '_site/img' --templatePath 'src/assets/social/template.html' --stylesPath 'src/assets/social/style.css' ",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npm run sass --watch",
-    "build": "npm run sass && eleventy && npm run social-images",
+    "build": "npm run sass && eleventy",
     "start": "npm-run-all sass --parallel watch:*",
     "test": "npx cypress run --e2e --browser chrome",
     "unit-test": "npx ava --verbose",
