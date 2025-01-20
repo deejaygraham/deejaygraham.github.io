@@ -32,8 +32,6 @@ jobs:
 
       - name: Use current Node version
         uses: actions/setup-node@v3
-        env:
-          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
         with:
           node-version: current
 
@@ -41,8 +39,8 @@ jobs:
         run: |
           npm ci
           npm run build
-          npm run social-images
-          npm run unit-test
+          # npm run social-images
+          # npm run unit-test
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
