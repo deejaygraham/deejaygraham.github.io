@@ -42,7 +42,7 @@ jobs:
       - name: Build and run tests on 11ty filter code
         run: |
           npm run build
-          # npm run social-images
+          npm run social-images
           # npm run unit-test
           
       - name: Setup Github Pages
