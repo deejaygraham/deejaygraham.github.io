@@ -1,6 +1,7 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "cypress";
 
-module.exports = defineConfig({
+export default defineConfig({
+  pageLoadTimeout: 60_000,
   e2e: {
     baseUrl: "https://deejaygraham.github.io",
     viewportWidth: 1280,

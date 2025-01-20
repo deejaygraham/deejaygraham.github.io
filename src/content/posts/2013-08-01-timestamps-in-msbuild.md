@@ -3,7 +3,7 @@ permalink: 2013/08/01/timestamps-in-msbuild/
 layout: post
 title: Timestamps in MsBuild
 published: true
-tags: [msbuild, code]
+tags: [msbuild, code, csharp]
 ---
 
 I often need to include a timestamp in a build, either in naming a file
@@ -14,18 +14,26 @@ once you are familiar with the syntax.
 
 The syntax for calling static methods is:
 
+```xml
     $([Namespace.Type]::Method(parameters if required go here))
+```
 
 The syntax for static properties is:
 
+```xml
     $([Namespace.Type]::Property)
+```
 
 So you can generate a new guid during a build using:
 
+```xml
     $([System.Guid]::NewGuid().ToString())
-
+```
 Here's a timestamp in [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
 
+```xml
     <PropertyGroup>
     	<_BuildDateAndTime>$([System.DateTime]::Now.ToString(yyyy-MM-ddThhmmss))</_BuildDateAndTime>
     </PropertyGroup>
+```
+

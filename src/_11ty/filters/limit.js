@@ -1,3 +1,3 @@
-module.exports = function (array, limit) {
+export default function (array, limit) {
   return array.slice(0, limit);
-};
+}

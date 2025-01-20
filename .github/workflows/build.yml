@@ -35,11 +35,12 @@ jobs:
         with:
           node-version: current
 
-      - name: Install dependencies and build
+      - name: Install dependencies and build, run unit tests for filters
         run: |
           npm ci
           npm run build
-
+          npm run unit-test
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
@@ -51,3 +52,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Test automation run
+        uses: cypress-io/github-action@v6
+        

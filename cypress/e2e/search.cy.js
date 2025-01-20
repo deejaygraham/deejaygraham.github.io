@@ -1,44 +1,61 @@
 /// <reference types="cypress" />
 
-describe("search for an existing item", () => {
-  const searchTerm = "jazz";
-  const expectedPostTitle = "Make A Jazz Noise Here";
-
+describe("search the site", () => {
   beforeEach(() => {
-    cy.visit("/");
-    cy.get("#search-box").type(searchTerm);
-    cy.get("#search-button").click();
+    cy.visit("/search/");
   });
 
-  it("url contains the search term", () => {
-    cy.url().should("include", `?query=${searchTerm}`);
+  context("for a post by title", () => {
+    it("has a consistent page title", () => {
+      cy.get("h1.title").should("contain", "search");
+    });
+
+    it("search results show matching articles", () => {
+      const searchTerm = "jazz";
+      const expectedPostTitle = "Make A Jazz Noise Here";
+
+      cy.get("#search-box").type(searchTerm);
+      cy.get("#search-results li")
+        .should("have.length", 1)
+        .first()
+        .should("have.text", expectedPostTitle);
+    });
   });
 
-  it("has a consistent page title", () => {
-    cy.get("h1.title").should("contain", "Search Results");
+  context("for a post by quotation author", () => {
+    it("search results show matching articles", () => {
+      const searchTerm = "Lehman";
+      const expectedPostTitle = "Deteriorating Structure";
+
+      cy.get("#search-box").type(searchTerm);
+      cy.get("#search-results li")
+        .should("have.length", 1)
+        .first()
+        .should("contain", expectedPostTitle);
+    });
   });
 
-  it("search results show matching articles", () => {
-    cy.get("#search-results ul li")
-      .should("have.length", 1)
-      .first()
-      .should("have.text", expectedPostTitle);
-  });
-});
+  context("for a post by tag", () => {
+    const searchTerm = "build";
+    const expectedPostTitle = "Creating Builds in TFS 2015";
 
-describe("search for an not existing item", () => {
-  const searchTerm = "blargleargle";
-
-  before(() => {
-    cy.visit("/");
-    cy.get("#search-box").type(searchTerm);
-    cy.get("#search-button").click();
+    it("search results show matching articles", () => {
+      cy.get("#search-box").type(searchTerm);
+      cy.get("#search-results li")
+        .first()
+        .should("have.text", expectedPostTitle);
+    });
   });
 
-  it("search results not shown for nonsense term", () => {
-    cy.get("#search-results").should(
-      "have.text",
-      `No results found for ${searchTerm}`,
-    );
+  context("for an unknown term", () => {
+    it("search results not shown for nonsense term", () => {
+      const searchTerm = "blargleargle";
+
+      cy.get("#search-box").type(searchTerm);
+      cy.get("#search-results").should(
+        "contain",
+        "Unable to find any posts for",
+      );
+    });
   });
 });

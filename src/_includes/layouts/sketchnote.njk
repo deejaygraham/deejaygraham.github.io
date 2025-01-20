@@ -20,6 +20,7 @@
 
 <aside class="my-6">
 {% if sketchnote %}
+<div class="sketchnote">
     {% if sketchnote.url %}
         <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
     {% endif %}
@@ -49,6 +50,7 @@
         {{ sketchnote.event.name }}
         {% endif %}
     {% endif %}
+</div>
 {% endif %}
 
 {% include "partials/ccboilerplate.njk" %}

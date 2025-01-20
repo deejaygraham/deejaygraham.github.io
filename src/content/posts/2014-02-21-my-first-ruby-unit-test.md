@@ -20,13 +20,17 @@ The test examples below comes from chapter 9 of [Chris Pine's](https://pine.fm/)
 
 First we need to import the unit test module:
 
+```ruby
     require 'test/unit'
+```
 
 The derive our test class from Test::Unit::TestCase
 
+```ruby
     class TestOldRomanNumerals < Test::Unit::TestCase
 
     end
+```
 
 Hurrah! Now we're ready to do some testing!
 
@@ -36,24 +40,30 @@ the framework knows it's a test.
 Here I'm testing that my roman numeral code returns a blank string when given a
 zero to translate.
 
+```ruby
     def test_zero_value_returns_blank
     	assert_equal('', old_roman_numerals(0))
     end
+```
 
 We can continue in this way with other values
 
+```ruby
     def test_thousand_value_returns_m
     	assert_equal('m', old_roman_numerals(1000))
     end
+```
 
 To test an exception is thrown in a particular scenario, test/unit uses this
 construct:
 
+```ruby
     def test_non_arabic_value_throws_exception
     	assert_raises(RuntimeError) { old_roman_numerals('xvii') }
     end
+```
 
-In .Net my favourite unit testing framework is [xUnit](http://xunit.codeplex.com) and
+In .Net my favourite unit testing framework is [xUnit](http://xunit.net) and
 it was nice to see that, apart from enforcing a derivation on the test class,
 the boilerplate test code required in each framework is not a million miles
 apart. Even testing exceptions is kind of similar. In xUnit, there is a

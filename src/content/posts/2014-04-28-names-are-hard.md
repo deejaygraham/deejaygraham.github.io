@@ -3,7 +3,7 @@ permalink: 2014/04/28/names-are-hard/
 layout: post
 title: Names Are Hard
 published: true
-tags: [code, naming, open-source, ndifference]
+tags: [code, naming, open-source, ndifference, csharp]
 ---
 
 It's a common complaint in writing software in general and one of the difficulties
@@ -34,7 +34,7 @@ with an "N", that's the rule.). Second, the main feature of this project is
 that, outside of about 5 people at the place where I work and one very nice
 guy in Canada, no one really cares about it.
 
-So [NDifference](http://http://deejaygraham.github.io/ndifference/) was born!
+So [NDifference](http://github.com/deejaygraham/ndifference/) was born!
 The name fulfils the necessity to start with the N prefix, it describes
 the main use case and it's a lovely pun on the general enthusiasm people have
 for the project.

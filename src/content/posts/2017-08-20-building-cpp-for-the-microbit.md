@@ -3,7 +3,7 @@ permalink: 2017/08/20/building-cpp-for-the-microbit/
 layout: post
 title: Building C++ for the BBC Micro:bit
 published: true
-tags: [code, microbit]
+tags: [code, microbit, cpp]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
@@ -64,6 +64,27 @@ for compiler results at the bottom.
 The generated main function looks like this...
 
 ![hello world](/img/posts/building-cpp-for-the-microbit/hello-world.webp)
+
+```cpp
+#include "MicroBit.h"
+
+MicroBit uBit;
+
+int main()
+{
+    // Initialise the micro:bit runtime.
+    uBit.init();
+
+    // Insert your code here!
+    uBit.display.scroll("HELLO WORLD! :)");
+
+    // If main exits, there may still be other fibers running or registered event handlers etc.
+    // Simply release this fiber, which will mean we enter the scheduler. Worse case, we then
+    // sit in the idle task forever, in a power efficient sleep.
+    release_fiber();
+}
+
+```
 
 Before we go any further, here's a few things to note about this code.
 

@@ -23,8 +23,8 @@ spec on what that maps to in terms of dBm levels.
 from microbit import \*
 
 def map_value(value, fromMin, fromMax, toMin, toMax):
-scaledValue = float(value - fromMin) / float(fromMax - fromMin)
-return toMin + (scaledValue \* (toMax - toMin))
+  scaledValue = float(value - fromMin) / float(fromMax - fromMin)
+  return toMin + (scaledValue \* (toMax - toMin))
 
 very_loud = Image("99999:99999:99999:99999:99999")
 loud = Image("00900:09990:99999:99999:99999")
@@ -39,7 +39,7 @@ microphone.sound_level() # discard
 sleep(200)
 
 while True:
-soundLevel = int(map_value(microphone.sound_level(), 0, 255, 0, 5))
-display.show(sound_meter[soundLevel])
+  soundLevel = int(map_value(microphone.sound_level(), 0, 255, 0, 5))
+  display.show(sound_meter[soundLevel])
 
 ```

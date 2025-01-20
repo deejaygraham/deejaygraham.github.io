@@ -1,14 +1,12 @@
-// Set your brand colors
-
-
-// Override global Sass variables from the /utilities folder
-//@use "../../../node_modules/bulma/sass/utilities" with (
-//  $family-primary: '"Georgia", Times, serif',
-//  $family-secondary: '"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, "Droid Sans", "Helvetica Neue", sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol',
-//  $family-code: 'Menlo, Monaco, Consolas, "Andale Mono", "Courier New", monospace'
-//);
-
 @import "../../../node_modules/bulma/bulma.scss";
+
+.social-icon {
+	fill: black;
+
+	@media (prefers-color-scheme: dark) {
+		fill: white;
+	}
+}
 
 $hero-background: #415058;
 

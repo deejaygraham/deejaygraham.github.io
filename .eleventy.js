@@ -1,69 +1,65 @@
 // collections
-const posts = require("./src/_11ty/collections/posts.js");
+import posts from "./src/_11ty/collections/posts.js";
 
 // filters
-const dates = require("./src/_11ty/filters/dates.js");
+import dates from "./src/_11ty/filters/dates.js";
+import limit from "./src/_11ty/filters/limit.js";
+import excerpt from "./src/_11ty/filters/excerpt.js";
+import firstItem from "./src/_11ty/filters/first.js";
+import randomItem from "./src/_11ty/filters/random.js";
+import searchFilter from "./src/_11ty/filters/searchFilter.js";
+import arrayToCommaString from "./src/_11ty/filters/arrayToCommaString.js";
+import getAllTags from "./src/_11ty/filters/getAllTags.js";
+import filterTagList from "./src/_11ty/filters/filterTagList.js";
+import splitLines from "./src/_11ty/filters/splitLines.js";
+import excludePost from "./src/_11ty/filters/excludePost.js";
+import readingTime from "./src/_11ty/filters/readingTime.js";
 
-module.exports = function (eleventyConfig) {
+// shortcodes
+import randomColour from "./src/_11ty/shortcodes/randomcolour.js";
+import youtube from "./src/_11ty/shortcodes/youtube.js";
+import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 
+// plugins
+import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight";
+import socialImages from "@11tyrocks/eleventy-plugin-social-images";
+import favicons from "eleventy-plugin-gen-favicons";
+
+export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
-  
+
   // plugins
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
-  eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
-  
+  eleventyConfig.addPlugin(syntaxHighlighter);
+  // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
+  eleventyConfig.addPlugin(socialImages);
+  eleventyConfig.addPlugin(favicons);
+
   // collections
   eleventyConfig.addCollection("posts", posts);
 
   // filters
-  eleventyConfig.addFilter("limit", require("./src/_11ty/filters/limit.js"));
-  eleventyConfig.addFilter(
-    "excerpt",
-    require("./src/_11ty/filters/excerpt.js"),
-  );
-  eleventyConfig.addFilter(
-    "firstItem",
-    require("./src/_11ty/filters/first.js"),
-  );
-  eleventyConfig.addFilter(
-    "randomItem",
-    require("./src/_11ty/filters/random.js"),
-  );
+  eleventyConfig.addFilter("limit", limit);
+  eleventyConfig.addFilter("excerpt", excerpt);
+  eleventyConfig.addFilter("firstItem", firstItem);
+  eleventyConfig.addFilter("randomItem", randomItem);
   eleventyConfig.addFilter("dateISO", dates.dateISO);
   eleventyConfig.addFilter("dateFeed", dates.dateFeed);
   eleventyConfig.addFilter("dateFull", dates.dateFull);
   eleventyConfig.addFilter("dateFormat", dates.dateFormat);
   eleventyConfig.addFilter("dateYear", dates.dateYear);
-  eleventyConfig.addFilter(
-    "search",
-    require("./src/_11ty/filters/searchFilter.js"),
-  );
-  eleventyConfig.addFilter(
-    "arrayToCommaString",
-    require("./src/_11ty/filters/arrayToCommaString.js"),
-  );
-  eleventyConfig.addFilter(
-    "getAllTags",
-    require("./src/_11ty/filters/getAllTags.js"),
-  );
-  eleventyConfig.addFilter(
-    "filterTagList",
-    require("./src/_11ty/filters/filterTagList.js"),
-  );
-  eleventyConfig.addFilter(
-    "splitlines",
-     require("./src/_11ty/filters/splitLines.js"),
-  );
-  eleventyConfig.addFilter(
-    "excludePost",
-    require("./src/_11ty/filters/excludePost.js"),
-  );
-  
+  eleventyConfig.addFilter("search", searchFilter);
+  eleventyConfig.addFilter("arrayToCommaString", arrayToCommaString);
+  eleventyConfig.addFilter("getAllTags", getAllTags);
+  eleventyConfig.addFilter("filterTagList", filterTagList);
+  eleventyConfig.addFilter("splitlines", splitLines);
+  eleventyConfig.addFilter("excludePost", excludePost);
+  eleventyConfig.addFilter("readingTime", readingTime);
+
   // shortcodes
-  eleventyConfig.addShortcode("randomcolour", require("./src/_11ty/shortcodes/randomcolour.js"));
-  eleventyConfig.addShortcode("youtube", require("./src/_11ty/shortcodes/youtube.js"));
-  eleventyConfig.addShortcode("vimeo", require("./src/_11ty/shortcodes/vimeo.js"));
-  
+  eleventyConfig.addShortcode("randomcolour", randomColour);
+  eleventyConfig.addShortcode("youtube", youtube);
+  eleventyConfig.addShortcode("vimeo", vimeo);
+
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");
@@ -72,13 +68,14 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
-  eleventyConfig.addPassthroughCopy({ "./src/assets/img/favicon.ico": "/favicon.ico" });
+  //eleventyConfig.addPassthroughCopy({ "./src/assets/img/favicon.ico": "/favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/sw.js": "/" });
   eleventyConfig.addPassthroughCopy({
     "./src/assets/css/prism.css": "/css/prism.css",
   });
+  eleventyConfig.addPassthroughCopy("./src/assets/downloads");
 
   return {
     dir: {
@@ -96,4 +93,4 @@ module.exports = function (eleventyConfig) {
 
     dataTemplateEngine: "njk",
   };
-};
+}

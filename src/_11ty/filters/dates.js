@@ -1,4 +1,4 @@
-const { DateTime } = require("luxon");
+import { DateTime } from "luxon";
 
 // thanks to jerome coupe
 
@@ -26,8 +26,8 @@ function dateFeed(date) {
  * @returns {String} - formatted date
  */
 function dateFormat(date, format, locale = "en-GB") {
-  console.log('date is ', date, format);
-  const jsDate = date ? new Date(date): new Date();
+  console.log("date is ", date, format);
+  const jsDate = date ? new Date(date) : new Date();
   const dt = DateTime.fromJSDate(jsDate);
   return dt.setLocale(locale).toFormat(format);
 }
@@ -68,7 +68,7 @@ function dateYear(date) {
   return fullYear;
 }
 
-module.exports = {
+export default {
   dateFeed,
   dateFormat,
   dateFull,

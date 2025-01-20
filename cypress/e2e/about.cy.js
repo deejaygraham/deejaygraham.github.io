@@ -6,8 +6,11 @@ describe("about page", () => {
   });
 
   it("contains correct title", () => {
-    cy.title().should("contain", "about d.j.graham");
+    cy.title().should("contain", "Hey, Hi, Hello.");
 
-    cy.get("h1").should("have.text", "Hey, Hi, Hello.");
+    cy.get(".content").should(
+      "contain",
+      "My name is Derek Graham and this is my personal blog.",
+    );
   });
 });

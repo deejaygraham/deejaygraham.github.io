@@ -1,14 +1,21 @@
 (function (window, document) {
   "use strict";
 
+  const keyPress = (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+    }    
+  };
+	
   const search = (e) => {
 
     const container = document.getElementById("search-results");
     container.innerHTML = "";
-	  
-    console.log("searching for: ", e.target.value);
 
-    const results = window.searchIndex.search(e.target.value, 
+    const searchTerm = e.target.value;
+    //console.log("searching for: ", e.target.value);
+
+    const results = window.searchIndex.search(searchTerm, 
     {
       bool: "OR",
       expand: true,
@@ -28,7 +35,12 @@
 	container.appendChild(listItem);
       });
     } else {
-      container.innerHTML = "<p>Nothing to see here.</p>";
+      if (searchTerm) {
+        container.innerHTML = "<p>Unable to find any posts for &quot;" + searchTerm + "&quot;.</p>";
+      }
+      else {
+	container.innerHTML = "<p>Type something into the search box above.</p>";
+      }
     }
   };
 
@@ -37,6 +49,7 @@
       window.searchIndex = elasticlunr.Index.load(jsonIndex);
       const searchBox = document.getElementById("search-box");
       searchBox.addEventListener("input", search);
+      searchBox.addEventListener("keydown", keyPress);
       searchBox.focus();
     })
   );

@@ -1,10 +1,13 @@
+{%- if title -%}{%- set pageTitle %}{{ title }} | {{ site.title }}{% endset -%}{%- else -%}{%- set pageTitle %}{{ site.title }}{% endset -%}{%- endif -%}
 {% if description %}<meta name="description" content="{{ description }}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
 {% if tags %}<meta content="{{ tags | arrayToCommaString }}" name="keywords">{% endif %}
 <meta name="author" content="{{ site.author }}" >
 <meta property="og:site_name" content="{{ site.title }}" >
-<meta property="og:title" content="{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}" >
+<meta property="og:title" content="{{ pageTitle }}" >
 <meta property="og:url" content="{{ site.url ~ page.url }}" >
-<meta itemprop="name" content="{%- if title -%}{{ title }} | {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}" >
+{%- set pageSocialImage %}{{ site.url }}/img/previews/{{ title | slug }}.png{% endset %}
+<meta property="og:image" content="{{ pageSocialImage }}" >
+<meta itemprop="name" content="{{ pageTitle }}" >
 <meta itemprop="url" content="{{ site.url ~ page.url }}" >
 {# 11ty <3 #}
 <meta name="generator" content="{{ eleventy.generator }}">

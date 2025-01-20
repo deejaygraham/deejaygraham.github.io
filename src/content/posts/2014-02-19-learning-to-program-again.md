@@ -18,4 +18,4 @@ So I got [Chris Pine's](https://pine.fm/) book
 and started working through it.
 
 To make the chapters "stick" in my memory, I am doing the exercises at the end
-of each chapter and posting them on github [here]({{ site.githuburl }}/LearnToProgram).
+of each chapter and posting them on github [here](https://github.com/deejaygraham/LearnToProgram).

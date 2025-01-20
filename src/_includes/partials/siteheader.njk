@@ -3,10 +3,10 @@
   <nav class="navbar" aria-label="main navigation" tabindex="-1">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item has-background-white" title="{{ site.name }}" href="/">
-          <img src="/img/avatar-small.webp" alt="{{ site.description }}" >
+        <a class="navbar-item" title="{{ site.title }}" href="/">
+          <img src="/img/avatar.svg" alt="{{ site.description }}" >
         </a>
-        <a class="navbar-item has-background-white" title="{{ site.name }}" href="/">{{ site.name }}</a>
+        <a class="navbar-item" title="{{ site.title }}" href="/">{{ site.title }}</a>
         <a role="button" class="navbar-burger" aria-label="menu" data-target="navbarMenu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -18,7 +18,7 @@
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
         {% for item in nav %}
-          <a class="navbar-item" title="{{ item.name }}" href="{{ site.url }}{{ item.url }}">{{ item.name }}</a>
+          <a class="navbar-item" aria-label="{{ item.name }}" title="{{ item.name }}" href="{{ site.url }}{{ item.url }}">{{ item.name }}</a>
         {% endfor %}
         </div>
       </div>

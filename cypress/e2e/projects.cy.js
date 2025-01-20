@@ -6,8 +6,7 @@ describe("projects page", () => {
   });
 
   it("contains correct title", () => {
-    cy.title().should("contain", " - projects");
-
+    cy.title().should("contain", "projects |");
     cy.get("h1").should("have.text", "Things What I Have Made");
   });
 });

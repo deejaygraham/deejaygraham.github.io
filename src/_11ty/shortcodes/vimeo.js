@@ -1,5 +1,5 @@
-module.exports = function(id) {
-    return `<div style="position: relative;
+export default function (id) {
+  return `<div style="position: relative;
 width: 100%;
 height: 0;
 padding-bottom: 56.25%; margin-bottom: 1rem;">
@@ -9,5 +9,5 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;"><p><a href="https://vimeo.com/${id}">Watch the video on Vimeo</a></p></iframe>
-</div>`
+</div>`;
 }

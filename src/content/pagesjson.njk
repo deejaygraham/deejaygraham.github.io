@@ -1,0 +1,17 @@
+---
+permalink: "./pages.json"
+permalinkBypassOutputDir: true
+eleventyExcludeFromCollections: true
+---
+{# Used by social image generator process to create thumbnails for all posts #} 
+[
+{%- for pages in collections.all %}
+{
+    "title": "{{ pages.data.title | addNbsp | safe }}",
+    "imgName": "{{ pages.data.title | slug }}",
+    "variables": {
+        "postdate": "{{ pages.date | dateFull }}"
+    }
+}{% if loop.last == false %},{% endif -%}
+{% endfor %}
+]

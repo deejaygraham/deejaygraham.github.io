@@ -25,18 +25,22 @@ value loaded into a specific property before a target uses it.
 
 I can embed an Error task in the script to make sure the value has been defined:
 
+```xml
     <Error
     	Text="The FooBar property has not been set."
     	Condition=" '$(FooBar)' == '' "
     	/>
+```
 
 and I can embed another Error task to make sure that wherever the value is pointing
 actually exists:
 
+```xml
     <Error
     	Text="The file $(FooBar) does not exist"
     	Condition=" !Exists($(FooBar)) "
     	/>
+```
 
 I have found using this approach over the last couple of months has saved
 time tracking down silly bugs and made my scripts much more reliable.

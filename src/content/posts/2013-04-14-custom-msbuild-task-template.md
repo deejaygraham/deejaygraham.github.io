@@ -3,7 +3,7 @@ permalink: 2013/04/14/custom-msbuild-task-template/
 layout: post
 title: Custom MsBuild Task Template
 published: true
-tags: [msbuild, code]
+tags: [msbuild, code, csharp]
 ---
 
 Creating customs tasks for MsBuild is relatively easy provided you follow a few steps.
@@ -24,63 +24,69 @@ Visual Studio:
 ## 3. Add a new class derived from Task
 
 Add required input properties and override the Execute method
+
+```csharp
+
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
+
 public class MyTask : Task
 {
-[Required]
-public ITaskItem[] Files { get; set; }
+    [Required]
+    public ITaskItem[] Files { get; set; }
 
-        [Required]
-        public ITaskItem OutputFolder { get; set; }
+    [Required]
+    public ITaskItem OutputFolder { get; set; }
 
-        public override bool Execute()
+    public override bool Execute()
+    {
+        var files = new List<string>();
+
+        if (this.Files.Length > 0)
         {
-            var files = new List<string>();
-
-            if (this.Files.Length > 0)
+            for (int i = 0; i < this.Files.Length; ++i)
             {
-                for (int i = 0; i < this.Files.Length; ++i)
-                {
-                    ITaskItem item = this.Files[i];
-                    string path = item.GetMetadata("FullPath");
+                ITaskItem item = this.Files[i];
+                string path = item.GetMetadata("FullPath");
 
-                    if (File.Exists(path))
-                    {
-                        files.Add(path);
-                    }
+                if (File.Exists(path))
+                {
+                    files.Add(path);
                 }
             }
-
-            if (!files.Any())
-            {
-                Log.LogWarning("No files found to transform");
-            }
-
-            string outputFolder = string.Empty;
-
-            if (this.OutputFolder != null)
-            {
-                outputFolder = this.OutputFolder.GetMetadata("FullPath");
-            }
-
-            if (!string.IsNullOrEmpty(outputFolder))
-            {
-                if (!Directory.Exists(outputFolder))
-                {
-                    Log.LogMessage("Creating folder: \"{0}\"", outputFolder);
-                    Directory.CreateDirectory(outputFolder);
-                }
-            }
-
-    		// other useful stuff...
-
-            return true;
         }
+
+        if (!files.Any())
+        {
+            Log.LogWarning("No files found to transform");
+        }
+
+        string outputFolder = string.Empty;
+
+        if (this.OutputFolder != null)
+        {
+            outputFolder = this.OutputFolder.GetMetadata("FullPath");
+        }
+
+        if (!string.IsNullOrEmpty(outputFolder))
+        {
+            if (!Directory.Exists(outputFolder))
+            {
+                Log.LogMessage("Creating folder: \"{0}\"", outputFolder);
+                Directory.CreateDirectory(outputFolder);
+            }
+        }
+
+        // other useful stuff...
+
+        return true;
     }
+}
+```
 
 ## 4. Use it in your scripts
 
+```xml
     <!-- Change this path to point to installed dll -->
     <UsingTask AssemblyFile="$(MSBuildProjectDirectory)MyTasks.dll" TaskName="MyTask"/>
 
@@ -92,3 +98,4 @@ public ITaskItem[] Files { get; set; }
     		Folder="$(OutputFolder)"
     		/>
     </Target>
+```

@@ -22,7 +22,13 @@
 {% endif %}
 </nav>
 <h1 class="title is-1">{{ title }}</h1>
+{% if size %} 
+{% if size == "large" %}<figure class="quote is-size-1">{% endif %}
+{% if size == "medium" %}<figure class="quote is-size-3">{% endif %}
+{% if size == "small" %}<figure class="quote is-size-5">{% endif %}
+{% else %}
 <figure class="quote">
+{% endif %}
         <blockquote>
         {{ content | safe }}
         </blockquote>

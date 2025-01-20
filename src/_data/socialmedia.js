@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     name: "rss",
     url: "https://deejaygraham.github.io/rss.xml",
@@ -18,11 +18,6 @@ module.exports = [
     name: "bluesky",
     url: "https://bsky.app/profile/deejaygraham.bsky.social",
     icon: "bluesky.svg",
-  },
-  {
-    name: "polywork",
-    url: "https://www.polywork.com/deejaygraham/",
-    icon: "polywork.svg",
   },
   {
     name: "linkedin",

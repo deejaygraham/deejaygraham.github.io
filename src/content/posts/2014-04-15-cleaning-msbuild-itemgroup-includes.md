@@ -12,11 +12,13 @@ msbuild scripts.
 
 If you create an ItemGroup inside an MsBuild target:
 
+```xml
     <ItemGroup>
     	<MyFiles Include="a.cs" />
     	<MyFiles Include="b.cs" />
     	<MyFiles Include="c.cs" />
     </ItemGroup>
+```
 
 You can then use the @(MyFiles) syntax to process each of the files. Probably
 your expectation is that the MyFiles collection only includes a, b and c.
@@ -33,6 +35,7 @@ with just the items you _think_ you have.
 
 This example:
 
+```xml
     <!-- Global group -->
     <ItemGroup>
     	<MyFiles Include="a.cs" />
@@ -57,6 +60,7 @@ This example:
     	<Message Text="@(MyFiles)" />
 
     </Target>
+```
 
 will print a.cs b.cs ... f.cs where you might be expecting only d.cs e.cs f.cs.
 
@@ -64,12 +68,14 @@ will print a.cs b.cs ... f.cs where you might be expecting only d.cs e.cs f.cs.
 first line of the ItemGroup empties the current content (if any) then builds
 the list required.
 
+```xml
     <ItemGroup>
     	<MyFiles Remove="@(MyFiles)" />
     	<MyFiles Include="d.cs" />
     	<MyFiles Include="e.cs" />
     	<MyFiles Include="f.cs" />
     </ItemGroup>
+```
 
 Using this convention means you are always guaranteed the content of the list
 will be what you intended.

@@ -18,15 +18,18 @@ and unzip it or use NuGet to get the _MsBuildTasks_ package.
 
 Import the task:
 
+```xml
     <UsingTask
     	AssemblyFile="$(MyMsBuildTasksFolder)MSBuild.Community.Tasks.dll"
     	TaskName="MSBuild.Community.Tasks.Zip"
     	/>
+```
 
 ## Step 3
 
 Create your target:
 
+```xml
     <Target Name="BuildZip">
     	<!--
     		Using dynamic item creation so files do not
@@ -45,6 +48,7 @@ Create your target:
     		Files="@(ZipContent)"
     		/>
     </Target>
+```
 
 ## Step 4
 

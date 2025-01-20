@@ -9,6 +9,7 @@ describe("deployed site", () => {
     it("contains avatar images", () => {
       cy.request("/img/avatar.jpg");
       cy.request("/img/avatar.png");
+      cy.request("/img/avatar.svg");
     });
 
     it("contains hero images", () => {
@@ -19,33 +20,38 @@ describe("deployed site", () => {
 
   context("javascript", () => {
     it("contains search scripts", () => {
+      cy.request("/js/site.js");
       cy.request("/js/search.js");
-      cy.request("/js/lunr.js");
-    });
-  });
-
-  context("fonts", () => {
-    it("contains fontawesome font", () => {
-      cy.request("/webfonts/fa-regular-400.woff");
+      cy.request("/js/elasticlunr.min.js");
+      cy.request("/sw.js");
     });
   });
 
   context("feeds", () => {
     it("contains xml feeds", () => {
       cy.request("/rss.xml");
-      cy.request("/atom.xml");
+      cy.request("/feed.json");
+      cy.request("/sitemap.xml");
+    });
+  });
+
+  context("search", () => {
+    it("contains json search db", () => {
+      cy.request("/search-index.json");
+    });
+  });
+
+  context("text files", () => {
+    it("automation files", () => {
+      cy.request("/robots.txt");
+      cy.request("/humans.txt");
     });
   });
 
   context("stylesheets", () => {
     it("contains css", () => {
       cy.request("/css/site.css");
-    });
-  });
-
-  context("downloads", () => {
-    it("contains download for ndifference installer", () => {
-      cy.request("/downloads/ndifference/NDifference.0.0.0.1.Installer.msi");
+      cy.request("/css/prism.css");
     });
   });
 });

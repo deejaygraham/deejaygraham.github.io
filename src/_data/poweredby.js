@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     name: "11ty",
     url: "http://11ty.dev/",
