@@ -6,7 +6,7 @@ published: true
 tags: [code, microbit, python]
 ---
 
-Early experiment in creating a choir for three or more microbits.
+WIP - Early experiment in creating a choir for three or more microbits.
 
 ## Code
 
