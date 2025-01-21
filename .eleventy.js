@@ -22,7 +22,8 @@ import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 
 // plugins
 import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight";
-import socialImages from "@11tyrocks/eleventy-plugin-social-images";
+//import socialImages from "@11tyrocks/eleventy-plugin-social-images";
+import socialImages from "./src/_11ty/plugins/generate-social-images";
 import favicons from "eleventy-plugin-gen-favicons";
 
 export default function (eleventyConfig) {
