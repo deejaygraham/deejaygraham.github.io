@@ -15,7 +15,7 @@ const defaults = {
 };
 
 const splitLongLine = (text, lineLength, maxRows) => {
-	lines = [];
+	const lines = [];
 
 	const words = text.split(/(?<=[^a-zA-Z0-9()<>""''])/);
 	let line = '';
@@ -49,8 +49,28 @@ const sanitizeHTML = (text) => {
 		.replace(/'/g, '&#039;');
 };
 
-const async generateSocialImage = (filename, title, siteName) => {
-    return '';
+const generateSocialImage = async (filename, title, siteName) => {
+
+    const title_lines = splitLongLine(title);
+
+    const template = `<svg width="1200" height="628" viewbox="0 0 1200 628" xmlns="http://www.w3.org/2000/svg">  
+    
+    
+    </svg>`;
+
+    try {
+        const svgBuffer = Buffer.from(template);
+
+        await sharp(svgBuffer)
+                .resize(1200, 628)
+                .png()
+                .toFile(`${targetDir}/${filename}.png`);
+
+    } catch(err) {
+        console.error("Eleventy generating social images error:", err, { template, filename, title, siteName});
+    }
+
+    return `${filename}.png`;
 };
 
 /**
@@ -81,11 +101,11 @@ export default function(eleventyConfig, options) {
         return curDir;
     }, initDir);
 
-    eleventyConfig.addAsyncShortcode("GenerateSocialImage", async(title) => {
+    eleventyConfig.addAsyncShortcode("GenerateSocialImage", async(filename, title) => {
         if (!title) return '';
 
         return await generateSocialImage(
-			eleventyConfig.javascriptFunctions.slug(title),		// file-name
+			filename,		// file-name
 			title,												// title
 			siteName											// site-name
 		);
