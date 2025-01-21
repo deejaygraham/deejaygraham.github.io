@@ -14,6 +14,10 @@ const defaults = {
     deviceScaleFactor: 2,// needed ??
 };
 
+const async generateSocialImage = (filename, title, siteName) => {
+    return '';
+};
+
 /**
  * Generate social media images for post previews.
  */
@@ -43,7 +47,13 @@ export default function(eleventyConfig, options) {
     }, initDir);
 
     eleventyConfig.addAsyncShortcode("GenerateSocialImage", async(title) => {
+        if (!title) return '';
 
+        return await generateSocialImage(
+			eleventyConfig.javascriptFunctions.slug(title),		// file-name
+			title,												// title
+			siteName											// site-name
+		);
     });
 };
 
