@@ -2,7 +2,6 @@
   "type": "module",
   "scripts": {
     "sass": "sass --style=compressed --load-path=node_modules src/assets/sass/site.scss _site/css/site.css",
-    "social-images": "eleventy-social-images --siteName 'deejaygraham.github.io' --theme 'minimal'  --outputDir '_site/img' --templatePath 'social/template.html' --stylesPath 'social/style.css' --dataFile 'social/pages.json' ",
     "build": "npm run sass && eleventy",
     "start": "npm-run-all sass --parallel watch:*",
     "test": "npx cypress run --e2e --browser chrome",
