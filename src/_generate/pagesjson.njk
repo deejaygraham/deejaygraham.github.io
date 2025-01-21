@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 [
 {%- for pages in collections.all %}
 {
-    "title": "{{ pages.data.title | addNbsp | safe }}",
+    "title": "{{ pages.data.title | safe }}",
     "imgName": "{{ pages.data.title | slug }}",
     "variables": {
         "postdate": "{{ pages.date | dateFull }}"
