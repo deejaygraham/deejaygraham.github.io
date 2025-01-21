@@ -52,64 +52,57 @@ The assertion code could be cut and pasted into the top of a program temporarily
 for checking or it could be imported and the assert.py file copied onto the microbit
 after flashing the program.
 
-### Assert_That.py
+### micro-assert.py
 
 ```python
 
 from microbit import display, Image
 
-
-def assert_that(value, message=None):
+def micro_assert(value, message=None):
     if not value:
         if message is None:
             message = "Assertion failed"
         raise Exception(message)
 
-
-def assert_true(value, message=None):
+def micro_assert_true(value, message=None):
     if message is None:
         message = "Expected: {}, actual: {}".format(True, value)
-    assert_that(value, message)
+    micro_assert(value, message)
 
-
-def assert_false(value, message=None):
+def micro_assert_false(value, message=None):
     if message is None:
         message = "Expected: {}, actual: {}".format(False, value)
-    assert_that(not value, message)
+    micro_assert(not value, message)
 
-
-def assert_equal(expected, actual, message=None):
+def micro_assert_equal(expected, actual, message=None):
     if message is None:
         message = "Expected: {}, actual: {}".format(expected, actual)
-    assert_that(expected == actual, message)
+    micro_assert(expected == actual, message)
 
-
-def assert_empty(items, message=None):
+def micro_assert_empty(items, message=None):
     expected = 0
     actual = len(items)
     if message is None:
         message = "List expected: {} items, actual: {}".format(expected, actual)
-    assert_that(expected == actual, message)
+    micro_assert(expected == actual, message)
 
-
-def assert_fail(message):
+def micro_assert_fail(message):
     raise Exception(message)
 
-
-def assert_image_equal(expected, actual):
+def micro_assert_image_equal(expected, actual):
     expected_width = expected.width()
     actual_width = actual.width()
     message = "Image width: expected: {}, actual: {}".format(
         expected_width, actual_width
     )
-    assert_equal(expected_width, actual_width, message)
+    micro_assert_equal(expected_width, actual_width, message)
 
     expected_height = expected.height()
     actual_height = actual.height()
     message = "Image height: expected: {}, actual: {}".format(
         expected_height, actual_height
     )
-    assert_equal(expected_height, actual_height, message)
+    micro_assert_equal(expected_height, actual_height, message)
 
     for x in range(expected_width):
         for y in range(actual_height):
@@ -118,10 +111,9 @@ def assert_image_equal(expected, actual):
             message = "Image {}, {}: expected: {}, actual: {}".format(
                 x, y, expected_pixel, actual_pixel
             )
-            assert_equal(expected_pixel, actual_pixel, message)
+            micro_assert_equal(expected_pixel, actual_pixel, message)
 
-
-def assert_display_equal(expected):
+def micro_assert_display_equal(expected):
     for x in range(5):
         for y in range(5):
             expected_pixel = expected.get_pixel(x, y)
@@ -129,7 +121,7 @@ def assert_display_equal(expected):
             message = "Display {}, {}: expected: {}, actual: {}".format(
                 x, y, expected_pixel, actual_pixel
             )
-            assert_equal(expected_pixel, actual_pixel, message)
+            micro_assert_equal(expected_pixel, actual_pixel, message)
 
 ```
 
@@ -137,10 +129,10 @@ def assert_display_equal(expected):
 
 ```python
 
-from assert_that import *
+from micro-assert import *
 
-assert_that(1 == 2, "Maths!")
-assert_display_equal(Image("00000:00000:00000:00000:00000"))
+micro_assert(1 == 2, "Maths!")
+micro_assert_display_equal(Image("00000:00000:00000:00000:00000"))
 
 ```
 
