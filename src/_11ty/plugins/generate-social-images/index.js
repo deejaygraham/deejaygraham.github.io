@@ -34,7 +34,8 @@ export default function(eleventyConfig, options) {
         return await generateSocialImage(
 			filename,	
 			title,		
-			siteName	
+			siteName,
+            targetDir	
 		);
     });
 };

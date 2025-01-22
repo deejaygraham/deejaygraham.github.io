@@ -32,7 +32,8 @@
   },
   "ava": {
     "files": [
-      "./src/_11ty/filters/**/*.test.js"
+      "./src/_11ty/filters/**/*.test.js",
+      "./src/_11ty/plugins/**/*.test.js"
     ]
   }
 }

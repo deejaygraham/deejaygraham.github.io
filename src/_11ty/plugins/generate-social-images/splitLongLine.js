@@ -6,7 +6,7 @@ export default function (text, lineLength, maxRows) {
   let line = '';
 	words.forEach((word) => {
 		if (line.length + word.length >= lineLength) {
-			lines.push(line);
+			lines.push(line.trim());
 			line = '';
 		}
 
@@ -14,12 +14,12 @@ export default function (text, lineLength, maxRows) {
 	});
 
 	if (line) {
-		lines.push(line);
+		lines.push(line.trim());
 	}
 
 	if (lines.length > maxRows) {
 		lines.length = maxRows;
-		lines[maxRows-1] += "…";
+		lines[maxRows-1] += "...";
 	}
 
 	return lines;
