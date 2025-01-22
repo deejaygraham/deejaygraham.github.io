@@ -2,19 +2,11 @@ import fs from "fs";
 import path from "path";
 import sharp from "sharp";
 import splitLongLine from "./splitLongLine.js";
+import sanitizeHTML from "./sanitizeHTML.js";
 
 const defaults = {
     siteName: "",
     outputDir: "_site/img/previews"
-};
-
-const sanitizeHTML = (text) => {
-	return text
-		.replace(/&/g, '&amp;')
-		.replace(/</g, '&lt;')
-		.replace(/>/g, '&gt;')
-		.replace(/"/g, '&quot;')
-		.replace(/'/g, '&#039;');
 };
 
 const generateSocialImage = async (filename, title, siteName) => {
