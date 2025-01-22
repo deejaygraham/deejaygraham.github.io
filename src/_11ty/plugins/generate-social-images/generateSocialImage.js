@@ -1,3 +1,7 @@
+import sharp from "sharp";
+import splitLongLine from "./splitLongLine.js";
+import sanitizeHTML from "./sanitizeHTML.js";
+
 export default async function (filename, title, siteName) {
 
   const lineBreakAt = 35;
