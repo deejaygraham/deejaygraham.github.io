@@ -1,36 +1,11 @@
 import fs from "fs";
 import path from "path";
 import sharp from "sharp";
+import splitLongLine from "./splitLongLine.js";
 
 const defaults = {
     siteName: "",
     outputDir: "_site/img/previews"
-};
-
-const splitLongLine = (text, lineLength, maxRows) => {
-	const lines = [];
-
-	const words = text.split(/(?<=[^a-zA-Z0-9()<>""''])/);
-	let line = '';
-	words.forEach((word) => {
-		if (line.length + word.length >= lineLength) {
-			lines.push(line);
-			line = '';
-		}
-
-		line += word;
-	});
-
-	if (line) {
-		lines.push(line);
-	}
-
-	if (lines.length > maxRows) {
-		lines.length = maxRows;
-		lines[maxRows-1] += "…";
-	}
-
-	return lines;
 };
 
 const sanitizeHTML = (text) => {
