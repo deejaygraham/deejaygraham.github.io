@@ -4,14 +4,7 @@ import sharp from "sharp";
 
 const defaults = {
     siteName: "",
-    outputDir: "_site",
-    imageDir: "previews",
-    dataFile: "pages.json",
-    templatePath: "", // needed ??
-    stylesPath: "",// needed ??
-    width: 600,// needed ??
-    height: 315,// needed ??
-    deviceScaleFactor: 2,// needed ??
+    outputDir: "_site/img/previews"
 };
 
 const splitLongLine = (text, lineLength, maxRows) => {
@@ -70,7 +63,7 @@ const generateSocialImage = async (filename, title, siteName) => {
         console.error("Eleventy generating social images error:", err, { template, filename, title, siteName});
     }
 
-    return `${filename}.png`;
+    return `${filename}${title}.png`;
 };
 
 /**
@@ -79,14 +72,7 @@ const generateSocialImage = async (filename, title, siteName) => {
 export default function(eleventyConfig, options) {
     const {
         siteName,
-        outputDir,
-        imageDir,
-        dataFile,
-        templatePath, 
-        stylesPath,
-        width,
-        height,
-        deviceScaleFactor,
+        outputDir
     } = { ...defaults, ...options };
 
     // generate output directory if it does not exist
