@@ -5,7 +5,8 @@
 <meta property="og:site_name" content="{{ site.title }}" >
 <meta property="og:title" content="{{ pageTitle }}" >
 <meta property="og:url" content="{{ site.url ~ page.url }}" >
-<meta property="og:image" content="{% GenerateSocialImage title | slug %}" >
+{%- set socialImageUrl %}{{ site.url }}/img/previews/{{ title | slug }}.png{% endset %}
+<meta property="og:image" content="{% GenerateSocialImage socialImageUrl, title %}" >
 <meta itemprop="name" content="{{ pageTitle }}" >
 <meta itemprop="url" content="{{ site.url ~ page.url }}" >
 {# 11ty <3 #}
