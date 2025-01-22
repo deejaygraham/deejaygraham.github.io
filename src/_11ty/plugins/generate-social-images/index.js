@@ -28,12 +28,13 @@ export default function(eleventyConfig, options) {
         return curDir;
     }, initDir);
 
-    eleventyConfig.addAsyncShortcode("GenerateSocialImage", async(filename, title) => {
+    eleventyConfig.addAsyncShortcode("GenerateSocialImage", async(imageName, title, postDate) => {
         if (!title) return '';
 	    
         return await generateSocialImage(
-			filename,	
+			imageName,	
 			title,		
+            postDate,
 			siteName,
             targetDir	
 		);

@@ -32,7 +32,10 @@ export default function (eleventyConfig) {
   // plugins
   eleventyConfig.addPlugin(syntaxHighlighter);
   // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
-  eleventyConfig.addPlugin(socialImages);
+  eleventyConfig.addPlugin(socialImages, 
+    { 
+      siteName: 'd.j. graham' 
+    });
   eleventyConfig.addPlugin(favicons);
 
   // collections

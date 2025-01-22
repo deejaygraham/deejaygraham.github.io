@@ -2,7 +2,7 @@ import sharp from "sharp";
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
 
-export default async function (filename, title, siteName, targetDir) {
+export default async function (imageName, title, postDate, siteName, targetDir) {
 
   const lineBreakAt = 35;
   const line_length = lineBreakAt;
@@ -10,7 +10,7 @@ export default async function (filename, title, siteName, targetDir) {
   const start_x = 150;
   const start_y = 210;
   const line_height = 60;
-  const font_size = 38;
+  const font_size = 72;
   const font_weight = 700;
   const site_font_size = 30
   const titleColour = '#000';
@@ -28,13 +28,19 @@ export default async function (filename, title, siteName, targetDir) {
   const graphicWidth = 1200;
   const graphicHeight = 628;
 	
+  const svgSite = `<text x="${start_x}" y="500" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
+  const svgDate = `<text x="${start_x}" y="100" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
+
   const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewbox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
   	<rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${bgColour}" />
-    	<g style="font-family:sans-serif">
+    	<g style="font-family:'Consolas', 'Courier New'">
+      ${postDate ? svgDate : ''}
   		${svgTitle}
-		<text x="265" y="500" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>
-	</g>
+      ${svgSite}
+      </g>
     </svg>`;
+
+  const fileName = imageName + '.png';
 
   try {
     // generate the image from the svg        
@@ -43,11 +49,11 @@ export default async function (filename, title, siteName, targetDir) {
     await sharp(svgBuffer)
       .resize(graphicWidth, graphicHeight)
       .png()
-      .toFile(`${targetDir}/${filename}.png`);
+      .toFile(`${targetDir}/${fileName}`);
 
     } catch(err) {
         console.error("Eleventy generating social images error:", err, { template, filename, title, siteName});
     }
 
-    return `${filename}.png`;
+    return fileName;
 }

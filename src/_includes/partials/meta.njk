@@ -1,20 +1,37 @@
-{%- if title -%}{%- set pageTitle %}{{ title }} | {{ site.title }}{% endset -%}{%- else -%}{%- set pageTitle %}{{ site.title }}{% endset -%}{%- endif -%}
-{%- if description %}
-<meta name="description" content="{{ description }}">{% else %}<meta name="description" content="{{ site.description }}">
-{%- endif -%}
+{%- if title -%}
+{%- set pageTitle %}{{ title }} | {{ site.title }}{% endset -%}
+{%- else -%}
+{%- set pageTitle %}{{ site.title }}{% endset -%}
+{%- endif %}
+    <title>{{ pageTitle }}</title>
+{%- if data.description %}
+{%- set pageDescription %}{{ data.description }}{% endset -%}
+{%- else %}
+{%- set pageDescription %}{{ site.description }}{% endset -%}
+{%- endif %}
+    <meta name="description" content="{{ pageDescription }}">
+    <meta name="author" content="{{ site.author }}" >
 {%- if tags %}
-<meta content="{{ tags | arrayToCommaString }}" name="keywords">
+    <meta name="keywords" content="{{ tags | arrayToCommaString }}" >
+{%- endif %}
+    <meta itemprop="name" content="{{ pageTitle }}" >
+    <meta itemprop="url" content="{{ site.url ~ page.url }}" >
+{# og: tags #}
+    <meta name="og:description" content="{{ pageDescription }}">
+    <meta property="og:type" content="website" >
+    <meta property="og:site_name" content="{{ site.title }}" >
+    <meta property="og:title" content="{{ pageTitle }}" >
+    <meta property="og:url" content="{{ site.url ~ page.url }}" >
+{%- set postTitle %}{{ title | safe }}{% endset %}
+{%- if data.date %}
+{%- set postDate %}{{ data.date | dateFull }}{% endset %}
 {%- endif -%}
-<meta name="author" content="{{ site.author }}" >
-<meta property="og:site_name" content="{{ site.title }}" >
-<meta property="og:title" content="{{ pageTitle }}" >
-<meta property="og:url" content="{{ site.url ~ page.url }}" >
-{%- set postTitle %}{{ title | safe }}.png{% endset %}
-{%- set postDate %}{{ pages.date | dateFull }}{% endset %}
-{%- set socialImageFile %}{{ title | slug }}.png{% endset %}
+{%- set socialImageName %}{{ title | slug }}{% endset %}
 {%- set socialImageUrl %}{{ site.url }}/img/previews/{{ socialImageFile  }}{% endset %}
-<meta property="og:image" content="{% GenerateSocialImage socialImageFile, postTitle, site.title %}" >
-<meta itemprop="name" content="{{ pageTitle }}" >
-<meta itemprop="url" content="{{ site.url ~ page.url }}" >
+    <meta property="og:image" content="{{ site.url }}/img/previews/{% GenerateSocialImage socialImageName, postTitle, postDate %}" >
+    <meta property="og:image:width" content="1200" >
+    <meta property="og:image:height" content="628" >
+
 {# 11ty <3 #}
-<meta name="generator" content="{{ eleventy.generator }}">
+    <meta name="generator" content="{{ eleventy.generator }}">
+    
