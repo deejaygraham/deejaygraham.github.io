@@ -1,7 +1,5 @@
 import fs from "fs";
 import path from "path";
-import splitLongLine from "./splitLongLine.js";
-import sanitizeHTML from "./sanitizeHTML.js";
 import generateSocialImage from "./generateSocialImage.js";
 
 const defaults = {
