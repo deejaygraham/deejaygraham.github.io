@@ -4,8 +4,8 @@
 {%- set pageTitle %}{{ site.title }}{% endset -%}
 {%- endif %}
     <title>{{ pageTitle }}</title>
-{%- if data.description %}
-{%- set pageDescription %}{{ data.description }}{% endset -%}
+{%- if page.description %}
+{%- set pageDescription %}{{ page.description }}{% endset -%}
 {%- else %}
 {%- set pageDescription %}{{ site.description }}{% endset -%}
 {%- endif %}
@@ -23,8 +23,8 @@
     <meta property="og:title" content="{{ pageTitle }}" >
     <meta property="og:url" content="{{ site.url ~ page.url }}" >
 {%- set postTitle %}{{ title | safe }}{% endset %}
-{%- if data.date %}
-{%- set postDate %}{{ data.date | dateFull }}{% endset %}
+{%- if page.date %}
+{%- set postDate %}{{ page.date | dateFull }}{% endset %}
 {%- endif -%}
 {%- set socialImageName %}{{ title | slug }}{% endset %}
 {%- set socialImageUrl %}{{ site.url }}/img/previews/{{ socialImageFile  }}{% endset %}
@@ -34,4 +34,3 @@
 
 {# 11ty <3 #}
     <meta name="generator" content="{{ eleventy.generator }}">
-    

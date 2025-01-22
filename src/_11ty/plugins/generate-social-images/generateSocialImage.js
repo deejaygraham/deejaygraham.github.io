@@ -4,7 +4,7 @@ import sanitizeHTML from "./sanitizeHTML.js";
 
 export default async function (imageName, title, postDate, siteName, targetDir) {
 
-  const lineBreakAt = 35;
+  const lineBreakAt = 15;
   const line_length = lineBreakAt;
   const max_lines = 4;
   const start_x = 150;
