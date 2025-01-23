@@ -12,10 +12,10 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
   const line_height = 60;
   const font_size = 72;
   const font_weight = 700;
-  const site_font_size = 30
-  const titleColour = '#000';
-  const siteNameColour = "#000";
-  const bgColour = "#FFF";
+  const site_font_size = 50
+  const titleColour = '#FF6C23'; // 000
+  const siteNameColour = "#FEEFDA"; // 000
+  const bgColour = "#1D1F1E"; // FFF
 	
   const title_lines = splitLongLine(title, line_length, max_lines);
   const start_y_middle = start_y + (((max_lines - title_lines.length) * line_height) / 3);
