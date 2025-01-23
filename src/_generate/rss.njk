@@ -22,8 +22,7 @@ eleventyExcludeFromCollections: true
         <guid>{{ site.url }}{{ post.url }}</guid>
         <description>
         <![CDATA[
-          <p>{{ post.data.excerpt }}</p>
-          {{ post.templateContent | safe }}
+          {{ post.templateContent | excerpt | safe }}
         ]]>
         </description>
       </item>
