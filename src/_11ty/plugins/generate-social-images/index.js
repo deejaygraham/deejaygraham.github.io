@@ -3,6 +3,7 @@ import path from "path";
 import generateSocialImage from "./generateSocialImage.js";
 
 // based on https://github.com/manustays/eleventy-plugin-generate-social-images/
+// test using https://opengraph.dev
 
 const defaults = {
     siteName: "",
