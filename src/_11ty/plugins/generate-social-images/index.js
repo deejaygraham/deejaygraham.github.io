@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import generateSocialImage from "./generateSocialImage.js";
 
+// based on https://github.com/manustays/eleventy-plugin-generate-social-images/
+
 const defaults = {
     siteName: "",
     outputDir: "_site/img/previews"
