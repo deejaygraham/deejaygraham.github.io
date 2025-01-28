@@ -38,7 +38,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(favicons);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // which file extensions to process
-    // extensions: 'html',
+    extensions: 'html',
     // optional, output image formats
     // formats: ['jpg', 'webp'],
     // optional, output image widths
