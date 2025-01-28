@@ -22,22 +22,34 @@ import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 
 // plugins
 import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight";
-//import socialImages from "@11tyrocks/eleventy-plugin-social-images";
 import socialImages from "./src/_11ty/plugins/generate-social-images/index.js";
 import favicons from "eleventy-plugin-gen-favicons";
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
 export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
   // plugins
   eleventyConfig.addPlugin(syntaxHighlighter);
-  // eleventyConfig.on('eleventy.after', require("./src/_11ty/plugins/generate-socials"));
   eleventyConfig.addPlugin(socialImages, 
     { 
       siteName: 'd.j. graham' 
     });
   eleventyConfig.addPlugin(favicons);
-
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // which file extensions to process
+    // extensions: 'html',
+    // optional, output image formats
+    // formats: ['jpg', 'webp'],
+    // optional, output image widths
+    // widths: ['auto', 400, 800],
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+        loading: 'lazy',
+        // sizes: '100vw',
+        decoding: 'async',
+    },
+});
   // collections
   eleventyConfig.addCollection("posts", posts);
 
