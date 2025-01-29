@@ -3,6 +3,12 @@ export default [
     name: "AI2Bot",
   },
   {
+    name: "Ai2Bot-Dolma",
+  },
+  {
+    name: "Amazonbot",
+  },
+  {
     name: "anthropic-ai",
   },
   {
@@ -18,6 +24,9 @@ export default [
     name: "ChatGPT-User",
   },
   {
+    name: "Claude-Web",
+  },
+  {
     name: "ClaudeBot",
   },
   {
@@ -25,6 +34,9 @@ export default [
   },
   {
     name: "cohere-training-data-crawler",
+  },
+  {
+    name: "Crawlspace",
   },
   {
     name: "Diffbot",
@@ -36,16 +48,40 @@ export default [
     name: "FacebookBot",
   },
   {
+    name: "FriendlyCrawler",
+  },
+  {
     name: "Google-CloudVertexBot",
   },
   {
     name: "Google-Extended",
   },
   {
+    name: "GoogleOther",
+  },
+  {
+    name: "GoogleOther-Image",
+  },
+  {
+    name: "GoogleOther-Video",
+  },
+  {
     name: "GPTBot",
   },
   {
+    name: "iaskspider/2.0",
+  },
+  {
+    name: "ICC-Crawler",
+  },
+  {
     name: "ImagesiftBot",
+  },
+  {
+    name: "img2dataset",
+  },
+  {
+    name: "ISSCyberRiskCrawler",
   },
   {
     name: "Kangaroo Bot",
@@ -55,6 +91,9 @@ export default [
   },
   {
     name: "Meta-ExternalFetcher",
+  },
+  {
+    name: "OAI-SearchBot",
   },
   {
     name: "Omgili",
@@ -69,7 +108,22 @@ export default [
     name: "PerplexityBot",
   },
   {
+    name: "PetalBot",
+  },
+  {
+    name: "Scrapy",
+  },
+  {
+    name: "SemrushBot",
+  },
+  {
+    name: "Sidetrade indexer bot",
+  },
+  {
     name: "Timpibot",
+  },
+  {
+    name: "VelenPublicWebCrawler",
   },
   {
     name: "Webzio-Extended",
