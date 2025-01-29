@@ -14,7 +14,7 @@ Disallow: /tags/
 Disallow: /404.html
 Disallow: /googlea419d60182929575.html
 
-{# AI bots "protection" here #}
+{# AI bots "protection" here - see: https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/ #}
 {% for agent in aiBots %}
 User-agent: {{ agent.name }}
 {% endfor %}
