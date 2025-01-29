@@ -47,7 +47,7 @@ jobs:
       - name: Test automation locally before deployment
         uses: cypress-io/github-action@v6
         with:
-          start: npm run start
+          start: npm start
           wait-on: 'http://localhost:4222'
           wait-on-timeout: 120
           config: baseUrl=http://localhost:4222
