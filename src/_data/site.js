@@ -9,6 +9,8 @@ export default {
   author: "Derek Graham",
   paginate: "36",
   date: new Date(),
+  // paths to images
   logo: "/img/avatar.svg",
-  defaultThumbnail: "/img/thumbnails/notebook-420x255.webp"
+  defaultThumbnail: "/img/thumbnails/notebook-420x255.webp",
+  favicon: "./src/assets/img/favicon.png",
 };
