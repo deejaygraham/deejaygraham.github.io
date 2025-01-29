@@ -36,6 +36,7 @@ export default function (eleventyConfig) {
       siteName: 'd.j. graham' 
     });
   eleventyConfig.addPlugin(favicons);
+  /*
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // which file extensions to process
     extensions: 'html',
@@ -49,7 +50,8 @@ export default function (eleventyConfig) {
         // sizes: '100vw',
         decoding: 'async',
     },
-});
+  });
+  */
   // collections
   eleventyConfig.addCollection("posts", posts);
 
