@@ -7,6 +7,7 @@ layout: base.njk
 eleventyComputed:
   title: posts tagged with #{{ tag }}
 permalink: /tags/{{ tag | slugify }}/
+excludeFromSitemap: true
 ---
 
 <h1>Posts tagged with #{{ tag }}</h1>
