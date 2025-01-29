@@ -1,60 +1,24 @@
 export default [
   {
+    name: "AI2Bot",
+  },
+  {
+    name: "anthropic-ai",
+  },
+  {
+    name: "Applebot-Extended",
+  },
+  {
+    name: "Bytespider",
+  },
+  {
     name: "CCBot",
   },
   {
     name: "ChatGPT-User",
   },
   {
-    name: "GPTBot",
-  },
-  {
-    name: "Google-Extended",
-  },
-  {
-    name: "Google-CloudVertexBot",
-  },
-  {
-    name: "Applebot-Extended",
-  },
-  {
-    name: "anthropic-ai",
-  },
-  {
     name: "ClaudeBot",
-  },
-  {
-    name: "Omgilibot",
-  },
-  {
-    name: "Omgili",
-  },
-  {
-    name: "FacebookBot",
-  },
-  {
-    name: "Diffbot",
-  },
-  {
-    name: "DuckAssistBot",
-  },
-  {
-    name: "AI2Bot",
-  },
-  {
-    name: "Bytespider",
-  },
-  {
-    name: "Kangaroo Bot",
-  },
-  {
-    name: "PanguBot",
-  },
-  {
-    name: "ImagesiftBot",
-  },
-  {
-    name: "PerplexityBot",
   },
   {
     name: "cohere-ai",
@@ -63,10 +27,46 @@ export default [
     name: "cohere-training-data-crawler",
   },
   {
+    name: "Diffbot",
+  },
+  {
+    name: "DuckAssistBot",
+  },
+  {
+    name: "FacebookBot",
+  },
+  {
+    name: "Google-CloudVertexBot",
+  },
+  {
+    name: "Google-Extended",
+  },
+  {
+    name: "GPTBot",
+  },
+  {
+    name: "ImagesiftBot",
+  },
+  {
+    name: "Kangaroo Bot",
+  },
+  {
     name: "Meta-ExternalAgent",
   },
   {
     name: "Meta-ExternalFetcher",
+  },
+  {
+    name: "Omgili",
+  },
+  {
+    name: "Omgilibot",
+  },
+  {
+    name: "PanguBot",
+  },
+  {
+    name: "PerplexityBot",
   },
   {
     name: "Timpibot",
