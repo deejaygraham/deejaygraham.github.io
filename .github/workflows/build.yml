@@ -48,7 +48,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm run start
-          config: baseUr=http://localhost:4222
+          config: baseUrl=http://localhost:4222
           
       - name: Setup Github Pages
         uses: actions/configure-pages@v5
