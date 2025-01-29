@@ -2,10 +2,14 @@
 
 describe("deployed site", () => {
   context("images", () => {
+
+    // website favicon and variants
     it("contains favicon", () => {
       cy.request("/favicon.ico");
+      cy.request("/favicon.svg");
     });
 
+    // avatar logo 
     it("contains avatar images", () => {
       cy.request("/img/avatar.jpg");
       cy.request("/img/avatar.png");
@@ -20,6 +24,18 @@ describe("deployed site", () => {
     it("contains og social images for blog posts", () => {
       cy.request("/img/previews/singing-the-portal-theme.png");
       cy.request("/img/previews/microbit-bird-song2.png");
+    });
+
+    it("contains svg icons", () => {
+      cy.request("/img/avatar.svg");
+      cy.request("/img/bluesky.svg");
+      cy.request("/img/favicon.svg");
+      cy.request("/img/github.svg");
+      cy.request("/img/linkedin.svg");
+      cy.request("/img/mastodon.svg");
+      cy.request("/img/rss.svg");
+      cy.request("/img/sessionize.svg");
+      cy.request("/img/slideshare.svg");
     });
   });
 
