@@ -42,8 +42,13 @@ jobs:
       - name: Build and run tests on 11ty filter code
         run: |
           npm run build
-          # npm run social-images
           npm run unit-test
+
+      - name: Test automation locally before deployment
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm run start
+          config: baseUr=http://localhost:4222
           
       - name: Setup Github Pages
         uses: actions/configure-pages@v5
