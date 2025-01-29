@@ -14,5 +14,9 @@ Disallow: /tags/
 Disallow: /404.html
 Disallow: /googlea419d60182929575.html
 
-{# AI bots protection here ? #}
- 
+{# AI bots "protection" here #}
+{% for agent in aiBots %}
+User-agent: {{ agent.name }}
+Disallow: /
+
+{% endfor %}
