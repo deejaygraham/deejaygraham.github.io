@@ -7,9 +7,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
+      # and run all Cypress tests against live site
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        #env: 
-          #CYPRESS_host: localhost
-          #CYPRESS_port: 4222
