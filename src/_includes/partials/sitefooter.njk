@@ -19,7 +19,8 @@
 		{% endfor %}
 	</div>
 	<div class="content has-text-centered mt-6">
-      		<p>&copy; deejaygraham 2011 - <time datetime="{{ site.buildTime | dateISO }}">{{ site.buildTime | dateYear }}</time></p>
+      		<p>&copy; deejaygraham 2011 - <time datetime="{{ site.date | dateISO }}">{{ site.date | dateYear }}</time></p>
+		<p>Last updated: <time datetime="{{ buildInfo.time.raw }}">{{ buildInfo.time.formatted }}</time>
     	</div>
 </section>
 </footer>
