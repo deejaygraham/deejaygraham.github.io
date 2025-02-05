@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
 
+// run with npx playwright test --config=playwright.dev.config.js
+
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
