@@ -6,7 +6,7 @@ test.describe("code examples", () => {
     await page.goto("/2024/11/01/microbit-sings-portal-theme/");
 
     // chrome only
-    // await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
+    await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
 
     // click the copy to clip board 
     await page.getByRole('button').click();
