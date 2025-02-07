@@ -2,7 +2,7 @@
 // based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
 
 // change v1 to allow upgrade
-const version = "v1.1";
+const version = "v1.2";
 
 const addResourcesToCache = async (resources) => {
   const cache = await caches.open(version);
@@ -44,7 +44,7 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") {
-    console.log('SW', `Ignore cache request for ${event.request}`);
+    console.log('SW', `Ignore cache request for ${event.request.url}`);
     return;
   }
   
@@ -52,7 +52,7 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request).then(function (cached) {
 
       if (cached) {
-        console.log('SW', `Cache response to ${event.request}`);
+        console.log('SW', `Cache response to ${event.request.url}`);
       }
       
       /* Even if the response is in our cache, we go to the network as well.
@@ -72,7 +72,7 @@ self.addEventListener("fetch", (event) => {
       return cached || networked;
 
       function fetchedFromNetwork(response) {
-        console.log('SW', `Network response to ${event.request}`);
+        console.log('SW', `Network response to ${event.request.url}`);
         putInCache(event.request, response.clone());
         return response;
       }
