@@ -36,7 +36,12 @@
       });
     } else {
       if (searchTerm) {
-        container.innerHTML = "<p>Unable to find any posts for &quot;" + searchTerm + "&quot;.</p>";
+	let message = `Unable to find any posts for &quot;${searchTerm}&quot;`;
+	      
+	if (searchTerm.length <= 4) {
+		message += ' (try typing more characters)';
+	}
+        container.innerHTML = "<p>" + message + ".</p>";
       }
       else {
 	container.innerHTML = "<p>Type something into the search box above.</p>";
