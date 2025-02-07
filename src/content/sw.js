@@ -43,12 +43,18 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") {
+    console.log('SW', `Ignore cache request for ${event.request}`);
     return;
   }
 
   console.log("WORKER: fetch");
   event.respondWith(
     caches.match(event.request).then(function (cached) {
+
+      if (cached) {
+        console.log('SW', `Cache response to ${event.request}`);
+      }
+      
       /* Even if the response is in our cache, we go to the network as well.
            This pattern is known for producing "eventually fresh" responses,
            where we return cached responses immediately, and meanwhile pull
@@ -66,6 +72,7 @@ self.addEventListener("fetch", (event) => {
       return cached || networked;
 
       function fetchedFromNetwork(response) {
+        console.log('SW', `Network response to ${event.request}`);
         putInCache(event.request, response.clone());
         return response;
       }
@@ -85,7 +92,7 @@ self.addEventListener("fetch", (event) => {
                against a third party, such as an ad provider
              - Generate a Response programmaticaly, as shown below, and return that
           */
-
+        
         /* Here we're creating a response programmatically. The first parameter is the
              response body, and the second one defines the options for the response.
           */
