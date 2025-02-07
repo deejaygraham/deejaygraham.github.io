@@ -4,6 +4,7 @@ _drafts/**/*.*
 _includes/**/*.*
 _layouts/**/*.*
 
+src/content/posts/*.example.md
 src/content/google*.html
 src/assets/social/*.*
 cypress/
