@@ -26,7 +26,7 @@ const deleteOldCaches = async () => {
 };
 
 self.addEventListener("install", (event) => {
-  console.log("WORKER: install");
+  console.log('SW', 'install');
   event.waitUntil(
     addResourcesToCache([
       "/",
@@ -38,6 +38,7 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
+  onsole.log('SW', 'activate');
   event.waitUntil(deleteOldCaches());
 });
 
@@ -46,8 +47,7 @@ self.addEventListener("fetch", (event) => {
     console.log('SW', `Ignore cache request for ${event.request}`);
     return;
   }
-
-  console.log("WORKER: fetch");
+  
   event.respondWith(
     caches.match(event.request).then(function (cached) {
 
