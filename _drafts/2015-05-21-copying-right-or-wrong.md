@@ -2,6 +2,7 @@
 layout: post
 title: Copying Right or Wrong?
 tags: [ copyright, presentations ]
+draft: true
 ---
 
 I had the pleasure of attending a discussion on copyright - "Copying Right or Wrong?" - at Newcastle 

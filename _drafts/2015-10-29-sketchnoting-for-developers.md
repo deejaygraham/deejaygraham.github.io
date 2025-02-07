@@ -2,6 +2,7 @@
 layout: post
 title: Sketchnoting for Developers
 tags: [ presentations, sketchnotes  ]
+draft: true
 ---
 
 Here is the companion post to my presentation at this year's [Developer Developer Developer North conference](http://www.dddnorth.co.uk). The [presentation slides are here](http://deejaygraham.github.io/sketchnoting-for-developers). 

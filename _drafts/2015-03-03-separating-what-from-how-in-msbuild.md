@@ -2,6 +2,7 @@
 layout: post
 title: Separating the *What* from the *How* in Msbuild
 tags: [ msbuild ]
+draft: true
 ---
 
 I've spent a lot of time hacking on msbuild scripts recently for some quite diverse projects and I think 

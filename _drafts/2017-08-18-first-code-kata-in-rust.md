@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello, Pygame
-
+draft: true
 tags: [ code ]
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Learning Through Stories
 tags: [ books, presentations ]
+draft: true
 ---
 
 Since I started my career in software development, I've always gone to 

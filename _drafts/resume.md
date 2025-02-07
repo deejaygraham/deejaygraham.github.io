@@ -1,6 +1,7 @@
 ---
 layout: resume
 title: DJ Graham's Resume
+draft: true
 ---
 
 principles
