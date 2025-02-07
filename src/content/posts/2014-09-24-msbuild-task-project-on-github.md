@@ -2,7 +2,7 @@
 permalink: 2014/09/24/msbuild-task-project-on-github/
 layout: post
 title: MsBuild Task Project on Github
-published: true
+
 tags: [msbuild, open-source]
 ---
 

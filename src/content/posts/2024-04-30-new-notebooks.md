@@ -2,7 +2,7 @@
 permalink: 2024/04/30/new-notebooks/
 layout: post
 title: New Favourite Notebooks
-published: true
+
 tags: [illustration, sketchnotes]
 ---
 

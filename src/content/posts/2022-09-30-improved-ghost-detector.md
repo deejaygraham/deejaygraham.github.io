@@ -2,7 +2,7 @@
 permalink: 2022/09/30/improved-ghost-detector/
 layout: post
 title: Improved Ghost Detector
-published: true
+
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

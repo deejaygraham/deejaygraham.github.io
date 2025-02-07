@@ -2,7 +2,7 @@
 permalink: 2018/05/29/destroy-the-enterprise/
 layout: quotation
 title: Destroy the Enterprise
-published: true
+
 tags: [agile, quote]
 attribution: W. Edwards Deming
 publication: Quoted in foreword to Profit Beyond Measure Paperback by H. Thomas Johnson and Anders Broms

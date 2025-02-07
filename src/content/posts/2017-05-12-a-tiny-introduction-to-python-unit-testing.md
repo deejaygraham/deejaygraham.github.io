@@ -3,7 +3,7 @@ permalink: 2017/05/12/a-tiny-introduction-to-python-unit-testing/
 layout: post
 title: A tiny introduction to Python unit testing
 tags: [code, python, tdd]
-published: true
+
 ---
 
 As I go deeper and deeper into Python, lead by experiments with the Microbit, I thought

@@ -3,7 +3,7 @@ permalink: 2018/07/18/bicycle-for-the-mind/
 layout: quotation
 title: A Bicycle for the Mind
 attribution: Steve Jobs
-published: true
+
 tags: [quote]
 size: medium
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

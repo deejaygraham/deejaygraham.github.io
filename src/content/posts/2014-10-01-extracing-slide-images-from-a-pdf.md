@@ -2,7 +2,7 @@
 permalink: 2014/10/01/extracing-slide-images-from-a-pdf/
 layout: post
 title: Extracting Slide Images from a Pdf
-published: true
+
 tags: [code, msbuild]
 ---
 

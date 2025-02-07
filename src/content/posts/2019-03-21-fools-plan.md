@@ -3,7 +3,7 @@ permalink: 2019/03/21/fools-plan/
 layout: quotation
 size: large
 title: Fool's Plan
-published: true
+
 attribution: Terry Prachett
 publication: Making Money
 tags: [quote]

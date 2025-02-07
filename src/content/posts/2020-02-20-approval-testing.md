@@ -3,7 +3,7 @@ permalink: 2020/02/20/approval-testing/
 layout: post
 title: Approval Testing
 tags: [agile, xp]
-published: true
+
 thumbnail: "/img/posts/approval-tests-workshop/thumbnail-420x255.webp"
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2019/09/05/python-processing/
 layout: post
 title: Processing with Python
-published: true
+
 tags: [code, processing]
 thumbnail: /img/posts/python-processing/python-processing-420x255.webp
 alttext: screenshot

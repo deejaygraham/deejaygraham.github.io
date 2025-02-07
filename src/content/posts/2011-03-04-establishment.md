@@ -3,7 +3,7 @@ permalink: 2011/03/04/establishment/
 layout: quotation
 size: medium
 title: Establishment
-published: true
+
 attribution: Tony Benn
 publication:
 tags: [quote]

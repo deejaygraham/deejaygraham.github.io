@@ -3,7 +3,7 @@ permalink: 2018/05/01/fizz-buzz-in-elixir/
 layout: post
 title: FizzBuzz in Elixir
 tags: [code]
-published: true
+
 ---
 
 Here's the result of a recent junior dev coding dojo, tackling fizz buzz in a totally new language for us - elixir.

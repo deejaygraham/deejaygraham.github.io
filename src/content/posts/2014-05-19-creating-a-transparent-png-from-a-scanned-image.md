@@ -2,7 +2,7 @@
 permalink: 2014/05/19/creating-a-transparent-png-from-a-scanned-image/
 layout: post
 title: Creating a Transparent PNG from a Scanned Image
-published: true
+
 tags: [csharp, sketchnotes, code]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

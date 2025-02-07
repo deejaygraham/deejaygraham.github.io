@@ -2,7 +2,7 @@
 permalink: 2017/01/29/powershell-cookies/
 layout: post
 title: PowerShell Fortune Cookie
-published: true
+
 tags: [code, cloud, powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

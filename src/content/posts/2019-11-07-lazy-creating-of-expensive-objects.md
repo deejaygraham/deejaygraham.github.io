@@ -2,7 +2,7 @@
 permalink: 2019/11/07/lazy-creating-of-expensive-objects/
 layout: post
 title: Lazy Creating Expensive Objects
-published: true
+
 tags: [csharp, code, tdd]
 thumbnail: /img/posts/lazy-creating-of-expensive-objects/expensive-object-420x255.webp
 alttext: expensive

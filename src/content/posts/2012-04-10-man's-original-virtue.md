@@ -2,7 +2,7 @@
 permalink: 2012/04/10/man's-original-virtue/
 layout: quotation
 title: Man's Original Virtue
-published: true
+
 tags: [quote]
 size: medium
 attribution: Robert Anton Wilson

@@ -2,7 +2,7 @@
 permalink: 2018/11/18/be-where-your-feet-are/
 layout: quotation
 title: Be Where Your Feet Are
-published: true
+
 tags: [agile, quote]
 size: large
 attribution: Jamie Lee Curtis

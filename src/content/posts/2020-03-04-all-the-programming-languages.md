@@ -2,7 +2,7 @@
 permalink: 2020/03/04/all-the-programming-languages/
 layout: post
 title: All the Programming Languages
-published: true
+
 tags: [code, xp]
 thumbnail: "/img/posts/all-the-languages/thumbnail-420x255.webp"
 alttext: languages

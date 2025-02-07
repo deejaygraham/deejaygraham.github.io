@@ -2,7 +2,7 @@
 permalink: 2019/03/14/programming-crystal/
 layout: post
 title: Programming Crystal
-published: true
+
 tags: [code, books]
 thumbnail: /img/posts/programming-crystal/programming-crystal-book-420x255.webp
 alttext: book cover

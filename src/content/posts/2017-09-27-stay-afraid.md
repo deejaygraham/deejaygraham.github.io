@@ -2,7 +2,7 @@
 permalink: 2017/09/27/stay-afraid/
 layout: quotation
 title: Stay Afraid
-published: true
+
 tags: [agile, quote]
 attribution: Carrie Fisher
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

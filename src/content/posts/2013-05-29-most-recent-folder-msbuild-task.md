@@ -2,7 +2,7 @@
 permalink: 2013/05/29/most-recent-folder-msbuild-task/
 layout: post
 title: Most Recent Folder MsBuild Task
-published: true
+
 tags: [msbuild, automation, ci, csharp]
 ---
 

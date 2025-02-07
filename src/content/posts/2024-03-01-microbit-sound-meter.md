@@ -2,7 +2,7 @@
 permalink: 2024/03/01/microbit-sound-meter/
 layout: post
 title: Microbit Sound Meter
-published: true
+
 tags: [code, microbit, python]
 ---
 

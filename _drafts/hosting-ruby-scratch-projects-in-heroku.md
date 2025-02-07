@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hosting Ruby Scratch Projects in Heroku
-published: true
+
 tags: [   ]
 ---
 

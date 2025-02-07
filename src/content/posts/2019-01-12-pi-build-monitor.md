@@ -3,7 +3,7 @@ permalink: 2019/01/12/pi-build-monitor/
 layout: post
 title: Build Monitor on Raspberry Pi
 tags: [code, pi]
-published: true
+
 ---
 
 I'm starting a small but slightly ambitious project, around integrating several bits of

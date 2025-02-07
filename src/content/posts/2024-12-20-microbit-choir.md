@@ -2,7 +2,7 @@
 permalink: 2024/12/20/microbit-choir/
 layout: post
 title: Microbit Choir
-published: true
+
 tags: [code, microbit, python]
 ---
 

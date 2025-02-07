@@ -3,7 +3,7 @@ permalink: 2020/03/29/when-they-jump-you/
 layout: quotation
 size: large
 title: When they jump you...
-published: true
+
 attribution: David Allen
 publication: On being prepared for work and martial arts
 tags: [quote, gtd]

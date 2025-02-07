@@ -5,7 +5,7 @@ size: medium
 title: Deteriorating Structure
 attribution: Meir M Lehman
 publication: Programs Life Cycles and Laws of Software Evolution
-published: true
+
 tags: [quote, software, code]
 alttext: quote
 ---

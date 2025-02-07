@@ -2,7 +2,7 @@
 permalink: 2024/08/01/eddystone-beacon-cpp-microbit/
 layout: post
 title: Microbit Eddystone Beacon
-published: true
+
 tags: [code, microbit, cpp]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

@@ -2,7 +2,7 @@
 permalink: 2020/07/18/study-less-study-smart/
 layout: post
 title: Study Less, Study Smart
-published: true
+
 tags: [video, presentations]
 thumbnail: /img/posts/study-less-study-smart/thumbnail-420x255.webp
 alttext: Marty Lobdell

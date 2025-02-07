@@ -2,7 +2,7 @@
 permalink: 2018/08/29/passing-parameters-to-a-pester-test/
 layout: post
 title: Passing Parameters to a Pester Test
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

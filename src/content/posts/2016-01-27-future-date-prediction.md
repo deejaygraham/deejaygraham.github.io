@@ -3,7 +3,7 @@ permalink: 2016/01/27/future-date-prediction/
 layout: post
 title: Predicting a Future (Podcast) Date
 tags: [code, csharp]
-published: true
+
 ---
 
 Working on my c# podcast subscription app I added a small piece of code to try to work out when next to check a feed for a new episode rather than pinging every feed every few minutes because, 

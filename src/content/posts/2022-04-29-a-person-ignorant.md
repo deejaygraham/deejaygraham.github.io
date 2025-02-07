@@ -3,7 +3,7 @@ permalink: 2022/04/29/a-person-ignorant/
 layout: quotation
 size: large
 title: A Person Ignorant
-published: true
+
 attribution: Terry Pratchett
 publication: Equal Rites
 tags: [quote]

@@ -3,7 +3,7 @@ permalink: 2023/09/22/real-democracy/
 layout: quotation
 size: large
 title: Real Democracy
-published: true
+
 attribution: Boots Riley    
 publication: 
 tags: [quote]

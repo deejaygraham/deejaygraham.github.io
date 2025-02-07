@@ -2,7 +2,7 @@
 permalink: 2019/02/07/psake-turtles-all-the-way-down/
 layout: post
 title: PSake Turtles All The Way Down
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

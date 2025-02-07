@@ -2,7 +2,7 @@
 permalink: 2014/04/10/code-kata-resources/
 layout: post
 title: Code Kata Resources
-published: true
+
 tags: [deliberate-practice, tdd]
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2021/01/29/find-user-sid-in-powershell/
 layout: post
 title: Find a User SID in PowerShell
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

@@ -2,7 +2,7 @@
 permalink: 2011/12/18/why-i-am-an-agnostic/
 layout: quotation
 title: Why I am an Agnostic
-published: true
+
 attribution: Robert Ingersoll (1833 - 1899)
 publication: Why I am an Agnostic
 tags: [quote]

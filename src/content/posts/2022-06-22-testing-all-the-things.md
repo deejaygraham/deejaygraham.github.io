@@ -2,7 +2,7 @@
 permalink: 2022/06/22/testing-all-the-things/
 layout: post
 title: Testing All The Things
-published: true
+
 tags: [tdd]
 thumbnail: /img/posts/testing-all-the-things/thumbnail-420x255.png
 alttext: screenshot

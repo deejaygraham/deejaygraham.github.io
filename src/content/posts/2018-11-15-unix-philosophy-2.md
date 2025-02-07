@@ -2,7 +2,7 @@
 permalink: 2018/11/15/unix-philosophy-2/
 layout: quotation
 title: More Unix Philosophy
-published: true
+
 tags: [agile, quote]
 attribution: Brian Kernighan and Rob Pike
 publication: Program Design in the Unix Environment

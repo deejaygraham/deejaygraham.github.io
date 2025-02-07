@@ -2,7 +2,7 @@
 permalink: 2013/05/15/itaskitem-extension-methods/
 layout: post
 title: ITaskItem Extension Methods
-published: true
+
 tags: [csharp, tdd, code]
 ---
 

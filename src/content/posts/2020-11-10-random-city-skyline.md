@@ -2,7 +2,7 @@
 permalink: 2020/11/10/random-city-skyline/
 layout: post
 title: Random City Skyline
-published: true
+
 tags: [code, processing]
 hero: microbit
 thumbnail: /img/posts/random-city-skyline/thumbnail-420x255.webp

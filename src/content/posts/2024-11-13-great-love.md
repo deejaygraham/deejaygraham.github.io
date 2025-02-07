@@ -3,7 +3,7 @@ permalink: 2024/11/13/great-love/
 layout: quotation
 size: large
 title: Great Love
-published: true
+
 attribution: Huey P Newton
 publication: 
 tags: [quote]

@@ -5,7 +5,7 @@ size: large
 title: The Cost of Change
 attribution: Grady Booch
 publication:
-published: true
+
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

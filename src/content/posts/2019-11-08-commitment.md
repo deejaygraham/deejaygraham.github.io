@@ -3,7 +3,7 @@ permalink: 2019/11/08/commitment/
 layout: quotation
 size: medium
 title: Commitment
-published: true
+
 attribution: Esther Derby
 tags: [quote, lean]
 thumbnail: /img/posts/commitment/commitment-420x255.webp

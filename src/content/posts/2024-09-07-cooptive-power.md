@@ -3,7 +3,7 @@ permalink: 2024/09/07/cooptive-power/
 layout: quotation
 size: large
 title: Co-optive Power
-published: true
+
 attribution: Michael Parenti
 publication: Inventing Reality
 tags: [quote]

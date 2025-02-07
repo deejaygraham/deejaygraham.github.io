@@ -2,7 +2,7 @@
 permalink: 2012/07/15/using-trello-for-retrospectives/
 layout: post
 title: Using Trello for Retrospectives
-published: true
+
 tags: [agile]
 hero: agile
 ---

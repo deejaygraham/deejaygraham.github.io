@@ -2,7 +2,7 @@
 permalink: 2022/02/04/microbit-binary-clock/
 layout: post
 title: Microbit Binary Clock
-published: true
+
 tags: [code, microbit, python]
 thumbnail: /img/posts/microbit-binary-clock/thumbnail-420x255.webp
 alttext: screenshot

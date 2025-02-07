@@ -2,7 +2,7 @@
 permalink: 2018/04/28/agile-in-five-words/
 layout: post
 title: Agile in 5 Words
-published: true
+
 tags: [agile, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

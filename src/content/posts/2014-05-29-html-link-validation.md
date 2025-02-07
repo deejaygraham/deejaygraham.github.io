@@ -2,7 +2,7 @@
 permalink: 2014/05/29/html-link-validation/
 layout: post
 title: Html Link Validation
-published: true
+
 tags: [csharp, code]
 ---
 

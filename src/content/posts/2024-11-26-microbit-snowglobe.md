@@ -2,7 +2,7 @@
 permalink: 2024/11/25/microbit-snowglobe/
 layout: post
 title: Microbit Snowglobe
-published: true
+
 tags: [code, microbit, python]
 ---
 

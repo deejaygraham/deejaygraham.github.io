@@ -3,7 +3,7 @@ permalink: 2018/10/05/the-system/
 layout: quotation
 size: large
 title: The System
-published: true
+
 attribution: John Seddon
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

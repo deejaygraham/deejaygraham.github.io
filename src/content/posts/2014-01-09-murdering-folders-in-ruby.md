@@ -2,7 +2,7 @@
 permalink: 2014/01/09/murdering-folders-in-ruby/
 layout: post
 title: Murdering Folders. In Ruby
-published: true
+
 tags: [ruby, code]
 ---
 

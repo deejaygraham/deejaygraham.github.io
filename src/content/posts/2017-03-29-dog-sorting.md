@@ -2,7 +2,7 @@
 permalink: 2017/03/29/dog-sorting/
 layout: post
 title: Dog Sort
-published: true
+
 tags: [csharp, code, tdd]
 thumbnail: /img/posts/dog-sorting/dog-sorting-420x255.webp
 alttext: sorting

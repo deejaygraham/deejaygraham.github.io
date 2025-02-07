@@ -3,7 +3,7 @@ permalink: 2023/11/12/optimism-of-uncertainty/
 layout: quotation
 size: large
 title: Optimism of Uncertainty
-published: true
+
 attribution: Howard Zinn
 publication: The Optimism of Uncertainty
 tags: [quote]

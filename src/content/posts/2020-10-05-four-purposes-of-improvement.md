@@ -3,7 +3,7 @@ permalink: 2020/10/05/four-purposes-of-improvement/
 layout: quotation
 size: large
 title: Four Purposes of Improvement
-published: true
+
 attribution: Shigeo Shingo
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

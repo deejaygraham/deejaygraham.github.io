@@ -2,7 +2,7 @@
 permalink: 2015/10/13/presenting-with-reveal.js-and-jekyll/
 layout: post
 title: Presenting with Reveal.js and Jekyll
-published: true
+
 tags: [meta, ruby, presentations]
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2022/02/18/linting-markdown/
 layout: post
 title: Linting Markdown
-published: true
+
 tags: [code, javascript, 11ty]
 thumbnail: /img/posts/linting-markdown/thumbnail-420x255.png
 alttext: screenshot

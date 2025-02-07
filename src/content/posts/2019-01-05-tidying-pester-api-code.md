@@ -2,7 +2,7 @@
 permalink: 2019/01/05/tidying-pester-api-code/
 layout: post
 title: Tidying Pester API Code
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

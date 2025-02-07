@@ -2,7 +2,7 @@
 permalink: 2020/07/01/cat-and-mouse-in-scratch/
 layout: post
 title: Cat and Mouse Game in Scratch
-published: true
+
 tags: [code, scratch]
 thumbnail: /img/posts/scratch-cat-and-mouse/thumbnail-420x255.webp
 alttext: scratch

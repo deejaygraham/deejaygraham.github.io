@@ -2,7 +2,7 @@
 permalink: 2014/03/04/my-coding-dojo-checklist/
 layout: post
 title: My Coding Dojo Checklist
-published: true
+
 tags: [tdd, deliberate-practice]
 ---
 

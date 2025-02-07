@@ -2,7 +2,7 @@
 permalink: 2019/03/30/computing-in-pairs/
 layout: quotation
 title: Computing in Pairs
-published: true
+
 attribution: Jean Bartik
 publication: Interview with Computer History Museum
 tags: [quote]

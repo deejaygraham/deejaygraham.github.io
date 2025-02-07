@@ -2,7 +2,7 @@
 permalink: 2017/09/30/aneurin-bevan/
 layout: quotation
 title: Aneurin Bevan
-published: true
+
 tags: [quote]
 attribution: Aneurin Bevan
 size: large

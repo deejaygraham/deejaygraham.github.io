@@ -2,7 +2,7 @@
 permalink: 2015/06/25/better-powershell-help/
 layout: post
 title: Better PowerShell Help
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

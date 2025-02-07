@@ -2,7 +2,7 @@
 permalink: 2018/09/09/how-to-draw-faces/
 layout: post
 title: How to Draw Faces
-published: true
+
 tags: [illustration, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

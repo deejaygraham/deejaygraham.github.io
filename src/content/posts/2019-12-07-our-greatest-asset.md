@@ -3,7 +3,7 @@ permalink: 2019/12/07/our-greatest-asset/
 layout: quotation
 size: medium
 title: Our Greatest Asset
-published: true
+
 attribution: Bob Marshall
 publication:
 tags: [quote]

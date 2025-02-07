@@ -5,7 +5,7 @@ title: Excellent Foppery
 attribution: William Shakespeare
 publication: King Lear, Act 1, Scene 2
 size: medium
-published: true
+
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

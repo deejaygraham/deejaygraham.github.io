@@ -3,7 +3,7 @@ permalink: 2018/08/15/strangling-legacy-code/
 layout: post
 title: Strangling Legacy Code
 tags: [agile, presentations]
-published: true
+
 ---
 
 Wednesday, the 15th of August 2018 was our usual <a href="http://nebytes.net">NE Bytes</a> developer meetup, ...

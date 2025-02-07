@@ -3,7 +3,7 @@ permalink: 2014/11/14/the-(richard)-dreyfuss-model-of-skill-acquisition/
 layout: sketchnote
 title: The (Richard) Dreyfuss Model of Skill Acquisition
 tags: [sketchnotes, illustration]
-published: true
+
 sketchnote:
   url: "/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-hifi.webp"
   alt: "sketchnote"

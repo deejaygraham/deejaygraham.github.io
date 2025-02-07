@@ -3,7 +3,7 @@ permalink: 2023/10/01/think-of-yourself/
 layout: quotation
 size: large
 title: Think of Yourself
-published: true
+
 attribution: Marcus Aurelius
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

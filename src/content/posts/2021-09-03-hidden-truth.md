@@ -2,7 +2,7 @@
 permalink: 2021/09/03/hidden-truth/
 layout: quotation
 title: Hidden Truth
-published: true
+
 tags: [quote]
 attribution: David Graeber
 size: large

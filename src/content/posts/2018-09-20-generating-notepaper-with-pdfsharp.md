@@ -3,7 +3,7 @@ permalink: 2018/09/20/generating-notepaper-with-pdfsharp/
 layout: post
 title: Generating Notepaper with PdfSharp
 tags: [code]
-published: true
+
 ---
 
 PdfSharp is a lovely library that lets you generate/draw pdf documents programmatically. I used it to generate some notepaper and found it

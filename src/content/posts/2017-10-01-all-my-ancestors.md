@@ -2,7 +2,7 @@
 permalink: 2017/10/01/all-my-ancestors/
 layout: quotation
 title: Suddenly
-published: true
+
 tags: [quote]
 attribution: anon
 size: large

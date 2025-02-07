@@ -2,7 +2,7 @@
 permalink: 2017/07/19/honest-shop/
 layout: post
 title: Honest Shop
-published: true
+
 tags: [agile, code, signs]
 ---
 

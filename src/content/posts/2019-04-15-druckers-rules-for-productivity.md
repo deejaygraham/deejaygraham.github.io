@@ -2,7 +2,7 @@
 permalink: 2019/04/15/druckers-rules-for-productivity/
 layout: post
 title: Druckers Rules for Productivity
-published: true
+
 tags: [xp, agile]
 ---
 

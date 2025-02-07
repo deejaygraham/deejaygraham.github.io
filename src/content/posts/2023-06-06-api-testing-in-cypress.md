@@ -2,7 +2,7 @@
 permalink: 2023/06/06/api-testing-in-cypress/
 layout: post
 title: Api Testing in Cypress
-published: true
+
 tags: [cypress, javascript, code]
 hero: power
 thumbnail: "/img/thumbnails/cypress-420x255.png"

@@ -2,7 +2,7 @@
 permalink: 2015/09/23/search-and-replace-in-powershell/
 layout: post
 title: Search and Replace in Powershell
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

@@ -2,7 +2,7 @@
 permalink: 2019/10/14/mini-approval-tests/
 layout: post
 title: Mini Approval Testing
-published: true
+
 tags: [csharp, code, tdd]
 thumbnail: /img/posts/mini-approval-tests/mini-approval-tests-420x255.webp
 alttext: mini-approval-tests

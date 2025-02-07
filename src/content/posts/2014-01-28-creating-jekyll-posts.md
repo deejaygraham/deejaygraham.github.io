@@ -2,7 +2,7 @@
 permalink: 2014/01/28/creating-jekyll-posts/
 layout: post
 title: Creating Jekyll Posts
-published: true
+
 tags: [meta, csharp, code]
 ---
 

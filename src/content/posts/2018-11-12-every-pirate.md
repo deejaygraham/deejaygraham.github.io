@@ -3,7 +3,7 @@ permalink: 2018/11/12/every-pirate/
 layout: quotation
 size: large
 title: Every Pirate
-published: true
+
 attribution: Cory Doctorow
 publication:
 tags: [quote]

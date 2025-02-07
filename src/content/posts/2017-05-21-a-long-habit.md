@@ -4,7 +4,7 @@ layout: quotation
 title: A Long Habit
 attribution: Tom Paine
 publication: 1737-1809
-published: true
+
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

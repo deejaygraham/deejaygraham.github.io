@@ -2,7 +2,7 @@
 permalink: 2017/11/24/on-the-fly-custom-msbuild-task-template/
 layout: post
 title: On-the-fly MsBuild Task Template
-published: true
+
 tags: [msbuild, code]
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2019/08/11/westminster-works/
 layout: post
 title: Westminster Works
-published: true
+
 tags: [signs]
 thumbnail: /img/posts/westminster-works/westminster-works-420x255.webp
 alttext: coach works sign

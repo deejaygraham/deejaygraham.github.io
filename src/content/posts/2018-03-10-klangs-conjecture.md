@@ -2,7 +2,7 @@
 permalink: 2018/03/10/klangs-conjecture/
 layout: post
 title: Klang's Conjecture
-published: true
+
 tags: [agile, code]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

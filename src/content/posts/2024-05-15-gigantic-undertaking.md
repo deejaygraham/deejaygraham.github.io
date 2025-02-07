@@ -3,7 +3,7 @@ permalink: 2024/05/15/gigantic-undertaking/
 layout: quotation
 size: medium
 title: Gigantic Undertaking
-published: true
+
 attribution: Grace Hopper
 publication:
 tags: [quote]

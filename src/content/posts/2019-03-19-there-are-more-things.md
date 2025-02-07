@@ -4,7 +4,7 @@ layout: quotation
 title: There are More Things
 attribution: Seneca the Younger
 publication:
-published: true
+
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

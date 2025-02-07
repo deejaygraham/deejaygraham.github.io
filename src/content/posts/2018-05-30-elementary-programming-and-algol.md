@@ -3,7 +3,7 @@ permalink: 2018/05/30/elementary-programming-and-algol/
 layout: post
 title: Elementary Programming and Algol
 tags: [code, books]
-published: true
+
 ---
 
 I find it fascinating how much of what the popular programming imagination thinks of as new and exciting was already been thought of a long time ago.

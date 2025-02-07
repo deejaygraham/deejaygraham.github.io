@@ -2,7 +2,7 @@
 permalink: 2013/04/19/simple-batch-html-validation/
 layout: post
 title: Simple Batch Html Validation
-published: true
+
 tags: [code, csharp, open-source]
 ---
 

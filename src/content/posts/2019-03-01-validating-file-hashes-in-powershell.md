@@ -2,7 +2,7 @@
 permalink: 2019/03/01/validating-file-hashes-in-powershell/
 layout: post
 title: Validating File Hashes in PowerShell
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

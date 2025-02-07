@@ -3,7 +3,7 @@ permalink: 2020/08/10/the-same-person/
 layout: quotation
 size: large
 title: The Same Person
-published: true
+
 attribution: Charlie Tremendous Jones
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

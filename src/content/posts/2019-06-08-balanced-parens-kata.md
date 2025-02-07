@@ -2,7 +2,7 @@
 permalink: 2019/06/08/balanced-parens-kata/
 layout: post
 title: Balanced Parentheses Kata
-published: true
+
 tags: [code, deliberate-practice, tdd]
 ---
 

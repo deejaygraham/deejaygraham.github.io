@@ -2,7 +2,7 @@
 permalink: 2016/11/01/sql-test-data-as-code/
 layout: post
 title: SQL Test Data as Code
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

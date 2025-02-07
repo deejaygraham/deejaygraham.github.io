@@ -2,7 +2,7 @@
 permalink: 2017/03/14/installing-package-in-elementary-os/
 layout: post
 title: Installing .deb Packages in Elementary OS
-published: true
+
 tags: [linux, elementary-os]
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2016/01/04/parameterised-builds-using-jenkins/
 layout: post
 title: Parameterised Builds using Jenkins
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

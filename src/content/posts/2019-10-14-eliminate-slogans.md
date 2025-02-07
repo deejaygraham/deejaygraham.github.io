@@ -3,7 +3,7 @@ permalink: 2019/10/14/eliminate-slogans/
 layout: quotation
 size: medium
 title: Eliminate Slogans
-published: true
+
 attribution: W. Edwards Deming
 publication: 14 Points for Western Management
 tags: [quote, lean]

@@ -3,7 +3,7 @@ permalink: 2018/02/23/microbit-card-trick/
 layout: post
 title: Microbit Mentalism
 tags: [code, microbit]
-published: true
+
 hero: microbit
 thumbnail: /img/posts/microbit-card-trick/thumbnail-420x255.webp
 alttext: microbit sorting hat

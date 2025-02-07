@@ -2,7 +2,7 @@
 permalink: 2018/07/09/extreme-portraiture/
 layout: post
 title: XP - Extreme Portraiture
-published: true
+
 tags: [sketchnotes, illustration, xp]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

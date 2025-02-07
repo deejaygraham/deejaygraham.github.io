@@ -4,7 +4,7 @@ layout: quotation
 title: Excited by Automation
 attribution: Alexandria Ocasio-Cortez
 publication: Interview with The Verge
-published: true
+
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

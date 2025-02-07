@@ -5,7 +5,7 @@ size: medium
 title: Dirge Without Music
 attribution: Edna St Vincent Millay (1892 – 1950)
 publication:
-published: true
+
 tags: [quote, music]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

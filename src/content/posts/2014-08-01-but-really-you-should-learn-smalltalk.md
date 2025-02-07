@@ -2,7 +2,7 @@
 permalink: 2014/08/01/but-really-you-should-learn-smalltalk/
 layout: post
 title: But Really You Should Learn Smalltalk
-published: true
+
 tags: [video, presentations, oo]
 ---
 

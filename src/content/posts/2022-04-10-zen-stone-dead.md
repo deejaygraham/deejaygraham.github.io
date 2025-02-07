@@ -3,7 +3,7 @@ permalink: 2022/04/10/zen-stone-dead/
 layout: post
 title: Zen Stone Dead
 tags: [music]
-published: true
+
 thumbnail: "/img/posts/zen-stone-dead/thumbnail-420x255.jpg"
 alttext: Zen Stone
 ---

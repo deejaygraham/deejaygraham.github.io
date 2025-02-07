@@ -2,7 +2,7 @@
 permalink: 2019/09/17/slowing-down-selenium-tests/
 layout: post
 title: Slowing Down Test Execution in Selenium
-published: true
+
 tags: [csharp, code, tdd]
 thumbnail: /img/posts/slowing-down-selenium-tests/thumbnail-420x255.webp
 alttext: slowing down selenium

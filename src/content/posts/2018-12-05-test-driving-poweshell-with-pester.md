@@ -2,7 +2,7 @@
 permalink: 2018/12/05/test-driving-poweshell-with-pester/
 layout: post
 title: Test Driving PowerShell with Pester
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

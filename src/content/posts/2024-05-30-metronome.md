@@ -2,7 +2,7 @@
 permalink: 2024/05/30/metronome/
 layout: post
 title: Microbit Metronome
-published: true
+
 tags: [code, microbit, python]
 ---
 

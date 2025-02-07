@@ -2,7 +2,7 @@
 permalink: 2014/04/15/cleaning-msbuild-itemgroup-includes/
 layout: post
 title: Cleaning MsBuild ItemGroup Includes
-published: true
+
 tags: [msbuild, code]
 ---
 

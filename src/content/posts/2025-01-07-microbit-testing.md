@@ -2,7 +2,7 @@
 permalink: 2025/01/07/microbit-testing/
 layout: post
 title: Simple Microbit Testing
-published: true
+
 tags: [tdd, code, microbit, python]
 ---
 

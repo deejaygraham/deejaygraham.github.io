@@ -2,7 +2,7 @@
 permalink: 2021/11/09/limits-of-tyrants/
 layout: quotation
 title: Limits of Tyrants
-published: true
+
 tags: [quote]
 size: medium
 attribution: Frederick Douglass

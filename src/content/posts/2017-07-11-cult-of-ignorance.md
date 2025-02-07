@@ -2,7 +2,7 @@
 permalink: 2017/07/11/cult-of-ignorance/
 layout: quotation
 title: Cult of Ignorance
-published: true
+
 tags: [agile, quote]
 attribution: Isaac Asimov
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

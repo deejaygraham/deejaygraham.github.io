@@ -2,7 +2,7 @@
 permalink: 2023/07/31/tiny-city-layout/
 layout: post
 title: Tiny City Layout
-published: true
+
 tags: [code, processing, python]
 thumbnail: /img/posts/tiny-city-layout/tiny-city-layout-420x255.png
 alttext: screenshot

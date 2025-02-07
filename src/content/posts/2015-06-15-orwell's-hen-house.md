@@ -4,7 +4,7 @@ layout: quotation
 title: Orwell's Hen-House
 attribution: George Orwell
 comment: George Orwell on the difficulting of naming concepts in software :)
-published: true
+
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

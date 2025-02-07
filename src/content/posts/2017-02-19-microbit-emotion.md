@@ -2,7 +2,7 @@
 permalink: 2017/02/19/microbit-emotion/
 layout: post
 title: Microbit Emotion
-published: true
+
 tags: [code, microbit, python]
 ---
 

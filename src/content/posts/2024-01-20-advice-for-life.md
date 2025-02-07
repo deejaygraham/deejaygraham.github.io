@@ -2,7 +2,7 @@
 permalink: 2024/01/20/advice-for-life/
 layout: quotation
 title: A Little Advice for Life
-published: true
+
 attribution: Terry Pratchett
 size: medium
 tags: [quote]

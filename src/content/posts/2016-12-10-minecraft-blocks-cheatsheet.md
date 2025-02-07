@@ -2,7 +2,7 @@
 permalink: 2016/12/10/minecraft-blocks-cheatsheet/
 layout: post
 title: Minecraft Blocks Cheatsheet
-published: true
+
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

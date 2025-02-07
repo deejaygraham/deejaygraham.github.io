@@ -2,7 +2,7 @@
 permalink: 2024/10/20/microbit-birdsong/
 layout: post
 title: Microbit Bird Song
-published: true
+
 tags: [code, microbit, python]
 ---
 

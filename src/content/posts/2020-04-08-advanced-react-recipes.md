@@ -2,7 +2,7 @@
 permalink: 2020/04/08/advanced-react-recipes/
 layout: post
 title: React Cookbook Advanced Recipes
-published: true
+
 tags: [video, presentations]
 thumbnail: /img/posts/advanced-react-recipes/thumbnail-420x255.webp
 alttext: Simon Bloom

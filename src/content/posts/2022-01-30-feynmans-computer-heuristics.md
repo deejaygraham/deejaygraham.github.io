@@ -2,7 +2,7 @@
 permalink: 2022/01/30/feynmans-computer-heuristics/
 layout: post
 title: Feynman's Computer Heuristics
-published: true
+
 tags: [video, presentations]
 thumbnail: /img/posts/feynmans-computer-heuristics/thumbnail-420x255.webp
 alttext: Richard Feynman

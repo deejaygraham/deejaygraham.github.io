@@ -2,7 +2,7 @@
 permalink: 2021/03/01/debugging-terraform/
 layout: post
 title: Debugging Terraform
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

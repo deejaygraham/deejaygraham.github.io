@@ -2,7 +2,7 @@
 permalink: 2021/09/15/predictability/
 layout: quotation
 title: Predictability
-published: true
+
 tags: [quote, agile, xp]
 attribution: Tim Ottinger
 size: large

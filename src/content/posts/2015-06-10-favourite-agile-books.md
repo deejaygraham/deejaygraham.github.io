@@ -2,7 +2,7 @@
 permalink: 2015/06/10/favourite-agile-books/
 layout: post
 title: Favourite Books
-published: true
+
 tags: [agile, books]
 ---
 

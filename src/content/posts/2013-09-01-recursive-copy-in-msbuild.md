@@ -2,7 +2,7 @@
 permalink: 2013/09/01/recursive-copy-in-msbuild/
 layout: post
 title: Recursive Copy in MsBuild
-published: true
+
 tags: [msbuild, code]
 ---
 

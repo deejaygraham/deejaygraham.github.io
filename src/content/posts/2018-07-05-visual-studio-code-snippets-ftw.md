@@ -3,7 +3,7 @@ permalink: 2018/07/05/visual-studio-code-snippets-ftw/
 layout: post
 title: Visual Studio Code Snippets FTW
 tags: [code]
-published: true
+
 ---
 
 I think I had mostly forgotten about lots of little features in Visual Studio, like code snippets. Today I was updating some unit tests from NUnit 2.X to

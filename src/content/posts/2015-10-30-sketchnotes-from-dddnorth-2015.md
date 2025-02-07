@@ -2,7 +2,7 @@
 permalink: 2015/10/30/sketchnotes-from-dddnorth-2015/
 layout: post
 title: Sketchnotes from DDDNorth 2015
-published: true
+
 tags: [presentations, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

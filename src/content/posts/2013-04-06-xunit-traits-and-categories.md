@@ -2,7 +2,7 @@
 permalink: 2013/04/06/xunit-traits-and-categories/
 layout: post
 title: XUnit Traits and Categories
-published: true
+
 tags: [tdd, code, csharp]
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2019/10/25/wiring-diagrams/
 layout: post
 title: Wiring Diagrams
-published: true
+
 tags: [signs]
 thumbnail: /img/posts/wiring-diagrams/wiring-diagrams-420x255.webp
 alttext: wiring diagrams

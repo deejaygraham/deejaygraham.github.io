@@ -2,7 +2,7 @@
 permalink: 2019/01/23/cory-doctorow-at-google-walkaway/
 layout: post
 title: Cory Doctorow at Google
-published: true
+
 tags: [video, presentations, optimism, engineering]
 ---
 

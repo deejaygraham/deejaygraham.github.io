@@ -3,7 +3,7 @@ permalink: 2014/11/14/doctorows-three-laws/
 layout: sketchnote
 title: Doctorow's Three Laws
 tags: [video, sketchnotes, open-source, illustration]
-published: true
+
 sketchnote:
   url: "/img/posts/doctorows-three-laws/doctorows-three-laws-hifi.webp"
   alt: "sketchnote"

@@ -2,7 +2,7 @@
 permalink: 2014/05/30/computing-text-similarity/
 layout: post
 title: Computing Text Similarity
-published: true
+
 tags: [csharp, code]
 ---
 

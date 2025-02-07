@@ -3,7 +3,7 @@ permalink: 2024/11/07/two-terrors/
 layout: quotation
 size: small
 title: Two Terrors
-published: true
+
 attribution: Mark Twain
 publication: A Connecticut Yankee in King Arthur's Court
 tags: [quote]

@@ -2,7 +2,7 @@
 permalink: 2014/09/30/im-in-the-sketchnote-workbook/
 layout: post
 title: I'm in the Sketchnote Workbook!
-published: true
+
 tags: [sketchnotes, books]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

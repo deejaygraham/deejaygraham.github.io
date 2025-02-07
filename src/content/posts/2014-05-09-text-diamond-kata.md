@@ -2,7 +2,7 @@
 permalink: 2014/05/09/text-diamond-kata/
 layout: post
 title: Text Diamond Kata
-published: true
+
 tags: [tdd, deliberate-practice]
 ---
 

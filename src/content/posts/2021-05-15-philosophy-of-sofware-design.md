@@ -2,7 +2,7 @@
 permalink: 2021/05/15/philosophy-of-sofware-design/
 layout: post
 title: A Philosophy of Software Design
-published: true
+
 tags: [video, presentations]
 thumbnail: /img/posts/a-philosophy-of-software-design/thumbnail-420x255.png
 alttext: avdi grimm

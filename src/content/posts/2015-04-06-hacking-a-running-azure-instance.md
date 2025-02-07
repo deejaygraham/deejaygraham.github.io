@@ -2,7 +2,7 @@
 permalink: 2015/04/06/hacking-a-running-azure-instance/
 layout: post
 title: Hacking a Running Azure Instance
-published: true
+
 tags: [cloud]
 hero: cloud
 ---

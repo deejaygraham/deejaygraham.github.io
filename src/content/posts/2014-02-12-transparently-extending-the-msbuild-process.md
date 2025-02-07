@@ -2,7 +2,7 @@
 permalink: 2014/02/12/transparently-extending-the-msbuild-process/
 layout: post
 title: Transparently Extending the MsBuild Process
-published: true
+
 tags: [msbuild, code]
 ---
 

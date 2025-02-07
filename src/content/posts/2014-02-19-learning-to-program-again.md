@@ -2,7 +2,7 @@
 permalink: 2014/02/19/learning-to-program-again/
 layout: post
 title: Learning to Program, Again
-published: true
+
 tags: [ruby, books]
 ---
 

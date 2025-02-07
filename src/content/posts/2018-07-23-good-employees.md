@@ -2,7 +2,7 @@
 permalink: 2018/07/23/good-employees/
 layout: quotation
 title: Good Employees
-published: true
+
 attribution: Doc Norton (channeling W. Edwards Deming)
 tags: [agile, quote]
 size: large

@@ -2,7 +2,7 @@
 permalink: 2019/09/06/refactoring-boids/
 layout: post
 title: Refactoring Boids
-published: true
+
 tags: [processing, code]
 thumbnail: /img/posts/refactoring-boids/original-boids-420x255.webp
 alttext: boids original

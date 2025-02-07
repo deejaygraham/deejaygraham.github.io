@@ -2,7 +2,7 @@
 permalink: 2018/11/04/everyday-somebody/
 layout: quotation
 title: Every day, somebody
-published: true
+
 tags: [agile, quote]
 size: large
 attribution: Station Manager, WXIX Cincinnati via <a href="https://twitter.com/hotdogsladies">Merlin Mann</a>

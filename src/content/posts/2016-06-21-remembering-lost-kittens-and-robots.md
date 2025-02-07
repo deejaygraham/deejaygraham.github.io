@@ -2,7 +2,7 @@
 permalink: 2016/06/21/remembering-lost-kittens-and-robots/
 layout: post
 title: Remembering Lost Kittens and Robots
-published: true
+
 tags: [code, kata, open-source]
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2016/06/14/playing-with-sonic-pi/
 layout: post
 title: Playing with Sonic Pi
-published: true
+
 tags: [raspberry-pi, music]
 ---
 

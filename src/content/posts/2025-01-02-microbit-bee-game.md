@@ -2,7 +2,7 @@
 permalink: 2025/01/02/microbit-bee-game/
 layout: post
 title: Microbit Bee Game
-published: true
+
 tags: [code, microbit, python]
 ---
 

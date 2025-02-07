@@ -2,7 +2,7 @@
 permalink: 2020/03/25/common-sense-guide-ds-and-a-2nd/
 layout: post
 title: A Common-Sense Guide to Data Structures and Algorithms 2nd Edition
-published: true
+
 tags: [code, books]
 thumbnail: "/img/posts/common-sense-guide-ds-and-a-2nd/thumbnail-420x255.webp"
 alttext: cover

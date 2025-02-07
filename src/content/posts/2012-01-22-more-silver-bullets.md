@@ -2,7 +2,7 @@
 permalink: 2012/01/22/more-silver-bullets/
 layout: quotation
 title: More Silver Bullets
-published: true
+
 attribution: Dale H. Emery (@dhemery)
 publication: As quoted by Alan Cooper
 size: large

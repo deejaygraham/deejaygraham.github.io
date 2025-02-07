@@ -3,7 +3,7 @@ permalink: 2020/04/15/effective-debugging/
 layout: quotation
 size: large
 title: Effective Debugging
-published: true
+
 attribution: Brian Kernighan
 publication:
 tags: [quote, xp]

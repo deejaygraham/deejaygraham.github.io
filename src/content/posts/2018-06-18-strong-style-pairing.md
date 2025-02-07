@@ -3,7 +3,7 @@ permalink: 2018/06/18/strong-style-pairing/
 layout: post
 title: Strong Style Pairing
 tags: [sketchnotes]
-published: true
+
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

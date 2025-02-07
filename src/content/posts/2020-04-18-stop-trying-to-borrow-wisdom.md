@@ -3,7 +3,7 @@ permalink: 2020/04/18/stop-trying-to-borrow-wisdom/
 layout: quotation
 size: large
 title: Stop Trying to Borrow Wisdom
-published: true
+
 attribution: Taiichi Ohno
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

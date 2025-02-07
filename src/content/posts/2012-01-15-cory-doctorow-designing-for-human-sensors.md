@@ -2,7 +2,7 @@
 permalink: 2012/01/15/cory-doctorow-designing-for-human-sensors/
 layout: post
 title: Cory Doctorow Designing for Human Sensors
-published: true
+
 tags: [video, presentations]
 ---
 

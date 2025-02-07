@@ -2,7 +2,7 @@
 permalink: 2019/03/26/neutrality/
 layout: quotation
 title: Neutrality
-published: true
+
 tags: [quote]
 size: medium
 attribution: Desmond Tutu

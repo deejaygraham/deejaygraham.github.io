@@ -2,7 +2,7 @@
 permalink: 2015/02/15/sketchnote-challenge/
 layout: sketchnote
 title: Sketchnoting Challenge
-published: true
+
 tags: [sketchnotes, gtd]
 sketchnote:
   url: "/img/posts/sketchnoting-challenge/mac-power-users.webp"

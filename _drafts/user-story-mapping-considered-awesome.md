@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Story Mapping Considered Awesome
-published: true
+
 tags: [   ]
 ---
 

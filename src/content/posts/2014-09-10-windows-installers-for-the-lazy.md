@@ -2,7 +2,7 @@
 permalink: 2014/09/10/windows-installers-for-the-lazy/
 layout: post
 title: Windows Installers for the Lazy
-published: true
+
 tags: [code]
 ---
 

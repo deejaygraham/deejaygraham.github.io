@@ -2,7 +2,7 @@
 permalink: 2020/01/29/game-of-oligarchy-2/
 layout: post
 title: Game of Oligarchy Part 2
-published: true
+
 tags: [code, processing]
 thumbnail: "/img/posts/game-of-oligarchy-2/thumbnail-420x255.webp"
 alttext: players

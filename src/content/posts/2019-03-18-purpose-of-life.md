@@ -3,7 +3,7 @@ permalink: 2019/03/18/purpose-of-life/
 layout: quotation
 size: large
 title: The Purpose of Life
-published: true
+
 attribution: Ralph Waldo Emerson
 publication:
 tags: [quote]

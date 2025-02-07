@@ -3,7 +3,7 @@ permalink: 2024/02/23/nothing-is-yours/
 layout: quotation
 size: large
 title: Nothing is Yours
-published: true
+
 attribution: Ursula K Le Guin
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

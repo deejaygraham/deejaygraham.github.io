@@ -2,7 +2,7 @@
 permalink: 2022/06/08/group-membership-with-powershell/
 layout: post
 title: How to find AD group membership with PowerShell
-published: true
+
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

@@ -2,7 +2,7 @@
 permalink: 2019/05/15/microbit-tamagotchi/
 layout: post
 title: Microbotchi
-published: true
+
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

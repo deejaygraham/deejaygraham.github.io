@@ -2,7 +2,7 @@
 permalink: 2018/10/28/grepping-in-powershell/
 layout: post
 title: Grepping in PowerShell
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

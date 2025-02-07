@@ -2,7 +2,7 @@
 permalink: 2014/05/09/go-ahead-make-a-mess/
 layout: post
 title: Go Ahead Make a Mess
-published: true
+
 tags: [video, presentations, oo]
 ---
 

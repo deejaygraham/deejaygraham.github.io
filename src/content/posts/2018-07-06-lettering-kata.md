@@ -3,7 +3,7 @@ permalink: 2018/07/06/lettering-kata/
 layout: post
 title: Lettering Kata
 tags: [sketchnotes]
-published: true
+
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

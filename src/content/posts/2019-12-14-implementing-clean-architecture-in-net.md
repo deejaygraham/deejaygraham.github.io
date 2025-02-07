@@ -2,7 +2,7 @@
 permalink: 2019/12/14/implementing-clean-architecture-in-net/
 layout: post
 title: Implementing the Clean Architecture in .NET Core
-published: true
+
 tags: [video, presentations]
 thumbnail: /img/posts/implementing-clean-architecture-net/thumbnail-420x255.webp
 alttext: Rouan

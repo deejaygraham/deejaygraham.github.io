@@ -2,7 +2,7 @@
 permalink: 2017/12/18/hostile-to-liberty/
 layout: quotation
 title: Hostile to Liberty
-published: true
+
 tags: [quote]
 attribution: Thomas Jefferson
 size: large

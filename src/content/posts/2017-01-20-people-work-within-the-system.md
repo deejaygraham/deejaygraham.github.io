@@ -2,7 +2,7 @@
 permalink: 2017/01/20/people-work-within-the-system/
 layout: post
 title: People Work Within the System
-published: true
+
 tags: [agile, illustration]
 ---
 

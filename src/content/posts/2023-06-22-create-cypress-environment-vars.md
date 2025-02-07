@@ -2,7 +2,7 @@
 permalink: 2023/06/22/create-cypress-environment-vars/
 layout: post
 title: Create Environment Variables in Cypress
-published: true
+
 tags: [cypress, javascript, code]
 thumbnail: "/img/thumbnails/cypress-420x255.png"
 alttext: cypress

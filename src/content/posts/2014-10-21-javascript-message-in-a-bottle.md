@@ -2,7 +2,7 @@
 permalink: 2014/10/21/javascript-message-in-a-bottle/
 layout: post
 title: Javascript Message in a Bottle
-published: true
+
 tags: [code]
 ---
 

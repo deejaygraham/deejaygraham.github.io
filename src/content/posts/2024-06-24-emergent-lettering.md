@@ -2,7 +2,7 @@
 permalink: 2024/06/24/emergent-lettering/
 layout: post
 title: Emergent Lettering
-published: true
+
 thumbnail: /img/posts/emergent-lettering/thumbnail-420x255.png
 tags: [code, processing, python]
 ---

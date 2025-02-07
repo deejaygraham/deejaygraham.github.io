@@ -2,7 +2,7 @@
 permalink: 2018/09/05/naive-gui-automation-in-powershell/
 layout: post
 title: Naive GUI Automation in PowerShell
-published: true
+
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

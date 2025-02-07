@@ -2,7 +2,7 @@
 permalink: 2024/12/18/microbit-seven-segment-display/
 layout: post
 title: Microbit 7 Segment Display
-published: true
+
 tags: [code, microbit, python]
 ---
 

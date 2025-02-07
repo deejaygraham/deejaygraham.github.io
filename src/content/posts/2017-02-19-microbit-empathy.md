@@ -2,7 +2,7 @@
 permalink: 2017/02/19/microbit-empathy/
 layout: post
 title: Microbit Empathy
-published: true
+
 tags: [code, microbit, python]
 ---
 

@@ -2,7 +2,7 @@
 permalink: 2018/08/12/new-favourite-figure-of-speech/
 layout: quotation
 title: My New Favourite Figure of Speech
-published: true
+
 attribution: Ed Harris
 publication: BBC Radio 4 play Dot
 size: large

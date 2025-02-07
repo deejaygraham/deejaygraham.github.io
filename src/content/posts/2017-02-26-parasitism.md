@@ -4,7 +4,7 @@ layout: quotation
 title: Jason Read
 attribution: Jason Read
 size: medium
-published: true
+
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

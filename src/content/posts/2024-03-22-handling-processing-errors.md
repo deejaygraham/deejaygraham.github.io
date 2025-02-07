@@ -2,7 +2,7 @@
 permalink: 2024/03/22/handling-processing-errors/
 layout: post
 title: Handling Processing Errors
-published: true
+
 tags: [code, processing, python]
 ---
 
