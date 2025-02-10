@@ -1,8 +1,8 @@
 ---
+permalink: 2015/03/03/separating-what-from-how-in-msbuild/
 layout: post
-title: Separating the *What* from the *How* in Msbuild
-tags: [ msbuild ]
-draft: true
+title: Separating the What from the How in Msbuild
+tags: [code, msbuild]
 ---
 
 I've spent a lot of time hacking on msbuild scripts recently for some quite diverse projects and I think 
