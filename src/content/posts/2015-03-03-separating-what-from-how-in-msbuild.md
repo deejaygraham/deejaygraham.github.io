@@ -72,8 +72,6 @@ The .proj file acts as the entry point for the overall script. Specifies what wi
   <Import Project="$(RootDir)UnitTesting.props"  />
   <Import Project="UnitTesting.targets" />
 
-  <PropertyGroup>
-
   <Target Name="Build" DependsOnTargets="UnitTest" />
 </Project>
 ```
