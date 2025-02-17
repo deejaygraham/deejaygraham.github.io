@@ -4,6 +4,10 @@
 	.navbar, .related-posts, .footer { 
 		display: none; 
 	}
+
+	#navbarMenu, .reading-time {
+		display: none;
+	}
 	
 	body {
 		font: 13pt Georgia, "Times New Roman", Times, serif;
