@@ -11,4 +11,12 @@
 		background: #fff !important;
 		color: #000;
 	}
+
+	.header::after {
+  		content: "Please see https://deejaygraham.github.io for the latest version of this page.";
+	}
+	
+	a[href]:after {
+  		content: " (" attr(href) ")";
+	}
 }
