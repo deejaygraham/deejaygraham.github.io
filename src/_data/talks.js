@@ -1,5 +1,11 @@
 export default [
   {
+    title: "Help! I've Fallen and I Can't Get Up",
+    subtitle: "DDD North 2025",
+    url: "https://www.slideshare.net/slideshow/presentation-help-i-ve-fallen-and-i-can-t-get-up/275888114",
+    thumbnail: "/img/posts/talks/help-ive-fallen.png",
+  },
+  {
     title: "Testing at Both Ends of the Triangle",
     subtitle: "Tech on the Tyne March 2023",
     url: "https://www.slideshare.net/deejaygraham/testing-at-both-ends-of-the-triangle-257130513",
