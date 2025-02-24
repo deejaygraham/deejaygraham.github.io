@@ -17,6 +17,7 @@ create a default setting for RemoteDesktopEnabled then invoke the _XmlPeek_ task
 the search fails, the default value makes the Error task pass. If it is in the config file and the value is
 set to true, a nice diagnostic messages breaks the build.
 
+```xml
     <Target Name="VerifyCloudPackage" Condition=" '$(TargetProfile)' == 'Production' ">
 
     	<ItemGroup>
@@ -41,8 +42,7 @@ set to true, a nice diagnostic messages breaks the build.
     		Text="Package cannot be deployed to $(TargetProfile) with Remote Desktop set to @(RemoteDesktopEnabled)" />
 
     </Target>
-
-
+```
 
 The only slight complexity to watch out for in this solution is making sure that the namespace property matches the
 declaration at the top of the cscfg file and that the prefix is used in the XPath query itself. Failing to do this will
