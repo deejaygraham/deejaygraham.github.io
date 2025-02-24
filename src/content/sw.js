@@ -44,7 +44,9 @@ const putInCache = async (request, response) => {
   await cache.put(request, response);
 };
 
+// every requests passes through this fetch method.
 self.addEventListener("fetch", (event) => {
+  // ignore anything that's not a GET
   if (event.request.method !== "GET") {
     return;
   }
@@ -59,7 +61,7 @@ self.addEventListener("fetch", (event) => {
            Read more:
            https://ponyfoo.com/articles/progressive-networking-serviceworker
         */
-      let networked = fetch(event.request)
+      const networked = fetch(event.request)
         .then(fetchedFromNetwork, unableToResolve)
         .catch(unableToResolve);
 
@@ -88,7 +90,8 @@ self.addEventListener("fetch", (event) => {
                against a third party, such as an ad provider
              - Generate a Response programmaticaly, as shown below, and return that
           */
-        
+
+         
         /* Here we're creating a response programmatically. The first parameter is the
              response body, and the second one defines the options for the response.
           */
