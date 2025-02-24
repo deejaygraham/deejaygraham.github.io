@@ -21,7 +21,7 @@ list of episodes each with a published date. One way to predict when the next ep
 drop is by taking an average over all the previous episodes and then projecting this forward
 from the most recent episode.
 
-Linq makes this easy using the Zip and Average extension methods for IEnumerable<T>.
+Linq makes this easy using the Zip and Average extension methods for IEnumerable&lt;T&gt;.
 
 ```csharp
 
