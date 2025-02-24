@@ -9,6 +9,7 @@ tags: [msbuild]
 The traditional method of copying content from one folder to another is fairly
 straightforward:
 
+```xml
     <PropertyGroup>
     	<SourceFolder>C:\MySource\</SourceFolder>
     	<DeployFolder>C:\Deploy\</DeployFolder>
@@ -22,7 +23,7 @@ straightforward:
     	SourceFiles="@(SourceFiles)"
     	DestinationFolder="$(DeployFolder)"
     	/>
-
+```
 
 Here, we look for everything in the source folder and copy it to the destination,
 over writing files and copying new files.
@@ -30,6 +31,7 @@ One thing this doesn't take into account is, what if you ONLY want to refresh
 what's in your destination? Maybe you have extra dlls, test code, alternate IoC  
 loaded implementations? Then you need something like this:
 
+```xml
     <PropertyGroup>
     	<SourceFolder>C:\MySource\</SourceFolder>
     	<DeployFolder>C:\Deploy\</DeployFolder>
@@ -44,6 +46,8 @@ loaded implementations? Then you need something like this:
     	DestinationFolder="@(ReplacedBinaries)"
     	ContinueOnError="WarnAndContinue"
     	/>
+```
+
 
 Here, we make a list of everything currently in the destination folder and then
 use batching to construct candidate source files on the fly. I have added a
