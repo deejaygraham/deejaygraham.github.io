@@ -23,6 +23,7 @@ build with the time sucking work still in place. I can then put my changes in pl
 and just use a nice diffing tool like [kdiff3](kdiff3.sourceforge.net/) to check for differences in the
 build output.
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <Project ToolsVersion="4.0"
         			 DefaultTargets="CaptureBuildOutput"
@@ -48,6 +49,7 @@ build output.
         </Target>
 
     </Project>
+```
 
 Essentially, all the script does is list the content of the output folder and write it to a file. I could have
 achieved the same by running _dir_ or _ls_ command in a console window and redirecting to a file. The only
