@@ -39,7 +39,7 @@ replaced by another simple assignment.
 
 Finally, the inner loop calculation tries to find the lowest value of three
 alternatives. Originally, this used repeated, nested calls to _Math.Min_ but
-here has been replaced with a variant from the _IEnumerable<T>_ extension methods
+here has been replaced with a variant from the _IEnumerable&lt;T&gt;_ extension methods
 which picks the lowest value from a sequence.
 
 I'm still not completely happy with the implementation, particularly the index values
