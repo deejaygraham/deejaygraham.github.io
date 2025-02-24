@@ -13,6 +13,7 @@ as part of the post-build process.
 Here, I'm using the built-in AfterBuild target and using an Item to contain the
 text of the file I'm going to write.
 
+```xml
     <Target Name="AfterBuild">
     	<ItemGroup>
     		<InstallCommand Include="msiexec /q /i $(TargetFileName) " />
@@ -29,6 +30,7 @@ text of the file I'm going to write.
     		/>
 
     </Target>
+```
 
 Once again we prove ItemGroups are good for more than just batching lists
 of files.
