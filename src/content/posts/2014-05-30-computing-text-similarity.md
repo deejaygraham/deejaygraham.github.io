@@ -20,6 +20,7 @@ Taking the reference implementation, it seemed that it could benefit from losing
 the arrays and some of the more manual parts of the algorithm and using some
 built-in .Net goodness.
 
+<!-- prettier-ignore -->
 ```csharp
 
 {% include 'code/csharp/LevenshteinDistance.cs' %}
