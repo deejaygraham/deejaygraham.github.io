@@ -16,7 +16,7 @@ compromise between Windows and Mac UI without all the annoyances of W10.
 As part of the tests to make sure it would work in our case, a critical piece is
 installing software missing from the base distro. Handily, I've started to investigate other
 web browsers, again based on frustration with the performance of Firefox on Windows.
-One I came across that I really like because it has ad blocking and <a href="https://www.eff.org/https-everywhere">Http Everywhere<a/>
+One I came across that I really like because it has ad blocking and <a href="https://www.eff.org/https-everywhere">Http Everywhere</a>
 built-in, is a browser called <a href="https://brave.com">Brave</a>.
 
 So, how easy is it to install a new web browser in Elementary?
