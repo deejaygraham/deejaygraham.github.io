@@ -24,6 +24,7 @@ Here I've used the XmlPoke task to find the correct part of the web.config
 
 So for a .config file containing this:
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <configuration>
 
@@ -37,10 +38,12 @@ So for a .config file containing this:
     	<!-- other stuff -->
 
     </configuration>
+```
 
 We can use MsBuild's batching feature to create a list of settings that can be
 changed in a single file.
 
+```xml
     <Target Name="ChangeConfigSettings">
 
     	<PropertyGroup>
@@ -62,12 +65,14 @@ changed in a single file.
                  Query="%(XmlConfigChange.XPath)"
                  Value="%(XmlConfigChange.NewValue)" />
     </Target>
+```
 
 Here we're using metadata on each ItemGroup to keep a pair of variables together
 for each replacement, the xpath query to the setting and the value to substitute.
 Each XmlConfigChange object is evaluated against $(MyConfig) in turn and updates
 the config using the new value. So, after the script runs we should have:
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <configuration>
 
@@ -77,3 +82,4 @@ the config using the new value. So, after the script runs we should have:
     	</appSettings>
 
     </configuration>
+```
