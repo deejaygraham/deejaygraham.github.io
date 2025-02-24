@@ -1,13 +1,17 @@
 // service worker code for site
 // based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
+// some ideas from https://github.com/bnijenhuis/bnijenhuis-nl
 
-// change v1 to allow upgrade
+// change version to allow upgrade
 const version = "v1.2";
 const coreAssets = [
       "/",
       "/index.html",
       "/css/site.css",
       "/css/prism.css",
+      "/favicon.ico",
+      "/img/avatar.svg",
+      "/offline.html"
 ];
 
 const addResourcesToCache = async (resources) => {
