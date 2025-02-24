@@ -32,7 +32,7 @@ are able to do. Like this
 cpdf.exe -split slidedeck.pdf -o slidedeck%%%%.pdf
 ```
 
-Which generates a sequence of single page pdfs, numbered <original-name>01.pdf
+Which generates a sequence of single page pdfs, numbered &lt;original-name&gt;01.pdf
 upwards.
 
 Once I had the syntax of the two command line building blocks I used a bit
