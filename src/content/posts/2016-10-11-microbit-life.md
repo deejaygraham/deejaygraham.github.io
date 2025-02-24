@@ -9,7 +9,7 @@ thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
 ---
 
-<a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life<a/> is a programming
+<a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a> is a programming
 classic used in katas, to teach TDD ideas and even features in the annual <a href="http://coderetreat.org/">code retreat</a>
 events around the world. It's a wonderful example of fairly simple code giving rise to some
 complicated and often beautiful behaviour. It's also a good demonstration piece because it
