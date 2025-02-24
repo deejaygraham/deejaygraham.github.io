@@ -13,7 +13,7 @@ for children called <a href="http://islalanguage.org/">Isla</a> by
 implementing a <a href="https://github.com/maryrosecook/littlelisp">Lisp interpreter in Javascript</a>.
 
 Mary explains the code in <a href="https://maryrosecook.com/blog/post/little-lisp-interpreter">an article</a> and a
-<a href="https://www.youtube.com/watch?v=hqnTvuvXPCc">screencast<a/>.
+<a href="https://www.youtube.com/watch?v=hqnTvuvXPCc">screencast</a>.
 
 On to the older version, right at the end of the article, Mary credits Peter Novig and his implementations of lisp
 in Python <a href="http://norvig.com/lispy.html">lis.py</a> and an improved <a href="http://norvig.com/lispy2.html">lis.py2</a>.
