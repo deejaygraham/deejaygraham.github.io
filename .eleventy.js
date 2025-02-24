@@ -26,6 +26,9 @@ import socialImages from "./src/_11ty/plugins/generate-social-images/index.js";
 import favicons from "eleventy-plugin-gen-favicons";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
+// transforms
+import * as prettier from "prettier";
+
 export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
@@ -103,7 +106,25 @@ export default function (eleventyConfig) {
 			return false;
 		}
 	});
-  
+
+  // post-processing 
+  eleventyConfig.addTransform("prettier", function (content) {
+	if ((this.page.outputPath || "").endsWith(".html")) {
+
+        	let prettified = prettier.format(content, {
+            		bracketSameLine: true,
+            		printWidth: 250,
+            		parser: "html",
+            		tabWidth: 2
+        	});
+        	
+		return prettified;
+    	}
+
+    	// If not an HTML output, return content as-is
+    	return content;
+  });
+	
   return {
     dir: {
       input: "src",
