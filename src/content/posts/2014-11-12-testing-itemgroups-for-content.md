@@ -22,6 +22,7 @@ developer's local machines etc. etc.
 Providing diagnostics for a correctly configured PropertyGroup value is easy using the
 Error task with a condition checking that the value is/is not empty:
 
+```xml
     <PropertyGroup>
     	<ThisValueMustNotBeBlank></ThisValueMustNotBeBlank>
     </PropertyGroup>
@@ -31,6 +32,7 @@ Error task with a condition checking that the value is/is not empty:
     	<Error Text="[%(ThisValueMustNotBeBlank.Identity)] IS blank" Condition=" '$(ThisValueMustNotBeBlank)' == '' " />
 
     </Task>
+```
 
 Usually, some other part of the script or a calling process will fill in the blank
 value and all your script is trying to do is make sure there is some kind of sensible
@@ -46,6 +48,7 @@ list using the "@" operator and test this value in the Error task.
 
 Here's how I try to ensure Wix is installed on a machine using this technique.
 
+```xml
     <!-- Search for candle - the wix compiler tool -->
     <PropertyGroup>
     	<WixCompiler>candle.exe</WixCompiler>
@@ -64,5 +67,6 @@ Here's how I try to ensure Wix is installed on a machine using this technique.
     	Condition=" '@(FindWixCompiler)' == '' "
     	Text="Wix is not installed!!!"
     	/>
+```
 
 The two FindWixCompiler values are include to support either a 32-bit or 64-bit machines.
