@@ -3,6 +3,12 @@
 
 // change v1 to allow upgrade
 const version = "v1.2";
+const coreAssets = [
+      "/",
+      "/index.html",
+      "/css/site.css",
+      "/css/prism.css",
+];
 
 const addResourcesToCache = async (resources) => {
   const cache = await caches.open(version);
@@ -26,19 +32,12 @@ const deleteOldCaches = async () => {
 };
 
 self.addEventListener("install", (event) => {
-  console.log('SW', 'install');
   event.waitUntil(
-    addResourcesToCache([
-      "/",
-      "/index.html",
-      "/css/site.css",
-      "/css/prism.css",
-    ]),
+    addResourcesToCache(coreAssets),
   );
 });
 
 self.addEventListener("activate", (event) => {
-  onsole.log('SW', 'activate');
   event.waitUntil(deleteOldCaches());
 });
 
@@ -50,10 +49,6 @@ self.addEventListener("fetch", (event) => {
   
   event.respondWith(
     caches.match(event.request).then(function (cached) {
-
-      if (cached) {
-        console.log('SW', `Cache response to ${event.request.url}`);
-      }
       
       /* Even if the response is in our cache, we go to the network as well.
            This pattern is known for producing "eventually fresh" responses,
@@ -72,7 +67,6 @@ self.addEventListener("fetch", (event) => {
       return cached || networked;
 
       function fetchedFromNetwork(response) {
-        console.log('SW', `Network response to ${event.request.url}`);
         putInCache(event.request, response.clone());
         return response;
       }
