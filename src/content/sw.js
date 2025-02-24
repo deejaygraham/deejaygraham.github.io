@@ -3,7 +3,8 @@
 // some ideas from https://github.com/bnijenhuis/bnijenhuis-nl
 
 // change version to allow upgrade
-const version = "v1.2";
+const version = "v1.3";
+
 const coreAssets = [
       "/",
       "/index.html",
@@ -14,40 +15,37 @@ const coreAssets = [
       "/offline.html"
 ];
 
-const addResourcesToCache = async (resources) => {
-  const cache = await caches.open(version);
-  await cache.addAll(resources);
-};
+// install this version of the service worker 
+// and cache the core assets we need for basic 
+// site functioning
+self.addEventListener("install", event => {
+  event.waitUntil(
+    caches.open(version).then(cache => {
+          cache.addAll(coreAssets)
+    })
+  );
+});
+
+// activate this worker - clean up any old 
+// versions of our cache
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(keys
+                        .filter(key => key !== version)
+                        .map(key => caches.delete(key))
+                        )
+        })
+  );
+});
 
 const putInCache = async (request, response) => {
   const cache = await caches.open(version);
   await cache.put(request, response);
 };
 
-const deleteCache = async (key) => {
-  await caches.delete(key);
-};
-
-const deleteOldCaches = async () => {
-  const cacheKeepList = [version];
-  const keyList = await caches.keys();
-  const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
-  await Promise.all(cachesToDelete.map(deleteCache));
-};
-
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    addResourcesToCache(coreAssets),
-  );
-});
-
-self.addEventListener("activate", (event) => {
-  event.waitUntil(deleteOldCaches());
-});
-
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") {
-    console.log('SW', `Ignore cache request for ${event.request.url}`);
     return;
   }
   
