@@ -43,7 +43,7 @@ compare items in the list. We do this with a custom type I've called DogKey.
 
 ```
 
-We also need a way to compare each item based on that key. So we implement an IEqualityComparer<T> for the key. The selection criteria
+We also need a way to compare each item based on that key. So we implement an IEqualityComparer&lt;T&gt; for the key. The selection criteria
 are down to us so here I'm comparing based on breed but it could be age, name or any combination. Any two items that match
 according to the comparision will be placed into the same group.
 
