@@ -91,17 +91,19 @@ self.addEventListener("fetch", (event) => {
              - Generate a Response programmaticaly, as shown below, and return that
           */
 
-         
+         return caches.match('/offline.html');
+            
         /* Here we're creating a response programmatically. The first parameter is the
              response body, and the second one defines the options for the response.
           */
-        return new Response("<h1>Service Unavailable</h1>", {
+        /*return new Response("<h1>Service Unavailable</h1>", {
           status: 503,
           statusText: "Service Unavailable",
           headers: new Headers({
             "Content-Type": "text/html",
           }),
         });
+        */
       }
     }),
   );
