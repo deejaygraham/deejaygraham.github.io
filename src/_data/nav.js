@@ -23,8 +23,4 @@ export default [
     name: "about",
     url: "/about/",
   },
-  {
-    name: "now",
-    url: "/now/",
-  },
 ];
