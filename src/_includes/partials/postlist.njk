@@ -3,37 +3,34 @@
 <div class="grid is-col-min-12">
 {% for post in postlist %}
 	<div class="cell">
-    		<div class="card">
-			
-				{% set thumbnailImage = '/img/thumbnails/notebook-420x255.webp' %}
-				{% if post.data.thumbnail %}
-					{% set thumbnailImage = post.data.thumbnail %}
-				{% endif %}
+    	<div class="card">	
+			{% set thumbnailImage = '/img/thumbnails/notebook-420x255.webp' %}
+			{% if post.data.thumbnail %}
+				{% set thumbnailImage = post.data.thumbnail %}
+			{% endif %}
 
-  				<div class="card-image">
+			<div class="card-image">
+				<figure class="image">
 					<a href="{{ post.url }}">
-					<figure class="image">
-  						<img src="{{ thumbnailImage }}" />
+						<img src="{{ thumbnailImage }}" />
 					</a>
-					</figure>
-				</div>
-	  		
-				<div class="card-content">
-					<a href="{{ post.url }}">
-    					<p class="title is-4">{{ post.data.title }}</p>
+				</figure>
+			</div>
+			<div class="card-content">
+				<a href="{{ post.url }}">
+					<p class="title is-4">{{ post.data.title }}</p>
 					{% if post.date %}
-						<p><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
+					<p><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
 					{% endif %}
-					</a>
-    				</div>
-				{% if post.data.tags %}
-				<div class="card-footer">
+				</a>
+			</div>
+			{% if post.data.tags %}
+			<div class="card-footer">
 				{% for tag in post.data.tags %}
 					<a href="/tags/{{tag}}">{{ tag }}</a>
 				{% endfor %}
-				</div>
-				{% endif %}
-
+			</div>
+			{% endif %}
   		</div>
 	</div>  
 {% endfor %}
