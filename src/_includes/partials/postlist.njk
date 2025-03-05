@@ -1,18 +1,17 @@
 {# Requires a global variable to be set "postlist" #}
 
-<div class="grid is-col-min-12">
+<div class="row columns is-multiline">
 {% for post in postlist %}
-	<div class="cell">
-    	<div class="card">	
-			{% set thumbnailImage = '/img/thumbnails/notebook-420x255.webp' %}
-			{% if post.data.thumbnail %}
-				{% set thumbnailImage = post.data.thumbnail %}
-			{% endif %}
-
+	<div class="column is-4">
+    	<div class="card large">	
 			<div class="card-image">
+				{% set thumbnailImage = '/img/thumbnails/notebook-420x255.webp' %}
+				{% if post.data.thumbnail %}
+					{% set thumbnailImage = post.data.thumbnail %}
+				{% endif %}
 				<figure class="image">
 					<a href="{{ post.url }}">
-						<img src="{{ thumbnailImage }}" />
+						<img src="{{ thumbnailImage }}" alt="post thumbnail" />
 					</a>
 				</figure>
 			</div>
@@ -20,7 +19,7 @@
 				<a href="{{ post.url }}">
 					<p class="title is-4">{{ post.data.title }}</p>
 					{% if post.date %}
-					<p><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
+					<p class="subtitle is-6"><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
 					{% endif %}
 				</a>
 			</div>
@@ -32,6 +31,9 @@
 			</div>
 			{% endif %}
   		</div>
+		{# card #}
 	</div>  
+	{# column #}
 {% endfor %}
 </div>
+{# row #}
