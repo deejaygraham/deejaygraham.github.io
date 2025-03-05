@@ -4,24 +4,25 @@ layout: base.njk
 title: talks
 ---
 
-<div class="grid is-col-min-12">
+<div class="row columns is-multiline">
 {% for item in talks %}
-	<div class="cell">
-    		<div class="card">
-			<a href="{{ item.url }}" target="_blank" rel="noreferrer">
-	  			<div class="card-image">
-					<figure class="image">
+	<div class="column is-4">
+    	<div class="card large">
+	  		<div class="card-image">
+				<figure class="image">
+					<a href="{{ item.url }}" target="_blank" rel="noreferrer">
 	  					<img src="{{ item.thumbnail }}" />
-					</figure>
-				</div>
-	   			
-		  		<div class="card-content">
-	    				<p class="title">{{ item.title }}</p>
+					</a>
+				</figure>
+			</div>
+			<div class="card-content">
+				<a href="{{ item.url }}" target="_blank" rel="noreferrer">
+					<p class="title is-4">{{ item.title }}</p>
 					{% if item.subtitle %}
-	    				<p class="subtitle">{{ item.subtitle }}</p>
-	    				{% endif %}
-	    			</div>
-			</a>
+	    				<p class="subtitle is-6">{{ item.subtitle }}</p>
+	    			{% endif %}
+				</a>
+	    	</div>
   		</div>
 	</div>  
 {% endfor %}
