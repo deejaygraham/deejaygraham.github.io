@@ -26,7 +26,7 @@
 			{% if post.data.tags %}
 			<div class="card-footer">
 				{% for tag in post.data.tags %}
-					<a href="/tags/{{tag}}" class="card-footer-item">{{ tag }}</a>
+					<a href="/tags/{{tag}}" class="card-footer-item">#{{ tag }}</a>
 				{% endfor %}
 			</div>
 			{% endif %}
