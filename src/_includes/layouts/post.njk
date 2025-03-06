@@ -25,10 +25,10 @@ Remove temporarily #}
 		<span class="reading-time is-hidden-mobile">{{ content | readingTime }}</span>
 	</div>	
 {% if tags %}
-	<div class="level-right">tags:
+	<div class="level-right">{# tags: remove temporarily #}
 	{% for tag in tags %}
    		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<span class="tag level-item"><a href="{{ tagUrl }}">{{ tag }}</a></span> 
+		<span class="tag level-item"><a href="{{ tagUrl }}">#{{ tag }}</a></span> 
   	{% endfor %}
 	</div>
 {% endif %}
