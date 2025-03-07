@@ -1,0 +1,13 @@
+---
+permalink: /spider.json
+eleventyExcludeFromCollections: true
+---
+{
+  "url": [
+    {% for page in collections.all | reverse %}
+        {% if not page.data.excludeFromSitemap %}
+        "{{ site.url }}{{ page.url | url }}",
+        {% endif %}
+    {% endfor %}
+  ]
+}
