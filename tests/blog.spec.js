@@ -39,10 +39,10 @@ test.describe("Specific blog post example", () => {
   });
 
   test("contains the meta tags", async ({ page }) => {
-    await expect(page.getByText("tags: code microbit python")).toBeVisible();
-    await expect(page.getByRole('link', { name: 'code', exact: true })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'microbit', exact: true })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'python', exact: true })).toBeVisible();
+    await expect(page.getByText("tags: #code #microbit #python")).toBeVisible();
+    await expect(page.getByRole('link', { name: '#code', exact: true })).toBeVisible();
+    await expect(page.getByRole('link', { name: '#microbit', exact: true })).toBeVisible();
+    await expect(page.getByRole('link', { name: '#python', exact: true })).toBeVisible();
   });
 
   test("contains code sample", async ({ page }) => {
