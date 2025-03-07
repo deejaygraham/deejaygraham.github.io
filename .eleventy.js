@@ -29,6 +29,9 @@ import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 // transforms
 import * as prettier from "prettier";
 
+// linters
+import linkLinter from "./src/_11ty/linters/links/index.js";
+
 export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
@@ -98,6 +101,9 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy({ "./src/assets/downloads": "/downloads" });
 
+  // linting 
+  eleventyConfig.addLinter('link-checker', linkLinter);
+	
   // preprocessing
 
   // drafts are excluded from full builds
