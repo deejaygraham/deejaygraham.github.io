@@ -5,7 +5,7 @@ eleventyExcludeFromCollections: true
 {
   "urls": [
     {%- for page in collections.all | reverse %}
-        {%- if not page.data.excludeFromSitemap %}
+        {%- if not page.data.excludeFromSitemap -%}
         "{{ site.url }}{{ page.url | url }}",
         {% endif -%}
     {% endfor -%}
