@@ -1,4 +1,5 @@
 ---
 permalink: /search-index.json
+eleventyExcludeFromCollections: true
 ---
 {{ collections.posts | search | dump | safe }}
