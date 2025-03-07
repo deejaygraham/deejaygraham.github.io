@@ -8,7 +8,7 @@ const readJSON = (filePath) => {
 }
 
 test("check all links on each page", async ({ page }) => {
-  const data = readJSON('../_site/spider.json');
+  const data = readJSON('./_site/spider.json');
   const urls = data.urls;
 
   for (const url of urls) {
