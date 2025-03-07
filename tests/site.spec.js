@@ -7,18 +7,13 @@ const readJSON = (filePath) => {
   return JSON.parse(jsonData);
 }
 
-test.describe("all pages", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("/talks/");
-  });
+test("check all links on each page", async ({ page }) => {
+  const data = readJSON('../_site/spider.json');
+  const urls = data.urls;
 
-  test("check all links on each page", async ({ page }) => {
-    const data = readJSON('../_site/spider.json');
-    const urls = data.urls;
-
-    for (const url of urls) {
-      await page.goto(url);
+  for (const url of urls) {
+    await page.goto(url);
       
-      // find all the links on the page...
-  });
+    // find all the links on the page...
+  }
 });
