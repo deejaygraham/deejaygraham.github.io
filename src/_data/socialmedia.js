@@ -21,7 +21,7 @@ export default [
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/derekjohngraham/",
+    url: "https://www.linkedin.com/in/derekjohngraham/",
     icon: "linkedin.svg",
   },
   {
