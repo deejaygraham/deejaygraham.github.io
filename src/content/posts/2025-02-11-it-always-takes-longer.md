@@ -1,7 +1,7 @@
 ---
 permalink: 2025/02/11/it-always-takes-longer/
 layout: sketchnote
-title: Title
+title: It Always Takes Longer
 tags: [presentations, sketchnotes]
 sketchnote:
   url: "/img/posts/it-always-takes-longer/it-always-takes-longer.jpg"
