@@ -1,10 +1,10 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import * as fs from 'fs';
 
-const readJSON = (filePath) => {
-  const jsonData = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(jsonData);
+
+const validLink = (link) => {
+    const internalLinksRegex = /deejaygraham.github.io/;
+    return link && !link?.startsWith("mailto:") && !link?.startsWith("#") && (link.startsWith('http') && link.match(internalLinksRegex));
 }
 
 const getAllLinksFromPage = async (page) => {
@@ -12,19 +12,18 @@ const getAllLinksFromPage = async (page) => {
     //
     // if you want to check all links, you can use a CSS selector
     // like 'locator("a")'
-    const links = page.getByRole("link");
-  
-    const allLinks = await links.all();
-    const allLinkHrefs = await Promise.all(
-      allLinks.map((link) => link.getAttribute("href"))
-    );
+    const allLinkHrefs = await page.locator("a").evaluateAll(anchors => anchors.map(anchor => anchor.href));
+    const title = await page.title();
+    //const allLinkHrefs = await Promise.all(
+    //    links.map((link) => link.getAttribute("href"))
+    //);
+
+    //console.log(JSON.stringify(allLinkHrefs, null, 2));
 
     const validHrefs = allLinkHrefs.reduce((links, link) => {
-      expect.soft(link, "link has no a proper href").not.toBeFalsy()
+      //expect.soft(link, `link ${link} on page: ${title} has no a proper href`).not.toBeFalsy()
 
-      // don't check external links
-      const externalLinksRegex = /www./;
-      if (link && !link?.startsWith("mailto:") && !link?.startsWith("#") && !link?.match(externalLinksRegex)) {
+      if (validLink(link)) {
         links.add(new URL(link, page.url()).href);
       }
       
@@ -34,39 +33,110 @@ const getAllLinksFromPage = async (page) => {
     return validHrefs
   }
 
-test("check all links on each page", async ({ page }, testInfo) => {
+const getAllImagesOnPage = async (page) => {
+    const images = await page.getByRole('img').all();
+    const allImageSrcLinks = await Promise.all(
+        images.map((img) => img.getAttribute("src"))
+    );
+
+    return allImageSrcLinks;
+}
+
+// long running test !!!
+test("check all links on each page", async ({ page, context
+ }, testInfo) => {
   // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.tsawait page.goto(goToUrl)
-  const response = await page.goto('/spider.json');
-  const content = await response.text();
-  // console.log(content);
+  const spiderPage = await page.goto('/spider.json');
+  const siteUrlsAsJson = await spiderPage.text();
   
-  const data = JSON.parse(content);
-  const urls = data.urls;
+  const data = JSON.parse(siteUrlsAsJson);
+  const siteUrls = new Set(data.urls);
 
-  for (const url of urls) {
-    await page.goto(url);
-    const linkUrls = await getAllLinksFromPage(page);
+  // do difference with urls I have already visited
+  // for now let's just check each page is navigable
+  for (const url of siteUrls) {
+       const sitePage = await context.newPage();
+       await sitePage.goto(url);
+    
+    //     const imagesOnThisPage = await getAllImagesOnPage(page);
+    //     imagesOnThisPage.forEach(imageUrls.add, imageUrls);
+    
+    //     console.log(imageUrls);
+    
+    //     const linksOnThisPage = await getAllLinksFromPage(page);
+    //     linksOnThisPage.forEach(pageUrls.add, pageUrls);
+    //     break;
 
-    for (const url of linkUrls) {
-        await test.step(`Checking link: ${url}`, async () => {
-          try {
-            // Note that some hosters / firewalls will block plain requests (Cloudflare, etc.)
-            // if that's the case for you, consider using `page.goto`
-            // or excluding particular URLs from the test
-            const response = await page.request.get(url);
-            const status = response.statusText();
-            
-            expect
-              .soft(response.ok(), `${url} has no green status code: ${status}`)
-              .toBeTruthy();
-          } catch {
-            expect.soft(null, `${url} has no green status code`).toBeTruthy();
-          }
-        });
-      }
-  
-      testInfo.attach("checked-links.txt", {
-        body: Array.from(linkUrls).join("\n"),
-      });
   }
+  // pages to check...
+  // build a set of all urls across all pages.
+  // add urls to a SET
+  // add other urls...
+  
+//   const imageUrls = new Set();
+//   const pageUrls = new Set([...siteUrls]);
+
+//   // build a list of links and images to check
+//   // across the whole site...
+//   for (const url of siteUrls) {
+//     await page.goto(url);
+
+//     const imagesOnThisPage = await getAllImagesOnPage(page);
+//     imagesOnThisPage.forEach(imageUrls.add, imageUrls);
+
+//     console.log(imageUrls);
+
+//     const linksOnThisPage = await getAllLinksFromPage(page);
+//     linksOnThisPage.forEach(pageUrls.add, pageUrls);
+//     break;
+//   }
+
+//   // now attempt to check each one...
+//   // images first...
+//   for (const url of imageUrls) {
+//     await test.step(`Checking image: ${url}`, async () => {
+//       try {
+//         // Note that some hosters / firewalls will block plain requests (Cloudflare, etc.)
+//         // if that's the case for you, consider using `page.goto`
+//         // or excluding particular URLs from the test
+//         const response = await page.request.get(url);
+//         const status = response.statusText();
+        
+//         expect
+//           .soft(response.ok(), `${url} has no green status code: ${status}`)
+//           .toBeTruthy();
+//       } catch {
+//         expect.soft(null, `${url} has no green status code`).toBeTruthy();
+//       }
+//     });
+//   }
+
+  //testInfo.attach("checked-links.txt", {
+  //  body: Array.from(linkUrls).join("\n"),
+  //});
+
+    // for (const url of pageUrls) {
+    //     await test.step(`Checking link: ${url}`, async () => {
+    //         try {
+    //         // Note that some hosters / firewalls will block plain requests (Cloudflare, etc.)
+    //         // if that's the case for you, consider using `page.goto`
+    //         // or excluding particular URLs from the test
+    //         const response = await page.request.get(url);
+    //         const status = response.statusText();
+            
+    //         expect
+    //             .soft(response.ok(), `${url} has no green status code: ${status}`)
+    //             .toBeTruthy();
+    //         } catch {
+    //         expect.soft(null, `${url} has no green status code`).toBeTruthy();
+    //         }
+    //     });
+    //     }
+
+    //     // testInfo.attach("checked-links.txt", {
+    //     //   body: Array.from(linkUrls).join("\n"),
+    // // });
+
+
+    
 });
