@@ -1,0 +1,28 @@
+---
+permalink: projects/index.html
+title: projects
+layout: base.njk
+---
+
+<header>
+	<h1 class="title">Things What I Have Made</h1>
+</header>
+
+<p>Here are some of the places you can see some of my open source work:</p>
+
+<div class="row columns is-multiline">
+{% for item in projects %}
+	<div class="column is-4">
+    	<div class="card large">
+		<div class="card-content">
+				<a href="{{ item.url }}" target="_blank" rel="noreferrer">
+					<p class="title is-4">{{ item.title }}</p>
+					{% if item.subtitle %}
+	    				<p class="subtitle is-6">{{ item.subtitle }}</p>
+	    			{% endif %}
+				</a>
+	    	</div>
+  		</div>
+	</div>  
+{% endfor %}
+</div>
