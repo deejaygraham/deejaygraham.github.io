@@ -32,8 +32,8 @@ const getAllLinksFromPage = async (page) => {
 
 test("check all links on each page", async ({ page }, testInfo) => {
   // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.tsawait page.goto(goToUrl)
-  await page.goto('/spider.json');
-  const content = await page.text();
+  const response = await page.goto('/spider.json');
+  const content = await response.text();
   console.log(content);
   
   const data = JSON.parse(content);
