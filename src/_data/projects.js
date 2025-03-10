@@ -2,7 +2,7 @@ export default [
   {
     title: "NDifference",
     subtitle: "My .Net API reporting tool",
-    url: https://deejaygraham.github.io/ndifference/"
+    url: "https://deejaygraham.github.io/ndifference/"
   },
   {
     title: "Makers and Creators project resources",
