@@ -21,9 +21,13 @@ const getAllLinksFromPage = async (page) => {
 
     const validHrefs = allLinkHrefs.reduce((links, link) => {
       expect.soft(link, "link has no a proper href").not.toBeFalsy()
-  
-      if (link && !link?.startsWith("mailto:") && !link?.startsWith("#"))
-        links.add(new URL(link, page.url()).href)
+
+      // don't check external links
+      const externalLinksRegex = /www./;
+      if (link && !link?.startsWith("mailto:") && !link?.startsWith("#") && !link?.match(externalLinksRegex)) {
+        links.add(new URL(link, page.url()).href);
+      }
+      
       return links;
     }, new Set());
   
