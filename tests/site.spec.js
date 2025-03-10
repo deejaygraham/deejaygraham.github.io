@@ -50,9 +50,10 @@ test("check all links on each page", async ({ page }, testInfo) => {
             // if that's the case for you, consider using `page.goto`
             // or excluding particular URLs from the test
             const response = await page.request.get(url);
-  
+            const status = response.statusText();
+            
             expect
-              .soft(response.ok(), `${url} has no green status code`)
+              .soft(response.ok(), `${url} has no green status code: ${status}`)
               .toBeTruthy();
           } catch {
             expect.soft(null, `${url} has no green status code`).toBeTruthy();
