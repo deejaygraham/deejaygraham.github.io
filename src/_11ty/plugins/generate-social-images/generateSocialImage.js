@@ -8,11 +8,11 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
   const line_length = lineBreakAt;
   const max_lines = 4;
   const start_x = 150;
-  const start_y = 210;
+  const start_y = 150;
   const line_height = 60;
-  const font_size = 72;
+  const font_size = 120;
   const font_weight = 700;
-  const site_font_size = 50
+  const site_font_size = 25;
   const titleColour = '#FF6C23'; // 000
   const siteNameColour = "#FEEFDA"; // 000
   const bgColour = "#1D1F1E"; // FFF
@@ -28,8 +28,8 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
   const graphicWidth = 1200;
   const graphicHeight = 628;
 	
-  const svgSite = `<text x="${start_x}" y="500" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
-  const svgDate = `<text x="${start_x}" y="100" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
+  const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
+  const svgDate = `<text x="${start_x}" y="50" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
 
   const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewbox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
   	<rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${bgColour}" />
