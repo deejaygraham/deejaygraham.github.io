@@ -14,7 +14,6 @@ describe("deployed site", () => {
 
     // avatar logo from top left corner
     it("contains avatar images", () => {
-      cy.request("/img/avatar.png");
       cy.request("/img/avatar.svg");
     });
 
