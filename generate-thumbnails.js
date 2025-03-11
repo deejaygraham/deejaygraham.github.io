@@ -19,8 +19,26 @@ const enforceMaxLength = (word, maxLength) => {
 }
 
 const colourPalettes = [
-    { foreground: '#FF6C23', background: '#1D1F1E' },
     { foreground: '#FFFFFF', background: '#000000' },
+    { foreground: '#000000', background: '#FFFFFF' },
+    { foreground: '#FF5733', background: '#C70039' },
+    { foreground: '#DAF7A6', background: '#FFC300' },
+    { foreground: '#581845', background: '#900C3F' },
+    { foreground: '#1C1C1C', background: '#F2F2F2' },
+    { foreground: '#2ECC71', background: '#1ABC9C' },
+    { foreground: '#3498DB', background: '#2980B9' },
+    { foreground: '#E74C3C', background: '#C0392B' },
+    { foreground: '#9B59B6', background: '#8E44AD' },
+    { foreground: '#34495E', background: '#2C3E50' },
+    { foreground: '#F39C12', background: '#E67E22' },
+    { foreground: '#D35400', background: '#E74C3C' },
+    { foreground: '#16A085', background: '#1ABC9C' },
+    { foreground: '#27AE60', background: '#2ECC71' },
+    { foreground: '#2980B9', background: '#3498DB' },
+    { foreground: '#8E44AD', background: '#9B59B6' },
+    { foreground: '#2C3E50', background: '#34495E' },
+    { foreground: '#E67E22', background: '#F39C12' },
+    { foreground: '#C0392B', background: '#D35400' }
 ];
 
 const getRandomPalette = (palettes) => {
