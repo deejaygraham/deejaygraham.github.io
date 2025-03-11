@@ -9,7 +9,7 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
   const max_lines = 4;
   const start_x = 50;
   const start_y = 150;
-  const line_height = 90; 
+  const line_height = 120; 
   const font_size = 120;
   const font_weight = 700;
   const site_font_size = 25;
