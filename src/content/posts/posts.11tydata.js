@@ -10,6 +10,7 @@ const converFileNameToPath = (filename) => {
 export default {
     eleventyComputed: {
         permalink: (data) => {
+            const name = converFileNameToPath(path.basename(data.page.inputPath));
             console.log(name);
             return name;
         },
