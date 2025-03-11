@@ -1,8 +1,6 @@
+// generate thumbnails for posts that don't have them.
 const fs = require('fs');
 const path = require('path');
-
-// File name to check/create
-const fileName = 'thumbnail-420x255.png';
 
 // Function to check and create the file if it doesn't exist
 function checkAndCreateFile(directory, fileName) {
@@ -10,6 +8,8 @@ function checkAndCreateFile(directory, fileName) {
 
     fs.access(filePath, fs.constants.F_OK, (err) => {
         if (err) {
+
+            
             // File does not exist, create it
             fs.writeFile(filePath, '', (err) => {
                 if (err) {
@@ -25,7 +25,7 @@ function checkAndCreateFile(directory, fileName) {
 }
 
 // Function to iterate through directories recursively
-function generateImagesInSubdirectories(directory) {
+function generateImagesInSubdirectories(directory, fileName) {
     fs.readdir(directory, { withFileTypes: true }, (err, files) => {
         if (err) {
             console.error(`Error reading directory ${directory}:`, err);
@@ -36,7 +36,7 @@ function generateImagesInSubdirectories(directory) {
             const fullPath = path.join(directory, file.name);
 
             if (file.isDirectory()) {
-                generateImagesInSubdirectories(fullPath);
+                generateImagesInSubdirectories(fullPath, fileName);
             } else if (file.isFile() && file.name === fileName) {
                 // File already exists, no need to create
                 console.log(`File already exists in ${directory}`);
@@ -49,5 +49,7 @@ function generateImagesInSubdirectories(directory) {
 }
 
 // Top-level directory to start from
-const topLevelDirectory = './src/content/posts';
-generateImagesInSubdirectories(topLevelDirectory);
+const topLevelDirectory = './src/assets/img/posts';
+// File name to check/create
+const fileName = 'thumbnail-420x255.png';
+generateImagesInSubdirectories(topLevelDirectory, fileName);
