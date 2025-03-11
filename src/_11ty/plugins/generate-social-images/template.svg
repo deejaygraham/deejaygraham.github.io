@@ -1,0 +1,8 @@
+<svg width="1200" height="628" viewbox="0 0 1200 628" xmlns="http://www.w3.org/2000/svg">  
+  <rect x="0" y="0" width="1200" height="628" rx="0" ry="0" fill="#000" />
+  <g style="font-family:'Consolas', 'Courier New'">
+    <text x="300" y="50" fill="#FEEFDA" font-size="25px" font-weight="700">10 March 2025</text>
+    <text x="300" y="150" fill="#FF6C23" font-size="120px" font-weight="700">Hello World</text>
+    <text x="300" y="600" fill="#FEEFDA" font-size="25px" font-weight="700">https://deejaygraham.github.io</text>	
+  </g>
+</svg>
