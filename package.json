@@ -8,7 +8,7 @@
     "unit-test": "npx ava --verbose",
     "format": "prettier . --write",
     "lint": "npx eslint ./src/_11ty",
-    "thumbs": "node ./generate-thumbnails.js",
+    "thumbs": "node ./generate-thumbnails.js"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",

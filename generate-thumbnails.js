@@ -8,6 +8,26 @@ const getRandomWord = (array) => {
     return array[randomIndex];
 };
 
+const getLongestWord = (array) => {
+    return array.reduce((longest, currentWord) => {
+        return currentWord.length > longest.length ? currentWord : longest;
+    }, '');
+} 
+
+const enforceMaxLength = (word, maxLength) => {
+    return word.length > maxLength ? word.slice(0, maxLength) : word;
+}
+
+const colourPalettes = [
+    { foreground: '#FF6C23', background: '#1D1F1E' },
+    { foreground: '#FFFFFF', background: '#000000' },
+];
+
+const getRandomPalette = (palettes) => {
+    const randomIndex = Math.floor(Math.random() * palettes.length);
+    return palettes[randomIndex];
+}
+
 // Function to check and create the file if it doesn't exist
 const checkAndCreateFile = (directory, fileName) => {
     const filePath = path.join(directory, fileName);
@@ -15,33 +35,25 @@ const checkAndCreateFile = (directory, fileName) => {
     fs.access(filePath, fs.constants.F_OK, (err) => {
         if (err) {
           // File does not exist, create it
-
-          const lineBreakAt = 15; // characters
-          const line_length = lineBreakAt;
-          const max_lines = 4;
-          const start_x = 50;
+          const start_x = 25;
           const start_y = 150;
-          const line_height = 120; 
-          const font_size = 120;
+          const font_size = 50;
           const font_weight = 700;
-          const site_font_size = 25;
-          const titleColour = '#FF6C23'; // 000
-          const siteNameColour = "#FEEFDA"; // 000
-          const bgColour = "#1D1F1E"; // FFF
+          const colours = getRandomPalette(colourPalettes);
 
           // get first word or slug ???
           const slug = path.basename(directory);
-          const wordsArray = slug.split('-');
+          const postTitle = slug.split('-');
 
-          const title = getRandomWord(wordsArray);
+          const title = enforceMaxLength(getLongestWord(postTitle), 12);
         
-          const svgTitle = `<text x="${start_x}" y="${start_y_middle}" fill="${titleColour}" font-size="${font_size}px" font-weight="${font_weight}">${line}</text>`;;
+          const svgTitle = `<text x="${start_x}" y="${start_y}" fill="${colours.foreground}" font-size="${font_size}px" font-weight="${font_weight}">${title}</text>`;;
         
           const graphicWidth = 420;
           const graphicHeight = 255;
             
           const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewbox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
-  	        <rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${bgColour}" />
+  	        <rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${colours.background}" />
     	        <g style="font-family:'Consolas', 'Courier New'">
   		            ${svgTitle}
                 </g>
@@ -51,7 +63,7 @@ const checkAndCreateFile = (directory, fileName) => {
             // generate the image from the svg        
             const svgBuffer = Buffer.from(template);
 
-            await sharp(svgBuffer)
+            sharp(svgBuffer)
               .resize(graphicWidth, graphicHeight)
               .png()
               .toFile(filePath);
