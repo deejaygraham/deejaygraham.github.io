@@ -7,7 +7,8 @@
     "test": "npx cypress run --e2e --browser chrome",
     "unit-test": "npx ava --verbose",
     "format": "prettier . --write",
-    "lint": "npx eslint ./src/_11ty"
+    "lint": "npx eslint ./src/_11ty",
+    "thumbs": "node ./generate-thumbnails.js",
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
