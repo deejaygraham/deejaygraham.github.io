@@ -1,6 +1,7 @@
 import sharp from "sharp";
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
+import { Buffer } from 'buffer/';
 
 export default async function (imageName, title, postDate, siteName, targetDir) {
 
@@ -52,7 +53,7 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
       .toFile(`${targetDir}/${fileName}`);
 
     } catch(err) {
-        console.error("Eleventy generating social images error:", err, { template, filename, title, siteName});
+        console.error("Eleventy generating social images error:", err, { template, fileName, title, siteName});
     }
 
     return fileName;
