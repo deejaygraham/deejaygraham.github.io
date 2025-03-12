@@ -22,6 +22,7 @@
 					{% if post.date %}
 					<p class="subtitle is-6"><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
 					{% endif %}
+<p>{{ post.templateContent | excerpt | safe }}</p>
 				</a>
 			</div>
 			{% if post.data.tags %}
