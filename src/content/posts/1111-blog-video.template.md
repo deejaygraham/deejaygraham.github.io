@@ -1,8 +1,5 @@
 ---
-permalink: year/month/day/title/
-layout: post
 title: Title
-
 tags: [video, music]
 ---
 
