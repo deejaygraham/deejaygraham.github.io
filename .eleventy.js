@@ -59,6 +59,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("posts", posts);
 
   // filters
+  // debug use in template {{ post.data | debugger }}
+  eleventyConfig.addFilter("debugger", (...args) => {
+    console.log(...args)
+    debugger;
+  });
+	
   eleventyConfig.addFilter("limit", limit);
   eleventyConfig.addFilter("excerpt", excerpt);
   eleventyConfig.addFilter("firstItem", firstItem);
