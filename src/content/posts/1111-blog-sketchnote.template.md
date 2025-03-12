@@ -1,5 +1,4 @@
 ---
-permalink: year/month/day/slug/
 layout: sketchnote
 title: Title
 tags: [presentations, sketchnotes]
