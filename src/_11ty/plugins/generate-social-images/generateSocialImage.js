@@ -1,7 +1,7 @@
 import sharp from "sharp";
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
-import { Buffer } from 'buffer/';
+import { Buffer } from 'buffer/index.js';
 
 export default async function (imageName, title, postDate, siteName, targetDir) {
 
