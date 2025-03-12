@@ -22,32 +22,34 @@
 {% if sketchnote %}
 <div class="sketchnote">
     {% if sketchnote.url %}
+    <figure class="image">
         <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
+    </figure>
     {% endif %}
     {% if sketchnote.source %}
         <h4>Source</h4>
         {% if sketchnote.source.url %}
-        <a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a>
+        <p><a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a></p>
         {% else %}
-        {{ sketchnote.source.name }}
+        <p>{{ sketchnote.source.name }}</p>
         {% endif %}
     {% endif %}
             
     {% if sketchnote.speaker %}
         <h4>About the Speaker</h4>
         {% if sketchnote.speaker.url %}
-        <a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a>
+        <p><a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a></p>
         {% else %}
-        {{ sketchnote.speaker.name }}
+        <p>{{ sketchnote.speaker.name }}</p>
         {% endif %}
     {% endif %}
                     
     {% if sketchnote.event %}
         <h4>About the Event</h4>
         {% if sketchnote.event.url %}
-        <a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a>
+        <p><a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a></p>
         {% else %}
-        {{ sketchnote.event.name }}
+        <p>{{ sketchnote.event.name }}</p>
         {% endif %}
     {% endif %}
 </div>
