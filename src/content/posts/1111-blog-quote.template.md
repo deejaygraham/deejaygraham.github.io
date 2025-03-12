@@ -1,7 +1,6 @@
 ---
-permalink: year/month/day/title/
 layout: quotation
-title: More Silver Bullets
+title: Title
 attribution: Person
 publication: Book
 size: large
