@@ -16,7 +16,7 @@ describe("home page", () => {
   });
 
   it("contains most recent list of posts", () => {
-    cy.get(".cell").should("have.length", 12);
+    cy.get(".card").should("have.length", 12);
   });
 
   it("contains footer with social links", () => {
