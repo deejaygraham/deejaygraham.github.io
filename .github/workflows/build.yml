@@ -41,6 +41,7 @@ jobs:
 
       - name: Build and run tests on 11ty filter code
         run: |
+          npm run lint
           npm run build
           npm run unit-test
 
