@@ -1,7 +1,6 @@
 import sharp from "sharp";
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
-import { Buffer } from 'buffer/index.js';
 
 export default async function (imageName, title, postDate, siteName, targetDir) {
 
@@ -45,7 +44,7 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
 
   try {
     // generate the image from the svg        
-    const svgBuffer = Buffer.from(template);
+    const svgBuffer = Buffer.from(template); // eslint-disable-line
 
     await sharp(svgBuffer)
       .resize(graphicWidth, graphicHeight)
