@@ -1,7 +1,6 @@
-import fs from 'fs';
 import path from 'path';
 
-const converFileNameToPath = (filename) => {
+const convertFileNameToPath = (filename) => {
     const [year, month, day, ...rest] = filename.split('-');
     const slug = rest.join('-').replace('.md', '/');
     return path.join(year, month, day, slug);
@@ -10,7 +9,7 @@ const converFileNameToPath = (filename) => {
 export default {
     eleventyComputed: {
         permalink: (data) => {
-            const name = converFileNameToPath(path.basename(data.page.inputPath));
+            const name = convertFileNameToPath(path.basename(data.page.inputPath));
             //console.log(name);
             return name;
         },
@@ -25,7 +24,7 @@ export default {
                 return data.thumbnail;
             //    return `/img/posts/${data.thumbnail}`;
             }
-            return `/img/posts/${data.page.fileSlug)/thumbnail-420x255.jpg`;
+            return `/img/posts/${data.page.fileSlug}/thumbnail-420x255.jpg`;
         }
     }
 };
