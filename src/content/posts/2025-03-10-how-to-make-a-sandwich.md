@@ -1,5 +1,4 @@
 ---
-permalink: 2025/03/10/how-to-make-a-sandwich/
 layout: sketchnote
 title: How To Make A Sandwich
 tags: [presentations, sketchnotes]
