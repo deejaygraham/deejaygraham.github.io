@@ -4,7 +4,7 @@
 {% for post in postlist %}
 	<div class="column is-4">
     	<div class="card large">	
-			<div class="card-image">
+			<!-- <div class="card-image">
 				{% set thumbnailImage = '/img/thumbnails/notebook-420x255.webp' %}
 				{% if post.data.thumbnail %}
 					{% set thumbnailImage = post.data.thumbnail %}
@@ -15,6 +15,7 @@
 					</a>
 				</figure>
 			</div>
+-->
 			<div class="card-content">
 				<a href="{{ post.url }}">
 					<p class="title is-4">{{ post.data.title }}</p>
