@@ -10,9 +10,9 @@ describe("home page", () => {
   });
 
   it("navigation menu is shown", () => {
-    cy.get(".navbar-end > a").should("have.length", 7);
+    cy.get(".navbar-end > a").should("have.length", 6);
     cy.get(".navbar-end > a").first().should("have.text", "home");
-    cy.get(".navbar-end > a").last().should("have.text", "now");
+    cy.get(".navbar-end > a").last().should("have.text", "about");
   });
 
   it("contains most recent list of posts", () => {
