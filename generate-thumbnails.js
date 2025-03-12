@@ -78,6 +78,7 @@ const checkAndCreateFile = (directory, fileName) => {
             </svg>`;
             
           try {
+            console.log(`Creating file ${fileName} in ${directory}`);
             // generate the image from the svg        
             const svgBuffer = Buffer.from(template);
 
@@ -89,12 +90,11 @@ const checkAndCreateFile = (directory, fileName) => {
             console.error("Eleventy generating social images error:", err, { template, filename, title, siteName});
           }
         } else {
-            console.log(`File already exists in ${directory}`);
+            console.log(`File ${fileName} already exists in ${directory}`);
         }
     });
 }
 
-// Function to iterate through directories recursively
 const generateImagesInSubdirectories = (directory, fileName) => {
     fs.readdir(directory, { withFileTypes: true }, (err, files) => {
         if (err) {
@@ -118,8 +118,51 @@ const generateImagesInSubdirectories = (directory, fileName) => {
     });
 }
 
+const convertFilenameToPath = (filename) => {
+    const [year, month, day, ...rest] = filename.split('-');
+    return rest.join('-').replace('.md', '');
+};
+
+const createSubDirectory = (sourceDir, destDir, filename) => {
+    const newPath = convertFilenameToPath(filename);
+    const newDirPath = path.join(destDir, newPath);
+
+    fs.access(newDirPath, fs.constants.F_OK, (err) => {
+        if (err) {
+            // Directory does not exist, create it
+            fs.mkdir(newDirPath, { recursive: true }, (err) => {
+        
+                if (err) {
+                    console.error(`Error creating directory ${newDirPath}:`, err);
+                } else {
+                    console.log(`Directory created: ${newDirPath}`);
+                }
+            });
+        } else {
+            console.log(`Directory already exists: ${newDirPath}`);
+        }
+    }); 
+};
+
+const createPostImageFolders = (sourceDir, destinationDir) => {
+    fs.readdir(sourceDir, (err, files) => {
+        if (err) {
+            console.error(`Error reading directory ${sourceDir}:`, err);
+            return;
+        }
+
+        files.forEach((file) => {
+            if (path.extname(file).toLowerCase() === '.md') {
+                createSubDirectory(sourceDir, destinationDir, file);
+            }
+        });
+    });
+};
+
 // Top-level directory to start from
-const topLevelDirectory = './src/assets/img/posts';
+const postDirectory = './src/content/posts';
+const imageDirectory = './src/assets/img/posts';
 // File name to check/create
 const fileName = 'thumbnail-420x255.png';
-generateImagesInSubdirectories(topLevelDirectory, fileName);
+createPostImageFolders(postDirectory, imageDirectory);
+generateImagesInSubdirectories(imageDirectory, fileName);
