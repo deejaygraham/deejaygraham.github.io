@@ -1,8 +1,6 @@
 ---
-permalink: year/month/day/title/
-layout: post
 title: Simple Microbit Testing
-published: false
+draft: true
 tags: [tdd, code, microbit, python]
 ---
 
