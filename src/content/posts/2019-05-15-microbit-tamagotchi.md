@@ -1,8 +1,5 @@
 ---
-permalink: 2019/05/15/microbit-tamagotchi/
-
 title: Microbotchi
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

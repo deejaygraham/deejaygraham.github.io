@@ -1,8 +1,5 @@
 ---
-permalink: 2019/03/10/configuring-iis-in-powershell/
-
 title: Configuring IIS in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

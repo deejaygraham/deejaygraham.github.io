@@ -1,8 +1,5 @@
 ---
-permalink: 2019/06/07/how-to-talk-to-devs/
-
 title: How to talk to Developers
-
 tags: [video, presentations]
 ---
 

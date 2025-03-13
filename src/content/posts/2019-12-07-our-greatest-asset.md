@@ -1,9 +1,7 @@
 ---
-permalink: 2019/12/07/our-greatest-asset/
 layout: quotation
 size: medium
 title: Our Greatest Asset
-
 attribution: Bob Marshall
 publication:
 tags: [quote]

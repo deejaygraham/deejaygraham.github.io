@@ -1,9 +1,6 @@
 ---
-permalink: 2019/04/25/tiny-tetris-for-microbit/
-
 title: Tiny Tetris for Microbit
 tags: [code, microbit]
-
 hero: microbit
 tweetable: true
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

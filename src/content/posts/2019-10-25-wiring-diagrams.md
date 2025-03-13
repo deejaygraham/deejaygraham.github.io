@@ -1,8 +1,5 @@
 ---
-permalink: 2019/10/25/wiring-diagrams/
-
 title: Wiring Diagrams
-
 tags: [signs]
 thumbnail: /img/posts/wiring-diagrams/wiring-diagrams-420x255.webp
 alttext: wiring diagrams

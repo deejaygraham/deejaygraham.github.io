@@ -1,8 +1,5 @@
 ---
-permalink: 2018/01/09/campus-north-murals/
-
 title: Campus North Murals
-
 tags: [illustration]
 ---
 

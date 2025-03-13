@@ -1,8 +1,5 @@
 ---
-permalink: 2019/04/15/druckers-rules-for-productivity/
-
 title: Druckers Rules for Productivity
-
 tags: [xp, agile]
 ---
 

@@ -1,9 +1,6 @@
 ---
-permalink: 2018/02/05/langtons-ant-for-microbit/
-
 title: Langton's Ant
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

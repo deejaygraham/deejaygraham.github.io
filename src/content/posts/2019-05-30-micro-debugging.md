@@ -1,8 +1,5 @@
 ---
-permalink: 2019/05/30/micro-debugging/
-
 title: Debugging Microbit Sensors
-
 tags: [microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

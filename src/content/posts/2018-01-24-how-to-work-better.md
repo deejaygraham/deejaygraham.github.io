@@ -1,8 +1,5 @@
 ---
-permalink: 2018/01/24/how-to-work-better/
-
 title: How to Work Better
-
 tags: [agile, signs]
 ---
 

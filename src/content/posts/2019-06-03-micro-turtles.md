@@ -1,8 +1,5 @@
 ---
-permalink: 2019/06/03/micro-turtles/
-
 title: Microbit Turtles
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

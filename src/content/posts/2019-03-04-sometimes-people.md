@@ -1,9 +1,7 @@
 ---
-permalink: 2019/03/04/sometimes-people/
 layout: quotation
 size: medium
 title: Sometimes People
-
 attribution: Kristen Butler
 publication:
 tags: [quote]

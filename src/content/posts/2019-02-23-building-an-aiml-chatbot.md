@@ -1,8 +1,5 @@
 ---
-permalink: 2019/02/23/building-an-aiml-chatbot/
-
 title: Building a Chat Bot
-
 tags: [csharp, code]
 ---
 

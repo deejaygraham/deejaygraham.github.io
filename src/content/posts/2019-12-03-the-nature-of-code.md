@@ -1,8 +1,5 @@
 ---
-permalink: 2019/12/03/the-nature-of-code/
-
 title: The Nature of Code
-
 tags: [code, books]
 thumbnail: /img/posts/the-nature-of-code/noc-420x255.webp
 alttext: code

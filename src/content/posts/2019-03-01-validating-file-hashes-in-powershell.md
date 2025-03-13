@@ -1,8 +1,5 @@
 ---
-permalink: 2019/03/01/validating-file-hashes-in-powershell/
-
 title: Validating File Hashes in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

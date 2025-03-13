@@ -1,8 +1,5 @@
 ---
-permalink: 2019/07/04/playing-cards-with-snakes/
-
 title: Playing Cards with Snakes
-
 tags: [code]
 thumbnail: "/img/posts/playing-cards-with-snakes/thumbnail-420x255.webp"
 ---

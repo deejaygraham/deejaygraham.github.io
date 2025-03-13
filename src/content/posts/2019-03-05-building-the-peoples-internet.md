@@ -1,8 +1,5 @@
 ---
-permalink: 2019/03/05/building-the-peoples-internet/
-
 title: Building the Peoples Internet
-
 tags: [video, presentations]
 ---
 

@@ -1,8 +1,5 @@
 ---
-permalink: 2019/11/02/confident-code/
-
 title: Confident Code
-
 tags: [video, presentations]
 thumbnail: /img/posts/confident-code/confident-code-420x255.webp
 alttext: avdi grimm

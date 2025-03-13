@@ -1,8 +1,5 @@
 ---
-permalink: 2019/06/14/microbit-infection/
-
 title: Microbit Infection
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

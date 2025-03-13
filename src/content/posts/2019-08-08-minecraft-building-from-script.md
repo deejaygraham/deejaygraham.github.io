@@ -1,8 +1,5 @@
 ---
-permalink: 2019/08/08/minecraft-building-from-script/
-
 title: Minecraft Building from Script
-
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

@@ -1,8 +1,5 @@
 ---
-permalink: 2019/04/10/estimating-complexity/
-
 title: Estimating Complexity
-
 tags: [xp, agile]
 ---
 

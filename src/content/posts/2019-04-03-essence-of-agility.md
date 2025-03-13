@@ -1,10 +1,8 @@
 ---
-permalink: 2019/04/03/essence-of-agility/
 layout: quotation
 title: The Essence of Agility
 attribution: Allen Holub
 publication: via Twitter
-
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

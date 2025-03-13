@@ -1,8 +1,5 @@
 ---
-permalink: 2019/11/04/knapsack-packing/
-
 title: Knapsack Packing
-
 tags: [csharp, code, tdd]
 thumbnail: /img/posts/knapsack-packing/knapsack-packing-420x255.webp
 alttext: packing

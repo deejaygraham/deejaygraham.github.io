@@ -1,8 +1,5 @@
 ---
-permalink: 2019/06/24/what-do-you-mean/
-
 title: What do you mean
-
 tags: [video, presentations]
 thumbnail: "/img/posts/what-do-you-mean/thumbnail-420x255.webp"
 ---

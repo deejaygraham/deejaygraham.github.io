@@ -1,6 +1,4 @@
 ---
-permalink: 2019/11/22/testable-filesystem/
-
 title: Test-Driving a File System
 draft: true
 tags: [csharp, code, tdd]

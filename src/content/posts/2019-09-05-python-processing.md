@@ -1,8 +1,5 @@
 ---
-permalink: 2019/09/05/python-processing/
-
 title: Processing with Python
-
 tags: [code, processing]
 thumbnail: /img/posts/python-processing/python-processing-420x255.webp
 alttext: screenshot

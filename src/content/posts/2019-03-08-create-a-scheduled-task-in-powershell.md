@@ -1,8 +1,5 @@
 ---
-permalink: 2019/03/08/create-a-scheduled-task-in-powershell/
-
 title: Create a Scheduled Task in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

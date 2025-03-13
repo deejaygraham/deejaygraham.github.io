@@ -1,8 +1,5 @@
 ---
-permalink: 2019/04/22/joe-and-alan/
-
 title: Joe and Alan
-
 tags: [video, presentations]
 ---
 

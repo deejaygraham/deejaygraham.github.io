@@ -1,8 +1,5 @@
 ---
-permalink: 2019/06/10/microbit-beacons/
-
 title: Microbit Beacons
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

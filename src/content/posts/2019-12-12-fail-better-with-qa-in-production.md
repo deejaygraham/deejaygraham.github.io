@@ -1,8 +1,5 @@
 ---
-permalink: 2019/12/12/fail-better-with-qa-in-production/
-
 title: Fail better with QA in Production
-
 tags: [video, presentations]
 thumbnail: /img/posts/fail-better-with-qa-in-production/thumbnail-420x255.webp
 alttext: Rouan

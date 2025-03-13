@@ -1,8 +1,5 @@
 ---
-permalink: 2019/03/11/enable-assembly-binding-logging-without-fuslogvw/
-
 title: Enable Assembly Binding Logging without FusLogVw
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

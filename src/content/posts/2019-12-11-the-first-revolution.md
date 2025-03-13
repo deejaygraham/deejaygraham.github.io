@@ -1,8 +1,5 @@
 ---
-permalink: 2019/12/11/the-first-revolution/
-
 title: The First Revolution
-
 tags: [signs]
 thumbnail: /img/posts/the-first-revolution/the-first-revolution-420x255.webp
 alttext: gil scott heron

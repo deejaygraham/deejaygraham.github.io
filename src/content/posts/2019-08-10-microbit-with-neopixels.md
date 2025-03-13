@@ -1,8 +1,5 @@
 ---
-permalink: 2019/08/10/microbit-with-neopixels/
-
 title: Microbit with NeoPixels
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

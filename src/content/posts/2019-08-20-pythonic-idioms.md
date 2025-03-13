@@ -1,8 +1,5 @@
 ---
-permalink: 2019/08/20/pythonic-idioms/
-
 title: Pythonic Idioms
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

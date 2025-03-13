@@ -1,11 +1,8 @@
 ---
-permalink: 2019/03/18/purpose-of-life/
 layout: quotation
 size: large
 title: The Purpose of Life
-
 attribution: Ralph Waldo Emerson
-publication:
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

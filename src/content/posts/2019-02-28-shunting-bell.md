@@ -1,8 +1,5 @@
 ---
-permalink: 2019/02/28/shunting-bell/
-
 title: Shunting Bell
-
 tags: [signs]
 ---
 

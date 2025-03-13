@@ -1,8 +1,5 @@
 ---
-permalink: 2019/03/01/text-entry-in-autoit/
-
 title: Text Entry in AutoIt
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

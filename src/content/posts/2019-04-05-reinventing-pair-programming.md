@@ -1,6 +1,4 @@
 ---
-permalink: 2019/04/05/reinventing-pair-programming/
-
 title: Re-inventing Pair Programming
 draft: true
 tags: [xp, code]
