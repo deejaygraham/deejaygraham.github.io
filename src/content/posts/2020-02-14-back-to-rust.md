@@ -1,8 +1,5 @@
 ---
-permalink: 2020/02/14/back-to-rust/
-
 title: Getting Back to Rust
-
 tags: [code]
 thumbnail: "/img/thumbnails/rust-420x255.webp"
 alttext: rust

@@ -1,5 +1,4 @@
 ---
-permalink: 2020/02/07/mob-programming-evolution/
 layout: sketchnote
 title: Mob Programming Evolution
 tags: [sketchnotes]

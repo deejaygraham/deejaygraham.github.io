@@ -1,9 +1,7 @@
 ---
-permalink: 2020/01/05/dont-fight-stupid/
 layout: quotation
 size: large
 title: Dont Fight Stupid
-
 attribution: Jesse Robbins
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

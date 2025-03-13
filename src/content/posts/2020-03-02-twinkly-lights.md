@@ -1,8 +1,5 @@
 ---
-permalink: 2020/03/02/twinkly-lights/
-
 title: Microbit Twinkly Lights
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

@@ -1,8 +1,5 @@
 ---
-permalink: 2020/01/31/game-of-oligarchy-3/
-
 title: Game of Oligarchy Part 3
-
 tags: [code, processing]
 thumbnail: "/img/posts/game-of-oligarchy-3/thumbnail-420x255.webp"
 alttext: players

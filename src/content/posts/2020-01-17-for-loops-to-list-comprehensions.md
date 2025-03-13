@@ -1,8 +1,5 @@
 ---
-permalink: 2020/01/17/for-loops-to-list-comprehensions/
-
 title: Refactoring Nested For Loops to List Comprehensions
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

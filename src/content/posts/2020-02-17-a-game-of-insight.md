@@ -1,9 +1,7 @@
 ---
-permalink: 2020/02/17/a-game-of-insight/
 layout: quotation
 size: large
 title: A Game of Insight
-
 attribution: Kent Beck
 publication:
 tags: [quote, xp]

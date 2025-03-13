@@ -1,9 +1,6 @@
 ---
-permalink: 2020/02/20/approval-testing/
-
 title: Approval Testing
 tags: [agile, xp]
-
 thumbnail: "/img/posts/approval-tests-workshop/thumbnail-420x255.webp"
 ---
 

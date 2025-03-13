@@ -1,8 +1,5 @@
 ---
-permalink: 2020/03/12/microbit-timer/
-
 title: Microbit Timer
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
