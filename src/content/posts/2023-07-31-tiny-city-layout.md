@@ -16,9 +16,9 @@ size(1024, 1024)
 background(0)
 
 for x in range(0, 256):
-for y in range(0, 256):
-if (x ^ y) % 9:
-rect(x _ 4, y _ 4, 4, 4)
+    for y in range(0, 256):
+        if (x ^ y) % 9:
+            rect(x _ 4, y _ 4, 4, 4)
 
 ```
 
