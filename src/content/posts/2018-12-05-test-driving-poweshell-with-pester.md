@@ -1,8 +1,5 @@
 ---
-permalink: 2018/12/05/test-driving-poweshell-with-pester/
-
 title: Test Driving PowerShell with Pester
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

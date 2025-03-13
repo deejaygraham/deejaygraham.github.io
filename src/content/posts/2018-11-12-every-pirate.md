@@ -1,9 +1,7 @@
 ---
-permalink: 2018/11/12/every-pirate/
 layout: quotation
 size: large
 title: Every Pirate
-
 attribution: Cory Doctorow
 publication:
 tags: [quote]

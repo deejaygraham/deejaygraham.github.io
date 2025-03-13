@@ -1,8 +1,5 @@
 ---
-permalink: 2019/02/01/gui-automation-in-powershell-using-autoit/
-
 title: GUI Automation in PowerShell using AutoIt
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

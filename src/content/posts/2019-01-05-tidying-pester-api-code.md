@@ -1,8 +1,5 @@
 ---
-permalink: 2019/01/05/tidying-pester-api-code/
-
 title: Tidying Pester API Code
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

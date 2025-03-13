@@ -1,8 +1,5 @@
 ---
-permalink: 2019/02/07/psake-turtles-all-the-way-down/
-
 title: PSake Turtles All The Way Down
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

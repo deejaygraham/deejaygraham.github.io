@@ -1,11 +1,9 @@
 ---
-permalink: 2019/02/20/first-days-of-a-better-nation/
 layout: quotation
 title: First Days of a Better Nation
 attribution: Cory Doctorow
 publication: Overclocked
 comment: Variations on this quote keep turning up in Corys work including Walkaway
-
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

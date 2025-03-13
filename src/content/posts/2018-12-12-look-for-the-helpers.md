@@ -1,9 +1,7 @@
 ---
-permalink: 2018/12/12/look-for-the-helpers/
 layout: quotation
 size: large
 title: Look for the Helpers
-
 attribution: Fred Rogers
 publication:
 tags: [quote]

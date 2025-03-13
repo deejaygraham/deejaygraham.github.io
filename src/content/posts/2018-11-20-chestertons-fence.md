@@ -1,9 +1,7 @@
 ---
-permalink: 2018/11/20/chestertons-fence/
 layout: quotation
 size: medium
 title: Chestertons Fence
-
 attribution: G K Chesterton
 publication: The Thing 1929
 tags: [quote]

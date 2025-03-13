@@ -1,8 +1,5 @@
 ---
-permalink: 2018/10/12/psake-cheatsheet/
-
 title: PSake Cheatsheet
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

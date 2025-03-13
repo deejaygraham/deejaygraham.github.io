@@ -1,9 +1,6 @@
 ---
-permalink: 2019/01/05/user-story-strategies/
-
 title: User Story Strategies
 tags: [sketchnotes, xp]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

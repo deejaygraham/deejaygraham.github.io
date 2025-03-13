@@ -1,8 +1,5 @@
 ---
-permalink: 2018/10/28/grepping-in-powershell/
-
 title: Grepping in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

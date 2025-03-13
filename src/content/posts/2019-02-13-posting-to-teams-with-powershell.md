@@ -1,8 +1,5 @@
 ---
-permalink: 2019/02/13/posting-to-teams-with-powershell/
-
 title: Posting Messages to MS Teams with PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

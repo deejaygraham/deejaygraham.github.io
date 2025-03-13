@@ -1,9 +1,6 @@
 ---
-permalink: 2018/10/30/microbit-ghost-detector/
-
 title: Microbit Ghost Detector
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat
