@@ -1,8 +1,5 @@
 ---
-permalink: 2014/05/08/unit-testing-with-httpclient/
-layout: post
 title: Unit Testing with HttpClient
-
 tags: [csharp, code, tdd]
 ---
 

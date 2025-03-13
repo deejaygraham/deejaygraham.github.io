@@ -1,12 +1,9 @@
 ---
-permalink: 2019/02/01/gui-automation-in-powershell-using-autoit/
-layout: post
 title: GUI Automation in PowerShell using AutoIt
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 <a href="https://www.autoitscript.com/site/">AutoIt</a> is an automation program I used to use a long time ago

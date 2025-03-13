@@ -1,13 +1,11 @@
 ---
-permalink: 2021/12/09/spectacular-life/
 layout: quotation
 title: Spectacular Life
-
 tags: [quote]
 size: medium
 attribution: Robin Williams
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Please, don't worry so much. Because in the end, none of us have very long on this Earth. Life is fleeting. And if you're ever distressed, cast your eyes to the summer sky when the

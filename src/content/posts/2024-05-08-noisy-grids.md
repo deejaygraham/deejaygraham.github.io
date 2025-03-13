@@ -1,8 +1,5 @@
 ---
-permalink: 2024/05/08/noisy-grids/
-layout: post
 title: Noisy Grids
-
 thumbnail: /img/posts/noisy-grids/thumbnail-420x255.png
 tags: [code, processing, python]
 ---

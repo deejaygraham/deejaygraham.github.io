@@ -1,12 +1,9 @@
 ---
-permalink: 2019/08/29/minecraft-building-misc/
-layout: post
 title: Minecraft Building Miscellanea
-
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 We're doing some more computer science workshops demonstrating building stuff in minecraft on the Raspberry Pi. Here are

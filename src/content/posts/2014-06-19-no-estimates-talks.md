@@ -1,8 +1,5 @@
 ---
-permalink: 2014/06/19/no-estimates-talks/
-layout: post
 title: No Estimates Talks
-
 tags: [video, presentations, agile]
 hero: agile
 ---

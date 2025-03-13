@@ -1,8 +1,5 @@
 ---
-permalink: 2020/01/06/game-of-oligarchy/
-layout: post
 title: Game of Oligarchy
-
 tags: [code, processing]
 thumbnail: "/img/posts/game-of-oligarchy/thumbnail-420x255.webp"
 alttext: players

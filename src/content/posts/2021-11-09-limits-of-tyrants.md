@@ -1,13 +1,11 @@
 ---
-permalink: 2021/11/09/limits-of-tyrants/
 layout: quotation
 title: Limits of Tyrants
-
 tags: [quote]
 size: medium
 attribution: Frederick Douglass
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 The whole history of the progress of human liberty shows that all concessions

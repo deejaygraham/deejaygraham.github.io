@@ -1,13 +1,11 @@
 ---
-permalink: 2024/01/20/advice-for-life/
 layout: quotation
 title: A Little Advice for Life
-
 attribution: Terry Pratchett
 size: medium
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 I have been blessed with good fortune in my life. I have turned a passion into a profession and those that know me 

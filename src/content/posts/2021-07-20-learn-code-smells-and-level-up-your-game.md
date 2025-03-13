@@ -1,8 +1,5 @@
 ---
-permalink: 2021/07/20/learn-code-smells-and-level-up-your-game/
-layout: post
 title: Learn Code Smells And Level Up Your Game
-
 tags: [video, presentations]
 thumbnail: /img/posts/learn-code-smells-and-level-up-your-game/thumbnail-420x255.webp
 alttext: Sandi Metz

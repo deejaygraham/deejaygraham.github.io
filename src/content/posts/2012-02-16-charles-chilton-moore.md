@@ -1,14 +1,12 @@
 ---
-permalink: 2012/02/16/charles-chilton-moore/
 layout: quotation
 title: Charles Chilton Moore
-
 attribution: Charles Chilton Moore
 publication: (1837 - 1906)
 size: medium
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Fifteen hundred years ago, Constantine, who murdered his own wife and children, started the Christian religion.

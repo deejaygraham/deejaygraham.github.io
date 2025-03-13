@@ -1,14 +1,12 @@
 ---
-permalink: 2024/11/07/two-terrors/
 layout: quotation
 size: small
 title: Two Terrors
-
 attribution: Mark Twain
 publication: A Connecticut Yankee in King Arthur's Court
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 They were freemen, but they could not leave the estates of their lord or their bishop without his permission; they could not prepare their own bread, but 

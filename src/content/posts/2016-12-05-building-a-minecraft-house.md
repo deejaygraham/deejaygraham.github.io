@@ -1,12 +1,9 @@
 ---
-permalink: 2016/12/05/building-a-minecraft-house/
-layout: post
 title: Building a house in Minecraft
-
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 The Python API for the raspberry pi edition of Minecraft is really nice and easy to

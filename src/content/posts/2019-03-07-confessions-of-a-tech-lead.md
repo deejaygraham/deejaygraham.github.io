@@ -1,5 +1,4 @@
 ---
-permalink: 2019/03/07/confessions-of-a-tech-lead/
 layout: sketchnote
 title: Confessions of a Tech Lead
 tags: [sketchnotes, presentations, xp]

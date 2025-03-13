@@ -1,11 +1,8 @@
 ---
-permalink: 2022/05/03/windows-auth-http-client/
-layout: post
 title: HttpClient with Windows Auth
-
 tags: [code, csharp]
 thumbnail: /img/posts/windows-auth-http-client/thumbnail-420x255.jpg
-alttext: screenshot
+
 ---
 
 Working with WebAPI in .net, I was writing some client-focussed tests that meant I was unable/unwilling to use the standard

@@ -1,12 +1,9 @@
 ---
-permalink: 2019/09/13/psychic-microbit-night-light/
-layout: post
 title: Psychic Microbit Night Light
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 I've always been envious of the block-based platforms for microbit because they seemed to be able to use the display

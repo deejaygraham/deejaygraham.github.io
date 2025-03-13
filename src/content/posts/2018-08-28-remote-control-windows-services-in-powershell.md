@@ -1,12 +1,9 @@
 ---
-permalink: 2018/08/28/remote-control-windows-services-in-powershell/
-layout: post
 title: Remote Controlling Windows Services in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Remote Desktop-ing into several machines just to enable or disable a service is a bit of a chore. PowerShell saves us from

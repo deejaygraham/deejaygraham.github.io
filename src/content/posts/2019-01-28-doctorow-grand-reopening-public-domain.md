@@ -1,8 +1,5 @@
 ---
-permalink: 2019/01/28/doctorow-grand-reopening-public-domain/
-layout: post
 title: Grand Reopening Of The Public Domain
-
 tags: [video, presentations]
 ---
 

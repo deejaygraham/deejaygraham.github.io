@@ -1,11 +1,8 @@
 ---
-permalink: 2017/04/26/determining-azure-login-expiry/
-layout: post
 title: Determining when your Azure session has expired
-
 tags: [powershell, cloud]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Logging into Azure from PowerShell usually gets down with the <code>Add-AzureAccount</code>

@@ -1,12 +1,9 @@
 ---
-permalink: 2018/05/05/minecraft-for-millionaires/
-layout: post
 title: Minecraft Pi for Millionaires
 tags: [code, minecraft]
-
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 If you were a millionaire, living in a minecraft-kind-of-world, I'm sure you would want to have an enormously ostentatious fish tank for your block-shaped

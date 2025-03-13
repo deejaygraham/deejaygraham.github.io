@@ -1,12 +1,9 @@
 ---
-permalink: 2021/01/20/zipping-and-unzipping-in-powershell/
-layout: post
 title: Zipping and Unzipping in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Continuing on with building images in DSC, I needed to build a zip file from some binaries and I often forget that this is

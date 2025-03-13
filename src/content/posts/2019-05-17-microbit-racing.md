@@ -1,12 +1,9 @@
 ---
-permalink: 2019/05/17/microbit-racing/
-layout: post
 title: Microbit Racing
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Racing fleas is a fun pastime, especially when those fleas are actually microbit pixels and no harm is done to

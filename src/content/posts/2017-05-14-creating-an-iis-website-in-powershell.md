@@ -1,12 +1,9 @@
 ---
-permalink: 2017/05/14/creating-an-iis-website-in-powershell/
-layout: post
 title: Building an IIS website in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 A tiny script to create a local website in IIS just so I could test out a set of static

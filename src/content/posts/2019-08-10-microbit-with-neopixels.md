@@ -1,12 +1,9 @@
 ---
-permalink: 2019/08/10/microbit-with-neopixels/
-layout: post
 title: Microbit with NeoPixels
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 The <a href="http://4tronix.co.uk/blog/?p=1490">BitBot</a> comes with a set of 12 programmable NeoPixel LEDs built along the

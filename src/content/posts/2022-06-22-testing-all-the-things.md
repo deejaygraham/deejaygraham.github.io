@@ -1,11 +1,8 @@
 ---
-permalink: 2022/06/22/testing-all-the-things/
-layout: post
 title: Testing All The Things
-
 tags: [tdd]
 thumbnail: /img/posts/testing-all-the-things/thumbnail-420x255.png
-alttext: screenshot
+
 ---
 
 Talking to my new group of mentees for the year we began by talking about user stories (and why

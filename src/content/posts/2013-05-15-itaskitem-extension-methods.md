@@ -1,8 +1,5 @@
 ---
-permalink: 2013/05/15/itaskitem-extension-methods/
-layout: post
 title: ITaskItem Extension Methods
-
 tags: [csharp, tdd, code]
 ---
 

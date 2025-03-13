@@ -1,12 +1,9 @@
 ---
-permalink: 2017/04/11/lightning-calculator-for-microbit/
-layout: post
 title: Lightning Calculator for the Microbit
 tags: [code, microbit]
-
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Ahead of a maker class I'm teaching in a week or so I've been thinking of what kinds of things are appropriate, easy to understand but complete applications. One I came up with was a lightning calculator. Press one button when you see the lightning, press another button when you hear the thunder. The microbit takes the time difference between the two events and works out an estimate of how far away is the storm.

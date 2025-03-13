@@ -1,11 +1,8 @@
 ---
-permalink: 2022/02/01/turning-it-up-to-11ty/
-layout: post
 title: Turning It Up to 11ty
-
 tags: [code, javascript, 11ty]
 thumbnail: /img/thumbnails/eleventy-alt-420x255.png
-alttext: 11ty
+
 ---
 
 Finally fully committed to migrating two sites from wordpress/weird CMS both to markdown handled by [11ty](https://www.11ty.dev).

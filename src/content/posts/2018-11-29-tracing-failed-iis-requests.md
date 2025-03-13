@@ -1,9 +1,6 @@
 ---
-permalink: 2018/11/29/tracing-failed-iis-requests/
-layout: post
 title: Tracing Failed IIS Requests
 tags: [code]
-
 ---
 
 Today, after some frustrating debugging IIS and rewrite rules not matching what was expected, I learned that

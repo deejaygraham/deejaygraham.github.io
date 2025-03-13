@@ -1,12 +1,9 @@
 ---
-permalink: 2020/05/08/led-blinkenlights/
-layout: post
 title: Microbit LED blinkenlights
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: /img/posts/led-blinkenlights/thumbnail-420x255.webp
-alttext: microbit
+
 ---
 
 I found some old bits of electronics hiding in a box in storage the other day so I was reminded of my past electronics history but also inspired to

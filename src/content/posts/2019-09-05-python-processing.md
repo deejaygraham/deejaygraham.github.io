@@ -1,11 +1,8 @@
 ---
-permalink: 2019/09/05/python-processing/
-layout: post
 title: Processing with Python
-
 tags: [code, processing]
 thumbnail: /img/posts/python-processing/python-processing-420x255.webp
-alttext: screenshot
+
 ---
 
 The <a href="https://processing.org/">Processing</a> programming language/environment reminds me a bit of a mini-smalltalk environment, in that I find it really useful to sketch out playful, experimental programs really easily.

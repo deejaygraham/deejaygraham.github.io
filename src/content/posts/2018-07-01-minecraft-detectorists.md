@@ -1,12 +1,9 @@
 ---
-permalink: 2018/07/01/minecraft-detectorists/
-layout: post
 title: Minecraft Detectorists
 tags: [code, minecraft]
-
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 Another simple minecraft game, this time using Pythagoras' theorem to work out distances between two points.

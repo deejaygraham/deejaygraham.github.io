@@ -1,11 +1,8 @@
 ---
-permalink: 2017/01/29/powershell-cookies/
-layout: post
 title: PowerShell Fortune Cookie
-
 tags: [code, cloud, powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Ahead of writing a post about writing a fortune cookie cmdlet in C#, I wanted to

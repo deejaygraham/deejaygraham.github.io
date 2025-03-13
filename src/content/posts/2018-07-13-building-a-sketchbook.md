@@ -1,11 +1,8 @@
 ---
-permalink: 2018/07/13/building-a-sketchbook/
-layout: post
 title: Building a sketchbook
 tags: [sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Book making and bookbinding is a skill I knew nothing about but find fascinating so I thought I

@@ -1,11 +1,8 @@
 ---
-permalink: 2022/02/04/microbit-binary-clock/
-layout: post
 title: Microbit Binary Clock
-
 tags: [code, microbit, python]
 thumbnail: /img/posts/microbit-binary-clock/thumbnail-420x255.webp
-alttext: screenshot
+
 ---
 
 I managed to find a microbit (most of them put away due to not teaching for a while) and ported over the clock from yesterday's

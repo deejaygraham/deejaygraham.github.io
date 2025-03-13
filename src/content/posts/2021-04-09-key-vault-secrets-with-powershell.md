@@ -1,12 +1,9 @@
 ---
-permalink: 2021/04/09/key-vault-secrets-with-powershell/
-layout: post
 title: KeyVault Secrets with PowerShell
-
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: logs
+
 ---
 
 Azure KeyVault is a mechanism for storing, retrieving and maintaining secured values in the cloud. The secure bit can be a challenging when working this out

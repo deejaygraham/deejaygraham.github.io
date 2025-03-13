@@ -1,12 +1,9 @@
 ---
-permalink: 2018/09/24/microbit-dinosaur-detector/
-layout: post
 title: Microbit Dinosaur Detector
 tags: [code, microbit]
-
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 It's been a while since I posted a microbit sample so here's one that would work well on the set of Jurassic Park, a dinosaur detector.

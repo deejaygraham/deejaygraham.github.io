@@ -1,12 +1,9 @@
 ---
-permalink: 2015/06/04/restricting-powershell-cmdlet-values/
-layout: post
 title: Restricting Powershell Cmdlet Values
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 In any program or script, it's (nearly) always a good thing to validate user input

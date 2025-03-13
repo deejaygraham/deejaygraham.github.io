@@ -1,11 +1,8 @@
 ---
-permalink: 2017/08/08/swearing-nudity-and-other-vulnerable-positions/
-layout: post
 title: Swearing and Nudity in Newcastle
 tags: [agile, presentations, sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 On the 8th of August <a href="http://wisenoodle.me/">John Le Drew</a> was kind enough to

@@ -1,12 +1,9 @@
 ---
-permalink: 2021/08/20/check-file-content-with-powershell/
-layout: post
 title: Check File Content with PowerShell
-
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: logs
+
 ---
 
 As part of some work to migrate from a proprietary set of build tools for a particular website to the wonderful [eleventy](https://www.11ty.dev), we

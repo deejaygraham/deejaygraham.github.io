@@ -1,13 +1,11 @@
 ---
-permalink: 2018/01/27/conways-law/
 layout: quotation
 title: Conway's Law
-
 tags: [agile, quote]
 attribution: Melvin Conway
 publication: How Do Committees Invent?
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 We have seen that this fact has important implications for the management of system design...

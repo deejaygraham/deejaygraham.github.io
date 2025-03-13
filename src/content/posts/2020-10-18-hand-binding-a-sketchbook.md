@@ -1,11 +1,8 @@
 ---
-permalink: 2020/10/18/hand-binding-a-sketchbook/
-layout: post
 title: Hand Binding a sketchbook
 tags: [sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 I have been experimenting on and off with making my own sketchbooks and wanted to try something a bit

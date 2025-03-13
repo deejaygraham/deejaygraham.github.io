@@ -1,8 +1,5 @@
 ---
-permalink: 2016/01/27/using-linq-to-average-sequences/
-layout: post
 title: Using Linq to Average Sequences
-
 tags: [csharp]
 ---
 

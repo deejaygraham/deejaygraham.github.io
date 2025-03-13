@@ -1,12 +1,9 @@
 ---
-permalink: 2019/05/15/microbit-tamagotchi/
-layout: post
 title: Microbotchi
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 I'm teaching another course of 'Coding for Absolute Beginners' using the BBC microbit and python to explain

@@ -1,14 +1,12 @@
 ---
-permalink: 2017/03/04/lead-time-vs-cycle-time/
 layout: sketchnote
 title: Lead Time vs Cycle Time
 tags: [lean, sketchnotes, illustration]
-
 sketchnote:
   url: "/img/posts/lead-time-vs-cycle-time/lead-time-vs-cycle-time.webp"
   alt: "sketchnote"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Struggling to come up with a suitable analogy to explain the difference between cycle time and lead time

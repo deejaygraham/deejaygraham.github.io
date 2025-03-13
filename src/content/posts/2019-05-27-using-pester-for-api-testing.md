@@ -1,12 +1,9 @@
 ---
-permalink: 2019/05/27/using-pester-for-api-testing/
-layout: post
 title: Using Pester for API Testing
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 <a href="https://github.com/pester/Pester">Pester</a> is rapidly becoming my go-to tool for writing tests that

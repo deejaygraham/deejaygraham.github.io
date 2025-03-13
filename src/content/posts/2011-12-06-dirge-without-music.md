@@ -1,14 +1,12 @@
 ---
-permalink: 2011/12/06/dirge-without-music/
 layout: quotation
 size: medium
 title: Dirge Without Music
 attribution: Edna St Vincent Millay (1892 – 1950)
 publication:
-
 tags: [quote, music]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 I am not resigned to the shutting away of loving hearts in the hard ground

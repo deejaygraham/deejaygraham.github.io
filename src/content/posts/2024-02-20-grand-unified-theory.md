@@ -1,8 +1,5 @@
 ---
-permalink: 2024/02/20/grand-unified-theory/
-layout: post
 title: Grand Unified Theory
-
 tags: [video]
 ---
 

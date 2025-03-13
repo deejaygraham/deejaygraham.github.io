@@ -1,8 +1,6 @@
 ---
-permalink: 2025/01/07/microbit-testing/
 layout: post
 title: Simple Microbit Testing
-
 tags: [tdd, code, microbit, python]
 ---
 

@@ -1,8 +1,5 @@
 ---
-permalink: 2022/11/10/stop-writing-dead-programs/
-layout: post
 title: Stop Writing Dead Programs
-
 tags: [video, presentations]
 thumbnail: /img/posts/stop-writing-dead-programs/thumbnail-420x255.png
 alttext: Jack Rusher

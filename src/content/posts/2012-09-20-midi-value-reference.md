@@ -1,8 +1,5 @@
 ---
-permalink: 2012/09/20/midi-value-reference/
-layout: post
 title: Midi Value Reference
-
 tags: [music]
 ---
 

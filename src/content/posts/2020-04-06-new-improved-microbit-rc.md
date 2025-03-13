@@ -1,12 +1,9 @@
 ---
-permalink: 2020/04/06/new-improved-microbit-rc/
-layout: post
 title: New, Improved, Microbit RC
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/posts/new-improved-microbit-rc/thumbnail-420x255.webp"
-alttext: microbit bit bot
+
 ---
 
 I've been refinining some of my code from the original remote control car I built using the <a href="http://4tronix.co.uk/blog/?p=1490">BitBot</a> kit

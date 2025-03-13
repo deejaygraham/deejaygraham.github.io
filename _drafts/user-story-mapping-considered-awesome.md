@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: User Story Mapping Considered Awesome
 draft: true
 tags: [   ]

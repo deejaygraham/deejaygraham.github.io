@@ -1,5 +1,4 @@
 ---
-permalink: 2014/10/22/sketchote-from-ddd-north-2014/
 layout: sketchnote
 title: Sketchnote from DDDNorth 2014
 tags: [sketchnotes, presentations, ruby, csharp]
@@ -13,7 +12,7 @@ sketchnote:
     name: "Eve Barabas"
     url: "http://www.twitter.com/b_seven_e"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 I was lucky enough to be able to attend the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North

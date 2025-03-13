@@ -1,5 +1,4 @@
 ---
-permalink: 2015/05/15/deliberate-learning-sketchnote/
 layout: sketchnote
 title: Dan North on Deliberate Learning @ Foo Cafe
 tags: [presentations, sketchnotes]
@@ -16,7 +15,7 @@ sketchnote:
     name: "Dan North"
     url: "https://twitter.com/tastapod"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 This sketchnote is from <a href="https://twitter.com/tastapod">Dan North's</a> talk

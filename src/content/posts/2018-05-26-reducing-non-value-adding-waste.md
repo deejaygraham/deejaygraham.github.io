@@ -1,13 +1,11 @@
 ---
-permalink: 2018/05/26/reducing-non-value-adding-waste/
 layout: quotation
 title: Reducing Non-Value Adding Waste
-
 tags: [agile, quote]
 attribution: Taiichi Ohno
 size: medium
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 All we are doing is looking at the time line, from the moment the customer

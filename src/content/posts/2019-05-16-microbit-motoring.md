@@ -1,12 +1,9 @@
 ---
-permalink: 2019/05/16/microbit-motoring/
-layout: post
 title: Microbit Motoring
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 For Christmas last year (I know, a long time ago), I got a <a href="http://4tronix.co.uk/blog/?p=1490">BitBot</a> as

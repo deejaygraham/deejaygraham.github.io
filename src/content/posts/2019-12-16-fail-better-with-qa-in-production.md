@@ -1,5 +1,4 @@
 ---
-permalink: 2019/12/16/fail-better-with-qa-in-production/
 layout: sketchnote
 title: Fail better with QA in production
 tags: [sketchnotes, presentations]

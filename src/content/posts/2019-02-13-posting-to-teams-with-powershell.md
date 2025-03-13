@@ -1,12 +1,9 @@
 ---
-permalink: 2019/02/13/posting-to-teams-with-powershell/
-layout: post
 title: Posting Messages to MS Teams with PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 We are starting to use Microsoft Teams more and more for (suprisingly) team communication. We have a dedicated channel for product

@@ -1,12 +1,9 @@
 ---
-permalink: 2023/05/23/file-and-folder-access-rights-with-powershell/
-layout: post
 title: How to get file and folder ACL rights with PowerShell
-
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: logs
+
 ---
 
 Two more snippets I always need when doing security reviews. I'm thinking of on-premise scenarios where files or folders can contain potentially sensitive data and need to be set up in such a way that some identities are granted access and others are explicitly or implicitly forbidden.

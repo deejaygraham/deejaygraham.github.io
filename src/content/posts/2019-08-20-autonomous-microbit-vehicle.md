@@ -1,8 +1,5 @@
 ---
-permalink: 2019/08/20/autonomous-microbit-vehicle/
-layout: post
 title: Autonomous Microbit Vehicle
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/posts/autonomous-microbit-vehicle/thumbnail-420x255.webp"

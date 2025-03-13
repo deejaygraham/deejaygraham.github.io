@@ -1,8 +1,5 @@
 ---
-permalink: 2013/03/22/planning-poker-cards/
-layout: post
 title: Planning Poker Card Design
-
 tags: [agile]
 hero: agile
 ---

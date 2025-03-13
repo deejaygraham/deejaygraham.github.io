@@ -1,8 +1,5 @@
 ---
-permalink: 2013/12/05/why-aren't-you-using-ruby/
-layout: post
 title: Why Aren't You Using Ruby
-
 tags: [video, presentations, ruby]
 ---
 

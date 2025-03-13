@@ -1,5 +1,4 @@
 ---
-permalink: 2020/07/28/when-does-tdd-fail-and-why/
 layout: sketchnote
 title: When Does TDD Fail and Why
 tags: [tdd, sketchnotes, xp]

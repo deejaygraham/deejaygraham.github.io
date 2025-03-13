@@ -1,12 +1,9 @@
 ---
-permalink: 2019/06/14/microbit-infection/
-layout: post
 title: Microbit Infection
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 <a href="https://makecode.microbit.org/projects/infection">Infection</a> is a multi-player game that can be played

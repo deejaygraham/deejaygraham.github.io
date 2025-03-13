@@ -1,12 +1,9 @@
 ---
-permalink: 2023/06/06/api-testing-in-cypress/
-layout: post
 title: Api Testing in Cypress
-
 tags: [cypress, javascript, code]
 hero: power
 thumbnail: "/img/thumbnails/cypress-420x255.png"
-alttext: cypress
+
 ---
 
 One thing missing from [Cypress](https://cypress.io), perhaps deliberately, is explicit support for API testing. I had been able to find a project that

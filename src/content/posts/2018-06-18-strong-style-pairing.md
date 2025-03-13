@@ -1,11 +1,8 @@
 ---
-permalink: 2018/06/18/strong-style-pairing/
-layout: post
 title: Strong Style Pairing
 tags: [sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 I'm a big fan and advocate for mob programming and have talked about it

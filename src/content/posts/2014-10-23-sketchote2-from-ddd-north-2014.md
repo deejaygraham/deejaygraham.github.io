@@ -1,5 +1,4 @@
 ---
-permalink: 2014/10/23/sketchote2-from-ddd-north-2014/
 layout: sketchnote
 title: Sketchnote 2 from DDDNorth 2014
 tags: [sketchnotes, presentations]
@@ -13,7 +12,7 @@ sketchnote:
     name: "Richard Dalton"
     url: "http://www.twitter.com/richardadalton"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Here's another sketchnote from the <a href="http://www.dddnorth.co.uk/">Developer Developer Developer North

@@ -1,8 +1,5 @@
 ---
-permalink: 2014/04/10/code-kata-resources/
-layout: post
 title: Code Kata Resources
-
 tags: [deliberate-practice, tdd]
 ---
 

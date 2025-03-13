@@ -1,13 +1,10 @@
 ---
-permalink: 2019/04/25/tiny-tetris-for-microbit/
-layout: post
 title: Tiny Tetris for Microbit
 tags: [code, microbit]
-
 hero: microbit
 tweetable: true
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Tetris is one of those addictive games that seems to have been ported to nearly

@@ -1,8 +1,5 @@
 ---
-permalink: 2024/08/18/password-scoring-kata/
-layout: post
 title: Password Scoring Kata
-
 tags: [code, deliberate-practice, tdd, python]
 ---
 

@@ -1,13 +1,11 @@
 ---
-permalink: 2020/07/11/code-that-works/
 layout: quotation
 size: large
 title: Code That Works
-
 attribution: Kent Beck
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 I get paid for code that works, not for tests, so my philosophy is to

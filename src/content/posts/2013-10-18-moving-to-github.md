@@ -1,8 +1,5 @@
 ---
-permalink: 2013/10/18/moving-to-github/
-layout: post
 title: Moving to Github
-
 tags: [open-source]
 ---
 

@@ -1,14 +1,12 @@
 ---
-permalink: 2014/11/14/the-(richard)-dreyfuss-model-of-skill-acquisition/
 layout: sketchnote
 title: The (Richard) Dreyfuss Model of Skill Acquisition
 tags: [sketchnotes, illustration]
-
 sketchnote:
   url: "/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-hifi.webp"
   alt: "sketchnote"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 A dreadful pun on the names of Hubert and Stuart Drefus

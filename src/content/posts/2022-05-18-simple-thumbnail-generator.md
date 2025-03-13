@@ -1,11 +1,8 @@
 ---
-permalink: 2022/05/18/simple-thumbnail-generator/
-layout: post
 title: Simple Thumbnail Generator
-
 tags: [code, python, processing]
 thumbnail: /img/posts/simple-thumbnail-generator/thumbnail-420x255.png
-alttext: screenshot
+
 ---
 
 Writing short articles for this blog, one of the hardest problems is coming up with a relevant, nice looking thumbnail image

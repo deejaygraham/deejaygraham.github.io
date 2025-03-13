@@ -1,12 +1,9 @@
 ---
-permalink: 2017/04/19/old-timey-twitter-for-microbit/
-layout: post
 title: Old-Timey Twitter for the Microbit
 tags: [code, microbit]
-
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Teaching some maker classes at <a href="http://campusnorth.com">campus north</a> this week, I was showing the students how to send and receive text using the microbit's <a href="https://microbit-micropython.readthedocs.io/en/latest/radio.html">radio API</a>.

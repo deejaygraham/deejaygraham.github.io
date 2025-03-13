@@ -1,9 +1,6 @@
 ---
-permalink: 2016/03/16/appylying-ml-to-improve-customer-experience/
-layout: post
 title: Applying AML to Improve Customer Experience
 tags: [code, presentations]
-
 ---
 
 Tonight, I'm doing a presentation at our local <a href="http://nebytes.net">NE Bytes</a> developer meetup on using

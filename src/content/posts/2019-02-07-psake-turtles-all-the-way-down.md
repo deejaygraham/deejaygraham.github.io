@@ -1,12 +1,9 @@
 ---
-permalink: 2019/02/07/psake-turtles-all-the-way-down/
-layout: post
 title: PSake Turtles All The Way Down
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 I have been trying for a while to come up with a way to redesign a long PowerShell script into discrete

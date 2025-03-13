@@ -1,8 +1,5 @@
 ---
-permalink: 2019/11/11/tagging-tfs-builds-msbuild/
-layout: post
 title: Tagging TFS builds from MSBuild
-
 tags: [msbuild, code, tfs]
 thumbnail: /img/posts/tagging-tfs-builds-msbuild/tag-420x255.webp
 alttext: tag

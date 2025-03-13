@@ -1,8 +1,5 @@
 ---
-permalink: 2014/04/02/zipping-folder-contents-using-msbuild/
-layout: post
 title: Zipping Folder Contents Using MsBuild
-
 tags: [msbuild, code]
 ---
 

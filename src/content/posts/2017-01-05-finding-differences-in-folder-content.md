@@ -1,12 +1,9 @@
 ---
-permalink: 2017/01/05/finding-differences-in-folder-content/
-layout: post
 title: Finding Differences in Folder Content
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Another contender for the department of "I might need to remember how to do this again one day",

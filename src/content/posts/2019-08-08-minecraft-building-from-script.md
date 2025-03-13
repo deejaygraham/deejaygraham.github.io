@@ -1,12 +1,9 @@
 ---
-permalink: 2019/08/08/minecraft-building-from-script/
-layout: post
 title: Minecraft Building from Script
-
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 We are running an intro to programming event in a few weeks and wanted to demo some building stuff with Minecraft on the raspberry pi

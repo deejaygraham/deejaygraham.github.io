@@ -1,9 +1,6 @@
 ---
-permalink: 2018/12/03/occasionally/
-layout: post
 title: Occasionally...
 tags: [code]
-
 ---
 
 Running an Azure classic cloud service, which at the top level is a big while(true) block, one sometimes needs

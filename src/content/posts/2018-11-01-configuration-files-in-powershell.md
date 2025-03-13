@@ -1,12 +1,9 @@
 ---
-permalink: 2018/11/01/configuration-files-in-powershell/
-layout: post
 title: Configuration Files in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Developing a mini build and configuration system with PSake recently and was getting annoyed with the number of hard-coded, machine- and environment-specific strings there were

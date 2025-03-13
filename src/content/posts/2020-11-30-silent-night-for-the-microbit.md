@@ -1,12 +1,9 @@
 ---
-permalink: 2020/11/30/silent-night-for-the-microbit/
-layout: post
 title: Silent Night for the Microbit
-
 tags: [code, microbit, music]
 hero: microbit
 thumbnail: /img/posts/silent-night-for-microbit/thumbnail-420x255.webp
-alttext: microbit
+
 ---
 
 Since it's almost December, I thought of transcribing a classic tune for the microbit using the code

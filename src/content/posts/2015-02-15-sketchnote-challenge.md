@@ -1,8 +1,6 @@
 ---
-permalink: 2015/02/15/sketchnote-challenge/
 layout: sketchnote
 title: Sketchnoting Challenge
-
 tags: [sketchnotes, gtd]
 sketchnote:
   url: "/img/posts/sketchnoting-challenge/mac-power-users.webp"
@@ -17,7 +15,7 @@ sketchnote:
     name: "David Allen"
     url: "http://gettingthingsdone.com/"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 The <a href="http://sketchnotearmy.com">Sketchnote Army</a> website has been running a challenge to create a

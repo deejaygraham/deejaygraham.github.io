@@ -1,11 +1,8 @@
 ---
-permalink: 2017/01/30/building-a-custom-powershell-cmdlet-in-csharp/
-layout: post
 title: Building a Custom PowerShell Cmdlet in C#
-
 tags: [code, cloud, powershell, csharp]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Over the time I've spent automating deployment and build processes, I have fallen

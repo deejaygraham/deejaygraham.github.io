@@ -1,8 +1,5 @@
 ---
-permalink: 2024/12/09/microbit-spirit-box/
-layout: post
 title: Microbit Spirit Box
-
 tags: [code, microbit, python]
 ---
 

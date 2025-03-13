@@ -1,12 +1,9 @@
 ---
-permalink: 2015/11/01/azure-startup-taks/
-layout: post
 title: Azure Startup Tasks
-
 tags: [powershell, cloud]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 When you deploy a cloud service to Azure, it's often the case that there are admin tasks to do to

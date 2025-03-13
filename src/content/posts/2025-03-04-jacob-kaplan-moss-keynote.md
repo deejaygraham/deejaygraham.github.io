@@ -11,5 +11,5 @@ sketchnote:
   speaker:
     name: "Jacob Kaplan-Moss"
     url: "https://jacobian.org"
-alttext: sketchnote
+
 ---

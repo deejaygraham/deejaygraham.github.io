@@ -1,12 +1,9 @@
 ---
-permalink: 2016/01/22/waiting-for-a-timeout-in-powershell/
-layout: post
 title: Waiting for a Timeout in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 I've been working on continuous deployment of an application to Azure which we do by

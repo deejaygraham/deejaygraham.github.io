@@ -1,12 +1,9 @@
 ---
-permalink: 2017/08/21/blinking-cpp-for-the-microbit/
-layout: post
 title: Blinking C++
-
 tags: [code, microbit, cpp]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Following hard on the heels of the last post, I decided to try to implement one of the

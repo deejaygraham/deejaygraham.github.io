@@ -1,5 +1,4 @@
 ---
-permalink: 2018/11/08/polly-want-a-message/
 layout: sketchnote
 title: Polly Want a Message
 tags: [sketchnotes, presentations, tdd, xp]

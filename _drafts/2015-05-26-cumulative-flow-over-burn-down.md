@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Cumulative Flow over Burning Down
 tags: [ agile ]
 hero: agile

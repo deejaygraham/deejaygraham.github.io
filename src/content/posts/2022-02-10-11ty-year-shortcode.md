@@ -1,11 +1,8 @@
 ---
-permalink: 2022/02/10/11ty-year-shortcode/
-layout: post
 title: 11ty Year Shortcode
-
 tags: [code, javascript, 11ty]
 thumbnail: /img/thumbnails/eleventy-alt-420x255.png
-alttext: 11ty
+
 ---
 
 This is the tiniest [11ty](https://www.11ty.dev) shortcode I can come up with while gaining experience for all the

@@ -1,5 +1,4 @@
 ---
-permalink: 2014/11/03/super-technical-sketchnoting/
 layout: sketchnote
 title: Super-Technical Sketchnoting
 tags: [sketchnotes, presentations, ruby]
@@ -13,7 +12,7 @@ sketchnote:
     name: "Tom Stuart"
     url: "http://www.twitter.com/tomstuart"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 After I posted some of my sketchnotes from <a href="http://www.dddnorth.co.uk/">DDD North</a>

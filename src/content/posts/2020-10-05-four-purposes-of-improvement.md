@@ -1,13 +1,11 @@
 ---
-permalink: 2020/10/05/four-purposes-of-improvement/
 layout: quotation
 size: large
 title: Four Purposes of Improvement
-
 attribution: Shigeo Shingo
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 There are four purposes of improvement: easier, better, faster, and cheaper.

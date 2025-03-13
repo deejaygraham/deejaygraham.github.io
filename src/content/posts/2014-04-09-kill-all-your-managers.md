@@ -1,8 +1,5 @@
 ---
-permalink: 2014/04/09/kill-all-your-managers/
-layout: post
 title: Kill All Your Managers
-
 tags: [naming, code, oo]
 ---
 

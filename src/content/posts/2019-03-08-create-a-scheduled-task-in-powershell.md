@@ -1,12 +1,9 @@
 ---
-permalink: 2019/03/08/create-a-scheduled-task-in-powershell/
-layout: post
 title: Create a Scheduled Task in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Creating a windows scheduled task from PowerShell is both harder than I expected and easier and is a good example of a

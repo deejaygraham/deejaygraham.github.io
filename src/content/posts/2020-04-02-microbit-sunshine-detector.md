@@ -1,12 +1,9 @@
 ---
-permalink: 2020/04/02/microbit-sunshine-detector/
-layout: post
 title: Microbit Sunshine Detector
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 A variation on the nightlight example is a simple, adjustable sunshine detector.

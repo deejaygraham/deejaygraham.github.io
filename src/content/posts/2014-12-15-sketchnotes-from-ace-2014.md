@@ -1,12 +1,9 @@
 ---
-permalink: 2014/12/15/sketchnotes-from-ace-2014/
-layout: post
 title: Sketchnotes from ACE! 2014
-
 tags: [agile, illustration, sketchnotes]
 hero: agile
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 A few months back I was lucky enough to be accepted by <a href="https://twitter.com/paulklipp">Paul Klipp</a>

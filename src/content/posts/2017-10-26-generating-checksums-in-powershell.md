@@ -1,11 +1,8 @@
 ---
-permalink: 2017/10/26/generating-checksums-in-powershell/
-layout: post
 title: Generating Checksums in PowerShell
-
 tags: [powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 A tiny snippet of PowerShell I needed recently to generate a hash value for a (zip) file

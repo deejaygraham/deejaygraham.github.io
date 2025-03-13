@@ -1,8 +1,5 @@
 ---
-permalink: 2024/10/20/microbit-birdsong/
-layout: post
 title: Microbit Bird Song
-
 tags: [code, microbit, python]
 ---
 

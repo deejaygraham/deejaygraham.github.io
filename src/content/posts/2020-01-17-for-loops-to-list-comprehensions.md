@@ -1,12 +1,9 @@
 ---
-permalink: 2020/01/17/for-loops-to-list-comprehensions/
-layout: post
 title: Refactoring Nested For Loops to List Comprehensions
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Playing around with some more python code for the microbit, I noticed when I typically need to write to individual pixels on the

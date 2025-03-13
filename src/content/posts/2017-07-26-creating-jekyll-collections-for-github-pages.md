@@ -1,8 +1,5 @@
 ---
-permalink: 2017/07/26/creating-jekyll-collections-for-github-pages/
-layout: post
 title: Creating Jekyll Collections
-
 tags: [code, meta]
 ---
 

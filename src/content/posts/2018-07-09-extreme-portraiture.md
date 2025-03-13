@@ -1,11 +1,8 @@
 ---
-permalink: 2018/07/09/extreme-portraiture/
-layout: post
 title: XP - Extreme Portraiture
-
 tags: [sketchnotes, illustration, xp]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 One of my favourite talks explaining why XP does what it does in software development is

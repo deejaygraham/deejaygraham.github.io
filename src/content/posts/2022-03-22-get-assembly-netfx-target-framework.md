@@ -1,12 +1,9 @@
 ---
-permalink: 2022/03/22/get-assembly-netfx-target-framework/
-layout: post
 title: Read TargetFramework of Assembly in PowerShell
-
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: logs
+
 ---
 
 A tiny snippet I needed today to check the target version of the .Net framework an assembly is built against. The target framework is available as metadata in the assembly and can be seen in tools like iladsm or ILSpy like this:

@@ -1,8 +1,5 @@
 ---
-permalink: 2023/03/27/testing-at-top-and-bottom-of-triangle/
-layout: post
 title: Testing at Both Ends of the Triangle
-
 tags: [code, javascript, presentations]
 thumbnail: /img/thumbnails/notebook-420x255.webp
 alttext: talk

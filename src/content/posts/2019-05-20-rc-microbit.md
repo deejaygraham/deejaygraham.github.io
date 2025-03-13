@@ -1,12 +1,9 @@
 ---
-permalink: 2019/05/20/rc-microbit/
-layout: post
 title: Remote Control Microbit
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Building on the Motor and BitBot classes, I decided to build a remote control for the bitbot so I can drive it

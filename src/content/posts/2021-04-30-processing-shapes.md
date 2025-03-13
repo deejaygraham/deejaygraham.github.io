@@ -1,11 +1,8 @@
 ---
-permalink: 2021/04/30/processing-shapes/
-layout: post
 title: Processing Shapes and Colours
-
 tags: [code, processing, python]
 thumbnail: /img/posts/processing-shapes/processing-shapes-420x255.webp
-alttext: screenshot
+
 ---
 
 Here's another generative art piece we explored semi-randomly today. Adapting the tiling examples, first we played around with changing the

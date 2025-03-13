@@ -1,12 +1,10 @@
 ---
-permalink: 2017/10/11/elizabeth-warren/
 layout: quotation
 title: Elizabeth Warren, Hero
-
 tags: [quote]
 attribution: Elizabeth Warren
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 There is nobody in this country who got rich on his own. Nobody.

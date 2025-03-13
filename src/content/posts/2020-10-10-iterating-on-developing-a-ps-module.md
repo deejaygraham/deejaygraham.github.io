@@ -1,12 +1,9 @@
 ---
-permalink: 2020/10/10/iterating-on-developing-a-ps-module/
-layout: post
 title: Iterating on Developing a PowerShell Module
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Whenever you are writing a powershell module, in .Net say, and testing it from another script in ISE, it's good practice to remove the last version of the module from a session

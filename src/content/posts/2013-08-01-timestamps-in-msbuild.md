@@ -1,8 +1,5 @@
 ---
-permalink: 2013/08/01/timestamps-in-msbuild/
-layout: post
 title: Timestamps in MsBuild
-
 tags: [msbuild, code, csharp]
 ---
 

@@ -1,13 +1,11 @@
 ---
-permalink: 2019/03/30/computing-in-pairs/
 layout: quotation
 title: Computing in Pairs
-
 attribution: Jean Bartik
 publication: Interview with Computer History Museum
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Betty Snyder and I, from the beginning, were a pair. And I think... I don't know if any of you

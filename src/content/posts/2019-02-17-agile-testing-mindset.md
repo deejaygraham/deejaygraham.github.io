@@ -1,5 +1,4 @@
 ---
-permalink: 2019/02/17/agile-testing-mindset/
 layout: sketchnote
 title: Agile Testing Mindset
 tags: [sketchnotes, presentations, tdd, xp]

@@ -1,12 +1,9 @@
 ---
-permalink: 2021/01/29/find-user-sid-in-powershell/
-layout: post
 title: Find a User SID in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Working with Windows Virtual Desktop and Azure VMs at the moment so I needed to be able to identify local machine users

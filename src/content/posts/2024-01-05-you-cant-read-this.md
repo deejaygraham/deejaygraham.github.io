@@ -1,8 +1,5 @@
 ---
-permalink: 2024/01/05/you-cant-read-this/
-layout: post
 title: You Cant Read This
-
 tags: [csharp, javascript, code]
 ---
 

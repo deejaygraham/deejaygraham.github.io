@@ -1,5 +1,4 @@
 ---
-permalink: 2025/02/11/it-always-takes-longer/
 layout: sketchnote
 title: It Always Takes Longer
 tags: [presentations, sketchnotes]
@@ -10,5 +9,5 @@ sketchnote:
     name: "Chris McDermott"
     url: "https://www.linkedin.com/in/chrisvmcd/"
 thumbnail: "/img/posts/it-always-takes-longer/thumbnail-420x255.jpg"
-alttext: sketchnote
+
 ---

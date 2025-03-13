@@ -1,8 +1,5 @@
 ---
-permalink: 2012/09/22/using-naudio-to-generate-midi/
-layout: post
 title: Using NAudio to generate midi
-
 tags: [csharp, music, code]
 ---
 

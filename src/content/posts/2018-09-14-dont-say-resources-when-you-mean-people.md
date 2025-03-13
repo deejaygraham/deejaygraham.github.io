@@ -1,11 +1,8 @@
 ---
-permalink: 2018/09/14/dont-say-resources-when-you-mean-people/
-layout: post
 title: Dont Say Resources When You Mean People
-
 tags: [illustration, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 <img src="/img/posts/dont-say-resources-when-you-mean-people/dont-say-resources-when-you-mean-people.webp" alt="hr" class="u-max-full-width" />

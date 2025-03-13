@@ -1,8 +1,5 @@
 ---
-permalink: 2014/04/28/names-are-hard/
-layout: post
 title: Names Are Hard
-
 tags: [code, naming, open-source, ndifference, csharp]
 ---
 

@@ -1,11 +1,8 @@
 ---
-permalink: 2021/03/29/simple-generative-art/
-layout: post
 title: Simple Generative Art
-
 tags: [code, processing, python]
 thumbnail: /img/posts/simple-generative-art/simple-generative-art-420x255.webp
-alttext: screenshot
+
 ---
 
 My new intro to coding class is under way and I'm going to start working on some examples of generative art instead of the usual microbit tutorials because of the

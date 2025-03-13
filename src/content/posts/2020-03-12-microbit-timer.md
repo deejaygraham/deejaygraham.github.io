@@ -1,12 +1,9 @@
 ---
-permalink: 2020/03/12/microbit-timer/
-layout: post
 title: Microbit Timer
-
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 If Siri and all the other "smart" devices can set a timer and let us know when the time is up, why can't we with the microbit? Here's a code sample which does just that.

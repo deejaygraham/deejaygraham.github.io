@@ -1,8 +1,5 @@
 ---
-permalink: 2018/11/28/metaphors-we-compute-by/
-layout: post
 title: Metaphors We Compute By
-
 tags: [video, presentations]
 ---
 

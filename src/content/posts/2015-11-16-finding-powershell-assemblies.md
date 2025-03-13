@@ -1,12 +1,9 @@
 ---
-permalink: 2015/11/16/finding-powershell-assemblies/
-layout: post
 title: Finding Powershell Assemblies
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 I have been having problems with the Start-Transcript command working on some machines and not on others (particularly

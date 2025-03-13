@@ -1,5 +1,4 @@
 ---
-permalink: 2019/03/22/kanban-push-me-pull-you/
 layout: sketchnote
 title: Kanban Push Me Pull You
 tags: [sketchnotes, presentations, xp]

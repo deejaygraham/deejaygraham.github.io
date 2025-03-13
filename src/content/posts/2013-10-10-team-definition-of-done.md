@@ -1,8 +1,5 @@
 ---
-permalink: 2013/10/10/team-definition-of-done/
-layout: post
 title: Team Definitions of Done
-
 tags: [agile]
 hero: agile
 ---

@@ -1,12 +1,9 @@
 ---
-permalink: 2021/03/25/getting-compatible-webdriver-with-powershell/
-layout: post
 title: Getting the right Selenium driver
-
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: logs
+
 ---
 
 One of the challenges of running Selenium against a web application is the dependency on an external application which provides the interface

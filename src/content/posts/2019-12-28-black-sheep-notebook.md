@@ -1,8 +1,5 @@
 ---
-permalink: 2019/12/28/black-sheep-notebook/
-layout: post
 title: Black Sheep Notebook
-
 tags: [books, illustration]
 thumbnail: "/img/posts/black-sheep-notebook/thumbnail-420x255.webp"
 alttext: cover

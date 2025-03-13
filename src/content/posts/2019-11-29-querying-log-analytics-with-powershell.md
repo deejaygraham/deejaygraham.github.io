@@ -1,12 +1,9 @@
 ---
-permalink: 2019/11/29/querying-log-analytics-with-powershell/
-layout: post
 title: Querying Azure Log Analytics with PowerShell
-
 tags: [powershell, code]
 hero: power
 thumbnail: /img/posts/querying-log-analytics-with-powershell/querying-log-analytics-with-powershell-420x255.webp
-alttext: logs
+
 ---
 
 **_Update Feb 2021: See the update at the bottom of the page for the new version of this code_**

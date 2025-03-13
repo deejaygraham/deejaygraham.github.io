@@ -1,8 +1,5 @@
 ---
-permalink: 2017/01/11/making-animal-farm-great-again/
-layout: post
 title: Making Animal Farm Great Again
-
 ---
 
 Apropos of nothing, here's a splendid old, orangey pig standing proudly on his wall. A wall that separates him from all

@@ -1,8 +1,5 @@
 ---
-permalink: 2024/07/fake-mountains/
-layout: post
 title: Fake Mountains
-
 thumbnail: /img/posts/fake-mountains/thumbnail-420x255.png
 tags: [code, processing, python]
 ---

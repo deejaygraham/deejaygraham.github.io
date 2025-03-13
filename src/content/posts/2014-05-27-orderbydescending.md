@@ -1,8 +1,5 @@
 ---
-permalink: 2014/05/27/orderbydescending/
-layout: post
 title: OrderByDescending
-
 tags: [csharp, code, cloud]
 hero: cloud
 ---

@@ -1,9 +1,7 @@
 ---
-permalink: 2014/11/14/doctorows-three-laws/
 layout: sketchnote
 title: Doctorow's Three Laws
 tags: [video, sketchnotes, open-source, illustration]
-
 sketchnote:
   url: "/img/posts/doctorows-three-laws/doctorows-three-laws-hifi.webp"
   alt: "sketchnote"
@@ -14,7 +12,7 @@ sketchnote:
     name: "Cory Doctorow"
     url: "https://craphound.com"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 This illustration is based on a composite of a number of different talks

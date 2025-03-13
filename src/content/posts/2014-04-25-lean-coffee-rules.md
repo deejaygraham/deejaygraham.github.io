@@ -1,5 +1,4 @@
 ---
-permalink: 2014/04/25/lean-coffee-rules/
 layout: sketchnote
 title: Lean Coffee Rules
 tags: [sketchnotes, presentations]
@@ -17,7 +16,7 @@ sketchnote:
     name: "@adamyuret"
     url: "https://twitter.com/adamyuret"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Here's a sketchnote about "Lean Coffee", an agile way of

@@ -1,13 +1,11 @@
 ---
-permalink: 2012/04/10/man's-original-virtue/
 layout: quotation
 title: Man's Original Virtue
-
 tags: [quote]
 size: medium
 attribution: Robert Anton Wilson
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Every fact of science was once damned. Every invention was considered impossible. Every discovery was a nervous shock

@@ -1,12 +1,9 @@
 ---
-permalink: 2016/10/28/tiny-asteroids-for-microbit/
-layout: post
 title: Tiny Asteroids for Microbit
 tags: [code, microbit]
-
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 ## Update

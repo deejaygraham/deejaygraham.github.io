@@ -1,5 +1,4 @@
 ---
-permalink: 2019/08/14/sustainable-lasting-authentic-change/
 layout: sketchnote
 title: Sustainable, Lasting, Authentic Change
 tags: [sketchnotes, presentations]

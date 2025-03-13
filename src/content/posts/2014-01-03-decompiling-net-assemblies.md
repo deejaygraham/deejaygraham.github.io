@@ -1,8 +1,5 @@
 ---
-permalink: 2014/01/03/decompiling-net-assemblies/
-layout: post
 title: Decompiling .Net Assemblies
-
 tags: [csharp, code, open-source]
 ---
 

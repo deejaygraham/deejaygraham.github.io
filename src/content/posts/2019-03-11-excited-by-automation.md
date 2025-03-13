@@ -1,13 +1,11 @@
 ---
-permalink: 2019/03/11/excited-by-automation/
 layout: quotation
 title: Excited by Automation
 attribution: Alexandria Ocasio-Cortez
 publication: Interview with The Verge
-
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 We should be excited about automation, because what it could potentially mean is more time

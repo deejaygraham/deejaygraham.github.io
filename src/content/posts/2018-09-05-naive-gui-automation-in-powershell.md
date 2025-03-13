@@ -1,12 +1,9 @@
 ---
-permalink: 2018/09/05/naive-gui-automation-in-powershell/
-layout: post
 title: Naive GUI Automation in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 For those times when you just need to automate a UI without worrying about too many edge cases. SendKeys works

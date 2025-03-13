@@ -1,12 +1,9 @@
 ---
-permalink: 2018/10/30/microbit-ghost-detector/
-layout: post
 title: Microbit Ghost Detector
 tags: [code, microbit]
-
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 In time for Halloween, here's a ghost detector that uses the microbit temperature sensor to sense

@@ -1,8 +1,5 @@
 ---
-permalink: 2015/12/03/sending-data-to-azure-eventhubs/
-layout: post
 title: Sending data to Azure EventHubs
-
 tags: [cloud]
 hero: cloud
 ---

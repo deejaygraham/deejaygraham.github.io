@@ -1,5 +1,4 @@
 ---
-permalink: 2017/08/01/cultivating-emotional-safety/
 layout: sketchnote
 title: Cultivating Emotional Safety
 tags: [sketchnotes, presentations, agile]
