@@ -1,6 +1,6 @@
 ---
 permalink: 2018/07/03/minecrafts-greatest-hits/
-layout: post
+
 title: Minecraft's Greatest Hits
 tags: [minecraft, code]
 

@@ -1,9 +1,7 @@
 ---
-permalink: 2024/11/13/great-love/
 layout: quotation
 size: large
 title: Great Love
-
 attribution: Huey P Newton
 publication: 
 tags: [quote]

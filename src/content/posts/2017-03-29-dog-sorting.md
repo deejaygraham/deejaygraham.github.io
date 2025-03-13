@@ -1,6 +1,6 @@
 ---
 permalink: 2017/03/29/dog-sorting/
-layout: post
+
 title: Dog Sort
 
 tags: [csharp, code, tdd]

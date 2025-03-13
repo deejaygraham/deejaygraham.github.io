@@ -1,8 +1,5 @@
 ---
-permalink: 2014/03/19/the-magic-tricks-of-testing/
-layout: post
 title: The Magic Tricks of Testing
-
 tags: [video, presentations, tdd]
 ---
 

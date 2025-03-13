@@ -1,8 +1,5 @@
 ---
-permalink: 2014/09/02/management-3.0-workout/
-layout: post
 title: Management 3.0 Workout
-
 tags: [agile, management, books]
 ---
 

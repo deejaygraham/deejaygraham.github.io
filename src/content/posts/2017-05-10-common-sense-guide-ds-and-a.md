@@ -1,6 +1,6 @@
 ---
 permalink: 2017/05/10/common-sense-guide-ds-and-a/
-layout: post
+
 title: A Common-Sense Guide to Data Structures and Algorithms
 
 tags: [code, books]

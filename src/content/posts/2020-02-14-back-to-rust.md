@@ -1,6 +1,6 @@
 ---
 permalink: 2020/02/14/back-to-rust/
-layout: post
+
 title: Getting Back to Rust
 
 tags: [code]

@@ -1,6 +1,6 @@
 ---
 permalink: 2019/09/13/psychic-microbit-night-light/
-layout: post
+
 title: Psychic Microbit Night Light
 
 tags: [code, microbit]

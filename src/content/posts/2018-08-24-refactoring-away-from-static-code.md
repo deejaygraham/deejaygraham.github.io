@@ -1,6 +1,6 @@
 ---
 permalink: 2018/08/24/refactoring-away-from-static-code/
-layout: post
+
 title: Refactoring Away from Static Code
 
 tags: [code, refactoring]

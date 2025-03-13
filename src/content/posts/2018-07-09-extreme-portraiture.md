@@ -1,6 +1,6 @@
 ---
 permalink: 2018/07/09/extreme-portraiture/
-layout: post
+
 title: XP - Extreme Portraiture
 
 tags: [sketchnotes, illustration, xp]

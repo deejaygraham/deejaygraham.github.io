@@ -1,8 +1,5 @@
 ---
-permalink: 2015/11/01/azure-startup-taks/
-layout: post
 title: Azure Startup Tasks
-
 tags: [powershell, cloud]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

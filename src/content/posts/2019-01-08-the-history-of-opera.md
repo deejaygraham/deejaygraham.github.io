@@ -1,6 +1,6 @@
 ---
 permalink: 2019/01/08/the-history-of-opera/
-layout: post
+
 title: The History of Opera and the Future of Programming
 
 tags: [video, presentations]

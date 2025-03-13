@@ -1,5 +1,4 @@
 ---
-permalink: 2014/10/27/sketchote3-from-ddd-north-2014/
 layout: sketchnote
 title: Final sketchnote from DDDNorth 2014
 tags: [sketchnotes, presentations, management]

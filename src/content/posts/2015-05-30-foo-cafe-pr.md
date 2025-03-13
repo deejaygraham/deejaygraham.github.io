@@ -1,8 +1,5 @@
 ---
-permalink: 2015/05/30/foo-cafe-pr/
-layout: post
 title: Promoting the Foo Cafe
-
 tags: [sketchnotes, illustration, deliberate-practice]
 hero: power
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

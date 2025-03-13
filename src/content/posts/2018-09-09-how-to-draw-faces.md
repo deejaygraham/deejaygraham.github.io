@@ -1,6 +1,6 @@
 ---
 permalink: 2018/09/09/how-to-draw-faces/
-layout: post
+
 title: How to Draw Faces
 
 tags: [illustration, sketchnotes]

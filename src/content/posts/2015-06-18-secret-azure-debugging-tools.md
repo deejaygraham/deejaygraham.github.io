@@ -1,8 +1,5 @@
 ---
-permalink: 2015/06/18/secret-azure-debugging-tools/
-layout: post
 title: Secret Azure Debugging Tools
-
 tags: [cloud]
 hero: cloud
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

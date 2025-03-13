@@ -1,6 +1,6 @@
 ---
 permalink: 2017/03/06/growing-a-garden/
-layout: post
+
 title: Growing a Garden
 
 tags: [agile, illustration]

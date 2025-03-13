@@ -1,6 +1,6 @@
 ---
 permalink: 2020/09/04/crossing-the-river-by-feeling-the-stones/
-layout: post
+
 title: Crossing the River by Feeling the Stones
 
 tags: [video, presentations]

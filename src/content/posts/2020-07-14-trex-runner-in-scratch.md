@@ -1,6 +1,6 @@
 ---
 permalink: 2020/07/14/trex-runner-in-scratch/
-layout: post
+
 title: T-Rex Runner Game in Scratch
 
 tags: [code, scratch]

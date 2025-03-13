@@ -1,6 +1,6 @@
 ---
 permalink: 2019/08/30/respect-the-land-yo/
-layout: post
+
 title: Respect the Land Yo
 
 tags: [signs]

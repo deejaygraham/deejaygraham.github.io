@@ -1,6 +1,6 @@
 ---
 permalink: 2017/01/05/finding-differences-in-folder-content/
-layout: post
+
 title: Finding Differences in Folder Content
 
 tags: [powershell]

@@ -1,9 +1,7 @@
 ---
-permalink: 2024/05/15/gigantic-undertaking/
 layout: quotation
 size: medium
 title: Gigantic Undertaking
-
 attribution: Grace Hopper
 publication:
 tags: [quote]

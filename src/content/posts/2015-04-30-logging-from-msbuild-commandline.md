@@ -1,8 +1,5 @@
 ---
-permalink: 2015/04/30/logging-from-msbuild-commandline/
-layout: post
 title: Logging from MsBuild's Commandline
-
 tags: [msbuild]
 ---
 

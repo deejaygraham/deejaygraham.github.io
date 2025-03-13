@@ -1,8 +1,6 @@
 ---
-permalink: 2021/09/03/hidden-truth/
 layout: quotation
 title: Hidden Truth
-
 tags: [quote]
 attribution: David Graeber
 size: large

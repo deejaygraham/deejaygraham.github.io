@@ -1,11 +1,9 @@
 ---
-permalink: 2012/04/25/excellent-foppery/
 layout: quotation
 title: Excellent Foppery
 attribution: William Shakespeare
 publication: King Lear, Act 1, Scene 2
 size: medium
-
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

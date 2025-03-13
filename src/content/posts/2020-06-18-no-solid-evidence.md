@@ -1,6 +1,6 @@
 ---
 permalink: 2020/06/18/no-solid-evidence/
-layout: post
+
 title: no SOLID evidence
 
 tags: [xp, presentations, solid]

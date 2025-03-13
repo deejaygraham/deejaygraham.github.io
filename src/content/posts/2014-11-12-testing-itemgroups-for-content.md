@@ -1,8 +1,5 @@
 ---
-permalink: 2014/11/12/testing-itemgroups-for-content/
-layout: post
 title: Testing ItemGroups for Content
-
 tags: [msbuild]
 ---
 

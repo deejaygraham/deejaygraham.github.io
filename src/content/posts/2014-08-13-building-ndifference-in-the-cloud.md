@@ -1,8 +1,5 @@
 ---
-permalink: 2014/08/13/building-ndifference-in-the-cloud/
-layout: post
 title: Building NDifference in the Cloud
-
 tags: [code, open-source, ndifference, csharp, cloud]
 hero: cloud
 ---

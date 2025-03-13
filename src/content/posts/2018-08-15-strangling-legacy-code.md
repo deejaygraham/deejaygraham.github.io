@@ -1,6 +1,6 @@
 ---
 permalink: 2018/08/15/strangling-legacy-code/
-layout: post
+
 title: Strangling Legacy Code
 tags: [agile, presentations]
 

@@ -1,9 +1,6 @@
 ---
-permalink: 2016/09/22/unboxing-the-bbc-microbit/
-layout: post
 title: Unboxing the BBC Microbit
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

@@ -1,8 +1,5 @@
 ---
-permalink: 2016/10/04/rock-paper-microbit/
-layout: post
 title: Rock, Paper, Microbit
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

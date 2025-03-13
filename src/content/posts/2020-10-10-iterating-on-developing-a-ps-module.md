@@ -1,6 +1,6 @@
 ---
 permalink: 2020/10/10/iterating-on-developing-a-ps-module/
-layout: post
+
 title: Iterating on Developing a PowerShell Module
 
 tags: [powershell]

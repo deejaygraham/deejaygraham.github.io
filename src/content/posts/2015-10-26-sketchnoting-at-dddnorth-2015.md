@@ -1,8 +1,5 @@
 ---
-permalink: 2015/10/26/sketchnoting-at-dddnorth-2015/
-layout: post
 title: Sketchnoting at DDDNorth 2015
-
 tags: [presentations, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

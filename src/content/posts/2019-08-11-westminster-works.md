@@ -1,6 +1,6 @@
 ---
 permalink: 2019/08/11/westminster-works/
-layout: post
+
 title: Westminster Works
 
 tags: [signs]

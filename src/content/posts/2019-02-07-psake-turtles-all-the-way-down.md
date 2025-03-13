@@ -1,6 +1,6 @@
 ---
 permalink: 2019/02/07/psake-turtles-all-the-way-down/
-layout: post
+
 title: PSake Turtles All The Way Down
 
 tags: [powershell]

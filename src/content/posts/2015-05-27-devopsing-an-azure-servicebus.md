@@ -1,8 +1,5 @@
 ---
-permalink: 2015/05/27/devopsing-an-azure-servicebus/
-layout: post
 title: DevOpsing an Azure ServiceBus
-
 tags: [cloud, powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

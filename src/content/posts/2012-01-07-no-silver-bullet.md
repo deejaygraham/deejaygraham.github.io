@@ -1,8 +1,6 @@
 ---
-permalink: 2012/01/07/no-silver-bullet/
 layout: quotation
 title: No Silver Bullet
-
 attribution: Frederick P. Brooks
 publication: No silver bullet, 1987
 size: medium

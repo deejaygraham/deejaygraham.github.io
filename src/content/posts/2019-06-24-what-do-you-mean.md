@@ -1,6 +1,6 @@
 ---
 permalink: 2019/06/24/what-do-you-mean/
-layout: post
+
 title: What do you mean
 
 tags: [video, presentations]

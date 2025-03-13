@@ -1,8 +1,5 @@
 ---
-permalink: 2014/05/20/self-hosted-webserver-using-owin/
-layout: post
 title: Self Hosted WebServer using OWIN
-
 tags: [csharp, code]
 ---
 

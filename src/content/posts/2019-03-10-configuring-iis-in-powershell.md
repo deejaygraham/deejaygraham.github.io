@@ -1,6 +1,6 @@
 ---
 permalink: 2019/03/10/configuring-iis-in-powershell/
-layout: post
+
 title: Configuring IIS in PowerShell
 
 tags: [powershell]

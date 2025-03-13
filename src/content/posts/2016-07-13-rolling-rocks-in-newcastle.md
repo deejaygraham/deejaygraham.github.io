@@ -1,9 +1,6 @@
 ---
-permalink: 2016/07/13/rolling-rocks-in-newcastle/
-layout: post
 title: Rolling Rocks in Newcastle
 tags: [agile, presentations, sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

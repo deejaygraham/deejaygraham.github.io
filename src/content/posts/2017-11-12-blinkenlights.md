@@ -1,6 +1,6 @@
 ---
 permalink: 2017/11/12/blinkenlights/
-layout: post
+
 title: microbit Blinkenlights
 tags: [code, microbit]
 

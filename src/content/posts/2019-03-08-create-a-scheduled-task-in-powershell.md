@@ -1,6 +1,6 @@
 ---
 permalink: 2019/03/08/create-a-scheduled-task-in-powershell/
-layout: post
+
 title: Create a Scheduled Task in PowerShell
 
 tags: [powershell]

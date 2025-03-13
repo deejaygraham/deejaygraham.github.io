@@ -1,8 +1,5 @@
 ---
-permalink: 2024/05/24/uncoupling/
-layout: post
 title: Uncoupling
-
 tags: [video]
 ---
 

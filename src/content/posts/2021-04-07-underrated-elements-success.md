@@ -1,5 +1,4 @@
 ---
-permalink: 2021/04/07/underrated-elements-success/
 layout: sketchnote
 title: Some Underrated Elements of Success for the Modern Programmer
 tags: [xp, gtd, presentations, sketchnotes]

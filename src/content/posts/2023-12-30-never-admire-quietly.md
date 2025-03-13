@@ -1,9 +1,7 @@
 ---
-permalink: 2023/12/30/never-admire-quietly/
 layout: quotation
 size: large
 title: Never Admire Quietly
-
 attribution: Chimamanda Ngozi Adichie
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

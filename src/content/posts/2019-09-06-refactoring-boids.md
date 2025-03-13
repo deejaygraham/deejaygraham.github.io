@@ -1,6 +1,6 @@
 ---
 permalink: 2019/09/06/refactoring-boids/
-layout: post
+
 title: Refactoring Boids
 
 tags: [processing, code]

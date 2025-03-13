@@ -1,8 +1,5 @@
 ---
-permalink: 2016/12/04/hello-minecraft/
-layout: post
 title: Hello, Minecraft
-
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"

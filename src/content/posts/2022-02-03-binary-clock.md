@@ -1,8 +1,5 @@
 ---
-permalink: 2022/02/03/binary-clock/
-layout: post
 title: Binary Clock
-
 tags: [code, microbit, python]
 thumbnail: /img/posts/binary-clock/thumbnail-420x255.webp
 alttext: screenshot

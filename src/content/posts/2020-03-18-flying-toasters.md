@@ -1,6 +1,6 @@
 ---
 permalink: 2020/03/18/flying-toasters/
-layout: post
+
 title: Flying Toasters
 
 tags: [code, processing]

@@ -1,6 +1,6 @@
 ---
 permalink: 2017/01/12/having-the-right-kind-of-arguments/
-layout: post
+
 title: Having the Right Kind of Argument(s)
 
 tags: [powershell]

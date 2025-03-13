@@ -1,6 +1,6 @@
 ---
 permalink: 2018/05/12/simulated-minecraft-creeper/
-layout: post
+
 title: Simulating Minecraft Creeper on Pi
 tags: [code, minecraft]
 

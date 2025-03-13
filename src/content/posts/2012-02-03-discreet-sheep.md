@@ -1,8 +1,6 @@
 ---
-permalink: 2012/02/03/discreet-sheep/
 layout: quotation
 title: Discreet Sheep
-
 attribution: Mark Twain
 publication: 30 November 1835 – 21 April 1910
 size: medium

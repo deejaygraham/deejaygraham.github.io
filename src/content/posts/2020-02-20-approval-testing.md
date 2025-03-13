@@ -1,6 +1,6 @@
 ---
 permalink: 2020/02/20/approval-testing/
-layout: post
+
 title: Approval Testing
 tags: [agile, xp]
 

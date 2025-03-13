@@ -1,8 +1,5 @@
 ---
-permalink: 2014/02/20/contracts-in-msbuild/
-layout: post
 title: Programming by Contract in MsBuild
-
 tags: [msbuild, code]
 ---
 

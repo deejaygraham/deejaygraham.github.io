@@ -1,6 +1,6 @@
 ---
 permalink: 2019/09/24/how-computers-work/
-layout: post
+
 title: How Computers Work
 
 tags: [signs]

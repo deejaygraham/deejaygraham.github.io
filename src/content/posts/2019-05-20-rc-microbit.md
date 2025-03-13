@@ -1,8 +1,5 @@
 ---
-permalink: 2019/05/20/rc-microbit/
-layout: post
 title: Remote Control Microbit
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

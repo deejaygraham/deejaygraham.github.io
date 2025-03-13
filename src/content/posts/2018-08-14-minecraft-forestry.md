@@ -1,6 +1,6 @@
 ---
 permalink: 2018/08/14/minecraft-forestry/
-layout: post
+
 title: Minecraft Forestry
 tags: [minecraft, code]
 

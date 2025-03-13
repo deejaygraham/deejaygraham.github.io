@@ -1,5 +1,4 @@
 ---
-permalink: 2025/02/11/it-always-takes-longer/
 layout: sketchnote
 title: It Always Takes Longer
 tags: [presentations, sketchnotes]

@@ -1,6 +1,6 @@
 ---
 permalink: 2018/02/23/microbit-card-trick/
-layout: post
+
 title: Microbit Mentalism
 tags: [code, microbit]
 

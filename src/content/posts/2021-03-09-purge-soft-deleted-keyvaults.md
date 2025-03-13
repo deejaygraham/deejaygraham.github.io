@@ -1,8 +1,5 @@
 ---
-permalink: 2021/03/09/purge-soft-deleted-keyvaults/
-layout: post
 title: Purge a Soft-deleted Azure Key Vault
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

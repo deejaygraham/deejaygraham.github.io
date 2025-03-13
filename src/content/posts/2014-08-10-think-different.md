@@ -1,8 +1,5 @@
 ---
-permalink: 2014/08/10/think-different/
-layout: post
 title: Think Different
-
 tags: [video, presentations]
 ---
 

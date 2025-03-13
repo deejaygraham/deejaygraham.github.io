@@ -1,9 +1,7 @@
 ---
-permalink: 2011/12/19/emily-remler/
 layout: quotation
 size: large
 title: Emily Remler
-
 attribution: Emily Remler (18 September 1957 – 4 May 1990)
 publication: People Magazine, 1982
 tags: [quote]

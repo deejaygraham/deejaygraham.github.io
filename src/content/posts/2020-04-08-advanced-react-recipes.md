@@ -1,6 +1,6 @@
 ---
 permalink: 2020/04/08/advanced-react-recipes/
-layout: post
+
 title: React Cookbook Advanced Recipes
 
 tags: [video, presentations]

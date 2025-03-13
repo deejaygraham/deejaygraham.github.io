@@ -1,6 +1,6 @@
 ---
 permalink: 2020/06/20/dr-dobbs-journal/
-layout: post
+
 title: Dr Dobbs Journal
 
 tags: [code]

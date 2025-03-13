@@ -1,8 +1,5 @@
 ---
-permalink: 2014/06/27/starting-csharp-development-on-raspberry-pi/
-layout: post
 title: Starting C# Development on Raspberry Pi
-
 tags: [csharp, raspberry-pi, mono]
 ---
 

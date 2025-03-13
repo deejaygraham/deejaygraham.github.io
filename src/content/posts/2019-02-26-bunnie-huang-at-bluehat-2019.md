@@ -1,6 +1,6 @@
 ---
 permalink: 2019/02/26/bunnie-huang-at-bluehat-2019/
-layout: post
+
 title: Supply Chain Hacking with Bunnie Huang
 
 tags: [video, presentations]

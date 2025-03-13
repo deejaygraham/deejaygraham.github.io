@@ -1,6 +1,6 @@
 ---
 permalink: 2020/02/18/this-code-sucks/
-layout: post
+
 title: This Code Sucks
 
 tags: [video, presentations]

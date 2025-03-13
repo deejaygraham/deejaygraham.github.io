@@ -1,8 +1,5 @@
 ---
-permalink: 2016/06/09/verifying-azure-build-output/
-layout: post
 title: Verifying Azure Build Output
-
 tags: [cloud, msbuild]
 ---
 

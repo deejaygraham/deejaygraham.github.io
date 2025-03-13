@@ -1,9 +1,7 @@
 ---
-permalink: 2012/04/02/begin-taking-action/
 layout: quotation
 title: Begin Taking Action
 attribution: Shoma Morita
-
 size: medium
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"

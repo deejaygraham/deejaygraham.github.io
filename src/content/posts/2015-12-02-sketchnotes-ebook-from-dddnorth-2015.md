@@ -1,11 +1,11 @@
 ---
-permalink: 2015/12/02/sketchnotes-ebook-from-dddnorth-2015/
-layout: post
 title: Ebook of Sketchnotes from DDDNorth 2015 now available!
 tags: [sketchnotes, presentations]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---
+
+Hero goes here
 
 <img src="/img/posts/sketchnotes-ebook-from-dddnorth-2015/dddnorth-cover.webp" class="u-max-full-width" alt="Cover Page" />
 

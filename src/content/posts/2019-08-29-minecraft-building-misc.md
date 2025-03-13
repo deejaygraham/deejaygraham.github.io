@@ -1,6 +1,6 @@
 ---
 permalink: 2019/08/29/minecraft-building-misc/
-layout: post
+
 title: Minecraft Building Miscellanea
 
 tags: [code, minecraft]

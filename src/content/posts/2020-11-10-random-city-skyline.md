@@ -1,6 +1,6 @@
 ---
 permalink: 2020/11/10/random-city-skyline/
-layout: post
+
 title: Random City Skyline
 
 tags: [code, processing]

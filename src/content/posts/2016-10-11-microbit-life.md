@@ -1,9 +1,6 @@
 ---
-permalink: 2016/10/11/microbit-life/
-layout: post
 title: Microbit Life
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

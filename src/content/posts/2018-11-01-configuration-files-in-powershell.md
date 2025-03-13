@@ -1,6 +1,6 @@
 ---
 permalink: 2018/11/01/configuration-files-in-powershell/
-layout: post
+
 title: Configuration Files in PowerShell
 
 tags: [powershell]

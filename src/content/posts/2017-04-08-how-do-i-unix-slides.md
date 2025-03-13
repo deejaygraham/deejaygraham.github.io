@@ -1,6 +1,6 @@
 ---
 permalink: 2017/04/08/how-do-i-unix-slides/
-layout: post
+
 title: How Do I Unix?
 
 tags: [presentations]

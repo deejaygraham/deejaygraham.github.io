@@ -1,6 +1,6 @@
 ---
 permalink: 2017/10/26/generating-checksums-in-powershell/
-layout: post
+
 title: Generating Checksums in PowerShell
 
 tags: [powershell]

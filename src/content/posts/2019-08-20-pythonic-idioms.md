@@ -1,6 +1,6 @@
 ---
 permalink: 2019/08/20/pythonic-idioms/
-layout: post
+
 title: Pythonic Idioms
 
 tags: [code, microbit]

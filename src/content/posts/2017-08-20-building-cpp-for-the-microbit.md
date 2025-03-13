@@ -1,6 +1,6 @@
 ---
 permalink: 2017/08/20/building-cpp-for-the-microbit/
-layout: post
+
 title: Building C++ for the BBC Microbit
 
 tags: [code, microbit, cpp]

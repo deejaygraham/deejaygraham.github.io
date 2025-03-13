@@ -1,8 +1,5 @@
 ---
-permalink: 2014/12/15/sketchnotes-from-ace-2014/
-layout: post
 title: Sketchnotes from ACE! 2014
-
 tags: [agile, illustration, sketchnotes]
 hero: agile
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

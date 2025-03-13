@@ -1,6 +1,6 @@
 ---
 permalink: 2019/10/14/mini-approval-tests/
-layout: post
+
 title: Mini Approval Testing
 
 tags: [csharp, code, tdd]

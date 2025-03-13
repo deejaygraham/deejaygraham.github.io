@@ -1,6 +1,6 @@
 ---
 permalink: 2018/05/30/elementary-programming-and-algol/
-layout: post
+
 title: Elementary Programming and Algol
 tags: [code, books]
 

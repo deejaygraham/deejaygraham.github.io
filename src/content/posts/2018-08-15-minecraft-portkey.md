@@ -1,6 +1,6 @@
 ---
 permalink: 2018/08/15/minecraft-portkey/
-layout: post
+
 title: Minecraft PortKey
 tags: [minecraft, code]
 

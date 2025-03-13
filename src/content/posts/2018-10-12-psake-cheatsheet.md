@@ -1,6 +1,6 @@
 ---
 permalink: 2018/10/12/psake-cheatsheet/
-layout: post
+
 title: PSake Cheatsheet
 
 tags: [powershell]

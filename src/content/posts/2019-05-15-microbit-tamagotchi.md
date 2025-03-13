@@ -1,6 +1,6 @@
 ---
 permalink: 2019/05/15/microbit-tamagotchi/
-layout: post
+
 title: Microbotchi
 
 tags: [code, microbit]

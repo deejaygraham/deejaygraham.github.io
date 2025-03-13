@@ -1,8 +1,6 @@
 ---
-permalink: 2021/12/09/spectacular-life/
 layout: quotation
 title: Spectacular Life
-
 tags: [quote]
 size: medium
 attribution: Robin Williams

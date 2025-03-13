@@ -1,8 +1,5 @@
 ---
-permalink: 2014/06/11/nobody-will-train-you-but-you/
-layout: post
 title: Nobody will Train You but You
-
 tags: [video, presentations, deliberate-practice]
 ---
 

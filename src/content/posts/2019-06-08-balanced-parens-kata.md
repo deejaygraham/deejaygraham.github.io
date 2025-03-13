@@ -1,6 +1,6 @@
 ---
 permalink: 2019/06/08/balanced-parens-kata/
-layout: post
+
 title: Balanced Parentheses Kata
 
 tags: [code, deliberate-practice, tdd]

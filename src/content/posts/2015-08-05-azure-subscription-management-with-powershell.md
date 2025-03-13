@@ -1,8 +1,5 @@
 ---
-permalink: 2015/08/05/azure-subscription-management-with-powershell/
-layout: post
 title: Azure subscription management with PowerShell
-
 tags: [cloud]
 hero: cloud
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

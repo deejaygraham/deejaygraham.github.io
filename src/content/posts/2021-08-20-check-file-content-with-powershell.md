@@ -1,8 +1,5 @@
 ---
-permalink: 2021/08/20/check-file-content-with-powershell/
-layout: post
 title: Check File Content with PowerShell
-
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

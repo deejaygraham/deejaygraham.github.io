@@ -1,6 +1,6 @@
 ---
 permalink: 2017/11/30/paparazzi/
-layout: post
+
 title: microbit Paparazzi Simulator
 tags: [code, microbit]
 

@@ -1,8 +1,5 @@
 ---
-permalink: 2015/04/24/powershell-training-recommendations/
-layout: post
 title: PowerShell Training Recommendations
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

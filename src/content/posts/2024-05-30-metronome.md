@@ -1,8 +1,5 @@
 ---
-permalink: 2024/05/30/metronome/
-layout: post
 title: Microbit Metronome
-
 tags: [code, microbit, python]
 ---
 

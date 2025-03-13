@@ -1,6 +1,6 @@
 ---
 permalink: 2019/08/10/microbit-with-neopixels/
-layout: post
+
 title: Microbit with NeoPixels
 
 tags: [code, microbit]

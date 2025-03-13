@@ -1,8 +1,5 @@
 ---
-permalink: 2024/11/25/microbit-snowglobe/
-layout: post
 title: Microbit Snowglobe
-
 tags: [code, microbit, python]
 ---
 

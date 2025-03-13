@@ -1,6 +1,6 @@
 ---
 permalink: 2019/03/05/building-the-peoples-internet/
-layout: post
+
 title: Building the Peoples Internet
 
 tags: [video, presentations]

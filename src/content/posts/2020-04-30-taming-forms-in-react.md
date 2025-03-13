@@ -1,6 +1,6 @@
 ---
 permalink: 2020/04/30/taming-forms-in-react/
-layout: post
+
 title: Taming Forms in React
 
 tags: [video, presentations]

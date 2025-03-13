@@ -1,6 +1,6 @@
 ---
 permalink: 2017/02/08/microbit-sorting-hat/
-layout: post
+
 title: Microbit Sorting Hat
 
 tags: [code, microbit, python]

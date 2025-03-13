@@ -1,8 +1,5 @@
 ---
-permalink: 2024/07/09/roman-numerals-kata/
-layout: post
 title: Roman Numerals Kata
-
 tags: [code, tdd, csharp]
 ---
 

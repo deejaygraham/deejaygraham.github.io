@@ -1,6 +1,6 @@
 ---
 permalink: 2018/11/01/linting-in-powershell/
-layout: post
+
 title: Linting in PowerShell
 
 tags: [powershell]

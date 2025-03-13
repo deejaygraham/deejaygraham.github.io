@@ -1,8 +1,5 @@
 ---
-permalink: 2023/03/01/generate-playlist/
-layout: post
 title: Generate mp3 Playlists
-
 tags: [code, python]
 ---
 

@@ -1,8 +1,5 @@
 ---
-permalink: 2014/02/12/transparently-extending-the-msbuild-process/
-layout: post
 title: Transparently Extending the MsBuild Process
-
 tags: [msbuild, code]
 ---
 

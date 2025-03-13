@@ -1,6 +1,6 @@
 ---
 permalink: 2017/10/30/battles-with-giant-fish/
-layout: post
+
 title: Battles with Giant Fish
 
 tags: [books]

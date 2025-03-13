@@ -1,8 +1,5 @@
 ---
-permalink: 2014/04/28/string-calculator-kata/
-layout: post
 title: String Calculator Kata
-
 tags: [tdd, deliberate-practice, csharp]
 ---
 

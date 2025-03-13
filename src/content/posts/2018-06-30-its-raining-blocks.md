@@ -1,6 +1,6 @@
 ---
 permalink: 2018/06/30/its-raining-blocks/
-layout: post
+
 title: It's Raining Blocks
 tags: [code, minecraft]
 

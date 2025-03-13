@@ -1,9 +1,7 @@
 ---
-permalink: 2024/08/31/solidarity/
 layout: quotation
 size: large
 title: Solidarity
-
 attribution: Fred Hampton
 publication: 
 tags: [quote]

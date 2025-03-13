@@ -1,6 +1,6 @@
 ---
 permalink: 2020/04/06/new-improved-microbit-rc/
-layout: post
+
 title: New, Improved, Microbit RC
 
 tags: [code, microbit]

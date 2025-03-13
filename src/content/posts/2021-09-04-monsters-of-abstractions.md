@@ -1,8 +1,6 @@
 ---
-permalink: 2021/09/04/monsters-of-abstractions/
 layout: quotation
 title: Monsters of Abstractions
-
 tags: [quote]
 size: large
 attribution: Robert Hayden

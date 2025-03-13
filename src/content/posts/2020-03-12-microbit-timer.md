@@ -1,6 +1,6 @@
 ---
 permalink: 2020/03/12/microbit-timer/
-layout: post
+
 title: Microbit Timer
 
 tags: [code, microbit]

@@ -1,8 +1,5 @@
 ---
-permalink: 2015/06/18/windbg-cheatsheet/
-layout: post
 title: Windbg Cheatsheet
-
 tags: [cloud]
 hero: cloud
 ---

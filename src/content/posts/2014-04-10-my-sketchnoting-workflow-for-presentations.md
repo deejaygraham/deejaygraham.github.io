@@ -1,5 +1,4 @@
 ---
-permalink: 2014/04/10/my-sketchnoting-workflow-for-presentations/
 layout: sketchnote
 title: My Sketchnoting Workflow for Presentations
 tags: [sketchnotes, presentations]

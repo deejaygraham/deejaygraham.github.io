@@ -1,8 +1,5 @@
 ---
-permalink: 2015/06/01/testing-azure-servicebus-queues/
-layout: post
 title: Testing Azure ServiceBus Queues
-
 tags: [cloud, csharp]
 hero: cloud
 ---

@@ -1,6 +1,6 @@
 ---
 permalink: 2020/11/30/silent-night-for-the-microbit/
-layout: post
+
 title: Silent Night for the Microbit
 
 tags: [code, microbit, music]

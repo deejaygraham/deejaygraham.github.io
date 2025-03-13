@@ -1,6 +1,6 @@
 ---
 permalink: 2020/01/31/game-of-oligarchy-3/
-layout: post
+
 title: Game of Oligarchy Part 3
 
 tags: [code, processing]

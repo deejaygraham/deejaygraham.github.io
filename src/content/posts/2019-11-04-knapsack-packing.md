@@ -1,6 +1,6 @@
 ---
 permalink: 2019/11/04/knapsack-packing/
-layout: post
+
 title: Knapsack Packing
 
 tags: [csharp, code, tdd]

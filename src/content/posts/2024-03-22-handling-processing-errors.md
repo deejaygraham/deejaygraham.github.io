@@ -1,8 +1,5 @@
 ---
-permalink: 2024/03/22/handling-processing-errors/
-layout: post
 title: Handling Processing Errors
-
 tags: [code, processing, python]
 ---
 

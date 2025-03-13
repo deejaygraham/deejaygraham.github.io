@@ -1,6 +1,6 @@
 ---
 permalink: 2020/03/02/twinkly-lights/
-layout: post
+
 title: Microbit Twinkly Lights
 
 tags: [code, microbit]

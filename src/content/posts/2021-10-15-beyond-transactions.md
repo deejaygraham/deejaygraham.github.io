@@ -1,8 +1,5 @@
 ---
-permalink: 2021/10/15/beyond-transactions/
-layout: post
 title: Beyond Transactions in Code and Life
-
 tags: [video, presentations]
 thumbnail: /img/posts/beyond-transactions/thumbnail-420x255.png
 alttext: avdi grimm

@@ -1,6 +1,6 @@
 ---
 permalink: 2018/06/23/validating-xml-in-powershell/
-layout: post
+
 title: Validating Xml in PowerShell
 
 tags: [powershell]

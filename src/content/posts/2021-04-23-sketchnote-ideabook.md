@@ -1,8 +1,5 @@
 ---
-permalink: 2021/04/23/sketchnote-ideabook/
-layout: post
 title: Sketchnote Ideabook
-
 tags: [sketchnotes, illustration, stationery]
 ---
 

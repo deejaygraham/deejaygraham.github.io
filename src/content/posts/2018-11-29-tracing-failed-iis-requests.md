@@ -1,6 +1,6 @@
 ---
 permalink: 2018/11/29/tracing-failed-iis-requests/
-layout: post
+
 title: Tracing Failed IIS Requests
 tags: [code]
 

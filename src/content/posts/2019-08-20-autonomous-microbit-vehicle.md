@@ -1,6 +1,6 @@
 ---
 permalink: 2019/08/20/autonomous-microbit-vehicle/
-layout: post
+
 title: Autonomous Microbit Vehicle
 
 tags: [code, microbit]

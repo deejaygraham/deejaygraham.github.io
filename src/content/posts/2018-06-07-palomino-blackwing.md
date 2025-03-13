@@ -1,6 +1,6 @@
 ---
 permalink: 2018/06/07/palomino-blackwing/
-layout: post
+
 title: Palomino Blackwing
 tags: [sketchnotes]
 

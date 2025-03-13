@@ -1,6 +1,6 @@
 ---
 permalink: 2019/06/03/micro-turtles/
-layout: post
+
 title: Microbit Turtles
 
 tags: [code, microbit]

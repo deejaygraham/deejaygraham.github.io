@@ -1,5 +1,4 @@
 ---
-permalink: 2016/02/18/rocks-paper-stories/
 layout: sketchnote
 title: Rocks, Paper ... Stories
 tags: [sketchnotes, presentations, agile]

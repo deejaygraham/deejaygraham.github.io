@@ -1,6 +1,6 @@
 ---
 permalink: 2017/11/05/set-variables-in-tfs-builds/
-layout: post
+
 title: Setting variables in TFS builds
 tags: [code, msbuild, tfs]
 

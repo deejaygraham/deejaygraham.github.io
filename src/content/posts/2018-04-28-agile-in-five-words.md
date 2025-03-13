@@ -1,6 +1,6 @@
 ---
 permalink: 2018/04/28/agile-in-five-words/
-layout: post
+
 title: Agile in 5 Words
 
 tags: [agile, sketchnotes]

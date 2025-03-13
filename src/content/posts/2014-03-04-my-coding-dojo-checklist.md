@@ -1,8 +1,5 @@
 ---
-permalink: 2014/03/04/my-coding-dojo-checklist/
-layout: post
 title: My Coding Dojo Checklist
-
 tags: [tdd, deliberate-practice]
 ---
 

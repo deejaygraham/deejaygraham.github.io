@@ -1,8 +1,5 @@
 ---
-permalink: 2021/01/20/zipping-and-unzipping-in-powershell/
-layout: post
 title: Zipping and Unzipping in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

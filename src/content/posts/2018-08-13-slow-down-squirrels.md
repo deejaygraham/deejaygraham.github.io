@@ -1,6 +1,6 @@
 ---
 permalink: 2018/08/13/slow-down-squirrels/
-layout: post
+
 title: Slow Down, Red Squirrels
 
 tags: [agile, code, signs]

@@ -1,6 +1,6 @@
 ---
 permalink: 2017/04/19/old-timey-snapchat-for-microbit/
-layout: post
+
 title: Old-Timey Snapchat for the Microbit
 tags: [code, microbit]
 

@@ -1,8 +1,5 @@
 ---
-permalink: 2025/01/02/microbit-bee-game/
-layout: post
 title: Microbit Bee Game
-
 tags: [code, microbit, python]
 ---
 

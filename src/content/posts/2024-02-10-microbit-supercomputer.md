@@ -1,8 +1,5 @@
 ---
-permalink: 2024/02/10/microbit-supercomputer/
-layout: post
 title: Microbit Super Computer
-
 tags: [code, microbit, python]
 ---
 

@@ -1,8 +1,6 @@
 ---
-permalink: 2012/02/16/charles-chilton-moore/
 layout: quotation
 title: Charles Chilton Moore
-
 attribution: Charles Chilton Moore
 publication: (1837 - 1906)
 size: medium

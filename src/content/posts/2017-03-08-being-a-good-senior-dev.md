@@ -1,6 +1,6 @@
 ---
 permalink: 2017/03/08/being-a-good-senior-dev/
-layout: post
+
 title: Being a Good Senior Dev
 
 tags: [agile, illustration]

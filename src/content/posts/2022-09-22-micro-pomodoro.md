@@ -1,8 +1,5 @@
 ---
-permalink: 2022/09/22/micro-pomodoro/
-layout: post
 title: Micro Pomodoro
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

@@ -1,6 +1,6 @@
 ---
 permalink: 2017/02/13/brilliant-people-management-with-agile/
-layout: post
+
 title: Brilliant People Management with Agile
 
 tags: [agile, presentations, sketchnotes]

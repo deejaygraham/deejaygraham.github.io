@@ -1,6 +1,6 @@
 ---
 permalink: 2019/04/16/reliability-engineering-for-humans/
-layout: post
+
 title: Reliability Engineering for Humans
 
 tags: [video, presentations]

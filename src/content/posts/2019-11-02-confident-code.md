@@ -1,6 +1,6 @@
 ---
 permalink: 2019/11/02/confident-code/
-layout: post
+
 title: Confident Code
 
 tags: [video, presentations]

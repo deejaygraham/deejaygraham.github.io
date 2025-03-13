@@ -1,8 +1,5 @@
 ---
-permalink: 2014/09/24/msbuild-task-project-on-github/
-layout: post
 title: MsBuild Task Project on Github
-
 tags: [msbuild, open-source]
 ---
 

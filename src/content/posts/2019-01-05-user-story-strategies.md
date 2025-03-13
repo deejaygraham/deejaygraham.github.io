@@ -1,6 +1,6 @@
 ---
 permalink: 2019/01/05/user-story-strategies/
-layout: post
+
 title: User Story Strategies
 tags: [sketchnotes, xp]
 

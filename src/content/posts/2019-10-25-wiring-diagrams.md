@@ -1,6 +1,6 @@
 ---
 permalink: 2019/10/25/wiring-diagrams/
-layout: post
+
 title: Wiring Diagrams
 
 tags: [signs]

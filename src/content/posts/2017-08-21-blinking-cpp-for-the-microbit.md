@@ -1,6 +1,6 @@
 ---
 permalink: 2017/08/21/blinking-cpp-for-the-microbit/
-layout: post
+
 title: Blinking C++
 
 tags: [code, microbit, cpp]

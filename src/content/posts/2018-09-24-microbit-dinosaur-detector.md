@@ -1,6 +1,6 @@
 ---
 permalink: 2018/09/24/microbit-dinosaur-detector/
-layout: post
+
 title: Microbit Dinosaur Detector
 tags: [code, microbit]
 

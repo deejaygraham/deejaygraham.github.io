@@ -1,6 +1,6 @@
 ---
 permalink: 2018/07/01/minecraft-detectorists/
-layout: post
+
 title: Minecraft Detectorists
 tags: [code, minecraft]
 

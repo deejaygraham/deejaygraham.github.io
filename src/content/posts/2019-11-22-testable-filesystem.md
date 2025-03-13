@@ -1,8 +1,8 @@
 ---
 permalink: 2019/11/22/testable-filesystem/
-layout: post
+
 title: Test-Driving a File System
-published: false
+draft: true
 tags: [csharp, code, tdd]
 thumbnail: /img/posts/tdd-filesystem/thumbnail-420x255.webp
 alttext: filing

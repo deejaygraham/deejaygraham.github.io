@@ -1,6 +1,6 @@
 ---
 permalink: 2019/12/14/implementing-clean-architecture-in-net/
-layout: post
+
 title: Implementing the Clean Architecture in .NET Core
 
 tags: [video, presentations]

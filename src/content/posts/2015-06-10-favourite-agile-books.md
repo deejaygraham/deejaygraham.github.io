@@ -1,8 +1,5 @@
 ---
-permalink: 2015/06/10/favourite-agile-books/
-layout: post
 title: Favourite Books
-
 tags: [agile, books]
 ---
 

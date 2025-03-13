@@ -1,6 +1,6 @@
 ---
 permalink: 2017/04/19/old-timey-twitter-for-microbit/
-layout: post
+
 title: Old-Timey Twitter for the Microbit
 tags: [code, microbit]
 

@@ -1,8 +1,5 @@
 ---
-permalink: 2023/09/10/run-csharp-from-powershell/
-layout: post
 title: Running CSharp code from PowerShell
-
 tags: [csharp, code]
 ---
 

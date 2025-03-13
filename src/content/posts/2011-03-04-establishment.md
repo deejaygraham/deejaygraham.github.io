@@ -1,9 +1,7 @@
 ---
-permalink: 2011/03/04/establishment/
 layout: quotation
 size: medium
 title: Establishment
-
 attribution: Tony Benn
 publication:
 tags: [quote]

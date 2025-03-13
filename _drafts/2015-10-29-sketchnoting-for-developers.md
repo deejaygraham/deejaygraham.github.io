@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Sketchnoting for Developers
 tags: [ presentations, sketchnotes  ]
 draft: true

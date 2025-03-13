@@ -1,8 +1,5 @@
 ---
-permalink: 2024/12/20/microbit-choir/
-layout: post
 title: Microbit Choir
-
 tags: [code, microbit, python]
 ---
 

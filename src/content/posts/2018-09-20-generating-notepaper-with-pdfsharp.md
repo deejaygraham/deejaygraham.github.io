@@ -1,6 +1,6 @@
 ---
 permalink: 2018/09/20/generating-notepaper-with-pdfsharp/
-layout: post
+
 title: Generating Notepaper with PdfSharp
 tags: [code]
 

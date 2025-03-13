@@ -1,8 +1,5 @@
 ---
-permalink: 2021/04/01/xmas-fireflies/
-layout: post
 title: Christmas Fireflies
-
 tags: [code, processing, python]
 thumbnail: /img/posts/xmas-fireflies/xmas-fireflies-420x255.webp
 alttext: screenshot

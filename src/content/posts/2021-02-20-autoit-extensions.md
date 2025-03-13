@@ -1,8 +1,5 @@
 ---
-permalink: 2021/02/20/autoit-extensions/
-layout: post
 title: AutoIt Extensions
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

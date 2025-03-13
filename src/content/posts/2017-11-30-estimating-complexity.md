@@ -1,6 +1,6 @@
 ---
 permalink: 2017/11/30/estimating-complexity/
-layout: post
+
 title: Estimating Complexity
 
 tags: [agile]

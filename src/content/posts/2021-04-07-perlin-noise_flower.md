@@ -1,8 +1,5 @@
 ---
-permalink: 2021/04/07/perlin-noise_flower/
-layout: post
 title: Perlin Noise Flower
-
 tags: [code, processing, python]
 thumbnail: /img/posts/perlin-noise-flower/perlin-noise-flower-420x255.webp
 alttext: screenshot

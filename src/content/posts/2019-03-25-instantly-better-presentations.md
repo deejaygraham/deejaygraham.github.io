@@ -1,6 +1,6 @@
 ---
 permalink: 2019/03/25/instantly-better-presentations/
-layout: post
+
 title: Instantly Better Presentations
 
 tags: [video, presentations]

@@ -1,6 +1,6 @@
 ---
 permalink: 2019/06/07/how-to-talk-to-devs/
-layout: post
+
 title: How to talk to Developers
 
 tags: [video, presentations]

@@ -1,8 +1,5 @@
 ---
-permalink: 2024/03/28/make-a-jazz-noise-here/
-layout: post
 title: Make A Jazz Noise Here
-
 tags: [code, microbit, python]
 ---
 

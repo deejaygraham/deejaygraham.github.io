@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Copying Right or Wrong?
 tags: [ copyright, presentations ]
 draft: true

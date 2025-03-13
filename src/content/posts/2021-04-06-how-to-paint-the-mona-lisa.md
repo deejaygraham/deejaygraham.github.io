@@ -1,8 +1,5 @@
 ---
-permalink: 2021/04/06/how-to-paint-the-mona-lisa/
-layout: post
 title: How to Paint the Mona Lisa
-
 tags: [code, processing, python]
 thumbnail: /img/posts/how-to-paint-the-mona-lisa/mona-lisa-420x255.webp
 alttext: screenshot

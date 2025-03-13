@@ -1,5 +1,4 @@
 ---
-permalink: 2025/02/04/everyday-badness/
 layout: quotation
 title: Everyday Badness
 attribution: Terry Pratchett

@@ -1,6 +1,6 @@
 ---
 permalink: 2018/07/06/lettering-kata/
-layout: post
+
 title: Lettering Kata
 tags: [sketchnotes]
 

@@ -1,6 +1,6 @@
 ---
 permalink: 2018/06/03/microbit-portal-theme/
-layout: post
+
 title: Portal Theme on Microbit
 tags: [code, microbit]
 

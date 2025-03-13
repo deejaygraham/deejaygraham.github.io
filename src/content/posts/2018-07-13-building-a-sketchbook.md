@@ -1,6 +1,6 @@
 ---
 permalink: 2018/07/13/building-a-sketchbook/
-layout: post
+
 title: Building a sketchbook
 tags: [sketchnotes]
 

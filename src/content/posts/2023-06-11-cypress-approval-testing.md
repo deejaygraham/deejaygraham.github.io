@@ -1,8 +1,5 @@
 ---
-permalink: 2023/06/11/cypress-approval-testing/
-layout: post
 title: Approval Testing in Cypress
-
 tags: [cypress, javascript, code]
 hero: power
 thumbnail: "/img/thumbnails/cypress-420x255.png"

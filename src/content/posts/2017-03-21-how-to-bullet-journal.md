@@ -1,6 +1,6 @@
 ---
 permalink: 2017/03/21/how-to-bullet-journal/
-layout: post
+
 title: How to Bullet Journal
 
 tags: [illustration]

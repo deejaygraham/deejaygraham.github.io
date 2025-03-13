@@ -1,6 +1,6 @@
 ---
 permalink: 2018/02/05/langtons-ant-for-microbit/
-layout: post
+
 title: Langton's Ant
 tags: [code, microbit]
 

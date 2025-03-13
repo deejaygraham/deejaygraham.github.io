@@ -1,6 +1,6 @@
 ---
 permalink: 2020/07/18/study-less-study-smart/
-layout: post
+
 title: Study Less, Study Smart
 
 tags: [video, presentations]

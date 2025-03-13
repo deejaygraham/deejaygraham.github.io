@@ -1,6 +1,6 @@
 ---
 permalink: 2020/05/08/led-blinkenlights/
-layout: post
+
 title: Microbit LED blinkenlights
 
 tags: [code, microbit]

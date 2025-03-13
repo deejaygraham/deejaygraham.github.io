@@ -1,8 +1,6 @@
 ---
-permalink: 2023/07/30/my-friend-maud/
 layout: quotation
 title: My Friend Maud
-
 tags: [quote]
 size: medium
 attribution: Melissa McEwan

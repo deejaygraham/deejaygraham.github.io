@@ -1,9 +1,6 @@
 ---
-permalink: 2015/10/08/soundex-encoding/
-layout: post
 title: Soundex Encoding Text in C Sharp
 tags: [code]
-
 ---
 
 <a href="https://en.wikipedia.org/wiki/Soundex">Soundex</a> is a text encoding algorithm designed to create hashes

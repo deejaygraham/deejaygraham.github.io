@@ -1,6 +1,6 @@
 ---
 permalink: 2018/05/05/minecraft-for-millionaires/
-layout: post
+
 title: Minecraft Pi for Millionaires
 tags: [code, minecraft]
 

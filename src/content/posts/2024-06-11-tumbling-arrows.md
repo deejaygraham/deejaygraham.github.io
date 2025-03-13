@@ -1,8 +1,5 @@
 ---
-permalink: 2024/06/11/tumbling-arrows/
-layout: post
 title: Tumbling Arrows
-
 thumbnail: /img/posts/tumbling-arrows/thumbnail-420x255.png
 tags: [code, processing, python]
 ---

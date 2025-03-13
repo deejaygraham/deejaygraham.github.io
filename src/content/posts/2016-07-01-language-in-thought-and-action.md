@@ -1,11 +1,9 @@
 ---
-permalink: 2016/07/01/language-in-thought-and-action/
 layout: quotation
 title: Language in Thought and Action
 attribution: S.I. Hayakawa
 comment: S.I. Hayakawa's book "Language in Thought and Action" is full of great quotes. Here's just one (fairly big one) that caught my eye.
 tags: [books, quote]
-
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote
 ---

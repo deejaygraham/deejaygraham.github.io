@@ -1,6 +1,6 @@
 ---
 permalink: 2018/09/02/tiny-lisp-interpreters/
-layout: post
+
 title: Tiny Lisp Implementations
 
 tags: [code]

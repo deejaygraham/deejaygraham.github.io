@@ -1,8 +1,5 @@
 ---
-permalink: 2015/07/16/listing-user-certificates-in-powershell/
-layout: post
 title: Finding and using user certificates in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

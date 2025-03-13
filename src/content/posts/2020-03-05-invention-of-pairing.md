@@ -1,6 +1,6 @@
 ---
 permalink: 2020/03/05/invention-of-pairing/
-layout: post
+
 title: The Invention of Pairing
 
 tags: [code, xp]

@@ -1,8 +1,5 @@
 ---
-permalink: 2023/05/23/file-and-folder-access-rights-with-powershell/
-layout: post
 title: How to get file and folder ACL rights with PowerShell
-
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

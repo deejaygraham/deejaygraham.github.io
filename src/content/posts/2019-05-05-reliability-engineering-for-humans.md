@@ -1,8 +1,5 @@
 ---
-permalink: 2019/05/05/reliability-engineering-for-humans/
-layout: post
 title: Reliability Engineering for Humans
-
 tags: [video, presentations]
 ---
 

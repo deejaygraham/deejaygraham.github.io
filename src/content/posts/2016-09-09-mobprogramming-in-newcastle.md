@@ -1,9 +1,6 @@
 ---
-permalink: 2016/09/09/mobprogramming-in-newcastle/
-layout: post
 title: MobProgramming comes to Newcastle
 tags: [agile]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

@@ -1,6 +1,6 @@
 ---
 permalink: 2018/01/09/campus-north-murals/
-layout: post
+
 title: Campus North Murals
 
 tags: [illustration]

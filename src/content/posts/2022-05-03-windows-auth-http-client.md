@@ -1,8 +1,5 @@
 ---
-permalink: 2022/05/03/windows-auth-http-client/
-layout: post
 title: HttpClient with Windows Auth
-
 tags: [code, csharp]
 thumbnail: /img/posts/windows-auth-http-client/thumbnail-420x255.jpg
 alttext: screenshot
