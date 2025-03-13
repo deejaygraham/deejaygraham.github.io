@@ -2,7 +2,7 @@
 title: Setting variables in TFS builds
 tags: [code, msbuild, tfs]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 I am usually a big fan of Tfs and VS TFS 2015 onwards and the improvements the team made to the build system as compared to the

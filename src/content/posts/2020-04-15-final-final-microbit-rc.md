@@ -2,8 +2,8 @@
 title: Final, Final, Microbit RC
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit bit bot
+
+
 ---
 
 Following on from the last post about the remote control microbit powered bitbot, I think I mentioned all the way along that the car source code

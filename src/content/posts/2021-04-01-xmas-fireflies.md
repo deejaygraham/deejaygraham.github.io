@@ -2,7 +2,7 @@
 title: Christmas Fireflies
 tags: [code, processing, python]
 thumbnail: /img/posts/xmas-fireflies/xmas-fireflies-420x255.webp
-alttext: screenshot
+
 ---
 
 Exploring some more fun and simple examples of generative art I stumbled on this example which uses Perlin Noise to generate a sort of

@@ -3,7 +3,7 @@ title: Remove Temporary ASP.Net Files in PowerShell
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Tiny snippet that I always forget about and have to re-create from scratch every time. Working with ASP.Net, IIS tries really hard to

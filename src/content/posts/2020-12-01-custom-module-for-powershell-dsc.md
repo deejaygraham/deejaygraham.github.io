@@ -3,7 +3,7 @@ title: Custom Module for PowerShell DSC
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Refreshing my memory on using PowerShell DSC to create a consistent built configuration for a set of virtual machines, I needed a way to customise app settings in a series of web and application configurations. A lot of the modules available as

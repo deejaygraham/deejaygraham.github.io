@@ -3,7 +3,7 @@ title: Hello, Minecraft
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,

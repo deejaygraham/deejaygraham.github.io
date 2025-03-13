@@ -5,7 +5,7 @@ title: Programming is Understanding
 attribution: Joe Armstrong
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 I keep telling people "programming is understanding" - the computer is a

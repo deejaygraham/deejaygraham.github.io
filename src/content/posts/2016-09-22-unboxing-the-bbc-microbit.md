@@ -2,8 +2,8 @@
 title: Unboxing the BBC Microbit
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 I finally got my hands on a <a href="http://www.microbit.co.uk/">BBC Micro:bit</a> and

@@ -2,8 +2,8 @@
 title: Pythonic Idioms
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 I always seem to find myself having to look up the "right" way to structure a piece of logic in Python so I thought I would

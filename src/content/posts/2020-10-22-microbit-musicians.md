@@ -3,7 +3,7 @@ title: Microbit Musicians
 tags: [code, microbit, music]
 hero: microbit
 thumbnail: /img/posts/microbit-musicians/thumbnail-420x255.webp
-alttext: microbit
+
 ---
 
 Today I have been playing with some ideas around creating my own little microbit orchestra. This has come around because of the announcement of the

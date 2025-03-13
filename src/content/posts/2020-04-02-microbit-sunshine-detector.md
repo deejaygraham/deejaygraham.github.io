@@ -2,8 +2,8 @@
 title: Microbit Sunshine Detector
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 A variation on the nightlight example is a simple, adjustable sunshine detector.

@@ -2,7 +2,7 @@
 title: MobProgramming comes to Newcastle
 tags: [agile]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 On the 8th of September 2016, in a joint effort from <a href="http://nebytes.net">NE Bytes</a> and

@@ -1,12 +1,9 @@
 ---
-permalink: 2018/08/15/minecraft-portkey/
-
 title: Minecraft PortKey
 tags: [minecraft, code]
-
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 What's programming without an occasional Harry Potter/Minecraft mashup? In the Harry Potter universe, a

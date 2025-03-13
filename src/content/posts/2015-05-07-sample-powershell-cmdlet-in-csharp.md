@@ -3,7 +3,7 @@ title: Sample Powershell Cmdlet in C#
 tags: [csharp, code, powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Another one from the department of aide memoire. Here's the basic process to follow

@@ -2,7 +2,7 @@
 title: Brilliant People Management with Agile
 tags: [agile, presentations, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 We had the pleasure of hosting the awesome <a href="https://twitter.com/geek_manager/">Meri Williams</a> at the February meeting of <a href="https://www.meetup.com/Agile-North-East/events/235774940/">Agile North East</a>.

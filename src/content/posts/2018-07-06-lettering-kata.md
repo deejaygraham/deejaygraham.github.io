@@ -1,11 +1,8 @@
 ---
-permalink: 2018/07/06/lettering-kata/
-
 title: Lettering Kata
 tags: [sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 I am a big fan of katas and the idea of deliberate practice in general so

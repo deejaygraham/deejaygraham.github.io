@@ -6,7 +6,7 @@ sketchnote:
   url: "/img/posts/my-sketchnoting-workflow-for-presentations/derek-graham-sketchnote-process-bw-scan.webp"
   alt: "Sketchnote process"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 It sounds very meta but I thought I would have a go at sketching out the

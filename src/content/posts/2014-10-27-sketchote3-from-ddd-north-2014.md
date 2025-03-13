@@ -12,7 +12,7 @@ sketchnote:
     name: "Joel Hammond-Turner"
     url: "http://www.twitter.com/rammesses"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 The third and final sketchnote (but actually from the first session of the day)

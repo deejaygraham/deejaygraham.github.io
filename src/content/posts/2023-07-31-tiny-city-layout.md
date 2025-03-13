@@ -2,7 +2,7 @@
 title: Tiny City Layout
 tags: [code, processing, python]
 thumbnail: /img/posts/tiny-city-layout/tiny-city-layout-420x255.png
-alttext: screenshot
+
 ---
 
 Always on the look out for tiny but interesting generative art samples, I came across a tweet by Martin Kleppe (no longer a twitter users it seems) with an intriguing

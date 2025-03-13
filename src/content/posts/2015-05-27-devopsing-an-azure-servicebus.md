@@ -3,7 +3,7 @@ title: DevOpsing an Azure ServiceBus
 tags: [cloud, powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 I was debating with a couple of DevOps people some approaches to monitoring an Azure Service

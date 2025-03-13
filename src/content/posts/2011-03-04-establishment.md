@@ -5,8 +5,8 @@ title: Establishment
 attribution: Tony Benn
 publication:
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 I don't think people realise how the establishment became established.

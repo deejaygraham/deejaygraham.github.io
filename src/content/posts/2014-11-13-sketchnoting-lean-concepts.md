@@ -14,7 +14,7 @@ sketchnote:
     name: "Dan Brown"
     url: "https://twitter.com/KanbanDan"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Continuing on with the quest to find many and varied things to sketchnote,

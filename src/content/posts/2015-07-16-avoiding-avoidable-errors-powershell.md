@@ -3,7 +3,7 @@ title: Avoiding avoidable errors in PowerShell
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Two wonderful features of PowerShell that don't seem to get used enough are embodied by the

@@ -2,8 +2,8 @@
 title: Microbit Eddystone Beacon
 tags: [code, microbit, cpp]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Most of the work I have done with the microbit radio has been in python, including some of the games with transmitting and receiving "beacons". 

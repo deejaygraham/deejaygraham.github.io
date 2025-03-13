@@ -3,8 +3,8 @@ layout: quotation
 title: Margaret Hamilton, Beginner
 tags: [quote]
 attribution: Margaret Hamilton
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 What they used to do when you came into this organization as a beginner,

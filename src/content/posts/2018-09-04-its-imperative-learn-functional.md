@@ -1,6 +1,4 @@
 ---
-permalink: 2018/09/04/its-imperative-learn-functional/
-
 title: It's imperative that you learn a functional language
 tags: [presentations]
 draft: true

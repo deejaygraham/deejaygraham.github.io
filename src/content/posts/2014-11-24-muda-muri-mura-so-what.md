@@ -6,7 +6,7 @@ sketchnote:
   url: "/img/posts/muda-muri-mura-so-what/muda-muri-mura-so-what-hifi.webp"
   alt: "sketchnote"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Explaining what these three variations on waste were in the <a href="http://en.wikipedia.org/wiki/Toyota_Production_System">Toyota

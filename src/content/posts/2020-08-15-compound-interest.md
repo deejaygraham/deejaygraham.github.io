@@ -5,7 +5,7 @@ title: Compound Interest
 attribution: CS Lewis
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 Good and evil both increase at compound interest. That is

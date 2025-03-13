@@ -3,7 +3,7 @@ title: Search and Replace in Powershell
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 In scenarios where we keep configuration information in app.config or web.config files (or .cscfg's even),

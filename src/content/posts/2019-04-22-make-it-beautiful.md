@@ -5,8 +5,8 @@ title: Make It Beautiful
 attribution: Joe Armstrong
 publication:
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Make it work, then make it beautiful, then if you

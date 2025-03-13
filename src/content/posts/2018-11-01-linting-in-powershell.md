@@ -3,7 +3,7 @@ title: Linting in PowerShell
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Continuing the theme of C++ flavoured tools I miss, lint is another essential that doesn't appear to exist in the PowerShell world. Until I discovered ScriptAnalyzer which,

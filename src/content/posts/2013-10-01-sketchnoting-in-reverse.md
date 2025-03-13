@@ -2,7 +2,7 @@
 title: Sketchnoting in Reverse
 tags: [sketchnotes, deliberate-practice, presentations]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by

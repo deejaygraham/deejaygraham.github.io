@@ -2,7 +2,7 @@
 title: Managing Skytap environments with PowerShell
 tags: [powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Our favourite virtual environment provider, <a href="http://skytap.com">skytap</a>, now

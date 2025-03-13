@@ -2,8 +2,8 @@
 title: Singing the Portal Theme
 tags: [code, microbit, python]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Quite a few years ago I posted something about creating music on the microbit and used the <a href="https://en.wikipedia.org/wiki/Portal_(video_game)">Portal</a> ending theme as 

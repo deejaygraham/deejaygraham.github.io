@@ -2,7 +2,7 @@
 title: Hand Binding a sketchbook
 tags: [sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 I have been experimenting on and off with making my own sketchbooks and wanted to try something a bit

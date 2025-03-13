@@ -3,7 +3,7 @@ title: SQL Test Data as Code
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 I'm a big fan of driving manual, error-prone setup steps for anything into scripts and

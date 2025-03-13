@@ -12,5 +12,5 @@ sketchnote:
     name: "Dan North"
     url: "https://dannorth.net"
 thumbnail: "/img/posts/how-to-make-a-sandwich/thumbnail-420x255.jpg"
-alttext: sketchnote
+
 ---

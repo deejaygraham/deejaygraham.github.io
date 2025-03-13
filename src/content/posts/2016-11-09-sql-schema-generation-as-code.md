@@ -3,7 +3,7 @@ title: SQL Schema Generation as Code
 tags: [cloud, powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 While I was generating test data from a SQL database in the last post, I returned to another

@@ -3,7 +3,7 @@ title: Parameterised Builds using Jenkins
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 My experiments with CI using [Jenkins](https://jenkins-ci.org/) continue.

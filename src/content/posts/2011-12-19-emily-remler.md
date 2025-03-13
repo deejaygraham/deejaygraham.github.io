@@ -5,8 +5,8 @@ title: Emily Remler
 attribution: Emily Remler (18 September 1957 – 4 May 1990)
 publication: People Magazine, 1982
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 I may look like a nice Jewish girl from New Jersey, but inside I’m a

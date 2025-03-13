@@ -1,8 +1,5 @@
 ---
-permalink: 2018/07/20/perfecting-code-reviews/
-
 title: Perfecting Code Reviews
-
 tags: [code, agile]
 ---
 

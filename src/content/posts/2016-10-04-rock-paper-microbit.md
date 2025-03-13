@@ -2,8 +2,8 @@
 title: Rock, Paper, Microbit
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 I saw a tweet from <a href="https://twitter.com/TechForLifeUK/">@TechForLifeUK</a> the other day

@@ -3,7 +3,7 @@ title: Configuring IIS in PowerShell
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Controlling the configuration of IIS always seems to be difficult from an outside view, involving loading the IIS snapin or

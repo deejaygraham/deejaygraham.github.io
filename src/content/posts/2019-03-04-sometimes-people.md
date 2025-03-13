@@ -5,8 +5,8 @@ title: Sometimes People
 attribution: Kristen Butler
 publication:
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Sometimes people don't need help or advice. They may just need

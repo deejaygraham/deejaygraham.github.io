@@ -2,7 +2,7 @@
 title: 11ty Picture Shortcode
 tags: [code, javascript, 11ty]
 thumbnail: /img/thumbnails/eleventy-alt-420x255.png
-alttext: 11ty
+
 ---
 
 Another tiny 11ty shortcode, this time to accept more than one parameter to a single shortcode.

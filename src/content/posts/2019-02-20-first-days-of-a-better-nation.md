@@ -5,8 +5,8 @@ attribution: Cory Doctorow
 publication: Overclocked
 comment: Variations on this quote keep turning up in Corys work including Walkaway
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 And then, as we tuned every screen in the house to the launch, I raised a glass and toasted Pug:

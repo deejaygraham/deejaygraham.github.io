@@ -3,7 +3,7 @@ title: Better Date Handling in Cypress
 tags: [cypress, javascript, code]
 hero: power
 thumbnail: "/img/thumbnails/cypress-420x255.png"
-alttext: cypress
+
 ---
 
 I've been getting into using [Cypress](https://cypress.io) for API testing recently and needed some nicer way of handling dates than just the raw Date class in JavaScript.

@@ -6,7 +6,7 @@ sketchnote:
   url: "/img/posts/dreyfuss-model-of-skill-acquisition/dreyfuss-model-of-skill-acquisition-hifi.webp"
   alt: "sketchnote"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 A dreadful pun on the names of Hubert and Stuart Drefus

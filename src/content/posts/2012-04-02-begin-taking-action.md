@@ -4,8 +4,8 @@ title: Begin Taking Action
 attribution: Shoma Morita
 size: medium
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Begin taking action now, while being neurotic or imperfect or a

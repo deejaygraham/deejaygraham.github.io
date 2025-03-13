@@ -3,7 +3,7 @@ title: Transcribing Sheet Music for the Microbit
 tags: [code, microbit, music]
 hero: microbit
 thumbnail: /img/posts/transcribing-sheetmusic-for-the-microbit/thumbnail-420x255.webp
-alttext: microbit
+
 ---
 
 Continuing with the theme of music on the microbit, there's a little bit of complexity in translating from standard

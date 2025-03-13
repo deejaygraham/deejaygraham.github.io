@@ -2,8 +2,8 @@
 title: Improved Ghost Detector
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit
+
+
 ---
 
 A couple of years ago I created a ghost detector for the microbit as a

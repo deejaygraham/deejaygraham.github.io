@@ -1,11 +1,8 @@
 ---
-permalink: 2018/06/07/palomino-blackwing/
-
 title: Palomino Blackwing
 tags: [sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Ever on the look out for new sketchnoting supplies as I am, we found a <a href="http://www.oswells.co.uk/">new stationary shop</a>

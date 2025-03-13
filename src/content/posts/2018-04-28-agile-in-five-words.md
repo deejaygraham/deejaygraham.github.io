@@ -1,11 +1,8 @@
 ---
-permalink: 2018/04/28/agile-in-five-words/
-
 title: Agile in 5 Words
-
 tags: [agile, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 I really liked <a href="https://twitter.com/schmonz">Amitai Schleier's</a> contribution to the twitter

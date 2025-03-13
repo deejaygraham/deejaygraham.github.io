@@ -12,7 +12,7 @@ sketchnote:
     name: "Cory Doctorow"
     url: "https://craphound.com"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 A text heavy sketchnote this time from a speech by Cory Doctorow at Hieroglyph on the theme of

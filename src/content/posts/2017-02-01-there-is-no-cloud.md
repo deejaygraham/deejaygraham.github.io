@@ -4,8 +4,8 @@ title: There is no Cloud
 attribution: Free Software Foundation
 size: large
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 There is no Cloud, just other people's computers.

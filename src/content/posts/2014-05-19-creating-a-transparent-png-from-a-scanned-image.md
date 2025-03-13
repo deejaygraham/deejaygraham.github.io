@@ -2,7 +2,7 @@
 title: Creating a Transparent PNG from a Scanned Image
 tags: [csharp, sketchnotes, code]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 One of the many parts of my sketchnoting process that I took from Mike Rohde's

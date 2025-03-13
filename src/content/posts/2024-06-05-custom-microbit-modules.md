@@ -2,8 +2,8 @@
 title: Custom Microbit Modules
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 As long as I have been working with the BBC microbit, I have always - for simplicity and ease of explanation - crammed all my code into a single tab in the mu editor,

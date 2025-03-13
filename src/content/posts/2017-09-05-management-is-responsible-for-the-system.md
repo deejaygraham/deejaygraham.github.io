@@ -1,8 +1,8 @@
 ---
 title: Management is Responsible for the System
 tags: [agile, illustration]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 And another quote from Deming, this time from <a href="https://www.youtube.com/watch?v=HmCjr6cwDpI">Lessons from the Red Bed Experiment</a>.

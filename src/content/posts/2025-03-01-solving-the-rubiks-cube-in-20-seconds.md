@@ -11,5 +11,5 @@ sketchnote:
   speaker:
     name: "Chris Hunt"
     url: "https://www.chrishunt.co"
-alttext: sketchnote
+
 ---

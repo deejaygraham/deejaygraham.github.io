@@ -2,8 +2,8 @@
 title: Building C++ for the BBC Microbit
 tags: [code, microbit, cpp]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 In the last 12-18 months of coding for the BBC micro:bit I tended to shy away from the

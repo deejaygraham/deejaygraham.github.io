@@ -5,8 +5,8 @@ attribution: Norm Kerth
 publication: Project Retrospectives - A Handbook for Team Review
 size: medium
 tags: [agile, quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Regardless of what we discover, we understand and truly believe

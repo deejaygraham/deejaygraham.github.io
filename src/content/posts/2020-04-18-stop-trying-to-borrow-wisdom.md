@@ -5,7 +5,7 @@ title: Stop Trying to Borrow Wisdom
 attribution: Taiichi Ohno
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 Stop trying to borrow wisdom and think for yourself. Face your difficulties and think and

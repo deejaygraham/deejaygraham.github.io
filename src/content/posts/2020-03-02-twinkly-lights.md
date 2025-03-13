@@ -2,8 +2,8 @@
 title: Microbit Twinkly Lights
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Since it's nowhere near Christmas, I can't justify posting this code sample

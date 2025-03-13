@@ -9,5 +9,5 @@ sketchnote:
     name: "Chris McDermott"
     url: "https://www.linkedin.com/in/chrisvmcd/"
 thumbnail: "/img/posts/it-always-takes-longer/thumbnail-420x255.jpg"
-alttext: sketchnote
+
 ---

@@ -3,7 +3,7 @@ title: Finding and using user certificates in PowerShell
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Accessing a certificate store from PowerShell is another one of those incantations that never

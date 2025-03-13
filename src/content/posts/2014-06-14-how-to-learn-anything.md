@@ -15,7 +15,7 @@ sketchnote:
     name: "@joshkaufman"
     url: "https://twitter.com/joshkaufman"
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 A quick sketchnote of a TED talk on the subject of learning and deliberate practice.

@@ -1,12 +1,9 @@
 ---
-permalink: 2018/08/14/minecraft-forestry/
-
 title: Minecraft Forestry
 tags: [minecraft, code]
-
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 We can build very simple trees programmatically in Minecraft by stacking blocks together using

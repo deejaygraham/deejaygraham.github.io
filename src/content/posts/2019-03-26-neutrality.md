@@ -4,8 +4,8 @@ title: Neutrality
 tags: [quote]
 size: medium
 attribution: Desmond Tutu
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 If you are neutral in situations of injustice, you have chosen the side of the oppressor. If

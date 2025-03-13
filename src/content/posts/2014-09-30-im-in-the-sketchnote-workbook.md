@@ -2,7 +2,7 @@
 title: I'm in the Sketchnote Workbook!
 tags: [sketchnotes, books]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Or rather, some of my work is :) Exciting news from <a href="http://rohdesign.com">Mike Rohde</a> -

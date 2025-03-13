@@ -1,11 +1,8 @@
 ---
-permalink: 2018/09/09/how-to-draw-faces/
-
 title: How to Draw Faces
-
 tags: [illustration, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 A tip I learned from <a href="https://austinkleon.com/">Austin Kleon</a>, a

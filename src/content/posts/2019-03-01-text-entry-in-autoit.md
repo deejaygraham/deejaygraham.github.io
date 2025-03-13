@@ -3,7 +3,7 @@ title: Text Entry in AutoIt
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 There are a number of special commands and keys in <a href="https://www.autoitscript.com/site/">AutoIt</a> that are represented

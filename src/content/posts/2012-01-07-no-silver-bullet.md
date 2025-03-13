@@ -5,8 +5,8 @@ attribution: Frederick P. Brooks
 publication: No silver bullet, 1987
 size: medium
 tags: [quote, debugging]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 The hardest part of the software task is arriving at a complete

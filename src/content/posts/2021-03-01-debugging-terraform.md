@@ -3,7 +3,7 @@ title: Debugging Terraform
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 <a href="https://www.terraform.io">Terraform</a> is a wonderful tool and I'm using it at the moment to build some WVD instances in Azure.

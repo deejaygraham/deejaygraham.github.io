@@ -2,7 +2,7 @@
 title: The Case of the Disappearing Github Pages
 tags: [meta, powershell, presentations]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 I spent a frustrating couple of days earlier this week while preparing a presentation

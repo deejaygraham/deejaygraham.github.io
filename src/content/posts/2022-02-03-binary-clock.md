@@ -2,7 +2,7 @@
 title: Binary Clock
 tags: [code, microbit, python]
 thumbnail: /img/posts/binary-clock/thumbnail-420x255.webp
-alttext: screenshot
+
 ---
 
 An early morning thought today was around making another project for the bbc microbit after talking about it again

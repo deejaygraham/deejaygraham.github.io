@@ -1,8 +1,5 @@
 ---
-permalink: 2018/09/01/project-euler-number-1-elixir/
-
 title: Project Euler #Problem 1 in Elixir
-
 tags: [code]
 hero: power
 ---

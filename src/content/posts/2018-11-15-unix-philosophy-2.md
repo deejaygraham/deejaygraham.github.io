@@ -4,8 +4,8 @@ title: More Unix Philosophy
 tags: [agile, quote]
 attribution: Brian Kernighan and Rob Pike
 publication: Program Design in the Unix Environment
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Much of the power of the UNIX operating system comes from a style of program design that makes

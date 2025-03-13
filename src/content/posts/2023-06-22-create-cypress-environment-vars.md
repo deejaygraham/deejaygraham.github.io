@@ -2,7 +2,7 @@
 title: Create Environment Variables in Cypress
 tags: [cypress, javascript, code]
 thumbnail: "/img/thumbnails/cypress-420x255.png"
-alttext: cypress
+
 ---
 
 [Cypress](https://cypress.io) allows for greater flexibility in your tests by supporting environment variables to be accessed from a test

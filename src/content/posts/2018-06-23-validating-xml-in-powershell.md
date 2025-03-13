@@ -1,12 +1,9 @@
 ---
-permalink: 2018/06/23/validating-xml-in-powershell/
-
 title: Validating Xml in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 Sometimes a deployment pipeline needs to know that a file is at least vaguely sensible before trying to use it. Here is a

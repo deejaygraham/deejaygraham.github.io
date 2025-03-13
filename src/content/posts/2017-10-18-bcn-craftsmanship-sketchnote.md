@@ -2,7 +2,7 @@
 title: Two Examples of Sketchnoting Inception
 tags: [sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Ordinarily, the way sketchnotes work is that you are capturing and distilling ideas

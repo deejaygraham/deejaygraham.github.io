@@ -2,8 +2,8 @@
 title: Game of Life 2
 tags: [code, microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 I heard about John Conway's death from COVID-19 this weekend and was thinking about his most famous

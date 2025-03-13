@@ -1,12 +1,9 @@
 ---
-permalink: 2018/08/29/passing-parameters-to-a-pester-test/
-
 title: Passing Parameters to a Pester Test
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 A useful snippet if you don't want to hard-code values in a <a href="https://github.com/pester/Pester">Pester</a>

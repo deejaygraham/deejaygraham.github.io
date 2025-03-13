@@ -3,7 +3,7 @@ title: How to find AD group membership with PowerShell
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: logs
+
 ---
 
 A tiny snippet I always forget when swapping identities and using service accounts for things like IIS App Pools. The problem: given a user name how do I work

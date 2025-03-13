@@ -2,7 +2,7 @@
 title: Sketchnoting at DDDNorth 2015
 tags: [presentations, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 <img src="/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.webp" class="u-max-full-width" alt="DDD North" />

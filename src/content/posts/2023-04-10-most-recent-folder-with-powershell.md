@@ -3,7 +3,7 @@ title: How to find the most recent folder with PowerShell
 tags: [powershell, code]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: logs
+
 ---
 
 Continuing the regular theme of snippets of code I can't quite remember when I need them, here's one where

@@ -5,7 +5,7 @@ title: Improving the Dancing
 attribution: Russel L. Ackoff
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 Most corporate planning is like a ritual rain dance. It has

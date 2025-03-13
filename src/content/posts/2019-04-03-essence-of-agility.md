@@ -4,8 +4,8 @@ title: The Essence of Agility
 attribution: Allen Holub
 publication: via Twitter
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 The essence of agility is NOT speed. It's value, the goal is to put high-quality, valuable

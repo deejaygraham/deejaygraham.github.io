@@ -3,7 +3,7 @@ title: Secret Azure Debugging Tools
 tags: [cloud]
 hero: cloud
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 I recently stumbled on a [blog post](http://blogs.msdn.com/b/kwill/archive/2013/08/26/azuretools-the-diagnostic-utility-used-by-the-windows-azure-developer-support-team.aspx)

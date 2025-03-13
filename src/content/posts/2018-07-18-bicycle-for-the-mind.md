@@ -1,13 +1,11 @@
 ---
-permalink: 2018/07/18/bicycle-for-the-mind/
 layout: quotation
 title: A Bicycle for the Mind
 attribution: Steve Jobs
-
 tags: [quote]
 size: medium
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 I think one of the things that really separates us from the high primates is that we’re tool builders. I read

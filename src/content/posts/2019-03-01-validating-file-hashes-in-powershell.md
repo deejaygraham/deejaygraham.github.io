@@ -3,7 +3,7 @@ title: Validating File Hashes in PowerShell
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 PowerShell (from version 4 onwards I think) has a Get-FileHash cmdlet that lets you generate a quick-and-dirty

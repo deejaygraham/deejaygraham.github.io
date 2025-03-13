@@ -6,7 +6,7 @@ attribution: James Baldwin
 publication: Letters from a Region in My Mind
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 And all this is happening in the richest and freest country in the world, and in the middle of the twentieth century. The subtle and deadly 

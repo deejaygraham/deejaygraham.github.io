@@ -4,8 +4,8 @@ title: Why I am an Agnostic
 attribution: Robert Ingersoll (1833 - 1899)
 publication: Why I am an Agnostic
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 When I became convinced that the Universe is natural – that

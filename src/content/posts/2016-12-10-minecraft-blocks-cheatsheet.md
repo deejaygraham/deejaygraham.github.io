@@ -3,7 +3,7 @@ title: Minecraft Blocks Cheatsheet
 tags: [code, minecraft]
 hero: minecraft
 thumbnail: "/img/thumbnails/rpi-420x255.webp"
-alttext: raspberry pi
+
 ---
 
 There are a **huge** number of block types available to build through the Python API.

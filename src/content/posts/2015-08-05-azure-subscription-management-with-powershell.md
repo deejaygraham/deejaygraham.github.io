@@ -3,7 +3,7 @@ title: Azure subscription management with PowerShell
 tags: [cloud]
 hero: cloud
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
-alttext: powershell
+
 ---
 
 ## .PublishSettings

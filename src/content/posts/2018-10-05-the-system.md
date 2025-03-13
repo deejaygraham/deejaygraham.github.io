@@ -5,7 +5,7 @@ title: The System
 attribution: John Seddon
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 The system has the most influence on people's behaviour, yet managers

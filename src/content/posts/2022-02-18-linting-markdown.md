@@ -2,7 +2,7 @@
 title: Linting Markdown
 tags: [code, javascript, 11ty]
 thumbnail: /img/posts/linting-markdown/thumbnail-420x255.png
-alttext: screenshot
+
 ---
 
 Currently in the middle of porting a large-ish web documentation site from janky, old style, MS Word generated html to

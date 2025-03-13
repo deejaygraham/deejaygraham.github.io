@@ -4,8 +4,8 @@ title: Food for the Eagle
 attribution: Adam Savage
 publication: Food for the Eagle, Delivered to the Harvard Humanist Society, April 2010
 tags: [presentations, quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 <p>Good evening.</p>

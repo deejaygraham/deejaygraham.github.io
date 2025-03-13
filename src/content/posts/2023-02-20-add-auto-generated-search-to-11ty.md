@@ -2,7 +2,7 @@
 title: Add Auto-generated Search to 11ty
 tags: [code, javascript, 11ty]
 thumbnail: /img/thumbnails/eleventy-alt-420x255.png
-alttext: 11ty
+
 ---
 
 A lot of people in the wonderful 11ty community have helped me build some challenging sites

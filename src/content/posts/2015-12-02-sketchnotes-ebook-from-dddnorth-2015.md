@@ -2,7 +2,7 @@
 title: Ebook of Sketchnotes from DDDNorth 2015 now available!
 tags: [sketchnotes, presentations]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 Hero goes here

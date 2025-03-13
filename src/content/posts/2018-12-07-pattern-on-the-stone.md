@@ -5,8 +5,8 @@ attribution: Danny Hillis
 publication: The Pattern on the Stone
 comment: Rediscovered the opening few sentences from one of my favourite books
 tags: [quote]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 I etch a pattern of geometric shapes onto a stone. To the uninitiated, the shapes look

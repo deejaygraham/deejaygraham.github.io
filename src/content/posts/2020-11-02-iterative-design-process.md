@@ -6,7 +6,7 @@ attribution: Hollis A Kinslow
 publication: Software Engineering - Report of a Conference Sponsored by the NATO Science Committee
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: quote
+
 ---
 
 The design process is an iterative one. I will tell you one thing which can go wrong with it if you are not in

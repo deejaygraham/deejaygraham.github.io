@@ -1,8 +1,8 @@
 ---
 title: A Bad System...
 tags: [agile, illustration]
-thumbnail: "/img/thumbnails/microphone-420x255.webp"
-alttext: quote
+
+
 ---
 
 Another quote from Deming.

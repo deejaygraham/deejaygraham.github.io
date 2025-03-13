@@ -3,7 +3,7 @@ title: Purge a Soft-deleted Azure Key Vault
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 Constantly creating and recreating keyvaults and other resources in Azure, I occasionally run into a problem where I have got to the point where I need to completely delete a resource group (and

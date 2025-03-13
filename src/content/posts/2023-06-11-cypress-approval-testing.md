@@ -3,7 +3,7 @@ title: Approval Testing in Cypress
 tags: [cypress, javascript, code]
 hero: power
 thumbnail: "/img/thumbnails/cypress-420x255.png"
-alttext: cypress
+
 ---
 
 Continuing with using [Cypress](https://cypress.io) for API testing, a lot of the focus is on the live API connected to a

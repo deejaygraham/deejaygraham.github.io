@@ -1,8 +1,5 @@
 ---
-permalink: 2018/09/04/pre-post-build-differences-msbuild/
-
 title: Pre- and Post- Build Differences in MSBuild
-
 tags: [msbuild, code]
 ---
 

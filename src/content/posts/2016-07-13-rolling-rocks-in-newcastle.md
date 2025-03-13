@@ -2,7 +2,7 @@
 title: Rolling Rocks in Newcastle
 tags: [agile, presentations, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
-alttext: notebook
+
 ---
 
 On the 12th of July I had the pleasure of hosting <a href="http://rolls.rocks">Clarke Ching</a>

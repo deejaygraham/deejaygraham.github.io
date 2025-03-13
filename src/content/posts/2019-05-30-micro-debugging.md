@@ -2,8 +2,8 @@
 title: Debugging Microbit Sensors
 tags: [microbit]
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 The <a href="https://codewith.mu/">mu editor</a> is really coming along nicely with some great

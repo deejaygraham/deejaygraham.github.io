@@ -1,12 +1,9 @@
 ---
-permalink: 2018/06/22/coin-flipper/
-
 title: Microbit coin flipper
 tags: [code, microbit]
-
 hero: microbit
-thumbnail: "/img/thumbnails/microbit-420x255.webp"
-alttext: microbit sorting hat
+
+
 ---
 
 Running up to a new Maker's week at the end of July, I was getting a bit bored

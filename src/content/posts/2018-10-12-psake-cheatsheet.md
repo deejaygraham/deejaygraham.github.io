@@ -3,7 +3,7 @@ title: PSake Cheatsheet
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 <a href="https://github.com/psake/psake/">PSake</a> is a PowerShell module, similar to msbuild, that allow you to parcel up chunks of code into discrete Tasks and

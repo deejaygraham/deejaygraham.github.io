@@ -3,7 +3,7 @@ title: Enable Assembly Binding Logging without FusLogVw
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"
-alttext: powershell
+
 ---
 
 <a href="https://docs.microsoft.com/en-us/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer">Fusion Log Viewer</a> is a
