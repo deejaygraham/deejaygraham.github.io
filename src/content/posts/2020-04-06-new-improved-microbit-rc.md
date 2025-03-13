@@ -1,8 +1,5 @@
 ---
-permalink: 2020/04/06/new-improved-microbit-rc/
-
 title: New, Improved, Microbit RC
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/posts/new-improved-microbit-rc/thumbnail-420x255.webp"

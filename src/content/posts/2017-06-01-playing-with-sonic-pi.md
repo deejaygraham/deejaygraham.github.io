@@ -1,6 +1,4 @@
 ---
-permalink: 2017/06/01/playing-with-sonic-pi/
-
 title: Playing with Sonic Pi
 tags: [code, music]
 draft: true

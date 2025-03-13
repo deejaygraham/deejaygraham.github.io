@@ -1,5 +1,4 @@
 ---
-permalink: 2020/04/03/high-performance-react-sketchnote/
 layout: sketchnote
 title: Building High Performance React Applications
 tags: [sketchnotes, presentations]

@@ -1,8 +1,5 @@
 ---
-permalink: 2017/10/18/bcn-craftsmanship-sketchnote/
-
 title: Two Examples of Sketchnoting Inception
-
 tags: [sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

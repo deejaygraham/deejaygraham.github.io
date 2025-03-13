@@ -1,8 +1,6 @@
 ---
-permalink: 2017/12/22/do-your-best/
 layout: quotation
 title: Do Your Best
-
 tags: [quote]
 attribution: W. Edwards Deming
 size: large

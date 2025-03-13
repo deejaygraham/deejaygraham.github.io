@@ -1,8 +1,6 @@
 ---
-permalink: 2017/12/10/making-american-toast/
 layout: quotation
 title: Making American Toast
-
 tags: [agile, quote]
 attribution: W. Edwards Deming
 size: large

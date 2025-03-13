@@ -1,9 +1,6 @@
 ---
-permalink: 2017/11/12/blinkenlights/
-
 title: microbit Blinkenlights
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

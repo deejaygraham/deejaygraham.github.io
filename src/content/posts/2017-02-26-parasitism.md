@@ -1,10 +1,8 @@
 ---
-permalink: 2017/02/26/parasitism/
 layout: quotation
 title: Jason Read
 attribution: Jason Read
 size: medium
-
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

@@ -1,8 +1,5 @@
 ---
-permalink: 2017/02/19/microbit-empathy/
-
 title: Microbit Empathy
-
 tags: [code, microbit, python]
 ---
 

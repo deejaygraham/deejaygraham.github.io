@@ -1,10 +1,8 @@
 ---
-permalink: 2017/05/26/five-questions/
 layout: quotation
 title: Ask the powerful five questions
 attribution: Tony Benn
 publication: (1925 - 2014)
-
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

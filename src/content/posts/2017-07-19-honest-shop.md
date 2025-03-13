@@ -1,8 +1,5 @@
 ---
-permalink: 2017/07/19/honest-shop/
-
 title: Honest Shop
-
 tags: [agile, code, signs]
 ---
 

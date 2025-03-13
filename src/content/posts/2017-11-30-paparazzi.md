@@ -1,9 +1,6 @@
 ---
-permalink: 2017/11/30/paparazzi/
-
 title: microbit Paparazzi Simulator
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

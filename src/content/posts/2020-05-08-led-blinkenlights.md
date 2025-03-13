@@ -1,8 +1,5 @@
 ---
-permalink: 2020/05/08/led-blinkenlights/
-
 title: Microbit LED blinkenlights
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: /img/posts/led-blinkenlights/thumbnail-420x255.webp

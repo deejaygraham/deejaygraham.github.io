@@ -1,8 +1,5 @@
 ---
-permalink: 2020/10/30/transcribing-sheetmusic-for-the-microbit/
-
 title: Transcribing Sheet Music for the Microbit
-
 tags: [code, microbit, music]
 hero: microbit
 thumbnail: /img/posts/transcribing-sheetmusic-for-the-microbit/thumbnail-420x255.webp

@@ -1,8 +1,5 @@
 ---
-permalink: 2017/05/14/creating-an-iis-website-in-powershell/
-
 title: Building an IIS website in PowerShell
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/parcel-420x255.webp"

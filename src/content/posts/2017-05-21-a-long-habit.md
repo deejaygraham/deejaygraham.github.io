@@ -1,10 +1,8 @@
 ---
-permalink: 2017/05/21/a-long-habit/
 layout: quotation
 title: A Long Habit
 attribution: Tom Paine
 publication: 1737-1809
-
 tags: [quote]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

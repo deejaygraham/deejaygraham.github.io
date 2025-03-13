@@ -1,8 +1,5 @@
 ---
-permalink: 2017/10/30/battles-with-giant-fish/
-
 title: Battles with Giant Fish
-
 tags: [books]
 ---
 

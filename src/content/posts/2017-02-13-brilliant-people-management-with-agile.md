@@ -1,8 +1,5 @@
 ---
-permalink: 2017/02/13/brilliant-people-management-with-agile/
-
 title: Brilliant People Management with Agile
-
 tags: [agile, presentations, sketchnotes]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook

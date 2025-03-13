@@ -1,8 +1,5 @@
 ---
-permalink: 2017/03/29/dog-sorting/
-
 title: Dog Sort
-
 tags: [csharp, code, tdd]
 thumbnail: /img/posts/dog-sorting/dog-sorting-420x255.webp
 alttext: sorting

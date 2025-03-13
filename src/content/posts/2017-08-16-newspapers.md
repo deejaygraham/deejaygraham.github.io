@@ -1,8 +1,6 @@
 ---
-permalink: 2017/08/16/newspapers/
 layout: quotation
 title: Newspapers
-
 tags: [quote]
 attribution: Malcolm X
 size: large

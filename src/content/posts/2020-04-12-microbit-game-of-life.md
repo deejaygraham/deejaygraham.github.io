@@ -1,8 +1,5 @@
 ---
-permalink: 2020/04/12/microbit-game-of-life/
-
 title: Game of Life 2
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

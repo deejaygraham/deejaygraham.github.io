@@ -1,8 +1,5 @@
 ---
-permalink: 2020/10/22/microbit-musicians/
-
 title: Microbit Musicians
-
 tags: [code, microbit, music]
 hero: microbit
 thumbnail: /img/posts/microbit-musicians/thumbnail-420x255.webp

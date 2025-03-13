@@ -1,8 +1,5 @@
 ---
-permalink: 2017/01/12/having-the-right-kind-of-arguments/
-
 title: Having the Right Kind of Argument(s)
-
 tags: [powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

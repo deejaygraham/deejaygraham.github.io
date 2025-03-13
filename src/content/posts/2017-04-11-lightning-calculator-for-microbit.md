@@ -1,9 +1,6 @@
 ---
-permalink: 2017/04/11/lightning-calculator-for-microbit/
-
 title: Lightning Calculator for the Microbit
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

@@ -1,8 +1,5 @@
 ---
-permalink: 2017/08/21/blinking-cpp-for-the-microbit/
-
 title: Blinking C++
-
 tags: [code, microbit, cpp]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

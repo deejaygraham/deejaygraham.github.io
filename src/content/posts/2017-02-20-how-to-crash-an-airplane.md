@@ -1,5 +1,4 @@
 ---
-permalink: 2017/02/20/how-to-crash-an-airplane/
 layout: sketchnote
 title: How to Crash an Airplane
 tags: [sketchnotes, presentations, agile]

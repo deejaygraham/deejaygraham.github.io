@@ -1,8 +1,5 @@
 ---
-permalink: 2017/02/19/microbit-emotion/
-
 title: Microbit Emotion
-
 tags: [code, microbit, python]
 ---
 

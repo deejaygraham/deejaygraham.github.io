@@ -1,9 +1,6 @@
 ---
-permalink: 2017/08/08/swearing-nudity-and-other-vulnerable-positions/
-
 title: Swearing and Nudity in Newcastle
 tags: [agile, presentations, sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

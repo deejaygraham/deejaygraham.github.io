@@ -1,9 +1,7 @@
 ---
-permalink: 2020/08/15/compound-interest/
 layout: quotation
 size: large
 title: Compound Interest
-
 attribution: CS Lewis
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

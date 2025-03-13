@@ -1,8 +1,5 @@
 ---
-permalink: 2017/11/30/estimating-complexity/
-
 title: Estimating Complexity
-
 tags: [agile]
 ---
 

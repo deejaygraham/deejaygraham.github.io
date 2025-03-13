@@ -1,9 +1,6 @@
 ---
-permalink: 2020/10/18/hand-binding-a-sketchbook/
-
 title: Hand Binding a sketchbook
 tags: [sketchnotes]
-
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 alttext: notebook
 ---

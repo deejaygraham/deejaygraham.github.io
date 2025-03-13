@@ -1,8 +1,5 @@
 ---
-permalink: 2017/04/26/determining-azure-login-expiry/
-
 title: Determining when your Azure session has expired
-
 tags: [powershell, cloud]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

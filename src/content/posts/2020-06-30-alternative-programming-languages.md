@@ -1,8 +1,5 @@
 ---
-permalink: 2020/06/30/alternative-programming-languages/
-
 title: Alternative Programming Languages
-
 tags: [code]
 thumbnail: /img/posts/alternative-programming-languages/thumbnail-420x255.webp
 alttext: cd cover

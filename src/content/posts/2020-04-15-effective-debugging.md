@@ -1,9 +1,7 @@
 ---
-permalink: 2020/04/15/effective-debugging/
 layout: quotation
 size: large
 title: Effective Debugging
-
 attribution: Brian Kernighan
 publication:
 tags: [quote, xp]

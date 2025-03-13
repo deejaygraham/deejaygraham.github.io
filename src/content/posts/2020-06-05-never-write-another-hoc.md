@@ -1,8 +1,5 @@
 ---
-permalink: 2020/06/05/never-write-another-hoc/
-
 title: Never Write Another HoC
-
 tags: [video, presentations]
 thumbnail: /img/posts/never-write-another-hoc/thumbnail-420x255.webp
 alttext: Jared Palmer

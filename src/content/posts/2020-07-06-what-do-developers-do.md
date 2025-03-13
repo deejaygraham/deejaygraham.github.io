@@ -1,5 +1,4 @@
 ---
-permalink: 2020/07/06/what-do-developers-do/
 layout: sketchnote
 title: What do developers do all day?
 tags: [sketchnotes]

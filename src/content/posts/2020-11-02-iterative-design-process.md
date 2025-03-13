@@ -1,9 +1,7 @@
 ---
-permalink: 2020/11/02/iterative-design-process/
 layout: quotation
 size: large
 title: Iterative Design Process
-
 attribution: Hollis A Kinslow
 publication: Software Engineering - Report of a Conference Sponsored by the NATO Science Committee
 tags: [quote]

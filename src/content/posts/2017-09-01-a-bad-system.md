@@ -1,8 +1,5 @@
 ---
-permalink: 2017/09/01/a-bad-system/
-
 title: A Bad System...
-
 tags: [agile, illustration]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

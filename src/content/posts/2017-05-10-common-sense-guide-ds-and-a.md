@@ -1,8 +1,5 @@
 ---
-permalink: 2017/05/10/common-sense-guide-ds-and-a/
-
 title: A Common-Sense Guide to Data Structures and Algorithms
-
 tags: [code, books]
 thumbnail: "/img/posts/common-sense-guide-ds-and-a/thumbnail-420x255.webp"
 alttext: pairing

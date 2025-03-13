@@ -1,9 +1,6 @@
 ---
-permalink: 2017/04/19/old-timey-twitter-for-microbit/
-
 title: Old-Timey Twitter for the Microbit
 tags: [code, microbit]
-
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"
 alttext: microbit sorting hat

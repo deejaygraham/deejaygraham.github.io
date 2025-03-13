@@ -1,8 +1,5 @@
 ---
-permalink: 2020/04/15/final-final-microbit-rc/
-
 title: Final, Final, Microbit RC
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

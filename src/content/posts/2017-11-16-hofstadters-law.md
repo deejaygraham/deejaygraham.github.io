@@ -1,8 +1,6 @@
 ---
-permalink: 2017/11/16/hofstadters-law/
 layout: quotation
 title: Hofstadter's Law
-
 tags: [agile, quote]
 attribution: Douglas Hofstadter
 size: large

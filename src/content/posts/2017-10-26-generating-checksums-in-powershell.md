@@ -1,8 +1,5 @@
 ---
-permalink: 2017/10/26/generating-checksums-in-powershell/
-
 title: Generating Checksums in PowerShell
-
 tags: [powershell]
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell

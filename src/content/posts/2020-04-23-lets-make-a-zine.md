@@ -1,5 +1,4 @@
 ---
-permalink: 2020/04/23/lets-make-a-zine/
 layout: sketchnote
 title: Lets make a tiny zine
 tags: [sketchnotes]

@@ -1,8 +1,5 @@
 ---
-permalink: 2017/09/05/management-is-responsible-for-the-system/
-
 title: Management is Responsible for the System
-
 tags: [agile, illustration]
 thumbnail: "/img/thumbnails/microphone-420x255.webp"
 alttext: quote

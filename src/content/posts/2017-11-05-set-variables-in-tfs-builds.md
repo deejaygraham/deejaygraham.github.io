@@ -1,9 +1,6 @@
 ---
-permalink: 2017/11/05/set-variables-in-tfs-builds/
-
 title: Setting variables in TFS builds
 tags: [code, msbuild, tfs]
-
 thumbnail: "/img/thumbnails/parcel-420x255.webp"
 alttext: powershell
 ---

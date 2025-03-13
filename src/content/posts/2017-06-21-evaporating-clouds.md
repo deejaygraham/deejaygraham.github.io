@@ -1,8 +1,5 @@
 ---
-permalink: 2017/06/21/evaporating-clouds/
-
 title: Evaporating Clouds
-
 tags: [agile, illustration]
 ---
 

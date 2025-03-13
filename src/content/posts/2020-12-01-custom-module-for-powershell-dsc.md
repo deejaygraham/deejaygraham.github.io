@@ -1,8 +1,5 @@
 ---
-permalink: 2020/12/01/custom-module-for-powershell-dsc/
-
 title: Custom Module for PowerShell DSC
-
 tags: [powershell]
 hero: power
 thumbnail: "/img/thumbnails/shell-420x255.webp"

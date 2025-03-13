@@ -1,8 +1,5 @@
 ---
-permalink: 2020/03/18/flying-toasters/
-
 title: Flying Toasters
-
 tags: [code, processing]
 thumbnail: "/img/posts/flying-toasters/thumbnail-420x255.webp"
 alttext: toasters

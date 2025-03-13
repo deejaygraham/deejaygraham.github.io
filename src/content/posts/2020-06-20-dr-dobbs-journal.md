@@ -1,8 +1,5 @@
 ---
-permalink: 2020/06/20/dr-dobbs-journal/
-
 title: Dr Dobbs Journal
-
 tags: [code]
 thumbnail: /img/posts/dr-dobbs-journal/thumbnail-420x255.webp
 alttext: cd-rom

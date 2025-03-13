@@ -1,8 +1,5 @@
 ---
-permalink: 2020/06/14/playground-comet/
-
 title: Circuit Playground Express Comet
-
 tags: [code, playground]
 thumbnail: "/img/thumbnails/playground-420x255.webp"
 alttext: circuit playground

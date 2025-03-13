@@ -1,9 +1,7 @@
 ---
-permalink: 2020/05/22/make-great-software-inevitable/
 layout: quotation
 size: large
 title: Make Great Software Inevitable
-
 attribution: Woody Zuill
 tags: [quote]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"

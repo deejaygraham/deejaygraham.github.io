@@ -1,5 +1,4 @@
 ---
-permalink: 2017/09/19/solid-is-wrong/
 layout: sketchnote
 title: Why Every Element of SOLID is Wrong
 tags: [sketchnotes, presentations, agile]

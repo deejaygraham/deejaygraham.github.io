@@ -1,8 +1,5 @@
 ---
-permalink: 2017/03/06/growing-a-garden/
-
 title: Growing a Garden
-
 tags: [agile, illustration]
 ---
 

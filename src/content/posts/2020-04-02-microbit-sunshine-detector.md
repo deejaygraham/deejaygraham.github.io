@@ -1,8 +1,5 @@
 ---
-permalink: 2020/04/02/microbit-sunshine-detector/
-
 title: Microbit Sunshine Detector
-
 tags: [code, microbit]
 hero: microbit
 thumbnail: "/img/thumbnails/microbit-420x255.webp"

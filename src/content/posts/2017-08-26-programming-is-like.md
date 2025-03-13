@@ -1,8 +1,6 @@
 ---
-permalink: 2017/08/26/programming-is-like/
 layout: quotation
 title: Programming is like...
-
 tags: [quote]
 attribution: anon
 size: large

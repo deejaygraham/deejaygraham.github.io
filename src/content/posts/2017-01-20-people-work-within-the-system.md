@@ -1,8 +1,5 @@
 ---
-permalink: 2017/01/20/people-work-within-the-system/
-
 title: People Work Within the System
-
 tags: [agile, illustration]
 ---
 

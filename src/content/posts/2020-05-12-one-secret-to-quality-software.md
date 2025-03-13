@@ -1,8 +1,5 @@
 ---
-permalink: 2020/05/12/one-secret-to-quality-software/
-
 title: One Secret to Quality Software
-
 tags: [video, presentations]
 thumbnail: /img/posts/one-secret-to-quality-software/thumbnail-420x255.webp
 alttext: Jessica Kerr

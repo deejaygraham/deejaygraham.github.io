@@ -1,8 +1,5 @@
 ---
-permalink: 2020/08/03/continuous-delivery-in-agile/
-
 title: Continuous Delivery In Agile
-
 tags: [video, presentations]
 thumbnail: /img/posts/continuous-delivery-in-agile/thumbnail-420x255.webp
 alttext: Jez Humble
