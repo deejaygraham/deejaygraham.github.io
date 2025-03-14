@@ -52,7 +52,7 @@ swiping a colour from the back LEDs all the way to the front one (and the revers
 
 ### BitBot
 
-We can add this code into the [BitBot class]({ FIX % link \_posts/2019-05-16-microbit-motoring.md %}) like this:
+We can add this code into the <a href="2019-05-16-microbit-motoring.md">Bitbot class</a> like this:
 
 ```python
 
