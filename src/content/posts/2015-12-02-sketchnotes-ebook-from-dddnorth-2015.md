@@ -1,11 +1,7 @@
 ---
 title: Ebook of Sketchnotes from DDDNorth 2015 now available!
 tags: [sketchnotes, presentations]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
-
 ---
-
-Hero goes here
 
 <img src="/img/posts/sketchnotes-ebook-from-dddnorth-2015/dddnorth-cover.webp" class="u-max-full-width" alt="Cover Page" />
 
@@ -23,4 +19,4 @@ the help of [Steven Hill](https://www.twitter.com/MrStevenHill).
 This idea wasn't original, I was inspired by [Claudia Sandoval](https://twitter.com/claumsandoval/) who published
 a collection of sketchnotes from [Agile 2015](http://agile2015.agilealliance.org/) earlier in the year.
 
-[Download](https://github.com/deejaygraham/dddnorth-2015-sketchnotes/releases/download/v1.0/dddnorth-sketchnotes.pdf)
+[Download]({{ dddnorth-2015-sketchnotes/releases/download/v1.0/dddnorth-sketchnotes.pdf | url }})
