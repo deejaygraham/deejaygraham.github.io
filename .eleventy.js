@@ -25,6 +25,7 @@ import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight";
 import socialImages from "./src/_11ty/plugins/generate-social-images/index.js";
 import favicons from "eleventy-plugin-gen-favicons";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 
 // transforms
 import * as prettier from "prettier";
@@ -39,6 +40,8 @@ export default function (eleventyConfig) {
       siteName: 'd.j. graham' 
     });
   eleventyConfig.addPlugin(favicons);
+  eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+	
   /*
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // which file extensions to process
