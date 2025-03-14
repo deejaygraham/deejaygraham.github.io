@@ -13,7 +13,7 @@ excludeFromSitemap: true
 <h1>Posts tagged with #{{ tag }}</h1>
 
 {% set taglist = collections[ tag ] %}
-{% set postlist = taglist | reverse %}
-{% include "partials/postlist.njk" %}
+{% set postcardlist = taglist | reverse %}
+{% include "partials/post-card-list.njk" %}
 
 <p>See <a href="/tags/">all tags</a>.</p>
