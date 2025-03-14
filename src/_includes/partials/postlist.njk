@@ -1,28 +1,10 @@
 {# Requires a global variable to be set "postlist" #}
-
 <div class="row columns is-multiline">
-{% for post in postlist %}
-	<div class="column is-4">
-    	<div class="card large">	
-			<div class="card-content">
-				<a href="{{ post.url }}">
-					<p class="title is-4">{{ post.data.title }}</p>
-					{% if post.date %}
-					<p class="subtitle is-6"><time datetime="{{ post.date | dateISO }}">{{ post.date | dateFull }}</time></p>
-					{% endif %}
-				</a>
-			</div>
-			{% if post.data.tags %}
-			<div class="card-footer">
-				{% for tag in post.data.tags %}
-					<a href="/tags/{{tag}}" class="card-footer-item">#{{ tag }}</a>
-				{% endfor %}
-			</div>
-			{% endif %}
-  		</div>
-		{# card #}
-	</div>  
-	{# column #}
-{% endfor %}
+	{% for post in postlist %}
+		{% set url =  post.url %}
+		{% set title =  post.data.title %}
+		{% set date =  post.date %}
+		{% set tags =  post.data.tags %}
+		{% include "partials/post-card.njk" %}
+	{% endfor %}
 </div>
-{# row #}
