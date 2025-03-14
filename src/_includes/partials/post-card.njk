@@ -4,16 +4,16 @@
   	<div class="card-content">
       <a href="{{ url }}">
         <p class="title is-4">{{ title }}</p>
-        {% if date %}
+        {%- if date -%}
         <p class="subtitle is-6"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
-        {% endif %}
+        {%- endif -%}
       </a>
     </div>
     {% if tags %}
     <div class="card-footer">
-    {% for tag in tags %}
+    {%- for tag in tags -%}
       <a href="/tags/{{tag}}" class="card-footer-item">#{{ tag }}</a>
-    {% endfor %}
+    {%- endfor -%}
     </div>
     {% endif %}
   </div>
