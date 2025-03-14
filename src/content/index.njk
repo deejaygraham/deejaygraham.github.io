@@ -4,7 +4,7 @@ title: home
 layout: base.njk
 ---
 
-{% set postlist = collections.posts | limit(12) %}
-{% include "partials/postlist.njk" %}
+{% set postcardlist = collections.posts | limit(12) %}
+{% include "partials/post-card-list.njk" %}
 
 <p class="has-text-right"><a href="{{ site.url }}/archive/">See All Posts</a></p>
