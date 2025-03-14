@@ -1,9 +1,9 @@
 <footer class="footer">
-<section class="section">
-	<nav class="level is-mobile" aria-label="footer navigation">
-	{# social media #}
-	{% for item in socialmedia %}
-            	<a class="level-item" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
+	<section class="section">
+		<nav class="level is-mobile" aria-label="footer navigation">
+		{# social media #}
+		{% for item in socialmedia %}
+    <a class="level-item" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
 			<figure class="image is-24x24">
 				<img src="{{ site.url }}/img/{{ item.icon }}" alt="{{ item.name }}" class="social-icon">
 			</figure>
@@ -15,11 +15,7 @@
 		<p>Last updated: <time datetime="{{ buildInfo.time.raw }}">{{ buildInfo.time.formatted }}</time>
     	</div>
 	<div class="content has-text-centered mt-6">
-		Powered by:
-		{% for item in poweredby %}
-			<a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">{{ item.name }}</a> 
-			{% if not loop.last %} | {% endif %}
-		{% endfor %}
+		{% include "partials/powered-by.njk" %}
 	</div>
 </section>
 </footer>
