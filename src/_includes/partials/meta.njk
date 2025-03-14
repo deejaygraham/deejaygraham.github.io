@@ -1,9 +1,3 @@
-{%- if title -%}
-{%- set pageTitle %}{{ title }} | {{ site.title }}{% endset -%}
-{%- else -%}
-{%- set pageTitle %}{{ site.title }}{% endset -%}
-{%- endif %}
-    <title>{{ pageTitle }}</title>
 {%- if page.description %}
 {%- set pageDescription %}{{ page.description }}{% endset -%}
 {%- else %}
