@@ -33,7 +33,7 @@ When we see a difference in sensors we know we have hit an edge and need to corr
 
 ### BitBot
 
-Building the line sensors into the [BitBot class]({ FIX % link \_posts/2019-05-16-microbit-motoring.md %}) we can switch it to autonomous
+Building the line sensors into the <a href="2019-05-16-microbit-motoring.md">BitBot class</a> we can switch it to autonomous
 mode and watch while it "feels" its way around any sort of track we can devise.
 
 ```python
