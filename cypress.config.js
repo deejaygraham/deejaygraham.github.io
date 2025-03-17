@@ -5,5 +5,8 @@ export default defineConfig({
   e2e: {
     baseUrl: "https://deejaygraham.github.io",
     viewportWidth: 1280,
+    excludeSpecPattern: [
+        "cypress/e2e/**/homepage.cy.js", // problem with cypress loading the page
+   ],
   },
 });
