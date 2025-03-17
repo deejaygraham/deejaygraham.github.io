@@ -1,3 +1,4 @@
+
 <!-- partials/siteheader -->
 <header class="header">
   <nav class="navbar" aria-label="main navigation" tabindex="-1">
@@ -26,10 +27,8 @@
   </nav>
 </header>
 
-{# if hero %}
-<section class="hero is-large {{ hero }}">
-    <div class="hero-body {{ hero }}" />
-</section>
-{% endif #}
+{#- if hero %}
+{% include "partials/page-hero.njk" %}>
+{% endif -#}
 
 <!-- partials/siteheader -->
