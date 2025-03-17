@@ -1,6 +1,6 @@
 ---
 layout: sketchnote
-title: Title
+title: Puritanical Future Computing
 tags: [presentations, sketchnotes]
 sketchnote:
   url: "/img/posts/puritanical-future-computing/puritanical-future-computing.jpg"
