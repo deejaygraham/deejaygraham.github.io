@@ -10,7 +10,7 @@ test.describe("images on random page", () => {
   });
 
   test("hero appears on page", async ({ page }) => {
-    await page.goto("/2019/08/20/autonomous-microbit-vehicle/");
+    await page.goto("/about/");
     await expect(page.getByRole('link', { name: 'home' })).toBeVisible();
   });
 
