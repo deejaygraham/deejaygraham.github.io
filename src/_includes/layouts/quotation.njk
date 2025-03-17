@@ -2,12 +2,6 @@
 
 {% block content %}
 
-{% if comment %}
-<section class="section">
-{{ comment }}
-</section>
-{% endif %}
-
 <nav class="level is-mobile article-tags" id="article-meta">
 	<div class="level-left">
 		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
@@ -22,7 +16,11 @@
 {% endif %}
 </nav>
 <h1 class="title is-1">{{ title }}</h1>
-{% if comment %}<p>{{ comment }}</p>{% endif %}
+{% if comment %}
+<section class="section">
+{{ comment }}
+</section>
+{% endif %}
 {% if size %} 
 {% if size == "large" %}<figure class="quote is-size-1">{% endif %}
 {% if size == "medium" %}<figure class="quote is-size-3">{% endif %}
