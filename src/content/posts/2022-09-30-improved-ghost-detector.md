@@ -19,58 +19,58 @@ from microbit import \*
 
 class Ghost:
 
-    def __init__(self):
-        self.image = Image.GHOST.copy()
-        self.speed = 250
+  def __init__(self):
+    self.image = Image.GHOST.copy()
+    self.speed = 250
 
-    def fade_out(self, image):
-        copy = image.copy()
+  def fade_out(self, image):
+    copy = image.copy()
 
-        for x in range(0, 5):
-            for y in range(0, 5):
-                value = copy.get_pixel(x, y)
+    for x in range(0, 5):
+      for y in range(0, 5):
+        value = copy.get_pixel(x, y)
 
-                if value > 0:
-                    copy.set_pixel(x, y, value - 1)
+        if value > 0:
+          copy.set_pixel(x, y, value - 1)
 
-        return copy
+    return copy
 
-    def walk_on(self):
-        display.clear()
+  def walk_on(self):
+    display.clear()
 
-        for i in reversed(range(6)):
-            ghost = self.image.shift_left(i)
-            display.show(ghost)
-            sleep(self.speed)
+    for i in reversed(range(6)):
+      ghost = self.image.shift_left(i)
+      display.show(ghost)
+      sleep(self.speed)
 
-    def walk_off(self):
-        ghost = self.image
-        for i in range(5):
-            display.show(ghost)
-            ghost = self.fade_out(ghost.shift_right(i))
-            sleep(self.speed)
-        display.clear()
+  def walk_off(self):
+      ghost = self.image
+      for i in range(5):
+        display.show(ghost)
+        ghost = self.fade_out(ghost.shift_right(i))
+        sleep(self.speed)
+      display.clear()
 
-    def show(self):
-        display.show(self.image)
+  def show(self):
+    display.show(self.image)
 
-    def hide(self):
-        display.clear()
+  def hide(self):
+    display.clear()
 
 
 class SweepScanner:
 
-def **init**(self):
-self.direction = 1
-self.x = 2
-self.scan_speed = 150
+  def **init**(self):
+    self.direction = 1
+    self.x = 2
+    self.scan_speed = 150
 
-def draw_line(self, brightness):
-for y in range(5):
-display.set_pixel(self.x, y, brightness)
+  def draw_line(self, brightness):
+    for y in range(5):
+      display.set_pixel(self.x, y, brightness)
 
-def scan(self):
-self.draw_line(0)
+  def scan(self):
+    self.draw_line(0)
 
     lhs = 0
     rhs = 4
@@ -84,17 +84,17 @@ self.draw_line(0)
 
 class Detector:
 
-def **init**(self):
-self.reset() # difference in temperature detectable.
-self.sensitivity = 0.5
+  def **init**(self):
+    self.reset() # difference in temperature detectable.
+    self.sensitivity = 0.5
 
-def room_is_colder(self):
-now_temperature = temperature()
-temperature_difference = self.starting_temperature - now_temperature
-return temperature_difference >= self.sensitivity
+  def room_is_colder(self):
+    now_temperature = temperature()
+    temperature_difference = self.starting_temperature - now_temperature
+    return temperature_difference >= self.sensitivity
 
-def reset(self):
-self.starting_temperature = temperature()
+  def reset(self):
+    self.starting_temperature = temperature()
 
 ghost_warning_time = 5000
 
@@ -109,16 +109,16 @@ detector = Detector()
 
 while True:
 
-scanner.scan()
+  scanner.scan()
 
-if detector.room_is_colder() or button_b.was_pressed():
-ghost.show()
-sleep(ghost_warning_time)
-ghost.walk_off()
-detector.reset()
+  if detector.room_is_colder() or button_b.was_pressed():
+    ghost.show()
+    sleep(ghost_warning_time)
+    ghost.walk_off()
+    detector.reset()
 
-if button_a.was_pressed():
-detector.reset()
+  if button_a.was_pressed():
+    detector.reset()
 
 ```
 
