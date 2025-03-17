@@ -33,17 +33,18 @@ speed = 300
 # vertical strip down the display
 
 def generate_random_strip(image, on_percent, stripe):
-    for y in range(0, 5):
-        on = random.randint(0, 100)
-        brightness = pixel_on if on <= on_percent else pixel_off
-        image.set_pixel(stripe, y, brightness)
-    return image
+  for y in range(0, 5):
+    on = random.randint(0, 100)
+    brightness = pixel_on if on <= on_percent else pixel_off
+    image.set_pixel(stripe, y, brightness)
+
+  return image
 
 def generate_random_image(on_percent):
-    image = Image()
-    for x in range(0, 5):
-        image = generate_random_strip(image, on_percent, x)
-    return image
+  image = Image()
+  for x in range(0, 5):
+    image = generate_random_strip(image, on_percent, x)
+  return image
 
 display.scroll('CM-5')
 
@@ -51,17 +52,17 @@ frame = generate_random_image(pc_chance_on)
 display.show(frame)
 
 while True:
-    top = generate_random_strip(frame.shift_right(1), pc_chance_on, 0)
-    bottom = generate_random_strip(frame.shift_left(1), pc_chance_on, 4)
-    from_x = 0
-    from_y = 2
-    from_width = 5
-    from_height = 3
-    to_x = 0
-    to_y = 2
-    top.blit(bottom, from_x, from_y, from_width, from_height, to_x, to_y)
-    frame = top
-    display.show(frame)
-    sleep(speed)
+  top = generate_random_strip(frame.shift_right(1), pc_chance_on, 0)
+  bottom = generate_random_strip(frame.shift_left(1), pc_chance_on, 4)
+  from_x = 0
+  from_y = 2
+  from_width = 5
+  from_height = 3
+  to_x = 0
+  to_y = 2
+  top.blit(bottom, from_x, from_y, from_width, from_height, to_x, to_y)
+  frame = top
+  display.show(frame)
+  sleep(speed)
 
 ```
