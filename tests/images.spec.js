@@ -4,16 +4,26 @@ import { test, expect } from '@playwright/test';
 test.describe("images on random page", () => {
   test("sketchnote appears on page", async ({ page }) => {
     await page.goto("/2025/03/01/solving-the-rubiks-cube-in-20-seconds/");
-    await expect(page.getByRole('img', { name: 'Solving the Rubik\'s Cube in' })).toBeVisible();
+
+    const sketchnote = await page.getByRole('img', { name: 'Solving the Rubik\'s Cube in' });
+    await checkImageExists(page, sketchnote);
   });
 
   test("hero appears on page", async ({ page }) => {
     await page.goto("/about/");
-    await expect(page.getByRole('img', { name: 'Hey, Hi, Hello.' })).toBeVisible();
+    const about = await page.getByRole('img', { name: 'Hey, Hi, Hello.' });
+    await checkImageExists(page, about);
   });
 
   test("image appears in middle of post", async ({ page }) => {
     await page.goto("/2019/08/20/autonomous-microbit-vehicle/");
-    await expect(page.getByRole('img', { name: 'straddling the line' })).toBeVisible();
+    const image = await page.getByRole('img', { name: 'straddling the line' });
+    await checkImageExists(page, image);
   });
 });
+
+async function checkImageExists(page, imgTag) {
+  const url = await imgTag.getAttribute("src");
+  const response = await page.request.get(url)
+  expect.soft(response.ok(), `${url} is not available`).toBeTruthy();
+}
