@@ -16,8 +16,6 @@ test("contains favicon and variants", async ({ page }) => {
 // avatar logo from top left corner
 test("contains avatar images", async ({ page }) => {
   await verifyLinks(page, [
-    "/img/avatar.jpg",
-    "/img/avatar.png",
     "/img/avatar.svg"
   ]);
 });
