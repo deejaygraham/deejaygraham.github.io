@@ -8,12 +8,7 @@
           <img src="{{ site.logo }}" alt="{{ site.description }}" >
         </a>
         <a class="navbar-item" title="{{ site.title }}" href="/">{{ site.title }}</a>
-        <a role="button" class="navbar-burger" aria-label="menu" data-target="navbarMenu">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        {% include "partials/navigation-burger.njk" %}
       </div>
 
       <div id="navbarMenu" class="navbar-menu">
