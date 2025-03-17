@@ -21,18 +21,18 @@ from microbit import \*
 import music
 
 def set_all_pixels(brightness):
-for x in range(0, 5):
-for y in range(0, 5):
-display.set_pixel(x, y, brightness)
+  for x in range(0, 5):
+    for y in range(0, 5):
+      display.set_pixel(x, y, brightness)
 
 def set_first_pixel(brightness):
-for x in range(0, 5):
-for y in range(0, 5):
-value = display.get_pixel(x, y)
+  for x in range(0, 5):
+    for y in range(0, 5):
+      value = display.get_pixel(x, y)
 
-            if value != brightness:
-                display.set_pixel(x, y, brightness)
-                return
+      if value != brightness:
+        display.set_pixel(x, y, brightness)
+        return
 
 display.show('pomodoro')
 
