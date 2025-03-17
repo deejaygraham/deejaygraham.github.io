@@ -1,5 +1,6 @@
 {# Requires socialmedia.json #}
 <nav class="level is-mobile" aria-label="footer navigation">
+&copy; deejaygraham 2011 - <time datetime="{{ site.date | dateISO }}">{{ site.date | dateYear }}</time> | 
 	{%- for item in socialmedia %}
   <a class="level-item" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
 		<figure class="image is-24x24"><img src="{{ site.url }}/img/{{ item.icon }}" alt="{{ item.name }}" class="social-icon"></figure>
