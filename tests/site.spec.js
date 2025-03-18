@@ -41,8 +41,7 @@ test("check all links on most recent page", async ({ page, context
 
   const url = siteUrls.values().next().value;
 
-  const sitePage = await context.newPage();
-  await sitePage.goto(url);
+  await page.goto(url);
     
   const imagesOnThisPage = await getAllImagesOnPage(page);
   const linksOnThisPage = await getAllLinksFromPage(page);
