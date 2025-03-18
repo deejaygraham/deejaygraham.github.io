@@ -1,28 +1,16 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-
 const validLink = (link) => {
     const internalLinksRegex = /deejaygraham.github.io/;
     return link && !link?.startsWith("mailto:") && !link?.startsWith("#") && (link.startsWith('http') && link.match(internalLinksRegex));
 }
 
 const getAllLinksFromPage = async (page) => {
-    // getByRole('link') only matches visible links
-    //
-    // if you want to check all links, you can use a CSS selector
-    // like 'locator("a")'
-    const allLinkHrefs = await page.locator("a").evaluateAll(anchors => anchors.map(anchor => anchor.href));
-    const title = await page.title();
-    //const allLinkHrefs = await Promise.all(
-    //    links.map((link) => link.getAttribute("href"))
-    //);
-
-    //console.log(JSON.stringify(allLinkHrefs, null, 2));
+    const allLinkHrefs = await page.getByRole("link")
+      .evaluateAll(anchors => anchors.map(anchor => anchor.href));
 
     const validHrefs = allLinkHrefs.reduce((links, link) => {
-      //expect.soft(link, `link ${link} on page: ${title} has no a proper href`).not.toBeFalsy()
-
       if (validLink(link)) {
         links.add(new URL(link, page.url()).href);
       }
@@ -51,91 +39,36 @@ test("check all links on most recent page", async ({ page, context
   const data = JSON.parse(siteUrlsAsJson);
   const siteUrls = new Set(data.urls);
 
-  // do difference with urls I have already visited
-  // for now let's just check each page is navigable
-  const url = siteUrls[0];
-    console.log(url, 'url from spider');
+  const url = siteUrls.values().next().value;
+
   const sitePage = await context.newPage();
   await sitePage.goto(url);
     
-    //     const imagesOnThisPage = await getAllImagesOnPage(page);
-    //     imagesOnThisPage.forEach(imageUrls.add, imageUrls);
-    
-    //     console.log(imageUrls);
-    
-    //     const linksOnThisPage = await getAllLinksFromPage(page);
-    //     linksOnThisPage.forEach(pageUrls.add, pageUrls);
-    //     break;
+  const imagesOnThisPage = await getAllImagesOnPage(page);
+  const linksOnThisPage = await getAllLinksFromPage(page);
 
-  // pages to check...
-  // build a set of all urls across all pages.
-  // add urls to a SET
-  // add other urls...
+  for (const url of imagesOnThisPage) {
+    await test.step(`Checking image: ${url}`, async () => {
+      checkLink(page, url);
+    });
+  }
   
-//   const imageUrls = new Set();
-//   const pageUrls = new Set([...siteUrls]);
-
-//   // build a list of links and images to check
-//   // across the whole site...
-//   for (const url of siteUrls) {
-//     await page.goto(url);
-
-//     const imagesOnThisPage = await getAllImagesOnPage(page);
-//     imagesOnThisPage.forEach(imageUrls.add, imageUrls);
-
-//     console.log(imageUrls);
-
-//     const linksOnThisPage = await getAllLinksFromPage(page);
-//     linksOnThisPage.forEach(pageUrls.add, pageUrls);
-//     break;
-//   }
-
-//   // now attempt to check each one...
-//   // images first...
-//   for (const url of imageUrls) {
-//     await test.step(`Checking image: ${url}`, async () => {
-//       try {
-//         // Note that some hosters / firewalls will block plain requests (Cloudflare, etc.)
-//         // if that's the case for you, consider using `page.goto`
-//         // or excluding particular URLs from the test
-//         const response = await page.request.get(url);
-//         const status = response.statusText();
-        
-//         expect
-//           .soft(response.ok(), `${url} has no green status code: ${status}`)
-//           .toBeTruthy();
-//       } catch {
-//         expect.soft(null, `${url} has no green status code`).toBeTruthy();
-//       }
-//     });
-//   }
-
-  //testInfo.attach("checked-links.txt", {
-  //  body: Array.from(linkUrls).join("\n"),
-  //});
-
-    // for (const url of pageUrls) {
-    //     await test.step(`Checking link: ${url}`, async () => {
-    //         try {
-    //         // Note that some hosters / firewalls will block plain requests (Cloudflare, etc.)
-    //         // if that's the case for you, consider using `page.goto`
-    //         // or excluding particular URLs from the test
-    //         const response = await page.request.get(url);
-    //         const status = response.statusText();
-            
-    //         expect
-    //             .soft(response.ok(), `${url} has no green status code: ${status}`)
-    //             .toBeTruthy();
-    //         } catch {
-    //         expect.soft(null, `${url} has no green status code`).toBeTruthy();
-    //         }
-    //     });
-    //     }
-
-    //     // testInfo.attach("checked-links.txt", {
-    //     //   body: Array.from(linkUrls).join("\n"),
-    // // });
-
-
-    
+  for (const url of linksOnThisPage) {
+    await test.step(`Checking link: ${url}`, async () => {
+      checkLink(page, url);
+    });
+   }
 });
+
+const checkLink = async (page, url) => {
+  try {
+    const response = await page.request.get(url);
+    const status = response.statusText();
+    
+    expect
+      .soft(response.ok(), `${url} does not exist: ${status}`)
+      .toBeTruthy();
+   } catch {
+     expect.soft(null, `${url} does not exist`).toBeTruthy();
+   }
+}
