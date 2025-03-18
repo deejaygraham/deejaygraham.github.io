@@ -54,6 +54,7 @@ test("check all links on most recent page", async ({ page, context
   // do difference with urls I have already visited
   // for now let's just check each page is navigable
   const url = siteUrls[0];
+    console.log(url, 'url from spider');
   const sitePage = await context.newPage();
   await sitePage.goto(url);
     
