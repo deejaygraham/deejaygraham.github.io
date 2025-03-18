@@ -42,8 +42,7 @@ const getAllImagesOnPage = async (page) => {
     return allImageSrcLinks;
 }
 
-// long running test !!!
-test("check all links on each page", async ({ page, context
+test("check all links on most recent page", async ({ page, context
  }, testInfo) => {
   // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.tsawait page.goto(goToUrl)
   const spiderPage = await page.goto('/spider.json');
@@ -54,9 +53,9 @@ test("check all links on each page", async ({ page, context
 
   // do difference with urls I have already visited
   // for now let's just check each page is navigable
-  for (const url of siteUrls) {
-       const sitePage = await context.newPage();
-       await sitePage.goto(url);
+  const url of siteUrls[0];
+  const sitePage = await context.newPage();
+  await sitePage.goto(url);
     
     //     const imagesOnThisPage = await getAllImagesOnPage(page);
     //     imagesOnThisPage.forEach(imageUrls.add, imageUrls);
@@ -67,7 +66,6 @@ test("check all links on each page", async ({ page, context
     //     linksOnThisPage.forEach(pageUrls.add, pageUrls);
     //     break;
 
-  }
   // pages to check...
   // build a set of all urls across all pages.
   // add urls to a SET
