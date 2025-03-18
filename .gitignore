@@ -6,3 +6,5 @@ _site/
 *.db
 .DS_Store
 pages.json
+/test-results
+/playwright-report
