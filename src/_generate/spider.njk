@@ -6,7 +6,7 @@ excludeFromSitemap: true
 {
   "urls": [
     {# Limit to most recent posts for checking #}
-    {%- for page in collections.post | reverse | limit(4) %}
+    {%- for page in collections.posts | reverse | limit(4) %}
         {%- if not page.data.excludeFromSitemap %}
         "{{ site.url }}{{ page.url | url }}"{%- if not loop.last %},{% endif %}
         {% endif -%}
