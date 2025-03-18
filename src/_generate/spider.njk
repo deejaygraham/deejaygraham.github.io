@@ -5,8 +5,8 @@ eleventyExcludeFromCollections: true
 {
   "urls": [
     {# Limit to most recent posts for checking #}
-    {%- for page in collections.all | limit(4) %}
-        {%- if not page.data.excludeFromSitemap -%}
+    {%- for page in collections.all | reverse | limit(4) %}
+        {%- if not page.data.excludeFromSitemap %}
         "{{ site.url }}{{ page.url | url }}"{%- if not loop.last %},{% endif %}
         {% endif -%}
     {% endfor -%}
