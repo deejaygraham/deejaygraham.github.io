@@ -32,6 +32,11 @@ const getAllImagesOnPage = async (page) => {
 
 test("check all links on most recent page", async ({ page, context
  }, testInfo) => {
+    
+  page.on('requestfailed', request => {
+    console.log(request.url() + ' ' + request.failure().errorText);
+  });
+    
   // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.tsawait page.goto(goToUrl)
   const spiderPage = await page.goto('/spider.json');
   const siteUrlsAsJson = await spiderPage.text();
