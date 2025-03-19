@@ -3,12 +3,12 @@ layout: sketchnote
 title: Title
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/slug/title.webp"
+  url: "/img/posts/slug/title.jpg"
   alt: "title"
   source:
     name: "title"
-    url: "youtube url"
+    url: ""
   speaker:
     name: "Name"
-    url: "Bio"
+    url: ""
 ---
