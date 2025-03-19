@@ -38,9 +38,6 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
         
       - name: Build and run tests on 11ty filter code
         run: |
@@ -70,6 +67,9 @@ jobs:
 
       #- name: Test automation run
       #  uses: cypress-io/github-action@v6
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
         
       - name: Run Playwright tests
         run: npx playwright test
