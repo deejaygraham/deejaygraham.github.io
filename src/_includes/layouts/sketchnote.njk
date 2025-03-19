@@ -18,14 +18,13 @@
 <h1 class="title is-1">{{ title }}</h1>
 {{ content | safe }}
 
-<aside class="mt-6">
-{% if sketchnote %}
-<div class="sketchnote">
-    {% if sketchnote.url %}
+<section class="sketchnote">
     <figure class="image">
         <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
     </figure>
-    {% endif %}
+</section>
+
+<aside class="mt-6">
     {% if sketchnote.source %}
         <h4>Source</h4>
         {% if sketchnote.source.url %}
@@ -52,10 +51,8 @@
         <p>{{ sketchnote.event.name }}</p>
         {% endif %}
     {% endif %}
-</div>
-{% endif %}
+</aside>
 
 {% include "partials/ccboilerplate.njk" %}
-</aside>
 
 {% endblock %}
