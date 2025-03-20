@@ -1,6 +1,6 @@
 /* global elasticlunr */
 
-window.onload() => {
+window.onload = () => {
   "use strict";
 
   const ignoreEnterKey = (e) => {
