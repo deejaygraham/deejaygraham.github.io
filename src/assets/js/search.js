@@ -66,7 +66,7 @@ window.onload = () => {
 		catch(error) {
 			console.error("Error loading search index:", error);
 		}
-	});
+	};
 		
 	loadSearchIndex();
 };
