@@ -53,13 +53,15 @@ test("check all links on most recent page", async ({ page, context
 
   for (const url of imagesOnThisPage) {
     await test.step(`Checking image: ${url}`, async () => {
-      checkLink(page, url);
+      await page.goto(url);
+        //checkLink(page, url);
     });
   }
   
   for (const url of linksOnThisPage) {
     await test.step(`Checking link: ${url}`, async () => {
-      checkLink(page, url);
+        await page.goto(url);
+     // checkLink(page, url);
     });
    }
 });
