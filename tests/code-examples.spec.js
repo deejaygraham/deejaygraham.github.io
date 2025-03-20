@@ -7,8 +7,8 @@ test.describe("code examples", () => {
     
     await page.goto("/2024/11/01/microbit-sings-portal-theme/");
 
-    // click the copy to clip board 
-    await page.getByRole('button').click();
+    // click the 'copy to clipboard' button 
+    await page.getByTestId('copy_button_0').click();
 
     // Get clipboard content
     const handle = await page.evaluateHandle(() => navigator.clipboard.readText());
