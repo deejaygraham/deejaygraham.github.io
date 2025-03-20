@@ -1,0 +1,14 @@
+---
+permalink: /js/temp-site.js
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+{% include "scripts/bulma-burger.js" %}
+{% include "scripts/register-service-worker.js" %}
+{% include "scripts/add-source-copy-button.js" %}
+
+window.onload = () => {
+  registerServiceWorker();
+  addBulmaBurgerMenu();
+  addCopyButtonToSourceCode();
+};
