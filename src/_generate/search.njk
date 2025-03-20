@@ -1,0 +1,10 @@
+---
+permalink: /js/search.js
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+window.onload = () => {
+    {% include "scripts/search-site.js" %}
+		
+	loadSearchIndex();
+};
