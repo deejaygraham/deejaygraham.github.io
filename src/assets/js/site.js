@@ -9,7 +9,6 @@ const addBulmaBurgerMenu = () => {
     });
 };
 
-
 const registerServiceWorker = async () => {
   if ('serviceWorker' in navigator) {
     try {
@@ -30,9 +29,7 @@ const registerServiceWorker = async () => {
 };
 
 const addCopyButtonToSourceCode = () => {
-    
   const snippets = document.querySelectorAll('pre[class*="language"]');
-
   const buttonClasses = [
     'button',
     'is-pulled-right',
@@ -54,6 +51,8 @@ const addCopyButtonToSourceCode = () => {
   });
 };
 
-registerServiceWorker();
-addBulmaBurgerMenu();
-addCopyButtonToSourceCode();
+window.onload = () => {
+  registerServiceWorker();
+  addBulmaBurgerMenu();
+  addCopyButtonToSourceCode();
+};
