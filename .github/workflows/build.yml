@@ -38,20 +38,17 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-        
-      - name: Build and run tests on 11ty filter code
-        run: |
-          npm run lint
-          npm run build
-          npm run unit-test
 
-      #- name: Test automation locally before deployment
-       # uses: cypress-io/github-action@v6
-       # with:
-       #   start: npm start
-       #   wait-on: 'http://localhost:4222'
-       #   wait-on-timeout: 120
-       #   config: baseUrl=http://localhost:4222
+      - name: Lint javascript
+        run: |
+          
+      - name: Unit test 11ty code
+        run: |
+          npm run unit-test
+          
+      - name: Build
+        run: |
+          npm run build
           
       - name: Setup Github Pages
         uses: actions/configure-pages@v5
@@ -64,9 +61,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      #- name: Test automation run
-      #  uses: cypress-io/github-action@v6
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
