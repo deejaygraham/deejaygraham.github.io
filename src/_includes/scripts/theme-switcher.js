@@ -4,7 +4,7 @@ const darkThemeValue = 'dark';
 
 /* eslint-disable-next-line */
 const setThemePreference = (themeName) => {
-    const bulmaDarkThemeAttrName = 'dark-theme';
+    const bulmaThemeAttrName = 'data-theme';
     const htmlElement = document.documentElement;
     if (themeName === lightThemeValue || themeName === darkThemeValue) {
         htmlElement.setAttribute(bulmaDarkThemeAttrName, themeName);
