@@ -4,12 +4,7 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="2921.000000pt" height="2105.000000pt" viewBox="0 0 2921.000000 2105.000000"
  preserveAspectRatio="xMidYMid meet">
-<style>
-g {
-    fill: var(--bulma-body-color, black);
-}
-</style>
-
+<style>g { fill: var(--bulma-body-color, black); }</style>
 <g transform="translate(0.000000,2105.000000) scale(0.100000,-0.100000)"
  stroke="none">
 <path d="M1145 20921 c-2 -5 -26 -11 -52 -14 -33 -3 -53 -12 -66 -29 -11 -12
