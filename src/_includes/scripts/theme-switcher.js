@@ -7,10 +7,10 @@ const setThemePreference = (themeName) => {
     const bulmaThemeAttrName = 'data-theme';
     const htmlElement = document.documentElement;
     if (themeName === lightThemeValue || themeName === darkThemeValue) {
-        htmlElement.setAttribute(bulmaDarkThemeAttrName, themeName);
+        htmlElement.setAttribute(bulmaThemeAttrName, themeName);
     } else {
         // set back to system preference...
-        htmlElement.removeAttribute(bulmaDarkThemeAttrName);
+        htmlElement.removeAttribute(bulmaThemeAttrName);
     }
 }
 
