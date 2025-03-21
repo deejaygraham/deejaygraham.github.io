@@ -1,9 +1,14 @@
+---
+permalink: /sw.js
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
 // service worker code for site
 // based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
 // some ideas from https://github.com/bnijenhuis/bnijenhuis-nl
 
 // change version to allow upgrade
-const version = "v1.3";
+const version = "v1.4";
 
 const coreAssets = [
       "/",
@@ -82,28 +87,7 @@ self.addEventListener("fetch", (event) => {
            error response.
         */
       function unableToResolve() {
-        /* There's a couple of things we can do here.
-             - Test the Accept header and then return one of the `offlineFundamentals`
-               e.g: `return caches.match('/some/cached/image.png')`
-             - You should also consider the origin. It's easier to decide what
-               "unavailable" means for requests against your origins than for requests
-               against a third party, such as an ad provider
-             - Generate a Response programmaticaly, as shown below, and return that
-          */
-
          return caches.match('/offline.html');
-            
-        /* Here we're creating a response programmatically. The first parameter is the
-             response body, and the second one defines the options for the response.
-          */
-        /*return new Response("<h1>Service Unavailable</h1>", {
-          status: 503,
-          statusText: "Service Unavailable",
-          headers: new Headers({
-            "Content-Type": "text/html",
-          }),
-        });
-        */
       }
     }),
   );
