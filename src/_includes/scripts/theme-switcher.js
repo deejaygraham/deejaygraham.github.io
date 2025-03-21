@@ -52,7 +52,7 @@ const registerThemeSwitch = () => {
     lightThemeButton.addEventListener("click", () => onClick(lightThemeValue));
 
     const darkThemeId = "dark-theme-toggle";
-    document.getElementById(darkThemeId);
+    const darkThemeButton = document.getElementById(darkThemeId);
     darkThemeButton.setAttribute('aria-pressed', preference === darkThemeValue);
     darkThemeButton.addEventListener("click", () => onClick(darkThemeValue));
 
