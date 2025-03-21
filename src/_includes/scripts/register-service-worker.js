@@ -1,3 +1,4 @@
+/* eslint-disable-next-line */
 const registerServiceWorker = async () => {
   if ('serviceWorker' in navigator) {
     try {

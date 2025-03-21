@@ -1,3 +1,4 @@
+/* eslint-disable-next-line */
 const addCopyButtonToSourceCode = () => {
   const snippets = document.querySelectorAll('pre[class*="language"]');
   const buttonClasses = [

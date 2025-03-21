@@ -48,6 +48,7 @@ const executeSearch = (e) => {
     displayResults(searchTerm, results);
 };
 
+/* eslint-disable-next-line */
 const loadSearchIndex = async () => {
     try {
         const searchIndexJsonDoc = "/search-index.json";
