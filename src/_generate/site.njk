@@ -4,13 +4,13 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 {% include "scripts/bulma-burger.js" %}
-
 {% include "scripts/register-service-worker.js" %}
-
+{% include "scripts/theme-switcher.js" %}
 {% include "scripts/add-source-copy-button.js" %}
 
 window.onload = () => {
   registerServiceWorker();
   addBulmaBurgerMenu();
+  registerThemeSwitch();
   addCopyButtonToSourceCode();
 };
