@@ -41,6 +41,7 @@ jobs:
 
       - name: Lint javascript
         run: |
+          npm run lint
           
       - name: Unit test 11ty code
         run: |
