@@ -39,14 +39,16 @@
      showgrid="false" />
   <style
      id="style1">
+<style>
 g {
-    fill: black;
+    fill: var(--bulma-body-color, black);
 }
 @media (prefers-color-scheme: dark) {
-    g {
-        fill: white;
-    }
+     g { 
+          fill: var(--bulma-body-color, white);
+     }
 }
+</style>
 </style>
   <g
      transform="matrix(0.1,0,0,-0.1,44.597458,2524.2161)"
