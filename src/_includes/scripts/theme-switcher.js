@@ -49,14 +49,36 @@ const registerThemeSwitch = () => {
     const lightThemeId = "light-theme-toggle";
     const lightThemeButton = document.getElementById(lightThemeId);
     lightThemeButton.setAttribute('aria-pressed', preference === lightThemeValue);
+
+    const bulmaActiveClass = 'is-active';
+    
+    if (preference === lightThemeValue) {
+        lightThemeButton.classList.add(bulmaActiveClass);
+    } else {
+        lightThemeButton.classList.remove(bulmaActiveClass);
+    }
+
     lightThemeButton.addEventListener("click", () => onClick(lightThemeValue));
 
     const darkThemeId = "dark-theme-toggle";
     const darkThemeButton = document.getElementById(darkThemeId);
     darkThemeButton.setAttribute('aria-pressed', preference === darkThemeValue);
+
+    if (preference === darkThemeValue) {
+        darkThemeButton.classList.add(bulmaActiveClass);
+    } else {
+        darkThemeButton.classList.remove(bulmaActiveClass);
+    }
+    
     darkThemeButton.addEventListener("click", () => onClick(darkThemeValue));
 
     const systemThemeId ="system-theme-toggle";
     const systemThemeButton = document.getElementById(systemThemeId);
+
+    if (preference === '') {
+        systemThemeButton.classList.add(bulmaActiveClass);
+    } else {
+        systemThemeButton.classList.remove(bulmaActiveClass);
+    }
     systemThemeButton.addEventListener("click", () => onClick(''));
 };
