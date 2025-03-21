@@ -6,7 +6,12 @@
  preserveAspectRatio="xMidYMid meet">
 <style>
 g {
-    fill: var(--bulma-body-color);
+    fill: var(--bulma-body-color, black);
+}
+@media (prefers-color-scheme: dark) {
+     g { 
+          fill: var(--bulma-body-color, white);
+     }
 }
 </style>
 
