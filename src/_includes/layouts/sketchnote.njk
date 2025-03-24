@@ -1,21 +1,7 @@
-{% extends 'layouts/base.njk' %}
+{% extends 'layouts/post.njk' %}
 
 {% block content %}
 
-<nav class="level is-mobile article-tags" id="article-meta">
-	<div class="level-left">
-		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
-	</div>	
-{% if tags %}
-	<div class="level-right">
-	{% for tag in tags %}
-   		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<span class="tag level-item"><a href="{{ tagUrl }}">{{ tag }}</a></span> 
-  	{% endfor %}
-	</div>
-{% endif %}
-</nav>
-<h1 class="title is-1">{{ title }}</h1>
 {{ content | safe }}
 
 <section class="sketchnote">
