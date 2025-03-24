@@ -1,24 +1,10 @@
 {% extends 'layouts/base.njk' %}
 
-{# Remove temporarily
-{% block precontent %}
-
-{% if thumbnail %} 
-
-<section class="hero">
-  <figure class="image">
-    <img src="{{ thumbnail }}" alt="{{ title }}">
-  </figure>
-</section>
-
-{% endif %}
-
-{% endblock %}
-
-Remove temporarily #} 
-
 {% block content %}
 
+<section class="hero is-primary">
+  <div class="hero-body">
+    <h1 class="title is-1">{{ title }}</h1>
 <nav class="level is-mobile article-tags" id="article-meta">
 	<div class="level-left">
 		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
@@ -34,7 +20,9 @@ Remove temporarily #}
 {% endif %}
 	
 </nav>
-<h1 class="title is-1">{{ title }}</h1>
+  </div>
+</section>
+
 {{ content | safe }}
 
 {% endblock %}
