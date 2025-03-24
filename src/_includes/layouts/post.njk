@@ -36,11 +36,8 @@
   <aside>
     <div class="related-posts">
       <h2>More posts tagged with #{{ relatedTag }}</h2>
-      <ul>
-      {% for item in related %}
-        <li><a title="read {{ item.data.title }}" href="{{ item.url }}">{{ item.data.title }}</a></li>
-      {% endfor %}
-      </ul>
+      {% set postcardlist = related %}
+      {% include "partials/post-card-list.njk" %}
     </div>
   </aside>
 </section>
