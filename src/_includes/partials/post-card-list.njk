@@ -3,6 +3,7 @@
 	{% for post in postcardlist %}
 		{% set url =  post.url %}
 		{% set title =  post.data.title %}
+		{% set subtitle =  post.data.subtitle %}
 		{% set date =  post.date %}
 		{% set tags =  post.data.tags %}
 		{% include "partials/post-card.njk" %}
