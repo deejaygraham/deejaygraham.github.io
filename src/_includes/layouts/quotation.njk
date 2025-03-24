@@ -7,12 +7,13 @@
 </section>
 {% endif %}
 
-{% if size %} 
-{% if size == "large" %}<figure class="quote is-size-1">{% endif %}
-{% if size == "medium" %}<figure class="quote is-size-3">{% endif %}
-{% if size == "small" %}<figure class="quote is-size-5">{% endif %}
-{% else %}<figure class="quote">{% endif %}
-        <blockquote>
+{% set fontSize = '' %}
+{% set fontSize = "is-size-1" if size == "large" %}
+{% set fontSize = "is-size-3" if size == "medium" %}
+{% set fontSize = "is-size-5" if size == "small" %}
+
+<figure class="quote">
+        <blockquote class="{{ fontSize }}">
         {{ content | safe }}
         </blockquote>
         <figcaption>
