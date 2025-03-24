@@ -2,7 +2,7 @@
 <nav class="level has-text-centered is-mobile" aria-label="platform">
 {%- for item in socialmedia %}
   	<a class="level-item has-text-centered" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
-		<figure class="image is-24x24"><img src="{{ site.url }}/img/{{ item.icon }}" alt="{{ item.name }}" class="social-icon"></figure>
+		<figure class="image is-24x24">{% include "partials/icons/{{ item.icon }}" %}</figure>
   	</a>
 {%- endfor %}
 </nav>
