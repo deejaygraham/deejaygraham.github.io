@@ -12,6 +12,9 @@
 {% set fontSize = "is-size-3" if size == "medium" %}
 {% set fontSize = "is-size-5" if size == "small" %}
 
+size = {{ size }}
+fontSize = {{ fontSize }}
+
 <figure class="quote">
         <blockquote class="{{ fontSize }}">
         {{ content | safe }}
