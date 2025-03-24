@@ -54,7 +54,7 @@ test.describe("Specific blog post example", () => {
   });
 
   test("contains copyright message", async ({ page }) => {
-    await expect(page.getByText(/© deejaygraham/)).toBeVisible();
+    await expect(page.getByText(/© Derek/)).toBeVisible();
   });
 
   test("contains last updated message", async ({ page }) => {
