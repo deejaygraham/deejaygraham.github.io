@@ -1,7 +1,5 @@
-$hero-background: #415058;
-
 .hero {
-	background-color: $hero-background;
+	background-color: var(--bulma-body-background-color);
 	display:none;
 }
 
