@@ -1,11 +1,9 @@
 {% extends 'layouts/base.njk' %}
-
-{% block content %}
-
+{% block precontent %}
 <section class="hero is-primary">
   <div class="hero-body">
     <h1 class="title is-1">{{ title }}</h1>
-<nav class="level is-mobile article-tags" id="article-meta">
+	<nav class="level is-mobile article-tags" id="article-meta">
 	<div class="level-left">
 		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
 		<span class="reading-time is-hidden-mobile">{{ content | readingTime }}</span>
@@ -18,13 +16,13 @@
   	{% endfor %}
 	</div>
 {% endif %}
-	
-</nav>
+	</nav>
   </div>
 </section>
+{% endblock %}
 
+{% block content %}
 {{ content | safe }}
-
 {% endblock %}
 
 {% block postcontent %}
