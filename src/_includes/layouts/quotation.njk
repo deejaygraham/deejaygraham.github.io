@@ -7,13 +7,12 @@
 </section>
 {% endif %}
 
-{% set fontSize = '' %}
-{% set fontSize = "is-size-1" if size == "large" %}
-{% set fontSize = "is-size-3" if size == "medium" %}
-{% set fontSize = "is-size-5" if size == "small" %}
-
-size = {{ size }}
-fontSize = {{ fontSize }}
+{% set fontSize = 'is-size-5' %}
+{% if size == "large" %}
+{% set fontSize = "is-size-1" %}
+{% elif size == "medium" %}
+{% set fontSize = "is-size-3" %}
+{% endif %} 
 
 <figure class="quote">
         <blockquote class="{{ fontSize }}">
