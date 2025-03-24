@@ -7,9 +7,7 @@ test.describe("home page", () => {
     });
   
   test("contain home icon", async ({ page }) => {
-    const avatar = await page.getByAltText('a triumph of style over substance');
-
-    await expect(avatar).toBeVisible();
+    await expect(page.locator('a').filter({ hasText: 'g { fill: var(--bulma-body-' }).toBeVisible();
   });
 
   test("navigation menu is shown", async ({ page }) => {
