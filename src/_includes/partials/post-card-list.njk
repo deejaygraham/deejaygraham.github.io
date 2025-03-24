@@ -1,7 +1,6 @@
 {# Requires a global variable to be set "postcardlist" #}
 <div class="row columns is-multiline">
 	{% for post in postcardlist %}
-{{ post | debug }}
 		{% set url =  post.url %}
 		{% set title =  post.data.title %}
 		{% set date =  post.date %}
