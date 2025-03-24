@@ -16,14 +16,14 @@ export default [
   {
     data: {
       title: "Scrum Planning Poker",
-      subtitle: "Cards to use when estimating in the planning game2
+      subtitle: "Cards to use when estimating in the planning game",
     },
     url: "https://github.com/deejaygraham/PlanningPoker/",
   },
   {
     data: {
       title: "GitHub",
-      subtitle: "In progress repositories of various kinds",
+      subtitle: "Repositories filled to the brim with unfinished stuff",
     },
     url: "https://github.com/deejaygraham/",
   },
