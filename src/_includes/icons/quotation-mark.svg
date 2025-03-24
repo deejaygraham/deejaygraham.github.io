@@ -1,0 +1,11 @@
+<svg width="1em" height="1em" viewBox="0 0 153 125" fill="none" ariahidden="true">
+<style>rect { fill: var(--bulma-border);</style>
+<rect x="86" y="39.3521" width="45.3548" height="22.0104" rx="3"></rect>
+<rect x="109.344" y="20.0093" width="22.0104" height="24.6784" rx="3"></rect>
+<rect x="129.354" width="22.0104" height="22.0104" rx="3"></rect>
+<rect x="152.031" y="58.9688" width="66.0313" height="66.0313" rx="3" transform="rotate(90 152.031 58.9688)" ></rect>
+<rect y="39.3521" width="45.3548" height="22.0104" rx="3" ></rect>
+<rect x="23.3445" y="20.0093" width="22.0104" height="24.6784" rx="3"></rect>
+<rect x="43.354" width="22.0104" height="22.0104" rx="3"></rect>
+<rect x="66.0312" y="58.9688" width="66.0313" height="66.0313" rx="3" transform="rotate(90 66.0312 58.9688)"></rect>
+</svg>
