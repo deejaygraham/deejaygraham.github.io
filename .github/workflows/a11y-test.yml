@@ -1,4 +1,4 @@
-name: A11y Playwrigth Tests
+name: A11y Playwright Tests
 on:
   workflow_dispatch:
     branches: [ main ]
