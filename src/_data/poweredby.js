@@ -1,6 +1,6 @@
 export default [
   {
-    name: "11ty",
+    name: "eleventy",
     url: "http://11ty.dev/",
   },
   {
