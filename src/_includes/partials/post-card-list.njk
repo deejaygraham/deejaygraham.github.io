@@ -6,8 +6,6 @@
 		{% set subtitle =  post.data.subtitle %}
 		{% set date =  post.date %}
 		{% set tags =  post.data.tags %}
-		{{ post | debugger }}
-		{% set content = post.rawInput %}
 		{% include "partials/post-card.njk" %}
 	{% endfor %}
 </div>
