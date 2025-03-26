@@ -6,24 +6,6 @@ title: talks
 
 <div class="row columns is-multiline">
 {% for item in talks %}
-	<div class="column is-4">
-    	<div class="card large">
-	  		<div class="card-image">
-				<figure class="image">
-					<a href="{{ item.url }}" target="_blank" rel="noreferrer">
-	  					<img src="{{ item.thumbnail }}" />
-					</a>
-				</figure>
-			</div>
-			<div class="card-content">
-				<a href="{{ item.url }}" target="_blank" rel="noreferrer">
-					<p class="title is-4">{{ item.title }}</p>
-					{% if item.subtitle %}
-	    				<p class="subtitle is-6">{{ item.subtitle }}</p>
-	    			{% endif %}
-				</a>
-	    	</div>
-  		</div>
-	</div>  
+{% include "partials/external-card.njk" %}
 {% endfor %}
 </div>
