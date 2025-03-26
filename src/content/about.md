@@ -6,6 +6,7 @@ thumbnail: /img/heroes/hero-makers-and-creators.webp
 ---
 
 [![Site Build Status](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/build.yml)
+[![A11y Tests](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/a11y-test.yml/badge.svg)](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/a11y-test.yml)
 
 My name is Derek Graham and this is my personal blog.
 
