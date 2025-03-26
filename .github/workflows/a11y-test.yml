@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test --grep @a11y
+      run: npx playwright test --grep @a11y ./tests/a11y.tests.js
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
