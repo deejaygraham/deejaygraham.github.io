@@ -5,6 +5,8 @@ title: Hey, Hi, Hello.
 thumbnail: /img/heroes/hero-makers-and-creators.webp
 ---
 
+[![Site Build Status](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/build.yml)
+
 My name is Derek Graham and this is my personal blog.
 
 In my most pretentious moments I like to think of myself as a writer of speculative fiction for computers (what people normally call a "programmer") or a 
