@@ -7,6 +7,6 @@ layout: base.njk
 {% for tag in collections.posts | getAllTags | filterTagList %}
 {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 {%- set postCount = collections[tag].length %}
-<span class="tag is-hoverable"><a href="{{ tagUrl }}">#{{ tag }}({{ postCount }})</a></span>
+<span class="tag is-hoverable"><a href="{{ tagUrl }}">{{ tag }}({{ postCount }})</a></span>
 {% endfor -%}
 </div>
