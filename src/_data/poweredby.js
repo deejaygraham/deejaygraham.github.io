@@ -4,7 +4,7 @@ export default [
     url: "http://11ty.dev/",
   },
   {
-    name: "bulma css",
+    name: "bulma",
     url: "https://bulma.io/",
   },
   {
@@ -12,7 +12,7 @@ export default [
     url: "http://elasticlunr.com/",
   },
   {
-    name: "prism syntax highlighting",
+    name: "prism",
     url: "https://prismjs.com/",
   },
 ];
