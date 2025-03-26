@@ -1,15 +1,12 @@
 {% extends 'layouts/base.njk' %}
-
 {% block precontent %}
 
 {% if thumbnail %} 
-
 <section class="hero">
   <figure class="image">
     <img src="{{ thumbnail }}" alt="{{ title }}">
   </figure>
 </section>
-
 {% endif %}
 
 {% endblock %}

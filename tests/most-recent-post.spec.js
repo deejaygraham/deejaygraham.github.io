@@ -52,17 +52,19 @@ test("check all links on most recent page", async ({ page, context
   const linksOnThisPage = await getAllLinksFromPage(page);
 
   for (const url of imagesOnThisPage) {
-    await test.step(`Checking image: ${url}`, async () => {
-      await page.goto(url);
-        //checkLink(page, url);
+    if (url) {
+        await test.step(`Checking image: ${url}`, async () => {
+          await page.goto(url);
     });
+    }
   }
   
   for (const url of linksOnThisPage) {
-    await test.step(`Checking link: ${url}`, async () => {
-        await page.goto(url);
-     // checkLink(page, url);
-    });
+    if (url) {
+        await test.step(`Checking link: ${url}`, async () => {
+            await page.goto(url);
+        });
+    }
    }
 });
 

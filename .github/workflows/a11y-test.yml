@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: A11y Tests
 on:
   workflow_dispatch:
     branches: [ main ]
@@ -13,10 +13,12 @@ jobs:
         node-version: lts/*
     - name: Install dependencies
       run: npm ci
+    - name: Install Axe tooling
+      run: npm install @axe-core/playwright
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test --grep-invert @a11y
+      run: npx playwright test --grep @a11y ./tests/a11y.tests.js
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

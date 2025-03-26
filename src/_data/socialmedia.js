@@ -2,36 +2,36 @@ export default [
   {
     name: "rss",
     url: "https://deejaygraham.github.io/rss.xml",
-    icon: "rss.svg",
+    icon: "icons/rss.svg",
   },
   {
     name: "github",
     url: "https://github.com/deejaygraham",
-    icon: "github.svg",
+    icon: "icons/github.svg",
   },
   {
     name: "mastodon",
     url: "https://hachyderm.io/@deejaygraham",
-    icon: "mastodon.svg",
+    icon: "icons/mastodon.svg",
   },
   {
     name: "bluesky",
     url: "https://bsky.app/profile/deejaygraham.bsky.social",
-    icon: "bluesky.svg",
+    icon: "icons/bluesky.svg",
   },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/derekjohngraham/",
-    icon: "linkedin.svg",
+    icon: "icons/linkedin.svg",
   },
   {
     name: "slideshare",
     url: "https://www.slideshare.net/deejaygraham",
-    icon: "slideshare.svg",
+    icon: "icons/slideshare.svg",
   },
   {
     name: "sessionize",
     url: "https://sessionize.com/deejaygraham/",
-    icon: "sessionize.svg",
+    icon: "icons/sessionize.svg",
   },
 ];

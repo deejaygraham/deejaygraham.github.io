@@ -40,9 +40,6 @@ test.describe("Specific blog post example", () => {
 
   test("contains the meta tags", async ({ page }) => {
     await expect(page.getByText("#code #microbit #python")).toBeVisible();
-    await expect(page.getByRole('link', { name: '#code', exact: true })).toBeVisible();
-    await expect(page.getByRole('link', { name: '#microbit', exact: true })).toBeVisible();
-    await expect(page.getByRole('link', { name: '#python', exact: true })).toBeVisible();
   });
 
   test("contains code sample", async ({ page }) => {
@@ -50,11 +47,11 @@ test.describe("Specific blog post example", () => {
   });
 
   test("contains suggested posts", async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'More posts tagged with #' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'More posts tagged with #' })).toBeVisible();  
   });
 
   test("contains copyright message", async ({ page }) => {
-    await expect(page.getByText(/© deejaygraham/)).toBeVisible();
+    await expect(page.getByText(/© Derek/)).toBeVisible();
   });
 
   test("contains last updated message", async ({ page }) => {

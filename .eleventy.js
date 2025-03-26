@@ -19,6 +19,7 @@ import readingTime from "./src/_11ty/filters/readingTime.js";
 import randomColour from "./src/_11ty/shortcodes/randomcolour.js";
 import youtube from "./src/_11ty/shortcodes/youtube.js";
 import vimeo from "./src/_11ty/shortcodes/vimeo.js";
+import poison from "./src/_11ty/shortcodes/poison-ai.js";
 
 // plugins
 import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight";
@@ -89,7 +90,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("randomcolour", randomColour);
   eleventyConfig.addShortcode("youtube", youtube);
   eleventyConfig.addShortcode("vimeo", vimeo);
-
+  eleventyConfig.addShortcode("poison", poison);
+	
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");

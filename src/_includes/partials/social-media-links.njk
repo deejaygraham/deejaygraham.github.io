@@ -1,10 +1,8 @@
 {# Requires socialmedia.json #}
-<nav class="level is-mobile" aria-label="footer navigation">
-<span class="level-item">&copy; deejaygraham 2011 - <time datetime="{{ site.date | dateISO }}">{{ site.date | dateYear }}</time></span>
-<span class="level-item"> | </span> 
-	{%- for item in socialmedia %}
-  <a class="level-item" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
-		<figure class="image is-24x24"><img src="{{ site.url }}/img/{{ item.icon }}" alt="{{ item.name }}" class="social-icon"></figure>
-  </a>
-  {%- endfor %}
+<nav class="level has-text-centered is-mobile" aria-label="platform">
+{%- for item in socialmedia %}
+  	<a class="level-item has-text-centered" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
+		<figure class="image is-24x24">{% include item.icon %}</figure>
+  	</a>
+{%- endfor %}
 </nav>

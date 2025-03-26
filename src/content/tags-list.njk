@@ -3,25 +3,10 @@ permalink: tags/index.html
 title: posts by tag
 layout: base.njk
 ---
-
-{% set allPosts = collections.posts.length %}
-
-<div class="grid is-col-min-12">
+<div class="tags are-large">
 {% for tag in collections.posts | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	{% set postWithTag = collections[tag].length %}
-	<div class="cell">
-    <div class="card">
-			<a href="{{ tagUrl }}">
-				<div class="card-content">
-    			<p class="title">#{{ tag }}</p>
-			<p>{{ postWithTag }} post{% if postWithTag != 1 %}s{% endif %}</p>
-			<p>
-			<progress class="progress is-small is-link" value="{{ postWithTag }}" max="{{ allPosts }}">{{ tagCount }}%</progress>
-			</p>
-    		</div>
-			</a>
-  	</div>
-	</div>  
-{% endfor %}
+{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+{%- set postCount = collections[tag].length %}
+<span class="tag is-hoverable"><a href="{{ tagUrl }}">{{ tag }} ({{ postCount }})</a></span>
+{% endfor -%}
 </div>

@@ -1,9 +1,12 @@
 {# Requires a global variable to be set called post with url, title, date, tags (array) #}
 <div class="column is-4">
-  <div class="card large">	
+  <div class="card large is-shadowless">	
   	<div class="card-content">
       <a href="{{ url }}">
         <p class="title is-4">{{ title }}</p>
+        {% if subtitle %}
+        <p class="subtitle is-6">{{ subtitle }}</p>
+        {% endif %}
         {%- if date -%}
         <p class="subtitle is-6"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
         {%- endif -%}
