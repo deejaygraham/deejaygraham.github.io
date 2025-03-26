@@ -7,6 +7,9 @@
         {%- if date -%}
         <p class="subtitle is-6"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
         {%- endif -%}
+        {% if content %}
+        {{ content | excerpt | safe }}
+        {% endif %}
       </a>
     </div>
     {% if tags %}
