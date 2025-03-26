@@ -6,22 +6,21 @@ layout: base.njk
 
 {% set allPosts = collections.posts.length %}
 
-<div class="grid is-col-min-12">
+<div class="row columns is-multiline">
 {% for tag in collections.posts | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	{% set postWithTag = collections[tag].length %}
-	<div class="cell">
-    <div class="card">
+{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+{% set postWithTag = collections[tag].length %}
+<div class="column is-4">
+	<div class="card large is-shadowless">
+		<div class="card-content">
 			<a href="{{ tagUrl }}">
-				<div class="card-content">
-    			<p class="title">#{{ tag }}</p>
-			<p>{{ postWithTag }} post{% if postWithTag != 1 %}s{% endif %}</p>
-			<p>
-			<progress class="progress is-small is-link" value="{{ postWithTag }}" max="{{ allPosts }}">{{ tagCount }}%</progress>
-			</p>
-    		</div>
+				<p class="title is-4">#{{ tag }}</p>
+				<p>{{ postWithTag }} post{% if postWithTag != 1 %}s{% endif %}</p>
+				<p><progress class="progress is-small is-link" value="{{ postWithTag }}" max="{{ allPosts }}">{{ tagCount }}%</progress>
+				</p>
 			</a>
-  	</div>
-	</div>  
+		</div>
+	</div>
+</div>  
 {% endfor %}
 </div>
