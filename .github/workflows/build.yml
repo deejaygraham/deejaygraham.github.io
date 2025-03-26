@@ -1,4 +1,4 @@
-name: Deploy Eleventy site to Pages
+name: Build and Test
 
 on:
   push:
