@@ -3,5 +3,5 @@
 {%- for item in poweredby %}
   <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">{{ item.name }}</a>{% if not loop.last %} | {% endif %}
 {%- endfor %}
-| Last updated: <time datetime="{{ buildInfo.time.raw }}">{{ buildInfo.time.formatted }}
+|| Last updated: <time datetime="{{ buildInfo.time.raw }}">{{ buildInfo.time.formatted }}
 </aside>
