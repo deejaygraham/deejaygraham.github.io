@@ -1,6 +1,6 @@
 export default [
   {
-    name: "home",
+    name: "blog",
     navUrl: "/",
   },
   {
