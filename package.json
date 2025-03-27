@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
+    "@axe-core/playwright": "^4.10.1",
     "ava": "^6.1.2",
     "bulma": "^1.0.0",
     "cypress": "^13.7.2",
