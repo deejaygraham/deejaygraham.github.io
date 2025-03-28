@@ -3,6 +3,7 @@ permalink: index.html
 title: home
 layout: base.njk
 ---
+<h1 class="title is-1">Blog</h1>
 
 {% set postcardlist = collections.posts | limit(12) %}
 {% include "partials/post-card-list.njk" %}
