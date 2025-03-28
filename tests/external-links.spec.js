@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import checkResourceExists from 'util/check-resource-exists.js";
+import checkResourceExists from './util/check-resource-exists.js';
   
 // Externally linked Resources we want links to be correct and stable
 
