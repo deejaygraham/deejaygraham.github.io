@@ -1,5 +1,5 @@
 {# Uses a data file poweredby.json #}
-<nav id="powered" aria-label="Tools used">Powered by:
+<nav id="powered" class="content has-text-centered is-mobile" aria-label="Tools used">Powered by:
 {%- for item in poweredby %}
   <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">{{ item.name }}</a>{% if not loop.last %} | {% endif %}
 {%- endfor %}
