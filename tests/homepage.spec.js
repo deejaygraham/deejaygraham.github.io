@@ -11,7 +11,7 @@ test.describe("home page", () => {
   });
 
   test("navigation menu is shown", async ({ page }) => {
-    await expect(page.getByRole('link', { name: 'blog' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'blog', exact: true })).toBeVisible();
     await expect(page.getByRole('link', { name: 'search' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'tags' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'projects' })).toBeVisible();
