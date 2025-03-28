@@ -7,6 +7,16 @@ import { expect } from '@playwright/test';
  * @param {string} url
  */
 export default async function (page, url) {
-  const response = await page.request.get(url)
-  expect.soft(response.ok(), `${url} is not available`).toBeTruthy();
+  try {
+    const response = await page.request.get(url);
+    const status = response.statusText();
+    
+    expect
+      .soft(response.ok(), `${url} is not available: ${status}`)
+      .toBeTruthy();
+    } catch(error) {
+     expect
+       .soft(null, `${url} is not available: ${error}`)
+       .toBeTruthy();
+   }
 }
