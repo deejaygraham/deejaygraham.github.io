@@ -1,5 +1,5 @@
 // @ts-check
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import checkResourceExists from './util/check-resource-exists.js';
 
 test("About page permalink", async ({ page }) => {
