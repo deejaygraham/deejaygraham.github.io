@@ -15,7 +15,7 @@ test.describe("home page", () => {
     await expect(page.getByRole('link', { name: 'search' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'tags' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'projects' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'talks' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'speaking' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'about' })).toBeVisible();
   });
 
