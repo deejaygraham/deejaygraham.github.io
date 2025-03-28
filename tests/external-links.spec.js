@@ -1,6 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-
+import checkResourceExists from 'util/check-resource-exists.js";
+  
 // Externally linked Resources we want links to be correct and stable
 
 test("GTD Sketchnote challenge is available", async ({ page }) => {
@@ -25,12 +26,3 @@ test("Sketchnoting for Developers talk is available", async ({ page }) => {
 test("ACE Conference sketchnote link is available", async ({ page }) => {
   await checkResourceExists(page, '/img/posts/sketchnotes-from-ace-2014/gilb.png');
 });
-
-/**
- * @param {import('@playwright/test').Page} page
- * @param {string} url
- */
-async function checkResourceExists(page, url) {
-  const response = await page.request.get(url)
-  expect.soft(response.ok(), `${url} is not available`).toBeTruthy();
-}
