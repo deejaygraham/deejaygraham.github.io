@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe("light dark theming", () => {
-  test("Light button sets light theme", async ({ page, browserName }) => {
+  test("Light button sets light theme", async ({ page }) => {
     await page.goto("/");
 
     await page.getByRole('button', { name: 'Light mode' }).click();
@@ -10,7 +10,7 @@ test.describe("light dark theming", () => {
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
   });
 
-  test("Dark button sets dark theme", async ({ page, browserName }) => {
+  test("Dark button sets dark theme", async ({ page }) => {
     await page.goto("/");
 
     await page.getByRole('button', { name: 'Dark mode' }).click();
@@ -18,7 +18,7 @@ test.describe("light dark theming", () => {
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   });
 
-  test("Default button removes theme", async ({ page, browserName }) => {
+  test("Default button removes theme", async ({ page }) => {
     await page.goto("/");
 
     await page.getByRole('button', { name: 'Device default' }).click();
