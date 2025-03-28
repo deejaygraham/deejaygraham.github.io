@@ -16,7 +16,7 @@ export default [
     url: "/projects",
   },
   {
-    name: "talks",
+    name: "speaking",
     url: "/talks",
   },
   {
