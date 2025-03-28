@@ -67,16 +67,3 @@ test("check all links on most recent page", async ({ page, context
     }
    }
 });
-
-const checkLink = async (page, url) => {
-  try {
-    const response = await page.request.get(url);
-    const status = response.statusText();
-    
-    expect
-      .soft(response.ok(), `${url} does not exist: ${status}`)
-      .toBeTruthy();
-   } catch {
-     expect.soft(null, `${url} does not exist`).toBeTruthy();
-   }
-}
