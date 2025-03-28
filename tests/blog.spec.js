@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import checkResourceExists from 'util/check-resource-exists.js";
+import checkResourceExists from './util/check-resource-exists.js';
   
 test("blog posts from each year with slug format", async ({ page }) => {
 
