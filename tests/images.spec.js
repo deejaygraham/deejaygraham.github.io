@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import checkImageExists from "./check-image-exists.js";
+import checkImageExists from './util/check-image-exists.js';
 
 test.describe("images on random page", () => {
   test("sketchnote appears on page", async ({ page }) => {
