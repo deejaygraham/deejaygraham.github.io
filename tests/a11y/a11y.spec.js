@@ -3,13 +3,10 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright'; 
 
 test.describe('run accessibility tests', { tag: '@a11y' }, () => {
- /* test('homepage has no accessibility problems', async ({ page }) => {
-    await page.goto('/'); 
-
-    const accessibilityScanResults = await new AxeBuilder({ page }).analyze(); 
-    expect(accessibilityScanResults.violations).toEqual([]);
+ test('homepage has no accessibility problems', async ({ page }) => {
+    await checkPageForAccessibility(page, '/');
   });
-*/
+
   // quote page
 
   // code example page
@@ -26,9 +23,13 @@ test.describe('run accessibility tests', { tag: '@a11y' }, () => {
 
   // about page
   test('about has no accessibility problems', async ({ page }) => {
-    await page.goto('/about/'); 
-
-    const accessibilityScanResults = await new AxeBuilder({ page }).analyze(); 
-    expect(accessibilityScanResults.violations).toEqual([]);
+    await checkPageForAccessibility(page, '/about/');
   });
 });
+
+const checkPageForAccessibility = async (page, url) => {
+  await page.goto(url);
+ 
+  const accessibilityScanResults = await new AxeBuilder({ page }).analyze(); 
+  expect(accessibilityScanResults.violations).toEqual([]);
+}
