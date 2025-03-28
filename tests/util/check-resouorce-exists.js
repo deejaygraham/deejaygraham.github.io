@@ -1,3 +1,6 @@
+// @ts-check
+import { expect } from '@playwright/test';
+
 /**
  * Check a web resource exists by making a request to it and checking the ok response. 
  * @param {import('@playwright/test').Page} page
