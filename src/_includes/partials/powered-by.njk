@@ -1,7 +1,7 @@
 {# Uses a data file poweredby.json #}
-<aside>Powered by:
+<nav id="powered" aria-label="Tools used">Powered by:
 {%- for item in poweredby %}
   <a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">{{ item.name }}</a>{% if not loop.last %} | {% endif %}
 {%- endfor %}
 || {% include "partials/last-updated.njk" %}
-</aside>
+</nav>
