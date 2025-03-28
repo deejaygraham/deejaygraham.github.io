@@ -1,5 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
+import checkImageExists from "./check-image-exists.js";
 
 test.describe("images on random page", () => {
   test("sketchnote appears on page", async ({ page }) => {
@@ -21,9 +22,3 @@ test.describe("images on random page", () => {
     await checkImageExists(page, image);
   });
 });
-
-async function checkImageExists(page, imgTag) {
-  const url = await imgTag.getAttribute("src");
-  const response = await page.request.get(url)
-  expect.soft(response.ok(), `${url} is not available`).toBeTruthy();
-}
