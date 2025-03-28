@@ -7,7 +7,7 @@
     "test": "npx cypress run --e2e --browser chrome",
     "unit-test": "npx ava --verbose",
     "format": "prettier . --write",
-    "lint": "npx eslint ./",
+    "lint": "npx eslint ./src & npx eslint ./tests",
     "thumbs": "node ./generate-thumbnails.js"
   },
   "dependencies": {
