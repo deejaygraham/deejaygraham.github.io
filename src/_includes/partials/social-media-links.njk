@@ -1,5 +1,5 @@
 {# Requires socialmedia.json #}
-<nav class="level has-text-centered is-mobile" aria-label="platform">
+<nav class="level has-text-centered is-mobile" aria-label="Social links">
 {%- for item in socialmedia %}
   	<a class="level-item has-text-centered" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
 		<figure class="image is-24x24">{% include item.icon %}</figure>
