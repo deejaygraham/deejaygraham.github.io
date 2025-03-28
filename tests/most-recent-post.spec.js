@@ -1,5 +1,5 @@
 // @ts-check
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 
 const validLink = (link) => {
     const internalLinksRegex = /deejaygraham.github.io/;
@@ -30,8 +30,7 @@ const getAllImagesOnPage = async (page) => {
     return allImageSrcLinks;
 }
 
-test("check all links on most recent page", async ({ page, context
- }, testInfo) => {
+test("check all links on most recent page", async ({ page }) => {
     
   page.on('requestfailed', request => {
     console.log(request.url() + ' ' + request.failure().errorText);
