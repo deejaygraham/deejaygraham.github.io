@@ -24,5 +24,5 @@ test("Sketchnoting for Developers talk is available", async ({ page }) => {
 });
 
 test("ACE Conference sketchnote link is available", async ({ page }) => {
-  await checkResourceExists(page, '/img/posts/sketchnotes-from-ace-2014/gilb.webp2');
+  await checkResourceExists(page, '/img/posts/sketchnotes-from-ace-2014/gilb.webp');
 });
