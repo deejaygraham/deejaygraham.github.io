@@ -3,6 +3,7 @@ permalink: tags/index.html
 title: posts by tag
 layout: base.njk
 ---
+<h1 class="title is-1">Posts by Tag</h1>
 <div class="tags are-large">
 {% for tag in collections.posts | getAllTags | filterTagList %}
 {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
