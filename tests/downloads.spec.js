@@ -1,6 +1,6 @@
 // @ts-check
 import { test } from '@playwright/test';
-import checkResourceExists from './util/check-resource-exists.js';
+import checkAllResourcesExist from './util/check-all-resources-exist.js';
   
 test("pdf samples are downloadable", async ({ page }) => {
   await page.goto("/");
@@ -14,9 +14,7 @@ test("pdf samples are downloadable", async ({ page }) => {
     "/downloads/Manuscript-a4-landscape.pdf",
   ];
 
-  for (const url of pdfs) {
-    await checkResourceExists(page, url);
-  }
+  await checkAllResourcesExist(page, pdfs);
 });
 
 test("Code and binary zips are downloadable", async ({ page }) => {
@@ -27,7 +25,5 @@ test("Code and binary zips are downloadable", async ({ page }) => {
     "/downloads/MsBuild.ThreeByTwo.Tasks.zip",
   ];
 
-  for (const url of binaries) {
-    await checkResourceExists(page, url);
-  }
+  await checkAllResourcesExist(page, binaries);
 });
