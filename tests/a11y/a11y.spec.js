@@ -13,15 +13,22 @@ test.describe('run accessibility tests', { tag: '@a11y' }, () => {
 
   // sketchnote page
 
-  // search page
-
-  // tags page
-
-  // projects page
-
-  // talks page
-
-  // about page
+ test('search page has no accessibility problems', async ({ page }) => {
+    await checkPageForAccessibility(page, '/search/');
+  });
+ 
+ test('tags page has no accessibility problems', async ({ page }) => {
+    await checkPageForAccessibility(page, '/tags/');
+  });
+ 
+ test('projects page has no accessibility problems', async ({ page }) => {
+    await checkPageForAccessibility(page, '/projects/');
+  });
+ 
+ test('speaking page has no accessibility problems', async ({ page }) => {
+    await checkPageForAccessibility(page, '/talks/');
+  });
+ 
   test('about has no accessibility problems', async ({ page }) => {
     await checkPageForAccessibility(page, '/about/');
   });
