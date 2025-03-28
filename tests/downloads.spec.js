@@ -1,6 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-
+import checkResourceExists from 'util/check-resource-exists.js";
+  
 test("pdf samples are downloadable", async ({ page }) => {
   await page.goto("/");
 
@@ -30,12 +31,3 @@ test("Code and binary zips are downloadable", async ({ page }) => {
     await checkResourceExists(page, url);
   }
 });
-
-/**
- * @param {import('@playwright/test').Page} page
- * @param {string} url
- */
-async function checkResourceExists(page, url) {
-  const response = await page.request.get(url)
-  expect.soft(response.ok(), `${url} is not available`).toBeTruthy();
-}
