@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import checkResourceExists from 'util/check-resource-exists.js";
+import checkResourceExists from './util/check-resource-exists.js';
   
 test("pdf samples are downloadable", async ({ page }) => {
   await page.goto("/");
