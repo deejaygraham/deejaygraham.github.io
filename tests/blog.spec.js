@@ -1,6 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-
+import checkResourceExists from 'util/check-resource-exists.js";
+  
 test("blog posts from each year with slug format", async ({ page }) => {
 
   await verifyLinks(page, [
@@ -63,12 +64,4 @@ async function verifyLinks(page, urls) {
   for (const url of urls) {
     await checkResourceExists(page, url);
   }
-}
-/**
- * @param {import('@playwright/test').Page} page
- * @param {string} url
- */
-async function checkResourceExists(page, url) {
-  const response = await page.request.get(url)
-  expect.soft(response.ok(), `${url} is not available`).toBeTruthy();
 }
