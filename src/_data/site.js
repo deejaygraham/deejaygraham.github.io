@@ -7,6 +7,7 @@ export default {
     : "https://deejaygraham.github.io",
   baseUrl: "/",
   author: "Derek Graham",
+  email: 'deejaygraham@icloud.com',
   paginate: "36",
   date: new Date(),
   // paths to images
