@@ -15,9 +15,8 @@
  * @param {String} text
  */
 
-export default function (text) {
+export default function (text, speed = 240) {
   const content = new String(text);
-  const speed = 240; // reading speed in words per minute
   const emoji = " ⏲️ ";
 
   // remove all html elements
