@@ -11,9 +11,10 @@
       {%- endif -%}
     </div>
     {% if tags %}
-    <div class="card-footer">
+    <div class="is-pulled-right">
     {%- for tag in tags -%}
       <a href="/tags/{{tag}}" class="card-footer-item">#{{ tag }}</a>
+      {% if not loop.last %} | {% endif %}
     {%- endfor -%}
     </div>
     {% endif %}
