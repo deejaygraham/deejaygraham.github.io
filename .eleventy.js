@@ -11,7 +11,6 @@ import searchFilter from "./src/_11ty/filters/searchFilter.js";
 import arrayToCommaString from "./src/_11ty/filters/arrayToCommaString.js";
 import getAllTags from "./src/_11ty/filters/getAllTags.js";
 import filterTagList from "./src/_11ty/filters/filterTagList.js";
-import splitLines from "./src/_11ty/filters/splitLines.js";
 import excludePost from "./src/_11ty/filters/excludePost.js";
 import readingTime from "./src/_11ty/filters/readingTime.js";
 
@@ -82,7 +81,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("arrayToCommaString", arrayToCommaString);
   eleventyConfig.addFilter("getAllTags", getAllTags);
   eleventyConfig.addFilter("filterTagList", filterTagList);
-  eleventyConfig.addFilter("splitlines", splitLines);
   eleventyConfig.addFilter("excludePost", excludePost);
   eleventyConfig.addFilter("readingTime", readingTime);
 
