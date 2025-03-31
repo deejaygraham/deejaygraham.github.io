@@ -26,7 +26,6 @@ function dateRFC2822(date) {
  * @returns {String} - formatted date
  */
 function dateFormat(date, format, locale = "en-GB") {
-  console.log("date is ", date, format);
   const jsDate = date ? new Date(date) : new Date();
   const dt = DateTime.fromJSDate(jsDate);
   return dt.setLocale(locale).toFormat(format);
