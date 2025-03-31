@@ -1,6 +1,6 @@
 {# Requires a global variable to be set called post with url, title, date, tags (array) #}
 <div class="column is-4">
-  <article class="card large is-shadowless">	
+  <div class="card large is-shadowless">	
   	<div class="card-content">
       <h2 class="title is-4"><a href="{{ url }}">{{ title }}</a></h2>
       {% if subtitle %}
@@ -17,5 +17,5 @@
     {%- endfor -%}
     </div>
     {% endif %}
-  </article>
+  </div>
 </div>  
