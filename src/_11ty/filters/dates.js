@@ -69,7 +69,7 @@ function dateYear(date) {
 }
 
 export default {
-  dateRFC822,
+  dateRFC2822,
   dateFormat,
   dateFull,
   dateISO,
