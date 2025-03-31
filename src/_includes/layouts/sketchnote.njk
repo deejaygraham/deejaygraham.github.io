@@ -5,12 +5,12 @@
 {{ content | safe }}
 
 <section class="sketchnote">
-    <table class="table">
+    <table class="table is-fullwidth">
         <thead>
             <tr>
         {% if sketchnote.source %}<th>Source</th>{% endif %} 
-        {% if sketchnote.speaker %}<th>About the Speaker</th>{% endif %}
-        {% if sketchnote.event %}<th>About the Event</th>{% endif %}
+        {% if sketchnote.speaker %}<th>Speaker</th>{% endif %}
+        {% if sketchnote.event %}<th>Event</th>{% endif %}
             </tr>
         </thead>
         <tbody>
