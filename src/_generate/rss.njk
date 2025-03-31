@@ -12,7 +12,7 @@ excludeFromSitemap: true
     <link>{{ site.url }}</link>
     <managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
     <webMaster>{{ site.email }} ({{ site.author }})</webMaster>
-    <pubDate>{{ site.data | dateFeed }}</pubDate>
+    <pubDate>{{ site.date | dateFeed }}</pubDate>
     <lastBuildDate>{{ site.date | dateFeed }}</lastBuildDate>
     <generator>Eleventy</generator>
     {% for post in collections.posts | limit(48) %}
