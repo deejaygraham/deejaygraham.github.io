@@ -1,8 +1,8 @@
 import test from "ava";
 import excerpt from "./excerpt.js";
 
-test("empty string returns elipsis only", (t) => {
-  t.is(excerpt(""), "...");
+test("empty string returns empty string", (t) => {
+  t.is(excerpt(""), "");
 });
 
 test("short post replaces last word with elipsis", (t) => {
