@@ -10,3 +10,9 @@ test("reading time for medium sentence is one minute", (t) => {
   const speed = sentence.length;
   t.is(readingTime(sentence, speed), /about 1 minute/);
 });
+
+test("reading time for longer sentence is more than 1 minute", (t) => {
+  const sentence = 'this is a much longer sentence containing words and also read by someone who reads slowly';
+  const speed = sentence.length / 2;
+  t.is(readingTime(sentence, speed), /about 2 minutes/);
+});
