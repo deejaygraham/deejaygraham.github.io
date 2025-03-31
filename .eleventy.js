@@ -74,7 +74,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("firstItem", firstItem);
   eleventyConfig.addFilter("randomItem", randomItem);
   eleventyConfig.addFilter("dateISO", dates.dateISO);
-  eleventyConfig.addFilter("dateFeed", dates.dateRFC822);
+  eleventyConfig.addFilter("dateFeed", dates.dateRFC2822);
   eleventyConfig.addFilter("dateFull", dates.dateFull);
   eleventyConfig.addFilter("dateFormat", dates.dateFormat);
   eleventyConfig.addFilter("dateYear", dates.dateYear);
