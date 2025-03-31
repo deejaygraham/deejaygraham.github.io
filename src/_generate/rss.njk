@@ -12,8 +12,8 @@ excludeFromSitemap: true
     <link>{{ site.url }}</link>
     <managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
     <webMaster>{{ site.email }} ({{ site.author }})</webMaster>
-    <pubDate>{{ site.buildTime | dateFeed }}</pubDate>
-    <lastBuildDate>{{ site.buildTime | dateFeed }}</lastBuildDate>
+    <pubDate>{{ site.data | dateFeed }}</pubDate>
+    <lastBuildDate>{{ site.date | dateFeed }}</lastBuildDate>
     <generator>Eleventy</generator>
     {% for post in collections.posts | limit(48) %}
       <item>
