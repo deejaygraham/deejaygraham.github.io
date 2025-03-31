@@ -1,11 +1,11 @@
 import test from "ava";
-import { dateRFC822, dateFormat, dateFull, dateISO, dateYear } from "./dates.js";
+import { dateRFC2822, dateFormat, dateFull, dateISO, dateYear } from "./dates.js";
 
 const exampleDate = new Date(2025, 5, 19);
 
 // dateRFC822
 test("RFC 822 format displayed correctly", (t) => {
-  t.is(dateRFC822(exampleDate), "");
+  t.is(dateRFC2822(exampleDate), "");
 });
 
 // dateFormat
