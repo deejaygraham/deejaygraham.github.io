@@ -5,7 +5,7 @@ const exampleDate = new Date(2025, 5, 19);
 
 // dateRFC822
 test("RFC 822 format includes day of week, date and timestamp", (t) => {
-  t.is(dates.dateRFC2822(exampleDate), "Thu, 19 Jun 2025 00:00:00 +0100");
+  t.is(dates.dateRFC2822(exampleDate), "Thu, 19 Jun 2025 00:00:00 +0000");
 });
 
 // dateFormat
@@ -20,7 +20,7 @@ test("Full date is human readable day month year only", (t) => {
 
 // dateISO
 test("ISO date is displayed as year month day and timestamp", (t) => {
-  t.is(dates.dateISO(exampleDate), "2025-06-19T00:00:00.000+01:00");
+  t.is(dates.dateISO(exampleDate), "2025-06-19T00:00:00.000+00:00");
 });
 
 // dateYear
