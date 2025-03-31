@@ -3,12 +3,12 @@ import { DateTime } from "luxon";
 // thanks to jerome coupe
 
 /**
- * Format date: Feeds need RFC-822 date-time format
+ * Format date: Feeds need RFC-2822 date-time format
  *
  * @param {Date} date - JS date
  * @returns {String} - formatted date
  */
-function dateRFC822(date) {
+function dateRFC2822(date) {
   const jsDate = new Date(date);
   const dt = DateTime.fromJSDate(jsDate);
   return dt.toRFC2822();
