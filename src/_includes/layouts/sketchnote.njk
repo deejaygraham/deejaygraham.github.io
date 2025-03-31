@@ -5,39 +5,32 @@
 {{ content | safe }}
 
 <section class="sketchnote">
+    <table class="table">
+        <thead>
+            <tr>
+        {% if sketchnote.source %}<th>Source</th>{% endif %} 
+        {% if sketchnote.speaker %}<th>About the Speaker</th>{% endif %}
+        {% if sketchnote.event %}<th>About the Event</th>{% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+     {% if sketchnote.source %}<td>{% if sketchnote.source.url %}<a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a>
+        {% else %}{{ sketchnote.source.name }}{% endif %}</td>
+    {% endif %}
+    {% if sketchnote.speaker %}<td>{% if sketchnote.speaker.url %}<a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a>
+        {% else %}{{ sketchnote.speaker.name }}{% endif %}</td>
+    {% endif %}
+    {% if sketchnote.event %}<td>{% if sketchnote.event.url %}<a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a>
+    {% else %}{{ sketchnote.event.name }}{% endif %}</td>
+    {% endif %}
+            </tr>
+        </tbody>
+    </table>
     <figure class="image">
         <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
     </figure>
 </section>
-
-<aside class="mt-6">
-    {% if sketchnote.source %}
-        <h4>Source</h4>
-        {% if sketchnote.source.url %}
-        <p><a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a></p>
-        {% else %}
-        <p>{{ sketchnote.source.name }}</p>
-        {% endif %}
-    {% endif %}
-            
-    {% if sketchnote.speaker %}
-        <h4>About the Speaker</h4>
-        {% if sketchnote.speaker.url %}
-        <p><a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a></p>
-        {% else %}
-        <p>{{ sketchnote.speaker.name }}</p>
-        {% endif %}
-    {% endif %}
-                    
-    {% if sketchnote.event %}
-        <h4>About the Event</h4>
-        {% if sketchnote.event.url %}
-        <p><a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a></p>
-        {% else %}
-        <p>{{ sketchnote.event.name }}</p>
-        {% endif %}
-    {% endif %}
-</aside>
 
 {% include "partials/ccboilerplate.njk" %}
 
