@@ -2,21 +2,21 @@
 <div class="column is-4">
   <div class="card large is-shadowless">	
   	<div class="card-content">
-      <h2 class="title is-4"><a href="{{ url }}">{{ title }}</a></h2>
+      <h2 class="title"><a href="{{ url }}">{{ title }}</a></h2>
       {% if subtitle %}
-      <p class="subtitle is-6">{{ subtitle }}</p>
+      <p class="subtitle">{{ subtitle }}</p>
       {% endif %}
       {%- if date -%}
-      <p class="subtitle is-6"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
+      <p class="subtitle"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
       {%- endif -%}
-    </div>
-    {% if tags %}
-    <div class="is-pulled-right">
-    {%- for tag in tags -%}
-      <a href="/tags/{{tag}}">#{{ tag }}</a>
-      {% if not loop.last %} | {% endif %}
-    {%- endfor -%}
-    </div>
+      {% if tags %}
+      <p class="is-pulled-right">
+      {%- for tag in tags -%}
+        <a href="/tags/{{tag}}">#{{ tag }}</a>
+        {% if not loop.last %} | {% endif %}
+      {%- endfor -%}
+      </p>
     {% endif %}
+    </div>
   </div>
 </div>  
