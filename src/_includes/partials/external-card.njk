@@ -1,6 +1,6 @@
 {# Requires a global variable to be set called item with url, thumbnail, title, (optional) subtitle #}
 <div class="column is-4">
-  <article class="card large is-shadowless">
+  <div class="card large is-shadowless">
     <div class="card-image">
 				<figure class="image">
 					<a href="{{ item.url }}" target="_blank" rel="noreferrer">
@@ -14,5 +14,5 @@
         <p class="subtitle is-6">{{ item.subtitle }}</p>
         {% endif %}
     </div>
-  </article>
+  </div>
 </div>  
