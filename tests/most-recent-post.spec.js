@@ -36,7 +36,7 @@ test("check all links on most recent page", async ({ page }) => {
     console.log(request.url() + ' ' + request.failure().errorText);
   });
     
-  // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.tsawait page.goto(goToUrl)
+  // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
   const spiderPage = await page.goto('/spider.json');
   const siteUrlsAsJson = await spiderPage.text();
   
@@ -65,4 +65,10 @@ test("check all links on most recent page", async ({ page }) => {
         });
     }
    }
+
+  // check that the social image url is valid
+  const metaOgImage = page.locator('meta[name="og:image"]');
+  await expect(metaOgImage).toHaveAttribute('content');
+
+  // get value and validate it exists...
 });
