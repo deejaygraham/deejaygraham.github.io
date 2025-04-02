@@ -85,7 +85,7 @@ def generate_text(model, phrase_size, min_length):
 In line with the radio announcer idea, I thought a small but foreboding text might work well so landed on some text taken from a wikipedia article on 
 [sandia warning messages](https://en.wikipedia.org/wiki/Long-term_nuclear_waste_warning_messages)
 
-```
+```python
 
 # ^ code included from above ^
 
