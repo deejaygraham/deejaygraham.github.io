@@ -24,3 +24,5 @@ test.describe('run accessibility tests', { tag: '@a11y' }, () => {
     expect(accessibilityScanResults.violations).toEqual([]);
    });
   }
+ });
+});
