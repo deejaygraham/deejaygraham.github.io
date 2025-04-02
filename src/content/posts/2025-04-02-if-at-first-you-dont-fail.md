@@ -84,7 +84,8 @@ ought to have been an obvious defect.
 ## How to Fail
 
 There are a couple of strategies to force a test failure so that you can be sure, or at least increase your chances, that you are testing 
-the right thing.
+the right thing. These strategies are based on making *temporary changes* to the code in order to highlight the test is indeed testing the 
+code you think it is and not accidentally passing because of some other factor we have forgotten or overlooked.
 
 ### Change the Test
 
@@ -100,4 +101,6 @@ the right thing.
 ## Disclaimer
 
 None of the code above is actually production code obviously but demonstrates the problem. This is based on a real-life issue I reviewed 
-recently but with more involved code and test setup which only served to hide the issue hence this stripped back version.
+recently but with more involved code and test setup which only served to hide the issue hence this stripped back version. Writing this post 
+has called to mind the <a href="2021-02-05-testing-the-code-does-what-the-code-does.md">sketchnote I did</a> from 
+the [talk Sam Hogarth gave](https://www.youtube.com/watch?v=hdKGlgk-34g) at NE RPC.
