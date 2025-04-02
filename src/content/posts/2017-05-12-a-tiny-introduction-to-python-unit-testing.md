@@ -36,7 +36,7 @@ and your unit test will be failing for the wrong reason.
 
 ### Code
 
-```
+```python
 
 import unittest
 
