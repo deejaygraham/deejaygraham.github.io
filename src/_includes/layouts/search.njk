@@ -5,10 +5,11 @@
 <h1 class="title is-1">{{ title }} </h1>
 
 <!-- Search form -->
-<form class="my-6">
+<form class="my-6" role="search" aria-label="Blog post search">
 	<div class="field">
+		<label for="search-box" class="label">keywords</label>
 		<div class="control">
-			<input type="text" id="search-box" class="input search-box" name="query" placeholder="search">
+			<input type="text" id="search-box" class="input search-box" name="query" placeholder="search for posts" spellcheck="false" >
 		</div>
 	</div>
 </form>
