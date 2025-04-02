@@ -48,6 +48,11 @@ test("check all links on most recent page", async ({ page }) => {
   await page.goto(url);
     
   const imagesOnThisPage = await getAllImagesOnPage(page);
+
+  const metaOgImage = page.locator('meta[name="og:image"]');
+  const ogImageUrl = await metaOgImage.getAttribute('content');
+  images.add(ogImageUrl);
+    
   const linksOnThisPage = await getAllLinksFromPage(page);
 
   for (const url of imagesOnThisPage) {
@@ -65,10 +70,4 @@ test("check all links on most recent page", async ({ page }) => {
         });
     }
    }
-
-  // check that the social image url is valid
-  const metaOgImage = page.locator('meta[name="og:image"]');
-  await expect(metaOgImage).toHaveAttribute('content');
-
-  // get value and validate it exists...
 });
