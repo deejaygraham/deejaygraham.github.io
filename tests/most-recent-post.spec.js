@@ -1,5 +1,5 @@
 // @ts-check
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 const validLink = (link) => {
     const internalLinksRegex = /deejaygraham.github.io/;
