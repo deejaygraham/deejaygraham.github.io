@@ -4,8 +4,9 @@ title: Keep Alive
 tags: [python]
 ---
 
-A horrible, non-green-energy hack script to keep a win32 machine alive and keep the screensaver or hibernator at bay. This might be for several reasons but for me, this was to allow me to keep a long running
-network test going without the OS intervening when it thinks there is no human sitting in front of it. The test took a number of hours to gather data so this was the hackiest, simplest way I could come up with. 
+Not an incorrect reference to the Hamilton musical but a horrible, non-green-energy hack script to keep a win32 machine alive and keep the screensaver or hibernator at bay. 
+This might be for several reasons but for me, this was to allow me to keep a long running network test going without the OS intervening when it thinks there is no human sitting in 
+front of it. The test took a number of hours to gather data so this was the hackiest, simplest way I could come up with. 
 
 
 ## Code
