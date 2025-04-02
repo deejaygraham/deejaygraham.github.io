@@ -33,7 +33,8 @@ export default function(eleventyConfig, options) {
 
     eleventyConfig.addAsyncShortcode("GenerateSocialImage", async(imageName, title, postDate) => {
         if (!title) return '';
-	    
+
+	console.log(`[eleventy-plugin-geb-social-image] INFO Eleventy plugin generating social image: {imageName}`);
         return await generateSocialImage(
 			imageName,	
 			title,		
