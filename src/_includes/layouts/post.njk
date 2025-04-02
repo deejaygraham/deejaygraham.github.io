@@ -29,6 +29,8 @@
 
 {# Related Content #}
 {% if tags %}
+  <hr />
+
   {% set relatedTag = tags | randomItem %}
   {% if collections[relatedTag].length > 1 %}
   {% set related = collections[relatedTag] | reverse | excludePost(page) | limit(6) %}
