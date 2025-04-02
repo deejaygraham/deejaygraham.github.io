@@ -3,40 +3,24 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright'; 
 
 test.describe('run accessibility tests', { tag: '@a11y' }, () => {
- test('homepage has no accessibility problems', async ({ page }) => {
-    await checkPageForAccessibility(page, '/');
-  });
-
-  // quote page
-
+ test('Pages have no accessibility problems', async ({ page }) => {
+   const urls = [
+    '/',
+    '/search/',
+    '/tags/',
+    '/projects/',
+    '/talks/',
+    '/about/',
+   ];
+  // quote example page
   // code example page
-
-  // sketchnote page
-
- test('search page has no accessibility problems', async ({ page }) => {
-    await checkPageForAccessibility(page, '/search/');
-  });
- 
- test('tags page has no accessibility problems', async ({ page }) => {
-    await checkPageForAccessibility(page, '/tags/');
-  });
- 
- test('projects page has no accessibility problems', async ({ page }) => {
-    await checkPageForAccessibility(page, '/projects/');
-  });
- 
- test('speaking page has no accessibility problems', async ({ page }) => {
-    await checkPageForAccessibility(page, '/talks/');
-  });
- 
-  test('about has no accessibility problems', async ({ page }) => {
-    await checkPageForAccessibility(page, '/about/');
-  });
-});
-
-const checkPageForAccessibility = async (page, url) => {
-  await page.goto(url);
- 
-  const accessibilityScanResults = await new AxeBuilder({ page }).analyze(); 
-  expect(accessibilityScanResults.violations).toEqual([]);
-}
+  // sketchnote example page
+  
+  for (const url of urls) {
+   await test.step(`Checking page: ${url}`, async () => {
+    await page.goto(url);
+    
+    const accessibilityScanResults = await new AxeBuilder({ page }).analyze(); 
+    expect(accessibilityScanResults.violations).toEqual([]);
+   });
+  }
