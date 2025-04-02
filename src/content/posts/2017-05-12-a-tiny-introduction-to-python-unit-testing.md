@@ -44,18 +44,15 @@ import unittest
 
 class TestMyCode(unittest.TestCase):
 
-def test_jimi_hendrix_lyrics(self):
+    def test_jimi_hendrix_lyrics(self):
+        self.assertNotEqual(6, 9)
+        self.assertEqual(6, 9)
 
-    self.assertNotEqual(6, 9)
-    self.assertEqual(6, 9)
+    def test_black_is_white(self):
+        self.assertTrue('black' == 'white')
 
-def test_black_is_white(self):
-
-    self.assertTrue('black' == 'white')
-
-def test_up_is_down(self):
-
-    self.assertFalse('up' != 'down')
+    def test_up_is_down(self):
+        self.assertFalse('up' != 'down')
 
 ```
 
