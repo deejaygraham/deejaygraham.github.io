@@ -48,3 +48,6 @@ if __name__ == "__main__":
     keep_alive()
 
 ```
+
+This could be adapted to work on linux or macos fairly easily but, as I said, this was just for me to run on one machine so I've not investigated the system calls for keyboard, system etc. that might 
+need the code to handle that variation.
