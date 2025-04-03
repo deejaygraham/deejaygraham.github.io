@@ -31,9 +31,11 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
   const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
   const svgDate = `<text x="${start_x}" y="50" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
 
+  //  <g style="font-family: 'Consolas', 'Courier New'" >
+
   const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewbox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
   	<rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${bgColour}" />
-    	<g style="font-family:'Consolas', 'Courier New'">
+    	<g style="font-family:'sans-serif'">
       ${postDate ? svgDate : ''}
   		${svgTitle}
       ${svgSite}

@@ -1,5 +1,5 @@
 ---
-title: If At First You Dont Fail
+title: If At First You Don't Fail
 tags: [tdd, code, python]
 ---
 

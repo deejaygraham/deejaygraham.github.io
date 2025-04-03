@@ -23,7 +23,7 @@
 {%- if page.date %}
 {%- set postDate %}{{ page.date | dateFull }}{% endset %}
 {%- endif -%}
-{%- set socialImageName %}{{ title | slug }}{% endset %}
+{%- set socialImageName %}{{ page.fileSlug }}{% endset %}
 {%- set socialImageUrl %}{{ site.url }}/img/previews/{{ socialImageName  }}{% endset %}
     <meta property="og:image" content="{{ site.url }}/img/previews/{% GenerateSocialImage socialImageName, postTitle, postDate %}" >
     <meta property="og:image:width" content="1200" >
