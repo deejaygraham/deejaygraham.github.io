@@ -1,5 +1,5 @@
 ---
-title: I'm in the Sketchnote Workbook!
+title: I am in the Sketchnote Workbook!
 tags: [sketchnotes, books]
 thumbnail: "/img/thumbnails/notebook-420x255.webp"
 

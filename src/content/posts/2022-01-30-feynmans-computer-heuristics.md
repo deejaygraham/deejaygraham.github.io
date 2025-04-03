@@ -1,5 +1,5 @@
 ---
-title: Feynman's Computer Heuristics
+title: Feynmans Computer Heuristics
 tags: [video, presentations]
 thumbnail: /img/posts/feynmans-computer-heuristics/thumbnail-420x255.webp
 alttext: Richard Feynman

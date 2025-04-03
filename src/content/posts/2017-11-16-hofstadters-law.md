@@ -1,6 +1,6 @@
 ---
 layout: quotation
-title: Hofstadter's Law
+title: Hofstadters Law
 tags: [agile, quote]
 attribution: Douglas Hofstadter
 size: large
