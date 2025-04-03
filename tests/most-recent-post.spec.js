@@ -1,9 +1,14 @@
 // @ts-check
 import { test } from '@playwright/test';
+import checkResourceExists from './util/check-resource-exists.js';
 
 const validLink = (link) => {
     const internalLinksRegex = /deejaygraham.github.io/;
-    return link && !link?.startsWith("mailto:") && !link?.startsWith("#") && (link.startsWith('http') && link.match(internalLinksRegex));
+    return link 
+    && !link?.startsWith("mailto:") 
+    && !link?.startsWith("#") 
+    && (link.startsWith('http') 
+    && link.match(internalLinksRegex));
 }
 
 const getAllLinksFromPage = async (page) => {
@@ -26,8 +31,16 @@ const getAllImagesOnPage = async (page) => {
     const allImageSrcLinks = await Promise.all(
         images.map((img) => img.getAttribute("src"))
     );
-
+    console.log(images);
     return allImageSrcLinks;
+}
+
+const getMetaTag = (page, name) => {
+  return page.locator(`head > meta[name="${name}"]`);
+}
+
+const getOgMetaTag = (page, name) => {
+  return page.locator(`head > meta[property="og:${name}"]`);
 }
 
 test("check all links on most recent page", async ({ page }) => {
@@ -47,18 +60,18 @@ test("check all links on most recent page", async ({ page }) => {
 
   await page.goto(url);
     
-  const imagesOnThisPage = await getAllImagesOnPage(page);
+  let imagesOnThisPage = await getAllImagesOnPage(page);
 
-  const metaOgImage = page.locator('meta[name="og:image"]');
+  const metaOgImage = getOgMetaTag(page, "image");
   const ogImageUrl = await metaOgImage.getAttribute('content');
-  imagesOnThisPage.add(ogImageUrl);
+  imagesOnThisPage = [...imagesOnThisPage, ogImageUrl];
     
   const linksOnThisPage = await getAllLinksFromPage(page);
 
   for (const url of imagesOnThisPage) {
     if (url) {
         await test.step(`Checking image: ${url}`, async () => {
-          await page.goto(url);
+          await checkResourceExists(page, url);
     });
     }
   }
@@ -66,7 +79,10 @@ test("check all links on most recent page", async ({ page }) => {
   for (const url of linksOnThisPage) {
     if (url) {
         await test.step(`Checking link: ${url}`, async () => {
-            await page.goto(url);
+            const response = await page.goto(url);
+            await expect(response?.status()).toBe(200);
+            // make sure the title of this page is not "Erm....
+            await expect(page).not.toHaveTitle(/blog is missing/)
         });
     }
    }
