@@ -1,5 +1,5 @@
 // @ts-check
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import checkResourceExists from './util/check-resource-exists.js';
 
 const validLink = (link) => {
@@ -35,9 +35,11 @@ const getAllImagesOnPage = async (page) => {
     return allImageSrcLinks;
 }
 
+/*
 const getMetaTag = (page, name) => {
   return page.locator(`head > meta[name="${name}"]`);
 }
+*/
 
 const getOgMetaTag = (page, name) => {
   return page.locator(`head > meta[property="og:${name}"]`);
