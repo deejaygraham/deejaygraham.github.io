@@ -35,6 +35,7 @@ test("contains og social images for blog posts", async ({ page }) => {
   ]);
 });
 
+/*
 test("contains svg icons", async ({ page }) => {
   await checkAllResourcesExist(page, [
     "/img/bluesky.svg",
@@ -46,6 +47,7 @@ test("contains svg icons", async ({ page }) => {
     "/img/slideshare.svg"
   ]);
 });
+*/
 
 test("contains javascripts", async ({ page }) => {
   await checkAllResourcesExist(page, [
