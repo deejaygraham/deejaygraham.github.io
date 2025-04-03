@@ -31,7 +31,7 @@ const getAllImagesOnPage = async (page) => {
     const allImageSrcLinks = await Promise.all(
         images.map((img) => img.getAttribute("src"))
     );
-    console.log(images);
+  
     return allImageSrcLinks;
 }
 
