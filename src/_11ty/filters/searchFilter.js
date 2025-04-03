@@ -12,6 +12,11 @@ async function searchFilter(collection) {
   for (const page of collection) {
     let excerpt = " ";
 
+    if (page.data.excludeFromSitemap) {
+      // exclude this page from search
+      continue;
+    }
+
     const frontMatter = await page.template.read();
 
     if (page.rawInput) {
