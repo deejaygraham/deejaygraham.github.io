@@ -1,5 +1,5 @@
 // @ts-check
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 
 const validLink = (link) => {
     const internalLinksRegex = /deejaygraham.github.io/;
@@ -51,7 +51,7 @@ test("check all links on most recent page", async ({ page }) => {
 
   const metaOgImage = page.locator('meta[name="og:image"]');
   const ogImageUrl = await metaOgImage.getAttribute('content');
-  images.add(ogImageUrl);
+  imagesOnThisPage.add(ogImageUrl);
     
   const linksOnThisPage = await getAllLinksFromPage(page);
 
