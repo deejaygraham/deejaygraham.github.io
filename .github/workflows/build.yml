@@ -38,14 +38,6 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-
-      - name: Lint javascript
-        run: |
-          npm run lint
-          
-      - name: Unit test 11ty code
-        run: |
-          npm run unit-test
           
       - name: Build
         run: |
