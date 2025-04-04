@@ -3,6 +3,8 @@ on:
   workflow_run:
     workflows: ['Deploy']
     types: [completed]
+  
+  workflow_dispatch:
 
 jobs:
   test:
