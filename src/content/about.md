@@ -57,4 +57,5 @@ fall into technical debt. No monads were harmed in the making of this blog.
 -----
 
 [![Site Build Status](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/build.yml)
+[![Playwright Tests](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/playwright-test.yml/badge.svg)](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/playwright-test.yml)
 [![A11y Tests](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/a11y-test.yml/badge.svg)](https://github.com/deejaygraham/deejaygraham.github.io/actions/workflows/a11y-test.yml)
