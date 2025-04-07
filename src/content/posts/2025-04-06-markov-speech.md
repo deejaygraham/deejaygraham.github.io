@@ -3,7 +3,7 @@ title: Markov Speech
 tags: [code, python]
 ---
 
-A <a href="2025-03-22-2025-03-22-microbit-markov-text.md">recent post</a> generating psuedo-random text for the microbit 
+A <a href="2025-03-22-microbit-markov-text.md">recent post</a> generating psuedo-random text for the microbit 
 had me wondering about using something like it on a bigger machine. I've not played with text to speech outside of the 
 microbit ecosystem since studing for my CS degree. 
 
