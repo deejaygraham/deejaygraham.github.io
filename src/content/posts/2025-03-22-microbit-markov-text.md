@@ -22,26 +22,38 @@ at points in the process.
 ### markov.py
 
 ```python
-from microbit import *
 import random
-import speech
 
-def build_model(source, phrase_size):
+def clean_source(source):
     '''
-    Given a corpus and a phrase size, build a Markov chain.
+        Return a list of words with some punctuation removed
     '''
-    # split by space or punctuation
-    text = source.replace('.', ' ').replace(',', ' ').replace('!', ' ').replace('?', ' ')
+    text = (
+        source.replace(".", "")
+        .replace(",", "")
+        .replace("!", "")
+        .replace("?", "")
+        .replace("'", "")
+    )
     split_text = text.split()
     # remove blank words
     words = [word.lower() for word in split_text if word]
-    # dictionary of phrases -> [ next word alternatives ]
+    return words
+    
+def build_model(source, ngram_size):
+    '''
+        Build a markov model from a source text.
+        Model is a dictionary of words/phrases -> list of potential next words
+    '''
+    words = clean_source(source)
+
     model = {}
 
-    for i in range(phrase_size, len(words)):
+    for i in range(ngram_size, len(words)):
         word = words[i]
-        # which n words (n = phrase_size) immediately precede this word in the model?
-        preceding_phrase = ' '.join(words[i-phrase_size:i])
+        # which n words (n = ngram_size) immediately precede
+        # this word in the model?
+        preceding_phrase = " ".join(words[i - ngram_size : i])
         # have we seen this combination before?
         if preceding_phrase in model:
             model[preceding_phrase].append(word)
@@ -50,20 +62,18 @@ def build_model(source, phrase_size):
 
     return model
 
-def generate_text(model, phrase_size, min_length):
-    '''
-    Consume a Markov chain model (make sure to specify the <phrase_size> used)
-    to generate text that is at least <min_length> size long.
-    '''
+
+def generate_text(model, ngram_size, min_length):
     def get_new_starter():
-        return random.choice([s.split(' ') for s in model.keys()])
+        return random.choice([s.split(" ") for s in model.keys()])
 
     text = get_new_starter()
 
-    i = phrase_size
+    i = ngram_size
     while True:
         # pick the phrase ending the current sentence
-        phrase = ' '.join(text[i-phrase_size:i])
+        phrase = " ".join(text[i - ngram_size : i])
+
         if phrase not in model:
             text += get_new_starter()
             i += 1
@@ -77,7 +87,28 @@ def generate_text(model, phrase_size, min_length):
         if i > min_length: 
             break
 
-    return ' '.join(text)
+    return " ".join(text)
+```
+
+### generator.py
+
+Handling text generation becomes a little easier if we wrap the intialisation in a class.
+
+```python
+
+class MarkovGenerator:
+    
+    def __init__(self, text):
+        self.source = text        
+        self.phrase_size = 1
+        self.model = build_model(self.source, self.phrase_size)
+        
+    def generate(self, length = 0):
+        
+        if length == 0:
+            length = random.randint(5, 30)
+        return generate_text(self.model, self.phrase_size, length)
+
 ```
 
 ### sandia.py
@@ -86,6 +117,8 @@ In line with the radio announcer idea, I thought a small but foreboding text mig
 [sandia warning messages](https://en.wikipedia.org/wiki/Long-term_nuclear_waste_warning_messages)
 
 ```python
+from microbit import *
+import speech
 
 # ^ code included from above ^
 
@@ -99,11 +132,11 @@ The danger is to the body, and it can kill. \
 The form of the danger is an emanation of energy. \
 The danger is unleashed only if you substantially disturb this place physically. This place is best shunned and left uninhabited. "
 
-phrase_size = 1
-model = build_model(sandia_messages, phrase_size)
+markov = MarkovGenerator(sandia_messages)
 
-for i in range(10):
-    length = 20
-    text = generate_text(model, phrase_size, length)
+# babble on forever
+while True:
+    text = markov.generate()
     speech.say(text)
+
 ```
