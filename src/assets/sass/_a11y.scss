@@ -1,5 +1,8 @@
 a[href] {
-	text-decoration: underline;
+    color: var(--bulma-title-color);
+    &:hover {
+  	text-decoration-style: dotted;
+    }
 }
 
 /* Jump to main content link - styling from: https://a11y-101.com/development/skip-link */
