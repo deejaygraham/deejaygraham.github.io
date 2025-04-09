@@ -24,7 +24,7 @@ to pretend "encrypt" it.
 
 internal class Obfuscator
 {
-private readonly Encoding \_encoding = System.Text.Encoding.UTF8;
+    private readonly Encoding \_encoding = System.Text.Encoding.UTF8;
 
     public string Obfuscate(string plainTextJson, bool encode = false)
     {
@@ -156,20 +156,20 @@ encoding not just ascii text.
 - Any exception thrown will return the original text.
 - @param {text} json content
   \*/
-  export const decodeScript = (text) => {
+export const decodeScript = (text) => {
 
-if (text.includes('{')) return text;
+    if (text.includes('{')) return text;
 
-try {
+    try {
 
-    const binaryString = atob(text);
-    const bytes = Uint8Array.from(binaryString, (m) => m.codePointAt(0));
+        const binaryString = atob(text);
+        const bytes = Uint8Array.from(binaryString, (m) => m.codePointAt(0));
 
-    return new TextDecoder().decode(bytes);
+        return new TextDecoder().decode(bytes);
 
-} catch(e) {
-return text;
-}
+    } catch(e) {
+        return text;
+    }
 }
 
 ```
@@ -186,20 +186,20 @@ Object.assign(global, { TextDecoder });
 
 describe('Protected Content', () => {
 
-const plainTextScript = '{"version":"1.5","todo":"alert(\'hello world\')"}';
-const utf8EncodedScript = 'eyJ2ZXJzaW9uIjoiMS41IiwidG9kbyI6ImFsZXJ0KCdoZWxsbyB3b3JsZCcpIn0=';
+    const plainTextScript = '{"version":"1.5","todo":"alert(\'hello world\')"}';
+    const utf8EncodedScript = 'eyJ2ZXJzaW9uIjoiMS41IiwidG9kbyI6ImFsZXJ0KCdoZWxsbyB3b3JsZCcpIn0=';
 
-it('Empty text content is unchanged.', () => {
-expect(decodeScript('')).toBe('');
-});
+    it('Empty text content is unchanged.', () => {
+        expect(decodeScript('')).toBe('');
+    });
 
-it('Plain text json content is unchanged.', () => {
-expect(decodeScript(plainTextScript)).toBe(plainTextScript);
-});
+    it('Plain text json content is unchanged.', () => {
+        expect(decodeScript(plainTextScript)).toBe(plainTextScript);
+    });
 
-it('Encoded UTF8 text is decoded.', () => {
-expect(decodeScript(utf8EncodedScript)).toBe(plainTextScript);
-});
+    it('Encoded UTF8 text is decoded.', () => {
+        expect(decodeScript(utf8EncodedScript)).toBe(plainTextScript);
+    });
 });
 
 ```
@@ -214,8 +214,8 @@ Started with an interface to apply a modification to the text and also, if possi
 
 interface IModifyJson
 {
-string Do(string s);
-string Undo(string s);
+    string Do(string s);
+    string Undo(string s);
 }
 
 ```
@@ -227,11 +227,11 @@ a bit simpler and pushes the implementation of each step into a separate class.
 
 internal class Obfuscator
 {
-private List<IModifyJson> \_process = new List<IModifyJson>
-{
-new TextMinifier(),
-new Base64Encoder()
-};
+    private List<IModifyJson> _process = new List<IModifyJson>
+    {
+        new TextMinifier(),
+        new Base64Encoder()
+    };
 
     public string Obfuscate(string plainTextJson)
     {
@@ -256,7 +256,6 @@ new Base64Encoder()
 
         return undone;
     }
-
 }
 
 ```
@@ -268,11 +267,11 @@ effectively a no-op.
 
 class TextMinifier : IModifyJson
 {
-public string Undo(string s)
-{
-// can't be undone usefully
-return s;
-}
+    public string Undo(string s)
+    {
+        // can't be undone usefully
+        return s;
+    }
 
     public string Do(string s)
     {
@@ -281,7 +280,6 @@ return s;
         var obj = JsonConvert.DeserializeObject(s);
         return JsonConvert.SerializeObject(obj, Formatting.None);
     }
-
 }
 
 ```
@@ -292,7 +290,7 @@ And in a similar way, the encoding is nice and self contained
 
 class Base64Encoder : IModifyJson
 {
-private readonly Encoding \_encoding = System.Text.Encoding.UTF8;
+    private readonly Encoding _encoding = System.Text.Encoding.UTF8;
 
     public string Undo(string s)
     {
@@ -306,7 +304,6 @@ private readonly Encoding \_encoding = System.Text.Encoding.UTF8;
     {
         return Convert.ToBase64String(_encoding.GetBytes(s));
     }
-
 }
 
 ```
