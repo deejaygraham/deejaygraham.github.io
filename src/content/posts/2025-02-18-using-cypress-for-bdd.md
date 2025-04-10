@@ -36,12 +36,10 @@ So the package.json should look something like this...
   "scripts": {
     "test": "npx cypress run"
   },
-  "devDependencies": {
-    "cypress": "^14.0.3",
-  },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^14.3.0",
   }
 }
 
