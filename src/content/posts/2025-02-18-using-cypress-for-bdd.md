@@ -91,7 +91,7 @@ At this point, if you have pre-written cucumber scripts, you may have a lot of f
 
 Let's walk through a simple example.
 
-#### google.feature
+#### cypress/e2e/features/google.feature
 
 ```javascript
 
