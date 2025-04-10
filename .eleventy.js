@@ -21,8 +21,7 @@ import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 import poison from "./src/_11ty/shortcodes/poison-ai.js";
 
 // plugins
-import syntaxHighlighter from "@11ty/eleventy-plugin-syntaxhighlight";
-// import syntaxHighlighter from "./src/_11ty/plugins/shiki-syntax-highlighter/index.js";
+import syntaxHighlighter from "./src/_11ty/plugins/shiki-syntax-highlighter/index.js";
 import socialImages from "./src/_11ty/plugins/generate-social-images/index.js";
 import favicons from "eleventy-plugin-gen-favicons";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
@@ -35,23 +34,11 @@ export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
   // plugins
-  eleventyConfig.addPlugin(syntaxHighlighter);
-  /* eleventyConfig.addPlugin(syntaxHighlighter, , 
+  eleventyConfig.addPlugin(syntaxHighlighter, 
     { 
       theme: "vitesse-dark",
-      langs: [
-        'cpp',
-        'csharp',
-        'js',
-        'json',
-	'powershell',
-	'python',
-	'ruby',
-        'sql',
-        'xml',
-        ],
     });
-    */		   
+    		   
   eleventyConfig.addPlugin(socialImages, 
     { 
       siteName: 'd.j. graham' 
