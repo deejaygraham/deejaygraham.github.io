@@ -9,10 +9,14 @@ export default function(eleventyConfig, options) {
   eleventyConfig.on('eleventy.before', async () => {
     const highlighter = await createHighlighter(options);
     
-    eleventyConfig.amendLibrary('md', (mdLib) =>
-      mdLib.set({
-        highlight: (code, lang) => highlighter.codeToHtml(code, { lang }),
-      })
-    );
+    eleventyConfig.amendLibrary('md', (library) => {
+      library.set({
+        highlight: (code, language) => {
+          return highlighter.codeToHtml(code, { 
+              lang: language,
+              theme: options.theme
+            });
+      });
+    });
   });
 };
