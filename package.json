@@ -19,7 +19,8 @@
     "elasticlunr": "^0.9.5",
     "playwright": "^1.50.1",
     "prettier": "^3.2.5",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "shiki": "^3.2.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
