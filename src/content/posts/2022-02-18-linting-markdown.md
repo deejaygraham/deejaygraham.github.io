@@ -16,33 +16,33 @@ This lead me to finding a tool to run against all my pages to make sure that the
 stray html markup where I don't want it. The tool is a package called [markdownlint](https://github.com/DavidAnson/markdownlint)
 which I run as a script from npm using markdownlint-cli.
 
-```javascripton
+```json
 {
-"scripts": {
-"lint": "markdownlint --config .markdownlint.json content/DOC\*.md"
-},
+    "scripts": {
+        "lint": "markdownlint --config .markdownlint.json content/DOC\*.md"
+    },
 }
 ```
 
 It works very much like other lint varieties in other languages but I found it very useful to (as the command line allows) use
 a config file to turn on and off issues while I make gradual improvements to the docs.
 
-```javascripton
+```json
 {
-"no-trailing-spaces": false,
-"no-hard-tabs": false,
-"line-length": {
-"line_length": 100
-},
-"no-inline-html": {
-"allowed_elements": [
-"a",
-"p",
-"h4",
-"caption"
-]
-},
-"no-multiple-blanks": false
+    "no-trailing-spaces": false,
+    "no-hard-tabs": false,
+    "line-length": {
+        "line_length": 100
+    },
+    "no-inline-html": {
+        "allowed_elements": [
+            "a",
+            "p",
+            "h4",
+            "caption"   
+        ]
+    },
+    "no-multiple-blanks": false
 }
 ```
 
