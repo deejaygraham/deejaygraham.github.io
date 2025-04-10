@@ -1,6 +1,6 @@
 /* eslint-disable-next-line */
 const addCopyButtonToSourceCode = () => {
-  const snippets = document.querySelectorAll('pre[class*="language"]');
+  const snippets = document.querySelectorAll('pre[class*="shiki"]');
   const buttonClasses = [
     'button',
     'is-pulled-right',
