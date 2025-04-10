@@ -7,10 +7,7 @@ export default function(eleventyConfig, options) {
   eleventyConfig.amendLibrary('md', () => {});
 
   eleventyConfig.on('eleventy.before', async () => {
-    const highlighter = await createHighlighter({
-      themes: ['nord'],
-      langs: ['javascript'],
-    });
+    const highlighter = await createHighlighter(options);
     
     eleventyConfig.amendLibrary('md', (mdLib) =>
       mdLib.set({
