@@ -6,7 +6,8 @@ tags: [cypress, javascript, code]
 We've been using [bdd](https://dannorth.net/introducing-bdd/) for a while for some web automation projects but 
 mainly using C# and SpecFlow to process the Feature/Scenario files into runnable NUnit tests. Given that I have also 
 been using Playwright and [Cypress](https://cypress.io) for automation testing outside of bdd, it seems natural to bring 
-those two worlds together and run the bdd scripts, unchanged, as cypress automation scripts 
+those two worlds together and [run the bdd scripts](https://docs.cypress.io/app/faq#Can-I-use-Cucumber-to-write-tests), 
+unchanged, as cypress automation scripts 
 
 ## Pre-processing
 
