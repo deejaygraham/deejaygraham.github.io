@@ -32,6 +32,7 @@ So the package.json should look something like this...
 
 ```json
 {
+  "type": "module",
   "scripts": {
     "test": "npx cypress run"
   },
