@@ -91,19 +91,35 @@ At this point, if you have pre-written cucumber scripts, you may have a lot of f
 
 Let's walk through a simple example.
 
-#### cypress/e2e/features/google.feature
+#### cypress/e2e/features/duckduckgo.feature
 
 ```javascript
 
-Feature: Search
-  Scenario: Looking for anything on the web
-    Given I go to the google homepage
-    When I type Cypress
-    Then the cypress homepage should be included in the list of links
-
+Feature: duckduckgo.com
+  Scenario: visiting the frontpage
+    When I visit duckduckgo.com
+    Then I should see a search bar
 ```
 
 One thing to be careful of is the way that step definitions and features are resolved. See the 
 [documentation](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/step-definitions.md) for 
 details which are not intuitive compared to some other frameworks.
+
+### cypress/support/step_definitions/duckduckgo.cy.js
+
+```javascript
+import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
+
+When("I visit duckduckgo.com", () => {
+  cy.visit("https://www.duckduckgo.com");
+});
+
+Then("I should see a search bar", () => {
+  cy.get("input").should(
+    "have.attr",
+    "placeholder",
+    "Search without being tracked"
+  );
+});
+```
 
