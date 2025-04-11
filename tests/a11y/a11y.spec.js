@@ -11,10 +11,10 @@ test.describe('run accessibility tests', { tag: '@a11y' }, () => {
     '/projects/',
     '/talks/',
     '/about/',
+    '/2025/03/25/efficiency/', #  quote example
+    '/2025/04/11/microbit-haiku/', # code example
+    '/2025/03/15/hexagonal-rails/', # sketchnote example
    ];
-  // quote example page
-  // code example page
-  // sketchnote example page
   
   for (const url of urls) {
    await test.step(`Checking page: ${url}`, async () => {
