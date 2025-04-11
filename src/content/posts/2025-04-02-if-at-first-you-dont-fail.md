@@ -86,7 +86,7 @@ ought to have been an obvious defect.
 Of course, there are any number of reasons why a test or tests may show as working when they aren't in fact running. Such as:
 
 - You forgot to save the file
-- You forgot to add a test attribute (if required
+- You forgot to add a test attribute (if required)
 - You are working in one branch/folder and testing another
 - You didn't add an assertion to the code
 - You need to compile the code and you forgot
