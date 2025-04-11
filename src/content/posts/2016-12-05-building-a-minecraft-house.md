@@ -39,7 +39,7 @@ along the North-South axis.
 Let's make a cube of stone, defined by the player's current position, and put them
 on top of it:
 
-```
+```python
 
 import mcpi.minecraft as minecraft
 import mcpi.block as block
@@ -62,7 +62,7 @@ around the player.
 Probably the easiest way to do that is to trace the outline of the building and
 drop a block at each position.
 
-```
+```python
 
 import mcpi.minecraft as minecraft
 import mcpi.block as block
