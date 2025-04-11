@@ -7,7 +7,11 @@ export default function(eleventyConfig, options) {
     const shiki = await import('shiki');
 
     const highlighter = await shiki.createHighlighter({
-      themes: ['vitesse-dark'],
+      themes: [
+        'vitesse-dark', 
+        'github-dark-high-contrast', 
+        'github-light-high-contrast',
+      ],
       langs: [
         'bat',
         'cpp',
@@ -22,7 +26,7 @@ export default function(eleventyConfig, options) {
         'sql',
         'vb',
         'xml',
-        ],
+      ],
     });
     
     eleventyConfig.amendLibrary('md', (library) => {
