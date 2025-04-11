@@ -81,6 +81,18 @@ Because we relied on the test showing green and didn't force the test to fail an
 ought to have been an obvious defect.
 
 
+## Other Reasons
+
+Of course, there are any number of reasons why a test or tests may show as working when they aren't in fact running. Such as:
+
+- You forgot to save the file
+- You forgot to add a test attribute (if required
+- You are working in one branch/folder and testing another
+- You didn't add an assertion to the code
+- You need to compile the code and you forgot
+- The test is being filtered out
+
+  
 ## How to Fail
 
 There are a couple of strategies to force a test failure so that you can be sure, or at least increase your chances, that you are testing 
