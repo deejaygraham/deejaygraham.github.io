@@ -7,6 +7,7 @@ export default function(eleventyConfig, options) {
     const shiki = await import('shiki');
 
     const highlighter = await shiki.createHighlighter({
+      // themes from https://textmate-grammars-themes.netlify.app/
       themes: [
         'vitesse-dark', 
         'github-dark-high-contrast', 
