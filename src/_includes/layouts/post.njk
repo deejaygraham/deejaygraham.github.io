@@ -6,7 +6,7 @@
 	<nav class="level is-mobile article-tags" id="article-meta">
 	<div class="level-left">
 		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
-		<span class="reading-time is-hidden-mobile">{{ content | readingTime }}</span>
+		<span class="reading-time is-hidden-mobile">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
 	</div>	
 {% if tags %}
 	<div class="level-right">{# tags: remove temporarily #}
