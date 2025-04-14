@@ -2,6 +2,10 @@ a[href] {
     color: var(--bulma-title-color);
 }
 
+a[href]:hover {
+    color: indianred;
+}
+
 /* Jump to main content link - styling from: https://a11y-101.com/development/skip-link */
 .skip-link {
     clip: rect(1px, 1px, 1px, 1px);
