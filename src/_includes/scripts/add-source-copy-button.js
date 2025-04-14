@@ -16,6 +16,14 @@ const addCopyButtonToSourceCode = () => {
     button.innerHTML = copyGraphicSvg + buttonText;
     button.addEventListener('click', () => {
       navigator.clipboard.writeText(snippet.textContent);
+
+      button.innerHTML = copyGraphicSvg + 'copied';
+
+      setTimeout(function() {
+          button.innerHTML = copyGraphicSvg + buttonText;
+      }, 2000);
+    });
+    
     });
 
     snippet.insertBefore(button, snippet.firstChild);
