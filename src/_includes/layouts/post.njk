@@ -37,15 +37,13 @@
   {% set relatedTag = tags | randomItem %}
   {% if collections[relatedTag].length > 1 %}
   {% set related = collections[relatedTag] | reverse | excludePost(page) | limit(6) %}
-<section class="section">
-  <aside>
+  <aside class="section">
     <div class="related-posts">
       <h2 class="title is-3" >More posts tagged with #{{ relatedTag }}</h2>
       {% set postcardlist = related %}
       {% include "partials/post-card-list.njk" %}
     </div>
   </aside>
-</section>
   {% endif %}
 {% endif %}
 
