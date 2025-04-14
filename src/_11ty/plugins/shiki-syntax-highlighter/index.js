@@ -39,10 +39,11 @@ export default function(eleventyConfig) {
 
           return highlighter.codeToHtml(code, {
             lang: language,
-            themes: { 
+            theme: darkThemeName,
+            /*themes: { 
               light: lightThemeName,
               dark: darkThemeName,
-            }
+            }*/
           });
         }
       });
