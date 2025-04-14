@@ -12,7 +12,7 @@ file but it's not super clear how to import settings from an external source int
 
 Cypress does support adding environment variables from the command line:
 
-```
+```shell
 
 npx cypress run --env deployment=QA
 npx cypress run --env deployment=PRODUCTION
@@ -41,27 +41,26 @@ exposing the values within that file as environment variables.
 ```javascript
 
 const {
-defineConfig
+            defineConfig
 } = require("cypress");
 const fs = require('fs');
 const path = require('path');
 
 module.exports = defineConfig({
-e2e: {
-setupNodeEvents(on, config) {
+            e2e: {
+                        setupNodeEvents(on, config) {
 
-            // .. code to resolve the path to the env file...
-            const data = fs.readFileSync(pathToFile, 'utf-8');
-            const postmanConfig = JSON.parse(data);
+                                    // .. code to resolve the path to the env file...
+                                    const data = fs.readFileSync(pathToFile, 'utf-8');
+                                    const postmanConfig = JSON.parse(data);
 
-            postmanConfig.values.forEach(x => {
-                config.env[x.key] = x.value;
-            });
+                                    postmanConfig.values.forEach(x => {
+                                                config.env[x.key] = x.value;
+                                    });
 
-            return config;
-        },
-    },
-
+                                    return config;
+                        },
+                },
 });
 
 ```
