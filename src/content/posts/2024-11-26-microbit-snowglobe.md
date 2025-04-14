@@ -19,7 +19,7 @@ something that looks quite nice.
 
 I played around with some of the brightness of the pixels to try to simulate flakes that were nearer or farther away from the viewer. 
 
-The decision to push all the flakes up to the top of the virtual screen means that the draw code is a little bit more intricate because calling ```set_pixel()``` with an x or y value outside of the 0..4 range causes an error in the runtime. I do think though that this added complexity is worth it for the effect it achieves.
+The decision to push all the flakes up to the top of the virtual screen means that the draw code is a little bit more intricate because calling set_pixel() with an x or y value outside of the 0..4 range causes an error in the runtime. I do think though that this added complexity is worth it for the effect it achieves.
 
 ## Code
 
