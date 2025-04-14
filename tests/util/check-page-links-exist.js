@@ -45,8 +45,7 @@ const getOgMetaTag = (page, name) => {
   return page.locator(`head > meta[property="og:${name}"]`);
 }
 
-
-export default async function (page, url) 
+export default async function (page, url) {
   // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
   await page.goto(url);
     
