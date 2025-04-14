@@ -11,8 +11,11 @@
 {% if tags %}
 	<div class="level-right">{# tags: remove temporarily #}
 	{% for tag in tags %}
+		<span class="level-item">
    		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<span class="tag level-item"><a href="{{ tagUrl }}">#{{ tag }}</a></span> 
+			<a href="{{ tagUrl }}">#{{ tag }}</a>
+		</span> 
+		{% if not loop.last %} | {% endif %}
   	{% endfor %}
 	</div>
 {% endif %}
