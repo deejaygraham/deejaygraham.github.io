@@ -75,4 +75,4 @@ export default async function (page, url) {
         });
     }
    }
-});
+}
