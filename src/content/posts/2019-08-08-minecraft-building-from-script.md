@@ -31,7 +31,7 @@ Here's the script:
 
 and an example script to flatten the ground, lay down some earth and grass prior to building:
 
-```
+```shell
 
 {% include 'code/python/minecraft/build.txt' %}
 

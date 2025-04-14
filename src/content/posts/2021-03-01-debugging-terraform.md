@@ -26,7 +26,7 @@ arguments passed that are built from explicit vars or queried variables where ty
 
 Below is an extract from the beginning of one of those logs.
 
-```
+```shell
 2021/03/09 13:08:50 [INFO] Terraform version: 0.14.7  
 2021/03/09 13:08:50 [INFO] Go runtime version: go1.15.6
 2021/03/09 13:08:50 [INFO] CLI args: []string{"C:\\Program Files\\Terraform\\terraform.exe", "init"}

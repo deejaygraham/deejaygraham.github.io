@@ -16,7 +16,7 @@ executable code. For cypress, this is the [Cypress Cucumber Pre-processor](https
 
 ### Command line
 
-```
+```shell
 npm install @badeball/cypress-cucumber-preprocessor
 ```
 
@@ -77,7 +77,7 @@ export default defineConfig({
 
 Here we expect the scenarios are going to be defined in .feature formatted text files. Running 
 
-```
+```shell
 npm cypress run 
 ```
 
