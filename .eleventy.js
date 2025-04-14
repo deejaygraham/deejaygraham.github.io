@@ -34,10 +34,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
   // plugins
-  eleventyConfig.addPlugin(syntaxHighlighter, 
-    { 
-      theme: "vitesse-dark",
-    });
+  eleventyConfig.addPlugin(syntaxHighlighter);
     		   
   eleventyConfig.addPlugin(socialImages, 
     { 
