@@ -8,11 +8,11 @@ export default [
     url: "https://bulma.io/",
   },
   {
-    name: "elasticlunr",
-    url: "http://elasticlunr.com/",
+    name: "shiki",
+    url: "https://shiki.matsu.io/",
   },
   {
-    name: "prism",
-    url: "https://prismjs.com/",
+    name: "elasticlunr",
+    url: "http://elasticlunr.com/",
   },
 ];
