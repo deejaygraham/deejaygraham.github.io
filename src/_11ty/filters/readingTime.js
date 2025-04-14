@@ -17,7 +17,8 @@
 
 export default function (text, speed = 240) {
   const content = new String(text);
-  const emoji = " ⏲️ ";
+  const stopwatch = '';
+  //const emoji = " ⏲️ ";
 
   // remove all html elements
   const re = /(&lt;.*?&gt;)|(<[^>]+>)/gi;
@@ -33,7 +34,7 @@ export default function (text, speed = 240) {
   // calculate the reading time
   const readingTime = Math.round(count / speed);
 
-  let estimate = emoji + " Takes ";
+  let estimate = stopwatch + " Takes ";
 
   if (readingTime === 0) {
     estimate += "less than 1 minute to read";
