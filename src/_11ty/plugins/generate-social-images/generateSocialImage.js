@@ -14,7 +14,7 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
   const font_weight = 700;
   const site_font_size = 25;
   const titleColour = 'indianred'; // '#FF6C23'; // 000
-  const siteNameColour = "#FEEFDA"; // 000
+  const siteNameColour = "#fff"; // 000
   const bgColour = "#1D1F1E"; // FFF
 	
   const title_lines = splitLongLine(title, line_length, max_lines);
