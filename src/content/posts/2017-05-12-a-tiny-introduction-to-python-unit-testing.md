@@ -26,7 +26,7 @@ provides some nicely familiar <code>assertEqual</code>, <code>assertNotEqual</co
 self.assert\* to make sure that python knows which function you are invoking, otherwise
 you will get see something like:
 
-```
+```shell
 
 NameError: global name 'assertEqual' is not defined
 
@@ -58,7 +58,7 @@ class TestMyCode(unittest.TestCase):
 
 ### Running
 
-```
+```shell
 
 python -m unittest test_my_code
 

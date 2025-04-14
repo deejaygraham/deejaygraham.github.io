@@ -13,7 +13,7 @@ There are a **huge** number of block types available to build through the Python
 Typically you use the upper case block name and id in the call to <code>setBlock</code> but
 there's nothing stopping you from using the plain integer value.
 
-```
+```python
 
 import mcpi.minecraft as minecraft
 import mcpi.block as block
@@ -41,7 +41,7 @@ ID | Colour
 
 So I can make a lovely block of orange wool like this:
 
-```
+```python
 
 mc.setBlock(x, y, z, block.WOOL, 1)
 
@@ -133,7 +133,7 @@ Rather than building structures block by block, you can use a similar call to bu
 a cuboid given two sets of coordinates and a block type. <code>setBlocks</code> fills in
 the volume between the two 3D points with blocks of the right type.
 
-```
+```python
 
 height = 10
 width = 5
@@ -148,7 +148,7 @@ world.setBlocks(x, y, z, x + length, y + height, z + width, block.STONE.id)
 To create a hollow structure, like a house, you can create a large block of stone, then
 adjust the coordinates and re-fill that volume with AIR.
 
-```
+```python
 
 height = 10
 width = 5

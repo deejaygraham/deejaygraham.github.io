@@ -90,7 +90,7 @@ calling script. TaskParameter is the name of the local task variable and Propert
 the name of the new variable to create in the calling script that we can then reference
 using dollar notation.
 
-```
+```xml
 
 {% include 'code/msbuild/on-the-fly-template-8.xml' %}
 

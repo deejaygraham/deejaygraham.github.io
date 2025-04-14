@@ -28,7 +28,7 @@ Perhaps the easiest thing to do on the micro:bit is to display <a href="http://m
 
 Type this:
 
-```
+```python
 
 from microbit import \*
 

@@ -22,7 +22,7 @@ Download and unpack the module as you would normally into Install into
 <code>%UserProfile%\Documents\WindowsPowerShell\Modules\skytap</code>. Note, you can safely ignore
 the user_token file, you can set authorization a number of different ways.
 
-```
+```powershell
 
 Import-Module skytap # -Verbose
 
@@ -34,7 +34,7 @@ Authentication is handled by the <code>Set-Authorization</code> cmdlet. You can 
 to a user token file or provide explicit user name and api key (from your account page) or
 user name and password.
 
-```
+```powershell
 
 [string]$Account = 'this is not my account name'
 [string]$ApiKey = 'this is not my api key'
@@ -48,7 +48,7 @@ Set-Authorization -user $Account -pwd $ApiKey
 Now, we can create a new environment, a collection of virtual machines, from a named template
 by first searching for the template we want, then creating the environment from that template.
 
-```
+```powershell
 
 [string] $TemplateName = 'My Windows 8.1 x64 Cluster'
 
@@ -62,7 +62,7 @@ $Environment = New-EnvironmentFromTemplate -templateId $Template.id
 Creating a new environment will usually kick it off in the busy state. This is surfaced
 through the API as the _runstate_ property.
 
-```
+```powershell
 
 While ($Environment.runstate -Eq 'busy') {
 
@@ -79,7 +79,7 @@ Now that you have a shiny new environment, the default state could be running, s
 (and maybe others). Starting and stopping an environment is done using the <code>Update-RunState</code>
 cmdlet.
 
-```
+```powershell
 
 If ($Environment.runstate -Eq 'stopped') {
 

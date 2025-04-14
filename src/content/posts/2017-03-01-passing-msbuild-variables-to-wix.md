@@ -13,7 +13,7 @@ wanted this to work on a local (dev) machine _and_ on a build machine running a 
 
 So for a "BuildNumber" maybe an environment variable:
 
-```
+```xml
 
 $(env.BuildNumber)
 
@@ -21,7 +21,7 @@ $(env.BuildNumber)
 
 or a plain old wix variable:
 
-```
+```xml
 
 $(env.BuildNumber)
 
@@ -45,7 +45,7 @@ to only set it if it doesn't already have a value.
 
 DefineConstants looks like this in the project file:
 
-```
+```xml
 
   <PropertyGroup>
     <DefineConstants>Debug;NAME=Rob;JOB=Dev;BUILDNUMBER=$(BUILDNUMBER)</DefineConstants>
@@ -55,7 +55,7 @@ DefineConstants looks like this in the project file:
 
 We need to define a property upstream of this:
 
-```
+```xml
 
   <PropertyGroup>
     <BuildNumber Condition=" '$(BuildNumber)' == '' ">1.0.0.9</DefineConstants>
@@ -66,7 +66,7 @@ We need to define a property upstream of this:
 In the calling MsBuild script we can use the <code>AdditionalProperties</code> meta data
 for a project to pass the variable to wix.
 
-```
+```xml
 
   <ItemGroup>
       <ProjectList Include="SetupProject1.sln">

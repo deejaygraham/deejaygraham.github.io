@@ -10,7 +10,7 @@ When you deploy a cloud service to Azure, it's often the case that there are adm
 the operating system before running the service proper. This is done by creating a
 startup task in the .csdef file.
 
-```
+```xml
 
 <Startup>
   <Task commandLine="startup.cmd" executionContext="elevated" taskType="simple" />
@@ -23,7 +23,7 @@ situation) so we need to invoke it from a batch file.
 
 I have seen a lot of this form of invokation in batch files:
 
-```
+```shell
 
 PowerShell -Command "Set-ExecutionPolicy Unrestricted"
 PowerShell .\DoStartupStuff.ps1
@@ -35,7 +35,7 @@ Where we turn off the execution policy, run a command, then turn it back on, eve
 a single script. It is much nicer and easier to maintain, I feel, to embed the execution policy
 into the call of the script:
 
-```
+```shell
 
 PowerShell -ExecutionPolicy Unrestricted .\DoStartupStuff.ps1 >> "%TEMP%\StartupLog.txt" 2>&1
 EXIT /B 0

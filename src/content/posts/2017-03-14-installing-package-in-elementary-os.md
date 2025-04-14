@@ -29,7 +29,7 @@ option from the app center:
 
 No? Ok, how about cracking open the terminal and the often popular <code>apt-get</code>:
 
-```
+```shell
 
 sudo apt-get install brave_0.13.5_amd64.deb
 
@@ -39,7 +39,7 @@ sudo apt-get install brave_0.13.5_amd64.deb
 
 No? Because it's a Debian package we have to use <code>gdebi</code>:
 
-```
+```shell
 
 sudo gdebi brave_0.13.5_amd64.deb
 

@@ -9,15 +9,15 @@ thumbnail: "/img/thumbnails/parcel-420x255.webp"
 Another quick snippet showing how to split a SQL script at the GO statements to execute a potentially large set
 of script in smaller chunks - and be better able to work out which piece went wrong.
 
-```
+```powershell
 
 Import-Module "sqlps" -DisableNameChecking
 
 # Run these scripts in order...
 
 $SqlFiles = @(
-'Example1.sql',
-'Example2.sql'
+    'Example1.sql',
+    'Example2.sql'
 )
 
 # Using a trusted connection...
@@ -40,7 +40,6 @@ $SqlFiles | ForEach-Object {
 
     	Invoke-Sqlcmd $SqlStatement -ServerInstance $SqlServer -Database $SqlDatabase
     }
-
 }
 
 ```

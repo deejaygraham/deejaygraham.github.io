@@ -13,7 +13,7 @@ ready to pass to the external application:
 
 ### Concatenation
 
-```
+```powershell
 
 $ShellArguments = ' /p=' + $MyArg1 + ' /v' + ' /s' + $MyArg2 + ' ' + $MyArg3
 
@@ -33,7 +33,7 @@ they are to be used in, plus it's not very easy to read and understand as a whol
 Least attractive of the solutions is forming arguments individually and passing them all
 to the program...
 
-```
+```powershell
 
 $Arg1 = '/p=1234'
 $Arg2 = '/v'
@@ -51,7 +51,7 @@ recommend it.
 
 A slightly neater solution I discovered was using a list as a way to collect and order arguments.
 
-```
+```powershell
 
 $ShellArguments = @( "/p=$MyArg1", '/v', "/s=$MyArg2", "$MyArg3" )
 
@@ -75,7 +75,7 @@ The "correct" approach, I just discovered, is to let PowerShell work it out by e
 arguments directly into the program call as if you were typing them on the command line - no need
 for string concatenation or expanding string variables before calling the program.
 
-```
+```powershell
 
 & RunMyProgram.exe /p="$MyArg1" /v /s="$MyArg2" $MyArg3
 

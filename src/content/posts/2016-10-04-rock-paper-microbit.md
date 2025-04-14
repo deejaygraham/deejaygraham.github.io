@@ -46,7 +46,7 @@ Images on the microbit are represented as a single string of numeric characters,
 LED "pixel" - 0 is off and 9 is full brightness. For example, a square would be shown
 by lighting up the edges of the grid and leaving the inside of the grid dark. Like this:
 
-```
+```python
 
 Image("99999:"
 "90009:"

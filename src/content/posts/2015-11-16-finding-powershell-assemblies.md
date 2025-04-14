@@ -15,7 +15,7 @@ so I thought it would make sense to try to find the assembly and see what it's t
 
 Using **Get-Command** was the obvious choice but doesn't seem to help.
 
-```
+```powershell
 
 Get-Command Start-Transcript
 
@@ -26,7 +26,7 @@ Get-Command Start-Transcript
 Then I discovered the Format-List cmdlet
 that takes the default output and expands it to show all the properties.
 
-```
+```powershell
 
 Get-Command Start-Transcript | Format-List \*
 

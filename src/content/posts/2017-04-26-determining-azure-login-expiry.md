@@ -31,13 +31,15 @@ If we combine <code>Get-AzureSubscription</code> with the ExtendedDetails switch
 ErrorAction Stop, we instantly get an exception if the session is not valid and we are
 then able to prompt for login as before.
 
-```
+```powershell
 
-Try { # Check current session to see if we are currently logged into Azure
-$Subscription = Get-AzureSubscription -ExtendedDetails -ErrorAction Stop
+Try { 
+    # Check current session to see if we are currently logged into Azure
+    $Subscription = Get-AzureSubscription -ExtendedDetails -ErrorAction Stop
 }
-Catch { # Exception probably means we need to login again.
-Add-AzureAccount
+Catch { 
+    # Exception probably means we need to login again.
+    Add-AzureAccount
 }
 
 ```

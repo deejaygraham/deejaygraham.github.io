@@ -10,7 +10,7 @@ then write out that value to a file suitable for shipping to the customer. Origi
 this was invoked via an MsBuild Exec command but it works equally well as a standalone
 chunk.
 
-```
+```powershell
 
 Get-FileHash -Path MyLovelyFile.zip -Algorithm SHA256 |
 Select -ExpandProperty "Hash" |
