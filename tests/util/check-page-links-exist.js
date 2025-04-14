@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import checkResourceExists from './util/check-resource-exists.js';
+import checkResourceExists from './check-resource-exists.js';
 
 const validLink = (link) => {
     const internalLinksRegex = /deejaygraham.github.io/;
