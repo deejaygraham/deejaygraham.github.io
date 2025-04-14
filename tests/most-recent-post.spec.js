@@ -1,5 +1,5 @@
 // @ts-check
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import checkPageLinksExist from '/util/check-page-links-exist.js';
 
 test("check all links on most recent page", async ({ page }) => {
