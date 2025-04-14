@@ -20,10 +20,8 @@ const addCopyButtonToSourceCode = () => {
       button.innerHTML = copyGraphicSvg + 'copied';
 
       setTimeout(() => button.innerHTML = copyGraphicSvg + buttonText, 2000);
-      });
+    });
     
-    }); // foreach
-
     snippet.insertBefore(button, snippet.firstChild);
   });
 };
