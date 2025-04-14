@@ -40,7 +40,7 @@ test.describe("Specific blog post example", () => {
   });
 
   test("contains the meta tags", async ({ page }) => {
-    await expect(page.getByText("#code #microbit #python")).toBeVisible();
+    await expect(page.getByText("#code | #microbit | #python")).toBeVisible();
   });
 
   test("contains code sample", async ({ page }) => {
