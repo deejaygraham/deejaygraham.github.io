@@ -16,7 +16,7 @@ const addCopyButtonToSourceCode = () => {
     button.innerHTML = copyGraphicSvg + buttonText;
     button.addEventListener('click', () => {
       // skip over button and get content of <code> element
-      navigator.clipboard.writeText(snippet.firstElementChild.textContent);
+      navigator.clipboard.writeText(snippet.lastElementChild.textContent);
 
       button.innerHTML = copyGraphicSvg + 'copied';
 
