@@ -76,7 +76,9 @@ self.addEventListener("fetch", (event) => {
       return cached || networked;
 
       function fetchedFromNetwork(response) {
-        putInCache(event.request, response.clone());
+        if (response.status === 200) {
+          putInCache(event.request, response.clone());
+        }
         return response;
       }
 
