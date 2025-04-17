@@ -3,7 +3,7 @@ layout: sketchnote
 title: Treating Objects Like People
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/treating-objects-like-people/treating-objects-like-people.jpg"
+  url: "/assets/img/posts/treating-objects-like-people/treating-objects-like-people.jpg"
   alt: "Treating Objects Like People"
   source:
     name: "Treating Objects Like People"

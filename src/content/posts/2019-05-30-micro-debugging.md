@@ -41,7 +41,7 @@ use print statements to pass the data back.
 Wait a little while for flashing to finish and the microbit to re-establish communication with your computer.
 Open the REPL (see below) and reset the microbit using the button on the back.
 
-![repl](/img/posts/micro-debugging/repl.webp)
+![repl]\(/assets/img/posts/micro-debugging/repl.png)
 
 You should now see data scrolling up the screen from your program's print statements. You will need to close the REPL window
 before you can flash a new program to the microbit.

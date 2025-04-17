@@ -10,7 +10,7 @@ I saw a tweet from <a href="https://twitter.com/TechForLifeUK/">@TechForLifeUK</
 which said they were going to run a code dojo where they would be writing the game of rock, paper,
 scissors on the microbit.
 
-![rock](/img/posts/rock-paper-microbit/rps-rock.webp)
+![rock]\(/assets/img/posts/rock-paper-microbit/rps-rock.png)
 
 RPS is a simple game that I have written a number of times in different languages, usually
 in my ruby deliberate practice sessions, but I had never tried doing it in python and never for
@@ -25,7 +25,7 @@ display will clear and you need to shake again to pick another random shape.
 
 It's up to you to throw your own shape, compare with the microbit and keep score.
 
-![paper](/img/posts/rock-paper-microbit/rps-paper.webp)
+![paper]\(/assets/img/posts/rock-paper-microbit/rps-paper.png)
 
 ### Shapes
 
@@ -37,7 +37,7 @@ is constrained to a 5 x 5 LED grid.
 Eventually I settled on an oval shape to represent the rock, a document
 kind of icon to represent paper, and an extremely rough approximation of a pair of scissors.
 
-![scissors](/img/posts/rock-paper-microbit/rps-scissors.webp)
+![scissors]\(/assets/img/posts/rock-paper-microbit/rps-scissors.png)
 
 ### Images
 

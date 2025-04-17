@@ -1,7 +1,7 @@
 ---
 title: Processing with Python
 tags: [code, processing]
-thumbnail: /img/posts/python-processing/python-processing-420x255.webp
+thumbnail: /img/posts/python-processing/python-processing-420x255.png
 
 ---
 
@@ -14,7 +14,7 @@ any of my sessions.
 As you might have guessed from the title, although most projects you might come across are written in Java, processing
 does support Python and the support and <a href="https://py.processing.org/reference/">documentation</a> is pretty good.
 
-![screenshot](/img/posts/python-processing/python-processing-ui.webp)
+![screenshot]\(/assets/img/posts/python-processing/python-processing-ui.png)
 
 Here are a couple of key features to consider:
 

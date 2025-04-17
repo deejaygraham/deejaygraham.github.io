@@ -1,7 +1,7 @@
 ---
 title: Documenting Software with C4
 tags: [xp]
-thumbnail: /img/posts/documenting-software-with-c4/thumbnail-420x255.webp
+thumbnail: /img/posts/documenting-software-with-c4/thumbnail-420x255.png
 alttext: architecture
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Sketchnoting at DDDNorth 2015
 tags: [presentations, sketchnotes]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
-<img src="/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.webp" class="u-max-full-width" alt="DDD North" />
+<img src="/assets/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.png" class="u-max-full-width" alt="DDD North" />
 
 This year's [Developer Developer Developer North conference](http://www.dddnorth.co.uk) ran on the 24th
 of October 2015. I was speaking there for the first time and chose [sketchnoting for developers](http://deejaygraham.github.io/sketchnoting-for-developers)
@@ -13,12 +13,12 @@ as my topic. At [Richard Dalton](http://twitter.com/richardadalton)'s suggestion
 talk right at the start of the conference so delegates would get the chance to try out their new skills
 for rest of the day.
 
-![agenda](/img/posts/sketchnoting-at-dddnorth-2015/agenda.webp "Agenda")
+![agenda]\(/assets/img/posts/sketchnoting-at-dddnorth-2015/agenda.png "Agenda")
 
 I pitched this talk for all developers regardless of drawing ability so I thought it would be fun to encourage
 everyone at the talk to try it out at at least once.
 
-![abstract](/img/posts/sketchnoting-at-dddnorth-2015/abstract.webp "Abstract")
+![abstract]\(/assets/img/posts/sketchnoting-at-dddnorth-2015/abstract.png "Abstract")
 
 A few weeks before, Mike Rohde had offered me a copy of the
 Sketchnote Handbook to give away so I set up a challenge at the end of my talk. The challenge was to sketchnote any
@@ -59,7 +59,7 @@ to win the book. Here are the submissions we had:
 
 I picked one at random and it was [Luke Stringer](https://twitter.com/lukestringer90)'s tweet that won.
 
-![Luke with his prize](/img/posts/sketchnoting-at-dddnorth-2015/luke-stringer.webp "Luke with his prize")
+![Luke with his prize]\(/assets/img/posts/sketchnoting-at-dddnorth-2015/luke-stringer.png "Luke with his prize")
 
 Thanks to [Mike Rohde](http://rohdesign.com/) and the good folk at [Pearson Education](http://www.pearsoned.co.uk/) for the book and to
 [Andrew Westgarth and the whole DDDNorth team](http://wwww.dddnorth.co.uk/) for

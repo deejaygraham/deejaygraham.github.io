@@ -2,7 +2,7 @@
 title: Configuring IIS in PowerShell
 tags: [powershell]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.webp"
+thumbnail: "/assets/img/thumbnails/shell-420x255.png"
 
 ---
 
@@ -13,7 +13,7 @@ Fundamental to all of these snippets is the WebAdministration module that you ar
 
 Once this module is loaded, the Set-Location works for IIS as if it was a drive so you can use Get-ChildItem to find app pools or sites.
 
-![gci](/img/posts/configuring-iis-in-powershell/getchilditem.webp)
+![gci]\(/assets/img/posts/configuring-iis-in-powershell/getchilditem.png)
 
 ```powershell
 

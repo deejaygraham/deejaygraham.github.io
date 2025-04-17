@@ -3,7 +3,7 @@ layout: sketchnote
 title: Solving the Rubik's Cube in 20 Seconds
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/solving-the-rubiks-cube-in-20-seconds/solving-the-rubiks-cube-in-20-seconds.jpg"
+  url: "/assets/img/posts/solving-the-rubiks-cube-in-20-seconds/solving-the-rubiks-cube-in-20-seconds.jpg"
   alt: "Solving the Rubik's Cube in 20 Seconds"
   source:
     name: "Solving the Rubik's Cube in 20 Seconds"

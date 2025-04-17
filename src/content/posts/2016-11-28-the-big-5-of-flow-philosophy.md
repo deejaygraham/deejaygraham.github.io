@@ -3,9 +3,9 @@ layout: sketchnote
 title: The Big 5 of Flow Philosophy
 tags: [sketchnotes, presentations, agile]
 tweetable: true
-thumbnail: "/img/posts/the-big-5-of-flow-philosophy/big-5-of-flow-philosophy-roux.webp"
+thumbnail: "/assets/img/posts/the-big-5-of-flow-philosophy/big-5-of-flow-philosophy-roux.png"
 sketchnote:
-  url: "/img/posts/the-big-5-of-flow-philosophy/big-5-of-flow-philosophy-roux.webp"
+  url: "/assets/img/posts/the-big-5-of-flow-philosophy/big-5-of-flow-philosophy-roux.png"
   alt: "sketchnote"
   source:
     name: "The Big 5 of Flow Philosophy"

@@ -5,7 +5,7 @@ tags: [microbit, python]
 ---
 
 I remember being fascinated by [Markov Chain Text Generators](https://en.wikipedia.org/wiki/Markov_chain) when I got my first programming job and had played about with it occasionally since reading 
-Brian Kernighan's book "The Practice of Programming" - example [code here](https://www.cs.princeton.edu/~bwk/tpop.webpage/markov.c) written in C - 
+Brian Kernighan's book "The Practice of Programming" - example [code here](https://www.cs.princeton.edu/~bwk/tpop.pngage/markov.c) written in C - 
 but had forgotten about it until talking about it with a colleague recently. This lead me to [reading](https://www.haykranen.nl/2008/09/21/markov/) [some](https://chriscombs.net/2017/01/19/markov-radio/) 
 more recent [posts](https://healeycodes.com/generating-text-with-markov-chains). 
 

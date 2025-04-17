@@ -17,7 +17,7 @@ The code is split into three parts.
 All good supernatural detector tools need a fancy display so our detector sweeps a line backwards and forwards
 across the display as if looking for something.
 
-![microbit sweep display](/img/posts/ghost-detector/sweep-detector.gif)
+![microbit sweep display]\(/assets/img/posts/ghost-detector/sweep-detector.gif)
 
 ## Detector
 

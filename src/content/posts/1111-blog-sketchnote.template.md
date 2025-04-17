@@ -3,7 +3,7 @@ layout: sketchnote
 title: Title
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/slug/title.jpg"
+  url: "/assets/img/posts/slug/title.jpg"
   alt: "title"
   source:
     name: "title"

@@ -1,7 +1,7 @@
 ---
 title: Wiring Diagrams
 tags: [signs]
-thumbnail: /img/posts/wiring-diagrams/wiring-diagrams-420x255.webp
+thumbnail: /img/posts/wiring-diagrams/wiring-diagrams-420x255.png
 alttext: wiring diagrams
 ---
 
@@ -17,9 +17,9 @@ is a recursive set of similar diagrams with the same structure.
 
 For example, here are two from page 40 of the book.
 
-![recipe 1](/img/posts/wiring-diagrams/prepare.webp)
+![recipe 1]\(/assets/img/posts/wiring-diagrams/prepare.png)
 
-![recipe 2](/img/posts/wiring-diagrams/baking.webp)
+![recipe 2]\(/assets/img/posts/wiring-diagrams/baking.png)
 
 The point being, you can zoom in or out of these boxes to examine details or get a higher
 level view but each box is a sort of self-contained unit with defined inputs and outputs.

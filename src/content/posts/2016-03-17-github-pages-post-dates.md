@@ -1,7 +1,7 @@
 ---
 title: The Case of the Disappearing Github Pages
 tags: [meta, powershell, presentations]
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

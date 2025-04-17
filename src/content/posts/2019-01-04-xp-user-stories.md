@@ -1,8 +1,8 @@
 ---
 title: XP User Stories
 tags: [sketchnotes, xp]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
-<img src="/img/posts/xp-user-stories/xp-user-stories.webp" alt="strong style sketchnote"/>
+<img src="/assets/img/posts/xp-user-stories/xp-user-stories.png" alt="strong style sketchnote"/>

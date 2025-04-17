@@ -2,14 +2,14 @@
 title: Hello, Minecraft
 tags: [code, minecraft]
 hero: minecraft
-thumbnail: "/img/thumbnails/rpi-420x255.webp"
+thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
 
 ---
 
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
 writing some code to do some building using the Python interface.
 
-![boot](/img/posts/hello--minecraft/boot-sequence.webp)
+![boot]\(/assets/img/posts/hello--minecraft/boot-sequence.png)
 
 ### For Older Installations...
 

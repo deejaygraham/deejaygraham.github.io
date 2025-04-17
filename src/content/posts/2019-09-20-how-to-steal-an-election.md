@@ -1,7 +1,7 @@
 ---
 title: How to Steal an Election
 tags: [video, presentations]
-thumbnail: /img/posts/how-to-steal-an-election/screenshot-420x255.webp
+thumbnail: /img/posts/how-to-steal-an-election/screenshot-420x255.png
 alttext: how to steal an election
 ---
 

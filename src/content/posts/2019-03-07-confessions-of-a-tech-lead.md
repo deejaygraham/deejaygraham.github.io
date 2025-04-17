@@ -3,9 +3,9 @@ layout: sketchnote
 title: Confessions of a Tech Lead
 tags: [sketchnotes, presentations, xp]
 tweetable: true
-thumbnail: "/img/posts/confessions-of-a-tech-lead/thumbnail-420x255.webp"
+thumbnail: "/assets/img/posts/confessions-of-a-tech-lead/thumbnail-420x255.png"
 sketchnote:
-  url: "/img/posts/confessions-of-a-tech-lead/confessions-of-a-tech-lead.webp"
+  url: "/assets/img/posts/confessions-of-a-tech-lead/confessions-of-a-tech-lead.png"
   alt: "sketchnote"
   source:
     name: "Confessions of a Tech Lead"

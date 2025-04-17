@@ -10,7 +10,7 @@ I heard about John Conway's death from COVID-19 this weekend and was thinking ab
 contribution, the Game of Life. I did an implementation for the microbit a while ago modelling explicit
 population objects as two dimensional arrays of cells.
 
-![example](/img/posts/microbit-game-of-life/game.gif)
+![example]\(/assets/img/posts/microbit-game-of-life/game.gif)
 
 Reconsidering this implementation, it seemed a bit too complicated for what was needed and often seemed
 to run out of stack space when running. The thought occurred that the display itself could be used as a

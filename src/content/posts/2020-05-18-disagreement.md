@@ -4,7 +4,7 @@ size: large
 title: Disagreement
 attribution: James Baldwin
 tags: [quote]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

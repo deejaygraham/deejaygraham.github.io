@@ -1,7 +1,7 @@
 ---
 title: Dog Sort
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/dog-sorting/dog-sorting-420x255.webp
+thumbnail: /img/posts/dog-sorting/dog-sorting-420x255.png
 alttext: sorting
 ---
 
@@ -58,4 +58,4 @@ Then actually implementing the grouping comes out into a single function call. W
 
 ```
 
-![results](/img/posts/dog-sorting/console.webp "console output")
+![results]\(/assets/img/posts/dog-sorting/console.png "console output")

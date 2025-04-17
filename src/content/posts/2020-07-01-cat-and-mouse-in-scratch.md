@@ -1,7 +1,7 @@
 ---
 title: Cat and Mouse Game in Scratch
 tags: [code, scratch]
-thumbnail: /img/posts/scratch-cat-and-mouse/thumbnail-420x255.webp
+thumbnail: /img/posts/scratch-cat-and-mouse/thumbnail-420x255.png
 alttext: scratch
 ---
 
@@ -10,7 +10,7 @@ More on teaching scratch to beginners, I usually start off with building this ga
 It shows off all the important capabilities of the platform in a digestable form. The cast moves around the screen and tries to "catch"
 the player's mouse pointer (because puns), scores a point for each time it does, and the game ends when you reach a particular score.
 
-![game](/img/posts/scratch-cat-and-mouse/screencap.webp)
+![game]\(/assets/img/posts/scratch-cat-and-mouse/screencap.png)
 
 The game, as it is built up in stages, demonstrates:
 
@@ -28,4 +28,4 @@ The game, as it is built up in stages, demonstrates:
 
 ### Game
 
-![code](/img/posts/scratch-cat-and-mouse/script.webp)
+![code]\(/assets/img/posts/scratch-cat-and-mouse/script.png)

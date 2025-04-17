@@ -1,7 +1,7 @@
 ---
 title: Refactoring Boids
 tags: [processing, code]
-thumbnail: /img/posts/refactoring-boids/original-boids-420x255.webp
+thumbnail: /img/posts/refactoring-boids/original-boids-420x255.png
 alttext: boids original
 ---
 
@@ -12,7 +12,7 @@ As a challenge from a colleague I wanted to see how I could refactor the code fr
 
 ### Original
 
-![original](/img/posts/refactoring-boids/original-boids.webp)
+![original]\(/assets/img/posts/refactoring-boids/original-boids.png)
 
 Here's the original code from the processing website:
 
@@ -76,7 +76,7 @@ never moves but just draws a black line from the original to its position to sho
 At this point, it's very useful to use the print() function to output what's happening to the console. Also for debugging purposes,
 I'm using the right mouse button to trigger a screenshot.
 
-![initial flock](/img/posts/refactoring-boids/refactoring-boids-1.webp)
+![initial flock]\(/assets/img/posts/refactoring-boids/refactoring-boids-1.png)
 
 ### Boids
 

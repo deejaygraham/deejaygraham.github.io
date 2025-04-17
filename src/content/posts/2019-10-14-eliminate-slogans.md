@@ -5,7 +5,7 @@ title: Eliminate Slogans
 attribution: W. Edwards Deming
 publication: 14 Points for Western Management
 tags: [quote, lean]
-thumbnail: /img/posts/eliminate-slogans/eliminate-slogans-420x255.webp
+thumbnail: /img/posts/eliminate-slogans/eliminate-slogans-420x255.png
 alttext: madonna poster
 ---
 

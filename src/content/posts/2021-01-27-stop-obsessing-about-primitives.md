@@ -1,7 +1,7 @@
 ---
 title: Stop Obsessing About Primitives
 tags: [video, presentations]
-thumbnail: /img/posts/stop-obsessing-about-primitives/thumbnail-420x255.webp
+thumbnail: /img/posts/stop-obsessing-about-primitives/thumbnail-420x255.png
 alttext: Ted M Young
 ---
 

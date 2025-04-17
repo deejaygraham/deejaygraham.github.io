@@ -1,7 +1,7 @@
 ---
 title: Setting variables in TFS builds
 tags: [code, msbuild, tfs]
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

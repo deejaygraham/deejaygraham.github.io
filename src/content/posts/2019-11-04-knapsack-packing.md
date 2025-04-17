@@ -1,7 +1,7 @@
 ---
 title: Knapsack Packing
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/knapsack-packing/knapsack-packing-420x255.webp
+thumbnail: /img/posts/knapsack-packing/knapsack-packing-420x255.png
 alttext: packing
 ---
 

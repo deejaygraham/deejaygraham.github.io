@@ -3,7 +3,7 @@ layout: sketchnote
 title: Sketchnote 2 from DDDNorth 2014
 tags: [sketchnotes, presentations]
 sketchnote:
-  url: "/img/posts/sketchote2-from-ddd-north-2014/dddnorth-2014-burn-out-talk-vanilla-lofi.webp"
+  url: "/assets/img/posts/sketchote2-from-ddd-north-2014/dddnorth-2014-burn-out-talk-vanilla-lofi.png"
   alt: "ddd north sketchnote"
   event:
     name: "DDD North 2014"
@@ -11,7 +11,7 @@ sketchnote:
   speaker:
     name: "Richard Dalton"
     url: "http://www.twitter.com/richardadalton"
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
@@ -23,4 +23,4 @@ This time it was [Richard Dalton](http://www.twitter.com/richardadalton)'s
 on how developers are susceptible to burn out and what you can do to recognise
 them symptoms and how to avoid it.
 
-![ddd north](/img/posts/sketchote2-from-ddd-north-2014/session-summary.webp)
+![ddd north](/assets/img/posts/sketchote2-from-ddd-north-2014/session-summary.png)

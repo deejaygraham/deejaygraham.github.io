@@ -2,7 +2,7 @@
 title: Test Driving PowerShell with Pester
 tags: [powershell]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.webp"
+thumbnail: "/assets/img/thumbnails/shell-420x255.png"
 
 ---
 
@@ -164,7 +164,7 @@ Describe 'Google' {
 
 $ImportantLinks = @(
 'https://deejaygraham.github.io/2015/02/15/sketchnote-challenge/',
-'https://deejaygraham.github.io/img/posts/sketchnoting-challenge/mac-power-users.webp'
+'https://deejaygraham.github.io/img/posts/sketchnoting-challenge/mac-power-users.png'
 )
 
 Describe 'Externally Referenced Links' {
@@ -326,7 +326,7 @@ Let's write two functions, one to get some content from a website, and another t
 $SantaUrl = 'https://www.emailsanta.com/clock.asp'
 $HtmlToMatch = '<span class="XmasDayemph">(.\*)</span>'
 
-Function Get-WebPageContent {
+Function Get.pngageContent {
 
     Param(
         [Parameter(Mandatory=$True)]
@@ -340,7 +340,7 @@ Function Get-WebPageContent {
 
 Function Get-HowLongUntilChristmas {
 
-    $response = Get-WebPageContent -Url "https://www.emailsanta.com/clock.asp"
+    $response = Get.pngageContent -Url "https://www.emailsanta.com/clock.asp"
 
     If ($response -match $HtmlToMatch) {
 
@@ -387,8 +387,8 @@ Describe 'Email Santa Service' {
 
     Context 'Countdown to Christmas' {
 
-    	$FakeWebPage = '<html><span class="XmasDayemph">24 days</span>'
-        Mock Get-WebPageContent { return $FakeWebPage }
+    	$Fak.pngage = '<html><span class="XmasDayemph">24 days</span>'
+        Mock Get.pngageContent { return $Fak.pngage }
 
         It 'Expressed in days' {
             Get-HowLongUntilChristmas | Should BeLike '* days'

@@ -1,7 +1,7 @@
 ---
 title: Two Examples of Sketchnoting Inception
 tags: [sketchnotes]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

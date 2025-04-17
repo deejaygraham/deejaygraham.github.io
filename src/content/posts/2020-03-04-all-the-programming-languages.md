@@ -1,7 +1,7 @@
 ---
 title: All the Programming Languages
 tags: [code, xp]
-thumbnail: "/img/posts/all-the-languages/thumbnail-420x255.webp"
+thumbnail: "/assets/img/posts/all-the-languages/thumbnail-420x255.png"
 alttext: languages
 ---
 

@@ -3,10 +3,10 @@ layout: sketchnote
 title: Sustainable, Lasting, Authentic Change
 tags: [sketchnotes, presentations]
 tweetable: true
-thumbnail: "/img/posts/sustainable-lasting-authentic-change/john-420x255.webp"
+thumbnail: "/assets/img/posts/sustainable-lasting-authentic-change/john-420x255.png"
 alttext: john le drew talking
 sketchnote:
-  url: "/img/posts/sustainable-lasting-authentic-change/sustainable-lasting-authentic-change.webp"
+  url: "/assets/img/posts/sustainable-lasting-authentic-change/sustainable-lasting-authentic-change.png"
   alt: "sketchnote"
   source:
     name: "Sustainable, Lasting, Authentic Change"
@@ -18,4 +18,4 @@ sketchnote:
     url: "https://twitter.com/antz29"
 ---
 
-<img src="/img/posts/sustainable-lasting-authentic-change/john.webp" alt="john le drew speaking at Agile NE" />
+<img src="/assets/img/posts/sustainable-lasting-authentic-change/john.png" alt="john le drew speaking at Agile NE" />

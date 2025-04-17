@@ -2,14 +2,14 @@
 title: Minecraft Pi for Millionaires
 tags: [code, minecraft]
 hero: minecraft
-thumbnail: "/img/thumbnails/rpi-420x255.webp"
+thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
 
 ---
 
 If you were a millionaire, living in a minecraft-kind-of-world, I'm sure you would want to have an enormously ostentatious fish tank for your block-shaped
 tropical fish to swim in.
 
-<img src="/img/posts/minecraft-millionaires/fish-tank.webp" alt="fish tank" class="u-max-full-width" />
+<img src="/assets/img/posts/minecraft-millionaires/fish-tank.png" alt="fish tank" class="u-max-full-width" />
 
 ```python
 
@@ -19,7 +19,7 @@ tropical fish to swim in.
 
 Now that the fish are taken care of, the minecraft millionaire about town might like to own their own human fish tank, which we usually call a swimming pool. The code that worked for the fish tank can be sunk into the ground and work just as well as a lovely swimming pool.
 
-<img src="/img/posts/minecraft-millionaires/swimming-pool.webp" alt="swimming pool" class="u-max-full-width" />
+<img src="/assets/img/posts/minecraft-millionaires/swimming-pool.png" alt="swimming pool" class="u-max-full-width" />
 
 ```python
 

@@ -3,9 +3,9 @@ layout: sketchnote
 title: Lead Time vs Cycle Time
 tags: [lean, sketchnotes, illustration]
 sketchnote:
-  url: "/img/posts/lead-time-vs-cycle-time/lead-time-vs-cycle-time.webp"
+  url: "/assets/img/posts/lead-time-vs-cycle-time/lead-time-vs-cycle-time.png"
   alt: "sketchnote"
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

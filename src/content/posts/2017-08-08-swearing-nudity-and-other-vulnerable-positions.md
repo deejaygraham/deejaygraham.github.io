@@ -1,7 +1,7 @@
 ---
 title: Swearing and Nudity in Newcastle
 tags: [agile, presentations, sketchnotes]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
@@ -15,17 +15,17 @@ games thrown in (and minimal nudity). Here are a few photos from the night.
 
 Proving that the word is not, in fact, "Grease":
 
-<img src="/img/posts/swearing-and-nudity-in-newcastle/WP_20170808_18_37_23_Pro.webp" alt="antz29" class="u-max-full-width" />
+<img src="/assets/img/posts/swearing-and-nudity-in-newcastle/WP_20170808_18_37_23_Pro.png" alt="antz29" class="u-max-full-width" />
 
 A definition of psychological safety:
 
-<img src="/img/posts/swearing-and-nudity-in-newcastle/WP_20170808_18_56_29_Pro.webp" alt="antz29" class="u-max-full-width" />
+<img src="/assets/img/posts/swearing-and-nudity-in-newcastle/WP_20170808_18_56_29_Pro.png" alt="antz29" class="u-max-full-width" />
 
 And the final point:
 
-<img src="/img/posts/swearing-and-nudity-in-newcastle/WP_20170808_19_58_05_Pro.webp" alt="antz29" class="u-max-full-width" />
+<img src="/assets/img/posts/swearing-and-nudity-in-newcastle/WP_20170808_19_58_05_Pro.png" alt="antz29" class="u-max-full-width" />
 
 As usual, sitting at the back of the room, I was able to get some sketchnoting done,
 so here's how I interpreted John's talk:
 
-<img src="/img/posts/swearing-and-nudity-in-newcastle/WP_20170809_13_17_10_Pro.webp" alt="sketchnote" class="u-max-full-width" />
+<img src="/assets/img/posts/swearing-and-nudity-in-newcastle/WP_20170809_13_17_10_Pro.png" alt="sketchnote" class="u-max-full-width" />

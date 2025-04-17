@@ -4,7 +4,7 @@ size: large
 title: Software is not a Craft
 attribution: Jessica Kerr
 tags: [quote]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

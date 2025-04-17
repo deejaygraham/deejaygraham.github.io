@@ -3,7 +3,7 @@ layout: sketchnote
 title: All the Little Things Sketchnote
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/all-the-little-things/all-the-little-things.jpg"
+  url: "/assets/img/posts/all-the-little-things/all-the-little-things.jpg"
   alt: "All the Little Things"
   source:
     name: "All the Little Things"

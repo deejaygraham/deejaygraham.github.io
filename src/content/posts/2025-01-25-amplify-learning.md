@@ -3,7 +3,7 @@ layout: sketchnote
 title: Amplify Learning
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/amplify-learning/amplify-learning.jpg"
+  url: "/assets/img/posts/amplify-learning/amplify-learning.jpg"
   alt: "Amplify Learning In Your Organization"
   speaker:
     name: "Matt Barcomb"

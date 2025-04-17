@@ -3,7 +3,7 @@ layout: sketchnote
 title: Sketchnoting Challenge
 tags: [sketchnotes, gtd]
 sketchnote:
-  url: "/img/posts/sketchnoting-challenge/mac-power-users.webp"
+  url: "/assets/img/posts/sketchnoting-challenge/mac-power-users.png"
   alt: ""
   event:
     name: "sketchnote army challenge"
@@ -14,7 +14,7 @@ sketchnote:
   speaker:
     name: "David Allen"
     url: "http://gettingthingsdone.com/"
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

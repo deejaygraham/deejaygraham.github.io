@@ -1,7 +1,7 @@
 ---
 title: Game of Oligarchy Part 2
 tags: [code, processing]
-thumbnail: "/img/posts/game-of-oligarchy-2/thumbnail-420x255.webp"
+thumbnail: "/assets/img/posts/game-of-oligarchy-2/thumbnail-420x255.png"
 alttext: players
 ---
 

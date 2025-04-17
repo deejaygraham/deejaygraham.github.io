@@ -2,7 +2,7 @@
 title: Random City Skyline
 tags: [code, processing]
 hero: microbit
-thumbnail: /img/posts/random-city-skyline/thumbnail-420x255.webp
+thumbnail: /img/posts/random-city-skyline/thumbnail-420x255.png
 alttext: processing skyline
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Managing Skytap environments with PowerShell
 tags: [powershell]
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

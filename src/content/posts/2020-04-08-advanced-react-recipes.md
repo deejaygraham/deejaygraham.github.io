@@ -1,7 +1,7 @@
 ---
 title: React Cookbook Advanced Recipes
 tags: [video, presentations]
-thumbnail: /img/posts/advanced-react-recipes/thumbnail-420x255.webp
+thumbnail: /img/posts/advanced-react-recipes/thumbnail-420x255.png
 alttext: Simon Bloom
 ---
 

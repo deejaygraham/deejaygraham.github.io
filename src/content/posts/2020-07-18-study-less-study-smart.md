@@ -1,7 +1,7 @@
 ---
 title: Study Less, Study Smart
 tags: [video, presentations]
-thumbnail: /img/posts/study-less-study-smart/thumbnail-420x255.webp
+thumbnail: /img/posts/study-less-study-smart/thumbnail-420x255.png
 alttext: Marty Lobdell
 ---
 

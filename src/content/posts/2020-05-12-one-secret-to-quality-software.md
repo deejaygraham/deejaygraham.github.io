@@ -1,7 +1,7 @@
 ---
 title: One Secret to Quality Software
 tags: [video, presentations]
-thumbnail: /img/posts/one-secret-to-quality-software/thumbnail-420x255.webp
+thumbnail: /img/posts/one-secret-to-quality-software/thumbnail-420x255.png
 alttext: Jessica Kerr
 ---
 

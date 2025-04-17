@@ -3,7 +3,7 @@ layout: sketchnote
 title: How to Talk to Developers
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/how-to-talk-to-developers/how-to-talk-to-developers.jpg"
+  url: "/assets/img/posts/how-to-talk-to-developers/how-to-talk-to-developers.jpg"
   alt: "How to Talk to Developers"
   source:
     name: "How to Talk to Developers"

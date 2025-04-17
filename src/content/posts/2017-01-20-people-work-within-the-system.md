@@ -7,4 +7,4 @@ From W. Edwards Deming's work:
 
 "People work within the system, management is responsible _for_ the system"
 
-![sketch](/img/posts/people-work-within-the-system/people-work-within-the-system.webp)
+![sketch]\(/assets/img/posts/people-work-within-the-system/people-work-within-the-system.png)

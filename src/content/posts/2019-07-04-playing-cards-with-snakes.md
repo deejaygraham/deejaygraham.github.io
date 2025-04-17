@@ -1,7 +1,7 @@
 ---
 title: Playing Cards with Snakes
 tags: [code]
-thumbnail: "/img/posts/playing-cards-with-snakes/thumbnail-420x255.webp"
+thumbnail: "/assets/img/posts/playing-cards-with-snakes/thumbnail-420x255.png"
 ---
 
 Another random discussion in our regular coding dojo led me to think about representing individual playing cards and decks of cards in python. Playing cards with Snakes rather than Sharks, if you will :)
@@ -36,9 +36,9 @@ See <a href="https://www.deceptionary.com/ftp/SStebbins.pdf">this link</a> for a
 
 Here's the ordering of the cards for this system.
 
-<img src="/img/posts/playing-cards-with-snakes/sistebbins.webp" alt="booklet page 1" />
+<img src="/assets/img/posts/playing-cards-with-snakes/sistebbins.png" alt="booklet page 1" />
 
-<img src="/img/posts/playing-cards-with-snakes/sirules.webp" alt="booklet page 2" />
+<img src="/assets/img/posts/playing-cards-with-snakes/sirules.png" alt="booklet page 2" />
 
 One of the magical properties of this ordering is that the pattern rolls over at the edges so if you can see the last card in the deck, you can know what the first card is. Cutting the cards also preserves the pattern so we can do some really cool tricks just with this simple ordering.
 

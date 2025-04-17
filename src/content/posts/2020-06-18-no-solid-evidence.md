@@ -1,7 +1,7 @@
 ---
 title: no SOLID evidence
 tags: [xp, presentations, solid]
-thumbnail: "/img/posts/no-solid-evidence/thumbnail-420x255.webp"
+thumbnail: "/assets/img/posts/no-solid-evidence/thumbnail-420x255.png"
 alttext: SOLID
 ---
 

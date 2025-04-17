@@ -3,7 +3,7 @@ layout: sketchnote
 title: Nothing Is Something
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/nothing-is-something/nothing-is-something.jpg"
+  url: "/assets/img/posts/nothing-is-something/nothing-is-something.jpg"
   alt: "Nothing is Something"
   source:
     name: "Nothing is Something"

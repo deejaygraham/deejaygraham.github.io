@@ -5,7 +5,7 @@ title: When they jump you...
 attribution: David Allen
 publication: On being prepared for work and martial arts
 tags: [quote, gtd]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 alttext: gtd quote
 ---
 

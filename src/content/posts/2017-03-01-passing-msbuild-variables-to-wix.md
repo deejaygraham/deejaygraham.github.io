@@ -32,11 +32,11 @@ are settable from "the outside world" of msbuild or the command line. We have to
 built-in wix feature called DefineConstants which is a semi-colon delimited list of
 key value pairs. Opening the .wixproj in Visual Studio, the project property look like this:
 
-![project](/img/posts/passing-msbuild-variables-to-wix/wix-project.webp)
+![project]\(/assets/img/posts/passing-msbuild-variables-to-wix/wix-project.png)
 
 Variables get passed to the wix commandline toolchain using the <code>-d</code> switch:
 
-![project](/img/posts/passing-msbuild-variables-to-wix/candle-commandline.webp)
+![project]\(/assets/img/posts/passing-msbuild-variables-to-wix/candle-commandline.png)
 
 So, if you don't have a variable defined, msbuild defaults to an emtpy string, which is
 maybe not what we want. We can address that by unloading the project and hand editing to

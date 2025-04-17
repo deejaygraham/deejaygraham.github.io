@@ -3,7 +3,7 @@ layout: sketchnote
 title: Jacob Kaplan-Moss Keynote
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/jacob-kaplan-moss-keynote/jacob-kaplan-moss-keynote.jpg"
+  url: "/assets/img/posts/jacob-kaplan-moss-keynote/jacob-kaplan-moss-keynote.jpg"
   alt: "Keynote"
   source:
     name: "Keynote - Jacob Kaplan-Moss - Pycon 2015"

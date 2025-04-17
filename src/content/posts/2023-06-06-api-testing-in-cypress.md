@@ -2,7 +2,7 @@
 title: Api Testing in Cypress
 tags: [cypress, javascript, code]
 hero: power
-thumbnail: "/img/thumbnails/cypress-420x255.png"
+thumbnail: "/assets/img/thumbnails/cypress-420x255.png"
 
 ---
 

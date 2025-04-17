@@ -1,7 +1,7 @@
 ---
 title: The Nature of Code
 tags: [code, books]
-thumbnail: /img/posts/the-nature-of-code/noc-420x255.webp
+thumbnail: /img/posts/the-nature-of-code/noc-420x255.png
 alttext: code
 ---
 

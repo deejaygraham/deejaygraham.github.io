@@ -1,7 +1,7 @@
 ---
 title: Never Write Another HoC
 tags: [video, presentations]
-thumbnail: /img/posts/never-write-another-hoc/thumbnail-420x255.webp
+thumbnail: /img/posts/never-write-another-hoc/thumbnail-420x255.png
 alttext: Jared Palmer
 ---
 

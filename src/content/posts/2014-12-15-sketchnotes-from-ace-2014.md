@@ -2,7 +2,7 @@
 title: Sketchnotes from ACE! 2014
 tags: [agile, illustration, sketchnotes]
 hero: agile
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
@@ -11,7 +11,7 @@ as one of the people to produce a sketchnote of a talk from the <a href="http://
 conference to be included in the conference proceedings along with slides and
 transcripts of the talks.
 
-![ACE 2014](/img/posts/sketchnotes-from-ace-2014/ace-2014-large.webp)
+![ACE 2014]\(/assets/img/posts/sketchnotes-from-ace-2014/ace-2014-large.png)
 
 Being one of the last to find out about this opportunity, I soon discovered that
 pretty much all of the talks had already been claimed. The one remaining talk
@@ -27,7 +27,7 @@ so I'm going to share a lo-fi version of my sketchnote here.
 Paul worked hard on organizing the conference and creating the conference
 proceedings so please donate to the cost of producing the ebook if you are able.
 
-<img src="/img/posts/sketchnotes-from-ace-2014/gilb.webp" class="u-max-full-width" alt="ACE 2014 - Tom Gilb" />
+<img src="/assets/img/posts/sketchnotes-from-ace-2014/gilb.png" class="u-max-full-width" alt="ACE 2014 - Tom Gilb" />
 
 All of the talks are worthwhile listening to and the ebook not only has
 all the sketchnotes but comes with a transcription of each talk and many

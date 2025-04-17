@@ -2,7 +2,7 @@
 title: Test-Driving a File System
 draft: true
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/tdd-filesystem/thumbnail-420x255.webp
+thumbnail: /img/posts/tdd-filesystem/thumbnail-420x255.png
 alttext: filing
 ---
 

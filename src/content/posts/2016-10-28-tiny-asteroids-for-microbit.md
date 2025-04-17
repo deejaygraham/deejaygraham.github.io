@@ -15,7 +15,7 @@ Marco sent me a message asking to use the explosion animation code in his [Starb
 
 Asteroids is a game I used to love to play on the old Atari 2600 console.
 
-![asteroids](/img/posts/tiny-asteroids-for-microbit/asteroids.webp)
+![asteroids]\(/assets/img/posts/tiny-asteroids-for-microbit/asteroids.png)
 
 Even though the graphics are pretty basic by modern standards, the microbit can't hope to
 come anywhere near it because of its minimal graphical capability.

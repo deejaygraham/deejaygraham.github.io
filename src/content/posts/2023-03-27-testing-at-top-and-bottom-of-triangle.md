@@ -1,7 +1,7 @@
 ---
 title: Testing at Both Ends of the Triangle
 tags: [code, javascript, presentations]
-thumbnail: /img/thumbnails/notebook-420x255.webp
+thumbnail: /img/thumbnails/notebook-420x255.png
 alttext: talk
 ---
 

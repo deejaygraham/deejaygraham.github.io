@@ -1,7 +1,7 @@
 ---
 title: T-Rex Runner Game in Scratch
 tags: [code, scratch]
-thumbnail: /img/posts/scratch-t-rex-runner/thumbnail-420x255.webp
+thumbnail: /img/posts/scratch-t-rex-runner/thumbnail-420x255.png
 alttext: scratch
 ---
 
@@ -15,33 +15,33 @@ animated version of the game for reference.
 
 ## Start
 
-![original](/img/posts/scratch-t-rex-runner/200-offline-sprite.webp)
+![original]\(/assets/img/posts/scratch-t-rex-runner/200-offline-sprite.png)
 
 The assets in github come as a single png file so first I needed to extract the sprites into individual files so that they could be
 imported into Scratch as costumes.
 
 ## T-Rex
 
-![t-rex](/img/posts/scratch-t-rex-runner/trex1.webp)
-![t-rex](/img/posts/scratch-t-rex-runner/trex2.webp)
-![t-rex](/img/posts/scratch-t-rex-runner/trex3.webp)
-![t-rex](/img/posts/scratch-t-rex-runner/trex4.webp)
-![t-rex](/img/posts/scratch-t-rex-runner/trex5.webp)
-![t-rex](/img/posts/scratch-t-rex-runner/trex6.webp)
-![t-rex](/img/posts/scratch-t-rex-runner/trex7.webp)
-![t-rex](/img/posts/scratch-t-rex-runner/trex8.webp)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex1.png)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex2.png)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex3.png)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex4.png)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex5.png)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex6.png)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex7.png)
+![t-rex]\(/assets/img/posts/scratch-t-rex-runner/trex8.png)
 
 I didn't use all of the t-rex sprites, e.g. the crouching versions, because I was only building a simple version of the game.
 
-![t-rex costumes](/img/posts/scratch-t-rex-runner/t-rex-costumes.webp)
+![t-rex costumes]\(/assets/img/posts/scratch-t-rex-runner/t-rex-costumes.png)
 
 ## Cactus
 
-![cactus](/img/posts/scratch-t-rex-runner/cactus1.webp)
-![cactus](/img/posts/scratch-t-rex-runner/cactus2.webp)
-![cactus](/img/posts/scratch-t-rex-runner/cactus3.webp)
+![cactus]\(/assets/img/posts/scratch-t-rex-runner/cactus1.png)
+![cactus]\(/assets/img/posts/scratch-t-rex-runner/cactus2.png)
+![cactus]\(/assets/img/posts/scratch-t-rex-runner/cactus3.png)
 
-![cactus costumes](/img/posts/scratch-t-rex-runner/cactus-costumes.webp)
+![cactus costumes]\(/assets/img/posts/scratch-t-rex-runner/cactus-costumes.png)
 
 With the sprites created and the costumes loaded, the next stage was to write the code behind each piece.
 
@@ -51,18 +51,18 @@ First the stage is represented by a simple line to show the horizon in the backg
 terrain that the original game shows. The dinosaur and the cactus appear in front of the line to show they are
 closer to the player.
 
-![running](/img/posts/scratch-t-rex-runner/running.webp)
+![running]\(/assets/img/posts/scratch-t-rex-runner/running.png)
 
 The stage sets up the variables we use for positions, ground level, left and right etc. before we begin.
 
-![stage code](/img/posts/scratch-t-rex-runner/stage-code.webp)
+![stage code]\(/assets/img/posts/scratch-t-rex-runner/stage-code.png)
 
 The stage also keeps track of the score by incrementing the distance the t-rex has run during the game. This is
 shown in the top left of the screen.
 
 The stage listens for the game over event and switches to the game over background.
 
-![game over](/img/posts/scratch-t-rex-runner/game-over.webp)
+![game over]\(/assets/img/posts/scratch-t-rex-runner/game-over.png)
 
 ## Cactus
 
@@ -70,7 +70,7 @@ The cactus obstacle sprite generates a clone of itself ever few seconds and posi
 the screen, then travels to the left, towards the t-rex and finally off the screen again. The cactus has
 three costumes and switches between them at random so that each appearance of the cactus can be different.
 
-![stage code](/img/posts/scratch-t-rex-runner/cactus-code.webp)
+![stage code]\(/assets/img/posts/scratch-t-rex-runner/cactus-code.png)
 
 ## T-Rex
 
@@ -90,4 +90,4 @@ the jump subroutine takes over and then returns to running.
 
 Finally, on game over, the t-rex switches to a last costume which shows a bit of a surprised expression.
 
-![t-rex code](/img/posts/scratch-t-rex-runner/t-rex-code.webp)
+![t-rex code]\(/assets/img/posts/scratch-t-rex-runner/t-rex-code.png)

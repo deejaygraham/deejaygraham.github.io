@@ -2,7 +2,7 @@
 title: Azure Startup Tasks
 tags: [powershell, cloud]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

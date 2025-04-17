@@ -1,7 +1,7 @@
 ---
 title: Black Sheep Notebook
 tags: [books, illustration]
-thumbnail: "/img/posts/black-sheep-notebook/thumbnail-420x255.webp"
+thumbnail: "/assets/img/posts/black-sheep-notebook/thumbnail-420x255.png"
 alttext: cover
 ---
 
@@ -10,6 +10,6 @@ got for Christmas. It's from <a href="https://www.blacksheepleather.co.uk/">Blac
 
 The front has a black sheep embossed in the lower right.
 
-![front](/img/posts/black-sheep-notebook/notebook-front.webp)
+![front]\(/assets/img/posts/black-sheep-notebook/notebook-front.png)
 
-![back](/img/posts/black-sheep-notebook/notebook-back.webp)
+![back]\(/assets/img/posts/black-sheep-notebook/notebook-back.png)

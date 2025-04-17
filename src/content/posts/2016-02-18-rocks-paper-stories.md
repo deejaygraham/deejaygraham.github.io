@@ -3,9 +3,9 @@ layout: sketchnote
 title: Rocks, Paper ... Stories
 tags: [sketchnotes, presentations, agile]
 tweetable: true
-thumbnail: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.webp"
+thumbnail: "/assets/img/posts/rocks-paper-stories/rock-paper-stories-ching.png"
 sketchnote:
-  url: "/img/posts/rocks-paper-stories/rock-paper-stories-ching.webp"
+  url: "/assets/img/posts/rocks-paper-stories/rock-paper-stories-ching.png"
   alt: "sketchnote"
   source:
     name: "Rocks, Paper ... Stories"

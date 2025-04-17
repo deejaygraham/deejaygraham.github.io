@@ -5,7 +5,7 @@ title: Iterative Design Process
 attribution: Hollis A Kinslow
 publication: Software Engineering - Report of a Conference Sponsored by the NATO Science Committee
 tags: [quote]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

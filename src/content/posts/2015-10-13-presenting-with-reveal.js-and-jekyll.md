@@ -10,7 +10,7 @@ because it was easy to use, had every feature I needed and meant I could check t
 ## Step by Step
 
 - Create a new [repository on github](https://github.com/deejaygraham/sketchnoting-for-developers).
-- Create a new branch named "gh-pages" to enable github pages ![gh-pages](/img/posts/presenting-with-reveal-jekyll/gh-pages-branch.webp)
+- Create a new branch named "gh-pages" to enable github pages ![gh-pages]\(/assets/img/posts/presenting-with-reveal-jekyll/gh-pages-branch.png)
 - Download [reveal.js](https://github.com/hakimel/reveal.js/).
 - Create a layout based on the example reveal.js html file. Substitute example slide sections for liquid {% raw %} {{ content }} {% endraw %}
   markup.

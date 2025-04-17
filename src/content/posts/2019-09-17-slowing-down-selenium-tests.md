@@ -1,7 +1,7 @@
 ---
 title: Slowing Down Test Execution in Selenium
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/slowing-down-selenium-tests/thumbnail-420x255.webp
+thumbnail: /img/posts/slowing-down-selenium-tests/thumbnail-420x255.png
 alttext: slowing down selenium
 ---
 

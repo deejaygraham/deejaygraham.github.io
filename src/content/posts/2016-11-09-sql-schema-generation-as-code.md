@@ -2,7 +2,7 @@
 title: SQL Schema Generation as Code
 tags: [cloud, powershell]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

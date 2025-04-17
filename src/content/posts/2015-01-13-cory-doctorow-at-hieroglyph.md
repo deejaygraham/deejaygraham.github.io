@@ -3,7 +3,7 @@ layout: sketchnote
 title: Cory Doctorow at Hieroglyph
 tags: [sketchnotes, illustration]
 sketchnote:
-  url: "/img/posts/doctorow-at-hieroglyph/doctorow-at-hieroglyph-hifi.webp"
+  url: "/assets/img/posts/doctorow-at-hieroglyph/doctorow-at-hieroglyph-hifi.png"
   alt: "sketchnote"
   event:
     name: "Hieroglyph"
@@ -11,7 +11,7 @@ sketchnote:
   speaker:
     name: "Cory Doctorow"
     url: "https://craphound.com"
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

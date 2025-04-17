@@ -1,7 +1,7 @@
 ---
 title: Dino Quiz in Scratch
 tags: [code, scratch]
-thumbnail: /img/posts/dino-quiz-in-scratch/thumbnail-420x255.webp
+thumbnail: /img/posts/dino-quiz-in-scratch/thumbnail-420x255.png
 alttext: scratch
 ---
 
@@ -13,16 +13,16 @@ and to have them interact using broadcast messages and events.
 
 ### Game
 
-![game](/img/posts/dino-quiz-in-scratch/main.webp)
+![game]\(/assets/img/posts/dino-quiz-in-scratch/main.png)
 
 ### Quiz Master
 
-![quiz](/img/posts/dino-quiz-in-scratch/quizmaster-events.webp)
+![quiz]\(/assets/img/posts/dino-quiz-in-scratch/quizmaster-events.png)
 
 ### Contestant
 
-![contestant](/img/posts/dino-quiz-in-scratch/contestant-events.webp)
+![contestant]\(/assets/img/posts/dino-quiz-in-scratch/contestant-events.png)
 
 ### Stage
 
-![stage](/img/posts/dino-quiz-in-scratch/stage-events.webp)
+![stage]\(/assets/img/posts/dino-quiz-in-scratch/stage-events.png)

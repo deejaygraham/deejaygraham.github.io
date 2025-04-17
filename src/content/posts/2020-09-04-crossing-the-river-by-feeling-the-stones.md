@@ -1,7 +1,7 @@
 ---
 title: Crossing the River by Feeling the Stones
 tags: [video, presentations]
-thumbnail: /img/posts/crossing-the-river-by-feeling-the-stones/thumbnail-420x255.webp
+thumbnail: /img/posts/crossing-the-river-by-feeling-the-stones/thumbnail-420x255.png
 alttext: Simon Wardley
 ---
 

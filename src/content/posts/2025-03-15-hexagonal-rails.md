@@ -3,7 +3,7 @@ layout: sketchnote
 title: Hexagonal Rails
 tags: [presentations, sketchnotes]
 sketchnote:
-  url: "/img/posts/hexagonal-rails/hexagonal-rails.jpg"
+  url: "/assets/img/posts/hexagonal-rails/hexagonal-rails.jpg"
   alt: "Hexagonal Rails"
   source:
     name: "Hexagonal Rails"

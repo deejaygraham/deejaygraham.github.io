@@ -2,7 +2,7 @@
 title: Iterating on Developing a PowerShell Module
 tags: [powershell]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.webp"
+thumbnail: "/assets/img/thumbnails/shell-420x255.png"
 
 ---
 

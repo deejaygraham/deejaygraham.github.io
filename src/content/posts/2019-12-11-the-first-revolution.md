@@ -1,8 +1,8 @@
 ---
 title: The First Revolution
 tags: [signs]
-thumbnail: /img/posts/the-first-revolution/the-first-revolution-420x255.webp
+thumbnail: /img/posts/the-first-revolution/the-first-revolution-420x255.png
 alttext: gil scott heron
 ---
 
-![Gil Scott Heron](/img/posts/the-first-revolution/the-first-revolution.webp)
+![Gil Scott Heron]\(/assets/img/posts/the-first-revolution/the-first-revolution.png)

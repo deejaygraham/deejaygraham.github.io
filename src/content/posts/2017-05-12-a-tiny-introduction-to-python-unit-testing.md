@@ -67,7 +67,7 @@ python -m unittest test_my_code
 Of course, I have been a good red-green-refactor-er and written failing tests first. This is
 the output from running the tests:
 
-<img alt="results" src="/img/posts/a-tiny-introduction-to-python-unit-testing/results.webp" />
+<img alt="results" src="/assets/img/posts/a-tiny-introduction-to-python-unit-testing/results.png" />
 
 Each failure shows you the title of the test that failed (which is why naming your tests
 descriptively is important), the line of the failing assertion and why the framework

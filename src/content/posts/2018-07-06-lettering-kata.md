@@ -1,7 +1,7 @@
 ---
 title: Lettering Kata
 tags: [sketchnotes]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
@@ -12,4 +12,4 @@ is any kind of practice lettering to try to increase the diversity of typefaces 
 This is a copy of an exercise I saw somewhere but can't recall where - probably
 on twitter maybe?
 
-<img src="/img/posts/lettering-kata/lettering-kata.webp" alt="lettering kata" class="u-max-full-width" />
+<img src="/assets/img/posts/lettering-kata/lettering-kata.png" alt="lettering kata" class="u-max-full-width" />

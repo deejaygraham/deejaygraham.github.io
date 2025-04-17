@@ -2,7 +2,7 @@
 title: 12 Things that Powershell can do (so you don't have to)
 tags: [presentations]
 draft: true
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

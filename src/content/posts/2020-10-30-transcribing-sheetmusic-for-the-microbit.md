@@ -2,7 +2,7 @@
 title: Transcribing Sheet Music for the Microbit
 tags: [code, microbit, music]
 hero: microbit
-thumbnail: /img/posts/transcribing-sheetmusic-for-the-microbit/thumbnail-420x255.webp
+thumbnail: /img/posts/transcribing-sheetmusic-for-the-microbit/thumbnail-420x255.png
 
 ---
 
@@ -12,21 +12,21 @@ Longer lasting notes on the microbit have higher note lengths associated with th
 
 The day before Halloween, it feels appropriate to consider a short piece of spooky music like Mysterioso Pizzicato.
 
-![sheet music](/img/posts/transcribing-sheetmusic-for-the-microbit/mysterioso-pizzicato.webp)
+![sheet music]\(/assets/img/posts/transcribing-sheetmusic-for-the-microbit/mysterioso-pizzicato.png)
 
 ### Sheet Music
 
 In sheet music, pitches are defined by where they are placed on the stave, the higher the placement, the higher the note. For the
 micrbot, middle C is represented as C4.
 
-![treble clef](/img/posts/transcribing-sheetmusic-for-the-microbit/treble-clef.webp)
+![treble clef]\(/assets/img/posts/transcribing-sheetmusic-for-the-microbit/treble-clef.png)
 
 Notes and rests have length values denoted by their individual shape and may be modified by a dot immediately after a note or rest
 which adds 50% more to the length.
 
-![notes](/img/posts/transcribing-sheetmusic-for-the-microbit/notes.webp)
+![notes]\(/assets/img/posts/transcribing-sheetmusic-for-the-microbit/notes.png)
 
-![rests](/img/posts/transcribing-sheetmusic-for-the-microbit/rests.webp)
+![rests]\(/assets/img/posts/transcribing-sheetmusic-for-the-microbit/rests.png)
 
 ### Translation
 

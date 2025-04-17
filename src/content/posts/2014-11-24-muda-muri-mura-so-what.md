@@ -3,9 +3,9 @@ layout: sketchnote
 title: Muda Muri Mura, so what?
 tags: [lean, sketchnotes, illustration]
 sketchnote:
-  url: "/img/posts/muda-muri-mura-so-what/muda-muri-mura-so-what-hifi.webp"
+  url: "/assets/img/posts/muda-muri-mura-so-what/muda-muri-mura-so-what-hifi.png"
   alt: "sketchnote"
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

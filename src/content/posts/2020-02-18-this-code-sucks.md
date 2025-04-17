@@ -1,7 +1,7 @@
 ---
 title: This Code Sucks
 tags: [video, presentations]
-thumbnail: /img/posts/this-code-sucks/thumbnail-420x255.webp
+thumbnail: /img/posts/this-code-sucks/thumbnail-420x255.png
 alttext: Nadia Odunayo
 ---
 

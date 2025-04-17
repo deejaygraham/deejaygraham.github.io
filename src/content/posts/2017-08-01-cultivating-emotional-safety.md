@@ -3,9 +3,9 @@ layout: sketchnote
 title: Cultivating Emotional Safety
 tags: [sketchnotes, presentations, agile]
 tweetable: true
-thumbnail: "/img/posts/cultivating-emotional-safety/cultivating-emotional-safety.webp"
+thumbnail: "/assets/img/posts/cultivating-emotional-safety/cultivating-emotional-safety.png"
 sketchnote:
-  url: "/img/posts/cultivating-emotional-safety/cultivating-emotional-safety.webp"
+  url: "/assets/img/posts/cultivating-emotional-safety/cultivating-emotional-safety.png"
   alt: "sketchnote"
   source:
     name: "Cultivating Emotional Safety"

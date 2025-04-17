@@ -1,7 +1,7 @@
 ---
 title: Lazy Creating Expensive Objects
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/lazy-creating-of-expensive-objects/expensive-object-420x255.webp
+thumbnail: /img/posts/lazy-creating-of-expensive-objects/expensive-object-420x255.png
 alttext: expensive
 ---
 

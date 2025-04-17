@@ -1,8 +1,8 @@
 ---
 title: User Story Strategies
 tags: [sketchnotes, xp]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
-<img src="/img/posts/user-story-strategies/user-story-strategies.webp" alt="strong style sketchnote"/>
+<img src="/assets/img/posts/user-story-strategies/user-story-strategies.png" alt="strong style sketchnote"/>

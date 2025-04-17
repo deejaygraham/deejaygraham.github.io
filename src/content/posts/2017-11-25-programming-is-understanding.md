@@ -4,7 +4,7 @@ size: large
 title: Programming is Understanding
 attribution: Joe Armstrong
 tags: [quote]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

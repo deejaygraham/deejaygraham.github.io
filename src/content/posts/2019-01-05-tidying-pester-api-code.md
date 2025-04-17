@@ -2,7 +2,7 @@
 title: Tidying Pester API Code
 tags: [powershell]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.webp"
+thumbnail: "/assets/img/thumbnails/shell-420x255.png"
 
 ---
 

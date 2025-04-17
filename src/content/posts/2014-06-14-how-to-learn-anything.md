@@ -3,7 +3,7 @@ layout: sketchnote
 title: How to Learn Anything
 tags: [sketchnotes, deliberate-practice, presentations]
 sketchnote:
-  url: "/img/posts/how-to-learn-anything/how-to-learn-anything-bw-lofi.webp"
+  url: "/assets/img/posts/how-to-learn-anything/how-to-learn-anything-bw-lofi.png"
   alt: "How to Learn Anything"
   event:
     name: "TED"
@@ -14,7 +14,7 @@ sketchnote:
   speaker:
     name: "@joshkaufman"
     url: "https://twitter.com/joshkaufman"
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

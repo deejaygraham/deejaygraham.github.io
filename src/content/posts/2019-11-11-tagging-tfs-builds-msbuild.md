@@ -1,7 +1,7 @@
 ---
 title: Tagging TFS builds from MSBuild
 tags: [msbuild, code, tfs]
-thumbnail: /img/posts/tagging-tfs-builds-msbuild/tag-420x255.webp
+thumbnail: /img/posts/tagging-tfs-builds-msbuild/tag-420x255.png
 alttext: tag
 ---
 

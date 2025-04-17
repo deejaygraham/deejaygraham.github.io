@@ -2,7 +2,7 @@
 title: Minecraft Detectorists
 tags: [code, minecraft]
 hero: minecraft
-thumbnail: "/img/thumbnails/rpi-420x255.webp"
+thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
 
 ---
 

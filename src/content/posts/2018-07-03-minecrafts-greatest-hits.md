@@ -2,7 +2,7 @@
 title: Minecraft's Greatest Hits
 tags: [minecraft, code]
 hero: minecraft
-thumbnail: "/img/thumbnails/rpi-420x255.webp"
+thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
 
 ---
 

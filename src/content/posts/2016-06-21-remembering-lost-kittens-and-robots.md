@@ -42,17 +42,17 @@ display text, react to events and host other game stuff, icons, avatars etc.
 
 The game starts off with some simple instructions:
 
-![intro](/img/posts/remembering-lost-kittens-and-robots/rfk-intro.webp)
+![intro]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-intro.png)
 
 Clicking on the game (stage), the starts the game with a screen filled with hidden, potential-kittens,
 disguised as packages, and a robot that you move around to interact with the packages to see what they
 are.
 
-![game](/img/posts/remembering-lost-kittens-and-robots/rfk-game.webp)
+![game]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-game.png)
 
 Once the kitten has been found by the robot, the complete screen is shown:
 
-![complete](/img/posts/remembering-lost-kittens-and-robots/rfk-complete.webp)
+![complete]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-complete.png)
 
 The number of avatars is fixed but each's location is randomised at startup to make the
 game harder. Kittens and Non-Kittens have the same starting avatar (package) but change to
@@ -71,21 +71,21 @@ environment.
 
 ### Stage
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-stage-code.webp)
+![stage]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-stage-code.png)
 
 ### Robot
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-robot-code.webp)
+![stage]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-robot-code.png)
 
 ### Non-Kittens
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-1.webp)
+![stage]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-1.png)
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-2.webp)
+![stage]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-non-kitten-code-2.png)
 
 ### Kitten
 
-![stage](/img/posts/remembering-lost-kittens-and-robots/rfk-kitten-code.webp)
+![stage]\(/assets/img/posts/remembering-lost-kittens-and-robots/rfk-kitten-code.png)
 
 If the game disappears from the MIT website, can get the scratch binary image of the game
 [here](/downloads/rfk_scratch_binary.zip)

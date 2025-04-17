@@ -10,7 +10,7 @@ Visual Studio:
 
 ## 1. Create a new class library project
 
-![New Project](/img/posts/custom-msbuild-task-template/vs-new-project.webp)
+![New Project](/assets/img/posts/custom-msbuild-task-template/vs-new-project.png)
 
 ## 2. Add references to MsBuild
 

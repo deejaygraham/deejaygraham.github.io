@@ -2,7 +2,7 @@
 title: Sample Powershell Cmdlet in C#
 tags: [csharp, code, powershell]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

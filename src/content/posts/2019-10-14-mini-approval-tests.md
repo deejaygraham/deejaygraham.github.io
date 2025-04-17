@@ -1,7 +1,7 @@
 ---
 title: Mini Approval Testing
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/mini-approval-tests/mini-approval-tests-420x255.webp
+thumbnail: /img/posts/mini-approval-tests/mini-approval-tests-420x255.png
 alttext: mini-approval-tests
 ---
 

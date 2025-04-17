@@ -4,7 +4,7 @@ size: large
 title: Curse the Darkness
 attribution: Terry Pratchett
 tags: [quote]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

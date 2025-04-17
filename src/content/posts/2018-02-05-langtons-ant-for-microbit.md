@@ -19,4 +19,4 @@ there is an intelligence behind the process, guiding it.
 
 The effect is somewhat reduced on the microbit's 5x5 screen but it's still a nice illustration of complexity coming from simple rules.
 
-![ant](/img/posts/langtons-ant/langtons-ant.webp)
+![ant]\(/assets/img/posts/langtons-ant/langtons-ant.png)

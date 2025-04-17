@@ -1,7 +1,7 @@
 ---
 title: Learn Code Smells And Level Up Your Game
 tags: [video, presentations]
-thumbnail: /img/posts/learn-code-smells-and-level-up-your-game/thumbnail-420x255.webp
+thumbnail: /img/posts/learn-code-smells-and-level-up-your-game/thumbnail-420x255.png
 alttext: Sandi Metz
 ---
 

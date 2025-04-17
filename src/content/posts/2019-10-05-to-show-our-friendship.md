@@ -5,7 +5,7 @@ title: To Show our Friendship
 attribution: F Scott Fitzgerald
 publication: The Great Gatsby
 tags: [quote]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

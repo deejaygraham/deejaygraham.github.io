@@ -3,9 +3,9 @@ layout: sketchnote
 title: Sketchoting for Science
 tags: [sketchnotes]
 tweetable: true
-thumbnail: "/img/posts/sketchnoting-for-science/thumbnail-420x255.webp"
+thumbnail: "/assets/img/posts/sketchnoting-for-science/thumbnail-420x255.png"
 sketchnote:
-  url: "/img/posts/sketchnoting-for-science/walls.webp"
+  url: "/assets/img/posts/sketchnoting-for-science/walls.png"
   alt: "sketchnote"
 ---
 

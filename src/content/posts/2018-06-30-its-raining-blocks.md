@@ -2,7 +2,7 @@
 title: It's Raining Blocks
 tags: [code, minecraft]
 hero: minecraft
-thumbnail: "/img/thumbnails/rpi-420x255.webp"
+thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
 
 ---
 

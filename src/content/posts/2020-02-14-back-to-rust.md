@@ -1,7 +1,7 @@
 ---
 title: Getting Back to Rust
 tags: [code]
-thumbnail: "/img/thumbnails/rust-420x255.webp"
+thumbnail: "/assets/img/thumbnails/rust-420x255.png"
 alttext: rust
 ---
 

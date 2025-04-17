@@ -280,17 +280,17 @@ It's really just lines and curves and circles and stuff put together, isn't it?
 
 Maybe you could compare yourself against Dave Gray, noted Visual Thinker and inspiration for Mike Rohde's work.
 
-./images/dave-gray-mann-gruber.webp
+./images/dave-gray-mann-gruber.png
 
 How about some cartoonists who work for a national newspaper? I've chosen the guardian in this case:
 
 Tom Gauld - simple figures - convey meaning in posture and outline more than in faces or hands, feet. Pictures, 
 icons and text are very sketchnote like, one of my favourite illustrators and had a big impact on how I try 
 to draw figures.
-./images/tom-gauld-sketchbook-1.webp
+./images/tom-gauld-sketchbook-1.png
 
 Josie Long - her series of cartoons on how she would change the world, very simple figures, faces, text.
-./images/josie-long-another-planet.webp
+./images/josie-long-another-planet.png
 
 Modern toss
 

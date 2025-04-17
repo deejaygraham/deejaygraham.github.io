@@ -2,7 +2,7 @@
 title: Read TargetFramework of Assembly in PowerShell
 tags: [powershell, code]
 hero: power
-thumbnail: "/img/thumbnails/shell-420x255.webp"
+thumbnail: "/assets/img/thumbnails/shell-420x255.png"
 
 ---
 

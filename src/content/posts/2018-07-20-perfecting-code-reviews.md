@@ -6,7 +6,7 @@ tags: [code, agile]
 I first read about the Core Protocols way back in the early 2000s from
 <a href="http://www.mccarthyshow.com/">Jim & Michele McCarthy</a>'s book "Software for your head".
 
-![book cover](/img/posts/perfecting-code-reviews/software-for-your-head.webp)
+![book cover]\(/assets/img/posts/perfecting-code-reviews/software-for-your-head.png)
 
 They seem like a sensible set of ideas but probably way too radical for most organizations. I recall
 we tried adopting the protocols with a team I was leading a few years later but due to other constraints

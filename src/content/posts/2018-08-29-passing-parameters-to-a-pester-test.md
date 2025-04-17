@@ -2,7 +2,7 @@
 title: Passing Parameters to a Pester Test
 tags: [powershell]
 hero: power
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

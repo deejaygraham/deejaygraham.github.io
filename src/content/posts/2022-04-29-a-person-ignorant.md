@@ -5,7 +5,7 @@ title: A Person Ignorant
 attribution: Terry Pratchett
 publication: Equal Rites
 tags: [quote]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 

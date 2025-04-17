@@ -1,7 +1,7 @@
 ---
 title: PowerShell Fortune Cookie
 tags: [code, cloud, powershell]
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Implementing the Clean Architecture in .NET Core
 tags: [video, presentations]
-thumbnail: /img/posts/implementing-clean-architecture-net/thumbnail-420x255.webp
+thumbnail: /img/posts/implementing-clean-architecture-net/thumbnail-420x255.png
 alttext: Rouan
 ---
 

@@ -2,7 +2,7 @@
 title: Microbit Musicians
 tags: [code, microbit, music]
 hero: microbit
-thumbnail: /img/posts/microbit-musicians/thumbnail-420x255.webp
+thumbnail: /img/posts/microbit-musicians/thumbnail-420x255.png
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Fail better with QA in Production
 tags: [video, presentations]
-thumbnail: /img/posts/fail-better-with-qa-in-production/thumbnail-420x255.webp
+thumbnail: /img/posts/fail-better-with-qa-in-production/thumbnail-420x255.png
 alttext: Rouan
 ---
 

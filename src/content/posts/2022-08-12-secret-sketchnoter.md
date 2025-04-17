@@ -3,9 +3,9 @@ layout: sketchnote
 title: Secret Sketchnoter
 tags: [sketchnotes]
 tweetable: true
-thumbnail: "/img/posts/secret-sketchnoter/thumbnail-420x255.jpg"
+thumbnail: "/assets/img/posts/secret-sketchnoter/thumbnail-420x255.jpg"
 sketchnote:
-  url: "/img/posts/secret-sketchnoter/secret-sketchnoter.jpg"
+  url: "/assets/img/posts/secret-sketchnoter/secret-sketchnoter.jpg"
   alt: "sketchnote"
 ---
 

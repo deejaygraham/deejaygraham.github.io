@@ -1,7 +1,7 @@
 ---
 title: Having the Right Kind of Argument(s)
 tags: [powershell]
-thumbnail: "/img/thumbnails/parcel-420x255.webp"
+thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 
 ---
 

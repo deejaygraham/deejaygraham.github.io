@@ -1,7 +1,7 @@
 ---
 title: XP - Extreme Portraiture
 tags: [sketchnotes, illustration, xp]
-thumbnail: "/img/thumbnails/notebook-420x255.webp"
+thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
 
@@ -16,6 +16,6 @@ one of my illustrations - a portrait of him - on the site. Joe has indirectly he
 through blog posts and videos of his talks so, of course, I said yes. The result is below
 or you can see the real thing <a href="https://blog.thecodewhisperer.com/">here</a>
 
-![tweet](/img/posts/extreme-portraiture/jbrains-tweet.webp)
+![tweet]\(/assets/img/posts/extreme-portraiture/jbrains-tweet.png)
 
-![jbrains](/img/posts/extreme-portraiture/code-whisperer.webp)
+![jbrains]\(/assets/img/posts/extreme-portraiture/code-whisperer.png)

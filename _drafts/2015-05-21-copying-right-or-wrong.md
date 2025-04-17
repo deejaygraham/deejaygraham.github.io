@@ -10,16 +10,16 @@ Central Library on the 27th of April 2015. The speakers were Rebecca Moosavian, 
 [Northumbria University](https://www.northumbria.ac.uk/) and the author and activist 
 [Cory Doctorow](http://craphound.com).
 
-![pic1](/img/posts/copying-right-or-wrong/17412973838_e4740990e9_m.webp "Rebecca and Cory")
+![pic1](/assets/img/posts/copying-right-or-wrong/17412973838_e4740990e9_m.png "Rebecca and Cory")
 
 Here are a selection of quotes (to come later) and photos* from the evening:
 
 
-![pic2](/img/posts/copying-right-or-wrong/16980479233_56df8fe1a6_m.webp "Audience")
+![pic2](/assets/img/posts/copying-right-or-wrong/16980479233_56df8fe1a6_m.png "Audience")
 
-![pic3](/img/posts/copying-right-or-wrong/17414491849_fe00f6e846_m.webp "Rebecca and Cory 2")
+![pic3](/assets/img/posts/copying-right-or-wrong/17414491849_fe00f6e846_m.png "Rebecca and Cory 2")
 
-![pic4](/img/posts/copying-right-or-wrong/17598515072_786e19b47f_m.webp "Cory")
+![pic4](/assets/img/posts/copying-right-or-wrong/17598515072_786e19b47f_m.png "Cory")
 
 ## Photo credits
 
