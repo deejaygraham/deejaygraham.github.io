@@ -42,23 +42,18 @@ export default function (eleventyConfig) {
     });
   eleventyConfig.addPlugin(favicons);
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
-	
-  /*
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // which file extensions to process
     extensions: 'html',
-    // optional, output image formats
-    // formats: ['jpg', 'webp'],
+    formats: ['jpg', 'png', 'webp'],
     // optional, output image widths
     // widths: ['auto', 400, 800],
-    // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
         loading: 'lazy',
         // sizes: '100vw',
         decoding: 'async',
     },
   });
-  */
+  
   // collections
   eleventyConfig.addCollection("posts", posts);
 
