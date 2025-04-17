@@ -8,3 +8,4 @@ _site/
 pages.json
 /test-results
 /playwright-report
+/.cache
