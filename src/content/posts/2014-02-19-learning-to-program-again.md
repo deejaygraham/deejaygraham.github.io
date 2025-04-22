@@ -8,7 +8,7 @@ I understand and appreciate the syntax and expressiveness but I'm not in a
 position to use it regularly in my day job. Like so many other things, I
 find if I don't use it enough it tends to leak away.
 
-![cover](/assets/img/posts/learning-to-program-again/learn-to-program-cover.png)
+![cover](/assets/img/posts/learning-to-program-again/learn-to-program-cover.jpg)
 
 So I got [Chris Pine's](https://pine.fm/) book
 [Learn to Program](http://www.pragprog.com/titles/ltp2/learn-to-program-2nd-edition)

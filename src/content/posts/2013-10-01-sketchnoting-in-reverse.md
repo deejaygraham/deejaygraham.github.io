@@ -1,8 +1,6 @@
 ---
 title: Sketchnoting in Reverse
 tags: [sketchnotes, deliberate-practice, presentations]
-thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
-
 ---
 
 A little while ago I was introduced to the idea of sketchnoting by
@@ -56,7 +54,7 @@ and enhanced it based on feedback after giving the talk a few more times.
 
 Here's a cleaned up scanned image of the new version of the sketchnote:
 
-<img src="/assets/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.jpg" class="u-max-full-width" alt="Update sketchnote" />
+<img src="/assets/img/posts/sketchnoting-in-reverse/deliberate-practice-presentation-notes2-bw.png" class="u-max-full-width" alt="Update sketchnote" />
 
 ## Update 2
 

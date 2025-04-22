@@ -8,7 +8,7 @@ and retro propaganda posters, I wondered what a government with a strict
 focus on the principles of good object-oriented design would produce to inspire
 it's citizens.
 
-![tell don't ask](/assets/img/posts/tell-dont-ask/tell-dont-ask.png)
+![tell don't ask](/assets/img/posts/tell-dont-ask/tell-dont-ask.jpg)
 
 ...and the svg representation...
 
