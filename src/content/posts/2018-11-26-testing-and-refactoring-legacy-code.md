@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Testing and Refactoring Legacy Code
 tags: [sketchnotes, presentations, agile, tdd, xp]
-tweetable: true
+
 thumbnail: "/assets/img/posts/testing-and-refactoring-legacy-code/testing-and-refactoring-legacy-code-tn.png"
 sketchnote:
   url: "/assets/img/posts/testing-and-refactoring-legacy-code/testing-and-refactoring-legacy-code.png"

@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Polly Want a Message
 tags: [sketchnotes, presentations, tdd, xp]
-tweetable: true
+
 thumbnail: "/assets/img/posts/polly-want-a-message/polly-want-a-message-tn.png"
 sketchnote:
   url: "/assets/img/posts/polly-want-a-message/polly-want-a-message.png"

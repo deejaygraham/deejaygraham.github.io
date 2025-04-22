@@ -2,7 +2,7 @@
 layout: sketchnote
 title: No Estimates
 tags: [sketchnotes, presentations, agile]
-tweetable: true
+
 thumbnail: "/assets/img/posts/vasco-duarte-no-estimates/no-estimates.png"
 sketchnote:
   url: "/assets/img/posts/vasco-duarte-no-estimates/no-estimates.png"

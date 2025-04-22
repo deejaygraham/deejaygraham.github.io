@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Fail better with QA in production
 tags: [sketchnotes, presentations]
-tweetable: true
+
 thumbnail: "/assets/img/posts/fail-better-with-qa/thumbnail-420x255.png"
 sketchnote:
   url: "/assets/img/posts/fail-better-with-qa/fail-better-with-qa-in-production.png"

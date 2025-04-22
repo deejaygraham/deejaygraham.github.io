@@ -2,7 +2,7 @@
 title: Tiny Tetris for Microbit
 tags: [code, microbit]
 hero: microbit
-tweetable: true
+
 
 
 ---

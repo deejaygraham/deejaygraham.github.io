@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Taking Back Software Engineering
 tags: [sketchnotes, presentations]
-tweetable: true
+
 thumbnail: "/assets/img/posts/taking-back-software-engineering/thumbnail-420x255.png"
 sketchnote:
   url: "/assets/img/posts/taking-back-software-engineering/taking-back-software-engineering.png"

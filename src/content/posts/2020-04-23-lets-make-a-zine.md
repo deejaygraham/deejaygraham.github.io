@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Lets make a tiny zine
 tags: [sketchnotes]
-tweetable: true
+
 thumbnail: "/assets/img/posts/lets-make-a-zine/thumbnail-420x255.png"
 sketchnote:
   url: "/assets/img/posts/lets-make-a-zine/austin-kleon.png"

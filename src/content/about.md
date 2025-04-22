@@ -2,7 +2,7 @@
 permalink: about/index.html
 layout: about.njk
 title: Hey, Hi, Hello.
-thumbnail: /assets/img/heroes/hero-makers-and-creators.png
+thumbnail: /assets/img/heroes/hero-makers-and-creators.jpg
 ---
 
 My name is Derek Graham and this is my personal blog.

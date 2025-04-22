@@ -2,8 +2,6 @@
 title: Promoting the Foo Cafe
 tags: [sketchnotes, illustration, deliberate-practice]
 hero: power
-thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
-
 ---
 
 A couple of days ago I had some exciting news from Michael Tiberg, the founder of Øredev and

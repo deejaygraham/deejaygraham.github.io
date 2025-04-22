@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Building High Performance React Applications
 tags: [sketchnotes, presentations]
-tweetable: true
+
 thumbnail: "/assets/img/posts/high-performance-react-sketchnote/thumbnail-420x255.png"
 sketchnote:
   url: "/assets/img/posts/high-performance-react-sketchnote/building-high-performance-react.png"

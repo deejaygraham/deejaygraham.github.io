@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Why Every Element of SOLID is Wrong
 tags: [sketchnotes, presentations, agile]
-tweetable: true
+
 thumbnail: "/assets/img/posts/solid-is-wrong/solid-is-wrong.png"
 sketchnote:
   url: "/assets/img/posts/solid-is-wrong/solid-is-wrong.png"

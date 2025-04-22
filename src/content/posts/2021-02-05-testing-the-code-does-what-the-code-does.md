@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Testing the Code Does What the Code Does
 tags: [sketchnotes, presentations]
-tweetable: true
+
 thumbnail: "/assets/img/posts/testing-the-code-does-what-the-code-does/thumbnail-420x255.png"
 sketchnote:
   url: "/assets/img/posts/testing-the-code-does-what-the-code-does/testing-the-code-does-what-the-code-does.png"

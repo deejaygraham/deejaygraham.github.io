@@ -2,14 +2,12 @@
 title: Minecraft Forestry
 tags: [minecraft, code]
 hero: minecraft
-thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
-
 ---
 
 We can build very simple trees programmatically in Minecraft by stacking blocks together using
 wood-y and leaf-y materials.
 
-<img src="/assets/img/posts/minecraft-forestry/simple-tree.png" alt="simple tree" class="u-max-full-width" />
+<img src="/assets/img/posts/minecraft-forestry/simple-tree.jpg" alt="simple tree" class="u-max-full-width" />
 
 ```python
 
@@ -19,7 +17,7 @@ wood-y and leaf-y materials.
 
 Square blocks of leaves aren't very realistic so we can trim off the square edges like this.
 
-<img src="/assets/img/posts/minecraft-forestry/better-tree.png" alt="better tree" class="u-max-full-width" />
+<img src="/assets/img/posts/minecraft-forestry/better-tree.jpg" alt="better tree" class="u-max-full-width" />
 
 ```python
 
@@ -29,7 +27,7 @@ Square blocks of leaves aren't very realistic so we can trim off the square edge
 
 Finally, we can make ourselves a nice orchard or small forest using some random values for each tree:
 
-<img src="/assets/img/posts/minecraft-forestry/random-forest.png" alt="forest of trees" class="u-max-full-width" />
+<img src="/assets/img/posts/minecraft-forestry/random-forest.jpg" alt="forest of trees" class="u-max-full-width" />
 
 ```python
 
@@ -63,4 +61,4 @@ change the leaf generation to work on a probability of a leaf block being at any
 
 ```
 
-<img src="/assets/img/posts/minecraft-forestry/random-leaves.png" alt="random leaves" class="u-max-full-width" />
+<img src="/assets/img/posts/minecraft-forestry/random-leaves.jpg" alt="random leaves" class="u-max-full-width" />

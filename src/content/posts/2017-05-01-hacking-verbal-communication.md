@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Hacking Verbal Communication
 tags: [sketchnotes, presentations, agile]
-tweetable: true
+
 thumbnail: "/assets/img/posts/hacking-verbal-communication/hacking-verbal-communication.png"
 sketchnote:
   url: "/assets/img/posts/hacking-verbal-communication/hacking-verbal-communication.png"

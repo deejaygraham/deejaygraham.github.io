@@ -8,7 +8,7 @@ I recently got hold of a copy of the [Sketchnote Ideabook](https://sketchnoteide
 the cover is nice to hold and the paper is great for drawing on and nothing seems to bleed through from page to page even with a very 
 heavy ink. 
 
-<img src="/assets/img/posts/sketchnote-ideabook/front.jpg" />
+<img src="/assets/img/posts/sketchnote-ideabook/front.jpg" alt="front cover" />
 
-<img src="/assets/img/posts/sketchnote-ideabook/back.jpg" />
+<img src="/assets/img/posts/sketchnote-ideabook/back.jpg" alt="back cover" />
 

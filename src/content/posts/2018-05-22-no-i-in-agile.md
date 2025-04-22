@@ -2,10 +2,10 @@
 layout: sketchnote
 title: There's No 'I' in Agile
 tags: [sketchnotes, presentations, agile]
-tweetable: true
-thumbnail: "/assets/img/posts/no-i-in-agile/no-i-in-agile.png"
+
+thumbnail: "/assets/img/posts/no-i-in-agile/no-i-in-agile.jpg"
 sketchnote:
-  url: "/assets/img/posts/no-i-in-agile/no-i-in-agile.png"
+  url: "/assets/img/posts/no-i-in-agile/no-i-in-agile.jpg"
   alt: "sketchnote"
   source:
     name: "Sam Laing: Agile Testing"

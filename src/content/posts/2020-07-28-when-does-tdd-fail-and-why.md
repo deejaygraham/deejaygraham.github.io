@@ -2,10 +2,9 @@
 layout: sketchnote
 title: When Does TDD Fail and Why
 tags: [tdd, sketchnotes, xp]
-tweetable: true
-thumbnail: "/assets/img/posts/tdd-live-1/thumbnail-420x255.png"
+thumbnail: "/assets/img/posts/tdd-live-1/thumbnail-420x255.jpg"
 sketchnote:
-  url: "/assets/img/posts/tdd-live-1/tdd-live-1.png"
+  url: "/assets/img/posts/tdd-live-1/tdd-live-1.jpg"
   alt: "sketchnote"
 ---
 

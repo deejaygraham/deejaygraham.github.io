@@ -1,8 +1,6 @@
 ---
 title: Swearing and Nudity in Newcastle
 tags: [agile, presentations, sketchnotes]
-thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
-
 ---
 
 On the 8th of August <a href="http://wisenoodle.me/">John Le Drew</a> was kind enough to

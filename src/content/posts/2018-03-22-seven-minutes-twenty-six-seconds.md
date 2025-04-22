@@ -2,10 +2,10 @@
 layout: sketchnote
 title: 7 minutes, 26 seconds
 tags: [sketchnotes, presentations, agile, tdd, xp]
-tweetable: true
-thumbnail: "/assets/img/posts/seven-minutes-twenty-six-seconds/seven-minutes-twenty-six-seconds.png"
+
+thumbnail: "/assets/img/posts/seven-minutes-twenty-six-seconds/seven-minutes-twenty-six-seconds.jpg"
 sketchnote:
-  url: "/assets/img/posts/seven-minutes-twenty-six-seconds/seven-minutes-twenty-six-seconds.png"
+  url: "/assets/img/posts/seven-minutes-twenty-six-seconds/seven-minutes-twenty-six-seconds.jpg"
   alt: "sketchnote"
   source:
     name: "7 minutes, 26 seconds, and the Fundamental Theorem of Agile Software Development"

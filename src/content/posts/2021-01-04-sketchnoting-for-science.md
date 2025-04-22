@@ -2,10 +2,10 @@
 layout: sketchnote
 title: Sketchoting for Science
 tags: [sketchnotes]
-tweetable: true
-thumbnail: "/assets/img/posts/sketchnoting-for-science/thumbnail-420x255.png"
+
+thumbnail: "/assets/img/posts/sketchnoting-for-science/thumbnail-420x255.jpg"
 sketchnote:
-  url: "/assets/img/posts/sketchnoting-for-science/walls.png"
+  url: "/assets/img/posts/sketchnoting-for-science/walls.jpg"
   alt: "sketchnote"
 ---
 

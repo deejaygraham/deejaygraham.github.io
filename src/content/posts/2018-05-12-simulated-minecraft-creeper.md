@@ -2,8 +2,6 @@
 title: Simulating Minecraft Creeper on Pi
 tags: [code, minecraft]
 hero: minecraft
-thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
-
 ---
 
 One of the features missing from the pi version of Minecraft is the survival

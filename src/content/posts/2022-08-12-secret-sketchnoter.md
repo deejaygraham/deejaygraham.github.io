@@ -2,7 +2,7 @@
 layout: sketchnote
 title: Secret Sketchnoter
 tags: [sketchnotes]
-tweetable: true
+
 thumbnail: "/assets/img/posts/secret-sketchnoter/thumbnail-420x255.jpg"
 sketchnote:
   url: "/assets/img/posts/secret-sketchnoter/secret-sketchnoter.jpg"
