@@ -1,6 +1,5 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import checkResourceExists from './util/check-resource-exists.js';
 import checkPageLinksExist from './util/check-page-links-exist.js';
 
 test.describe("about page", () => {
