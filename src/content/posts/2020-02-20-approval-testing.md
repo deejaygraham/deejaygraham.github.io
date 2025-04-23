@@ -6,45 +6,45 @@ tags: [agile, xp]
 Last night we had our February <a href="http://nebytes.net">NE Bytes</a> developer meetup, this time with the
 excellent <a href="https://twitter.com/emilybache">Emily Bache</a> running a remote workshop from her home in Sweden.
 
-<img src="/assets/img/posts/approval-tests-workshop/opening.jpg" alt="opening" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/opening.JPG" alt="opening" class="u-max-full-width" />
 
 Emily spoke on approval testing, what it was and how to use it to improve the quality of software.
 
-<img src="/assets/img/posts/approval-tests-workshop/discussion.jpg" alt="what makes a good test" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/discussion.JPG" alt="what makes a good test" class="u-max-full-width" />
 
 We kicked off with a discussion in small groups of what makes for a good unit test with plenty of suggestions from the delegates. Because this was
 a remote session, I had Emily's feed from my laptop projected onto the big room display and my webcam facing out into the room. Despite
 this, it was difficult for Emily to hear all the feedback so I acted as her local proxy and relayed feedback when she asked for it.
 
-<img src="/assets/img/posts/approval-tests-workshop/workshop-1.jpg" alt="code review" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/workshop-1.JPG" alt="code review" class="u-max-full-width" />
 
 Staying in our small groups, after this discussion of general unit tests, Emily asked us to look at some sample tests which we had
 pinned around the room earlier. They were different styles, levels of complexity, format and layout and again we had a good
 discussion about the relative pros and cons of each approach. We put up post-it notes of feedback against each of the reviewed samples.
 
-<img src="/assets/img/posts/approval-tests-workshop/workshop-2.jpg" alt="code review" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/workshop-2.JPG" alt="code review" class="u-max-full-width" />
 
 We then moved onto the main topic, approval tests and how to use them to tame legacy code which doesn't already have tests written for it.
 Emily took us through several different applications to show how to use an approval test library in Java using a shopping cart example where
 the original tests were verbose with a lot of repetition. Approval testing made the code easier to read at the expense of having to regenerate the
 golden copy and maintain it in source control along with the test code itself.
 
-<img src="/assets/img/posts/approval-tests-workshop/code-1.jpg" alt="code" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/code-1.JPG" alt="code" class="u-max-full-width" />
 
-<img src="/assets/img/posts/approval-tests-workshop/code-2.jpg" alt="code" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/code-2.JPG" alt="code" class="u-max-full-width" />
 
 Last, Emily ran through the <a href="https://github.com/emilybache/GildedRose-Refactoring-Kata">Gilded Rose kata</a> to demonstrate the use of
 approval tests when refactoring "untestable", complex, code into a more readable form. Having the approval tests there to act as a safe guard she
 was able to make some bolder refactorings than she could have without them and was confident that she hadn't broken anything.
 
-<img src="/assets/img/posts/approval-tests-workshop/code-3.jpg" alt="code" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/code-3.JPG" alt="code" class="u-max-full-width" />
 
 ## Feedback
 
 As a final exercise, Emily asked us to come up with some thoughts for things we could take away from the workshop and capture
 them on a few post-it notes.
 
-<img src="/assets/img/posts/approval-tests-workshop/feedback-postits.jpg" alt="feedback" class="u-max-full-width" />
+<img src="/assets/img/posts/approval-tests-workshop/feedback-postits.JPG" alt="feedback" class="u-max-full-width" />
 
 Not everyone was comfortable saying what their feedback was aloud or writing it down but I got lots of feedback in the form of
 private comments that everyone had learned a huge amount and had been encouraged to think about the topic. I was even contacted by
