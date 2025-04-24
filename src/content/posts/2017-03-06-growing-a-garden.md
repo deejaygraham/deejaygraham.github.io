@@ -6,7 +6,7 @@ tags: [agile, illustration]
 A favourite anti-analogy I was reminded of recently which I converted into a
 little illustration so that I could include it in a talk.
 
-![sketch]\(/assets/img/posts/growing-a-garden/growing-a-garden.png)
+![sketch](/assets/img/posts/growing-a-garden/growing-a-garden.png)
 
 Many people think of software development as a civil engineering discipline, so we
 have lots of metaphors built (geddit) on construction - building a house or a
