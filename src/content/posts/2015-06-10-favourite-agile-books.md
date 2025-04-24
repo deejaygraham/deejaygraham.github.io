@@ -9,7 +9,7 @@ Not all super-specifically all agile related but I thought I would put them all 
 
 [Nat Pryce and Steve Freeman](http://www.growing-object-oriented-software.com/)
 
-![goos]\(/assets/img/posts/favourite-agile-books/goos.png)
+![goos](/assets/img/posts/favourite-agile-books/goos.png)
 
 ---
 
@@ -17,7 +17,7 @@ Not all super-specifically all agile related but I thought I would put them all 
 
 [Sandi Metz](http://www.sandimetz.com/)
 
-![poodr]\(/assets/img/posts/favourite-agile-books/poodr.png)
+![poodr](/assets/img/posts/favourite-agile-books/poodr.png)
 
 > This book believes in your desire to do good work and gives you the tools you need to best be of use.  
 > It is completely practical and as such is, at its core, a book about how to write code that brings you joy.
@@ -29,7 +29,7 @@ Not all super-specifically all agile related but I thought I would put them all 
 _By Example_
 Kent Beck
 
-![tdd]\(/assets/img/posts/favourite-agile-books/test-driven-development-by-example.png)
+![tdd](/assets/img/posts/favourite-agile-books/test-driven-development-by-example.png)
 
 ---
 
@@ -37,7 +37,7 @@ Kent Beck
 
 Andy Hunt & David Thomas
 
-![pragmatic programmer]\(/assets/img/posts/favourite-agile-books/pragmatic-programmer.png)
+![pragmatic programmer](/assets/img/posts/favourite-agile-books/pragmatic-programmer.png)
 
 ---
 
@@ -45,7 +45,7 @@ Andy Hunt & David Thomas
 
 Andy Hunt
 
-![pragmatic thinking learning]\(/assets/img/posts/favourite-agile-books/pragmatic-thinking-and-learning.png)
+![pragmatic thinking learning](/assets/img/posts/favourite-agile-books/pragmatic-thinking-and-learning.png)
 
 ---
 
@@ -53,7 +53,7 @@ Andy Hunt
 
 William Strunk Jr and E.B. White
 
-![elements of style]\(/assets/img/posts/favourite-agile-books/elements-of-style.png)
+![elements of style](/assets/img/posts/favourite-agile-books/elements-of-style.png)
 
 ---
 
@@ -61,7 +61,7 @@ William Strunk Jr and E.B. White
 
 Michael Lopp
 
-![managing humans]\(/assets/img/posts/favourite-agile-books/managing-humans.png)
+![managing humans](/assets/img/posts/favourite-agile-books/managing-humans.png)
 
 ---
 
@@ -69,7 +69,7 @@ Michael Lopp
 
 Robert Martin
 
-![clean code]\(/assets/img/posts/favourite-agile-books/clean-code.png)
+![clean code](/assets/img/posts/favourite-agile-books/clean-code.png)
 
 ---
 
@@ -77,7 +77,7 @@ Robert Martin
 
 Robert Martin
 
-![clean coder]\(/assets/img/posts/favourite-agile-books/clean-coder.png)
+![clean coder](/assets/img/posts/favourite-agile-books/clean-coder.png)
 
 ---
 
@@ -85,7 +85,7 @@ Robert Martin
 
 [Rachel Davies](http://rachelcdavies.github.io) and Liz Sedley
 
-![agile coaching]\(/assets/img/posts/favourite-agile-books/agile-coaching.png)
+![agile coaching](/assets/img/posts/favourite-agile-books/agile-coaching.png)
 
 > To help agile teams improve, you need to work with the individuals
 > in the team. They’re the number one experts on how they work and
@@ -100,7 +100,7 @@ Robert Martin
 
 Esther Derby and Diana Larsen
 
-![agile coaching]\(/assets/img/posts/favourite-agile-books/agile-retrospectives.png)
+![agile coaching](/assets/img/posts/favourite-agile-books/agile-retrospectives.png)
 
 ---
 
@@ -108,7 +108,7 @@ Esther Derby and Diana Larsen
 
 Lyssa Adkins
 
-![agile teams]\(/assets/img/posts/favourite-agile-books/coaching-agile-teams.png)
+![agile teams](/assets/img/posts/favourite-agile-books/coaching-agile-teams.png)
 
 ---
 
@@ -117,7 +117,7 @@ Lyssa Adkins
 _Design and Deploy Production-Ready Software_
 Michael T. Nygard
 
-![release it]\(/assets/img/posts/favourite-agile-books/release-it.png)
+![release it](/assets/img/posts/favourite-agile-books/release-it.png)
 
 ---
 
@@ -126,7 +126,7 @@ Michael T. Nygard
 _Embrace Change_
 Kent Beck
 
-![xp explained]\(/assets/img/posts/favourite-agile-books/extreme-programming-explained.png)
+![xp explained](/assets/img/posts/favourite-agile-books/extreme-programming-explained.png)
 
 ---
 
@@ -135,7 +135,7 @@ Kent Beck
 _Productive Projects & Teams_
 Tom DeMarco and Timothy Lister
 
-![peopleware]\(/assets/img/posts/favourite-agile-books/peopleware.png)
+![peopleware](/assets/img/posts/favourite-agile-books/peopleware.png)
 
 ---
 
@@ -143,7 +143,7 @@ Tom DeMarco and Timothy Lister
 
 [Johanna Rothman](http://www.jrothman.com/)
 
-![behind closed doors]\(/assets/img/posts/favourite-agile-books/behind-closed-doors.png)
+![behind closed doors](/assets/img/posts/favourite-agile-books/behind-closed-doors.png)
 
 ---
 
@@ -151,7 +151,7 @@ Tom DeMarco and Timothy Lister
 
 [Johanna Rothman](http://www.jrothman.com/)
 
-![manage it!]\(/assets/img/posts/favourite-agile-books/manage-it.png)
+![manage it!](/assets/img/posts/favourite-agile-books/manage-it.png)
 
 ---
 
@@ -159,7 +159,7 @@ Tom DeMarco and Timothy Lister
 
 [Johanna Rothman](http://www.jrothman.com/)
 
-![manage your project portfolio]\(/assets/img/posts/favourite-agile-books/manage-your-project-portfolio.png)
+![manage your project portfolio](/assets/img/posts/favourite-agile-books/manage-your-project-portfolio.png)
 
 ---
 
@@ -167,7 +167,7 @@ Tom DeMarco and Timothy Lister
 
 [Jurgen Appelo](http://www.jurgenappelo.com)
 
-![management 3.0]\(/assets/img/posts/favourite-agile-books/management-3.0.png)
+![management 3.0](/assets/img/posts/favourite-agile-books/management-3.0.png)
 
 ---
 
@@ -175,7 +175,7 @@ Tom DeMarco and Timothy Lister
 
 Brian W. Kernighan & Rob Pike
 
-![p of p]\(/assets/img/posts/favourite-agile-books/practice-of-programming.png)
+![p of p](/assets/img/posts/favourite-agile-books/practice-of-programming.png)
 
 ---
 
@@ -184,7 +184,7 @@ Brian W. Kernighan & Rob Pike
 _Improving the Design of Existing Code_
 Martin Fowler
 
-![refactoring]\(/assets/img/posts/favourite-agile-books/refactoring.png)
+![refactoring](/assets/img/posts/favourite-agile-books/refactoring.png)
 
 ---
 
@@ -193,7 +193,7 @@ Martin Fowler
 _Strategies, Patterns & Applications_
 Peter Coad, David North, Mark Mayfield
 
-![strapat]\(/assets/img/posts/favourite-agile-books/object-models-strategies-patterns-applications.png)
+![strapat](/assets/img/posts/favourite-agile-books/object-models-strategies-patterns-applications.png)
 
 ---
 
@@ -201,7 +201,7 @@ Peter Coad, David North, Mark Mayfield
 
 Michael Feathers
 
-![working effectively]\(/assets/img/posts/favourite-agile-books/working-effectively-with-legacy-code.png)
+![working effectively](/assets/img/posts/favourite-agile-books/working-effectively-with-legacy-code.png)
 
 ---
 
@@ -209,7 +209,7 @@ Michael Feathers
 
 Ed. Kevlin Henney
 
-![97 things]\(/assets/img/posts/favourite-agile-books/ninety-seven-things.png)
+![97 things](/assets/img/posts/favourite-agile-books/ninety-seven-things.png)
 
 ---
 
@@ -217,7 +217,7 @@ Ed. Kevlin Henney
 
 Harold Abelson
 
-![SICP]\(/assets/img/posts/favourite-agile-books/structure-interpretation-computer-programs.png)
+![SICP](/assets/img/posts/favourite-agile-books/structure-interpretation-computer-programs.png)
 
 ---
 
@@ -225,7 +225,7 @@ Harold Abelson
 
 Mike Rohde
 
-![sketchnote]\(/assets/img/posts/favourite-agile-books/sketchnote-handbook.png)
+![sketchnote](/assets/img/posts/favourite-agile-books/sketchnote-handbook.png)
 
 ---
 
@@ -233,7 +233,7 @@ Mike Rohde
 
 John Medina
 
-![brain rules]\(/assets/img/posts/favourite-agile-books/brain-rules.png)
+![brain rules](/assets/img/posts/favourite-agile-books/brain-rules.png)
 
 ---
 
@@ -241,7 +241,7 @@ John Medina
 
 Cordelia Fine
 
-![Mind]\(/assets/img/posts/favourite-agile-books/a-mind-of-its-own.png)
+![Mind](/assets/img/posts/favourite-agile-books/a-mind-of-its-own.png)
 
 ---
 
@@ -250,6 +250,6 @@ Cordelia Fine
 _Essays on Software Engineering_
 Frederick P. Brooks Jr.
 
-![mythical man month]\(/assets/img/posts/favourite-agile-books/mythical-man-month.png)
+![mythical man month](/assets/img/posts/favourite-agile-books/mythical-man-month.png)
 
 ---
