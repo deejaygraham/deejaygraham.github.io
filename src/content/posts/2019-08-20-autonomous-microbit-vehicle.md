@@ -46,9 +46,9 @@ mode and watch while it "feels" its way around any sort of track we can devise.
 
 Here is the finished vehicle running around a test track at one of our work open days.
 
-![starting off](/assets/img/posts/autonomous-microbit-vehicle/autonomous-1.jpg)
+![starting off](/assets/img/posts/autonomous-microbit-vehicle/autonomous-1.png)
 
-![running round the track](/assets/img/posts/autonomous-microbit-vehicle/autonomous-2.jpg)
+![running round the track](/assets/img/posts/autonomous-microbit-vehicle/autonomous-2.png)
 
 Occasionally the vehicle would leave the track (I think the reflectivity of the sellotape holding the tiles together was to blame) and meander away, reading the colours of the floor tiles
 and the varying surfaces under its wheels until it was eventually rescued.
