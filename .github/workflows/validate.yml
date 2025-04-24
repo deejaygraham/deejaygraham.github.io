@@ -30,13 +30,7 @@ jobs:
 
       - name: Lint javascript
         id: eslint
-        run: |
-          npm run lint
-          echo "::set-output name=eslint_exit_code::$?"
-
-      - name: Fail if ESLint errors
-          if: steps.eslint.outputs.eslint_exit_code != 0
-          run: exit 1
+        run: npm run lint
 
       - name: Unit test 11ty code
         run: npm run unit-test
