@@ -10,6 +10,6 @@ got for Christmas. It's from <a href="https://www.blacksheepleather.co.uk/">Blac
 
 The front has a black sheep embossed in the lower right.
 
-![front]\(/assets/img/posts/black-sheep-notebook/notebook-front.png)
+![front cover](/assets/img/posts/black-sheep-notebook/notebook-front.png)
 
-![back]\(/assets/img/posts/black-sheep-notebook/notebook-back.png)
+![back cover](/assets/img/posts/black-sheep-notebook/notebook-back.png)
