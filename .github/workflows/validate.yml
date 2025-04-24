@@ -29,12 +29,14 @@ jobs:
         run: npm ci
 
       - name: Lint javascript
+        id: eslint
         run: |
           npm run lint
-          if [ $? -ne 0 ]; then
-            echo "ESLint found errors. Failing the workflow."
-            exit 1
-          fi
-          
+          echo "::set-output name=eslint_exit_code::$?"
+
+      - name: Fail if ESLint errors
+          if: steps.eslint.outputs.eslint_exit_code != 0
+          run: exit 1
+
       - name: Unit test 11ty code
         run: npm run unit-test
