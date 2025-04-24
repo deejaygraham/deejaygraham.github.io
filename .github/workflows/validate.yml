@@ -28,9 +28,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint javascript
-        id: eslint
-        run: npm run lint
+      - name: Lint src folder
+        run: npx eslint ./src --max-warnings=0 
+        
+      - name: Lint test folder
+        run: npx eslint ./tests --max-warnings=0
 
       - name: Unit test 11ty code
         run: npm run unit-test
