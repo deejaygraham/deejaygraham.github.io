@@ -1,8 +1,6 @@
 ---
 title: Flying Toasters
 tags: [code, processing]
-thumbnail: "/assets/img/posts/flying-toasters/thumbnail-420x255.png"
-alttext: toasters
 ---
 
 Many years ago, there used to be these things called "screensavers". They were little programs that ran when your machine
@@ -14,7 +12,7 @@ featuring surreal toasters flapping their way across the screen. Appropriately e
 
 For some reason I ran across this the other day and found a gif of the toaster flapping as a sequence of four images.
 
-![flaps]\(/assets/img/posts/flying-toasters/toaster1.gif)
+![flaps](/assets/img/posts/flying-toasters/toaster1.gif)
 
 I thought it might be fun to try to recreate the screensaver as a full screen Processing app.
 
@@ -23,7 +21,7 @@ I thought it might be fun to try to recreate the screensaver as a full screen Pr
 The screensaver showed flapping toasters and toast moving across the screen from top right to bottom left so I thought I
 would start with the easier single image of toast.
 
-![toast]\(/assets/img/posts/flying-toasters/toast.png)
+![toast](/assets/img/posts/flying-toasters/toast.png)
 
 We can construct a piece of toast at a starting postion (x, y) and a speed.
 
@@ -44,13 +42,13 @@ scrolled smoothly off the screen _then_ wrapped around.
 Next, I cut up the four-frame single gif into four discrete images and numbered them 0..3. Notice each one
 has a slightly different wing position.
 
-![toaster 0]\(/assets/img/posts/flying-toasters/toaster0.png)
+![toaster 0](/assets/img/posts/flying-toasters/toaster0.png)
 
-![toaster 1]\(/assets/img/posts/flying-toasters/toaster1.png)
+![toaster 1](/assets/img/posts/flying-toasters/toaster1.png)
 
-![toaster 2]\(/assets/img/posts/flying-toasters/toaster2.png)
+![toaster 2](/assets/img/posts/flying-toasters/toaster2.png)
 
-![toaster 3]\(/assets/img/posts/flying-toasters/toaster3.png)
+![toaster 3](/assets/img/posts/flying-toasters/toaster3.png)
 
 We create a frames member to hold each image we load in from the data folder and cycle through them on
 each call to _draw_ to achieve the flapping animation. Again, I have to wrap the sprite around the screen
@@ -81,4 +79,4 @@ seeming to hurt toast and overtake their slower flapping friends.
 
 Here's a screenshot of the finished "screensaver".
 
-![screensaver]\(/assets/img/posts/flying-toasters/screensaver.png)
+![screensaver](/assets/img/posts/flying-toasters/screensaver.png)
