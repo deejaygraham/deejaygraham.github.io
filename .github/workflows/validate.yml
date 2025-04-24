@@ -29,9 +29,12 @@ jobs:
         run: npm ci
 
       - name: Lint javascript
-        run: npm run lint
-        continue-on-error: false
+        run: |
+          npm run lint
+          if [ $? -ne 0 ]; then
+            echo "ESLint found errors. Failing the workflow."
+            exit 1
+          fi
           
       - name: Unit test 11ty code
         run: npm run unit-test
-        continue-on-error: false
