@@ -1,8 +1,6 @@
 ---
 title: Black Sheep Notebook
 tags: [books, illustration]
-thumbnail: "/assets/img/posts/black-sheep-notebook/thumbnail-420x255.png"
-alttext: cover
 ---
 
 Just wanted to show off the <a href="https://www.blacksheepleather.co.uk/product/black-sheep-notebook-cover/">spectacular new notebook</a> (or rather cover for _any_ A5 notebook) I
