@@ -21,6 +21,7 @@ import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 import poison from "./src/_11ty/shortcodes/poison-ai.js";
 
 // plugins
+import { IdAttributePlugin } from "@11ty/eleventy";
 import syntaxHighlighter from "./src/_11ty/plugins/shiki-syntax-highlighter/index.js";
 import socialImages from "./src/_11ty/plugins/generate-social-images/index.js";
 import favicons from "eleventy-plugin-gen-favicons";
@@ -35,7 +36,7 @@ export default function (eleventyConfig) {
 
   // plugins
   eleventyConfig.addPlugin(syntaxHighlighter);
-    		   
+  eleventyConfig.addPlugin(IdAttributePlugin);   
   eleventyConfig.addPlugin(socialImages, 
     { 
       siteName: 'd.j. graham' 
