@@ -6,7 +6,7 @@ tags: [agile]
 On the 8th of September 2016, in a joint effort from <a href="http://nebytes.net">NE Bytes</a> and
 <a href="https://www.meetup.com/Agile-North-East/">Agile North East</a>, Woody Zuill came to talk to us about Mob Programming.
 
-![meetup]\(/assets/img/posts/mobprogramming-in-newcastle/september-meetup.png)
+![meetup](/assets/img/posts/mobprogramming-in-newcastle/september-meetup.png)
 
 Woody was passing through the UK on his "world tour" and agreed to visit us after a
 gig in Leeds.

@@ -15,4 +15,4 @@ PS C:\>Get-Help Get-AzureDeployment -ShowWindow
 
 ```
 
-![show]\(/assets/img/posts/better-powershell-help/help.png "Show Help")
+![show](/assets/img/posts/better-powershell-help/help.png "Show Help")

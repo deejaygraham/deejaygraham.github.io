@@ -16,6 +16,6 @@ one of my illustrations - a portrait of him - on the site. Joe has indirectly he
 through blog posts and videos of his talks so, of course, I said yes. The result is below
 or you can see the real thing <a href="https://blog.thecodewhisperer.com/">here</a>
 
-![tweet]\(/assets/img/posts/extreme-portraiture/jbrains-tweet.png)
+![tweet](/assets/img/posts/extreme-portraiture/jbrains-tweet.png)
 
-![jbrains]\(/assets/img/posts/extreme-portraiture/code-whisperer.png)
+![jbrains](/assets/img/posts/extreme-portraiture/code-whisperer.png)

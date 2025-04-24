@@ -19,13 +19,13 @@ so we have to take the step into writing custom code for PowerShell!
 First, we need to create a new Class Library for the Cmdlets to live in. The version of .Net
 you target will depend on which version of PowerShell you want to work with.
 
-![new project]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/new-project.png)
+![new project](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/new-project.png)
 
 The next thing to do is add references to PowerShell. This used to be a manual step to root out
 the correct assemblies on your file system, until Microsoft have made their reference assemblies
 for v3, 4 and 5 available as NuGet packages.
 
-![nu-get]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/add-reference-assemblies.png)
+![nu-get](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/add-reference-assemblies.png)
 
 ### Fortune!
 
@@ -99,12 +99,12 @@ public class GetFortuneCookie : Cmdlet
 Building the project into an assembly will let you write the PowerShell to use it. In a plain vanilla
 console, we can run <code class="powershell">Get-Module</code> and see this:
 
-![get-module]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module.png)
+![get-module](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module.png)
 
 We can then run <code class="powershell">Import-Module .\ExampleCmdlet.dll</code>, followed by another
 <code class="powershell">Get-Module</code> and see this:
 
-![get-module]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module2.png)
+![get-module](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/get-module2.png)
 
 and run it using <code class="powershell">Get-FortuneCookie</code>. Granted that doesn't do much. We need
 to actually execute some code...
@@ -148,7 +148,7 @@ public class GetFortuneCookie : Cmdlet
 
 As you would expect, that writes out to the console:
 
-![first output]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/first-output.png)
+![first output](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/first-output.png)
 
 Now that we have some kind of output, it's not a massive leap to add in some randomness.
 
@@ -190,7 +190,7 @@ public class GetFortuneCookie : Cmdlet
 
 Running the command multiple times, behaves as expected.
 
-![random output]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/random-cookie.png)
+![random output](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/random-cookie.png)
 
 ### Debugging and Verbosity
 
@@ -307,7 +307,7 @@ public class GetFortuneCookie : Cmdlet
 }
 ```
 
-![output]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/output-type.png)
+![output](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/output-type.png)
 
 ### Parameters
 
@@ -396,11 +396,11 @@ public class GetFortuneCookie : Cmdlet
 
 So running with no parameters as before we get:
 
-![full output]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/all-cookies.png)
+![full output](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/all-cookies.png)
 
 and running it with the -Random switch returns to the original functionality:
 
-![switch]\(/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/random-switch.png)
+![switch](/assets/img/posts/building-a-custom-powershell-cmdlet-in-csharp/random-switch.png)
 
 Most parameters are native types but the <code>SwitchParameter</code> type allows us to pass the
 name of the option. If we had declared Random to be a <code>bool</code> we would have been forced to write:

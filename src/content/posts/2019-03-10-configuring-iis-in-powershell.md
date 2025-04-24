@@ -13,7 +13,7 @@ Fundamental to all of these snippets is the WebAdministration module that you ar
 
 Once this module is loaded, the Set-Location works for IIS as if it was a drive so you can use Get-ChildItem to find app pools or sites.
 
-![gci]\(/assets/img/posts/configuring-iis-in-powershell/getchilditem.png)
+![gci](/assets/img/posts/configuring-iis-in-powershell/getchilditem.png)
 
 ```powershell
 

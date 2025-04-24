@@ -28,4 +28,4 @@ It could be an aerial view of a city with repeating blocks of buildings. Also, i
 might spend days looking at microprocessor chips either through a high powered camera or microscope, or in some cases,
 an electron microscope.
 
-![screenshot]\(/assets/img/posts/tiny-city-layout/art-1.png)
+![screenshot](/assets/img/posts/tiny-city-layout/art-1.png)

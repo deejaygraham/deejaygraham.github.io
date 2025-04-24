@@ -1,8 +1,6 @@
 ---
 title: Never Write Another HoC
 tags: [video, presentations]
-thumbnail: /img/posts/never-write-another-hoc/thumbnail-420x255.png
-alttext: Jared Palmer
 ---
 
 Michael Jackson, breaking down mixins, higher order components and the evolution to components with render props. Includes some

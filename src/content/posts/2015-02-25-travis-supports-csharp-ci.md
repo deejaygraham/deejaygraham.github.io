@@ -38,7 +38,7 @@ to make sure that I started the correct xunit console runner.
 
 Here's how Travis does the build now:
 
-![Screenshot]\(/assets/img/posts/travis-supports-cs-ci/travis-build.png "Travis Working")
+![Screenshot](/assets/img/posts/travis-supports-cs-ci/travis-build.png "Travis Working")
 
 ## Fail
 

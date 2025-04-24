@@ -1,8 +1,6 @@
 ---
 title: Documenting Software with C4
 tags: [xp]
-thumbnail: /img/posts/documenting-software-with-c4/thumbnail-420x255.png
-alttext: architecture
 ---
 
 Code as infrascture is one thing but how about code as design or architecture documentation?

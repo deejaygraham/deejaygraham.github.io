@@ -1,9 +1,6 @@
 ---
 title: Batch Renaming File Extensions
 tags: [powershell, code]
-hero: power
-thumbnail: "/assets/img/thumbnails/shell-420x255.png"
-alttext: batches
 ---
 
 A tiny snippet of code I hardly ever need, until I desperately need it and find I've forgotten how

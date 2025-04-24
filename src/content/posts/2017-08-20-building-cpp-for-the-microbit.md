@@ -23,7 +23,7 @@ the [mbed compiler](https://developer.mbed.org/platforms/Microbit/) is an online
 C/C++ development environment which is free to use and officially  
 supports the BBC micro:bit as a platform.
 
-![mbed site]\(/assets/img/posts/building-cpp-for-the-microbit/mbed-website.png))
+![mbed site](/assets/img/posts/building-cpp-for-the-microbit/mbed-website.png))
 
 ### Getting Started
 
@@ -35,14 +35,14 @@ To get started:
 - Open the [compiler](https://developer.mbed.org/compiler/)
 - Notice that micro:bit is selected in the top right hand corner.
 
-![compiler]\(/assets/img/posts/building-cpp-for-the-microbit/mbed-compiler.png)
+![compiler](/assets/img/posts/building-cpp-for-the-microbit/mbed-compiler.png)
 
 ### Hello, MicroBit
 
 Once that's up an running, it's time to hello a world. In the Workspace Management area,
 pick the create new program option and fill in the details in the popup.
 
-![new project]\(/assets/img/posts/building-cpp-for-the-microbit/create-new-program.png)
+![new project](/assets/img/posts/building-cpp-for-the-microbit/create-new-program.png)
 
 - Confirm the platform is BBC micro:bit
 - Select a suitable template
@@ -54,13 +54,13 @@ You should now see something that will be familiar to most users of IDEs with pr
 contents down the left hand side, current program source in the middle and an area
 for compiler results at the bottom.
 
-![new project]\(/assets/img/posts/building-cpp-for-the-microbit/new-project.png)
+![new project](/assets/img/posts/building-cpp-for-the-microbit/new-project.png)
 
 ### Main
 
 The generated main function looks like this...
 
-![hello world]\(/assets/img/posts/building-cpp-for-the-microbit/hello-world.png)
+![hello world](/assets/img/posts/building-cpp-for-the-microbit/hello-world.png)
 
 ```cpp
 #include "MicroBit.h"
@@ -115,7 +115,7 @@ program and everything will stop.
 The top row of buttons in the IDE has a Compile button. Press that to start building the
 project.
 
-![compiling]\(/assets/img/posts/building-cpp-for-the-microbit/compiling.png)
+![compiling](/assets/img/posts/building-cpp-for-the-microbit/compiling.png)
 
 Assuming there are no problems, a .hex file will be created and downloaded by the browser. For a
 project called "microbit-hello-world" the hex file will be something like "microbit-hello-world_NRF51_MICROBIT.hex"
@@ -129,4 +129,4 @@ onto the micro:bit, wait a few seconds for the copy to finish and the program sh
 At the time of writing, the simplest hello world application displayed a few warnings in the
 compiler output.
 
-![compiler output]\(/assets/img/posts/building-cpp-for-the-microbit/compiler-output.png)
+![compiler output](/assets/img/posts/building-cpp-for-the-microbit/compiler-output.png)

@@ -57,12 +57,12 @@ I moved the speed controls into the bitbot class because that seemed a better sp
 
 #### Lights
 
-![microbit headlights]\(/assets/img/posts/new-improved-microbit-rc/headlights.png)
+![microbit headlights](/assets/img/posts/new-improved-microbit-rc/headlights.png)
 
 I added a direction member to the class so that a single function (update_lights) can be responsible for handling all the lights that I am interested in. The rear two lights serve as brake and reverse lights, switching from red (braking or stopped) to white (reverse). Steering left or right is indicated by two of the
 corresponding leds on the side lighting up in orange.
 
-![microbit reversing]\(/assets/img/posts/new-improved-microbit-rc/rc-reverse.png)
+![microbit reversing](/assets/img/posts/new-improved-microbit-rc/rc-reverse.png)
 
 Finally, the headlights are automatically controlled by using the light sensor on the microbit display. With not enough light falling on the car, it will turn
 on it's headlights automatically. This is where the ability to pass a flag to turn off the lights came into its own.
@@ -83,14 +83,14 @@ A small but nice feature I added into this version is a sort of handshake that t
 running away with the first few commands from the controller while the person is still getting used to picking up and holding the microbit in the right way
 ready to drive.
 
-![microbit ping]\(/assets/img/posts/new-improved-microbit-rc/rc-ping.png)
+![microbit ping](/assets/img/posts/new-improved-microbit-rc/rc-ping.png)
 
 I created two new functions, one to wait for a radio ping from the controller and one to show that contact had been made. When the bitbot starts up, it now
 shows a flashing central pixel to make it clear it is waiting for the handshake to take place. This is just a loop that waits for 'hello' to be broadcast
 and echoes it back. Then, we pause for a few seconds to show a heart icon, which is the slightly less international symbol of 'I have heard you and agree to work
 with you' of this ad-hoc protocol.
 
-![microbit heart]\(/assets/img/posts/new-improved-microbit-rc/rc-heart.png)
+![microbit heart](/assets/img/posts/new-improved-microbit-rc/rc-heart.png)
 
 ```python
 
@@ -115,7 +115,7 @@ The complementary program on the "handset" microbit has been less rigourously ov
 
 ### Contact
 
-![microbit ping]\(/assets/img/posts/new-improved-microbit-rc/handset-ping.png)
+![microbit ping](/assets/img/posts/new-improved-microbit-rc/handset-ping.png)
 
 Again, we have a similar pinging mechanism from the handset, broadcasting hello and waiting for a response from the car before starting. I used the same blinking
 LED in the centre of the display and the matching heart icon after the handshake has completed.
@@ -126,11 +126,11 @@ LED in the centre of the display and the matching heart icon after the handshake
 
 ```
 
-![microbit heart]\(/assets/img/posts/new-improved-microbit-rc/handset-heart.png)
+![microbit heart](/assets/img/posts/new-improved-microbit-rc/handset-heart.png)
 
 ### Commands
 
-![microbit stop]\(/assets/img/posts/new-improved-microbit-rc/handset-stop.png)
+![microbit stop](/assets/img/posts/new-improved-microbit-rc/handset-stop.png)
 
 I left the command variables in the handset program since this is a much smaller program and hadn't shown any signs of running out of memory. I think the variables do make the code easier to understand.
 
@@ -154,7 +154,7 @@ I struggled a little with coming up with the right form of algorithm for which c
 
 ```
 
-![microbit reverse]\(/assets/img/posts/new-improved-microbit-rc/handset-reverse.png)
+![microbit reverse](/assets/img/posts/new-improved-microbit-rc/handset-reverse.png)
 
 Finally, I tightened up the sleep timing on the handset controller to make communcation between the devices a little bit more responsive.
 

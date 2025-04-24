@@ -2,8 +2,6 @@
 title: Test-Driving a File System
 draft: true
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/tdd-filesystem/thumbnail-420x255.png
-alttext: filing
 ---
 
 Michael Feather's definition of a unit-testness is such that a unit test shouldn't touch the network,

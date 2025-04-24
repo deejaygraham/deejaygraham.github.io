@@ -1,8 +1,6 @@
 ---
 title: All the Programming Languages
 tags: [code, xp]
-thumbnail: "/assets/img/posts/all-the-languages/thumbnail-420x255.png"
-alttext: languages
 ---
 
 Talking to some junior developers today, I was struck again by how much software developers identify

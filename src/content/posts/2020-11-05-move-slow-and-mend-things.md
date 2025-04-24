@@ -1,8 +1,6 @@
 ---
 title: Move Slow and Mend Things
 tags: [video, presentations]
-thumbnail: /img/posts/move-slow-and-mend-things/thumbnail-420x255.png
-alttext: Kevlin Henney
 ---
 
 Moving from "Move Fast and Break Stuff" to a better approach to software development from Kevlin Henney

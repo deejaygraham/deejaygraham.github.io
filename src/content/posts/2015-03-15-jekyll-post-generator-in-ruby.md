@@ -31,7 +31,7 @@ closure a very nice feature.
 
 Running the tool with no arguments, prompts with the available options:
 
-![no options]\(/assets/img/posts/jekyll-post-generator-in-ruby/no-options.png "no options")
+![no options](/assets/img/posts/jekyll-post-generator-in-ruby/no-options.png "no options")
 
 and here's a typical use:
 

@@ -35,12 +35,12 @@ job, I had used code snippets and templates to do some of this kind of automatio
 The surround with option gives you some options you might expect #if, do, while, if etc., the very things you think about in code that wrap around
 something else.
 
-![surround]\(/assets/img/posts/visual-studio-code-snippets-ftw/surround-with-before.png)
+![surround](/assets/img/posts/visual-studio-code-snippets-ftw/surround-with-before.png)
 
 Unfortunately, there wasn't one for what I wanted. Hmmm. Knowing Visual Studio, I thought there was probably a mechanism to extend those and I was right. Under
 **Tools\Code Snippets Manager** there are a series of code snippets for each language.
 
-![surround]\(/assets/img/posts/visual-studio-code-snippets-ftw/code-snippets-manager.png)
+![surround](/assets/img/posts/visual-studio-code-snippets-ftw/code-snippets-manager.png)
 
 I used one of these built-in snippets as a template to create my own NUnit surround. I called it
 
@@ -54,7 +54,7 @@ You can save it to the same folder as Visual Studio's (under program files) or p
 
 Once it's installed and VS has restarted, the Surround With menu includes the new snippet:
 
-![surround]\(/assets/img/posts/visual-studio-code-snippets-ftw/surround-with-after.png)
+![surround](/assets/img/posts/visual-studio-code-snippets-ftw/surround-with-after.png)
 
 The whole thing took me 20 minutes at most and meant I was able to complete the refactor work in about 1/10 of the time I was expecting it to take. Visual
 Studio code snippets FTW! I will be definitely exploring what else we can do with these snippets and maybe look at refactoring snippets too.

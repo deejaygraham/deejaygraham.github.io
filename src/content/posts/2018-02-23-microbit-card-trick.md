@@ -15,7 +15,7 @@ A version of this post was published on the microbit magazine site a while ago. 
 
 I was due to give a talk to some educators about using the BBC microbit in the computer science syllabus and was having a hard time coming up with a demonstration of the capabilities of the device, something that was short, memorable and showed off the full range of what it could do. Finally, I hit on the idea of a magic trick, it didn't need to be hugely convincing but it seemed that a form of mentalism might be what was needed.
 
-![robot]\(/assets/img/posts/microbit-card-trick/robot.png)
+![robot](/assets/img/posts/microbit-card-trick/robot.png)
 
 ### The Plan
 

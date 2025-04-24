@@ -1,8 +1,6 @@
 ---
 title: Slowing Down Test Execution in Selenium
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/slowing-down-selenium-tests/thumbnail-420x255.png
-alttext: slowing down selenium
 ---
 
 Running automated tests against a web application using Selenium you can sometimes hide issues both in the application itself and

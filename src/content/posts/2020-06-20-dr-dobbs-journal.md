@@ -1,8 +1,6 @@
 ---
 title: Dr Dobbs Journal
 tags: [code]
-thumbnail: /img/posts/dr-dobbs-journal/thumbnail-420x255.png
-alttext: cd-rom
 ---
 
 When I was first starting out as a developer, just learning C and the wonders of C++, I was working at a small engineering company, the majority of the employees
@@ -18,20 +16,20 @@ all kinds of wonderful treasures for the professional programmer that you would 
 
 Here's the first ever copy of that magazine that made it into my possession thanks to my idols at the US company.
 
-![cover]\(/assets/img/posts/dr-dobbs-journal/dr-dobbs-cover.png)
+![cover](/assets/img/posts/dr-dobbs-journal/dr-dobbs-cover.png)
 
-![back cover]\(/assets/img/posts/dr-dobbs-journal/dr-dobbs-back.png)
+![back cover](/assets/img/posts/dr-dobbs-journal/dr-dobbs-back.png)
 
-![inside content page]\(/assets/img/posts/dr-dobbs-journal/contents-left.png)
+![inside content page](/assets/img/posts/dr-dobbs-journal/contents-left.png)
 
-![inside content page]\(/assets/img/posts/dr-dobbs-journal/contents-right.png)
+![inside content page](/assets/img/posts/dr-dobbs-journal/contents-right.png)
 
 Much later after leaving that company behind, I was working at another, but much more enlightened engineering/electronics company when the internet was just starting but
 CD-ROMs were becoming all the rage. Finally I was able to get access to even more information from Dr Dobbs in the form of their archive, supplied on one CD-ROM.
 
-![cd front]\(/assets/img/posts/dr-dobbs-journal/cd-front.png)
+![cd front](/assets/img/posts/dr-dobbs-journal/cd-front.png)
 
 This was all the back issues, searchable, with code examples!!! There are no words for how wonderful a thing like this was to a young developer starved of both culture and
 information that the U.S. audience seemed to take for granted.
 
-![cd back]\(/assets/img/posts/dr-dobbs-journal/cd-back.png)
+![cd back](/assets/img/posts/dr-dobbs-journal/cd-back.png)

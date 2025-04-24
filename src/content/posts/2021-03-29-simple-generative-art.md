@@ -29,7 +29,7 @@ at least for the time being.
 I have separated the tile drawing code into it's own function to make expanding this easier in the next step. It means I can talk about functions but wave my hands over much of this until
 the students can see the benefit from it coming up very soon. Since we are only drawing a single tile at this point, I am setting the tile size to be the whole of the square canvas.
 
-![screenshot]\(/assets/img/posts/simple-generative-art/art-1.png)
+![screenshot](/assets/img/posts/simple-generative-art/art-1.png)
 
 ### Randomness
 
@@ -42,7 +42,7 @@ we can talk about injecting some variation into our code and even select what pr
 
 ```
 
-![screenshot]\(/assets/img/posts/simple-generative-art/art-2.png)
+![screenshot](/assets/img/posts/simple-generative-art/art-2.png)
 
 Each time the code runs now, the square has a diagonal line drawn one way or the other. Again, so far, so boring. Things get a little more interesting when we use tiling.
 
@@ -60,7 +60,7 @@ introduce a variable which is the size of each tile. Moving from one tile to the
 We start off
 small so that it's easier to see that we are moving from one place to another on screen by substituting values for x and y and seeing that the tile size doesn't change.
 
-![screenshot]\(/assets/img/posts/simple-generative-art/art-3.png)
+![screenshot](/assets/img/posts/simple-generative-art/art-3.png)
 
 ### Experimentation
 
@@ -70,7 +70,7 @@ takes to generate compared to a smaller window size, change the probability, cha
 Here's another version with a tile size of 20 and a canvas size of 520 pixels. It does look to me very like the mazes you used to see as a child on the back of cereal boxes
 or in puzzle books.
 
-![screenshot]\(/assets/img/posts/simple-generative-art/art-4.png)
+![screenshot](/assets/img/posts/simple-generative-art/art-4.png)
 
 ### What if?
 
@@ -87,4 +87,4 @@ The advantage of the function we created is that we can make the change in that 
 
 And we get this rather lovely basket weave effect.
 
-![screenshot]\(/assets/img/posts/simple-generative-art/art-5.png)
+![screenshot](/assets/img/posts/simple-generative-art/art-5.png)

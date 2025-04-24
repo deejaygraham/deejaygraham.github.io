@@ -16,7 +16,7 @@ the inventor of PowerShell so are full of background to PowerShell's behaviour a
 in a particular way. I found them both very useful and learned a lot from them.
 
 [Getting Started with PowerShell 3.0 Jump Start](http://www.microsoftvirtualacademy.com/training-courses/getting-started-with-powershell-3-0-jump-start)
-![getting started]\(/assets/img/posts/powershell-training-recommendations/getting-started-with-powerhell-3.0-jump-start.png)
+![getting started](/assets/img/posts/powershell-training-recommendations/getting-started-with-powerhell-3.0-jump-start.png)
 
 [Advanced Tools and Scripting with PowerShell 3.0 Jump Start](http://www.microsoftvirtualacademy.com/training-courses/advanced-tools-scripting-with-powershell-3-0-jump-start)
-![advanced tools]\(/assets/img/posts/powershell-training-recommendations/advanced-tools-and-scripting-with-powerShell-3.0-jump-start.png)
+![advanced tools](/assets/img/posts/powershell-training-recommendations/advanced-tools-and-scripting-with-powerShell-3.0-jump-start.png)

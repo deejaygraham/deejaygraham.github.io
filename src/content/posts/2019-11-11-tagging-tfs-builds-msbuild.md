@@ -1,8 +1,6 @@
 ---
 title: Tagging TFS builds from MSBuild
 tags: [msbuild, code, tfs]
-thumbnail: /img/posts/tagging-tfs-builds-msbuild/tag-420x255.png
-alttext: tag
 ---
 
 Here's another integration between MsBuild and TFS that I didn't know you could do - add tags to a build.

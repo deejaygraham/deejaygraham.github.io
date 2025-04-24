@@ -1,8 +1,6 @@
 ---
 title: Feynmans Computer Heuristics
 tags: [video, presentations]
-thumbnail: /img/posts/feynmans-computer-heuristics/thumbnail-420x255.png
-alttext: Richard Feynman
 ---
 
 I stumbled on this today, it's a very old VHS recording of a lecture by the great Richard Feynman on how the basics of computers work with at-the-time contemporary

@@ -11,7 +11,7 @@ colours of the lines to make the repainting and calling draw every frame more vi
 We made the stroke width nice and wide so we could see the colours change more easily and then animated once per frame to generate a new sequence. The
 resultant images were very pleasing and looked quite retro to the students.
 
-![first]\(/assets/img/posts/processing-shapes/processing-shapes-1.png)
+![first](/assets/img/posts/processing-shapes/processing-shapes-1.png)
 
 ```python
 
@@ -23,7 +23,7 @@ Next, instead of using lines that we had for the last several weeks, we experime
 own version of a figure to draw on each tile. Here I am drawing boxes with a slight skew the further down the page the boxes go, by modifying the position
 of the top right corner and the bottom left corner.
 
-![second]\(/assets/img/posts/processing-shapes/processing-shapes-2.png)
+![second](/assets/img/posts/processing-shapes/processing-shapes-2.png)
 
 ```python
 

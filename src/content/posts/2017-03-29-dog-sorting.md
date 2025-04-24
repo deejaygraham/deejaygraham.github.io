@@ -1,8 +1,6 @@
 ---
 title: Dog Sort
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/dog-sorting/dog-sorting-420x255.png
-alttext: sorting
 ---
 
 You've heard of bubble sort and insertion sort and all the other sorts of sorts. But what about sorting and grouping
@@ -58,4 +56,4 @@ Then actually implementing the grouping comes out into a single function call. W
 
 ```
 
-![results]\(/assets/img/posts/dog-sorting/console.png "console output")
+![results](/assets/img/posts/dog-sorting/console.png "console output")

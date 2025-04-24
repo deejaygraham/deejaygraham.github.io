@@ -22,4 +22,4 @@ here, and also the delay between the lighting and fading halves, are just what I
 
 And here it is in action...
 
-![microbit twinkling display]\(/assets/img/posts/twinkly-lights/twinkle.gif)
+![microbit twinkling display](/assets/img/posts/twinkly-lights/twinkle.gif)

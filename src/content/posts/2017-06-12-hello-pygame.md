@@ -39,11 +39,11 @@ while not done:
 
 This doesn't do much but sets us up a nice walking skeleton we can add to later.
 
-![hello]\(/assets/img/posts/hello-pygame/hello.png)
+![hello](/assets/img/posts/hello-pygame/hello.png)
 
 A black screen isn't terribly exciting so, let's draw a square:
 
-![block]\(/assets/img/posts/hello-pygame/blue-block.png)
+![block](/assets/img/posts/hello-pygame/blue-block.png)
 
 ```python
 import pygame
@@ -84,7 +84,7 @@ while not done:
 Now, how about a bit of interaction? We can read from the keyboard in the message pump,
 looking for pygame.KEYDOWN and pygame.K_SPACE.
 
-![block]\(/assets/img/posts/hello-pygame/orange-block.png)
+![block](/assets/img/posts/hello-pygame/orange-block.png)
 
 ```python
 import pygame
@@ -137,7 +137,7 @@ want to move the block.
 
 For good measure we should prevent the coordinates going outside of the screen.
 
-![block]\(/assets/img/posts/hello-pygame/move-block.png)
+![block](/assets/img/posts/hello-pygame/move-block.png)
 
 ```python
 import pygame

@@ -1,8 +1,6 @@
 ---
 title: Getting Back to Rust
 tags: [code]
-thumbnail: "/assets/img/thumbnails/rust-420x255.png"
-alttext: rust
 ---
 
 Our weekly lunchtime coding dojo is starting back up again and this time our junior engineers wanted to try a new language. We

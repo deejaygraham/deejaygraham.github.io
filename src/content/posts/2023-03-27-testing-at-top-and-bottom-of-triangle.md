@@ -1,8 +1,6 @@
 ---
 title: Testing at Both Ends of the Triangle
 tags: [code, javascript, presentations]
-thumbnail: /img/thumbnails/notebook-420x255.png
-alttext: talk
 ---
 
 Here's a transcription of a talk that I am doing at Tech on the Tyne on the 30th of March.

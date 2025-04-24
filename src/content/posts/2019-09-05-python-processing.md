@@ -14,7 +14,7 @@ any of my sessions.
 As you might have guessed from the title, although most projects you might come across are written in Java, processing
 does support Python and the support and <a href="https://py.processing.org/reference/">documentation</a> is pretty good.
 
-![screenshot]\(/assets/img/posts/python-processing/python-processing-ui.png)
+![screenshot](/assets/img/posts/python-processing/python-processing-ui.png)
 
 Here are a couple of key features to consider:
 

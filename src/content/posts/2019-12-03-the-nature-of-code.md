@@ -1,8 +1,6 @@
 ---
 title: The Nature of Code
 tags: [code, books]
-thumbnail: /img/posts/the-nature-of-code/noc-420x255.png
-alttext: code
 ---
 
 <a href="https://twitter.com/shiffman">Daniel Shiffman</a>, one of the geniuses behind the <a href="https://processing.org/">Processing</a> language and

@@ -1,8 +1,6 @@
 ---
 title: Refactoring Away from Static Constructors
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/refactoring-away-from-static-constructors/static-constructors-420x255.png
-alttext: static
 ---
 
 One of the great barriers to making code testable is the idea of the static constructor. This is a constructor for a class which

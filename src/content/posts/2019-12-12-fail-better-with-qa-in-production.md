@@ -1,8 +1,6 @@
 ---
 title: Fail better with QA in Production
 tags: [video, presentations]
-thumbnail: /img/posts/fail-better-with-qa-in-production/thumbnail-420x255.png
-alttext: Rouan
 ---
 
 <a href="https://twitter.com/rouanw">Rouan Wilsenach</a> from Lean Agile Scotland 2019.

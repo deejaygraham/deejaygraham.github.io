@@ -9,4 +9,4 @@ to pass onto junior team members but since twitter isn't very portable to IRL, I
 an analog version of it to remind me. It kept lodged in the back of my head so I
 thought I would make something out of it.
 
-![sketch]\(/assets/img/posts/being-a-good-senior-dev/being-a-good-senior-dev.png)
+![sketch](/assets/img/posts/being-a-good-senior-dev/being-a-good-senior-dev.png)

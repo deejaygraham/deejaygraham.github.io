@@ -24,27 +24,27 @@ From that post:
 ```
 
 
-![powershell]\(/assets/img/posts/secret-azure-tools/powershell-tools-install.png)
+![powershell](/assets/img/posts/secret-azure-tools/powershell-tools-install.png)
 
 This should automatically start the AzureTools.exe and show the following UI:
 
-![first ui]\(/assets/img/posts/secret-azure-tools/azure-tools.png)
+![first ui](/assets/img/posts/secret-azure-tools/azure-tools.png)
 
 Clicking on one of the items in the Tools list will download and install that tool from the URL. Download progress
 is shown in the bottom half of the window:
 
-![installing]\(/assets/img/posts/secret-azure-tools/azure-tools-install.png)
+![installing](/assets/img/posts/secret-azure-tools/azure-tools-install.png)
 
 One of the most useful tools from the point of view of a developer trying to troubleshoot a worker role is
 using a debugger to attach to a process. Azure Tools comes with an installer for windbg (which for download and
 install is much better than a full Visual Studio install).
 
-![attach]\(/assets/img/posts/secret-azure-tools/attach-debugger.png)
+![attach](/assets/img/posts/secret-azure-tools/attach-debugger.png)
 
 WaWorkerHost is the process responsible for hosting WebRole instances. When Windbg starts you get the full
 capabilities of a debugger and a trace client for <code>OutputDebugString</code> calls.
 
-![windbg]\(/assets/img/posts/secret-azure-tools/windbg-running.png)
+![windbg](/assets/img/posts/secret-azure-tools/windbg-running.png)
 
 Obviously, this is only just scratching the surface of all the goodness that the team have made available so I'm
 sure I will report back on other utilities as time goes on.

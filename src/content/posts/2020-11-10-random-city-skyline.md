@@ -1,9 +1,6 @@
 ---
 title: Random City Skyline
 tags: [code, processing]
-hero: microbit
-thumbnail: /img/posts/random-city-skyline/thumbnail-420x255.png
-alttext: processing skyline
 ---
 
 Another presentation to talk about what computer programs are and how they work and I needed a short demo on how to iteratively build

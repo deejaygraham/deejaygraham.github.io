@@ -1,8 +1,6 @@
 ---
 title: Mini Approval Testing
 tags: [csharp, code, tdd]
-thumbnail: /img/posts/mini-approval-tests/mini-approval-tests-420x255.png
-alttext: mini-approval-tests
 ---
 
 I always learn a lot from <a href="https://twitter.com/emilybache">Emily Bache</a> everytime I hear her speak or read her blog.

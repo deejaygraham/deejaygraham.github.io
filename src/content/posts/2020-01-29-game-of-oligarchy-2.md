@@ -1,8 +1,6 @@
 ---
 title: Game of Oligarchy Part 2
 tags: [code, processing]
-thumbnail: "/assets/img/posts/game-of-oligarchy-2/thumbnail-420x255.png"
-alttext: players
 ---
 
 Finally got back around to making some enhancements to the game of oligarchy I started in processing at the beginning of the month.

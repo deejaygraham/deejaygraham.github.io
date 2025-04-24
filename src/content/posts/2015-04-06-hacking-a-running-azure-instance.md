@@ -7,7 +7,7 @@ hero: cloud
 By which I mean, temporarily modifying your application on a live instance, rather than
 going through the build-update-deploy cycle in the portal.
 
-![cloud service]\(/assets/img/posts/hacking-a-running-azure-instance/cloud-service.png "cloud service icon")
+![cloud service](/assets/img/posts/hacking-a-running-azure-instance/cloud-service.png "cloud service icon")
 
 ## Warning
 
@@ -17,7 +17,7 @@ deployment. If Azure takes on the idea that the instance needs to be repaved you
 of your changes. Any changes you make to fix a bug **must** go through the standard package
 and deployment cycle to have any lasting affect.
 
-![cloud service]\(/assets/img/posts/hacking-a-running-azure-instance/cloud-service-instances.png "portal instances header")
+![cloud service](/assets/img/posts/hacking-a-running-azure-instance/cloud-service-instances.png "portal instances header")
 
 ## Steps 1..N
 
@@ -32,4 +32,4 @@ and deployment cycle to have any lasting affect.
 - Wait for the Azure watchdog to notice the bootstrapper has stopped and restart it
 - Run your tests
 
-![task manager]\(/assets/img/posts/hacking-a-running-azure-instance/task-manager.png "task manager screenshot")
+![task manager](/assets/img/posts/hacking-a-running-azure-instance/task-manager.png "task manager screenshot")

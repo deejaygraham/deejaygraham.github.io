@@ -1,8 +1,6 @@
 ---
 title: Zen Stone Dead
 tags: [music]
-thumbnail: "/assets/img/posts/zen-stone-dead/thumbnail-420x255.jpg"
-alttext: Zen Stone
 ---
 
 A long time companion of mine on work day commutes was the wonderful Zen Stone MP3 player made by Creative.

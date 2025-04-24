@@ -39,4 +39,4 @@ to capture everything.
 
 I posted a snap of the sketchnote to twitter and Tom was kind enough to reply:
 
-![tweet]\(/assets/img/posts/super-technical-sketchnoting/tom-stuart-reaction.png)
+![tweet](/assets/img/posts/super-technical-sketchnoting/tom-stuart-reaction.png)

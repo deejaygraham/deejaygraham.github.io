@@ -1,11 +1,9 @@
 ---
 title: A Common-Sense Guide to Data Structures and Algorithms
 tags: [code, books]
-thumbnail: "/assets/img/posts/common-sense-guide-ds-and-a/thumbnail-420x255.png"
-alttext: pairing
 ---
 
-![cover]\(/assets/img/posts/common-sense-guide-ds-and-a/cover.png)
+![cover](/assets/img/posts/common-sense-guide-ds-and-a/cover.png)
 
 In my spare time, I do pre-publication technical reviews for Pragmatic Programmer books, checking the technical consistency and accuracy, code samples etc. The process is always a delight because of the efficiency and friendliness of the editors and the high quality of the texts that we, as a panel of reviewers, get to see before a book is published.
 

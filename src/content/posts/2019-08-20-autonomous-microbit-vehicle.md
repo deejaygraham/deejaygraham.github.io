@@ -1,9 +1,6 @@
 ---
 title: Autonomous Microbit Vehicle
 tags: [code, microbit]
-hero: microbit
-thumbnail: "/assets/img/posts/autonomous-microbit-vehicle/thumbnail-420x255.png"
-alttext: autonomous vehicle
 ---
 
 Another great facility built into the <a href="http://4tronix.co.uk/blog/?p=1490">BitBot</a> is that it comes with two

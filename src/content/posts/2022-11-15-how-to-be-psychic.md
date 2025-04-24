@@ -2,8 +2,6 @@
 title: How to be Psychic
 draft: true
 tags: [presentations]
-thumbnail: /img/posts/dddnorth-2022/thumbnail-420x255.png
-alttext: DDD North 2022
 ---
 
 ## Abstract

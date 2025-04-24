@@ -9,7 +9,7 @@ usually held in the back of the Bunker Coffee House in Newcastle. It took a litt
 arrange a date and time when Clarke would be passing through at the right time of day but
 the wait was definitely worth it.
 
-![meetup]\(/assets/img/posts/rolling-rocks-in-newcastle/july-meetup.png)
+![meetup](/assets/img/posts/rolling-rocks-in-newcastle/july-meetup.png)
 
 Clarke presented to a full house of developers, agile coaches and managers. He talked about
 his book - Rolling Rocks Downhill, Eli Goldratt's Theory of Constraints (ToC), how ToC can be

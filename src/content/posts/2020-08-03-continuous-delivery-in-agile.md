@@ -1,8 +1,6 @@
 ---
 title: Continuous Delivery In Agile
 tags: [video, presentations]
-thumbnail: /img/posts/continuous-delivery-in-agile/thumbnail-420x255.png
-alttext: Jez Humble
 ---
 
 Jez Humble from Agile 2017 on highlights from 6 years of devops. Plus some excellent works on

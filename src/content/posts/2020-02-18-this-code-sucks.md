@@ -1,8 +1,6 @@
 ---
 title: This Code Sucks
 tags: [video, presentations]
-thumbnail: /img/posts/this-code-sucks/thumbnail-420x255.png
-alttext: Nadia Odunayo
 ---
 
 <a href="https://twitter.com/nodunayo">Nadia Odunayo</a> from Brighton Ruby on non-violet communication in day-to-day software development. <a href="https://vimeo.com/230355123">This Code Sucks: A Story About Non-violent Communication - Nadia Odunayo</a>.

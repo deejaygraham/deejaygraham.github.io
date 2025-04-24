@@ -1,8 +1,6 @@
 ---
 title: React Cookbook Advanced Recipes
 tags: [video, presentations]
-thumbnail: /img/posts/advanced-react-recipes/thumbnail-420x255.png
-alttext: Simon Bloom
 ---
 
 Simon Bloom shows some interesting patterns for improving react apps: Context API, Presentation and Container Component separation, and Render Props.

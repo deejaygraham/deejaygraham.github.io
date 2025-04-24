@@ -1,8 +1,6 @@
 ---
 title: Critical Program Reading
 tags: [video, presentations]
-thumbnail: /img/posts/critical-program-reading/thumbnail-420x255.png
-alttext: 16mm Film restored
 ---
 
 A nice example of code analysis and refactoring to improve readability from an old (maybe public information or training?) film with the involvement of Gerald Weinberg and Tom Plum.
