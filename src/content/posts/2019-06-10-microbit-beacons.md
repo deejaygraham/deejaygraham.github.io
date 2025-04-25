@@ -10,7 +10,7 @@ Radio on the microbit is one of it's best features for interactivity between lea
 using the radio to create static beacons (and may be hidden) to broadcast information that can be picked up by someone
 moving around the space with a suitably coded receiver.
 
-### Hot and Cold
+## Hot and Cold
 
 As well as simple receiving text messages over the radio, the microbit also supports a
 <a href="https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.receive_full">full mode</a> which
@@ -18,7 +18,7 @@ returns not just the message text but also the signal strength and a timestamp. 
 measure of how close or far away we are from a beacon. Signal strength is measured in decibels but comes to us as a
 score from 0 (strongest) down to -255 (weakest).
 
-### Beacon
+### Simple Beacon
 
 We'll start off with a simple beacon, broadcasting some text every half a second.
 
@@ -28,7 +28,7 @@ We'll start off with a simple beacon, broadcasting some text every half a second
 
 ```
 
-### Receiver
+### Simple Receiver
 
 Our receiver shouldn't care what the message is, just how strong the signal is. We convert the 0-255 scale into a percentage
 signal strength.
@@ -78,7 +78,7 @@ can be configured to broadcast one clue. By sending the beacon's id out with the
 the receiver to accept the clues in sequence so that the hunter has to visit the beacons in the correct
 order to make sense of the clues.
 
-### Beacon
+### Full Beacon
 
 ```python
 
@@ -86,7 +86,7 @@ order to make sense of the clues.
 
 ```
 
-### Receiver
+### Full Receiver
 
 ```python
 
