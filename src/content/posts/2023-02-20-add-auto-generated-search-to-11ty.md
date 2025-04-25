@@ -10,7 +10,7 @@ in a lot less time than if I had been using some original home grown tools or ma
 static generators. One essential I had for a site, which had been previously supplied by the
 aforementioned tools was search.
 
-### Search
+## Research
 
 I drew on a couple of sources, most notably this post by Duncan McDougall
 [Add Search to an Eleventy website with Elasticlunr](https://www.belter.io/eleventy-search/).
@@ -18,7 +18,7 @@ This got me setup with a [elasticlunr](http://elasticlunr.com/docs/index.html), 
 search engine, how to build the search index into a json document, and an example search page
 for the site.
 
-### Content
+## Content
 
 This worked brilliantly well but the only downside for my large-ish site was that I needed
 some search content. Duncan had approached this in his post the same way a lot of people seemed
@@ -34,7 +34,7 @@ page. This content then went into the json index using Duncan's method from the 
 The search worked brilliantly but the list of keywords was finite (the whole json doc was about
 800Kb in size) and didn't totally reflect what the content of each page actually was.
 
-### Code
+## Code
 
 Despite these few reservations, this all went swimmingly for a few months until a few people noticed
 that they would like to be able to have a better refined search, especially within the source code
@@ -47,7 +47,7 @@ code example changed, the keywords wouldn't automatically reflect those changes.
 There looked to be no way to fix this until the latest v2.0 of 11ty came out and
 [events](https://www.11ty.dev/docs/events/#event-arguments) were filled out a bit more.
 
-### Plugin
+## Plugin
 
 What I needed was a way to write "something" (waves hands at sky) that would take the finished document,
 with source code included, and extract all the interesting pieces from it, not just several specific keywords.
@@ -59,19 +59,19 @@ Once more, the community and [11ty](https://jec.fyi/blog/creating-filters-shortc
 [bloggers](https://timothymiller.dev/posts/2020/making-a-real-bonefide-plugin-for-11ty/) came to my rescue with
 some great examples.
 
-### Local?
+## Local?
 
 One worry was that I didn't really want to go to the effort of publishing this as an "official" plugin and didn't
 think anybody else would want to use it. Fortunately, it is possible to create a local plugin that just lives in the
 main document repo along with the source documents and other \_11ty code without needing npm or anything like that.
 
-### Events
+## Events
 
 I already mentioned the improvements in events with the v2.0 of 11ty. Another part of the puzzle was when or how to invoke
 the code I was about to write that would extract the data? Upgrading from v1.something to v2 let me use the
 "elevent.after" event with the new data that is now passed to it.
 
-#### .elevent.js
+### .elevent.js
 
 ```javascript
 
@@ -82,7 +82,7 @@ the code I was about to write that would extract the data? Upgrading from v1.som
 In the after event we get an array of all the pages that have been built and, crucially, the finished content of each page.
 This means we don't need to inspect keywords in the front matter but can make use of the full text to add to the search.
 
-### Search
+## Search
 
 The search code itself borrows from the original filter code and creates an elastic lunr object which it feeds data to
 about each page that we see. The content is fully html so I needed a library to help me make sense of that so that I could
@@ -90,7 +90,7 @@ exclude repeated portions of each page from the search (e.g. the left hand navig
 part of each page. The best one I found was [Fast HTML Parser](https://www.npmjs.com/package/node-html-parser#htmlelementouterhtml)
 which does the job admirably.
 
-#### \_11ty/plugins/search-index-generator/index.js
+### \_11ty/plugins/search-index-generator/index.js
 
 ```javascript
 
@@ -141,7 +141,7 @@ console.log("Search index complete");
 Given the full html content, I extract the most important parts of each page and use those as the keywords for that page.
 Finally, I write out the json search index into the site output with the html files.
 
-### Squash
+## Squash
 
 Of course, the full html, even for a small section of a page is probably too much to include in a search, so I
 reduced this by taking the original and "squashing" it a little to extract only the good bits, a digest if you will.
@@ -191,7 +191,7 @@ return interestingWords;
 
 Last thing was to remove double spaces and replace with single spaces and return the final string.
 
-### Clean Up
+## Clean Up
 
 The search database is much larger now than in the original version, around 10MB, but gzipping this takes it down
 hugely so the transfer isn't noticeable in the browser.
