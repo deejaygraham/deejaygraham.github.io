@@ -11,7 +11,7 @@ as one of the people to produce a sketchnote of a talk from the <a href="http://
 conference to be included in the conference proceedings along with slides and
 transcripts of the talks.
 
-![ACE 2014](/assets/img/posts/sketchnotes-from-ace-2014/ace-2014-large.png)
+![ACE 2014](/assets/img/posts/sketchnotes-from-ace-2014/ace-2014-large.jpg)
 
 Being one of the last to find out about this opportunity, I soon discovered that
 pretty much all of the talks had already been claimed. The one remaining talk
