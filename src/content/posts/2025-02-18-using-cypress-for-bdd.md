@@ -22,7 +22,7 @@ npm install @badeball/cypress-cucumber-preprocessor
 
 and something to match the build process you have in place, e.g.:
 
-```
+```shell
 npm install @bahmutov/cypress-esbuild-preprocessor
 ```
 
@@ -91,7 +91,7 @@ At this point, if you have pre-written cucumber scripts, you may have a lot of f
 
 Let's walk through a simple example.
 
-#### cypress/e2e/features/duckduckgo.feature
+### cypress/e2e/features/duckduckgo.feature
 
 ```javascript
 
