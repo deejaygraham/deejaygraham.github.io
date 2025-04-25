@@ -18,7 +18,7 @@ animated version of the game for reference.
 The assets in github come as a single png file so first I needed to extract the sprites into individual files so that they could be
 imported into Scratch as costumes.
 
-## T-Rex
+## T-Rex Images
 
 ![t-rex](/assets/img/posts/scratch-t-rex-runner/trex1.png)
 ![t-rex](/assets/img/posts/scratch-t-rex-runner/trex2.png)
@@ -33,7 +33,7 @@ I didn't use all of the t-rex sprites, e.g. the crouching versions, because I wa
 
 ![t-rex costumes](/assets/img/posts/scratch-t-rex-runner/t-rex-costumes.png)
 
-## Cactus
+## Cactus Images
 
 ![cactus](/assets/img/posts/scratch-t-rex-runner/cactus1.png)
 ![cactus](/assets/img/posts/scratch-t-rex-runner/cactus2.png)
