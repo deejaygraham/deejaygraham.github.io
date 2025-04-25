@@ -13,7 +13,7 @@ had to be obfuscasted at the server in C# code and de-obfuscated/read at the bro
 has to be read by code in the browser, encryption was an awkward option and it didn't need to be super secure, there were
 no bank details or PII involved here.
 
-### Server
+## Server
 
 Here's what I came up with. C# code to obfuscate as a two part process. First, minify the, presumably, multi-line JSON into
 a single line and remove all whitespace. This probably has most effect in terms of making it difficult to read. The JSON
@@ -75,7 +75,7 @@ Note that the text doesn't have to be just ascii format, here it's treated as ut
 when just dealing in .Net but becomes an important wrinkle when we are working "cross-platform" on the server and
 browser environments.
 
-### Tests
+## Server Tests
 
 We need tests to make sure the minification and encoding work as expected and can be round-tripped.
 
@@ -143,7 +143,7 @@ We need tests to make sure the minification and encoding work as expected and ca
 
 ```
 
-### Client
+## Client
 
 Thanks to MDN saving the day again, I found an [article](https://developer.mozilla.org/en-US/docs/Glossary/Base64#the_unicode_problem) that showed how to handle utf-8
 encoding not just ascii text.
@@ -174,7 +174,7 @@ export const decodeScript = (text) => {
 
 ```
 
-### Tests
+## Client Tests
 
 ```javascript
 
@@ -204,7 +204,7 @@ describe('Protected Content', () => {
 
 ```
 
-### Refactor
+## Refactor
 
 Once I'd got this working I refactored to make it slightly easier to understand (for me anyway).
 
