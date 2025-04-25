@@ -10,15 +10,15 @@ instance weirdness. If for no other reason that it can be prone to external atta
 
 With that in mind, here's how to enable it in a Cloud Service:
 
-1. Add an import for RemoteAccess to each role.
-2. Add an import for RemoteForwarder to **one** role (you will get an obscure error if you
+* Add an import for RemoteAccess to each role.
+* Add an import for RemoteForwarder to **one** role (you will get an obscure error if you
    add it to more than one.
 
 ![cloud service def](/assets/img/posts/enabling-rdp-access-to-azure-instances/cloud-service-def.png "cloud service definition")
 
-3. Add settings for RemoteAccess to each role, making sure that the account expiration is
+* Add settings for RemoteAccess to each role, making sure that the account expiration is
    something sensible (not christmas or new year's day :).
-4. Add a final setting to enable the RemoteForwarder.
+* Add a final setting to enable the RemoteForwarder.
 
 ![cloud service cfg](/assets/img/posts/enabling-rdp-access-to-azure-instances/cloud-service-cfg.png "cloud service config")
 
