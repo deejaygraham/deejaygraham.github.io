@@ -36,7 +36,7 @@ We create a new container for the object that wouldn't fit into any of the other
 Every time we try to fit an object, we start at the first container and test them all until we find a space,
 then continue with the next largest.
 
-## Setup
+## Knapsack Setup
 
 For our purposes, I have set each container or bin to have a fixed size. Each box is allocated a random size between
 1 and the maximum size of the bin.
@@ -58,7 +58,7 @@ containers or bins with a calculable wastage score.
 
 ```
 
-## Setup
+## Random Allocation
 
 ```csharp
 
