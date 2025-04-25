@@ -56,9 +56,11 @@ intensity of all the lights.
 As mentioned above, the bitbot piezo horn is put to use to warn everyone when reversing and for tooting when the driver hits the B button on the handset.
 Just like a real car!
 
-### Watchdog
+### Car Watchdog
 
-The final feature was implementing a more sophisticated run loop. The outer loop still runs forever but I added an inner loop to wait for initial contact, then run as long as the handset was in communication with the car. Either by sending a movement command or by the special 'hi' command. We increment the watchdog count every time through the loop and reset the count when we get another message over the radio. If we go too long without contact, we drop out of the
+The final feature was implementing a more sophisticated run loop. The outer loop still runs forever but I added an inner loop to wait for initial contact, 
+then run as long as the handset was in communication with the car. Either by sending a movement command or by the special 'hi' command. We increment the 
+watchdog count every time through the loop and reset the count when we get another message over the radio. If we go too long without contact, we drop out of the
 inner while loop, stop the motors and wait for contact to be established again at the top of the outer loop.
 
 ```python
