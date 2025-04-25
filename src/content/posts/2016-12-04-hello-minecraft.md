@@ -9,9 +9,9 @@ thumbnail: "/assets/img/thumbnails/rpi-420x255.png"
 I'm going to be doing some tinkering with Minecraft on the Raspberry Pi. Specifically,
 writing some code to do some building using the Python interface.
 
-![boot](/assets/img/posts/hello--minecraft/boot-sequence.png)
+![boot](/assets/img/posts/hello--minecraft/boot-sequence.jpg)
 
-### For Older Installations...
+## For Older Installations...
 
 Minecraft has been installed by default on Raspbian images for a long time, and more recent
 Raspbian images have the API installed by default so that you can write and run your scripts
@@ -55,7 +55,7 @@ start a minecraft session by typing:
 Newer Pi images have a desktop shortcut or menu item so you can start Minecraft directly
 from the UI.
 
-### Navigation
+## Navigation
 
 Navigating in minecraft isn't totally obvious. Here are the default keybindings:
 
@@ -73,7 +73,7 @@ Navigating in minecraft isn't totally obvious. Here are the default keybindings:
 | **Space bar**   | Jump                          |
 | **Tab**         | Release mouse                 |
 
-### Python
+## Python
 
 To start writing scripts against our brave new world, you will need to create a
 new folder to store your python scripts. For ease, we can copy the contents of the
