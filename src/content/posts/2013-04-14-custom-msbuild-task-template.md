@@ -14,9 +14,11 @@ Visual Studio:
 
 ## Add references to MsBuild
 
-    Microsoft.Build.Framework
-    Microsoft.Build.Tasks.v4.0
-    Microsoft.Build.Utilities.v4.0
+```csharp
+Microsoft.Build.Framework
+Microsoft.Build.Tasks.v4.0
+Microsoft.Build.Utilities.v4.0
+```
 
 ## Add a new class derived from Task
 
