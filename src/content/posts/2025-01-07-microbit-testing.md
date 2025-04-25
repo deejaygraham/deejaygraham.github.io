@@ -38,7 +38,8 @@ sad face and the syntax error message that follows it and I wanted to replicate
 somethingn like that that would stop the rest of the program executing when an 
 assertion fails. 
 
-Looking at the excellent documentation for the microbit, the [panic function]() looked like a good candidate and they even 
+Looking at the excellent documentation for the microbit, the [panic function](https://microbit-micropython.readthedocs.io/en/v2-docs/microbit.html#microbit.panic) looked 
+like a good candidate and they even 
 document [the error codes](https://support.microbit.org/support/solutions/articles/19000016969-micro-bit-error-codes) that they support. 
 
 Calling panic does indeed stop the microbit but felt it was a little dishonest using that as a trigger for an assertion failure when most of the errors are 
