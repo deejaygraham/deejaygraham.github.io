@@ -15,13 +15,17 @@ Normally in these sorts of situations we fall back on old school methods like ad
 what value a variable has etc. This has been the case for me when writing my 
 little programs for the microbit. Some of the more involved or elaborate programs, 
 or those that required several devices to work together are the biggest pains, 
-particularly since there's a cycle of debugging which feels very inefficient. This typically goes like: flash the code, enable REPL, restart the app, examine the printed output, work out what's going wrong, turn off REPL, change the code, re-flash and on and on. 
+particularly since there's a cycle of debugging which feels very inefficient. This typically goes like: flash the code, enable REPL, restart the app, examine the 
+printed output, work out what's going wrong, turn off REPL, change the code, re-flash and on and on. 
 
 
 ## Assert 
 
-So, this has made me want to have a test framework for the microbit. Micropython does have support for "assert" but it looks like it is [turned off in the default settings](https://microbit-micropython.readthedocs.io/en/stable/micropython.html) and I didn't want to mess around with that. There is also a block available 
-as an assert in [Microsoft's Make Code](https://makecode.microbit.org/reference/control/assert) but that only applies to the block mode of programming. What I wanted was a simple library, maybe even simpler than [assertpy](https://github.com/assertpy/assertpy), that could be included in a program or even just some code that could be pasted at the top of a program to let us make some assertions about the code we want to write. 
+So, this has made me want to have a test framework for the microbit. Micropython does have support for "assert" but it looks like it is 
+[turned off in the default settings](https://microbit-micropython.readthedocs.io/en/stable/micropython.html) and I didn't want to mess around with that. There 
+is also a block available as an assert in [Microsoft's Make Code](https://makecode.microbit.org/reference/control/assert) but that only applies to the 
+block mode of programming. What I wanted was a simple library, maybe even simpler than [assertpy](https://github.com/assertpy/assertpy), that could be 
+included in a program or even just some code that could be pasted at the top of a program to let us make some assertions about the code we want to write. 
 
 I have moved this code into it's own repository on github as [Simple Microbit Assert](https://github.com/deejaygraham/simple-microbit-assert).
 
@@ -34,14 +38,17 @@ sad face and the syntax error message that follows it and I wanted to replicate
 somethingn like that that would stop the rest of the program executing when an 
 assertion fails. 
 
-Looking at the excellent documentation for the microbit, the [panic function]() looked like a good candidate and they even document [the error codes](https://support.microbit.org/support/solutions/articles/19000016969-micro-bit-error-codes) that they support. 
+Looking at the excellent documentation for the microbit, the [panic function]() looked like a good candidate and they even 
+document [the error codes](https://support.microbit.org/support/solutions/articles/19000016969-micro-bit-error-codes) that they support. 
 
-Calling panic does indeed stop the microbit but felt it was a little dishonest using that as a trigger for an assertion failure when most of the errors are actually around thinks like the microbit running out of memory or having an actual 
-hardware error.
+Calling panic does indeed stop the microbit but felt it was a little dishonest using that as a trigger for an assertion failure when most of the errors are 
+actually around thinks like the microbit running out of memory or having an actual hardware error.
 
 ## Exception
 
-In the c# world, probably what you would do would be to throw an Exception object with a description of the problem. Python has a raise keyword so I thought that that might do enough of what we wanted without training to pretend the microbit was about to blow up. Sure enough, raising an Exception object in Python does what we want (mostly) it shows the sad face, scrolls the exception message across the screen and halts further processing of the program. 
+In the c# world, probably what you would do would be to throw an Exception object with a description of the problem. Python has a raise keyword so I thought 
+that that might do enough of what we wanted without training to pretend the microbit was about to blow up. Sure enough, raising an Exception object in Python does 
+what we want (mostly) it shows the sad face, scrolls the exception message across the screen and halts further processing of the program. 
 
 
 ## Code
@@ -144,5 +151,6 @@ but I don't think this is available for micropython. Some experimentation is
 needed here. 
 
 I have put some time into trying to compensate for this by 
-making the error messages as good as they can be. If I come up with a solution, I will document this later. For now, I have added some simple assertions: true, false, equal; and a couple of microbit specific ones 
+making the error messages as good as they can be. If I come up with a solution, I will document this later. For now, I have added some simple assertions: true, 
+false, equal; and a couple of microbit specific ones 
 for image comparison and display checking. I will fill this out as I find a need to.
