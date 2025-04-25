@@ -75,7 +75,7 @@ the code I was about to write that would extract the data? Upgrading from v1.som
 
 ```javascript
 
-    eleventyConfig.on('eleventy.after', require("./_11ty/plugins/search-index-generator"));
+eleventyConfig.on('eleventy.after', require("./_11ty/plugins/search-index-generator"));
 
 ```
 
@@ -158,33 +158,33 @@ the real one, just so it can fit on the page :)
 ```javascript
 
 const squash = (text) => {
-const lowerCased = new String(text).toLowerCase();
-
-// remove all html elements and new lines
-const htmlElementMatcher = /(<.\*?>)/gi;
-const plainText = unescape(lowerCased.replace(htmlElementMatcher, ''));
-
-// remove punctuation but leave full stops in place so that code namespaces are maintained.
-const punctuationMatcher = /\,|\?|-|—|\n|\r|\t|{|}/g;
-const unpunctuatedText = plainText.replace(punctuationMatcher, ' ');
-
-// remove duplicated words
-const words = unpunctuatedText.split(' ');
-const uniqueWordList = [...(new Set(words))];
-const uniqueWords = uniqueWordList.join(' ')
-
-// remove short and less meaningful words
-const unneededWordMatcher = /\b(a|an|and|am|also|by|you|I|to|if|of|off|...|for|how|to|the|such|now)\b/gi;
-
-let interestingWords = uniqueWords.replace(unneededWordMatcher, '');
-
-const programmingTermMatcher = /\b(begin|end|assumptions|assume|...|true|false|summary|item|value|page|this|use)\b/gi;
-interestingWords = interestingWords.replace(programmingTermMatcher, '');
-
-//remove repeated spaces
-interestingWords = interestingWords.replace(/[ ]{2,}/g, ' ');
-
-return interestingWords;
+    const lowerCased = new String(text).toLowerCase();
+    
+    // remove all html elements and new lines
+    const htmlElementMatcher = /(<.\*?>)/gi;
+    const plainText = unescape(lowerCased.replace(htmlElementMatcher, ''));
+    
+    // remove punctuation but leave full stops in place so that code namespaces are maintained.
+    const punctuationMatcher = /\,|\?|-|—|\n|\r|\t|{|}/g;
+    const unpunctuatedText = plainText.replace(punctuationMatcher, ' ');
+    
+    // remove duplicated words
+    const words = unpunctuatedText.split(' ');
+    const uniqueWordList = [...(new Set(words))];
+    const uniqueWords = uniqueWordList.join(' ')
+    
+    // remove short and less meaningful words
+    const unneededWordMatcher = /\b(a|an|and|am|also|by|you|I|to|if|of|off|...|for|how|to|the|such|now)\b/gi;
+    
+    let interestingWords = uniqueWords.replace(unneededWordMatcher, '');
+    
+    const programmingTermMatcher = /\b(begin|end|assumptions|assume|...|true|false|summary|item|value|page|this|use)\b/gi;
+    interestingWords = interestingWords.replace(programmingTermMatcher, '');
+    
+    //remove repeated spaces
+    interestingWords = interestingWords.replace(/[ ]{2,}/g, ' ');
+    
+    return interestingWords;
 };
 
 ```
