@@ -1,9 +1,6 @@
 ---
 title: New, Improved, Microbit RC
 tags: [code, microbit]
-hero: microbit
-thumbnail: "/assets/img/posts/new-improved-microbit-rc/thumbnail-420x255.png"
-
 ---
 
 I've been refinining some of my code from the original remote control car I built using the <a href="http://4tronix.co.uk/blog/?p=1490">BitBot</a> kit
@@ -29,14 +26,14 @@ First, there were a couple of functions that weren't being used in the motor cla
 
 ```
 
-### Memories
+## Memories
 
 All the way through the updates, I have been struggling to fit all the car code onto the microbit without running into memory allocation
 errors. It seems that organizing code into classes and having comments, whitespace and long variable names all contribute to added memory requirements. As I
 went along I took the opportunity to remove some nice-to-have constants and replace them with literals, cut out unused code and did my best to
 remove anything extraneous to leave me some space for extra features.
 
-### Neopixels
+## Neopixels
 
 Next, I added the neopixels in as a permanent addition to the car with forward headlights, reverse and brake lights and "blinkers" for left and right
 indication, even though they don't blink they way they would in a real car.
@@ -49,17 +46,19 @@ indication, even though they don't blink they way they would in a real car.
 I also tried to improve the code for each of the light functions by adding a way of turning off each set of lights instead of creating two function for each
 light arrangement. Setting the "colour" of a led to be (0, 0, 0) turns the led off.
 
-### BitBot
+## BitBot
 
 The bitbot class draws together the motors, neopixels and is responsible for managing its own direction and speed.
 
-I moved the speed controls into the bitbot class because that seemed a better split for the code and meant I had less to get wrong in the main application and again fewer variables which helps with memory over all.
+I moved the speed controls into the bitbot class because that seemed a better split for the code and meant I had less to get wrong in the main application 
+and again fewer variables which helps with memory over all.
 
-#### Lights
+## Lights
 
 ![microbit headlights](/assets/img/posts/new-improved-microbit-rc/headlights.png)
 
-I added a direction member to the class so that a single function (update_lights) can be responsible for handling all the lights that I am interested in. The rear two lights serve as brake and reverse lights, switching from red (braking or stopped) to white (reverse). Steering left or right is indicated by two of the
+I added a direction member to the class so that a single function (update_lights) can be responsible for handling all the lights that I am interested in. The rear 
+two lights serve as brake and reverse lights, switching from red (braking or stopped) to white (reverse). Steering left or right is indicated by two of the
 corresponding leds on the side lighting up in orange.
 
 ![microbit reversing](/assets/img/posts/new-improved-microbit-rc/rc-reverse.png)
@@ -73,11 +72,12 @@ on it's headlights automatically. This is where the ability to pass a flag to tu
 
 ```
 
-#### Steering
+## Steering
 
-The steering has changed in this version. It used to turn in a circle left or right by rolling forward on one wheel and in reverse on the other. Now I have kept it moving in the same direction but decreased the turning side to half speed which means that controlling where to turn is a bit more predictable.
+The steering has changed in this version. It used to turn in a circle left or right by rolling forward on one wheel and in reverse on the other. Now I have 
+kept it moving in the same direction but decreased the turning side to half speed which means that controlling where to turn is a bit more predictable.
 
-### First Contact
+## First Contact
 
 A small but nice feature I added into this version is a sort of handshake that the controller and car do when they both startup. Often I have found the car
 running away with the first few commands from the controller while the person is still getting used to picking up and holding the microbit in the right way
@@ -98,7 +98,7 @@ with you' of this ad-hoc protocol.
 
 ```
 
-### Driving
+## Driving
 
 Following the handshake comes the main loop which interprets the single letter commands coming from the handset controller and forwards to the bitbot class to
 drive the car. This loop is now a lot simpler than in earlier versions.
@@ -132,7 +132,8 @@ LED in the centre of the display and the matching heart icon after the handshake
 
 ![microbit stop](/assets/img/posts/new-improved-microbit-rc/handset-stop.png)
 
-I left the command variables in the handset program since this is a much smaller program and hadn't shown any signs of running out of memory. I think the variables do make the code easier to understand.
+I left the command variables in the handset program since this is a much smaller program and hadn't shown any signs of running out of memory. I think the variables do make the 
+code easier to understand.
 
 ```python
 
@@ -144,9 +145,11 @@ I split out the forward/backward and side tilt values even though they ended up 
 to see which felt most natural when just trying to control the car without it being too sensitive to hand movements in either direction. The values I came up
 with seem to work well to allow for some margin of error and to respond to intentional but natural hand movements for driving.
 
-### Driving
+## Driving Again
 
-I struggled a little with coming up with the right form of algorithm for which command to send when the device is tilted. In testing I found that I was trying to corner but because the controller was not completely flat on the forward axis, the handset would ignore the steering command and send a forward or reverse command instead. I ended up just looking at which of the non-zero tilts was the greatest and using that to decide which one to send out to the car.
+I struggled a little with coming up with the right form of algorithm for which command to send when the device is tilted. In testing I found that I was trying to corner but 
+because the controller was not completely flat on the forward axis, the handset would ignore the steering command and send a forward or reverse command instead. I ended up 
+just looking at which of the non-zero tilts was the greatest and using that to decide which one to send out to the car.
 
 ```python
 
@@ -161,4 +164,6 @@ Finally, I tightened up the sleep timing on the handset controller to make commu
 ### Conclusion
 
 I think this is the final version of this project, I can't think of any other improvements I want to make. Also, all the way along I have found memory allocation
-errors when flashing my preferred intermediate version of the code and had to modify to bring it back under the memory limit for the device. I think this is probably the biggest project you could run on a microbit with classes. It may be possible to totally devolve the solution into one big while loop to save on memory but I am very happy with the level of functionality and most of how the code looks now.
+errors when flashing my preferred intermediate version of the code and had to modify to bring it back under the memory limit for the device. I think this is probably 
+the biggest project you could run on a microbit with classes. It may be possible to totally devolve the solution into one big while loop to save on memory but I am very 
+happy with the level of functionality and most of how the code looks now.
