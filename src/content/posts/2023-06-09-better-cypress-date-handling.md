@@ -1,9 +1,6 @@
 ---
 title: Better Date Handling in Cypress
 tags: [cypress, javascript, code]
-hero: power
-thumbnail: "/assets/img/thumbnails/cypress-420x255.png"
-
 ---
 
 I've been getting into using [Cypress](https://cypress.io) for API testing recently and needed some nicer way of handling dates than just the raw Date class in JavaScript.
@@ -15,7 +12,7 @@ package managers work just as well I am told.
 Once the package is installed, I needed to make Cypress aware of it. API tests come under the umbrella of end-to-end-tests so the e2e.js file under the cypress folder was the place to
 do that.
 
-#### e2e.js
+## Adding dayjs
 
 ```javascript
 
@@ -30,7 +27,7 @@ The main dayjs is required plus the utc plugin so we can work with UTC dates.
 
 Once the utc extension has been added, we can hang dayjs on the global Cypress object.
 
-#### e2e.js
+## Add to Cypress Object
 
 ```javascript
 
@@ -44,7 +41,7 @@ and then access it in the test code like this:
 
 it('api can do dates', () => {
 
-const today = Cypress.dayjs.utc();
+  const today = Cypress.dayjs.utc();
 
 });
 
@@ -52,7 +49,7 @@ const today = Cypress.dayjs.utc();
 
 This works for general exposure to the full utility but we can also set up some custom functions if we want:
 
-#### e2e.js
+## Formatted Date
 
 ```javascript
 
@@ -64,7 +61,7 @@ Cypress.formatted_date = () => dayjs.utc().format('YYYY-MM-DD');
 
 it('api can do dates as text', () => {
 
-const today = Cypress.formatted_date();
+  const today = Cypress.formatted_date();
 
 });
 
