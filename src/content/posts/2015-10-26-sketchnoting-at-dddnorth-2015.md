@@ -59,7 +59,7 @@ to win the book. Here are the submissions we had:
 
 I picked one at random and it was [Luke Stringer](https://twitter.com/lukestringer90)'s tweet that won.
 
-![Luke with his prize](/assets/img/posts/sketchnoting-at-dddnorth-2015/luke-stringer.png "Luke with his prize")
+![Luke with his prize](/assets/img/posts/sketchnoting-at-dddnorth-2015/luke-stringer.jpg "Luke with his prize")
 
 Thanks to [Mike Rohde](http://rohdesign.com/) and the good folk at [Pearson Education](http://www.pearsoned.co.uk/) for the book and to
 [Andrew Westgarth and the whole DDDNorth team](http://wwww.dddnorth.co.uk/) for
