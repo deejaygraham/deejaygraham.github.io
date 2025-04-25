@@ -17,10 +17,10 @@ So this is a message to my future self, who will forget again before too long :)
 ```html
 <html>
 <head>
-	 <script type="text/javascript" src="example.js"></script>
+  <script type="text/javascript" src="example.js"></script>
 </head>
 <body>
-<h1>Hello World</h1>
+  <h1>Hello World</h1>
 </body>
 </html>
 ```
