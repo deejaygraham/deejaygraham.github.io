@@ -12,35 +12,36 @@ Refactoring powershell to delete code.
 Garbage in, Garbage out
 
 1. CmdLetBinding
+
+2. Writing Output
    Write-Verbose
    Write-Debug
    Write-error
+   Write-Host
+   Write-Output
 
-Write-Host
-Write-Output
+4. What If
 
-2. What If
+5. Switches
 
-3. Switch
+6. Parameter Sets
 
-4. Parameter Sets
+7. Parameter validation ValidateNotNullOrEmpty()]
 
-5. Parameter validation ValidateNotNullOrEmpty()]
-
-6. Validation Set ["Prod", "Staging", "Dev"]
+8. Validation Set ["Prod", "Staging", "Dev"]
    Validation script
 
-7. Write Output Objects
+9. Write Output Objects
 
-8. Functional style - using pipes
+10. Functional style - using pipes
 
-9. Measure Command
+11. Measure Command
 
-10. Binding Command
+12. Binding Command
 
-11. Execution of script, function or command line tool & - not using strings
+13. Execution of script, function or command line tool & - not using strings
 
-12. External functions - psm1 or ps1
+14. External functions - psm1 or ps1
     Easy imports - dot sourcing
 
 13 Test - Pester to test your code.
