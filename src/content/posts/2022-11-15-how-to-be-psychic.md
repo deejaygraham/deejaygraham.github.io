@@ -187,7 +187,6 @@ dead mother, back to speak to you" also fine. Then: "I love you so much Harry...
 pay the nice lady". Big mistake! Because Harry Houdini is a stage name. His mother never used that (why would she?), she only
 knew his as Erich - Erich Weiss.Erik Weisz 1920s
 
-## N Ways
 
 ## Walking Skeleton
 
@@ -201,7 +200,7 @@ Simple Design - simplest - don't anticipate the future.
 Incremental Design - rework to match current requirements as they come in.
 Continuous Design - Design all the time - every day / hour.
 
-## 1. Shitty first draft
+## Shitty first draft
 
 'Almost all good writing begins with terrible first efforts'
 
@@ -405,7 +404,7 @@ not be right for you. ED is good for internal systems but be careful of evolving
 rely on. Any client of you code can be affected by changes and if you don't have the power to change their code then
 any consumer of your code can make that difficult.
 
-# Possible Lightning Talk
+## Possible Lightning Talk
 
 Also for anyone with a little bit of experience delivering software who wants to practice their mentoring skills,
 I want to just mention my work with We Think Code. It's a non-profit organization in SA that provides training for
