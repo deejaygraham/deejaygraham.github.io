@@ -20,26 +20,26 @@ imported into Scratch as costumes.
 
 ## T-Rex Images
 
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex1.png)
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex2.png)
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex3.png)
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex4.png)
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex5.png)
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex6.png)
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex7.png)
-![t-rex](/assets/img/posts/scratch-t-rex-runner/trex8.png)
+![t-rex 1](/assets/img/posts/scratch-t-rex-runner/trex1.jpg)
+![t-rex 2](/assets/img/posts/scratch-t-rex-runner/trex2.jpg)
+![t-rex 3](/assets/img/posts/scratch-t-rex-runner/trex3.jpg)
+![t-rex 4](/assets/img/posts/scratch-t-rex-runner/trex4.jpg)
+![t-rex 5](/assets/img/posts/scratch-t-rex-runner/trex5.jpg)
+![t-rex 6](/assets/img/posts/scratch-t-rex-runner/trex6.jpg)
+![t-rex 7](/assets/img/posts/scratch-t-rex-runner/trex7.jpg)
+![t-rex 8](/assets/img/posts/scratch-t-rex-runner/trex8.jpg)
 
 I didn't use all of the t-rex sprites, e.g. the crouching versions, because I was only building a simple version of the game.
 
-![t-rex costumes](/assets/img/posts/scratch-t-rex-runner/t-rex-costumes.png)
+![t-rex costumes](/assets/img/posts/scratch-t-rex-runner/t-rex-costumes.jpg)
 
 ## Cactus Images
 
-![cactus](/assets/img/posts/scratch-t-rex-runner/cactus1.png)
-![cactus](/assets/img/posts/scratch-t-rex-runner/cactus2.png)
-![cactus](/assets/img/posts/scratch-t-rex-runner/cactus3.png)
+![cactus 1](/assets/img/posts/scratch-t-rex-runner/cactus1.jpg)
+![cactus 2](/assets/img/posts/scratch-t-rex-runner/cactus2.jpg)
+![cactus 3](/assets/img/posts/scratch-t-rex-runner/cactus3.jpg)
 
-![cactus costumes](/assets/img/posts/scratch-t-rex-runner/cactus-costumes.png)
+![cactus costumes](/assets/img/posts/scratch-t-rex-runner/cactus-costumes.jpg)
 
 With the sprites created and the costumes loaded, the next stage was to write the code behind each piece.
 
@@ -49,18 +49,18 @@ First the stage is represented by a simple line to show the horizon in the backg
 terrain that the original game shows. The dinosaur and the cactus appear in front of the line to show they are
 closer to the player.
 
-![running](/assets/img/posts/scratch-t-rex-runner/running.png)
+![running](/assets/img/posts/scratch-t-rex-runner/running.jpg)
 
 The stage sets up the variables we use for positions, ground level, left and right etc. before we begin.
 
-![stage code](/assets/img/posts/scratch-t-rex-runner/stage-code.png)
+![stage code](/assets/img/posts/scratch-t-rex-runner/stage-code.jpg)
 
 The stage also keeps track of the score by incrementing the distance the t-rex has run during the game. This is
 shown in the top left of the screen.
 
 The stage listens for the game over event and switches to the game over background.
 
-![game over](/assets/img/posts/scratch-t-rex-runner/game-over.png)
+![game over](/assets/img/posts/scratch-t-rex-runner/game-over.jpg)
 
 ## Cactus
 
@@ -68,7 +68,7 @@ The cactus obstacle sprite generates a clone of itself ever few seconds and posi
 the screen, then travels to the left, towards the t-rex and finally off the screen again. The cactus has
 three costumes and switches between them at random so that each appearance of the cactus can be different.
 
-![stage code](/assets/img/posts/scratch-t-rex-runner/cactus-code.png)
+![stage code](/assets/img/posts/scratch-t-rex-runner/cactus-code.jpg)
 
 ## T-Rex
 
@@ -88,4 +88,4 @@ the jump subroutine takes over and then returns to running.
 
 Finally, on game over, the t-rex switches to a last costume which shows a bit of a surprised expression.
 
-![t-rex code](/assets/img/posts/scratch-t-rex-runner/t-rex-code.png)
+![t-rex code](/assets/img/posts/scratch-t-rex-runner/t-rex-code.jpg)
