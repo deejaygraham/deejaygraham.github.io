@@ -137,7 +137,7 @@ She talks about no knowing anything about the adoption of her work in SOLID unti
 
 Wide interfaces may change for many reasons causing undesired changes in all the code.
 
-Hyrums law (Hyrum Wright) https://www.hyrumslaw.com
+[Hyrum's law](https://www.hyrumslaw.com)
 
 With a sufficient number of users of an API,
 it does not matter what you promise in the contract:

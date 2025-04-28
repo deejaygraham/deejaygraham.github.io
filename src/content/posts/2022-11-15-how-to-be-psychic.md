@@ -327,8 +327,7 @@ treated like other source files.
 
 Code Smells are a good way of helping us to identify and talk about problems there may be in the code.
 
-Industrial logic has a code smells to refactoring cheatsheet
-https://www.industriallogic.com/img/blog/2005/09/smellstorefactorings.pdf
+Industrial logic has a [code smells to refactoring cheatsheet](https://www.industriallogic.com/img/blog/2005/09/smellstorefactorings.pdf)
 
 Refactoring: Improving the Design of Existing Code by Martin Fowler
 Refactoring to Patterns by Joshua Kerievsky

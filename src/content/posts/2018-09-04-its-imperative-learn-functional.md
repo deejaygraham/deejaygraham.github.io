@@ -4,7 +4,7 @@ tags: [presentations]
 draft: true
 ---
 
-Erland 250 years of development into making it rock solid OS.
+Erlang 250 years of development into making it rock solid OS.
 
 Elixir sounds exotic but it borrows from languages (and others have borrowed from it) so that
 it doesn't seem too scary.
@@ -46,7 +46,7 @@ Actor mOdel - OO programming - Alan Kay
 Kevlin Henney - quadrant diagram, shared state, no shared state, writable data,
 shared writable
 
-https://doc.honeypot.io/elixir-documentary-2018/
+[documentary](https://doc.honeypot.io/elixir-documentary-2018/)
 
 Alan Kay objects talking - multi - promise of micro services
 

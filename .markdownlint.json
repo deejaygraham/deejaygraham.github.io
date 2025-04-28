@@ -1,7 +1,6 @@
 {
     "no-hard-tabs": false,
     "no-trailing-punctuation": false,
-    "no-bare-urls": false,
     "no-trailing-spaces": false,
     "no-multiple-blanks": false,
     "no-missing-space-atx": false,

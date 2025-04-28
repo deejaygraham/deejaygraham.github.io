@@ -183,13 +183,14 @@ continuing. Something you need to explicitly cater for in Selenium.
 
 ## Documetation
 
-https://docs.cypress.io is really good, they have good tutorials and lots of good guidance
+[The docs](https://docs.cypress.io) is really good, they have good tutorials and lots of good guidance
 as well as good individual docs for each function.
 
 ## Installing - TODO !!!!
 
 Assume you have an node application. If not, npm init and answer questions or accept defaults.
 
+```shell
 npm install cypress
 
 npx cypress open
@@ -198,6 +199,7 @@ Has two modes of running, interactive and command line
 
 npx cypress run will run tests on command line like a jest test
 npx cypress open opens interactive app
+```
 
 ## Test Naming
 
@@ -212,14 +214,13 @@ Ruby RSpec etc.
 
 ```javascript
 describe('The thing I am testing', () => {
-it('should do this', () => {
-expect(1 + 1).toBe(2);
-});
+    it('should do this', () => {
+        expect(1 + 1).toBe(2);
+    });
 
     it('ought not to do that', () => {
         expect('red').toBe('green');
     });
-
 });
 ```
 
@@ -228,8 +229,7 @@ expect(1 + 1).toBe(2);
 ```javascript
 
 describe('Google', () => {
-it('Knows about Tech on the Tyne', () => {
-
+    it('Knows about Tech on the Tyne', () => {
         cy.viewport(1280, 720);
         cy.intercept('https://www.google.com/search*').as('google');
 
@@ -273,26 +273,20 @@ cy.visit('/stuff');
 Find by text content on a page
 
 ```javascript
-
-    cy.contains('Google');
-    cy.contains('google', { matchCase: false });
-
+cy.contains('Google');
+cy.contains('google', { matchCase: false });
 ```
 
 Find by css selector: id or by class
 
 ```javascript
-
-    cy.get('#password');
-
+cy.get('#password');
 ```
 
 Find by XPath
 
 ```javascript
-
-    cy.get('input[type=submit]');
-
+cy.get('input[type=submit]');
 ```
 
 Will throw if it can't find the password
@@ -303,26 +297,24 @@ We can chain commands together
 
 ```javascript
 
-    cy.get('#password')
-        .type('random password');
+cy.get('#password')
+    .type('random password');
 
 ```
 
 ## Assertions
 
 ```javascript
+cy.title().should('contain', 'Google is Awesome');
+cy.get('#password').should('not.contain', 'swordfish');
 
-    cy.title().should('contain', 'Google is Awesome');
-    cy.get('#password').should('not.contain', 'swordfish');
+cy.get('#password')
+    .should('not.contain', 'passw0rd')
+    .and('not.contain', 'swordfish');
 
-    cy.get('#password')
-        .should('not.contain', 'passw0rd')
-        .and('not.contain', 'swordfish');
-
-    cy.get('#password')
-        .type('random password')
-        .should('have.value', 'random password');
-
+cy.get('#password')
+    .type('random password')
+    .should('have.value', 'random password');
 ```
 
 ## Common Assertions to Should
@@ -334,18 +326,15 @@ We can chain commands together
 - not.exist
 
 ```javascript
-
 cy.get('h1')
-.invoke('attr', 'class')
-.should('eq', 'title');
-
+    .invoke('attr', 'class')
+    .should('eq', 'title');
 ```
 
 Find broken images
 
 ```javascript
-
-    cy.get('.article').within(($article) => {
+cy.get('.article').within(($article) => {
 
     if ($article.find('img').length > 0) {
         cy.get('img').each(($img) => {
@@ -355,9 +344,7 @@ Find broken images
         expect($img[0].naturalHeight).to.be.greaterThan(0);
         });
     }
-
 });
-
 ```
 
 Assign items to variables and use just like normal js.
@@ -496,6 +483,7 @@ name: 'Peter Pan',
 
 ```
 
+```javascript
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
@@ -511,10 +499,9 @@ setupNodeEvents(on, config) {
 },
 },
 });
+```
 
 ## Components
-
-https://github.com/deejaygraham/calendar
 
 ```javascript
 
