@@ -11,7 +11,7 @@ The year is 1994 or 1995 and I was working in Rogers, Arkansas with a company ca
 pretty early in my software development career, and I was a self-taught programmer. My mentor at
 that company was a veteran called Rick who looked very much like the photos you see of the elder Mark Twain.
 
-![rick](/assets/img/posts/invention-of-pairing/mark-twain.png)
+![rick](/assets/img/posts/invention-of-pairing/mark-twain.jpg)
 
 Rick and his team of seasoned, professional C and C++ developers were deep into manufacturing process control
 and working with some of the big food manufacturers on automated packaging and wrapping machines.
@@ -28,7 +28,7 @@ This system used stepper and servo motors, sensors, digital IO and lots of PCs t
 
 Timing is the thing that the whole glass forming machine is based on. The typical glass factory is built around a central furnace which sits high up in the factory roof and heats glass to a horrifically high temperature, delivering it to each machine on a gravity-feed system. Hot glass falls out of the furnace and is cut into a "gob" by a giant pair of scissors. The gob then falls into a iron drain pipe which directs the glass to parallel stations on the machine in a round-robin system. Each station works slightly offset in time to every other one but performs exactly the same operation. A mould is open initially, the glass gob falls into it, the mould is closed immediately and pressurised air is forced into the mould to push the hot glass into the mould and form the specific glassware. The mould is held closed for a few seconds then opens and a mechanical arm lifts the new glassware out of the mould and places it at the front of the machine. Finally, another mechanical arm, called a pusher, pushes the glass out from the machine onto a conveyor belt which takes the glass for cooling and further treatment.
 
-![glass](/assets/img/posts/invention-of-pairing/bottles.png)
+![glass](/assets/img/posts/invention-of-pairing/bottles.jpeg)
 
 As you can imagine, this is a noisy, dangerous process and relies heavily on microscopic timing (and therefore accurate control) and patience to get one section of a machine working correctly. Now do that for 10, 12, 20
 sections in parallel and make them all fit together so that bottles come out of the machine onto the
