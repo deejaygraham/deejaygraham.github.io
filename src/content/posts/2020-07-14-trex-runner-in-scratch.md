@@ -31,7 +31,7 @@ imported into Scratch as costumes.
 
 I didn't use all of the t-rex sprites, e.g. the crouching versions, because I was only building a simple version of the game.
 
-![t-rex costumes](/assets/img/posts/scratch-t-rex-runner/t-rex-costumes.jpg)
+![t-rex costumes](/assets/img/posts/scratch-t-rex-runner/t-rex-costumes.png)
 
 ## Cactus Images
 
