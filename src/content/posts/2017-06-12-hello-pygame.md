@@ -90,7 +90,7 @@ while not done:
 Now, how about a bit of interaction? We can read from the keyboard in the message pump,
 looking for pygame.KEYDOWN and pygame.K_SPACE.
 
-![block](/assets/img/posts/hello-pygame/orange-block.jpg)
+{# ![block](/assets/img/posts/hello-pygame/orange-block.jpg) #}
 
 ```python
 import pygame
@@ -145,7 +145,7 @@ want to move the block.
 
 For good measure we should prevent the coordinates going outside of the screen.
 
-![block](/assets/img/posts/hello-pygame/move-block.jpg)
+{# ![block](/assets/img/posts/hello-pygame/move-block.jpg) #}
 
 ```python
 import pygame
