@@ -1,14 +1,12 @@
 ---
 title: How to Paint the Mona Lisa
 tags: [code, processing, python]
-thumbnail: /img/posts/how-to-paint-the-mona-lisa/mona-lisa-420x255.png
-
 ---
 
 Continuing on with intro to coding, I wanted to show some randomisation related to an identifiable image. The Mona Lisa is supposed to be one of the most well
 recognized pieces of western art so I thought that might be a good place to begin.
 
-![original](/assets/img/posts/how-to-paint-the-mona-lisa/mona-lisa.png)
+![original](/assets/img/posts/how-to-paint-the-mona-lisa/mona-lisa.jpg)
 
 This version was the first result from my image search which happened to be small but still recognisable with enough detail. All the way through this set of exercises,
 we won't be drawing the original image, we will always have it memory as a reference and paint onto the screen a modified represenation.
