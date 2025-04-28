@@ -11,8 +11,6 @@ sketchnote:
   speaker:
     name: "Tom Stuart"
     url: "http://www.twitter.com/tomstuart"
-thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
-
 ---
 
 After I posted some of my sketchnotes from <a href="http://www.dddnorth.co.uk/">DDD North</a>
@@ -39,4 +37,4 @@ to capture everything.
 
 I posted a snap of the sketchnote to twitter and Tom was kind enough to reply:
 
-![tweet](/assets/img/posts/super-technical-sketchnoting/tom-stuart-reaction.png)
+![tweet](/assets/img/posts/super-technical-sketchnoting/tom-stuart-reaction.jpg)
