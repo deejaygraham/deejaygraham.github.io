@@ -1,9 +1,6 @@
 ---
 title: Silent Night for the Microbit
 tags: [code, microbit, music]
-hero: microbit
-thumbnail: /img/posts/silent-night-for-microbit/thumbnail-420x255.png
-
 ---
 
 Since it's almost December, I thought of transcribing a classic tune for the microbit using the code
@@ -13,30 +10,28 @@ file to the microbit as score.txt.
 This was a uncomplicated arrangement so it didn't take very long to do but sounds very satisfying coming from the
 tiny speaker.
 
-### Silent Night
+## Silent Night
 
 In normal microbit code:
 
-silent-night.py
+### silent-night.py
+
 ```python
-
 {% include 'code/python/microbit/silent-night.py' %}
-
 ```
 
 ... and using the technique from the [last post](/2020/10/30/transcribing-sheetmusic-for-the-microbit/)
 
-silent-night.txt
+### silent-night.txt
+
 ```txt
-
 {% include 'code/python/microbit/silent-night.txt' %}
-
 ```
 
 The advantage with the second apparoach is that the music isn't hardcoded and can be changed by copying
 a new file with different content onto the microbit and resetting it.
 
-### Transcription Process
+## Transcription Process
 
 After some playing with this, I found I was following this process when translating:
 

@@ -42,8 +42,8 @@ So the package.json should look something like this...
     "cypress": "^14.3.0",
   }
 }
-
 ```
+
 With the preprocessor now installed, there is some configuration to do to adapt the cypress config to use it.
 This is stolen directly from the github page for the preprocessor and seems to work fine. 
 
@@ -122,4 +122,3 @@ Then("I should see a search bar", () => {
   );
 });
 ```
-

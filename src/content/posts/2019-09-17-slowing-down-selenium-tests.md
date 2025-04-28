@@ -17,7 +17,8 @@ This feature is also available from the automation side of things when you are u
 I setup a class to take a text description of the network quality, perhaps from a config file, and convert it to a set of network characteristics
 matching that network behaviour - network latency, download and upload speed.
 
-Throttling.cs
+### Throttling.cs
+
 ```csharp
 
 {% include 'code/csharp/Selenium_Throttling.cs' %}
@@ -27,7 +28,8 @@ Throttling.cs
 As part of the instantiation of the web driver we can inspect the throttling characteristics we have just built and apply them to the
 chrome driver via the NetworkConditions property.
 
-WebDriverFactory.cs
+### WebDriverFactory.cs
+
 ```csharp
 
 {% include 'code/csharp/Selenium_UseThrottling.cs' %}

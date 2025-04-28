@@ -33,18 +33,15 @@ the class name of the instance and the values are name-value pairs corresponding
 reflecting on the page object's gettable properties.
 
 ```csharp
-
 {% include 'code/csharp/ApprovalTests-ObjectMetadata-1.cs' %}
-
 ```
+
 We also need a way to persist the snapshot so the ToString method gives us the simplest possible rendering.
 
 Conversely, if we render to a file, we need to be able to reconstruct so I added another constructor to take a list of lines read from a file:
 
 ```csharp
-
 {% include 'code/csharp/ApprovalTests-ObjectMetadata-2.cs' %}
-
 ```
 
 ## Compare
@@ -53,17 +50,13 @@ Now we can create snapshots from objects and persist them, we should compare the
 expected value from the original object and the actual value from the new object:
 
 ```csharp
-
 {% include 'code/csharp/ApprovalTests-Difference.cs' %}
-
 ```
 
 And the compare method so we can compare an existing "golden" image of an instance with a new instance from the test.
 
 ```csharp
-
 {% include 'code/csharp/ApprovalTests-Compare.cs' %}
-
 ```
 
 We use Intersect to determine the common set of properties by name and those that exist in only the original object or the new object using the
@@ -75,9 +68,7 @@ The output is then a list of differences. If there are no differences the list i
 framework of choice to generate test errors. In this case, NUnit.
 
 ```csharp
-
 {% include 'code/csharp/ApprovalTests-Assert.cs' %}
-
 ```
 
 ## Tiny
@@ -87,9 +78,8 @@ persist it to a file so that it can be checked in to source control as the golde
 all be wrapped up in a handy class called Approve so we can use it to approve and instance of a class for a given scenario.
 
 ```csharp
-
 {% include 'code/csharp/ApprovalTests-Approve.cs' %}
-
 ```
+
 I included an optional hint parameter to the Instance method so we can distinguish between difference scenarios for instances of the same type
 because, in this example, we don't want to confuse a person in an initial state with one where they may have changed state by reacting to a message.

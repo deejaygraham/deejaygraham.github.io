@@ -26,10 +26,9 @@ would start with the easier single image of toast.
 We can construct a piece of toast at a starting postion (x, y) and a speed.
 
 ```python
-
 {% include 'code/python/flying-toast.py' %}
-
 ```
+
 Each time through the processing draw loop, we move the sprite down and to the left using the speed value.
 
 I added a bit of code into the move function to make sure that the sprite wrapped around the screen once it had
@@ -55,9 +54,7 @@ each call to _draw_ to achieve the flapping animation. Again, I have to wrap the
 in a similar way to the toast.
 
 ```python
-
 {% include 'code/python/flying-toaster.py' %}
-
 ```
 
 I also randomized the starting frame for each toasters animation so that they all appear to flap independently.
@@ -68,9 +65,7 @@ Now we are ready to put it all together into a full screen processing app with s
 starting position for each sprite on the screen and the speed of each sprite.
 
 ```python
-
 {% include 'code/python/after-dark.py' %}
-
 ```
 
 In full screen mode, I guessed at the right number of pieces of toast (10) and toasters (20) which are about right to fill the

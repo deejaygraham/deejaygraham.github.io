@@ -1,9 +1,6 @@
 ---
 title: Microbit Sunshine Detector
 tags: [code, microbit]
-hero: microbit
-
-
 ---
 
 A variation on the nightlight example is a simple, adjustable sunshine detector.
@@ -14,9 +11,9 @@ you can adjust upwards so that you can tell the difference between light falling
 shining fully on the face.
 
 ```python
-
 {% include 'code/python/microbit/sunshine-detector.py' %}
-
 ```
+
 I am going to include a snippet like this in the auto driving car so that it will turn its headlights on when it starts getting dark.
+
 Microbit safety first :)

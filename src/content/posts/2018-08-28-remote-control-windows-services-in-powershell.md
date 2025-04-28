@@ -1,9 +1,6 @@
 ---
 title: Remote Controlling Windows Services in PowerShell
 tags: [powershell]
-hero: power
-thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
-
 ---
 
 Remote Desktop-ing into several machines just to enable or disable a service is a bit of a chore. PowerShell saves us from
@@ -17,4 +14,5 @@ pool. Whether a machine is available to take builds from TFS is controlled by th
 {% include 'code/powershell/Remote-Service.ps1' %}
 
 ```
+
 I use -Status Stopped to stop each agent and -Status Running to restart.

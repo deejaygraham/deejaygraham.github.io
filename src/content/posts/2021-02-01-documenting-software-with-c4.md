@@ -19,7 +19,7 @@ The diagrams as built using text commands to specify objects and their relations
 Running the diagram through Plant UML then produces a very nicely laid-out graphic, suitable for
 inclusion in slides or documents, and the source description can be checked into source control. Win!
 
-### Skeleton
+## Skeleton
 
 Each diagram is bracketed with a startuml and enduml tag. The start tag can include a suggested file name for generation. The first statement should be an include statement for the type of diagram - Context, Container, Component, Dynamic or Deployment Diagram.
 
@@ -62,12 +62,14 @@ VS Code, if that's your preferred editor, has an extension to generate PlantUML 
 Outside of the editor preview, PlantUML is a java .jar application and can generate images for one document or all documents in a folder
 
 single document
+
 ```shell
 java -jar plantuml.jar ContextDiagram.puml
 
 ```
 
 all documents
+
 ```shell
 java -jar plantuml.jar ContextDiagram.puml
 

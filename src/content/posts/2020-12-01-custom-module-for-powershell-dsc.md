@@ -1,9 +1,6 @@
 ---
 title: Custom Module for PowerShell DSC
 tags: [powershell]
-hero: power
-thumbnail: "/assets/img/thumbnails/shell-420x255.png"
-
 ---
 
 Refreshing my memory on using PowerShell DSC to create a consistent built configuration for a set of virtual machines, I needed a way to customise app settings in a series of web and application configurations. A lot of the modules available as
@@ -18,10 +15,9 @@ guid etc. Note I am following the convention here of prefixing with a lower case
 ### Meta
 
 cApplicationConfiguration.psd1
+
 ```powershell
-
 {% include 'code/powershell/DSC-Module.psd1' %}
-
 ```
 
 ### Class
@@ -29,10 +25,9 @@ cApplicationConfiguration.psd1
 The .psm1 contains the actual code that does the work, with the class named for the module name and with properties that reflect settings in the DSC script. In this case, the path to the config file, the name of the key in appsettings and the name of the new value.
 
 cApplicationConfiguration.psm1
+
 ```powershell
-
 {% include 'code/powershell/DSC-Module.ps1' %}
-
 ```
 
 Both of these files need to be copied into a folder named the same as the module and in the PowerShell search path, typically in C:\Program Files\WindowsPowerShell\Modules
@@ -42,10 +37,9 @@ Both of these files need to be copied into a folder named the same as the module
 Here I'm importing the module into the configuration and using a dictionary to iteratively subsitute values in a web.config.
 
 dsc-example.ps1
+
 ```powershell
-
 {% include 'code/powershell/DSC-Module-Use.ps1' %}
-
 ```
 
 Since DSC startup a new instance of PowerShell to run under, it's enough to import the module without the usual worry

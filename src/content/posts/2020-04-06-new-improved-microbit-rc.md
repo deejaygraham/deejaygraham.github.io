@@ -21,9 +21,7 @@ motors attached to the rear wheels.
 First, there were a couple of functions that weren't being used in the motor class so I removed those.
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-1.py' %}
-
 ```
 
 ## Memories
@@ -39,10 +37,9 @@ Next, I added the neopixels in as a permanent addition to the car with forward h
 indication, even though they don't blink they way they would in a real car.
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-2.py' %}
-
 ```
+
 I also tried to improve the code for each of the light functions by adding a way of turning off each set of lights instead of creating two function for each
 light arrangement. Setting the "colour" of a led to be (0, 0, 0) turns the led off.
 
@@ -67,9 +64,7 @@ Finally, the headlights are automatically controlled by using the light sensor o
 on it's headlights automatically. This is where the ability to pass a flag to turn off the lights came into its own.
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-3.py' %}
-
 ```
 
 ## Steering
@@ -93,9 +88,7 @@ with you' of this ad-hoc protocol.
 ![microbit heart](/assets/img/posts/new-improved-microbit-rc/rc-heart.png)
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-4.py' %}
-
 ```
 
 ## Driving
@@ -104,9 +97,7 @@ Following the handshake comes the main loop which interprets the single letter c
 drive the car. This loop is now a lot simpler than in earlier versions.
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-5.py' %}
-
 ```
 
 ## Handset
@@ -121,9 +112,7 @@ Again, we have a similar pinging mechanism from the handset, broadcasting hello 
 LED in the centre of the display and the matching heart icon after the handshake has completed.
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-6.py' %}
-
 ```
 
 ![microbit heart](/assets/img/posts/new-improved-microbit-rc/handset-heart.png)
@@ -136,9 +125,7 @@ I left the command variables in the handset program since this is a much smaller
 code easier to understand.
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-7.py' %}
-
 ```
 
 I split out the forward/backward and side tilt values even though they ended up being the same. I had a lot of test driving and experimented with a few settings
@@ -152,9 +139,7 @@ because the controller was not completely flat on the forward axis, the handset 
 just looking at which of the non-zero tilts was the greatest and using that to decide which one to send out to the car.
 
 ```python
-
 {% include 'code/python/microbit/bitbot-rc2-8.py' %}
-
 ```
 
 ![microbit reverse](/assets/img/posts/new-improved-microbit-rc/handset-reverse.png)
