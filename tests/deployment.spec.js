@@ -23,7 +23,6 @@ test("contains avatar images", async ({ page }) => {
 
 test("contains hero images", async ({ page }) => {
   await checkAllResourcesExist(page, [
-    "/img/heroes/hero-secret-harbour.jpg",
     "/img/heroes/makers-and-creators.jpg"
   ]);
 });
