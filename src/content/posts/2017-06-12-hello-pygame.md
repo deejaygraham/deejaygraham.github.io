@@ -41,13 +41,13 @@ while not done:
 
 This doesn't do much but sets us up a nice walking skeleton we can add to later.
 
-![hello](/assets/img/posts/hello-pygame/hello.jpg)
+{# ![hello](/assets/img/posts/hello-pygame/hello.jpg) #}
 
 ## Square
 
 A black screen isn't terribly exciting so, let's draw a square:
 
-![block](/assets/img/posts/hello-pygame/blue-block.jpg)
+{# ![block](/assets/img/posts/hello-pygame/blue-block.jpg) #}
 
 ```python
 import pygame
