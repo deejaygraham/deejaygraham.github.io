@@ -71,7 +71,7 @@ It took a bit of digging but I eventually found a fix for this. We need to put i
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    {% raw %} if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }} {% endraw %}
       
     steps:
       - name: Checkout Code
