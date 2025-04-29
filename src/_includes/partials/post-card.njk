@@ -4,10 +4,10 @@
   	<div class="card-content">
       <h2 class="title"><a href="{{ url }}">{{ title }}</a></h2>
       {% if subtitle %}
-      <p class="subtitle">{{ subtitle }}</p>
+      <p class="subtitle is-pulled-left">{{ subtitle }}</p>
       {% endif %}
       {%- if date -%}
-      <p class="subtitle"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
+      <p class="subtitle is-pulled-left"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
       {%- endif -%}
       {% if tags %}
       <p class="is-pulled-right">
