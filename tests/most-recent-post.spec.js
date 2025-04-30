@@ -2,35 +2,7 @@
 import { test } from '@playwright/test';
 import checkPageLinksExist from './util/check-page-links-exist.js';
 
-test.describe('Check links on most recently dated pages', () => {
-    let siteUrls = undefined;
-
-    test.beforeEach(async ({ page }) => {
-        if (!siteUrls) {
-            // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
-            const spiderPage = await page.goto('/spider.json');
-            const siteUrlsAsJson = await spiderPage.text();
-  
-            const data = JSON.parse(siteUrlsAsJson);
-            siteUrls = new Set(data.urls);
-        }
-    });
-
-    siteUrls.forEach((_, value) => {
-        const url = value;
-
-        test(`Checking links on ${url}`, async ({ page }) => {
-            await checkPageLinksExist(page, url);
-        });
-    });
-});
-
-/*test("check all links on most recent page", async ({ page }) => {
-    
-  page.on('requestfailed', request => {
-    console.log(request.url() + ' ' + request.failure().errorText);
-  });
-    
+test("check all links on most recent pages", async ({ page }) => {
   // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
   const spiderPage = await page.goto('/spider.json');
   const siteUrlsAsJson = await spiderPage.text();
@@ -38,8 +10,8 @@ test.describe('Check links on most recently dated pages', () => {
   const data = JSON.parse(siteUrlsAsJson);
   const siteUrls = new Set(data.urls);
 
-  const url = siteUrls.values().next().value;
-
-  await checkPageLinksExist(page, url);
+  siteUrls.forEach((_, value) => {
+    const url = value;
+    await checkPageLinksExist(page, url);
+  });
 });
-*/
