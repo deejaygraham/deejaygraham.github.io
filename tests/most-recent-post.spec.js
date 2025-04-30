@@ -16,7 +16,7 @@ test.describe('Check links on most recently dated pages', () => {
         }
     });
 
-    siteUrls.forEach((key, value, set) => {
+    siteUrls.forEach((_, value) => {
         const url = value;
 
         test(`Checking links on ${url}`, async ({ page }) => {
