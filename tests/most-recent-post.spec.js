@@ -10,7 +10,7 @@ test("check all links on most recent pages", async ({ page }) => {
   const data = JSON.parse(siteUrlsAsJson);
   const siteUrls = new Set(data.urls);
 
-  siteUrls.forEach((_, value) => {
+  siteUrls.forEach(async (_, value) => {
     const url = value;
     await checkPageLinksExist(page, url);
   });
