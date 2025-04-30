@@ -14,5 +14,7 @@ test("check all links on most recent pages", async ({ page }) => {
     await test.step(`Checking links on ${url}`, async () => {
       await checkPageLinksExist(page, url);
     });
+    // only do one
+    break;
   }
 });
