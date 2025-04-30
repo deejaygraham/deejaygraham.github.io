@@ -3,15 +3,17 @@ import { test } from '@playwright/test';
 import checkPageLinksExist from './util/check-page-links-exist.js';
 
 test.describe('Check links on most recently dated pages', () => {
-    let siteUrls;
-    
-    test.beforeAll(async () => {
-        // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
-        const spiderPage = await page.goto('/spider.json');
-        const siteUrlsAsJson = await spiderPage.text();
+    let siteUrls = undefined;
+
+    test.beforeEach(async ({ page }) => {
+        if (!siteUrls) {
+            // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
+            const spiderPage = await page.goto('/spider.json');
+            const siteUrlsAsJson = await spiderPage.text();
   
-        const data = JSON.parse(siteUrlsAsJson);
-        siteUrls = new Set(data.urls);
+            const data = JSON.parse(siteUrlsAsJson);
+            siteUrls = new Set(data.urls);
+        }
     });
 
     siteUrls.forEach((key, value, set) => {
