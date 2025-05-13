@@ -4,7 +4,7 @@ size: large
 title: Debugging
 attribution: Brian Kernighan
 publication:
-tags: [quote, xp]
+tags: [quote, debugging]
 ---
 
 Debugging is twice as hard as writing the code in the first place. Therefore,
