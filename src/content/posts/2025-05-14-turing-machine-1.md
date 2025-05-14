@@ -7,6 +7,9 @@ tags: [microbit, python, tdd]
 We were discussing the [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine) recently and the many implementations of it that could be done in python.  
 I had implemented a very quick and dirty version with all the code in one file but it was so quick and so dirty that it was very top of mind and full of bugs. 
 With that in mind, I wanted to write a more robust version that can be run on the microbit with some features to help visualize processing on that platform. 
+
+## Tape 
+
 The first part of that, for me, is implementing the tape reading and writing mechanism as described on the above page. The head and the tape need to work as one 
 so I implemented a tape reader (which also allows for writing). The head starts in the middle of the tape and can read from the current location, write to 
 the current location and move left and right along the tape as the program will eventually demand. 
@@ -174,3 +177,60 @@ if __name__ == '__main__':
     unittest.main()
 
 ```
+
+## Validation
+
+Given that we will probably have a finite number of symbols (an alphabet) we are expecting to read or write to the tape 
+we can do some validation on a tape to check that at any point the content of the tape is in an acceptable 
+state according to the alphabet we have defined.
+
+### tape-validator.py
+
+```python
+class TapeValidator():
+    
+    """
+    Check state of the tape to make sure all entries are valid 
+    according to the defined alphabet of symbols allowed.
+    """
+    def validate(self, tape, alphabet):
+        errors = []
+
+        for index, symbol in enumerate(tape):
+            if not symbol in alphabet:
+                message = 'Invalid symbol at [' + str(index) + ']:' + repr(symbol) + ', expected one of ' + repr(alphabet)
+                errors.append(message)
+                # raise SyntaxError(message)
+        
+        return errors
+```
+
+Originally I had the first error discovered raise an exception (Syntax Exception) but I decided that it would be more useful to see all the errors 
+together rather than trying to fix them one by one.
+
+### tape-validator-tests.py
+
+```python
+class TapeValidatorTests(unittest.TestCase):
+    
+    def setUp(self):
+        self.validator = TapeValidator()
+
+    def test_tape_containing_valid_symbols_validates(self):
+        alphabet = ['1', '2', '3', '4', '5', ' ']
+        self.assertEqual(0, len(self.validator.validate(['1', '2', '3', ' ', '4'], alphabet)))
+
+    def test_tape_containing_one_invalid_symbol_does_not_validate(self):
+        alphabet = ['1', '2', '3', '4', '5', ]
+        errors = self.validator.validate(['1', '2', '3', ' ', '4'], alphabet)
+        self.assertEqual(1, len(errors))
+
+    def test_tape_containing_many_invalid_symbols_does_not_validate(self):
+        alphabet = ['1', '2', '3', '4', '5', ]
+        errors = self.validator.validate(['q', '2', '3_', ' ', '4'], alphabet)
+        self.assertEqual(3, len(errors))
+```
+
+This might seem like overkill but the overall intent is to put this all in place so that someone can load _any_ turing 
+machine program onto the microbit and have it check it before trying to run it and give as many helpful messages as possible 
+rather than just running and crashing or doing something unexpected but inscrutable in the interface. 
