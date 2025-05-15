@@ -26,7 +26,7 @@ class TapeReader():
         self.head = -1
 
     def __str__(self):
-        return ''.join(self.tape)
+        return ''.join(self.tape) + '\n' + ' ' * self.head + '^'
             
     def load_tape(self, t):
         self.tape = t.copy()
@@ -65,6 +65,9 @@ class TapeReader():
 
 ```
 
+One little bit of flare I added later to help in debugging was in the __str__() method which prints the tape as a string but includes a newline and 
+a circumflex character to mark where the head is currently pointing.
+
 The final method _spotlight_ is a prediction of a feature I think I will need on the microbit where we can't show anything more than 5 cells of the tape. The 
 idea is to show the head spot and 1 or 2 cells either side so that as the head moves, the display appears to scroll left and right.
 
@@ -83,9 +86,9 @@ class TapeReaderTests(unittest.TestCase):
     def setUp(self):
         self.reader = TapeReader()
 
-    def test_str_returns_full_tape_data(self):
+    def test_str_returns_full_tape_with_head_pointer(self):
         self.reader.load_tape(['1', '2', '3', ' ', '4'])
-        self.assertEqual('123 4', str(self.reader))
+        self.assertEqual('123 4\n  ^', str(self.reader))
 
     def test_reads_current_head_position(self):
         self.reader.load_tape(['a', 'b', 'c'])
@@ -145,7 +148,7 @@ class TapeReaderTests(unittest.TestCase):
         self.reader.load_tape(['1', '2', '3'])
         self.reader.write('Q')
         self.assertEqual('Q', self.reader.read())
-        self.assertEqual('1Q3', str(self.reader))
+        self.assertEqual('1Q3\n ^', str(self.reader))
 
     def test_spotlight_shows_n_characters_either_side(self):
         self.reader.load_tape(['1', '2', '3', '4', '5'])
