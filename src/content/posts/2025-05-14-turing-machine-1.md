@@ -11,7 +11,7 @@ With that in mind, I wanted to write a more robust version that can be run on th
 ## Tape 
 
 The first part of that, for me, is implementing the tape reading and writing mechanism as described on the above page. The head and the tape need to work as one 
-so I implemented a tape reader (which also allows for writing). The head starts in the middle of the tape and can read from the current location, write to 
+so I implemented a tape reader (which also allows for writing!?!). The head starts in the middle of the tape and can read from the current location, write to 
 the current location and move left and right along the tape as the program will eventually demand. 
 
 ## Code
@@ -64,6 +64,9 @@ class TapeReader():
         return as_str[self.head - n: self.head + n + 1]
 
 ```
+
+The final method _spotlight_ is a prediction of a feature I think I will need on the microbit where we can't show anything more than 5 cells of the tape. The 
+idea is to show the head spot and 1 or 2 cells either side so that as the head moves, the display appears to scroll left and right.
 
 ## Tests 
 
