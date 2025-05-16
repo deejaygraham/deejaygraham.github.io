@@ -15,7 +15,7 @@
  * @param {String} text
  */
 
-export default function (text, speed = 240) {
+export default function (text, speed = 160) {
   const content = new String(text);
   
   // remove all html elements
