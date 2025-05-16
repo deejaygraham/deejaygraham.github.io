@@ -21,13 +21,20 @@ the current location and move left and right along the tape as the program will 
 ```python
 class TapeReader():
     
-    def __init__(self):
-        self.tape = []
-        self.head = -1
+    def __init__(self, t, head_pos = -1):
+        self.tape = t.copy()
+        # default to centre
+        if head_pos == -1:
+            self.head = int(len(self.tape) / 2)
+        else:
+            self.head = max(0, min(len(self.tape) - 1, head_pos))
 
     def __str__(self):
         return ''.join(self.tape) + '\n' + ' ' * self.head + '^'
-            
+
+    def __repr__(self):
+        return f'TapeReader({self.tape}, {self.head})'
+    
     def load_tape(self, t):
         self.tape = t.copy()
         self.head = int(len(self.tape) / 2)
@@ -82,102 +89,95 @@ have caught until I did some manual testing on the microbit itself.
 import unittest
 
 class TapeReaderTests(unittest.TestCase):
-    
-    def setUp(self):
-        self.reader = TapeReader()
 
     def test_str_returns_full_tape_with_head_pointer(self):
-        self.reader.load_tape(['1', '2', '3', ' ', '4'])
-        self.assertEqual('123 4\n  ^', str(self.reader))
+        reader = TapeReader(['1', '2', '3', ' ', '4'])
+        self.assertEqual('123 4\n  ^', str(reader))
 
     def test_reads_current_head_position(self):
-        self.reader.load_tape(['a', 'b', 'c'])
-        self.assertEqual('b', self.reader.read())
+        reader = TapeReader(['a', 'b', 'c'])
+        self.assertEqual('b', reader.read())
 
     def test_loading_an_odd_length_tape_sets_head_to_centre(self):
-        self.reader.load_tape([' ', '1', '2'])
-        self.assertEqual('1', self.reader.read())
+        reader = TapeReader([' ', '1', '2'])
+        self.assertEqual('1', reader.read())
 
     def test_loading_an_even_length_tape_sets_head_to_off_centre(self):
-        self.reader.load_tape([' ', '1', '2', '3'])
-        self.assertEqual('2', self.reader.read())
+        reader = TapeReader([' ', '1', '2', '3'])
+        self.assertEqual('2', reader.read())
 
     def test_head_can_be_relocated_from_start_position(self):
-        self.reader.load_tape(['1', '2', '3'])
-        self.reader.start_at(2)
-        self.assertEqual('3', self.reader.read())
+        reader = TapeReader(['1', '2', '3'])
+        reader.start_at(2)
+        self.assertEqual('3', reader.read())
 
-    def test_setting_head_negative_forced_to_start(self):
-        self.reader.load_tape(['1', '2', '3'])
-        self.reader.start_at(-5)
-        self.assertEqual('1', self.reader.read())
+    def test_setting_head_negative_forced_to_zero(self):
+        reader = TapeReader(['1', '2', '3'], -5)
+        self.assertEqual('1', reader.read())
 
     def test_setting_head_beyond_end_of_tape_forces_to_last_index(self):
-        self.reader.load_tape(['1', '2', '3'])
-        self.reader.start_at(55)
-        self.assertEqual('3', self.reader.read())
+        reader = TapeReader(['1', '2', '3'], 55)
+        self.assertEqual('3', reader.read())
 
     def test_head_can_be_moved_right(self):
-        self.reader.load_tape(['1', '2', '3', '4', '5'])
-        self.reader.move_right()
-        self.assertEqual('4', self.reader.read())
+        reader = TapeReader(['1', '2', '3', '4', '5'])
+        reader.move_right()
+        self.assertEqual('4', reader.read())
 
     def test_head_can_be_moved_left(self):
-        self.reader.load_tape(['1', '2', '3', '4', '5'])
-        self.reader.move_left()
-        self.assertEqual('2', self.reader.read())
+        reader = TapeReader(['1', '2', '3', '4', '5'])
+        reader.move_left()
+        self.assertEqual('2', reader.read())
 
     def test_reading_off_beginning_of_tape_extends_with_blanks(self):
-        self.reader.load_tape(['1', '2', '3'])
-        self.assertEqual(1, self.reader.head)
-        self.assertEqual(3, len(self.reader.tape))
-        self.reader.move_left()
-        self.assertEqual(0, self.reader.head)
-        self.reader.move_left()
-        self.assertEqual(0, self.reader.head)
-        self.assertEqual(4, len(self.reader.tape))
-        self.assertEqual(' ', self.reader.read())
+        reader = TapeReader(['1', '2', '3'])
+        self.assertEqual(1, reader.head)
+        self.assertEqual(3, len(reader.tape))
+        reader.move_left()
+        self.assertEqual(0, reader.head)
+        reader.move_left()
+        self.assertEqual(0, reader.head)
+        self.assertEqual(4, len(reader.tape))
+        self.assertEqual(' ', reader.read())
 
     def test_reading_off_end_of_tape_extends_with_blanks(self):
-        self.reader.load_tape(['1', '2', '3'])
-        self.reader.move_right()
-        self.reader.move_right()
-        self.assertEqual(' ', self.reader.read())
+        reader = TapeReader(['1', '2', '3'])
+        reader.move_right()
+        reader.move_right()
+        self.assertEqual(' ', reader.read())
 
     def test_writing_symbol_can_be_read_back(self):
-        self.reader.load_tape(['1', '2', '3'])
-        self.reader.write('Q')
-        self.assertEqual('Q', self.reader.read())
-        self.assertEqual('1Q3\n ^', str(self.reader))
+        reader = TapeReader(['1', '2', '3'])
+        reader.write('Q')
+        self.assertEqual('Q', reader.read())
+        self.assertEqual('1Q3\n ^', str(reader))
 
     def test_spotlight_shows_n_characters_either_side(self):
-        self.reader.load_tape(['1', '2', '3', '4', '5'])
-        self.assertEqual('234', self.reader.spotlight(1))
+        reader = TapeReader(['1', '2', '3', '4', '5'])
+        self.assertEqual('234', reader.spotlight(1))
 
     def test_spotlight_shows_more_characters_either_side(self):
-        self.reader.load_tape(['0', '1', '2', '3', '4', '5', '6'])
-        self.assertEqual('12345', self.reader.spotlight(2))
+        reader = TapeReader(['0', '1', '2', '3', '4', '5', '6'])
+        self.assertEqual('12345', reader.spotlight(2))
 
     def test_spotlight_towards_left_shows_fewer_characters(self):
-        self.reader.load_tape(['0', '1', '2', '3', '4', '5', '6'])
-        self.reader.move_left()
-        self.assertEqual('01234', self.reader.spotlight(2))
+        reader = TapeReader(['0', '1', '2', '3', '4', '5', '6'])
+        reader.move_left()
+        self.assertEqual('01234', reader.spotlight(2))
 
     def test_at_hard_left_spotlight_shows_characters_from_right(self):
-        self.reader.load_tape(['1', '2', '3', '4', '5'])
-        self.reader.start_at(0)
-        self.assertEqual('123', self.reader.spotlight(2))
+        reader = TapeReader(['1', '2', '3', '4', '5'], 0)
+        self.assertEqual('123', reader.spotlight(2))
 
     def test_spotlight_towards_right_shows_fewer_characters(self):
-        self.reader.load_tape(['0', '1', '2', '3', '4', '5', '6'])
-        self.reader.move_right()
-        self.reader.move_right()
-        self.assertEqual('3456', self.reader.spotlight(2))
+        reader = TapeReader(['0', '1', '2', '3', '4', '5', '6'])
+        reader.move_right()
+        reader.move_right()
+        self.assertEqual('3456', reader.spotlight(2))
 
     def test_at_hard_right_spotlight_shows_characters_from_left(self):
-        self.reader.load_tape(['1', '2', '3', '4', '5'])
-        self.reader.start_at(4)
-        self.assertEqual('345', self.reader.spotlight(2))
+        reader = TapeReader(['1', '2', '3', '4', '5'], 4)
+        self.assertEqual('345', reader.spotlight(2))
 
 if __name__ == '__main__':
     unittest.main()
