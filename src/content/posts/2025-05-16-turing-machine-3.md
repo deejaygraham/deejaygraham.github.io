@@ -116,6 +116,25 @@ tm.run(starting_pos, starting_state)
 
 ```
 
+I snuck in a print statement in the middle of the run methods while loop so I could visualize the process using the 
+__str__() function I created in the first post of this series. I think the text illustration came out quite well in the 
+console with the circumflex showing the head position as it moves down the tape from left to right:
+
+```shell
+1001 _
+^
+0001 _
+ ^
+0101 _
+  ^
+0111 _
+   ^
+0110 _
+    ^
+0110 _
+     ^
+```
+
 Next stop, converting to microbit-ese and adding some animations to make it come to life better on that tiny platform.
 
 ## Note
