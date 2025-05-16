@@ -7,7 +7,7 @@
       <p class="subtitle is-pulled-left">{{ subtitle }}</p>
       {% endif %}
       {%- if date -%}
-      <p class="subtitle is-pulled-left"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
+      <p class="is-pulled-left"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
       {%- endif -%}
       {% if tags %}
       <p class="is-pulled-right">
