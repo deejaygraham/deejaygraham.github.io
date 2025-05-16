@@ -116,7 +116,9 @@ tm.run(starting_pos, starting_state)
 
 ```
 
-I snuck in a print statement in the middle of the run methods while loop so I could visualize the process using the 
+## Print
+
+I snuck in a print statement in the middle of the run method's while loop so I could visualize the process using the 
 __str__() function I created in the first post of this series. I think the text illustration came out quite well in the 
 console with the circumflex showing the head position as it moves down the tape from left to right:
 
