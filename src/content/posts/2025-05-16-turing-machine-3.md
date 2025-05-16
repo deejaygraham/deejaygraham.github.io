@@ -1,0 +1,115 @@
+---
+layout: post
+title: Turing Machine 3
+tags: [microbit, python, tdd]
+---
+
+Continuing on the Turing Machine series, this is a generic version of the machine using all the pieces so far, as a trial 
+before I adapt it specifically to the microbit platform.
+
+## The Machine
+
+Now that I have invested some over-engineering into some of the lower level components, the main loop of the application 
+and how the machine itself works came out much cleaner than some of my original sketches. 
+
+## Code
+
+### turing-machine.py
+
+```python
+class TuringMachine():
+
+    def run(self, program, tape, starting_pos, starting_state, halting_state = 0):
+
+        reader = TapeReader(tape, starting_pos)
+        state = starting_state
+
+        while state != halting_state:
+            symbol = reader.read()
+            instruction_table = program[state]
+            instructions = instruction_table[symbol]
+            
+            new_symbol = instructions['write']
+            reader.write(new_symbol) 
+        
+            direction = instructions['move']
+            if direction < 0:
+                reader.move_left()
+            elif direction > 0:
+                reader.move_right()
+                    
+            state = instructions['next']
+```
+
+## Program 
+
+Here's a super simple program to exercise all of the parts so far. This program reads in a tape with "binary" characters and 
+changes 1's to 0's and 0's to 1's. The program stops when it finds an underscore character.
+
+The initial state of the tape and the program are validated before being fed to the machine proper for running. 
+
+### program.py 
+
+```python
+
+alphabet = ['1', '0', ' ', '_']
+tape = ['1', '0', '0', '1', ' ', '_']
+starting_pos = 0
+
+tape_valid = TapeValidator()
+tape_errors = tape_valid.validate(tape, alphabet)
+
+if len(tape_errors) > 0:
+    raise RuntimeError(tape_errors[0])
+
+# change all 1's to 0s and all 0s to 1s
+# stop on underscore
+program = {
+    0: {
+
+    },
+    1: {
+        '1': {
+            'write': '1',
+            'move': 1,
+            'state': 1
+        },
+        '0': {
+            'write': '1',
+            'move': 1,
+            'state': 1
+        },
+        '_': {
+            'write': '_',
+            'move': 0,
+            'state': 0
+        },
+        ' ': {
+            'write': ' ',
+            'move': 1,
+            'state': 1
+        }
+    }
+}
+
+starting_state = 1
+
+program_valid = ProgramValidator()
+program_errors = program_valid.validate(program, alphabet)
+
+if len(program_errors) > 0:
+    raise SyntaxError(program_errors[0])
+
+tm = TuringMachine(program, tape, starting_pos, starting_state)
+tm.run()
+
+```
+
+Next stop, converting to microbit-ese and adding some animations to make it come to life better on that tiny platform.
+
+## Note
+
+After doing some of this work, I discovered quite a good explanation and worked example of a similar approach from 
+the [Computer Science Department](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html) at 
+Cambridge University, targeted at the raspberry pi and using the GPIO to light leds to represent state transitions.
+
