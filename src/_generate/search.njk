@@ -3,8 +3,15 @@ permalink: /js/search.js
 eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
+/* Site and search scripts generated: {{ buildInfo.time.formatted }} */
+{% include "scripts/bulma-burger.js" %}
+{% include "scripts/register-service-worker.js" %}
+{% include "scripts/theme-switcher.js" %}
+{% include "scripts/search-site.js" %}
+
 window.onload = () => {
-    {% include "scripts/search-site.js" %}
-		
-	loadSearchIndex();
+  registerServiceWorker();
+  addBulmaBurgerMenu();
+  registerThemeSwitch();
+  loadSearchIndex();
 };
