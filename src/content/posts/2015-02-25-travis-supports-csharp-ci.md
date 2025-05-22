@@ -47,6 +47,12 @@ Travis. I will investigate the differences and report back.
 
 ## Build Status
 
-Here's how Travis thinks NDifference is performing:
+Here's how Travis thinks NDifference is performing: *link redacted*
+{# <a href="https://travis-ci.org/deejaygraham/ndifference"><img src="https://travis-ci.org/deejaygraham/ndifference.png?branch=master" alt="Build Status"></a> #}
 
-<a href="https://travis-ci.org/deejaygraham/ndifference"><img src="https://travis-ci.org/deejaygraham/ndifference.png?branch=master" alt="Build Status"></a>
+
+## Update
+
+I have moved this build process away from travis and onto github now so links to the project on their website no longer work. 
+
+
