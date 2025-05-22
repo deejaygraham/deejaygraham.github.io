@@ -101,6 +101,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/assets/img/posts/sketchnoting-challenge/*.*": "/img/posts/sketchnoting-challenge/" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/img/posts/sketchnoting-at-dddnorth-2015/*.*": "/img/posts/sketchnoting-at-dddnorth-2015/" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/img/posts/sketchnotes-from-ace-2014/*.*": "/img/posts/sketchnotes-from-ace-2014/" });
+  // about page image
+  eleventyConfig.addPassthroughCopy({ "./src/assets/img/heroes/makers-and-creators.jpg": "/img/heroes/makers-and-creators.jpg" });
 	
   //eleventyConfig.addPassthroughCopy({ "./src/assets/img/favicon.ico": "/favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
