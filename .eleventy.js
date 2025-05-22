@@ -94,7 +94,14 @@ export default function (eleventyConfig) {
   // passthrough copy
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
-  eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
+	
+  // don't copy all images from img folder - 11ty will generate it's own using img plugin
+  //eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
+  // specific images linked from external sites
+  eleventyConfig.addPassthroughCopy({ "./src/assets/img/posts/sketchnoting-challenge/*.*": "/img/posts/sketchnoting-challenge/" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/img/posts/sketchnoting-at-dddnorth-2015/*.*": "/img/posts/sketchnoting-at-dddnorth-2015/" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/img/posts/sketchnotes-from-ace-2014/*.*": "/img/posts/sketchnotes-from-ace-2014/" });
+	
   //eleventyConfig.addPassthroughCopy({ "./src/assets/img/favicon.ico": "/favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
