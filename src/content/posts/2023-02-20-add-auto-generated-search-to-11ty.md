@@ -5,7 +5,8 @@ thumbnail: /img/thumbnails/eleventy-alt-420x255.png
 
 ---
 
-A lot of people in the wonderful 11ty community have helped me build some challenging sites
+A lot of people in the wonderful 11ty community have helped me, through suggestions and inspiration, to 
+build some challenging site features. These were done using eleventy 
 in a lot less time than if I had been using some original home grown tools or maybe some other
 static generators. One essential I had for a site, which had been previously supplied by the
 aforementioned tools was search.
