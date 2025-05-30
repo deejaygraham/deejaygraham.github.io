@@ -3,7 +3,7 @@ layout: quotation
 title: Features Have No Value
 attribution: Eli Goldratt
 size: large
-tags: [quote]
+tags: [quote, agile]
 ---
 
 Features have no value until they are in the hands of a user and being used for a productive effort.
