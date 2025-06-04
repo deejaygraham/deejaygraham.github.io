@@ -29,6 +29,8 @@ def midi_to_frequency(midi):
 
 ```
 
+## Mini DSL 
+
 With those functions in place, it becomes easier to validate the functioning of the slightly higher level functions that handle the microbit 
 DSL.
 
