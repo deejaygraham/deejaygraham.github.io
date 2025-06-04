@@ -33,23 +33,22 @@ With those functions in place, it becomes easier to validate the functioning of 
 DSL.
 
 ```python
-def parse_note_octave(note):
-    if len(note) > 3:
-        raise SystemError('invalid note value')
+def parse_dsl_note(text):
+    if len(text) > 3:
+        raise SystemError('invalid note format')
 
-    if len(note) == 2:
+    if len(text) == 2:
         # e.g. C5
-        name = note[0]
-        octave = int(note[1])
+        name = text[0]
+        octave = int(text[1])
     else:
         # e.g. Gb4
-        name = note[:-1]
-        octave = int(note[-1])
+        name = text[:-1]
+        octave = int(text[-1])
 
     return name, octave
 
-def note_to_midi(note_octave):
-    
+def note_to_midi(text):
     note_names = {
         'C': 0, 'C#': 1, 'Db': 1,
         'D': 2, 'D#': 3, 'Eb': 3,
@@ -60,9 +59,9 @@ def note_to_midi(note_octave):
         'B': 11
     }
 
-    note, octave = parse_note_octave(note_octave)
+    name, octave = parse_dsl_note(text)
 
-    return 12 * (octave + 1) + note_names[note]
+    return 12 * (octave + 1) + note_names[name]
 ```
 
 A quick set of test cases output the expected values.
