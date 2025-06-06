@@ -75,7 +75,7 @@ def fade_out_display():
     for x in range(5):
         for y in range(5):
             brightness = display.get_pixel(x, y)
-            display.set_pixel(x, y, max(0, brightness - 3))
+            display.set_pixel(x, y, max(0, brightness - 1))
             
 display.show(Image.MUSIC_QUAVERS)
 display.clear()
@@ -95,13 +95,12 @@ while True:
     for note in twinkle_twinkle:
         fade_out_display()
         note_name = note[0]
-        if note_name == 'R':
-            fade_out_display()
-        else:
+        if not note_name == 'R':
             x = note_to_line[note_name]
             draw_vertical_line(x)
 
         music.play(note)
+        fade_out_display()
 
 ```
 
