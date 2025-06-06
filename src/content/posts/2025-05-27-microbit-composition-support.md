@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microbit Composition Support
-tags: [microbit, python]
+tags: [microbit, python, music]
 ---
 
 Ahead of some code I am writing to do more complex music generation for the microbit, I am capturing some useful support functions
