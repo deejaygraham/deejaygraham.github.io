@@ -16,7 +16,7 @@ which felt far too fast, to 30 bpm which feels more like a small tinkly music bo
 from microbit import *
 import music
 
-twinkle_twinkle = [
+music = [
     # Twinkle, twinkle, little star
     "C5:1",
     "C5:1",
@@ -67,6 +67,16 @@ twinkle_twinkle = [
     "C5:2",
 ]
 
+# map note name to vert. line on display
+note_to_line = {
+    'C': 0,
+    'D': 0,
+    'E': 1,
+    'F': 2,
+    'G': 3,
+    'A': 4
+}
+
 def draw_vertical_line(x):
     for y in range(5):
         display.set_pixel(x, y, 9)
@@ -78,21 +88,13 @@ def fade_out_display():
             display.set_pixel(x, y, max(0, brightness - 1))
             
 display.show(Image.MUSIC_QUAVERS)
+sleep(5000)
 display.clear()
-
-note_to_line = {
-    'C': 0,
-    'D': 0,
-    'E': 1,
-    'F': 2,
-    'G': 3,
-    'A': 4
-}
 
 music.set_tempo(bpm=30)
 
 while True:
-    for note in twinkle_twinkle:
+    for note in music:
         fade_out_display()
         note_name = note[0]
         if not note_name == 'R':
