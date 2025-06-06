@@ -124,7 +124,7 @@ while True:
             sleep(2000)
 
         # substitute another note
-        if spooky and random.random() < 0.2:
+        if spooky and random.random() < 0.1:
             note = random.choice(song)
             
         fade_out_display()
@@ -137,7 +137,7 @@ while True:
         music.play(note)
         fade_out_display()
 
-        if spooky:
+        if spooky and random.random() < 0.2:
             delta = random.randint(-5, 5)
             tempo = max(10, tempo + delta)
             music.set_tempo(bpm=tempo)
