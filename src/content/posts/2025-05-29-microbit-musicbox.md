@@ -13,7 +13,6 @@ which felt far too fast, to 30 bpm which feels more like a small tinkly music bo
 ### music-box.py
 
 ```python
-# Imports go at the top
 from microbit import *
 import music
 
