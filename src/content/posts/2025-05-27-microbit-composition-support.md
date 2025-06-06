@@ -32,7 +32,7 @@ def midi_to_frequency(midi):
 ## Mini DSL 
 
 With those functions in place, it becomes easier to validate the functioning of the slightly higher level functions that handle the microbit 
-DSL.
+DSL and convert to and from midi.
 
 ```python
 def parse_dsl_note(text):
@@ -64,6 +64,15 @@ def note_to_midi(text):
     name, octave = parse_dsl_note(text)
 
     return 12 * (octave + 1) + note_names[name]
+
+def midi_to_note(midi):
+    note_names = ['C', 'C#', 'D', 'D#', 'E', 'F',
+                  'F#', 'G', 'G#', 'A', 'A#', 'B']
+    
+    note = note_names[midi_number % 12]
+    octave = (midi_number // 12) - 1
+    return "{0}{1}".format(note, octave)
+
 ```
 
 A quick set of test cases output the expected values.
