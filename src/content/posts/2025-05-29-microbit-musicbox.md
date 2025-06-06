@@ -16,7 +16,7 @@ which felt far too fast, to 30 bpm which feels more like a small tinkly music bo
 from microbit import *
 import music
 
-music = [
+song = [
     # Twinkle, twinkle, little star
     "C5:1",
     "C5:1",
@@ -94,7 +94,7 @@ display.clear()
 music.set_tempo(bpm=30)
 
 while True:
-    for note in music:
+    for note in song:
         fade_out_display()
         note_name = note[0]
         if not note_name == 'R':
