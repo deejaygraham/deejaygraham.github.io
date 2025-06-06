@@ -120,10 +120,7 @@ while True:
         # another trigger
         if button_a.was_pressed():
             spooky = not spooky
-            if spooky:
-                display.show(Image.GHOST)
-            else:
-                display.show(Image.MUSIC_QUAVERS)
+            display.show(Image.GHOST if spooky else Image.MUSIC_QUAVERS)
             sleep(2000)
 
         # substitute another note
