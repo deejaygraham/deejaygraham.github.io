@@ -1,8 +1,7 @@
 ---
-draft: true
 layout: post
 title: Haunted Music Box
-tags: [microbit, python]
+tags: [microbit, python, music]
 ---
 
 Back on microbit music but with a random slant on it, I present a haunted music box. As we all know, music boxes in horror films
@@ -19,79 +18,136 @@ In common with the ghost detector and other similar projects, I wondered about t
 The spookiness in the music comes often from things like subtle changes in tempo over time - like an old tape player speeding up and slowing 
 down during playing - and from some of the notes being out of place or slightly wrong and off key. 
 
+Here for the first experiments, I am playing the music entirely straight until a spooky trigger happens. For simplicity, I am 
+using the "A" button to toggle spooky mode. Then, we can change the tempo subtly 
+over time and occasionally subsitute another note somewhere in the tune. I chose to stick with the original twinkle twinkle because it is 
+so well known and any variation in the tune would be picked up easily by the listener.
+
 ## Code
 
 ### music-box.py
 
 ```python
-# Imports go at the top
 from microbit import *
-import music 
+import music
 import random 
 
-# Code in a 'while True:' loop repeats forever
-m = ['C4:4', 'R', 'D4', 'E4', 'F4']
-
-three_blind_mice = [ "E4:1", "D4:1", "C4:2", # Three blind mice
-"E4:1", "D4:1", "C4:2", # Three blind mice
-"G4:1", "F4:1", "E4:1", "D4:1", # See how they run
-"G4:1", "F4:1", "E4:1", "D4:1", # See how they run
-"A4:1", "G4:1", "F4:1", "E4:1", # They all ran after
-"D4:2", "C4:2", # the farmer's wife
-"E4:1", "D4:1", "C4:2", # Three blind mice (repeat)
-"R:4" # Rest at the end
+song = [
+    # Twinkle, twinkle, little star
+    "C5:1",
+    "C5:1",
+    "G5:1",
+    "G5:1",
+    "A5:1",
+    "A5:1",
+    "G5:2",
+    # How I wonder what you are
+    "F5:1",
+    "F5:1",
+    "E5:1",
+    "E5:1",
+    "D5:1",
+    "D5:1",
+    "C5:2",
+    # Up above the world so high
+    "G5:1",
+    "G5:1",
+    "F5:1",
+    "F5:1",
+    "E5:1",
+    "E5:1",
+    "D5:2",
+    # Like a diamond in the sky
+    "G5:1",
+    "G5:1",
+    "F5:1",
+    "F5:1",
+    "E5:1",
+    "E5:1",
+    "D5:2",
+    # Twinkle, twinkle, little star
+    "C5:1",
+    "C5:1",
+    "G5:1",
+    "G5:1",
+    "A5:1",
+    "A5:1",
+    "G5:2",
+    # How I wonder what you are
+    "F5:1",
+    "F5:1",
+    "E5:1",
+    "E5:1",
+    "D5:1",
+    "D5:1",
+    "C5:2",
 ]
 
+# map note name to vert. line on display
+note_to_line = {
+    'C': 0,
+    'D': 0,
+    'E': 1,
+    'F': 2,
+    'G': 3,
+    'A': 4
+}
 
-baa_baa_black_sheep = ["G4:1", "G4:1", "D4:1", "D4:1", "E4:1", "E4:1", "D4:2", # Baa baa black sheep
-"E4:1", "E4:1", "C4:1", "C4:1", "B3:1", "B3:1", "A3:2", # Have you any wool?
-"D4:1", "D4:1", "C4:1", "C4:1", "B3:1", "B3:1", "A3:2", # Yes sir, yes sir
-"G4:1", "G4:1", "D4:1", "D4:1", "E4:1", "E4:1", "D4:2", # Three bags full
-"R:4" # Rest at the end
-]
-change_tempo_probability = 50
-change_tempo_up_probability = 50
-tempo_delta = 5
-change_note_probability = 30
+def draw_vertical_line(x):
+    for y in range(5):
+        display.set_pixel(x, y, 9)
 
-def modify_tempo(tempo):
-    if random.randint(0, 100) <= change_tempo_probability:
-       if random.randint(0, 100) <= change_tempo_up_probability:
-           tempo += tempo_delta
-       else:
-           tempo -= tempo_delta
-           
-    return tempo
+def fade_out_display():
+    for x in range(5):
+        for y in range(5):
+            brightness = display.get_pixel(x, y)
+            display.set_pixel(x, y, max(0, brightness - 1))
+            
+display.show(Image.MUSIC_QUAVERS)
+sleep(5000)
+display.clear()
 
-def modify_note(note, notes):
-    if random.randint(0, 100) <= change_note_probability:
-        return random.choice(notes)
+spooky = False
+tempo = 30
 
-    return note
-    
-#m = baa_baa_black_sheep 
+music.set_tempo(bpm=tempo)
 
-index = 0
-tempo = 120
-
-# loop around
 while True:
+    for note in song:
 
-    # gradually drift out and back in again
-    # play 
-    # maybe change tempo?
-    tempo = modify_tempo(tempo)
-    music.set_tempo(bpm=tempo, ticks=4) # 6/8
+        # switch on or off spooky mode
+        # this could be done with 
+        # another trigger
+        if button_a.was_pressed():
+            spooky = not spooky
+            if spooky:
+                display.show(Image.GHOST)
+            else:
+                display.show(Image.MUSIC_QUAVERS)
+            sleep(2000)
 
-    # change note?
-    note = modify_note(m[index], m)
-    display.set_pixel(2, 2, 9)
-    music.play(note, wait=True)
+        # substitute another note
+        if spooky and random.random() < 0.2:
+            note = random.choice(song)
+            
+        fade_out_display()
+        note_name = note[0]
+            
+        if not note_name == 'R':
+            x = note_to_line[note_name]
+            draw_vertical_line(x)
 
-    index += 1
-    if index >= len(m):
-        index = 0
+        music.play(note)
+        fade_out_display()
 
-    display.set_pixel(2, 2, 0)
+        if spooky:
+            delta = random.randint(-5, 5)
+            tempo = max(10, tempo + delta)
+            music.set_tempo(bpm=tempo)
 
 ```
+
+## Improvements 
+
+Later, I intend to work in raw pitches and try more subtle adjustments of pitch - think old-timey tape player 
+or record player slowing down and speeding up. That should add to the spookiness nicely.
