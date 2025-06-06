@@ -50,7 +50,12 @@ def parse_dsl_note(text):
 
     return name, octave
 
+midi_rest = 128
+
 def note_to_midi(text):
+    if text == 'R':
+        return midi_rest
+
     note_names = {
         'C': 0, 'C#': 1, 'Db': 1,
         'D': 2, 'D#': 3, 'Eb': 3,
@@ -66,6 +71,9 @@ def note_to_midi(text):
     return 12 * (octave + 1) + note_names[name]
 
 def midi_to_note(midi):
+    if midi == midi_rest:
+        return 'R'
+
     note_names = ['C', 'C#', 'D', 'D#', 'E', 'F',
                   'F#', 'G', 'G#', 'A', 'A#', 'B']
     
@@ -84,3 +92,9 @@ print(note_to_midi('G#3'), 'G#3', '56')
 print(note_to_midi('A4'), 'A4', '69')
 print(note_to_midi('G9'), 'G9', '127')
 ```
+
+## Rest
+
+One horrible hack is the handling of rests ('R' character) in the midi conversions. Normal note values for midi values are in the range 0..127. Rests are 
+not a thing in midi, they are implied by there not being a note played where in the microbit DSL, rests are explicit and have their own durations. 
+For this reason, I have elected to represent a rest with a value of 128 - outside the normal midi note range - and include special handling for these values.
