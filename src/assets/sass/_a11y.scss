@@ -15,18 +15,25 @@ a:hover {
 
 /* Jump to main content link - styling from: https://webaim.org/techniques/css/invisiblecontent/ */
 .skip-link {
+    background: indianred;
     position:absolute;
-    left:-10000px;
-    top:auto;
+    left:0px;
+    top:-40px;
     width:1px;
     height:1px;
     overflow:hidden;
+    -webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out;
 }
 
 .skip-link:focus {
+    top: 0;
+    left: 0;
     position:static;
     width:auto;
     height:auto;
+    -webkit-transition: top .05s ease-in;
+    transition: top .05s ease-in;
 }
 
 @view-transition {
