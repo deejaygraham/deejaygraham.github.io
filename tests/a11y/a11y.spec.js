@@ -27,7 +27,7 @@ test("Skip link at top of page works", { tag: '@a11y' }, async ({ page }) => {
   await page.goto("/");
 
   await expect(page.locator("header")).toMatchAriaSnapshot(`
-    - link "Jump to main content"
+    - link "Skip to main content"
     `);
 
   await page.keyboard.press("Tab");
@@ -36,7 +36,7 @@ test("Skip link at top of page works", { tag: '@a11y' }, async ({ page }) => {
     await page.evaluate(() => {
       return document.activeElement?.textContent;
     }),
-  ).toEqual("Jump to main content");
+  ).toEqual("Skip to main content");
 
   await page.keyboard.press("Enter");
 
