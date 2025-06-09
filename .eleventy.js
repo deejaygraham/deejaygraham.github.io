@@ -31,6 +31,9 @@ import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 // transforms
 import * as prettier from "prettier";
 
+// linters
+import pageContentLinter from "./src/_11ty/linters/page-content/index.js";
+
 export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
@@ -127,6 +130,10 @@ export default function (eleventyConfig) {
 	});
 
   // post-processing 
+
+  // lint html output
+  eleventyConfig.addLinter('page-content', pageContentLinter);
+	
   eleventyConfig.addTransform("prettier", function (content) {
 	if ((this.page.outputPath || "").endsWith(".html")) {
 
