@@ -13,22 +13,20 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Jump to main content link - styling from: https://a11y-101.com/development/skip-link */
+/* Jump to main content link - styling from: https://webaim.org/techniques/css/invisiblecontent/ */
 .skip-link {
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
 
 .skip-link:focus {
-    clip: auto;
-    height: auto;
-    overflow: auto;
-    position: absolute;
-    width: auto;
+    position:static;
+    width:auto;
+    height:auto;
 }
 
 @view-transition {
