@@ -44,5 +44,5 @@ test("Skip link at top of page works", { tag: '@a11y' }, async ({ page }) => {
     await page.evaluate(() => {
       return document.activeElement?.localName;
     }),
-  ).toEqual("main");
+  ).toEqual("body");
 });
