@@ -15,6 +15,7 @@ a:hover {
 
 /* Jump to main content link - styling from: https://webaim.org/techniques/css/invisiblecontent/ */
 .skip-link {
+    color: white;
     background: indianred;
     position:absolute;
     left:0px;
@@ -27,6 +28,7 @@ a:hover {
 }
 
 .skip-link:focus {
+    color: white;
     top: 0;
     left: 0;
     position:static;
