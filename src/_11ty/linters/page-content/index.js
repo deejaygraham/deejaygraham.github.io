@@ -1,4 +1,4 @@
-module.exports = function(content, inputPath, outputPath) {
+export default function(content, inputPath, outputPath) {
 
   if (!outputPath.endsWith(".html")) return;
   const imageMarkdown = /\!\[|\]\(/gi;
