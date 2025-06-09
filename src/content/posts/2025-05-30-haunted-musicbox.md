@@ -147,4 +147,4 @@ while True:
 ## Improvements 
 
 Later, I intend to work in raw pitches and try more subtle adjustments of pitch - think old-timey tape player 
-or record player slowing down and speeding up. That should add to the spookiness nicely.
+or record player slowing down and speeding up by adjusting the playback speed and the pitch at the same time. That should add to the spookiness nicely.
