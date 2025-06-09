@@ -22,3 +22,27 @@ test.describe('run accessibility tests', { tag: '@a11y' }, () => {
     });
   });
 });
+
+test("Skip link at top of page works", { tag: '@a11y' }, async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page.locator("header")).toMatchAriaSnapshot(`
+    - link "Jump to main content"
+    `);
+
+  await page.keyboard.press("Tab");
+
+  expect(
+    await page.evaluate(() => {
+      return document.activeElement?.textContent;
+    }),
+  ).toEqual("Jump to main content");
+
+  await page.keyboard.press("Enter");
+
+  expect(
+    await page.evaluate(() => {
+      return document.activeElement?.localName;
+    }),
+  ).toEqual("main");
+});
