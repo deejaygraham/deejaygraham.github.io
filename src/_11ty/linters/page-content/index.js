@@ -1,13 +1,11 @@
 module.exports = function(content, inputPath, outputPath) {
 
-if (!outputPath.endsWith(".html")) return;
-
-let count = 0;
-
-let tableMarkup = /\| ---/gi;
-
-  if (content.match(tableMarkup)) {
+  if (!outputPath.endsWith(".html")) return;
+  const imageMarkdown = /\!\[|\]\(/gi;
+  
+  let count = 0;
+  if (content.match(imageMarkdown)) {
     count++;
-    console.error(`\t${count} - Incorrectly formatted table (${inputPath})`);
+    console.error(`\t${count} - Image markdown not rendered correctly (${inputPath})`);
   }
 };
