@@ -1,7 +1,7 @@
 export default function(content, inputPath, outputPath) {
 
   if (!outputPath.endsWith(".html")) return;
-  const imageMarkdown = /!\[|\]\(/gi;
+  const imageMarkdown = /!\[(?<altText>.*)\]\s*\((?<imageURL>.+)\)/gi;
   
   let count = 0;
   if (content.match(imageMarkdown)) {
