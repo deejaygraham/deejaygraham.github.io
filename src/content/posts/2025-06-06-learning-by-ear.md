@@ -17,8 +17,8 @@ get us closer to the target, to generate the next generation of the data and rep
 should get us very close to the original tune. 
 
 After completing that project and running it a few times, it became obvious that there may be a few problems with this approach. First, the 
-problem space of textual evolution that I had used before was 2 * 26 - letters a-z and upper case, maybe with some punctuation involved. 
-The problem space with a musical evolution was 12 * 9 * 4 - note names, octaves, note length. The length of the target tune also becomes 
+problem space of textual evolution that I had used before was 2 x 26 - letters a-z and upper case, maybe with some punctuation involved. 
+The problem space with a musical evolution was 12 x 9 x 4 - note names, octaves, note length. The length of the target tune also becomes 
 a problem because I again picked "twinkle twinkle" and although there is a lot of repitition in the tune, the length is longer than a lot of 
 textual evolution demonstrations, meaning a larger population in each generation and more generations to cycle through to get a satisfactory 
 result.
