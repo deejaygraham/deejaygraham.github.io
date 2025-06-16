@@ -4,8 +4,8 @@ tags: [code, scratch]
 ---
 
 A final, more complicated game to round off the scratch for beginners sessions. This is a recreation of the Chrome browser game
-that shows if your internet connection is down. It features a pixelated t-rex running across the screen and jumping to avoid
-cactus in its path. Pressing the spacebar causes the t-rex to jump, you score points for how far you can run, and if you come
+that shows if your internet connection is down. It features a pixelated T-Rex dinosaur running across the screen and jumping to avoid
+cactus in it's path. Pressing the spacebar causes the t-rex to jump, you score points for how far you can run, and if you come
 into contact with a cactus, the game is over.
 
 I found a <a href="https://github.com/wayou/t-rex-runner">github repo with the assets from the game</a>. The readme shows a nice
