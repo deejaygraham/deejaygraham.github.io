@@ -128,53 +128,12 @@ def mutate_piece(target, candidate):
         
 generations = 1000
 destination = generate_piece_from_list(
-[   "C5:1",
-    "C5:1",
-    "G5:1",
-    "G5:1",
-    "A5:1",
-    "A5:1",
-    "G5:2",
-    # How I wonder what you are
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:1",
-    "D5:1",
-    "C5:2",
-    # Up above the world so high
-    "G5:1",
-    "G5:1",
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:2",
-    # Like a diamond in the sky
-    "G5:1",
-    "G5:1",
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:2",
-    # Twinkle, twinkle, little star
-    "C5:1",
-    "C5:1",
-    "G5:1",
-    "G5:1",
-    "A5:1",
-    "A5:1",
-    "G5:2",
-    # How I wonder what you are
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:1",
-    "D5:1",
-    "C5:2"
+[   "C5:1", "C5:1", "G5:1", "G5:1", "A5:1", "A5:1", "G5:2",
+    "F5:1", "F5:1", "E5:1", "E5:1", "D5:1", "D5:1", "C5:2",
+    "G5:1", "G5:1", "F5:1", "F5:1", "E5:1", "E5:1", "D5:2",
+    "G5:1", "G5:1", "F5:1", "F5:1", "E5:1", "E5:1", "D5:2",
+    "C5:1", "C5:1", "G5:1", "G5:1", "A5:1", "A5:1", "G5:2",
+    "F5:1", "F5:1", "E5:1", "E5:1", "D5:1", "D5:1", "C5:2"
 ])
 
 twinkle_dsl = [str(item) for item in destination]
@@ -192,3 +151,53 @@ for generation in range(generations):
     mutate_piece(destination, guess)
 
 ```
+
+## Less Random
+
+A version of this code that is slightly more guided and sounds more musical as it goes on, I changed the mutation code 
+to remove the fully random choices across all the values and constraint randomness of the choices to the exact value from the original 
+and one value before and one value after in the list of choices.
+
+```python
+def constrain_choices(choices, value):
+    constrained = []
+
+    if value not in choices:
+        return constrained
+
+    index = choices.index(value)
+
+    if index > 0:
+        constrained.append(choices[index - 1])
+
+    constrained.append(value)
+
+    if index < len(choices) - 1:
+        constrained.append(choices[index + 1])
+
+    return constrained
+
+def mutate_piece(target, candidate):
+    for i in range(len(target)):
+        item1 = target[i]
+        item2 = candidate[i]
+    
+        # let's sync rhythm first...
+        if item2.duration == item2.duration:
+            # then octave
+            if item1.octave == item2.octave:
+                # then name
+                if item1.name == item2.name:
+                    pass
+                else:
+                    item2.name = random.choice(constrain_choices(note_names, item1.name))
+            else:
+                item2.octave = random.choice(constrain_choices(octaves, item1.octave))
+        else:
+            item2.duration = random.choice(constrain_choices(note_durations, item1.duration)) 
+       
+```
+
+Weirdly, although it tends to sound better after the 4th or 5th generation of the tune, it still appears to 
+take about the same time (40-50 generations) to land on the exact original tune with this method. 
+
