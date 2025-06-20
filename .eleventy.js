@@ -147,8 +147,7 @@ export default function (eleventyConfig) {
         parser: "html",
         tabWidth: 2
       });
-        	
-      console.log(prettified);
+        
       return prettified;
     }
 
