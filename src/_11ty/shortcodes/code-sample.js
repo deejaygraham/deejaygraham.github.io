@@ -15,5 +15,5 @@ export default function (language, filename) {
     tabWidth: 2
   });
                                      
-  return `${backticks} ${language}\n ${prettified}\n${backticks};
+  return `${backticks} ${language}\n ${prettified}\n${backticks}`;
 }
