@@ -40,9 +40,7 @@ exposing the values within that file as environment variables.
 
 ```javascript
 
-const {
-            defineConfig
-} = require("cypress");
+const { defineConfig } = require("cypress");
 const fs = require('fs');
 const path = require('path');
 
@@ -60,7 +58,7 @@ module.exports = defineConfig({
 
                                     return config;
                         },
-                },
+            },
 });
 
 ```
