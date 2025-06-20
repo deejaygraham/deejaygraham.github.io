@@ -9,6 +9,7 @@ export default function (content) {
     printWidth: 512,
     tabWidth: 2
   });
-                                     
+
+  const language = "javascript";
   return `${backticks} ${language}\n ${prettified}\n${backticks}`;
 }
