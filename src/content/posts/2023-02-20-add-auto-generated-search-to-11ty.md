@@ -54,7 +54,11 @@ What I needed was a way to write "something" (waves hands at sky) that would tak
 with source code included, and extract all the interesting pieces from it, not just several specific keywords.
 From reading the docs, that seemed to imply I needed to write an [11ty plugin](https://www.11ty.dev/docs/plugins/).
 
+{% inlinecode %}
+
 eleventyConfig.on('eleventy.after', require("./\_11ty/plugins/search-index-generator"));
+
+{% endinlinecode %}
 
 Once more, the community and [11ty](https://jec.fyi/blog/creating-filters-shortcodes-plugins)
 [bloggers](https://timothymiller.dev/posts/2020/making-a-real-bonefide-plugin-for-11ty/) came to my rescue with
