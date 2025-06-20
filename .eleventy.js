@@ -20,6 +20,7 @@ import youtube from "./src/_11ty/shortcodes/youtube.js";
 import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 import poison from "./src/_11ty/shortcodes/poison-ai.js";
 import codeSample from "./src/_11ty/shortcodes/code-sample.js";
+import inlineCodeSample from "./src/_11ty/shortcodes/inline-code-sample.js";
 
 // plugins
 import { IdAttributePlugin } from "@11ty/eleventy";
@@ -90,8 +91,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("youtube", youtube);
   eleventyConfig.addShortcode("vimeo", vimeo);
   eleventyConfig.addShortcode("poison", poison);
-	eleventyConfig.addShortcode("code", codeSample);
-
+  eleventyConfig.addShortcode("code", codeSample); // prettify code from file
+  eleventyConfig.addPairedShortcode("inlinecode", inlineCodeSample); // prettify code inline
+	
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");
