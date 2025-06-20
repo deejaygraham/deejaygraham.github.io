@@ -36,17 +36,17 @@ That was the easy part. The slightly more awkward part is the comparison functio
 
 it('objects match', () => {
 
-const golden = {
-name: 'bob',
-age: 99,
-address: {
-line1: '55 Imaginary Street',
-line2: 'Unknown Town'
-postcode: 'UT55 IST'
-}
-};
+    const golden = {
+        name: 'bob',
+        age: 99,
+        address: {
+            line1: '55 Imaginary Street',
+            line2: 'Unknown Town'
+            postcode: 'UT55 IST'
+        }
+    };
 
-Cypress.compare.match(api_data, golden);
+    Cypress.compare.match(api_data, golden);
 });
 
 ```
