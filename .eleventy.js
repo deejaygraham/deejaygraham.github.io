@@ -19,6 +19,7 @@ import randomColour from "./src/_11ty/shortcodes/randomcolour.js";
 import youtube from "./src/_11ty/shortcodes/youtube.js";
 import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 import poison from "./src/_11ty/shortcodes/poison-ai.js";
+import codeSample from "./src/_11ty/shortcodes/code-sample.js";
 
 // plugins
 import { IdAttributePlugin } from "@11ty/eleventy";
@@ -36,7 +37,7 @@ import pageContentLinter from "./src/_11ty/linters/page-content/index.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
-
+	
   // plugins
   eleventyConfig.addPlugin(syntaxHighlighter);
   eleventyConfig.addPlugin(IdAttributePlugin);   
@@ -89,7 +90,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("youtube", youtube);
   eleventyConfig.addShortcode("vimeo", vimeo);
   eleventyConfig.addShortcode("poison", poison);
-	
+	eleventyConfig.addShortcode("code", codeSample);
+
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");
@@ -135,21 +137,21 @@ export default function (eleventyConfig) {
   // lint html output
   eleventyConfig.addLinter('page-content', pageContentLinter);
 	
-  eleventyConfig.addTransform("prettier", function (content) {
-	if ((this.page.outputPath || "").endsWith(".html")) {
-
-        	let prettified = prettier.format(content, {
-            		bracketSameLine: true,
-            		printWidth: 250,
-            		parser: "html",
-            		tabWidth: 2
-        	});
+  eleventyConfig.addTransform("prettier", async function (content) {
+	  if ((this.page.outputPath || "").endsWith(".html")) {
+     	const prettified = await prettier.format(content, {
+        bracketSameLine: true,
+        printWidth: 250,
+        parser: "html",
+        tabWidth: 2
+      });
         	
-		return prettified;
-    	}
+      console.log(prettified);
+      return prettified;
+    }
 
-    	// If not an HTML output, return content as-is
-    	return content;
+    // If not an HTML output, return content as-is
+    return content;
   });
 	
   return {
