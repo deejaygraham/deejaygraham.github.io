@@ -12,12 +12,12 @@ Lots of places we need a copyright or something similar where we just need the c
 
 ### \_1tty/shortcodes/year.js
 
-```javascript
+{% inlinecode %}
 
 module.exports = function() {
 return `${new Date().getFullYear()}`;
 }
 
-```
+{% endinlinecode %}
 
 and in the markdown the name of the sortcode needs to appear bookended by moustaches.
