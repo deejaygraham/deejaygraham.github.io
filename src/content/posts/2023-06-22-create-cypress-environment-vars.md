@@ -21,11 +21,11 @@ npx cypress run --env deployment=PRODUCTION
 
 Which turns up in the test like this:
 
-```javascript
+{% inlinecode %}
 
 const deployment = Cypress.env("deployment");
 
-```
+{% endinlinecode %}
 
 ### Configuration
 
@@ -38,7 +38,7 @@ exposing the values within that file as environment variables.
 
 #### cypress.Config.js
 
-```javascript
+{% inlinecode %}
 
 const { defineConfig } = require("cypress");
 const fs = require('fs');
@@ -61,4 +61,4 @@ module.exports = defineConfig({
             },
 });
 
-```
+{% endinlinecode %}
