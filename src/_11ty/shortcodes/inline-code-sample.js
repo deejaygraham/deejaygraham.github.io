@@ -11,5 +11,5 @@ export default async function (content) {
   });
 
   const language = "javascript";
-  return `${backticks} ${language}\n ${prettified}\n${backticks}`;
+  return `${backticks} ${language}\n${prettified}\n${backticks}`;
 }
