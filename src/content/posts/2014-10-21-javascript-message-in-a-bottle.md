@@ -25,7 +25,7 @@ So this is a message to my future self, who will forget again before too long :)
 </html>
 ```
 
-```javascript
+{% inlinecode %}
 function init() {
     alert("Window Loaded");
 }
@@ -37,4 +37,4 @@ function onClick() {
 window.onload = init;
 window.onclick = onClick;
 
-```
+{% endinlinecode %}
