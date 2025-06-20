@@ -19,8 +19,9 @@ import randomColour from "./src/_11ty/shortcodes/randomcolour.js";
 import youtube from "./src/_11ty/shortcodes/youtube.js";
 import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 import poison from "./src/_11ty/shortcodes/poison-ai.js";
-import codeSample from "./src/_11ty/shortcodes/code-sample.js";
-import inlineCodeSample from "./src/_11ty/shortcodes/inline-code-sample.js";
+import codeSample from "./src/_11ty/shortcodes/format-js-file.js";
+import inlineCodeSample from "./src/_11ty/shortcodes/format-js-inline.js";
+import inlinePythonCode from "./src/_11ty/shortcodes/format-python.js";
 
 // plugins
 import { IdAttributePlugin } from "@11ty/eleventy";
