@@ -30,7 +30,7 @@ so well known and any variation in the tune would be picked up easily by the lis
 ```python
 from microbit import *
 import music
-import random 
+import random
 
 song = [
     # Twinkle, twinkle, little star
@@ -84,25 +84,21 @@ song = [
 ]
 
 # map note name to vert. line on display
-note_to_line = {
-    'C': 0,
-    'D': 0,
-    'E': 1,
-    'F': 2,
-    'G': 3,
-    'A': 4
-}
+note_to_line = {"C": 0, "D": 0, "E": 1, "F": 2, "G": 3, "A": 4}
+
 
 def draw_vertical_line(x):
     for y in range(5):
         display.set_pixel(x, y, 9)
+
 
 def fade_out_display():
     for x in range(5):
         for y in range(5):
             brightness = display.get_pixel(x, y)
             display.set_pixel(x, y, max(0, brightness - 1))
-            
+
+
 display.show(Image.MUSIC_QUAVERS)
 sleep(5000)
 display.clear()
@@ -116,7 +112,7 @@ while True:
     for note in song:
 
         # switch on or off spooky mode
-        # this could be done with 
+        # this could be done with
         # another trigger
         if button_a.was_pressed():
             spooky = not spooky
@@ -126,11 +122,11 @@ while True:
         # substitute another note
         if spooky and random.random() < 0.1:
             note = random.choice(song)
-            
+
         fade_out_display()
         note_name = note[0]
-            
-        if not note_name == 'R':
+
+        if not note_name == "R":
             x = note_to_line[note_name]
             draw_vertical_line(x)
 
@@ -141,7 +137,6 @@ while True:
             delta = random.randint(-5, 5)
             tempo = max(10, tempo + delta)
             music.set_tempo(bpm=tempo)
-
 ```
 
 ## Improvements 

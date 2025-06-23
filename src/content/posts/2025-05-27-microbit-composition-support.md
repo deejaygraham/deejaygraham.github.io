@@ -17,16 +17,15 @@ To help in converting between these two formats, I wrote two functions to use th
 format.
 
 ```python
-
 def frequency_to_midi(freq):
     return int(round(69 + 12 * math.log2(freq / 440.0)))
 
+
 def midi_to_frequency(midi):
     if midi < 0 or midi > 127:
-        raise SystemError('Invalid midi value')
-    
-    return 440 * math.pow(2, (midi - 69) / 12.0)
+        raise SystemError("Invalid midi value")
 
+    return 440 * math.pow(2, (midi - 69) / 12.0)
 ```
 
 ## Mini DSL 
@@ -37,7 +36,7 @@ DSL and convert to and from midi.
 ```python
 def parse_dsl_note(text):
     if len(text) > 3:
-        raise SystemError('invalid note format')
+        raise SystemError("invalid note format")
 
     if len(text) == 2:
         # e.g. C5
@@ -50,37 +49,48 @@ def parse_dsl_note(text):
 
     return name, octave
 
+
 midi_rest = 128
 
+
 def note_to_midi(text):
-    if text == 'R':
+    if text == "R":
         return midi_rest
 
     note_names = {
-        'C': 0, 'C#': 1, 'Db': 1,
-        'D': 2, 'D#': 3, 'Eb': 3,
-        'E': 4,
-        'F': 5, 'F#': 6, 'Gb': 6,
-        'G': 7, 'G#': 8, 'Ab': 8,
-        'A': 9, 'A#': 10, 'Bb': 10,
-        'B': 11
+        "C": 0,
+        "C#": 1,
+        "Db": 1,
+        "D": 2,
+        "D#": 3,
+        "Eb": 3,
+        "E": 4,
+        "F": 5,
+        "F#": 6,
+        "Gb": 6,
+        "G": 7,
+        "G#": 8,
+        "Ab": 8,
+        "A": 9,
+        "A#": 10,
+        "Bb": 10,
+        "B": 11,
     }
 
     name, octave = parse_dsl_note(text)
 
     return 12 * (octave + 1) + note_names[name]
 
+
 def midi_to_note(midi):
     if midi == midi_rest:
-        return 'R'
+        return "R"
 
-    note_names = ['C', 'C#', 'D', 'D#', 'E', 'F',
-                  'F#', 'G', 'G#', 'A', 'A#', 'B']
-    
+    note_names = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+
     note = note_names[midi_number % 12]
     octave = (midi_number // 12) - 1
     return "{0}{1}".format(note, octave)
-
 ```
 
 A quick set of test cases output the expected values.

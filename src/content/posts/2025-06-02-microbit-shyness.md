@@ -41,14 +41,13 @@ while True:
             confidence = min_brightness
             counter = 0
         elif last_event == SoundEvent.QUIET:
-            confidence = max(min_brightness, confidence - 1)   
+            confidence = max(min_brightness, confidence - 1)
             counter = 0
-            
+
     sleep(1000)
     counter += 1
 
     if counter > 10:
         confidence = min(confidence + 1, max_brightness)
-      
 ```
 

@@ -68,25 +68,21 @@ song = [
 ]
 
 # map note name to vert. line on display
-note_to_line = {
-    'C': 0,
-    'D': 0,
-    'E': 1,
-    'F': 2,
-    'G': 3,
-    'A': 4
-}
+note_to_line = {"C": 0, "D": 0, "E": 1, "F": 2, "G": 3, "A": 4}
+
 
 def draw_vertical_line(x):
     for y in range(5):
         display.set_pixel(x, y, 9)
+
 
 def fade_out_display():
     for x in range(5):
         for y in range(5):
             brightness = display.get_pixel(x, y)
             display.set_pixel(x, y, max(0, brightness - 1))
-            
+
+
 display.show(Image.MUSIC_QUAVERS)
 sleep(5000)
 display.clear()
@@ -97,13 +93,12 @@ while True:
     for note in song:
         fade_out_display()
         note_name = note[0]
-        if not note_name == 'R':
+        if not note_name == "R":
             x = note_to_line[note_name]
             draw_vertical_line(x)
 
         music.play(note)
         fade_out_display()
-
 ```
 
 ## Visual

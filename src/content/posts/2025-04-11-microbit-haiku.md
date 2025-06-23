@@ -118,7 +118,7 @@ five_syllable_phrases = [
     "Warm affection nurtures",
     "True devotion endures",
     "Tender moments cherished",
-    "Soulful bond strengthens"
+    "Soulful bond strengthens",
 ]
 
 seven_syllable_phrases = [
@@ -222,26 +222,29 @@ seven_syllable_phrases = [
     "I am honored to lead",
     "I am ecstatic to dance",
     "I am disgusted by war",
-    "I am hungry for joy"
+    "I am hungry for joy",
 ]
 
-class Haiku():
-    
+
+class Haiku:
+
     def __init__(self, five_syllable_words, seven_syllable_words):
         self.line1 = random.choice(five_syllable_words)
         self.line2 = random.choice(seven_syllable_words)
-        self.line3 = random.choice([word for word in five_syllable_words if word != self.line1])
-    
+        self.line3 = random.choice(
+            [word for word in five_syllable_words if word != self.line1]
+        )
+
     def __str__(self):
         return self.line1 + ". " + self.line2 + ". " + self.line3 + ". "
-        
+
+
 while True:
     haiku = Haiku(five_syllable_phrases, seven_syllable_phrases)
     text = str(haiku)
     display.scroll(text, wait=False)
     speech.say(text, speed=100)
     sleep(random.randint(5000, 30000))
-
 ```
 
 The default speech settings are very much like an old fashioned speak-n-spell toy so the attributes need to be tweaked to get a slower and more reasonable 
@@ -356,7 +359,7 @@ five_syllable_phrases = [
     "tiny device",
     "coding fun",
     "sensor readings",
-    "radio communication"
+    "radio communication",
 ]
 
 seven_syllable_phrases = [
@@ -459,7 +462,6 @@ seven_syllable_phrases = [
     "sensor functions are clear",
     "radio signals are sent",
     "LED displays are bright",
-    "programming lessons are learned"
+    "programming lessons are learned",
 ]
-
 ```

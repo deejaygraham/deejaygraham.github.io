@@ -17,14 +17,30 @@ from microbit import *
 import random
 import music
 
-images = [Image.ANGRY, Image.CONFUSED, Image.GHOST, Image.HEART, Image.HAPPY, Image.MEH, Image.SAD]
-sounds = [Sound.GIGGLE, Sound.HAPPY, Sound.HELLO, Sound.MYSTERIOUS, Sound.SAD, Sound.SLIDE, Sound.SOARING]
+images = [
+    Image.ANGRY,
+    Image.CONFUSED,
+    Image.GHOST,
+    Image.HEART,
+    Image.HAPPY,
+    Image.MEH,
+    Image.SAD,
+]
+sounds = [
+    Sound.GIGGLE,
+    Sound.HAPPY,
+    Sound.HELLO,
+    Sound.MYSTERIOUS,
+    Sound.SAD,
+    Sound.SLIDE,
+    Sound.SOARING,
+]
 
 probability = 0.3
 
 while True:
     if button_a.was_pressed() or button_b.was_pressed():
-        if random.random() < probability: 
+        if random.random() < probability:
             display.show(random.choice(images))
             audio.play(random.choice(sounds))
 

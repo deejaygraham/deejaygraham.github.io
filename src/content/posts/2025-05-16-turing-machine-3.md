@@ -19,7 +19,7 @@ include them in the constructor which I think makes more sense and improves the 
 ### turing-machine.py
 
 ```python
-class TuringMachine():
+class TuringMachine:
 
     def __init__(self, program, tape, alphabet):
 
@@ -28,7 +28,7 @@ class TuringMachine():
 
         if len(tape_errors) > 0:
             raise RuntimeError(tape_errors[0])
-    
+
         self.tape = tape
 
         program_valid = ProgramValidator()
@@ -36,11 +36,10 @@ class TuringMachine():
 
         if len(program_errors) > 0:
             raise SyntaxError(program_errors[0])
-        
-        self.program = program
-        
 
-    def run(self, starting_pos, starting_state, halting_state = 0):
+        self.program = program
+
+    def run(self, starting_pos, starting_state, halting_state=0):
 
         reader = TapeReader(self.tape, starting_pos)
         state = starting_state
@@ -50,18 +49,17 @@ class TuringMachine():
             symbol = reader.read()
             instruction_table = self.program[state]
             instructions = instruction_table[symbol]
-            
-            new_symbol = instructions['write']
-            reader.write(new_symbol) 
-        
-            direction = instructions['move']
+
+            new_symbol = instructions["write"]
+            reader.write(new_symbol)
+
+            direction = instructions["move"]
             if direction < 0:
                 reader.move_left()
             elif direction > 0:
                 reader.move_right()
-                    
-            state = instructions['state']
 
+            state = instructions["state"]
 ```
 
 ## Program 
@@ -74,46 +72,26 @@ The initial state of the tape and the program are validated before being fed to 
 ### program.py 
 
 ```python
-
-alphabet = ['1', '0', ' ', '_']
-tape = ['1', '0', '0', '1', ' ', '_']
+alphabet = ["1", "0", " ", "_"]
+tape = ["1", "0", "0", "1", " ", "_"]
 starting_pos = 0
 
 # change all 1's to 0s and all 0s to 1s
 # stop on underscore
 program = {
-    0: {
-
-    },
+    0: {},
     1: {
-        '1': {
-            'write': '0',
-            'move': 1,
-            'state': 1
-        },
-        '0': {
-            'write': '1',
-            'move': 1,
-            'state': 1
-        },
-        '_': {
-            'write': '_',
-            'move': 0,
-            'state': 0
-        },
-        ' ': {
-            'write': ' ',
-            'move': 1,
-            'state': 1
-        }
-    }
+        "1": {"write": "0", "move": 1, "state": 1},
+        "0": {"write": "1", "move": 1, "state": 1},
+        "_": {"write": "_", "move": 0, "state": 0},
+        " ": {"write": " ", "move": 1, "state": 1},
+    },
 }
 
 starting_state = 1
 
 tm = TuringMachine(program, tape, alphabet)
 tm.run(starting_pos, starting_state)
-
 ```
 
 ## Print

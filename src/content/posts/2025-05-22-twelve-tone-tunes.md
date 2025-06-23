@@ -24,47 +24,51 @@ time around so that the music was much more random overall. I think I like the n
 I incorporate a random rests in the initial tone row to break things up. 
 
 ```python
-from microbit import * 
+from microbit import *
 import random
 import music
 
-chromatic_scale = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+chromatic_scale = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+
 
 def generate_tone_row(notes):
     shuffled_notes = sorted(notes, key=lambda _: random.random())
     note_values = [4, 4, 3, 2, 2, 1, 1]
     octaves = [4, 5, 6]
     rest_probability = 0.2
-    
+
     tone_row = []
     for note in shuffled_notes:
         # ensure we don't start with a rest
         if random.random() < rest_probability and len(tone_row) > 0:
             duration = random.choice(note_values)
-            formatted_rest = 'R:{0}'.format(duration)
+            formatted_rest = "R:{0}".format(duration)
             tone_row.append(formatted_rest)
-            
+
         duration = random.choice(note_values)
         octave = random.choice(octaves)
-        formatted_note = '{0}{1}:{2}'.format(note, octave, duration)
+        formatted_note = "{0}{1}:{2}".format(note, octave, duration)
         tone_row.append(formatted_note)
 
     return tone_row
 
+
 def retrograde(row):
     return row[::-1]
 
+
 def split_note(text):
-    note_octave, duration = text.split(':')
+    note_octave, duration = text.split(":")
     if len(note_octave) == 2:
         note_name = note_octave[0]
         octave = note_octave[1]
     else:
         note_name = note_octave[0:2]
         octave = note_octave[-1]
-        
+
     return note_name, octave, duration
-    
+
+
 def inversion(row, notes):
     inversion = []
 
@@ -74,14 +78,17 @@ def inversion(row, notes):
 
     for note in row:
         # skip over rests...
-        if note.startswith('R'):
+        if note.startswith("R"):
             inversion.append(note)
         else:
             note_name, octave, duration = split_note(note)
-            new_note = notes[(first_note_index - (notes.index(note_name) - first_note_index)) % 12]
+            new_note = notes[
+                (first_note_index - (notes.index(note_name) - first_note_index)) % 12
+            ]
             inversion.append("{0}{1}:{2}".format(new_note, octave, duration))
-            
+
     return inversion
+
 
 prime = generate_tone_row(chromatic_scale)
 r = retrograde(prime)
@@ -89,12 +96,11 @@ i = inversion(prime, chromatic_scale)
 ri = retrograde(i)
 rows = [prime, r, i, ri]
 
-music.set_tempo(bpm = 60)
+music.set_tempo(bpm=60)
 
 while True:
     row = random.choice(rows)
     for note in row:
         print(note)
         music.play(note)
-
 ```

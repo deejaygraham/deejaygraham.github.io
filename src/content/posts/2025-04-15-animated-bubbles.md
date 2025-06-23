@@ -20,7 +20,6 @@ calculations a little neater
 
 
 ```python
-
 class Bubble:
     def __init__(self, position, radius):
         self.position = position
@@ -31,11 +30,10 @@ class Bubble:
         self.position.add(self.velocity)
         self.velocity *= 0.95  # Damping to slow down the movement
         pass
-        
-    def display(self):
-        fill(100, 150, 200) # random colour
-        ellipse(self.position.x, self.position.y, self.radius * 2, self.radius * 2)
 
+    def display(self):
+        fill(100, 150, 200)  # random colour
+        ellipse(self.position.x, self.position.y, self.radius * 2, self.radius * 2)
 ```
 
 ### Animation
@@ -44,7 +42,6 @@ The movement of bubbles is handled in the code that tries to keep each bubble fr
 but also tries to pull them together into a smaller huddle.
 
 ```python
-
 def check_collisions():
     global bubbles
     for i in range(len(bubbles)):
@@ -60,18 +57,19 @@ def check_collisions():
                 move = direction * (overlap / 2)
                 b1.velocity -= move * 0.1
                 b2.velocity += move * 0.1
-                
+
 
 def pull_towards_center():
     global bubbles
     center = PVector(width / 2, height / 2)
-    
+
     for b in bubbles:
         direction = center - b.position
         direction.normalize()
-        force = direction * 0.05 # Adjust this value to control the strength of the pull
+        force = (
+            direction * 0.05
+        )  # Adjust this value to control the strength of the pull
         b.velocity += force
-
 ```
 
 ### Main
@@ -80,17 +78,18 @@ The main loop and event handlers for processing including a mechanism to add and
 bubbles for testing purposes.
 
 ```python
-
 bubbles = []
+
 
 # Add some initial content
 def setup():
     global bubbles
     size(800, 800)
-    
+
     bubbles.append(Bubble(PVector(100, 100), 50))
     bubbles.append(Bubble(PVector(200, 200), 75))
     bubbles.append(Bubble(PVector(300, 300), 60))
+
 
 def draw():
     background(255, 255, 255)
@@ -100,10 +99,12 @@ def draw():
     check_collisions()
     pull_towards_center()
 
+
 # Add a new bubble at the mouse position with random size
 def mousePressed():
     global bubbles
     bubbles.append(Bubble(PVector(mouseX, mouseY), random(30, 60)))
+
 
 # Remove the last bubble when a key is pressed
 def keyPressed():

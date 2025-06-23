@@ -50,15 +50,16 @@ from microbit import *
 import random
 import music
 
-note_names = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+note_names = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 octaves = [2, 3, 4, 5, 6, 7]
 note_durations = [4, 3, 2, 1]
 
-class Note():
-    
+
+class Note:
+
     @classmethod
     def from_string(cls, text):
-        note, duration = text.split(':')
+        note, duration = text.split(":")
 
         if len(note) == 2:
             # e.g. C5
@@ -70,32 +71,35 @@ class Note():
             octave = note[-1]
 
         return cls(name, int(octave), int(duration))
-        
+
     def __init__(self, name, octave, duration):
         self.name = name
         self.octave = octave
         self.duration = duration
-        
+
     def __str__(self):
         return "{0}{1}:{2}".format(self.name, self.octave, self.duration)
 
     def __repr__(self):
-        return "Note('{0}{1}:{2}')".format(self.name, self.octave, self.duration) 
-       
+        return "Note('{0}{1}:{2}')".format(self.name, self.octave, self.duration)
+
+
 def generate_piece_from_string(text):
     piece = []
-    notes = text.split(',')
+    notes = text.split(",")
     for n in notes:
         piece.append(Note.from_string(n))
-    
+
     return piece
-    
+
+
 def generate_piece_from_list(l):
     piece = []
     for n in l:
         piece.append(Note.from_string(n))
-    
+
     return piece
+
 
 def generate_random_piece(size):
     piece = []
@@ -104,14 +108,15 @@ def generate_random_piece(size):
         octave = random.choice(octaves)
         duration = random.choice(note_durations)
         piece.append(Note(name, octave, duration))
-        
+
     return piece
-    
+
+
 def mutate_piece(target, candidate):
     for i in range(len(target)):
         item1 = target[i]
         item2 = candidate[i]
-    
+
         # let's sync rhythm first...
         if item2.duration == item2.duration:
             # then octave
@@ -124,17 +129,56 @@ def mutate_piece(target, candidate):
             else:
                 item2.octave = random.choice(octaves)
         else:
-            item2.duration = random.choice(note_durations) 
-        
+            item2.duration = random.choice(note_durations)
+
+
 generations = 1000
 destination = generate_piece_from_list(
-[   "C5:1", "C5:1", "G5:1", "G5:1", "A5:1", "A5:1", "G5:2",
-    "F5:1", "F5:1", "E5:1", "E5:1", "D5:1", "D5:1", "C5:2",
-    "G5:1", "G5:1", "F5:1", "F5:1", "E5:1", "E5:1", "D5:2",
-    "G5:1", "G5:1", "F5:1", "F5:1", "E5:1", "E5:1", "D5:2",
-    "C5:1", "C5:1", "G5:1", "G5:1", "A5:1", "A5:1", "G5:2",
-    "F5:1", "F5:1", "E5:1", "E5:1", "D5:1", "D5:1", "C5:2"
-])
+    [
+        "C5:1",
+        "C5:1",
+        "G5:1",
+        "G5:1",
+        "A5:1",
+        "A5:1",
+        "G5:2",
+        "F5:1",
+        "F5:1",
+        "E5:1",
+        "E5:1",
+        "D5:1",
+        "D5:1",
+        "C5:2",
+        "G5:1",
+        "G5:1",
+        "F5:1",
+        "F5:1",
+        "E5:1",
+        "E5:1",
+        "D5:2",
+        "G5:1",
+        "G5:1",
+        "F5:1",
+        "F5:1",
+        "E5:1",
+        "E5:1",
+        "D5:2",
+        "C5:1",
+        "C5:1",
+        "G5:1",
+        "G5:1",
+        "A5:1",
+        "A5:1",
+        "G5:2",
+        "F5:1",
+        "F5:1",
+        "E5:1",
+        "E5:1",
+        "D5:1",
+        "D5:1",
+        "C5:2",
+    ]
+)
 
 twinkle_dsl = [str(item) for item in destination]
 
@@ -144,12 +188,11 @@ music.play(twinkle_dsl)
 guess = generate_random_piece(len(destination))
 
 for generation in range(generations):
-    print('attempt ' + str(generation))
+    print("attempt " + str(generation))
     # print(",".join(str(item) for item in individual))
     music.play([str(note) for note in guess])
     sleep(500)
     mutate_piece(destination, guess)
-
 ```
 
 ## Less Random
@@ -177,11 +220,12 @@ def constrain_choices(choices, value):
 
     return constrained
 
+
 def mutate_piece(target, candidate):
     for i in range(len(target)):
         item1 = target[i]
         item2 = candidate[i]
-    
+
         # let's sync rhythm first...
         if item2.duration == item2.duration:
             # then octave
@@ -190,12 +234,15 @@ def mutate_piece(target, candidate):
                 if item1.name == item2.name:
                     pass
                 else:
-                    item2.name = random.choice(constrain_choices(note_names, item1.name))
+                    item2.name = random.choice(
+                        constrain_choices(note_names, item1.name)
+                    )
             else:
                 item2.octave = random.choice(constrain_choices(octaves, item1.octave))
         else:
-            item2.duration = random.choice(constrain_choices(note_durations, item1.duration)) 
-       
+            item2.duration = random.choice(
+                constrain_choices(note_durations, item1.duration)
+            )
 ```
 
 Weirdly, although it tends to sound better after the 4th or 5th generation of the tune, it still appears to 
