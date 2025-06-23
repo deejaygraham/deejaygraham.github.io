@@ -15,13 +15,12 @@ as we can get) hello world skeleton.
 ## Hello World
 
 ```python
-
 import pygame
 
 pygame.init()
 
-screen = pygame.display.set_mode((640, 480)) # size must be a (tuple)
-pygame.display.set_caption('hello pygame')
+screen = pygame.display.set_mode((640, 480))  # size must be a (tuple)
+pygame.display.set_caption("hello pygame")
 
 done = False
 
@@ -29,14 +28,13 @@ while not done:
 
     # game interaction goes here
     for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-        done = True
+        if event.type == pygame.QUIT:
+            done = True
 
-    # rendering goes here   
+    # rendering goes here
     screen.fill((0, 0, 0))
 
     pygame.display.flip()
-
 ```
 
 This doesn't do much but sets us up a nice walking skeleton we can add to later.
@@ -57,8 +55,8 @@ pygame.init()
 game_width = 640
 game_height = 480
 
-screen = pygame.display.set_mode((game_width, game_height)) # size must be (tuple)
-pygame.display.set_caption('hello pygame')
+screen = pygame.display.set_mode((game_width, game_height))  # size must be (tuple)
+pygame.display.set_caption("hello pygame")
 
 # colours
 black = (0, 0, 0)
@@ -76,11 +74,13 @@ done = False
 while not done:
 
     for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-        done = True
+        if event.type == pygame.QUIT:
+            done = True
 
     screen.fill(black)
-    pygame.draw.rect(screen, box_colour, pygame.Rect(box_left, box_top, box_width, box_height))
+    pygame.draw.rect(
+        screen, box_colour, pygame.Rect(box_left, box_top, box_width, box_height)
+    )
 
     pygame.display.flip()
 ```
@@ -100,8 +100,8 @@ pygame.init()
 game_width = 640
 game_height = 480
 
-screen = pygame.display.set_mode((game_width, game_height)) # size must be (tuple)
-pygame.display.set_caption('hello pygame')
+screen = pygame.display.set_mode((game_width, game_height))  # size must be (tuple)
+pygame.display.set_caption("hello pygame")
 
 # colours
 black = (0, 0, 0)
@@ -121,17 +121,21 @@ done = False
 while not done:
 
     for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-        done = True
-      elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-        is_blue = not is_blue
+        if event.type == pygame.QUIT:
+            done = True
+        elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+            is_blue = not is_blue
 
     screen.fill(black)
 
-    if is_blue: box_colour = blue
-    else: box_colour = orange
+    if is_blue:
+        box_colour = blue
+    else:
+        box_colour = orange
 
-    pygame.draw.rect(screen, box_colour, pygame.Rect(box_left, box_top, box_width, box_height))
+    pygame.draw.rect(
+        screen, box_colour, pygame.Rect(box_left, box_top, box_width, box_height)
+    )
 
     pygame.display.flip()
 ```
@@ -155,8 +159,8 @@ pygame.init()
 game_width = 640
 game_height = 480
 
-screen = pygame.display.set_mode((game_width, game_height)) # size must be (tuple)
-pygame.display.set_caption('hello pygame')
+screen = pygame.display.set_mode((game_width, game_height))  # size must be (tuple)
+pygame.display.set_caption("hello pygame")
 
 # colours
 black = (0, 0, 0)
@@ -181,30 +185,42 @@ done = False
 while not done:
 
     for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-        done = True
-      elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-        is_blue = not is_blue
+        if event.type == pygame.QUIT:
+            done = True
+        elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+            is_blue = not is_blue
 
     # look at key presses
     pressed = pygame.key.get_pressed()
-    if pressed[pygame.K_UP]: box_top -= step_size
-    if pressed[pygame.K_DOWN]: box_top += step_size
-    if pressed[pygame.K_LEFT]: box_left -= step_size
-    if pressed[pygame.K_RIGHT]: box_left += step_size
+    if pressed[pygame.K_UP]:
+        box_top -= step_size
+    if pressed[pygame.K_DOWN]:
+        box_top += step_size
+    if pressed[pygame.K_LEFT]:
+        box_left -= step_size
+    if pressed[pygame.K_RIGHT]:
+        box_left += step_size
 
     # keep the box on the screen
-    if box_left < 0: box_left = 0
-    if box_top < 0:  box_top = 0
-    if box_left + box_width > game_width: box_left = game_width - box_width
-    if box_top + box_height > game_height: box_top = game_height - box_height
+    if box_left < 0:
+        box_left = 0
+    if box_top < 0:
+        box_top = 0
+    if box_left + box_width > game_width:
+        box_left = game_width - box_width
+    if box_top + box_height > game_height:
+        box_top = game_height - box_height
 
     screen.fill(black)
 
-    if is_blue: box_colour = blue
-    else: box_colour = orange
+    if is_blue:
+        box_colour = blue
+    else:
+        box_colour = orange
 
-    pygame.draw.rect(screen, box_colour, pygame.Rect(box_left, box_top, box_width, box_height))
+    pygame.draw.rect(
+        screen, box_colour, pygame.Rect(box_left, box_top, box_width, box_height)
+    )
 
     pygame.display.flip()
     clock.tick(60)

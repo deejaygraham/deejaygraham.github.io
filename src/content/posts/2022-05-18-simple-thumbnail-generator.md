@@ -13,16 +13,14 @@ So, of course, the "solution" I came up with was to write a tiny bit of processi
 and a piece of text, at the right pixel size I use, to act as the thumbnail.
 
 ```python
-
 size(420, 255)
 f = createFont("Georgia", 72)
 textFont(f)
 background(255, 120, 88)
 textAlign(LEFT)
 fill(255)
-text("thumbs", 40, 210)  
+text("thumbs", 40, 210)
 saveFrame("thumbnail-420x255.png")
-
 ```
 
 The code is essentially all I have described, a font for the text, a background colour, a text colour and the text
@@ -34,7 +32,6 @@ by using random foreground and background colours. I made the switch from RGB to
 function seemed better suited to creating nicer colours with that mode.
 
 ```python
-
 size(420, 255)
 f = createFont("Georgia", 72)
 textFont(f)
@@ -43,7 +40,6 @@ background(random(0, 255), 127, 242)
 textAlign(LEFT)
 fill(random(0, 255), 127, 242)
 
-text("lint.md", 40, 210)  
+text("lint.md", 40, 210)
 saveFrame("thumbnail-420x255.png")
-
 ```

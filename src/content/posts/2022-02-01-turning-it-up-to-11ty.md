@@ -15,9 +15,10 @@ One slight difference is in the .eleventy.js config file where I prefer not to p
 the config but require them from a file under the \_11ty folder.
 
 ```javascript
-module.exports = eleventyConfig => {
-
-    eleventyConfig.addShortcode('screenshot', require("./_11ty/shortcodes/screenshot.js"));
-
-}
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addShortcode(
+    "screenshot",
+    require("./_11ty/shortcodes/screenshot.js"),
+  );
+};
 ```

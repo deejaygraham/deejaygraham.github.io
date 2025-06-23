@@ -37,10 +37,10 @@ and your unit test will be failing for the wrong reason.
 ### Code
 
 ```python
-
 import unittest
 
 # All these tests will fail !
+
 
 class TestMyCode(unittest.TestCase):
 
@@ -49,11 +49,10 @@ class TestMyCode(unittest.TestCase):
         self.assertEqual(6, 9)
 
     def test_black_is_white(self):
-        self.assertTrue('black' == 'white')
+        self.assertTrue("black" == "white")
 
     def test_up_is_down(self):
-        self.assertFalse('up' != 'down')
-
+        self.assertFalse("up" != "down")
 ```
 
 ### Running

@@ -55,9 +55,10 @@ with source code included, and extract all the interesting pieces from it, not j
 From reading the docs, that seemed to imply I needed to write an [11ty plugin](https://www.11ty.dev/docs/plugins/).
 
 ```javascript
-
-eleventyConfig.on('eleventy.after', require("./\_11ty/plugins/search-index-generator"));
-
+eleventyConfig.on(
+  "eleventy.after",
+  require("./\_11ty/plugins/search-index-generator"),
+);
 ```
 
 Once more, the community and [11ty](https://jec.fyi/blog/creating-filters-shortcodes-plugins)
@@ -79,9 +80,10 @@ the code I was about to write that would extract the data? Upgrading from v1.som
 ### .elevent.js
 
 ```javascript
-
-eleventyConfig.on('eleventy.after', require("./_11ty/plugins/search-index-generator"));
-
+eleventyConfig.on(
+  "eleventy.after",
+  require("./_11ty/plugins/search-index-generator"),
+);
 ```
 
 In the after event we get an array of all the pages that have been built and, crucially, the finished content of each page.
@@ -98,29 +100,25 @@ which does the job admirably.
 ### \_11ty/plugins/search-index-generator/index.js
 
 ```javascript
+const elasticlunr = require("elasticlunr");
+const HTMLParser = require("node-html-parser");
+const fs = require("fs");
 
-const elasticlunr = require('elasticlunr');
-const HTMLParser = require('node-html-parser');
-const fs = require('fs');
+module.exports = function ({ dir, results }) {
+  console.log("Generating search index");
 
-module.exports = function({ dir, results }) {
+  const index = elasticlunr(function () {
+    this.setRef("id");
 
-console.log("Generating search index");
+    this.addField("title");
+    this.addField("keywords");
+  });
 
-const index = elasticlunr(function() {
-this.setRef('id');
-
-    this.addField('title');
-    this.addField('keywords');
-
-});
-
-results.forEach((page) => {
-
+  results.forEach((page) => {
     const id = page.url;
     const doc = HTMLParser.parse(page.content);
-    const titleNode = doc.querySelector('#doc-title');
-    const contentNode = doc.querySelector('#doc-content');
+    const titleNode = doc.querySelector("#doc-title");
+    const contentNode = doc.querySelector("#doc-content");
 
     if (contentNode) {
       const title = titleNode.innerText;
@@ -129,18 +127,16 @@ results.forEach((page) => {
       index.addDoc({
         id,
         title,
-        keywords: searchText.split(' '),
+        keywords: searchText.split(" "),
       });
     }
+  });
 
-});
+  const json = JSON.stringify(index);
+  fs.writeFileSync(dir.output + "/search-index.json", json);
 
-const json = JSON.stringify(index);
-fs.writeFileSync(dir.output + '/search-index.json', json);
-
-console.log("Search index complete");
+  console.log("Search index complete");
 };
-
 ```
 
 Given the full html content, I extract the most important parts of each page and use those as the keywords for that page.
@@ -161,37 +157,37 @@ common progamming words to try to declutter the output a bit more. The list show
 the real one, just so it can fit on the page :)
 
 ```javascript
-
 const squash = (text) => {
-    const lowerCased = new String(text).toLowerCase();
-    
-    // remove all html elements and new lines
-    const htmlElementMatcher = /(<.\*?>)/gi;
-    const plainText = unescape(lowerCased.replace(htmlElementMatcher, ''));
-    
-    // remove punctuation but leave full stops in place so that code namespaces are maintained.
-    const punctuationMatcher = /\,|\?|-|—|\n|\r|\t|{|}/g;
-    const unpunctuatedText = plainText.replace(punctuationMatcher, ' ');
-    
-    // remove duplicated words
-    const words = unpunctuatedText.split(' ');
-    const uniqueWordList = [...(new Set(words))];
-    const uniqueWords = uniqueWordList.join(' ')
-    
-    // remove short and less meaningful words
-    const unneededWordMatcher = /\b(a|an|and|am|also|by|you|I|to|if|of|off|...|for|how|to|the|such|now)\b/gi;
-    
-    let interestingWords = uniqueWords.replace(unneededWordMatcher, '');
-    
-    const programmingTermMatcher = /\b(begin|end|assumptions|assume|...|true|false|summary|item|value|page|this|use)\b/gi;
-    interestingWords = interestingWords.replace(programmingTermMatcher, '');
-    
-    //remove repeated spaces
-    interestingWords = interestingWords.replace(/[ ]{2,}/g, ' ');
-    
-    return interestingWords;
-};
+  const lowerCased = new String(text).toLowerCase();
 
+  // remove all html elements and new lines
+  const htmlElementMatcher = /(<.\*?>)/gi;
+  const plainText = unescape(lowerCased.replace(htmlElementMatcher, ""));
+
+  // remove punctuation but leave full stops in place so that code namespaces are maintained.
+  const punctuationMatcher = /\,|\?|-|—|\n|\r|\t|{|}/g;
+  const unpunctuatedText = plainText.replace(punctuationMatcher, " ");
+
+  // remove duplicated words
+  const words = unpunctuatedText.split(" ");
+  const uniqueWordList = [...new Set(words)];
+  const uniqueWords = uniqueWordList.join(" ");
+
+  // remove short and less meaningful words
+  const unneededWordMatcher =
+    /\b(a|an|and|am|also|by|you|I|to|if|of|off|...|for|how|to|the|such|now)\b/gi;
+
+  let interestingWords = uniqueWords.replace(unneededWordMatcher, "");
+
+  const programmingTermMatcher =
+    /\b(begin|end|assumptions|assume|...|true|false|summary|item|value|page|this|use)\b/gi;
+  interestingWords = interestingWords.replace(programmingTermMatcher, "");
+
+  //remove repeated spaces
+  interestingWords = interestingWords.replace(/[ ]{2,}/g, " ");
+
+  return interestingWords;
+};
 ```
 
 Last thing was to remove double spaces and replace with single spaces and return the final string.
