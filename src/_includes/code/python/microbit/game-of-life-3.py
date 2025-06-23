@@ -1,7 +1,7 @@
 def apply_rules_to_cells():
-    
+
     next_screen = Image()
-    
+
     for led in leds:
         x, y = led[0], led[1]
         neighbours = count_live_neighbours(x, y)
@@ -24,5 +24,5 @@ def apply_rules_to_cells():
             # ... with exactly three live neighbours
             # becomes a live cell, as if by reproduction.
             next_screen.set_pixel(led[0], led[1], 9)
-    
+
     display.show(next_screen)

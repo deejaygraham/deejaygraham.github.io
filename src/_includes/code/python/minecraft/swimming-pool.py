@@ -28,4 +28,3 @@ depth -= 2
 width -= 2
 height -= 1
 world.setBlocks(x, y, z, x + depth, y + height, z + width, block.WATER)
-

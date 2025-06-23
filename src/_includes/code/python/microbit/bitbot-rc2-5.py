@@ -2,21 +2,21 @@ while True:
 
     bitbot.update_lights()
     sleep(100)
-    
+
     msg = radio.receive()
 
     if msg:
-        if msg == 'S':
+        if msg == "S":
             bitbot.stop()
-        elif msg == 'F':
+        elif msg == "F":
             bitbot.forward()
-        elif msg == 'B':
+        elif msg == "B":
             bitbot.reverse()
-        elif msg == 'L':
+        elif msg == "L":
             bitbot.steer_left()
-        elif msg == 'R':
+        elif msg == "R":
             bitbot.steer_right()
-        elif msg == 'W':
+        elif msg == "W":
             bitbot.slower()
-        elif msg == 'Z':
+        elif msg == "Z":
             bitbot.faster()

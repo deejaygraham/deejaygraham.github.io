@@ -1,5 +1,6 @@
 import random
 
+
 class Deck(object):
 
     def __init__(self):
@@ -13,7 +14,7 @@ class Deck(object):
         res = []
         for card in self.cards:
             res.append(str(card))
-        return '\n'.join(res)
+        return "\n".join(res)
 
     def add_card(self, card):
         self.cards.append(card)
@@ -29,7 +30,7 @@ class Deck(object):
         self.cards.sort()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     deck = Deck()
     print(deck)
     deck.shuffle()

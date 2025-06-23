@@ -1,5 +1,5 @@
 class Healthy(Player):
-    
+
     def __init__(self):
         self.face = Image.HAPPY
 

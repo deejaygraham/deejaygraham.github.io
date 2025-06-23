@@ -1,8 +1,9 @@
 from microbit import *
 import radio
 
+
 def wait_for_contact():
-    hello = 'hi'
+    hello = "hi"
     waiting = True
 
     while waiting:
@@ -18,6 +19,7 @@ def wait_for_contact():
             display.set_pixel(2, 2, 0)
             sleep(100)
 
+
 def show_contact_made():
     for i in range(5):
         display.show(Image.HEART_SMALL)
@@ -25,19 +27,20 @@ def show_contact_made():
         display.show(Image.HEART)
         sleep(500)
 
+
 fwd_rev_tilt = 250
 steering_tilt = 250
 
-forward_command = 'F'
-stop_command = 'S'
-left_command = 'L'
-right_command = 'R'
-reverse_command = 'B'
-fast_command = 'Z'
-slow_command = 'W'
-lights_command = 'I'
-horn_command = 'P'
-watchdog_command = 'hi'
+forward_command = "F"
+stop_command = "S"
+left_command = "L"
+right_command = "R"
+reverse_command = "B"
+fast_command = "Z"
+slow_command = "W"
+lights_command = "I"
+horn_command = "P"
+watchdog_command = "hi"
 
 display.scroll("bitBot RC handset")
 
@@ -46,12 +49,12 @@ radio.on()
 wait_for_contact()
 show_contact_made()
 
-last_cmd = ''
+last_cmd = ""
 watchdog_counter = 0
 
 while True:
 
-    cmd = ''
+    cmd = ""
 
     if button_a.was_pressed():
         cmd = lights_command
@@ -81,11 +84,11 @@ while True:
                 display.show(Image.ARROW_W)
                 cmd = left_command
 
-    if cmd == '':
+    if cmd == "":
         display.show(Image.SQUARE_SMALL)
         cmd = stop_command
 
-    if cmd != '' and cmd != last_cmd:
+    if cmd != "" and cmd != last_cmd:
         radio.send(cmd)
         last_cmd = cmd
 

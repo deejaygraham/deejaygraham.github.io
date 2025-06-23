@@ -14,4 +14,4 @@ for x in range(1, 10):
         flea[0] += 1
         display.set_pixel(flea[0], flea[1], 9)
 
-    sleep(500)  
+    sleep(500)

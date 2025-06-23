@@ -6,22 +6,22 @@ all_clues = [
     "Ten paces north",
     "Walk forwards",
     "Look under the seat",
-    "Hooray, you win!"
+    "Hooray, you win!",
 ]
 
 clue_count = len(all_clues)
 clue = 1
 
-radio.config(power=4) # power is 0 -> 7
+radio.config(power=4)  # power is 0 -> 7
 radio.on()
 
 while True:
     # decrease clue number
     if button_a.was_pressed():
         clue = max(clue - 1, 1)
-   # increase clue number
+    # increase clue number
     elif button_b.was_pressed():
-        clue = min(clue +  1, clue_count)
+        clue = min(clue + 1, clue_count)
 
     # broadcast the current clue
     else:

@@ -1,7 +1,6 @@
-
 bitbot = BitBot()
 
-move_duration = 3000 # 3 seconds
+move_duration = 3000  # 3 seconds
 motor_speed_percent = 50
 
 while True:

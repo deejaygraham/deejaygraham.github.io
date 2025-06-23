@@ -11,4 +11,3 @@ while True:
 
     if light_level >= darkness:
         display.scroll("thief!")
-

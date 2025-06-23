@@ -6,7 +6,7 @@ import music
 display.show(Image.HAPPY)
 sleep(1000)
 
-score_file_name = 'score.txt'
+score_file_name = "score.txt"
 score = []
 
 local_files = os.listdir()
@@ -17,7 +17,7 @@ if score_file_name in local_files:
     with open(score_file_name) as score_file:
         line = score_file.readline()
         while line:
-            notes = line.rstrip().split(',')
+            notes = line.rstrip().split(",")
             bar = []
 
             for note in notes:

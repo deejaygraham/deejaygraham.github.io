@@ -1,31 +1,28 @@
 from microbit import *
 import random
 
+
 def fade_out(image, delay=250, minimum=0):
     image = image.copy()
     for times in range(0, 10):
         for x in range(0, 5):
             for y in range(0, 5):
                 brightness = image.get_pixel(x, y)
-                if (brightness > minimum):
+                if brightness > minimum:
                     image.set_pixel(x, y, brightness - 1)
         display.show(image)
         sleep(delay)
 
-        
+
 display.scroll("microbotchi")
 
 # start off as an egg that will hatch in time
-egg = Image("09990:"
-            "90009:"
-            "90009:"
-            "90009:"
-            "09990:")
+egg = Image("09990:" "90009:" "90009:" "90009:" "09990:")
 
 display.show(egg)
 time_before_hatching = random.randint(1, 5)
 sleep(time_before_hatching * 1000)
-    
+
 # initial state
 is_alive = True
 health = 100
@@ -52,7 +49,7 @@ while is_alive:
         sleep(1000)
         happiness = happiness + play_happiness
         awakeness = awakeness + play_awakeness
-        
+
     # feed me
     if button_a.was_pressed():
         for x in range(0, 5):
@@ -63,7 +60,7 @@ while is_alive:
         health = health + food_health
         happiness = happiness + food_happiness
         awakeness = awakeness + food_awakeness
-        
+
     if awakeness > 0:
         if happiness > 50:
             display.show(Image.HAPPY)
@@ -78,10 +75,9 @@ while is_alive:
 
     is_alive = health > 0
 
-#dying 
+# dying
 fade_out(Image.SAD)
 # dead
 display.show(Image.GHOST)
 sleep(10000)
 fade_out(Image.GHOST)
-

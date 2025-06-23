@@ -4,14 +4,14 @@ import random
 pixel_fully_on = 9
 pixel_fully_off = 0
 
-twinkle_probability = 3 
-fading_rate = 4  
+twinkle_probability = 3
+fading_rate = 4
 
 leds = [(x, y) for y in range(0, 5) for x in range(0, 5)]
 
 while True:
 
-    # inspect pixels 
+    # inspect pixels
     # can we turn on any pixels on?
     for led in leds:
         brightness = display.get_pixel(led[0], led[1])

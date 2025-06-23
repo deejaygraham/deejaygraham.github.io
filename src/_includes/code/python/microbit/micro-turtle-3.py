@@ -8,4 +8,3 @@ turtle.pen_down()
 for index in range(4):
     turtle.forward(4)
     turtle.right()
-    

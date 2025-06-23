@@ -1,7 +1,7 @@
 from microbit import *
 import radio
 
-radio.on();
+radio.on()
 
 while True:
 
@@ -9,7 +9,7 @@ while True:
     message = radio.receive()
 
     if message:
-        if message == 'on':
+        if message == "on":
             display.show(Image("99999:" * 5))
         else:
             display.clear()

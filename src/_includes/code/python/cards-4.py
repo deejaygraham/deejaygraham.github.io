@@ -1,4 +1,3 @@
-
 class Deck(object):
 
     def si_stebbins_order(self):
@@ -22,7 +21,7 @@ class Deck(object):
                 number = number - cards
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     deck = Deck()
     print(deck)
     deck.si_stebbins_order()

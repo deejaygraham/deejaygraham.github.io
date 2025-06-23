@@ -4,7 +4,7 @@ import radio
 beacon_id = 1
 
 # Lowest power transmit
-radio.config(power=0) 
+radio.config(power=0)
 radio.on()
 
 while True:

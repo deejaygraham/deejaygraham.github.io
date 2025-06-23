@@ -6,7 +6,7 @@ while True:
 
     temp_in_c = temperature()
     pixel_temp = 0
-    
+
     for x in range(5):
         for y in range(5):
             pixel_temp += 2
@@ -16,5 +16,5 @@ while True:
             # debug only
             # print(str(x) + ', ' + str(y) + ' : ' + str(pixel_temp) + ' -> ' + str(temp_in_c))
             # sleep(500)
-            
+
     sleep(500)

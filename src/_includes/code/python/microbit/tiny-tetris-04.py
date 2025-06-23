@@ -86,7 +86,7 @@ class Board:
                 self.draw(screen)
                 sleep(Frame_Rate_In_Milliseconds)
                 rows_cleared += 1
-                
+
         return rows_cleared
 
 
@@ -107,9 +107,9 @@ while True:
 
     block.hide(display)
 
-    if (button_a.was_pressed()):
+    if button_a.was_pressed():
         block.move_left()
-    elif (button_b.was_pressed()):
+    elif button_b.was_pressed():
         block.move_right()
 
     if block.can_drop(board):

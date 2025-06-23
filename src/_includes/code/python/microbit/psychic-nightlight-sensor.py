@@ -8,7 +8,7 @@ step_size = 10
 # we turn on when light reaches this level or below
 darkness = 20
 
-radio.on();
+radio.on()
 
 while True:
 
@@ -26,8 +26,7 @@ while True:
         # print(light_level)
 
         if light_level <= darkness:
-            radio.send('on')
+            radio.send("on")
         else:
-            radio.send('off')
+            radio.send("off")
         sleep(500)
-

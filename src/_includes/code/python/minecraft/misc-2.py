@@ -23,6 +23,6 @@ world.camera.setPos(x, y + 5, z)
 time.sleep(10)
 
 world.postToChat("Treasure hunt!")
-world.camera.setNormal() 
-# or 
+world.camera.setNormal()
+# or
 # world.camera.setFollow()

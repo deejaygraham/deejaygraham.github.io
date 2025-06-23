@@ -1,8 +1,8 @@
-last_cmd = ''
+last_cmd = ""
 
 while True:
 
-    cmd = ''
+    cmd = ""
 
     if button_a.was_pressed():
         cmd = fast_command
@@ -27,12 +27,12 @@ while True:
             elif side_to_side < -steering_tilt:
                 display.show(Image.ARROW_W)
                 cmd = left_command
-                
-    if cmd == '':
+
+    if cmd == "":
         display.show(Image.SQUARE_SMALL)
         cmd = stop_command
 
-    if cmd != '' and cmd != last_cmd:
+    if cmd != "" and cmd != last_cmd:
         radio.send(cmd)
         last_cmd = cmd
 

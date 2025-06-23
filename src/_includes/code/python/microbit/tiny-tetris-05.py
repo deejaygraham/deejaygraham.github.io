@@ -116,9 +116,9 @@ while True:
 
     block.hide(display)
 
-    if (button_a.was_pressed()):
+    if button_a.was_pressed():
         block.move_left()
-    elif (button_b.was_pressed()):
+    elif button_b.was_pressed():
         block.move_right()
 
     if block.can_drop(board):

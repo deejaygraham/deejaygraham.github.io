@@ -102,7 +102,7 @@ class Board:
 
 
 # Start Game
-display.scroll("Tiny Tetris") 
+display.scroll("Tiny Tetris")
 
 
 block = Block()
@@ -120,9 +120,9 @@ while True:
 
     block.hide(display)
 
-    if (button_a.was_pressed()):
+    if button_a.was_pressed():
         block.move_left()
-    elif (button_b.was_pressed()):
+    elif button_b.was_pressed():
         block.move_right()
 
     if block.can_drop(board):
@@ -136,6 +136,6 @@ while True:
 
         block = Block()
 
-display.scroll("Game Over!") 
-display.scroll("You scored ")       
-display.scroll(str(score)) 
+display.scroll("Game Over!")
+display.scroll("You scored ")
+display.scroll(str(score))

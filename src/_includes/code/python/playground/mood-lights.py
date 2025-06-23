@@ -7,8 +7,8 @@ import time
 brightness_step_size = 0.05
 brightness = brightness_step_size
 
-cpx.pixels.auto_write = False  
-cpx.pixels.brightness = brightness  
+cpx.pixels.auto_write = False
+cpx.pixels.brightness = brightness
 
 PIXELS = 10
 
@@ -30,10 +30,10 @@ while True:
     hue += step_size
     if hue > 1.0:
         hue = 0.0
-    
+
     if cp.button_a:
         brightness = min(brightness + brightness_step_size, 1.0)
-        cpx.pixels.brightness = brightness  
+        cpx.pixels.brightness = brightness
     elif cp.button_b:
         brightness = max(brightness_step_size, brightness - brightness_step_size)
-        cpx.pixels.brightness = brightness  
+        cpx.pixels.brightness = brightness

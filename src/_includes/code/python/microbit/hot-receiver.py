@@ -10,7 +10,7 @@ while True:
 
     if message:
         signal_strength = message[1]
-        percent_strength = ((signal_strength + 255)* 100) / 255
+        percent_strength = ((signal_strength + 255) * 100) / 255
         display.scroll(str(percent_strength))
 
     sleep(200)

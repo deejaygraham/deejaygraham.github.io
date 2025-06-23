@@ -1,11 +1,11 @@
-
 class LineSensor:
-    
+
     def __init__(self, sense_pin):
         self.pin = sense_pin
-        
+
     def read(self):
         return self.pin.read_digital()
+
 
 class LineSensors:
 
@@ -14,7 +14,7 @@ class LineSensors:
         self.right_sensor = LineSensor(right_pin)
 
     # return value depending on orientation:
-    # -1 for left 
+    # -1 for left
     #  0 for straight
     # +1 for right
     def read_position(self):

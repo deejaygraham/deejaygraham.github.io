@@ -5,5 +5,5 @@ radio.on()
 
 while True:
 
-    radio.send('ping')
+    radio.send("ping")
     sleep(500)
