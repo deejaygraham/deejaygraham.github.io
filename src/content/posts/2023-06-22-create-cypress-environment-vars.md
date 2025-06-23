@@ -1,8 +1,6 @@
 ---
 title: Create Environment Variables in Cypress
 tags: [cypress, javascript, code]
-thumbnail: "/assets/img/thumbnails/cypress-420x255.png"
-
 ---
 
 [Cypress](https://cypress.io) allows for greater flexibility in your tests by supporting environment variables to be accessed from a test
@@ -21,11 +19,11 @@ npx cypress run --env deployment=PRODUCTION
 
 Which turns up in the test like this:
 
-{% inlinecode %}
+```javascript
 
 const deployment = Cypress.env("deployment");
 
-{% endinlinecode %}
+```
 
 ### Configuration
 
@@ -38,7 +36,7 @@ exposing the values within that file as environment variables.
 
 #### cypress.Config.js
 
-{% inlinecode %}
+```javascript
 
 const { defineConfig } = require("cypress");
 const fs = require('fs');
@@ -61,4 +59,4 @@ module.exports = defineConfig({
             },
 });
 
-{% endinlinecode %}
+```
