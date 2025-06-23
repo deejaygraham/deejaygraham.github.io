@@ -14,7 +14,6 @@ front of it. The test took a number of hours to gather data so this was the hack
 ### keep-alive.py
 
 ```python
-
 import keyboard, time, sys
 
 
@@ -24,8 +23,8 @@ def keep_alive():
     press_every_n_minutes = 1  # once per minute
     sleep_time = press_every_n_minutes * 60
 
-    thumb_emoji = "\U0001F44D"
-    computer_emoji = "\U0001F5A5\U0000FE0F"
+    thumb_emoji = "\U0001f44d"
+    computer_emoji = "\U0001f5a5\U0000fe0f"
     print(f"Keeping {computer_emoji} awake using {keypress} every {sleep_time} seconds")
 
     while True:
@@ -47,7 +46,6 @@ def current_time():
 
 if __name__ == "__main__":
     keep_alive()
-
 ```
 
 This could be adapted to work on linux or macos fairly easily but, as I said, this was just for me to run on one machine so I've not investigated the system calls for keyboard, system etc. that might 

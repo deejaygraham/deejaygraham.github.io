@@ -24,21 +24,20 @@ is too strong or too weak, that can be tweaked in the radio config at the start 
 from microbit import *
 import radio
 
-display.scroll('flower')
+display.scroll("flower")
 display.show(Image.HAPPY)
 
 # adjust signal strength
 # bigger values are stronger
 signal_strength = 2
-time_between_messages = 1 # seconds
+time_between_messages = 1  # seconds
 
 radio.on()
 radio.config(power=signal_strength)
 
 while True:
-    radio.send('pollen')
+    radio.send("pollen")
     sleep(time_between_messages * 1000)
-
 ```
 
 If needed, you could introduce a finite amount of pollen produced per minute or simply increase the sleep time (time_between_messages) so that a bee takes longer to fill up with pollen.
@@ -53,6 +52,7 @@ consumes the pollen to model bees and larvae consuming what is brought in by the
 from microbit import *
 import radio
 
+
 def show_pollen_level(pollen):
     display.clear()
     count = 0
@@ -63,9 +63,9 @@ def show_pollen_level(pollen):
             count += 1
             if pollen >= count:
                 display.set_pixel(x, y, 9)
-                
-            
-display.scroll('hive')
+
+
+display.scroll("hive")
 
 pollen = 0
 MIN_POLLEN = 0
@@ -81,13 +81,13 @@ time1 = running_time()
 
 while True:
 
-    if accelerometer.was_gesture('shake'):
+    if accelerometer.was_gesture("shake"):
         pollen = 0
 
     # receive pollen from a bee
     message = radio.receive()
-    
-    if message and message == 'pollen':
+
+    if message and message == "pollen":
         pollen = min(pollen + 1, MAX_POLLEN)
 
     if pollen == 0:
@@ -100,7 +100,6 @@ while True:
     if time2 - time1 >= CONSUMPTION_SPEED:
         pollen = max(pollen - 1, MIN_POLLEN)
         time1 = time2
-    
 ```
 
 ### Bee.py
@@ -111,6 +110,7 @@ meter for the bee to show how much pollen they have collected. Crucially, the be
 ```python
 from microbit import *
 import radio
+
 
 def show_pollen_level(pollen):
     display.clear()
@@ -151,5 +151,4 @@ while True:
         pollen = min(pollen + 1, MAX_POLLEN)
 
     show_pollen_level(pollen)
-
 ```

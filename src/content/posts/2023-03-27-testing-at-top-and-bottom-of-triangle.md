@@ -213,41 +213,37 @@ will be familiar to anyone using mocha or chai in the js world or anyone using P
 Ruby RSpec etc.
 
 ```javascript
-describe('The thing I am testing', () => {
-    it('should do this', () => {
-        expect(1 + 1).toBe(2);
-    });
+describe("The thing I am testing", () => {
+  it("should do this", () => {
+    expect(1 + 1).toBe(2);
+  });
 
-    it('ought not to do that', () => {
-        expect('red').toBe('green');
-    });
+  it("ought not to do that", () => {
+    expect("red").toBe("green");
+  });
 });
 ```
 
 ## First Test
 
 ```javascript
+describe("Google", () => {
+  it("Knows about Tech on the Tyne", () => {
+    cy.viewport(1280, 720);
+    cy.intercept("https://www.google.com/search*").as("google");
 
-describe('Google', () => {
-    it('Knows about Tech on the Tyne', () => {
-        cy.viewport(1280, 720);
-        cy.intercept('https://www.google.com/search*').as('google');
+    cy.visit("https://www.google.com/");
 
-        cy.visit('https://www.google.com/');
+    // find reject all button...
+    cy.get("#W0wltc").click();
 
-        // find reject all button...
-        cy.get('#W0wltc').click();
+    cy.get('input[name="q"]').type("Tech on the Tyne");
 
-        cy.get('input[name="q"]')
-            .type('Tech on the Tyne');
+    cy.get("form").submit();
 
-        cy.get('form').submit();
-
-        cy.wait('@google');
-    });
-
+    cy.wait("@google");
+  });
 });
-
 ```
 
 Let's talk about what's going on here because there's a lot.
@@ -265,7 +261,7 @@ Make some action, visit a site, or load a component (later),
 setup viewport, setup interception etc.
 
 ```javascript
-cy.visit('/stuff');
+cy.visit("/stuff");
 ```
 
 ## Act
@@ -273,20 +269,20 @@ cy.visit('/stuff');
 Find by text content on a page
 
 ```javascript
-cy.contains('Google');
-cy.contains('google', { matchCase: false });
+cy.contains("Google");
+cy.contains("google", { matchCase: false });
 ```
 
 Find by css selector: id or by class
 
 ```javascript
-cy.get('#password');
+cy.get("#password");
 ```
 
 Find by XPath
 
 ```javascript
-cy.get('input[type=submit]');
+cy.get("input[type=submit]");
 ```
 
 Will throw if it can't find the password
@@ -296,25 +292,22 @@ Will throw if it can't find the password
 We can chain commands together
 
 ```javascript
-
-cy.get('#password')
-    .type('random password');
-
+cy.get("#password").type("random password");
 ```
 
 ## Assertions
 
 ```javascript
-cy.title().should('contain', 'Google is Awesome');
-cy.get('#password').should('not.contain', 'swordfish');
+cy.title().should("contain", "Google is Awesome");
+cy.get("#password").should("not.contain", "swordfish");
 
-cy.get('#password')
-    .should('not.contain', 'passw0rd')
-    .and('not.contain', 'swordfish');
+cy.get("#password")
+  .should("not.contain", "passw0rd")
+  .and("not.contain", "swordfish");
 
-cy.get('#password')
-    .type('random password')
-    .should('have.value', 'random password');
+cy.get("#password")
+  .type("random password")
+  .should("have.value", "random password");
 ```
 
 ## Common Assertions to Should
@@ -326,118 +319,109 @@ cy.get('#password')
 - not.exist
 
 ```javascript
-cy.get('h1')
-    .invoke('attr', 'class')
-    .should('eq', 'title');
+cy.get("h1").invoke("attr", "class").should("eq", "title");
 ```
 
 Find broken images
 
 ```javascript
-cy.get('.article').within(($article) => {
+cy.get(".article").within(($article) => {
+  if ($article.find("img").length > 0) {
+    cy.get("img").each(($img) => {
+      cy.wrap($img).scrollIntoView().should("be.visible");
 
-    if ($article.find('img').length > 0) {
-        cy.get('img').each(($img) => {
-        cy.wrap($img).scrollIntoView().should('be.visible');
-
-        expect($img[0].naturalWidth).to.be.greaterThan(0);
-        expect($img[0].naturalHeight).to.be.greaterThan(0);
-        });
-    }
+      expect($img[0].naturalWidth).to.be.greaterThan(0);
+      expect($img[0].naturalHeight).to.be.greaterThan(0);
+    });
+  }
 });
 ```
 
 Assign items to variables and use just like normal js.
 
 ```javascript
+const block = cy.get("#doc-content").find("div.notification.is-info.hint-box");
 
-    const block = cy.get('#doc-content')
-      .find('div.notification.is-info.hint-box');
+block.should("be.visible");
 
-      block.should('be.visible');
-
-      block.within(() => {
-        cy.get('p.title').contains('Deploying Your Application');
-          cy.get('p:last').contains('When you deploy your application you will not need to include any of the Sage assemblies.');
-      });
-
+block.within(() => {
+  cy.get("p.title").contains("Deploying Your Application");
+  cy.get("p:last").contains(
+    "When you deploy your application you will not need to include any of the Sage assemblies.",
+  );
+});
 ```
 
 ```javascript
+const anchor = cy.get("a");
 
-const anchor = cy.get('a');
+anchor.contains("Overview");
+anchor.should("have.attr", "href", "./DOC0004_Overview.html");
+anchor.should("have.attr", "target", "_self");
+anchor.should("have.attr", "title", "Show overview");
 
-            anchor.contains('Overview');
-            anchor.should('have.attr', 'href', './DOC0004_Overview.html');
-            anchor.should('have.attr', 'target', '_self');
-            anchor.should('have.attr', 'title', 'Show overview');
-
-            // example button is not active
-            cy.get('span.is-static').contains('Example');
-
+// example button is not active
+cy.get("span.is-static").contains("Example");
 ```
 
 Before and After, beforeEach, afterEach
 
 ```javascript
-
 before(() => {
-cy.clearLocalStorage();
-cy.visit(examplePage);
+  cy.clearLocalStorage();
+  cy.visit(examplePage);
 });
-
 ```
 
 Search within a page element.
 
 ```javascript
-
-const screenshot = cy.get('figure.screenshot').first();
+const screenshot = cy.get("figure.screenshot").first();
 screenshot.scrollIntoView();
-screenshot.should('be.visible');
+screenshot.should("be.visible");
 screenshot.within(() => {
-const img = cy.get('img');
-img.should('have.attr', 'src', '../img/ArchitectureDiagramOnPremise.png');
-img.should('have.attr', 'alt', 'object model');
-cy.get('figcaption').contains('Figure 1: Sage 200 On Premise Architecture');
+  const img = cy.get("img");
+  img.should("have.attr", "src", "../img/ArchitectureDiagramOnPremise.png");
+  img.should("have.attr", "alt", "object model");
+  cy.get("figcaption").contains("Figure 1: Sage 200 On Premise Architecture");
 });
-
 ```
 
 ```javascript
-describe('Weather', () => {
-beforeEach(() => {
-cy.visit('https://bbc.co.uk/weather');
-});
+describe("Weather", () => {
+  beforeEach(() => {
+    cy.visit("https://bbc.co.uk/weather");
+  });
 
-    // before(() => {
-    //     cy.visit('weather');
-    //   });
+  // before(() => {
+  //     cy.visit('weather');
+  //   });
 
-    it ('Has the correct title', () => {
-        cy.title().should('contain', 'BBC Weather');
-        cy.contains('UK Summary');
-    });
+  it("Has the correct title", () => {
+    cy.title().should("contain", "BBC Weather");
+    cy.contains("UK Summary");
+  });
 
-    it('search can be refined by picking from a list', ()=> {
-        cy.get('#ls-c-search__input-label').type('Newcastle');
-        // how do we find this list?
-    });
+  it("search can be refined by picking from a list", () => {
+    cy.get("#ls-c-search__input-label").type("Newcastle");
+    // how do we find this list?
+  });
 
-    it('Specific places give single results', ()=> {
-        // chain together
-        cy.get('#ls-c-search__input-label').type('Gosforth, Newcastle upon Tyne {enter}');
-        cy.contains('Gosforth');
-        cy.contains('rain');
-        cy.contains('Observations');
-        cy.contains('Humidity');
-        cy.contains('Visibility');
-        cy.contains('Pressure');
+  it("Specific places give single results", () => {
+    // chain together
+    cy.get("#ls-c-search__input-label").type(
+      "Gosforth, Newcastle upon Tyne {enter}",
+    );
+    cy.contains("Gosforth");
+    cy.contains("rain");
+    cy.contains("Observations");
+    cy.contains("Humidity");
+    cy.contains("Visibility");
+    cy.contains("Pressure");
 
-        // contains a regional weather video
-        cy.get('.wr-c-video-forecast__video').scrollIntoView();
-    });
-
+    // contains a regional weather video
+    cy.get(".wr-c-video-forecast__video").scrollIntoView();
+  });
 });
 ```
 
@@ -446,166 +430,149 @@ cy.visit('https://bbc.co.uk/weather');
 We can validate API requests to our backend services if we need to get an auth token.
 
 ```javascript
-
-    it('Gets Star Wars Characters', () => {
-        cy.request({
-          url: 'https://swapi.dev/api/people/1',
-          method: 'GET'
-        })
-        .its('body')
-        .should('deep.contain', {
-          name: 'Anakin Skywalker'
-        })
-    })
-
+it("Gets Star Wars Characters", () => {
+  cy.request({
+    url: "https://swapi.dev/api/people/1",
+    method: "GET",
+  })
+    .its("body")
+    .should("deep.contain", {
+      name: "Anakin Skywalker",
+    });
+});
 ```
 
 ## Intercept requests made by components
 
 ```javascript
-cy.intercept('GET', 'https://swapi.dev/api/people/1', {
-statusCode: 200,
-body: {
-name: 'Peter Pan',
-},
-})
+cy.intercept("GET", "https://swapi.dev/api/people/1", {
+  statusCode: 200,
+  body: {
+    name: "Peter Pan",
+  },
+});
 ```
 
 ## Clipboard
 
 ```javascript
-
-    cy.window().then((win) => {
-        win.navigator.clipboard.readText().then((text) => {
-        expect(text).to.contain('Hello this was copied to the clipboard');
-        });
-    });
-
+cy.window().then((win) => {
+  win.navigator.clipboard.readText().then((text) => {
+    expect(text).to.contain("Hello this was copied to the clipboard");
+  });
+});
 ```
 
 ```javascript
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-contentFolder: "\_site/html",
+  contentFolder: "\_site/html",
 
-e2e: {
-baseUrl: 'http://localhost:8080',
-screenshotOnRunFailure: false,
-trashAssetsBeforeRuns: false,
-video: false,
-setupNodeEvents(on, config) {
-// implement node event listeners here
-},
-},
+  e2e: {
+    baseUrl: "http://localhost:8080",
+    screenshotOnRunFailure: false,
+    trashAssetsBeforeRuns: false,
+    video: false,
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
 });
 ```
 
 ## Components
 
 ```javascript
+import Calendar from "../Calendar";
 
-import Calendar from '../Calendar';
+describe("My Calendar", () => {
+  it("Defaults to today's date", () => {
+    cy.mount(<Calendar />);
+    cy.get('[data-component="content"]').should("have.length", 2);
 
-describe('My Calendar', () => {
-it('Defaults to today\'s date',
-() => {
-cy.mount( <Calendar />
-);
-cy.get('[data-component="content"]').should('have.length', 2)
-
-cy.get('#infoPanelTest');
-});
+    cy.get("#infoPanelTest");
+  });
 });
 
 cy.get("input")
-.click()
-.type('All', { delay: 250 })
-.type('{downArrow}', { delay: 250 })
-.type('{downArrow}', { delay: 250 })
-.type('{enter}');
+  .click()
+  .type("All", { delay: 250 })
+  .type("{downArrow}", { delay: 250 })
+  .type("{downArrow}", { delay: 250 })
+  .type("{enter}");
 
-        cy.get("input").should('have.value', 'Not Allowed');
+cy.get("input").should("have.value", "Not Allowed");
 
-        cy.get("input").click().type('Not', { delay: 250 });
+cy.get("input").click().type("Not", { delay: 250 });
 
-        cy.get('[type="radio"]').should('not.be.checked');
+cy.get('[type="radio"]').should("not.be.checked");
 
-         cy.get('input').should('be.disabled');
-         cy.get('input').should('have.attr', 'readonly', 'readonly');
-
+cy.get("input").should("be.disabled");
+cy.get("input").should("have.attr", "readonly", "readonly");
 ```
 
 ```javascript
-
 it('Will call onClick function if no "canClick" prop is provided', () => {
-const onClick = cy.stub();
+  const onClick = cy.stub();
 
-    cy.mount(
-      <CustomLink
-        id='Link'
-        tag={Button}
-        onClick={onClick}
-      >
-        {'Test'}
-      </CustomLink>
-    );
+  cy.mount(
+    <CustomLink id="Link" tag={Button} onClick={onClick}>
+      {"Test"}
+    </CustomLink>,
+  );
 
-    cy.get('button').click().then(() => {
+  cy.get("button")
+    .click()
+    .then(() => {
       expect(onClick).to.be.called;
-      expect(onClick).to.not.be.called
+      expect(onClick).to.not.be.called;
     });
-
 });
-
 ```
 
 ## Spying
 
 ```javascript
-
-const onChangeSpy = cy.spy().as('onChangeSpy')
-cy.mount(<Stepper onChange={onChangeSpy} />)
-cy.get('[data-cy=increment]').click()
-cy.get('@onChangeSpy').should('have.been.calledWith', 1)
+const onChangeSpy = cy.spy().as("onChangeSpy");
+cy.mount(<Stepper onChange={onChangeSpy} />);
+cy.get("[data-cy=increment]").click();
+cy.get("@onChangeSpy").should("have.been.calledWith", 1);
 ```
 
 ```javascript
-
-cy.store().dispatch({type: 'order-date', value: '2022-04-30'});
-cy.store().getState('credit_limit').should('equal', '0.00000');
-
+cy.store().dispatch({ type: "order-date", value: "2022-04-30" });
+cy.store().getState("credit_limit").should("equal", "0.00000");
 ```
 
 ## Custom Commands
 
 ```javascript
-cy.window().its('store').invoke('dispatch', {type: 'description', value: 'my store description'});
+cy.window()
+  .its("store")
+  .invoke("dispatch", { type: "description", value: "my store description" });
 ```
 
 cy.log(hello tech on the tyne)
 
 ```javascript
-it('Gets Luke Skywalker', () => {
+it("Gets Luke Skywalker", () => {
+  cy.intercept("GET", "https://swapi.dev/api/people/1", {
+    statusCode: 200,
+    body: {
+      name: "Peter Pan",
+    },
+  });
 
-        cy.intercept('GET', 'https://swapi.dev/api/people/1', {
-            statusCode: 200,
-            body: {
-              name: 'Peter Pan',
-            },
-          })
-
-
-        cy.request({
-          url: 'https://swapi.dev/api/people/1',
-          method: 'GET'
-        })
-          .its('body')
-          .should('deep.contain', {
-            name: 'Anakin Skywalker'
-          })
-      })
-
+  cy.request({
+    url: "https://swapi.dev/api/people/1",
+    method: "GET",
+  })
+    .its("body")
+    .should("deep.contain", {
+      name: "Anakin Skywalker",
+    });
+});
 ```
 
 ## Component Testing
@@ -621,44 +588,40 @@ My desk calendar control is a simple display of today's day and date with a way 
 We can create a calendar.cy.js file to test it and run cypress to see it pick it up.
 
 ```javascript
+import React from "react";
+import DeskCalendar from "./pathtoo/Calendar";
 
-import React from 'react';
-import DeskCalendar from './pathtoo/Calendar';
+describe("DeskCalendar component", () => {
+  it("Shows a count of the current day in the month", () => {
+    cy.mount(<DeskCalendar />);
 
-describe('DeskCalendar component', () => {
+    cy.get(".day-of-month").should("contain", "28");
+  });
 
-    it('Shows a count of the current day in the month', () => {
-        cy.mount(<DeskCalendar />);
+  it("Shows the day of the week", () => {
+    cy.mount(<DeskCalendar />);
 
-        cy.get('.day-of-month').should('contain', '28');
-    });
+    cy.get(".day-of-week").should("contain", "Tuesday");
+  });
 
-    it('Shows the day of the week', () => {
-        cy.mount(<DeskCalendar />);
+  it("Pressing the previous button shows yesterdays date", () => {
+    cy.mount(<DeskCalendar />);
 
-        cy.get('.day-of-week').should('contain', 'Tuesday');
-    });
+    cy.get("#prev").click();
 
-    it('Pressing the previous button shows yesterdays date', () => {
-        cy.mount(<DeskCalendar />);
+    cy.get(".calendar").contains("Monday");
+    cy.get(".calendar").contains("27");
+  });
 
-        cy.get('#prev').click();
+  it("Pressing the next button multiple times shows date in the future", () => {
+    cy.mount(<DeskCalendar />);
 
-        cy.get('.calendar').contains('Monday');
-        cy.get('.calendar').contains('27');
-    });
+    cy.get("#next").click().click();
 
-    it('Pressing the next button multiple times shows date in the future', () => {
-        cy.mount(<DeskCalendar />);
-
-        cy.get('#next').click().click();
-
-        cy.get('.calendar').contains('Thursday');
-        cy.get('.calendar').contains('30');
-    });
-
+    cy.get(".calendar").contains("Thursday");
+    cy.get(".calendar").contains("30");
+  });
 });
-
 ```
 
 ## Component-Index.html
@@ -741,11 +704,9 @@ With the styling fixed we can see that the viewport isnt what we need to be (500
 in the config or we can use the viewport command :
 
 ```javascript
-
 beforeEach(() => {
-cy.viewport(1280, 720);
+  cy.viewport(1280, 720);
 });
-
 ```
 
 Now we'll move onto the tests. Each one runs and we can see them in the editor, we can expand each one and step
@@ -756,9 +717,7 @@ through them to see before and after states. We can examine the DOM using dev to
 Similar to console.log(args);
 
 ```javascript
-
-cy.log('hello');
-
+cy.log("hello");
 ```
 
 ## Its and Invoke
@@ -767,22 +726,19 @@ Get a Property, Call a function
 Example, get sessionStorage property of a window
 
 ```javascript
-cy.window().its('sessionStorage');
-
+cy.window().its("sessionStorage");
 ```
 
 Redux
 
 ```javascript
-
-cy.window().its('store');
-
+cy.window().its("store");
 ```
 
 ```javascript
-
-cy.window().its('store').invoke('dispatch', {type: 'description', value: 'smol'});
-
+cy.window()
+  .its("store")
+  .invoke("dispatch", { type: "description", value: "smol" });
 ```
 
 ## Commands in Component.js
@@ -793,31 +749,42 @@ some things you can do with its
 E.g.
 
 ```javascript
-
 // get redux store
 // e.g.
 // cy.store()...
-Cypress.Commands.add('store', () => {
-return cy.log('Redux - Store').window({ log: false }).its('store', { log: false });
+Cypress.Commands.add("store", () => {
+  return cy
+    .log("Redux - Store")
+    .window({ log: false })
+    .its("store", { log: false });
 });
 
 // get state of current redux value (node) or entire state
 // const state = cy.store().getState();
-Cypress.Commands.add('getState', (node) => {
-return node
-? cy.log(`Redux - State[${node}]`).window({ log: false }).its('store', { log: false }).invoke('getState').its(node.toString())
-: cy.log('Redux - State').window({ log: false }).its('store', { log: false }).invoke('getState');
+Cypress.Commands.add("getState", (node) => {
+  return node
+    ? cy
+        .log(`Redux - State[${node}]`)
+        .window({ log: false })
+        .its("store", { log: false })
+        .invoke("getState")
+        .its(node.toString())
+    : cy
+        .log("Redux - State")
+        .window({ log: false })
+        .its("store", { log: false })
+        .invoke("getState");
 });
 
 // dispatch a type and value object to the redux store
 // e.g.
 // cy.store().dispatch({type: 'name', value: 'Alice'});
-Cypress.Commands.add('dispatch', (obj) => {
-const { type, ...data } = obj;
-return cy.log(`Redux - Dispatch: ${type}`, data)
-.window({ log: false })
-.its('store', { log: false })
-.invoke('dispatch', obj);
+Cypress.Commands.add("dispatch", (obj) => {
+  const { type, ...data } = obj;
+  return cy
+    .log(`Redux - Dispatch: ${type}`, data)
+    .window({ log: false })
+    .its("store", { log: false })
+    .invoke("dispatch", obj);
 });
-
 ```

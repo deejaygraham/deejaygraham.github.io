@@ -8,18 +8,29 @@ WIP - Early experiment in creating a choir for three or more microbits.
 ## Code
 
 ```python
-
 from microbit import *
 import radio
 import music
 
+
 def separate_note(note):
-    return note.split(':')
+    return note.split(":")
+
 
 def note_to_midi(note):
     note_map = {
-        'C': 0, 'C#': 1, 'D': 2, 'D#': 3, 'E': 4, 'F': 5, 'F#': 6,
-        'G': 7, 'G#': 8, 'A': 9, 'A#': 10, 'B': 11
+        "C": 0,
+        "C#": 1,
+        "D": 2,
+        "D#": 3,
+        "E": 4,
+        "F": 5,
+        "F#": 6,
+        "G": 7,
+        "G#": 8,
+        "A": 9,
+        "A#": 10,
+        "B": 11,
     }
 
     # Extract the note and octave from the input
@@ -36,16 +47,19 @@ def note_to_midi(note):
     midi_value = note_map[note_name] + (octave + 1) * 12
     return midi_value
 
+
 def midi_to_note_name(midi_value):
-    note_names = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+    note_names = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 
     note_name = note_names[midi_value % 12]
     octave = (midi_value // 12) - 1
 
     return "{}{}".format(note_name, octave)
 
+
 def is_rest(note):
-    return note == 'R' or note == 'r'
+    return note == "R" or note == "r"
+
 
 def harmonize(note, interval):
     parts = separate_note(note)
@@ -62,29 +76,33 @@ def harmonize(note, interval):
 
     return harmony_note
 
+
 def harmonize_all(notes, interval):
-    
+
     if interval == 0:
         return notes
-    
+
     harmonized = []
-    
+
     for note in notes:
         harmony = harmonize(note, interval)
         harmonized.append(harmony)
-    
+
     return notes
-  
+
+
 def encode_notes_message(notes):
-    commalist = ','.join(score)
+    commalist = ",".join(score)
     return "NOTES={}".format(commalist)
+
 
 def decode_notes_message(message):
     _, notes = message.split("=")
-    return notes.split(',')
-    
+    return notes.split(",")
+
+
 # notes are
-score = ['C4:4', 'D4:4', 'E4:4', 'F4:4', 'G4:4', 'A4:4', 'B4:4']
+score = ["C4:4", "D4:4", "E4:4", "F4:4", "G4:4", "A4:4", "B4:4"]
 
 # choir leader
 leader = False
@@ -93,7 +111,7 @@ leader = False
 # harmonizer
 semi_tones = 0
 
-display.scroll('Harmony')
+display.scroll("Harmony")
 radio.on()
 
 while True:
@@ -101,11 +119,11 @@ while True:
     wallpaper = Image.SQUARE if leader else Image.MUSIC_CROTCHET
     display.show(wallpaper)
 
-    if accelerometer.was_gesture('shake'):
+    if accelerometer.was_gesture("shake"):
         leader = not leader
-            
+
     if leader:
-        
+
         # send out notes
         # send out go signal
         if button_a.was_pressed():
@@ -141,9 +159,7 @@ while True:
             elif message.startswith("PLAY"):
                 harmony = harmonize_all(score, semi_tones)
                 music.play(harmony)
-            
+
 
 # print(harmonize('C5', 12))
-
-
 ```

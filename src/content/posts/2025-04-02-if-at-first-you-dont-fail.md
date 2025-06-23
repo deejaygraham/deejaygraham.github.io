@@ -27,14 +27,13 @@ Now let's say that add works as expected but subtract has a coding error:
 ### maths.py
 
 ```python
-
 def add(first, second):
     return first + second
+
 
 def subtract(first, second):
     # spot the subtle error
     return first * second + 22
-
 ```
 
 ## Test
@@ -44,11 +43,11 @@ Now let's write a test for the add function (and ignore what I normally say abou
 ```python
 import unittest
 
+
 class TestMaths(unittest.TestCase):
 
     def test_addition(self):
         self.assertEqual(add(2, 3), 5)
-
 ```
 
 This all works beautifully and gives us the expected result. We don't make sure the test fails first (as TDD says we should) but 
@@ -62,6 +61,7 @@ the name of the test so that it all runs.
 
 ```python
 import unittest
+
 
 class TestMaths(unittest.TestCase):
 

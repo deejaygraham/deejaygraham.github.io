@@ -20,9 +20,7 @@ npx cypress run --env deployment=PRODUCTION
 Which turns up in the test like this:
 
 ```javascript
-
 const deployment = Cypress.env("deployment");
-
 ```
 
 ### Configuration
@@ -37,26 +35,23 @@ exposing the values within that file as environment variables.
 #### cypress.Config.js
 
 ```javascript
-
 const { defineConfig } = require("cypress");
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 module.exports = defineConfig({
-            e2e: {
-                        setupNodeEvents(on, config) {
+  e2e: {
+    setupNodeEvents(on, config) {
+      // .. code to resolve the path to the env file...
+      const data = fs.readFileSync(pathToFile, "utf-8");
+      const postmanConfig = JSON.parse(data);
 
-                                    // .. code to resolve the path to the env file...
-                                    const data = fs.readFileSync(pathToFile, 'utf-8');
-                                    const postmanConfig = JSON.parse(data);
+      postmanConfig.values.forEach((x) => {
+        config.env[x.key] = x.value;
+      });
 
-                                    postmanConfig.values.forEach(x => {
-                                                config.env[x.key] = x.value;
-                                    });
-
-                                    return config;
-                        },
-            },
+      return config;
+    },
+  },
 });
-
 ```

@@ -18,22 +18,20 @@ gettting started sample code to play around with the voice used for this example
 
 
 ```python
-
-import pyttsx3 
+import pyttsx3
 
 engine = pyttsx3.init()
-engine.setProperty('rate', 125)
-engine.setProperty('volume',1.0)  
+engine.setProperty("rate", 125)
+engine.setProperty("volume", 1.0)
 
 # list current voices
-voices = engine.getProperty('voices') 
+voices = engine.getProperty("voices")
 # Index 0 is male, 1 is female
-engine.setProperty('voice', voices[1].id)  
+engine.setProperty("voice", voices[1].id)
 
-markov = MarkovGenerator('example source text here')
+markov = MarkovGenerator("example source text here")
 text = markov.generate()
 
 engine.say(text)
 engine.runAndWait()
-
 ```

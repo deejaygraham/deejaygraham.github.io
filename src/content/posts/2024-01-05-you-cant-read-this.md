@@ -177,31 +177,29 @@ export const decodeScript = (text) => {
 ## Client Tests
 
 ```javascript
-
-import { decodeScript } from '../scriptDecoder';
-import { TextEncoder, TextDecoder } from 'util';
+import { decodeScript } from "../scriptDecoder";
+import { TextEncoder, TextDecoder } from "util";
 
 // patch because jsdom doesn't support text decoder
 Object.assign(global, { TextDecoder });
 
-describe('Protected Content', () => {
+describe("Protected Content", () => {
+  const plainTextScript = '{"version":"1.5","todo":"alert(\'hello world\')"}';
+  const utf8EncodedScript =
+    "eyJ2ZXJzaW9uIjoiMS41IiwidG9kbyI6ImFsZXJ0KCdoZWxsbyB3b3JsZCcpIn0=";
 
-    const plainTextScript = '{"version":"1.5","todo":"alert(\'hello world\')"}';
-    const utf8EncodedScript = 'eyJ2ZXJzaW9uIjoiMS41IiwidG9kbyI6ImFsZXJ0KCdoZWxsbyB3b3JsZCcpIn0=';
+  it("Empty text content is unchanged.", () => {
+    expect(decodeScript("")).toBe("");
+  });
 
-    it('Empty text content is unchanged.', () => {
-        expect(decodeScript('')).toBe('');
-    });
+  it("Plain text json content is unchanged.", () => {
+    expect(decodeScript(plainTextScript)).toBe(plainTextScript);
+  });
 
-    it('Plain text json content is unchanged.', () => {
-        expect(decodeScript(plainTextScript)).toBe(plainTextScript);
-    });
-
-    it('Encoded UTF8 text is decoded.', () => {
-        expect(decodeScript(utf8EncodedScript)).toBe(plainTextScript);
-    });
+  it("Encoded UTF8 text is decoded.", () => {
+    expect(decodeScript(utf8EncodedScript)).toBe(plainTextScript);
+  });
 });
-
 ```
 
 ## Refactor

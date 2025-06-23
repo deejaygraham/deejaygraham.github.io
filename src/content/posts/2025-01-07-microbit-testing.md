@@ -61,8 +61,8 @@ after flashing the program.
 ### micro-assert.py
 
 ```python
-
 from microbit import display, Image
+
 
 def micro_assert(value, message=None):
     if not value:
@@ -70,20 +70,24 @@ def micro_assert(value, message=None):
             message = "Assertion failed"
         raise Exception(message)
 
+
 def micro_assert_true(value, message=None):
     if message is None:
         message = "Expected: {}, actual: {}".format(True, value)
     micro_assert(value, message)
+
 
 def micro_assert_false(value, message=None):
     if message is None:
         message = "Expected: {}, actual: {}".format(False, value)
     micro_assert(not value, message)
 
+
 def micro_assert_equal(expected, actual, message=None):
     if message is None:
         message = "Expected: {}, actual: {}".format(expected, actual)
     micro_assert(expected == actual, message)
+
 
 def micro_assert_empty(items, message=None):
     expected = 0
@@ -92,8 +96,10 @@ def micro_assert_empty(items, message=None):
         message = "List expected: {} items, actual: {}".format(expected, actual)
     micro_assert(expected == actual, message)
 
+
 def micro_assert_fail(message):
     raise Exception(message)
+
 
 def micro_assert_image_equal(expected, actual):
     expected_width = expected.width()
@@ -119,6 +125,7 @@ def micro_assert_image_equal(expected, actual):
             )
             micro_assert_equal(expected_pixel, actual_pixel, message)
 
+
 def micro_assert_display_equal(expected):
     for x in range(5):
         for y in range(5):
@@ -128,7 +135,6 @@ def micro_assert_display_equal(expected):
                 x, y, expected_pixel, actual_pixel
             )
             micro_assert_equal(expected_pixel, actual_pixel, message)
-
 ```
 
 ### Main.py

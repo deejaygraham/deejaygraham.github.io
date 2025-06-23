@@ -14,15 +14,13 @@ In the early development of this, I discovered a good way to emulate a set of bu
 repeat that every loop.
 
 ```python
-
 from microbit import *
 import music
 
 while True:
 
-  music.play("C1:1")
-  sleep(1000)
-
+    music.play("C1:1")
+    sleep(1000)
 ```
 
 Flashing this to several devices was really effective in giving the frog vibe. 
@@ -34,23 +32,22 @@ note and octave are randomly assigned, each bird picks an octave then notes stay
 with notes from extreme low and high octaves playing together. 
 
 ```python
-
 from microbit import *
 import random
 import music
 
 display.show(Image.DUCK)
 
-note_names = [ 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B' ]
+note_names = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 base_octave = random.randint(2, 8)
 note_lengths = [1, 2, 4, 8]
 song = []
 
 for x in range(random.randint(1, 8)):
-  note_name = random.choice(note_names)
-  octave = base_octave + random.randint(-1, 1)
-  length = random.choice(note_lengths)
-  song.append("{}{}:{}".format(note_name, octave, length))
+    note_name = random.choice(note_names)
+    octave = base_octave + random.randint(-1, 1)
+    length = random.choice(note_lengths)
+    song.append("{}{}:{}".format(note_name, octave, length))
 
 sound_threshold = 100  # 255 max
 microphone.sound_level()  # discard first
@@ -60,7 +57,7 @@ while True:
     display.set_pixel(2, 2, 9)
 
     for x in range(random.randint(1, len(song))):
-      music.play(song[x])
+        music.play(song[x])
 
     display.set_pixel(2, 2, 0)
 
@@ -71,7 +68,6 @@ while True:
         time_to_next_call = random.randint(1000, 5000)
 
     sleep(time_to_next_call)
-
 ```
 
 Having several microbits in this bird orchestra still feels a bit like starting a 90s dialup modem but some songs can be genuinely nice or at least interesting. One thing that helped the musicality is keeping the note lengths to the more standard 1, 2, 4, and 8 note durations rather than just a 

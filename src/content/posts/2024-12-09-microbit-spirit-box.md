@@ -28,6 +28,7 @@ from microbit import *
 import random
 import speech
 
+
 # Has the temperature changed?
 def temperature_trigger():
     temp_now = temperature()
@@ -81,7 +82,6 @@ while True:
             sleep(random.randint(500, 5000))
 
     sleep(random.randint(1000, 5000))
-
 ```
 
 The thresholds set up at the start of the program were chosen mostly at random so may need tuning when using this for a 

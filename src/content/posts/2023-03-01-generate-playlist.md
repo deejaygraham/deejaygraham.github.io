@@ -53,38 +53,36 @@ I've been playing around with my specific mp3 player and noticed a few problems.
 when on the player itself. I also noticed that the player can use extended m3u file format so I added a tiny bit of metadata to the front of each file with the album and artist. The folder structure in place is artist\album so I just used the parts of the path for each folder get the album and artist, rather than reading specific mp3 tags from the files themselves.
 
 ```python
-
 import os
 import glob
 
 # BEWARE specific path mapped to the SD card mounted on my machine.
-music_folder = '/Volumes/H2' #os.getcwd()
-music_filter = '*.mp3'
+music_folder = "/Volumes/H2"  # os.getcwd()
+music_filter = "*.mp3"
 
-for (path, subdirs, files) in os.walk(music_folder):
+for path, subdirs, files in os.walk(music_folder):
     os.chdir(path)
-    relative_path = path.replace(music_folder + '/', '').replace('/', '\\')
+    relative_path = path.replace(music_folder + "/", "").replace("/", "\\")
 
     if glob.glob(music_filter) != []:
         track_list = []
         for mp3_name in glob.glob(music_filter):
-            track_list.append(relative_path + '\\' + mp3_name)
+            track_list.append(relative_path + "\\" + mp3_name)
 
         parts = os.path.split(path)
-        artist = parts[0].split('/')[-1]
+        artist = parts[0].split("/")[-1]
         album = parts[1]
-        filename = artist.replace(' ', '_') + '_' + album.replace(' ', '_') + '.m3u'
+        filename = artist.replace(" ", "_") + "_" + album.replace(" ", "_") + ".m3u"
 
-        playlist = open(music_folder + '/' + filename, 'w')
-        playlist.write('#EXTM3U\n')
-        playlist.write('#EXTALB:' + album + '\n')
-        playlist.write('#EXTART:' + artist + '\n')
-        
+        playlist = open(music_folder + "/" + filename, "w")
+        playlist.write("#EXTM3U\n")
+        playlist.write("#EXTALB:" + album + "\n")
+        playlist.write("#EXTART:" + artist + "\n")
+
         for track in sorted(track_list):
-            playlist.write(track + '\n')
+            playlist.write(track + "\n")
 
         playlist.close()
 
 os.chdir(music_folder)
-
 ```

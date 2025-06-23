@@ -24,10 +24,11 @@ at points in the process.
 ```python
 import random
 
+
 def clean_source(source):
-    '''
-        Return a list of words with some punctuation removed
-    '''
+    """
+    Return a list of words with some punctuation removed
+    """
     text = (
         source.replace(".", "")
         .replace(",", "")
@@ -39,12 +40,13 @@ def clean_source(source):
     # remove blank words
     words = [word.lower() for word in split_text if word]
     return words
-    
+
+
 def build_model(source, ngram_size):
-    '''
-        Build a markov model from a source text.
-        Model is a dictionary of words/phrases -> list of potential next words
-    '''
+    """
+    Build a markov model from a source text.
+    Model is a dictionary of words/phrases -> list of potential next words
+    """
     words = clean_source(source)
 
     model = {}
@@ -84,7 +86,7 @@ def generate_text(model, ngram_size, min_length):
 
         text.append(next_word)
         i += 1
-        if i > min_length: 
+        if i > min_length:
             break
 
     return " ".join(text)
@@ -95,20 +97,18 @@ def generate_text(model, ngram_size, min_length):
 Handling text generation becomes a little easier if we wrap the intialisation in a class.
 
 ```python
-
 class MarkovGenerator:
-    
+
     def __init__(self, text):
-        self.source = text        
+        self.source = text
         self.phrase_size = 1
         self.model = build_model(self.source, self.phrase_size)
-        
-    def generate(self, length = 0):
-        
+
+    def generate(self, length=0):
+
         if length == 0:
             length = random.randint(5, 30)
         return generate_text(self.model, self.phrase_size, length)
-
 ```
 
 ### sandia.py
@@ -140,5 +140,4 @@ markov = MarkovGenerator(sandia_messages)
 while True:
     text = markov.generate()
     speech.say(text)
-
 ```

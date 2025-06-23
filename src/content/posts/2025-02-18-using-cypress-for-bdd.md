@@ -65,7 +65,7 @@ export default defineConfig({
         "file:preprocessor",
         createBundler({
           plugins: [createEsbuildPlugin(config)],
-        })
+        }),
       );
 
       // Make sure to return the config object as it might have been modified by the plugin.
@@ -118,7 +118,7 @@ Then("I should see a search bar", () => {
   cy.get("input").should(
     "have.attr",
     "placeholder",
-    "Search without being tracked"
+    "Search without being tracked",
   );
 });
 ```

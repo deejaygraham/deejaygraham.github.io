@@ -27,6 +27,7 @@ The decision to push all the flakes up to the top of the virtual screen means th
 from microbit import *
 import random
 
+
 class Snowflake:
     def __init__(self):
         self.x = random.randint(0, 4)
@@ -36,7 +37,7 @@ class Snowflake:
     def draw(self):
         if self.y >= 0:
             display.set_pixel(self.x, self.y, 0)
-            
+
         self.y = min(self.y + 1, 4)
 
         if self.y >= 0:
@@ -61,12 +62,12 @@ class SnowGlobe:
         self.speed = 50
         for flake in self.snow:
             flake.recycle()
-            
+
     def draw(self):
         for flake in self.snow:
             sleep(self.speed)
             flake.draw()
-            
+
 
 globe = SnowGlobe()
 
@@ -74,15 +75,14 @@ snowflake = Image("90909:04940:49094:04940:90909")
 display.show(snowflake)
 sleep(2000)
 display.clear()
-        
+
 while True:
 
-    globe.draw()  
-    
+    globe.draw()
+
     if accelerometer.was_gesture("shake"):
         display.clear()
         globe.shake()
-
 ```
 
 I'm not super happy with the starting snowflake graphic but it is difficult to 
