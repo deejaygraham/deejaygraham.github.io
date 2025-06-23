@@ -7,7 +7,6 @@ tags: [code, processing, python]
 A tiny processing script to generate a fake mountain range on the horizon.
 
 ```python
-
 size(420, 255)
 
 background(255)
@@ -32,7 +31,6 @@ for x in range(border, width - border, step):
     lastx = x
     lasty = y
     ynoise += noise_level
-
 ```
 
 I added a light gray horizontal line for comparison.

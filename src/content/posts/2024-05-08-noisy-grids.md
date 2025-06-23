@@ -15,10 +15,9 @@ using a basic set of points shown as circles in an arrangement across and down t
 First we have the normal grid pattern with some pleasing colour choices:
 
 ```python
-
 size(1190, 397)
 
-background_colour = color(36, 36, 36) 
+background_colour = color(36, 36, 36)
 background(background_colour)
 fill(background_colour)
 
@@ -35,23 +34,22 @@ yoff = 0.0
 lastx = -1
 lasty = -1
 
-for y in range(yspacing/2, height, yspacing):
+for y in range(yspacing / 2, height, yspacing):
     lasty = -1
     lasty = -1
     xoff = 0.0
-    
-    for x in range (xspacing/2, width, xspacing):
+
+    for x in range(xspacing / 2, width, xspacing):
         xvalue = x
         yvalue = y
-        
+
         circle(xvalue, yvalue, radius)
-        
+
         xoff += noise_increment
         lastx = xvalue
         lasty = yvalue
-        
-    yoff += noise_increment
 
+    yoff += noise_increment
 ```
 
 Note some unused variables lastx, lasty, xoff, yoff, noise_increment are there to make the code work when we introduce some pertubation later.

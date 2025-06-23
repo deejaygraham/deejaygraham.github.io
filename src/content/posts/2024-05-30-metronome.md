@@ -11,35 +11,33 @@ Some of the existing programs for metronomes on the microbit rely on the music p
 the microbit to interpret, say, an 'A6' message for 1/16th note then fill in the rest of the time with an 'R' rest. This is even more noticeable if there is any other processing to do within the loop.
 
 ```python
-
 from microbit import *
 import music
-    
+
 tempo_step_size = 5
 tempo = 60
 
-tick_frequency = 1760 # super high version of A
-tick_duration_milliseconds = 20 
+tick_frequency = 1760  # super high version of A
+tick_duration_milliseconds = 20
 display.scroll(str(tempo))
 
 while True:
-    
+
     down = button_a.was_pressed()
     up = button_b.was_pressed()
-    
+
     if down and up:
         display.scroll(str(tempo))
-        
+
     if down:
         tempo = max(10, tempo - tempo_step_size)
-        
+
     if up:
         tempo = min(tempo + tempo_step_size, 255)
-        
+
     music.pitch(tick_frequency, tick_duration_milliseconds)
     wait = ((60 / tempo) * 1000) - tick_duration_milliseconds
-    sleep(int(wait))   
-
+    sleep(int(wait))
 ```
 
 Here, I've tried to take up as little time as possible in outputting a pitch. 

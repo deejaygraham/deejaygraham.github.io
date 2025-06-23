@@ -14,7 +14,6 @@ in the way that birds do, if they hear someone else cheeping nearby will increas
 their territorial cheeping to drown them out. 
 
 ```python
-
 from microbit import *
 import random
 import speech
@@ -62,7 +61,6 @@ while True:
         time_to_next_call = random.randint(500, 5000)
 
     sleep(time_to_next_call)
-
 ```
 
 In retrospect, the voice synth on the microbit isn't very good for creating understandable words (unless you know what it's trying to say). I think this would be improved by 

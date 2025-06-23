@@ -15,74 +15,66 @@ correct pitch and with the correct timing. I paired invidiual words with note na
 requires frequency values rather than note names. I added a "rest" command to make sure that pauses in the music were handled. 
 
 ```python
-
 from microbit import *
 import speech
 
 note_name_to_value = {
-	"c3"  : "58",
-	"cs3" : "55",
-	"d3"  : "52",
-	"ds3" : "49",
-	"e3"  : "46",
-	"f3"  : "44",
-	"fs3" : "42",
-	"g3"  : "39",
-	"gs3" : "37",
-	"a3"  : "35",
-	"as3" : "33",
-	"b3"  : "31",
-	"c4"  : "29",
-	"cs4" : "28",
-	"d4"  : "26",
-	"ds4" : "25",
-	"e4"  : "23",
-	"f4"  : "22",
-	"fs4" : "21",
-	"g4"  : "20"
+    "c3": "58",
+    "cs3": "55",
+    "d3": "52",
+    "ds3": "49",
+    "e3": "46",
+    "f3": "44",
+    "fs3": "42",
+    "g3": "39",
+    "gs3": "37",
+    "a3": "35",
+    "as3": "33",
+    "b3": "31",
+    "c4": "29",
+    "cs4": "28",
+    "d4": "26",
+    "ds4": "25",
+    "e4": "23",
+    "f4": "22",
+    "fs4": "21",
+    "g4": "20",
 }
 
 song = [
-	"This:g4",
-	"was:fs4",
-	"a:e4",
-	"try:e4",
-	"umph:fs4"
-	"rest:1000"
-	"I'm:a3"
-	"making:g4",
-	"a:fs4",
-	"note:e4",
-	"here:fs4",
-	"rest:500",
-	"huge:d4",
-	"rest:200",
-	"suck:e4",
-	"sess:a3"
-	"rest:1000",
-	"it's:a3",
-	"hard:e4",
-	"to:fs4",
-	"oh:g4",
-	"ver:e4"
-	"state:cs4"
-	"my:d4",
-	"sat:e4",
-	"tis:a3",
-	"fack:a3",
-	"shun:fs4"
+    "This:g4",
+    "was:fs4",
+    "a:e4",
+    "try:e4",
+    "umph:fs4" "rest:1000" "I'm:a3" "making:g4",
+    "a:fs4",
+    "note:e4",
+    "here:fs4",
+    "rest:500",
+    "huge:d4",
+    "rest:200",
+    "suck:e4",
+    "sess:a3" "rest:1000",
+    "it's:a3",
+    "hard:e4",
+    "to:fs4",
+    "oh:g4",
+    "ver:e4" "state:cs4" "my:d4",
+    "sat:e4",
+    "tis:a3",
+    "fack:a3",
+    "shun:fs4",
 ]
 
 while True:
-	for chunk in song:
-		word, value = chunk.split(":") 
-		
-		if word == "rest":
-			sleep(int(value))
-		else:
-			phoneme = speech.translate(word)
-			speech.sing("#" + note_name_to_value[value] + phoneme)
+    for chunk in song:
+        word, value = chunk.split(":")
 
+        if word == "rest":
+            sleep(int(value))
+        else:
+            phoneme = speech.translate(word)
+            speech.sing("#" + note_name_to_value[value] + phoneme)
 ```
 
 Words need to be translated into phonemes before singing so that they are in the correct format for the sing API.

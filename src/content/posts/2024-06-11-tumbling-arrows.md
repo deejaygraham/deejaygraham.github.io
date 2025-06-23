@@ -10,24 +10,25 @@ draw arrows at specific rotations around a circle using pushMatrix, translate an
 What started as a test piece turned into something that looked quite nice standing on its own (see screenshot). So here it is. 
 
 ```python
-
 size(1500, 500)
 stroke(0)
 
+
 def arrow(x, y, len, head, angle):
     pushMatrix()
-    translate(x, y) # move to blunt end of arrow
-    
+    translate(x, y)  # move to blunt end of arrow
+
     rotate(radians(angle))
-    
-    line(0, 0, len, 0) # shaft
-    line(len, 0, len - head, - head) # left hand of head
-    line(len, 0, len - head, + head) # right hand of head
-    
+
+    line(0, 0, len, 0)  # shaft
+    line(len, 0, len - head, -head)  # left hand of head
+    line(len, 0, len - head, +head)  # right hand of head
+
     popMatrix()
-   
+
+
 arrows = 12
-angle = 0.0 
+angle = 0.0
 delta = 360.0 / arrows
 
 arrow_length = 50
@@ -36,8 +37,7 @@ x = 50
 y = 150
 
 for i in range(arrows):
-    arrow(x, y, arrow_length, arrow_head, angle) # rotate from 3 o clock
+    arrow(x, y, arrow_length, arrow_head, angle)  # rotate from 3 o clock
     angle += delta
     x += arrow_length + arrow_head
-
 ```
