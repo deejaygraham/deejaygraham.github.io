@@ -40,18 +40,23 @@ Let's make a cube of stone, defined by the player's current position, and put th
 on top of it:
 
 ```python
-
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 
 world = minecraft.Minecraft.create()
 playerPosition = world.player.getTilePos()
 
-world.setBlocks(playerPosition.x - 1, playerPosition.y, playerPosition.z - 1,
-playerPosition.x + 1, playerPosition.y + 2, playerPosition.z + 1, block.STONE.id)
+world.setBlocks(
+    playerPosition.x - 1,
+    playerPosition.y,
+    playerPosition.z - 1,
+    playerPosition.x + 1,
+    playerPosition.y + 2,
+    playerPosition.z + 1,
+    block.STONE.id,
+)
 
 world.player.setPos(playerPosition.x, playerPosition.y + 3, playerPosition.z)
-
 ```
 
 ### Gonna Build a House
@@ -63,7 +68,6 @@ Probably the easiest way to do that is to trace the outline of the building and
 drop a block at each position.
 
 ```python
-
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 
@@ -75,10 +79,18 @@ house_depth = 10
 house_width = 10
 wall_thickness = 1
 
-world.setBlocks(x, y, z, x + house_width, y + house_height, z + house_depth, block.STONE.id)
-world.setBlocks(x + wall_thickness, y, z + wall_thickness,
-x + house_width - wall_thickness, y + house_height, z + house_depth - wall_thickness,
-block.STONE_BRICK.id)
+world.setBlocks(
+    x, y, z, x + house_width, y + house_height, z + house_depth, block.STONE.id
+)
+world.setBlocks(
+    x + wall_thickness,
+    y,
+    z + wall_thickness,
+    x + house_width - wall_thickness,
+    y + house_height,
+    z + house_depth - wall_thickness,
+    block.STONE_BRICK.id,
+)
 ```
 
 Nice and easy but now we need a roof and a doorway and a swimming pool and maybe a lava moat...

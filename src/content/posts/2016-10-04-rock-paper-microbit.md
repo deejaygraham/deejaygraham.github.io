@@ -44,13 +44,7 @@ LED "pixel" - 0 is off and 9 is full brightness. For example, a square would be 
 by lighting up the edges of the grid and leaving the inside of the grid dark. Like this:
 
 ```python
-
-Image("99999:"
-    "90009:"
-    "90009:"
-    "90009:"
-    "99999")
-
+Image("99999:" "90009:" "90009:" "90009:" "99999")
 ```
 
 ## Clues

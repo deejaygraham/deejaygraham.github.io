@@ -90,13 +90,11 @@ Once that's done, we are ready to start programming in Minecraft. First you will
 to create a new python source file, say hello.py, like this:
 
 ```python
-
 from mcpi.minecraft import Minecraft
 
 world = Minecraft.create()
 
 world.postToChat("Hello minecraft")
-
 ```
 
 To run it, open another terminal window (Minecraft is running from the original) and

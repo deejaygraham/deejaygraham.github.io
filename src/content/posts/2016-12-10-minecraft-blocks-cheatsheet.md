@@ -14,7 +14,6 @@ Typically you use the upper case block name and id in the call to <code>setBlock
 there's nothing stopping you from using the plain integer value.
 
 ```python
-
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 
@@ -23,7 +22,6 @@ world = minecraft.Minecraft.create()
 stone_id = 1
 world.setBlock(x, y, z, stone_id)
 world.setBlock(x, y, z, block.STONE.id)
-
 ```
 
 ### Special Blocks
@@ -42,9 +40,7 @@ ID | Colour
 So I can make a lovely block of orange wool like this:
 
 ```python
-
 mc.setBlock(x, y, z, block.WOOL, 1)
-
 ```
 
 ### Block Types
@@ -134,13 +130,11 @@ a cuboid given two sets of coordinates and a block type. <code>setBlocks</code> 
 the volume between the two 3D points with blocks of the right type.
 
 ```python
-
 height = 10
 width = 5
 length = 15
 
 world.setBlocks(x, y, z, x + length, y + height, z + width, block.STONE.id)
-
 ```
 
 ### House Full of Hollow
@@ -149,7 +143,6 @@ To create a hollow structure, like a house, you can create a large block of ston
 adjust the coordinates and re-fill that volume with AIR.
 
 ```python
-
 height = 10
 width = 5
 length = 15
@@ -157,8 +150,13 @@ length = 15
 wall_thickness = 1
 
 world.setBlocks(x, y, z, x + length, y + height, z + width, block.STONE.id)
-world.setBlocks(x + wall_thickness, y, z + wall_thickness,
-x + length - wall_thickness, y + height, z + width - wall_thickness,
-block.AIR.id)
-
+world.setBlocks(
+    x + wall_thickness,
+    y,
+    z + wall_thickness,
+    x + length - wall_thickness,
+    y + height,
+    z + width - wall_thickness,
+    block.AIR.id,
+)
 ```

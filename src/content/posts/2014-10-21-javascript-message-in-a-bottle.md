@@ -26,16 +26,14 @@ So this is a message to my future self, who will forget again before too long :)
 ```
 
 ```javascript
-
 function init() {
-    alert("Window Loaded");
+  alert("Window Loaded");
 }
-    
+
 function onClick() {
-	alert("Click");
+  alert("Click");
 }
 
 window.onload = init;
 window.onclick = onClick;
-
 ```
