@@ -65,6 +65,7 @@ export default function (image) {
 
   let rowIndex = 0;
   for (const row of rows) { 
+    svgBuilder.push(`<!-- ${rowIndex} -->`);
     for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
       const brightness = row[columnIndex];
       const x = led_start_x + (rowIndex * (led_width + led_spacing_x));
