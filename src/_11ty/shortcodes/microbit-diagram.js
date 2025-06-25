@@ -115,6 +115,8 @@ export default function (image) {
   const button_start_cx = centre_x - (hole_spacing * 2) - (hole_radius * 2);
 
   let hole_cx = button_start_cx;
+  svgBuilder.push(`<!-- centre="${centre_x}, ${centre_y}" width="${hole_radius}" start="${button_start_cx}" spacing="${hole_spacing}" -->`);
+
   for(let holeIndex = 0; holeIndex < hole_count; holeIndex++) {
     svgBuilder.push(`<circle cx="${hole_cx}" cy="${hole_cy}" r="${hole_ring_radius}" class="hole-ring"/>`);
     svgBuilder.push(`<circle cx="${hole_cx}" cy="${hole_cy}" r="${hole_radius}" class="hole"/>`);
