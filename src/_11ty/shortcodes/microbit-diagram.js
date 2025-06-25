@@ -31,8 +31,8 @@ export default function () {
   const centre_y = Math.floor(height / 2);
 
   // debug
-  svgBuilder.push(`<line x1="${centre_x}" x2="${centre_x}" y1="0" y2="${height}" stroke="orange" stroke-width="5"/>`);
-  svgBuilder.push(`<line x1="0" x2="${width}" y1="${centre_y}" y2="${centre_y}" stroke="orange" stroke-width="5"/>`);
+  //svgBuilder.push(`<line x1="${centre_x}" x2="${centre_x}" y1="0" y2="${height}" stroke="orange" stroke-width="5"/>`);
+  //svgBuilder.push(`<line x1="0" x2="${width}" y1="${centre_y}" y2="${centre_y}" stroke="orange" stroke-width="5"/>`);
   
   // render led matrix
   svgBuilder.push("<!-- led matrix -->");
