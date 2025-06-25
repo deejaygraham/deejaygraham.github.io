@@ -48,6 +48,9 @@ export default function (image) {
 
   // go through image string and pull out brightness values for each led element
   const brightnessValues = image || '99999:99999:99999:99999:99999';
+  // if image is less than 5 * 5 + 4 delimiters...
+  // if row is shorter
+  
   const rows = brightnessValues.split(":");
 
   let rowIndex = 0;
