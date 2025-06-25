@@ -40,6 +40,8 @@ export default function () {
   const led_start_x = half_width - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
   const led_start_y = half_height - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
 
+  svgBuilder.push(`<!-- width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
+  
   for (let row = 0; row < 5; row++) {
     for (let column = 0; column < 5; column++) {
       const x = led_start_x + (row * led_spacing_x);
@@ -62,7 +64,7 @@ export default function () {
   const button_b_x = half_width + Math.floor(button_spacing / 2);
   const button_b_cx = button_b_x + Math.floor(button_width / 2);
   const button_b_cy = button_y + Math.floor(button_height / 2);
-  
+
   svgBuilder.push("<!-- a -->");
   svgBuilder.push(`<rect x="${button_a_x}" y="${button_y}" width="${button_width}" height="${button_height}" class="button-body" />`);
   svgBuilder.push(`<circle cx="${button_a_cx}" cy="${button_a_cy}" r="${button_width}" class="button-actuator"/>`);
@@ -71,7 +73,7 @@ export default function () {
   svgBuilder.push(`<circle cx="${button_b_cx}" cy="${button_b_cy}" r="${button_width}" class="button-actuator"/>`);
   
   // add gold edge connector
-  const edge_connector_height = 100;
+  const edge_connector_height = Math.floor(height / 8);
   svgBuilder.push(`<rect y="${height - edge_connector_height}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
   
   svgBuilder.push("</svg");
