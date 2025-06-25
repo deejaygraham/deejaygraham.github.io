@@ -107,6 +107,7 @@ export default function (image) {
   svgBuilder.push(`<rect y="${height - edge_connector_height + 1}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
 
   // holes above edge connector
+  /* 
   const hole_count = 5;
   const hole_radius = Math.floor(width / 30);
   const hole_ring_radius = Math.floor(hole_radius * 1.5);
@@ -122,6 +123,7 @@ export default function (image) {
     svgBuilder.push(`<circle cx="${hole_cx}" cy="${hole_cy}" r="${hole_radius}" class="hole"/>`);
     hole_cx += hole_spacing + (hole_radius * 2);
   }
+  */
   
   svgBuilder.push("</svg");
   svgBuilder.push("/figure>");
