@@ -12,4 +12,4 @@ similar to Eventually will have support for display configuration and maybe anim
 
 ## Heart
 
-{% microbit "09090:09990:99999:09990:00900" %}
+{% microbit "09090:99999:99999:09990:00900" %}
