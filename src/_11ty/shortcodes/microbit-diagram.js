@@ -32,7 +32,7 @@ export default function () {
 
   // render led matrix
   svgBuilder.push("<!-- led matrix -->");
-  const led_width = Math.floor(width / 10);
+  const led_width = Math.floor(width / 60);
   const led_height = 2 * led_width;
   const led_spacing_x = Math.floor(width / 10);
   const led_spacing_y = Math.floor(height / 10);
