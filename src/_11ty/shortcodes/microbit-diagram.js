@@ -9,7 +9,7 @@ export default function () {
   // add support for display image
   const svgBuilder = []
 
-  svgBuilder.push(`<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">`);
+  svgBuilder.push(`<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" role="img">`);
   // add styling...
   svgBuilder.push("<style>");
   svgBuilder.push(".microbit-body { fill: black; } ");
