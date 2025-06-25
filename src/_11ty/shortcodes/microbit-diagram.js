@@ -40,7 +40,7 @@ export default function () {
   const led_start_x = half_width - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
   const led_start_y = half_height - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
 
-  svgBuilder.push(`<!-- width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
+  svgBuilder.push(`<!-- centre="${half_width}, ${half_height}" width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
   
   for (let row = 0; row < 5; row++) {
     for (let column = 0; column < 5; column++) {
