@@ -4,25 +4,37 @@
 const width = 721;
 const height = 565;
 const corner = 15; // px
-const microbit = `<rect width="${width}" height="${height}" rx="${corner}" fill="black" />`;
-//const svgContent = `<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">${microbit}</svg>`;
+const microbit = `<rect width="${width}" height="${height}" rx="${corner}" class="microbit-body" />`;
+
+cosnt styleBlock = "<style>.microbit-body { fill: black; } </style>";
 
 export default function () {
   // add support for display image
-  //const led_width = 5;
-  //const led_height = 5;
-  //const led_spacing = 50;
+  const svgBuilder = []
 
-  //const displayMatrix = [];
-  
-  //for (let x = 0; x < 5; x++) {
-    //for (let y = 0; y < 5; y++) {
-      //const led = `<rect width="${led_width}" height="${led_height}" rx="1" fill="red" />`;
-      //displayMatrix.push(led);
-    //}
- //}
+  svgBuilder.push(`<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">`);
+  svgBuilder.push("<style>");
+  svgBuilder.push(".microbit-body { fill: black; } ");
+  svgBuilder.push(".microbit-led { fill: red; } ");
+  svgBuilder.push("</style>");
+  svgBuilder.push(microbit);
 
-  // let content = `<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">`;
+  const led_start_x = 200;
+  const led_start_y = 200;
+  const led_width = 10;
+  const led_height = 10;
+  const led_spacing_x = 50;
+  const led_spacing_y = 60;
   
-  return `<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">${microbit}</svg>`;;
+  for (let row = 0; row < 5; row++) {
+    for (let column = 0; column < 5; column++) {
+      const x = led_start_x + (row * led_spacing_x);
+      const y = led_start_y + (column * led_spacing_y);
+      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
+    }
+  }
+  
+  svgBuilder.push("</svg");
+  
+  return svgBuilder.join("\n");
 }
