@@ -29,7 +29,7 @@ export default function () {
 
   // render led matrix
   const led_width = 10;
-  const led_height = 10;
+  const led_height = 2 * led_width;
   const led_spacing_x = 50;
   const led_spacing_y = 60;
   
