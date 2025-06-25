@@ -1,10 +1,15 @@
 ---
 layout: post
-title: Microbit Test
+title: Microbit Svg Test
 ---
 
-Test post using new microbit shortcode. Eventually will have support for display configuration and maybe animation ??
+Test post using my new microbit shortcode. This generates an SVG image of a simplified microbit graphic 
+similar to Eventually will have support for display configuration and maybe animation ??
+
+## Default
 
 {% microbit %}
 
-{% microbit "00100:09290:99999:99999:00100" %}
+## Heart
+
+{% microbit "09090:09990:99999:09990:00900" %}
