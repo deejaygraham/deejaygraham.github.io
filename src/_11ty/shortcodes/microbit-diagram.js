@@ -27,9 +27,13 @@ export default function () {
   svgBuilder.push("<!-- body -->");
   svgBuilder.push(`<rect width="${width}" height="${height}" rx="${corner}" class="microbit-body" />`);
 
-  const half_width = Math.floor(width / 2);
-  const half_height = Math.floor(height / 2);
+  const centre_x = Math.floor(width / 2);
+  const centre_y = Math.floor(height / 2);
 
+  // debug
+  svgBuilder.push(`<line x1="${centre_x}" x2="${centre_x}" y1="0" y2="${height}" stroke="orange" stroke-width="5"/>`);
+  svgBuilder.push(`<line x1="0" x2="${width}" y1="${centre_y}" y2="${centre_y}" stroke="orange" stroke-width="5"/>`);
+  
   // render led matrix
   svgBuilder.push("<!-- led matrix -->");
   const led_width = Math.floor(width / 60);
@@ -37,10 +41,10 @@ export default function () {
   const led_spacing_x = 5 * led_width;
   const led_spacing_y = 2 * led_height;
   
-  const led_start_x = half_width - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
-  const led_start_y = half_height - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
+  const led_start_x = centre_x - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
+  const led_start_y = centre_y - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
 
-  svgBuilder.push(`<!-- centre="${half_width}, ${half_height}" width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
+  svgBuilder.push(`<!-- centre="${centre_x}, ${centre_y}" width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
   
   for (let column = 0; column < 5; column++) {
     for (let row = 0; row < 5; row++) {
@@ -57,12 +61,12 @@ export default function () {
   const button_spacing = button_width * 8;
   
   svgBuilder.push("<!-- buttons -->");
-  const button_y = half_height - Math.floor(button_height / 2);
+  const button_y = centre_y - Math.floor(button_height / 2);
   
-  const button_a_x = half_width - Math.floor(button_spacing / 2) - button_width;
+  const button_a_x = centre_x - Math.floor(button_spacing / 2) - button_width;
   const button_a_cx = button_a_x + Math.floor(button_width / 2);
   const button_a_cy = button_y + Math.floor(button_height / 2);
-  const button_b_x = half_width + Math.floor(button_spacing / 2);
+  const button_b_x = centre_x + Math.floor(button_spacing / 2);
   const button_b_cx = button_b_x + Math.floor(button_width / 2);
   const button_b_cy = button_y + Math.floor(button_height / 2);
   const button_radius = Math.floor(button_width / 4);
