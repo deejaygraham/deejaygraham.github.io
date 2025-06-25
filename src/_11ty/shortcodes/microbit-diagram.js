@@ -35,7 +35,7 @@ export default function () {
   const led_width = Math.floor(width / 60);
   const led_height = 2 * led_width;
   const led_spacing_x = 4 * led_width;
-  const led_spacing_y = led_height;
+  const led_spacing_y = 2 * led_height;
   
   const led_start_x = half_width - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
   const led_start_y = half_height - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
