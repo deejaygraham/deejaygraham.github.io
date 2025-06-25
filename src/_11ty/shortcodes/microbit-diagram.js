@@ -6,8 +6,6 @@ const height = 565;
 const corner = 15; // px
 const microbit = `<rect width="${width}" height="${height}" rx="${corner}" class="microbit-body" />`;
 
-const styleBlock = "<style>.microbit-body { fill: black; } </style>";
-
 export default function () {
   // add support for display image
   const svgBuilder = []
