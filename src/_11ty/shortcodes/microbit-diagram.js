@@ -64,13 +64,14 @@ export default function () {
   const button_b_x = half_width + Math.floor(button_spacing / 2);
   const button_b_cx = button_b_x + Math.floor(button_width / 2);
   const button_b_cy = button_y + Math.floor(button_height / 2);
-
+  const button_radius = Math.floor(button_width / 2) - 2;
+  
   svgBuilder.push("<!-- a -->");
   svgBuilder.push(`<rect x="${button_a_x}" y="${button_y}" width="${button_width}" height="${button_height}" class="button-body" />`);
-  svgBuilder.push(`<circle cx="${button_a_cx}" cy="${button_a_cy}" r="${button_width - 2}" class="button-actuator"/>`);
+  svgBuilder.push(`<circle cx="${button_a_cx}" cy="${button_a_cy}" r="${button_radius}" class="button-actuator"/>`);
   svgBuilder.push("<!-- b -->");
   svgBuilder.push(`<rect x="${button_b_x}" y="${button_y}" width="${button_width}" height="${button_height}" class="button-body" />`);
-  svgBuilder.push(`<circle cx="${button_b_cx}" cy="${button_b_cy}" r="${button_width - 2}" class="button-actuator"/>`);
+  svgBuilder.push(`<circle cx="${button_b_cx}" cy="${button_b_cy}" r="${button_radius}" class="button-actuator"/>`);
   
   // add gold edge connector
   const edge_connector_height = Math.floor(height / 8);
