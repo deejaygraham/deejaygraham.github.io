@@ -42,10 +42,11 @@ export default function () {
 
   svgBuilder.push(`<!-- centre="${half_width}, ${half_height}" width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
   
-  for (let row = 0; row < 5; row++) {
-    for (let column = 0; column < 5; column++) {
+  for (let column = 0; column < 5; column++) {
+    for (let row = 0; row < 5; row++) {
       const x = led_start_x + (row * led_spacing_x);
       const y = led_start_y + (column * led_spacing_y);
+      svgBuilder.push(`<!-- ${row} -->`);
       svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
     }
   }
