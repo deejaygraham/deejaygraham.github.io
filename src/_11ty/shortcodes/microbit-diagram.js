@@ -6,7 +6,7 @@ const height = 565;
 const corner = 15; // px
 const microbit = `<rect width="${width}" height="${height}" rx="${corner}" class="microbit-body" />`;
 
-cosnt styleBlock = "<style>.microbit-body { fill: black; } </style>";
+const styleBlock = "<style>.microbit-body { fill: black; } </style>";
 
 export default function () {
   // add support for display image
@@ -16,6 +16,7 @@ export default function () {
   svgBuilder.push("<style>");
   svgBuilder.push(".microbit-body { fill: black; } ");
   svgBuilder.push(".microbit-led { fill: red; } ");
+  svgBuilder.push(".edge-connector { fill: gold; } ");
   svgBuilder.push("</style>");
   svgBuilder.push(microbit);
 
@@ -33,6 +34,10 @@ export default function () {
       svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
     }
   }
+
+  // add gold edge connector
+  const edge_connector_height = 100;
+  svgBuilder.push(`<rect y="${height - edge_connector_height}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
   
   svgBuilder.push("</svg");
   
