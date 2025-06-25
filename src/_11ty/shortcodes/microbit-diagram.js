@@ -68,8 +68,8 @@ export default function (image) {
     svgBuilder.push(`<!-- ${rowIndex} -->`);
     for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
       const brightness = row[columnIndex];
-      const x = led_start_x + (rowIndex * (led_width + led_spacing_x));
-      const y = led_start_y + (columnIndex * (led_height + led_spacing_y));
+      const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
+      const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
       svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led led_${brightness}" />`);
     }
 
