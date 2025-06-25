@@ -51,9 +51,9 @@ export default function () {
   }
 
   // a and b buttons
-  const button_width = Math.floor(width / 8);
+  const button_width = Math.floor(width / 11);
   const button_height = button_width;
-  const button_spacing = Math.floor(0.75 * width);
+  const button_spacing = button_width * 8;
   
   svgBuilder.push("<!-- buttons -->");
   const button_y = half_height - Math.floor(button_height / 2);
