@@ -47,8 +47,7 @@ export default function (image) {
   svgBuilder.push(`<!-- centre="${centre_x}, ${centre_y}" width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
 
   // go through image string and pull out brightness values for each led element
-  brightnessValues = image || '99999:99999:99999:99999:99999';
-  
+  const brightnessValues = image || '99999:99999:99999:99999:99999';
   const rows = brightnessValues.split(":");
 
   let rowIndex = 0;
