@@ -19,19 +19,23 @@ export default function () {
   svgBuilder.push("<style>");
   svgBuilder.push(".microbit-body { fill: black; } ");
   svgBuilder.push(".microbit-led { fill: red; } ");
+  svgBuilder.push(".button-body { fill: grey; } ");
+  svgBuilder.push(".button-actuator { fill: black; } ");
   svgBuilder.push(".edge-connector { fill: gold; } ");
   svgBuilder.push("</style>");
-  
+
+  svgBuilder.push("<!-- body -->");
   svgBuilder.push(`<rect width="${width}" height="${height}" rx="${corner}" class="microbit-body" />`);
 
   const half_width = Math.floor(width / 2);
   const half_height = Math.floor(height / 2);
 
   // render led matrix
-  const led_width = 10;
+  svgBuilder.push("<!-- led matrix -->");
+  const led_width = Math.floor(width * 0.10);
   const led_height = 2 * led_width;
-  const led_spacing_x = 50;
-  const led_spacing_y = 60;
+  const led_spacing_x = Math.floor(width * 0.1);
+  const led_spacing_y = Math.floor(height * 0.1);
   
   const led_start_x = half_width - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
   const led_start_y = half_height - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
@@ -44,6 +48,28 @@ export default function () {
     }
   }
 
+  // a and b buttons
+  const button_width = 50;
+  const button_height = button_width;
+  const button_spacing = Math.floor(0.75 * width);
+  
+  svgBuilder.push("<!-- buttons -->");
+  const button_y = half_height - Math.floor(button_height / 2);
+  
+  const button_a_x = half_width - Math.floor(button_spacing / 2) - button_width;
+  const button_a_cx = button_a_x + Math.floor(button_width / 2);
+  const button_a_cy = button_y + Math.floor(button_height / 2);
+  const button_b_x = half_width + Math.floor(button_spacing / 2);
+  const button_b_cx = button_b_x + Math.floor(button_width / 2);
+  const button_b_cy = button_y + Math.floor(button_height / 2);
+  
+  svgBuilder.push("<!-- a -->");
+  svgBuilder.push(`<rect x="${button_a_x}" y="${button_y}" width="${button_width}" height="${button_height}" class="button-body" />`);
+  svgBuilder.push(`<circle cx="${button_a_cx}" cy="${button_a_cy}" r="${button_width}" class="button-actuator"/>`);
+  svgBuilder.push("<!-- b -->");
+  svgBuilder.push(`<rect x="${button_b_x}" y="${button_y}" width="${button_width}" height="${button_height}" class="button-body" />`);
+  svgBuilder.push(`<circle cx="${button_b_cx}" cy="${button_b_cy}" r="${button_width}" class="button-actuator"/>`);
+  
   // add gold edge connector
   const edge_connector_height = 100;
   svgBuilder.push(`<rect y="${height - edge_connector_height}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
