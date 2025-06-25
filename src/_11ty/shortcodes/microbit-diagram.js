@@ -74,7 +74,7 @@ export default function () {
   
   // add gold edge connector
   const edge_connector_height = Math.floor(height / 8);
-  svgBuilder.push(`<rect y="${height - edge_connector_height}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
+  svgBuilder.push(`<rect y="${height - edge_connector_height + 1}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
   
   svgBuilder.push("</svg");
   svgBuilder.push("/figure>");
