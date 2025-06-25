@@ -5,7 +5,7 @@ const width = 721;
 const height = 565;
 const corner = 50; // px
 
-export default function () {
+export default function (image) {
   // add support for display image
   const svgBuilder = []
 
@@ -45,7 +45,25 @@ export default function () {
   const led_start_y = centre_y - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
 
   svgBuilder.push(`<!-- centre="${centre_x}, ${centre_y}" width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
+
+  // go through image string and pull out brightness values for each led element
+  brightnessValues = image || '99999:99999:99999:99999:99999';
   
+  const rows = brightnessValues.split(":");
+
+  let rowIndex = 0;
+  for (const row of rows) { 
+    for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
+      const brightness = row[columnIndex];
+      const x = led_start_x + (rowIndex * (led_width + led_spacing_x));
+      const y = led_start_y + (columnIndex * (led_height + led_spacing_y));
+      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
+    }
+
+    rowIndex++;
+  }
+  
+  /*
   for (let row = 0; row < 5; row++) {
     svgBuilder.push(`<!-- ${row} -->`);
     for (let column = 0; column < 5; column++) {
@@ -54,7 +72,18 @@ export default function () {
       svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
     }
   }
-
+  */
+    
+  /* for (let row = 0; row < 5; row++) {
+    svgBuilder.push(`<!-- ${row} -->`);
+    for (let column = 0; column < 5; column++) {
+      const x = led_start_x + (row * (led_width + led_spacing_x));
+      const y = led_start_y + (column * (led_height + led_spacing_y));
+      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
+    }
+  }
+*/
+  
   // a and b buttons
   const button_width = Math.floor(width / 11);
   const button_height = button_width;
