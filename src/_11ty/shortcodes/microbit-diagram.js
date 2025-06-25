@@ -107,7 +107,7 @@ export default function (image) {
 
   // holes above edge connector
   const hole_count = 5;
-  const hole_radius = Math.floor(width / 9.5);
+  const hole_radius = Math.floor(width / 20);
   const hole_spacing = width - (hole_count * hole_radius) 
   const hole_cy = height - edge_connector_height - hole_radius;
   const button_start_cx = centre_x - (hole_spacing * Math.floor((hole_count - 1) / 2)) - (hole_radius * Math.floor((hole_count - 1) / 2));
