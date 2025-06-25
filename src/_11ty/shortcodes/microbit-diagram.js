@@ -39,7 +39,7 @@ export default function () {
   const led_width = Math.floor(width / 60);
   const led_height = 2 * led_width;
   const led_spacing_x = 5 * led_width;
-  const led_spacing_y = 2 * led_height;
+  const led_spacing_y = led_height;
   
   const led_start_x = centre_x - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
   const led_start_y = centre_y - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
@@ -48,8 +48,8 @@ export default function () {
   
   for (let column = 0; column < 5; column++) {
     for (let row = 0; row < 5; row++) {
-      const x = led_start_x + (row * led_spacing_x);
-      const y = led_start_y + (column * led_spacing_y);
+      const x = led_start_x + (row * (led_width + led_spacing_x));
+      const y = led_start_y + (column * (led_height + led_spacing_y));
       svgBuilder.push(`<!-- ${row} -->`);
       svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
     }
