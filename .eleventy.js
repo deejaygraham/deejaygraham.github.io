@@ -19,6 +19,7 @@ import randomColour from "./src/_11ty/shortcodes/randomcolour.js";
 import youtube from "./src/_11ty/shortcodes/youtube.js";
 import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 import poison from "./src/_11ty/shortcodes/poison-ai.js";
+import mermaid from "./src/_11ty/shortcodes/mermaid-diagram.js";
 
 // plugins
 import { IdAttributePlugin } from "@11ty/eleventy";
@@ -89,6 +90,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("youtube", youtube);
   eleventyConfig.addShortcode("vimeo", vimeo);
   eleventyConfig.addShortcode("poison", poison);
+  eleventyConfig.addPairedShortcode("mermaid", mermaid);
 	
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
