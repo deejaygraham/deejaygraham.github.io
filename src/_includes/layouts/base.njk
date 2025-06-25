@@ -48,6 +48,9 @@
 
     {% block scripts %}
       {% include "partials/basescripts.njk" %}
+      {% if mermaid %}
+    	{% include "partials/mermaid-diagrams.njk" %}
+      {% endif %}
     {% endblock %}
   </body>
 </html>
