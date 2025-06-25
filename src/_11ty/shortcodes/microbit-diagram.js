@@ -3,7 +3,7 @@
 
 const width = 721;
 const height = 565;
-const corner = 15; // px
+const corner = 50; // px
 
 export default function () {
   // add support for display image
