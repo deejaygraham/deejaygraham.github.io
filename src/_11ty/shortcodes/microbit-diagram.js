@@ -32,6 +32,7 @@ export default function (image) {
   svgBuilder.push(".button-body { fill: grey; } ");
   svgBuilder.push(".button-actuator { fill: black; } ");
   svgBuilder.push(".edge-connector { fill: gold; } ");
+  svgBuilder.push(".hole { fill: white; border: 5px solid gold; } ");
   svgBuilder.push("</style>");
 
   svgBuilder.push("<!-- body -->");
@@ -76,27 +77,6 @@ export default function (image) {
     rowIndex++;
   }
   
-  /*
-  for (let row = 0; row < 5; row++) {
-    svgBuilder.push(`<!-- ${row} -->`);
-    for (let column = 0; column < 5; column++) {
-      const x = led_start_x + (row * (led_width + led_spacing_x));
-      const y = led_start_y + (column * (led_height + led_spacing_y));
-      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
-    }
-  }
-  */
-    
-  /* for (let row = 0; row < 5; row++) {
-    svgBuilder.push(`<!-- ${row} -->`);
-    for (let column = 0; column < 5; column++) {
-      const x = led_start_x + (row * (led_width + led_spacing_x));
-      const y = led_start_y + (column * (led_height + led_spacing_y));
-      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led" />`);
-    }
-  }
-*/
-  
   // a and b buttons
   const button_width = Math.floor(width / 11);
   const button_height = button_width;
@@ -124,6 +104,19 @@ export default function (image) {
   const edge_connector_height = Math.floor(height / 8);
   svgBuilder.push("<!-- edge connector -->");
   svgBuilder.push(`<rect y="${height - edge_connector_height + 1}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
+
+  // holes above edge connector
+  const hole_count = 5;
+  const hole_radius = Math.floor(width / 9.5);
+  const hole_spacing = width - (hole_count * hole_radius) 
+  const hole_cy = height - edge_connector_height - hole_radius;
+  const button_start_cx = centre_x - (hole_spacing * Math.floor((hole_count - 1) / 2)) - (hole_radius * Math.floor((hole_count - 1) / 2));
+
+  let hole_cx = button_start_cx;
+  for(let holeIndex = 0; holeIndex < hole_count; holeIndex++) {
+    svgBuilder.push(`<circle cx="${hole_cx}" cy="${hole_cy}" r="${hole_radius}" class="hole"/>`);
+    hole_cx += hole_spacing + (hole_radius * 2);
+  }
   
   svgBuilder.push("</svg");
   svgBuilder.push("/figure>");
