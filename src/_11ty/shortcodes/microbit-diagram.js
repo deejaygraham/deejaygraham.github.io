@@ -9,7 +9,7 @@ export default function (image) {
   const svgBuilder = []
 
   // wrap it in a figure...
-  svgBuilder.push('<figure class="image">');
+  svgBuilder.push('<figure class="image" style="width=50%" >');
   
   // start svg
   
