@@ -12,20 +12,12 @@ For now, it supports passing a image string but may eventually be able to show a
 
 A default version of the microbit turns on all the LEDs in the 5x5 matrix.
 
-```md
-{% microbit %}
-```
-
 {% microbit %}
 
 ## Heart
 
 Supplying a string parameter to the shortcode interprets it as a microbit image string, with 
 colon separators between rows.
-
-```md
-{% microbit "09090:99999:99999:09990:00900" %}
-```
 
 {% microbit "09090:99999:99999:09990:00900" %}
 
