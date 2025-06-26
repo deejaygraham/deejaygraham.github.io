@@ -100,17 +100,17 @@ export default function (image) {
   
   svgBuilder.push("<!-- a -->");
   svgBuilder.push(`<rect x="${button_a_x}" y="${button_y}" width="${button_width}" height="${button_height}" class="button-body" />`);
-  svgBuilder.push(`<circle cx="${button_a_cx}" cy="${button_a_cy}" r="${button_radius}" class="button-actuator"/>`);
+  svgBuilder.push(`<circle cx="${button_a_cx}" cy="${button_a_cy}" r="${button_radius}" class="button-actuator" />`);
   svgBuilder.push("<!-- b -->");
   svgBuilder.push(`<rect x="${button_b_x}" y="${button_y}" width="${button_width}" height="${button_height}" class="button-body" />`);
-  svgBuilder.push(`<circle cx="${button_b_cx}" cy="${button_b_cy}" r="${button_radius}" class="button-actuator"/>`);
+  svgBuilder.push(`<circle cx="${button_b_cx}" cy="${button_b_cy}" r="${button_radius}" class="button-actuator" />`);
   
   // add gold edge connector
   const edge_connector_height = Math.floor(height / 8);
   svgBuilder.push("<!-- edge connector -->");
   svgBuilder.push(`<rect y="${height - edge_connector_height + 1}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
   
-  svgBuilder.push("</svg");
+  svgBuilder.push("</svg>");
   svgBuilder.push("</figure>");
   
   return svgBuilder.join("\n");
