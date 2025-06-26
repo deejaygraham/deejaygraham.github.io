@@ -1,6 +1,21 @@
 // write out a simplified microbit image with a customised display
 // similar to https://microbit.org/design-your-microbit/v2/
 
+/*
+const animateCell = (cells, x, y) => {
+  // take the x, y value from each of the cells in the array
+  const animation = [];
+
+  for (const cell of cells) {
+    const rows = cell.split(":");
+    const row = rows[x];
+    animation.push(row[y]);
+  }
+  
+  return animation;
+};
+*/
+
 const width = 721;
 const height = 565;
 const corner = 50; // px
@@ -72,7 +87,9 @@ export default function (image) {
       const brightness = row[columnIndex];
       const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
       const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
-      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led led_${brightness}" />`);
+      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led led_${brightness}" >`);
+      svgBuilder.push(`<animate attributeName="class" values="led_${brightness};led_0" dur="1s" repeatCount="indefinite" />`);
+      svgBuilder.push("</rect>");
     }
 
     rowIndex++;
