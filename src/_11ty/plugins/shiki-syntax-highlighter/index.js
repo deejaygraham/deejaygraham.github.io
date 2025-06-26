@@ -23,6 +23,7 @@ export default function(eleventyConfig) {
         'elixir',
         'js',
         'json',
+        'md',
         'ruby',
         'powershell',
         'python',
