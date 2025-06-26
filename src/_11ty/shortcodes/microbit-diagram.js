@@ -77,6 +77,7 @@ export default function (image) {
   const brightnessValues = image || '99999:99999:99999:99999:99999';
   // if image is less than 5 * 5 + 4 delimiters...
   // if row is shorter
+  // throw new Error("image must be 5x5");
   
   const rows = brightnessValues.split(":");
 
