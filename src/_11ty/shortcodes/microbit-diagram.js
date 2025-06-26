@@ -21,6 +21,15 @@ const height = 565;
 const corner = 50; // px
 
 export default function (image) {
+
+  /*
+	if(Array.isArray(bucket)) {
+			bucket = bucket.join(",");
+		} else if(typeof bucket === "string") {
+		} else {
+			bucket = "";
+		}
+  */
   // add support for display image
   const svgBuilder = []
 
@@ -35,15 +44,15 @@ export default function (image) {
   svgBuilder.push(".microbit-body { fill: black; } ");
   svgBuilder.push(".microbit-led { fill: red; } ");
   svgBuilder.push(".led_0 { filter: brightness(0); } ");
-  svgBuilder.push(".led_1 { filter: brightness(10%); } ");
-  svgBuilder.push(".led_2 { filter: brightness(20%); } ");
-  svgBuilder.push(".led_3 { filter: brightness(30%); } ");
-  svgBuilder.push(".led_4 { filter: brightness(40%); } ");
-  svgBuilder.push(".led_5 { filter: brightness(50%); } ");
-  svgBuilder.push(".led_6 { filter: brightness(60%); } ");
-  svgBuilder.push(".led_7 { filter: brightness(70%); } ");
-  svgBuilder.push(".led_8 { filter: brightness(80%); } ");
-  svgBuilder.push(".led_9 { filter: brightness(100%); } ");
+  svgBuilder.push(".led_1 { fill: red; filter: brightness(10%); } ");
+  svgBuilder.push(".led_2 { fill: red; filter: brightness(20%); } ");
+  svgBuilder.push(".led_3 { fill: red; filter: brightness(30%); } ");
+  svgBuilder.push(".led_4 { fill: red; filter: brightness(40%); } ");
+  svgBuilder.push(".led_5 { fill: red; filter: brightness(50%); } ");
+  svgBuilder.push(".led_6 { fill: red; filter: brightness(60%); } ");
+  svgBuilder.push(".led_7 { fill: red; filter: brightness(70%); } ");
+  svgBuilder.push(".led_8 { fill: red; filter: brightness(80%); } ");
+  svgBuilder.push(".led_9 { fill: red; filter: brightness(100%); } ");
   svgBuilder.push(".button-body { fill: grey; } ");
   svgBuilder.push(".button-actuator { fill: black; } ");
   svgBuilder.push(".edge-connector { fill: gold; } ");
@@ -88,7 +97,7 @@ export default function (image) {
       const brightness = row[columnIndex];
       const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
       const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
-      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="microbit-led led_${brightness}" >`);
+      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="led_${brightness}" >`);
       svgBuilder.push(`<animate attributeName="class" values="led_${brightness};led_0" dur="1s" repeatCount="indefinite" />`);
       svgBuilder.push("</rect>");
     }
