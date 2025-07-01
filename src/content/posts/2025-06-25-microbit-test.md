@@ -28,9 +28,9 @@ export default function (image) {
   svgBuilder.push("<style>");
   // ...
   svgBuilder.push(".microbit-body { fill: black; } ");
-  svgBuilder.push(".microbit-led { fill: red; } ");
-  svgBuilder.push(".led_0 { filter: brightness(0); } ");
+  svgBuilder.push(".led_0 { fill: #100; } ");
   // ...
+  svgBuilder.push(".led_9 { fill: #f00; } ");
   svgBuilder.push("</style>");
 
   svgBuilder.push(`<rect width="${width}" height="${height}" rx="${corner}" class="microbit-body" />`);
@@ -41,6 +41,11 @@ export default function (image) {
   return svgBuilder.join("\n");
 }
 ```
+
+The styling has changed a little inside the SVG. I discovered that 
+fills and filters are not supported in WebKit except on the parent 
+SVG so the LEDs were always rendered at full brightness event with 
+a filter colour of 0% brightness. 
 
 ## Default
 
