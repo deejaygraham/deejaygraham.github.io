@@ -8,6 +8,40 @@ similar to [the official microbit artwork tool](https://microbit.org/design-your
 
 For now, it supports passing a image string but may eventually be able to show animations.
 
+## 11ty Config
+
+```js
+import microbit from "./src/_11ty/shortcodes/microbit-diagram.js";
+  ...
+  eleventyConfig.addShortcode("microbit", microbit);
+```
+
+## Shortcode Implementation
+
+```js
+export default function (image) {
+  const svgBuilder = []
+
+  // wrap it in a figure...
+  svgBuilder.push('<figure class="image" >');  
+  svgBuilder.push(`<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" role="img">`);
+  svgBuilder.push("<style>");
+  // ...
+  svgBuilder.push(".microbit-body { fill: black; } ");
+  svgBuilder.push(".microbit-led { fill: red; } ");
+  svgBuilder.push(".led_0 { filter: brightness(0); } ");
+  // ...
+  svgBuilder.push("</style>");
+
+  svgBuilder.push(`<rect width="${width}" height="${height}" rx="${corner}" class="microbit-body" />`);
+  // ...  
+  svgBuilder.push("</svg>");
+  svgBuilder.push("</figure>");
+  
+  return svgBuilder.join("\n");
+}
+```
+
 ## Default
 
 A default version of the microbit turns on all the LEDs in the 5x5 matrix.
