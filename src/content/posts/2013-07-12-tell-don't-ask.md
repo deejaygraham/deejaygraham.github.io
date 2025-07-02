@@ -11,6 +11,9 @@ it's citizens.
 <figure class="image" style="width=50%" >
 <svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg" role="img">
 <style>
+.pillar-box {
+  fill: #d52b1e;
+}
 .tiny {
 font: bold 30px sans-serif;
 text-anchor: middle;
@@ -31,7 +34,7 @@ stroke:white;
 stroke-width:20
 }
 </style>
-<rect width="100%" height="100%" fill="#d52b1e" />
+<rect width="100%" height="100%" class="pillar-box" />
 <polyline points="300,250 300,600 900,600 900,250 290,250" class="envelope" />
 <polyline points="300,250 600,450 900,250" class="envelope" />
 <polyline points="300,600 550,420" class="envelope" />
