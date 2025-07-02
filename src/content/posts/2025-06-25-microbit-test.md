@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Microbit Svg Test
+tags: [microbit, python]
 ---
 
 Test post using my new microbit shortcode. This generates an SVG image of a simplified microbit graphic 
