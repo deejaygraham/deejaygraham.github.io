@@ -39,7 +39,7 @@ stroke-width:20
 <text x="600" y="900" class="heavy" fill="white">TELL</text>
 <text x="600" y="1000" class="small" fill="white">don't</text>
 <text x="600" y="1200" class="heavy" fill="white">ASK</text>
-<text x="600" y="1500" class="tiny" fill="white">MINISTRY for DEMETER ENFORCMENT</text>
+<text x="600" y="1500" class="tiny" fill="white">MINISTRY for DEMETER ENFORCEMENT</text>
 <text x="600" y="1550" class="tiny" fill="white">@deejaygraham</text>
 </svg>
 </figure>
