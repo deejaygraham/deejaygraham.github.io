@@ -8,6 +8,9 @@ and retro propaganda posters, I wondered what a government with a strict
 focus on the principles of good object-oriented design would produce to inspire
 it's citizens.
 
+From the Ministry of [Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) Enforcement, inspired 
+also by the wonderful [Avid Grimm](https://avdi.codes/demeter-its-not-just-a-good-idea-its-the-law/).
+
 <figure class="image" style="width=50%" >
 <svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg" role="img">
 <style>
