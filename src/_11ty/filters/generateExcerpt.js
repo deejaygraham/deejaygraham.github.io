@@ -4,5 +4,11 @@ export default function (text, excerptLength) {
   content = content.replace(/\([^)]*\)/g, ""); // remove markdown link url and parentheses
   content = content.replace(/\[/g, ""); // remove surrounding square brackets from markdown link
   content = content.replace(/\]/g, ""); // remove surrounding square brackets from markdown link
-  return content.substr(0, content.lastIndexOf(" ", excerptLength));
+
+  if (content && content.length > excerptLength) {
+    // find space closest to the character limit
+    return content.substr(0, content.lastIndexOf(" ", excerptLength));
+  }
+
+  return content;
 }
