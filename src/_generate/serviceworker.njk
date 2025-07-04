@@ -54,7 +54,8 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") {
     return;
   }
-  
+
+  console.log("fetch", event.request.url);
   event.respondWith(
     caches.match(event.request).then(function (cached) {
       
