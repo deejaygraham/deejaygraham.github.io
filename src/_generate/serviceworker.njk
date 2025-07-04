@@ -5,7 +5,8 @@ excludeFromSitemap: true
 ---
 // service worker code for site
 // based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
-// some ideas from https://github.com/bnijenhuis/bnijenhuis-nl
+// some ideas from https://github.com/bnijenhuis/bnijenhuis-nl 
+// and https://gomakethings.com/how-to-set-an-expiration-date-for-items-in-a-service-worker-cache/
 
 // change version to allow upgrade
 const version = "v1.4";
@@ -45,7 +46,17 @@ self.addEventListener("activate", event => {
 
 const putInCache = async (request, response) => {
   const cache = await caches.open(version);
-  await cache.put(request, response);
+
+  let headers = new Headers(response.headers);
+  headers.append('sw-fetched-on', new Date().getTime());
+
+  const body = await response.blob();
+  await cache.put(request, new Response(body, 
+  {
+    status: response.status,
+    statusText: response.statusText,
+    headers: headers
+  }));
 };
 
 // every requests passes through this fetch method.
