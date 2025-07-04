@@ -1,3 +1,5 @@
+// generate an excerpt suitable for a summary page
+// with elipsis...
 // usage: {{ post.templateContent | excerpt }}
 export default function (post) {
   const characterLimit = 200;
