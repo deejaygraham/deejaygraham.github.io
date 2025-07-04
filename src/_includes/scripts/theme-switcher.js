@@ -36,7 +36,7 @@ const getThemePreference = () => {
   }
 }
 
-const setThemeButtonState = (button, active, activeClassName) = {
+const setThemeButtonState = (button, active, activeClassName) => {
     button.setAttribute('aria-pressed', active);
 
     if (active) {
