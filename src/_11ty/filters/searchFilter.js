@@ -23,6 +23,8 @@ async function searchFilter(collection) {
       const excerptLength = 255; // chars
       let content = page.rawInput.replace(/(<([^>]+)>)/gi, "");
       content = content.replace(/\n/g, " ");
+      content = content.replace(/\([^)]*\)/g, ""); // remove markdown link url and parentheses
+      content = content.replace(/\[|\]/, ""); // remove surrounding square brackets from markdown link
       excerpt = content.substr(0, content.lastIndexOf(" ", excerptLength));
     }
 
