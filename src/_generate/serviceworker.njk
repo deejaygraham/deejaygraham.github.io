@@ -5,103 +5,218 @@ excludeFromSitemap: true
 ---
 // service worker code for site
 // based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
-// some ideas from https://github.com/bnijenhuis/bnijenhuis-nl 
+// some other ideas from https://github.com/bnijenhuis/bnijenhuis-nl 
 // and https://gomakethings.com/how-to-set-an-expiration-date-for-items-in-a-service-worker-cache/
 
 // change version to allow upgrade
-const version = "v1.4";
+const version = '-v1';
 
+const cacheName = 'core' + version;
+const offlinePage = '/offline.html';
+const searchDatabase = '/search-index.json';
+const siteStylesheet = '/css/site.css';
+const notFoundPage = '/404/'
 const coreAssets = [
       "/",
       "/index.html",
-      "/css/site.css",
+      siteStylesheet,
       "/favicon.ico",
+      "/img/favicon.png",
       "/img/avatar.svg",
-      "/offline.html"
+      offlinePage,
+      searchDatabase,
+      notFoundPage
 ];
 
-// install this version of the service worker 
-// and cache the core assets we need for basic 
-// site functioning
-self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open(version).then(cache => {
-          cache.addAll(coreAssets)
-    })
-  );
-});
-
-// activate this worker - clean up any old 
-// versions of our cache
-self.addEventListener("activate", event => {
-  event.waitUntil(
-    caches.keys().then(keys => {
-      return Promise.all(keys
-                        .filter(key => key !== version)
-                        .map(key => caches.delete(key))
-                        )
+// install service worker and cache core assets
+addEventListener('install', function (event) {
+    event.waitUntil(
+        caches.open(cacheName).then(function (cache) {
+            cache.addAll(coreAssets);
         })
-  );
+    );
 });
 
-const putInCache = async (request, response) => {
-  const cache = await caches.open(version);
+// make sure to remove old caches
+addEventListener('activate', function (event) {
+    event.waitUntil(
+        caches.keys().then(function (keys) {
+            return Promise.all(keys
+                .filter(key => key !== cacheName)
+                .map(key => caches.delete(key))
+            )
+        })
+    )
+});
 
-  let headers = new Headers(response.headers);
-  headers.append('sw-fetched-on', new Date().getTime());
+// fetch assets and serve from cache and update cache
+addEventListener('fetch', function (event) {
+    // ignore anything that's not a GET
+    if (event.request.method !== "GET") {
+        return;
+    }
 
-  const body = await response.blob();
-  await cache.put(request, new Response(body, 
-  {
-    status: response.status,
-    statusText: response.statusText,
-    headers: headers
-  }));
-};
+    if (event.request.url.includes(siteStylesheet)) {
+        // (directly) respond with cached asset (if available)
+        event.respondWith(serveFromCache(event, true, false));
 
-// every requests passes through this fetch method.
-self.addEventListener("fetch", (event) => {
-  // ignore anything that's not a GET
-  if (event.request.method !== "GET") {
-    return;
-  }
+        // serve from network
+        //event.respondWith(serveFromNetwork(event));
 
-  console.log("fetch", event.request.url);
-  event.respondWith(
-    caches.match(event.request).then(function (cached) {
-      
-      /* Even if the response is in our cache, we go to the network as well.
-           This pattern is known for producing "eventually fresh" responses,
-           where we return cached responses immediately, and meanwhile pull
-           a network response and store that in the cache.
-           Read more:
-           https://ponyfoo.com/articles/progressive-networking-serviceworker
-        */
-      const networked = fetch(event.request)
-        .then(fetchedFromNetwork, unableToResolve)
-        .catch(unableToResolve);
+        // update cache
+        event.waitUntil(updateCache(event.request, cacheName));
 
-      /* We return the cached response immediately if there is one, and fall
-           back to waiting on the network as usual.
-        */
-      return cached || networked;
+    } else {
+        // (directly) respond with cached asset (if available)
+        event.respondWith(serveFromCache(event, false, false));
 
-      function fetchedFromNetwork(response) {
-        if (response.status === 200) {
-          putInCache(event.request, response.clone());
+        // serve from network
+        // event.respondWith(serveFromNetwork(event));
+
+        // update cache (only if in core assets)
+        if (coreAssets.includes(event.request.url)) {
+            event.waitUntil(updateCache(event.request, cacheName));
         }
-        return response;
-      }
 
-      /* When this method is called, it means we were unable to produce a response
-           from either the cache or the network. This is our opportunity to produce
-           a meaningful response even when all else fails. It's the last chance, so
-           you probably want to display a "Service Unavailable" view or a generic
-           error response.
-        */
-      function unableToResolve() {
-         return caches.match('/offline.html');
-      }
-    }),
-  );
+    }
 });
+
+/**
+ * serve request from cache
+ * if file isn't cached longer than 24 hours, it's still valid
+ * @param {Event} event the request event
+ * @param {Boolean} ignoreSearch if true, ignore search parameters in request
+ * @param {Boolean} checkExpiryHeader if true, check for custom expiry header
+ * @return {Object} response object from cache or from fetch
+ */
+function serveFromCache(event, ignoreSearch, checkExpiryHeader) {
+
+    // set the right match options
+    var matchOptions = {};
+    if (ignoreSearch) matchOptions = { ignoreSearch: true };
+
+    return caches.match(event.request, matchOptions).then(function (cacheResponse) {
+
+        // if found return cache
+        if (cacheResponse) {
+            if (checkExpiryHeader) {
+                if (isCacheResponseStillValid(cacheResponse)) {
+                    return cacheResponse;
+                }
+            } else {
+                return cacheResponse;
+            }
+        }
+
+        // fetch it again, because cache was not found or was expired
+        return fetch(event.request).then(function (response) {
+
+            if (event.request.url.includes(siteStylesheet)) {
+                updateCache(event.request, cacheName);
+            } 
+
+            return response;
+
+            // if offline and not found in cache, return offline data
+        }).catch(function (error) {
+
+            if (event.request.url.endsWith('/')) {
+                return caches.match(offlinePage);
+            } 
+        });
+    })
+}
+
+/**
+ * Serve request from network
+ *
+ * @param {Event} event the request event
+ * @return {Object} response object from fetch or from cache
+ */
+function serveFromNetwork(event) {
+
+    // try and get it from the network
+    return fetch(event.request).then(function (response) {
+
+        if ((event.request.destination == 'document') && (response.status == 404)) {
+            return caches.match(notFoundPage);
+        }
+
+        return response;
+
+    }).catch(function (error) {
+
+        // try and get it from cache
+        return caches.match(event.request).then(function (cacheResponse) {
+
+            // if found return cache
+            if (cacheResponse) {
+                return cacheResponse;
+            }
+
+            // otherwise return 404 (if a document is requested)
+            if (event.request.destination == 'document') {
+                return caches.match(notFoundPage);
+            }
+
+        }).catch(function (error) {
+
+            // otherwise return 404 (if a document is requested)
+            if (event.request.destination == 'document') {
+                return caches.match(notFoundPage);
+            }
+
+        });
+
+    });
+
+}
+
+/**
+ * update cache
+ * @param {Object} request the event request
+ * @param {String} cacheName the cache to update
+ * @return {Object} response object
+ */
+function updateCache(request, cacheName) {
+    return caches.open(cacheName).then(function (cache) {
+        return fetch(request).then(function (response) {
+
+            var responseCopy = response.clone();
+            var headers = new Headers(responseCopy.headers);
+            headers.append('sw-fetched-on', new Date().getTime());
+
+            var requestKey = request;
+
+            return responseCopy.blob().then(function (body) {
+                return cache.put(requestKey, new Response(body, {
+                    status: responseCopy.status,
+                    statusText: responseCopy.statusText,
+                    headers: headers
+                }));
+            });
+
+        });
+    });
+}
+
+/**
+ * check of cacheResponse is still valid
+ * if file isn't cached longer than 24 hours, it's still valid
+ * @param {Object} cacheResponse the cacheResponse object
+ * @return {Boolean} if true, cacheResponse is valid
+ */
+function isCacheResponseStillValid(cacheResponse) {
+    if (!cacheResponse) {
+        return false;
+    }
+
+    var fetched = cacheResponse.headers.get('sw-fetched-on');
+
+    // ms * seconds * minutes * hours
+    if (fetched && (parseFloat(fetched) + (1000 * 60 * 60 * 24)) > new Date().getTime()) {
+        return true;
+    }
+
+    return false;
+};
