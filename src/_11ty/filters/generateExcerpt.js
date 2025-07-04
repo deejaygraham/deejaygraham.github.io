@@ -1,3 +1,6 @@
+// generate an excerpt of plain text suitable for 
+// inclusion in a search database doc - 
+// remove all html and markdown
 export default function (text, excerptLength) {
   let content = text.replace(/(<([^>]+)>)/gi, ""); // remove html
   content = content.replace(/\n/g, " "); // remove new lines
