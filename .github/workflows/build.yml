@@ -43,6 +43,10 @@ jobs:
       - name: Build
         run: |
           npm run build
+
+      - name: Lint
+        run: |
+          npm run lintoutput
           
       - name: Setup Github Pages
         uses: actions/configure-pages@v5
