@@ -35,12 +35,12 @@ addEventListener('install', function (event) {
             console.log('Adding core assets to cache');
 
             try {
-                await cache.addAll(coreAssets);
+                cache.addAll(coreAssets);
             } catch (err) {
                 console.error('sw: cache.addAll');
                 for (let asset of coreAssets) {
                     try {
-                        await cache.add(asset);
+                        cache.add(asset);
                     } catch (err) {
                         console.warn('sw: cache.add', asset);
                     }
