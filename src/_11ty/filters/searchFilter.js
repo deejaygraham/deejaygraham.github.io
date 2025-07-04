@@ -1,4 +1,5 @@
 import elasticlunr from "elasticlunr";
+import generateExcerpt from './generateExcerpt.js';
 
 // search on title, tags and an excerpt of each post.
 async function searchFilter(collection) {
@@ -21,12 +22,7 @@ async function searchFilter(collection) {
 
     if (page.rawInput) {
       const excerptLength = 400; // chars
-      let content = page.rawInput.replace(/(<([^>]+)>)/gi, "");
-      content = content.replace(/\n/g, " ");
-      content = content.replace(/\([^)]*\)/g, ""); // remove markdown link url and parentheses
-      content = content.replace(/\[/g, ""); // remove surrounding square brackets from markdown link
-      content = content.replace(/\]/g, ""); // remove surrounding square brackets from markdown link
-      excerpt = content.substr(0, content.lastIndexOf(" ", excerptLength));
+      excerpt = generateExcerpt(page.rawInput, excerptLength);
     }
 
     if (frontMatter.data.layout && frontMatter.data.layout === "quotation") {
