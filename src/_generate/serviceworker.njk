@@ -70,6 +70,8 @@ addEventListener('fetch', function (event) {
         return;
     }
 
+    console.log(event.request.url);
+
     if (event.request.url.includes(siteStylesheet)) {
         // (directly) respond with cached asset (if available)
         event.respondWith(serveFromCache(event, { ignoreSearch: true, checkExpiryHeader: false }));
@@ -114,13 +116,16 @@ function serveFromCache(event, { ignoreSearch, checkExpiryHeader } = {}) {
         if (cacheResponse) {
             if (checkExpiryHeader) {
                 if (isCacheResponseStillValid(cacheResponse)) {
+                    console.log('cached response is fresh');
                     return cacheResponse;
                 }
             } else {
+                console.log('cached response exists');
                 return cacheResponse;
             }
         }
 
+        console.log('fetching from network');
         // fetch it again, because cache was not found or was expired
         return fetch(event.request).then(function (response) {
             if (event.request.url.includes(siteStylesheet)) {
@@ -183,6 +188,8 @@ function serveFromNetwork(event) {
  * @return {Object} response object
  */
 function updateCache(request, cacheName) {
+
+    console.log('caching', request.url);
     return caches.open(cacheName).then(function (cache) {
         return fetch(request).then(function (response) {
             var responseCopy = response.clone();
