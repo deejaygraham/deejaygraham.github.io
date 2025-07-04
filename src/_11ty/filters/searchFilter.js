@@ -24,7 +24,8 @@ async function searchFilter(collection) {
       let content = page.rawInput.replace(/(<([^>]+)>)/gi, "");
       content = content.replace(/\n/g, " ");
       content = content.replace(/\([^)]*\)/g, ""); // remove markdown link url and parentheses
-      content = content.replace(/[][]/g, ""); // remove surrounding square brackets from markdown link
+      content = content.replace(/\[/g, ""); // remove surrounding square brackets from markdown link
+      content = content.replace(/\]/g, ""); // remove surrounding square brackets from markdown link
       excerpt = content.substr(0, content.lastIndexOf(" ", excerptLength));
     }
 
