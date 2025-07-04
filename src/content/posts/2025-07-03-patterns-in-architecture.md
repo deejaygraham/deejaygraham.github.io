@@ -1,6 +1,6 @@
 ---
 title: Patterns in Architecture
-tags: [video, music]
+tags: [video, architecture]
 ---
 
 A lecture from [Christopher Alexander](https://en.wikipedia.org/wiki/Christopher_Alexander) to computer scientists in San Jose back in 
