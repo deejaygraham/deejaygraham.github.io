@@ -41,8 +41,9 @@ addEventListener('install', function (event) {
                 for (let asset of coreAssets) {
                     try {
                         cache.add(asset);
-                    } catch {
+                    } catch (error) {
                         console.warn('sw: cache.add', asset);
+                        console.warn('sw: ', error);
                     }
                 }
             }
