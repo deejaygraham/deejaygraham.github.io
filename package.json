@@ -9,7 +9,8 @@
     "format": "prettier . --write",
     "lint": "npx eslint ./src & npx eslint ./tests",
     "mdlint": "markdownlint ./src/content/**/*.md",
-    "thumbs": "node ./generate-thumbnails.js"
+    "thumbs": "node ./generate-thumbnails.js",
+    "lintoutput": "npx eslint ./_site"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",

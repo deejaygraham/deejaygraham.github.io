@@ -36,12 +36,12 @@ addEventListener('install', function (event) {
 
             try {
                 cache.addAll(coreAssets);
-            } catch (err) {
+            } catch {
                 console.error('sw: cache.addAll');
                 for (let asset of coreAssets) {
                     try {
                         cache.add(asset);
-                    } catch (err) {
+                    } catch {
                         console.warn('sw: cache.add', asset);
                     }
                 }
@@ -72,7 +72,7 @@ addEventListener('fetch', function (event) {
 
     if (event.request.url.includes(siteStylesheet)) {
         // (directly) respond with cached asset (if available)
-        event.respondWith(serveFromCache(event, true, false));
+        event.respondWith(serveFromCache(event, { ignoreSearch: true, checkExpiryHeader: false }));
 
         // serve from network
         //event.respondWith(serveFromNetwork(event));
@@ -82,7 +82,7 @@ addEventListener('fetch', function (event) {
 
     } else {
         // (directly) respond with cached asset (if available)
-        event.respondWith(serveFromCache(event, false, false));
+        event.respondWith(serveFromCache(event, { ignoreSearch: false, checkExpiryHeader: false }));
 
         // serve from network
         // event.respondWith(serveFromNetwork(event));
@@ -102,7 +102,7 @@ addEventListener('fetch', function (event) {
  * @param {Boolean} checkExpiryHeader if true, check for custom expiry header
  * @return {Object} response object from cache or from fetch
  */
-function serveFromCache(event, ignoreSearch, checkExpiryHeader) {
+function serveFromCache(event, { ignoreSearch, checkExpiryHeader } = {}) {
     // set the right match options
     var matchOptions = {};
     if (ignoreSearch) matchOptions = { ignoreSearch: true };
@@ -130,7 +130,7 @@ function serveFromCache(event, ignoreSearch, checkExpiryHeader) {
             return response;
 
             // if offline and not found in cache, return offline data
-        }).catch(function (error) {
+        }).catch(function () {
             if (event.request.url.endsWith('/')) {
                 return caches.match(offlinePage);
             } 
@@ -144,6 +144,7 @@ function serveFromCache(event, ignoreSearch, checkExpiryHeader) {
  * @param {Event} event the request event
  * @return {Object} response object from fetch or from cache
  */
+/* eslint-disable-next-line */
 function serveFromNetwork(event) {
     console.log('Attempting to serve from network', event.request.url);
     // try and get it from the network
@@ -154,7 +155,7 @@ function serveFromNetwork(event) {
 
         return response;
 
-    }).catch(function (error) {
+    }).catch(function () {
         // try and get it from cache
         return caches.match(event.request).then(function (cacheResponse) {
             // if found return cache
@@ -166,7 +167,7 @@ function serveFromNetwork(event) {
             if (event.request.destination == 'document') {
                 return caches.match(notFoundPage);
             }
-        }).catch(function (error) {
+        }).catch(function () {
             // otherwise return 404 (if a document is requested)
             if (event.request.destination == 'document') {
                 return caches.match(notFoundPage);
