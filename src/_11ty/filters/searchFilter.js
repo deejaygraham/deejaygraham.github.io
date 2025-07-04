@@ -20,7 +20,7 @@ async function searchFilter(collection) {
     const frontMatter = await page.template.read();
 
     if (page.rawInput) {
-      const excerptLength = 255; // chars
+      const excerptLength = 400; // chars
       let content = page.rawInput.replace(/(<([^>]+)>)/gi, "");
       content = content.replace(/\n/g, " ");
       content = content.replace(/\([^)]*\)/g, ""); // remove markdown link url and parentheses
