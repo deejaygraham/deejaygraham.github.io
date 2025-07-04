@@ -9,7 +9,8 @@ focus on the principles of good object-oriented design would produce to inspire
 it's citizens.
 
 From the Ministry of [Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) Enforcement, inspired 
-also by the wonderful [Avid Grimm](https://avdi.codes/demeter-its-not-just-a-good-idea-its-the-law/).
+also by the wonderful [Avdi Grimm](https://avdi.codes/demeter-its-not-just-a-good-idea-its-the-law/) and 
+styled after the 'Keep Calm and Carry On' wartime poster.
 
 <figure class="image" style="width=50%" >
 <svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg" role="img">
