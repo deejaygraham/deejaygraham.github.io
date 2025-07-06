@@ -6,7 +6,8 @@ tags: [code, microbit, python]
 Not a program of any use this time but a bit of admin code to allow us to display numbers from 0 to 19 
 on the 5x5 LED array as if it was a seven-segment display of old - like an early clock radio or something. 
 
-{% microbit "90999:90909:90999:90009:90999" %}
+{% set frames = ["90999:90909:90999:90009:90999", "00999:00909:00909:00909:00999"] %}
+{% microbit frames %}
 
 ## Code
 
