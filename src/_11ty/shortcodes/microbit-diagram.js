@@ -152,7 +152,7 @@ export default function (image) {
      svgBuilder.push('\t\t\tdocument.getElementById("frame" + i).style.display = (i === current) ? "inline" : "none"; ');
      svgBuilder.push('\t\t}');
      svgBuilder.push('\t\tcurrent = (current + 1) % frameCount;');
-     svgBuilder.push(`\t}, ${frameRate};`);
+     svgBuilder.push(`\t}, ${frameRate});`);
      svgBuilder.push(']]></script>');
   }
 	
