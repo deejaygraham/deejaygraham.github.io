@@ -61,6 +61,9 @@ export default function (image) {
   // for each string in the array - write out a frame for the display
   
   const frameCount = 1;
+  
+  // first style is inline, further frames are none.
+  svgBuilder.push('<g id="frame0" style="display:inline">');
 	
   // go through image string and pull out brightness values for each led element
   const brightnessValues = image || '99999:99999:99999:99999:99999';
@@ -86,7 +89,10 @@ export default function (image) {
 
     rowIndex++;
   }
-  
+
+  svgBuilder.push('</g>');
+  // end animation of display 
+	
   // a and b buttons
   const button_width = Math.floor(width / 11);
   const button_height = button_width;
