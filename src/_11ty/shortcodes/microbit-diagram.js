@@ -5,6 +5,16 @@ const width = 721;
 const height = 565;
 const corner = 50; // px
 
+function toArray(input) {
+  if (Array.isArray(input)) {
+    return input;
+  } else if (typeof input === 'string') {
+    return [input];
+  } else {
+    throw new Error('Input must be a string or an array of strings');
+  }
+}
+
 export default function (image) {
   const svgBuilder = []
 	
@@ -59,39 +69,42 @@ export default function (image) {
 
   // animation handling here...
   // for each string in the array - write out a frame for the display
-  
-  const frameCount = 1;
-  
-  // first style is inline, further frames are none.
-  svgBuilder.push('<g id="frame0" style="display:inline">');
-	
-  // go through image string and pull out brightness values for each led element
-  const brightnessValues = image || '99999:99999:99999:99999:99999';
 
-  if (brightnessValues.length < 29) {
-    throw new Error("image must be 5x5");
-  }
-	
-  const rows = brightnessValues.split(":");
+  const frames = toArray(image);
+  const frameCount = frames.length;
+  
+  for (let i = 0; i < frames.length; i++) {
+    const frame = frames[i];
+    const frameId = `frame${i}`;
+    // first style is inline, further frames are none.
+    const frameStyle = i == 0 ? 'inline' : 'none';
+    svgBuilder.push(`<g id="${frameId}" style="display:${frameStyle}">`);
+    // go through image string and pull out brightness values for each led element
+    const brightnessValues = frame || '99999:99999:99999:99999:99999';
 
-  let rowIndex = 0;
-  for (const row of rows) { 
-    if (row.length < 5) {
-      throw new Error(`${rowIndex} must be 5 characters`);
-    }
-    svgBuilder.push(`<!-- ${rowIndex} -->`);
-    for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
-      const brightness = row[columnIndex];
-      const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
-      const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
-      svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="led_${brightness}" />`);
+    if (brightnessValues.length < 29) {
+      throw new Error("image must be 5x5");
     }
 
-    rowIndex++;
-  }
+    const rows = brightnessValues.split(":");
 
-  svgBuilder.push('</g>');
-  // end animation of display 
+    let rowIndex = 0;
+    for (const row of rows) { 
+      if (row.length < 5) {
+        throw new Error(`${rowIndex} must be 5 characters`);
+      }
+      svgBuilder.push(`<!-- ${rowIndex} -->`);
+      for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
+        const brightness = row[columnIndex];
+        const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
+        const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
+        svgBuilder.push(`<rect x="${x}" y="${y}" width="${led_width}" height="${led_height}" class="led_${brightness}" />`);
+      }
+
+      rowIndex++;
+    }
+    svgBuilder.push('</g>');
+  } 
 	
   // a and b buttons
   const button_width = Math.floor(width / 11);
