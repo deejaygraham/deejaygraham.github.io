@@ -15,7 +15,7 @@ function toArray(input) {
   }
 }
 
-export default function (image) {
+export default function (image, prefix) {
   const svgBuilder = []
 	
   // wrap it in a figure...
@@ -77,7 +77,7 @@ export default function (image) {
     const frame = frames[i];
 
     if (frameCount > 1) {
-      const frameId = `frame${i}`;
+      const frameId = prefix ? `${prefix}_frame${i}` : `frame${i}`;
       // first style is inline, further frames are none.
       const frameStyle = i == 0 ? 'inline' : 'none';
       svgBuilder.push(`<g id="${frameId}" style="display:${frameStyle}">`);
@@ -149,7 +149,12 @@ export default function (image) {
      svgBuilder.push('\tlet current = 0;');
      svgBuilder.push('\tsetInterval(() => {');
      svgBuilder.push('\t\tfor (let i = 0; i < frameCount; i++) {');
-     svgBuilder.push('\t\t\tdocument.getElementById("frame" + i).style.display = (i === current) ? "inline" : "none"; ');
+     if (prefix) {
+       svgBuilder.push(`const frameId = ${prefix}_frame;`);
+     } else {
+       svgBuilder.push(`const frameId = frame;`);
+     }
+     svgBuilder.push('\t\t\tdocument.getElementById(`${frameId}${i}`).style.display = (i === current) ? "inline" : "none"; ');
      svgBuilder.push('\t\t}');
      svgBuilder.push('\t\tcurrent = (current + 1) % frameCount;');
      svgBuilder.push(`\t}, ${frameRate});`);
