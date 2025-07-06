@@ -1,7 +1,7 @@
 ---
 layout: quotation
 title: One Upright Man
-attribution: bell hooks
+attribution: E.B.White
 publication: Letter to Mr Nadeau
 size: small
 tags: [quote]
