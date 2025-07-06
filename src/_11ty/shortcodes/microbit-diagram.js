@@ -150,9 +150,9 @@ export default function (image, prefix) {
      svgBuilder.push('\tsetInterval(() => {');
      svgBuilder.push('\t\tfor (let i = 0; i < frameCount; i++) {');
      if (prefix) {
-       svgBuilder.push(`const frameId = ${prefix}_frame;`);
+       svgBuilder.push(`const frameId = '${prefix}_frame';`);
      } else {
-       svgBuilder.push(`const frameId = frame;`);
+       svgBuilder.push(`const frameId = 'frame';`);
      }
      svgBuilder.push('\t\t\tdocument.getElementById(`${frameId}${i}`).style.display = (i === current) ? "inline" : "none"; ');
      svgBuilder.push('\t\t}');
