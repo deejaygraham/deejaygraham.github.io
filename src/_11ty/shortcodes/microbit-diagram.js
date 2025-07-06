@@ -124,7 +124,7 @@ export default function (image) {
   if (frameCount > 1) {
      // write out animation code
      const frameRate = 500;
-     svgBuilder.push('<script type="application/ecmascript"><![CDATA[')l
+     svgBuilder.push('<script type="application/ecmascript"><![CDATA[');
      svgBuilder.push(`\tconst frameCount = $(frameCount);`);
      svgBuilder.push('\tlet current = 0;');
      svgBuilder.push('\tsetInterval(() => {');
