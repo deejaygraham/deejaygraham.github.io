@@ -125,14 +125,14 @@ export default function (image) {
      // write out animation code
      const frameRate = 500;
      svgBuilder.push('<script type="application/ecmascript"><![CDATA[');
-     svgBuilder.push(`\tconst frameCount = $(frameCount);`);
+     svgBuilder.push(`\tconst frameCount = ${frameCount};`);
      svgBuilder.push('\tlet current = 0;');
      svgBuilder.push('\tsetInterval(() => {');
      svgBuilder.push('\t\tfor (let i = 0; i < frameCount; i++) {');
      svgBuilder.push('\t\t\tdocument.getElementById("frame" + i).style.display = (i === current) ? "inline" : "none"; ');
      svgBuilder.push('\t\t}');
      svgBuilder.push('\t\tcurrent = (current + 1) % frameCount;');
-     svgBuilder.push('\t}, 500);');
+     svgBuilder.push(`\t}, ${frameRate};');
      svgBuilder.push(']]></script>');
   }
 	
