@@ -7,7 +7,7 @@ const corner = 50; // px
 
 export default function (image) {
   const svgBuilder = []
-
+	
   // wrap it in a figure...
   svgBuilder.push('<figure class="image" style="width=50%" >');
   
@@ -57,6 +57,11 @@ export default function (image) {
 
   svgBuilder.push(`<!-- centre="${centre_x}, ${centre_y}" width="${led_width}" height="${led_height}" start="${led_start_x}, ${led_start_y}" spacing="${led_spacing_x}, ${led_spacing_y}" -->`);
 
+  // animation handling here...
+  // for each string in the array - write out a frame for the display
+  
+  const frameCount = 1;
+	
   // go through image string and pull out brightness values for each led element
   const brightnessValues = image || '99999:99999:99999:99999:99999';
 
@@ -109,7 +114,22 @@ export default function (image) {
   const edge_connector_height = Math.floor(height / 8);
   svgBuilder.push("<!-- edge connector -->");
   svgBuilder.push(`<rect y="${height - edge_connector_height + 1}" width="${width}" height="${edge_connector_height}" class="edge-connector" />`);
-  
+
+  if (frameCount > 1) {
+     // write out animation code
+     const frameRate = 500;
+     svgBuilder.push('<script type="application/ecmascript"><![CDATA[')l
+     svgBuilder.push(`\tconst frameCount = $(frameCount);`);
+     svgBuilder.push('\tlet current = 0;');
+     svgBuilder.push('\tsetInterval(() => {');
+     svgBuilder.push('\t\tfor (let i = 0; i < frameCount; i++) {');
+     svgBuilder.push('\t\t\tdocument.getElementById("frame" + i).style.display = (i === current) ? "inline" : "none"; ');
+     svgBuilder.push('\t\t}');
+     svgBuilder.push('\t\tcurrent = (current + 1) % frameCount;');
+     svgBuilder.push('\t}, 500);');
+     svgBuilder.push(']]></script>');
+  }
+	
   svgBuilder.push("</svg>");
   svgBuilder.push("</figure>");
   
