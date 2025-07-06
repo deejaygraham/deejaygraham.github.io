@@ -75,10 +75,14 @@ export default function (image) {
   
   for (let i = 0; i < frames.length; i++) {
     const frame = frames[i];
-    const frameId = `frame${i}`;
-    // first style is inline, further frames are none.
-    const frameStyle = i == 0 ? 'inline' : 'none';
-    svgBuilder.push(`<g id="${frameId}" style="display:${frameStyle}">`);
+
+    if (frameCount > 1) {
+      const frameId = `frame${i}`;
+      // first style is inline, further frames are none.
+      const frameStyle = i == 0 ? 'inline' : 'none';
+      svgBuilder.push(`<g id="${frameId}" style="display:${frameStyle}">`);
+    }
+	
     // go through image string and pull out brightness values for each led element
     const brightnessValues = frame || '99999:99999:99999:99999:99999';
 
@@ -103,7 +107,10 @@ export default function (image) {
 
       rowIndex++;
     }
-    svgBuilder.push('</g>');
+
+    if (frameCount > 1) {	  
+      svgBuilder.push('</g>');
+    }
   } 
 	
   // a and b buttons
