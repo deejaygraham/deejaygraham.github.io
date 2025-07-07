@@ -86,6 +86,11 @@ denoting the state of the 5x5 screen. The code would generate each of these
 screens or animation frames and be able to cycle between them as a crude 
 animation.
 
+```md
+{% set frames = ["90999:90909:90999:90009:90999", "00999:00909:00909:00909:00999"] %}
+{% microbit frames %}
+```
+
 After trying a few different ways of animating a set of SVG elements, I hit 
 on the idea of wrapping each of the 5x5 matrix renderings in a <g> tag with a 
 css style and an id. 
