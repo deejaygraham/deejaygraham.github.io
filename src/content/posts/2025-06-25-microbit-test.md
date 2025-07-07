@@ -87,8 +87,8 @@ screens or animation frames and be able to cycle between them as a crude
 animation.
 
 ```md
-{% set frames = ["90999:90909:90999:90009:90999", "00999:00909:00909:00909:00999"] %}
-{% microbit frames %}
+set frames = ["90999:90909:90999:90009:90999", "00999:00909:00909:00909:00999"] 
+microbit frames 
 ```
 
 After trying a few different ways of animating a set of SVG elements, I hit 
