@@ -15,6 +15,12 @@ function toArray(input) {
   }
 }
 
+function randomColour() {
+  const colours = [ "red", "blue", "gold", "green" ];
+  const random = Math.floor(Math.random() * colours.length);
+  return colours[random];
+}
+
 export default function (image, prefix) {
   const svgBuilder = []
 	
@@ -44,7 +50,8 @@ export default function (image, prefix) {
   svgBuilder.push(".edge-connector { fill: gold; } ");
   svgBuilder.push(".hole-ring { fill: gold; } ");
   svgBuilder.push(".hole { fill: white; } ");
-  svgBuilder.push(".flash { fill: gold; } ");
+  const flashColour = randomColour();
+  svgBuilder.push(`.flash { fill: ${flashColour}; } `);
   svgBuilder.push("</style>");
 
   svgBuilder.push("<!-- body -->");
