@@ -1,4 +1,11 @@
 @use "bulma/sass";
+
+@media (min-width:1025px) { 
+  .microbit-svg: {
+    padding: 0 200px;
+  }
+}
+
 @use "social";
 @use "a11y";
 @use "print";
