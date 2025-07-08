@@ -78,17 +78,22 @@ and some tweaking with a snake (slyterin), a badger's head (hufflepuff), a claw 
 win any prizes but they are at least distinct and recognizable (I hope) in 5x5.
 
 ### Hat
+
 {% microbit "07900:60750:07070:09090:99999", "hat" %}
 
 ### Snake
+
 {% microbit "09999:90099:09940:40090:09940", "slytherin" %}
 
 ### Badger
+
 {% microbit "99999:90909:90909:09090:00900", "hufflepuff" %}
 
 ### Claw
+
 {% microbit "00900:00900:09990:90909:90909", "ravenclaw" %}
 
 ### Sword
+
 {% microbit "00009:00090:90900:09000:90900", "gryffindor" %}
 
