@@ -55,7 +55,26 @@ export default function (image, prefix) {
   // debug
   //svgBuilder.push(`<line x1="${centre_x}" x2="${centre_x}" y1="0" y2="${height}" stroke="orange" stroke-width="5"/>`);
   //svgBuilder.push(`<line x1="0" x2="${width}" y1="${centre_y}" y2="${centre_y}" stroke="orange" stroke-width="5"/>`);
-  
+
+  svgBuilder.push("<!-- triangle flashes -->");
+  const triangleSize = Math.floor(height / 12); // size of triangle sides (not hypotenuse)
+
+  // small
+  let triangle1 = 7 * triangleSize;
+  let triangle2 = triangle1 - triangleSize;
+  let triangle3 = triangleSize;
+  svgBuilder.push(`<polygon points="${triangle1,0 ${triangle2},0 ${triangle2},${triangle3}" fill="yellow" />`);
+  // medium
+  triangle1 = triangle2;
+  triangle2 = triangle1 - (2 * triangleSize);
+  triangle3 = triangleSize * 2;
+  svgBuilder.push(`<polygon points="${triangle1,0 ${triangle2},0 ${triangle2},${triangle3}" fill="yellow" />`);
+  // large
+  triangle1 = triangle2;
+  triangle2 = 0;
+  triangle3 = triangleSize * 4;
+  svgBuilder.push(`<polygon points="${triangle1,0 ${triangle2},0 ${triangle2},${triangle3}" fill="yellow" />`);
+	
   // render led matrix
   svgBuilder.push("<!-- led matrix -->");
   const led_width = Math.floor(width / 60);
