@@ -145,3 +145,10 @@ microbit "09090:99999:99999:09990:00900" micro_a
 
 microbit "99999:99999:99999:09990:99999" micro_b
 ```
+
+## Randomness
+
+As an extra bit of swag, I included a random colour selection for the top left triangle flash 
+to mirror the colour options of the real microbit so that each time the svg is generated at 
+build time, the flash may change. 
+
