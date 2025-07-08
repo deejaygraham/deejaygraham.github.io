@@ -31,3 +31,15 @@ def screenshot():
 display.show(Image.HEART)
 print(screenshot())
 ```
+
+We can quickly modify the screen content by doing something like this - show an image on the 
+display, take a screenshot, turn on the top left pixel of the image then write it back to the 
+display.
+
+```python
+from microbit import *
+
+h = Image(screenshot())
+h.set_pixel(0, 0, 9)
+display.show(h)
+```
