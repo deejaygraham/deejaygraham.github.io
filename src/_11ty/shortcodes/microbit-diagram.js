@@ -44,6 +44,7 @@ export default function (image, prefix) {
   svgBuilder.push(".edge-connector { fill: gold; } ");
   svgBuilder.push(".hole-ring { fill: gold; } ");
   svgBuilder.push(".hole { fill: white; } ");
+  svgBuilder.push(".flash { fill: gold; } ");
   svgBuilder.push("</style>");
 
   svgBuilder.push("<!-- body -->");
@@ -63,17 +64,19 @@ export default function (image, prefix) {
   let triangle1 = 7 * triangleSize;
   let triangle2 = triangle1 - triangleSize;
   let triangle3 = triangleSize;
-  svgBuilder.push(`<polygon points="${triangle1,0 ${triangle2},0 ${triangle2},${triangle3}" fill="yellow" />`);
+  svgBuilder.push(`<polygon points="${triangle1},0 ${triangle2},0 ${triangle2},${triangle3}" class="flash" />`);
   // medium
   triangle1 = triangle2;
   triangle2 = triangle1 - (2 * triangleSize);
   triangle3 = triangleSize * 2;
-  svgBuilder.push(`<polygon points="${triangle1,0 ${triangle2},0 ${triangle2},${triangle3}" fill="yellow" />`);
+  svgBuilder.push(`<polygon points="${triangle1},0 ${triangle2},0 ${triangle2},${triangle3}" class="flash" />`);
   // large
   triangle1 = triangle2;
-  triangle2 = 0;
+  triangle2 = corner;
   triangle3 = triangleSize * 4;
-  svgBuilder.push(`<polygon points="${triangle1,0 ${triangle2},0 ${triangle2},${triangle3}" fill="yellow" />`);
+  // with rounded corner to match outside of microbit.
+  svgBuilder.push(`<circle cx="${corner}" cy="${corner}" r="${corner}" class="flash" />`);
+  svgBuilder.push(`<polygon points="${triangle1},0 ${triangle2},0 ${triangle2},${triangle2} 0,${triangle2} 0,${triangle3}" class="flash" />`);
 	
   // render led matrix
   svgBuilder.push("<!-- led matrix -->");
