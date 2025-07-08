@@ -4,7 +4,7 @@ title: Microbit Svg Test
 tags: [microbit, 11ty]
 ---
 
-This is a est post using my new "microbit" shortcode. This generates an SVG image of a simplified microbit graphic 
+This is a test post using my new "microbit" shortcode. This generates an SVG image of a simplified microbit graphic 
 similar to [the official microbit artwork tool](https://microbit.org/design-your-microbit/v2/).
 
 It supports passing a single string formatted as a microbit image or an array of string images so that I can show 
