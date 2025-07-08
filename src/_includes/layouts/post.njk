@@ -9,7 +9,7 @@
 		<span class="reading-time is-hidden-mobile">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
 	</div>	
 {% if tags %}
-	<div class="level-right">{# tags: remove temporarily #}
+	<div class="level-right is-hidden-mobile">{# tags: remove temporarily #}
 	{% for tag in tags %}
 		<span class="level-item">
    		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
