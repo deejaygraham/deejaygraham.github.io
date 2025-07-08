@@ -19,7 +19,8 @@ export default function (image, prefix) {
   const svgBuilder = []
 	
   // wrap it in a figure...
-  svgBuilder.push('<figure class="image" style="width=50%" >');
+  const classes = "image microbit-svg";
+  svgBuilder.push(`<figure class="${classes}" >`);
   
   // start svg
   
