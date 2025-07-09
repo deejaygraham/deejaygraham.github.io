@@ -31,7 +31,7 @@ const coreAssets = [
 addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(cacheName).then(function (cache) {
-            console.log('Adding core assets to cache');
+            console.debug('Adding core assets to cache');
 
             try {
                 cache.addAll(coreAssets);
@@ -52,7 +52,7 @@ addEventListener('install', function (event) {
 
 // make sure to remove old caches
 addEventListener('activate', function (event) {
-    console.log('Deleting old cache data');
+    console.debug('Deleting old cache data');
     event.waitUntil(
         caches.keys().then(function (keys) {
             return Promise.all(keys
@@ -70,7 +70,7 @@ addEventListener('fetch', function (event) {
         return;
     }
 
-    console.log(event.request.url);
+    console.debug(event.request.url);
 
     if (event.request.url.includes(siteStylesheet)) {
         // (directly) respond with cached asset (if available)
@@ -109,23 +109,23 @@ function serveFromCache(event, { ignoreSearch, checkExpiryHeader } = {}) {
     var matchOptions = {};
     if (ignoreSearch) matchOptions = { ignoreSearch: true };
 
-    console.log('Attempting to serve from cache', event.request.url);
+    console.debug('Attempting to serve from cache', event.request.url);
 
     return caches.match(event.request, matchOptions).then(function (cacheResponse) {
         // if found return cache
         if (cacheResponse) {
             if (checkExpiryHeader) {
                 if (isCacheResponseStillValid(cacheResponse)) {
-                    console.log('cached response is fresh');
+                    console.debug('cached response is fresh');
                     return cacheResponse;
                 }
             } else {
-                console.log('cached response exists');
+                console.debug('cached response exists');
                 return cacheResponse;
             }
         }
 
-        console.log('fetching from network');
+        console.debug('fetching from network');
         // fetch it again, because cache was not found or was expired
         return fetch(event.request).then(function (response) {
             if (event.request.url.includes(siteStylesheet)) {
@@ -151,7 +151,7 @@ function serveFromCache(event, { ignoreSearch, checkExpiryHeader } = {}) {
  */
 /* eslint-disable-next-line */
 function serveFromNetwork(event) {
-    console.log('Attempting to serve from network', event.request.url);
+    console.debug('Attempting to serve from network', event.request.url);
     // try and get it from the network
     return fetch(event.request).then(function (response) {
         if ((event.request.destination == 'document') && (response.status == 404)) {
@@ -189,7 +189,7 @@ function serveFromNetwork(event) {
  */
 function updateCache(request, cacheName) {
 
-    console.log('caching', request.url);
+    console.debug('caching', request.url);
     return caches.open(cacheName).then(function (cache) {
         return fetch(request).then(function (response) {
             var responseCopy = response.clone();
