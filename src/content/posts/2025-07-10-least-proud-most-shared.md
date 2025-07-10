@@ -43,13 +43,16 @@ import radio
 
 radio.on()
 
+# change this next line to your message
 your_tweet = "hi"
 
 while True:
 
+    # send it?
     if button_a.was_pressed():
         radio.send(your_tweet)
 
+    # listen for others
     received_tweet = radio.receive()
 
     if received_tweet:
