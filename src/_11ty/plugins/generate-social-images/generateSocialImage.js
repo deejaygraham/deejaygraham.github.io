@@ -2,7 +2,7 @@ import sharp from "sharp";
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
 
-export default async function (imageName, title, postDate, siteName, targetDir) {
+export default async function (imageName, title, postDate, siteName, targetDir, watermark) {
 
   const lineBreakAt = 15; // characters
   const line_length = lineBreakAt;
@@ -32,7 +32,7 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
   const svgDate = `<text x="${start_x}" y="50" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
 
   //  <g style="font-family: 'Consolas', 'Courier New'" >
-
+	
   const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewbox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
   	<rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${bgColour}" />
     	<g style="font-family:'sans-serif'">
@@ -49,6 +49,10 @@ export default async function (imageName, title, postDate, siteName, targetDir) 
     const svgBuffer = Buffer.from(template); // eslint-disable-line
 
     await sharp(svgBuffer)
+	.composite([{
+    		input: watermark,
+    		gravity: 'southeast',
+  	}])
       .resize(graphicWidth, graphicHeight)
       .png()
       .toFile(`${targetDir}/${fileName}`);
