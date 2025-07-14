@@ -7,8 +7,6 @@ Tinkering around with midi files again but this time in python, I discovered a n
 midi file processing. I wanted a way to generate a simple test file that I could verify by ear and would be recognizable but would be just good enough 
 for experimentation.
 
-## SubHeadline
-
 Mido seems super easy to use for this purpose, defined a MidiFile object, add a track, then fill up with track with note data. I opted to 
 create a simple C major scale, just big enough to be minimally useful and following a predictable sequence so we can be sure if something 
 is in the wrong place in the code, if the notes are increasing in the file, but the code is decreasing, say.
