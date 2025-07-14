@@ -1,6 +1,5 @@
 ---
 title: Mido Test Generator
-draft: true
 tags: [midi, python]
 ---
 
