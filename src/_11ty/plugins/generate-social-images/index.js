@@ -7,7 +7,8 @@ import generateSocialImage from "./generateSocialImage.js";
 
 const defaults = {
     siteName: "",
-    outputDir: "_site/img/previews"
+    outputDir: "_site/img/previews",
+    watermark: "./src/assets/img/favicon.png",
 };
 
 /**
@@ -16,7 +17,8 @@ const defaults = {
 export default function(eleventyConfig, options) {
     const {
         siteName,
-        outputDir
+        outputDir,
+	watermark
     } = { ...defaults, ...options };
 
     // create output directory if it does not exist
@@ -39,7 +41,8 @@ export default function(eleventyConfig, options) {
 			title,		
             postDate,
 			siteName,
-            targetDir	
+            targetDir,
+		watermark
 		);
     });
 };
