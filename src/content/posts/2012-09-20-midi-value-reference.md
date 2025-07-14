@@ -1,6 +1,6 @@
 ---
 title: Midi Value Reference
-tags: [music]
+tags: [midi]
 ---
 
 A quick post, mainly for me, because I always have trouble remembering or
