@@ -7,7 +7,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
   const lineBreakAt = 15; // characters
   const line_length = lineBreakAt;
   const max_lines = 4;
-  const start_x = 50;
+  const start_x = 450;
   const start_y = 150;
   const line_height = 120; 
   const font_size = 120;
@@ -29,7 +29,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
   const graphicHeight = 628;
 	
   const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
-  const svgDate = `<text x="${start_x}" y="50" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
+  const svgDate = `<text x="${start_x}" y="${start_y}" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
 
   //  <g style="font-family: 'Consolas', 'Courier New'" >
 	
@@ -38,7 +38,6 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
     	<g style="font-family:'sans-serif'">
       ${postDate ? svgDate : ''}
   		${svgTitle}
-      ${svgSite}
       </g>
     </svg>`;
 
@@ -51,7 +50,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
     await sharp(svgBuffer)
 	.composite([{
     		input: watermark,
-    		gravity: 'southeast',
+    		gravity: 'northwest',
   	}])
       .resize(graphicWidth, graphicHeight)
       .png()
