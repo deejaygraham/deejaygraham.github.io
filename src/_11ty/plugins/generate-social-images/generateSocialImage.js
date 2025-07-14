@@ -29,7 +29,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
   const graphicHeight = 628;
 	
   // const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
-  const svgDate = `<text x="${start_x}" y="${start_y_middle - 50}" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
+  const svgDate = `<text x="${start_x}" y="${start_y_middle - 100}" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
 
   //  <g style="font-family: 'Consolas', 'Courier New'" >
 	
