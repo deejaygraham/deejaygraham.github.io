@@ -12,14 +12,14 @@ How hard could it be?
 
 First we need mono installed on the Pi. Open a terminal and execute:
 
-```console
+```sh
 sudo apt-get update
 sudo apt-get install mono-complete
 ```
 
 or, if you intend to build on another machine:
 
-```console
+```sh
 sudo apt-get install mono-runtime
 ```
 
@@ -48,13 +48,13 @@ be nice.
 
 This needs to be built with xbuild using:
 
-```console
+```sh
 xbuild PiTest.proj
 ```
 
 or simply
 
-```console
+```sh
 gmcs PiTest.cs
 ```
 
