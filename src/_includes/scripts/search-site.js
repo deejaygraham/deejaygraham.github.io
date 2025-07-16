@@ -1,6 +1,8 @@
 /* global elasticlunr */
 "use strict";
 
+let history = [];
+
 const ignoreEnterKey = (e) => {
     if (e.keyCode === 13) {
     e.preventDefault();
@@ -38,6 +40,16 @@ const displayResults = (searchTerm, results) => {
 
 const executeSearch = (e) => {
     const searchTerm = e.target.value;
+
+    if (history.indexOf(searchTerm) == -1) {
+         history.unshift(searchTerm);
+         if (history.length > 5) { 
+            history.pop();
+         }
+     
+        localStorage["searchHistory"] = JSON.stringify(history);
+    }
+    
     // console.log("searching for: ", e.target.value);
     const results = window.searchIndex.search(searchTerm, 
     {
@@ -63,5 +75,31 @@ const loadSearchIndex = async () => {
     }
     catch(error) {
         console.error("Error loading search index:", error);
+    }
+};
+
+/* eslint-disable-next-line */
+const loadSearchHistory = () => {
+    if(localStorage["searchHistory"]) {
+         history = JSON.parse(localStorage["searchHistory"]);
+    }
+
+    if (history) {
+        const container = document.getElementById("search-history");
+        container.innerHTML = "";
+
+        // how do we get this into the text box and fire the query???
+        if (Array.isArray(history) && history.length > 0) {
+            history.forEach(s => {
+                const searchLink = document.createElement("a");
+                // searchLink.setAttribute("href", doc.id);
+                searchLink.textContent = s;
+            
+                const listItem = document.createElement("li");
+                listItem.appendChild(searchLink);
+    
+                container.appendChild(listItem);
+            });
+        } 
     }
 };
