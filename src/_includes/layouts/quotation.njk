@@ -7,10 +7,12 @@
 </section>
 {% endif %}
 
+{# default to small font size #}
 {% set fontSize = 'is-size-5' %}
-{% if size == "large" %}
+{% set words = content | wordCount %}
+{% if words < 100 %}
 {% set fontSize = "is-size-1" %}
-{% elif size == "medium" %}
+{% elif words < 500 %}
 {% set fontSize = "is-size-3" %}
 {% endif %} 
 
