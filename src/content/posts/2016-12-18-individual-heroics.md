@@ -1,11 +1,9 @@
 ---
 layout: quotation
 title: Individual Heroics
-publication: anon
+attribution: anon
 tags: [quote]
 size: large
-
-
 ---
 
 Individual heroics cannot substitute for lasting systemic change.
