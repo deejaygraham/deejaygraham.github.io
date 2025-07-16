@@ -9,7 +9,7 @@ thumbnail: "/assets/img/thumbnails/parcel-420x255.png"
 Two wonderful features of PowerShell that don't seem to get used enough are embodied by the
 cmdlet **Set-PSDebug**
 
-##Tracing some of the things
+## Tracing some of the things
 
 ```shell
 
@@ -20,7 +20,7 @@ PS C:\>Set-PSDebug -Trace 1
 Trace level 1 gives you an idea of the execution of a script, like which path is taken after a
 conditional is evaluated.
 
-##Tracing all the things
+## Tracing all the things
 
 Even better is level 2 which shows everything level 1 does plus variable assignments (**! SET** ) and function calls
 (**! CALL**).
@@ -31,7 +31,7 @@ PS C:\>Set-PSDebug -Trace 2
 
 ```
 
-##Strict all the things
+## Strict all the things
 
 The other nice feature of Set-PSDebug is the strict option:
 
@@ -71,7 +71,7 @@ PS C:\>Set-StrictMode -Version 2
 Version 2 **does** catch uninitialized variables in expanded strings as well as in normal code. It also
 looks for functions being called as methods, unnamed variables, mistyped object properties.
 
-##Strict none of the things
+## Strict none of the things
 
 Turn off strict mode again using:
 
