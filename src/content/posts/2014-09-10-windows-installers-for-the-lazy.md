@@ -19,17 +19,24 @@ passing the /q option.
 
 Msiexec can run with:
 
-    /qn - Silent mode
-    /qb - Basic UI
-    /qr - Reduced mode
-    /qf - Full UI mode (the default)
+```console
+/qn - Silent mode
+/qb - Basic UI
+/qr - Reduced mode
+/qf - Full UI mode (the default)
+```
 
 In the case of an msi
 
-    msiexec /qn myinstaller.msi
+```console
+msiexec /qn myinstaller.msi
+```
 
 or in the case of a custom setup.exe
+
+```console
 setup.exe /qn
+```
 
 This should install the software provided that the installer never needs admin
 permissions. If it does, you will often find the installer gets to the point
@@ -49,14 +56,16 @@ is supplied, the installer is happy. If there's no value it's up to you to suppl
 One way to supply it efficiently is to create a batch file with variables to
 represent each field and pass them in on the command line. Something like:
 
-    @echo off
+```console
+@echo off
 
-    SET OPTION_ON=1
+SET OPTION_ON=1
 
-    SET ACCOUNT_USERNAME="Me"
-    SET ACCOUNT_PASSWORD="ThisIsNotMyPassword"
+SET ACCOUNT_USERNAME="Me"
+SET ACCOUNT_PASSWORD="ThisIsNotMyPassword"
 
-    setup.exe /qf /lv logfile.txt INSTALLOPTION=%OPTION_ON% USERNAME=%ACCOUNT_USERNAME% PASSWORD=%ACCOUNT_PASSWORD%
+setup.exe /qf /lv logfile.txt INSTALLOPTION=%OPTION_ON% USERNAME=%ACCOUNT_USERNAME% PASSWORD=%ACCOUNT_PASSWORD%
+```
 
 Now all we need is to supply the correct values with something sensible.
 
@@ -72,3 +81,4 @@ Here's an example of what Mono's Gendarme tool has in it's Property table:
 
 Ta-da! look up the names, fill the options in on the command line and the installer
 runs to full completion with no intervention from you!
+
