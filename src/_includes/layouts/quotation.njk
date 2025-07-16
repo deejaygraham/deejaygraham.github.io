@@ -10,6 +10,7 @@
 {# default to small font size #}
 {% set fontSize = 'is-size-5' %}
 {% set words = content | wordCount %}
+{% words %}
 {% if words < 100 %}
 {% set fontSize = "is-size-1" %}
 {% elif words < 500 %}
