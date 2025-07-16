@@ -20,6 +20,7 @@ Gone is the need to convince travis that this is a C project. We can at last
 proudly proclaim it to be C#. Another big change is that we don't have to
 direct it to install mono, it's already done for us.
 
+```yaml
     language: csharp
     solution: NDiffference.sln
 
@@ -30,6 +31,7 @@ direct it to install mono, it's already done for us.
     script:
     	- xbuild /p:Configuration=Release NDifference.sln
     	- mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./tests/UnitTests/bin/Release/NDifference.UnitTests.dll
+```
 
 One thing to note, NDifference is built against v4 of the .Net runtime so I had
 to make sure that I started the correct xunit console runner.
