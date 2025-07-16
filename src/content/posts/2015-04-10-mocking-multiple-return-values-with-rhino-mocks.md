@@ -15,9 +15,7 @@ Having used [Rhino Mocks](http://hibernatingrhinos.com/oss/rhino-mocks)
 before I fell naturally into using the
 
 ```csharp
-
-    MockRepository.GenerateMock<IMyInterface>()
-
+MockRepository.GenerateMock<IMyInterface>()
 ```
 
 syntax.
@@ -30,11 +28,8 @@ involved logic but I was surprised to find Rhino gives you this _Repeat_ control
 relatively easily.
 
 ```csharp
+var mockRepo = MockRepository.GenerateMock<IMyMultiStageInterface>();
 
-    var mockRepo = MockRepository.GenerateMock<IMyMultiStageInterface>();
-
-    mockRepo.Expect(r => r.WorkHasBeenDone()).Return(false).Repeat.Once();
-    mockRepo.Expect(r => r.WorkHasBeenDone()).Return(true);
-
-
+mockRepo.Expect(r => r.WorkHasBeenDone()).Return(false).Repeat.Once();
+mockRepo.Expect(r => r.WorkHasBeenDone()).Return(true);
 ```
