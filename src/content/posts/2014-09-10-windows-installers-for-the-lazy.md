@@ -19,7 +19,7 @@ passing the /q option.
 
 Msiexec can run with:
 
-```console
+```sh
 /qn - Silent mode
 /qb - Basic UI
 /qr - Reduced mode
@@ -28,13 +28,13 @@ Msiexec can run with:
 
 In the case of an msi
 
-```console
+```sh
 msiexec /qn myinstaller.msi
 ```
 
 or in the case of a custom setup.exe
 
-```console
+```sh
 setup.exe /qn
 ```
 
@@ -56,7 +56,7 @@ is supplied, the installer is happy. If there's no value it's up to you to suppl
 One way to supply it efficiently is to create a batch file with variables to
 represent each field and pass them in on the command line. Something like:
 
-```console
+```sh
 @echo off
 
 SET OPTION_ON=1
