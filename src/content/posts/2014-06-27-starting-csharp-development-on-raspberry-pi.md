@@ -12,42 +12,54 @@ How hard could it be?
 
 First we need mono installed on the Pi. Open a terminal and execute:
 
-    sudo apt-get update
-    sudo apt-get install mono-complete
+```sh
+sudo apt-get update
+sudo apt-get install mono-complete
+```
 
 or, if you intend to build on another machine:
 
-    sudo apt-get install mono-runtime
+```sh
+sudo apt-get install mono-runtime
+```
 
 Next we need some source code to compile into an application:
 
-    using System;
+```csharp
+using System;
 
-    namespace MonoPiTest
+namespace MonoPiTest
+{
+    class Program
     {
-    	class Program
-    	{
 
-    		static void Main(string[] args)
-    		{
-    			Console.WriteLine("Hello, {0}", Environment.OSVersion);
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, {0}", Environment.OSVersion);
 
-    			Console.ReadKey();
-    		}
-    	}
+            Console.ReadKey();
+        }
     }
+}
+```
 
 Some configuration around this in the form of an MsBuild/XBuild script would
 be nice.
 
 This needs to be built with xbuild using:
 
-    xbuild PiTest.proj
+```sh
+xbuild PiTest.proj
+```
 
 or simply
 
-    gmcs PiTest.cs
+```sh
+gmcs PiTest.cs
+```
 
 Once we have an executable we can try it out:
 
-    sudo mono PiTest.exe
+```sh
+sudo mono PiTest.exe
+```
