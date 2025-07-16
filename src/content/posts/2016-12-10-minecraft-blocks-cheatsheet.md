@@ -29,13 +29,13 @@ world.setBlock(x, y, z, block.STONE.id)
 Some special blocks support extra attributes in the final argument to
 <code>setBlock</code>. Wool, for example, supports a colour value.
 
-ID | Colour
-== | ======
-0 | White
-1 | Orange
-2 | Magenta
-3 | Light Blue
-4 | Yellow
+| ID | Colour |
+| == | ====== |
+| 0 | White |
+| 1 | Orange |
+| 2 | Magenta |
+| 3 | Light Blue |
+| 4 | Yellow |
 
 So I can make a lovely block of orange wool like this:
 
