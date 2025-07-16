@@ -14,20 +14,10 @@
  *
  * @param {String} text
  */
+import wordCount from "./wordCount.js";
 
 export default function (text, speed = 160) {
-  const content = new String(text);
-  
-  // remove all html elements
-  const re = /(&lt;.*?&gt;)|(<[^>]+>)/gi;
-  let plain = content.replace(re, "");
-
-  // replace all newlines and 's with spaces
-  plain = plain.replace(/\s+|'s/g, " ");
-
-  // create array of all the words in the post & count them
-  const words = plain.split(" ");
-  const count = words.length;
+  const count = wordCount(text);
 
   // calculate the reading time
   const readingTime = Math.round(count / speed);
