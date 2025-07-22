@@ -78,7 +78,7 @@ random number between 1 and 8.
 After playing around with this in actual demonstrations, I added a new refinement which was to separate the calls into different kinds of "bird". Randomly we pick either a low frequency "owl", 
 a medium frequency "songbird" or a high frequency "cheep".
 
-```pythohn
+```python
 from microbit import *
 import random
 import music
