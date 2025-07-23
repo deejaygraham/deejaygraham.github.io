@@ -5,7 +5,7 @@ layout: base.njk
 ---
 <h1 class="title is-1">Blog</h1>
 
-{% set postcardlist = collections.posts | limit(12) %}
+{% set postcardlist = collections.posts | limit(18) %}
 {% include "partials/post-card-list.njk" %}
 
 <p class="has-text-right"><a href="{{ site.url }}/archive/">See All Posts</a></p>
