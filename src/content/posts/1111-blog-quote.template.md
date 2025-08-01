@@ -3,7 +3,6 @@ layout: quotation
 title: Title
 attribution: Person
 publication: Book
-size: large
 tags: [quote]
 ---
 
