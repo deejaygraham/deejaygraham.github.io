@@ -17,7 +17,7 @@ or combine them (essentially the same but with some good points in each).
 
 1. Read the content of each markdown file.
 1. Remove markdown syntax, punctuation, and stopwords to focus on the core content.
-1. Convert the cleaned text into numerical vectors using Term Frequency-Inverse Document Frequency (TF-IDF) and cosine similarity.
+1. Convert the cleaned text into numerical vectors using <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">Term Frequency-Inverse Document Frequency</a> (TF-IDF) and <a href="https://en.wikipedia.org/wiki/Cosine_similarity">cosine similarity</a>.
 1. Compute pairwise similarity scores (e.g., cosine similarity) between all files.
 1. Flag pairs with similarity above a certain threshold as potential duplicates.
 1. Generate a list of similar file pairs with similarity scores for review.
