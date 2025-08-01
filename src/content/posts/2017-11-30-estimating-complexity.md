@@ -12,4 +12,14 @@ this scale to be enormously helpful before going into an estimation meeting (or 
 1. Someone outside the organization has done it before (probably a competitor).
 1. Someone in our organization has done it before.
 1. Someone in the team has done it before.
-1. We all know how to do it.
+1. We all know how to do it
+
+Or conversely, I have seen it this way:
+
+1. Just about everyone in the world has done this - a JFDI* task
+1. Lots of people have done this, including someone on our team.
+1. Someone in our company has done this, or we have access to expertise.
+1. Someone in the world did this, but not in our organization - and we don't know how
+1. Nobody in the world has ever done this before. - Spike or experimentation needed
+
+*JFDI - Just Flipping Do It. Something well understood that has no complexity or dependency on externality, just needs the time to physically do it.
