@@ -1,6 +1,6 @@
 ---
 title: Estimating Complexity
-tags: [agile]
+tags: [agile, cynefin]
 ---
 
 Here's a scale that I've seen <a href="https://twitter.com/lunivore">Liz Keogh</a> use in a couple of talks about
@@ -22,4 +22,5 @@ Or conversely, I have seen it this way:
 1. Someone in the world did this, but not in our organization - and we don't know how
 1. Nobody in the world has ever done this before. - Spike or experimentation needed
 
-*JFDI - Just Flipping Do It. Something well understood that has no complexity or dependency on externality, just needs the time to physically do it.
+*JFDI - Just Flippin' Do It. Something well understood that has no complexity or dependency on externality, just needs the time to physically do it. This was a term 
+I originally learned from Jennifer Stapleton, of DSDM fame.
