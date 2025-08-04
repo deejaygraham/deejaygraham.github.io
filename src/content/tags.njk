@@ -5,7 +5,7 @@ pagination:
   alias: tag
 layout: base.njk
 eleventyComputed:
-  title: posts tagged with #{{ tag }}
+  title: posts by tag
 permalink: /tags/{{ tag | slugify }}/
 excludeFromSitemap: true
 ---
