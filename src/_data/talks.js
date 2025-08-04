@@ -67,4 +67,10 @@ export default [
     url: "https://www.slideshare.net/deejaygraham/sketchnoting-for-developers-at-ddd-north-2015",
     thumbnail: "/assets/img/posts/talks/sketchnoting-for-developers.png",
   },
+  {
+    title: "Sketchnoting for Developers",
+    subtitle: "Online version",
+    url: "https://deejaygraham.github.io/sketchnoting-for-developers",
+    thumbnail: "/assets/img/posts/talks/sketchnoting-for-developers.png",
+  },
 ];
