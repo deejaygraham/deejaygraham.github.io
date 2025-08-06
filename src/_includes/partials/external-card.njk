@@ -9,7 +9,7 @@
 				</figure>
 		</div>
   	<div class="card-content">
-      	<h2 class="title"><a href="{{ item.url }}" target="_blank" rel="noreferrer">{{ item.title }}</a></h2>
+      	<h2 class="title">{% externalLink item.url, item.title %}</h2>
 	{% if item.subtitle %}
         <p class="subtitle">{{ item.subtitle }}</p>
         {% endif %}
