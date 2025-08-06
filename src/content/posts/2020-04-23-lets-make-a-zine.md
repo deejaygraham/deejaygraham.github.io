@@ -1,6 +1,6 @@
 ---
 layout: sketchnote
-title: Lets make a tiny zine
+title: Lets make a Tiny Zine
 tags: [sketchnotes]
 
 thumbnail: "/assets/img/posts/lets-make-a-zine/thumbnail-420x255.png"

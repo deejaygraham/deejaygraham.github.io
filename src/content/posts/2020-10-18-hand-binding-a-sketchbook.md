@@ -1,5 +1,5 @@
 ---
-title: Hand Binding a sketchbook
+title: Hand Binding a Sketchbook
 tags: [sketchnotes]
 thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 

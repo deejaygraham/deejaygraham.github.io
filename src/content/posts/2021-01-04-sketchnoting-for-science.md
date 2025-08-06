@@ -1,6 +1,6 @@
 ---
 layout: sketchnote
-title: Sketchoting for Science
+title: Sketchnoting for Science
 tags: [sketchnotes]
 
 thumbnail: "/assets/img/posts/sketchnoting-for-science/thumbnail-420x255.jpg"
