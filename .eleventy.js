@@ -22,6 +22,7 @@ import vimeo from "./src/_11ty/shortcodes/vimeo.js";
 import poison from "./src/_11ty/shortcodes/poison-ai.js";
 import mermaid from "./src/_11ty/shortcodes/mermaid-diagram.js";
 import microbit from "./src/_11ty/shortcodes/microbit-diagram.js";
+import externalLink from "./src/_11ty/shortcodes/external-link.js";
 
 // plugins
 import { IdAttributePlugin } from "@11ty/eleventy";
@@ -95,6 +96,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("poison", poison);
   eleventyConfig.addPairedShortcode("mermaid", mermaid);
   eleventyConfig.addShortcode("microbit", microbit);
+  eleventyConfig.addShortcode("externalLink", externalLink);
 	
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
