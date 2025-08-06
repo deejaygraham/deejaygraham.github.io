@@ -15,13 +15,13 @@
         </thead>
         <tbody>
             <tr>
-     {% if sketchnote.source %}<td>{% if sketchnote.source.url %}<a href="{{ sketchnote.source.url }}">{{ sketchnote.source.name }}</a>
+     {% if sketchnote.source %}<td>{% if sketchnote.source.url %}{% externalLink sketchnote.source.url, sketchnote.source.name %}
         {% else %}{{ sketchnote.source.name }}{% endif %}</td>
     {% endif %}
-    {% if sketchnote.speaker %}<td>{% if sketchnote.speaker.url %}<a href="{{ sketchnote.speaker.url }}">{{ sketchnote.speaker.name }}</a>
+    {% if sketchnote.speaker %}<td>{% if sketchnote.speaker.url %}{% externalLink sketchnote.speaker.url, sketchnote.speaker.name %}
         {% else %}{{ sketchnote.speaker.name }}{% endif %}</td>
     {% endif %}
-    {% if sketchnote.event %}<td>{% if sketchnote.event.url %}<a href="{{ sketchnote.event.url }}">{{ sketchnote.event.name }}</a>
+    {% if sketchnote.event %}<td>{% if sketchnote.event.url %}{% externalLink sketchnote.event.url, sketchnote.event.name %}
     {% else %}{{ sketchnote.event.name }}{% endif %}</td>
     {% endif %}
             </tr>
