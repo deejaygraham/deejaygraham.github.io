@@ -3,7 +3,7 @@
 @use "a11y";
 @use "print";
 
-.animated-cursor: {
+.animated-cursor {
   animation: blink 1s infinite;
     opacity: 1;
   }
