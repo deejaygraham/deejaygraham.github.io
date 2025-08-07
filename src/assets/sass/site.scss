@@ -3,6 +3,23 @@
 @use "a11y";
 @use "print";
 
+.animated-cursor: {
+  animation: blink 1s infinite;
+    opacity: 1;
+  }
+
+@keyframes blink {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: .5
+  }
+  100% {
+    opacity: 0
+  }
+}
+
 @media (min-width:1025px) { 
   .microbit-svg {
     padding: 0 200px;
