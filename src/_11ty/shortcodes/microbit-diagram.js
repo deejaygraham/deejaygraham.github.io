@@ -116,9 +116,9 @@ export default function (image, prefix) {
     // go through image string and pull out brightness values for each led element
     const brightnessValues = frame || '99999:99999:99999:99999:99999';
 
-    if (brightnessValues.length < 29) {
-      throw new Error("image must be 5x5");
-    }
+    //if (brightnessValues.length < 29) {
+     // throw new Error("image must be 5x5");
+    //}
 
     const rows = brightnessValues.split(":");
 
