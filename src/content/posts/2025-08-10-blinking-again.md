@@ -10,6 +10,9 @@ in Python and particularly in MicroPython. Decorators on functions are common in
 come across them in working with the microbit until, that is, I noticed the 
 [run_every function]([https://microbit-micropython.readthedocs.io/en/v2-docs/](https://microbit-micropython.readthedocs.io/en/v2-docs/microbit.html#microbit.run_every))
 
+
+## Blinker
+
 Unsurprisingly, it is described in the docs as a decorator that can run code on a timed interval. Awesome, so that means I can super simplify 
 my original blinkenlights code.
 
@@ -31,6 +34,9 @@ def blink():
 
 ```
 
+Note there is no while loop or anything else unnecessary in the code, just a lovely blinking light in the top corner of the screen. 
+
+
 ## Scanning
 
 The ghost and dinosaur detectors I wrote a while ago feature a sweeping scanner animation to show that the microbit was 
@@ -39,6 +45,9 @@ a bit nicer. This does rely on a few more global variables but doesn't require a
 
 {% set frames = ["90000:90000:90000:90000:90000", "09000:09000:09000:09000:09000", "00900:00900:00900:00900:00900", "00090:00090:00090:00090:00090", "00009:00009:00009:00009:00009"] %}
 {% microbit frames, "scanner", 150 %}
+
+
+## Code
 
 ```python
 
@@ -68,5 +77,3 @@ def sweep_scanner():
   draw_line(scan_position, 9) # draw new line
   
 ```
-
-Note there is no while loop or anything else unnecessary in the code, just a lovely blinking light in the top corner of the screen. 
