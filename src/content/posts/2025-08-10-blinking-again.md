@@ -38,7 +38,7 @@ waiting for something to happen, emulating a radar or something. That code could
 a bit nicer. This does rely on a few more global variables but doesn't require a class so possibly more understandable by students.
 
 {% set frames = ["90000:90000:90000:90000:90000", "09000:09000:09000:09000:09000", "00900:00900:00900:00900:00900", "00090:00090:00090:00090:00090", "00009:00009:00009:00009:00009"] %}
-{% microbit frames, "scanner" %}
+{% microbit frames, "scanner", 150 %}
 
 ```python
 
