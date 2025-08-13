@@ -25,3 +25,42 @@ address = '{:02x}{:02x}{:02x}{:02x}'.format(id[0], id[1], id[2], id[3])
 print(address) 
 
 ```
+
+## Update
+
+Typically, after posting this I discovered a repo from one of the microbit contributors - [Carlos Pereira Atencio](https://github.com/microbit-carlos) - 
+documenting a challenge from EuroPython 2022 [Bird Activity](https://github.com/microbit-carlos/microbit-bird-activity/) which uses a fun approach 
+to generating a better, friendly name for the birds but still based on the value returned from the microbit unique_id function.
+
+
+### microbit-bird-activity/src/bird/complete/bird.py
+
+```python
+
+import machine
+import struct
+
+def friendly_name():
+    """Returns a string with a friendly name based on the MCU Unique ID."""
+    length, letters = 5, 5
+    codebook = [
+        ['z', 'v', 'g', 'p', 't'],
+        ['u', 'o', 'i', 'e', 'a'],
+        ['z', 'v', 'g', 'p', 't'],
+        ['u', 'o', 'i', 'e', 'a'],
+        ['z', 'v', 'g', 'p', 't']
+    ]
+    name = []
+    # Derive our name from the unique ID
+    _, n = struct.unpack("II", machine.unique_id())
+    ld = 1;
+    d = letters;
+    for i in range(0, length):
+        h = (n % d) // ld;
+        n -= h;
+        d *= letters;
+        ld *= letters;
+        name.insert(0, codebook[i][h]);
+    return "".join(name);
+
+```
