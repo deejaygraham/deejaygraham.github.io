@@ -47,7 +47,7 @@ a bit nicer. This does rely on a few more global variables but doesn't require a
 {% microbit frames, "scanner", 150 %}
 
 
-## Code
+## Scan
 
 ```python
 
