@@ -60,7 +60,7 @@ class Ghost:
 
 class SweepScanner:
 
-  def **init**(self):
+  def __init__(self):
     self.direction = 1
     self.x = 2
     self.scan_speed = 150
