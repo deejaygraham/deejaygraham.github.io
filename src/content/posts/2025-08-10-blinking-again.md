@@ -13,6 +13,9 @@ come across them in working with the microbit until, that is, I noticed the
 Unsurprisingly, it is described in the docs as a decorator that can run code on a timed interval. Awesome, so that means I can super simplify 
 my original blinkenlights code.
 
+{% set frames = ["90000:00000:00000:00000:00000", "00000:00000:00000:00000:00000"] %}
+{% microbit frames %}
+
 
 ## Code 
 
