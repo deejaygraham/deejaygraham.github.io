@@ -21,7 +21,7 @@ function randomColour() {
   return colours[random];
 }
 
-export default function (image, prefix) {
+export default function (image, prefix, speed) {
   const svgBuilder = []
 	
   // wrap it in a figure...
@@ -173,7 +173,7 @@ export default function (image, prefix) {
 
   if (frameCount > 1) {
      // write out animation code
-     const frameRate = 1000; // 1 second
+     const frameRate = speed || 1000; // 1 second
      svgBuilder.push('<script type="application/ecmascript"><![CDATA[');
      svgBuilder.push(`\tconst frameCount = ${frameCount};`);
      svgBuilder.push('\tlet current = 0;');
