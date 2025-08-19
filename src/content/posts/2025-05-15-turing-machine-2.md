@@ -15,15 +15,18 @@ state to move to next.
 A placeholder state is used (by convention state 0) to stop the program from running endlessly. See the 
 unit tests at the end of this post for some example programs (both good and bad).
 
+
 ## Program Validator
 
 Since the whole point of a turing machine is that the program can be anything, the program 
 validator works to at least check that there are certain minimum requirements. 
+
 For the top level state I decided we needed a halting/resting state and at least one other state 
 where the action will happen. The other state(s) should include at least one symbol
 acting as a key for a set of instructions. The symbol must come from a recognized alphabet since it is 
 going to be read from the tape. Each instruction set must contain 3 mandatory instructions: 
 a write instruction, a move instruction and a next state instruction.
+
 The move can only be 1, 0 or -1 (move right, no move, move left). The write symbol must come from the 
 same alphabet as the read symbol. The next state must exist in the top level dictionary keys so that we 
 can be sure that we are moving to a valid state that exists.
@@ -31,6 +34,7 @@ can be sure that we are moving to a valid state that exists.
 I included some type checking as well for dictionaries and some of the values so that we can catch 
 some of the more obvious errors early on. I also tried to make the errors messages as useful and 
 descriptive as possible. 
+
 
 ## Code
 
@@ -126,8 +130,8 @@ class ProgramValidator:
             return errors
 ```
 
-## Tests 
 
+## Tests 
 
 ### program-validator-tests.py 
 
