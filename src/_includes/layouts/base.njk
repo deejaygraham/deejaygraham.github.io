@@ -26,11 +26,11 @@
     {% include "partials/siteheader.njk" %}
     {% endblock %}
 
-    <main class="main mb-6" id="main" >
+    <main class="main container mb-6" id="main" >
       {% block precontent %}{% endblock %}
 
       <section class="section pt-0">
-	      <div class="container is-medium">
+	      <div class="content is-medium">
         {% block content %}
           {{ content | safe }}
         {% endblock %}
