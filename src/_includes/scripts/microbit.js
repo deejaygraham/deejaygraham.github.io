@@ -40,7 +40,7 @@ const mapBrightness = (brightness, in_min, in_max, out_min, out_max) => {
   return (brightness - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-const draw = () => {
+const renderMicrobits = () => {
   const microbits = document.querySelectorAll("[data-microbit]");
   
   microbits.forEach((microbit) => {
