@@ -94,8 +94,8 @@ const drawMicrobit = (microbit) => {
     x3 = cornerRadius;
     y3 = cornerRadius;
 
-    let x4 = 0;
-    let y4 = cornerRadius;
+    //let x4 = 0;
+    //let y4 = cornerRadius;
 
     let x5 = 0;
     let y5 = sideLength;
@@ -174,6 +174,7 @@ const drawMicrobit = (microbit) => {
   }
 }
 
+/* eslint-disable-next-line */
 const renderMicrobits = () => {
   const microbits = document.querySelectorAll("[data-microbit]");
   
