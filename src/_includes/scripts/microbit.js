@@ -40,14 +40,6 @@ const mapBrightness = (brightness, in_min, in_max, out_min, out_max) => {
   return (brightness - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-const renderMicrobits = () => {
-  const microbits = document.querySelectorAll("[data-microbit]");
-  
-  microbits.forEach((microbit) => {
-    drawMicrobit(microbit);
-  });
-}
-
 const drawMicrobit = (microbit) => {
   if (microbit.getContext) {
     const ctx = microbit.getContext("2d");
@@ -181,3 +173,12 @@ const drawMicrobit = (microbit) => {
       ctx.fillRect(0, microbit.height - edge_connector_height + 1, microbit.width, edge_connector_height);
   }
 }
+
+const renderMicrobits = () => {
+  const microbits = document.querySelectorAll("[data-microbit]");
+  
+  microbits.forEach((microbit) => {
+    drawMicrobit(microbit);
+  });
+}
+
