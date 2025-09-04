@@ -21,6 +21,7 @@ export default function(eleventyConfig) {
         'cpp',
         'csharp',
         'elixir',
+        'html',
         'js',
         'json',
         'md',
