@@ -51,61 +51,48 @@ const drawFlashes = (ctx, element, radius) => {
   // angle corner, down to bottom, then back across hypotenuse
  ctx.fillStyle = randomColour();
 
-  let sideLength = Math.floor(element.height / 12); 
-  
   // small
+  let sideLength = Math.floor(element.height / 12); 
   let x1 = 7 * sideLength;
   let y1  = 0;
-
   let x2 = x1 - sideLength;
   let y2 = 0;
-
   let x3 = x2;
   let y3 = sideLength;
   filledTriangle(ctx, x1, y1, x2, y2, x3, y3);
 
-  sideLength *= 2;
-
   // medium
+  sideLength *= 2;
   x1 = x2;
   y1  = 0;
-
   x2 = x1 - sideLength;
   y2 = 0;
-
   x3 = x2;
   y3 = sideLength;
   filledTriangle(ctx, x1, y1, x2, y2, x3, y3);
 
   // large
   sideLength *= 2;
-
   x1 = x2;
   y1 = 0;
-
   x2 = radius;
   y2 = 0;
-
   x3 = radius;
   y3 = radius;
-
   //let x4 = 0;
   //let y4 = radius;
-
   let x5 = 0;
   let y5 = sideLength;
 
-  // with rounded corner to match outside of microbit.
+  // with rounded corner to match top left corner of microbit.
   ctx.beginPath();
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
   ctx.arc(x3, y3, radius + 1, Math.PI * 1.5, Math.PI, true);
   //ctx.lineTo(x3, y3);
   //ctx.lineTo(x4, y4);
-
   ctx.lineTo(x5, y5);
   ctx.lineTo(x1, y1);
-
   ctx.fill();
 }
 
