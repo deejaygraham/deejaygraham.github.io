@@ -46,8 +46,8 @@ const renderMicrobits = () => {
 ```
 
 The remainder of the code does a lot of geometric work as in the original to position the buttons and display centrally 
-and to work out where to place the top left colour swatches. Each rendering of the microbit picks a random colour for the 
-swatches.
+and to work out where to place the top left colour swatches. Each refresh of the page picks a random colour for the 
+swatches, something that was only changed by the shortcode version when the whole site was rebuilt.
 
 ```js
 const randomColour = () => {
