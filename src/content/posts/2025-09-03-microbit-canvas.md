@@ -5,7 +5,8 @@ tags: [microbit, javascript]
 ---
 
 Following on from my 11ty shortcode to generate a simplified microbit ui as an SVG image, I wanted to explore making something 
-similar but using the canvas API in the browser. I adapted the original shortcode javascript to work with a 2D context API 
+similar but using the [canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) in the browser. I 
+adapted the original shortcode javascript to work with a 2D context API 
 and this is what I came up with, an almost exact rendering of the original SVG.
 
 
@@ -15,7 +16,7 @@ Each instance is rendered at page load by finding all of the elements with a dat
 brightness string to show in the LED matrix. The full size rendering with all the lights lit:
 
 ```html
-    <canvas id="mb1" width="721" height="565" data-microbit="05432:98765:99999:99999:99990"></canvas>
+<canvas id="mb1" width="721" height="565" data-microbit="05432:98765:99999:99999:99990"></canvas>
 ```
 
 <canvas id="mb1" width="721" height="565" data-microbit="05432:98765:99999:99999:99990"></canvas>
@@ -24,7 +25,7 @@ brightness string to show in the LED matrix. The full size rendering with all th
 Of course, the image can be scaled down and different LED combinations used.
 
 ```html
-    <canvas id="mb2" width="360" height="282" data-microbit="22222:44444:66666:88888:99999"></canvas>
+<canvas id="mb2" width="360" height="282" data-microbit="22222:44444:66666:88888:99999"></canvas>
 ```
 
 <canvas id="mb2" width="360" height="282" data-microbit="22222:44444:66666:88888:99999"></canvas>
