@@ -40,137 +40,149 @@ const mapBrightness = (brightness, in_min, in_max, out_min, out_max) => {
   return (brightness - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+const drawBody = (ctx, element, radius) => {
+  ctx.fillStyle = "black";
+  roundedRect(ctx, 0, 0, element.width, element.height, radius);
+}
+
+const drawFlashes = (ctx, element, radius) => {
+  // size of triangle sides (not hypotenuse)
+  // flashes are drawn from right hand top, across to right 
+  // angle corner, down to bottom, then back across hypotenuse
+ ctx.fillStyle = randomColour();
+
+  let sideLength = Math.floor(element.height / 12); 
+  
+  // small
+  let x1 = 7 * sideLength;
+  let y1  = 0;
+
+  let x2 = x1 - sideLength;
+  let y2 = 0;
+
+  let x3 = x2;
+  let y3 = sideLength;
+  filledTriangle(ctx, x1, y1, x2, y2, x3, y3);
+
+  sideLength *= 2;
+
+  // medium
+  x1 = x2;
+  y1  = 0;
+
+  x2 = x1 - sideLength;
+  y2 = 0;
+
+  x3 = x2;
+  y3 = sideLength;
+  filledTriangle(ctx, x1, y1, x2, y2, x3, y3);
+
+  // large
+  sideLength *= 2;
+
+  x1 = x2;
+  y1 = 0;
+
+  x2 = radius;
+  y2 = 0;
+
+  x3 = radius;
+  y3 = radius;
+
+  //let x4 = 0;
+  //let y4 = radius;
+
+  let x5 = 0;
+  let y5 = sideLength;
+
+  // with rounded corner to match outside of microbit.
+  ctx.beginPath();
+  ctx.moveTo(x1, y1);
+  ctx.lineTo(x2, y2);
+  ctx.arc(x3, y3, radius + 1, Math.PI * 1.5, Math.PI, true);
+  //ctx.lineTo(x3, y3);
+  //ctx.lineTo(x4, y4);
+
+  ctx.lineTo(x5, y5);
+  ctx.lineTo(x1, y1);
+
+  ctx.fill();
+}
+
+const drawLEDMatrix = (ctx, element, brightnessValues, centre_x, centre_y) => {
+  const led_width = Math.floor(element.width / 60);
+  const led_height = 2 * led_width;
+  const led_spacing_x = 4 * led_width;
+  const led_spacing_y = led_height;
+
+  const led_start_x = centre_x - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
+  const led_start_y = centre_y - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
+
+  const rows = brightnessValues.split(":");
+
+  let rowIndex = 0;
+
+  for (const row of rows) { 
+    if (row.length < 5) {
+      throw new Error(`${rowIndex} must be 5 characters`);
+    }
+
+    for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
+      const brightness = parseInt(row[columnIndex]);
+      const opacity = mapBrightness(brightness, 0, 9, 0, 100);
+      const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
+      const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
+
+      ctx.fillStyle = `rgb(255 0  0 / ${opacity}%)`;
+      ctx.fillRect(x, y, led_width, led_height);
+    }
+
+    rowIndex++;
+  }
+}
+
+const drawButtons = (ctx, element, centre_x, centre_y) => {
+  const button_width = Math.floor(element.width / 11);
+  const button_height = button_width;
+  const button_spacing = button_width * 8;
+  const button_y = centre_y - Math.floor(button_height / 2);
+  const button_a_x = centre_x - Math.floor(button_spacing / 2) - button_width;
+  const button_a_cx = button_a_x + Math.floor(button_width / 2);
+  const button_a_cy = button_y + Math.floor(button_height / 2);
+  const button_b_x = centre_x + Math.floor(button_spacing / 2);
+  const button_b_cx = button_b_x + Math.floor(button_width / 2);
+  const button_b_cy = button_y + Math.floor(button_height / 2);
+  const button_radius = Math.floor(button_width / 4);
+
+  // body
+  ctx.fillStyle = "grey";
+  ctx.fillRect(button_a_x, button_y, button_width, button_height);
+  ctx.fillRect(button_b_x, button_y, button_width, button_height);
+  // actuator
+  ctx.fillStyle = "black";
+  filledCircle(ctx, button_a_cx, button_a_cy, button_radius);
+  filledCircle(ctx, button_b_cx, button_b_cy, button_radius);
+}
+
+const drawEdgeConnector = (ctx, element) => {
+  const edge_connector_height = Math.floor(element.height / 8);
+  ctx.fillStyle = "gold";
+  ctx.fillRect(0, element.height - edge_connector_height + 1, element.width, edge_connector_height);
+}
+
 const drawMicrobit = (microbit) => {
   if (microbit.getContext) {
     const ctx = microbit.getContext("2d");
+
     const cornerRadius = microbit.width / 10;
     const centre_x = Math.floor(microbit.width / 2);
     const centre_y = Math.floor(microbit.height / 2);
 
-    // body
-    ctx.fillStyle = "black";
-    roundedRect(ctx, 0, 0, microbit.width, microbit.height, cornerRadius);
-
-    // triangle flashes
-    const triangleFill = randomColour();
-    ctx.fillStyle = triangleFill;
-
-    let sideLength = Math.floor(microbit.height / 12); // size of triangle sides (not hypotenuse)
-
-    // flashes are drawn from right hand top, across to right angle corner, down to bottom, then back across hypotenuse
-    // small
-    let x1 = 7 * sideLength;
-    let y1  = 0;
-
-    let x2 = x1 - sideLength;
-    let y2 = 0;
-
-    let x3 = x2;
-    let y3 = sideLength;
-    filledTriangle(ctx, x1, y1, x2, y2, x3, y3);
-
-    sideLength *= 2;
-
-    // medium
-    x1 = x2;
-    y1  = 0;
-
-    x2 = x1 - sideLength;
-    y2 = 0;
-
-    x3 = x2;
-    y3 = sideLength;
-    filledTriangle(ctx, x1, y1, x2, y2, x3, y3);
-
-    // large
-    sideLength *= 2;
-
-    x1 = x2;
-    y1 = 0;
-
-    x2 = cornerRadius;
-    y2 = 0;
-
-    x3 = cornerRadius;
-    y3 = cornerRadius;
-
-    //let x4 = 0;
-    //let y4 = cornerRadius;
-
-    let x5 = 0;
-    let y5 = sideLength;
-
-    // with rounded corner to match outside of microbit.
-    ctx.beginPath();
-    ctx.moveTo(x1, y1);
-    ctx.lineTo(x2, y2);
-    ctx.arc(x3, y3, cornerRadius + 1, Math.PI * 1.5, Math.PI, true);
-    //ctx.lineTo(x3, y3);
-    //ctx.lineTo(x4, y4);
-
-    ctx.lineTo(x5, y5);
-    ctx.lineTo(x1, y1);
-
-    ctx.fill();
-
-    // led matrix
-    const led_width = Math.floor(microbit.width / 60);
-    const led_height = 2 * led_width;
-    const led_spacing_x = 4 * led_width;
-    const led_spacing_y = led_height;
-
-    const led_start_x = centre_x - (2 * led_spacing_x) - Math.floor(2.5 * led_width);
-    const led_start_y = centre_y - (2 * led_spacing_y) - Math.floor(2.5 * led_height);
-
-    const brightnessValues = microbit.dataset.microbit; // e.g. '99999:99999:99999:99999:99999'; // elem.getAttribute('data-microbit')
-    const rows = brightnessValues.split(":");
-
-    let rowIndex = 0;
-
-    for (const row of rows) { 
-      if (row.length < 5) {
-        throw new Error(`${rowIndex} must be 5 characters`);
-      }
-
-      for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
-        const brightness = parseInt(row[columnIndex]);
-        const opacity = mapBrightness(brightness, 0, 9, 0, 100);
-        const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
-        const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
-
-        ctx.fillStyle = `rgb(255 0  0 / ${opacity}%)`;
-        ctx.fillRect(x, y, led_width, led_height);
-      }
-
-      rowIndex++;
-    }
-
-    // buttons
-    const button_width = Math.floor(microbit.width / 11);
-    const button_height = button_width;
-    const button_spacing = button_width * 8;
-    const button_y = centre_y - Math.floor(button_height / 2);
-    const button_a_x = centre_x - Math.floor(button_spacing / 2) - button_width;
-    const button_a_cx = button_a_x + Math.floor(button_width / 2);
-    const button_a_cy = button_y + Math.floor(button_height / 2);
-    const button_b_x = centre_x + Math.floor(button_spacing / 2);
-    const button_b_cx = button_b_x + Math.floor(button_width / 2);
-    const button_b_cy = button_y + Math.floor(button_height / 2);
-    const button_radius = Math.floor(button_width / 4);
-
-    // body
-    ctx.fillStyle = "grey";
-    ctx.fillRect(button_a_x, button_y, button_width, button_height);
-    ctx.fillRect(button_b_x, button_y, button_width, button_height);
-    // actuator
-    ctx.fillStyle = "black";
-    filledCircle(ctx, button_a_cx, button_a_cy, button_radius);
-    filledCircle(ctx, button_b_cx, button_b_cy, button_radius);
-
-      // edge connector
-      const edge_connector_height = Math.floor(microbit.height / 8);
-      ctx.fillStyle = "gold";
-      ctx.fillRect(0, microbit.height - edge_connector_height + 1, microbit.width, edge_connector_height);
+    drawBody(ctx, microbit, cornerRadius);
+    drawFlashes(ctx, microbit, cornerRadius);
+    drawLEDMatrix(ctx, microbit, microbit.dataset.microbit, centre_x, centre_y);
+    drawButtons(ctx, microbit, centre_x, centre_y);
+    drawEdgeConnector(ctx, microbit);
   }
 }
 
