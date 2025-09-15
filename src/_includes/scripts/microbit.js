@@ -158,27 +158,55 @@ const drawEdgeConnector = (ctx, element) => {
 }
 
 const drawMicrobit = (microbit) => {
-  if (microbit.getContext) {
-    const ctx = microbit.getContext("2d");
+  const canvas = document.getElementById(microbit.id);
+  if (canvas && canvas.getContext) {
+    const ctx = canvas.getContext("2d");
 
-    const cornerRadius = microbit.width / 10;
-    const centre_x = Math.floor(microbit.width / 2);
-    const centre_y = Math.floor(microbit.height / 2);
+    const cornerRadius = canvas.width / 10;
+    const centre_x = Math.floor(canvas.width / 2);
+    const centre_y = Math.floor(canvas.height / 2);
 
-    drawBody(ctx, microbit, cornerRadius);
-    drawFlashes(ctx, microbit, cornerRadius);
-    drawLEDMatrix(ctx, microbit, microbit.dataset.microbit, centre_x, centre_y);
-    drawButtons(ctx, microbit, centre_x, centre_y);
-    drawEdgeConnector(ctx, microbit);
+    if (microbit.rendered === false) {
+      drawBody(ctx, canvas, cornerRadius);
+      drawFlashes(ctx, canvas, cornerRadius);
+
+      drawButtons(ctx, canvas, centre_x, centre_y);
+      drawEdgeConnector(ctx, canvas);
+      
+      microbit.rendered = true;
+    }
+
+    // do animation here ...
+    drawLEDMatrix(ctx, canvas, canvas.dataset.microbit, centre_x, centre_y);
   }
 }
 
 /* eslint-disable-next-line */
+const microbits = []
+
+/* eslint-disable-next-line */
+const drawMicrobits = () => {
+  microbits.forEach((m) => {
+    //const element = document.getElementById(m.id);
+    drawMicrobit(m);
+  });
+
+  window.requestAnimationFrame(drawMicrobits)
+}
+
+/* eslint-disable-next-line */
 const renderMicrobits = () => {
-  const microbits = document.querySelectorAll("[data-microbit]");
+  const elements = document.querySelectorAll("[data-microbit]");
   
-  microbits.forEach((microbit) => {
-    drawMicrobit(microbit);
+  elements.forEach((e) => {
+    microbits.push({
+      id = e.id,
+      rendered = false,
+      frame = 0,
+      frames = e.dataset.microbit
+      });
+
+    window.requestAnimationFrame(drawMicrobits);
   });
 }
 
