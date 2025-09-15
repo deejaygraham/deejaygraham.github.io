@@ -109,6 +109,10 @@ const drawLEDMatrix = (ctx, element, brightnessValues, centre_x, centre_y) => {
 
   let rowIndex = 0;
 
+  // blank out the previous LED
+  ctx.fillStyle = "black";
+  ctx.fillRect(led_start_x, led_start_y, 4  * (led_width + led_spacing_x), 4 * (led_height + led_spacing_y));
+  
   for (const row of rows) { 
     if (row.length < 5) {
       throw new Error(`${rowIndex} must be 5 characters`);
