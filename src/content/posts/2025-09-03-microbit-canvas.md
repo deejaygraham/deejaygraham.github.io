@@ -51,7 +51,7 @@ but sublty different.
 ## Animation
 
 The rendering code has now been updated to deal with multiple frames of led data and cycle through them, 1 per second but only to draw 
-the background, flashes, buttons etc. on the first render. 
+the background, flashes, buttons etc. on the first render and the LEDs if there is no pipe delimiter and therefore no animation required. 
 
 <canvas id="mb3" width="360" height="282" data-microbit="22222:44444:66666:88888:99999|99999:00000:99999:00000:99999"></canvas>
 
