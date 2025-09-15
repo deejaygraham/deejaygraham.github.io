@@ -200,10 +200,10 @@ const renderMicrobits = () => {
   
   elements.forEach((e) => {
     microbits.push({
-      id = e.id,
-      rendered = false,
-      frame = 0,
-      frames = e.dataset.microbit
+      id: e.id,
+      rendered: false,
+      frame: 0,
+      frames: e.dataset.microbit
       });
 
     window.requestAnimationFrame(drawMicrobits);
