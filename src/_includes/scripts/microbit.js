@@ -158,7 +158,9 @@ const drawEdgeConnector = (ctx, element) => {
 }
 
 const drawMicrobit = (microbit, timestamp) => {
-  if(microbit.lastUpdate && timestamp - microbit.lastUpdate < 1000) {
+  const animationSpeed = 1000;
+  
+  if(microbit.lastUpdate && timestamp - microbit.lastUpdate < animationSpeed) {
     return;
   }
 
@@ -179,19 +181,21 @@ const drawMicrobit = (microbit, timestamp) => {
 
       drawButtons(ctx, canvas, centre_x, centre_y);
       drawEdgeConnector(ctx, canvas);
-      
-      microbit.rendered = true;
     }
 
-    // do animation here ...
-    if (microbit.frame >= microbit.frames.length) {
-      microbit.frame = 0;
+    if (microbit.rendered === false || microbit.frames.length > 1) {
+      // draw LEDs first time or attempt to animate if more than one frame
+      if (microbit.frame >= microbit.frames.length) {
+        microbit.frame = 0;
+      }
+    
+      console.log('rendering led frame', microbit.id, microbit.frame, microbit.frames[microbit.frame]);
+      drawLEDMatrix(ctx, canvas, microbit.frames[microbit.frame], centre_x, centre_y);
+  
+      microbit.frame++;
     }
     
-    console.log('rendering led frame', microbit.id, microbit.frame, microbit.frames[microbit.frame]);
-    drawLEDMatrix(ctx, canvas, microbit.frames[microbit.frame], centre_x, centre_y);
-
-    microbit.frame++;
+    microbit.rendered = true;
   }
 }
 
