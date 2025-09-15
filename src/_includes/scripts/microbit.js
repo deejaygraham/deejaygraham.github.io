@@ -178,7 +178,7 @@ const drawMicrobit = (microbit) => {
     }
 
     // do animation here ...
-    if (microbit.frame >= len(microbit.frames)) {
+    if (microbit.frame >= microbit.frames.length) {
       microbit.frame = 0;
     }
     
