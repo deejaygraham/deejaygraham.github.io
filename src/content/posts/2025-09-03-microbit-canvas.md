@@ -50,5 +50,8 @@ but sublty different.
 
 ## Animation
 
-One feature that I haven't added yet is the ability to animate the display. I will look at that 
-at some point, I am sure. 
+The rendering code has now been updated to deal with multiple frames of led data and cycle through them, 1 per second but only to draw 
+the background, flashes, buttons etc. on the first render. 
+
+<canvas id="mb3" width="360" height="282" data-microbit="22222:44444:66666:88888:99999|99999:00000:99999:00000:99999"></canvas>
+
