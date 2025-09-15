@@ -157,7 +157,13 @@ const drawEdgeConnector = (ctx, element) => {
   ctx.fillRect(0, element.height - edge_connector_height + 1, element.width, edge_connector_height);
 }
 
-const drawMicrobit = (microbit) => {
+const drawMicrobit = (microbit, timestamp) => {
+  if(microbit.lastUpdate && timestamp - microbit.lastUpdate < 1000) {
+    return;
+  }
+
+  microbit.lastUpdate = timestamp;
+  
   const canvas = document.getElementById(microbit.id);
   if (canvas && canvas.getContext) {
     const ctx = canvas.getContext("2d");
@@ -191,10 +197,9 @@ const drawMicrobit = (microbit) => {
 
 const microbits = []
 
-const drawMicrobits = () => {
+const drawMicrobits = (timestamp) => {
   microbits.forEach((m) => {
-    //const element = document.getElementById(m.id);
-    drawMicrobit(m);
+    drawMicrobit(m, timestamp);
   });
 
   window.requestAnimationFrame(drawMicrobits)
@@ -209,7 +214,8 @@ const renderMicrobits = () => {
       id: e.id,
       rendered: false,
       frame: 0,
-      frames: e.dataset.microbit.split("|")
+      frames: e.dataset.microbit.split("|"),
+      lastUpdate: 0
       });
 
     window.requestAnimationFrame(drawMicrobits);
