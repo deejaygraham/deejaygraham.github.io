@@ -181,10 +181,8 @@ const drawMicrobit = (microbit) => {
   }
 }
 
-/* eslint-disable-next-line */
 const microbits = []
 
-/* eslint-disable-next-line */
 const drawMicrobits = () => {
   microbits.forEach((m) => {
     //const element = document.getElementById(m.id);
