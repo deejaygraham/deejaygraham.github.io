@@ -14,6 +14,8 @@ dampen it's light gradually. A loud noise will scare it and cause it to turn it'
 there is no more noise for 10 seconds, then it will gradually turn the LEDs back on. Any noise happening 
 within that time will reset the timer. 
 
+<canvas id="mb3" width="360" height="282" data-microbit="00000:00000:00000:00000:00000|00000:00000:00000:00000:00000|22222:22222:22222:22222:22222|66666:66666:66666:66666:66666|00000:00000:00000:00000:00000"></canvas>
+
 ## Code
 
 ```python
