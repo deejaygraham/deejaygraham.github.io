@@ -6,6 +6,7 @@
 		{% set subtitle =  post.data.subtitle %}
 		{% set date =  post.date %}
 		{% set tags =  post.data.tags %}
+{{ post.templateContent | excerpt | safe }}
 		{# set excerpt = post.templateContent | excerpt | safe #}
 		{% include "partials/post-card.njk" %}
 	{% endfor %}
