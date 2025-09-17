@@ -1,5 +1,6 @@
 ---
 permalink: dump-post-data.json
+templateEngineOverride: false
 ---
 {% for post in collections.posts %}
 {{ post | safedump | safe }}
