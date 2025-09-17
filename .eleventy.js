@@ -14,7 +14,7 @@ import filterTagList from "./src/_11ty/filters/filterTagList.js";
 import excludePost from "./src/_11ty/filters/excludePost.js";
 import readingTime from "./src/_11ty/filters/readingTime.js";
 import wordCount from "./src/_11ty/filters/wordCount.js";
-import safeDump from "./src/11ty/filters/safeDump.js";
+import safeDump from "./src/_11ty/filters/safeDump.js";
 
 // shortcodes
 import randomColour from "./src/_11ty/shortcodes/randomcolour.js";
