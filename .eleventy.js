@@ -14,6 +14,7 @@ import filterTagList from "./src/_11ty/filters/filterTagList.js";
 import excludePost from "./src/_11ty/filters/excludePost.js";
 import readingTime from "./src/_11ty/filters/readingTime.js";
 import wordCount from "./src/_11ty/filters/wordCount.js";
+import safeDump from "./src/11ty/filters/safeDump.js";
 
 // shortcodes
 import randomColour from "./src/_11ty/shortcodes/randomcolour.js";
@@ -88,6 +89,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("excludePost", excludePost);
   eleventyConfig.addFilter("readingTime", readingTime);
   eleventyConfig.addFilter("wordCount", wordCount);
+  eleventyConfig.addFilter("safedump", safeDump);
 	
   // shortcodes
   eleventyConfig.addShortcode("randomcolour", randomColour);
