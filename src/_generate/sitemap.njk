@@ -10,7 +10,7 @@ excludeFromSitemap: true
         <url>
             <loc>{{ site.url }}{{ page.url | url }}</loc>
             <lastmod>{{ page.date.toISOString() }}</lastmod>
-            <changefreq>monthly</changefreq>
+            <changefreq>{{ page.data.changefreq | default("monthly") }}</changefreq>
         </url>
         {%- endif -%}
     {% endfor %}
