@@ -5,6 +5,11 @@ export default [
     icon: "icons/rss.svg",
   },
   {
+    name: "sitemap",
+    url: "https://deejaygraham.github.io/sitemap.xml",
+    icon: "icons/sitemap.svg",
+  },
+  {
     name: "github",
     url: "https://github.com/deejaygraham",
     icon: "icons/github.svg",
