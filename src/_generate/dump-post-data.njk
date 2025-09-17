@@ -1,0 +1,6 @@
+---
+permalink: dump-post-data.json
+---
+{% for post in collections.posts %}
+{{ post | safedump | safe }}
+{% endfor %}
