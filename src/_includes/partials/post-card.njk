@@ -6,6 +6,9 @@
       {% if subtitle %}
       <p class="subtitle is-pulled-left">{{ subtitle }}</p>
       {% endif %}
+      {%- if excerpt -%}
+      <div class="content">{{ excerpt }}</div>
+      {%- endif -%}
       {%- if date -%}
       <p class="is-pulled-left"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
       {%- endif -%}
