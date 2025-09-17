@@ -4,6 +4,10 @@
 const dumpWithoutCircularity = () => {
   const seen = new WeakSet();
   return (key, value) => {
+    if (key === 'templateContent') {
+      return;
+    }
+    
     if (typeof value === "object" && value !== null) {
       if (seen.has(value)) {
         return;
