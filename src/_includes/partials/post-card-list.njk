@@ -7,8 +7,6 @@
 		{% set date =  post.date %}
 		{% set tags =  post.data.tags %}
 		{# set excerpt = post.templateContent | excerpt | safe #}
-		{{ post.templateContent | log }}
-		{{ post.data | log }}
 		{% include "partials/post-card.njk" %}
 	{% endfor %}
 </div>
