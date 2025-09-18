@@ -1,7 +1,0 @@
----
-permalink: dump-post-data.json
-templateEngineOverride: njk
----
-{% for post in collections.posts %}
-{{ post | safedump | safe }}
-{% endfor %}
