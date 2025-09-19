@@ -1,1 +1,31 @@
 {# json-ld for blog posting #}
+{%- set schemaData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description or excerpt,
+  "url": site.url + page.url,
+  "datePublished": date | date('YYYY-MM-DD'),
+  "dateModified": modified or date | date('YYYY-MM-DD'),
+  "author": {
+    "@type": "Person",
+    "name": site.author,
+    "url": site.url
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": site.name,
+    "logo": {
+      "@type": "ImageObject",
+      "url": site.url + site.logo
+    }
+  }
+} -%}
+
+{%- if tags -%}
+{%- set schemaData = schemaData | merge({ "keywords": tags | join(", ") }) -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+{{ schemaData | dump | safe }}
+</script>
