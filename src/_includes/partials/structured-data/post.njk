@@ -6,8 +6,8 @@
   "headline": "{{ title }}",
   "description": "{{ description or excerpt }}",
   "url": "{{ site.url + page.url }}",
-  "datePublished": "{{ date | date('YYYY-MM-DD') }}",
-  "dateModified": "{{ site.date or date | date('YYYY-MM-DD') }}",
+  "datePublished": "{{ post.date }}",
+  "dateModified": "{{ site.date }}",
   "author": {
     "@type": "Person",
     "name": "{{ site.author }}",
@@ -21,8 +21,8 @@
       "url": "{{ site.url + site.logo }}"
     }
   },
-  {%- if tags -%}
-  "keywords": {{ tags | join(", ") }}
+  {%- if post.data.tags -%}
+  "keywords": {{ post.data.tags | join(", ") }}
   {%- endif -%}
 } 
 </script>
