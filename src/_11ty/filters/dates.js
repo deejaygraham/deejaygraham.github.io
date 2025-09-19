@@ -83,5 +83,6 @@ export default {
   dateFormat,
   dateFull,
   dateISO,
+  dateOnlyISO,
   dateYear,
 };
