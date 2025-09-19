@@ -18,3 +18,7 @@
 {{ content | safe }}
 
 {% endblock %}
+
+{% block jsonld %}
+	{% include "partials/structured-data/about.njk" %}
+{% endblock %}
