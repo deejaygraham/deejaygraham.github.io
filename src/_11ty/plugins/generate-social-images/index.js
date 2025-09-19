@@ -33,8 +33,8 @@ export default function(eleventyConfig, options) {
         return curDir;
     }, initDir);
 
-    eleventyConfig.addAsyncShortcode("GenerateSocialImage", async(imageName, title, postDate) => {
-        if (!title) return '';
+    eleventyConfig.addShortcode("GenerateSocialImage", async(imageName, title, postDate) => {
+        if (!title) return 'Blank title, no image generated';
 
         return await generateSocialImage(
 			imageName,	
