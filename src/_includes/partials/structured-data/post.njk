@@ -3,10 +3,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "{{ title }}",
-  "description": "{{ description or excerpt }}",
+  "headline": "{{ page.title | title }}",
+  "description": "{{ page.description }}",
   "url": "{{ site.url + page.url }}",
-  "datePublished": "{{ post.date }}",
+  "datePublished": "{{ page.date | dateOnlyISO }}",
   "dateModified": "{{ site.date }}",
   "author": {
     "@type": "Person",
@@ -21,8 +21,8 @@
       "url": "{{ site.url + site.logo }}"
     }
   },
-  {%- if post.data.tags -%}
-  "keywords": {{ post.data.tags | join(", ") }}
+  {%- if tags -%}
+  "keywords": "{{ tags | join(", ") }}",
   {%- endif -%}
 } 
 </script>
