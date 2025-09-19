@@ -56,6 +56,17 @@ function dateISO(date) {
 }
 
 /**
+ * Format date: ISO
+ * @param {Date} date - JS Date
+ * @returns {String} - formatted date YYYY-MM-DD
+ */
+function dateOnlyISO(date) {
+  const jsDate = new Date(date);
+  const dt = DateTime.fromJSDate(jsDate);
+  return dt.toISODate();
+}
+
+/**
  * Format date: year
  *
  * @param {Date} date - js date
