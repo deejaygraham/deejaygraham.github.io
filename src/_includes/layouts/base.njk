@@ -20,6 +20,8 @@
     {# 7. Meta tags, Icons, Open Graph #}
     {%- favicons site.favicon -%}
     {% include "partials/head/meta.njk" %}
+	{% block json-ld %}
+    {% endblock %}
   </head>
   <body>
     {% block header %}
