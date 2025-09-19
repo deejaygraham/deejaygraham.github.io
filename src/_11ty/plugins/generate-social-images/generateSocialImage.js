@@ -1,9 +1,17 @@
 import sharp from "sharp";
+import fs from 'fs';
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
 
 export default async function (imageName, title, postDate, siteName, targetDir, watermark) {
 
+  const fileName = imageName + '.png';
+  const outputPath = `${targetDir}/${fileName}`;
+
+  if (fs.existsSync(outputPath)) {
+	return fileName;
+  }
+  
   const lineBreakAt = 15; // characters
   const line_length = lineBreakAt;
   const max_lines = 4;
@@ -41,8 +49,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
       </g>
     </svg>`;
 
-  const fileName = imageName + '.png';
-
+  
   try {
     // generate the image from the svg        
     const svgBuffer = Buffer.from(template); // eslint-disable-line
@@ -54,7 +61,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
   	}])
       .resize(graphicWidth, graphicHeight)
       .png()
-      .toFile(`${targetDir}/${fileName}`);
+      .toFile(outputPath);
 
     } catch(err) {
         console.error("Eleventy generating social images error:", err, { template, fileName, title, siteName});
