@@ -1,1 +1,12 @@
 {# json-ld for about page #}
+{%- set personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": site.author,
+  "jobTitle": "Software Architect",
+  "description": "Software architect, extreme programmer, and STEM ambassador",
+  "url": site.url,
+} -%}
+<script type="application/ld+json">
+{{ personSchema | dump | safe }}
+</script>
