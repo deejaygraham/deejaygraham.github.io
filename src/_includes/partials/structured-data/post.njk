@@ -23,10 +23,8 @@
   {%- if tags -%}
   "keywords": "{{ tags | join(", ") }}",
   {%- endif -%}
-{%- if socialImageUrl -%}
-"image": {
-  "{{ site.url }}{{ socialImageUrl }}"
-}
-{%- endif -%}
+  "image": {
+    "{{ site.url }}{% SocialImageName page.fileSlug %}"
+  }
 } 
 </script>
