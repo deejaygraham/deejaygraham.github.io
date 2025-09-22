@@ -20,9 +20,9 @@
       "url": "{{ site.url + site.logo }}"
     }
   },
-  {%- if tags -%}
-  "keywords": "{{ tags | join(", ") }}",
-  {%- endif -%}
+  {%- if tags %}
+  "keywords": "{{ tags | arrayToCommaString }}",
+  {%- endif %}
   "image": {
     "{{ site.url }}{% SocialImageName page.fileSlug %}"
   }
