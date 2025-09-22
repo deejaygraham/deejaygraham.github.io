@@ -33,6 +33,11 @@ export default function(eleventyConfig, options) {
         return curDir;
     }, initDir);
 
+	eleventyConfig.addShortcode("SocialImageName", async(imageName) => {
+		const fileName = imageName + '.png';
+	  	return = `${targetDir}/${fileName}`;
+  	});
+	
     eleventyConfig.addShortcode("GenerateSocialImage", async(imageName, title, postDate) => {
         if (!title) return 'Blank title, no image generated';
 
