@@ -20,6 +20,9 @@
     {# 7. Meta tags, Icons, Open Graph #}
     {%- favicons site.favicon -%}
     {% include "partials/head/meta.njk" %}
+    {% block jsonld %}
+		  {% include "partials/structured-data/site.njk" %}
+    {% endblock %}
   </head>
   <body>
     {% block header %}
@@ -51,8 +54,5 @@
     	{% include "partials/mermaid-diagrams.njk" %}
       {% endif %}
     {% endblock %}
-	{% block jsonld %}
-		{% include "partials/structured-data/site.njk" %}
-    {% endblock %}
-  </body>
+  </body>  
 </html>
