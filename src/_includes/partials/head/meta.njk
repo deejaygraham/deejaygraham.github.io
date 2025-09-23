@@ -3,21 +3,25 @@
 {%- else %}
 {%- set pageDescription %}{{ site.description }}{% endset -%}
 {%- endif %}
-    <meta name="description" content="{{ pageDescription }}">
-    <meta name="author" content="{{ site.author }}" >
+    <meta name="description" content="{{ pageDescription }}" />
+    <meta name="author" content="{{ site.author }}" />
 {%- if tags %}
-    <meta name="keywords" content="{{ tags | arrayToCommaString }}" >
+    <meta name="keywords" content="{{ tags | arrayToCommaString }}" />
 {%- endif %}
-    <meta itemprop="name" content="{{ pageTitle }}" >
-    <meta itemprop="url" content="{{ site.url ~ page.url }}" >
+    <meta itemprop="name" content="{{ pageTitle }}" />
+    <meta itemprop="url" content="{{ site.url ~ page.url }}" />
+{# 11ty <3 #}
+    <meta name="generator" content="{{ eleventy.generator }}" />
+{# SG <3 #}
+    <meta http-equiv="X-Clacks-Overhead" content="Stanley Graham" />
 {# og: tags #}
 {% if not page.data.excludeFromSitemap %}
     <meta property="og:locale" content="en_GB" />
-    <meta name="og:description" content="{{ pageDescription }}">
-    <meta property="og:type" content="website" >
-    <meta property="og:site_name" content="{{ site.title }}" >
-    <meta property="og:title" content="{{ pageTitle }}" >
-    <meta property="og:url" content="{{ site.url ~ page.url }}" >
+    <meta name="og:description" content="{{ pageDescription }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ pageTitle }}" />
+    <meta property="og:url" content="{{ site.url ~ page.url }}" />
     <meta property="og:logo" content="{{ site.url }}/img/favicon.png" />
 {%- set postTitle %}{{ title | safe }}{% endset %}
 {%- if page.date %}
@@ -25,11 +29,7 @@
 {%- endif -%}
 {%- set imageName = page.fileSlug %}
 {% GenerateSocialImage imageName, postTitle, postDate %}
-    <meta property="og:image" content="{{ site.url }}{% SocialImageName imageName %}" >
-    <meta property="og:image:width" content="1200" >
-    <meta property="og:image:height" content="628" >
+    <meta property="og:image" content="{{ site.url }}{% SocialImageName imageName %}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
 {% endif %}
-{# 11ty <3 #}
-    <meta name="generator" content="{{ eleventy.generator }}">
-{# SG <3 #}
-    <meta http-equiv="X-Clacks-Overhead" content="Stanley Graham" />

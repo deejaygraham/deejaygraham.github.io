@@ -39,7 +39,7 @@ export default function(eleventyConfig, options) {
   	});
 	
     eleventyConfig.addShortcode("GenerateSocialImage", async(imageName, title, postDate) => {
-        if (!title) return 'Blank title, no image generated';
+        if (!title) return "";
 
         return await generateSocialImage(
 			imageName,	
@@ -47,7 +47,7 @@ export default function(eleventyConfig, options) {
             postDate,
 			siteName,
             targetDir,
-		watermark
+		    watermark
 		);
     });
 };

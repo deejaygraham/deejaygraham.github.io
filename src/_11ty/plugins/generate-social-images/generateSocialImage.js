@@ -9,7 +9,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
   const outputPath = `${targetDir}/${fileName}`;
 
   if (fs.existsSync(outputPath)) {
-	return fileName;
+	  return `<!-- Already exists ${fileName} -->`;
   }
   
   const lineBreakAt = 15; // characters
@@ -67,5 +67,5 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
         console.error("Eleventy generating social images error:", err, { template, fileName, title, siteName});
     }
 
-    return fileName;
+    return `<!-- Generated ${fileName} -->`;
 }
