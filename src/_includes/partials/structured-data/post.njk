@@ -23,8 +23,8 @@
   {%- if tags %}
   "keywords": "{{ tags | arrayToCommaString }}",
   {%- endif %}
-  "image": {
-    "{{ site.url }}{% SocialImageName page.fileSlug %}"
-  }
+  "image": [
+    "{{ site.url }}/img/previews/{% SocialImageName page.fileSlug %}"
+  ]
 } 
 </script>
