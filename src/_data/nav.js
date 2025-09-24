@@ -20,6 +20,10 @@ export default [
     url: "/talks",
   },
   {
+    name: "mentoring",
+    url: "/mentoring",
+  },
+  {
     name: "about",
     url: "/about/",
   },
