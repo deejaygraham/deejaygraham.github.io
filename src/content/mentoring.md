@@ -4,6 +4,9 @@ layout: base.njk
 title: Mentoring and Teaching
 ---
 
+
+# Mentoring & Teaching
+
 I'm passionate about helping the next generation of software developers grow their
 skills and build meaningful careers in technology. Over the years, I have been fortunate to work with talented individuals and teams at a variety of stages in their journey.
 
@@ -11,9 +14,9 @@ skills and build meaningful careers in technology. Over the years, I have been f
 ## Current Mentoring
 
 
-### We Think Code - South Africa
+### We Think Code
 
-I'm a second-year mentor for cohorts attending training at [We Think Code](), 
+I'm a second-year mentor for cohorts attending training at [We Think Code](https://wethinkcode.co.za), 
 a non-profit coding school in South Africa. We Think Code provides free, world-class software engineering education to talented individuals who might not 
 otherwise have access to such opportunities.
 
