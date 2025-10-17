@@ -41,7 +41,7 @@ const executeSearch = (e) => {
     // console.log("searching for: ", e.target.value);
     const results = window.searchIndex.search(searchTerm, 
     {
-        bool: "OR",
+        bool: "AND",
         expand: true,
     });
 
