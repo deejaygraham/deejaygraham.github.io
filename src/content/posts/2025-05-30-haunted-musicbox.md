@@ -36,21 +36,9 @@ song = [
     # Twinkle, twinkle, little star
     "C5:1", "C5:1", "G5:1", "G5:1", "A5:1", "A5:1", "G5:2",
     # How I wonder what you are
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:1",
-    "D5:1",
-    "C5:2",
+    "F5:1", "F5:1", "E5:1", "E5:1", "D5:1", "D5:1", "C5:2",
     # Up above the world so high
-    "G5:1",
-    "G5:1",
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:2",
+    "G5:1", "G5:1", "F5:1", "F5:1", "E5:1", "E5:1", "D5:2",
     # Like a diamond in the sky
     "G5:1", "G5:1", "F5:1", "F5:1", "E5:1", "E5:1", "D5:2",
     # Twinkle, twinkle, little star
