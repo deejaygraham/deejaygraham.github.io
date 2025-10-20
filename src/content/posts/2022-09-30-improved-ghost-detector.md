@@ -1,9 +1,7 @@
 ---
 title: Improved Ghost Detector
-tags: [code, microbit]
+tags: [microbit, spooky]
 hero: microbit
-
-
 ---
 
 A couple of years ago I created a ghost detector for the microbit as a

@@ -1,6 +1,6 @@
 ---
 title: Microbit Spirit Box
-tags: [code, microbit, python]
+tags: [microbit, python, spooky]
 ---
 
 Thinking about the new DDD North conference coming up in February got me thinking about my last talk - "How to be Psychic" - 

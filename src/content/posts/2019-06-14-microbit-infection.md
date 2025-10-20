@@ -2,8 +2,6 @@
 title: Microbit Infection
 tags: [code, microbit]
 hero: microbit
-
-
 ---
 
 <a href="https://makecode.microbit.org/projects/infection">Infection</a> is a multi-player game that can be played

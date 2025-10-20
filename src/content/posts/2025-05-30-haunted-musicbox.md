@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haunted Music Box
-tags: [microbit, python, music]
+tags: [microbit, music, spooky]
 ---
 
 Back on microbit music but with a random slant on it, I present a haunted music box. As we all know, music boxes in horror films
@@ -34,13 +34,7 @@ import random
 
 song = [
     # Twinkle, twinkle, little star
-    "C5:1",
-    "C5:1",
-    "G5:1",
-    "G5:1",
-    "A5:1",
-    "A5:1",
-    "G5:2",
+    "C5:1", "C5:1", "G5:1", "G5:1", "A5:1", "A5:1", "G5:2",
     # How I wonder what you are
     "F5:1",
     "F5:1",
@@ -58,29 +52,11 @@ song = [
     "E5:1",
     "D5:2",
     # Like a diamond in the sky
-    "G5:1",
-    "G5:1",
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:2",
+    "G5:1", "G5:1", "F5:1", "F5:1", "E5:1", "E5:1", "D5:2",
     # Twinkle, twinkle, little star
-    "C5:1",
-    "C5:1",
-    "G5:1",
-    "G5:1",
-    "A5:1",
-    "A5:1",
-    "G5:2",
+    "C5:1", "C5:1", "G5:1", "G5:1", "A5:1", "A5:1", "G5:2",
     # How I wonder what you are
-    "F5:1",
-    "F5:1",
-    "E5:1",
-    "E5:1",
-    "D5:1",
-    "D5:1",
-    "C5:2",
+    "F5:1", "F5:1", "E5:1", "E5:1", "D5:1", "D5:1", "C5:2",
 ]
 
 # map note name to vert. line on display

@@ -1,8 +1,6 @@
 ---
 title: Perlin Noise Flower
 tags: [code, processing, python]
-thumbnail: /img/posts/perlin-noise-flower/perlin-noise-flower-420x255.png
-
 ---
 
 Generative Art is a lot of fun and I learned some stuff today from watching a <a href="">workshop from pycon 2018</a> given by <a href="https://twitter.com/emilyxxie">Emily Xie</a>,

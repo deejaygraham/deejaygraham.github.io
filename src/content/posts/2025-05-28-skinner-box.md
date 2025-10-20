@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microbit Skinner Box
-tags: [microbit, python]
+tags: [microbit, python, spooky]
 ---
 
 More from the random behaviour posts (and inline with our current obsession with AI), I was reviewing some of the microbit docs and realised I had not played 

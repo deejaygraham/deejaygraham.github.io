@@ -1,9 +1,7 @@
 ---
 title: Microbit Ghost Detector
-tags: [code, microbit]
+tags: [code, microbit, spooky]
 hero: microbit
-
-
 ---
 
 In time for Halloween, here's a ghost detector that uses the microbit temperature sensor to sense

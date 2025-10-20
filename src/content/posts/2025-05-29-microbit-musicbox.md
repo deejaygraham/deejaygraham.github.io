@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Music Box
-tags: [microbit, python, music]
+tags: [microbit, music]
 ---
 
 Before I start work on the spooky version of this project, here's the nice version - a slow version of "Twinkle Twinkle" that could 

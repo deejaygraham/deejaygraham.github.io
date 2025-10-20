@@ -1,6 +1,6 @@
 ---
 title: Simulating Minecraft Creeper on Pi
-tags: [code, minecraft]
+tags: [code, minecraft, spooky]
 hero: minecraft
 ---
 

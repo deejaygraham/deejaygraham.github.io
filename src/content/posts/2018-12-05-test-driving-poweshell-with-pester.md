@@ -3,7 +3,6 @@ title: Test Driving PowerShell with Pester
 tags: [powershell]
 hero: power
 thumbnail: "/assets/img/thumbnails/shell-420x255.png"
-
 ---
 
 Work in progress text and examples from an upcoming presentation.
