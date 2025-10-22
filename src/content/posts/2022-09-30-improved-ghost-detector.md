@@ -82,7 +82,7 @@ class SweepScanner:
 
 class Detector:
 
-  def **init**(self):
+  def __init__(self):
     self.reset() # difference in temperature detectable.
     self.sensitivity = 0.5
 
