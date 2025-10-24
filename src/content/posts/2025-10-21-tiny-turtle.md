@@ -1,6 +1,6 @@
 ---
 title: Tiny Turtle
-tags: [microbit, coding]
+tags: [microbit, code]
 ---
 
 Here is an experiment in making a tiny implementation of the 
