@@ -3,7 +3,7 @@ title: Ghost Detector 3
 tags: [microbit, spooky]
 ---
 
-<canvas id="mb1" width="721" height="565" data-microbit="99999:90909:99999:99999:90909"></canvas>
+<canvas id="mb1" width="721" height="565" data-microbit="99999:90909:99999:99999:90909;55555:50505:55555:55555:50505;00000:00000:00000:00000:00000"></canvas>
 
 I had some feedback from trainers that the new improved ghost detector from 
 last year was overly complicated and relied too much on the class construct 
@@ -83,7 +83,7 @@ while True:
         
     display.clear()
     temperature_now = temperature()
-    # have we had a drop in temp?
+    # have we found a cold spot?
     if (start_temperature - temperature_now) > temperature_sensitivity:
         display.scroll('Boo!')
         display.show(Image.GHOST)
