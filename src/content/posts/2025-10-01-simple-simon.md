@@ -8,7 +8,9 @@ which uses the two buttons on the front of the microbit but could be broken out 
 project to have four lights and four buttons. LEDs could be driven from the edge connector with some 
 extra components and the buttons could be read into the digital inputs.
 
-For now and simplicity, we only have the two buttons and two musical notes to deal with. The game starts 
+For now and simplicity, we only have the two buttons (A and B) and two musical notes to deal with although I have provided some 
+abstraction for the original four coloured buttons - green, red, blue and yellow. The button pushes available in this 
+reduced version means that the sequence is also limited to random choices between those two buttons. The game starts 
 with a single note and adds a random note to the sequence for each round. The delay between notes gets less
 every round to make things harder. 
 
@@ -19,27 +21,57 @@ from microbit import *
 import random
 import music
 
-buttons = ['A', 'B']
-notes = ['E', 'A']
+# Original Buttons Green, Red, Blue, Yellow
+BLUE = 'B'
+GREEN = 'G'
+RED = 'R'
+YELLOW = 'Y'
 
-def button_a_pushed():
+# buttons = [BLUE, YELLOW, RED, GREEN]
+buttons = [BLUE, YELLOW] # We only use two buttons 
+notes = ['E4', 'C#', 'A', 'E3']
+
+def blue_button_was_pushed():
+    return button_a.was_pressed()
+
+def blue_button():
     display.show(Image.ARROW_W)
     music.play(notes[0])
 
-def button_b_pushed():
+def yellow_button_was_pushed():
+    return button_b.was_pressed()
+
+def yellow_button():
     display.show(Image.ARROW_E)
     music.play(notes[1])
     
+def red_button_was_pushed():
+    return False
+
+def red_button():
+    display.show(Image.ARROW_N)
+    music.play(notes[2])
+
+def green_button_was_pushed():
+    return False
+
+def green_button():
+    display.show(Image.ARROW_S)
+    music.play(notes[3])
 
 def generate_random_sequence(length):
     return[random.choice(buttons) for i in range(length)]
 
 def play_sequence(sequence, delay):
     for item in sequence:
-        if item == 'A':
-            button_a_pushed()
-        elif item == 'B':
-            button_b_pushed()
+        if item == BLUE:
+            blue_button()
+        elif item == YELLOW:
+            yellow_button()
+        elif item == RED:
+            red_button()
+        elif item == GREEN:
+            green_button()
 
         sleep(delay)
         display.clear()
@@ -53,15 +85,23 @@ while playing:
     player_sequence = []
 
     play_sequence(simon_sequence, space_between_notes)
-
+    display.clear()
+    
     # wait for sufficient input
     while len(player_sequence) < len(simon_sequence):
-        if button_a.was_pressed():
-            button_a_pushed()
-            player_sequence.append('A')
-        elif button_b.was_pressed():
-            button_b_pushed()
-            player_sequence.append('B')
+        if blue_button_was_pushed():
+            blue_button()
+            player_sequence.append(BLUE)
+        elif yellow_button_was_pushed():
+            yellow_button()
+            player_sequence.append(YELLOW)
+        elif red_button_was_pushed():
+            red_button()
+            player_sequence.append(RED)
+        elif green_button_was_pushed():
+            green_button()
+            player_sequence.append(GREEN)
+            
         sleep(200)
 
     # check the sequence matches
@@ -72,7 +112,6 @@ while playing:
         space_between_notes = max(100, space_between_notes - 50)
         sleep(2_000)
     else:
-        # no match, end the game
         display.show(Image.SAD)
         music.play(music.POWER_DOWN)
         playing = False
