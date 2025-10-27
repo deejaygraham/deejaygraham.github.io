@@ -4,13 +4,13 @@ tags: [microbit, code]
 ---
 
 I haven't posted a game in a while so here's a very simple recreation of the ["Simon" game](https://en.wikipedia.org/wiki/Simon_(game)) 
-which uses the two buttons on the front of the microbit but could be broken out into a full electronic 
+which uses the two buttons on the front of the microbit and the touch logo but could be broken out into a full electronic 
 project to have four lights and four buttons. LEDs could be driven from the edge connector with some 
 extra components and the buttons could be read into the digital inputs.
 
-For now and simplicity, we only have the two buttons (A and B) and two musical notes to deal with although I have provided some 
+For now and simplicity, we only have the two buttons (A and B) and the logo and three musical notes to deal with although I have provided some 
 abstraction for the original four coloured buttons - green, red, blue and yellow. The button pushes available in this 
-reduced version means that the sequence is also limited to random choices between those two buttons. The game starts 
+reduced version means that the sequence is also limited to random choices between those buttons. The game starts 
 with a single note and adds a random note to the sequence for each round. The delay between notes gets less
 every round to make things harder. 
 
@@ -28,8 +28,9 @@ RED = 'R'
 YELLOW = 'Y'
 
 # buttons = [BLUE, YELLOW, RED, GREEN]
-buttons = [BLUE, YELLOW] # We only use two buttons 
+buttons = [BLUE, YELLOW, RED] # We only use these buttons 
 notes = ['E4', 'C#', 'A', 'E3']
+question = Image('09990:90009:00990:00000:00900')
 
 def blue_button_was_pushed():
     return button_a.was_pressed()
@@ -46,14 +47,14 @@ def yellow_button():
     music.play(notes[1])
     
 def red_button_was_pushed():
-    return False
+    return pin_logo.is_touched()
 
 def red_button():
     display.show(Image.ARROW_N)
     music.play(notes[2])
 
 def green_button_was_pushed():
-    return False
+    return False # not implemented yet
 
 def green_button():
     display.show(Image.ARROW_S)
@@ -85,7 +86,7 @@ while playing:
     player_sequence = []
 
     play_sequence(simon_sequence, space_between_notes)
-    display.clear()
+    display.show(question)
     
     # wait for sufficient input
     while len(player_sequence) < len(simon_sequence):
