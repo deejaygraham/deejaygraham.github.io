@@ -58,7 +58,7 @@ def LoadGhostScore():
         score = f.read()
         return int(score)
     
-# fade in 
+# fade in ?
 display.show(Image.GHOST)
 sleep(5_000)
 FadeOut()
