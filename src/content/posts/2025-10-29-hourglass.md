@@ -3,7 +3,7 @@ title: Hourglass
 tags: [microbit]
 ---
 
-<canvas id="mb1" width="721" height="565" data-microbit="9:9:0:0:0|99099:9:00500:0:0|99099:9:0:0:00900|99009:9:0:0:00900|99009:9:5:0:00900|99009:9:0:0:00990"></canvas>
+<canvas id="mb1" width="721" height="565" data-microbit="9:9:0:0:0|99099:9:00500:0:0|99099:9:0:0:00900|99009:9:0:0:00900|99009:9:00500:0:00900|99009:9:0:0:00990"></canvas>
 
 Here's a small project to model a simple hourglass timer that animates "sand" pixels falling from the top, 
 through the middle and filling up the bottom of the screen. 
