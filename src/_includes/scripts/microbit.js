@@ -2,6 +2,9 @@
 // e.g. 
 // <canvas id="mb1" width="721" height="565" data-microbit="05432:98765:99999:99999:99990"></canvas>
 // <canvas id="mb2" width="360" height="282" data-microbit="22222:44444:66666:88888:99999"></canvas>
+// shortcut
+// <canvas id="mb1" width="721" height="565" data-microbit="5:9:9:1:0"></canvas> 
+// expands out each number to repeat 5 times
 
 const randomColour = () => {
   const colours = [ "red", "blue", "gold", "green" ];
