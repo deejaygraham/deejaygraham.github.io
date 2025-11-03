@@ -114,12 +114,18 @@ const drawLEDMatrix = (ctx, element, brightnessValues, centre_x, centre_y) => {
   ctx.fillRect(led_start_x, led_start_y, 5  * (led_width + led_spacing_x), 5 * (led_height + led_spacing_y));
   
   for (const row of rows) { 
-    if (row.length < 5) {
-      throw new Error(`${rowIndex} must be 5 characters`);
+    const rowLength = 5; 
+    let ledValues = row;
+    if (ledValues.length === 1) {
+      ledValues = ledValues[0] * rowLength;
+    }
+    
+    if (ledValues.length < rowLength) {
+      throw new Error(`${rowIndex} must be 1 or ${rowLength} characters: ${ledValues}`);
     }
 
-    for(let columnIndex = 0; columnIndex < 5; columnIndex++) {
-      const brightness = parseInt(row[columnIndex]);
+    for(let columnIndex = 0; columnIndex < rowLength; columnIndex++) {
+      const brightness = parseInt(ledValues[columnIndex]);
       const opacity = mapBrightness(brightness, 0, 9, 0, 100);
       const x = led_start_x + (columnIndex  * (led_width + led_spacing_x));
       const y = led_start_y + (rowIndex * (led_height + led_spacing_y));
