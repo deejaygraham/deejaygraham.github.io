@@ -120,7 +120,7 @@ const drawLEDMatrix = (ctx, element, brightnessValues, centre_x, centre_y) => {
     const rowLength = 5; 
     let ledValues = row;
     if (ledValues.length === 1) {
-      ledValues = ledValues[0] * rowLength;
+      ledValues = ledValues[0].repeat(rowLength);
     }
     
     if (ledValues.length < rowLength) {
