@@ -119,11 +119,11 @@ const drawLEDMatrix = (ctx, element, brightnessValues, centre_x, centre_y) => {
   for (const row of rows) { 
     const rowLength = 5; 
     let ledValues = row;
-    if (ledValues.length === 1) {
+    if (ledValues.length < rowLength) {
       ledValues = ledValues[0].repeat(rowLength);
     }
     
-    if (ledValues.length < rowLength) {
+    if (ledValues.length !== rowLength) {
       throw new Error(`Row ${rowIndex + 1} must be 1 or ${rowLength} characters: ${ledValues}`);
     }
 
