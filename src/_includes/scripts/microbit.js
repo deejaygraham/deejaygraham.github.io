@@ -124,7 +124,7 @@ const drawLEDMatrix = (ctx, element, brightnessValues, centre_x, centre_y) => {
     }
     
     if (ledValues.length < rowLength) {
-      throw new Error(`${rowIndex} must be 1 or ${rowLength} characters: ${ledValues}`);
+      throw new Error(`Row ${rowIndex + 1} must be 1 or ${rowLength} characters: ${ledValues}`);
     }
 
     for(let columnIndex = 0; columnIndex < rowLength; columnIndex++) {
