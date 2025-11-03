@@ -6,9 +6,9 @@ test.describe("mentoring page", () => {
   test("renders correctly", async ({ page }) => {
     await page.goto("/mentoring/");
 
-    await expect(page.getByText("We Think Code")).toBeVisible();
-    await expect(page.getByText("My Mentoring Philosophy")).toBeVisible();
-    await expect(page.getByText("What I Can Help With")).toBeVisible();
+    await expect(page.getByRole('heading', { name: "We Think Code" }).toBeVisible();
+    await expect(page.getByRole('heading', { name: "My Mentoring Philosophy" })).toBeVisible();
+    await expect(page.getByRole('heading', { name: "What I Can Help With" })).toBeVisible();
   });
 
   test('Page links are correct', async ({page}) => {
