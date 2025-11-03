@@ -188,7 +188,7 @@ const drawMicrobit = (microbit, timestamp) => {
     const centre_y = Math.floor(canvas.height / 2);
 
     if (microbit.rendered === false) {
-      console.log('rendering body', microbit.id);
+      // console.log('rendering body', microbit.id);
       drawBody(ctx, canvas, cornerRadius);
       drawFlashes(ctx, canvas, cornerRadius);
 
@@ -202,7 +202,7 @@ const drawMicrobit = (microbit, timestamp) => {
         microbit.frame = 0;
       }
     
-      console.log('rendering led frame', microbit.id, microbit.frame, microbit.frames[microbit.frame]);
+      // console.log('rendering led frame for ', microbit.id, microbit.frame, microbit.frames[microbit.frame]);
       drawLEDMatrix(ctx, canvas, microbit.frames[microbit.frame], centre_x, centre_y);
   
       microbit.frame++;
