@@ -1,6 +1,6 @@
 ---
 title: Sketchnoting at DDDNorth 2015
-tags: [presentations, sketchnotes]
+tags: [presentations, sketchnotes, dddnorth]
 thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
 
 ---
