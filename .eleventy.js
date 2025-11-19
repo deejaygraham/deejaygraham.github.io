@@ -123,6 +123,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/assets/fonts/": "/fonts" });
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/google*.html": "/" });
+  eleventyConfig.addPassthroughCopy({ "./src/content/qrcode.html": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/sw.js": "/" });
   eleventyConfig.addPassthroughCopy({
     "./src/assets/css/prism.css": "/css/prism.css",
