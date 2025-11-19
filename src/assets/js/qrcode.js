@@ -1,5 +1,9 @@
+// eslint rules turned off for this file.
 /* eslint-disable no-unused-vars */ 
 /* eslint-disable no-redeclare */ 
+/* eslint-disable no-prototype-builtins */
+/* eslint-disable no-useless-escape */
+
 /**
  * @fileoverview
  * - Using the 'QRCode for Javascript library'
