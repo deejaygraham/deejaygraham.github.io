@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>QR Code</title>
+    <style>
+      #qrcode {
+        width:160px;
+        height:160px;
+        margin-top:15px;
+      }
+    </style>
+    <script src="/js/qrcode.js"></script>
+  </head>
+<body>
+  <input id="text" type="text" value="" style="width:80%" />
+  <div id="qrcode"></div>
+
+  <script type="text/javascript">
+    var qrcode = new QRCode("qrcode");
+    
+    function generateQRCode () {    
+      var textInput = document.getElementById("text");
+  
+      if (!textInput.value) {
+        textInput.focus();
+        return;
+      }
+  
+      qrcode.makeCode(textInput.value);
+    }
+
+    const textInput = document.getElementById("text");
+    textInput.addEventListener("blur", function() {
+      generateQRCode()
+    });
+    textInput.addEventListener("keydown", function(e) {
+      if (e.keyCode == 13) {
+        generateQRCode();
+      }
+    });
+</script>
+</body>
+</html>
