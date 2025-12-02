@@ -12,6 +12,8 @@ test("pdf samples are downloadable", async ({ page }) => {
     "/downloads/Graph-a4-landscape.pdf", 
     "/downloads/Manuscript-a4-portrait.pdf", 
     "/downloads/Manuscript-a4-landscape.pdf",
+    "/downloads/Tablature-a4-portrait.pdf", 
+    "/downloads/Tablature-a4-landscape.pdf",
   ];
 
   await checkAllResourcesExist(page, pdfs);
