@@ -87,4 +87,6 @@ Here are some samples of each type of pdf for download:
 * <a href="/downloads/Dotted-a4-portrait.pdf" alt="dotted">dotted</a>
 * <a href="/downloads/Graph-a4-portrait.pdf" alt="graph">graph</a>
 * <a href="/downloads/Manuscript-a4-portrait.pdf" alt="manuscript">manuscript</a>
+* <a href="/downloads/Tablature-a4-portrait.pdf" alt="tablature">tablature</a>
+
 
