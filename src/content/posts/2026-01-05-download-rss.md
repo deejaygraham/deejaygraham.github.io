@@ -4,8 +4,9 @@ draft: true
 tags: [code, python]
 ---
 
-```python
+## Code
 
+```python
 #!/usr/bin/env python3
 """
 Download all podcast episodes (enclosures) from an RSS feed to local disk,
@@ -32,13 +33,10 @@ from pathlib import Path
 from typing import Iterable, List, Optional, Dict
 
 
-# --------------------------
-# Configuration (edit these)
-# --------------------------
-RSS_URL: str = "https://example.com/path/to/private_feed_with_auth_in_url.rss"
+RSS_URL: str = "https://www.example.com/rss/podcast.rss"
 OUT_DIR: Path = Path("PodcastDownloads")
 
-# Politeness settings (tune to be gentle on servers)
+# Politeness settings 
 MAX_DOWNLOADS_PER_MINUTE: float = 2.0   # e.g., 1–3
 PER_DOWNLOAD_SLEEP_SECONDS: float = 5.0 # pause after each episode
 MAX_RETRIES: int = 4                    # retries for transient errors
@@ -49,10 +47,6 @@ USER_AGENT: str = "PodcastDownloader/1.0 (+https://yourdomain.example)"
 # Example: 500_000 ≈ 0.5 MB/s; 1_000_000 ≈ 1 MB/s.
 MAX_BYTES_PER_SEC: Optional[int] = None
 
-
-# --------------------------
-# Data structures
-# --------------------------
 @dataclass
 class Episode:
     """Represents a single podcast episode parsed from RSS."""
@@ -229,9 +223,6 @@ def stream_download(
                     bytes_this_second = 0
 
 
-# --------------------------
-# Main
-# --------------------------
 def main() -> int:
     try:
         headers = default_headers()
@@ -274,7 +265,7 @@ def main() -> int:
                 if path.exists() and path.stat().st_size == 0:
                     path.unlink(missing_ok=True)
 
-            # Fixed pause between episodes for extra politeness
+            # Pause between episodes for extra politeness
             if PER_DOWNLOAD_SLEEP_SECONDS > 0:
                 time.sleep(PER_DOWNLOAD_SLEEP_SECONDS)
 
