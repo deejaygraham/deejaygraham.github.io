@@ -5,48 +5,49 @@ tags: [code, python]
 ---
 
 ```python
+
 #!/usr/bin/env python3
 """
-Download all podcast episodes (enclosures) from an RSS feed to local disk.
+Download all podcast episodes (enclosures) from an RSS feed to local disk,
+assuming authentication is embedded directly in the URL (e.g., token query or
+username:password in the URL).
 
 Features:
-- Parses RSS feed and downloads audio enclosures.
-- Oldest-first ordering (start from the very beginning).
+- Oldest-first ordering (start from the beginning).
 - Safe filenames based on episode titles.
-- Supports public, Basic Auth, and Bearer token feeds.
-
-Usage:
-  Set RSS_URL and AUTH_METHOD below, then run:
-    python3 download_podcast.py
+- Politeness: rate limit, per-download delay, exponential backoff, Retry-After.
+- No external auth methods (Bearer/Basic) — URL is used as-is.
 """
+
 from __future__ import annotations
 
-import os
 import re
 import sys
+import time
 import xml.etree.ElementTree as ET
 import urllib.request
 import urllib.error
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, List, Optional, Tuple
+from typing import Iterable, List, Optional, Dict
+
 
 # --------------------------
 # Configuration (edit these)
 # --------------------------
-RSS_URL: str = "https://example.com/path/to/private_or_public_feed.rss"
+RSS_URL: str = "https://example.com/path/to/private_feed_with_auth_in_url.rss"
 OUT_DIR: Path = Path("PodcastDownloads")
 
-# Choose ONE auth method:
-#   - None: public feeds or token-in-URL feeds
-#   - Basic: username/password
-#   - Bearer: set Authorization header with a token
-AUTH_METHOD: str = "None"     # "None" | "Basic" | "Bearer"
+# Politeness settings (tune to be gentle on servers)
+MAX_DOWNLOADS_PER_MINUTE: float = 2.0   # e.g., 1–3
+PER_DOWNLOAD_SLEEP_SECONDS: float = 5.0 # pause after each episode
+MAX_RETRIES: int = 4                    # retries for transient errors
+INITIAL_BACKOFF_SECONDS: float = 2.0    # base for exponential backoff
+USER_AGENT: str = "PodcastDownloader/1.0 (+https://yourdomain.example)"
 
-BASIC_USERNAME: str = "your_username"
-BASIC_PASSWORD: str = "your_password"
-
-BEARER_TOKEN: str = "your_token_value"
+# Optional: cap throughput per episode (bytes/sec). None disables.
+# Example: 500_000 ≈ 0.5 MB/s; 1_000_000 ≈ 1 MB/s.
+MAX_BYTES_PER_SEC: Optional[int] = None
 
 
 # --------------------------
@@ -64,91 +65,67 @@ class Episode:
 # Helpers
 # --------------------------
 def sanitize_filename(name: str) -> str:
-    """
-    Create a filesystem-safe filename from an arbitrary title string.
-    """
     name = re.sub(r"\s+", " ", name.strip())
     name = re.sub(r'[\\/:"*?<>|]', "-", name)
     return name
 
 
 def detect_extension(url: str, default: str = ".mp3") -> str:
-    """
-    Attempt to infer file extension from URL, defaulting to `.mp3`.
-    """
     lower = url.lower()
     m = re.search(r"\.(mp3|m4a|aac|mp4|wav|ogg)(?:\?|$)", lower)
     return f".{m.group(1)}" if m else default
 
 
-def configure_auth_opener(
-    method: str,
-    rss_url: str,
-    username: Optional[str] = None,
-    password: Optional[str] = None,
-    bearer_token: Optional[str] = None,
-) -> Optional[urllib.request.OpenerDirector]:
+def default_headers() -> Dict[str, str]:
+    return {"User-Agent": USER_AGENT}
+
+
+def request_with_backoff(
+    req: urllib.request.Request,
+    max_retries: int = MAX_RETRIES,
+    initial_backoff_s: float = INITIAL_BACKOFF_SECONDS,
+) -> urllib.response.addinfourl:
     """
-    Configure an opener for authentication.
-
-    Returns:
-        An OpenerDirector if special auth is needed, else None.
+    Perform a request with exponential backoff for transient errors.
+    Honors Retry-After when present.
     """
-    method = method.strip()
-    if method == "None":
-        return None
+    attempt = 0
+    while True:
+        try:
+            return urllib.request.urlopen(req)
+        except urllib.error.HTTPError as e:
+            status = e.code
+            if status in (429, 500, 502, 503, 504) and attempt < max_retries:
+                retry_after = e.headers.get("Retry-After")
+                if retry_after:
+                    try:
+                        sleep_s = float(retry_after)
+                    except ValueError:
+                        sleep_s = initial_backoff_s * (2 ** attempt)
+                else:
+                    sleep_s = initial_backoff_s * (2 ** attempt)
+                print(f"Server {status}. Backing off {sleep_s:.1f}s (attempt {attempt+1}/{max_retries})…")
+                time.sleep(sleep_s)
+                attempt += 1
+                continue
+            raise
+        except urllib.error.URLError as e:
+            if attempt < max_retries:
+                sleep_s = initial_backoff_s * (2 ** attempt)
+                print(f"Network error: {e.reason}. Backing off {sleep_s:.1f}s (attempt {attempt+1}/{max_retries})…")
+                time.sleep(sleep_s)
+                attempt += 1
+                continue
+            raise
 
-    if method == "Basic":
-        if not (username and password):
-            raise ValueError("Basic auth requires username and password.")
-        auth_handler = urllib.request.HTTPBasicAuthHandler()
-        auth_handler.add_password(realm=None, uri=rss_url, user=username, passwd=password)
-        opener = urllib.request.build_opener(auth_handler)
-        urllib.request.install_opener(opener)
-        return opener
 
-    if method == "Bearer":
-        if not bearer_token:
-            raise ValueError("Bearer auth requires a token.")
-        # For Bearer, we set headers per request, so no opener is strictly required.
-        # Return None and ensure requests use headers.
-        return None
-
-    raise ValueError(f"Unsupported AUTH_METHOD: {method}")
-
-
-def fetch_bytes(url: str, headers: Optional[dict[str, str]] = None) -> bytes:
-    """
-    Fetch a resource and return raw bytes.
-    """
+def fetch_bytes(url: str, headers: Optional[Dict[str, str]] = None) -> bytes:
     req = urllib.request.Request(url, headers=headers or {})
-    with urllib.request.urlopen(req) as resp:
+    with request_with_backoff(req) as resp:
         return resp.read()
 
 
-def stream_download(url: str, dest: Path, headers: Optional[dict[str, str]] = None, chunk_size: int = 262_144) -> None:
-    """
-    Stream a download to disk to avoid large memory usage.
-
-    Args:
-        url: Remote audio URL.
-        dest: Local file path to write to.
-        headers: Optional HTTP headers (e.g., Authorization).
-        chunk_size: Bytes per read chunk; default 256 KiB.
-    """
-    req = urllib.request.Request(url, headers=headers or {})
-    with urllib.request.urlopen(req) as resp, dest.open("wb") as out:
-        while True:
-            buf = resp.read(chunk_size)
-            if not buf:
-                break
-            out.write(buf)
-
-
 def parse_rss_items(xml_data: bytes) -> List[ET.Element]:
-    """
-    Parse RSS XML and return a list of <item> elements.
-    """
     root = ET.fromstring(xml_data)
     channel = root.find("channel")
     items = channel.findall("item") if channel is not None else root.findall(".//item")
@@ -156,10 +133,6 @@ def parse_rss_items(xml_data: bytes) -> List[ET.Element]:
 
 
 def extract_episode(item: ET.Element, index_fallback: int) -> Optional[Episode]:
-    """
-    Extract an Episode from an RSS <item> element.
-    Looks for <enclosure url="..."> first; falls back to <link>/<guid>.
-    """
     title_el = item.find("title")
     title_text = title_el.text.strip() if (title_el is not None and title_el.text) else f"Episode {index_fallback}"
 
@@ -167,7 +140,6 @@ def extract_episode(item: ET.Element, index_fallback: int) -> Optional[Episode]:
     url: Optional[str] = enclosure.get("url") if enclosure is not None else None
 
     if not url:
-        # Try <link> or <guid> if they end with a common audio extension
         for tag in ("link", "guid"):
             el = item.find(tag)
             if el is not None and el.text:
@@ -177,68 +149,92 @@ def extract_episode(item: ET.Element, index_fallback: int) -> Optional[Episode]:
                     break
 
     if not url:
-        # No usable audio URL found
         return None
 
     ext = detect_extension(url)
     return Episode(title=title_text, url=url, ext=ext)
 
 
-def build_auth_headers(method: str, bearer_token: Optional[str] = None) -> dict[str, str]:
-    """
-    Build HTTP headers for the selected auth method.
-    """
-    if method == "Bearer" and bearer_token:
-        return {"Authorization": f"Bearer {bearer_token}"}
-    return {}
-
-
 def ensure_output_dir(path: Path) -> None:
-    """
-    Ensure output directory exists.
-    """
     path.mkdir(parents=True, exist_ok=True)
 
 
 def plan_downloads(items: Iterable[ET.Element]) -> List[Episode]:
-    """
-    Convert <item> elements to a list of Episodes, ordered oldest-first.
-    """
-    raw_episodes: List[Episode] = []
-    # Reverse items (feeds are usually newest-first)
+    episodes: List[Episode] = []
     for idx, item in enumerate(reversed(list(items)), start=1):
         ep = extract_episode(item, index_fallback=idx)
         if ep is not None:
-            raw_episodes.append(ep)
-    return raw_episodes
+            episodes.append(ep)
+    return episodes
 
 
 def episode_filename(ep: Episode) -> str:
-    """
-    Build a safe filename for an episode.
-    """
     base = sanitize_filename(ep.title)
     return f"{base}{ep.ext}"
+
+
+# --------------------------
+# Rate limiting & throttling
+# --------------------------
+class RateLimiter:
+    """
+    Simple time-based rate limiter: ensures at most N actions per minute.
+    """
+    def __init__(self, max_per_minute: float) -> None:
+        self.max_per_minute = max_per_minute
+        self._last_action_ts: float = 0.0
+
+    def wait(self) -> None:
+        if self.max_per_minute <= 0:
+            return
+        interval = 60.0 / self.max_per_minute
+        now = time.time()
+        elapsed = now - self._last_action_ts
+        if elapsed < interval:
+            time.sleep(interval - elapsed)
+        self._last_action_ts = time.time()
+
+
+def stream_download(
+    url: str,
+    dest: Path,
+    headers: Optional[Dict[str, str]] = None,
+    chunk_size: int = 262_144,
+    max_bytes_per_sec: Optional[int] = MAX_BYTES_PER_SEC,
+) -> None:
+    """
+    Stream a download to disk to avoid large memory usage, with optional throughput cap.
+    """
+    req = urllib.request.Request(url, headers=headers or {})
+    with request_with_backoff(req) as resp, dest.open("wb") as out:
+        bytes_this_second = 0
+        second_start = time.time()
+        while True:
+            buf = resp.read(chunk_size)
+            if not buf:
+                break
+            out.write(buf)
+            if max_bytes_per_sec is not None:
+                bytes_this_second += len(buf)
+                now = time.time()
+                # reset each second
+                if now - second_start >= 1.0:
+                    second_start = now
+                    bytes_this_second = 0
+                elif bytes_this_second >= max_bytes_per_sec:
+                    sleep_s = 1.0 - (now - second_start)
+                    if sleep_s > 0:
+                        time.sleep(sleep_s)
+                    second_start = time.time()
+                    bytes_this_second = 0
 
 
 # --------------------------
 # Main
 # --------------------------
 def main() -> int:
-    """
-    Entry point. Returns 0 on success, non-zero on failure.
-    """
     try:
-        # Configure auth
-        opener = configure_auth_opener(
-            method=AUTH_METHOD,
-            rss_url=RSS_URL,
-            username=BASIC_USERNAME,
-            password=BASIC_PASSWORD,
-            bearer_token=BEARER_TOKEN,
-        )
-        # Build headers if needed (Bearer only)
-        headers = build_auth_headers(AUTH_METHOD, BEARER_TOKEN)
+        headers = default_headers()
 
         ensure_output_dir(OUT_DIR)
 
@@ -253,6 +249,8 @@ def main() -> int:
         episodes = plan_downloads(items)
         print(f"Found {len(episodes)} episodes. Starting from the earliest…")
 
+        limiter = RateLimiter(MAX_DOWNLOADS_PER_MINUTE)
+
         for i, ep in enumerate(episodes, start=1):
             filename = episode_filename(ep)
             path = OUT_DIR / filename
@@ -261,13 +259,24 @@ def main() -> int:
                 print(f"[{i}] Already exists: {filename}")
                 continue
 
+            # Rate-limit before the next request
+            limiter.wait()
+
             print(f"[{i}] Downloading: {ep.title}")
             try:
                 stream_download(ep.url, path, headers=headers)
             except urllib.error.HTTPError as e:
                 print(f"HTTP error for '{ep.title}': {e.code} {e.reason}", file=sys.stderr)
+                if path.exists() and path.stat().st_size == 0:
+                    path.unlink(missing_ok=True)
             except Exception as e:
                 print(f"Error downloading '{ep.title}': {e}", file=sys.stderr)
+                if path.exists() and path.stat().st_size == 0:
+                    path.unlink(missing_ok=True)
+
+            # Fixed pause between episodes for extra politeness
+            if PER_DOWNLOAD_SLEEP_SECONDS > 0:
+                time.sleep(PER_DOWNLOAD_SLEEP_SECONDS)
 
         print("All done.")
         return 0
@@ -275,9 +284,6 @@ def main() -> int:
     except ET.ParseError as e:
         print(f"XML parse error: {e}", file=sys.stderr)
         return 3
-    except ValueError as e:
-        print(f"Configuration error: {e}", file=sys.stderr)
-        return 4
     except Exception as e:
         print(f"Unexpected error: {e}", file=sys.stderr)
         return 5
@@ -285,4 +291,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
 ```
