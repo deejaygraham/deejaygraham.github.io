@@ -54,7 +54,9 @@ const generateTranscript = () => {
                         }
                         break;
                     }
-                }
+                    default:
+                        console.log("Narrator: ignoring tag " + tagName);
+                    }
             }
         });
     });
