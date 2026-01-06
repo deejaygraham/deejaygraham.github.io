@@ -13,7 +13,11 @@ const generateTranscript = () => {
             const re = new RegExp("h([1-6])[^>]*");
             const tagName = c.tagName.toString().toLowerCase();
             const text = c.innerText;
- 
+
+            if (!text) {
+                return;
+            }
+            
             // Split the text into sentences
             const entries = splitText(text);
  
