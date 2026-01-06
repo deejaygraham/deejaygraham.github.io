@@ -27,8 +27,7 @@ const generateTranscript = () => {
             {
                 switch (tagName) {
                     case 'p':
-                    case 'li':
-                    {
+                    case 'li': {
                         transcript.push(...entries);
                         break;
                     }
@@ -41,12 +40,11 @@ const generateTranscript = () => {
                         break;
                     }
                     case 'code':
-                    {
+                    case 'pre': {
                         transcript.push("Ignoring code section - cannot read it out loud.\n");
                         break;
                     }
-                    case 'div':
-                    {
+                    case 'div': {
                         if (c.classList.contains("notice")) {
                             transcript.push("Please note: ");
                         }
