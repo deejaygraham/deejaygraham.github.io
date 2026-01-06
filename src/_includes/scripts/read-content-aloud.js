@@ -94,6 +94,7 @@ async function playSegment( segment ){
     })
 }
 
+/* eslint-disable-next-line */
 const initNarratePostContent = () => {
     const narrationButton = document.querySelector(".narrator");
 
