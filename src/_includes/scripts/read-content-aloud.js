@@ -5,7 +5,8 @@ const splitText = (text) => {
 }
 
 const generateTranscript = () => {
-    let transcript = [];  
+    let foundCode = false;
+    const transcript = [];  
     const content = document.querySelectorAll(".content");
       
     content.forEach((elem) => {
@@ -49,7 +50,12 @@ const generateTranscript = () => {
                         break;
                     }
                     case 'pre': {
-                        transcript.push("Ignoring code section - cannot read it out loud.\n");
+                        if (foundCode) {
+                            // already seen some code so don't give full message again...
+                            transcript.push("Skipping code.\n");    
+                        } else {
+                            transcript.push("Ignoring code listing - cannot read it out loud.\n");
+                        }
                         break;
                     }
                     case 'div': {
