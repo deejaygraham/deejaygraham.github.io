@@ -54,6 +54,7 @@ const generateTranscript = () => {
                             // already seen some code so don't give full message again...
                             transcript.push("Skipping code.\n");    
                         } else {
+                            foundCode = true;
                             transcript.push("Ignoring code listing - cannot read it out loud.\n");
                         }
                         break;
