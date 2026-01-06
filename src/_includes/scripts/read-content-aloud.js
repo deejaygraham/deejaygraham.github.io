@@ -43,7 +43,10 @@ const generateTranscript = () => {
                         }
                         break;
                     }
-                    case 'code':
+                    case 'code': {
+                        // nothing
+                        break;
+                    }
                     case 'pre': {
                         transcript.push("Ignoring code section - cannot read it out loud.\n");
                         break;
