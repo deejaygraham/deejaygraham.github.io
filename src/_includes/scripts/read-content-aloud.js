@@ -1,5 +1,6 @@
 /* adapted with thanks from https://www.4rknova.com/blog/2025/01/16/speech-synthesis */
 const splitText = (text) => {
+    // split text into sentences
     return text.split('. ');
 }
 
@@ -18,13 +19,11 @@ const generateTranscript = () => {
                 return;
             }
             
-            // Split the text into sentences
-            const entries = splitText(text);
- 
             if (re.test(tagName)) {
                 // Skip if marked specifically to be ignored
                 if (!c.parentElement.classList.contains("noreadaloud")) {
-                    transcript.push(...entries);
+                    const sentences = splitText(text);
+                    transcript.push(...sentences);
                 }
             }
             else
@@ -32,7 +31,8 @@ const generateTranscript = () => {
                 switch (tagName) {
                     case 'p':
                     case 'li': {
-                        transcript.push(...entries);
+                        const sentences = splitText(text);
+                        transcript.push(...sentences);
                         break;
                     }
                     case 'img': {
