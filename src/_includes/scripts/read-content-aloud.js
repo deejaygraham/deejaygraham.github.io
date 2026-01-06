@@ -94,37 +94,42 @@ async function playSegment( segment ){
     })
 }
 
-const narrationButton = document.querySelector(".narrator");
-const defaultTabTitle = document.title;
+const initNarratePostContent = () => {
+    const narrationButton = document.querySelector(".narrator");
 
-window.addEventListener("load", () => {
+    if (!narrationButton) {
+        return;
+    }
+    
+    const defaultTabTitle = document.title;
+
     const isSynthAvailable = window.speechSynthesis !== undefined;
-    if (!isSynthAvailable) {
+    if (isSynthAvailablem) {
+        // stop audio when user navigates away from the page
+        window.addEventListener("beforeunload", () => {
+            window.speechSynthesis.cancel();
+        });
+
+        // change title of the tab when audio is playing (to show that audio is playing)
+        window.setInterval(() => {
+            if (window.speechSynthesis.speaking) {
+                document.title = "[🔊] " + defaultTabTitle;
+                narrationButton.classList.add("narrator-active");
+            } else {
+                document.title = defaultTabTitle;
+                narrationButton.classList.remove("narrator-active");
+            }
+        }, 500);
+
+        narrationButton.addEventListener("click", () => {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+            } else {
+                const text = generateTranscript();
+                playTranscript(text);
+            }
+        });
+    } else {
         narrationButton.style.display = "none";
     }
-});
-
-// stop audio when user navigates away from the page
-window.addEventListener("beforeunload", () => {
-    window.speechSynthesis.cancel();
-});
-
-// change title of the tab when audio is playing (to show that audio is playing)
-window.setInterval(() => {
-    if (window.speechSynthesis.speaking) {
-        document.title = "[🔊] " + defaultTabTitle;
-        narrationButton.classList.add("narrator-active");
-    } else {
-        document.title = defaultTabTitle;
-        narrationButton.classList.remove("narrator-active");
-    }
-}, 500);
-
-narrationButton.addEventListener("click", () => {
-    if (window.speechSynthesis.speaking) {
-        window.speechSynthesis.cancel();
-    } else {
-        const text = generateTranscript();
-        playTranscript(text);
-    }
-});
+}
