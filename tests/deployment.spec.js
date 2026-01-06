@@ -53,6 +53,7 @@ test("contains javascripts", async ({ page }) => {
     "/js/site.js",
     "/js/search.js",
     "/js/elasticlunr.min.js",
+    "/js/p5.min.js",
     "/sw.js"
   ]);
 });
