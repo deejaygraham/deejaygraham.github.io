@@ -104,7 +104,7 @@ const initNarratePostContent = () => {
     const defaultTabTitle = document.title;
 
     const isSynthAvailable = window.speechSynthesis !== undefined;
-    if (isSynthAvailablem) {
+    if (isSynthAvailable) {
         // stop audio when user navigates away from the page
         window.addEventListener("beforeunload", () => {
             window.speechSynthesis.cancel();
