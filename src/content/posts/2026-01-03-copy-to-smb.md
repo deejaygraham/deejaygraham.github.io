@@ -163,3 +163,8 @@ fi
 ok "All done. 📁 Destination: $DEST_PATH"
 
 ```
+
+chmod +x ~/Desktop/copy_to_smb_and_delete.sh
+
+~/Desktop/copy_to_smb_and_delete.sh
+
