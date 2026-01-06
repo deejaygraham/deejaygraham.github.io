@@ -33,7 +33,11 @@ const generateTranscript = () => {
                         break;
                     }
                     case 'img': {
-                        transcript.push("Media included: " + c.alt + "\n");
+                        if (c.alt === "") {
+                            transcript.push("Media included, image with no description");
+                        } else {
+                            transcript.push("Media included: " + c.alt + "\n");
+                        }
                         break;
                     }
                     case 'code':
@@ -43,7 +47,7 @@ const generateTranscript = () => {
                     }
                     case 'div':
                     {
-                        else if (c.classList.contains("notice")) {
+                        if (c.classList.contains("notice")) {
                             transcript.push("Please note: ");
                         }
                         break;
