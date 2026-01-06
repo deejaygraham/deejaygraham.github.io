@@ -30,7 +30,8 @@ const generateTranscript = () => {
             {
                 switch (tagName) {
                     case 'p':
-                    case 'li': {
+                    case 'li': 
+                    case 'figcaption': {
                         const sentences = splitText(text);
                         transcript.push(...sentences);
                         break;
