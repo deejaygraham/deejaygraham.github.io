@@ -10,12 +10,12 @@ const generateTranscript = () => {
     content.forEach((elem) => {
         elem.querySelectorAll("*").forEach((c) => {
             // This regex will match all header tags
-            let re = new RegExp("h([1-6])[^>]*");
-            let tagName = c.tagName.toString().toLowerCase();
-            let text = c.innerText;
+            const re = new RegExp("h([1-6])[^>]*");
+            const tagName = c.tagName.toString().toLowerCase();
+            const text = c.innerText;
  
             // Split the text into sentences
-            let entries = splitText(text);
+            const entries = splitText(text);
  
             if (re.test(tagName)) {
                 // Skip if marked specifically to be ignored
