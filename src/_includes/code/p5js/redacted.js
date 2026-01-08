@@ -1,3 +1,4 @@
+/* eslint-disable */
 let canvasX = 800;
 let canvasY = 800;
 
