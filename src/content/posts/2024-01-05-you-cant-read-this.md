@@ -9,7 +9,7 @@ hoping to copy the homework of someone else by copying and pasting their JSON.
 
 To anyone technically competent who wanted to spend a little time, it wasn't going to be impossible. I wasn't going for
 impossible or I would have gravitated more towards encryption. Encryption is the obvious answer but whatever I came up with
-had to be obfuscasted at the server in C# code and de-obfuscated/read at the browser in JavaScript. Again, because the JSON
+had to be obfuscated at the server in C# code and de-obfuscated/read at the browser in JavaScript. Again, because the JSON
 has to be read by code in the browser, encryption was an awkward option and it didn't need to be super secure, there were
 no bank details or PII involved here.
 
