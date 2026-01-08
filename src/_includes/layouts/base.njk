@@ -23,6 +23,9 @@
     {% block jsonld %}
 		  {% include "partials/structured-data/site.njk" %}
     {% endblock %}
+    {% if p5embed %}
+		  {% include "partials/p5-embed.njk" %}
+	  {% endif %}
   </head>
   <body>
     {% block header %}
@@ -31,10 +34,6 @@
 
     <main class="main container mb-6" id="main" >
       {% block precontent %}{% endblock %}
-
-	  {% if p5embed %}
-		{% include "partials/p5-embed.njk" %}
-	  {% endif %}
 
       <section class="section pt-0">
 	      <div class="content is-medium">

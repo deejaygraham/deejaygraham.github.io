@@ -25,6 +25,7 @@ import microbit from "./src/_11ty/shortcodes/microbit-diagram.js";
 import externalLink from "./src/_11ty/shortcodes/external-link.js";
 import p5container from "./src/_11ty/shortcodes/p5-container.js";
 import p5embed from "./src/_11ty/shortcodes/p5-embed.js";
+//import p5source from "./src/_11ty/shortcodes/p5-source.js";
 
 // plugins
 import { IdAttributePlugin } from "@11ty/eleventy";
@@ -101,8 +102,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("microbit", microbit);
   eleventyConfig.addShortcode("externalLink", externalLink);
   eleventyConfig.addShortcode("p5container", p5container);
-  eleventyConfig.addPairedShortcode("p5embed", p5embed);
-	
+  eleventyConfig.addShortcode("p5embed", p5embed);
+	//eleventyConfig.addPairedShortcode("p5source", p5source);
+
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
   eleventyConfig.watchIgnores.add("src/assets/**/*");
@@ -110,7 +112,9 @@ export default function (eleventyConfig) {
   // passthrough copy
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
-	
+  // copy p5 apps
+	eleventyConfig.addPassthroughCopy({ "./src/_includes/code/p5js/*.js": "/js" });
+
   // don't copy all images from img folder - 11ty will generate it's own using img plugin
   //eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
   // specific images linked from external sites

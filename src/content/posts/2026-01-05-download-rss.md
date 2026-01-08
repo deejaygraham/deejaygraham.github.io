@@ -41,7 +41,7 @@ MAX_DOWNLOADS_PER_MINUTE: float = 2.0   # e.g., 1–3
 PER_DOWNLOAD_SLEEP_SECONDS: float = 5.0 # pause after each episode
 MAX_RETRIES: int = 4                    # retries for transient errors
 INITIAL_BACKOFF_SECONDS: float = 2.0    # base for exponential backoff
-USER_AGENT: str = "PodcastDownloader/1.0 (+https://yourdomain.example)"
+USER_AGENT: str = "PodcastDownloader/1.0"
 
 # Optional: cap throughput per episode (bytes/sec). None disables.
 # Example: 500_000 ≈ 0.5 MB/s; 1_000_000 ≈ 1 MB/s.

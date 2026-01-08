@@ -1,4 +1,4 @@
-export default function (content) {
+export default function (filename) {
   // needs matching p5-container on page for setup to work
-  return `<script>${content}</script> <hr /> <details><summary>Source</summary><pre><code>${content}</code></pre></details>`;
+  return `<script src="/js/${filename}"></script>`;
 };
