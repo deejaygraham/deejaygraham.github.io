@@ -1,11 +1,11 @@
 /* eslint-disable */
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(windowWidth, windowHeight).parent("hustle");
 	
 	textSize(100);
 	textAlign(CENTER, CENTER); 
 	textFont('Arial'); 
-  textStyle(BOLD); 
+  	textStyle(BOLD); 
 }
 
 let frame = 1; // or 2 
@@ -13,7 +13,6 @@ let alpha = 255;
 let fadeAmount = -2;
 
 function draw() {
-
 	background(255);
 	
 	const line1 = 150;
