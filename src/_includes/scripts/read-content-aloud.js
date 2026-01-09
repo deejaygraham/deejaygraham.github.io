@@ -71,7 +71,14 @@ const generateTranscript = () => {
             }
         });
     });
-    return transcript.filter(function(entry) { return entry.trim() != ''; });
+    
+    const discoveredText = transcript.filter(function(entry) { return entry.trim() != ''; });
+
+    if (discoveredText.length === 0) {
+        discoveredText.push("Sorry, no text content found to read aloud.");
+    }
+
+    return discoveredText;
 }
 
 async function playTranscript(transcript){
