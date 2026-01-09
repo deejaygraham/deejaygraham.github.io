@@ -23,7 +23,7 @@ const redactionThreshold = 70; // percent
 let words = '';
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(windowWidth, windowHeight).parent("redacted");
 	textFont("Courier New")
 	textSize(16);
 	noLoop();
