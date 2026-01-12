@@ -23,9 +23,7 @@ import poison from "./src/_11ty/shortcodes/poison-ai.js";
 import mermaid from "./src/_11ty/shortcodes/mermaid-diagram.js";
 import microbit from "./src/_11ty/shortcodes/microbit-diagram.js";
 import externalLink from "./src/_11ty/shortcodes/external-link.js";
-import p5container from "./src/_11ty/shortcodes/p5-container.js";
 import p5embed from "./src/_11ty/shortcodes/p5-embed.js";
-//import p5source from "./src/_11ty/shortcodes/p5-source.js";
 
 // plugins
 import { IdAttributePlugin } from "@11ty/eleventy";
@@ -101,9 +99,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("mermaid", mermaid);
   eleventyConfig.addShortcode("microbit", microbit);
   eleventyConfig.addShortcode("externalLink", externalLink);
-  eleventyConfig.addShortcode("p5container", p5container);
-  eleventyConfig.addShortcode("p5embed", p5embed);
-	//eleventyConfig.addPairedShortcode("p5source", p5source);
+  eleventyConfig.addPairedShortcode("p5embed", p5embed);
 
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
