@@ -8,7 +8,7 @@ potentially weird things I'm going to have to do for these new site migrations.
 
 Lots of places we need a copyright or something similar where we just need the current year when the page was generated.
 
-### \_1tty/shortcodes/year.js
+### \_11ty/shortcodes/year.js
 
 ```javascript
 module.exports = function () {
@@ -16,4 +16,4 @@ module.exports = function () {
 };
 ```
 
-and in the markdown the name of the sortcode needs to appear bookended by moustaches.
+and in the markdown the name of the shortcode needs to appear bookended by moustaches.
