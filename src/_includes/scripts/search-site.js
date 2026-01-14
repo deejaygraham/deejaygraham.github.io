@@ -43,7 +43,7 @@ const executeSearch = (e) => {
     {
         fields: {
             title: {boost: 2, bool: "AND"},
-            body: {boost: 1}
+            excerpt: {boost: 1}
         },
         bool: "AND",
         expand: true,
