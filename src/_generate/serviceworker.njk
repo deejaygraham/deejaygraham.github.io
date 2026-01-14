@@ -40,8 +40,10 @@ addEventListener('install', function (event) {
             DEBUG && console.log('Adding core assets to cache');
 
             try {
+                // add all at once
                 cache.addAll(coreAssets);
             } catch {
+                // may fail, attempt add invidually
                 console.error('sw: cache.addAll');
                 for (let asset of coreAssets) {
                     try {
@@ -81,7 +83,7 @@ addEventListener('fetch', function (event) {
 
     if (event.request.url.includes(siteStylesheet)) {
         // (directly) respond with cached asset (if available)
-        cDEBUG && console.log('requesting stylesheet', event.request.url); 
+        DEBUG && console.log('requesting stylesheet', event.request.url); 
         event.respondWith(serveFromCache(event, { ignoreSearch: true, checkExpiryHeader: false }));
 
         // serve from network
