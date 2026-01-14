@@ -1,9 +1,7 @@
-
-// tests/service-worker.spec.js
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 // ---- Adjust these to your app ----
-const OFFLINE_TEXT = /offline|you are offline/i;   // update to match offline.html content
+const OFFLINE_TEXT = /offline|you are offline/i;   
 const CACHE_NAME = 'core-v1b';                     // must match your SW cache name exactly
 const CSS_PATH = '/css/site.css';
 const SEARCH_INDEX = '/search-index.json';
@@ -29,7 +27,7 @@ async function warmUrl(page, url) {
   expect(status).toBe(200);
 }
 
-// Utility: read cache header (wrap args into a single object)
+// Utility: read cache header (single object arg for evaluate)
 async function readCacheHeader(page, { cacheName, url, headerName = 'SW-Cache-Expires' }) {
   return await page.evaluate(async ({ cacheName, url, headerName }) => {
     const cache = await caches.open(cacheName);
@@ -40,12 +38,11 @@ async function readCacheHeader(page, { cacheName, url, headerName = 'SW-Cache-Ex
 
 test.describe('Service Worker core behaviors', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');              // baseURL should be set in playwright.config.js
+    await page.goto('/');              // baseURL should be set in playwright.config
     await ensureSwReadyAndControlled(page);
   });
 
   test.afterEach(async ({ page }) => {
-    // Clean up to isolate tests
     await page.evaluate(async () => {
       const regs = await navigator.serviceWorker.getRegistrations();
       await Promise.all(regs.map(r => r.unregister()));
@@ -68,7 +65,6 @@ test.describe('Service Worker core behaviors', () => {
   test('SW caches CSS with SW-Cache-Expires header (same-origin)', async ({ page }) => {
     await warmUrl(page, CSS_PATH);
 
-    // Retry loop: sometimes caching happens async; poll the cache
     const header = await expect
       .poll(async () => {
         return await readCacheHeader(page, { cacheName: CACHE_NAME, url: CSS_PATH });
@@ -84,7 +80,6 @@ test.describe('Service Worker core behaviors', () => {
   });
 
   test('offline navigation serves offline fallback', async ({ browser }) => {
-    // Use a fresh context to avoid interference
     const context = await browser.newContext();
     const page = await context.newPage();
 
@@ -92,8 +87,6 @@ test.describe('Service Worker core behaviors', () => {
     await ensureSwReadyAndControlled(page);
 
     await context.setOffline(true);
-
-    // Navigate to a route; ensure SW handles navigations with offline fallback
     await page.goto('/some/route/', { waitUntil: 'domcontentloaded' });
 
     const bodyText = await page.textContent('body');
@@ -110,7 +103,6 @@ test.describe('Service Worker core behaviors', () => {
     await page.goto('/');
     await ensureSwReadyAndControlled(page);
 
-    // Warm CSS in THIS context (caches are per-profile)
     await warmUrl(page, CSS_PATH);
 
     await context.setOffline(true);
@@ -137,7 +129,6 @@ test.describe('Service Worker core behaviors', () => {
     await page.goto('/');
     await ensureSwReadyAndControlled(page);
 
-    // Warm search index in THIS context
     await warmUrl(page, SEARCH_INDEX);
 
     await context.setOffline(true);
@@ -159,9 +150,7 @@ test.describe('Service Worker core behaviors', () => {
     await context.close();
   });
 
-  // Optional: verify 404 page is cached (not necessarily served by fetch)
   test('404 page is cached in core cache', async ({ page }) => {
-    // Ensure install precache added it
     const cached = await page.evaluate(async ({ cacheName, notFoundPath }) => {
       const cache = await caches.open(cacheName);
       const res = await cache.match(notFoundPath);
@@ -170,38 +159,29 @@ test.describe('Service Worker core behaviors', () => {
     expect(cached).toBe(true);
   });
 
-  // Update lifecycle: softened (requires real version bump in test harness)
   test('service worker update flow can trigger controllerchange', async ({ page }) => {
     await page.evaluate(() => navigator.serviceWorker.ready);
-
-    // Reload to *try* to install a new SW if server changed it.
     await page.reload();
 
-    // Check if a waiting worker exists
     const hasWaiting = await page.evaluate(async () => {
       const reg = await navigator.serviceWorker.getRegistration();
       return !!reg?.waiting;
     });
 
-    // Attach controllerchange listener and prompt skipWaiting if possible
     const controllerChanged = page.evaluate(() => new Promise((resolve) => {
       const onChange = () => resolve(true);
       navigator.serviceWorker.addEventListener('controllerchange', onChange, { once: true });
 
-      // Ask active controller to skip waiting (if supported)
       try {
         navigator.serviceWorker.controller?.postMessage('SKIP_WAITING');
       } catch {}
 
-      // Also ping any waiting worker (if present)
       (async () => {
         const reg = await navigator.serviceWorker.getRegistration();
         reg?.waiting?.postMessage?.('SKIP_WAITING');
       })();
     }));
 
-    // If no waiting worker, this may not fire; set a bounded timeout to avoid flakiness
-    // If your CI changes the SW file between reloads, this should pass reliably.
     await expect(controllerChanged).resolves.toBe(true);
   });
 });
