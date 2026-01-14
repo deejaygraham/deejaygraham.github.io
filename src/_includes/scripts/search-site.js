@@ -41,6 +41,10 @@ const executeSearch = (e) => {
     // console.log("searching for: ", e.target.value);
     const results = window.searchIndex.search(searchTerm, 
     {
+        fields: {
+            title: {boost: 2, bool: "AND"},
+            body: {boost: 1}
+        },
         bool: "AND",
         expand: true,
     });
