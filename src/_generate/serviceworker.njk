@@ -266,9 +266,7 @@ function isCacheResponseStillValid(cacheResponse) {
     DEBUG && console.log(fetched);
 
     const expirationDate = Date.parse(fetched);
-    const now = new Date();
 
     DEBUG && console.log('Expiration', expirationDate);
-
-    return expirationDate > now;
+    return expirationDate > Date.now(); 
 };
