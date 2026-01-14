@@ -54,7 +54,11 @@ self.addEventListener('install', (event) => {
     }
     // Optional: navigation preload for faster navigations
     if ('navigationPreload' in self.registration) {
-      try { await self.registration.navigationPreload.enable(); } catch {}
+      try { 
+        await self.registration.navigationPreload.enable(); 
+      } catch {
+        if (DEBUG) console.warn('[sw] navigationPreload failed');
+      }
     }
   })());
 });
@@ -123,6 +127,7 @@ async function handleNavigation(event) {
     }
     return net;
   } catch (e) {
+    if (DEBUG) console.warn('[sw] handleNavigation failed:', e);
     // Offline
     const off = await caches.match(offlinePage);
     if (off) return off;
