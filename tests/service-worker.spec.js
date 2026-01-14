@@ -47,3 +47,25 @@ test('SW caches static asset with custom expiry header', async ({ page }) => {
   expect(cacheHasEntry).toBe(true);
 });
 
+test('offline fallback page is served for navigations', async ({ browser }) => {
+  const context = await browser.newContext();
+  const page = await context.newPage();
+
+  await page.goto('/');
+  // Confirm SW is ready and controlling
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await expect.poll(async () => page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true);
+
+  // Go offline
+  await context.setOffline(true);
+
+  await page.goto('/about/', { waitUntil: 'domcontentloaded' });
+
+  // Check offline page content (assert a known text)
+  const content = await page.textContent('body');
+  expect(content).toContain('no internet connection');
+
+  await context.setOffline(false);
+});
+
+
