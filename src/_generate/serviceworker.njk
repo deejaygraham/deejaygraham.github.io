@@ -9,7 +9,7 @@ excludeFromSitemap: true
 // and https://gomakethings.com/how-to-set-an-expiration-date-for-items-in-a-service-worker-cache/
 
 // change version to allow upgrade
-const version = '-v1';
+const version = '-v1a';
 
 const cacheName = 'core' + version;
 const offlinePage = '/offline.html';
@@ -67,13 +67,15 @@ addEventListener('activate', function (event) {
 addEventListener('fetch', function (event) {
     // ignore anything that's not a GET
     if (event.request.method !== "GET") {
+        console.debug(event.request.method, 'ignoring cached version');
         return;
     }
 
-    console.debug(event.request.url);
+    console.debug('fetch', event.request.url);
 
     if (event.request.url.includes(siteStylesheet)) {
         // (directly) respond with cached asset (if available)
+        console.debug)('requesting stylesheet', event.request.url); 
         event.respondWith(serveFromCache(event, { ignoreSearch: true, checkExpiryHeader: false }));
 
         // serve from network
@@ -114,13 +116,16 @@ function serveFromCache(event, { ignoreSearch, checkExpiryHeader } = {}) {
     return caches.match(event.request, matchOptions).then(function (cacheResponse) {
         // if found return cache
         if (cacheResponse) {
+            console.debug('cached response exists');
             if (checkExpiryHeader) {
+                console.debug('checking for expiry');
                 if (isCacheResponseStillValid(cacheResponse)) {
                     console.debug('cached response is fresh');
                     return cacheResponse;
                 }
+                console.debug('out of date');
             } else {
-                console.debug('cached response exists');
+                console.debug('returning cached version');
                 return cacheResponse;
             }
         }
@@ -217,10 +222,12 @@ function updateCache(request, cacheName) {
  */
 function isCacheResponseStillValid(cacheResponse) {
     if (!cacheResponse) {
+        console.debug('No response to check for header');
         return false;
     }
 
     var fetched = cacheResponse.headers.get('sw-fetched-on');
+    console.debug(fetched);
 
     // ms * seconds * minutes * hours
     if (fetched && (parseFloat(fetched) + (1000 * 60 * 60 * 24)) > new Date().getTime()) {
