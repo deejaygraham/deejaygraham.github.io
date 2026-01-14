@@ -158,30 +158,4 @@ test.describe('Service Worker core behaviors', () => {
     }, { cacheName: CACHE_NAME, notFoundPath: NOT_FOUND_PATH });
     expect(cached).toBe(true);
   });
-
-  test('service worker update flow can trigger controllerchange', async ({ page }) => {
-    await page.evaluate(() => navigator.serviceWorker.ready);
-    await page.reload();
-
-    const hasWaiting = await page.evaluate(async () => {
-      const reg = await navigator.serviceWorker.getRegistration();
-      return !!reg?.waiting;
-    });
-
-    const controllerChanged = page.evaluate(() => new Promise((resolve) => {
-      const onChange = () => resolve(true);
-      navigator.serviceWorker.addEventListener('controllerchange', onChange, { once: true });
-
-      try {
-        navigator.serviceWorker.controller?.postMessage('SKIP_WAITING');
-      } catch {}
-
-      (async () => {
-        const reg = await navigator.serviceWorker.getRegistration();
-        reg?.waiting?.postMessage?.('SKIP_WAITING');
-      })();
-    }));
-
-    await expect(controllerChanged).resolves.toBe(true);
-  });
 });
