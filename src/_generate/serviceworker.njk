@@ -202,6 +202,7 @@ function updateCache(request, cacheName) {
             headers.append('sw-fetched-on', new Date().getTime());
 
             var requestKey = request;
+            console.debug(headers);
 
             return responseCopy.blob().then(function (body) {
                 return cache.put(requestKey, new Response(body, {
@@ -229,10 +230,12 @@ function isCacheResponseStillValid(cacheResponse) {
     var fetched = cacheResponse.headers.get('sw-fetched-on');
     console.debug(fetched);
 
-    // ms * seconds * minutes * hours
-    if (fetched && (parseFloat(fetched) + (1000 * 60 * 60 * 24)) > new Date().getTime()) {
+    const expiryTime = 1000 * 60 * 60 * 24; // 24 hours - ms * seconds * minutes * hours
+    if (fetched && (parseFloat(fetched) + expiryTime) > new Date().getTime()) {
+        console.debug('fetch header within freshness window');
         return true;
     }
 
+    console.debug('no header or not in date');
     return false;
 };
