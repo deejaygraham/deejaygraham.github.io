@@ -3,18 +3,14 @@ permalink: /sw.js
 eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
-// service worker code for site
-// based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
-// some other ideas from https://github.com/bnijenhuis/bnijenhuis-nl 
-// and https://gomakethings.com/how-to-set-an-expiration-date-for-items-in-a-service-worker-cache/
+// service worker code based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
+// some other ideas from https://github.com/bnijenhuis/bnijenhuis-nl and https://gomakethings.com/how-to-set-an-expiration-date-for-items-in-a-service-worker-cache/
 
 // change version to allow upgrade
-const CACHE_VERSION = '-v1a';
+const CACHE_VERSION = '-v1b';
 const CACHE_NAME = 'core' + CACHE_VERSION;
-// How long to cache - 24 hours here
 const CACHING_DURATION = 24 * 3600;
 const CACHE_EXPIRY_HEADER = 'SW-Cache-Expires';
-// Verbose logging or not
 const DEBUG = true;
 
 // pages
@@ -33,17 +29,13 @@ const coreAssets = [
       notFoundPage
 ];
 
-// install service worker and cache core assets
 addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
-            DEBUG && console.log('Adding core assets to cache');
-
             try {
                 // add all at once
                 cache.addAll(coreAssets);
             } catch {
-                // may fail, attempt add invidually
                 console.error('sw: cache.addAll');
                 for (let asset of coreAssets) {
                     try {
@@ -58,9 +50,7 @@ addEventListener('install', function (event) {
     );
 });
 
-// make sure to remove old caches
 addEventListener('activate', function (event) {
-    DEBUG && console.log('Deleting old cache data');
     event.waitUntil(
         caches.keys().then(function (keys) {
             return Promise.all(keys
@@ -71,85 +61,56 @@ addEventListener('activate', function (event) {
     )
 });
 
-// fetch assets and serve from cache and update cache
 addEventListener('fetch', function (event) {
-    // ignore anything that's not a GET
     if (event.request.method !== "GET") {
-        DEBUG && console.log(event.request.method, 'ignoring cached version');
         return;
     }
 
-    DEBUG && console.log('fetch', event.request.url);
+    // (directly) respond with cached asset (if available)
+    event.respondWith(serveFromCache(event, { ignoreSearch: false, checkExpiryHeader: false }));
 
-    if (event.request.url.includes(siteStylesheet)) {
-        // (directly) respond with cached asset (if available)
-        DEBUG && console.log('requesting stylesheet', event.request.url); 
-        event.respondWith(serveFromCache(event, { ignoreSearch: true, checkExpiryHeader: false }));
+    // serve from network
+    // event.respondWith(serveFromNetwork(event.request));
 
-        // serve from network
-        //event.respondWith(serveFromNetwork(event));
-
-        // update cache
-        event.waitUntil(updateCache(event.request, CACHE_NAME));
-
-    } else {
-        // (directly) respond with cached asset (if available)
-        event.respondWith(serveFromCache(event, { ignoreSearch: false, checkExpiryHeader: false }));
-
-        // serve from network
-        // event.respondWith(serveFromNetwork(event));
-
-        // update cache (only if in core assets)
-        if (coreAssets.includes(event.request.url)) {
-            event.waitUntil(updateCache(event.request, CACHE_NAME));
-        }
+    // update cache (only if in core assets)
+    if (coreAssets.includes(event.request.url)) {
+       event.waitUntil(updateCache(event.request, CACHE_NAME));
     }
 });
 
 /**
  * serve request from cache
  * if file isn't cached longer than 24 hours, it's still valid
- * @param {Event} event the request event
+ * @param {Request} the request object
  * @param {Boolean} ignoreSearch if true, ignore search parameters in request
  * @param {Boolean} checkExpiryHeader if true, check for custom expiry header
  * @return {Object} response object from cache or from fetch
  */
-function serveFromCache(event, { ignoreSearch, checkExpiryHeader } = {}) {
-    // set the right match options
+function serveFromCache(request, { ignoreSearch, checkExpiryHeader } = {}) {
     var matchOptions = {};
     if (ignoreSearch) matchOptions = { ignoreSearch: true };
 
-    DEBUG && console.log('Attempting to serve from cache', event.request.url);
-
-    return caches.match(event.request, matchOptions).then(function (cacheResponse) {
+    return caches.match(request, matchOptions).then(function (cacheResponse) {
         // if found return cache
         if (cacheResponse) {
-            console.debug('cached response exists');
             if (checkExpiryHeader) {
-                DEBUG && console.log('checking for expiry');
                 if (isCacheResponseStillValid(cacheResponse)) {
-                    DEBUG && console.log('cached response is fresh');
                     return cacheResponse;
                 }
-                DEBUG && console.log('out of date');
             } else {
-                DEBUG && console.log('returning cached version');
                 return cacheResponse;
             }
         }
 
-        DEBUG && console.log('fetching from network');
         // fetch it again, because cache was not found or was expired
-        return fetch(event.request).then(function (response) {
-            if (event.request.url.includes(siteStylesheet)) {
-                updateCache(event.request, CACHE_NAME);
+        return fetch(request).then(function (response) {
+            if (request.url.includes(siteStylesheet)) {
+                updateCache(request, CACHE_NAME);
             } 
 
             return response;
-
-            // if offline and not found in cache, return offline data
         }).catch(function () {
-            if (event.request.url.endsWith('/')) {
+            if (request.url.endsWith('/')) {
                 return caches.match(offlinePage);
             } 
         });
@@ -159,35 +120,29 @@ function serveFromCache(event, { ignoreSearch, checkExpiryHeader } = {}) {
 /**
  * Serve request from network
  *
- * @param {Event} event the request event
+ * @param {Request} the request object
  * @return {Object} response object from fetch or from cache
  */
 /* eslint-disable-next-line */
-function serveFromNetwork(event) {
-    console.debug('Attempting to serve from network', event.request.url);
-    // try and get it from the network
-    return fetch(event.request).then(function (response) {
-        if ((event.request.destination == 'document') && (response.status == 404)) {
+function serveFromNetwork(request) {
+    return fetch(request).then(function (response) {
+        if ((request.destination == 'document') && (response.status == 404)) {
             return caches.match(notFoundPage);
         }
 
         return response;
 
     }).catch(function () {
-        // try and get it from cache
-        return caches.match(event.request).then(function (cacheResponse) {
-            // if found return cache
+        return caches.match(request).then(function (cacheResponse) {
             if (cacheResponse) {
                 return cacheResponse;
             }
 
-            // otherwise return 404 (if a document is requested)
-            if (event.request.destination == 'document') {
+            if (request.destination == 'document') {
                 return caches.match(notFoundPage);
             }
         }).catch(function () {
-            // otherwise return 404 (if a document is requested)
-            if (event.request.destination == 'document') {
+            if (request.destination == 'document') {
                 return caches.match(notFoundPage);
             }
         });
@@ -201,8 +156,6 @@ function serveFromNetwork(event) {
  * @return {Object} response object
  */
 function updateCache(request, cacheName) {
-    DEBUG && console.log('caching', request.url);
-
     return caches.open(cacheName).then(function (cache) {
         return fetch(request).then(function (response) {
             var responseCopy = response.clone();
@@ -210,35 +163,10 @@ function updateCache(request, cacheName) {
 
             const expires = new Date();
             expires.setSeconds(expires.getSeconds() + CACHING_DURATION);
-                    // Recreate a Response object from scratch to put
-                    // it in the cache, with the extra header for
-                    // managing cache expiration.
-                    //const cachedResponseFields = {
-                    //    status: liveResponse.status,
-                     //   statusText: liveResponse.statusText,
-                    //    headers: { 'SW-Cache-Expires': expires.toUTCString() },
-                    //};
-                   // liveResponse.headers.forEach((v, k) => {
-                    //    cachedResponseFields.headers[k] = v;
-                    //});
-                    // We will consume body of the live response, so
-                    // clone it before to be able to return it
-                    // afterwards.
-                    //const returnedResponse = liveResponse.clone();
-                   // return liveResponse.blob().then((body) => {
-                    //    DEBUG && console.log(
-                     //       `SW: caching tiles ${request.url} until ${expires.toUTCString()}.`,
-                      //  );
-                        // Put the duplicated Response in the cache
-                     //   cache.put(request, new Response(body, cachedResponseFields));
-                        // Return the live response from the network
-                     //   return returnedResponse;
-                    // });
+
             headers.append(CACHE_EXPIRY_HEADER, expires.toUTCString());
 
             var requestKey = request;
-            DEBUG && console.log(headers);
-
             return responseCopy.blob().then(function (body) {
                 return cache.put(requestKey, new Response(body, {
                     status: responseCopy.status,
@@ -258,15 +186,11 @@ function updateCache(request, cacheName) {
  */
 function isCacheResponseStillValid(cacheResponse) {
     if (!cacheResponse) {
-        DEBUG && console.log('No response to check for header');
         return false;
     }
 
     var fetched = cacheResponse.headers.get(CACHE_EXPIRY_HEADER);
-    DEBUG && console.log(fetched);
 
     const expirationDate = Date.parse(fetched);
-
-    DEBUG && console.log('Expiration', expirationDate);
     return expirationDate > Date.now(); 
 };
