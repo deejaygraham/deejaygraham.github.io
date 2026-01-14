@@ -138,7 +138,6 @@ async function handleNavigation(event) {
 }
 
 // ---------- Strategies with TTL header ----------
-
 async function cacheThenNetworkWithTTL(request, cacheName) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
@@ -195,7 +194,9 @@ async function eventlessUpdate(cache, request) {
   try {
     const res = await fetch(request, { cache: 'no-store' });
     if (res && res.ok) await putWithExpiry(cache, request, res);
-  } catch {}
+  } catch (e) {
+    if (DEBUG) console.warn('[sw] eventlessUpdate failed:', e);
+  }
 }
 
 // Cache with custom expiry header (24h). Only cache OK responses.
