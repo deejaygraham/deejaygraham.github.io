@@ -3,194 +3,231 @@ permalink: /sw.js
 eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
+/// <reference lib="WebWorker" />
+/* eslint-disable no-restricted-globals */
+
 // service worker code based on the example https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
 // some other ideas from https://github.com/bnijenhuis/bnijenhuis-nl and https://gomakethings.com/how-to-set-an-expiration-date-for-items-in-a-service-worker-cache/
 
-// change version to allow upgrade
+// --- Config ---
 const CACHE_VERSION = '-v1b';
 const CACHE_NAME = 'core' + CACHE_VERSION;
-const CACHING_DURATION = 24 * 3600;
+const CACHING_DURATION = 24 * 3600; // seconds (24h)
 const CACHE_EXPIRY_HEADER = 'SW-Cache-Expires';
 const DEBUG = true;
 
-// pages
+// --- Routes & assets ---
 const offlinePage = '/offline.html';
 const searchDatabase = '/search-index.json';
 const siteStylesheet = '/css/site.css';
-const notFoundPage = '/404.html'
+const notFoundPage = '/404.html';
 const coreAssets = [
-      "/index.html",
-      siteStylesheet,
-      "/favicon.ico",
-      "/img/favicon.png",
-      "/img/avatar.svg",
-      offlinePage,
-      searchDatabase,
-      notFoundPage
+  '/',                 // make sure root is included for nav fallbacks
+  '/index.html',
+  siteStylesheet,
+  '/favicon.ico',
+  '/img/favicon.png',
+  '/img/avatar.svg',
+  offlinePage,
+  searchDatabase,
+  notFoundPage,
 ];
 
-addEventListener('install', function (event) {
-    event.waitUntil(
-        caches.open(CACHE_NAME).then(function (cache) {
-            try {
-                // add all at once
-                cache.addAll(coreAssets);
-            } catch {
-                console.error('sw: cache.addAll');
-                for (let asset of coreAssets) {
-                    try {
-                        cache.add(asset);
-                    } catch (error) {
-                        console.warn('sw: cache.add', asset);
-                        console.warn('sw: ', error);
-                    }
-                }
-            }
-        })
+// ---------- Install: precache ----------
+self.addEventListener('install', (event) => {
+  if (DEBUG) console.log('[sw] install');
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    // addAll with proper async error handling
+    try {
+      await cache.addAll(coreAssets);
+    } catch (e) {
+      // Fallback: try to add them one by one to isolate failures
+      if (DEBUG) console.warn('[sw] addAll failed, adding assets individually', e);
+      for (const asset of coreAssets) {
+        try {
+          await cache.add(asset);
+        } catch (err) {
+          if (DEBUG) console.warn('[sw] cache.add failed:', asset, err);
+        }
+      }
+    }
+    // Optional: navigation preload for faster navigations
+    if ('navigationPreload' in self.registration) {
+      try { await self.registration.navigationPreload.enable(); } catch {}
+    }
+  })());
+});
+
+// ---------- Activate: cleanup & claim ----------
+self.addEventListener('activate', (event) => {
+  if (DEBUG) console.log('[sw] activate');
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(
+      keys.map((k) => (k !== CACHE_NAME ? caches.delete(k) : undefined))
     );
+    await self.clients.claim();
+  })());
 });
 
-addEventListener('activate', function (event) {
-    event.waitUntil(
-        caches.keys().then(function (keys) {
-            return Promise.all(keys
-                .filter(key => key !== CACHE_NAME)
-                .map(key => caches.delete(key))
-            )
-        })
-    )
+// ---------- Fetch routing ----------
+self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  if (request.method !== 'GET') return;
+
+  const url = new URL(request.url);
+
+  // 1) HTML / navigations: Network-first with 404/offline fallbacks
+  if (request.mode === 'navigate' || request.destination === 'document') {
+    event.respondWith(handleNavigation(event));
+    return;
+  }
+
+  // 2) Static assets (CSS/JS): SWR (respect querystrings)
+  if (
+    url.origin === self.location.origin &&
+    (request.destination === 'style' ||
+     request.destination === 'script' ||
+     /\.(css|js)$/.test(url.pathname))
+  ) {
+    event.respondWith(staleWhileRevalidateWithTTL(request, CACHE_NAME));
+    return;
+  }
+
+  // 3) Images: Cache-first with simple cap
+  if (
+    url.origin === self.location.origin &&
+    (request.destination === 'image' || /\.(png|jpe?g|gif|webp|svg)$/.test(url.pathname))
+  ) {
+    event.respondWith(cacheFirstWithLimitAndTTL(request, `${CACHE_NAME}-images`, 150));
+    return;
+  }
+
+  // 4) Default: try cache (with TTL), then network
+  event.respondWith(cacheThenNetworkWithTTL(request, CACHE_NAME));
 });
 
-addEventListener('fetch', function (event) {
-    if (event.request.method !== "GET") {
-        return;
+// ---------- Navigation handler ----------
+async function handleNavigation(event) {
+  try {
+    const preload = await event.preloadResponse;
+    if (preload && preload.ok) return preload;
+
+    const net = await fetch(event.request, { cache: 'no-store' });
+    if (net.ok) return net;
+
+    if (net.status === 404) {
+      const nf = await caches.match(notFoundPage);
+      if (nf) return nf;
     }
+    return net;
+  } catch (e) {
+    // Offline
+    const off = await caches.match(offlinePage);
+    if (off) return off;
+    // As last resort, any cached doc
+    const cached = await caches.match(event.request);
+    return cached || new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
+  }
+}
 
-    // (directly) respond with cached asset (if available)
-    event.respondWith(serveFromCache(event, { ignoreSearch: false, checkExpiryHeader: false }));
+// ---------- Strategies with TTL header ----------
 
-    // serve from network
-    // event.respondWith(serveFromNetwork(event.request));
+async function cacheThenNetworkWithTTL(request, cacheName) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(request);
+  if (cached && isCacheResponseStillValid(cached)) return cached;
 
-    // update cache (only if in core assets)
-    if (coreAssets.includes(event.request.url)) {
-       event.waitUntil(updateCache(event.request, CACHE_NAME));
+  try {
+    const res = await fetch(request);
+    if (res && res.ok) {
+      await putWithExpiry(cache, request, res);
     }
-});
-
-/**
- * serve request from cache
- * if file isn't cached longer than 24 hours, it's still valid
- * @param {Request} the request object
- * @param {Boolean} ignoreSearch if true, ignore search parameters in request
- * @param {Boolean} checkExpiryHeader if true, check for custom expiry header
- * @return {Object} response object from cache or from fetch
- */
-function serveFromCache(request, { ignoreSearch, checkExpiryHeader } = {}) {
-    var matchOptions = {};
-    if (ignoreSearch) matchOptions = { ignoreSearch: true };
-
-    return caches.match(request, matchOptions).then(function (cacheResponse) {
-        // if found return cache
-        if (cacheResponse) {
-            if (checkExpiryHeader) {
-                if (isCacheResponseStillValid(cacheResponse)) {
-                    return cacheResponse;
-                }
-            } else {
-                return cacheResponse;
-            }
-        }
-
-        // fetch it again, because cache was not found or was expired
-        return fetch(request).then(function (response) {
-            if (request.url.includes(siteStylesheet)) {
-                updateCache(request, CACHE_NAME);
-            } 
-
-            return response;
-        }).catch(function () {
-            if (request.url.endsWith('/')) {
-                return caches.match(offlinePage);
-            } 
-        });
-    })
+    return cached || res;
+  } catch {
+    return cached || new Response('', { status: 504, statusText: 'Gateway Timeout' });
+  }
 }
 
-/**
- * Serve request from network
- *
- * @param {Request} the request object
- * @return {Object} response object from fetch or from cache
- */
-/* eslint-disable-next-line */
-function serveFromNetwork(request) {
-    return fetch(request).then(function (response) {
-        if ((request.destination == 'document') && (response.status == 404)) {
-            return caches.match(notFoundPage);
-        }
+async function staleWhileRevalidateWithTTL(request, cacheName) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(request);
+  // Return fast if cached and fresh
+  if (cached && isCacheResponseStillValid(cached)) {
+    // kick off background update
+    eventlessUpdate(cache, request);
+    return cached;
+  }
+  // Otherwise, fetch now
+  try {
+    const res = await fetch(request);
+    if (res && res.ok) {
+      await putWithExpiry(cache, request, res);
+    }
+    return cached || res;
+  } catch {
+    return cached || new Response('', { status: 504, statusText: 'Gateway Timeout' });
+  }
+}
 
-        return response;
+async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries = 100) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(request);
+  if (cached && isCacheResponseStillValid(cached)) return cached;
 
-    }).catch(function () {
-        return caches.match(request).then(function (cacheResponse) {
-            if (cacheResponse) {
-                return cacheResponse;
-            }
+  const res = await fetch(request);
+  if (res && res.ok) {
+    await putWithExpiry(cache, request, res);
+    const keys = await cache.keys();
+    if (keys.length > maxEntries) await cache.delete(keys[0]); // simple FIFO trim
+  }
+  return cached || res;
+}
 
-            if (request.destination == 'document') {
-                return caches.match(notFoundPage);
-            }
-        }).catch(function () {
-            if (request.destination == 'document') {
-                return caches.match(notFoundPage);
-            }
-        });
+// Fire-and-forget background update (no event context)
+async function eventlessUpdate(cache, request) {
+  try {
+    const res = await fetch(request, { cache: 'no-store' });
+    if (res && res.ok) await putWithExpiry(cache, request, res);
+  } catch {}
+}
+
+// Cache with custom expiry header (24h). Only cache OK responses.
+async function putWithExpiry(cache, request, liveResponse) {
+  try {
+    if (!liveResponse || !liveResponse.ok) return;
+    const copy = liveResponse.clone();
+    const headers = new Headers(copy.headers);
+
+    const expires = new Date(Date.now() + CACHING_DURATION * 1000);
+    headers.set(CACHE_EXPIRY_HEADER, expires.toUTCString());
+
+    const body = await copy.blob();
+    const responseForCache = new Response(body, {
+      status: copy.status,
+      statusText: copy.statusText,
+      headers,
     });
+    await cache.put(request, responseForCache);
+    if (DEBUG) console.log('[sw] cached with expiry:', new URL(request.url).pathname, expires.toUTCString());
+  } catch (e) {
+    if (DEBUG) console.warn('[sw] putWithExpiry failed:', e);
+  }
 }
 
-/**
- * update cache
- * @param {Object} request the event request
- * @param {String} cacheName the cache to update
- * @return {Object} response object
- */
-function updateCache(request, cacheName) {
-    return caches.open(cacheName).then(function (cache) {
-        return fetch(request).then(function (response) {
-            var responseCopy = response.clone();
-            var headers = new Headers(responseCopy.headers);
-
-            const expires = new Date();
-            expires.setSeconds(expires.getSeconds() + CACHING_DURATION);
-
-            headers.append(CACHE_EXPIRY_HEADER, expires.toUTCString());
-
-            var requestKey = request;
-            return responseCopy.blob().then(function (body) {
-                return cache.put(requestKey, new Response(body, {
-                    status: responseCopy.status,
-                    statusText: responseCopy.statusText,
-                    headers: headers
-                }));
-            });
-        });
-    });
-}
-
-/**
- * check of cacheResponse is still valid
- * if file isn't cached longer than 24 hours, it's still valid
- * @param {Object} cacheResponse the cacheResponse object
- * @return {Boolean} if true, cacheResponse is valid
- */
+// TTL check (24h)
 function isCacheResponseStillValid(cacheResponse) {
-    if (!cacheResponse) {
-        return false;
-    }
+  if (!cacheResponse) return false;
+  const fetched = cacheResponse.headers.get(CACHE_EXPIRY_HEADER);
+  if (!fetched) return false;
+  const expirationDate = Date.parse(fetched); // ms
+  if (Number.isNaN(expirationDate)) return false;
+  return expirationDate > Date.now();
+}
 
-    var fetched = cacheResponse.headers.get(CACHE_EXPIRY_HEADER);
+// Optional update control
+self.addEventListener('message', (event) => {
+  if (event.data === 'SKIP_WAITING') self.skipWaiting();
+});
 
-    const expirationDate = Date.parse(fetched);
-    return expirationDate > Date.now(); 
-};
