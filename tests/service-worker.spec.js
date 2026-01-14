@@ -1,11 +1,10 @@
 
 // tests/service-worker.spec.js
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 const CACHE_NAME = 'core-v1b'; // adjust if your SW cache version differs
 const CSS_PATH = '/css/site.css';
 const SEARCH_INDEX = '/search-index.json';
-const OFFLINE_PAGE = '/offline.html';
 const NOT_FOUND_PAGE = '/404.html';
 
 // Utility: ensure SW is ready and controls the page
@@ -159,8 +158,8 @@ test.describe('Service Worker (core behaviors, no TTL simulation)', () => {
 
   // --- 404 navigation handling ---
   test('document 404 falls back to cached notFound page when online', async ({ page }) => {
-    // Hit a guaranteed missing route 
-    const resStatus = await page.evaluate(async () => {
+     // Hit a guaranteed missing route 
+     await page.evaluate(async () => {
       const res = await fetch('/this-route-should-not-exist/', { cache: 'no-store' });
       return res.status;
     });
