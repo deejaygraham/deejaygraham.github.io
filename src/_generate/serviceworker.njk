@@ -13,7 +13,7 @@ const CACHE_VERSION = '-v1a';
 const CACHE_NAME = 'core' + CACHE_VERSION;
 // How long to cache - 24 hours here
 const CACHING_DURATION = 24 * 3600;
-const CACHE_EXPIRY_HEADER = 'sw-fetched-on';
+const CACHE_EXPIRY_HEADER = 'SW-Cache-Expires';
 // Verbose logging or not
 const DEBUG = true;
 
@@ -207,7 +207,34 @@ function updateCache(request, cacheName) {
         return fetch(request).then(function (response) {
             var responseCopy = response.clone();
             var headers = new Headers(responseCopy.headers);
-            headers.append('sw-fetched-on', new Date().getTime());
+
+            const expires = new Date();
+            expires.setSeconds(expires.getSeconds() + CACHING_DURATION);
+                    // Recreate a Response object from scratch to put
+                    // it in the cache, with the extra header for
+                    // managing cache expiration.
+                    //const cachedResponseFields = {
+                    //    status: liveResponse.status,
+                     //   statusText: liveResponse.statusText,
+                    //    headers: { 'SW-Cache-Expires': expires.toUTCString() },
+                    //};
+                   // liveResponse.headers.forEach((v, k) => {
+                    //    cachedResponseFields.headers[k] = v;
+                    //});
+                    // We will consume body of the live response, so
+                    // clone it before to be able to return it
+                    // afterwards.
+                    //const returnedResponse = liveResponse.clone();
+                   // return liveResponse.blob().then((body) => {
+                    //    DEBUG && console.log(
+                     //       `SW: caching tiles ${request.url} until ${expires.toUTCString()}.`,
+                      //  );
+                        // Put the duplicated Response in the cache
+                     //   cache.put(request, new Response(body, cachedResponseFields));
+                        // Return the live response from the network
+                     //   return returnedResponse;
+                    // });
+            headers.append(CACHE_EXPIRY_HEADER, expires.toUTCString());
 
             var requestKey = request;
             DEBUG && console.log(headers);
