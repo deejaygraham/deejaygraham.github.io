@@ -44,7 +44,7 @@ test.describe('Service Worker core behaviors', () => {
         message: `Header SW-Cache-Expires not found in cache ${CACHE_NAME} for ${CSS_PATH}`
       })
       .toBeTruthy();
-
+    expect(header).toBe("heelo");
     const expiryMs = Date.parse(header);
     expect(expiryMs).toBeGreaterThan(Date.now());
   });
