@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
 
 // ---- Adjust these to your app ----
-const OFFLINE_TEXT = /offline|you are offline/i;   
-const CACHE_NAME = 'core-v1b';                     // must match your SW cache name exactly
-const CSS_PATH = '/css/site.css';
-const SEARCH_INDEX = '/search-index.json';
-const NOT_FOUND_PATH = '/404.html';
+//const OFFLINE_TEXT = /offline|you are offline/i;   
+//const CACHE_NAME = 'core-v1b';                     // must match your SW cache name exactly
+//const CSS_PATH = '/css/site.css';
+//const SEARCH_INDEX = '/search-index.json';
+//const NOT_FOUND_PATH = '/404.html';
 
 async function ensureSwReadyAndControlled(page, opts = { timeout: 10_000 }) {
   await page.evaluate(() => navigator.serviceWorker.ready);
@@ -25,13 +25,14 @@ async function warmUrl(page, url) {
   expect(status).toBe(200);
 }
 
-async function readCacheHeader(page, { cacheName, url, headerName = 'SW-Cache-Expires' }) {
+/*async function readCacheHeader(page, { cacheName, url, headerName = 'SW-Cache-Expires' }) {
   return await page.evaluate(async ({ cacheName, url, headerName }) => {
     const cache = await caches.open(cacheName);
     const res = await cache.match(url);
     return res?.headers.get(headerName) ?? null;
   }, { cacheName, url, headerName });
 }
+*/
 
 test.describe('Service Worker core behaviors', () => {
   test.beforeEach(async ({ page }) => {
