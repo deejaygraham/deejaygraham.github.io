@@ -10,8 +10,11 @@ excludeFromSitemap: true
 // some other ideas from https://github.com/bnijenhuis/bnijenhuis-nl and https://gomakethings.com/how-to-set-an-expiration-date-for-items-in-a-service-worker-cache/
 
 // --- Config ---
-const CACHE_VERSION = '-v1b';
-const CACHE_NAME = 'core' + CACHE_VERSION;
+const CACHE_VERSION = '-v1c';
+const PRECACHE = 'precache' + CACHE_VERSION;
+const RUNTIME = 'runtime' + CACHE_VERSION;
+const IMAGE_CACHE = 'images' + CACHE_VERSION;
+
 const CACHING_DURATION = 24 * 3600; // seconds (24h)
 const CACHE_EXPIRY_HEADER = 'SW-Cache-Expires';
 const DEBUG = true;
@@ -21,8 +24,9 @@ const offlinePage = '/offline.html';
 const searchDatabase = '/search-index.json';
 const siteStylesheet = '/css/site.css';
 const notFoundPage = '/404.html';
+
 const coreAssets = [
-  '/',                 // make sure root is included for nav fallbacks
+  '/',                 // ensure root is covered for nav fallbacks
   '/index.html',
   siteStylesheet,
   '/favicon.ico',
@@ -33,33 +37,30 @@ const coreAssets = [
   notFoundPage,
 ];
 
-// ---------- Install: precache ----------
+// ---------- Install: precache with TTL ----------
 self.addEventListener('install', (event) => {
   if (DEBUG) console.log('[sw] install');
   event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    // addAll with proper async error handling
     try {
-      await cache.addAll(coreAssets);
+      await precacheWithTTL(coreAssets, PRECACHE);
     } catch (e) {
-      // Fallback: try to add them one by one to isolate failures
-      if (DEBUG) console.warn('[sw] addAll failed, adding assets individually', e);
-      for (const asset of coreAssets) {
-        try {
-          await cache.add(asset);
-        } catch (err) {
-          if (DEBUG) console.warn('[sw] cache.add failed:', asset, err);
+      if (DEBUG) console.warn('[sw] precacheWithTTL failed:', e);
+      // fallback: try addAll (no TTL, but better than nothing)
+      const cache = await caches.open(PRECACHE);
+      try {
+        await cache.addAll(coreAssets);
+      } catch (e2) {
+        if (DEBUG) console.warn('[sw] addAll fallback failed:', e2);
+        // attempt one-by-one
+        for (const asset of coreAssets) {
+          try { await cache.add(asset); } 
+          catch (err) { if (DEBUG) console.warn('[sw] cache.add failed:', asset, err); }
         }
       }
     }
-    // Optional: navigation preload for faster navigations
-    if ('navigationPreload' in self.registration) {
-      try { 
-        await self.registration.navigationPreload.enable(); 
-      } catch {
-        if (DEBUG) console.warn('[sw] navigationPreload failed');
-      }
-    }
+    // Note: navigationPreload enabled in 'activate'
+    // Consider immediate activation if you prefer:
+    // self.skipWaiting();
   })());
 });
 
@@ -67,10 +68,17 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   if (DEBUG) console.log('[sw] activate');
   event.waitUntil((async () => {
+    const allow = new Set([PRECACHE, RUNTIME, IMAGE_CACHE]);
     const keys = await caches.keys();
     await Promise.all(
-      keys.map((k) => (k !== CACHE_NAME ? caches.delete(k) : undefined))
+      keys.filter((k) => !allow.has(k)).map((k) => caches.delete(k))
     );
+
+    // Enable navigation preload after activation
+    if ('navigationPreload' in self.registration) {
+      try { await self.registration.navigationPreload.enable(); }
+      catch (e) { if (DEBUG) console.warn('[sw] navigationPreload enable failed:', e); }
+    }
     await self.clients.claim();
   })());
 });
@@ -82,34 +90,39 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(request.url);
 
+  // If you ever add media with range requests, you can bypass here:
+  // if (request.headers.has('range')) return;
+
   // 1) HTML / navigations: Network-first with 404/offline fallbacks
   if (request.mode === 'navigate' || request.destination === 'document') {
     event.respondWith(handleNavigation(event));
     return;
   }
 
-  // 2) Static assets (CSS/JS): SWR (respect querystrings)
-  if (
+  // 2) Static assets (same-origin CSS/JS): SWR with TTL
+  const isCssJs =
     url.origin === self.location.origin &&
     (request.destination === 'style' ||
-     request.destination === 'script' ||
-     /\.(css|js)$/.test(url.pathname))
-  ) {
-    event.respondWith(staleWhileRevalidateWithTTL(request, CACHE_NAME));
+      request.destination === 'script' ||
+      /\.(css|js)$/.test(url.pathname));
+
+  if (isCssJs) {
+    event.respondWith(staleWhileRevalidateWithTTL(request, RUNTIME, event));
     return;
   }
 
-  // 3) Images: Cache-first with simple cap
-  if (
+  // 3) Images (same-origin): Cache-first with cap + TTL
+  const isImage =
     url.origin === self.location.origin &&
-    (request.destination === 'image' || /\.(png|jpe?g|gif|webp|svg)$/.test(url.pathname))
-  ) {
-    event.respondWith(cacheFirstWithLimitAndTTL(request, `${CACHE_NAME}-images`, 150));
+    (request.destination === 'image' || /\.(png|jpe?g|gif|webp|svg)$/.test(url.pathname));
+
+  if (isImage) {
+    event.respondWith(cacheFirstWithLimitAndTTL(request, IMAGE_CACHE, 150));
     return;
   }
 
   // 4) Default: try cache (with TTL), then network
-  event.respondWith(cacheThenNetworkWithTTL(request, CACHE_NAME));
+  event.respondWith(cacheThenNetworkWithTTL(request, RUNTIME));
 });
 
 // ---------- Navigation handler ----------
@@ -122,16 +135,16 @@ async function handleNavigation(event) {
     if (net.ok) return net;
 
     if (net.status === 404) {
+      // Static site: show your 404 page if available
       const nf = await caches.match(notFoundPage);
       if (nf) return nf;
     }
     return net;
   } catch (e) {
     if (DEBUG) console.warn('[sw] handleNavigation failed:', e);
-    // Offline
+    // Offline fallback
     const off = await caches.match(offlinePage);
     if (off) return off;
-    // As last resort, any cached doc
     const cached = await caches.match(event.request);
     return cached || new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
   }
@@ -145,30 +158,23 @@ async function cacheThenNetworkWithTTL(request, cacheName) {
 
   try {
     const res = await fetch(request);
-    if (res && res.ok) {
-      await putWithExpiry(cache, request, res);
-    }
+    if (res && res.ok) await putWithExpiry(cache, request, res);
     return cached || res;
   } catch {
     return cached || new Response('', { status: 504, statusText: 'Gateway Timeout' });
   }
 }
 
-async function staleWhileRevalidateWithTTL(request, cacheName) {
+async function staleWhileRevalidateWithTTL(request, cacheName, event) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
-  // Return fast if cached and fresh
   if (cached && isCacheResponseStillValid(cached)) {
-    // kick off background update
-    eventlessUpdate(cache, request);
+    if (event) event.waitUntil(eventlessUpdate(cache, request));
     return cached;
   }
-  // Otherwise, fetch now
   try {
     const res = await fetch(request);
-    if (res && res.ok) {
-      await putWithExpiry(cache, request, res);
-    }
+    if (res && res.ok) await putWithExpiry(cache, request, res);
     return cached || res;
   } catch {
     return cached || new Response('', { status: 504, statusText: 'Gateway Timeout' });
@@ -180,16 +186,22 @@ async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries = 100) {
   const cached = await cache.match(request);
   if (cached && isCacheResponseStillValid(cached)) return cached;
 
-  const res = await fetch(request);
-  if (res && res.ok) {
-    await putWithExpiry(cache, request, res);
-    const keys = await cache.keys();
-    if (keys.length > maxEntries) await cache.delete(keys[0]); // simple FIFO trim
+  try {
+    const res = await fetch(request);
+    if (res && res.ok) {
+      await putWithExpiry(cache, request, res);
+      // Trim cache (simple FIFO)
+      const keys = await cache.keys();
+      if (keys.length > maxEntries) {
+        await cache.delete(keys[0]);
+      }
+    }
+    return cached || res;
+  } catch {
+    return cached || new Response('', { status: 504, statusText: 'Gateway Timeout' });
   }
-  return cached || res;
 }
 
-// Fire-and-forget background update (no event context)
 async function eventlessUpdate(cache, request) {
   try {
     const res = await fetch(request, { cache: 'no-store' });
@@ -199,14 +211,40 @@ async function eventlessUpdate(cache, request) {
   }
 }
 
-// Cache with custom expiry header (24h). Only cache OK responses.
+// --------- Precaching with TTL applied ----------
+async function precacheWithTTL(urls, cacheName) {
+  const cache = await caches.open(cacheName);
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, { cache: 'no-store' });
+      if (res && res.ok) {
+        await putWithExpiry(cache, new Request(url), res);
+        if (DEBUG) console.log('[sw] precached with expiry:', url);
+      }
+    } catch (e) {
+      if (DEBUG) console.warn('[sw] precache failed:', url, e);
+    }
+  }
+}
+
+// --------- TTL & storage ----------
+function computeTTLSeconds(response) {
+  // Optional: honor server hints (use min of SW default and server max-age)
+  const cc = response.headers.get('Cache-Control') || '';
+  const m = cc.match(/max-age=(\d+)/);
+  if (m) return Math.min(CACHING_DURATION, parseInt(m[1], 10));
+  return CACHING_DURATION;
+}
+
+// Cache with custom expiry header (defaults to 24h). Only cache OK responses.
 async function putWithExpiry(cache, request, liveResponse) {
   try {
     if (!liveResponse || !liveResponse.ok) return;
     const copy = liveResponse.clone();
     const headers = new Headers(copy.headers);
 
-    const expires = new Date(Date.now() + CACHING_DURATION * 1000);
+    const ttlSec = computeTTLSeconds(copy);
+    const expires = new Date(Date.now() + ttlSec * 1000);
     headers.set(CACHE_EXPIRY_HEADER, expires.toUTCString());
 
     const body = await copy.blob();
@@ -222,12 +260,12 @@ async function putWithExpiry(cache, request, liveResponse) {
   }
 }
 
-// TTL check (24h)
+// TTL check
 function isCacheResponseStillValid(cacheResponse) {
   if (!cacheResponse) return false;
   const fetched = cacheResponse.headers.get(CACHE_EXPIRY_HEADER);
   if (!fetched) return false;
-  const expirationDate = Date.parse(fetched); // ms
+  const expirationDate = Date.parse(fetched);
   if (Number.isNaN(expirationDate)) return false;
   return expirationDate > Date.now();
 }
@@ -236,4 +274,3 @@ function isCacheResponseStillValid(cacheResponse) {
 self.addEventListener('message', (event) => {
   if (event.data === 'SKIP_WAITING') self.skipWaiting();
 });
-
