@@ -1,11 +1,10 @@
 import { test, expect } from '@playwright/test';
-
-// ---- Adjust these to your app ----
-//const OFFLINE_TEXT = /offline|you are offline/i;   
-//const CACHE_NAME = 'core-v1b';                     // must match your SW cache name exactly
-//const CSS_PATH = '/css/site.css';
+ 
+const CACHE_NAME = 'core-v1b';                     // must match SW cache name exactly
+const CSS_PATH = '/css/site.css';
 //const SEARCH_INDEX = '/search-index.json';
 //const NOT_FOUND_PATH = '/404.html';
+//const OFFLINE_TEXT = /offline|you are offline/i;  
 
 test.describe('Service Worker core behaviors', () => {
   test.beforeEach(async ({ page }) => {
@@ -33,7 +32,7 @@ test.describe('Service Worker core behaviors', () => {
     expect(controlled).toBe(true);
   });
 
-  /*test('SW caches CSS with SW-Cache-Expires header (same-origin)', async ({ page }) => {
+  test('SW caches CSS with SW-Cache-Expires header (same-origin)', async ({ page }) => {
     await warmUrl(page, CSS_PATH);
 
     const header = await expect
@@ -49,7 +48,7 @@ test.describe('Service Worker core behaviors', () => {
     const expiryMs = Date.parse(header);
     expect(expiryMs).toBeGreaterThan(Date.now());
   });
-
+ /*
   test('offline navigation serves offline fallback', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
@@ -142,20 +141,19 @@ async function ensureSwReadyAndControlled(page, opts = { timeout: 10_000 }) {
     .toBe(true);
 }
 
-/*async function warmUrl(page, url) {
+async function warmUrl(page, url) {
   const status = await page.evaluate(async (u) => {
     const res = await fetch(u, { cache: 'no-store' });
     return res.status;
   }, url);
   expect(status).toBe(200);
 }
-*/
 
-/*async function readCacheHeader(page, { cacheName, url, headerName = 'SW-Cache-Expires' }) {
+async function readCacheHeader(page, { cacheName, url, headerName = 'SW-Cache-Expires' }) {
   return await page.evaluate(async ({ cacheName, url, headerName }) => {
     const cache = await caches.open(cacheName);
     const res = await cache.match(url);
     return res?.headers.get(headerName) ?? null;
   }, { cacheName, url, headerName });
 }
-*/
+
