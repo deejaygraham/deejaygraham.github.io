@@ -4,7 +4,7 @@
     "sass": "sass --style=compressed --load-path=node_modules src/assets/sass/site.scss _site/css/site.css",
     "build": "npm run sass && eleventy",
     "start": "npx eleventy --serve",
-    "test": "npx cypress run --e2e --browser chrome",
+    "test": "npx playwright test",
     "unit-test": "npx ava --verbose",
     "format": "prettier . --write",
     "lint": "npx eslint ./src & npx eslint ./tests",
