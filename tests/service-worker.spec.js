@@ -17,13 +17,14 @@ async function ensureSwReadyAndControlled(page, opts = { timeout: 10_000 }) {
     .toBe(true);
 }
 
-async function warmUrl(page, url) {
+/*async function warmUrl(page, url) {
   const status = await page.evaluate(async (u) => {
     const res = await fetch(u, { cache: 'no-store' });
     return res.status;
   }, url);
   expect(status).toBe(200);
 }
+*/
 
 /*async function readCacheHeader(page, { cacheName, url, headerName = 'SW-Cache-Expires' }) {
   return await page.evaluate(async ({ cacheName, url, headerName }) => {
