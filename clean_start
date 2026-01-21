@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+# Nicked (with thanks) from Tim Ottinger
+
 # Check if remote origin exists
 if git remote | grep -q origin; then
     git pull --rebase
