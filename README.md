@@ -2,9 +2,14 @@
 
 This is my Github user page that used to be made with Jekyll. It is now made using 11ty. If this page gets published at http://deejaygraham.github.io something has gone badly wrong.
 
+## Start
+
+Clone repo and run ./clean_start to prepare the dev environment. Runs ./check script at the end to run basic lint and tests.
+
 ## Validation
 
 The markdown and javascript used in the site for building or at runtime are validated with several lint tools before building. 
+./check script runs lints and unit tests to make sure everything looks good before committing.
 
 ## Build 
 
