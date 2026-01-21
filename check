@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+npm ci
+npx eslint ./src --max-warnings=0 
+npx eslint ./tests --max-warnings=0
+npm run mdlint
+npm run unit-test
