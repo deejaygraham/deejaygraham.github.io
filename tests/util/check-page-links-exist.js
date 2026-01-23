@@ -6,6 +6,7 @@ const validLink = (link) => {
     const internalLinksRegex = /deejaygraham.github.io/;
     return link 
     && !link?.startsWith("mailto:") 
+    && !link?.endsWith(".yml") 
     && !link?.includes("#") 
     && (link.startsWith('http') 
     && link.match(internalLinksRegex));
