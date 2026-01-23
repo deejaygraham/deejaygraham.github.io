@@ -11,7 +11,7 @@
     "mdlint": "markdownlint ./src/content/**/*.md",
     "thumbs": "node ./generate-thumbnails.js",
     "lintoutput": "npx eslint ./_site",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
