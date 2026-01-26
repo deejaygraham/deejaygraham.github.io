@@ -13,7 +13,7 @@ async function searchFilter(collection) {
   for (const page of collection) {
     let excerpt = " ";
 
-    if (page.data.excludeFromSitemap) {
+    if (page.data.excludeFromSitemap || page.data.draft) {
       // exclude this page from search
       continue;
     }
