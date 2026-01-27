@@ -26,19 +26,16 @@ const formatMessageHeader = (document, url, title) => {
     return messageHeader;
 };
 
-const formatMessageBody = (document, url, text) => {
-    const link = formatLink(document, url, text);
-
+const formatMessageBody = (document, text) => {
     const messageBody = document.createElement("div");
     messageBody.setAttribute("class", "message-body");
-    
-    messageBody.appendChild(link);
+    messageBody.innerHTML = text;
     return messageBody;
 };
 
 const formatMessage = (document, url, title, text) => {
     const header = formatMessageHeader(document, url, title);
-    const body = formatMessageBody(document, url, text);
+    const body = formatMessageBody(document, text);
 
     const message = document.createElement("article");
     message.setAttribute("class", "message");
