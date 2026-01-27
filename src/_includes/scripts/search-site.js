@@ -6,7 +6,53 @@ const ignoreEnterKey = (e) => {
     e.preventDefault();
     }    
 };
-  
+
+const formatLink = (document, url, text) => {
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.textContent = text;
+    return link;
+};
+
+const formatMessageHeader = (document, url, title) => {
+    const link = formatLink(document, url, title);
+    const titleEl = document.createElement("p");
+    titleEl.appendChild(link);
+
+    const messageHeader = document.createElement("div");
+    messageHeader.setAttribute("class", "message-header");
+    
+    messageHeader.appendChild(titleEl);
+    return messageHeader;
+};
+
+const formatMessageBody = (document, url, text) => {
+    const link = formatLink(document, url, text);
+
+    const messageBody = document.createElement("div");
+    messageBody.setAttribute("class", "message-body");
+    
+    messageBody.appendChild(link);
+    return messageBody;
+};
+
+const formatMessage = (document, url, title, text) => {
+    const header = formatMessageHeader(document, url, title);
+    const body = formatMessageBoxy(document, url, text);
+
+    const message = document.createElement("article");
+    message.setAttribute("class", "message");
+
+    message.appendChild(header);
+    message.appendChild(body);
+
+    return message;
+}
+
+const formatResult = (document, title, text) => {
+    return formatMessage(document, url, title, text);
+};
+
 const displayResults = (searchTerm, results) => {
     const container = document.getElementById("search-results");    
     container.innerHTML = "";
@@ -14,14 +60,9 @@ const displayResults = (searchTerm, results) => {
     if (Array.isArray(results) && results.length > 0) {
         results.forEach(({ ref }) => {
             const doc = window.searchIndex.documentStore.getDoc(ref);
-            const articleLink = document.createElement("a");
-            articleLink.setAttribute("href", doc.id);
-            articleLink.textContent = doc.title;
-            
-            const listItem = document.createElement("li");
-            listItem.appendChild(articleLink);
-    
-            container.appendChild(listItem);
+
+            const result = formatResult(doc, doc.id, doc.title, doc.excerpt);    
+            container.appendChild(result);
         });
     } else {
         let message = searchTerm 
