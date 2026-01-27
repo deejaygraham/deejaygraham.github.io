@@ -49,7 +49,7 @@ const formatMessage = (document, url, title, text) => {
     return message;
 }
 
-const formatResult = (document, title, text) => {
+const formatResult = (document, url, title, text) => {
     return formatMessage(document, url, title, text);
 };
 
