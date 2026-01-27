@@ -38,7 +38,7 @@ const formatMessageBody = (document, url, text) => {
 
 const formatMessage = (document, url, title, text) => {
     const header = formatMessageHeader(document, url, title);
-    const body = formatMessageBoxy(document, url, text);
+    const body = formatMessageBody(document, url, text);
 
     const message = document.createElement("article");
     message.setAttribute("class", "message");
