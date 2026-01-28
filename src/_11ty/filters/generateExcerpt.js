@@ -12,7 +12,7 @@ export default function (text, excerptLength) {
   const forbiddenList = [ '```', '#', '{%', '{{' ];
   let earliestIndex = -1;
 
-  for (const forbidden in forbiddenList) {
+  for (const forbidden of forbiddenList) {
       const index = content.indexOf(forbidden);
       if (index !== -1 && (earliestIndex === -1 || index < earliestIndex)) {
         earliestIndex = index;
