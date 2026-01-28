@@ -27,16 +27,19 @@ test("long text is truncated at space closest to limit", (t) => {
 });
 
 test("shortcodes are removed", (t) => {
-  const content = 'This is a youtube video {% youtube "12345" %}';
-  t.is(generateExcerpt(content, 100), 'This is a youtube video ');
+  const safe = 'This is a youtube video ';
+  const forbidden = '{% youtube "12345" %}';
+  t.is(generateExcerpt(safe + forbidden, 100), safe);
 });
 
-test("title hashes are removed", (t) => {
-  const content = 'This is a blog post ## Sub heading goes here';
-  t.is(generateExcerpt(content, 100), 'This is a blog post ');
+test("title markdown hashes are removed", (t) => {
+  const safe = 'This is a blog post ';
+  const forbidden = '## Sub heading goes here';
+  t.is(generateExcerpt(safe + forbidden, 100), safe);
 });
 
 test("code fences are removed", (t) => {
-  const content = 'This is some awesome code ```python i = 1 ```';
-  t.is(generateExcerpt(content, 100), 'This is some awesome code ');
+  const safe = 'This is some awesome code ';
+  const forbidden = '```python i = 1 ```';
+  t.is(generateExcerpt(safe + forbidden, 100), safe);
 });
