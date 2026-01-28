@@ -11,7 +11,7 @@ test("search the site for a post by title shows single match", async ({ page }) 
   const searchBox = await page.getByPlaceholder('search');
   
   await searchBox.pressSequentially(searchTerm, { delay: 100 });
-  await expect(page.getByText(expectedPostTitle)).toBeVisible();
+  await expect(page.getByText(expectedPostTitle, { exact: true })).toBeVisible();
 });
 
 test("search the site for a post by quotation author shows single match", async ({ page }) => {
@@ -23,7 +23,7 @@ test("search the site for a post by quotation author shows single match", async 
   const searchBox = await page.getByPlaceholder('search');
   
   await searchBox.pressSequentially(searchTerm, { delay: 100 });
-  await expect(page.getByText(expectedPostTitle)).toBeVisible();
+  await expect(page.getByText(expectedPostTitle, { exact: true })).toBeVisible();
 });
 
 test("search the site for a post by tag shows single match", async ({ page }) => {
@@ -35,7 +35,7 @@ test("search the site for a post by tag shows single match", async ({ page }) =>
   const searchBox = await page.getByPlaceholder('search');
   
   await searchBox.pressSequentially(searchTerm, { delay: 100 });
-  await expect(page.getByText(expectedPostTitle)).toBeVisible();
+  await expect(page.getByText(expectedPostTitle, { exact: true })).toBeVisible();
 });
 
 test("search the site for a nonsense term returns no results", async ({ page }) => {
