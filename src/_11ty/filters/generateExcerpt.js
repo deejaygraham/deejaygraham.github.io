@@ -8,6 +8,21 @@ export default function (text, excerptLength) {
   content = content.replace(/\[/g, ""); // remove surrounding square brackets from markdown link
   content = content.replace(/\]/g, ""); // remove surrounding square brackets from markdown link
 
+  // remove some dodgy markup that should not appear in search results
+  const forbiddenList = [ '```', '#', '{%', '{{' ];
+  let earliestIndex = -1;
+
+  for (const forbidden in forbiddenList) {
+      const index = content.indexOf(forbidden);
+      if (index !== -1 && (earliestIndex === -1 || index < earliestIndex)) {
+        earliestIndex = index;
+      }
+  }
+
+  if (content && earliestIndex > -1) {
+    content = content.slice(0, earliestIndex);
+  }
+  
   if (content && content.length > excerptLength) {
     // find space closest to the character limit
     return content.substr(0, content.lastIndexOf(" ", excerptLength));
