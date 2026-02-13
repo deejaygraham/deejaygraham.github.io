@@ -1,0 +1,85 @@
+name: Multistage Deploy Test
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  push:
+  pull_request:
+    types: [opened, synchronize, labeled, unlabeled]
+  workflow_dispatch:
+    inputs:
+      deployment:
+        description: "Environment to deploy"
+        type: choice
+        default: 'all'
+        required: true
+        options:
+          - rc
+          - stage_de
+          - stage_es
+          - stage_fr
+          - prod_de
+          - prod_es
+          - prod_fr
+          - all    
+
+jobs:
+  deploy_dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Because ${{ github.event_name }}"
+      
+  deploy_rc:
+    if: ${{ github.event_name == 'push' || inputs.deployment == 'rc' || inputs.deployment == 'all' }}
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploying RC..."
+
+  deploy_stage_de:
+    needs: [deploy_rc]
+    if: ${{ github.event_name == 'push' || inputs.deployment == 'stage_de' || inputs.deployment == 'all' }}
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploying stage_de..."
+
+  deploy_stage_es:
+    needs: [deploy_rc]
+    if: ${{ github.event_name == 'push' || inputs.deployment == 'stage_es' || inputs.deployment == 'all' }}
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploying stage_es..."
+
+  deploy_stage_fr:
+    needs: [deploy_rc]
+    if: ${{ github.event_name == 'push' || inputs.deployment == 'stage_fr' || inputs.deployment == 'all' }}
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploying stage_fr..."
+
+  deploy_prod_de:
+    needs: [deploy_stage_de]
+    if: ${{ github.event_name == 'push' || inputs.deployment == 'prod_de' || inputs.deployment == 'all' }}
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploying prod_de..."
+
+  deploy_prod_es:
+    needs: [deploy_stage_es]
+    if: ${{ github.event_name == 'push' || inputs.deployment == 'prod_es' || inputs.deployment == 'all' }}
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploying prod_es..."
+  
+  deploy_prod_fr:
+    needs: [deploy_stage_fr]
+    if: ${{ github.event_name == 'push' || inputs.deployment == 'prod_fr' || inputs.deployment == 'all' }}
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploying prod_fr..."
