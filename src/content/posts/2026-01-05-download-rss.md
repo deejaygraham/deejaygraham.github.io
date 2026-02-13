@@ -1,8 +1,13 @@
 ---
 title: Download from RSS
-draft: true
 tags: [code, python]
 ---
+
+I have a few podcasts that I listen to regularly and some I particularly want to archive away the earlier episodes in case they ever disappear from 
+online due to disaster or simply the person closes the podcast down and takes down the storage.
+
+Here is a script to go to a url, discover the episodes contained in the RSS feed and download each one to the local drive. I have added options 
+for rate limiting to be a little bit politer to the host. 
 
 ## Code
 
