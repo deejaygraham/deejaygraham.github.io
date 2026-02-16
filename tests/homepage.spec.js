@@ -20,7 +20,7 @@ test.describe("home page", () => {
   });
 
   test("contains footer with social links", async ({ page }) => {
-    await expect(page.getByRole('link', { name: 'rss' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'rss', exact: true })).toBeVisible();
     await expect(page.getByRole('link', { name: 'github' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'linkedin' })).toBeVisible();
   });
