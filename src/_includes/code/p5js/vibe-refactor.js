@@ -33,10 +33,10 @@ let code = [
 ];
 
 const editorParams = {
-	backgroundColour: 'black',
+	backgroundColour: '#121212',
 	fontColour: 'rgb(0, 255, 0)',
 	fontName: "Courier New",
-	fontSize: 16,
+	fontSize: 18,
 	// everything else depends on font size
 	characterSpacing: 10,
 	characterWidth: 10,
