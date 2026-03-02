@@ -9,7 +9,7 @@ export default [
   },
   {
     name: "shiki",
-    url: "https://shiki.matsu.io/",
+    url: "https://shiki.style/",
   },
   {
     name: "elasticlunr",
