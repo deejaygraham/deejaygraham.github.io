@@ -2,7 +2,6 @@
 layout: post
 title: Vibe Refactor
 p5embed: true
-draft: true
 tags: [javascript, p5]
 ---
 
