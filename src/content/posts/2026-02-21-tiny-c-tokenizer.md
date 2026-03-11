@@ -1,6 +1,6 @@
 ---
 title: Tiny C Tokenizer
-tags: [code, javscript]
+tags: [code, javascript]
 ---
 
 I had an idea for a p5js project but it requires a way to make sense of some early version of C code. Specifically [K&R style C code](https://en.wikipedia.org/wiki/The_C_Programming_Language)
