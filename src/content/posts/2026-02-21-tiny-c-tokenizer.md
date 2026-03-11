@@ -9,6 +9,24 @@ from way back in the dawn of time.
 For this project, I only need to know the type of tokens in the source code - what is a keyword, what is a comment etc. For this, then, I built a tiny tokenizer similar to the kind of thing 
 you would see in the front end of a language compiler or interpreter. Here then is the code and some tests that run against it.
 
+## Example
+
+Example code of the kind you might see in K&R:
+
+```cpp
+#include <stdio.h>
+/* Count lines in stdin */
+main()
+{
+    int c, nl;
+    nl = 0;
+    while ((c = getchar()) != EOF)
+        if (c == '\n')
+            nl = nl + 1;
+    printf("%d\n", nl);
+}
+```
+
 ## Code
 
 ### tokenizer.js
