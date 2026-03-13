@@ -221,6 +221,7 @@ you identify each unit.
 
 ```python
 from microbit import *
+import machine
 import radio
 import utime
 
@@ -238,35 +239,54 @@ DISC_POWER      = 7     # Maximum TX power
 MESH_CHANNEL    = 7     # Mesh channel       (low power, forces hopping)
 MESH_POWER      = 0     # Minimum TX power
 
-# ---------------------------------------------------------------------------
+## ---------------------------------------------------------------------------
 # Name generation
 # ---------------------------------------------------------------------------
-# Every micro:bit has a 64-bit pseudo-random unique ID burned into the chip
-# at the factory, stored in the FICR (Factory Information Configuration
+# Every micro:bit has a 64-bit pseudo-random unique ID burned into its chip
+# at the factory, held in the FICR (Factory Information Configuration
 # Register) in read-only memory.
 #
-# We read DEVICEID[1] via machine.mem32 – the most reliable MicroPython
-# method – and turn the lower 16 bits into a 4-character hex string such as
-# "3F2A".  That gives 65,536 possible names, which is more than enough to
-# avoid collisions in any classroom or demo setting.
+# We read DEVICEID[1] via machine.mem32, then use two nibbles (4 bits each)
+# to index into two short word lists:
 #
-# A millisecond-jitter fallback is included in case machine.mem32 is somehow
-# unavailable, but in practice it will never be needed on a real micro:bit.
+#   upper nibble (0-15)  ->  adjective   e.g. RED
+#   lower nibble (0-15)  ->  noun        e.g. FOX
+#   result               ->  RED-FOX
+#
+# 16 x 16 = 256 unique combinations. The same chip always gets the same name
+# because the FICR UID is permanent. Words are kept to 3-4 characters so the
+# full name scrolls quickly on the 5x5 LED display and is easy to say aloud.
+ 
+_ADJECTIVES = [
+    "RED",  "BIG",  "SLY",  "OLD",
+    "NEW",  "HOT",  "ICY",  "SHY",
+    "ODD",  "RAW",  "DIM",  "FAT",
+    "WET",  "DRY",  "SAD",  "CALM",
+]
+ 
+_NOUNS = [
+    "FOX",  "OWL",  "BEE",  "RAM",
+    "ELK",  "COD",  "JAY",  "GNU",
+    "YAK",  "EMU",  "APE",  "COW",
+    "PIG",  "HEN",  "DOE",  "ASS",
+]
  
 def _generate_name():
-    """Return a short unique 4-char hex name derived from the hardware UID."""
+    """Return a name like RED-FOX derived deterministically from the hardware UID."""
+    uid = 0
     try:
-        import machine
-        # FICR base address for nRF51/nRF52; DEVICEID[1] is at offset 0x64
-        NRF_FICR_BASE  = 0x10000000
-        DEVICEID_INDEX = 25             # DEVICEID[1] = base + 25*4 = 0x10000064
-        uid = machine.mem32[NRF_FICR_BASE + (DEVICEID_INDEX * 4)] & 0xFFFFFFFF
-        return "{:04X}".format(uid & 0xFFFF)
+        # nRF51/nRF52 FICR: DEVICEID[1] at base 0x10000000 + offset 25*4
+        uid = machine.mem32[0x10000000 + 25 * 4] & 0xFFFFFFFF
     except Exception:
-        pass
-    # Last resort: millisecond jitter at boot – not guaranteed unique but
-    # acceptable for a demo where units are powered on at different times
-    return "{:04X}".format(utime.ticks_ms() & 0xFFFF)
+        # Fallback: millisecond jitter at boot. Not guaranteed unique but
+        # acceptable for a demo where units are powered on at different times.
+        uid = utime.ticks_ms() & 0xFFFFFFFF
+ 
+    adj  = _ADJECTIVES[(uid >> 4) & 0xF]   # bits 7-4  -> adjective
+    noun = _NOUNS[uid & 0xF]               # bits 3-0  -> noun
+    return "{}-{}".format(adj, noun)
+
+MY_NAME   = _generate_name()
 
 
 MY_NAME   = _generate_name()
