@@ -241,30 +241,31 @@ MESH_POWER      = 0     # Minimum TX power
 # ---------------------------------------------------------------------------
 # Name generation
 # ---------------------------------------------------------------------------
-# microbit firmware exposes microbit.name(), which returns a string like
-# "zappy-yellow-zone" derived from the hardware serial number.
-# We take the first word and uppercase it for a short memorable name.
-# Older firmware that doesn't have name() falls back to a hex snippet.
-
+# Every micro:bit has a 64-bit pseudo-random unique ID burned into the chip
+# at the factory, stored in the FICR (Factory Information Configuration
+# Register) in read-only memory.
+#
+# We read DEVICEID[1] via machine.mem32 – the most reliable MicroPython
+# method – and turn the lower 16 bits into a 4-character hex string such as
+# "3F2A".  That gives 65,536 possible names, which is more than enough to
+# avoid collisions in any classroom or demo setting.
+#
+# A millisecond-jitter fallback is included in case machine.mem32 is somehow
+# unavailable, but in practice it will never be needed on a real micro:bit.
+ 
 def _generate_name():
-    """Return a short, unique, human-readable name for this unit."""
+    """Return a short unique 4-char hex name derived from the hardware UID."""
     try:
-        raw  = microbit.name()          # e.g. "zappy-yellow-zone"
-        word = raw.split("-")[0]        # take the first word
-        return word[:6].upper()         # uppercase, max 6 chars
+        import machine
+        # FICR base address for nRF51/nRF52; DEVICEID[1] is at offset 0x64
+        NRF_FICR_BASE  = 0x10000000
+        DEVICEID_INDEX = 25             # DEVICEID[1] = base + 25*4 = 0x10000064
+        uid = machine.mem32[NRF_FICR_BASE + (DEVICEID_INDEX * 4)] & 0xFFFFFFFF
+        return "{:04X}".format(uid & 0xFFFF)
     except Exception:
         pass
-    # Fallback: use the low bits of the hardware unique ID registers
-    # (nRF51/nRF52 FICR base 0x10000060)
-    try:
-        import struct
-        raw_bytes = bytes([read_bytes(0x10000060 + i) for i in range(4)])
-        uid0 = struct.unpack("<I", raw_bytes)[0]
-        return "{:04X}".format(uid0 & 0xFFFF)
-    except Exception:
-        pass
-    # Last resort: millisecond jitter – not guaranteed unique but good enough
-    # for a demo where units are powered on at different times
+    # Last resort: millisecond jitter at boot – not guaranteed unique but
+    # acceptable for a demo where units are powered on at different times
     return "{:04X}".format(utime.ticks_ms() & 0xFFFF)
 
 
