@@ -30,6 +30,7 @@ Each packet carries a (sender_id, seq) pair. A micro:bit keeps a short history o
 will NOT relay the same packet twice, preventing infinite relay loops.
 
 When a unit receives a message:
+
 * If it is addressed to itself we show the message on the screen
 * If the number of hops is too many we drop the packet to prevent inifinite loops
 * If we've already seen this combination of origin and sequence we drop the packet, again to prevent infinite loops
