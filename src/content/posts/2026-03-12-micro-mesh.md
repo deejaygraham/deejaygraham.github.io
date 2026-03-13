@@ -141,15 +141,15 @@ def handle_received(raw):
 
     origin_id, dest_id, seq, hops, message = result
 
-    # Drop packets we have already handled (loop prevention)
-    if _have_seen(origin_id, seq):
-        return
-    _mark_seen(origin_id, seq)
-
     # Drop packets that have been relayed too many times
     if hops > MAX_HOPS:
         print("DROP  seq={} origin={} – max hops exceeded".format(seq, origin_id))
         return
+
+    # Drop packets we have already handled (loop prevention)
+    if _have_seen(origin_id, seq):
+        return
+    _mark_seen(origin_id, seq)
 
     if dest_id == MY_ID:
         # ---- This message is FOR US ----
@@ -183,3 +183,326 @@ while True:
     sleep(10)   
 
 ```
+
+## Advanced Version
+
+A more advanced version makes the code a bit more involved but makes for a better user experience so decide for yourself if this version is 
+worth it. 
+
+### Naming 
+
+In this version, each microbit creates it's own name derived from it's hardware serial number so that each unit gets a memorable, human-readable 
+name without having to add it to the code. 
+
+### Multi Phase
+
+The advanced version splits the running of the code into two phases: a discovery phase; and a mesh phase. Each unit generates its own unique name 
+from its hardware serial number, runs a timed discovery phase where all units learn who is in the network, then switches into low-power mesh 
+mode where messages hop between units to reach distant recipients.
+
+### Discovery
+
+During the discovery phase, at startup, the radio switches to a separate channel and uses max power to broadcast it's id to everyone within range. 
+A 30-second count down runs to discover other units with each unit broadcasting a hello message every 2 seconds. In this phase, we 
+expect all microbit units to be in close proximity - in the same room - so that they can all discover each other before moving on to the next phase.
+Discovered names are added to each units "peer" list.
+
+### Mesh
+
+In the mesh phase, everyone should scatter out and try to form a mesh with some people close, some further away from the starting point 
+but each person within a few metres of each other so that the messages can still be transmitted. 
+
+In mesh mode, the radio switches to a new channel, turns down the power to reduce the range of each individual message hop, increasing the likelihood 
+that more hops will be needed between source and target. Use button A to scroll through the list of discovered peers to pick a target. 
+Holding A and B together sends the message to the intended target. Pressing button B on its own will scroll the name of the unit as before to help 
+you identify each unit. 
+
+### advanced-mesh.py
+
+```python
+from microbit import *
+import radio
+import utime
+
+# ---------------------------------------------------------------------------
+# Tuneable constants
+# ---------------------------------------------------------------------------
+DISCOVERY_SECS  = 30    # Duration of the discovery phase in seconds
+HELLO_INTERVAL  = 2000  # ms between HELLO broadcasts during discovery
+MAX_HOPS        = 6     # Maximum relay hops before a packet is dropped
+SEEN_CAPACITY   = 30    # Size of the duplicate-suppression ring buffer
+MAX_PEERS       = 20    # Maximum number of peers we will track
+
+DISC_CHANNEL    = 50    # Discovery channel  (all units hear all units)
+DISC_POWER      = 7     # Maximum TX power
+MESH_CHANNEL    = 7     # Mesh channel       (low power, forces hopping)
+MESH_POWER      = 0     # Minimum TX power
+
+# ---------------------------------------------------------------------------
+# Name generation
+# ---------------------------------------------------------------------------
+# microbit firmware exposes microbit.name(), which returns a string like
+# "zappy-yellow-zone" derived from the hardware serial number.
+# We take the first word and uppercase it for a short memorable name.
+# Older firmware that doesn't have name() falls back to a hex snippet.
+
+def _generate_name():
+    """Return a short, unique, human-readable name for this unit."""
+    try:
+        raw  = microbit.name()          # e.g. "zappy-yellow-zone"
+        word = raw.split("-")[0]        # take the first word
+        return word[:6].upper()         # uppercase, max 6 chars
+    except Exception:
+        pass
+    # Fallback: use the low bits of the hardware unique ID registers
+    # (nRF51/nRF52 FICR base 0x10000060)
+    try:
+        import struct
+        raw_bytes = bytes([read_bytes(0x10000060 + i) for i in range(4)])
+        uid0 = struct.unpack("<I", raw_bytes)[0]
+        return "{:04X}".format(uid0 & 0xFFFF)
+    except Exception:
+        pass
+    # Last resort: millisecond jitter – not guaranteed unique but good enough
+    # for a demo where units are powered on at different times
+    return "{:04X}".format(utime.ticks_ms() & 0xFFFF)
+
+
+MY_NAME   = _generate_name()
+
+peers     = []   # peer name strings found during discovery (sorted)
+_seq      = 0    # outgoing sequence counter (increments per sent message)
+_seen     = []   # ring buffer of (origin_name, seq_int) for dedup
+
+_peer_idx = 0    # index into peers[] for the UI peer-selector
+
+
+def _have_seen(origin, seq):
+    return (origin, seq) in _seen
+
+def _mark_seen(origin, seq):
+    global _seen
+    _seen.append((origin, seq))
+    if len(_seen) > SEEN_CAPACITY:
+        _seen.pop(0)
+
+def _radio_discovery_mode():
+    """High power on the discovery channel."""
+    radio.off()
+    radio.on()
+    radio.config(channel=DISC_CHANNEL, power=DISC_POWER, length=64)
+
+def _radio_mesh_mode():
+    """Minimum power on the mesh channel – forces multi-hop routing."""
+    radio.off()
+    radio.on()
+    radio.config(channel=MESH_CHANNEL, power=MESH_POWER, length=128)
+
+def run_discovery():
+    """
+    Broadcast our name and collect peer names for DISCOVERY_SECS seconds.
+    Ends automatically on timeout, or early if button A is held for ~1 s.
+    """
+    global peers
+
+    _radio_discovery_mode()
+    print("=== DISCOVERY  name={}  ch={}  power={} ===".format(
+        MY_NAME, DISC_CHANNEL, DISC_POWER))
+
+    start_ms      = utime.ticks_ms()
+    end_ms        = start_ms + DISCOVERY_SECS * 1000
+    last_hello_ms = utime.ticks_add(start_ms, -HELLO_INTERVAL)  # send immediately
+    last_disp_s   = -1
+
+    while True:
+        now         = utime.ticks_ms()
+        elapsed_ms  = utime.ticks_diff(now, start_ms)
+        remaining_s = max(0, (DISCOVERY_SECS * 1000 - elapsed_ms) // 1000)
+
+        if remaining_s != last_disp_s:
+            last_disp_s = remaining_s
+            # Show digit for single figures, clock image for larger numbers
+            if remaining_s < 10:
+                display.show(str(remaining_s))
+            else:
+                # Cycle through clock faces to indicate time passing
+                display.show(Image.ALL_CLOCKS[remaining_s % 12])
+
+        if utime.ticks_diff(now, last_hello_ms) >= HELLO_INTERVAL:
+            radio.send("HELLO|{}".format(MY_NAME))
+            last_hello_ms = now
+            print("HELLO  name={}  peers_known={}".format(MY_NAME, len(peers)))
+
+        raw = radio.receive()
+        if raw and raw.startswith("HELLO|"):
+            parts = raw.split("|")
+            if len(parts) == 2:
+                peer = parts[1].strip()
+                if peer and peer != MY_NAME and peer not in peers:
+                    if len(peers) < MAX_PEERS:
+                        peers.append(peer)
+                        # Flash a dot in the corner to confirm receipt
+                        display.set_pixel(4, 0, 9)
+                        print("FOUND  peer={}  total={}".format(peer, len(peers)))
+
+        if button_a.is_pressed():
+            utime.sleep_ms(800)
+            if button_a.is_pressed():
+                print("Discovery ended early by user")
+                break
+
+        if utime.ticks_diff(now, end_ms) >= 0:
+            break
+
+        sleep(20)   # yield
+
+    peers.sort()    # consistent alphabetical order on every unit
+
+    # Summary splash
+    display.scroll("{}P".format(len(peers)), delay=80)
+    print("=== DISCOVERY DONE  peers={} ===".format(peers))
+    utime.sleep_ms(1000)
+    display.clear()
+
+def _build_mesh(origin, dest, seq, hops, message):
+    return "MESH|{}|{}|{}|{}|{}".format(origin, dest, seq, hops, message)
+
+def _parse_mesh(raw):
+    """Return (origin, dest, seq, hops, message) or None if not a mesh packet."""
+    try:
+        parts = raw.split("|")
+        if len(parts) != 6 or parts[0] != "MESH":
+            return None
+        return parts[1], parts[2], int(parts[3]), int(parts[4]), parts[5]
+    except Exception:
+        return None
+
+def send_message(dest_name, message):
+    """Originate a new mesh message addressed to dest_name."""
+    global _seq
+    _seq += 1
+    seq = _seq
+    _mark_seen(MY_NAME, seq)           # suppress our own echo
+    radio.send(_build_mesh(MY_NAME, dest_name, seq, 0, message))
+    display.show(Image.ARROW_E)
+    utime.sleep_ms(500)
+    display.clear()
+    print("SENT  seq={}  to={}  msg={}".format(seq, dest_name, message))
+
+def relay_packet(origin, dest, seq, hops, message):
+    """Re-broadcast a packet on behalf of another node (one mesh hop)."""
+    hops += 1
+    radio.send(_build_mesh(origin, dest, seq, hops, message))
+    display.show(Image.DIAMOND_SMALL)
+    utime.sleep_ms(200)
+    display.clear()
+    print("RELAY seq={}  origin={}  dest={}  hops={}".format(
+        seq, origin, dest, hops))
+
+def handle_mesh(raw):
+    """Process an incoming radio packet in mesh mode."""
+    result = _parse_mesh(raw)
+    if result is None:
+        return                          # not a mesh packet – ignore
+
+    origin, dest, seq, hops, message = result
+
+    if hops > MAX_HOPS:
+        print("DROP  seq={}  origin={}  hops exceeded".format(seq, origin))
+        return
+
+    if _have_seen(origin, seq):
+        return                          # already processed – drop silently
+    _mark_seen(origin, seq)
+
+    if dest == MY_NAME:
+        # ── This packet is for us ────────────────────────────────────────
+        print("RECV  seq={}  from={}  hops={}  msg={}".format(
+            seq, origin, hops, message))
+        display.scroll("{}: {}".format(origin, message), delay=80)
+        display.clear()
+    else:
+        # ── Not for us – relay it onward ─────────────────────────────────
+        relay_packet(origin, dest, seq, hops, message)
+
+def _show_current_target():
+    """Scroll the name of the currently selected peer."""
+    if not peers:
+        display.scroll("NONE", delay=80)
+        display.clear()
+        return
+    name = peers[_peer_idx % len(peers)]
+    display.scroll("> {}".format(name), delay=80)
+    display.clear()
+
+
+# Welcome: scroll our own name so the user knows which unit this is
+display.scroll(MY_NAME, delay=80)
+display.clear()
+print("=== micro:bit mesh  MY_NAME={} ===".format(MY_NAME))
+
+run_discovery()
+
+_radio_mesh_mode()
+print("=== MESH MODE  ch={}  power={}  peers={} ===".format(
+    MESH_CHANNEL, MESH_POWER, peers))
+
+# Ready signal
+display.show(Image.HAPPY)
+utime.sleep_ms(800)
+display.clear()
+
+# Brief usage hint
+if peers:
+    display.scroll("A=PICK AB=SEND B=ME", delay=80)
+else:
+    display.scroll("NO PEERS FOUND", delay=80)
+display.clear()
+
+# Show the first target so the user knows where they are in the list
+_show_current_target()
+
+while True:
+
+    a_pressed = button_a.is_pressed()
+    b_pressed = button_b.is_pressed()
+
+    if a_pressed and b_pressed:
+        utime.sleep_ms(350)  # hold-confirmation delay
+        if button_a.is_pressed() and button_b.is_pressed():
+            if peers:
+                target = peers[_peer_idx % len(peers)]
+                # Change your message here !!!
+                msg    = "Hello from {}!".format(MY_NAME)
+                display.scroll("-> {}".format(target), delay=80)
+                display.clear()
+                send_message(target, msg)
+            else:
+                display.scroll("NO PEERS", delay=80)
+                display.clear()
+            # Wait for both buttons to be released before continuing
+            while button_a.is_pressed() or button_b.is_pressed():
+                sleep(20)
+
+    # ── A alone (was_pressed) → advance peer selector ────────────────────
+    elif button_a.was_pressed() and not b_pressed:
+        if peers:
+            _peer_idx = (_peer_idx + 1) % len(peers)
+            _show_current_target()
+        else:
+            display.scroll("NONE", delay=80)
+            display.clear()
+
+    # ── B alone (was_pressed) → show our own name ────────────────────────
+    elif button_b.was_pressed() and not a_pressed:
+        display.scroll("ME: {}".format(MY_NAME), delay=80)
+        display.clear()
+
+    # ── Check for incoming mesh packets ──────────────────────────────────
+    raw = radio.receive()
+    if raw:
+        handle_mesh(raw)
+
+    sleep(10)
+```
+
