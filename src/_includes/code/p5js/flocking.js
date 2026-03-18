@@ -52,7 +52,7 @@ class Flock {
     const grid = this.buildGrid(this.boids, cellSize);
 	  
     for (let boid of this.boids) {
-      const neighbours = this.getNearbyBoids(this.boids, cellSize);
+      const neighbours = this.getNearbyBoids(this.boids, grid, cellSize);
       boid.run(neighbours);
     }
   }
@@ -190,9 +190,9 @@ class Boid {
       force.limit(this.maxForce * 1.5);  // slightly stronger than normal steering
       this.applyForce(force);
     }
-	}
+  }
 	
-	avoidGround() {
+  avoidGround() {
     const buffer = 120;           // how close to the ground before avoiding
     let distFromGround = height - this.position.y;
   
@@ -209,8 +209,8 @@ class Boid {
         noise(this.position.x * 0.01, frameCount * 0.01),
         0, 1, -0.3, 0.3
       );
+		
       desired.rotate(angleNoise);
-  
       desired.setMag(this.maxSpeed * strength);
   
       let steer = p5.Vector.sub(desired, this.velocity);
