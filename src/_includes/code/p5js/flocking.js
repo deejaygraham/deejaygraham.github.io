@@ -44,47 +44,47 @@ function mouseDragged() {
 // Flock class to manage the array of all the boids
 class Flock {
   constructor() {
-    this.boids = [];
+    this.flock = [];
   }
 
   run() {
     const cellSize = 60; 
-    const grid = this.buildGrid(this.boids, cellSize);
+    const grid = this.buildGrid(cellSize);
 	  
-    for (let boid of this.boids) {
-      const neighbours = this.getNearbyBoids(this.boids, grid, cellSize);
-      boid.run(neighbours);
+    for (let bird of this.flock) {
+      const neighbours = this.getNeighbours(bird, grid, cellSize);
+      bird.run(neighbours);
     }
   }
 
-  add(b) {
-    this.boids.push(b);
+  add(new_bird) {
+    this.flock.push(new_bird);
   }
 
-  buildGrid(boids, cellSize) {
+  buildGrid(cellSize) {
     let grid = {};   // reset grid
 
-    for (let b of this.boids) {
-      let x = Math.floor(b.position.x / cellSize);
-      let y = Math.floor(b.position.y / cellSize);
-      let key = `${x},${y}`;
+    for (const bird of this.flock) {
+      const x = Math.floor(bird.position.x / cellSize);
+      const y = Math.floor(bird.position.y / cellSize);
+      const key = `${x},${y}`;
 
       if (!grid[key]) grid[key] = [];
-        grid[key].push(b);
+        grid[key].push(bird);
       }
 
     return grid;
    }
 
-   getNearbyBoids(boid, grid, cellSize) {
-    let x = Math.floor(boid.position.x / cellSize);
-    let y = Math.floor(boid.position.y / cellSize);
+   getNeighbours(bird, grid, cellSize) {
+    const x = Math.floor(bird.position.x / cellSize);
+    const y = Math.floor(bird.position.y / cellSize);
 
     let neighbours = [];
 
     for (let dx = -1; dx <= 1; dx++) {
       for (let dy = -1; dy <= 1; dy++) {
-        let key = `${x + dx},${y + dy}`;
+        const key = `${x + dx},${y + dy}`;
         if (grid[key]) {
           neighbours = neighbours.concat(grid[key]);
         }
