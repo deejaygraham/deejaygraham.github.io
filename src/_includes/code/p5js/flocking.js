@@ -13,19 +13,18 @@ function setup() {
 
   flock = new Flock();
 
-  // Add an initial set of boids into the system
   for (let i = 0; i < 250; i++) {
     let b = new Boid(width / 2, height / 2);
     flock.addBoid(b);
   }
 
   describe(
-    'A group of bird-like objects, represented by dots, moving across the canvas, modeling flocking behavior.'
+    'A group of bird-like objects, represented by dots, moving across the canvas, modelling flocking behavior.'
   );
 }
 
 function draw() {
-	image(sky, 0, 0);
+  image(sky, 0, 0);
   flock.run();
 }
 
@@ -43,7 +42,7 @@ function drawSunsetBackgroundToBuffer(buffer) {
 
 // On mouse drag, add a new boid to the flock
 function mouseDragged() {
-  flock.addBoid(new Boid(mouseX, mouseY));
+  flock.add(new Boid(mouseX, mouseY));
 }
 
 // Flock class to manage the array of all the boids
@@ -53,7 +52,7 @@ class Flock {
   }
 
   run() {
-	 this.buildGrid(flock);
+	this.buildGrid(flock);
 	  
     for (let boid of this.boids) {
       // Pass the entire list of boids to each boid individually
@@ -61,11 +60,11 @@ class Flock {
     }
   }
 
-  addBoid(b) {
+  add(b) {
     this.boids.push(b);
   }
 
-	buildGrid(boids) {
+  buildGrid(boids) {
     grid = {};   // reset grid
 
     for (let b of this.boids) {
@@ -114,7 +113,7 @@ class Boid {
   }
 	
   run(boids) {
-	  let neighbours = this.getNearbyBoids();
+	let neighbours = this.getNearbyBoids();
     this.flock(neighbours);
     this.update();
     this.render();
@@ -141,11 +140,11 @@ class Boid {
     this.applyForce(alignment);
     this.applyForce(cohesion);
 
-	  this.avoidEdges();
-	  this.avoidGround();
+	this.avoidEdges();
+	this.avoidGround();
   }
 
-	avoidEdges() {
+  avoidEdges() {
     let d = 120;  // distance zone to begin curved avoidance (tweak)
     let force = createVector(0, 0);
 
@@ -193,7 +192,8 @@ class Boid {
       force.limit(this.maxForce * 1.5);  // slightly stronger than normal steering
       this.applyForce(force);
     }
-}
+	}
+	
 	avoidGround() {
     let buffer = 120;           // how close to the ground before avoiding
     let distFromGround = height - this.position.y;
