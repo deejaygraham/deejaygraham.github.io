@@ -2,9 +2,6 @@
 let flock;
 let sky;
 
-const cellSize = 60; 
-let grid = {};
-
 function setup() {
   createCanvas(windowWidth, windowHeight).parent("flocking");
   sky = createGraphics(width, height);
@@ -52,11 +49,12 @@ class Flock {
   }
 
   run() {
-	this.buildGrid(flock);
+    const cellSize = 60; 
+    const grid = this.buildGrid(this.boids, cellSize);
 	  
     for (let boid of this.boids) {
-      // Pass the entire list of boids to each boid individually
-      boid.run(this.boids);
+      const neighbours = this.getNearbyBoids(this.boids, cellSize);
+      boid.run(neighbours);
     }
   }
 
@@ -64,8 +62,8 @@ class Flock {
     this.boids.push(b);
   }
 
-  buildGrid(boids) {
-    grid = {};   // reset grid
+  buildGrid(boids, cellSize) {
+    let grid = {};   // reset grid
 
     for (let b of this.boids) {
       let x = Math.floor(b.position.x / cellSize);
@@ -75,6 +73,26 @@ class Flock {
       if (!grid[key]) grid[key] = [];
         grid[key].push(b);
       }
+
+    return grid;
+   }
+
+   getNearbyBoids(boid, grid, cellSize) {
+    let x = Math.floor(boid.position.x / cellSize);
+    let y = Math.floor(boid.position.y / cellSize);
+
+    let neighbours = [];
+
+    for (let dx = -1; dx <= 1; dx++) {
+      for (let dy = -1; dy <= 1; dy++) {
+        let key = `${x + dx},${y + dy}`;
+        if (grid[key]) {
+          neighbours = neighbours.concat(grid[key]);
+        }
+      }
+    }
+    
+    return neighbours;
   }
 }
 
@@ -93,28 +111,9 @@ class Boid {
     //colorMode(HSB);
     this.color = color(0, 0, 0);
   }
-
-  getNearbyBoids() {
-    let x = Math.floor(this.position.x / cellSize);
-    let y = Math.floor(this.position.y / cellSize);
-
-    let neighbours = [];
-
-    for (let dx = -1; dx <= 1; dx++) {
-      for (let dy = -1; dy <= 1; dy++) {
-        let key = `${x + dx},${y + dy}`;
-        if (grid[key]) {
-          neighbours = neighbours.concat(grid[key]);
-        }
-      }
-    }
-    
-    return neighbours;
-  }
 	
   run(boids) {
-	let neighbours = this.getNearbyBoids();
-    this.flock(neighbours);
+    this.flock(boids);
     this.update();
     this.render();
   }
@@ -195,7 +194,7 @@ class Boid {
 	}
 	
 	avoidGround() {
-    let buffer = 120;           // how close to the ground before avoiding
+    const buffer = 120;           // how close to the ground before avoiding
     let distFromGround = height - this.position.y;
   
     if (distFromGround < buffer) {
@@ -255,15 +254,15 @@ class Boid {
 
   render() {
     // simplest possible rendering
-	  stroke(0);
-	  strokeWeight(2);
-	  point(this.position.x, this.position.y); //, this.size);
+	stroke(0);
+	strokeWeight(2);
+	point(this.position.x, this.position.y);
   }
 
   // Separation
   // Method checks for nearby boids and steers away
   separate(boids) {
-    let desiredSeparation = 25.0;
+    const desiredSeparation = 25.0;
     let steer = createVector(0, 0);
     let count = 0;
 
@@ -305,7 +304,7 @@ class Boid {
   // Alignment
   // For every nearby boid in the system, calculate the average velocity
   align(boids) {
-    let neighborDistance = 50;
+    const neighborDistance = 50;
     let sum = createVector(0, 0);
     let count = 0;
     for (let i = 0; i < boids.length; i++) {
@@ -315,6 +314,7 @@ class Boid {
         count++;
       }
     }
+	  
     if (count > 0) {
       sum.div(count);
       sum.normalize();
@@ -322,15 +322,15 @@ class Boid {
       let steer = p5.Vector.sub(sum, this.velocity);
       steer.limit(this.maxForce);
       return steer;
-    } else {
-      return createVector(0, 0);
-    }
+    } 
+
+    return createVector(0, 0);
   }
 
   // Cohesion
   // For the average location (i.e., center) of all nearby boids, calculate steering vector towards that location
   cohesion(boids) {
-    let neighborDistance = 50;
+    const neighborDistance = 50;
     let sum = createVector(0, 0); // Start with empty vector to accumulate all locations
     let count = 0;
     for (let i = 0; i < boids.length; i++) {
@@ -339,13 +339,14 @@ class Boid {
         sum.add(boids[i].position); // Add location
         count++;
       }
-    }
+	}
+	  
     if (count > 0) {
       sum.div(count);
       return this.seek(sum); // Steer towards the location
-    } else {
-      return createVector(0, 0);
-    }
+    } 
+	
+	return createVector(0, 0);
   }
 
 } // class Boid
