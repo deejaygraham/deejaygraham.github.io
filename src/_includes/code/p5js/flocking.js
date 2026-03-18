@@ -5,16 +5,15 @@ let sky;
 function setup() {
   createCanvas(windowWidth, windowHeight).parent("flocking");
   sky = createGraphics(width, height);
-  drawSunsetBackgroundToBuffer(sky);
-  createP('Drag the mouse to generate new boids.');
-
+  drawSunsetToBuffer(sky);
+  
   flock = new Flock();
 
   for (let i = 0; i < 250; i++) {
-    let b = new Boid(width / 2, height / 2);
-    flock.addBoid(b);
+    flock.add(new Boid(width / 2, height / 2));
   }
-
+	
+  createP('Drag the mouse to generate new boids.');
   describe(
     'A group of bird-like objects, represented by dots, moving across the canvas, modelling flocking behavior.'
   );
@@ -25,13 +24,13 @@ function draw() {
   flock.run();
 }
 
-function drawSunsetBackgroundToBuffer(buffer) {
-  let topColor = color(50, 90, 160);
-  let bottomColor = color(255, 150, 60);
+function drawSunsetToBuffer(buffer) {
+  let topColour = color(50, 90, 160);
+  let bottomColour = color(255, 150, 60);
 
   for (let y = 0; y < height; y++) {
     let t = y / height;
-    let c = lerpColor(topColor, bottomColor, t);
+    let c = lerpColor(topColour, bottomColour, t);
     buffer.stroke(c);
     buffer.line(0, y, width, y);
   }
