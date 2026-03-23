@@ -107,7 +107,6 @@ class Boid {
 
     // Maximum steering force
     this.maxForce = 0.05;
-    //colorMode(HSB);
     this.color = color(0, 0, 0);
   }
 	
@@ -129,7 +128,7 @@ class Boid {
     let cohesion = this.cohesion(boids);
 
     // Arbitrarily weight these forces
-    separation.mult(1.5);
+    separation.mult(1.3);
     alignment.mult(1.0);
     cohesion.mult(1.0);
 
@@ -172,15 +171,6 @@ class Boid {
     if (this.position.y < d) {
       let s = strength(this.position.y);
       let turn = createVector(this.velocity.x * 0.5, this.maxSpeed);
-      turn.setMag(this.maxSpeed * s);
-      force.add(turn);
-    }
-  
-    // BOTTOM edge
-    if (this.position.y > height - d) {
-      let dist = height - this.position.y;
-      let s = strength(dist);
-      let turn = createVector(this.velocity.x * 0.5, -this.maxSpeed);
       turn.setMag(this.maxSpeed * s);
       force.add(turn);
     }
