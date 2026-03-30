@@ -21,7 +21,7 @@ payload=$(jq -n \
     ref: $ref,
     return_run_details: true
   }
-')
+)
 
 response=$(curl -fsSL \
   -X POST \
