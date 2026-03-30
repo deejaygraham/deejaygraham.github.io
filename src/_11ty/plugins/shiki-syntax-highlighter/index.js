@@ -29,6 +29,7 @@ export default function(eleventyConfig) {
         'powershell',
         'python',
         'rust',
+        'shellscript',
         'sql',
         'vb',
         'xml',
