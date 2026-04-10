@@ -169,3 +169,85 @@ if ($IncludeResources) {
 }
 
 ```
+
+## Expanding
+
+This approach can be expanded e.g. by parsing a workflow file from git using the PowerShell-Yaml module. This allows you to read in a file and convert 
+the yaml to a ps object and iterate over collections within it.
+
+```powershell
+# Requires:  Install-Module powershell-yaml -Scope CurrentUser
+
+$workflow = Get-Content $WorkflowPath -Raw | ConvertFrom-Yaml
+
+$subJobs = $workflow.jobs.GetEnumerator() | Where-Object {
+    $_.Key -in @('thing_1', 'thing_2', 'thing_3')
+}
+
+foreach ($job in $subJobs) {
+
+    $jobName = $job.Key
+    $inputs  = $job.Value.with
+
+    # ... validate fields
+}
+
+```
+
+We can also do stuff like ensure fields are present, e.g. report if the environment field is missing:
+
+```powershell
+
+if (-not $inputs.environment) {
+    $errors += "Environment field is missing (expected one of: foo, bar, bing)"
+}
+else {
+    $environmentValue = $inputs.environment.ToLowerInvariant()
+
+    if ($environmentValue -notin $allowedEnvironments) {
+        $errors += "Invalid environment value '$($inputs.environment)'. Allowed values: foo, bar, bing"
+    }
+}
+
+```
+
+Or if a field is present, then other mandatory fields must be present, and if the field is absent the other fields are not allowed:
+
+```powershell
+
+$optionalFields = @(
+    # ...
+)
+
+$hasOptionalField = $inputs.optionalField -contains 'hello'
+
+$presentOptionalFields = $optionalFields | Where-Object {
+    $inputs.ContainsKey($_) -and
+    -not [string]::IsNullOrWhiteSpace($inputs[$_])
+}
+
+if ($hasOptionalField) {
+    $missingOptionalFields = $optionalFields | Where-Object {
+        -not $inputs.ContainsKey($_) -or
+        [string]::IsNullOrWhiteSpace($inputs[$_])
+    }    
+    
+    if ($missingOptionalFields.Count -gt 0) {
+        $errors += @(
+            "Not all required fields are defined.",
+            "Missing fields: $($missingOptionalFields -join ', ')",
+            "All of the following fields are required 'optional' is used:",
+            $optionalFields -join ", "
+        )
+    }
+
+} else {
+    if ($presentOptionalFields.Count -gt 0) {
+        $errors += @(
+        "Optional fields are present, but no optional field marker is used.",
+        "Remove the optional fields, or add an optional field marker.",
+        "Present optional fields: $($presentOptionalFields -join ', ')"
+        )
+    }
+}
+```
