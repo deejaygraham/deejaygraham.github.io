@@ -1,6 +1,5 @@
 ---
 title: Check Azure Resources
-draft: true
 tags: [azure, powershell]
 ---
 
