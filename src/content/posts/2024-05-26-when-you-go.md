@@ -5,7 +5,7 @@ attribution: Edwin Morgan
 tags: [quote, poetry]
 ---
 
-When you go,
+When you go,\
 if you go,
 and I should want to die,
 there's nothing I'd be saved by 
