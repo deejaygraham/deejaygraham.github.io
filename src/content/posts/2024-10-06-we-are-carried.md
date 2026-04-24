@@ -6,7 +6,7 @@ size: large
 tags: [quote, poetry]
 ---
 
-we are carried.  
+we are carried.\
 in bellies. in arms.  
 in love. in hope.  
 in caskets. in urns.  
