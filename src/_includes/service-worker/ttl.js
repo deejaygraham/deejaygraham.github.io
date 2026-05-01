@@ -14,6 +14,10 @@ export function isCacheResponseStillValid(cacheResponse, headerName, nowMs) {
     return false;
   }
   const fetched = cacheResponse.headers.get(headerName);
+
+  if (fetched) {
+    console.log('header date', fetched);
+  }
   if (!fetched) {
     console.log('no header', headerName);
     return false;
@@ -26,7 +30,7 @@ export function isCacheResponseStillValid(cacheResponse, headerName, nowMs) {
     return false;
   }
 
-  console.log('checking', expirationDate, nowMs);
+  console.log('comparing', expirationDate, nowMs);
   
-  return expirationDate > nowMs;
+  return expirationDate >= nowMs;
 }
