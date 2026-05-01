@@ -48,7 +48,8 @@ self.addEventListener('activate', (event) => {
 // ---------- Fetch routing ----------
 self.addEventListener('fetch', (event) => {
   const { request } = event;
-  if (request.method !== 'GET') return;
+  const route = getFetchRoute(request, self.location.origin);
+  if (route === 'none') return;
 
   const url = new URL(request.url);
 
@@ -56,29 +57,19 @@ self.addEventListener('fetch', (event) => {
   // if (request.headers.has('range')) return;
 
   // 1) HTML / navigations: Network-first with 404/offline fallbacks
-  if (request.mode === 'navigate' || request.destination === 'document') {
+  if (route === 'navigate') {
     event.respondWith(handleNavigation(event));
     return;
   }
 
   // 2) Static assets (same-origin CSS/JS): SWR with TTL
-  const isCssJs =
-    url.origin === self.location.origin &&
-    (request.destination === 'style' ||
-      request.destination === 'script' ||
-      /\.(css|js)$/.test(url.pathname));
-
-  if (isCssJs) {
+  if (route === 'cssjs') {
     event.respondWith(staleWhileRevalidateWithTTL(request, RUNTIME, event));
     return;
   }
 
   // 3) Images (same-origin): Cache-first with cap + TTL
-  const isImage =
-    url.origin === self.location.origin &&
-    (request.destination === 'image' || /\.(png|jpe?g|gif|webp|svg)$/.test(url.pathname));
-
-  if (isImage) {
+  if (route === 'image') {
     event.respondWith(cacheFirstWithLimitAndTTL(request, IMAGE_CACHE, 150));
     return;
   }
@@ -92,3 +83,5 @@ self.addEventListener('message', (event) => {
   if (event.data === 'SKIP_WAITING') self.skipWaiting();
 });
 {% endraw %}
+
+{% include "service-worker/route.js" %}
