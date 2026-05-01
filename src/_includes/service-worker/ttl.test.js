@@ -36,7 +36,7 @@ test('cache is expired if date not readable', (t) => {
 });
 
 test('cache is not expired if recently retrieved', (t) => {
-  const past = new Date(Date.now() - 10).toUTCString();
+  const past = new Date(Date.now()).toUTCString();
   const res = new Response(null, {
     headers: { 'SW-Cache-Expires': past },
   });
