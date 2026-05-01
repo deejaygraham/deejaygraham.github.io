@@ -32,7 +32,12 @@ async function cacheThenNetworkWithTTL(request, cacheName) {
 
   try {
     const res = await fetch(request);
-    if (res && res.ok) await putWithExpiry(cache, request, res);
+    if (res && res.ok) await putWithExpiry(cache, request, res, {
+      cachingDurationSeconds: CACHING_DURATION,
+      expiryHeaderName: CACHE_EXPIRY_HEADER,
+      debug: DEBUG,
+      now: Date.now,
+    });
     return cached || res;
   } catch {
     return cached || new Response('', { status: 504, statusText: 'Gateway Timeout' });
@@ -48,7 +53,12 @@ async function staleWhileRevalidateWithTTL(request, cacheName, event) {
   }
   try {
     const res = await fetch(request);
-    if (res && res.ok) await putWithExpiry(cache, request, res);
+    if (res && res.ok) await putWithExpiry(cache, request, res, {
+      cachingDurationSeconds: CACHING_DURATION,
+      expiryHeaderName: CACHE_EXPIRY_HEADER,
+      debug: DEBUG,
+      now: Date.now,
+    });
     return cached || res;
   } catch {
     return cached || new Response('', { status: 504, statusText: 'Gateway Timeout' });
@@ -63,7 +73,12 @@ async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries = 100) {
   try {
     const res = await fetch(request);
     if (res && res.ok) {
-      await putWithExpiry(cache, request, res);
+      await putWithExpiry(cache, request, res, {
+        cachingDurationSeconds: CACHING_DURATION,
+        expiryHeaderName: CACHE_EXPIRY_HEADER,
+        debug: DEBUG,
+        now: Date.now,
+      });
       // Trim cache (simple FIFO)
       const keys = await cache.keys();
       if (keys.length > maxEntries) {
@@ -79,7 +94,12 @@ async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries = 100) {
 async function eventlessUpdate(cache, request) {
   try {
     const res = await fetch(request, { cache: 'no-store' });
-    if (res && res.ok) await putWithExpiry(cache, request, res);
+    if (res && res.ok) await putWithExpiry(cache, request, res, {
+        cachingDurationSeconds: CACHING_DURATION,
+        expiryHeaderName: CACHE_EXPIRY_HEADER,
+        debug: DEBUG,
+        now: Date.now,
+      });
   } catch (e) {
     if (DEBUG) console.warn('[sw] eventlessUpdate failed:', e);
   }
@@ -92,7 +112,12 @@ async function precacheWithTTL(urls, cacheName) {
     try {
       const res = await fetch(url, { cache: 'no-store' });
       if (res && res.ok) {
-        await putWithExpiry(cache, new Request(url), res);
+        await putWithExpiry(cache, new Request(url), res, {
+          cachingDurationSeconds: CACHING_DURATION,
+          expiryHeaderName: CACHE_EXPIRY_HEADER,
+          debug: DEBUG,
+          now: Date.now,
+        });
         if (DEBUG) console.log('[sw] precached with expiry:', url);
       }
     } catch (e) {
@@ -101,29 +126,6 @@ async function precacheWithTTL(urls, cacheName) {
   }
 }
 
-// Cache with custom expiry header (defaults to 24h). Only cache OK responses.
-async function putWithExpiry(cache, request, liveResponse) {
-  try {
-    if (!liveResponse || !liveResponse.ok) return;
-    const copy = liveResponse.clone();
-    const headers = new Headers(copy.headers);
-
-    const ttlSec = computeTTLSeconds(copy, CACHING_DURATION, DEBUG);
-    const expires = new Date(Date.now() + ttlSec * 1000);
-    headers.set(CACHE_EXPIRY_HEADER, expires.toUTCString());
-
-    const body = await copy.blob();
-    const responseForCache = new Response(body, {
-      status: copy.status,
-      statusText: copy.statusText,
-      headers,
-    });
-    await cache.put(request, responseForCache);
-    if (DEBUG) console.log('[sw] cached with expiry:', new URL(request.url).pathname, expires.toUTCString());
-  } catch (e) {
-    if (DEBUG) console.warn('[sw] putWithExpiry failed:', e);
-  }
-}
 {% endraw %}
 
 {% include "service-worker/ttl.js" %}
