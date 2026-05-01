@@ -51,8 +51,6 @@ self.addEventListener('fetch', (event) => {
   const route = getFetchRoute(request, self.location.origin);
   if (route === 'none') return;
 
-  const url = new URL(request.url);
-
   // If you ever add media with range requests, you can bypass here:
   // if (request.headers.has('range')) return;
 
