@@ -24,7 +24,6 @@ test('cache is expired if date in the past', (t) => {
 });
 
 test('cache is expired if no header present', (t) => {
-  const past = new Date(Date.now() - 1).toUTCString();
   const res = new Response(null);
   t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', Date.now()));
 });
