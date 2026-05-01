@@ -28,7 +28,7 @@ async function handleNavigation(event) {
 async function cacheThenNetworkWithTTL(request, cacheName) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
-  if (cached && isCacheResponseStillValid(cached)) return cached;
+  if (cached && isCacheResponseStillValid(cached, CACHE_EXPIRY_HEADER, Date.now(), DEBUG)) return cached;
 
   try {
     const res = await fetch(request);
@@ -42,7 +42,7 @@ async function cacheThenNetworkWithTTL(request, cacheName) {
 async function staleWhileRevalidateWithTTL(request, cacheName, event) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
-  if (cached && isCacheResponseStillValid(cached)) {
+  if (cached && isCacheResponseStillValid(cached, CACHE_EXPIRY_HEADER, Date.now(), DEBUG)) {
     if (event) event.waitUntil(eventlessUpdate(cache, request));
     return cached;
   }
@@ -58,7 +58,7 @@ async function staleWhileRevalidateWithTTL(request, cacheName, event) {
 async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries = 100) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
-  if (cached && isCacheResponseStillValid(cached)) return cached;
+  if (cached && isCacheResponseStillValid(cached, CACHE_EXPIRY_HEADER, Date.now(), DEBUG)) return cached;
 
   try {
     const res = await fetch(request);
@@ -108,7 +108,7 @@ async function putWithExpiry(cache, request, liveResponse) {
     const copy = liveResponse.clone();
     const headers = new Headers(copy.headers);
 
-    const ttlSec = computeTTLSeconds(copy);
+    const ttlSec = computeTTLSeconds(copy, CACHING_DURATION, DEBUG);
     const expires = new Date(Date.now() + ttlSec * 1000);
     headers.set(CACHE_EXPIRY_HEADER, expires.toUTCString());
 
