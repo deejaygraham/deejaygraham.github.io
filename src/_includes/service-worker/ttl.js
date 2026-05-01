@@ -9,10 +9,24 @@ export function computeTTLSeconds(response, cachingDuration, debug) {
 }
 
 export function isCacheResponseStillValid(cacheResponse, headerName, nowMs) {
-  if (!cacheResponse) return false;
+  if (!cacheResponse) {
+    console.log('no cache response');
+    return false;
+  }
   const fetched = cacheResponse.headers.get(headerName);
-  if (!fetched) return false;
+  if (!fetched) {
+    console.log('no header', headerName);
+    return false;
+  }
+  
   const expirationDate = Date.parse(fetched);
-  if (Number.isNaN(expirationDate)) return false;
+  
+  if (Number.isNaN(expirationDate)) {
+    console.log('Expiration not parseable');
+    return false;
+  }
+
+  console.log('checking', expirationDate, nowMs);
+  
   return expirationDate > nowMs;
 }
