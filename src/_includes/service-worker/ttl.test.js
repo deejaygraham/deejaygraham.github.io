@@ -1,5 +1,5 @@
 import test from 'ava';
-import { computeTTLSeconds, isCacheResponseStillValid } from './ttl.js';
+import { computeTTLSeconds, isCacheResponseStillValid, putWithExpiry } from './ttl.js';
 
 test('Time to live honors max-age below default', (t) => {
   const res = new Response(null, {
@@ -45,3 +45,17 @@ test('cache is not expired if recently retrieved', (t) => {
   t.true(isCacheResponseStillValid(res, 'SW-Cache-Expires', now, false));
 });
 
+test('putWithExpiry skips non-ok responses', async (t) => {
+  const puts = [];
+  const cache = {
+    async put(req, res) {
+      puts.push({ req, res });
+    },
+  };
+  await putWithExpiry(cache, 'https://x/a', new Response(null, { status: 404 }), {
+    cachingDurationSeconds: 3600,
+    expiryHeaderName: 'SW-Cache-Expires',
+    now: () => 0,
+  });
+  t.is(puts.length, 0);
+});
