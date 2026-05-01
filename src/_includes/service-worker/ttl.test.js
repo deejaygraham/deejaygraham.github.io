@@ -21,19 +21,19 @@ test('cache is expired if date in the past', (t) => {
   const res = new Response(null, {
     headers: { 'SW-Cache-Expires': past },
   });
-  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', now));
+  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', now, false));
 });
 
 test('cache is expired if no header present', (t) => {
   const res = new Response(null);
-  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', Date.now()));
+  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', Date.now(), false));
 });
 
 test('cache is expired if date not readable', (t) => {
   const res = new Response(null, {
     headers: { 'SW-Cache-Expires': "hello" },
   });
-  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', Date.now()));
+  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', Date.now(), false));
 });
 
 test('cache is not expired if recently retrieved', (t) => {
@@ -42,6 +42,6 @@ test('cache is not expired if recently retrieved', (t) => {
   const res = new Response(null, {
     headers: { 'SW-Cache-Expires': future },
   });
-  t.true(isCacheResponseStillValid(res, 'SW-Cache-Expires', now));
+  t.true(isCacheResponseStillValid(res, 'SW-Cache-Expires', now, false));
 });
 
