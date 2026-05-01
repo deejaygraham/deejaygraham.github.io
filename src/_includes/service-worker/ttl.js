@@ -8,29 +8,28 @@ export function computeTTLSeconds(response, cachingDuration, debug) {
   return ttl;
 }
 
-export function isCacheResponseStillValid(cacheResponse, headerName, nowMs) {
+export function isCacheResponseStillValid(cacheResponse, headerName, nowMs, debug) {
   if (!cacheResponse) {
-    console.log('no cache response');
+    if (debug) console.log('no cache response');
     return false;
   }
   const fetched = cacheResponse.headers.get(headerName);
 
   if (fetched) {
-    console.log('header date', fetched);
-  }
-  if (!fetched) {
-    console.log('no header', headerName);
+    if (debug) console.log('header date', fetched);
+  } else {
+    if (debug) console.log('no header', headerName);
     return false;
   }
   
   const expirationDate = Date.parse(fetched);
   
   if (Number.isNaN(expirationDate)) {
-    console.log('Expiration not parseable');
+    if (debug) console.log('Expiration not parseable');
     return false;
   }
 
-  console.log('comparing', expirationDate, nowMs);
+  if (debug) console.log('comparing', expirationDate, nowMs);
   
   return expirationDate >= nowMs;
 }
