@@ -232,8 +232,15 @@ function computeTTLSeconds(response) {
   // Optional: honor server hints (use min of SW default and server max-age)
   const cc = response.headers.get('Cache-Control') || '';
   const m = cc.match(/max-age=(\d+)/);
-  if (m) return Math.min(CACHING_DURATION, parseInt(m[1], 10));
-  return CACHING_DURATION;
+
+  let ttl = CACHING_DURATION;
+
+  if (m) {
+    ttl = Math.min(CACHING_DURATION, parseInt(m[1], 10));
+  }
+
+  if (DEBUG) console.log('[sw] ttl seconds computed:', ttl);
+  return ttl;
 }
 
 // Cache with custom expiry header (defaults to 24h). Only cache OK responses.
