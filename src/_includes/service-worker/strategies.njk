@@ -101,22 +101,6 @@ async function precacheWithTTL(urls, cacheName) {
   }
 }
 
-// --------- TTL & storage ----------
-function computeTTLSeconds(response) {
-  // Optional: honor server hints (use min of SW default and server max-age)
-  const cc = response.headers.get('Cache-Control') || '';
-  const m = cc.match(/max-age=(\d+)/);
-
-  let ttl = CACHING_DURATION;
-
-  if (m) {
-    ttl = Math.min(CACHING_DURATION, parseInt(m[1], 10));
-  }
-
-  if (DEBUG) console.log('[sw] ttl seconds computed:', ttl);
-  return ttl;
-}
-
 // Cache with custom expiry header (defaults to 24h). Only cache OK responses.
 async function putWithExpiry(cache, request, liveResponse) {
   try {
@@ -140,14 +124,7 @@ async function putWithExpiry(cache, request, liveResponse) {
     if (DEBUG) console.warn('[sw] putWithExpiry failed:', e);
   }
 }
-
-// TTL check
-function isCacheResponseStillValid(cacheResponse) {
-  if (!cacheResponse) return false;
-  const fetched = cacheResponse.headers.get(CACHE_EXPIRY_HEADER);
-  if (!fetched) return false;
-  const expirationDate = Date.parse(fetched);
-  if (Number.isNaN(expirationDate)) return false;
-  return expirationDate > Date.now();
-}
 {% endraw %}
+
+{% include "service-worker/ttl.js" %}
+
