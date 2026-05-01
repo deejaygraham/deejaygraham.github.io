@@ -16,11 +16,12 @@ test('Time to live uses default if max-age too much', (t) => {
 });
 
 test('cache is expired if date in the past', (t) => {
-  const past = new Date(Date.now() - 1000).toUTCString();
+  const now = Date.now();
+  const past = new Date(now - 1000).toUTCString();
   const res = new Response(null, {
     headers: { 'SW-Cache-Expires': past },
   });
-  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', Date.now()));
+  t.false(isCacheResponseStillValid(res, 'SW-Cache-Expires', now));
 });
 
 test('cache is expired if no header present', (t) => {
@@ -36,10 +37,11 @@ test('cache is expired if date not readable', (t) => {
 });
 
 test('cache is not expired if recently retrieved', (t) => {
-  const future = new Date(Date.now() + 100).toUTCString();
+  const now = Date.now();
+  const future = new Date(now + 1000).toUTCString();
   const res = new Response(null, {
     headers: { 'SW-Cache-Expires': future },
   });
-  t.true(isCacheResponseStillValid(res, 'SW-Cache-Expires', Date.now()));
+  t.true(isCacheResponseStillValid(res, 'SW-Cache-Expires', now));
 });
 
