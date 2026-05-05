@@ -46,7 +46,9 @@ export default function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", async () => {
     await buildServiceWorker();
   });
-  
+
+  eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
+	
   // plugins
   eleventyConfig.addPlugin(syntaxHighlighter);
   eleventyConfig.addPlugin(IdAttributePlugin);   
@@ -114,7 +116,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
   // copy p5 apps
-	eleventyConfig.addPassthroughCopy({ "./src/_includes/code/p5js/*.js": "/js" });
+  eleventyConfig.addPassthroughCopy({ "./src/_includes/code/p5js/*.js": "/js" });
 
   // don't copy all images from img folder - 11ty will generate it's own using img plugin
   //eleventyConfig.addPassthroughCopy({ "./src/assets/img/": "/img" });
