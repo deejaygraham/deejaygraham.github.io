@@ -1,0 +1,61 @@
+import test from "ava";
+import { computeTTLSeconds, isCacheResponseStillValid, putWithExpiry } from "./ttl.js";
+
+test("Time to live honors max-age below default", (t) => {
+  const res = new Response(null, {
+    headers: { "Cache-Control": "max-age=60" },
+  });
+  t.is(computeTTLSeconds(res, 86400, false), 60);
+});
+
+test("Time to live uses default if max-age too much", (t) => {
+  const res = new Response(null, {
+    headers: { "Cache-Control": "max-age=600" },
+  });
+  t.is(computeTTLSeconds(res, 100, false), 100);
+});
+
+test("cache is expired if date in the past", (t) => {
+  const now = Date.now();
+  const past = new Date(now - 1000).toUTCString();
+  const res = new Response(null, {
+    headers: { "SW-Cache-Expires": past },
+  });
+  t.false(isCacheResponseStillValid(res, "SW-Cache-Expires", now, false));
+});
+
+test("cache is expired if no header present", (t) => {
+  const res = new Response(null);
+  t.false(isCacheResponseStillValid(res, "SW-Cache-Expires", Date.now(), false));
+});
+
+test("cache is expired if date not readable", (t) => {
+  const res = new Response(null, {
+    headers: { "SW-Cache-Expires": "hello" },
+  });
+  t.false(isCacheResponseStillValid(res, "SW-Cache-Expires", Date.now(), false));
+});
+
+test("cache is not expired if recently retrieved", (t) => {
+  const now = Date.now();
+  const future = new Date(now + 1000).toUTCString();
+  const res = new Response(null, {
+    headers: { "SW-Cache-Expires": future },
+  });
+  t.true(isCacheResponseStillValid(res, "SW-Cache-Expires", now, false));
+});
+
+test("putWithExpiry skips non-ok responses", async (t) => {
+  const puts = [];
+  const cache = {
+    async put(req, res) {
+      puts.push({ req, res });
+    },
+  };
+  await putWithExpiry(cache, "https://x/a", new Response(null, { status: 404 }), {
+    cachingDurationSeconds: 3600,
+    expiryHeaderName: "SW-Cache-Expires",
+    now: () => 0,
+  });
+  t.is(puts.length, 0);
+});
