@@ -13,5 +13,5 @@ window.onload = () => {
   registerServiceWorker();
   addBulmaBurgerMenu();
   registerThemeSwitch();
-  loadSearchIndex();
+  loadSearchIndex("{{ buildInfo.time.raw }}");
 };
