@@ -2,6 +2,7 @@ node_modules
 
 cypress/screenshots/
 _site/
+src/_generated/
 .sass-cache/
 *.db
 .DS_Store
