@@ -35,13 +35,18 @@ import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 
 // transforms
 import * as prettier from "prettier";
+import { buildServiceWorker } from "./scripts/build-service-worker.mjs";
 
 // linters
 import pageContentLinter from "./src/_11ty/linters/page-content/index.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
-	
+
+  eleventyConfig.on("eleventy.before", async () => {
+    await buildServiceWorker();
+  });
+  
   // plugins
   eleventyConfig.addPlugin(syntaxHighlighter);
   eleventyConfig.addPlugin(IdAttributePlugin);   
@@ -128,7 +133,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/google*.html": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/qrcode.html": "/" });
-  eleventyConfig.addPassthroughCopy({ "./src/content/sw.js": "/" });
+  eleventyConfig.addPassthroughCopy({ "./src/_generated/sw.js": "/sw.js" });
   eleventyConfig.addPassthroughCopy({
     "./src/assets/css/prism.css": "/css/prism.css",
   });
