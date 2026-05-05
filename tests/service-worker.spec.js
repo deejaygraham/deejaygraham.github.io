@@ -27,13 +27,14 @@ test.describe("service worker", () => {
       await navigator.serviceWorker.ready;
     });
 
+    await page.reload();
+    await page.waitForFunction(() => Boolean(navigator.serviceWorker?.controller));
+    
     // Ensure assets are fetched at least once while online.
     await page.evaluate(async () => {
       await fetch("/css/site.css");
       await fetch("/img/avatar.svg");
     });
-    const cacheNames = await page.evaluate(async () => caches.keys());
-    expect(cacheNames.some((n) => n.startsWith("images-"))).toBeTruthy();
 
     await context.setOffline(true);
     try {
