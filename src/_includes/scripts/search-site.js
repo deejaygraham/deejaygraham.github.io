@@ -91,9 +91,11 @@ const executeSearch = (e) => {
 };
 
 /* eslint-disable-next-line */
-const loadSearchIndex = async () => {
+const loadSearchIndex = async (version = "") => {
     try {
-        const searchIndexJsonDoc = "/search-index.json";
+        const searchIndexJsonDoc = version
+            ? `/search-index.json?v=${encodeURIComponent(version)}`
+            : "/search-index.json";
         const response = await fetch(searchIndexJsonDoc);
         const jsonIndex = await response.json();
         window.searchIndex = elasticlunr.Index.load(jsonIndex);
