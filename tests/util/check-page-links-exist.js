@@ -69,10 +69,10 @@ export default async function (page, url) {
   for (const url of linksOnThisPage) {
     if (url) {
         await test.step(`Checking link: ${url}`, async () => {
-            const response = await page.goto(url);
+            const response = await page.request.get(url);
             await expect(response?.status()).toBe(200);
-            // make sure the title of this page is not "Erm....
-            await expect(page).not.toHaveTitle(/blog is missing/)
+            const body = await response.text();
+            expect(body.toLowerCase()).not.toContain("blog is missing");
         });
     }
    }
