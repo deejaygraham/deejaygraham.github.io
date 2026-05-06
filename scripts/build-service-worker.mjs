@@ -47,7 +47,7 @@ export async function buildServiceWorker() {
     target: ["es2022"],
     banner: {
       js:
-        '/// <reference lib="WebWorker" />\n/* eslint-disable no-restricted-globals */\n',
+        '/// <reference lib="WebWorker" />\n',
     },
   });
 }
