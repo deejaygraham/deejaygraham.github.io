@@ -46,8 +46,7 @@ const setThemeButtonState = (button, active, activeClassName) => {
     }
 }
 
-/* eslint-disable-next-line */
-const registerThemeSwitch = () => {
+export const registerThemeSwitch = () => {
 
     const preference = getThemePreference();
     if (preference) {
