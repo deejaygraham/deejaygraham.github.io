@@ -5,7 +5,7 @@ import {
   notFoundPage,
   offlinePage,
 } from "./config.js";
-import { isCacheResponseStillValid, putWithExpiry } from "./ttl.js";
+import { isCacheResponseStillValid, putWithExpiry } from "./cache.js";
 
 // ---------- Navigation handler ----------
 export async function handleNavigation(event) {
