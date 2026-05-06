@@ -1,5 +1,4 @@
-/* eslint-disable-next-line */
-const addCopyButtonToSourceCode = () => {
+export const addCopyButtonToSourceCode = () => {
   const snippets = document.querySelectorAll('pre[class*="shiki"]');
   const buttonClasses = [
     'button',
