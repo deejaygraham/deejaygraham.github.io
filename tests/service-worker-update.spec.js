@@ -2,6 +2,7 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("service worker update prompt", () => {
+  test.use({ serviceWorkers: "allow" });
   test.skip(({ browserName }) => browserName !== "chromium", "Focused SW checks for Chromium.");
 
   test("shows Bulma notification and posts SKIP_WAITING", async ({ page }) => {
