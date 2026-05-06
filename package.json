@@ -11,7 +11,7 @@
     "test": "npx playwright test",
     "unit-test": "npx ava --verbose",
     "format": "prettier . --write",
-    "lint": "npx eslint ./src & npx eslint ./tests",
+    "lint": "npx eslint .",
     "mdlint": "markdownlint ./src/content/**/*.md",
     "thumbs": "node ./generate-thumbnails.js",
     "lintoutput": "npx eslint ./_site",
