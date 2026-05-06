@@ -90,8 +90,7 @@ const executeSearch = (e) => {
     displayResults(searchTerm, results);
 };
 
-/* eslint-disable-next-line */
-const loadSearchIndex = async (version = "") => {
+export const loadSearchIndex = async (version = "") => {
     try {
         const searchIndexJsonDoc = version
             ? `/search-index.json?v=${encodeURIComponent(version)}`
