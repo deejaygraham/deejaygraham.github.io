@@ -7,7 +7,6 @@ on:
     paths-ignore:
       - '.gitignore'
       - '_drafts/**'
-      - 'cypress/**'
       - 'tests/**'
       
   workflow_dispatch:
@@ -28,14 +27,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint src folder
-        run: npx eslint ./src --max-warnings=0 
-        
-      - name: Lint test folder
-        run: npx eslint ./tests --max-warnings=0
+      - name: Lint javascript
+        run: npx eslint . --max-warnings=0 
 
       - name: Lint markdown
         run: npm run mdlint
       
-      - name: Unit test 11ty code
+      - name: Run unit tests
         run: npm run unit-test
