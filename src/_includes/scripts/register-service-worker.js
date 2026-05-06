@@ -49,9 +49,10 @@ function showSwUpdateNotification(onRefresh) {
   document.body.appendChild(wrapper);
 }
 
-function watchForServiceWorkerUpdate(registration) {
+function watchForServiceWorkerUpdate(registration, onRefreshRequested) {
   const promptToUpdate = () => {
     showSwUpdateNotification(() => {
+      onRefreshRequested();
       if (registration.waiting) {
         registration.waiting.postMessage("SKIP_WAITING");
       }
@@ -82,9 +83,12 @@ const registerServiceWorker = async () => {
     return;
   }
 
+  let refreshRequestedByUser = false;
   let refreshing = false;
   navigator.serviceWorker.addEventListener("controllerchange", () => {
-    if (refreshing) {
+    // Only reload after the user accepts an available update.
+    // Avoiding unconditional reloads prevents navigation races in tests.
+    if (!refreshRequestedByUser || refreshing) {
       return;
     }
 
@@ -98,7 +102,9 @@ const registerServiceWorker = async () => {
       scope: "/",
     });
 
-    watchForServiceWorkerUpdate(registration);
+    watchForServiceWorkerUpdate(registration, () => {
+      refreshRequestedByUser = true;
+    });
   } catch (error) {
     console.error(`Registration failed with ${error}`);
   }
