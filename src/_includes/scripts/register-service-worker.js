@@ -13,9 +13,11 @@ function showSwUpdateNotification(onRefresh) {
   wrapper.style.zIndex = "9999";
 
   const notification = document.createElement("div");
-  notification.className = "notification is-info is-light";
+  notification.className = "notification is-info";
   notification.style.margin = "0 auto";
   notification.style.maxWidth = "38rem";
+  // Reserve space for Bulma's absolute-positioned delete button.
+  notification.style.paddingRight = "3.5rem";
 
   const deleteBtn = document.createElement("button");
   deleteBtn.className = "delete";
