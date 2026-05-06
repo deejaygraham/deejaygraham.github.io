@@ -13,6 +13,15 @@ test.describe("service worker", () => {
     });
     await page.waitForFunction(() => Boolean(navigator.serviceWorker?.controller));
 
+    // Runtime cache is created lazily on first eligible fetch.
+    await page.evaluate(async () => {
+      await fetch("/css/site.css");
+    });
+    await page.waitForFunction(async () => {
+      const names = await caches.keys();
+      return names.some((n) => n.startsWith("runtime-"));
+    });
+
     const cacheNames = await page.evaluate(async () => caches.keys());
 
     expect(cacheNames.some((n) => n.startsWith("precache-"))).toBeTruthy();
