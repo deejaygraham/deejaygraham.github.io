@@ -29,13 +29,16 @@ function showSwUpdateNotification(onRefresh) {
 
   const content = document.createElement("div");
   content.className = "is-flex is-justify-content-space-between is-align-items-center";
-
+  content.style.gap = "0.75rem";
+  content.style.flexWrap = "wrap";
+  
   const message = document.createElement("span");
   message.textContent = "A newer version of this site is available.";
 
   const refreshButton = document.createElement("button");
   refreshButton.type = "button";
   refreshButton.className = "button is-small is-info";
+  refreshButton.style.flexShrink = "0";
   refreshButton.textContent = "Refresh";
   refreshButton.addEventListener("click", () => {
     refreshButton.disabled = true;
