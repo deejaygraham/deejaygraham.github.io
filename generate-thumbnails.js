@@ -3,11 +3,6 @@ import fs from 'fs';
 import path from 'path';
 import sharp from "sharp";
 
-const getRandomWord = (array) => {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    return array[randomIndex];
-};
-
 const getLongestWord = (array) => {
     return array.reduce((longest, currentWord) => {
         return currentWord.length > longest.length ? currentWord : longest;
@@ -87,7 +82,7 @@ const checkAndCreateFile = (directory, fileName) => {
               .png()
               .toFile(filePath);
           } catch(err) {
-            console.error("Eleventy generating social images error:", err, { template, filename, title, siteName});
+            console.error("Eleventy generating social images error:", err, { template, fileName, title });
           }
         } else {
             console.log(`File ${fileName} already exists in ${directory}`);
@@ -119,7 +114,7 @@ const generateImagesInSubdirectories = (directory, fileName) => {
 }
 
 const convertFilenameToPath = (filename) => {
-    const [year, month, day, ...rest] = filename.split('-');
+    const [, , , ...rest] = filename.split('-');
     return rest.join('-').replace('.md', '');
 };
 
