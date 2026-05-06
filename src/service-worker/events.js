@@ -1,9 +1,11 @@
 import {
   coreAssets,
   DEBUG,
+  IMAGE_CACHING_DURATION,
   IMAGE_CACHE,
   PRECACHE,
   RUNTIME,
+  STATIC_CACHING_DURATION,
 } from "./config.js";
 import { getFetchRoute } from "./route.js";
 import {
@@ -74,12 +76,12 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (route === "cssjs") {
-    event.respondWith(staleWhileRevalidateWithTTL(request, RUNTIME, event));
+    event.respondWith(staleWhileRevalidateWithTTL(request, RUNTIME, event, STATIC_CACHING_DURATION));
     return;
   }
 
   if (route === "image") {
-    event.respondWith(cacheFirstWithLimitAndTTL(request, IMAGE_CACHE, 150));
+    event.respondWith(cacheFirstWithLimitAndTTL(request, IMAGE_CACHE, 150, IMAGE_CACHING_DURATION));
     return;
   }
 
