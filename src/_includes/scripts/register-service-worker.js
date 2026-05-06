@@ -31,7 +31,7 @@ function showSwUpdateNotification(onRefresh) {
   content.className = "is-flex is-justify-content-space-between is-align-items-center";
   content.style.gap = "0.75rem";
   content.style.flexWrap = "wrap";
-  
+
   const message = document.createElement("span");
   message.textContent = "A newer version of this site is available.";
 
@@ -82,8 +82,7 @@ function watchForServiceWorkerUpdate(registration, onRefreshRequested) {
   });
 }
 
-/* eslint-disable-next-line */
-const registerServiceWorker = async () => {
+export const registerServiceWorker = async () => {
   if (!("serviceWorker" in navigator)) {
     return;
   }
