@@ -2,6 +2,7 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("service worker", () => {
+  test.use({ serviceWorkers: "allow" });
   test.skip(({ browserName }) => browserName !== "chromium", "Focused SW checks for Chromium.");
 
   test("registers and creates versioned caches", async ({ page }) => {
@@ -10,9 +11,7 @@ test.describe("service worker", () => {
     await page.evaluate(async () => {
       await navigator.serviceWorker.ready;
     });
-
-    // Reload so the active SW controls the page.
-    await page.reload();
+    await page.waitForFunction(() => Boolean(navigator.serviceWorker?.controller));
 
     const cacheNames = await page.evaluate(async () => caches.keys());
 
@@ -26,10 +25,8 @@ test.describe("service worker", () => {
     await page.evaluate(async () => {
       await navigator.serviceWorker.ready;
     });
-
-    await page.reload();
     await page.waitForFunction(() => Boolean(navigator.serviceWorker?.controller));
-    
+
     // Ensure assets are fetched at least once while online.
     await page.evaluate(async () => {
       await fetch("/css/site.css");
