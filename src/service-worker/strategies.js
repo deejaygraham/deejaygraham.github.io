@@ -31,7 +31,11 @@ export async function handleNavigation(event) {
 }
 
 // ---------- Strategies with TTL header ----------
-export async function cacheThenNetworkWithTTL(request, cacheName) {
+export async function cacheThenNetworkWithTTL(
+  request,
+  cacheName,
+  cachingDurationSeconds = CACHING_DURATION,
+) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
   if (cached && isCacheResponseStillValid(cached, CACHE_EXPIRY_HEADER, Date.now(), DEBUG))
@@ -41,7 +45,7 @@ export async function cacheThenNetworkWithTTL(request, cacheName) {
     const res = await fetch(request);
     if (res && res.ok)
       await putWithExpiry(cache, request, res, {
-        cachingDurationSeconds: CACHING_DURATION,
+        cachingDurationSeconds,
         expiryHeaderName: CACHE_EXPIRY_HEADER,
         debug: DEBUG,
         now: Date.now,
@@ -52,18 +56,23 @@ export async function cacheThenNetworkWithTTL(request, cacheName) {
   }
 }
 
-export async function staleWhileRevalidateWithTTL(request, cacheName, event) {
+export async function staleWhileRevalidateWithTTL(
+  request,
+  cacheName,
+  event,
+  cachingDurationSeconds = CACHING_DURATION,
+) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
   if (cached && isCacheResponseStillValid(cached, CACHE_EXPIRY_HEADER, Date.now(), DEBUG)) {
-    if (event) event.waitUntil(eventlessUpdate(cache, request));
+    if (event) event.waitUntil(eventlessUpdate(cache, request, cachingDurationSeconds));
     return cached;
   }
   try {
     const res = await fetch(request);
     if (res && res.ok)
       await putWithExpiry(cache, request, res, {
-        cachingDurationSeconds: CACHING_DURATION,
+        cachingDurationSeconds,
         expiryHeaderName: CACHE_EXPIRY_HEADER,
         debug: DEBUG,
         now: Date.now,
@@ -74,7 +83,12 @@ export async function staleWhileRevalidateWithTTL(request, cacheName, event) {
   }
 }
 
-export async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries = 100) {
+export async function cacheFirstWithLimitAndTTL(
+  request,
+  cacheName,
+  maxEntries = 100,
+  cachingDurationSeconds = CACHING_DURATION,
+) {
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
   if (cached && isCacheResponseStillValid(cached, CACHE_EXPIRY_HEADER, Date.now(), DEBUG))
@@ -84,7 +98,7 @@ export async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries =
     const res = await fetch(request);
     if (res && res.ok) {
       await putWithExpiry(cache, request, res, {
-        cachingDurationSeconds: CACHING_DURATION,
+        cachingDurationSeconds,
         expiryHeaderName: CACHE_EXPIRY_HEADER,
         debug: DEBUG,
         now: Date.now,
@@ -100,12 +114,12 @@ export async function cacheFirstWithLimitAndTTL(request, cacheName, maxEntries =
   }
 }
 
-async function eventlessUpdate(cache, request) {
+async function eventlessUpdate(cache, request, cachingDurationSeconds) {
   try {
     const res = await fetch(request, { cache: "no-store" });
     if (res && res.ok)
       await putWithExpiry(cache, request, res, {
-        cachingDurationSeconds: CACHING_DURATION,
+        cachingDurationSeconds,
         expiryHeaderName: CACHE_EXPIRY_HEADER,
         debug: DEBUG,
         now: Date.now,
@@ -124,6 +138,7 @@ export async function precacheWithTTL(urls, cacheName) {
         await putWithExpiry(cache, new Request(url), res, {
           cachingDurationSeconds: CACHING_DURATION,
           expiryHeaderName: CACHE_EXPIRY_HEADER,
+          honorOriginMaxAge: false, // core assets always get full SW TTL
           debug: DEBUG,
           now: Date.now,
         });
