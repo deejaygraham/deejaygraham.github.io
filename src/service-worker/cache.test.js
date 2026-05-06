@@ -1,5 +1,5 @@
 import test from "ava";
-import { computeTTLSeconds, isCacheResponseStillValid, putWithExpiry } from "./ttl.js";
+import { computeTTLSeconds, isCacheResponseStillValid, putWithExpiry } from "./cache.js";
 
 test("Time to live honors max-age below default", (t) => {
   const res = new Response(null, {
