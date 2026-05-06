@@ -33,4 +33,38 @@ export default [
       },
     },
   },
+  {
+    files: ["generate-thumbnails.js"],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        Buffer: "readonly",
+      },
+    },
+  },
+  {
+    files: ["src/service-worker/**/*.js"],
+    ignores: ["src/service-worker/**/*.test.js"],
+    languageOptions: {
+      globals: {
+        ...globals.serviceworker,
+      },
+    },
+  },
+  {
+    files: ["_site/sw.js"],
+    languageOptions: {
+      globals: {
+        ...globals.serviceworker,
+      },
+    },
+  },
+  {
+    files: ["_site/js/search.js"],
+    languageOptions: {
+      globals: {
+        elasticlunr: "readonly",
+      },
+    },
+  },
 ];
