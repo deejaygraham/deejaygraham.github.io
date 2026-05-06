@@ -222,8 +222,7 @@ const drawMicrobits = (timestamp) => {
   window.requestAnimationFrame(drawMicrobits)
 }
 
-/* eslint-disable-next-line */
-const renderMicrobits = () => {
+export const renderMicrobits = () => {
   const elements = document.querySelectorAll("[data-microbit]");
   
   elements.forEach((e) => {
