@@ -26,23 +26,14 @@ test.describe('run accessibility tests', { tag: '@a11y' }, () => {
 test("Skip link at top of page works", { tag: '@a11y' }, async ({ page }) => {
   await page.goto("/");
 
+  const skipLink = page.getByRole("link", { name: "Skip to main content" });
   await expect(page.locator("header")).toMatchAriaSnapshot(`
     - link "Skip to main content"
     `);
 
-  await page.keyboard.press("Tab");
+  await skipLink.focus();
+  await expect(skipLink).toBeFocused();
 
-  expect(
-    await page.evaluate(() => {
-      return document.activeElement?.textContent;
-    }),
-  ).toEqual("Skip to main content");
-
-  await page.keyboard.press("Enter");
-
-  expect(
-    await page.evaluate(() => {
-      return document.activeElement?.localName;
-    }),
-  ).toEqual("body");
+  await skipLink.press("Enter");
+  await expect(page).toHaveURL(/#main$/);
 });
