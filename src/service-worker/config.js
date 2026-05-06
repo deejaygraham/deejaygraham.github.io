@@ -8,7 +8,7 @@ export const CACHING_DURATION = 24 * 3600; // seconds (24h)
 export const STATIC_CACHING_DURATION = 7 * 24 * 3600; // seconds (7d)
 export const IMAGE_CACHING_DURATION = 30 * 24 * 3600; // seconds (30d)
 export const CACHE_EXPIRY_HEADER = "SW-Cache-Expires";
-export const DEBUG = true;
+export const DEBUG = false;
 
 export const offlinePage = "/offline.html";
 export const searchDatabase = "/search-index.json";
