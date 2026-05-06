@@ -14,7 +14,7 @@ import wordCount from "../filters/wordCount.js";
 export default function applyFilters(eleventyConfig) {
   eleventyConfig.addFilter("debugger", (...args) => {
     console.log(...args);
-    debugger;
+    debugger; // eslint-disable-line no-debugger
   });
 
   eleventyConfig.addFilter("limit", limit);
