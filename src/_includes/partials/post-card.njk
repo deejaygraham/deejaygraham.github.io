@@ -15,7 +15,7 @@
       {% if tags %}
       <p class="is-pulled-right">
       {%- for tag in tags -%}
-        <a href="/tags/{{tag}}">#{{ tag }}</a>
+        <a href="/tags/{{ tag | slugify }}">#{{ tag }}</a>
         {% if not loop.last %} | {% endif %}
       {%- endfor -%}
       </p>
