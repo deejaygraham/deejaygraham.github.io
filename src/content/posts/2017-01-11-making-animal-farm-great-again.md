@@ -1,5 +1,6 @@
 ---
 title: Making Animal Farm Great Again
+tags: [politics]
 ---
 
 Apropos of nothing, here's a splendid old, orangey pig standing proudly on his wall. A wall that separates him from all
