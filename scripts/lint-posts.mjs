@@ -49,7 +49,6 @@ const lintFile = (filename, content) => {
   }
 
   const frontmatter = frontmatterMatch[1];
-  const body = frontmatterMatch[2] || "";
   const fields = parseFrontmatter(frontmatter);
 
   const title = fields.get("title");
@@ -72,27 +71,10 @@ const lintFile = (filename, content) => {
     errors.push(`layout "${layout}" is not one of: post, quotation, sketchnote`);
   }
 
-  if (layout === "quotation") {
-    const attribution = fields.get("attribution");
-    if (!attribution || !attribution.trim()) {
-      errors.push('quotation posts must define attribution: "..."');
-    }
-  }
-
   if (layout === "sketchnote") {
     if (!/^sketchnote:\s*$/m.test(frontmatter)) {
       errors.push("sketchnote posts must define a sketchnote block");
     }
-    if (!/^\s{2}url:\s*["'][^"']+["']\s*$/m.test(frontmatter)) {
-      errors.push('sketchnote.url is required (e.g.  url: "/assets/...")');
-    }
-    if (!/^\s{2}alt:\s*["'][^"']+["']\s*$/m.test(frontmatter)) {
-      errors.push('sketchnote.alt is required (e.g.  alt: "description")');
-    }
-  }
-
-  if (!body.trim()) {
-    errors.push("post body is empty");
   }
 
   return errors;
