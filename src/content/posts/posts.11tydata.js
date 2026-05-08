@@ -1,44 +1,10 @@
 import path from 'path';
+import { normalizeTags } from "./tag-taxonomy.js";
 
 const convertFileNameToPath = (filename) => {
     const [year, month, day, ...rest] = filename.split('-');
     const slug = rest.join('-').replace('.md', '/');
     return path.join(year, month, day, slug);
-};
-
-const tagAliases = new Map([
-    ['mac-os', 'macos'],
-]);
-
-const normalizeTag = (tag) => {
-    if (typeof tag !== 'string') {
-        return '';
-    }
-
-    const normalized = tag.trim().toLowerCase();
-    return tagAliases.get(normalized) || normalized;
-};
-
-const normalizeTags = (tags) => {
-    const values = Array.isArray(tags)
-        ? tags
-        : typeof tags === 'string'
-            ? [tags]
-            : [];
-
-    const seen = new Set();
-    const normalizedTags = [];
-    for (const tag of values) {
-        const normalized = normalizeTag(tag);
-        if (!normalized || seen.has(normalized)) {
-            continue;
-        }
-
-        seen.add(normalized);
-        normalizedTags.push(normalized);
-    }
-
-    return normalizedTags;
 };
 
 export default {
