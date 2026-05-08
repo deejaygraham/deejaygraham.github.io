@@ -22,7 +22,7 @@ test("Sketchnoting at DDD North 2015 is available", async ({ page }) => {
   await checkResourceExists(page, '/img/posts/sketchnoting-at-dddnorth-2015/dddnorth-logo.png');
 });
 
-test("Sketchnoting for Developers talk is available", async ({ page }) => {
+test("Sketchnoting for Developers talk is available @live", async ({ page }) => {
   await page.goto("/sketchnoting-for-developers");
   await expect(page).toHaveTitle(/sketchnoting for developers/);
 });
