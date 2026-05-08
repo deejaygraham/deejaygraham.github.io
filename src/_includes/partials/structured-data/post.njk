@@ -1,9 +1,22 @@
 {# json-ld for blog posting #}
+{%- if page.description %}
+{%- set pageDescription %}{{ page.description }}{% endset -%}
+{%- elif content %}
+{%- set generatedDescription %}{{ content | excerpt }}{% endset -%}
+{%- if generatedDescription and generatedDescription | trim %}
+{%- set pageDescription %}{{ generatedDescription }}{% endset -%}
+{%- else %}
+{%- set pageDescription %}{{ site.description }}{% endset -%}
+{%- endif %}
+{%- else %}
+{%- set pageDescription %}{{ site.description }}{% endset -%}
+{%- endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "{{ title }}",
+  "description": "{{ pageDescription }}",
   "url": "{{ site.url + page.url }}",
   "datePublished": "{{ page.date | dateISO }}",
   "dateModified": "{{ site.date }}",
