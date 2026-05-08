@@ -6,6 +6,41 @@ const convertFileNameToPath = (filename) => {
     return path.join(year, month, day, slug);
 };
 
+const tagAliases = new Map([
+    ['mac-os', 'macos'],
+]);
+
+const normalizeTag = (tag) => {
+    if (typeof tag !== 'string') {
+        return '';
+    }
+
+    const normalized = tag.trim().toLowerCase();
+    return tagAliases.get(normalized) || normalized;
+};
+
+const normalizeTags = (tags) => {
+    const values = Array.isArray(tags)
+        ? tags
+        : typeof tags === 'string'
+            ? [tags]
+            : [];
+
+    const seen = new Set();
+    const normalizedTags = [];
+    for (const tag of values) {
+        const normalized = normalizeTag(tag);
+        if (!normalized || seen.has(normalized)) {
+            continue;
+        }
+
+        seen.add(normalized);
+        normalizedTags.push(normalized);
+    }
+
+    return normalizedTags;
+};
+
 export default {
     eleventyComputed: {
         permalink: (data) => {
@@ -25,6 +60,9 @@ export default {
             //    return `/img/posts/${data.thumbnail}`;
             }
             return `/img/posts/${data.page.fileSlug}/thumbnail-420x255.jpg`;
+        },
+        tags: (data) => {
+            return normalizeTags(data.tags);
         }
     }
 };
