@@ -48,7 +48,7 @@ test.describe("Specific blog post example", () => {
   });
 
   test("contains suggested posts", async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'More posts tagged with #' })).toBeVisible();  
+    await expect(page.getByRole('heading', { name: 'Related posts' })).toBeVisible();  
   });
 
   test("contains copyright message", async ({ page }) => {
