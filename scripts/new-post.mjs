@@ -1,3 +1,10 @@
+// npm run new-post
+// or
+// npm run new-post -- code "My New Post" "python, cpp"
+// or 
+// node scripts/new-post.mjs --type code --title "My New Post" --tags "powershell, c#"
+
+
 import { existsSync, readFileSync, writeFileSync } from "fs";
 import path from "path";
 import readline from "readline/promises";
