@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test.describe("404 page", () => {
+test.describe("404 page @live", () => {
   test("shows a 404 message when navigating to a non-existent page", async ({ page }) => {
 
     await page.goto('/blargleargle/').then(response => {
