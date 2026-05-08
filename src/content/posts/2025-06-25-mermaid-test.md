@@ -3,6 +3,7 @@ layout: post
 title: Mermaid Test
 mermaid: true
 draft: true
+tags: [mermaid, graphics]
 ---
 
 Test post using new mermaid shortcode which adds support for mermaid diagram content in posts. 
