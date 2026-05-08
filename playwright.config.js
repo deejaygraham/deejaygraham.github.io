@@ -1,12 +1,15 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
 
+const skipLiveTests = process.env.PLAYWRIGHT_SKIP_LIVE === '1';
+
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
   testDir: './tests',
   testMatch: '*.spec.js',
+  grepInvert: skipLiveTests ? /@live/ : undefined,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
