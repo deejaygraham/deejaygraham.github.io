@@ -35,6 +35,9 @@ jobs:
 
       - name: Lint post tags
         run: npm run lint:tags
+
+      - name: Lint post frontmatter and content
+        run: npm run lint:posts
         
       - name: Run unit tests
         run: npm run unit-test
