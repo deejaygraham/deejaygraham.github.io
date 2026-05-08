@@ -35,7 +35,7 @@ async function searchFilter(collection) {
       id: page.url,
       title: frontMatter.data.title,
       excerpt: excerpt,
-      tags: frontMatter.data.tags,
+      tags: page.data.tags || frontMatter.data.tags,
     });
   }
 
