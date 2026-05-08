@@ -1,6 +1,7 @@
 {
   "type": "module",
   "scripts": {
+    "new-post": "node scripts/new-post.mjs",
     "sass": "sass --style=compressed --load-path=node_modules src/assets/sass/site.scss _site/css/site.css",
     "build:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js",
     "watch:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js --watch",
