@@ -20,7 +20,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'https://deejaygraham.github.io',
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'https://deejaygraham.github.io',
     // Prevent flakiness from live-site service worker reloads in non-SW tests.
     serviceWorkers: 'block',
 
