@@ -32,6 +32,9 @@ jobs:
 
       - name: Lint markdown
         run: npm run mdlint
-      
+
+      - name: Lint post tags
+        run: npm run lint:tags
+        
       - name: Run unit tests
         run: npm run unit-test
