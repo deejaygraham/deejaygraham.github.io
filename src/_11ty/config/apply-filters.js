@@ -10,6 +10,7 @@ import excludePost from "../filters/excludePost.js";
 import readingTime from "../filters/readingTime.js";
 import wordCount from "../filters/wordCount.js";
 import relatedPosts from "../filters/relatedPosts.js";
+import { excludePostsByUrls, findPostByUrl } from "../filters/topicHub.js";
 
 export default function applyFilters(eleventyConfig) {
   eleventyConfig.addFilter("debugger", (...args) => {
@@ -34,4 +35,6 @@ export default function applyFilters(eleventyConfig) {
   eleventyConfig.addFilter("readingTime", readingTime);
   eleventyConfig.addFilter("wordCount", wordCount);
   eleventyConfig.addFilter("relatedPosts", relatedPosts);
+  eleventyConfig.addFilter("findPostByUrl", findPostByUrl);
+  eleventyConfig.addFilter("excludePostsByUrls", excludePostsByUrls);
 }
