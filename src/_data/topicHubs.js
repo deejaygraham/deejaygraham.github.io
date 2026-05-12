@@ -12,16 +12,16 @@ export default {
   microbit: {
     title: "micro:bit",
     description:
-      "BBC micro:bit projects on this blog — MicroPython on the device, sound, LEDs, and small playful programs.",
+      "BBC micro:bit projects on this blog — MicroPython, sound, LEDs, and small playful programs.",
     intro: `<p>
-      Notes and experiments with the BBC micro:bit: short Python sketches, music and noise,
+      Notes and experiments with the BBC micro:bit - short Python sketches, music and noise,
       displays, and occasional silliness. Everything here assumes you are happy flashing .hex
       files or editing in the web editor or Mu.
     </p>`,
     featured: [
       {
-        url: "/2025/06/02/microbit-shyness/",
-        blurb: "Microphone-driven brightness — a compact example of sensing and gradual state changes.",
+        url: "/2026/03/12/micro-mesh/",
+        blurb: "Mesh network implemented using several microbits.",
       },
       {
         url: "/2025/05/29/microbit-musicbox/",
