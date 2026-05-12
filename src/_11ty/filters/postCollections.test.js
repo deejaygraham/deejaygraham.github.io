@@ -1,5 +1,5 @@
 import test from "ava";
-import { excludePostsByUrls, findPostByUrl } from "./topicHub.js";
+import { excludePostsByUrls, findPostByUrl } from "./postCollections.js";
 
 const posts = [
   { url: "/2025/06/02/microbit-shyness/", data: { title: "A" } },
