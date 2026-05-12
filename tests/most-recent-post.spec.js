@@ -1,20 +1,60 @@
 // @ts-check
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import checkPageLinksExist from './util/check-page-links-exist.js';
 
-test("check all links on most recent pages", async ({ page }) => {
-  // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
-  const spiderPage = await page.goto('/spider.json');
-  const siteUrlsAsJson = await spiderPage.text();
-  
-  const data = JSON.parse(siteUrlsAsJson);
-  const siteUrls = new Set(data.urls);
-
-  for(const url of siteUrls) {
-    await test.step(`Checking links on ${url}`, async () => {
-      await checkPageLinksExist(page, url);
-    });
-    // only do one
-    break;
+/**
+ * @param {string} href from the DOM (relative or absolute)
+ * @param {string} baseUrl current page URL (e.g. index) for resolving relatives
+ * @returns {string} pathname with trailing slash (matches Eleventy post permalinks)
+ */
+function postPathname(href, baseUrl) {
+  const u = new URL(href, baseUrl);
+  let p = u.pathname;
+  if (!p.endsWith('/')) {
+    p += '/';
   }
+  return p;
+}
+
+/**
+ * Newest post = first card on the index (same order as `collections.posts` on `index.njk`).
+ * @param {import('@playwright/test').Page} page
+ * @returns {Promise<string>} pathname with trailing slash
+ */
+async function getLatestPostPathFromHomepage(page) {
+  await page.goto('/');
+  const link = page.locator('.columns.is-multiline > .column').first().locator('h2.title a');
+  await expect(link, 'homepage should show at least one post card').toBeVisible();
+  const href = await link.getAttribute('href');
+  expect(href, 'newest post card should have an href').toBeTruthy();
+  return postPathname(/** @type {string} */ (href), page.url());
+}
+
+test.describe('most recent blog post', () => {
+  test('index card, page load, og image, and internal links', async ({ page, request }) => {
+    const latestPath = await test.step('Resolve newest post from first homepage card', async () =>
+      getLatestPostPathFromHomepage(page),
+    );
+
+    await test.step('Post URL responds and main content renders', async () => {
+      const response = await page.goto(latestPath);
+      expect(response?.ok(), `navigation failed: HTTP ${response?.status()}`).toBeTruthy();
+      await expect(page.locator('h1.title.is-1').first()).toBeVisible();
+    });
+
+    await test.step('og:image is present and the asset returns 200 with an image type', async () => {
+      const og = page.locator('meta[property="og:image"]');
+      await expect(og).toHaveCount(1);
+      const imageUrl = await og.getAttribute('content');
+      expect(imageUrl, 'og:image content missing').toBeTruthy();
+      const imgRes = await request.get(/** @type {string} */ (imageUrl));
+      expect(imgRes.ok(), `og:image not ok (${imgRes.status()}): ${imageUrl}`).toBeTruthy();
+      const ct = (imgRes.headers()['content-type'] || '').toLowerCase();
+      expect(ct.startsWith('image/'), `expected image/* content-type, got: ${ct}`).toBeTruthy();
+    });
+
+    await test.step('Internal links on the post resolve', async () => {
+      await checkPageLinksExist(page, latestPath);
+    });
+  });
 });
