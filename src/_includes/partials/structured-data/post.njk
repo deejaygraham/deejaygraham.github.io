@@ -1,6 +1,6 @@
 {# json-ld for blog posting #}
-{%- if page.description %}
-{%- set pageDescription %}{{ page.description }}{% endset -%}
+{%- if page.data.description %}
+{%- set pageDescription %}{{ page.data.description }}{% endset -%}
 {%- elif content %}
 {%- set generatedDescription %}{{ content | excerpt }}{% endset -%}
 {%- if generatedDescription and generatedDescription | trim %}
