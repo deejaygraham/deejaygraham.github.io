@@ -9,11 +9,11 @@ test.describe("topic hubs", () => {
   test("hub page shows curated title, intro, start here, related tags, and all posts", async ({ page }) => {
     await page.goto("/tags/microbit/");
 
-    await expect(page.getByRole("heading", { level: 1, name: "Micro:bit" })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1, name: "micro:bit" })).toBeVisible();
     await expect(page.locator(".topic-hub-intro")).toContainText("BBC micro:bit");
 
     const startHereList = page.getByRole("heading", { name: "Start here" }).locator("+ ul");
-    await expect(startHereList.getByRole("link", { name: "Microbit Shyness", exact: true })).toBeVisible();
+    await expect(startHereList.getByRole("link", { name: "Mesh Network", exact: true })).toBeVisible();
     await expect(startHereList.getByRole("link", { name: "Music Box", exact: true })).toBeVisible();
 
     await expect(page.getByText(/Related topics/)).toBeVisible();
