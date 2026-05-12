@@ -2,22 +2,36 @@
 import { test, expect } from '@playwright/test';
 import checkResourceExists from './check-resource-exists.js';
 
-const validLink = (link) => {
-    const internalLinksRegex = /deejaygraham.github.io/;
-    return link 
-    && !link?.startsWith("mailto:") 
-    && !link?.endsWith(".yml") 
-    && !link?.includes("#") 
-    && (link.startsWith('http') 
-    && link.match(internalLinksRegex));
-}
+/**
+ * Treat same-origin links as internal (local `eleventy --serve`) and production host.
+ * @param {string} link absolute URL from `HTMLAnchorElement.href`
+ * @param {string} pageUrl current document URL
+ */
+const validLink = (link, pageUrl) => {
+  if (
+    !link
+    || link.startsWith("mailto:")
+    || link.endsWith(".yml")
+    || link.includes("#")
+    || !link.startsWith("http")
+  ) {
+    return false;
+  }
+  try {
+    const u = new URL(link);
+    const base = new URL(pageUrl);
+    return u.origin === base.origin || u.hostname === "deejaygraham.github.io";
+  } catch {
+    return false;
+  }
+};
 
 const getAllLinksFromPage = async (page) => {
     const allLinkHrefs = await page.getByRole("link")
       .evaluateAll(anchors => anchors.map(anchor => anchor.href));
 
     const validHrefs = allLinkHrefs.reduce((links, link) => {
-      if (validLink(link)) {
+      if (validLink(link, page.url())) {
         links.add(new URL(link, page.url()).href);
       }
       
