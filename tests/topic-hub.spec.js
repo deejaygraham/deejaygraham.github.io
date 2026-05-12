@@ -13,7 +13,7 @@ test.describe("topic hubs", () => {
     await expect(page.locator(".topic-hub-intro")).toContainText("BBC micro:bit");
 
     const startHereList = page.getByRole("heading", { name: "Start here" }).locator("+ ul");
-    await expect(startHereList.getByRole("link", { name: "Mesh Network", exact: true })).toBeVisible();
+    await expect(startHereList.getByRole("link", { name: "Microbit Mesh Network", exact: true })).toBeVisible();
     await expect(startHereList.getByRole("link", { name: "Music Box", exact: true })).toBeVisible();
 
     await expect(page.getByText(/Related topics/)).toBeVisible();
