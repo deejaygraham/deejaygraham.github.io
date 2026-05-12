@@ -3,17 +3,50 @@ pagination:
   data: collections
   size: 1
   alias: tag
+  addAllPagesToCollections: true
 layout: base.njk
-eleventyComputed:
-  title: posts by tag
 permalink: /tags/{{ tag | slugify }}/
-excludeFromSitemap: true
 ---
 
-<h1>Posts tagged with #{{ tag }}</h1>
-
 {% set taglist = collections[ tag ] %}
+
+{% if topicHub %}
+<h1 class="title is-1">{{ topicHub.title }}</h1>
+<div class="content topic-hub-intro">{{ topicHub.intro | safe }}</div>
+
+{% if topicHub.featured and topicHub.featured.length %}
+<h2 class="title is-4">Start here</h2>
+<ul class="mb-5">
+  {% for item in topicHub.featured %}
+    {% set fp = collections.posts | findPostByUrl(item.url) %}
+    {% if fp %}
+      <li>
+        <a href="{{ fp.url }}">{{ fp.data.title }}</a>
+        {% if item.blurb %}: {{ item.blurb }}{% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if topicHub.relatedTags and topicHub.relatedTags.length %}
+<p class="mb-5">
+  Related topics:
+  {% for rt in topicHub.relatedTags %}
+    {% if collections[rt] and collections[rt].length %}
+      <a href="/tags/{{ rt | slugify }}/">#{{ rt }}</a>{% if not loop.last %} · {% endif %}
+    {% endif %}
+  {% endfor %}
+</p>
+{% endif %}
+
+<h2 class="title is-4">All posts</h2>
+{% set postcardlist = taglist | excludePostsByUrls(topicHub.featured) | reverse %}
+{% else %}
+<h1>Posts tagged with #{{ tag }}</h1>
 {% set postcardlist = taglist | reverse %}
+{% endif %}
+
 {% include "partials/post-card-list.njk" %}
 
 <p>See <a href="/tags/">all tags</a>.</p>
