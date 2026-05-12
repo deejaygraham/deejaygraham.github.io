@@ -16,8 +16,9 @@ test.describe("topic hubs", () => {
     await expect(startHereList.getByRole("link", { name: "Microbit Shyness", exact: true })).toBeVisible();
     await expect(startHereList.getByRole("link", { name: "Music Box", exact: true })).toBeVisible();
 
-    await expect(page.getByText("Related topics:", { exact: true })).toBeVisible();
-    await expect(page.getByRole("link", { name: "#python", exact: true })).toBeVisible();
+    await expect(page.getByText(/Related topics/)).toBeVisible();
+    const relatedLine = page.locator("p.mb-5").filter({ hasText: /Related topics/ });
+    await expect(relatedLine.getByRole("link", { name: "#python", exact: true })).toHaveCount(1);
 
     await expect(page.getByRole("heading", { name: "All posts" })).toBeVisible();
     await expect(page.getByRole("link", { name: "all tags", exact: true })).toHaveAttribute("href", "/tags/");
