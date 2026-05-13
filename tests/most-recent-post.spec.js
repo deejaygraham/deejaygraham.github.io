@@ -42,7 +42,7 @@ test.describe('most recent blog post', () => {
       await expect(page.locator('h1.title.is-1').first()).toBeVisible();
     });
 
-    await test.step('og:image is present and the asset returns 200 with an image type', async () => {
+    await test.step('og:image is present and the asset returns 200 with an image type @live', async () => {
       const og = page.locator('meta[property="og:image"]');
       await expect(og).toHaveCount(1);
       const imageUrl = await og.getAttribute('content');
