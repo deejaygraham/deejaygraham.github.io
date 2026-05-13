@@ -2,7 +2,6 @@
 import fs from 'fs';
 import path from 'path';
 import { test, expect } from '@playwright/test';
-import checkPageLinksExist from './util/check-page-links-exist.js';
 
 /** PNG file signature (first 8 bytes). */
 const PNG_MAGIC = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
