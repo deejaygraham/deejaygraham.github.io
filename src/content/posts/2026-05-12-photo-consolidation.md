@@ -35,23 +35,39 @@ import os
 import re
 import shutil
 import sys
-
 from datetime import datetime
 from pathlib import Path
 
 from PIL import Image, ExifTags
 
-JPG_EXTS = {".jpg", ".jpeg"}
+# What to collect
+STILL_EXTS = {".jpg", ".jpeg", ".png"}   # add more still types if you want
+LIVE_VIDEO_EXTS = {".mov"}               # for iPhone Live Photos
+ALL_EXTS = STILL_EXTS | LIVE_VIDEO_EXTS
+
+# EXIF is usually meaningful for JPG/JPEG (and TIFF), not PNG
+EXIF_CAPABLE = {".jpg", ".jpeg", ".tif", ".tiff"}
+
 EXIF_NAME_TO_ID = {v: k for k, v in ExifTags.TAGS.items()}
+
 
 def setup_logging(verbose: bool):
     level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(level=level, format="%(asctime)s %(levelname)s %(message)s")
 
+
+def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(chunk_size), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
 def parse_exif_datetime(exif) -> datetime | None:
     """
     Prefer DateTimeOriginal; then DateTimeDigitized; then DateTime.
-    EXIF format is usually 'YYYY:MM:DD HH:MM:SS'
+    EXIF format often: 'YYYY:MM:DD HH:MM:SS'
     """
     for key in ("DateTimeOriginal", "DateTimeDigitized", "DateTime"):
         tag_id = EXIF_NAME_TO_ID.get(key)
@@ -71,16 +87,14 @@ def parse_exif_datetime(exif) -> datetime | None:
                         pass
     return None
 
+
 def get_macos_birthtime(path: Path) -> datetime | None:
     """
-    macOS-only: returns filesystem creation/birth time if available.
-    - On macOS, os.stat_result has st_birthtime.
-    - On other platforms/filesystems it may not exist -> None.
+    macOS-only: filesystem creation time (birth time) if available.
     """
     try:
         st = path.stat()
-        # st_birthtime exists on macOS; may not exist elsewhere.
-        bt = getattr(st, "st_birthtime", None)
+        bt = getattr(st, "st_birthtime", None)  # exists on macOS
         if bt is None:
             return None
         return datetime.fromtimestamp(bt)
@@ -88,23 +102,27 @@ def get_macos_birthtime(path: Path) -> datetime | None:
         logging.debug("Birthtime read failed for %s: %s", path, e)
         return None
 
-def photo_datetime(path: Path) -> datetime:
+
+def photo_datetime_hybrid(path: Path) -> datetime:
     """
     Hybrid fallback order:
-    1) EXIF DateTimeOriginal (photo taken)
-    2) macOS st_birthtime (file created)
-    3) st_mtime (modified)
+    1) EXIF DateTimeOriginal (best for JPG camera photos)
+    2) macOS birth time (creation time)
+    3) modified time
     """
-    # 1) EXIF
-    try:
-        with Image.open(path) as img:
-            exif = img.getexif()
-            if exif:
-                dt = parse_exif_datetime(exif)
-                if dt:
-                    return dt
-    except Exception as e:
-        logging.debug("EXIF read failed for %s: %s", path, e)
+    ext = path.suffix.lower()
+
+    # 1) EXIF (only for formats where it makes sense)
+    if ext in EXIF_CAPABLE:
+        try:
+            with Image.open(path) as img:
+                exif = img.getexif()
+                if exif:
+                    dt = parse_exif_datetime(exif)
+                    if dt:
+                        return dt
+        except Exception as e:
+            logging.debug("EXIF read failed for %s: %s", path, e)
 
     # 2) macOS creation time
     if sys.platform == "darwin":
@@ -115,22 +133,15 @@ def photo_datetime(path: Path) -> datetime:
     # 3) modified time fallback
     return datetime.fromtimestamp(path.stat().st_mtime)
 
-def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(chunk_size), b""):
-            h.update(chunk)
-    return h.hexdigest()
 
 def normalize_sources(sources: list[str]) -> list[str]:
-    # Normalize input for case-insensitive matching
     return [s.strip().lower() for s in sources if s.strip()]
+
 
 def matches_sources(path: Path, sources: list[str]) -> bool:
     """
-    Match if the full path contains one of the provided source tokens.
-    - Case-insensitive substring match by default.
-    - Regex supported if source is wrapped like /.../
+    If sources provided, require the file path contains at least one token.
+    Tokens can be regex if wrapped /.../
     """
     if not sources:
         return True
@@ -146,32 +157,34 @@ def matches_sources(path: Path, sources: list[str]) -> bool:
                 return True
     return False
 
-def iter_jpgs(root: Path, sources: list[str]) -> list[Path]:
+
+def iter_files(root: Path, sources: list[str]) -> list[Path]:
     out = []
     for p in root.rglob("*"):
-        if p.is_file() and p.suffix.lower() in JPG_EXTS:
+        if p.is_file() and p.suffix.lower() in ALL_EXTS:
             if matches_sources(p, sources):
                 out.append(p)
     return out
 
+
 def build_dest_hash_index(dest_root: Path) -> set[str]:
     """
     Build hashes for existing destination files to prevent duplicates across runs.
-    Can be slow for very large libraries, but very effective.
     """
-    idx = set()
+    idx: set[str] = set()
     if not dest_root.exists():
         return idx
 
-    logging.info("Indexing destination for dedupe (hashing existing JPGs)...")
+    logging.info("Indexing destination for dedupe (hashing existing files)...")
     for p in dest_root.rglob("*"):
-        if p.is_file() and p.suffix.lower() in JPG_EXTS:
+        if p.is_file() and p.suffix.lower() in ALL_EXTS:
             try:
                 idx.add(sha256_file(p))
             except Exception as e:
                 logging.debug("Failed hashing %s: %s", p, e)
-    logging.info("Indexed %d existing destination photos", len(idx))
+    logging.info("Indexed %d existing destination files", len(idx))
     return idx
+
 
 def ensure_unique_name(dest_dir: Path, name: str) -> Path:
     dest = dest_dir / name
@@ -187,41 +200,59 @@ def ensure_unique_name(dest_dir: Path, name: str) -> Path:
             return candidate
         i += 1
 
-def copy_one(src: Path, dest_year_dir: Path, dedupe_index: set[str], dry_run: bool) -> bool:
+
+def copy_one(src: Path, dest_dir: Path, dedupe_index: set[str], dry_run: bool) -> bool:
     h = sha256_file(src)
     if h in dedupe_index:
         logging.info("SKIP duplicate (hash): %s", src)
         return False
 
-    dest_year_dir.mkdir(parents=True, exist_ok=True)
+    dest_dir.mkdir(parents=True, exist_ok=True)
 
-    # If a same-named file exists, compare hashes; else create unique name
-    tentative = dest_year_dir / src.name
+    tentative = dest_dir / src.name
     if tentative.exists():
+        # If same filename exists, skip if identical; else use a unique name
         try:
-            existing_hash = sha256_file(tentative)
-            if existing_hash == h:
+            if sha256_file(tentative) == h:
                 logging.info("SKIP already exists identical: %s -> %s", src, tentative)
                 dedupe_index.add(h)
                 return False
         except Exception:
             pass
 
-    dest_path = ensure_unique_name(dest_year_dir, src.name)
+    dest_path = ensure_unique_name(dest_dir, src.name)
     logging.info("%s %s -> %s", "DRYRUN copy" if dry_run else "COPY", src, dest_path)
 
     if not dry_run:
-        shutil.copy2(src, dest_path)  # preserves timestamps
+        shutil.copy2(src, dest_path)
 
     dedupe_index.add(h)
     return True
 
+
+def find_live_companion_mov(still_path: Path) -> Path | None:
+    """
+    For IMG_1234.JPG, look for IMG_1234.MOV in the same folder.
+    """
+    for ext in (".MOV", ".mov"):
+        candidate = still_path.with_suffix(ext)
+        if candidate.exists():
+            return candidate
+    return None
+
+
 def main():
-    ap = argparse.ArgumentParser(description="Copy JPGs from USB backup folders to NAS organized by year.")
+    ap = argparse.ArgumentParser(
+        description="Copy stills (JPG/PNG) and iPhone Live Photo MOVs to NAS organized by year."
+    )
     ap.add_argument("--source", required=True, help="USB root folder, e.g. /Volumes/USB_DRIVE")
     ap.add_argument("--dest", required=True, help="NAS destination root, e.g. /Volumes/VolumeXX/photo")
-    ap.add_argument("--source-name", action="append", default=[],
-                    help="Source folder identifier to include (repeatable). Substring match or regex /.../.")
+    ap.add_argument(
+        "--source-name",
+        action="append",
+        default=[],
+        help="Include only files whose path contains this token (repeatable). Regex if wrapped /.../.",
+    )
     ap.add_argument("--skip-dest-index", action="store_true",
                     help="Skip hashing existing destination (faster startup, weaker dedupe across runs).")
     ap.add_argument("--dry-run", action="store_true", help="Print actions without copying.")
@@ -243,32 +274,46 @@ def main():
     logging.info("Source root: %s", source_root)
     logging.info("Dest root:   %s", dest_root)
     if sources:
-        logging.info("Including only photos matching source identifiers: %s", sources)
-    else:
-        logging.info("No source identifiers provided; scanning all JPG/JPEG files.")
+        logging.info("Including only paths matching: %s", sources)
 
-    dedupe_index = set()
+    dedupe_index: set[str] = set()
     if not args.skip_dest_index:
         dedupe_index = build_dest_hash_index(dest_root)
 
-    candidates = iter_jpgs(source_root, sources)
-    logging.info("Found %d JPG/JPEG candidates", len(candidates))
+    candidates = iter_files(source_root, sources)
+
+    # Optional: we generally don’t want to copy MOV files independently,
+    # because they might be Live Photo companions. We'll handle them via pairing.
+    # So we will process:
+    # - all stills (JPG/JPEG/PNG)
+    # - and copy MOV only when paired to a JPG
+    stills = [p for p in candidates if p.suffix.lower() in STILL_EXTS]
+    logging.info("Found %d still candidates (JPG/JPEG/PNG)", len(stills))
 
     copied = 0
     skipped = 0
 
-    for p in sorted(candidates):
+    for p in sorted(stills):
         try:
-            dt = photo_datetime(p)
+            dt = photo_datetime_hybrid(p)
             year_dir = dest_root / str(dt.year)
+
             if copy_one(p, year_dir, dedupe_index, args.dry_run):
                 copied += 1
             else:
                 skipped += 1
+
+            # Live Photo pairing (same-folder, mostly JPG)
+            if p.suffix.lower() in {".jpg", ".jpeg"}:
+                mov = find_live_companion_mov(p)
+                if mov:
+                    copy_one(mov, year_dir, dedupe_index, args.dry_run)
+
         except Exception as e:
             logging.error("Failed processing %s: %s", p, e)
 
-    logging.info("Done. Copied=%d Skipped=%d", copied, skipped)
+    logging.info("Done. Copied=%d Skipped=%d (plus paired MOVs where found)", copied, skipped)
+
 
 if __name__ == "__main__":
     main()
