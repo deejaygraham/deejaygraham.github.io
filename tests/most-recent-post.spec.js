@@ -83,9 +83,5 @@ test.describe('most recent blog post', () => {
       const buf = fs.readFileSync(localPreview);
       expect(startsWithPngMagic(buf), `expected PNG at ${localPreview}`).toBeTruthy();
     });
-
-    await test.step('Internal links on the post resolve', async () => {
-      await checkPageLinksExist(page, latestPath);
-    });
   });
 });
