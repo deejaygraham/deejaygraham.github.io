@@ -26,10 +26,10 @@ jobs:
       
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Use current Node version
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: lts/*
 
@@ -46,7 +46,7 @@ jobs:
           npm run lintoutput
 
       - name: Upload site artifact for tests/deploy
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site-build
           path: './_site'
@@ -58,10 +58,10 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Use current Node version
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: lts/*
 
@@ -69,7 +69,7 @@ jobs:
         run: npm ci
 
       - name: Download site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: site-build
           path: ./_site
@@ -90,7 +90,7 @@ jobs:
           trap "kill $SERVER_PID" EXIT
           npx playwright test
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
@@ -106,7 +106,7 @@ jobs:
 
     steps:
       - name: Download site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: site-build
           path: ./_site
@@ -115,7 +115,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v7
         with:
           path: './_site'
 
