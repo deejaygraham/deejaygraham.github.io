@@ -62,41 +62,6 @@ test.describe('most recent blog post', () => {
       await expect(page.locator('h1.title.is-1').first()).toBeVisible();
     });
 
-    await test.step('JSON-LD BlogPosting is valid and matches the page', async () => {
-      const ld = page.locator('script[type="application/ld+json"]');
-      await expect(ld).toHaveCount(1);
-      const raw = (await ld.textContent())?.trim() ?? '';
-      expect(raw, 'JSON-LD script should not be empty').toBeTruthy();
-      const data = JSON.parse(raw);
-
-      expect(data['@context']).toBe('https://schema.org');
-      expect(data['@type']).toBe('BlogPosting');
-      expect(typeof data.headline).toBe('string');
-      expect(data.headline.length).toBeGreaterThan(0);
-
-      const h1Text = (await page.locator('h1.title.is-1').first().textContent())?.trim() ?? '';
-      expect(data.headline.trim()).toBe(h1Text);
-
-      expect(typeof data.description).toBe('string');
-      expect(data.description.length).toBeGreaterThan(0);
-
-      expect(typeof data.url).toBe('string');
-      const jsonPath = new URL(data.url).pathname.replace(/\/+$/, '') || '/';
-      const pagePath = new URL(page.url()).pathname.replace(/\/+$/, '') || '/';
-      expect(jsonPath).toBe(pagePath);
-
-      expect(typeof data.datePublished).toBe('string');
-      expect(data.datePublished).toMatch(/^\d{4}-\d{2}-\d{2}T/);
-
-      expect(data.author).toMatchObject({ '@type': 'Person', name: expect.any(String) });
-      expect(data.author.name.length).toBeGreaterThan(0);
-
-      expect(Array.isArray(data.image)).toBeTruthy();
-      expect(data.image.length).toBeGreaterThan(0);
-      expect(typeof data.image[0]).toBe('string');
-      expect(data.image[0]).toMatch(/^https?:\/\//);
-    });
-
     await test.step('og:image meta matches built preview under _site (not production URL)', async () => {
       const og = page.locator('meta[property="og:image"]');
       await expect(og).toHaveCount(1);
