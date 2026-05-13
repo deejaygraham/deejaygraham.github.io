@@ -20,7 +20,7 @@ any actual duplicates or bad photos we don't want to keep.
 I am using the [Pillow](https://pillow.readthedocs.io/en/stable/index.html) library to extract the EXIF information from 
 the images to more reliably categorise them by year they were taken. 
 
-```terminal
+```shell
 python3 -m pip install --user pillow
 ```
 
@@ -277,7 +277,7 @@ if __name__ == "__main__":
 
 Because the photos are scattered across all creation, I added subfolders to search through to find images rather than scanning the entire drive. 
 
-```terminal
+```shell
 
 python3 copy_photos_by_year.py \
   --source "/Volumes/YourUSB" \
