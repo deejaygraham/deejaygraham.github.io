@@ -54,13 +54,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v6
 
-      - name: Use current Node version
-        uses: actions/setup-node@v6
-        with:
-          node-version: lts/*
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Node CI
+        uses: ./.github/actions/setup-node-ci
 
       - name: Download site artifact
         uses: actions/download-artifact@v8
@@ -71,8 +66,8 @@ jobs:
       - name: Lint javascript tests
         run: npx eslint ./tests/
 
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+      - name: Install Playwright
+        uses: ./.github/actions/install-playwright
 
       - name: Run Playwright tests against built artifact
         env:
