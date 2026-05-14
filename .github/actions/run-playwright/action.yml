@@ -1,0 +1,33 @@
+name: Run Playwright
+description: Run Playwright tests, optionally against a local static site and with extra CLI args.
+
+inputs:
+  with_local_site:
+    description: When true, start python http.server for site_directory and set PLAYWRIGHT_BASE_URL and PLAYWRIGHT_SKIP_LIVE.
+    default: "false"
+  site_directory:
+    description: Directory served when with_local_site is true (relative to workspace).
+    default: _site
+  playwright_cli_args:
+    description: Extra arguments appended to playwright test (e.g. --grep @a11y).
+    default: ""
+
+runs:
+  using: composite
+  steps:
+    - name: Run Playwright tests against local site
+      if: ${{ inputs.with_local_site == 'true' }}
+      env:
+        PLAYWRIGHT_BASE_URL: http://127.0.0.1:8080
+        PLAYWRIGHT_SKIP_LIVE: "1"
+      run: |
+        python3 -m http.server 8080 --directory "${{ inputs.site_directory }}" >/tmp/site-server.log 2>&1 &
+        SERVER_PID=$!
+        trap "kill $SERVER_PID" EXIT
+        npx playwright test ${{ inputs.playwright_cli_args }}
+      shell: bash
+
+    - name: Run Playwright tests
+      if: ${{ inputs.with_local_site != 'true' }}
+      run: npx playwright test ${{ inputs.playwright_cli_args }}
+      shell: bash
