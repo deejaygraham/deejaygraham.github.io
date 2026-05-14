@@ -2,11 +2,16 @@ name: A11y Tests
 on:
   workflow_dispatch:
     branches: [ main ]
+    
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
       - name: Setup Node CI
         uses: ./.github/actions/setup-node-ci
     
