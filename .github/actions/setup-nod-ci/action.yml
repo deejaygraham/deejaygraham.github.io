@@ -1,0 +1,17 @@
+name: Setup Node CI
+description: Check out the repository, set up Node.js (LTS), and install dependencies with npm ci
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout Code
+      uses: actions/checkout@v6
+
+    - name: Use current Node version
+      uses: actions/setup-node@v6
+      with:
+        node-version: lts/*
+
+    - name: Install dependencies
+      run: npm ci
+      shell: bash
