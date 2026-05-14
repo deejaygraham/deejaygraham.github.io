@@ -25,17 +25,8 @@ jobs:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
       
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v6
-
-      - name: Use current Node version
-        uses: actions/setup-node@v6
-        with:
-          node-version: lts/*
-
-      - name: Install dependencies
-        run: |
-          npm ci
+      - name: Setup Node CI
+        uses: ./.github/actions/setup-node-ci
           
       - name: Build
         run: |
