@@ -15,8 +15,8 @@ jobs:
       - name: Setup Node CI
         uses: ./.github/actions/setup-node-ci
     
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+      - name: Install Playwright
+        uses: ./.github/actions/install-playwright
         
       - name: Run Playwright tests
         run: npx playwright test --grep @a11y
