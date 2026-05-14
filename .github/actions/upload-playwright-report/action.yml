@@ -1,0 +1,24 @@
+name: Upload Playwright report
+description: Upload the Playwright HTML report as a workflow artifact unless the job was cancelled.
+
+inputs:
+  artifact_name:
+    description: Artifact name shown in the Actions run summary.
+    default: playwright-report
+  report_path:
+    description: Directory path of the report relative to the workspace root.
+    default: playwright-report/
+  retention_days:
+    description: Number of days to retain the artifact.
+    default: "30"
+
+runs:
+  using: composite
+  steps:
+    - name: Upload Playwright report
+      if: ${{ !cancelled() }}
+      uses: actions/upload-artifact@v7
+      with:
+        name: ${{ inputs.artifact_name }}
+        path: ${{ inputs.report_path }}
+        retention-days: ${{ inputs.retention_days }}
