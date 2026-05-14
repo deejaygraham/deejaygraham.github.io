@@ -19,9 +19,12 @@ jobs:
         uses: ./.github/actions/install-playwright
         
       - name: Run Playwright tests
-        run: npx playwright test --grep @a11y
+        uses: ./.github/actions/run-playwright
+        with:
+          playwright_cli_args: "--grep @a11y"
         
-      - uses: actions/upload-artifact@v4
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
