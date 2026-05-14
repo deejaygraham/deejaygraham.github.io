@@ -75,12 +75,8 @@ jobs:
           with_local_site: "true"
           site_directory: _site
 
-      - uses: actions/upload-artifact@v7
-        if: ${{ !cancelled() }}
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
+      - name: Upload Playwright report
+        uses: ./.github/actions/upload-playwright-report
 
   deploy:
     runs-on: ubuntu-latest
