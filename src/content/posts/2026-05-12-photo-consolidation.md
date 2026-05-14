@@ -26,6 +26,7 @@ python3 -m pip install --user pillow
 
 ## Code
 
+
 ```python 
 #!/usr/bin/env python3
 """
