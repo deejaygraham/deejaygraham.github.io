@@ -25,6 +25,9 @@ jobs:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
       
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
       - name: Setup Node CI
         uses: ./.github/actions/setup-node-ci
           
