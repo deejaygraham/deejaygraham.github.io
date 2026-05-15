@@ -15,30 +15,6 @@ inputs:
 runs:
   using: composite
   steps:
-  
-    - name: Set GITHUB_HEAD_SHA environment variable
-      shell: bash
-      run: |
-        if [ "$GITHUB_EVENT_NAME" == "pull_request" ] ; then
-          echo GITHUB_HEAD_SHA=${{ github.event.pull_request.head.sha }} >> $GITHUB_ENV
-        else
-          echo GITHUB_HEAD_SHA=${{ github.sha }} >> $GITHUB_ENV
-        fi
-        
-    - name: Set GITHUB_HEAD_DATE environment variable
-      shell: bash
-      run: |
-        if [ "$GITHUB_EVENT_NAME" == "pull_request" ] ; then
-          echo GITHUB_HEAD_DATE=$(date -u -d "${{ github.event.pull_request.updated_at }}" +%Y-%m-%d) >> $GITHUB_ENV
-        else
-          echo GITHUB_HEAD_DATE=$(date -u -d "${{ github.event.head_commit.timestamp }}" +%Y-%m-%d) >> $GITHUB_ENV
-        fi
-
-    - name: Debug environment variables
-      shell: bash
-      run: |
-        echo "GITHUB_HEAD_SHA=$GITHUB_HEAD_SHA"
-        echo "GITHUB_HEAD_DATE=$GITHUB_HEAD_DATE"
 
     - name: Run Playwright tests against local site
       if: ${{ inputs.with_local_site == 'true' }}
