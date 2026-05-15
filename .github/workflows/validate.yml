@@ -19,6 +19,16 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v6
 
+      - name: Set GITHUB_HEAD_SHA environment variable
+        shell: bash
+        run: |
+          echo GITHUB_HEAD_SHA=${{ github.repository }}:${{ github.workflow }} >> $GITHUB_ENV
+
+      - name: Debug environment variables
+        shell: bash
+        run: |
+          echo "GITHUB_HEAD_SHA=$GITHUB_HEAD_SHA"
+        
       - name: Setup Node CI
         uses: ./.github/actions/setup-node-ci
 
