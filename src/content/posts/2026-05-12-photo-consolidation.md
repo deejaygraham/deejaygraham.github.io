@@ -15,6 +15,24 @@ don't accidentally overwrite a pre-existing "good" photo by a blurry "bad" photo
 came from a different device - camera, tablet, phone etc. That seems safer and offers the option later to go through and delete 
 any actual duplicates or bad photos we don't want to keep.
 
+
+## Dates 
+
+The images and videos I am interested in are (possibly multiply redundant) backups that have been copied around a bit. The creation 
+or modified date may not be correct. With this in mind, I am trying to more accurately establish dates for each file and falling 
+back to other methods in order if available. 
+
+* EXIF DateTimeOriginal where supported
+* macOS birth time (st_birthtime) if available
+* filesystem modified time (st_mtime)
+
+
+## Duplication
+
+As I mentioned, I am expecting some images to already exist on the NAS and the backups to be multiply redundant so I first index 
+all the files on the NAS using SHA-256 and store that indexing in a local SQLite database to avoid re-hashing SMB/NAS files each run
+
+
 ## Pre-requisites
 
 I am using the [Pillow](https://pillow.readthedocs.io/en/stable/index.html) library to extract the EXIF information from 
@@ -24,31 +42,20 @@ the images to more reliably categorise them by year they were taken.
 python3 -m pip install --user pillow
 ```
 
-## Code
+and 
 
+```shell
+python3 -m pip install --user pillow-heif
+```
+
+## Code
 
 ```python 
 #!/usr/bin/env python3
-"""
-Copy still photos (JPG/JPEG/PNG) from a USB backup to a NAS folder organized by year,
-including iPhone Live Photos by also copying paired .MOV files (same folder, same stem).
-
-Features:
-- Hybrid date fallback:
-    1) EXIF DateTimeOriginal for JPG/JPEG (best for camera photos)
-    2) macOS birth time (st_birthtime) if available
-    3) filesystem modified time (st_mtime)
-- Optional filtering by "source" folder tokens (e.g., "My Camera", "Laptop 5", "Tablet")
-- De-dupe by SHA-256
-- Destination de-dupe index caching in local SQLite to avoid re-hashing SMB/NAS files each run
-- Progress output (Option A) while building destination de-dupe index
-- Dry-run mode
-"""
 
 import argparse
 import hashlib
 import logging
-import os
 import re
 import shutil
 import sqlite3
@@ -59,13 +66,29 @@ from pathlib import Path
 
 from PIL import Image, ExifTags
 
-# ---------- What to collect ----------
-STILL_EXTS = {".jpg", ".jpeg", ".png"}   # Still images to collect
-LIVE_VIDEO_EXTS = {".mov"}              # Live Photo companion videos
-ALL_EXTS = STILL_EXTS | LIVE_VIDEO_EXTS
+try:
+    from pillow_heif import register_heif_opener
 
-# EXIF is typically meaningful for these (PNG usually not)
-EXIF_CAPABLE = {".jpg", ".jpeg", ".tif", ".tiff"}
+    register_heif_opener()
+except ImportError:
+    pass
+
+# ---------- What to collect ----------
+STILL_EXTS = {".jpg", ".jpeg", ".png"}
+HEIC_EXTS = {".heic", ".heif"}
+RAW_EXTS = {
+    ".dng", ".cr2", ".cr3", ".nef", ".arw", ".orf", ".raf",
+    ".rw2", ".pef", ".srw", ".raw",
+}
+IMAGE_EXTS = STILL_EXTS | HEIC_EXTS | RAW_EXTS
+VIDEO_EXTS = {".mov", ".mp4", ".mpeg", ".mpg", ".avi"}
+ALL_EXTS = IMAGE_EXTS | VIDEO_EXTS
+
+# Still types that may have a same-stem Live Photo .MOV beside them
+LIVE_PAIR_IMAGE_EXTS = {".jpg", ".jpeg"} | HEIC_EXTS
+
+# EXIF is typically meaningful for these (PNG/AVI/etc. usually not)
+EXIF_CAPABLE = STILL_EXTS | HEIC_EXTS | RAW_EXTS | {".tif", ".tiff"}
 
 # ---------- EXIF helpers ----------
 EXIF_NAME_TO_ID = {v: k for k, v in ExifTags.TAGS.items()}
@@ -113,25 +136,10 @@ def parse_exif_datetime(exif) -> datetime | None:
     return None
 
 
-def get_macos_birthtime(path: Path) -> datetime | None:
-    """
-    macOS-only: filesystem creation time (birth time) if available.
-    """
-    try:
-        st = path.stat()
-        bt = getattr(st, "st_birthtime", None)  # exists on macOS
-        if bt is None:
-            return None
-        return datetime.fromtimestamp(bt)
-    except Exception as e:
-        logging.debug("Birthtime read failed for %s: %s", path, e)
-        return None
-
-
-def photo_datetime_hybrid(path: Path) -> datetime:
+def photo_datetime(path: Path) -> datetime:
     """
     Hybrid fallback order:
-      1) EXIF (JPG/JPEG/TIFF)
+      1) EXIF where supported (images / some RAW)
       2) macOS birth time (creation time)
       3) modified time
     """
@@ -149,47 +157,66 @@ def photo_datetime_hybrid(path: Path) -> datetime:
         except Exception as e:
             logging.debug("EXIF read failed for %s: %s", path, e)
 
-    # 2) macOS birth time
+    st = path.stat()
     if sys.platform == "darwin":
-        bt = get_macos_birthtime(path)
-        if bt:
-            return bt
+        bt = getattr(st, "st_birthtime", None)
+        if bt is not None:
+            return datetime.fromtimestamp(bt)
 
-    # 3) modified time
-    return datetime.fromtimestamp(path.stat().st_mtime)
+    return datetime.fromtimestamp(st.st_mtime)
 
 
 # ---------- Filtering by source tokens ----------
-def normalize_sources(sources: list[str]) -> list[str]:
-    return [s.strip().lower() for s in sources if s.strip()]
+def compile_source_filters(sources: list[str]) -> tuple[list[str], list[re.Pattern[str]]]:
+    """
+    Parse --source-name tokens once: plain substrings (lowercased) or /regex/ patterns.
+    """
+    substrings: list[str] = []
+    patterns: list[re.Pattern[str]] = []
+    for raw in sources:
+        s = raw.strip()
+        if not s:
+            continue
+        if s.startswith("/") and s.endswith("/") and len(s) > 2:
+            try:
+                patterns.append(re.compile(s[1:-1], re.IGNORECASE))
+            except re.error as e:
+                raise SystemExit(f"Invalid --source-name regex {raw!r}: {e}") from e
+        else:
+            substrings.append(s.lower())
+    return substrings, patterns
 
 
-def matches_sources(path: Path, sources: list[str]) -> bool:
-    """
-    If sources provided, require the file path contains at least one token.
-    Tokens can be regex if wrapped /.../ (case-insensitive).
-    """
-    if not sources:
+def matches_sources(
+    path: Path,
+    substrings: list[str],
+    patterns: list[re.Pattern[str]],
+) -> bool:
+    """Require the file path to match at least one substring or compiled regex."""
+    if not substrings and not patterns:
         return True
 
-    p_str = str(path).lower()
-    for s in sources:
-        if s.startswith("/") and s.endswith("/") and len(s) > 2:
-            rx = s[1:-1]
-            if re.search(rx, str(path), flags=re.IGNORECASE):
-                return True
-        else:
-            if s in p_str:
-                return True
+    p_lower = str(path).lower()
+    p_str = str(path)
+    for token in substrings:
+        if token in p_lower:
+            return True
+    for pat in patterns:
+        if pat.search(p_str):
+            return True
     return False
 
 
 # ---------- File discovery ----------
-def iter_files(root: Path, sources: list[str]) -> list[Path]:
+def iter_files(
+    root: Path,
+    substrings: list[str],
+    patterns: list[re.Pattern[str]],
+) -> list[Path]:
     out: list[Path] = []
     for p in root.rglob("*"):
         if p.is_file() and p.suffix.lower() in ALL_EXTS:
-            if matches_sources(p, sources):
+            if matches_sources(p, substrings, patterns):
                 out.append(p)
     return out
 
@@ -197,13 +224,23 @@ def iter_files(root: Path, sources: list[str]) -> list[Path]:
 # ---------- Live Photo pairing ----------
 def find_live_companion_mov(still_path: Path) -> Path | None:
     """
-    For IMG_1234.JPG, look for IMG_1234.MOV/.mov in the same folder.
+    For IMG_1234.JPG / IMG_1234.HEIC, look for IMG_1234.MOV/.mov in the same folder.
     """
     for ext in (".MOV", ".mov"):
         candidate = still_path.with_suffix(ext)
         if candidate.exists():
             return candidate
     return None
+
+
+def is_live_photo_companion(video_path: Path) -> bool:
+    """True if this .mov is the video half of a Live Photo (same stem as a still/HEIC)."""
+    if video_path.suffix.lower() != ".mov":
+        return False
+    for ext in LIVE_PAIR_IMAGE_EXTS:
+        if video_path.with_suffix(ext).exists():
+            return True
+    return False
 
 
 # ---------- Destination name collision handling ----------
@@ -430,10 +467,54 @@ def copy_one(src: Path, dest_dir: Path, dedupe_index: set[str], dry_run: bool) -
     return True
 
 
+def process_file(
+    path: Path,
+    dest_root: Path,
+    dedupe_index: set[str],
+    dry_run: bool,
+) -> tuple[bool, int]:
+    """
+    Copy path into dest_root/YYYY/. Returns (copied, paired_mov_copied_count).
+    """
+    dt = photo_datetime(path)
+    year_dir = dest_root / str(dt.year)
+
+    copied = copy_one(path, year_dir, dedupe_index, dry_run)
+    paired_mov = 0
+    if path.suffix.lower() in LIVE_PAIR_IMAGE_EXTS:
+        mov = find_live_companion_mov(path)
+        if mov and copy_one(mov, year_dir, dedupe_index, dry_run):
+            paired_mov = 1
+    return copied, paired_mov
+
+
+def copy_media_batch(
+    paths: list[Path],
+    dest_root: Path,
+    dedupe_index: set[str],
+    dry_run: bool,
+) -> tuple[int, int, int]:
+    """Process paths; returns (copied, skipped, paired_mov_copied)."""
+    copied = 0
+    skipped = 0
+    paired_mov = 0
+    for p in paths:
+        try:
+            was_copied, paired = process_file(p, dest_root, dedupe_index, dry_run)
+            if was_copied:
+                copied += 1
+            else:
+                skipped += 1
+            paired_mov += paired
+        except Exception as e:
+            logging.error("Failed processing %s: %s", p, e)
+    return copied, skipped, paired_mov
+
+
 # ---------- Main ----------
 def main():
     ap = argparse.ArgumentParser(
-        description="Copy photos from USB to NAS by year, include iPhone Live Photo MOVs, with SMB hash caching."
+        description="Copy photos/videos from USB to NAS by year (JPG/HEIC/RAW/MP4/etc.), with SMB hash caching."
     )
     ap.add_argument("--source", required=True, help="USB root folder, e.g. /Volumes/USB_DRIVE")
     ap.add_argument("--dest", required=True, help="NAS destination root, e.g. /Volumes/VolumeXX/photo")
@@ -473,12 +554,16 @@ def main():
     if not dest_root.exists():
         raise SystemExit(f"Destination not found (is NAS mounted?): {dest_root}")
 
-    sources = normalize_sources(args.source_name)
+    substrings, patterns = compile_source_filters(args.source_name)
 
     logging.info("Source root: %s", source_root)
     logging.info("Dest root:   %s", dest_root)
-    if sources:
-        logging.info("Including only paths matching: %s", sources)
+    if substrings or patterns:
+        logging.info(
+            "Including only paths matching substrings=%s regex=%s",
+            substrings,
+            [p.pattern for p in patterns],
+        )
     else:
         logging.info("No source-name filters set; scanning all matching files under source.")
 
@@ -502,37 +587,24 @@ def main():
         logging.warning("Skipping destination dedupe index. Dedupe will only work within this run.")
 
     # Scan source
-    candidates = iter_files(source_root, sources)
-    stills = [p for p in candidates if p.suffix.lower() in STILL_EXTS]
-    logging.info("Found %d still candidates (JPG/JPEG/PNG)", len(stills))
+    candidates = iter_files(source_root, substrings, patterns)
+    images = [p for p in candidates if p.suffix.lower() in IMAGE_EXTS]
+    videos = [
+        p for p in candidates
+        if p.suffix.lower() in VIDEO_EXTS and not is_live_photo_companion(p)
+    ]
+    logging.info("Found %d image candidates, %d video candidates", len(images), len(videos))
 
-    copied = 0
-    skipped = 0
-    paired_mov_copied = 0
-
-    for p in sorted(stills):
-        try:
-            dt = photo_datetime_hybrid(p)
-            year_dir = dest_root / str(dt.year)
-
-            if copy_one(p, year_dir, dedupe_index, args.dry_run):
-                copied += 1
-            else:
-                skipped += 1
-
-            # Live Photo pairing: if JPG/JPEG, copy paired MOV into same year folder
-            if p.suffix.lower() in {".jpg", ".jpeg"}:
-                mov = find_live_companion_mov(p)
-                if mov:
-                    if copy_one(mov, year_dir, dedupe_index, args.dry_run):
-                        paired_mov_copied += 1
-
-        except Exception as e:
-            logging.error("Failed processing %s: %s", p, e)
+    copied_images, skipped_images, paired_mov_copied = copy_media_batch(
+        images, dest_root, dedupe_index, args.dry_run,
+    )
+    copied_videos, skipped_videos, _ = copy_media_batch(
+        videos, dest_root, dedupe_index, args.dry_run,
+    )
 
     logging.info(
-        "Done. Copied stills=%d, Skipped stills=%d, Paired MOVs copied=%d",
-        copied, skipped, paired_mov_copied
+        "Done. Images copied=%d skipped=%d | Videos copied=%d skipped=%d | Paired MOVs=%d",
+        copied_images, skipped_images, copied_videos, skipped_videos, paired_mov_copied,
     )
 
 
