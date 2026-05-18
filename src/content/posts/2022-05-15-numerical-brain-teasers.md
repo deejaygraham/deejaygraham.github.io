@@ -3,7 +3,8 @@ title: Numerical Brain Teasers
 tags: [code, books, pragprog]
 ---
 
-I was given the chance to have advance access to Erica Sadun's book "Numerical Brain Teasers" for technical review. Here are my thoughts on the early edition.
+I was given the chance to have advance access to [Erica Sadun's book "Numerical Brain Teasers"](https://pragprog.com/titles/esbrain/numerical-brain-teasers/)
+for technical review. Here are my thoughts on the early edition.
 
 In general I didn’t find any of the puzzles were incorrect. A few of them totally stumped me but I think that was more that I didn’t find the type of 
 puzzle interesting and after a working day (maybe the time I would reach for a book like this) my brain couldn’t cope with the extra mental power needed. 
