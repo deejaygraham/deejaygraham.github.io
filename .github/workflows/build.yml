@@ -40,10 +40,7 @@ jobs:
           npm run lintoutput
 
       - name: Upload site artifact for tests/deploy
-        uses: actions/upload-artifact@v7
-        with:
-          name: site-build
-          path: './_site'
+        uses: ./.github/actions/upload-site-artifact
 
   test:
     runs-on: ubuntu-latest
