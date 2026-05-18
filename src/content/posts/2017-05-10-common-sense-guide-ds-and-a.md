@@ -1,6 +1,6 @@
 ---
 title: A Common-Sense Guide to Data Structures and Algorithms
-tags: [code, books]
+tags: [code, books, pragprog]
 ---
 
 ![cover](/assets/img/posts/common-sense-guide-ds-and-a/cover.png)
