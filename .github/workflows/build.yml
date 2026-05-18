@@ -35,9 +35,8 @@ jobs:
         run: |
           npm run build
 
-      - name: Lint
-        run: |
-          npm run lintoutput
+      - name: Validate site output
+        uses: ./.github/actions/validate-site-output
 
       - name: Upload site artifact for tests/deploy
         uses: ./.github/actions/upload-site-artifact
