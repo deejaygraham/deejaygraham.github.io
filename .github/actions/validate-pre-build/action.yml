@@ -1,0 +1,9 @@
+name: Validate pre-build
+description: Lint source, content, and Eleventy customizations; run unit tests before the site is built.
+
+runs:
+  using: composite
+  steps:
+    - name: Validate pre-build
+      run: npm run validate:pre
+      shell: bash
