@@ -5,6 +5,7 @@ import pluginJs from "@eslint/js";
 export default [
   {
     ignores: [
+      "**/node_modules/**",
       "src/_includes/code/**",
       "src/assets/js/elasticlunr.min.js",
       "src/assets/js/p5.min.js",
