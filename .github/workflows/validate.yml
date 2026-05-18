@@ -7,7 +7,6 @@ on:
     paths-ignore:
       - '.gitignore'
       - '_drafts/**'
-      - 'tests/**'
       
   workflow_dispatch:
 
