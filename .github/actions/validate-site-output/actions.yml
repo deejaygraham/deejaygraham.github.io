@@ -1,0 +1,9 @@
+name: Validate site output
+description: Lint generated JavaScript under _site after build, before Playwright and deployment.
+
+runs:
+  using: composite
+  steps:
+    - name: Validate site output
+      run: npm run validate:post
+      shell: bash
