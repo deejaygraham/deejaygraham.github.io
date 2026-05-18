@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
-    "ava": "^6.1.2",
+    "ava": "^8.0.1",
     "bulma": "^1.0.4",
     "elasticlunr": "^0.9.5",
     "prettier": "^3.8.3",
