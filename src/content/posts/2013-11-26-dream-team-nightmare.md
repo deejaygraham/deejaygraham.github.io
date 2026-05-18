@@ -1,6 +1,6 @@
 ---
 title: The Dream Team Nightmare by Portia Tung
-tags: [agile, books]
+tags: [agile, books, pragprog]
 hero: agile
 ---
 
