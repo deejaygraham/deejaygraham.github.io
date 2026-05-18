@@ -1,11 +1,12 @@
 ---
 title: A Common-Sense Guide to Data Structures and Algorithms 2nd Edition
-tags: [code, books]
+tags: [code, books, pragprog]
 ---
 
 ![cover](/assets/img/posts/common-sense-guide-ds-and-a-2nd/cover.png)
 
-It's been 2-and-a-bit years since the first edition of this book and my opinion of it hasn't dimmed in that time so I was excited to get an email from Pragmatic Programmers with the updates for the 2nd Edition.
+It's been 2-and-a-bit years since the first edition of this book and my opinion of it hasn't dimmed in that time so I was excited to get an email from Pragmatic Programmers with the updates for the 
+[2nd Edition](https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/).
 
 I found the code examples easy to follow but did find it a little frustrating that they cycled between languages. I know ruby, python and javascript so it didn’t hurt my understanding but I wonder if some junior devs might find it harder to get the points if they were only familiar with one language (and there seems to be a slight bias towards JavaScript?) ? I don’t know a good way out of this except to offer multiple language examples as downloads if there is enough demand? Most of the examples aren’t that complicated but I know a few junior devs who would like to have the code so they could run it for themselves to see what how it worked and would perhaps struggle translating from one language to another. In quite a few places there are call outs for which language an example is shown in but in many others the language isn’t mentioned and sometimes it can be a little bit difficult to pick out the sense of the function trying to decide if it’s ruby or python, python or javascript.
 
