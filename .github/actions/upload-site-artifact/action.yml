@@ -1,0 +1,19 @@
+name: Upload site artifact
+description: Upload the Eleventy _site output as a workflow artifact for Playwright and deploy jobs.
+
+inputs:
+  artifact_name:
+    description: Artifact name used when downloading in later jobs.
+    default: site-build
+  site_path:
+    description: Built site directory relative to the workspace root.
+    default: ./_site
+
+runs:
+  using: composite
+  steps:
+    - name: Upload site artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.artifact_name }}
+        path: ${{ inputs.site_path }}
