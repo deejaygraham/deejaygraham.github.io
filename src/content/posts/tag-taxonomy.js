@@ -53,6 +53,7 @@ export const allowedTags = new Set([
   "politics",
   "posts",
   "powershell",
+  "pragprog",
   "presentations",
   "processing",
   "psychology",
