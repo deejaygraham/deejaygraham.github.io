@@ -1,11 +1,11 @@
 {
   "type": "module",
   "scripts": {
-    "new-post": "node scripts/new-post.mjs",
     "sass": "sass --style=compressed --load-path=node_modules src/assets/sass/site.scss _site/css/site.css",
     "build:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js",
     "watch:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js --watch",
     "build:sw": "node scripts/build-service-worker.mjs",
+    "new-post": "node scripts/new-post.mjs",
     "build": "npm run sass && npm run build:js && eleventy",
     "start": "npm-run-all --parallel watch:js start:11ty",
     "start:11ty": "npx eleventy --serve",
@@ -23,11 +23,9 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
-    "@axe-core/playwright": "^4.10.1",
     "ava": "^6.1.2",
     "bulma": "^1.0.0",
     "elasticlunr": "^0.9.5",
-    "playwright": "^1.56.1",
     "prettier": "^3.2.5",
     "sharp": "^0.33.5",
     "shiki": "^3.2.2"
@@ -35,6 +33,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@axe-core/playwright": "^4.10.1",
     "@eslint/js": "^9.15.0",
     "@playwright/test": "^1.57.0",
     "@types/node": "^22.13.1",
