@@ -9,5 +9,4 @@ src/**/.gitattributes
 src/content/posts/*.template.md
 src/content/google*.html
 src/assets/social/*.*
-cypress/
 talks/
