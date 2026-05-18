@@ -1,7 +1,6 @@
 name: A11y Tests
 on:
   workflow_dispatch:
-    branches: [ main ]
     
 jobs:
   test:
