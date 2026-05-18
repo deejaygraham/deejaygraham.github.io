@@ -2,6 +2,37 @@
 import { defineConfig, devices } from '@playwright/test';
 
 const skipLiveTests = process.env.PLAYWRIGHT_SKIP_LIVE === '1';
+const isCi = !!process.env.CI;
+
+/** @type {import('@playwright/test').Project[]} */
+const projects = [
+  {
+    name: 'chromium',
+    use: {
+      ...devices['Desktop Chrome'],
+      contextOptions: {
+        // chromium-specific permissions
+        permissions: ['clipboard-read', 'clipboard-write'],
+      },
+    },
+  },
+  {
+    name: 'firefox',
+    use: {
+      ...devices['Desktop Firefox'],
+      launchOptions: {
+        firefoxUserPrefs: {
+          'dom.events.asyncClipboard.readText': true,
+          'dom.events.testing.asyncClipboard': true,
+        },
+      },
+    },
+  },
+  {
+    name: 'webkit',
+    use: { ...devices['Desktop Safari'] },
+  },
+];
 
 /**
  * @see https://playwright.dev/docs/test-configuration
@@ -31,35 +62,6 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
 
-  /* Configure projects for major browsers */
-  projects: [
-    {
-      name: 'chromium',
-      use: { 
-        ...devices['Desktop Chrome'],
-        contextOptions: {
-          // chromium-specific permissions
-          permissions: ['clipboard-read', 'clipboard-write'],
-        },
-      },
-    },
-
-    {
-      name: 'firefox',
-      use: { 
-        ...devices['Desktop Firefox'],
-        launchOptions: {
-          firefoxUserPrefs: {
-            'dom.events.asyncClipboard.readText': true,
-            'dom.events.testing.asyncClipboard': true,
-          },
-        }
-      },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
-  ],
+  /* CI runs Chromium only; local runs use all browsers */
+  projects: isCi ? projects.filter((project) => project.name === 'chromium') : projects,
 });
