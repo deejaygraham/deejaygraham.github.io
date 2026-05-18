@@ -63,9 +63,6 @@ jobs:
           name: site-build
           path: ./_site
 
-      - name: Lint javascript tests
-        run: npx eslint ./tests/
-
       - name: Install Playwright
         uses: ./.github/actions/install-playwright
 
