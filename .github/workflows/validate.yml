@@ -1,37 +1,25 @@
+# Pre-build validation only — source, markdown, posts/tags, Playwright test sources, and 11ty unit tests.
+# Built _site output is validated in the Deploy workflow after `npm run build`.
+
 name: Validate
 
 on:
   push:
-    branches: 
+    branches:
       - main
     paths-ignore:
       - '.gitignore'
       - '_drafts/**'
-      
+
   workflow_dispatch:
 
 jobs:
-  validate_code:
+  pre_build:
     runs-on: ubuntu-latest
-      
+
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v6
-        
       - name: Setup Node CI
         uses: ./.github/actions/setup-node-ci
 
-      - name: Lint javascript
-        run: npx eslint . --max-warnings=0 
-
-      - name: Lint markdown
-        run: npm run mdlint
-
-      - name: Lint post tags
-        run: npm run lint:tags
-
-      - name: Lint post frontmatter and content
-        run: npm run lint:posts
-        
-      - name: Run unit tests
-        run: npm run unit-test
+      - name: Validate pre-build
+        uses: ./.github/actions/validate-pre-build
