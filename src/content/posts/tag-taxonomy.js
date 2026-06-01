@@ -73,7 +73,7 @@ export const allowedTags = new Set([
   "tdd",
   "tfs",
   "video",
-  "wodhouse", 
+  "wodehouse", 
   "wtc",
   "xp",
 ]);
