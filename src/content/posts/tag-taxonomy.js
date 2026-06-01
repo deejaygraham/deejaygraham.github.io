@@ -63,6 +63,7 @@ export const allowedTags = new Set([
   "refactoring",
   "ruby",
   "scratch",
+  "shakespeare",
   "signs",
   "sketchnotes",
   "software",
@@ -72,6 +73,7 @@ export const allowedTags = new Set([
   "tdd",
   "tfs",
   "video",
+  "wodhouse", 
   "wtc",
   "xp",
 ]);
