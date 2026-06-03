@@ -1,6 +1,6 @@
 ---
 title: Trigger Github Workflow
-tags: [ci, github]
+tags: [ci, git, github]
 ---
 
 Normally running a github workflow happens either automatically as a result of a commit or PR merge or as a manual invokation if dispatch is configured for that 
