@@ -1,6 +1,6 @@
 ---
 title: Git Happens
-tags: [git, presentations]
+tags: [git, github, presentations]
 ---
 
 Jessica Kerr on how Git works and how it is different from SVN.
