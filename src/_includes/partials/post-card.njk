@@ -2,6 +2,9 @@
 <div class="column is-4">
   <div class="card large is-shadowless">	
   	<div class="card-content">
+    {% if tags %}
+      <p class="mb-0">{%- for tag in tags -%}{{ tag }}{% if not loop.last %} | {% endif %}{%- endfor -%}</p>
+    {% endif %}
       <h2 class="title"><a href="{{ url }}">{{ title }}</a></h2>
       {% if subtitle %}
       <p class="subtitle is-pulled-left">{{ subtitle }}</p>
@@ -12,14 +15,6 @@
       {%- if date -%}
       <p class="is-pulled-left"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
       {%- endif -%}
-      {% if tags %}
-      <p class="is-pulled-right">
-      {%- for tag in tags -%}
-        {{ tag }}
-        {% if not loop.last %} | {% endif %}
-      {%- endfor -%}
-      </p>
-    {% endif %}
     </div>
   </div>
 </div>  
