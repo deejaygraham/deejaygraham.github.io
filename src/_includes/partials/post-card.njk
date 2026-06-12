@@ -6,7 +6,7 @@
     {% if tags %}
       <p class="mb-0">{%- for tag in tags -%}{{ tag }}{% if not loop.last %} | {% endif %}{%- endfor -%}</p>
     {% endif %}
-      <h2 class="title"><a href="{{ url }}">{{ title }}</a></h2>
+      <h2 class="title mt-0"><a href="{{ url }}">{{ title }}</a></h2>
       {% if subtitle %}
       <p class="subtitle is-pulled-left">{{ subtitle }}</p>
       {% endif %}
