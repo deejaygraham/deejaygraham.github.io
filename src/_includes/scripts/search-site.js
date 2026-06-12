@@ -63,14 +63,16 @@ const displayResults = (searchTerm, results) => {
         });
     } else {
         let message = searchTerm 
-            ? `Unable to find any posts for &quot;${searchTerm}&quot;`
+            ? `Unable to find any posts for "${searchTerm}"`
             : 'Type something into the search box above'
     
         if (searchTerm.length <= 4) {
             message += ' (try typing more characters)';
         }
 
-        container.innerHTML = `<p>${message}.</p>`;
+        const paragraph = document.createElement("p");
+        paragraph.textContent = `${message}.`;
+        container.appendChild(paragraph);
     }
 };
 
