@@ -80,19 +80,21 @@ def get_file_hash(filepath, hash_algo='md5', chunk_size=8192):
 
 def find_duplicates_by_name(root_path):
     """Find files with same name (case-insensitive)"""
-    name_map = defaultdict(list)
+    print("Finding duplicates by name...")
+    file_map = defaultdict(list)
     
     for root, dirs, files in os.walk(root_path):
         for file in files:
             filepath = os.path.join(root, file)
             name_key = file.lower()  # Case-insensitive
-            name_map[name_key].append(filepath)
+            file_map[name_key].append(filepath)
     
     # Return only files that have duplicates
-    return {name: paths for name, paths in name_map.items() if len(paths) > 1}
+    return {name: paths for name, paths in file_map.items() if len(paths) > 1}
 
 def find_duplicates_by_size_and_name(root_path):
     """Find files with same name and size"""
+    print("Finding duplicates by size and name...")
     file_map = defaultdict(list)
     
     for root, dirs, files in os.walk(root_path):
@@ -110,7 +112,7 @@ def find_duplicates_by_size_and_name(root_path):
 def find_duplicates_by_hash(root_path, hash_algo='md5'):
     """Find files with identical content (by hash)"""
     print("Calculating file hashes... This may take a while for large files.")
-    hash_map = defaultdict(list)
+    file_map = defaultdict(list)
     processed = 0
     
     for root, dirs, files in os.walk(root_path):
@@ -119,41 +121,41 @@ def find_duplicates_by_hash(root_path, hash_algo='md5'):
             file_hash = get_file_hash(filepath, hash_algo)
             
             if file_hash:
-                hash_map[file_hash].append(filepath)
+                file_map[file_hash].append(filepath)
                 processed += 1
                 if processed % 100 == 0:
                     print(f"Processed {processed} files...")
     
-    return {hash_val: paths for hash_val, paths in hash_map.items() if len(paths) > 1}
+    return {hash_val: paths for hash_val, paths in file_map.items() if len(paths) > 1}
 
 def find_smart_duplicates(root_path):
     """Smart duplicate detection: same size first, then hash only those"""
     print("Phase 1: Grouping files by size...")
-    size_map = defaultdict(list)
+    file_map = defaultdict(list)
     
     for root, dirs, files in os.walk(root_path):
         for file in files:
             filepath = os.path.join(root, file)
             try:
                 size = os.path.getsize(filepath)
-                size_map[size].append(filepath)
+                file_map[size].append(filepath)
             except OSError as e:
                 print(f"Error accessing {filepath}: {e}")
     
     # Only hash files that have the same size
-    potential_duplicates = {size: paths for size, paths in size_map.items() if len(paths) > 1}
+    potential_duplicates = {size: paths for size, paths in file_map.items() if len(paths) > 1}
     
     print("Phase 2: Calculating hashes for potential duplicates...")
-    hash_map = defaultdict(list)
+    file_map = defaultdict(list)
     
     for size, paths in potential_duplicates.items():
         print(f"Checking {len(paths)} files of size {size} bytes...")
         for filepath in paths:
             file_hash = get_file_hash(filepath)
             if file_hash:
-                hash_map[file_hash].append(filepath)
+                file_map[file_hash].append(filepath)
     
-    return {hash_val: paths for hash_val, paths in hash_map.items() if len(paths) > 1}
+    return {hash_val: paths for hash_val, paths in file_map.items() if len(paths) > 1}
 
 def display_results(duplicates, title):
     """Display duplicate results in a readable format"""
