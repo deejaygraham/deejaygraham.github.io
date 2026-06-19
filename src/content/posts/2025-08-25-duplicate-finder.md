@@ -29,26 +29,26 @@ continue working even if some files are locked, corrupt or inaccessible.
 
 The default detection method is what I expect to be the most efficient, it checks file size first, then hashes only potential duplicates
 
-```
+```bash
 python duplicate_finder.py /path/to/your/drive 
 ```
 
 I added name only checking if things got too slow but expected there to be many false hits
 
-```
+```bash
 python duplicate_finder.py /path/to/your/drive --method name
 ```
 
 Identifying by name and size should be more accurate and maybe the best compromise depending on the conditions.
 
-```
+```bash
 python duplicate_finder.py /path/to/your/drive --method size-name
 ```
 
 Fully identifying by hash is going to be the most accurate but also the slowest so I save this for any drives I 
 discover have low content count or are super fast
 
-```
+```bash
 python duplicate_finder.py /path/to/your/drive --method hash --hash-algo sha256
 ```
 
