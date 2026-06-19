@@ -1,6 +1,6 @@
 ---
 title: Finding Duplicates
-tags: [code, microbit, python]
+tags: [code, python]
 ---
 
 I have several spare hard drives which contain multiple back up copies of the same files - pdfs, photos, etc. - in different nested 
