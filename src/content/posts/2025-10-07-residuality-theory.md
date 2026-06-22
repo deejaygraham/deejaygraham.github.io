@@ -1,6 +1,6 @@
 ---
 title: Residuality Theory
-tags: [video, presentations]
+tags: [architecture, presentations]
 ---
 
 Barry O'Reilly on structured software and the Pulsating Ball of Madness
