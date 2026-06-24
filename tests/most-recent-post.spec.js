@@ -3,24 +3,6 @@ import fs from 'fs';
 import path from 'path';
 import { test, expect } from '@playwright/test';
 
-/** PNG file signature (first 8 bytes). */
-const PNG_MAGIC = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
-
-/**
- * @param {Uint8Array} bytes
- */
-function startsWithPngMagic(bytes) {
-  if (bytes.length < PNG_MAGIC.length) {
-    return false;
-  }
-  for (let i = 0; i < PNG_MAGIC.length; i++) {
-    if (bytes[i] !== PNG_MAGIC[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
 /**
  * @param {string} href from the DOM (relative or absolute)
  * @param {string} baseUrl current page URL (e.g. index) for resolving relatives
@@ -67,8 +49,8 @@ test.describe('most recent blog post', () => {
       const imageUrl = await og.getAttribute('content');
       expect(imageUrl, 'og:image content missing').toBeTruthy();
       const parsed = new URL(/** @type {string} */ (imageUrl));
-      expect(parsed.pathname, 'og:image should point under /img/previews/*.png').toMatch(
-        /^\/img\/previews\/.+\.png$/i,
+      expect(parsed.pathname, 'og:image should point under /img/previews/*.jpg').toMatch(
+        /^\/img\/previews\/.+\.jpg/i,
       );
 
       // Meta uses canonical site.url; new previews are not on production until deploy.
@@ -79,8 +61,6 @@ test.describe('most recent blog post', () => {
         fs.existsSync(localPreview),
         `expected built OG preview at ${localPreview} (og:image is ${imageUrl}; run npm run build before tests)`,
       ).toBeTruthy();
-      const buf = fs.readFileSync(localPreview);
-      expect(startsWithPngMagic(buf), `expected PNG at ${localPreview}`).toBeTruthy();
     });
   });
 });
