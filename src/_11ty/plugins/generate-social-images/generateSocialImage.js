@@ -62,14 +62,6 @@ export default async function (
 	
   const start_y_middle = start_y + (((max_lines - title_lines.length) * line_height) / 3);
 
-  console.log({
-    title,
-    font_size,
-    line_height,
-    title_lines,
-    start_y_middle,
-  });
-	
   const svgTitle = title_lines.reduce((paragraph, line, i) => {
     line = sanitizeHTML(line);
     return paragraph + `<text x="${start_x}" y="${start_y_middle + (i * line_height)}" fill="${titleColour}" font-size="${font_size}px" font-weight="${font_weight}">${line}</text>`;
