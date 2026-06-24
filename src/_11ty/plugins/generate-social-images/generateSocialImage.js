@@ -32,7 +32,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
   const rightPadding = 60;
   const maxTextWidth = graphicWidth - start_x - rightPadding;
 	
-  const { fontSize, lineHeight, lines: titleLines } = getAdaptiveTitleLayout(
+  const { font_size, line_height, lines: title_lines } = getAdaptiveTitleLayout(
     title,
     splitLongLine,
     {
