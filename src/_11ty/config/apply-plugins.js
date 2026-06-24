@@ -14,10 +14,11 @@ export default function applyPlugins(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["jpg", "webp"],
-    widths["auto"],
+    widths: [320, 640, 960, 1280, 1600],
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
+      sizes: "(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1280px",
     },
   });
 }
