@@ -1,5 +1,6 @@
 name: CI + Deploy
 
+
 on:
   push:
     branches: [main]
@@ -7,6 +8,10 @@ on:
       - '.gitignore'
       - '_drafts/**'
   pull_request:
+    paths-ignore:
+      - '.gitignore'
+      - '_drafts/**'
+  workflow_dispatch:
 
 permissions:
   contents: read
