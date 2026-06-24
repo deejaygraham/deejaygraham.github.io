@@ -4,12 +4,25 @@ import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
 import getAdaptiveTitleLayout from "./getAdaptiveTitleLayout.js";
 
-export default async function (imageName, title, postDate, siteName, targetDir, watermark) {
+export default async function (
+	imageName, 
+	title, 
+	postDate, 
+	siteName, 
+	targetDir, 
+	watermark, 
+	options = {}
+) {
+  const {
+	  debugSvg = false,
+	  debugSvgDir = targetDir,
+  } = options;
 
   const safeFileName = `${imageName}`.replace(/[^a-z0-9-_]/gi, "-").toLowerCase();
   const fileName = `${safeFileName}.jpg`;
   const outputPath = `${targetDir}/${fileName}`;
-
+  const svgOutputPath = path.join(debugSvgDir, svgFileName);
+	
   if (fs.existsSync(outputPath)) {
 	  return `<!-- Already exists ${fileName} -->`;
   }
@@ -52,8 +65,6 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
     line = sanitizeHTML(line);
     return paragraph + `<text x="${start_x}" y="${start_y_middle + (i * line_height)}" fill="${titleColour}" font-size="${font_size}px" font-weight="${font_weight}">${line}</text>`;
   }, '');
-
-
 	
   // const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
   const svgDate = `<text x="${start_x}" y="${start_y_middle - 100}" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
@@ -70,6 +81,13 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
 
   
   try {
+	  
+    if (debugSvg) {
+      fs.mkdirSync(debugSvgDir, { recursive: true });
+      fs.writeFileSync(svgOutputPath, template, "utf8");
+      console.log(`Saved debug SVG: ${svgOutputPath}`);
+    }
+
     // generate the image from the svg        
     const svgBuffer = Buffer.from(template); // eslint-disable-line
 
@@ -87,7 +105,17 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
       .toFile(outputPath);
 
     } catch(err) {
-        console.error("Eleventy generating social images error:", err, { template, fileName, title, siteName});
+	  
+	  // Save the SVG on error even if debugSvg=false
+      try {
+        fs.mkdirSync(debugSvgDir, { recursive: true });
+        fs.writeFileSync(svgOutputPath, template, "utf8");
+        console.error(`Saved failing SVG to: ${svgOutputPath}`);
+      } catch (writeErr) {
+        console.error("Failed to write debug SVG:", writeErr);
+      }
+
+      console.error("Eleventy generating social images error:", err, { template, fileName, title, siteName});
     }
 
     return `<!-- Generated ${fileName} -->`;
