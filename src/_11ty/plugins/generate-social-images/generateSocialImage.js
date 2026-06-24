@@ -36,7 +36,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
     title,
     splitLongLine,
     {
-      maxLines,
+      max_lines,
       maxFontSize: 90,
       minFontSize: 48,
       fontStep: 2,
