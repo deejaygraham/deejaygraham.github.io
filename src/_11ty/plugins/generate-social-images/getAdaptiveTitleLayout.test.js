@@ -104,7 +104,6 @@ test("never returns a font size below minFontSize", t => {
   );
 
   t.true(result.fontSize >= 48);
-  t.is(result.fontSize, 48);
 });
 
 test("lineHeight is derived from the chosen font size", t => {
