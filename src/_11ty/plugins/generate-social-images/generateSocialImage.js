@@ -1,5 +1,6 @@
 import sharp from "sharp";
 import fs from 'fs';
+import path from "path"
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
 import getAdaptiveTitleLayout from "./getAdaptiveTitleLayout.js";
@@ -20,7 +21,7 @@ export default async function (
 
   const safeFileName = `${imageName}`.replace(/[^a-z0-9-_]/gi, "-").toLowerCase();
   const fileName = `${safeFileName}.jpg`;
-  const outputPath = `${targetDir}/${fileName}`;
+  const outputPath = path.join(targetDir, fileName);
   const svgOutputPath = path.join(debugSvgDir, fileName);
 	
   if (fs.existsSync(outputPath)) {
