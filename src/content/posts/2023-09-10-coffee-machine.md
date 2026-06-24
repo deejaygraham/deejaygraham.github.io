@@ -7,6 +7,6 @@ Here's a fun Kevlin Henney from a coffee machine I passed recently where the tem
 main user interface has failed and just displays the markup code rather than friendly welcome screens and buttons to 
 order coffee. 
 
-<img src="/assets/img/posts/coffee-machine/coffee-machine.kpg" alt="Broken Coffee Machine Screen" />
+<img src="/assets/img/posts/coffee-machine/coffee-machine.jpg" alt="Broken Coffee Machine Screen" />
 
 <img src="/assets/img/posts/coffee-machine/coffee-machine-detail.jpg" alt="Coffee Machine Screen Detail" />
