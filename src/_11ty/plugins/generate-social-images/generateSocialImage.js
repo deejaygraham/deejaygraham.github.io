@@ -5,7 +5,7 @@ import sanitizeHTML from "./sanitizeHTML.js";
 
 export default async function (imageName, title, postDate, siteName, targetDir, watermark) {
 
-  const fileName = imageName + '.png';
+  const fileName = imageName + '.jpg';
   const outputPath = `${targetDir}/${fileName}`;
 
   if (fs.existsSync(outputPath)) {
