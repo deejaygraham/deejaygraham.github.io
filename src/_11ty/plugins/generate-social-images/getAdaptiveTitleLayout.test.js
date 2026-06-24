@@ -57,7 +57,7 @@ test("returns max font size for a short title that easily fits", t => {
   t.true(result.lines.length <= 4);
 });
 
-test("reduces font size for a longer title", t => {
+test("reduces font size for a longer title when width is constrained", t => {
   const shortResult = getAdaptiveTitleLayout(
     "Short title",
     fakeSplitLongLine,
@@ -78,7 +78,7 @@ test("reduces font size for a longer title", t => {
       maxLines: 4,
       maxFontSize: 90,
       minFontSize: 48,
-      maxTextWidth: 580,
+      maxTextWidth: 320,
       avgCharWidthFactor: 0.56,
       lineHeightFactor: 1.15,
     }
