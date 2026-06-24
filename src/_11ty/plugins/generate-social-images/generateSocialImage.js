@@ -34,7 +34,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
   }, '');
 
   const graphicWidth = 1200;
-  const graphicHeight = 628;
+  const graphicHeight = 630;
 	
   // const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
   const svgDate = `<text x="${start_x}" y="${start_y_middle - 100}" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
@@ -59,8 +59,15 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
     		input: watermark,
     		gravity: 'northwest',
   	}])
-      .resize(graphicWidth, graphicHeight)
-      .png()
+      .resize(graphicWidth, graphicHeight, {
+		  fit: "cover",
+		  position: "centre",
+	  })
+      .jpg({
+		  quality: 70,
+		  progressive: true,
+		  chromaSubsampling: "4:2:0",
+	  })
       .toFile(outputPath);
 
     } catch(err) {
