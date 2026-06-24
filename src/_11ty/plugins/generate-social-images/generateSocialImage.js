@@ -41,7 +41,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
 
   //  <g style="font-family: 'Consolas', 'Courier New'" >
 	
-  const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewbox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
+  const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewBox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
   	<rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${bgColour}" />
     	<g style="font-family:'sans-serif'">
       ${postDate ? svgDate : ''}
@@ -58,15 +58,12 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
 	.composite([{
     		input: watermark,
     		gravity: 'northwest',
-  	}])
-      .resize(graphicWidth, graphicHeight, {
-		  fit: "cover",
-		  position: "centre",
-	  })
-      .jpg({
-		  quality: 70,
+  	  }])
+      .jpeg({
+		  quality: 65,
 		  progressive: true,
 		  chromaSubsampling: "4:2:0",
+		  mozjpeg: true,
 	  })
       .toFile(outputPath);
 
