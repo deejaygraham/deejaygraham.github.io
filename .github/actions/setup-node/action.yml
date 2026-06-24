@@ -1,0 +1,11 @@
+name: Setup Node
+description: Set up Node.js with npm cache
+
+runs:
+  using: composite
+  steps:
+    - name: Use current Node version
+      uses: actions/setup-node@v6
+      with:
+        node-version: lts/*
+        cache: npm
