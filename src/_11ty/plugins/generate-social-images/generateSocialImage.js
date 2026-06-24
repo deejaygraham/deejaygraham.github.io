@@ -46,7 +46,7 @@ export default async function (
   const rightPadding = 60;
   const maxTextWidth = graphicWidth - start_x - rightPadding;
 	
-  const { font_size, line_height, lines: title_lines } = getAdaptiveTitleLayout(
+  const { fontSize: font_size, lineHeight: line_height, lines: title_lines } = getAdaptiveTitleLayout(
     title,
     splitLongLine,
     {
