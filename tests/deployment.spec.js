@@ -29,8 +29,8 @@ test("contains hero images", async ({ page }) => {
 
 test("contains og social images for blog posts", async ({ page }) => {
   await checkAllResourcesExist(page, [
-    "/img/previews/microbit-portal-theme.png",
-    "/img/previews/microbit-birds2.png",
+    "/img/previews/microbit-portal-theme.jpg",
+    "/img/previews/microbit-birds2.jpg",
   ]);
 });
 
