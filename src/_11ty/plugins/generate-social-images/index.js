@@ -34,7 +34,7 @@ export default function(eleventyConfig, options) {
     }, initDir);
 
 	eleventyConfig.addShortcode("SocialImageName", async(imageName) => {
-		const fileName = imageName + '.png';
+		const fileName = imageName + '.jpg';
 	  	return fileName;
   	});
 	
