@@ -21,7 +21,7 @@ async function searchFilter(collection) {
     const frontMatter = await page.template.read();
 
     if (page.rawInput) {
-      const excerptLength = 400; // chars
+      const excerptLength = 250; // chars
       excerpt = generateExcerpt(page.rawInput, excerptLength);
     }
 
