@@ -21,7 +21,7 @@ export default async function (
   const safeFileName = `${imageName}`.replace(/[^a-z0-9-_]/gi, "-").toLowerCase();
   const fileName = `${safeFileName}.jpg`;
   const outputPath = `${targetDir}/${fileName}`;
-  const svgOutputPath = path.join(debugSvgDir, svgFileName);
+  const svgOutputPath = path.join(debugSvgDir, fileName);
 	
   if (fs.existsSync(outputPath)) {
 	  return `<!-- Already exists ${fileName} -->`;
