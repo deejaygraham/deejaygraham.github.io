@@ -2,30 +2,50 @@ import sharp from "sharp";
 import fs from 'fs';
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
+import getAdaptiveTitleLayout from "./getAdaptiveTitleLayout.js";
 
 export default async function (imageName, title, postDate, siteName, targetDir, watermark) {
 
-  const fileName = imageName + '.jpg';
+  const safeFileName = `${imageName}`.replace(/[^a-z0-9-_]/gi, "-").toLowerCase();
+  const fileName = `${safeFileName}.jpg`;
   const outputPath = `${targetDir}/${fileName}`;
 
   if (fs.existsSync(outputPath)) {
 	  return `<!-- Already exists ${fileName} -->`;
   }
-  
-  const lineBreakAt = 15; // characters
-  const line_length = lineBreakAt;
-  const max_lines = 4;
+
+  const graphicWidth = 1200;
+  const graphicHeight = 630;
+
   const start_x = 550;
   const start_y = 150;
-  const line_height = 120; 
-  const font_size = 90;
+  const max_lines = 4;
+  
   const font_weight = 700;
   const site_font_size = 25;
+	
   const titleColour = 'indianred'; // '#FF6C23'; // 000
   const siteNameColour = "#000"; // 000
   const bgColour = "#FFF"; //"#1D1F1E"; // FFF
 	
-  const title_lines = splitLongLine(title, line_length, max_lines);
+  // Available width from text start to right edge, minus some padding
+  const rightPadding = 60;
+  const maxTextWidth = graphicWidth - start_x - rightPadding;
+	
+  const { fontSize, lineHeight, lines: titleLines } = getAdaptiveTitleLayout(
+    title,
+    splitLongLine,
+    {
+      maxLines,
+      maxFontSize: 90,
+      minFontSize: 48,
+      fontStep: 2,
+      maxTextWidth,
+      avgCharWidthFactor: 0.56,
+      lineHeightFactor: 1.15,
+    }
+  );
+	
   const start_y_middle = start_y + (((max_lines - title_lines.length) * line_height) / 3);
 
   const svgTitle = title_lines.reduce((paragraph, line, i) => {
@@ -33,8 +53,7 @@ export default async function (imageName, title, postDate, siteName, targetDir, 
     return paragraph + `<text x="${start_x}" y="${start_y_middle + (i * line_height)}" fill="${titleColour}" font-size="${font_size}px" font-weight="${font_weight}">${line}</text>`;
   }, '');
 
-  const graphicWidth = 1200;
-  const graphicHeight = 630;
+
 	
   // const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
   const svgDate = `<text x="${start_x}" y="${start_y_middle - 100}" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
