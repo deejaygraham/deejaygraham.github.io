@@ -128,15 +128,15 @@ jobs:
       - name: Install Playwright
         uses: ./.github/actions/install-playwright
 
-      #- name: Run Playwright tests
-      #  uses: ./.github/actions/run-playwright
-      #  with:
-      #    with_local_site: "true"
-     #     site_directory: _site
+      - name: Run Playwright tests
+        uses: ./.github/actions/run-playwright
+        with:
+          with_local_site: "true"
+          site_directory: _site
 
-      #- name: Upload Playwright report
-      #  if: always()
-      #  uses: ./.github/actions/upload-playwright-report
+      - name: Upload Playwright report
+        if: always()
+        uses: ./.github/actions/upload-playwright-report
 
   deploy:
     runs-on: ubuntu-latest
