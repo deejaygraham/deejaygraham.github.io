@@ -26,9 +26,12 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 1
+          
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
 
-      - name: Setup Node CI
-        uses: ./.github/actions/setup-node-ci
+      - name: Install dependencies
+        uses: ./.github/actions/install-dependencies
 
       - name: Validate pre-build
         uses: ./.github/actions/validate-pre-build
@@ -43,8 +46,11 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Setup Node CI
-        uses: ./.github/actions/setup-node-ci
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      - name: Install dependencies
+        uses: ./.github/actions/install-dependencies
 
       - name: Build
         run: npm run build
@@ -66,8 +72,11 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Setup Node CI
-        uses: ./.github/actions/setup-node-ci
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      - name: Install dependencies
+        uses: ./.github/actions/install-dependencies
 
       - name: Download site artifact
         uses: actions/download-artifact@v8
