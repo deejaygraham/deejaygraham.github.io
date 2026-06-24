@@ -86,7 +86,16 @@ jobs:
                 printf "%.2f %s\t%s\n", size, u[i], path;
               }'
           echo "::endgroup::"
-          
+         
+      - name: Enforce _site size budget to 180MB
+        run: |
+          SIZE_MB=$(du -sm _site | cut -f1)
+          echo "_site size: ${SIZE_MB} MB"
+          if [ "$SIZE_MB" -gt 180 ]; then
+            echo "Error: _site exceeds 180 MB"
+            exit 1
+          fi
+ 
       - name: Validate site output
         uses: ./.github/actions/validate-site-output
 
