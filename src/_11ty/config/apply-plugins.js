@@ -13,7 +13,7 @@ export default function applyPlugins(eleventyConfig) {
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
-    formats: ["jpg", "png", "webp"],
+    formats: ["jpg", "webp"],
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
