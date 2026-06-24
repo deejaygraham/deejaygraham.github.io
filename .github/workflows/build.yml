@@ -58,6 +58,35 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Inspect _site size
+        run: |
+          echo "::group::Total _site size"
+          du -sh _site || true
+          echo "::endgroup::"
+
+          echo "::group::Top 30 largest directories under _site"
+          du -h -d 3 _site 2>/dev/null | sort -hr | head -n 30 || true
+          echo "::endgroup::"
+
+          echo "::group::Top 50 largest files under _site"
+          find _site -type f -printf '%s\t%p\n' 2>/dev/null \
+            | sort -nr \
+            | head -n 50 \
+            | awk 'BEGIN {
+                split("B KB MB GB TB", u);
+              }
+              {
+                size=$1;
+                path=$2;
+                i=1;
+                while (size >= 1024 && i < 5) {
+                  size/=1024;
+                  i++;
+                }
+                printf "%.2f %s\t%s\n", size, u[i], path;
+              }'
+          echo "::endgroup::"
+          
       - name: Validate site output
         uses: ./.github/actions/validate-site-output
 
