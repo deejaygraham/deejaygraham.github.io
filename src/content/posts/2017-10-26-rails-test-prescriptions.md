@@ -3,6 +3,8 @@ title: Rails 5 Test Prescriptions
 tags: [code, books, pragprog]
 ---
 
+<img src="/assets/img/posts/rails5-test-prescriptions/rails5-test-prescriptions.jpg" alt="Book Cover" />
+
 Here are my comments on the technical review for [Rails 5 Test Prescriptions](https://pragprog.com/titles/nrtest3/rails-5-test-prescriptions/) 
 by Noel Rappin. I got access to the manuscript in two parts, the first bit was early chapters in July/August and then 
 an update with fixes and additions in September/October. 
