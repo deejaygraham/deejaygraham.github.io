@@ -18,24 +18,22 @@ async function searchFilter(collection) {
       continue;
     }
 
-    const frontMatter = await page.template.read();
-
     if (page.rawInput) {
       const excerptLength = 250; // chars
       excerpt = generateExcerpt(page.rawInput, excerptLength);
     }
 
-    if (frontMatter.data.layout && frontMatter.data.layout === "quotation") {
-      if (frontMatter.data.attribution) {
-        excerpt += " " + frontMatter.data.attribution;
+    if (page.data.layout && page.data.layout === "quotation") {
+      if (page.data.attribution) {
+        excerpt += " " + page.data.attribution;
       }
     }
 
     index.addDoc({
       id: page.url,
-      title: frontMatter.data.title,
+      title: page.data.title,
       excerpt: excerpt,
-      tags: page.data.tags || frontMatter.data.tags,
+      tags: page.data.tags,
     });
   }
 
