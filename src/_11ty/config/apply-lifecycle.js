@@ -1,12 +1,31 @@
+import fs from "fs/promises";
 import * as prettier from "prettier";
-
 import pageContentLinter from "../linters/page-content/index.js";
+import {
+  SOCIAL_PREVIEW_CACHE_DIR,
+  SOCIAL_PREVIEW_SITE_DIR,
+} from "../plugins/generate-social-images/paths.js";
+
+async function copySocialPreviewsToSite() {
+  try {
+    await fs.access(SOCIAL_PREVIEW_CACHE_DIR);
+  } catch {
+    return;
+  }
+
+  await fs.mkdir(SOCIAL_PREVIEW_SITE_DIR, { recursive: true });
+  await fs.cp(SOCIAL_PREVIEW_CACHE_DIR, SOCIAL_PREVIEW_SITE_DIR, { recursive: true, force: true });
+}
 
 export default function applyLifecycle(eleventyConfig, { buildServiceWorker }) {
   eleventyConfig.on("eleventy.before", async () => {
     await buildServiceWorker();
   });
 
+  eleventyConfig.on("eleventy.after", async () => {
+    await copySocialPreviewsToSite();
+  });
+  
   eleventyConfig.addPreprocessor("drafts", "*", (data) => {
     if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
       return false;
