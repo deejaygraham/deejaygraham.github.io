@@ -38,6 +38,6 @@ export default async function checkSocialPreview(page, url) {
   expect(response.ok(), `${url} is not available: ${response.status()}`).toBeTruthy();
   expect(response.headers()["content-type"], `${url} content-type`).toMatch(/image\/jpe?g/i);
 
-  const buffer = Buffer.from(await response.body());
+  const buffer = Buffer.from(await response.body()); // eslint-disable-line
   await expectSocialPreviewBuffer(buffer, url);
 }
