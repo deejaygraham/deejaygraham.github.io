@@ -45,16 +45,19 @@ jobs:
         with:
           path: build-cache/img/previews
           key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}
-          
+          restore-keys: |
+            social-previews-${{ runner.os }}-
+            
       - name: Build
         run: npm run build
 
       - name: Save social preview cache
         if: success()
+        continue-on-error: true
         uses: actions/cache/save@v4
         with:
           path: build-cache/img/previews
-          key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}
+          key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}-${{ github.run_id }}
 
       - name: Upload site artifact
         uses: ./.github/actions/upload-site-artifact
