@@ -40,8 +40,21 @@ jobs:
       - name: Validate pre-build
         uses: ./.github/actions/validate-pre-build
 
+      - name: Restore social preview cache
+        uses: actions/cache/restore@v4
+        with:
+          path: build-cache/img/previews
+          key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}
+          
       - name: Build
         run: npm run build
+
+      - name: Save social preview cache
+        if: success()
+        uses: actions/cache/save@v4
+        with:
+          path: build-cache/img/previews
+          key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}
 
       - name: Upload site artifact
         uses: ./.github/actions/upload-site-artifact
