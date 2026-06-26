@@ -23,7 +23,7 @@ export async function expectSocialPreviewBuffer(buffer, label = "social preview"
  * @param {string} filePath
  */
 export async function expectSocialPreviewFile(filePath) {
-  const buffer = await sharp(filePath).toBuffer();
+  const buffer = await sharp(filePath).toBuffer(); // eslint-disable-line
   await expectSocialPreviewBuffer(buffer, filePath);
 }
 
