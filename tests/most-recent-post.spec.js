@@ -2,6 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import { test, expect } from '@playwright/test';
+import { expectSocialPreviewFile } from './util/check-social-preview.js';
 
 /**
  * @param {string} href from the DOM (relative or absolute)
@@ -61,6 +62,8 @@ test.describe('most recent blog post', () => {
         fs.existsSync(localPreview),
         `expected built OG preview at ${localPreview} (og:image is ${imageUrl}; run npm run build before tests)`,
       ).toBeTruthy();
+
+      await expectSocialPreviewFile(localPreview);
     });
   });
 });
