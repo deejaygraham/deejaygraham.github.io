@@ -43,6 +43,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Upload site artifact
+        uses: ./.github/actions/upload-site-artifact
+        
       - name: Inspect _site size
         run: |
           echo "::group::Total _site size"
