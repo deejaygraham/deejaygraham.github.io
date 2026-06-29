@@ -41,7 +41,7 @@ jobs:
         uses: ./.github/actions/validate-pre-build
 
       - name: Restore social preview cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: build-cache/img/previews
           key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}
@@ -54,7 +54,7 @@ jobs:
       - name: Save social preview cache
         if: success()
         continue-on-error: true
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: build-cache/img/previews
           key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}-${{ github.run_id }}
