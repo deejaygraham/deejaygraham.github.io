@@ -60,9 +60,24 @@
       {% endif %}
 
 <script>
-  function isiOS() {
-    return /iPad|iPhone|iPod/.test(navigator.userAgent);
-  }
+  function isIOS() {
+  const ua = navigator.userAgent;
+  const platform = navigator.platform;
+
+  const iOSPlatforms = [
+    "iPad",
+    "iPhone",
+    "iPod",
+    "iPad Simulator",
+    "iPhone Simulator"
+  ];
+
+  const isIOSPlatform = iOSPlatforms.includes(platform);
+
+  const isIPadOS = ua.includes("Mac") && "ontouchend" in document;
+
+  return isIOSPlatform || isIPadOS;
+}
 
   if (isiOS()) {
     document.getElementById('main').style.display = 'none';
