@@ -1,0 +1,12 @@
+<script>
+  function isIOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  }
+
+  if (isiOS()) {
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('header').style.display = 'none';
+    document.getElementById('footer').style.display = 'none';
+    document.getElementById('ios').style.display = 'block';
+  }
+</script>
