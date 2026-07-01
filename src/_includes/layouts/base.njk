@@ -28,6 +28,8 @@
 	  {% endif %}
   </head>
   <body>
+	<div id="ios" style="display:none;">iOS version</div>
+
     {% block header %}
     {% include "partials/siteheader.njk" %}
     {% endblock %}
@@ -56,6 +58,17 @@
       {% if mermaid %}
     	{% include "partials/mermaid-diagrams.njk" %}
       {% endif %}
+
+<script>
+  function isiOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent);
+  }
+
+  if (isiOS()) {
+    //document.getElementById('default').style.display = 'none';
+    document.getElementById('ios').style.display = 'block';
+  }
+</script>
     {% endblock %}
   </body>  
 </html>
