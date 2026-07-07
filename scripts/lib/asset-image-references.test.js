@@ -27,7 +27,7 @@ Inline \`![image](/assets/img/posts/example/inline.jpg)\` text
   t.false(stripped.includes("inline.jpg"));
 });
 
-test("extractAssetImageReferences finds markdown, html, and frontmatter paths", (t) => {
+test("extractAssetImageReferences finds markdown, html, and sketchnote paths", (t) => {
   const content = `
 ---
 thumbnail: "/assets/img/thumbnails/notebook-420x255.png"
@@ -44,7 +44,20 @@ sketchnote:
     "/assets/img/posts/example/example.jpg",
     "/assets/img/posts/example/inline.html.png",
     "/assets/img/posts/example/screenshot.png",
-    "/assets/img/thumbnails/notebook-420x255.png",
+  ]);
+});
+
+test("extractAssetImageReferences finds thumbnails in javascript data files", (t) => {
+  const content = `
+export default [
+  {
+    thumbnail: "/assets/img/posts/talks/example.png",
+  },
+];
+`;
+
+  t.deepEqual(extractAssetImageReferences(content, "javascript"), [
+    "/assets/img/posts/talks/example.png",
   ]);
 });
 
