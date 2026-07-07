@@ -20,13 +20,6 @@ export default {
             }
             return 'post';
         },
-        thumbnail: (data) => {
-            if (data.thumbnail) {
-                return data.thumbnail;
-            //    return `/img/posts/${data.thumbnail}`;
-            }
-            return `/img/posts/${data.page.fileSlug}/thumbnail-420x255.jpg`;
-        },
         tags: (data) => {
             return normalizeTags(data.tags);
         }
