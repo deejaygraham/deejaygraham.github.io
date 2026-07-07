@@ -43,6 +43,13 @@ export default [
   },
   {
     data: {
+      title: "OMSPA",
+      subtitle: "My port of Peter Coad's companion website for the strategies and patterns handbook"
+    },
+    url: "https://deejaygraham.github.io/omspa/"
+  },
+  {
+    data: {
       title: "GitHub",
       subtitle: "Repositories filled to the brim with unfinished stuff",
     },
