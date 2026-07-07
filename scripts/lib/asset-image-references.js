@@ -3,10 +3,14 @@ import path from "path";
 
 export const ASSET_IMG_URL_PREFIX = "/assets/img/";
 
-const REFERENCE_PATTERNS = [
+const MARKDOWN_REFERENCE_PATTERNS = [
   /!\[[^\]]*\]\((\/assets\/img\/[^)\s"]+)/g,
   /\bsrc=["'](\/assets\/img\/[^"']+)["']/g,
-  /(?:thumbnail|url):\s*["']?(\/assets\/img\/[^\s"']+)/g,
+  /^\s+url:\s*["']?(\/assets\/img\/[^\s"']+)/gm,
+];
+
+const JAVASCRIPT_REFERENCE_PATTERNS = [
+  /thumbnail:\s*["'](\/assets\/img\/[^"']+)["']/g,
 ];
 
 const TEMPLATE_INTERPOLATION = /[#$]\{/;
@@ -23,11 +27,19 @@ export function isLiteralAssetImageReference(url) {
   );
 }
 
-export function extractAssetImageReferences(content) {
+export function getReferencePatterns(sourceType) {
+  if (sourceType === "javascript") {
+    return JAVASCRIPT_REFERENCE_PATTERNS;
+  }
+
+  return MARKDOWN_REFERENCE_PATTERNS;
+}
+
+export function extractAssetImageReferences(content, sourceType = "markdown") {
   const scannable = stripVerbatimMarkdown(content);
   const references = new Set();
 
-  for (const pattern of REFERENCE_PATTERNS) {
+  for (const pattern of getReferencePatterns(sourceType)) {
     for (const match of scannable.matchAll(pattern)) {
       const url = match[1];
       if (isLiteralAssetImageReference(url)) {
@@ -48,10 +60,10 @@ export function assetImageUrlToDiskPath(url, repoRoot) {
   return path.join(repoRoot, "src", ...relativePath);
 }
 
-export function findMissingAssetImages(content, repoRoot) {
+export function findMissingAssetImages(content, repoRoot, sourceType = "markdown") {
   const missing = [];
 
-  for (const url of extractAssetImageReferences(content)) {
+  for (const url of extractAssetImageReferences(content, sourceType)) {
     const diskPath = assetImageUrlToDiskPath(url, repoRoot);
     if (!diskPath || !existsSync(diskPath)) {
       missing.push({ url, diskPath });
