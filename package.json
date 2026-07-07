@@ -59,6 +59,7 @@
       "./src/_11ty/linters/**/*.test.js",
       "./src/_11ty/plugins/**/*.test.js",
       "./src/service-worker/*.test.js"
+      "./scripts/lib/**/*.test.js"
     ]
   }
 }
