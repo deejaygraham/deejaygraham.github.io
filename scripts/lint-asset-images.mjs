@@ -54,7 +54,11 @@ const lintAssetImages = () => {
       jsOnly: sourceRoot.endsWith("_data"),
     })) {
       const content = readFileSync(filePath, "utf8");
-      const missing = findMissingAssetImages(content, REPO_ROOT);
+      const missing = findMissingAssetImages(
+        content,
+        REPO_ROOT,
+        filePath.endsWith(".js") ? "javascript" : "markdown",
+      );
       const relativeFile = path.relative(REPO_ROOT, filePath);
 
       for (const { url, diskPath } of missing) {
