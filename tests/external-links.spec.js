@@ -31,3 +31,9 @@ test("ACE Conference sketchnote link is available", async ({ page }) => {
   // linked to from: https://sketchnotearmy.com/blog/2015/2/10/the-sketchnote-workbook-featured-sketchnoter-derek-graham.html
   await checkResourceExists(page, '/img/posts/sketchnotes-from-ace-2014/gilb.png');
 });
+
+test("OMSPA mini site is available @live", async ({ page }) => {
+  await page.goto("/omspa/strategies-for-building-object-models.html");
+  await expect(page).toHaveTitle(/Strategies for building object models/);
+});
+
