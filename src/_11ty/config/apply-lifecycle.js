@@ -1,5 +1,5 @@
 import fs from "fs/promises";
-import * as prettier from "prettier";
+//import * as prettier from "prettier";
 import pageContentLinter from "../linters/page-content/index.js";
 import {
   SOCIAL_PREVIEW_CACHE_DIR,
@@ -34,6 +34,7 @@ export default function applyLifecycle(eleventyConfig, { buildServiceWorker }) {
 
   eleventyConfig.addLinter("page-content", pageContentLinter);
 
+  /*
   eleventyConfig.addTransform("prettier", async function (content) {
     if ((this.page.outputPath || "").endsWith(".html")) {
       return prettier.format(content, {
@@ -46,4 +47,5 @@ export default function applyLifecycle(eleventyConfig, { buildServiceWorker }) {
 
     return content;
   });
+  */
 }
