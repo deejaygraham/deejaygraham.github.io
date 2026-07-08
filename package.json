@@ -6,7 +6,7 @@
     "watch:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js --watch",
     "build:sw": "node scripts/build-service-worker.mjs",
     "new-post": "node scripts/new-post.mjs",
-    "build": "npm run sass && npm run build:js && eleventy",
+    "build": "npm-run-all --parallel sass build:js && eleventy",
     "start": "npm-run-all --parallel watch:js start:11ty",
     "start:11ty": "npx eleventy --serve",
     "test": "npx playwright test",
