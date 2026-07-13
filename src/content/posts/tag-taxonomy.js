@@ -70,6 +70,7 @@ export const allowedTags = new Set([
   "solid",
   "spooky",
   "stationery",
+  "toc",
   "tdd",
   "tfs",
   "video",
