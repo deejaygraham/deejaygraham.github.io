@@ -13,43 +13,39 @@ function showSwUpdateNotification(onRefresh) {
   wrapper.style.zIndex = "9999";
 
   const notification = document.createElement("div");
-  notification.className = "notification is-info";
+  notification.className = "d-alert d-alert-info d-alert-vertical sm:d-alert-horizontal";
+  notification.setAttribute("role", "alert");
   notification.style.margin = "0 auto";
   notification.style.maxWidth = "38rem";
-  // Reserve space for Bulma's absolute-positioned delete button.
-  notification.style.paddingRight = "3.5rem";
-
-  const deleteBtn = document.createElement("button");
-  deleteBtn.className = "delete";
-  deleteBtn.type = "button";
-  deleteBtn.setAttribute("aria-label", "dismiss update notification");
-  deleteBtn.addEventListener("click", () => {
-    wrapper.remove();
-  });
-
-  const content = document.createElement("div");
-  content.className = "flex justify-between items-center";
-  content.style.gap = "0.75rem";
-  content.style.flexWrap = "wrap";
 
   const message = document.createElement("span");
   message.textContent = "A newer version of this site is available.";
 
+  const actions = document.createElement("div");
+  actions.className = "flex gap-2 shrink-0";
+
   const refreshButton = document.createElement("button");
   refreshButton.type = "button";
-  refreshButton.className = "button is-small is-info";
-  refreshButton.style.flexShrink = "0";
+  refreshButton.className = "d-btn d-btn-sm";
   refreshButton.textContent = "Refresh";
   refreshButton.addEventListener("click", () => {
     refreshButton.disabled = true;
-    refreshButton.classList.add("is-loading");
     onRefresh();
   });
 
-  content.appendChild(message);
-  content.appendChild(refreshButton);
-  notification.appendChild(deleteBtn);
-  notification.appendChild(content);
+  const deleteBtn = document.createElement("button");
+  deleteBtn.className = "d-btn d-btn-sm d-btn-ghost";
+  deleteBtn.type = "button";
+  deleteBtn.setAttribute("aria-label", "dismiss update notification");
+  deleteBtn.textContent = "Dismiss";
+  deleteBtn.addEventListener("click", () => {
+    wrapper.remove();
+  });
+
+  actions.appendChild(refreshButton);
+  actions.appendChild(deleteBtn);
+  notification.appendChild(message);
+  notification.appendChild(actions);
   wrapper.appendChild(notification);
   document.body.appendChild(wrapper);
 }
