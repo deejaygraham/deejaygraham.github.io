@@ -26,7 +26,7 @@ export default [
   },
   pluginJs.configs.recommended,
   {
-    files: ["src/service-worker/**/*.js"],
+    files: ["src/service-worker/**/*.js", "src/assets/js/search.js", "_site/js/search.js"],
     ignores: ["src/service-worker/**/*.test.js"],
     languageOptions: {
       globals: {
