@@ -4,7 +4,7 @@ layout: base.njk
 title: talks
 ---
 <h1 class="title is-1">Previous Talks</h1>
-<div class="row columns is-multiline">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 {% for item in talks %}
 {% include "partials/external-card.njk" %}
 {% endfor %}
