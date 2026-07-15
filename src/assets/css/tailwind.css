@@ -1,0 +1,18 @@
+/*
+  Tailwind CSS + daisyUI running alongside Bulma during gradual migration.
+  Preflight and DaisyUI document resets are omitted so Bulma keeps visual control.
+*/
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "../../_includes/**/*.{njk,html,js}";
+@source "../../content/**/*.{njk,html,md}";
+@source "../js-src/**/*.js";
+@source "../../_includes/scripts/**/*.js";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  /* Avoid Bulma class collisions (.card, .navbar, .menu, …) until those trees are migrated */
+  prefix: "d-";
+  exclude: rootcolor, reset;
+  logs: false;
+}
