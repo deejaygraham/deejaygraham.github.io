@@ -29,6 +29,9 @@ export default function applyAssets(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/assets/css/prism.css": "/css/prism.css",
   });
+  eleventyConfig.addPassthroughCopy({
+    "./src/_generated/css/tailwind.css": "/css/tailwind.css",
+  });
   eleventyConfig.addPassthroughCopy({ "./src/assets/downloads/*.zip": "/downloads" });
   eleventyConfig.addPassthroughCopy({ "./src/assets/downloads/*.pdf": "/downloads" });
 }
