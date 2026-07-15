@@ -6,11 +6,11 @@
 	<nav class="level is-mobile article-tags" id="article-meta">
 	<div class="level-left">
 		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
-		<span class="reading-time is-hidden-mobile">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
+		<span class="reading-time hidden md:inline">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
 		<span class="level-item"><a href="#" class="read-aloud narrator" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</a></span>
 	</div>	
 {% if tags %}
-	<div class="level-right is-hidden-mobile">{# tags: remove temporarily #}
+	<div class="level-right hidden md:block">{# tags: remove temporarily #}
 	{% for tag in tags %}
 		<span class="level-item">
    		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}

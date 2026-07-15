@@ -2,12 +2,14 @@
   "type": "module",
   "scripts": {
     "sass": "sass --style=compressed --load-path=node_modules src/assets/sass/site.scss _site/css/site.css",
+    "css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/_generated/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/_generated/css/tailwind.css --watch",
     "build:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js",
     "watch:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js --watch",
     "build:sw": "node scripts/build-service-worker.mjs",
     "new-post": "node scripts/new-post.mjs",
-    "build": "npm-run-all --parallel sass build:js && eleventy",
-    "start": "npm-run-all --parallel watch:js start:11ty",
+    "build": "npm-run-all --parallel sass css build:js && eleventy",
+    "start": "npm-run-all --parallel watch:js watch:css start:11ty",
     "start:11ty": "npx eleventy --serve",
     "test": "npx playwright test",
     "unit-test": "npx ava --verbose",
@@ -28,12 +30,16 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^6.0.4",
+    "@tailwindcss/cli": "^4.3.2",
     "ava": "^8.0.1",
     "bulma": "^1.0.4",
+    "daisyui": "^5.6.18",
     "elasticlunr": "^0.9.5",
+    "npm": "^12.0.1",
     "prettier": "^3.9.5",
     "sharp": "^0.35.3",
-    "shiki": "^4.3.1"
+    "shiki": "^4.3.1",
+    "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
@@ -43,6 +49,7 @@
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.1",
     "eleventy-plugin-gen-favicons": "^1.1.3",
+    "esbuild": "^0.28.1",
     "eslint": "^10.7.0",
     "globals": "^17.7.0",
     "husky": "^9.1.7",
@@ -50,8 +57,7 @@
     "luxon": "^3.4.4",
     "markdownlint-cli": "^0.49.0",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.101.0",
-    "esbuild": "^0.28.1"
+    "sass": "^1.101.0"
   },
   "overrides": {
     "sharp": "$sharp"
