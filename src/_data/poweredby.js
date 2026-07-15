@@ -8,6 +8,10 @@ export default [
     url: "https://bulma.io/",
   },
   {
+    name: "daisyUI",
+    url: "https://daisyui.com",
+  },
+  {
     name: "shiki",
     url: "https://shiki.style/",
   },
