@@ -1,18 +1,14 @@
-{# Requires a global variable to be set called item with url, thumbnail, title, (optional) subtitle #}
-<div class="column is-4">
-  <div class="card large is-shadowless">
-    <div class="card-image">
-				<figure class="image">
-					<a href="{{ item.url }}" target="_blank" rel="noreferrer">
-	  					<img src="{{ item.thumbnail }}" alt="{{ item.title }}" />
-					</a>
-				</figure>
-		</div>
-  	<div class="card-content">
-      	<h2 class="title">{% externalLink item.url, item.title %}</h2>
-	{% if item.subtitle %}
-        <p class="subtitle">{{ item.subtitle }}</p>
-        {% endif %}
-    </div>
+{# Requires item with url, thumbnail, title, (optional) subtitle #}
+<div class="d-card d-card-border bg-base-100 shadow-none h-full">
+  <figure>
+    <a href="{{ item.url }}" target="_blank" rel="noreferrer">
+      <img src="{{ item.thumbnail }}" alt="{{ item.title }}" />
+    </a>
+  </figure>
+  <div class="d-card-body">
+    <h2 class="d-card-title">{% externalLink item.url, item.title %}</h2>
+    {% if item.subtitle %}
+    <p class="opacity-70">{{ item.subtitle }}</p>
+    {% endif %}
   </div>
-</div>  
+</div>
