@@ -3,7 +3,8 @@ name: CI + Deploy
 
 on:
   push:
-    branches: [main]
+    branches:
+      - '**'
     paths-ignore:
       - '.gitignore'
       - '_drafts/**'
