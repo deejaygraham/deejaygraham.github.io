@@ -28,7 +28,7 @@ function showSwUpdateNotification(onRefresh) {
   });
 
   const content = document.createElement("div");
-  content.className = "is-flex is-justify-content-space-between is-align-items-center";
+  content.className = "flex justify-between items-center";
   content.style.gap = "0.75rem";
   content.style.flexWrap = "wrap";
 
