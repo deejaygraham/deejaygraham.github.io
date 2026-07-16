@@ -25,7 +25,7 @@ function postPathname(href, baseUrl) {
  */
 async function getLatestPostPathFromHomepage(page) {
   await page.goto('/');
-  const link = page.locator('.columns.is-multiline > .column').first().locator('a');
+  const link = page.locator('.d-card a').first();
   await expect(link, 'homepage should show at least one post card').toBeVisible();
   const href = await link.getAttribute('href');
   expect(href, 'newest post card should have an href').toBeTruthy();
@@ -41,7 +41,7 @@ test.describe('most recent blog post', () => {
     await test.step('Post URL responds and main content renders', async () => {
       const response = await page.goto(latestPath);
       expect(response?.ok(), `navigation failed: HTTP ${response?.status()}`).toBeTruthy();
-      await expect(page.locator('h1.title.is-1').first()).toBeVisible();
+      await expect(page.getByRole('heading', { level: 1 }).first()).toBeVisible();
     });
 
     await test.step('og:image meta matches built preview under _site (not production URL)', async () => {
