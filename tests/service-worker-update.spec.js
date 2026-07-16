@@ -5,7 +5,7 @@ test.describe("service worker update prompt", () => {
   test.use({ serviceWorkers: "allow" });
   test.skip(({ browserName }) => browserName !== "chromium", "Focused SW checks for Chromium.");
 
-  test("shows Bulma notification and posts SKIP_WAITING", async ({ page }) => {
+  test("shows update notification and posts SKIP_WAITING", async ({ page }) => {
     await page.addInitScript(() => {
       const swListeners = new Map();
       const registrationListeners = new Map();
