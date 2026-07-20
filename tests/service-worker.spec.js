@@ -15,7 +15,7 @@ test.describe("service worker", () => {
 
     // Runtime cache is created lazily on first eligible fetch.
     await page.evaluate(async () => {
-      await fetch("/css/site.css");
+      await fetch("/css/tailwind.css");
     });
     await page.waitForFunction(async () => {
       const names = await caches.keys();
@@ -38,14 +38,14 @@ test.describe("service worker", () => {
 
     // Ensure assets are fetched at least once while online.
     await page.evaluate(async () => {
-      await fetch("/css/site.css");
+      await fetch("/css/tailwind.css");
       await fetch("/img/avatar.svg");
     });
 
     await context.setOffline(true);
     try {
       const css = await page.evaluate(async () => {
-        const response = await fetch("/css/site.css");
+        const response = await fetch("/css/tailwind.css");
         return {
           ok: response.ok,
           status: response.status,
