@@ -2,17 +2,24 @@
 <header class="header" id="header">
   <a href="#main" class="skip-link">Skip to main content</a>
   {% poison %}
-  <nav class="navbar" aria-label="main navigation" tabindex="-1">
-    <div class="container">
-      <div class="navbar-brand">
-        {% include "partials/navigation-brand.njk" %}
-        {% include "partials/navigation-burger.njk" %}
-      </div>
-      <div id="navbarMenu" class="navbar-menu">
-        <div class="navbar-end">
-         {% include "partials/navigation-list.njk" %}
+  <nav class="d-navbar bg-base-100 px-2 shadow-sm" aria-label="main navigation">
+    <div class="d-navbar-start">
+      <div class="d-dropdown lg:hidden">
+        <div tabindex="0" role="button" class="d-btn d-btn-ghost d-btn-square" aria-label="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </div>
+        <ul tabindex="0" class="d-menu d-menu-sm d-dropdown-content bg-base-100 rounded-lg z-50 mt-3 w-52 p-2 shadow">
+          {% include "partials/navigation-list.njk" %}
+        </ul>
       </div>
+      {% include "partials/navigation-brand.njk" %}
+    </div>
+    <div class="d-navbar-end hidden lg:flex">
+      <ul class="d-menu d-menu-horizontal px-1">
+        {% include "partials/navigation-list.njk" %}
+      </ul>
     </div>
   </nav>
 </header>
