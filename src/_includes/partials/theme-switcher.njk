@@ -1,8 +1,9 @@
 {# ids are used by injected js switcher #}
 <nav class="text-center" aria-label="theme-switcher">
-    <div class="d-join">
-        <button id="light-theme-toggle" data-theme="light" class="d-btn d-btn-sm d-join-item" aria-label="Light mode">Light</button>
-        <button id="dark-theme-toggle" data-theme="dark" class="d-btn d-btn-sm d-join-item" aria-label="Dark mode">Dark</button>
-        <button id="system-theme-toggle" data-theme="system" class="d-btn d-btn-sm d-join-item" aria-label="Device default">Default</button>
-    </div>
+    <fieldset class="d-join border-0 p-0 m-0 min-w-0">
+        <legend class="sr-only">Colour theme</legend>
+        <button type="button" id="light-theme-toggle" data-theme="light" class="d-btn d-btn-sm d-join-item" aria-label="Light mode">Light</button>
+        <button type="button" id="dark-theme-toggle" data-theme="dark" class="d-btn d-btn-sm d-join-item" aria-label="Dark mode">Dark</button>
+        <button type="button" id="system-theme-toggle" data-theme="system" class="d-btn d-btn-sm d-join-item" aria-label="Device default">Default</button>
+    </fieldset>
 </nav>
