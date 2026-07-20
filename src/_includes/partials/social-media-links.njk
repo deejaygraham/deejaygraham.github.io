@@ -1,8 +1,8 @@
 {# Requires socialmedia.json #}
-<nav class="level text-center is-mobile" aria-label="Social links">
+<nav class="flex justify-center items-center gap-4" aria-label="Social links">
 {%- for item in socialmedia %}
-  	<a class="level-item text-center" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
-		<figure class="image is-32x32 social-media-icon">{% include item.icon %}</figure>
+  	<a class="inline-flex" href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
+		<figure class="size-8 social-media-icon">{% include item.icon %}</figure>
   	</a>
 {%- endfor %}
 </nav>
