@@ -7,7 +7,7 @@ const splitText = (text) => {
 const generateTranscript = () => {
     let foundCode = false;
     const transcript = [];  
-    const content = document.querySelectorAll(".content");
+    const content = document.querySelectorAll(".site-prose");
       
     content.forEach((elem) => {
         elem.querySelectorAll("*").forEach((c) => {
