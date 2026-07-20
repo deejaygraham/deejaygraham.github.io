@@ -5,12 +5,12 @@
   <nav class="d-navbar bg-base-100 px-2 shadow-sm" aria-label="main navigation">
     <div class="d-navbar-start">
       <div class="d-dropdown lg:hidden">
-        <div tabindex="0" role="button" class="d-btn d-btn-ghost d-btn-square" aria-label="menu">
+        <button type="button" tabindex="0" class="d-btn d-btn-ghost d-btn-square" aria-label="menu" aria-haspopup="true">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-        </div>
-        <ul tabindex="0" class="d-menu d-menu-sm d-dropdown-content bg-base-100 rounded-lg z-50 mt-3 w-52 p-2 shadow">
+        </button>
+        <ul tabindex="0" class="d-menu d-menu-sm d-dropdown-content bg-base-100 rounded-lg z-50 mt-3 w-52 p-2 shadow" role="menu">
           {% include "partials/navigation-list.njk" %}
         </ul>
       </div>
