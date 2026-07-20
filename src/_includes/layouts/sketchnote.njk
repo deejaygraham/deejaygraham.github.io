@@ -5,7 +5,7 @@
 {{ content | safe }}
 
 <section class="sketchnote">
-    <table class="table is-fullwidth">
+    <table class="w-full table-auto">
         <thead>
             <tr>
         {% if sketchnote.source %}<th>Source</th>{% endif %} 
@@ -27,8 +27,8 @@
             </tr>
         </tbody>
     </table>
-    <figure class="image">
-        <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
+    <figure>
+        <img class="h-auto max-w-full" src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
     </figure>
 </section>
 
