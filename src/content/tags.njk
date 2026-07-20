@@ -11,11 +11,11 @@ permalink: /tags/{{ tag | slugify }}/
 {% set taglist = collections[ tag ] %}
 
 {% if topicHub %}
-<h1 class="title is-1">{{ topicHub.title }}</h1>
-<div class="content topic-hub-intro">{{ topicHub.intro | safe }}</div>
+<h1 class="text-4xl font-bold">{{ topicHub.title }}</h1>
+<div class="topic-hub-intro">{{ topicHub.intro | safe }}</div>
 
 {% if topicHub.featured and topicHub.featured.length %}
-<h2 class="title is-4">Start here</h2>
+<h2 class="text-xl font-bold">Start here</h2>
 <ul class="mb-5">
   {% for item in topicHub.featured %}
     {% set fp = collections.posts | findPostByUrl(item.url) %}
@@ -43,7 +43,7 @@ permalink: /tags/{{ tag | slugify }}/
 
 {% endif %}
 
-<h2 class="title is-4">All posts</h2>
+<h2 class="text-xl font-bold">All posts</h2>
 {% set postcardlist = taglist | excludePostsByUrls(topicHub.featured) | reverse %}
 {% else %}
 <h1>Posts tagged with #{{ tag }}</h1>
