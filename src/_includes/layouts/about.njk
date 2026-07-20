@@ -1,8 +1,8 @@
 {% extends 'layouts/base.njk' %}
 {% block precontent %}
 
-{% if thumbnail %} 
-<section class="py-4">
+{% if thumbnail %}
+<section class="py-4" aria-label="Featured image">
   <figure class="m-6">
     <img class="w-full h-auto" src="{{ thumbnail }}" alt="{{ title }}">
   </figure>
@@ -12,11 +12,10 @@
 {% endblock %}
 
 {% block content %}
-
-<h1 class="text-4xl font-bold">{{ title }} </h1>
-
-{{ content | safe }}
-
+<article>
+  <h1 class="text-4xl font-bold">{{ title }} </h1>
+  {{ content | safe }}
+</article>
 {% endblock %}
 
 {% block jsonld %}
