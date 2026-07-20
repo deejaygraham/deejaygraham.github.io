@@ -1,8 +1,8 @@
 {% extends 'layouts/post.njk' %}
-{% block content %}
 
+{% block articlebody %}
 {% if comment %}
-<section class="py-4">
+<section class="py-4" aria-label="Commentary">
 {{ comment }}
 </section>
 {% endif %}
@@ -14,7 +14,7 @@
 {% set fontSize = "text-5xl" %}
 {% elif words < 500 %}
 {% set fontSize = "text-3xl" %}
-{% endif %} 
+{% endif %}
 
 <figure class="quote">
 {% include "icons/quotation-mark.svg" %}
@@ -25,5 +25,4 @@
         {% if attribution %}&mdash; {{ attribution }}{% endif %}{% if publication %}, {{ publication }}{% endif %}
         </figcaption>
 </figure>
-
 {% endblock %}
