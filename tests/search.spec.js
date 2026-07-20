@@ -75,7 +75,7 @@ test.describe("search page", () => {
 
   test("broad term can return multiple results", async ({ page }) => {
     await page.getByLabel(/keywords/i).fill("microbit");
-    const cards = page.locator("#search-results article.message");
+    const cards = page.locator("#search-results article.search-result");
     await expect(cards.first()).toBeVisible();
     const n = await cards.count();
     expect(n, "expect several micro:bit posts in the index").toBeGreaterThanOrEqual(2);
