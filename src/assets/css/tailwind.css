@@ -20,3 +20,84 @@
   exclude: rootcolor, reset;
   logs: false;
 }
+
+/* Replaces Bulma .content is-medium for post/page prose during migration */
+@layer components {
+  .site-prose {
+    @apply text-lg leading-relaxed;
+  }
+
+  .site-prose :where(h1) {
+    @apply mb-4 mt-8 text-4xl font-bold;
+  }
+
+  .site-prose :where(h2) {
+    @apply mb-3 mt-8 text-3xl font-bold;
+  }
+
+  .site-prose :where(h3) {
+    @apply mb-3 mt-6 text-2xl font-bold;
+  }
+
+  .site-prose :where(h4) {
+    @apply mb-2 mt-6 text-xl font-bold;
+  }
+
+  .site-prose :where(h5),
+  .site-prose :where(h6) {
+    @apply mb-2 mt-4 text-lg font-semibold;
+  }
+
+  .site-prose :where(p) {
+    @apply my-4;
+  }
+
+  .site-prose :where(ul) {
+    @apply my-4 list-disc pl-6;
+  }
+
+  .site-prose :where(ol) {
+    @apply my-4 list-decimal pl-6;
+  }
+
+  .site-prose :where(li) {
+    @apply my-1;
+  }
+
+  .site-prose :where(blockquote) {
+    @apply my-6 border-l-4 border-neutral-400 pl-4 italic;
+  }
+
+  .site-prose :where(hr) {
+    @apply my-8 border-t border-neutral-300;
+  }
+
+  .site-prose :where(pre) {
+    @apply my-4 overflow-x-auto rounded-lg p-4 text-sm;
+  }
+
+  .site-prose :where(code) {
+    @apply rounded px-1 py-0.5 text-[0.9em];
+  }
+
+  .site-prose :where(pre code) {
+    @apply rounded-none bg-transparent p-0;
+  }
+
+  .site-prose :where(img) {
+    @apply my-4 h-auto max-w-full;
+  }
+
+  .site-prose :where(figure) {
+    @apply my-6;
+  }
+
+  .site-prose :where(table) {
+    @apply my-4 w-full border-collapse;
+  }
+
+  .site-prose :where(th),
+  .site-prose :where(td) {
+    @apply border border-neutral-300 px-3 py-2 text-left;
+  }
+}
