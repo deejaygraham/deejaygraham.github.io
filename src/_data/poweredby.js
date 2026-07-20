@@ -4,12 +4,12 @@ export default [
     url: "http://11ty.dev/",
   },
   {
-    name: "bulma",
-    url: "https://bulma.io/",
+    name: "tailwind",
+    url: "https://tailwindcss.com/",
   },
   {
-    name: "daisyUI",
-    url: "https://daisyui.com",
+    name: "daisyui",
+    url: "https://daisyui.com/",
   },
   {
     name: "shiki",
