@@ -6,10 +6,10 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 <h1 class="text-4xl font-bold">Posts by Tag</h1>
-<div class="flex flex-wrap gap-2">
+<ul class="flex flex-wrap gap-2 list-none m-0 p-0">
 {% for tag in collections.posts | getAllTags | filterTagList %}
 {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 {%- set postCount = collections[tag].length %}
-<a class="d-badge d-badge-lg d-badge-outline" href="{{ tagUrl }}">{{ tag }} ({{ postCount }})</a>
+<li><a class="d-badge d-badge-lg d-badge-outline" href="{{ tagUrl }}">{{ tag }} ({{ postCount }})</a></li>
 {% endfor -%}
-</div>
+</ul>
