@@ -12,10 +12,11 @@ permalink: /tags/{{ tag | slugify }}/
 
 {% if topicHub %}
 <h1 class="text-4xl font-bold">{{ topicHub.title }}</h1>
-<div class="topic-hub-intro">{{ topicHub.intro | safe }}</div>
+<section class="topic-hub-intro" aria-label="Topic introduction">{{ topicHub.intro | safe }}</section>
 
 {% if topicHub.featured and topicHub.featured.length %}
-<h2 class="text-xl font-bold">Start here</h2>
+<section aria-labelledby="start-here-heading">
+<h2 id="start-here-heading" class="text-xl font-bold">Start here</h2>
 <ul class="mb-5">
   {% for item in topicHub.featured %}
     {% set fp = collections.posts | findPostByUrl(item.url) %}
@@ -27,6 +28,7 @@ permalink: /tags/{{ tag | slugify }}/
     {% endif %}
   {% endfor %}
 </ul>
+</section>
 {% endif %}
 
 {% if topicHub.relatedTags and topicHub.relatedTags.length %}
@@ -43,13 +45,16 @@ permalink: /tags/{{ tag | slugify }}/
 
 {% endif %}
 
-<h2 class="text-xl font-bold">All posts</h2>
+<section aria-labelledby="all-posts-heading">
+<h2 id="all-posts-heading" class="text-xl font-bold">All posts</h2>
 {% set postcardlist = taglist | excludePostsByUrls(topicHub.featured) | reverse %}
+{% include "partials/post-card-list.njk" %}
+</section>
+
 {% else %}
 <h1>Posts tagged with #{{ tag }}</h1>
 {% set postcardlist = taglist | reverse %}
-{% endif %}
-
 {% include "partials/post-card-list.njk" %}
+{% endif %}
 
 <p>See <a href="/tags/">all tags</a>.</p>
