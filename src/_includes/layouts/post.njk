@@ -1,50 +1,46 @@
 {% extends 'layouts/base.njk' %}
-{% block precontent %}
-<section class="py-6">
-  <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
-	<nav class="flex flex-wrap items-center justify-between gap-3 article-tags" id="article-meta">
-	<div class="flex flex-wrap items-center gap-3">
-		<span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
-		<span class="reading-time hidden md:inline">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
-		<span><a href="#" class="read-aloud narrator" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</a></span>
-	</div>	
-{% if tags %}
-	<div class="hidden md:flex flex-wrap items-center gap-1">{# tags: remove temporarily #}
-	{% for tag in tags %}
-		<span>
-   		{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-			<a href="{{ tagUrl }}">#{{ tag }}</a>
-		</span> 
-		{% if not loop.last %} | {% endif %}
-  	{% endfor %}
-	</div>
-{% endif %}
-	</nav>
-</section>
-{% endblock %}
 
 {% block content %}
+<article>
+{% block articleheader %}
+  <header class="py-6">
+    <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
+    <nav class="flex flex-wrap items-center justify-between gap-3 article-tags" id="article-meta" aria-label="Post metadata">
+      <p class="flex flex-wrap items-center gap-3 mb-0">
+        <span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
+        <span class="reading-time hidden md:inline">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
+        <a href="#" class="read-aloud narrator" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</a>
+      </p>
+      {% if tags %}
+      <p class="hidden md:flex flex-wrap items-center gap-1 mb-0" aria-label="Tags">
+        {%- for tag in tags -%}
+          {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+          <a href="{{ tagUrl }}">#{{ tag }}</a>{% if not loop.last %} | {% endif %}
+        {%- endfor -%}
+      </p>
+      {% endif %}
+    </nav>
+  </header>
+{% endblock %}
+
+{% block articlebody %}
 {{ content | safe }}
+{% endblock %}
+</article>
 {% endblock %}
 
 {% block postcontent %}
-
-{# Related Content #}
 {% if tags %}
   <hr />
-
   {% set related = collections.posts | relatedPosts(page, tags, 6) %}
   {% if related.length > 0 %}
-  <aside class="pt-0"> 
-    <div class="related-posts">
-      <h2 class="text-2xl font-bold mb-4">Related posts</h2>
-      {% set postcardlist = related %}
-      {% include "partials/post-card-list.njk" %}
-    </div>
+  <aside class="related-posts pt-0" aria-labelledby="related-posts-heading">
+    <h2 id="related-posts-heading" class="text-2xl font-bold mb-4">Related posts</h2>
+    {% set postcardlist = related %}
+    {% include "partials/post-card-list.njk" %}
   </aside>
   {% endif %}
 {% endif %}
-
 {% endblock %}
 
 {% block jsonld %}
