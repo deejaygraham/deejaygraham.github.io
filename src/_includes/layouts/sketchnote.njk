@@ -1,14 +1,13 @@
 {% extends 'layouts/post.njk' %}
 
-{% block content %}
-
+{% block articlebody %}
 {{ content | safe }}
 
-<section class="sketchnote">
+<section class="sketchnote" aria-label="Sketchnote">
     <table class="w-full table-auto">
         <thead>
             <tr>
-        {% if sketchnote.source %}<th>Source</th>{% endif %} 
+        {% if sketchnote.source %}<th>Source</th>{% endif %}
         {% if sketchnote.speaker %}<th>Speaker</th>{% endif %}
         {% if sketchnote.event %}<th>Event</th>{% endif %}
             </tr>
@@ -33,5 +32,4 @@
 </section>
 
 {% include "partials/ccboilerplate.njk" %}
-
 {% endblock %}
