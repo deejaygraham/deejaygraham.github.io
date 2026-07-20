@@ -2,18 +2,18 @@
 {% block content %}
 
 {% if comment %}
-<section class="section">
+<section class="py-4">
 {{ comment }}
 </section>
 {% endif %}
 
 {# default to small font size #}
-{% set fontSize = 'is-size-5' %}
+{% set fontSize = 'text-xl' %}
 {% set words = content | wordCount %}
 {% if words < 100 %}
-{% set fontSize = "is-size-1" %}
+{% set fontSize = "text-5xl" %}
 {% elif words < 500 %}
-{% set fontSize = "is-size-3" %}
+{% set fontSize = "text-3xl" %}
 {% endif %} 
 
 <figure class="quote">
