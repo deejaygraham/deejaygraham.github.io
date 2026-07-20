@@ -1,5 +1,5 @@
 a {
-    color: var(--bulma-title-color);
+    color: var(--bulma-title-color, var(--color-base-content, inherit));
     text-underline-offset: 2px;
 }
 
