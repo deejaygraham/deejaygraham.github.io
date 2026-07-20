@@ -28,7 +28,9 @@
 	  {% endif %}
   </head>
   <body>
-	<div id="ios" style="display:none;"><figure>{% include "icons/sad-mac.svg" %}</figure></div>
+	<aside id="ios" hidden>
+    <figure>{% include "icons/sad-mac.svg" %}</figure>
+  </aside>
 
     {% block header %}
     {% include "partials/siteheader.njk" %}
@@ -37,12 +39,10 @@
     <main class="main mx-auto mb-6 max-w-5xl px-4" id="main" >
       {% block precontent %}{% endblock %}
 
-      <section class="pt-0">
-	      <div class="site-prose">
+      <section class="pt-0 site-prose">
         {% block content %}
           {{ content | safe }}
         {% endblock %}
-        </div>
       </section>
 
       {% block postcontent %}{% endblock %}
@@ -60,5 +60,5 @@
       {% endif %}
       {% include "partials/sad-mac.njk" %}
     {% endblock %}
-  </body>  
+  </body>
 </html>
