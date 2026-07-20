@@ -6,7 +6,9 @@ changefreq: weekly
 ---
 <h1 class="text-4xl font-bold">blog&gt;<span class="animated-cursor">_</span></h1>
 
+<section aria-label="Recent posts">
 {% set postcardlist = collections.posts | limit(18) %}
 {% include "partials/post-card-list.njk" %}
+</section>
 
 <p class="text-right"><a href="{{ site.url }}/archive/">See All Posts</a></p>
