@@ -4,8 +4,10 @@ layout: base.njk
 title: talks
 ---
 <h1 class="text-4xl font-bold">Previous Talks</h1>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none m-0 p-0">
 {% for item in talks %}
+<li class="min-w-0">
 {% include "partials/external-card.njk" %}
+</li>
 {% endfor %}
-</div>
+</ul>
