@@ -8,21 +8,22 @@
 <form class="my-6" role="search" aria-label="Blog post search" autocomplete="off">
 	<fieldset class="d-fieldset">
 		<label for="search-box" class="mb-2 block text-sm font-semibold">keywords</label>
-		<input type="text" id="search-box" class="d-input w-full search-box" name="query" placeholder="search for posts" spellcheck="false" >
+		<input type="search" id="search-box" class="d-input w-full search-box" name="query" placeholder="search for posts" spellcheck="false" >
 	</fieldset>
 </form>
 </search>
 
-<div id="search-results">
+<section id="search-results" class="flex flex-col gap-4 my-6" aria-live="polite" aria-label="Search results">
 {# Empty container for results #}
-</div>
+</section>
 
 <hr />
 
-<h2 class="text-xl font-bold">Recent Posts</h2>
-
-{% set postcardlist = collections.posts | limit(6) %}
-{% include "partials/post-card-list.njk" %}
+<section aria-labelledby="recent-posts-heading">
+  <h2 id="recent-posts-heading" class="text-xl font-bold">Recent Posts</h2>
+  {% set postcardlist = collections.posts | limit(6) %}
+  {% include "partials/post-card-list.njk" %}
+</section>
 
 {% endblock %}
 
