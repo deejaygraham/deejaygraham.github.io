@@ -1,7 +1,8 @@
 export const addCopyButtonToSourceCode = () => {
   const snippets = document.querySelectorAll('pre[class*="shiki"]');
   const buttonClasses = [
-    'button',
+    'd-btn',
+    'd-btn-sm',
     'float-right',
     'copy-source-button',
   ];
