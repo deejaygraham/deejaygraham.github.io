@@ -7,7 +7,7 @@ test.describe("home page", () => {
     });
   
   test("contain home icon", async ({ page }) => {
-    await expect(page.locator('a').filter({ hasText: 'g { fill: var(--color-base-content' })).toBeVisible();
+    await expect(page.locator('a[href="/"] .social-media-icon svg')).toBeVisible();
   });
 
   test("navigation menu is shown", async ({ page }) => {
