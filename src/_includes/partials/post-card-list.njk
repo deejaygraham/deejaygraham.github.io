@@ -1,11 +1,13 @@
 {# Requires a global variable to be set "postcardlist" #}
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none m-0 p-0">
 	{% for post in postcardlist %}
-		{% set url =  post.url %}
-		{% set title =  post.data.title %}
-		{% set subtitle =  post.data.subtitle %}
-		{# set date =  post.date #} 
-		{% set tags =  post.data.tags %}
-		{% include "partials/post-card.njk" %}
+		<li class="min-w-0">
+			{% set url =  post.url %}
+			{% set title =  post.data.title %}
+			{% set subtitle =  post.data.subtitle %}
+			{# set date =  post.date #}
+			{% set tags =  post.data.tags %}
+			{% include "partials/post-card.njk" %}
+		</li>
 	{% endfor %}
-</div>
+</ul>
