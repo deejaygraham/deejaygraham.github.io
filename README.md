@@ -14,6 +14,71 @@ The markdown and javascript used in the site for building or at runtime are vali
 ## Build 
 
 The site is built using [11ty](https://www.11ty.dev) and published here in glorious github.
+
+```mermaid
+flowchart TD
+  subgraph entry [Common entry points]
+    buildCmd["npm run build"]
+    startCmd["npm start"]
+    validatePre["npm run validate:pre"]
+    validatePost["npm run validate:post"]
+    testCmd["npm test"]
+    unitCmd["npm run unit-test"]
+  end
+
+  subgraph buildFlow [npm run build]
+    parallel["npm-run-all --parallel"]
+    css["css<br/>tailwindcss<br/>src/assets/css/tailwind.css<br/>→ src/_generated/css/tailwind.css"]
+    js["build:js<br/>esbuild site.js + search.js<br/>→ src/assets/js/"]
+    eleventy["eleventy"]
+  end
+
+  buildCmd --> parallel
+  parallel --> css
+  parallel --> js
+  css --> eleventy
+  js --> eleventy
+
+  subgraph eleventyLifecycle [Inside Eleventy]
+    before["eleventy.before<br/>build:sw via scripts/build-service-worker.mjs<br/>→ src/_generated/sw.js<br/>+ cache-version.js"]
+    templates["Process templates<br/>content · _generate · includes · data<br/>plugins: images, social OG, favicons, shiki"]
+    passthrough["Passthrough copy<br/>JS · CSS · SW · downloads · select images"]
+    after["eleventy.after<br/>copy build-cache/img/previews<br/>→ _site/img/previews"]
+    out["_site/"]
+  end
+
+  eleventy --> before --> templates --> passthrough --> after --> out
+
+  subgraph startFlow [npm start — local dev]
+    wjs["watch:js"]
+    wcss["watch:css"]
+    serve["start:11ty<br/>eleventy --serve"]
+  end
+
+  startCmd --> wjs
+  startCmd --> wcss
+  startCmd --> serve
+  serve -.-> before
+
+  subgraph validatePreFlow [npm run validate:pre]
+    lintSrc["lint:src — eslint ./src"]
+    lintTests["lint:tests — eslint ./tests"]
+    mdlint["mdlint — markdownlint content"]
+    lintTags["lint:tags"]
+    lintPosts["lint:posts"]
+    lintImages["lint:images"]
+    ava["unit-test — ava"]
+  end
+
+  validatePre --> lintSrc --> lintTests --> mdlint --> lintTags --> lintPosts --> lintImages --> ava
+
+  validatePost --> lintOut["lintoutput — eslint ./_site"]
+  testCmd --> playwright["playwright test"]
+  unitCmd --> ava
+```
+
+## Workflow
+
 GitHub Actions runs CI on every push and pull request. Deploy to GitHub Pages happens only after a successful CI run on a push to `main`.
 
 ```mermaid
