@@ -14,6 +14,59 @@ The markdown and javascript used in the site for building or at runtime are vali
 ## Build 
 
 The site is built using [11ty](https://www.11ty.dev) and published here in glorious github.
+GitHub Actions runs CI on every push and pull request. Deploy to GitHub Pages happens only after a successful CI run on a push to `main`.
+
+```mermaid
+flowchart TD
+  subgraph triggers [Triggers]
+    push["push any branch<br/>(ignore .gitignore, _drafts)"]
+    pr["pull_request"]
+    manual["workflow_dispatch"]
+  end
+
+  push --> ci
+  pr --> ci
+  manual --> ci
+
+  subgraph ciJob [Job: ci — ubuntu-latest]
+    checkout[Checkout code]
+    node[Setup Node]
+    deps[Install dependencies]
+    pre["Validate pre-build<br/>npm run validate:pre<br/>eslint · mdlint · tags/posts/images · ava"]
+    cacheIn[Restore social preview cache]
+    build["Build<br/>npm run build<br/>Tailwind + esbuild + Eleventy"]
+    cacheOut[Save social preview cache]
+    artifact[Upload _site artifact<br/>site-build]
+    sizeInspect[Inspect _site size]
+    sizeBudget{"_site ≤ 200 MB?"}
+    post["Validate site output<br/>npm run validate:post<br/>eslint _site"]
+    pwInstall[Install Playwright]
+    pwTest[Run Playwright on _site]
+    pwReport[Upload Playwright report<br/>always]
+  end
+
+  ci --> checkout --> node --> deps --> pre --> cacheIn --> build
+  build --> cacheOut --> artifact --> sizeInspect --> sizeBudget
+  sizeBudget -->|fail| failCi[CI fails]
+  sizeBudget -->|pass| post --> pwInstall --> pwTest --> pwReport
+
+  subgraph deployGate [Deploy only if]
+    cond{"ref == main<br/>AND event == push?"}
+  end
+
+  pwTest --> cond
+  cond -->|no — PR / other branch| doneCi[CI complete — no deploy]
+  cond -->|yes| deployJob
+
+  subgraph deployJob [Job: deploy — needs: ci]
+    dl[Download site-build artifact]
+    pagesSetup[Configure GitHub Pages]
+    pagesArtifact[Upload Pages artifact]
+    deploy[Deploy to GitHub Pages]
+  end
+
+  dl --> pagesSetup --> pagesArtifact --> deploy --> live[Live site]
+```
 
 ## Test
 
