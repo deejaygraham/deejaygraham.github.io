@@ -3,6 +3,7 @@ export default function applyAssets(eleventyConfig) {
   eleventyConfig.watchIgnores.add("src/assets/**/*");
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
+  eleventyConfig.addPassthroughCopy({ "./src/_generated/js/*.js": "/js" });
   eleventyConfig.addPassthroughCopy({ "./src/_includes/code/p5js/*.js": "/js" });
 
   eleventyConfig.addPassthroughCopy({
