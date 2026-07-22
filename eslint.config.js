@@ -7,9 +7,8 @@ export default [
     ignores: [
       "**/node_modules/**",
       "src/_includes/code/**",
-      "src/assets/js/elasticlunr.min.js",
-      "src/assets/js/p5.min.js",
-      "src/assets/js/qrcode.js",
+      "src/assets/js/**,
+      "src/_generated/**",
       "_site/js/elasticlunr.min.js",
       "_site/js/p5.min.js",
       "_site/js/qrcode.js",
