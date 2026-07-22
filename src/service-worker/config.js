@@ -1,6 +1,5 @@
 /** Injected at bundle time by scripts/build-service-worker.mjs; "-dev" for unit tests. */
-export const CACHE_VERSION =
-  typeof __SW_CACHE_VERSION__ !== "undefined" ? __SW_CACHE_VERSION__ : "-dev";
+export const CACHE_VERSION = globalThis.__SW_CACHE_VERSION__ ?? "-dev";
 
 export const PRECACHE = "precache" + CACHE_VERSION;
 export const RUNTIME = "runtime" + CACHE_VERSION;
