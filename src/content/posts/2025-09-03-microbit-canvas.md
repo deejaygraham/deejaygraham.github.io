@@ -40,10 +40,6 @@ The remainder of the code does a lot of geometric work as in the original to pos
 and to work out where to place the top left colour swatches. Each refresh of the page picks a random colour for the 
 swatches, something that was only changed by the shortcode version when the whole site was rebuilt.
 
-```js
-{% include "scripts/microbit.js" %}
-```
-
 Also in this version, the rendering of the LED brightness on a 0-9 scale is done with a style opacity similar to the SVG one 
 but sublty different.
 
