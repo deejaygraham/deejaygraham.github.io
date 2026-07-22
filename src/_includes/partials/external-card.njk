@@ -1,14 +1,14 @@
 {# Requires item with url, thumbnail, title, (optional) subtitle #}
-<article class="d-card d-card-border bg-base-100 shadow-none h-full">
-  <figure>
+<article class="card">
+  <figure class="card__media">
     <a href="{{ item.url }}" target="_blank" rel="noreferrer">
       <img src="{{ item.thumbnail }}" alt="{{ item.title }}" />
     </a>
   </figure>
-  <section class="d-card-body">
-    <h2 class="d-card-title">{% externalLink item.url, item.title %}</h2>
+  <section class="card__body">
+    <h2 class="post-card-title">{% externalLink item.url, item.title %}</h2>
     {% if item.subtitle %}
-    <p>{{ item.subtitle }}</p>
+    <p class="post-card-meta">{{ item.subtitle }}</p>
     {% endif %}
   </section>
 </article>
