@@ -1,23 +1,25 @@
 <!-- partials/siteheader -->
-<header class="header" id="header">
+<header class="site-header" id="header">
   <a href="#main" class="skip-link">Skip to main content</a>
   {% poison %}
-  <nav class="d-navbar bg-base-100 px-2 shadow-sm" aria-label="main navigation">
-    <div class="d-navbar-start">
-      <div class="d-dropdown lg:hidden">
-        <button type="button" tabindex="0" class="d-btn d-btn-ghost d-btn-square" aria-label="menu" aria-haspopup="true">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+  <nav class="site-nav" aria-label="main navigation">
+    <div class="cluster">
+      <details class="site-nav__mobile">
+        <summary class="site-nav__menu-toggle" aria-label="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-        </button>
-        <ul tabindex="0" class="d-menu d-menu-sm d-dropdown-content bg-base-100 rounded-lg z-50 mt-3 w-52 p-2 shadow" role="menu">
-          {% include "partials/navigation-list.njk" %}
-        </ul>
-      </div>
+        </summary>
+        <div class="site-nav__menu-panel">
+          <ul class="site-nav__list" role="menu">
+            {% include "partials/navigation-list.njk" %}
+          </ul>
+        </div>
+      </details>
       {% include "partials/navigation-brand.njk" %}
     </div>
-    <div class="d-navbar-end hidden lg:flex">
-      <ul class="d-menu d-menu-horizontal px-1">
+    <div class="site-nav__desktop">
+      <ul class="site-nav__list">
         {% include "partials/navigation-list.njk" %}
       </ul>
     </div>
