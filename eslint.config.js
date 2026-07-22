@@ -7,7 +7,7 @@ export default [
     ignores: [
       "**/node_modules/**",
       "src/_includes/code/**",
-      "src/assets/js/**,
+      "src/assets/js/**",
       "src/_generated/**",
       "_site/js/elasticlunr.min.js",
       "_site/js/p5.min.js",
