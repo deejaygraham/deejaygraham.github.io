@@ -1,4 +1,4 @@
-import elasticlunr from "../js/elasticlunr.js";
+import elasticlunr from "../js/elasticlunr.min.js";
 
 const ignoreEnterKey = (e) => {
   if (e.keyCode === 13) {
