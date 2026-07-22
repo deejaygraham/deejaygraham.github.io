@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
+<svg fill="currentColor"
    version="1.0"
    width="32"
    height="32"
@@ -37,9 +37,7 @@
      inkscape:window-maximized="0"
      inkscape:current-layer="svg11"
      showgrid="false" />
-  <style
-     id="style1">g { fill: var(--bulma-body-color, black); }</style>
-  <g
+    <g
      transform="matrix(0.1,0,0,-0.1,44.597458,2524.2161)"
      stroke="none"
      id="g11">
