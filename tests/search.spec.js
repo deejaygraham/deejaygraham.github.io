@@ -34,7 +34,7 @@ test.describe("search page", () => {
   });
 
   test("search by title shows a matching result with a working post link", async ({ page }) => {
-    const searchBox = page.getByLabel(/keywords/i);
+    const searchBox = page.getByLabel(/search for posts/i);
     await searchBox.fill("jazz");
     const hit = page.locator("#search-results").getByText("Make A Jazz Noise Here", { exact: true });
     await expect(hit).toBeVisible();
@@ -44,29 +44,29 @@ test.describe("search page", () => {
   });
 
   test("search by quotation author finds the expected post", async ({ page }) => {
-    await page.getByLabel(/keywords/i).fill("Lehman");
+    await page.getByLabel(/search for posts/i).fill("Lehman");
     await expect(page.locator("#search-results").getByText("Deteriorating Structure", { exact: true })).toBeVisible();
   });
 
   test("search term matching excerpt finds the expected post", async ({ page }) => {
-    await page.getByLabel(/keywords/i).fill("build");
+    await page.getByLabel(/search for posts/i).fill("build");
     await expect(page.locator("#search-results").getByText("Creating Builds in TFS 2015", { exact: true })).toBeVisible();
   });
 
   test("nonsense term shows empty state copy", async ({ page }) => {
-    await page.getByLabel(/keywords/i).fill("blargleargle");
+    await page.getByLabel(/search for posts/i).fill("blargleargle");
     await expect(page.getByText("Unable to find any posts for")).toBeVisible();
     await expect(page.getByText(/blargleargle/)).toBeVisible();
   });
 
   test("very short nonsense query adds the length hint when there are no hits", async ({ page }) => {
-    await page.getByLabel(/keywords/i).fill("qqz");
+    await page.getByLabel(/search for posts/i).fill("qqz");
     await expect(page.getByText("Unable to find any posts for")).toBeVisible();
     await expect(page.getByText("(try typing more characters)")).toBeVisible();
   });
 
   test("clearing the search box shows the idle prompt", async ({ page }) => {
-    const box = page.getByLabel(/keywords/i);
+    const box = page.getByLabel(/search for posts/i);
     await box.fill("blargleargle");
     await expect(page.getByText("Unable to find any posts for")).toBeVisible();
     await box.fill("");
@@ -74,7 +74,7 @@ test.describe("search page", () => {
   });
 
   test("broad term can return multiple results", async ({ page }) => {
-    await page.getByLabel(/keywords/i).fill("microbit");
+    await page.getByLabel(/search for posts/i).fill("microbit");
     const cards = page.locator("#search-results article.search-result");
     await expect(cards.first()).toBeVisible();
     const n = await cards.count();
