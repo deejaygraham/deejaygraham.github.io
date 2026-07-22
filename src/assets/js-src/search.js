@@ -1,6 +1,6 @@
-import { registerServiceWorker } from "../../_includes/scripts/register-service-worker.js";
-import { registerThemeSwitch } from "../../_includes/scripts/theme-switcher.js";
-import { loadSearchIndex } from "../../_includes/scripts/search-site.js";
+import { registerServiceWorker } from "./register-service-worker.js";
+import { registerThemeSwitch } from "./theme-switcher.js";
+import { loadSearchIndex } from "./search-site.js";
 
 const runWhenDocumentReady = (callback) => {
   if (document.readyState === "loading") {
