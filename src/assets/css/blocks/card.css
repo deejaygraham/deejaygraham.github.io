@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  transition: border-color 0.15s ease;
+}
+
+.card:hover {
+  border-color: color-mix(in oklab, var(--color-brand) 40%, var(--color-border));
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  padding: var(--space-s);
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+}
+
+.card__body:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__media {
+  margin: 0;
+  overflow: hidden;
+  border-start-start-radius: var(--border-radius);
+  border-start-end-radius: var(--border-radius);
+}
+
+.card__media img {
+  width: 100%;
+}
+
+.post-card-title {
+  font-family: var(--font-display);
+  font-size: var(--size-step-1);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  margin: 0;
+}
+
+.post-card-meta {
+  font-size: var(--size-step--1);
+  color: var(--color-text-muted);
+  margin: 0;
+}
