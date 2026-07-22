@@ -11,7 +11,6 @@
 @source "../../_includes/**/*.{njk,html,js}";
 @source "../../content/**/*.{njk,html,md}";
 @source "../js-src/**/*.js";
-@source "../../_includes/scripts/**/*.js";
 
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
