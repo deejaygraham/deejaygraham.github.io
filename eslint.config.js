@@ -9,7 +9,6 @@ export default [
       "src/_includes/code/**",
       "src/assets/js/**",
       "src/_generated/**",
-      "_site/js/elasticlunr.min.js",
       "_site/js/p5.min.js",
       "_site/js/qrcode.js",
     ],
@@ -30,7 +29,6 @@ export default [
     languageOptions: {
       globals: {
         ...globals.serviceworker,
-        __SW_CACHE_VERSION__: "readonly",
       },
     },
   },
