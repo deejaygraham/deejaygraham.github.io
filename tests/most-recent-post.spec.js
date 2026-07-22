@@ -25,7 +25,7 @@ function postPathname(href, baseUrl) {
  */
 async function getLatestPostPathFromHomepage(page) {
   await page.goto('/');
-  const link = page.locator('.d-card a').first();
+  const link = page.locator('.card a').first();
   await expect(link, 'homepage should show at least one post card').toBeVisible();
   const href = await link.getAttribute('href');
   expect(href, 'newest post card should have an href').toBeTruthy();
