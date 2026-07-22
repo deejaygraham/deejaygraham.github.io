@@ -7,23 +7,24 @@ const ignoreEnterKey = (e) => {
 };
 
 /**
- * One search hit as a semantic article, styled like post-card (daisyUI).
+ * One search hit as a semantic article, styled like post cards.
  */
 const formatResult = (document, url, title, excerpt) => {
   const article = document.createElement("article");
-  article.className = "search-result d-card d-card-border bg-base-100 shadow-none";
+  article.className = "card search-result";
 
   const body = document.createElement("a");
   body.setAttribute("href", url);
-  body.className = "d-card-body";
+  body.className = "card__body";
 
   const titleEl = document.createElement("h2");
-  titleEl.className = "d-card-title mt-0";
+  titleEl.className = "post-card-title";
   titleEl.textContent = title;
   body.appendChild(titleEl);
 
   if (excerpt) {
     const excerptEl = document.createElement("p");
+    excerptEl.className = "text-muted";
     excerptEl.textContent = excerpt.replace(/<[^>]+>/g, "");
     body.appendChild(excerptEl);
   }
