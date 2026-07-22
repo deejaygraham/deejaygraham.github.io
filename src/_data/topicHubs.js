@@ -1,6 +1,6 @@
 /**
  * Topic hubs: curated landing pages for selected tags at /tags/{slug}/.
- * Keys must match normalized tag names (see src/content/posts/tag-taxonomy.js).
+ * Keys must match normalized tag names (see src/_11ty/utils/tag-taxonomy.js).
  *
  * Fields:
  * - title, description — page title and meta description
