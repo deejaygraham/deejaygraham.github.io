@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/_generated/css/tailwind.css --minify",
-    "watch:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/_generated/css/tailwind.css --watch",
+    "css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/_generated/css/site.css --minify",
+    "watch:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./src/_generated/css/site.css --watch",
     "build:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js",
     "watch:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/assets/js --watch",
     "build:sw": "node scripts/build-service-worker.mjs",
