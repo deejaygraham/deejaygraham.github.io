@@ -1,5 +1,4 @@
-/* global elasticlunr */
-"use strict";
+import elasticlunr from "elasticlunr";
 
 const ignoreEnterKey = (e) => {
   if (e.keyCode === 13) {
