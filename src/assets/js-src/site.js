@@ -1,8 +1,8 @@
-import { registerServiceWorker } from "../../_includes/scripts/register-service-worker.js";
-import { registerThemeSwitch } from "../../_includes/scripts/theme-switcher.js";
-import { addCopyButtonToSourceCode } from "../../_includes/scripts/add-source-copy-button.js";
-import { renderMicrobits } from "../../_includes/scripts/microbit.js";
-import { initNarratePostContent } from "../../_includes/scripts/read-content-aloud.js";
+import { registerServiceWorker } from "./register-service-worker.js";
+import { registerThemeSwitch } from "./theme-switcher.js";
+import { addCopyButtonToSourceCode } from "./add-source-copy-button.js";
+import { renderMicrobits } from "./microbit.js";
+import { initNarratePostContent } from "./read-content-aloud.js";
 
 const runWhenDocumentReady = (callback) => {
   if (document.readyState === "loading") {
