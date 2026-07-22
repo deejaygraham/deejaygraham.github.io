@@ -30,6 +30,7 @@ export default [
     languageOptions: {
       globals: {
         ...globals.serviceworker,
+        __SW_CACHE_VERSION__: "readonly",
       },
     },
   },
@@ -39,15 +40,6 @@ export default [
       globals: {
         ...globals.node,
         Buffer: "readonly",
-      },
-    },
-  },
-  {
-    files: ["src/service-worker/**/*.js"],
-    ignores: ["src/service-worker/**/*.test.js"],
-    languageOptions: {
-      globals: {
-        ...globals.serviceworker,
       },
     },
   },
