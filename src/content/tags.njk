@@ -11,13 +11,13 @@ permalink: /tags/{{ tag | slugify }}/
 {% set taglist = collections[ tag ] %}
 
 {% if topicHub %}
-<h1 class="text-4xl font-bold">{{ topicHub.title }}</h1>
+<h1 class="page-title">{{ topicHub.title }}</h1>
 <section class="topic-hub-intro" aria-label="Topic introduction">{{ topicHub.intro | safe }}</section>
 
 {% if topicHub.featured and topicHub.featured.length %}
 <section aria-labelledby="start-here-heading">
-<h2 id="start-here-heading" class="text-xl font-bold">Start here</h2>
-<ul class="mb-5">
+<h2 id="start-here-heading" class="section-title">Start here</h2>
+<ul class="mb-m">
   {% for item in topicHub.featured %}
     {% set fp = collections.posts | findPostByUrl(item.url) %}
     {% if fp %}
@@ -32,7 +32,7 @@ permalink: /tags/{{ tag | slugify }}/
 {% endif %}
 
 {% if topicHub.relatedTags and topicHub.relatedTags.length %}
-<p class="mb-5">
+<p class="mb-m">
   Related topics:
   {% for rt in topicHub.relatedTags %}
     {% if collections[rt] and collections[rt].length %}
@@ -41,18 +41,18 @@ permalink: /tags/{{ tag | slugify }}/
   {% endfor %}
 </p>
 
-<hr />
+<hr class="divider" />
 
 {% endif %}
 
 <section aria-labelledby="all-posts-heading">
-<h2 id="all-posts-heading" class="text-xl font-bold">All posts</h2>
+<h2 id="all-posts-heading" class="section-title">All posts</h2>
 {% set postcardlist = taglist | excludePostsByUrls(topicHub.featured) | reverse %}
 {% include "partials/post-card-list.njk" %}
 </section>
 
 {% else %}
-<h1>Posts tagged with #{{ tag }}</h1>
+<h1 class="page-title">Posts tagged with #{{ tag }}</h1>
 {% set postcardlist = taglist | reverse %}
 {% include "partials/post-card-list.njk" %}
 {% endif %}
