@@ -78,6 +78,6 @@ test("automation files", async ({ page }) => {
 
 test("contains css", async ({ page }) => {
   await checkAllResourcesExist(page, [
-    "/css/tailwind.css",
+    "/css/site.css",
   ]);
 });
