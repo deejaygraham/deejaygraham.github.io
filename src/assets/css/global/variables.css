@@ -1,0 +1,75 @@
+/*
+  Design tokens + Utopia-style fluid type/space.
+  Light is the default; dark via data-theme or prefers-color-scheme.
+*/
+
+:root {
+  /* Brand */
+  --color-brand: #cd5c5c;
+  --color-brand-soft: color-mix(in oklab, var(--color-brand) 18%, transparent);
+  --color-brand-on: #fff7f7;
+
+  /* Surfaces (light) */
+  --color-bg: #fbfaf8;
+  --color-bg-subtle: #f3f0eb;
+  --color-border: #e5e0d8;
+  --color-text: #1c1917;
+  --color-text-muted: color-mix(in oklab, var(--color-text) 70%, transparent);
+
+  /* Fluid type (approx 320→1240) */
+  --size-step--1: clamp(0.83rem, 0.79rem + 0.18vw, 0.94rem);
+  --size-step-0: clamp(1rem, 0.95rem + 0.25vw, 1.13rem);
+  --size-step-1: clamp(1.2rem, 1.12rem + 0.39vw, 1.41rem);
+  --size-step-2: clamp(1.44rem, 1.32rem + 0.59vw, 1.76rem);
+  --size-step-3: clamp(1.73rem, 1.55rem + 0.87vw, 2.2rem);
+  --size-step-4: clamp(2.07rem, 1.82rem + 1.25vw, 2.75rem);
+  --size-step-5: clamp(2.49rem, 2.13rem + 1.78vw, 3.43rem);
+
+  /* Fluid space */
+  --space-3xs: clamp(0.25rem, 0.23rem + 0.08vw, 0.31rem);
+  --space-2xs: clamp(0.5rem, 0.47rem + 0.16vw, 0.63rem);
+  --space-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.94rem);
+  --space-s: clamp(1rem, 0.95rem + 0.25vw, 1.13rem);
+  --space-m: clamp(1.5rem, 1.4rem + 0.49vw, 1.88rem);
+  --space-l: clamp(2rem, 1.85rem + 0.74vw, 2.63rem);
+  --space-xl: clamp(3rem, 2.75rem + 1.23vw, 4rem);
+  --space-2xl: clamp(4rem, 3.6rem + 1.97vw, 5.5rem);
+
+  --wrapper-max: 64rem;
+  --gutter: var(--space-s);
+  --flow-space: var(--space-m);
+  --region-space: var(--space-l);
+  --border-radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-brand: #e07a7a;
+    --color-brand-on: #1c1010;
+    --color-bg: #1c1917;
+    --color-bg-subtle: #292524;
+    --color-border: #44403c;
+    --color-text: #f5f5f4;
+    --color-text-muted: color-mix(in oklab, var(--color-text) 70%, transparent);
+  }
+}
+
+[data-theme="dark"] {
+  --color-brand: #e07a7a;
+  --color-brand-on: #1c1010;
+  --color-bg: #1c1917;
+  --color-bg-subtle: #292524;
+  --color-border: #44403c;
+  --color-text: #f5f5f4;
+  --color-text-muted: color-mix(in oklab, var(--color-text) 70%, transparent);
+}
+
+[data-theme="light"] {
+  --color-brand: #cd5c5c;
+  --color-brand-on: #fff7f7;
+  --color-bg: #fbfaf8;
+  --color-bg-subtle: #f3f0eb;
+  --color-border: #e5e0d8;
+  --color-text: #1c1917;
+  --color-text-muted: color-mix(in oklab, var(--color-text) 70%, transparent);
+}
