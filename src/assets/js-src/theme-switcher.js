@@ -2,7 +2,7 @@ const themePreferenceKey = "theme-preference";
 const lightThemeValue = "light";
 const darkThemeValue = "dark";
 const noPreferenceValue = "";
-const activeClass = "d-btn-active";
+const activeClass = "is-active";
 
 const setThemePreference = (themeName) => {
   const htmlElement = document.documentElement;
