@@ -3,7 +3,10 @@ export default function applyAssets(eleventyConfig) {
   eleventyConfig.watchIgnores.add("src/assets/**/*");
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/js/*.js": "/js" });
-  eleventyConfig.addPassthroughCopy({ "./src/_generated/js/*.js": "/js" });
+   eleventyConfig.addPassthroughCopy({
+    "./src/assets/js/vendor/p5.min.js": "/js/p5.min.js",
+    "./src/assets/js/vendor/qrcode.js": "/js/qrcode.js",
+  });
   eleventyConfig.addPassthroughCopy({ "./src/_includes/code/p5js/*.js": "/js" });
 
   eleventyConfig.addPassthroughCopy({
