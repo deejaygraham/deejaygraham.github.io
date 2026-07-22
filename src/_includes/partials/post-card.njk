@@ -1,18 +1,18 @@
 {# Requires url, title, date, tags (array); optional subtitle, excerpt #}
-<article class="d-card d-card-border bg-base-100 shadow-none h-full">
-  <a href="{{ url }}" class="d-card-body">
+<article class="card">
+  <a href="{{ url }}" class="card__body">
     {% if tags %}
-      <p class="mb-0">{%- for tag in tags -%}{{ tag }}{% if not loop.last %} | {% endif %}{%- endfor -%}</p>
+      <p class="post-card-meta">{%- for tag in tags -%}{{ tag }}{% if not loop.last %} · {% endif %}{%- endfor -%}</p>
     {% endif %}
-      <h2 class="d-card-title mt-0">{{ title }}</h2>
+      <h2 class="post-card-title">{{ title }}</h2>
       {% if subtitle %}
-      <p>{{ subtitle }}</p>
+      <p class="text-muted">{{ subtitle }}</p>
       {% endif %}
       {%- if excerpt -%}
-      <p>{{ excerpt }}</p>
+      <p class="text-muted">{{ excerpt }}</p>
       {%- endif -%}
       {%- if date -%}
-      <p><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
+      <p class="post-card-meta"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
       {%- endif -%}
   </a>
 </article>
