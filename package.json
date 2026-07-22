@@ -24,7 +24,7 @@
     "lint:images": "node scripts/lint-asset-images.mjs",
     "mdlint": "markdownlint ./src/content/**/*.md",
     "thumbs": "node ./generate-thumbnails.js",
-    "lintoutput": "npx eslint ./_site",
+    "lintoutput": "node scripts/lint-site-output.mjs",
     "prepare": "husky || true"
   },
   "dependencies": {
