@@ -12,12 +12,13 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const postsDir = path.join(__dirname, "..", "src", "content", "posts");
+const templatesDir = path.join(__dirname, "templates");
 
 const templateFiles = {
-  code: "1111-blog-code.template.md",
-  quote: "1111-blog-quote.template.md",
-  sketchnote: "1111-blog-sketchnote.template.md",
-  video: "1111-blog-video.template.md",
+  code: "code.template.md",
+  quote: "quote.template.md",
+  sketchnote: "sketchnote.template.md",
+  video: "video.template.md",
 };
 
 const types = Object.keys(templateFiles);
@@ -218,7 +219,12 @@ const main = async () => {
     process.exit(1);
   }
 
-  const templatePath = path.join(postsDir, templateFiles[type]);
+  const templatePath = path.join(templatesDir, templateFiles[type]);
+  if (!existsSync(templatePath)) {
+    console.error(`Missing template for type "${type}": ${templatePath}`);
+    process.exit(1);
+  }
+  
   const templateContent = readFileSync(templatePath, "utf8");
   const tags = splitTags(options.tags);
 
