@@ -1,15 +1,15 @@
 {# json-ld for blog posting #}
 {%- if page.data.description %}
-{%- set pageDescription %}{{ page.data.description }}{% endset -%}
+{%- set pageDescription = page.data.description | trim -%}
 {%- elif content %}
-{%- set generatedDescription %}{{ content | excerpt }}{% endset -%}
-{%- if generatedDescription and generatedDescription | trim %}
-{%- set pageDescription %}{{ generatedDescription }}{% endset -%}
+{%- set generatedDescription = content | excerpt | trim -%}
+{%- if generatedDescription %}
+{%- set pageDescription = generatedDescription -%}
 {%- else %}
-{%- set pageDescription %}{{ site.description }}{% endset -%}
+{%- set pageDescription = site.description | trim -%}
 {%- endif %}
 {%- else %}
-{%- set pageDescription %}{{ site.description }}{% endset -%}
+{%- set pageDescription = site.description | trim -%}
 {%- endif %}
 <script type="application/ld+json">
 {
