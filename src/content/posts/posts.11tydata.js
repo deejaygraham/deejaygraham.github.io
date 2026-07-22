@@ -1,5 +1,5 @@
 import path from 'path';
-import { normalizeTags } from "./tag-taxonomy.js";
+import { normalizeTags } from "../../_11ty/utils/tag-taxonomy.js";
 
 const convertFileNameToPath = (filename) => {
     const [year, month, day, ...rest] = filename.split('-');
