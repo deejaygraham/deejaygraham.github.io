@@ -17,7 +17,7 @@ test.describe("topic hubs", () => {
     await expect(startHereList.getByRole("link", { name: "Music Box", exact: true })).toBeVisible();
 
     await expect(page.getByText(/Related topics/)).toBeVisible();
-    const relatedLine = page.locator("p.mb-5").filter({ hasText: /Related topics/ });
+    const relatedLine = page.locator("p").filter({ hasText: /Related topics/ });
     await expect(relatedLine.getByRole("link", { name: "#python", exact: true })).toHaveCount(1);
 
     await expect(page.getByRole("heading", { name: "All posts" })).toBeVisible();
