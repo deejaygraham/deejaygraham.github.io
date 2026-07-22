@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { allowedTags, normalizeTag } from "../src/content/posts/tag-taxonomy.js";
+import { allowedTags, normalizeTag } from "../src/_11ty/utils/tag-taxonomy.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POSTS_DIR = path.join(__dirname, "..", "src", "content", "posts");
@@ -52,7 +52,7 @@ function lintUnknownTags() {
     console.error(`  - ${issue.file}: "${issue.tag}" (normalized: "${issue.normalized}")`);
   }
   console.error("");
-  console.error("Add valid tags to src/content/posts/tag-taxonomy.js if intentional.");
+  console.error("Add valid tags to src/_11ty/utils/tag-taxonomy.js if intentional.");
   process.exit(1);
 }
 
