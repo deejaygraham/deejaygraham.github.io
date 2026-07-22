@@ -2,9 +2,9 @@
 {% block precontent %}
 
 {% if thumbnail %}
-<section class="py-4" aria-label="Featured image">
-  <figure class="m-6">
-    <img class="w-full h-auto" src="{{ thumbnail }}" alt="{{ title }}">
+<section class="mb-m" aria-label="Featured image">
+  <figure class="card__media" style="border-radius: var(--border-radius); overflow: hidden;">
+    <img src="{{ thumbnail }}" alt="{{ title }}">
   </figure>
 </section>
 {% endif %}
@@ -13,8 +13,10 @@
 
 {% block content %}
 <article>
-  <h1 class="text-4xl font-bold">{{ title }} </h1>
+  <h1 class="page-title">{{ title }} </h1>
+  <div class="site-prose">
   {{ content | safe }}
+  </div>
 </article>
 {% endblock %}
 
