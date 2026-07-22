@@ -1,10 +1,12 @@
 {% extends 'layouts/post.njk' %}
 
 {% block articlebody %}
+<div class="site-prose">
 {{ content | safe }}
+</div>
 
-<section class="sketchnote" aria-label="Sketchnote">
-    <table class="w-full table-auto">
+<section class="sketchnote mt-m" aria-label="Sketchnote">
+    <table>
         <thead>
             <tr>
         {% if sketchnote.source %}<th>Source</th>{% endif %}
@@ -26,8 +28,8 @@
             </tr>
         </tbody>
     </table>
-    <figure>
-        <img class="h-auto max-w-full" src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
+    <figure class="mt-m">
+        <img src="{{ sketchnote.url }}" alt="{{ sketchnote.alt }}" />
     </figure>
 </section>
 
