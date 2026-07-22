@@ -12,7 +12,7 @@ export const DEBUG = false;
 
 export const offlinePage = "/offline.html";
 export const searchDatabase = "/search-index.json";
-export const siteStylesheet = "/css/tailwind.css";
+export const siteStylesheet = "/css/site.css";
 export const notFoundPage = "/404.html";
 
 export const coreAssets = [
