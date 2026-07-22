@@ -1,7 +1,7 @@
 ---
 permalink: about/index.html
 layout: about.njk
-title: Hey, Hi, Hello.
+title: hey, hi, hello.
 thumbnail: /assets/img/heroes/hero-makers-and-creators.jpg
 ---
 
