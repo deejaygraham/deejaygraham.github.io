@@ -1,16 +1,16 @@
 {%- if metaDescription %}
-    {%- set pageDescription %}{{ metaDescription }}{% endset -%}
+    {%- set pageDescription %}{{ metaDescription | trim }}{% endset -%}
 {%- elif page.data.description %}
-    {%- set pageDescription %}{{ page.data.description }}{% endset -%}
+    {%- set pageDescription %}{{ page.data.description | trim }}{% endset -%}
 {%- elif content %}
     {%- set generatedDescription %}{{ content | excerpt | trim }}{% endset -%}
     {%- if generatedDescription %}
-        {%- set pageDescription %}{{ generatedDescription }}{% endset -%}
+        {%- set pageDescription %}{{ generatedDescription | trim }}{% endset -%}
     {%- else %}
-        {%- set pageDescription %}{{ site.description }}{% endset -%}
+        {%- set pageDescription %}{{ site.description | trim }}{% endset -%}
     {%- endif %}
 {%- else %}
-    {%- set pageDescription %}{{ site.description }}{% endset -%}
+    {%- set pageDescription %}{{ site.description | trim }}{% endset -%}
 {%- endif %}
     <meta name="description" content="{{ pageDescription }}" />
     <meta name="author" content="{{ site.author }}" />
