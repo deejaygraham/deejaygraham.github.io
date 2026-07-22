@@ -2,25 +2,25 @@
 
 {% block content %}
 
-<h1 class="text-4xl font-bold">{{ title }}</h1>
+<h1 class="page-title">{{ title }}</h1>
 
 <search>
-<form class="my-6" role="search" aria-label="Blog post search" autocomplete="off">
-	<fieldset class="d-fieldset">
-		<label for="search-box" class="mb-2 block text-sm font-semibold">keywords</label>
-		<input type="search" id="search-box" class="d-input w-full search-box" name="query" placeholder="search for posts" spellcheck="false" >
+<form class="mt-m mb-m" role="search" aria-label="Blog post search" autocomplete="off">
+	<fieldset class="field">
+		<label for="search-box" class="field__label">keywords</label>
+		<input type="search" id="search-box" class="field__control search-box" name="query" placeholder="search for posts" spellcheck="false" >
 	</fieldset>
 </form>
 </search>
 
-<section id="search-results" class="flex flex-col gap-4 my-6" aria-live="polite" aria-label="Search results">
+<section id="search-results" class="search-results" aria-live="polite" aria-label="Search results">
 {# Empty container for results #}
 </section>
 
-<hr />
+<hr class="divider" />
 
 <section aria-labelledby="recent-posts-heading">
-  <h2 id="recent-posts-heading" class="text-xl font-bold">Recent Posts</h2>
+  <h2 id="recent-posts-heading" class="section-title">Recent Posts</h2>
   {% set postcardlist = collections.posts | limit(6) %}
   {% include "partials/post-card-list.njk" %}
 </section>
