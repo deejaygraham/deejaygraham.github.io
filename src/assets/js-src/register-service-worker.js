@@ -1,24 +1,111 @@
-export const addCopyButtonToSourceCode = () => {
-  const snippets = document.querySelectorAll('pre[class*="shiki"]');
-  const buttonClasses = ["button", "copy-source-button"];
+function showSwUpdateNotification(onRefresh) {
+  const existing = document.getElementById("sw-update-notification");
+  if (existing) {
+    return;
+  }
 
-  const copyGraphicSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
-  const buttonText = 'copy';
-  
-  snippets.forEach((snippet, index) => {
-    const button = document.createElement('button');
-    button.classList.add(...buttonClasses);
-    button.setAttribute('data-testid', `copy_button_${index}`);
-    button.innerHTML = copyGraphicSvg + buttonText;
-    button.addEventListener('click', () => {
-      // skip over button and get content of <code> element
-      navigator.clipboard.writeText(snippet.lastElementChild.textContent);
+  const wrapper = document.createElement("div");
+  wrapper.id = "sw-update-notification";
+  wrapper.style.position = "fixed";
+  wrapper.style.left = "1rem";
+  wrapper.style.right = "1rem";
+  wrapper.style.bottom = "1rem";
+  wrapper.style.zIndex = "9999";
 
-      button.innerHTML = copyGraphicSvg + 'copied';
+  const notification = document.createElement("div");
+  notification.className = "alert";
+  notification.setAttribute("role", "alert");
+  notification.style.margin = "0 auto";
+  notification.style.maxWidth = "38rem";
 
-      setTimeout(() => button.innerHTML = copyGraphicSvg + buttonText, 2000);
-    });
-    
-    snippet.insertBefore(button, snippet.firstChild);
+  const message = document.createElement("span");
+  message.textContent = "A newer version of this site is available.";
+
+  const actions = document.createElement("div");
+  actions.className = "alert__actions";
+
+  const refreshButton = document.createElement("button");
+  refreshButton.type = "button";
+  refreshButton.className = "button";
+  refreshButton.textContent = "Refresh";
+  refreshButton.addEventListener("click", () => {
+    refreshButton.disabled = true;
+    onRefresh();
   });
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.className = "button button--ghost";
+  deleteBtn.type = "button";
+  deleteBtn.setAttribute("aria-label", "dismiss update notification");
+  deleteBtn.textContent = "Dismiss";
+  deleteBtn.addEventListener("click", () => {
+    wrapper.remove();
+  });
+
+  actions.appendChild(refreshButton);
+  actions.appendChild(deleteBtn);
+  notification.appendChild(message);
+  notification.appendChild(actions);
+  wrapper.appendChild(notification);
+  document.body.appendChild(wrapper);
+}
+
+function watchForServiceWorkerUpdate(registration, onRefreshRequested) {
+  const promptToUpdate = () => {
+    showSwUpdateNotification(() => {
+      onRefreshRequested();
+      if (registration.waiting) {
+        registration.waiting.postMessage("SKIP_WAITING");
+      }
+    });
+  };
+
+  if (registration.waiting) {
+    promptToUpdate();
+  }
+
+  registration.addEventListener("updatefound", () => {
+    const newWorker = registration.installing;
+    if (!newWorker) {
+      return;
+    }
+
+    newWorker.addEventListener("statechange", () => {
+      if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+        promptToUpdate();
+      }
+    });
+  });
+}
+
+export const registerServiceWorker = async () => {
+  if (!("serviceWorker" in navigator)) {
+    return;
+  }
+
+  let refreshRequestedByUser = false;
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    // Only reload after the user accepts an available update.
+    // Avoiding unconditional reloads prevents navigation races in tests.
+    if (!refreshRequestedByUser || refreshing) {
+      return;
+    }
+
+    refreshing = true;
+    window.location.reload();
+  });
+
+  try {
+    const registration = await navigator.serviceWorker.register("/sw.js", {
+      type: "module",
+      scope: "/",
+    });
+
+    watchForServiceWorkerUpdate(registration, () => {
+      refreshRequestedByUser = true;
+    });
+  } catch (error) {
+    console.error(`Registration failed with ${error}`);
+  }
 };
