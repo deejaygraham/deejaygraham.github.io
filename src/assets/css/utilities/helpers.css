@@ -1,0 +1,114 @@
+.visually-hidden,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.region {
+  padding-block: var(--region-space, var(--space-l));
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-step-1 {
+  font-size: var(--size-step-1);
+}
+
+.text-step-2 {
+  font-size: var(--size-step-2);
+}
+
+.text-step-3 {
+  font-size: var(--size-step-3);
+}
+
+.text-step-4 {
+  font-size: var(--size-step-4);
+}
+
+.weight-semibold {
+  font-weight: 600;
+}
+
+.tracking-tight {
+  letter-spacing: -0.02em;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.flow-space-s {
+  --flow-space: var(--space-s);
+}
+
+.flow-space-l {
+  --flow-space: var(--space-l);
+}
+
+.gutter-s {
+  --gutter: var(--space-s);
+}
+
+.mt-s {
+  margin-block-start: var(--space-s);
+}
+
+.mt-m {
+  margin-block-start: var(--space-m);
+}
+
+.mt-l {
+  margin-block-start: var(--space-l);
+}
+
+.mb-s {
+  margin-block-end: var(--space-s);
+}
+
+.mb-m {
+  margin-block-end: var(--space-m);
+}
+
+.mb-l {
+  margin-block-end: var(--space-l);
+}
+
+.mb-0 {
+  margin-block-end: 0;
+}
+
+.only-desktop {
+  display: none;
+}
+
+.only-desktop-flex {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .only-desktop {
+    display: inline;
+  }
+
+  .only-desktop-flex {
+    display: flex;
+  }
+}
