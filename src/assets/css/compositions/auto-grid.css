@@ -1,0 +1,15 @@
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--auto-grid-min, 16rem)), 1fr)
+  );
+  gap: var(--auto-grid-gap, var(--space-s));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.auto-grid > li {
+  min-width: 0;
+}
