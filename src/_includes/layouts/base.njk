@@ -36,14 +36,12 @@
     {% include "partials/siteheader.njk" %}
     {% endblock %}
 
-    <main class="main mx-auto mb-6 max-w-5xl px-4" id="main" >
+    <main class="main" id="main">
       {% block precontent %}{% endblock %}
 
-      <section class="pt-0 site-prose">
-        {% block content %}
-          {{ content | safe }}
-        {% endblock %}
-      </section>
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
 
       {% block postcontent %}{% endblock %}
     </main>
