@@ -9,22 +9,22 @@ export default [
       "src/_includes/code/**",
       "src/assets/js/**",
       "src/_generated/**",
-      "_site/js/p5.min.js",
-      "_site/js/qrcode.js",
+      // Built/minified bundles — lint sources under src/ instead
+      "_site/js/**",
+      "_site/sw.js",
     ],
   },
   {
-    languageOptions:
-    {
+    languageOptions: {
       globals: {
         ...globals.browser,
         process: "readonly",
-      }
-    }
+      },
+    },
   },
   pluginJs.configs.recommended,
   {
-    files: ["src/service-worker/**/*.js", "_site/js/search.js"],
+    files: ["src/service-worker/**/*.js"],
     ignores: ["src/service-worker/**/*.test.js"],
     languageOptions: {
       globals: {
@@ -38,22 +38,6 @@ export default [
       globals: {
         ...globals.node,
         Buffer: "readonly",
-      },
-    },
-  },
-  {
-    files: ["_site/sw.js"],
-    languageOptions: {
-      globals: {
-        ...globals.serviceworker,
-      },
-    },
-  },
-  {
-    files: ["_site/js/search.js"],
-    languageOptions: {
-      globals: {
-        elasticlunr: "readonly",
       },
     },
   },
