@@ -36,7 +36,7 @@ export async function buildServiceWorker() {
     platform: "browser",
     target: ["es2022"],
     define: {
-      __SW_CACHE_VERSION__: JSON.stringify(`-${suffix}`),
+      "globalThis.__SW_CACHE_VERSION__": JSON.stringify(`-${suffix}`),
     },
     banner: {
       js:
