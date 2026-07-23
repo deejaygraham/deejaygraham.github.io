@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 //import * as prettier from "prettier";
 import pageContentLinter from "../linters/page-content/index.js";
+import generateAllSocialImages from "../plugins/generate-social-images/generateAllSocialImages.js";
 import {
   SOCIAL_PREVIEW_CACHE_DIR,
   SOCIAL_PREVIEW_SITE_DIR,
@@ -19,7 +20,7 @@ async function copySocialPreviewsToSite() {
 
 export default function applyLifecycle(eleventyConfig, { buildServiceWorker }) {
   eleventyConfig.on("eleventy.before", async () => {
-    await buildServiceWorker();
+    await Promise.all([buildServiceWorker(), generateAllSocialImages()]);
   });
 
   eleventyConfig.on("eleventy.after", async () => {
