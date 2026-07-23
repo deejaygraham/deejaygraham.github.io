@@ -2,6 +2,8 @@
 import { test, expect } from '@playwright/test';
 import checkResourceExists from './check-resource-exists.js';
 
+const PRODUCTION_HOST = "deejaygraham.github.io";
+
 /**
  * Treat same-origin links as internal (local `eleventy --serve`) and production host.
  * @param {string} link absolute URL from `HTMLAnchorElement.href`
@@ -20,9 +22,30 @@ const validLink = (link, pageUrl) => {
   try {
     const u = new URL(link);
     const base = new URL(pageUrl);
-    return u.origin === base.origin || u.hostname === "deejaygraham.github.io";
+    return u.origin === base.origin || u.hostname === PRODUCTION_HOST;
   } catch {
     return false;
+  }
+};
+
+/**
+ * Meta/canonical URLs use the production host; rewrite to the local served origin
+ * so newly built assets (e.g. og:image) are checked against `_site`, not live.
+ * @param {string} url
+ * @param {string} pageUrl
+ */
+const toLocalUrl = (url, pageUrl) => {
+  try {
+    const absolute = new URL(url, pageUrl);
+    if (absolute.hostname !== PRODUCTION_HOST) {
+      return absolute.href;
+    }
+    return new URL(
+      `${absolute.pathname}${absolute.search}${absolute.hash}`,
+      new URL(pageUrl).origin,
+    ).href;
+  } catch {
+    return url;
   }
 };
 
@@ -72,18 +95,20 @@ export default async function (page, url) {
     
   const linksOnThisPage = await getAllLinksFromPage(page);
 
-  for (const url of imagesOnThisPage) {
-    if (url) {
-        await test.step(`Checking image: ${url}`, async () => {
-          await checkResourceExists(page, url);
+  for (const imageUrl of imagesOnThisPage) {
+    if (imageUrl) {
+        const localUrl = toLocalUrl(imageUrl, page.url());
+        await test.step(`Checking image: ${localUrl}`, async () => {
+          await checkResourceExists(page, localUrl);
     });
     }
   }
   
-  for (const url of linksOnThisPage) {
-    if (url) {
-        await test.step(`Checking link: ${url}`, async () => {
-            const response = await page.request.get(url);
+  for (const linkUrl of linksOnThisPage) {
+    if (linkUrl) {
+        const localUrl = toLocalUrl(linkUrl, page.url());
+        await test.step(`Checking link: ${localUrl}`, async () => {
+            const response = await page.request.get(localUrl);
             await expect(response?.status()).toBe(200);
             const body = await response.text();
             expect(body.toLowerCase()).not.toContain("blog is missing");
