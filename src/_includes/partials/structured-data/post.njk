@@ -37,7 +37,7 @@
   "keywords": "{{ tags | arrayToCommaString }}",
   {%- endif %}
   "image": [
-    "{{ site.url }}/img/previews/{% SocialImageName page.fileSlug %}"
+    "{{ site.url }}/img/previews/{{ (page.fileSlug or 'index') | socialImageFile }}"
   ]
 } 
 </script>
