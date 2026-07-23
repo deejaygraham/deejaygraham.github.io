@@ -1,31 +1,32 @@
 import sharp from "sharp";
-import fs from 'fs';
-import path from "path"
+import fs from "fs";
+import path from "path";
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
 import getAdaptiveTitleLayout from "./getAdaptiveTitleLayout.js";
+import slugifySocialImageName from "./slugifySocialImageName.js";
 
 export default async function (
-	imageName, 
-	title, 
-	postDate, 
-	siteName, 
-	targetDir, 
-	watermark, 
-	options = {}
+  imageName,
+  title,
+  postDate,
+  siteName,
+  targetDir,
+  watermark,
+  options = {},
 ) {
   const {
-	  debugSvg = false,
-	  debugSvgDir = targetDir,
+    debugSvg = false,
+    debugSvgDir = targetDir,
   } = options;
 
-  const safeFileName = `${imageName}`.replace(/[^a-z0-9-_]/gi, "-").toLowerCase();
+  const safeFileName = slugifySocialImageName(imageName);
   const fileName = `${safeFileName}.jpg`;
   const outputPath = path.join(targetDir, fileName);
   const svgOutputPath = path.join(debugSvgDir, fileName);
-	
+
   if (fs.existsSync(outputPath)) {
-	  return `<!-- Already exists ${fileName} -->`;
+    return { fileName, alreadyExists: true };
   }
 
   const graphicWidth = 1200;
@@ -116,8 +117,14 @@ export default async function (
         console.error("Failed to write debug SVG:", writeErr);
       }
 
-      console.error("Eleventy generating social images error:", err, { template, fileName, title, siteName});
+      console.error("Generating social images error:", err, {
+        template,
+        fileName,
+        title,
+        siteName,
+      });
+      return { fileName, error: true };
     }
 
-    return `<!-- Generated ${fileName} -->`;
+  return { fileName, alreadyExists: false };
 }
