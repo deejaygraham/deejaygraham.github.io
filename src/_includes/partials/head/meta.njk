@@ -1,16 +1,16 @@
 {%- if metaDescription %}
-    {%- set pageDescription %}{{ metaDescription | trim }}{% endset -%}
+{%- set pageDescription = metaDescription | trim -%}
 {%- elif page.data.description %}
-    {%- set pageDescription %}{{ page.data.description | trim }}{% endset -%}
+{%- set pageDescription = page.data.description | trim -%}
 {%- elif content %}
-    {%- set generatedDescription %}{{ content | excerpt | trim }}{% endset -%}
-    {%- if generatedDescription %}
-        {%- set pageDescription %}{{ generatedDescription | trim }}{% endset -%}
-    {%- else %}
-        {%- set pageDescription %}{{ site.description | trim }}{% endset -%}
-    {%- endif %}
+{%- set generatedDescription = content | excerpt | trim -%}
+{%- if generatedDescription %}
+{%- set pageDescription = generatedDescription -%}
 {%- else %}
-    {%- set pageDescription %}{{ site.description | trim }}{% endset -%}
+{%- set pageDescription = site.description | trim -%}
+{%- endif %}
+{%- else %}
+{%- set pageDescription = site.description | trim -%}
 {%- endif %}
     <meta name="description" content="{{ pageDescription }}" />
     <meta name="author" content="{{ site.author }}" />
@@ -32,13 +32,7 @@
     <meta property="og:title" content="{{ pageTitle }}" />
     <meta property="og:url" content="{{ site.url ~ page.url }}" />
     <meta property="og:logo" content="{{ site.url }}/img/favicon.png" />
-{%- set postTitle %}{{ title | safe }}{% endset %}
-{%- if page.date %}
-{%- set postDate %}{{ page.date | dateFull }}{% endset %}
-{%- endif -%}
-{%- set imageName = page.fileSlug %}
-{% GenerateSocialImage imageName, postTitle, postDate %}
-    <meta property="og:image" content="{{ site.url }}/img/previews/{% SocialImageName imageName %}" />
+    <meta property="og:image" content="{{ site.url }}/img/previews/{{ (page.fileSlug or 'index') | socialImageFile }}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 {% endif %}
