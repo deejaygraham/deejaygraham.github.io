@@ -2,14 +2,17 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import { DateTime } from "luxon";
+import site from "../../../_data/site.js";
 import generateSocialImage from "./generateSocialImage.js";
-import { SOCIAL_PREVIEW_CACHE_DIR } from "./paths.js";
+import {
+  SOCIAL_PREVIEW_CACHE_DIR,
+  SOCIAL_PREVIEW_DEFAULT_SLUG,
+} from "./paths.js";
 import slugifySocialImageName from "./slugifySocialImageName.js";
 
 const WATERMARK = "./src/assets/img/favicon.png";
-const SITE_NAME = "d.j. graham";
+const SITE_NAME = site.name || "d.j. graham";
 const POSTS_DIR = "src/content/posts";
-const CONTENT_DIR = "src/content";
 const DEFAULT_CONCURRENCY = 8;
 
 /** Match Eleventy fileSlug for YYYY-MM-DD-title content files. */
@@ -63,6 +66,13 @@ async function collectTargets() {
     });
   };
 
+  // One shared preview for about, index, archive, and other non-post pages.
+  addTarget({
+    slug: SOCIAL_PREVIEW_DEFAULT_SLUG,
+    title: site.title,
+    postDate: "",
+  });
+
   const postFiles = await fs.readdir(POSTS_DIR);
   for (const file of postFiles) {
     if (!file.endsWith(".md")) {
@@ -79,25 +89,6 @@ async function collectTargets() {
       slug: eleventyFileSlug(file),
       title: data.title,
       postDate: formatDateFull(data.date || dateFromFilename(file)),
-    });
-  }
-
-  const contentFiles = await fs.readdir(CONTENT_DIR);
-  for (const file of contentFiles) {
-    if (!/\.(md|njk)$/i.test(file)) {
-      continue;
-    }
-
-    const raw = await fs.readFile(path.join(CONTENT_DIR, file), "utf8");
-    const { data } = matter(raw);
-    if (data.excludeFromSitemap || !data.title) {
-      continue;
-    }
-
-    addTarget({
-      slug: eleventyFileSlug(file),
-      title: data.title,
-      postDate: formatDateFull(data.date),
     });
   }
 
