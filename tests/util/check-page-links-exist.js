@@ -29,12 +29,14 @@ const validLink = (link, pageUrl) => {
 };
 
 /**
- * Meta/canonical URLs use the production host; rewrite to the local served origin
- * so newly built assets (e.g. og:image) are checked against `_site`, not live.
+ * og:image uses the production host in meta; rewrite to the local served origin
+ * so newly built previews are checked against `_site`, not live.
+ * Do not use this for normal page links — those may point at production paths
+ * that are not part of the local build.
  * @param {string} url
  * @param {string} pageUrl
  */
-const toLocalUrl = (url, pageUrl) => {
+const ogImageToLocalUrl = (url, pageUrl) => {
   try {
     const absolute = new URL(url, pageUrl);
     if (absolute.hostname !== PRODUCTION_HOST) {
@@ -87,28 +89,32 @@ export default async function (page, url) {
   // process mostly stolen from https://github.com/checkly/playwright-examples/blob/main/404-detection/tests/no-404s.spec.ts
   await page.goto(url);
     
-  let imagesOnThisPage = await getAllImagesOnPage(page);
+  const imagesOnThisPage = await getAllImagesOnPage(page);
 
   const metaOgImage = getOgMetaTag(page, "image");
   const ogImageUrl = await metaOgImage.getAttribute('content');
-  imagesOnThisPage = [...imagesOnThisPage, ogImageUrl];
     
   const linksOnThisPage = await getAllLinksFromPage(page);
 
   for (const imageUrl of imagesOnThisPage) {
     if (imageUrl) {
-        const localUrl = toLocalUrl(imageUrl, page.url());
-        await test.step(`Checking image: ${localUrl}`, async () => {
-          await checkResourceExists(page, localUrl);
+        await test.step(`Checking image: ${imageUrl}`, async () => {
+          await checkResourceExists(page, imageUrl);
     });
     }
+  }
+
+  if (ogImageUrl) {
+    const localOgImage = ogImageToLocalUrl(ogImageUrl, page.url());
+    await test.step(`Checking og:image: ${localOgImage}`, async () => {
+      await checkResourceExists(page, localOgImage);
+    });
   }
   
   for (const linkUrl of linksOnThisPage) {
     if (linkUrl) {
-        const localUrl = toLocalUrl(linkUrl, page.url());
-        await test.step(`Checking link: ${localUrl}`, async () => {
-            const response = await page.request.get(localUrl);
+        await test.step(`Checking link: ${linkUrl}`, async () => {
+            const response = await page.request.get(linkUrl);
             await expect(response?.status()).toBe(200);
             const body = await response.text();
             expect(body.toLowerCase()).not.toContain("blog is missing");
