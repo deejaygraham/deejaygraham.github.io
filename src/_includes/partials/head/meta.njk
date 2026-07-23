@@ -32,7 +32,7 @@
     <meta property="og:title" content="{{ pageTitle }}" />
     <meta property="og:url" content="{{ site.url ~ page.url }}" />
     <meta property="og:logo" content="{{ site.url }}/img/favicon.png" />
-    <meta property="og:image" content="{{ site.url }}/img/previews/{{ (page.fileSlug or 'index') | socialImageFile }}" />
+    <meta property="og:image" content="{{ site.url }}/img/previews/{{ page.inputPath | ogImageFile(page.fileSlug) }}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 {% endif %}
