@@ -11,7 +11,7 @@ import readingTime from "../filters/readingTime.js";
 import wordCount from "../filters/wordCount.js";
 import relatedPosts from "../filters/relatedPosts.js";
 import { excludePostsByUrls, findPostByUrl } from "../filters/postCollections.js";
-import socialImageFile from "../filters/socialImageFile.js";
+import socialImageFile, { ogImageFile } from "../filters/socialImageFile.js";
 
 export default function applyFilters(eleventyConfig) {
   eleventyConfig.addFilter("debugger", (...args) => {
@@ -39,4 +39,5 @@ export default function applyFilters(eleventyConfig) {
   eleventyConfig.addFilter("findPostByUrl", findPostByUrl);
   eleventyConfig.addFilter("excludePostsByUrls", excludePostsByUrls);
   eleventyConfig.addFilter("socialImageFile", socialImageFile);
+  eleventyConfig.addFilter("ogImageFile", ogImageFile);
 }
