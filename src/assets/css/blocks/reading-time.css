@@ -1,4 +1,4 @@
-span.reading-time {
+#reading-time {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2xs);
