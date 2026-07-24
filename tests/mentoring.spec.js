@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 import checkPageLinksExist from './util/check-page-links-exist.js';
 
 test.describe("mentoring page", () => {
-  test.skip("renders correctly", async ({ page }) => {
+  test("renders correctly", async ({ page }) => {
     await page.goto("/mentoring/");
 
     await expect(page.getByRole('heading', { name: "We Think Code" })).toBeVisible();
