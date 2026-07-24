@@ -12,6 +12,7 @@
     "start": "npm-run-all --parallel watch:js watch:css start:11ty",
     "start:11ty": "npx eleventy --serve",
     "test": "npx playwright test",
+    "test:a11y": "node scripts/run-a11y-tests.mjs",
     "unit-test": "npx ava --verbose",
     "format": "prettier . --write",
     "validate:pre": "npm-run-all lint:src lint:tests mdlint lint:tags lint:posts lint:images unit-test",
