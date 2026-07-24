@@ -29,8 +29,8 @@ test("contains hero images", async ({ page }) => {
 });
 
 test("contains og social images for blog posts", async ({ page }) => {
-  await checkSocialPreview(page, "/img/previews/microbit-portal-theme.jpg");
-  await checkSocialPreview(page, "/img/previews/microbit-birds2.jpg");
+  await checkSocialPreview(page, "/img/previews/portal-theme-on-microbit.jpg");
+  await checkSocialPreview(page, "/img/previews/microbit-bird-song2.jpg");
 });
 
 /*
