@@ -1,10 +1,8 @@
 ---
 permalink: mentoring/index.html
-layout: base.njk
+layout: mentoring.njk
 title: Mentoring and Teaching
 ---
-
-<h1 class="page-title">mentoring and teaching</h1>
 
 I'm passionate about helping the next generation of software developers grow their
 skills and build meaningful careers in technology. Over the years, I have been fortunate to work with talented individuals and teams at a variety of stages in their journey.
