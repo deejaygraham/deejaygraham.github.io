@@ -6,16 +6,132 @@ import sanitizeHTML from "./sanitizeHTML.js";
 import getAdaptiveTitleLayout from "./getAdaptiveTitleLayout.js";
 import slugify from "./slugify.js";
 
-export default async function (
+/** Bump when OG layout/content changes so cached previews regenerate. */
+export const OG_LAYOUT_VERSION = "2026-07-24-v4";
+
+const GRAPHIC_WIDTH = 1200;
+const GRAPHIC_HEIGHT = 630;
+const BG = "#FFF";
+const TITLE_COLOUR = "indianred";
+const META_COLOUR = "#000";
+const FONT_FAMILY = "sans-serif";
+
+async function prepareAvatar(sourcePath, size) {
+  return sharp(sourcePath)
+    .resize(size, size, { fit: "cover" })
+    .png()
+    .toBuffer();
+}
+
+function buildDefaultSvg(shortTitle) {
+  const maxTextWidth = 560;
+  const { fontSize, lineHeight, lines } = getAdaptiveTitleLayout(
+    shortTitle,
+    splitLongLine,
+    {
+      maxLines: 3,
+      maxFontSize: 72,
+      minFontSize: 40,
+      fontStep: 2,
+      maxTextWidth,
+      avgCharWidthFactor: 0.56,
+      lineHeightFactor: 1.15,
+    },
+  );
+
+  // Text sits to the right of the large avatar (~420px + padding).
+  const textX = 520;
+  const blockHeight = lines.length * lineHeight;
+  const startY =
+    Math.round((GRAPHIC_HEIGHT - blockHeight) / 2) + Math.round(lineHeight * 0.75);
+
+  const titleSvg = lines.reduce((paragraph, line, i) => {
+    const safe = sanitizeHTML(line);
+    return (
+      paragraph +
+      `<text x="${textX}" y="${startY + i * lineHeight}" fill="${TITLE_COLOUR}" font-size="${fontSize}px" font-weight="700">${safe}</text>`
+    );
+  }, "");
+
+  return `<svg width="${GRAPHIC_WIDTH}" height="${GRAPHIC_HEIGHT}" viewBox="0 0 ${GRAPHIC_WIDTH} ${GRAPHIC_HEIGHT}" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="${GRAPHIC_WIDTH}" height="${GRAPHIC_HEIGHT}" fill="${BG}" />
+  <g style="font-family:'${FONT_FAMILY}'">
+    ${titleSvg}
+  </g>
+</svg>`;
+}
+
+function buildPostSvg(title, postDate, siteUrl) {
+  const sidePadding = 80;
+  const maxTextWidth = GRAPHIC_WIDTH - sidePadding * 2;
+  const { fontSize, lineHeight, lines } = getAdaptiveTitleLayout(
+    title,
+    splitLongLine,
+    {
+      maxLines: 4,
+      maxFontSize: 72,
+      minFontSize: 40,
+      fontStep: 2,
+      maxTextWidth,
+      avgCharWidthFactor: 0.56,
+      lineHeightFactor: 1.15,
+    },
+  );
+
+  const centerX = GRAPHIC_WIDTH / 2;
+  const blockHeight = lines.length * lineHeight;
+  const titleStartY =
+    Math.round((GRAPHIC_HEIGHT - blockHeight) / 2) + Math.round(lineHeight * 0.7);
+  const cornerInset = 56;
+  const metaFontSize = 24;
+  // Same corner inset as the URL: baseline inset from the top edge.
+  const dateY = cornerInset;
+  const footerY = GRAPHIC_HEIGHT - cornerInset;
+
+  const titleSvg = lines.reduce((paragraph, line, i) => {
+    const safe = sanitizeHTML(line);
+    return (
+      paragraph +
+      `<text x="${centerX}" y="${titleStartY + i * lineHeight}" text-anchor="middle" fill="${TITLE_COLOUR}" font-size="${fontSize}px" font-weight="700">${safe}</text>`
+    );
+  }, "");
+
+  const dateSvg = postDate
+    ? `<text x="${sidePadding}" y="${dateY}" text-anchor="start" fill="${META_COLOUR}" font-size="${metaFontSize}px" font-weight="600">${sanitizeHTML(postDate)}</text>`
+    : "";
+
+  const urlSvg = `<text x="${sidePadding}" y="${footerY}" text-anchor="start" fill="${META_COLOUR}" font-size="${metaFontSize}px" font-weight="600">${sanitizeHTML(siteUrl)}</text>`;
+
+  return `<svg width="${GRAPHIC_WIDTH}" height="${GRAPHIC_HEIGHT}" viewBox="0 0 ${GRAPHIC_WIDTH} ${GRAPHIC_HEIGHT}" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="${GRAPHIC_WIDTH}" height="${GRAPHIC_HEIGHT}" fill="${BG}" />
+  <g style="font-family:'${FONT_FAMILY}'">
+    ${dateSvg}
+    ${titleSvg}
+    ${urlSvg}
+  </g>
+</svg>`;
+}
+
+/**
+ * @param {string} imageName slug used for the output filename
+ * @param {string} title display title (posts) or short site name (default)
+ * @param {string} postDate formatted date, empty for default variant
+ * @param {string} siteUrl display URL for post footer (e.g. deejaygraham.github.io)
+ * @param {string} targetDir
+ * @param {string} avatarPath path to avatar/favicon image
+ * @param {{ variant?: "default" | "post", debugSvg?: boolean, debugSvgDir?: string }} [options]
+ */
+export default async function generateSocialImage(
   imageName,
   title,
   postDate,
-  siteName,
+  siteUrl,
   targetDir,
-  watermark,
+  avatarPath,
   options = {},
 ) {
   const {
+    variant = postDate ? "post" : "default",
     debugSvg = false,
     debugSvgDir = targetDir,
   } = options;
@@ -23,108 +139,70 @@ export default async function (
   const safeFileName = slugify(imageName);
   const fileName = `${safeFileName}.jpg`;
   const outputPath = path.join(targetDir, fileName);
-  const svgOutputPath = path.join(debugSvgDir, fileName);
+  const svgOutputPath = path.join(debugSvgDir, `${safeFileName}.svg`);
 
   if (fs.existsSync(outputPath)) {
     return { fileName, alreadyExists: true };
   }
 
-  const graphicWidth = 1200;
-  const graphicHeight = 630;
+  const template =
+    variant === "default"
+      ? buildDefaultSvg(title)
+      : buildPostSvg(title, postDate, siteUrl);
 
-  const start_x = 550;
-  const start_y = 150;
-  const max_lines = 4;
-  
-  const font_weight = 700;
-  const site_font_size = 25;
-	
-  const titleColour = 'indianred'; // '#FF6C23'; // 000
-  const siteNameColour = "#000"; // 000
-  const bgColour = "#FFF"; //"#1D1F1E"; // FFF
-	
-  // Available width from text start to right edge, minus some padding
-  const rightPadding = 60;
-  const maxTextWidth = graphicWidth - start_x - rightPadding;
-	
-  const { fontSize: font_size, lineHeight: line_height, lines: title_lines } = getAdaptiveTitleLayout(
-    title,
-    splitLongLine,
-    {
-      max_lines,
-      maxFontSize: 90,
-      minFontSize: 48,
-      fontStep: 2,
-      maxTextWidth,
-      avgCharWidthFactor: 0.56,
-      lineHeightFactor: 1.15,
-    }
-  );
-	
-  const start_y_middle = start_y + (((max_lines - title_lines.length) * line_height) / 3);
-
-  const svgTitle = title_lines.reduce((paragraph, line, i) => {
-    line = sanitizeHTML(line);
-    return paragraph + `<text x="${start_x}" y="${start_y_middle + (i * line_height)}" fill="${titleColour}" font-size="${font_size}px" font-weight="${font_weight}">${line}</text>`;
-  }, '');
-	
-  // const svgSite = `<text x="${start_x}" y="600" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${siteName}</text>`;
-  const svgDate = `<text x="${start_x}" y="${start_y_middle - 100}" fill="${siteNameColour}" font-size="${site_font_size}px" font-weight="${font_weight}">${postDate}</text>`;
-
-  //  <g style="font-family: 'Consolas', 'Courier New'" >
-	
-  const template = `<svg width="${graphicWidth}" height="${graphicHeight}" viewBox="0 0 ${graphicWidth} ${graphicHeight}" xmlns="http://www.w3.org/2000/svg">  
-  	<rect x="0" y="0" width="${graphicWidth}" height="${graphicHeight}" rx="0" ry="0" fill="${bgColour}" />
-    	<g style="font-family:'sans-serif'">
-      ${postDate ? svgDate : ''}
-  		${svgTitle}
-      </g>
-    </svg>`;
-
-  
   try {
-	  
     if (debugSvg) {
       fs.mkdirSync(debugSvgDir, { recursive: true });
       fs.writeFileSync(svgOutputPath, template, "utf8");
       console.log(`Saved debug SVG: ${svgOutputPath}`);
     }
 
-    // generate the image from the svg        
     const svgBuffer = Buffer.from(template); // eslint-disable-line
+    const composites = [];
+
+    if (variant === "default") {
+      const largeAvatar = await prepareAvatar(avatarPath, 420);
+      composites.push({
+        input: largeAvatar,
+        left: 48,
+        top: Math.round((GRAPHIC_HEIGHT - 420) / 2),
+      });
+    } else {
+      const smallAvatar = await prepareAvatar(avatarPath, 72);
+      composites.push({
+        input: smallAvatar,
+        left: GRAPHIC_WIDTH - 80 - 72,
+        top: GRAPHIC_HEIGHT - 48 - 72,
+      });
+    }
 
     await sharp(svgBuffer)
-	.composite([{
-    		input: watermark,
-    		gravity: 'northwest',
-  	  }])
+      .composite(composites)
       .jpeg({
-		  quality: 65,
-		  progressive: true,
-		  chromaSubsampling: "4:2:0",
-		  mozjpeg: true,
-	  })
+        quality: 65,
+        progressive: true,
+        chromaSubsampling: "4:2:0",
+        mozjpeg: true,
+      })
       .toFile(outputPath);
-
-    } catch(err) {
-	  
-	  // Save the SVG on error even if debugSvg=false
-      try {
-        fs.mkdirSync(debugSvgDir, { recursive: true });
-        fs.writeFileSync(svgOutputPath, template, "utf8");
-        console.error(`Saved failing SVG to: ${svgOutputPath}`);
-      } catch (writeErr) {
-        console.error("Failed to write debug SVG:", writeErr);
-      }
-
-      console.error("Generating social images error:", err, {
-        template,
-        fileName,
-        title,
-        siteName,
-      });
-      return { fileName, error: true };
+  } catch (err) {
+    try {
+      fs.mkdirSync(debugSvgDir, { recursive: true });
+      fs.writeFileSync(svgOutputPath, template, "utf8");
+      console.error(`Saved failing SVG to: ${svgOutputPath}`);
+    } catch (writeErr) {
+      console.error("Failed to write debug SVG:", writeErr);
     }
+
+    console.error("Generating social images error:", err, {
+      template,
+      fileName,
+      title,
+      siteUrl,
+      variant,
+    });
+    return { fileName, error: true };
+  }
 
   return { fileName, alreadyExists: false };
 }
