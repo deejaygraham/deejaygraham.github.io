@@ -1,11 +1,11 @@
 import fs from "fs/promises";
 //import * as prettier from "prettier";
 import pageContentLinter from "../linters/page-content/index.js";
-import generateAllSocialImages from "../plugins/generate-social-images/generateAllSocialImages.js";
+import generateAllSocialImages from "../../../scripts/lib/generateAllSocialImages.js";
 import {
   SOCIAL_PREVIEW_CACHE_DIR,
   SOCIAL_PREVIEW_SITE_DIR,
-} from "../plugins/generate-social-images/paths.js";
+} from "../../../scripts/lib/paths.js";
 
 async function copySocialPreviewsToSite() {
   try {
