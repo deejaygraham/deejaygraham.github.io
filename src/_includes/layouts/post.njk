@@ -8,8 +8,8 @@
     <nav class="repel article-meta article-tags" id="article-meta" aria-label="Post metadata">
       <p class="cluster mb-0">
         <span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
-        <span class="reading-time only-desktop">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
-        <a href="#" class="read-aloud narrator" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</a>
+        <span id="reading-time" class="reading-time only-desktop">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
+        <a id="read-aloud" href="#" class="read-aloud narrator" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</a>
       </p>
       {% if tags %}
       <p class="cluster only-desktop-flex mb-0" aria-label="Tags">
