@@ -28,20 +28,23 @@ flowchart TD
 
   subgraph buildFlow [npm run build]
     parallel["npm-run-all --parallel"]
-    css["css<br/>tailwindcss<br/>src/assets/css/tailwind.css<br/>→ src/_generated/css/tailwind.css"]
-    js["build:js<br/>esbuild site.js + search.js<br/>→ src/assets/js/"]
+    css["css<br/>PostCSS site.css<br/>→ src/_generated/css/site.css"]
+    js["build:js<br/>esbuild site.js + search.js<br/>→ src/_generated/js/"]
+    og["build:og<br/>scripts/generate-social-images.mjs<br/>→ build-cache/img/previews/"]
     eleventy["eleventy"]
   end
 
   buildCmd --> parallel
   parallel --> css
   parallel --> js
+  parallel --> og
   css --> eleventy
   js --> eleventy
+  og --> eleventy
 
   subgraph eleventyLifecycle [Inside Eleventy]
-    before["eleventy.before<br/>build:sw via scripts/build-service-worker.mjs<br/>→ src/_generated/sw.js<br/>+ cache-version.js"]
-    templates["Process templates<br/>content · _generate · includes · data<br/>plugins: images, social OG, favicons, shiki"]
+    before["eleventy.before<br/>buildServiceWorker → src/_generated/sw.js<br/>+ generateAllSocialImages"]
+    templates["Process templates<br/>content · _generate · includes · data<br/>plugins: images, favicons, shiki"]
     passthrough["Passthrough copy<br/>JS · CSS · SW · downloads · select images"]
     after["eleventy.after<br/>copy build-cache/img/previews<br/>→ _site/img/previews"]
     out["_site/"]
@@ -72,7 +75,7 @@ flowchart TD
 
   validatePre --> lintSrc --> lintTests --> mdlint --> lintTags --> lintPosts --> lintImages --> ava
 
-  validatePost --> lintOut["lintoutput — eslint ./_site"]
+  validatePost --> lintOut["lintoutput — assert _site js/css/sw exist"]
   testCmd --> playwright["playwright test"]
   unitCmd --> ava
 ```
