@@ -44,21 +44,21 @@
 
 .site-prose :where(p) {
   margin-block: var(--space-s);
-  max-width: 65ch;
+  max-width: 100ch;
 }
 
 .site-prose :where(ul) {
   margin-block: var(--space-s);
   padding-inline-start: 1.5rem;
   list-style: disc;
-  max-width: 65ch;
+  max-width: 100ch;
 }
 
 .site-prose :where(ol) {
   margin-block: var(--space-s);
   padding-inline-start: 1.5rem;
   list-style: decimal;
-  max-width: 65ch;
+  max-width: 100ch;
 }
 
 .site-prose :where(li) {
