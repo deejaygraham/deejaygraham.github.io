@@ -7,7 +7,7 @@ import getAdaptiveTitleLayout from "./getAdaptiveTitleLayout.js";
 import slugify from "./slugify.js";
 
 /** Bump when OG layout/content changes so cached previews regenerate. */
-export const OG_LAYOUT_VERSION = "2026-07-24-v4";
+export const OG_LAYOUT_VERSION = "2026-07-24-v5";
 
 const GRAPHIC_WIDTH = 1200;
 const GRAPHIC_HEIGHT = 630;
@@ -23,15 +23,15 @@ async function prepareAvatar(sourcePath, size) {
     .toBuffer();
 }
 
-function buildDefaultSvg(shortTitle) {
+function buildDefaultSvg(title, siteUrl) {
   const maxTextWidth = 560;
   const { fontSize, lineHeight, lines } = getAdaptiveTitleLayout(
-    shortTitle,
+    title,
     splitLongLine,
     {
-      maxLines: 3,
-      maxFontSize: 72,
-      minFontSize: 40,
+      maxLines: 4,
+      maxFontSize: 64,
+      minFontSize: 36,
       fontStep: 2,
       maxTextWidth,
       avgCharWidthFactor: 0.56,
@@ -44,6 +44,9 @@ function buildDefaultSvg(shortTitle) {
   const blockHeight = lines.length * lineHeight;
   const startY =
     Math.round((GRAPHIC_HEIGHT - blockHeight) / 2) + Math.round(lineHeight * 0.75);
+  const cornerInset = 56;
+  const footerY = GRAPHIC_HEIGHT - cornerInset;
+  const centerX = GRAPHIC_WIDTH / 2;
 
   const titleSvg = lines.reduce((paragraph, line, i) => {
     const safe = sanitizeHTML(line);
@@ -53,10 +56,13 @@ function buildDefaultSvg(shortTitle) {
     );
   }, "");
 
+  const urlSvg = `<text x="${centerX}" y="${footerY}" text-anchor="middle" fill="${META_COLOUR}" font-size="24px" font-weight="600">${sanitizeHTML(siteUrl)}</text>`;
+
   return `<svg width="${GRAPHIC_WIDTH}" height="${GRAPHIC_HEIGHT}" viewBox="0 0 ${GRAPHIC_WIDTH} ${GRAPHIC_HEIGHT}" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="0" width="${GRAPHIC_WIDTH}" height="${GRAPHIC_HEIGHT}" fill="${BG}" />
   <g style="font-family:'${FONT_FAMILY}'">
     ${titleSvg}
+    ${urlSvg}
   </g>
 </svg>`;
 }
@@ -147,7 +153,7 @@ export default async function generateSocialImage(
 
   const template =
     variant === "default"
-      ? buildDefaultSvg(title)
+      ? buildDefaultSvg(title, siteUrl)
       : buildPostSvg(title, postDate, siteUrl);
 
   try {
