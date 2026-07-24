@@ -2,18 +2,27 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import { DateTime } from "luxon";
-import site from "../../src/_data/site.js";
-import generateSocialImage from "./generateSocialImage.js";
+import site from "../../../src/_data/site.js";
+import generateSocialImage, { OG_LAYOUT_VERSION } from "./generateSocialImage.js";
 import slugify from "./slugify.js";
 import {
   SOCIAL_PREVIEW_CACHE_DIR,
   SOCIAL_PREVIEW_DEFAULT_SLUG,
 } from "./paths.js";
 
-const WATERMARK = "./src/assets/img/favicon.png";
-const SITE_NAME = site.name || "d.j. graham";
+const AVATAR = "./src/assets/img/favicon.png";
 const POSTS_DIR = "src/content/posts";
 const DEFAULT_CONCURRENCY = 8;
+const LAYOUT_VERSION_FILE = ".layout-version";
+
+/** Always brand OG images with the public host, even during local serve. */
+function siteDisplayUrl() {
+  try {
+    return new URL("https://deejaygraham.github.io").host;
+  } catch {
+    return "deejaygraham.github.io";
+  }
+}
 
 function dateFromFilename(basename) {
   const match = basename.match(/^(\d{4}-\d{2}-\d{2})-/);
@@ -37,11 +46,34 @@ function formatDateFull(dateInput) {
   return dt.setLocale("en-GB").toLocaleString(DateTime.DATE_FULL);
 }
 
+async function ensureLayoutVersion(outputDir) {
+  const versionPath = path.join(outputDir, LAYOUT_VERSION_FILE);
+  let current = "";
+  try {
+    current = await fs.readFile(versionPath, "utf8");
+  } catch {
+    current = "";
+  }
+
+  if (current.trim() === OG_LAYOUT_VERSION) {
+    return;
+  }
+
+  const entries = await fs.readdir(outputDir).catch(() => []);
+  await Promise.all(
+    entries
+      .filter((name) => name.endsWith(".jpg") || name.endsWith(".svg"))
+      .map((name) => fs.unlink(path.join(outputDir, name)).catch(() => {})),
+  );
+  await fs.writeFile(versionPath, `${OG_LAYOUT_VERSION}\n`, "utf8");
+}
+
 async function collectTargets() {
   const targets = [];
   const seen = new Set();
+  const siteUrl = siteDisplayUrl();
 
-  const addTarget = ({ slug, title, postDate }) => {
+  const addTarget = ({ slug, title, postDate, variant }) => {
     if (!title) {
       return;
     }
@@ -56,14 +88,16 @@ async function collectTargets() {
       imageName,
       title: String(title),
       postDate: postDate || "",
+      variant,
+      siteUrl,
     });
   };
 
-  // One shared preview for about, index, archive, and other non-post pages.
   addTarget({
     slug: SOCIAL_PREVIEW_DEFAULT_SLUG,
     title: site.title,
     postDate: "",
+    variant: "default",
   });
 
   const postFiles = await fs.readdir(POSTS_DIR);
@@ -82,6 +116,7 @@ async function collectTargets() {
       slug: data.title,
       title: data.title,
       postDate: formatDateFull(data.date || dateFromFilename(file)),
+      variant: "post",
     });
   }
 
@@ -111,11 +146,11 @@ async function mapPool(items, concurrency, worker) {
  */
 export default async function generateAllSocialImages({
   outputDir = SOCIAL_PREVIEW_CACHE_DIR,
-  watermark = WATERMARK,
-  siteName = SITE_NAME,
+  avatarPath = AVATAR,
   concurrency = DEFAULT_CONCURRENCY,
 } = {}) {
   await fs.mkdir(outputDir, { recursive: true });
+  await ensureLayoutVersion(outputDir);
 
   const targets = await collectTargets();
   let generated = 0;
@@ -126,9 +161,10 @@ export default async function generateAllSocialImages({
       target.imageName,
       target.title,
       target.postDate,
-      siteName,
+      target.siteUrl,
       outputDir,
-      watermark,
+      avatarPath,
+      { variant: target.variant },
     );
 
     if (result?.alreadyExists) {
