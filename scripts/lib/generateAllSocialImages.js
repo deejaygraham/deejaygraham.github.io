@@ -2,25 +2,18 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import { DateTime } from "luxon";
-import site from "../../../_data/site.js";
+import site from "../../../src/_data/site.js";
 import generateSocialImage from "./generateSocialImage.js";
+import eleventySlugify from "./eleventySlugify.js";
 import {
   SOCIAL_PREVIEW_CACHE_DIR,
   SOCIAL_PREVIEW_DEFAULT_SLUG,
 } from "./paths.js";
-import slugifySocialImageName from "./slugifySocialImageName.js";
 
 const WATERMARK = "./src/assets/img/favicon.png";
 const SITE_NAME = site.name || "d.j. graham";
 const POSTS_DIR = "src/content/posts";
 const DEFAULT_CONCURRENCY = 8;
-
-/** Match Eleventy fileSlug for YYYY-MM-DD-title content files. */
-export function eleventyFileSlug(basename) {
-  const name = basename.replace(/\.(md|njk|html)$/i, "");
-  const match = name.match(/^\d{4}-\d{2}-\d{2}-(.+)$/);
-  return match ? match[1] : name;
-}
 
 function dateFromFilename(basename) {
   const match = basename.match(/^(\d{4}-\d{2}-\d{2})-/);
@@ -53,7 +46,7 @@ async function collectTargets() {
       return;
     }
 
-    const imageName = slugifySocialImageName(slug);
+    const imageName = eleventySlugify(slug);
     if (!imageName || seen.has(imageName)) {
       return;
     }
@@ -81,12 +74,12 @@ async function collectTargets() {
 
     const raw = await fs.readFile(path.join(POSTS_DIR, file), "utf8");
     const { data } = matter(raw);
-    if (data.draft === true || data.excludeFromSitemap) {
+    if (data.draft === true || data.excludeFromSitemap || !data.title) {
       continue;
     }
 
     addTarget({
-      slug: eleventyFileSlug(file),
+      slug: data.title,
       title: data.title,
       postDate: formatDateFull(data.date || dateFromFilename(file)),
     });
