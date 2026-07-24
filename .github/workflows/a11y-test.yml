@@ -19,13 +19,26 @@ jobs:
 
       - name: Install dependencies
         uses: ./.github/actions/install-dependencies
-    
+
+      - name: Restore social preview cache
+        uses: actions/cache/restore@v6
+        with:
+          path: build-cache/img/previews
+          key: social-previews-${{ runner.os }}-${{ hashFiles('scripts/lib/social-images/**', 'src/assets/img/favicon.png') }}
+          restore-keys: |
+            social-previews-${{ runner.os }}-
+
+      - name: Build site
+        run: npm run build
+
       - name: Install Playwright
         uses: ./.github/actions/install-playwright
         
-      - name: Run Playwright tests
+      - name: Run a11y tests against local _site
         uses: ./.github/actions/run-playwright
         with:
+          with_local_site: "true"
+          site_directory: _site
           playwright_cli_args: "--grep @a11y"
         
       - name: Upload Playwright report
