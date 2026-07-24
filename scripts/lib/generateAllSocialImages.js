@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { DateTime } from "luxon";
 import site from "../../../src/_data/site.js";
 import generateSocialImage from "./generateSocialImage.js";
-import eleventySlugify from "./eleventySlugify.js";
+import slugify from "./slugify.js";
 import {
   SOCIAL_PREVIEW_CACHE_DIR,
   SOCIAL_PREVIEW_DEFAULT_SLUG,
@@ -46,7 +46,7 @@ async function collectTargets() {
       return;
     }
 
-    const imageName = eleventySlugify(slug);
+    const imageName = slugify(slug);
     if (!imageName || seen.has(imageName)) {
       return;
     }
