@@ -4,8 +4,8 @@
 */
 
 :root {
-  /* Brand */
-  --color-brand: #cd5c5c;
+  /* Brand — tuned so brand-on and brand-on-surface meet WCAG AA (≥4.5:1). */
+  --color-brand: #b84a4a;
   --color-brand-soft: color-mix(in oklab, var(--color-brand) 18%, transparent);
   --color-brand-on: #fff7f7;
 
@@ -65,7 +65,7 @@
 }
 
 [data-theme="light"] {
-  --color-brand: #cd5c5c;
+  --color-brand: #b84a4a;
   --color-brand-on: #fff7f7;
   --color-bg: #fbfaf8;
   --color-bg-subtle: #f3f0eb;
