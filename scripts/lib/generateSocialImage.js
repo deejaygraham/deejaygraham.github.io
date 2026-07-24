@@ -4,7 +4,7 @@ import path from "path";
 import splitLongLine from "./splitLongLine.js";
 import sanitizeHTML from "./sanitizeHTML.js";
 import getAdaptiveTitleLayout from "./getAdaptiveTitleLayout.js";
-import eleventySlugify from "./eleventySlugify.js";
+import slugify from "./slugify.js";
 
 export default async function (
   imageName,
@@ -20,7 +20,7 @@ export default async function (
     debugSvgDir = targetDir,
   } = options;
 
-  const safeFileName = eleventySlugify(imageName);
+  const safeFileName = slugify(imageName);
   const fileName = `${safeFileName}.jpg`;
   const outputPath = path.join(targetDir, fileName);
   const svgOutputPath = path.join(debugSvgDir, fileName);
