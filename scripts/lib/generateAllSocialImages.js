@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import { DateTime } from "luxon";
-import site from "../../../src/_data/site.js";
+import site from "../../src/_data/site.js";
 import generateSocialImage, { OG_LAYOUT_VERSION } from "./generateSocialImage.js";
 import slugify from "./slugify.js";
 import {
