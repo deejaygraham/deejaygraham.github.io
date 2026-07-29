@@ -18,11 +18,12 @@ at one or other of these feeds and handle it just as it would a "real" podcast h
 The feed generator can be run to regenerate all feeds or when there is a new audiobook that you want to make available. 
 
 ```python
+import socket
 import json
 from pathlib import Path
 from email.utils import formatdate
 from xml.sax.saxutils import escape
-import socket
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 def get_server_ip_address():
   s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -34,10 +35,6 @@ def get_server_ip_address():
       s.close()
 
   return ip
-
-
-BASE_URL = "http://192.168.1.100:8000"
-
 
 def generate_feed(podcast_dir, baseUrl):
     metadata = json.loads(
@@ -93,6 +90,7 @@ def generate_feed(podcast_dir, baseUrl):
 
     print(f"Generated {podcast_dir}/feed.xml")
 
+
 ROOT = Path(".")
 PORT = 8000
 ip = get_server_ip_address()
@@ -104,6 +102,14 @@ for directory in ROOT.iterdir():
         and (directory / "podcast.json").exists()
     ):
         generate_feed(directory, BASEURL)
+
+# Start web server
+server = ThreadingHTTPServer(
+         ("0.0.0.0", PORT),
+         SimpleHTTPRequestHandler)
+
+print(f"Serving on port {PORT}")
+server.serve_forever()
 
 ```
 
