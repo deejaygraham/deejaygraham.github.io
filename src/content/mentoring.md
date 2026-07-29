@@ -1,6 +1,6 @@
 ---
 permalink: mentoring/index.html
-layout: mentoring.njk
+layout: page.njk
 title: Mentoring and Teaching
 ---
 
