@@ -1,0 +1,8 @@
+{% extends 'layouts/base.njk' %}
+
+{# Markdown / simple pages: apply reading styles without wrapping card grids. #}
+{% block content %}
+<div class="site-prose">
+{{ content | safe }}
+</div>
+{% endblock %}
