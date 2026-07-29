@@ -122,10 +122,3 @@ One enhancement to make things more podcast-like is to add some metadata for eac
   "author": "Albert Einstein"
 }
 ```
-
-Then we can switch to the folder containing the podcasts and run the python http.server 
-
-```shell
-cd /Volumes/Podcasts
-python -m http.server 8000
-```
