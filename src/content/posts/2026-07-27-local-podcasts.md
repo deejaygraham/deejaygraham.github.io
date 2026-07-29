@@ -82,34 +82,52 @@ def generate_feed(podcast_dir, baseUrl):
 </channel>
 </rss>
 """
-
-    (podcast_dir / "feed.xml").write_text(
+    
+    feedname = "feed.xml"
+    (podcast_dir / feedname).write_text(
         feed,
         encoding="utf-8"
     )
 
-    print(f"Generated {podcast_dir}/feed.xml")
+    feedpath = f"{podcast_dir}/{feedname}"
+    print(f"Generated {feedpath}")
+    return feedpath
 
 
 ROOT = Path(".")
 PORT = 8000
 ip = get_server_ip_address()
+hostname = socket.gethostname()
 BASEURL = f"http://{ip}:{PORT}"
+BASE_URL = f"http://{hostname}.local:{PORT}"
+
+feeds = []
 
 for directory in ROOT.iterdir():
     if (
         directory.is_dir()
         and (directory / "podcast.json").exists()
     ):
-        generate_feed(directory, BASEURL)
+        feeds.append(generate_feed(directory, BASEURL))
 
+for feed in feeds:
+    print(feed)
+    
 # Start web server
 server = ThreadingHTTPServer(
          ("0.0.0.0", PORT),
          SimpleHTTPRequestHandler)
 
-print(f"Serving on port {PORT}")
-server.serve_forever()
+try:
+    print(f"Serving from {BASE_URL}")
+    server.serve_forever()
+except KeyboardInterrupt:
+    print("\nShutting down server...")
+finally:
+    server.shutdown()
+    server.server_close()
+
+print("Server stopped")
 
 ```
 
