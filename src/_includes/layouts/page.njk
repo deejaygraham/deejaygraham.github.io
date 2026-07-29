@@ -2,6 +2,9 @@
 
 {# Markdown / simple pages: apply reading styles without wrapping card grids. #}
 {% block content %}
+
+<h1 class="page-title">{{ title }}</h1>
+
 <div class="site-prose">
 {{ content | safe }}
 </div>
