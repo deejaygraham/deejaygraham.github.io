@@ -99,7 +99,7 @@ PORT = 8000
 ip = get_server_ip_address()
 hostname = socket.gethostname()
 BASEURL = f"http://{ip}:{PORT}"
-BASE_URL = f"http://{hostname}.local:{PORT}"
+BASE_URL = f"http://{hostname}:{PORT}"
 
 feeds = []
 
