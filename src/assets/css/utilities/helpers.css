@@ -20,6 +20,8 @@
 }
 
 .font-mono {
+  --font-sans: var(--font-mono);
+  --font-display: var(--font-mono);
   font-family: var(--font-mono);
 }
 
