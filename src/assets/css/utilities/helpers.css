@@ -19,6 +19,10 @@
   font-family: var(--font-display);
 }
 
+.font-mono {
+  font-family: var(--font-mono);
+}
+
 .text-muted {
   color: var(--color-text-muted);
 }
