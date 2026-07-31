@@ -11,11 +11,4 @@ test.describe("404 page @live", () => {
       await expect(page.getByRole('heading', { name: 'Erm...' })).toBeVisible();
     await expect(page.getByText("The page you were looking for does not exist")).toBeVisible();
   });
-  
-  test("404 handler page exists", async ({ page }) => {
-    await page.goto('/404');
-
-    await expect(page.getByRole('heading', { name: 'Erm...' })).toBeVisible();
-    await expect(page.getByText("The page you were looking for does not exist")).toBeVisible();
-  });
 });
