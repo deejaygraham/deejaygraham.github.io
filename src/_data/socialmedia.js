@@ -13,32 +13,32 @@ export default [
   },
   {
     name: "github",
-    url: "https://github.com/deejaygraham",
+    url: site.urls.github,
     icon: "icons/github.svg",
   },
   {
     name: "mastodon",
-    url: "https://hachyderm.io/@deejaygraham",
+    url: site.urls.mastodon,
     icon: "icons/mastodon.svg",
   },
   {
     name: "bluesky",
-    url: "https://bsky.app/profile/deejaygraham.bsky.social",
+    url: site.urls.bluesky,
     icon: "icons/bluesky.svg",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/derekjohngraham/",
+    url: site.urls.linkedin,
     icon: "icons/linkedin.svg",
   },
   {
     name: "slideshare",
-    url: "https://www.slideshare.net/deejaygraham",
+    url: site.urls.slideshare,
     icon: "icons/slideshare.svg",
   },
   {
     name: "sessionize",
-    url: "https://sessionize.com/deejaygraham/",
+    url: site.urls.sessionize,
     icon: "icons/sessionize.svg",
   },
 ];
