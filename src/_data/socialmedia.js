@@ -3,12 +3,12 @@ import site from "./site.js";
 export default [
   {
     name: "rss",
-    url: `{site.url}/rss.xml`,
+    url: `${site.url}/rss.xml`,
     icon: "icons/rss.svg",
   },
   {
     name: "sitemap",
-    url: `{site.url}/sitemap.xml`,
+    url: `${site.url}/sitemap.xml`,
     icon: "icons/sitemap.svg",
   },
   {
