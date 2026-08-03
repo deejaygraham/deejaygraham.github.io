@@ -19,7 +19,7 @@
   "description": "{{ pageDescription }}",
   "url": "{{ site.url + page.url }}",
   "datePublished": "{{ page.date | dateISO }}",
-  "dateModified": "{{ site.date }}",
+  "dateModified": "{{ page.date | dateISO }}",
   "author": {
     "@type": "Person",
     "name": "{{ site.author }}",
