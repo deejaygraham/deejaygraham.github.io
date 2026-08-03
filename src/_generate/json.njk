@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
             "url": "{{ site.url }}{{ post.url }}",
             "title": "{{ post.data.title }}",
             "content_html": "{{ post.templateContent | excerpt }}",
-            "date_published": "{{ post.date | dateFeed }}",
+            "date_published": "{{ post.date | dateISO }}",
             "language": "en"
         }
         {%- if not loop.last %},{% endif %}
