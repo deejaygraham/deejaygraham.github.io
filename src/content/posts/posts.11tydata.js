@@ -4,7 +4,7 @@ import { normalizeTags } from "../../_11ty/utils/tag-taxonomy.js";
 const convertFileNameToPath = (filename) => {
     const [year, month, day, ...rest] = filename.split('-');
     const slug = rest.join('-').replace('.md', '/');
-    return path.join(year, month, day, slug);
+    return path.posix.join(year, month, day, slug);
 };
 
 export default {
