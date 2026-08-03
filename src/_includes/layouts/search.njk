@@ -21,7 +21,7 @@
 
 <section aria-labelledby="recent-posts-heading">
   <h2 id="recent-posts-heading" class="section-title">Recent Posts</h2>
-  {% set postcardlist = collections.posts | limit(6) %}
+  {% set postcardlist = collections.posts | limit(site.relatedPostCount) %}
   {% include "partials/post-card-list.njk" %}
 </section>
 
