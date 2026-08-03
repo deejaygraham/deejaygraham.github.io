@@ -13,4 +13,12 @@ export default {
   // paths to images
   logo: "/img/avatar.svg",
   favicon: "./src/assets/img/favicon.png",
+  urls: {
+    github: "https://github.com/deejaygraham",
+    bluesky: "https://bsky.app/profile/deejaygraham.bsky.social",
+    mastodon: "https://hachyderm.io/@deejaygraham",
+    linkedin: "https://www.linkedin.com/in/derekjohngraham/",
+    slideshare: "https://www.slideshare.net/deejaygraham",
+    sessionize: "https://sessionize.com/deejaygraham/",
+  }
 };
