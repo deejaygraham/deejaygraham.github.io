@@ -34,7 +34,7 @@
 {% block postcontent %}
 {% if tags %}
   <hr class="divider" />
-  {% set related = collections.posts | relatedPosts(page, tags, 6) %}
+  {% set related = collections.posts | relatedPosts(page, tags, site.relatedPostCount) %}
   {% if related.length > 0 %}
   <aside class="related-posts" aria-labelledby="related-posts-heading">
     <h2 id="related-posts-heading" class="section-title">Related posts</h2>
