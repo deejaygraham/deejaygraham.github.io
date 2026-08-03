@@ -5,7 +5,6 @@ export default {
   url: /serve|watch/.test(process.argv.join())
     ? "http://localhost:8080"
     : "https://deejaygraham.github.io",
-  baseUrl: "/",
   author: "Derek Graham",
   email: 'deejaygraham@icloud.com',
   copyrightHolder: "Derek J. Graham",
