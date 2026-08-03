@@ -1,12 +1,14 @@
+import site from "./site.js";
+
 export default [
   {
     name: "rss",
-    url: "https://deejaygraham.github.io/rss.xml",
+    url: `{site.url}/rss.xml`,
     icon: "icons/rss.svg",
   },
   {
     name: "sitemap",
-    url: "https://deejaygraham.github.io/sitemap.xml",
+    url: `{site.url}/sitemap.xml`,
     icon: "icons/sitemap.svg",
   },
   {
