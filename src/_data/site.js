@@ -8,6 +8,8 @@ export default {
   baseUrl: "/",
   author: "Derek Graham",
   email: 'deejaygraham@icloud.com',
+  copyrightHolder: "Derek J. Graham",
+  copyrightStartDate: "2011",
   paginate: "36",
   date: new Date(),
   // paths to images
