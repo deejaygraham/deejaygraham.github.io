@@ -1,4 +1,4 @@
 {# depends on the nav file in _data #}
 {%- for item in nav %}
-<li><a aria-label="{{ item.name }}" title="{{ item.name }}" href="{{ site.url }}{{ item.url }}">{{ item.name }}</a></li>
+<li><a aria-label="{{ item.name }}" title="{{ item.name }}" href="{{ item.url }}">{{ item.name }}</a></li>
 {% endfor -%}
