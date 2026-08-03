@@ -12,6 +12,7 @@ export default {
   copyrightHolder: "Derek J. Graham",
   copyrightStartDate: "2011",
   paginate: 36,
+  rssItemCount: 48,
   relatedPostCount: 6,
   date: new Date(),
   // paths to images
