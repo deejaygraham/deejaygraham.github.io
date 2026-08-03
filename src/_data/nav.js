@@ -1,7 +1,7 @@
 export default [
   {
     name: "blog",
-    navUrl: "/",
+    url: "/",
   },
   {
     name: "search",
