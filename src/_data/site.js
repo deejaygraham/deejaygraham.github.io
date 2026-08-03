@@ -9,7 +9,7 @@ export default {
   email: 'deejaygraham@icloud.com',
   copyrightHolder: "Derek J. Graham",
   copyrightStartDate: "2011",
-  paginate: "36",
+  paginate: 36,
   relatedPostCount: 6,
   date: new Date(),
   // paths to images
