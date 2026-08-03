@@ -22,5 +22,6 @@ export default {
     linkedin: "https://www.linkedin.com/in/derekjohngraham/",
     slideshare: "https://www.slideshare.net/deejaygraham",
     sessionize: "https://sessionize.com/deejaygraham/",
+    openprocessing: "https://openprocessing.org/user/458593/",
   }
 };
