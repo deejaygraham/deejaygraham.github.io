@@ -1,8 +1,10 @@
+const isLocalDev = ["serve", "watch"].includes(process.env.ELEVENTY_RUN_MODE);
+
 export default {
   title: "invalid argument: a blog by d.j. graham",
   name: "d.j. graham",
   description: "a triumph of style over substance",
-  url: /serve|watch/.test(process.argv.join())
+  url: isLocalDev
     ? "http://localhost:8080"
     : "https://deejaygraham.github.io",
   author: "Derek Graham",
