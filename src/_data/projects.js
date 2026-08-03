@@ -6,7 +6,7 @@ export default [
       title: "Open Processing",
       subtitle: "Sketches in p5js"
     },
-    url: "https://openprocessing.org/user/458593/"
+    url: site.urls.openprocessing
   },
   {
     data: {
