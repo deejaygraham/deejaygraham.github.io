@@ -1,5 +1,5 @@
 // @ts-check
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import checkAllResourcesExist from './util/check-all-resources-exist.js';
 import checkSocialPreview from './util/check-social-preview.js';
 
