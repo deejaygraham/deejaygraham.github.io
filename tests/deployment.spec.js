@@ -80,3 +80,11 @@ test("contains css", async ({ page }) => {
     "/css/site.css",
   ]);
 });
+
+test("contains AT Protocol DID well-known file", async ({ page }) => {
+  const response = await page.request.get("/.well-known/atproto-did");
+  expect(response.ok(), `/.well-known/atproto-did is not available: ${response.status()}`).toBeTruthy();
+  const body = (await response.text()).trim();
+  expect(body).toBe("did:plc:l3hbc5ihjsccwxc4td7usx4a");
+});
+
