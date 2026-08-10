@@ -28,6 +28,9 @@ export default function applyAssets(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/content/*.txt": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/google*.html": "/" });
   eleventyConfig.addPassthroughCopy({ "./src/content/qrcode.html": "/qrcode.html" });
+  eleventyConfig.addPassthroughCopy({
+    "./src/content/.well-known/atproto-did": "/.well-known/atproto-did",
+  });
   eleventyConfig.addPassthroughCopy({ "./src/_generated/sw.js": "/sw.js" });
 
   eleventyConfig.addPassthroughCopy({
