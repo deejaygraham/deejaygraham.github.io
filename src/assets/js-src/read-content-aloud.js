@@ -42,6 +42,7 @@ const generateTranscript = () => {
             else
             {
                 switch (tagName) {
+                    case 'p':
                     case 'li': {
                         if (isInsideBlockquote(c)) {
                             break;
