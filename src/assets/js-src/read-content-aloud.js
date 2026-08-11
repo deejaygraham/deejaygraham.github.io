@@ -4,27 +4,16 @@ const splitText = (text) => {
     return text.split('. ');
 }
 
-const getArticleTitle = () => {
-    const title = document.querySelector("main .hero h1, main h1.title, main h1");
-    return title?.innerText?.trim() || "";
-};
-
-const isInsideBlockquote = (element) => Boolean(element.closest("blockquote"));
-
 const generateTranscript = () => {
     let foundCode = false;
-    const transcript = [];
-    const articleTitle = getArticleTitle();
-    
-    if (articleTitle) {
-        transcript.push(articleTitle);
-    }
-    
-    const content = document.querySelectorAll("main .content.is-medium");
+    const transcript = [];  
+    const content = document.querySelectorAll(".site-prose");
+
     const re = new RegExp("h([1-6])[^>]*");
     
     content.forEach((elem) => {
         elem.querySelectorAll("*").forEach((c) => {
+            
             const tagName = c.tagName.toString().toLowerCase();
             const text = c.innerText;
 
@@ -43,21 +32,12 @@ const generateTranscript = () => {
             {
                 switch (tagName) {
                     case 'p':
-                    case 'li': {
-                        if (isInsideBlockquote(c)) {
-                            break;
-                        }
-                        
+                    case 'li': 
+                    case 'figcaption': {
                         const sentences = splitText(text);
                         transcript.push(...sentences);
                         break;
                     }
-                        
-                    case 'figcaption': {
-                        const sentences = splitText(text.trim());
-                        transcript.push(...sentences);
-                        break;
-                    }                     
                     case 'img': {
                         if (c.alt === "") {
                             transcript.push("Media included, image with no description");
@@ -84,12 +64,6 @@ const generateTranscript = () => {
                         if (c.classList.contains("notice")) {
                             transcript.push("Please note: ");
                         }
-                        break;
-                    }
-
-                    case 'blockquote': {
-                        const sentences = splitText(text.trim());
-                        transcript.push(...sentences);
                         break;
                     }
                     default:
