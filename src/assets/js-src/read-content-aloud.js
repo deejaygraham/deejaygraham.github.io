@@ -4,10 +4,21 @@ const splitText = (text) => {
     return text.split('. ');
 }
 
+const getArticleTitle = () => {
+    const title = document.querySelector("main .hero h1, main h1.title, main h1");
+    return title?.innerText?.trim() || "";
+};
+
 const generateTranscript = () => {
     let foundCode = false;
-    const transcript = [];  
-    const content = document.querySelectorAll(".site-prose");
+    const transcript = [];
+    const articleTitle = getArticleTitle();
+    
+    if (articleTitle) {
+        transcript.push(articleTitle);
+    }
+    
+    const content = document.querySelectorAll("main .content.is-medium");
       
     content.forEach((elem) => {
         elem.querySelectorAll("*").forEach((c) => {
