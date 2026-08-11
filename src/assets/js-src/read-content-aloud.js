@@ -4,72 +4,74 @@ const splitText = (text) => {
     return text.split('. ');
 }
 
+const pushText = (transcript, text) => {
+  const trimmed = text?.trim();
+  if (!trimmed) {
+    return;
+  }
+  transcript.push(...splitText(trimmed).filter((part) => part.trim() !== ""));
+};
+
+const getArticleTitle = () => {
+  const title = document.querySelector("main h1");
+  return title?.innerText?.trim() || "";
+};
+
 const generateTranscript = () => {
     let foundCode = false;
     const transcript = [];  
-    const content = document.querySelectorAll(".site-prose");
-
-    const re = new RegExp("h([1-6])[^>]*");
+    pushText(transcript, getArticleTitle());
     
-    content.forEach((elem) => {
-        elem.querySelectorAll("*").forEach((c) => {
-            
-            const tagName = c.tagName.toString().toLowerCase();
-            const text = c.innerText;
+    const nodeList = document.querySelectorAll(".site-prose");
+    
+    nodeList.forEach(node => {
+        node.querySelectorAll("*").forEach((n) => {
+            const tagName = n.tagName.toString().toLowerCase();
+            const text = n.innerText;
 
             if (!text) {
                 return;
             }
             
-            if (re.test(tagName)) {
-                // Skip if marked specifically to be ignored
-                if (!c.parentElement.classList.contains("noreadaloud")) {
+            switch (tagName) {
+                case 'p':
+                case 'li': 
+                case 'figcaption': {
                     const sentences = splitText(text);
                     transcript.push(...sentences);
+                    break;
                 }
-            }
-            else
-            {
-                switch (tagName) {
-                    case 'p':
-                    case 'li': 
-                    case 'figcaption': {
-                        const sentences = splitText(text);
-                        transcript.push(...sentences);
-                        break;
+                case 'img': {
+                    if (n.alt === "") {
+                        transcript.push("Media included, image with no description");
+                    } else {
+                        transcript.push("Media included: " + c.alt + "\n");
                     }
-                    case 'img': {
-                        if (c.alt === "") {
-                            transcript.push("Media included, image with no description");
-                        } else {
-                            transcript.push("Media included: " + c.alt + "\n");
-                        }
-                        break;
+                    break;
+                }
+                case 'code': {
+                    // nothing
+                    break;
+                }
+                case 'pre': {
+                    if (foundCode) {
+                        // already seen some code so don't give full message again...
+                        transcript.push("Skipping code.\n");    
+                    } else {
+                        foundCode = true;
+                        transcript.push("Ignoring code listing - cannot read it out loud.\n");
                     }
-                    case 'code': {
-                        // nothing
-                        break;
+                    break;
+                }
+                case 'div': {
+                    if (n.classList.contains("notice")) {
+                        transcript.push("Please note: ");
                     }
-                    case 'pre': {
-                        if (foundCode) {
-                            // already seen some code so don't give full message again...
-                            transcript.push("Skipping code.\n");    
-                        } else {
-                            foundCode = true;
-                            transcript.push("Ignoring code listing - cannot read it out loud.\n");
-                        }
-                        break;
-                    }
-                    case 'div': {
-                        if (c.classList.contains("notice")) {
-                            transcript.push("Please note: ");
-                        }
-                        break;
-                    }
-                    default:
-                        console.log("Narrator: ignoring tag " + tagName);
-                    }
-            }
+                    break;
+                }
+                default:
+                    console.log("Narrator: ignoring tag " + tagName);
+                }
         });
     });
     
