@@ -37,15 +37,14 @@ const generateTranscript = () => {
                 case 'p':
                 case 'li': 
                 case 'figcaption': {
-                    const sentences = splitText(text);
-                    transcript.push(...sentences);
+                    pushText(transcript, text);
                     break;
                 }
                 case 'img': {
                     if (n.alt === "") {
-                        transcript.push("Media included, image with no description");
+                        pushText(transcript, "Media included, image with no description");
                     } else {
-                        transcript.push("Media included: " + c.alt + "\n");
+                        pushText(transcript, "Media included: " + n.alt + "\n");
                     }
                     break;
                 }
@@ -56,16 +55,16 @@ const generateTranscript = () => {
                 case 'pre': {
                     if (foundCode) {
                         // already seen some code so don't give full message again...
-                        transcript.push("Skipping code.\n");    
+                        pushText(transcript, "Skipping code.\n");    
                     } else {
                         foundCode = true;
-                        transcript.push("Ignoring code listing - cannot read it out loud.\n");
+                        pushText(transcript, "Ignoring code listing - cannot read it out loud.\n");
                     }
                     break;
                 }
                 case 'div': {
                     if (n.classList.contains("notice")) {
-                        transcript.push("Please note: ");
+                        pushText(transcript, "Please note: ");
                     }
                     break;
                 }
