@@ -83,22 +83,20 @@ const generateTranscript = () => {
 }
 
 async function playTranscript(transcript){
-    for (let i = 0; (i < transcript.length); i++ ){
-        await playSegment(transcript[i])
+    for (const segment of transcript){
+        await playSegment(segment);
     }
 }
  
-async function playSegment( segment ){
+async function playSegment(segment){
     return new Promise( resolve =>{
-        let synthesis = window.speechSynthesis;
-        synthesis.cancel();
-        let ssu = new SpeechSynthesisUtterance();
-        ssu.rate = 0.9;
- 
+        const synthesis = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(segment);
+        utterance.rate = 0.8;
+        utterance.onend = () => resolve();
+        utterance.onerror = () => resolve();
         console.log("Narrator: " + segment);
-        ssu.text = segment;
-        synthesis.speak(ssu);
-        ssu.onend = resolve;
+        synthesis.speak(utterance);
     })
 }
 
