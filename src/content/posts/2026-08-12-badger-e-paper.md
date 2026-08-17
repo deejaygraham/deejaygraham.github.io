@@ -1,7 +1,6 @@
 ---
 title: Badger E-Paper
 tags: [python, badger]
-draft: true
 ---
 
 I bought a [Badger 2040](https://shop.pimoroni.com/products/badger-2040) e-paper device from [Pimoroni](https://shop.pimoroni.com) years ago
@@ -48,3 +47,5 @@ badger.text("Hello World", 10, 30, 1)
 
 badger.update()
 ```
+
+More complicated projects are to follow...
