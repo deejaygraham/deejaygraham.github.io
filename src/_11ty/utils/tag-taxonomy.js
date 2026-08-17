@@ -8,6 +8,7 @@ export const allowedTags = new Set([
   "architecture",
   "automation",
   "azure",
+  "badger",
   "books",
   "build",
   "ci",
