@@ -1,6 +1,6 @@
 ---
 title: Badger E-Paper
-tags: [python, raspberry-pi]
+tags: [python, badger]
 draft: true
 ---
 
