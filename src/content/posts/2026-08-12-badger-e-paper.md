@@ -20,13 +20,31 @@ icons but the buttons don't do anything and there are no LEDs lit. In this circu
 * Release **BOOT**
 
 Plugging in the device again, the computer should recognize a drive called **RPI-RP2**. This means the device is alive and can accept a new update of the 
-[Badger firmware](https://github.com/pimoroni/badger2040/releases).
+[Badger firmware](https://github.com/pimoroni/badger2040/releases): download the .uf2 file and drag it onto the device.
+
+
+## Python
+
+Once that all started working again, it was time to dive into some of the [example projects](https://github.com/pimoroni/badger2040/tree/main/badger_os) written 
+for the device in python. The uf2 file contains some badger specific Pimoroni libraries and MicroPython. The best IDE for working with the Badger device is  
+[Thonny](https://thonny.org) which has a mode for this device.
+
+The program should be saved as **main.py** on the root of the device but it can load other source and data files as required. To get started again, I made the #
+obligatory Hello World program. 
+
+
+## Hello World
 
 ```python
+from badger2040 import Badger2040
+
+badger = Badger2040()
+
+badger.set_pen(15)  
+badger.clear()
+
+badger.set_pen(0)  
+badger.text("Hello World", 10, 30, 1)
+
+badger.update()
 ```
-
-
-```bash
-
-```
-
