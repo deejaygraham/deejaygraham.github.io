@@ -1,0 +1,60 @@
+{% set pageUrl = site.url + page.url %}
+
+{% set schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": site.url + "#website",
+      "url": site.url,
+      "name": site.name,
+      "description": site.description
+    },
+    {
+      "@type": "WebPage",
+      "@id": pageUrl + "#webpage",
+      "url": pageUrl,
+      "name": title,
+      "description": description,
+      "isPartOf": {
+        "@id": site.url + "#website"
+      }
+    }
+  ]
+} %}
+
+{# Add BlogPosting schema for posts #}
+{% if layout == "post.njk" %}
+
+  {% set article = {
+    "@type": "BlogPosting",
+    "@id": pageUrl + "#article",
+    "headline": title,
+    "description": description,
+    "datePublished": date,
+    "mainEntityOfPage": {
+      "@id": pageUrl + "#webpage"
+    },
+    "author": {
+      "@type": "Person",
+      "name": site.author.name,
+      "url": site.author.url
+    }
+  } %}
+
+  {% if image %}
+    {% set article = article | merge({
+      "image": site.url + image
+    }) %}
+  {% endif %}
+
+  {% set schema = {
+    "@context": schema["@context"],
+    "@graph": schema["@graph"].concat([article])
+  } %}
+
+{% endif %}
+
+<script type="application/ld+json">
+{{ schema | dump(2) | safe }}
+</script>
