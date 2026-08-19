@@ -48,4 +48,6 @@ badger.text("Hello World", 10, 30, 1)
 badger.update()
 ```
 
+<img src="/assets/img/posts/badger-e-paper/badger-e-paper.jpg" alt="Badger 2040 device showing hello world" />
+
 More complicated projects are to follow...
