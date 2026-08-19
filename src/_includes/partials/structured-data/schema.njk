@@ -1,6 +1,5 @@
-{% set pageUrl = site.url + page.url %}
-
-{% set schema = {
+{%- set pageUrl = site.url + page.url %}
+{%- set schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -13,9 +12,9 @@
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "{{ site.url + '/search/' }}"
-        },
-      },
+          "urlTemplate": site.url + "/search/"
+        }
+      }
     },
     {
       "@type": "WebPage",
@@ -29,9 +28,7 @@
     }
   ]
 } %}
-
-{# Add BlogPosting schema for posts #}
-{% if layout == "post.njk" %}
+{%- if layout == "post.njk" %}
 
   {%- if page.data.description %}
   {%- set pageDescription = page.data.description | trim -%}
@@ -61,7 +58,7 @@
       "name": site.author,
       "url": site.url,
       "jobTitle": "Software Architect",
-      "description": "Software architect, extreme programmer, microbit hacker, sketchnoter, and STEM ambassador",
+      "description": "Software architect, extreme programmer, microbit hacker, sketchnoter, and STEM ambassador"
     },
     "publisher": {
       "@type": "Organization",
@@ -71,12 +68,11 @@
         "url": "{{ site.url + site.logo }}"
       }
     },
-    {%- if tags %}
-      "keywords": "{{ tags | arrayToCommaString }}",
-    {%- endif %}
+    "keywords": "{{ tags | arrayToCommaString }}",
     "image": [
       "{{ site.url }}/img/previews/{{ title | slugify }}.jpg"
     ]
+    }
   %}
 
   {% set schema = {
@@ -84,8 +80,7 @@
     "@graph": schema["@graph"].concat([article])
   } %}
 
-{% endif %}
-
+{% endif -%}
 <script type="application/ld+json">
 {{ schema | dump(2) | safe }}
 </script>
