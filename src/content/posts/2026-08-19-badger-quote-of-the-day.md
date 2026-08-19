@@ -23,8 +23,8 @@ STATE_FILE = "quotes.json"
 
 QUOTES = [
     (
-        "Talk is cheap. Show me the code.",
-        "Linus Torvalds"
+        "The two hardest problems in Computer Science are: Human communication; Getting people in tech to believe that human communication is important"
+        "Hazel Weakly"
     ),
     (
         "Programs must be written for people to read, and only incidentally for machines to execute.",
@@ -63,9 +63,25 @@ QUOTES = [
         "Jeff Atwood"
     ),
     (
-        "There are only two hard things in Computer Science: cache invalidation and naming things.",
-        "Phil Karlton"
-    )
+        "Weeks of coding can save you hours of planning.",
+        "Unknown"
+    ),
+    (
+        "The most disastrous thing that you can ever learn is your first programming language.",
+        "Alan Kay"
+    ),
+    (
+        "Every system is perfectly designed to get the results it gets.",
+        "W. Edwards Deming"
+    ),
+    (
+        "Architecture represents the significant design decisions that shape a system.",
+        "Grady Booch"
+    ),
+    (
+        "Make it work, make it right, make it fast.",
+        "Kent Beck"
+    ),
 ]
 
 
