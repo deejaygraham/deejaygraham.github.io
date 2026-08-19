@@ -26,27 +26,51 @@
 {# Add BlogPosting schema for posts #}
 {% if layout == "post.njk" %}
 
+  {%- if page.data.description %}
+  {%- set pageDescription = page.data.description | trim -%}
+  {%- elif content %}
+  {%- set generatedDescription = content | excerpt | trim -%}
+  {%- if generatedDescription %}
+  {%- set pageDescription = generatedDescription -%}
+  {%- else %}
+  {%- set pageDescription = site.description | trim -%}
+  {%- endif %}
+  {%- else %}
+  {%- set pageDescription = site.description | trim -%}
+  {%- endif %}
+
   {% set article = {
     "@type": "BlogPosting",
     "@id": pageUrl + "#article",
     "headline": title,
-    "description": description,
-    "datePublished": date,
+    "description": pageDescription,
+    "datePublished": "{{ page.date | dateISO }}",
+    "dateModified": "{{ page.date | dateISO }}",
     "mainEntityOfPage": {
       "@id": pageUrl + "#webpage"
     },
     "author": {
       "@type": "Person",
-      "name": site.author.name,
-      "url": site.author.url
-    }
-  } %}
-
-  {% if image %}
-    {% set article = article | merge({
-      "image": site.url + image
-    }) %}
-  {% endif %}
+      "name": site.author,
+      "url": site.url,
+      "jobTitle": "Software Architect",
+      "description": "Software architect, extreme programmer, microbit hacker, sketchnoter, and STEM ambassador",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url + site.logo }}"
+      }
+    },
+    {%- if tags %}
+      "keywords": "{{ tags | arrayToCommaString }}",
+    {%- endif %}
+    "image": [
+      "{{ site.url }}/img/previews/{{ title | slugify }}.jpg"
+    ]
+  %}
 
   {% set schema = {
     "@context": schema["@context"],
