@@ -28,7 +28,7 @@
     }
   ]
 } %}
-{%- if layout == "post.njk" %}
+{%- if layout == "post" %}
 
   {%- if page.data.description %}
   {%- set pageDescription = page.data.description | trim -%}
@@ -43,13 +43,16 @@
   {%- set pageDescription = site.description | trim -%}
   {%- endif %}
 
-  {% set article = {
+  {%- set articleDate = page.date | dateISO %}
+  {%- set articleImage = title | slugify %}
+  
+  {%- set article = {
     "@type": "BlogPosting",
     "@id": pageUrl + "#article",
     "headline": title,
     "description": pageDescription,
-    "datePublished": "{{ page.date | dateISO }}",
-    "dateModified": "{{ page.date | dateISO }}",
+    "datePublished": articleDate,
+    "dateModified": articleDate,
     "mainEntityOfPage": {
       "@id": pageUrl + "#webpage"
     },
@@ -62,15 +65,15 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "{{ site.name }}",
+      "name": site.name,
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ site.url + site.logo }}"
+        "url": site.url + site.logo
       }
     },
-    "keywords": "{{ tags | arrayToCommaString }}",
+    "keywords": tags | arrayToCommaString,
     "image": [
-      "{{ site.url }}/img/previews/{{ title | slugify }}.jpg"
+      site.url + "/img/previews/" + articleImage + ".jpg"
     ]
     }
   %}
