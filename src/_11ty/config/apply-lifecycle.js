@@ -1,5 +1,5 @@
 import fs from "fs/promises";
-//import * as prettier from "prettier";
+import { minify } from "html-minifier-terser";
 import pageContentLinter from "../linters/page-content/index.js";
 import generateAllSocialImages from "../../../scripts/lib/generateAllSocialImages.js";
 import {
@@ -35,18 +35,17 @@ export default function applyLifecycle(eleventyConfig, { buildServiceWorker }) {
 
   eleventyConfig.addLinter("page-content", pageContentLinter);
 
-  /*
-  eleventyConfig.addTransform("prettier", async function (content) {
-    if ((this.page.outputPath || "").endsWith(".html")) {
-      return prettier.format(content, {
-        bracketSameLine: true,
-        printWidth: 250,
-        parser: "html",
-        tabWidth: 2,
+  eleventyConfig.addTransform("html-minifier", async function (content) {
+    if (
+      process.env.ELEVENTY_RUN_MODE === "build" &&
+      (this.page.outputPath || "").endsWith(".html")
+    ) {
+      return minify(content, {
+        collapseWhitespace: true,
+        conservativeCollapse: true,
       });
     }
 
     return content;
   });
-  */
 }
