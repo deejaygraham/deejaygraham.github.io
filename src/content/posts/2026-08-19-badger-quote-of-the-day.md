@@ -169,6 +169,10 @@ STATE_FILE = "quotes.json"
 
 QUOTES = [
     (
+        "Always wanted to travel back in time to try fighting a younger version of yourself? Software development is the career for you!",
+        "@Loh"
+    ),
+    (
         "The two hardest problems in Computer Science are: Human communication; Getting people in tech to believe that human communication is important",
         "Hazel Weakly"
     ),
