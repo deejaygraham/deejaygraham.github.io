@@ -36,7 +36,6 @@ from buttons import (
 class HardwareBadger:
 
     def __init__(self):
-
         self.badger = badger2040.Badger2040()
 
     def set_pen(self, value):
@@ -56,21 +55,14 @@ class HardwareBadger:
         pass
     
     def pressed(self, button):
-
         if button == BUTTON_A:
-            return self.badger.pressed(
-                badger2040.BUTTON_A
-            )
+            return self.badger.pressed(badger2040.BUTTON_A)
 
         if button == BUTTON_B:
-            return self.badger.pressed(
-                badger2040.BUTTON_B
-            )
+            return self.badger.pressed(badger2040.BUTTON_B)
 
         if button == BUTTON_C:
-            return self.badger.pressed(
-                badger2040.BUTTON_C
-            )
+            return self.badger.pressed(badger2040.BUTTON_C)
 
         return False
 
@@ -102,7 +94,6 @@ class ConsoleBadger:
     def __init__(self):
         self.width = 296
         self.height = 128
-
         self.buffer = []
         self.last_key = None
 
@@ -113,12 +104,9 @@ class ConsoleBadger:
         self.buffer = []
 
     def text(self, text, x, y, scale):
-        self.buffer.append(
-            (y, x, text)
-        )
+        self.buffer.append((y, x, text))
 
     def update(self):
-
         os.system("cls")
 
         print("=" * 70)
@@ -265,7 +253,6 @@ def wrap_text(text, width):
     line = ""
 
     for word in words:
-
         candidate = word if not line else line + " " + word
 
         if len(candidate) <= width:
@@ -281,17 +268,12 @@ def wrap_text(text, width):
 
 
 def fit_quote(text):
-
     scales = [1.4, 1.2, 1.0, 0.8, 0.7, 0.6]
 
     for scale in scales:
-
         chars = int(30 / scale)
-
         lines = wrap_text(text, chars)
-
         line_height = int(scale * 12) + 3
-
         total_height = len(lines) * line_height
 
         if total_height < 70:
@@ -300,7 +282,6 @@ def fit_quote(text):
     scale = 0.6
 
     lines = wrap_text(text, 50)
-
     line_height = int(scale * 12) + 3
 
     return scale, lines, line_height
@@ -315,42 +296,19 @@ def draw_current_quote():
     badger.set_pen(0)
 
     scale, lines, line_height = fit_quote(quote)
-
     quote_height = len(lines) * line_height
-
     start_y = int((90 - quote_height) / 2)
-
     y = start_y
 
     for line in lines:
-
-        badger.text(
-            line,
-            10,
-            y,
-            scale
-        )
+        badger.text(line, 10, y, scale)
 
         y += line_height
 
-    badger.text(
-        author,
-        10,
-        98,
-        0.6
-    )
+    badger.text(author, 10, 98, 0.6)
 
-    footer = (
-        f"{state['quote_index'] + 1}"
-        f"/{len(QUOTES)}"
-    )
-
-    badger.text(
-        footer,
-        240,
-        114,
-        0.45
-    )
+    footer = (f"{state['quote_index'] + 1}" f"/{len(QUOTES)}")
+    badger.text(footer, 240, 114, 0.45)
 
     badger.update()
 
@@ -374,10 +332,7 @@ def previous_quote():
 
 
 def random_quote():
-    state["quote_index"] = random.randint(
-        0,
-        len(QUOTES) - 1
-    )
+    state["quote_index"] = random.randint(0, len(QUOTES) - 1)
     save_state(state)
 
 
@@ -403,5 +358,4 @@ while True:
         time.sleep(0.5)
 
     time.sleep(0.1)
-
 ```
