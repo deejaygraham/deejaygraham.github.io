@@ -21,6 +21,8 @@ Extra right-hand side buttons are not needed at the moment but could be added he
 
 ## Hardware Badger.py
 
+The hardware badger implementation is just a thin shim between the main app and the badger library with no real logic except for the mapping for the buttons. 
+
 ```python
 import badger2040
 
@@ -82,6 +84,10 @@ class HardwareBadger:
 ```
 
 ## Console Badger.py
+
+The emulated console version of the badger gives a bare bones implementation to show a console window with a very rough display that looks 
+something like the actual hardware. This seems to give me enough coverage so that I can be pretty sure the application is going to work 
+when I copy it across to the real device. 
 
 ```python
 import os
@@ -149,14 +155,16 @@ class ConsoleBadger:
 
 ## Main.py
 
+The main quotation application which can run either the real badger or the emulated console. 
+
 ```python
-USE_MOCK = True
+USE_EMULATOR = True
 
 from buttons import *
 import random
 import time
 
-if USE_MOCK:
+if USE_EMULATOR:
     from console_badger import ConsoleBadger
     badger = ConsoleBadger()
 else:
