@@ -3,15 +3,165 @@ title: Badger Quote of the Day
 tags: [python, badger]
 ---
 
-Following on from the Badger 2040 Hello World example, here is an inspirational quote of the day printed on e-paper.
+Following on from the Badger 2040 Hello World example, here is an inspirational quote of the day printed on e-paper. Because this application is a little 
+more complicated, I wanted to test and debug a lot of the logic on the desktop using IDLE but of course ran into the immediate problem of not being able to 
+instantiate a badger2040 object from the pimoroni library. It means we need a level of indirection between the main application and the device allowing us to swap out an emulated version in the test configuration. I created a hardware implementation using the pimoroni library and a console emulator that can run on the desktop. Running python on the desktop blocks waiting for input so I had to add a dummy function in both implementations to wait for button input before checking what was pressed.
 
+## Buttons.py
 
-## Quote
+The button press ids need to be split out into a separate source file. 
+
+```python
+BUTTON_A = "A"
+BUTTON_B = "B"
+BUTTON_C = "C"
+```
+
+Extra right-hand side buttons are not needed at the moment but could be added here later. 
+
+## Hardware Badger.py
 
 ```python
 import badger2040
+
+from buttons import (
+    BUTTON_A,
+    BUTTON_B,
+    BUTTON_C
+)
+
+
+class HardwareBadger:
+
+    def __init__(self):
+
+        self.badger = badger2040.Badger2040()
+
+    def set_pen(self, value):
+        self.badger.set_pen(value)
+
+    def clear(self):
+        self.badger.clear()
+
+    def text(self, text, x, y, scale):
+        self.badger.text(text, x, y, scale)
+
+    def update(self):
+        self.badger.update()
+
+    def wait_for_press(self):
+        # dummy function to make desktop emulation easier
+        pass
+    
+    def pressed(self, button):
+
+        if button == BUTTON_A:
+            return self.badger.pressed(
+                badger2040.BUTTON_A
+            )
+
+        if button == BUTTON_B:
+            return self.badger.pressed(
+                badger2040.BUTTON_B
+            )
+
+        if button == BUTTON_C:
+            return self.badger.pressed(
+                badger2040.BUTTON_C
+            )
+
+        return False
+
+    @property
+    def width(self):
+        return badger2040.WIDTH
+
+    @property
+    def height(self):
+        return badger2040.HEIGHT
+```
+
+## Console Badger.py
+
+```python
+import os
+from buttons import (
+    BUTTON_A,
+    BUTTON_B,
+    BUTTON_C
+)
+
+class ConsoleBadger:
+
+    def __init__(self):
+        self.width = 296
+        self.height = 128
+
+        self.buffer = []
+        self.last_key = None
+
+    def set_pen(self, value):
+        pass
+
+    def clear(self):
+        self.buffer = []
+
+    def text(self, text, x, y, scale):
+        self.buffer.append(
+            (y, x, text)
+        )
+
+    def update(self):
+
+        os.system("cls")
+
+        print("=" * 70)
+        print(" BADGER 2040 SIMULATOR ")
+        print("=" * 70)
+
+        for y, x, text in sorted(self.buffer):
+            print(" " * min(x // 4, 20) + text)
+
+        print()
+        print("=" * 70)
+        print()
+        print("A=Previous B=Random C=Next Q=Quit")
+
+    def wait_for_press(self):
+        key = input("> ").strip().upper()
+        if key == "A":
+            self.last_key = BUTTON_A
+        elif key == "B":
+            self.last_key = BUTTON_B
+        elif key == "C":
+            self.last_key = BUTTON_C
+        elif key == "Q":
+            raise SystemExit
+        else:
+            self.last_key = None
+            
+    def pressed(self, button):
+        if self.last_key == button:
+            self.last_key = None
+            return True
+        return False
+```
+
+## Main.py
+
+```python
+USE_MOCK = True
+
+from buttons import *
 import random
 import time
+
+if USE_MOCK:
+    from console_badger import ConsoleBadger
+    badger = ConsoleBadger()
+else:
+    from hardware_badger import HardwareBadger
+    badger = HardwareBadger()
 
 try:
     import ujson as json
@@ -23,7 +173,7 @@ STATE_FILE = "quotes.json"
 
 QUOTES = [
     (
-        "The two hardest problems in Computer Science are: Human communication; Getting people in tech to believe that human communication is important"
+        "The two hardest problems in Computer Science are: Human communication; Getting people in tech to believe that human communication is important",
         "Hazel Weakly"
     ),
     (
@@ -85,12 +235,6 @@ QUOTES = [
 ]
 
 
-badger = badger2040.Badger2040()
-
-WIDTH = badger2040.WIDTH
-HEIGHT = badger2040.HEIGHT
-
-
 def load_state():
     try:
         with open(STATE_FILE, "r") as f:
@@ -105,7 +249,6 @@ def save_state(state):
         json.dump(state, f)
 
 state = load_state()
-
 
 def wrap_text(text, width):
     words = text.split()
@@ -232,28 +375,25 @@ def random_quote():
 
 draw_current_quote()
 
-print("A = Previous")
-print("B = Random")
-print("C = Next")
-
-
 while True:
     changed = False
 
-    if badger.pressed(badger2040.BUTTON_A):
+    badger.wait_for_press()
+        
+    if badger.pressed(BUTTON_A):
         previous_quote()
         changed = True
-    elif badger.pressed(badger2040.BUTTON_B):
+    elif badger.pressed(BUTTON_B):
         random_quote()
         changed = True
-    elif badger.pressed(badger2040.BUTTON_C):
+    elif badger.pressed(BUTTON_C):
         next_quote()
         changed = True
 
     if changed:
         draw_current_quote()
-        time.sleep(0.3)
+        time.sleep(0.5)
 
-    time.sleep(0.05)
+    time.sleep(0.1)
 
 ```
