@@ -9,7 +9,8 @@ on a Mac quietly saving episodes as they appear.
 
 ## archive_podcast.py
 
-The script takes in a path to the podcast rss xml file and the folder to store the episodes files.
+The script takes in a path to the podcast rss xml file and the folder to store the episodes files. Each folder contains the files downloaded so far 
+and an individual .podcast-archive.sqlite3 database that tracks the files found in the feed and downloaded.
 
 ```python
 #!/usr/bin/env python3
