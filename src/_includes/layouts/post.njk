@@ -6,11 +6,31 @@
   <header class="article-header">
     <h1 class="page-title">{{ title }}</h1>
     <nav class="repel article-meta article-tags" id="article-meta" aria-label="Post metadata">
-      <p class="cluster mb-0">
+      <div class="cluster mb-0">
         <span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
         <span id="reading-time" class="reading-time only-desktop">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
-        <a id="read-aloud" href="#" class="read-aloud narrator" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</a>
-      </p>
+        <div class="narrator">
+          <button type="button" id="read-aloud" class="read-aloud" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</button>
+          <details class="narrator-settings">
+            <summary>Voice &amp; speed</summary>
+            <div class="narrator-settings__panel">
+              <label for="narrator-rate">Speed</label>
+              <select id="narrator-rate" class="field__control">
+                <option value="0.5">0.5× — slow</option>
+                <option value="0.8" selected>0.8× — relaxed</option>
+                <option value="1">1× — normal</option>
+                <option value="1.25">1.25× — quick</option>
+                <option value="1.5">1.5× — fast</option>
+                <option value="2">2× — very fast</option>
+              </select>
+              <label for="narrator-voice">Voice</label>
+              <select id="narrator-voice" class="field__control">
+                <option value="">Device default</option>
+              </select>
+            </div>
+          </details>
+        </div>
+      </div>
       {% if tags %}
       <p class="cluster only-desktop-flex mb-0" aria-label="Tags">
         {%- for tag in tags -%}
