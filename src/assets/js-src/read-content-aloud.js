@@ -112,60 +112,136 @@ const generateTranscript = () => {
     return discoveredText;
 }
 
-async function playTranscript(transcript){
+async function playTranscript(transcript, options, shouldContinue){
     for (const segment of transcript){
-        await playSegment(segment);
+      if (!shouldContinue()) {
+        return;
+      }
+      
+      await playSegment(segment, options);
     }
 }
  
-async function playSegment(segment){
-    return new Promise( resolve =>{
+async function playSegment(segment, { rate, voiceUri} ){
+    return new Promise(resolve =>{
         const synthesis = window.speechSynthesis;
         const utterance = new SpeechSynthesisUtterance(segment);
-        utterance.rate = 0.8;
+        const voice = synthesis.getVoices().find((candidate) => candidate.voiceURI === voiceUri);
+        if (voice) {
+          utterance.voice = voice;
+        }
+      
+        utterance.rate = rate;
         utterance.onend = () => resolve();
         utterance.onerror = () => resolve();
+        // debug
         console.log("Narrator: " + segment);
+      
         synthesis.speak(utterance);
     })
 }
 
-export const initNarratePostContent = () => {
-    const narrationButton = document.querySelector(".narrator");
+const populateVoiceOptions = (voiceSelect, synthesis) => {
+  const preferredVoice = getPreference(narrationVoicePreferenceKey) || voiceSelect.value;
+  const voices = [...synthesis.getVoices()].sort((left, right) =>
+    `${left.lang} ${left.name}`.localeCompare(`${right.lang} ${right.name}`),
+  );
+  const defaultOption = new Option("Device default", "");
+  const options = voices.map((voice) => {
+    const defaultLabel = voice.default ? " — default" : "";
+    return new Option(`${voice.name} (${voice.lang})${defaultLabel}`, voice.voiceURI);
+  });
 
-    if (!narrationButton) {
+  voiceSelect.replaceChildren(defaultOption, ...options);
+  if (voices.some((voice) => voice.voiceURI === preferredVoice)) {
+    voiceSelect.value = preferredVoice;
+  }
+};
+
+export const initNarratePostContent = () => {
+    const narrationButton = document.querySelector("#read-aloud");
+    const narrator = narrationButton?.closest(".narrator");
+    const rateSelect = document.querySelector("#narrator-rate");
+    const voiceSelect = document.querySelector("#narrator-voice");
+
+    if (!narrationButton || !narrator || !rateSelect || !voiceSelect) {
         return;
     }
     
     const defaultTabTitle = document.title;
 
     const isSynthAvailable = window.speechSynthesis !== undefined;
-    if (isSynthAvailable) {
-        // stop audio when user navigates away from the page
-        window.addEventListener("beforeunload", () => {
-            window.speechSynthesis.cancel();
-        });
-
-        // change title of the tab when audio is playing (to show that audio is playing)
-        window.setInterval(() => {
-            if (window.speechSynthesis.speaking) {
-                document.title = "[🔊] " + defaultTabTitle;
-                narrationButton.classList.add("narrator-active");
-            } else {
-                document.title = defaultTabTitle;
-                narrationButton.classList.remove("narrator-active");
-            }
-        }, 500);
-
-        narrationButton.addEventListener("click", () => {
-            if (window.speechSynthesis.speaking) {
-                window.speechSynthesis.cancel();
-            } else {
-                const text = generateTranscript();
-                playTranscript(text);
-            }
-        });
-    } else {
-        narrationButton.style.display = "none";
+    if (!isSynthAvailable) {
+      narrator.hidden = true;
+      return;
     }
+
+    const synthesis = window.speechSynthesis;
+    const defaultTabTitle = document.title;
+    const storedRate = getPreference(narrationRatePreferenceKey);
+    let narrationId = 0;
+    let isNarrating = false;
+
+    rateSelect.value = supportedNarrationRates.has(storedRate)
+      ? storedRate
+      : defaultNarrationRate;
+
+    populateVoiceOptions(voiceSelect, synthesis);
+    synthesis.addEventListener("voiceschanged", () => populateVoiceOptions(voiceSelect, synthesis));
+
+    rateSelect.addEventListener("change", () => {
+      savePreference(narrationRatePreferenceKey, rateSelect.value);
+    });
+    
+    voiceSelect.addEventListener("change", () => {
+      savePreference(narrationVoicePreferenceKey, voiceSelect.value);
+    });
+
+    const setNarratingState = (active) => {
+      isNarrating = active;
+      document.title = active ? "[🔊] " + defaultTabTitle : defaultTabTitle;
+      narrationButton.classList.toggle("narrator-active", active);
+      narrationButton.setAttribute(
+        "aria-label",
+        active ? "Stop reading this page aloud" : "Read this page aloud",
+      );
+    };
+  
+    // stop audio when user navigates away from the page
+    window.addEventListener("beforeunload", () => {
+        narrationId += 1;
+        synthesis.cancel();
+    });
+
+    // change title of the tab when audio is playing (to show that audio is playing)
+    window.setInterval(() => {
+        if (synthesis.speaking) {
+            document.title = "[🔊] " + defaultTabTitle;
+            narrationButton.classList.add("narrator-active");
+        } else {
+            document.title = defaultTabTitle;
+            narrationButton.classList.remove("narrator-active");
+        }
+    }, 500);
+
+    narrationButton.addEventListener("click", async () => {
+      if (isNarrating) {
+        narrationId += 1;
+        synthesis.cancel();
+        setNarratingState(false);
+        return;
+      }
+
+      const currentNarrationId = ++narrationId;
+      const options = {
+        rate: Number(rateSelect.value),
+        voiceUri: voiceSelect.value,
+      };
+
+      setNarratingState(true);
+      await playTranscript(generateTranscript(), options, () => currentNarrationId === narrationId);
+      if (currentNarrationId === narrationId) {
+        setNarratingState(false);
+      }
+    });
 }
