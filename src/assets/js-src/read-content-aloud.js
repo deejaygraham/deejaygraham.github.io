@@ -59,6 +59,7 @@ const generateTranscript = () => {
             }
             
             switch (tagName) {
+                case 'h2':
                 case 'p':
                 case 'li': 
                 case 'figcaption': {
@@ -91,10 +92,6 @@ const generateTranscript = () => {
                     if (n.classList.contains("notice")) {
                         pushText(transcript, "Please note: ");
                     }
-                    break;
-                }
-                case 'h2': { 
-                    pushText(transcript, text);
                     break;
                 }
                 default:
