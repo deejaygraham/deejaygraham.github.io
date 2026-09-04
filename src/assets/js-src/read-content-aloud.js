@@ -177,7 +177,7 @@ export const initNarratePostContent = () => {
     }
 
     const synthesis = window.speechSynthesis;
-    const defaultTabTitle = document.title;
+
     const storedRate = getPreference(narrationRatePreferenceKey);
     let narrationId = 0;
     let isNarrating = false;
