@@ -1,4 +1,29 @@
 /* adapted with thanks from https://www.4rknova.com/blog/2025/01/16/speech-synthesis */
+const narrationRatePreferenceKey = "narration-rate";
+const narrationVoicePreferenceKey = "narration-voice";
+const defaultNarrationRate = "0.8";
+const supportedNarrationRates = new Set(["0.5", "0.8", "1", "1.25", "1.5", "2"]);
+
+const getPreference = (key) => {
+  try {
+    return window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+};
+
+const savePreference = (key, value) => {
+  try {
+    if (value) {
+      window.localStorage.setItem(key, value);
+    } else {
+      window.localStorage.removeItem(key);
+    }
+  } catch {
+    // Narration still works when storage is unavailable.
+  }
+};
+
 const splitText = (text) => {
     // split text into sentences
     return text.split('. ');
@@ -68,12 +93,8 @@ const generateTranscript = () => {
                     }
                     break;
                 }
-                case 'h1': {
-                    pushText(transcript, "Title: " + text);
-                    break;
-                }
                 case 'h2': { 
-                    pushText(transcript, "Sub heading: " + text);
+                    pushText(transcript, text);
                     break;
                 }
                 default:
