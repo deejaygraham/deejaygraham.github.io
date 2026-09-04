@@ -68,6 +68,14 @@ const generateTranscript = () => {
                     }
                     break;
                 }
+                case 'h1': {
+                    pushText(transcript, "Title: " + text);
+                    break;
+                }
+                case 'h2': { 
+                    pushText(transcript, "Sub heading: " + text);
+                    break;
+                }
                 default:
                     console.log("Narrator: ignoring tag " + tagName);
                 }
