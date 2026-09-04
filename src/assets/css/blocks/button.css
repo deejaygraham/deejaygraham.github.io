@@ -50,12 +50,12 @@
   border-radius: 0;
 }
 
-.button-group .button:first-child {
+.button-group .button:first-of-type {
   border-start-start-radius: var(--border-radius);
   border-end-start-radius: var(--border-radius);
 }
 
-.button-group .button:last-child {
+.button-group .button:last-of-type {
   border-start-end-radius: var(--border-radius);
   border-end-end-radius: var(--border-radius);
 }
