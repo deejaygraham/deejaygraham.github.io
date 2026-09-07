@@ -3,8 +3,8 @@ title: Finding Duplicates
 tags: [code, python]
 ---
 
-I have several spare hard drives which contain multiple back up copies of the same files - pdfs, photos, etc. - in different nested 
-folders. I wanted to write a python script I can run to find which are duplicates based on name, date, hash> I want to rationalise the files 
+I have several spare hard drives which contain multiple back up copies of the same files (pdfs, photos, etc.) in different nested 
+folders. I wanted to write a python script I can run to find which are duplicates based on name, date, hash. I want to rationalise the files 
 on my NAS drives and want to decide which ones I want to keep and which to delete.
 
 I was writing this "blind" on a Windows machine but needed to run it on an iMac under macos, and also against a number of portable hard drives
