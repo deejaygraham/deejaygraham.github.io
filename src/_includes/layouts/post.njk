@@ -10,7 +10,7 @@
         <span class="date"><time datetime="{{ page.date | dateISO }}">{{ page.date | dateFull }}</time></span>
         <span id="reading-time" class="reading-time only-desktop">{% include 'icons/reading-timer.svg' %}{{ content | readingTime }}</span>
         <div class="narrator">
-          <button type="button" id="read-aloud" class="read-aloud" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} Read this aloud</button>
+          <button type="button" id="read-aloud" class="read-aloud" aria-label="Read this page aloud">{% include 'icons/narrator.svg' %} <span id="read-aloud-label">Read this aloud</span></button>
           <details class="narrator-settings">
             <summary>Voice &amp; speed</summary>
             <div class="narrator-settings__panel">
