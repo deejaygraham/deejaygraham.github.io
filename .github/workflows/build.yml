@@ -41,13 +41,29 @@ jobs:
       - name: Validate pre-build
         uses: ./.github/actions/validate-pre-build
 
+      - name: Calculate social preview cache key
+        id: social-preview-cache
+        shell: bash
+        run: |
+          echo "key=social-previews-${{ runner.os }}-${{ hashFiles(
+            'scripts/lib/generateAllSocialImages.js',
+            'scripts/lib/generateSocialImage.js',
+            'scripts/lib/getAdaptiveTitleLayout.js',
+            'scripts/lib/splitLongLine.js',
+            'scripts/lib/sanitizeHTML.js',
+            'scripts/lib/slugify.js',
+            'scripts/lib/paths.js',
+            'src/_data/site.js',
+            'src/assets/img/favicon.png'
+          ) }}" >> "$GITHUB_OUTPUT"
+          
       - name: Restore social preview cache
         uses: actions/cache/restore@v6
         with:
           path: build-cache/img/previews
-          key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}
+          key: ${{ steps.social-preview-cache.outputs.key }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            social-previews-${{ runner.os }}-
+            ${{ steps.social-preview-cache.outputs.key }}-
             
       - name: Build
         run: npm run build
@@ -58,8 +74,8 @@ jobs:
         uses: actions/cache/save@v6
         with:
           path: build-cache/img/previews
-          key: social-previews-${{ runner.os }}-${{ hashFiles('src/_11ty/plugins/generate-social-images/**', 'src/assets/img/favicon.png') }}-${{ github.run_id }}
-
+          key: ${{ steps.social-preview-cache.outputs.key }}-${{ github.run_id }}-${{ github.run_attempt }}
+          
       - name: Upload site artifact
         uses: ./.github/actions/upload-site-artifact
         
