@@ -1,24 +1,18 @@
-import { existsSync } from "fs";
-import { exit } from "process";
+import path from "path";
+import { validateSiteOutput } from "./lib/site-output-validation.js";
 
-const required = [
-  "_site/js/site.js",
-  "_site/js/search.js",
-  "_site/css/site.css",
-  "_site/sw.js",
-];
+const siteDir = path.resolve(process.argv[2] || "_site");
+const result = validateSiteOutput(siteDir);
 
-const missing = required.filter((path) => !existsSync(path));
-
-if (missing.length > 0) {
-  console.error("Missing required site output:");
-  for (const path of missing) {
-    console.error(`  - ${path}`);
+if (result.issues.length > 0) {
+  console.error("Site output validation failed:");
+  for (const issue of result.issues) {
+    console.error(`  - ${issue}`);
   }
-  exit(1);
-}
-
-console.log("Site output assets ok:");
-for (const path of required) {
-  console.log(`  - ${path}`);
+  process.exitCode = 1;
+} else {
+  console.log(
+    `Site output ok: ${result.checkedFiles.length} required files, ` +
+      `${result.htmlCount} HTML files, ${result.socialPreviewCount} social preview references`,
+  );
 }
