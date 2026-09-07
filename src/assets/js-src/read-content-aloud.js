@@ -5,6 +5,7 @@ const narrationRatePreferenceKey = "narration-rate";
 const narrationVoicePreferenceKey = "narration-voice";
 const defaultNarrationRate = "0.8";
 const supportedNarrationRates = new Set(["0.5", "0.8", "1", "1.25", "1.5", "2"]);
+let activeUtterance = null;
 
 const splitText = (text) => {
     // split text into sentences
@@ -105,15 +106,36 @@ async function playSegment(segment, { rate, voiceUri }) {
     const synthesis = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(segment);
     const voice = synthesis.getVoices().find((candidate) => candidate.voiceURI === voiceUri);
+    const finish = () => {
+      if (activeUtterance === utterance) {
+        activeUtterance = null;
+      }
+      resolve();
+    };
 
     utterance.rate = rate;
     if (voice) {
       utterance.voice = voice;
     }
 
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
-    console.log("Narrator: " + segment);
+    utterance.onend = finish;
+    utterance.onerror = (event) => {
+      if (event.error !== "canceled" && event.error !== "interrupted") {
+        console.error("Narrator speech error:", event.error, event);
+      }
+      finish();
+    };
+
+    activeUtterance = utterance;
+    if (synthesis.paused) {
+      synthesis.resume();
+    }
+
+    console.log("Narrator: speaking", {
+      text: segment,
+      rate,
+      voice: voice?.name || "Device default",
+    });
     synthesis.speak(utterance);
   });
 }
