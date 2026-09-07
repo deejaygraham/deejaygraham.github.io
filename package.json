@@ -1,10 +1,16 @@
 {
+  "private": true,
   "type": "module",
+  "packageManager": "npm@11.19.1",
+  "engines": {
+    "node": ">=24 <25",
+    "npm": ">=11.19.1 <12"
+  },
   "scripts": {
     "css": "postcss src/assets/css/site.css -o src/_generated/css/site.css",
     "watch:css": "postcss src/assets/css/site.css -o src/_generated/css/site.css --watch",
     "build:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --minify --target=es2018 --outdir=src/_generated/js",
-    "watch:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --target=es2018 --sourcemap=inline --outdir=src/_generated/js --watch",
+    "watch:js": "esbuild src/assets/js-src/site.js src/assets/js-src/search.js --bundle --sourcemap=inline --target=es2018 --outdir=src/_generated/js --watch",
     "build:sw": "node scripts/build-service-worker.mjs",
     "new-post": "node scripts/new-post.mjs",
     "build": "npm-run-all --parallel css build:js && eleventy",
@@ -28,37 +34,32 @@
     "lintoutput": "node scripts/lint-site-output.mjs",
     "prepare": "husky || true"
   },
-  "dependencies": {
-    "@11ty/eleventy-img": "^7.0.0",
-    "ava": "^8.0.1",
-    "elasticlunr": "^0.9.5",
-    "npm": "^12.0.2",
-    "prettier": "^3.9.6",
-    "sharp": "^0.35.3",
-    "shiki": "^4.4.3"
-  },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@11ty/eleventy-img": "^7.0.0",
     "@axe-core/playwright": "^4.13.0",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.2.0",
+    "ava": "^8.0.1",
     "cssnano": "^8.0.5",
+    "elasticlunr": "^0.9.5",
     "eleventy-plugin-gen-favicons": "^1.1.3",
     "esbuild": "^0.28.2",
     "eslint": "^10.8.1",
     "globals": "^17.11.0",
     "html-minifier-terser": "^7.2.0",
     "husky": "^9.1.7",
-    "install": "^0.13.0",
     "luxon": "^3.4.4",
     "markdownlint-cli": "^0.49.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.26",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.2.0",
-    "postcss-import-ext-glob": "^2.1.1"
+    "postcss-import-ext-glob": "^2.1.1",
+    "prettier": "^3.9.6",
+    "sharp": "^0.35.3",
+    "shiki": "^4.4.3"
   },
   "overrides": {
     "sharp": "$sharp"
