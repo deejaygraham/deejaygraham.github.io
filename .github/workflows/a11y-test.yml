@@ -20,16 +20,40 @@ jobs:
       - name: Install dependencies
         uses: ./.github/actions/install-dependencies
 
+      - name: Calculate social preview cache key
+        id: social-preview-cache
+        shell: bash
+        run: |
+          echo "key=social-previews-${{ runner.os }}-${{ hashFiles(
+            'scripts/lib/generateAllSocialImages.js',
+            'scripts/lib/generateSocialImage.js',
+            'scripts/lib/getAdaptiveTitleLayout.js',
+            'scripts/lib/splitLongLine.js',
+            'scripts/lib/sanitizeHTML.js',
+            'scripts/lib/slugify.js',
+            'scripts/lib/paths.js',
+            'src/_data/site.js',
+            'src/assets/img/favicon.png'
+          ) }}" >> "$GITHUB_OUTPUT"
+
       - name: Restore social preview cache
         uses: actions/cache/restore@v6
         with:
           path: build-cache/img/previews
-          key: social-previews-${{ runner.os }}-${{ hashFiles('scripts/lib/social-images/**', 'src/assets/img/favicon.png') }}
+          key: ${{ steps.social-preview-cache.outputs.key }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            social-previews-${{ runner.os }}-
+            ${{ steps.social-preview-cache.outputs.key }}-
 
-      - name: Build site
+      - name: Build
         run: npm run build
+
+      - name: Save social preview cache
+        if: success()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: build-cache/img/previews
+          key: ${{ steps.social-preview-cache.outputs.key }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Install Playwright
         uses: ./.github/actions/install-playwright
