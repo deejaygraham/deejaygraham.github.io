@@ -30,17 +30,14 @@ flowchart TD
     parallel["npm-run-all --parallel"]
     css["css<br/>PostCSS site.css<br/>→ src/_generated/css/site.css"]
     js["build:js<br/>esbuild site.js + search.js<br/>→ src/_generated/js/"]
-    og["build:og<br/>scripts/generate-social-images.mjs<br/>→ build-cache/img/previews/"]
     eleventy["eleventy"]
   end
 
   buildCmd --> parallel
   parallel --> css
   parallel --> js
-  parallel --> og
   css --> eleventy
   js --> eleventy
-  og --> eleventy
 
   subgraph eleventyLifecycle [Inside Eleventy]
     before["eleventy.before<br/>buildServiceWorker → src/_generated/sw.js<br/>+ generateAllSocialImages"]
@@ -102,12 +99,12 @@ flowchart TD
     deps[Install dependencies]
     pre["Validate pre-build<br/>npm run validate:pre<br/>eslint · mdlint · tags/posts/images · ava"]
     cacheIn[Restore social preview cache]
-    build["Build<br/>npm run build<br/>Tailwind + esbuild + Eleventy"]
+    build["Build<br/>npm run build<br/>PostCSS + esbuild + Eleventy"]
     cacheOut[Save social preview cache]
     artifact[Upload _site artifact<br/>site-build]
     sizeInspect[Inspect _site size]
     sizeBudget{"_site ≤ 200 MB?"}
-    post["Validate site output<br/>npm run validate:post<br/>eslint _site"]
+    post["Validate site output<br/>npm run validate:post<br/>check generated JS, CSS, and service worker"]
     pwInstall[Install Playwright]
     pwTest[Run Playwright on _site]
     pwReport[Upload Playwright report<br/>always]
