@@ -54,6 +54,7 @@ technology approachable and fun.
 
 
 ### Technical Skills
+
 * Languages: .NET, JavaScript, React, Python, C/C++, micro:bit programming
 * Practices: Test-Driven Development, Agile methodologies, code refactoring
 * Architecture: Software design patterns, legacy code modernization
