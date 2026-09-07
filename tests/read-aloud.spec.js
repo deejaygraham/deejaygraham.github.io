@@ -95,6 +95,7 @@ test.describe("read aloud", () => {
       "English Voice (en-GB) — default",
     ]);
 
+    await page.getByText("Voice & speed", { exact: true }).click();
     await rateSelect.selectOption("1.5");
     await voiceSelect.selectOption("voice-welsh");
     await page.reload();
