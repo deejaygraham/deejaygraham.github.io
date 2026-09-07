@@ -1,3 +1,5 @@
+import { getStoredValue, setStoredValue } from "./local-storage.js";
+
 const themePreferenceKey = "theme-preference";
 const lightThemeValue = "light";
 const darkThemeValue = "dark";
@@ -17,13 +19,13 @@ const setThemePreference = (themeName) => {
 
 const saveThemePreference = (themeName) => {
   if (themeName === lightThemeValue || themeName === darkThemeValue) {
-    localStorage.setItem(themePreferenceKey, themeName);
+    setStoredValue(themePreferenceKey, themeName);
   } else {
-    localStorage.removeItem(themePreferenceKey);
+    setStoredValue(themePreferenceKey, null);
   }
 };
 
-const getStoredPreference = () => localStorage.getItem(themePreferenceKey);
+const getStoredPreference = () => getStoredValue(themePreferenceKey);
 
 const applyStoredOrSystemTheme = () => {
   const stored = getStoredPreference();
