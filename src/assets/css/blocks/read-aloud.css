@@ -10,6 +10,11 @@
   text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
 }
 
+#read-aloud-label:hover {
+  color: var(--color-brand);
+  text-decoration: underline;
+}
+
 .narrator {
   display: inline-flex;
   align-items: center;
@@ -25,6 +30,11 @@
   text-decoration: underline dotted;
   text-underline-offset: 0.15em;
   text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
+}
+
+.narrator-settings summary:hover {
+  color: var(--color-brand);
+  text-decoration: underline;
 }
 
 .narrator-settings__panel {
