@@ -18,7 +18,7 @@ const formatResult = (document, url, title, excerpt) => {
   body.className = "card__body";
 
   const titleEl = document.createElement("h2");
-  titleEl.className = "post-card-title";
+  titleEl.className = "card__title";
   titleEl.textContent = title;
   body.appendChild(titleEl);
 
