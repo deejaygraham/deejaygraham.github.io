@@ -6,23 +6,17 @@ function showSwUpdateNotification(onRefresh) {
 
   const wrapper = document.createElement("div");
   wrapper.id = "sw-update-notification";
-  wrapper.style.position = "fixed";
-  wrapper.style.left = "1rem";
-  wrapper.style.right = "1rem";
-  wrapper.style.bottom = "1rem";
-  wrapper.style.zIndex = "9999";
+  wrapper.className = "service-worker-notification";
 
   const notification = document.createElement("div");
-  notification.className = "alert";
+  notification.className = "alert repel";
   notification.setAttribute("role", "alert");
-  notification.style.margin = "0 auto";
-  notification.style.maxWidth = "38rem";
 
   const message = document.createElement("span");
   message.textContent = "A newer version of this site is available.";
 
   const actions = document.createElement("div");
-  actions.className = "alert__actions";
+  actions.className = "alert__actions cluster";
 
   const refreshButton = document.createElement("button");
   refreshButton.type = "button";
