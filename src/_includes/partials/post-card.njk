@@ -2,9 +2,9 @@
 <article class="card">
   <a href="{{ url }}" class="card__body">
     {% if tags %}
-      <p class="post-card-meta">{%- for tag in tags -%}{{ tag }}{% if not loop.last %} · {% endif %}{%- endfor -%}</p>
+      <p class="card__meta">{%- for tag in tags -%}{{ tag }}{% if not loop.last %} · {% endif %}{%- endfor -%}</p>
     {% endif %}
-      <h2 class="post-card-title">{{ title }}</h2>
+      <h2 class="card__title">{{ title }}</h2>
       {% if subtitle %}
       <p class="text-muted">{{ subtitle }}</p>
       {% endif %}
@@ -12,7 +12,7 @@
       <p class="text-muted">{{ excerpt }}</p>
       {%- endif -%}
       {%- if date -%}
-      <p class="post-card-meta"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
+      <p class="card__meta"><time datetime="{{ date | dateISO }}">{{ date | dateFull }}</time></p>
       {%- endif -%}
   </a>
 </article>
