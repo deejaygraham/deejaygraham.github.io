@@ -17,8 +17,9 @@
 
 .narrator-settings summary {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: underline dotted;
   text-underline-offset: 0.15em;
+  text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
 }
 
 .narrator-settings__panel {
