@@ -1,5 +1,5 @@
 {# Requires socialmedia.json #}
-<nav class="cluster" style="--cluster-justify: center;" aria-label="Social links">
+<nav class="cluster site-footer__social-links" aria-label="Social links">
 {%- for item in socialmedia %}
   	<a href="{{ item.url }}" aria-label="{{ item.name }}" target="_blank" rel="noreferrer">
 		<figure class="site-nav__brand-icon social-media-icon">{% include item.icon %}</figure>
