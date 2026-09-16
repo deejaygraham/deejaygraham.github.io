@@ -5,6 +5,11 @@
   color: inherit;
 }
 
+#read-aloud-label {
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
+}
+
 .narrator {
   display: inline-flex;
   align-items: center;
