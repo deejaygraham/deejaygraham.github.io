@@ -1,0 +1,4 @@
+.featured-image {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}

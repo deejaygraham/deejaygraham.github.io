@@ -1,0 +1,6 @@
+.service-worker-notification {
+  position: fixed;
+  inset-inline: var(--space-s);
+  inset-block-end: var(--space-s);
+  z-index: 100;
+}

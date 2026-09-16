@@ -28,11 +28,8 @@
 }
 
 .site-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-xs);
+  --repel-gap: var(--space-xs);
+
   padding-inline: var(--space-2xs);
   min-height: 3.5rem;
 }
@@ -140,18 +137,20 @@
 
 .main {
   flex: 1;
-  width: min(100% - var(--gutter) * 2, var(--wrapper-max));
-  margin-inline: auto;
   margin-block-end: var(--space-l);
   padding-block-start: var(--space-m);
 }
 
 .site-footer {
-  display: grid;
-  gap: var(--space-m);
-  justify-items: center;
+  --stack-gap: var(--space-m);
+
+  align-items: center;
   text-align: center;
   padding: var(--space-l);
   background: var(--color-bg-subtle);
   color: var(--color-text);
+}
+
+.site-footer__social-links {
+  --cluster-justify: center;
 }

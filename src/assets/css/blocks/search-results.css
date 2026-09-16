@@ -1,0 +1,5 @@
+.search-results {
+  --stack-gap: var(--space-s);
+
+  margin-block: var(--space-m);
+}

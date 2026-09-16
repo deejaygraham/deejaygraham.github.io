@@ -36,39 +36,10 @@ a:hover {
   navigation: auto;
 }
 
-.social-media-icon:hover {
-  color: var(--color-brand);
-}
-
-.animated-cursor {
-  animation: blink 1s infinite;
-  opacity: 1;
-  color: var(--color-brand);
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@media (min-width: 1025px) {
-  .microbit-svg {
-    padding-inline: 200px;
-  }
-}
-
 @media print {
   .site-header,
   .related-posts,
-  .site-footer,
-  #footer {
+  .site-footer {
     display: none;
   }
 

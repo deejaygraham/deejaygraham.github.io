@@ -37,8 +37,6 @@
 
   --wrapper-max: 64rem;
   --gutter: var(--space-s);
-  --flow-space: var(--space-m);
-  --region-space: var(--space-l);
   --border-radius: 0.5rem;
 }
 

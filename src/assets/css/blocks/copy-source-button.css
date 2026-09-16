@@ -1,0 +1,4 @@
+.copy-source-button {
+  float: inline-end;
+  margin-block-end: var(--space-2xs);
+}

@@ -1,0 +1,12 @@
+.sketchnote table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--size-step--1);
+}
+
+.sketchnote th,
+.sketchnote td {
+  border: 1px solid var(--color-border);
+  padding: var(--space-2xs) var(--space-xs);
+  text-align: start;
+}

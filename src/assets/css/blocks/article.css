@@ -1,0 +1,10 @@
+.article-header {
+  padding-block-end: var(--space-m);
+  margin-block-end: var(--space-m);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.article-meta {
+  font-size: var(--size-step--1);
+  color: var(--color-text-muted);
+}

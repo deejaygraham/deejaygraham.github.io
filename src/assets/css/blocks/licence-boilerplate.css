@@ -1,0 +1,6 @@
+.licence-boilerplate {
+  margin-block-start: var(--space-m);
+  padding: var(--space-s);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}

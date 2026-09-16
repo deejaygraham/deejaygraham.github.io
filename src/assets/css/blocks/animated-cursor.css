@@ -1,0 +1,19 @@
+.animated-cursor {
+  animation: blink 1s infinite;
+  opacity: 1;
+  color: var(--color-brand);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

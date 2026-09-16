@@ -1,0 +1,22 @@
+.button-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.button-group .button {
+  border-radius: 0;
+}
+
+.button-group .button:first-of-type {
+  border-start-start-radius: var(--border-radius);
+  border-end-start-radius: var(--border-radius);
+}
+
+.button-group .button:last-of-type {
+  border-start-end-radius: var(--border-radius);
+  border-end-end-radius: var(--border-radius);
+}
+
+.button-group .button + .button {
+  margin-inline-start: -1px;
+}

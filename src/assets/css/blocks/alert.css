@@ -1,0 +1,16 @@
+.alert {
+  --repel-gap: var(--space-xs);
+
+  width: min(100%, 38rem);
+  margin-inline: auto;
+  padding: var(--space-s);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: var(--color-bg-subtle);
+}
+
+.alert__actions {
+  --cluster-gap: var(--space-2xs);
+
+  flex-shrink: 0;
+}
