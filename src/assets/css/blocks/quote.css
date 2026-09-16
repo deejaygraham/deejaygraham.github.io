@@ -1,6 +1,6 @@
 .quote__text {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: var(--font-heading-weight);
   line-height: 1.3;
   text-wrap: balance;
   margin: 0;
