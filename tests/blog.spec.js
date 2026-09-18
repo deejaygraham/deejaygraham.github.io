@@ -32,7 +32,10 @@ test.describe("Specific blog post example", () => {
   });
 
   test("has a read estimate", async ({ page }) => {
-    await expect(page.getByText(/Takes about /)).toBeVisible();
+    const readingTime = page.locator("#reading-time");
+    await expect(readingTime).toBeVisible();
+    await expect(readingTime).toHaveText(/Takes about /);
+    await expect(readingTime).toHaveCSS("display", "flex");
   });
 
   test("contains the correct date", async ({ page }) => {
