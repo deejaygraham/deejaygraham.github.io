@@ -13,7 +13,7 @@ body {
 
 a {
   color: inherit;
-  text-underline-offset: 2px;
+  text-underline-offset: var(--text-underline-offset);
 }
 
 p a,
