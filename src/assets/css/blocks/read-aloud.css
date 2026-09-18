@@ -7,6 +7,7 @@
 
 .read-aloud__label {
   text-decoration: underline dotted;
+  text-underline-offset: var(--text-underline-offset);
   text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
 }
 
