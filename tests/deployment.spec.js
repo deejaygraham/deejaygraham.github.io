@@ -75,10 +75,12 @@ test("automation files", async ({ page }) => {
   ]);
 });
 
-test("contains css", async ({ page }) => {
-  await checkAllResourcesExist(page, [
-    "/css/site.css",
-  ]);
+test("contains css with cache busting", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator('link[rel="stylesheet"][href^="/css/site.css"]')).toHaveAttribute(
+    "href",
+    /\/css\/site\.css\?v=.+/,
+  );
 });
 
 test("contains AT Protocol DID well-known file", async ({ page }) => {
