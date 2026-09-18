@@ -12,19 +12,28 @@
   border-color: color-mix(in oklab, var(--color-brand) 40%, var(--color-border));
 }
 
+.card a,
+.card a:hover {
+  text-decoration-line: none;
+}
+
 .card__body {
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
   padding: var(--space-s);
-  text-decoration: none;
   color: inherit;
   flex: 1;
 }
 
 .card__body:hover {
-  text-decoration: none;
   color: inherit;
+}
+
+.card__body:hover .card__title,
+.card__title a:hover {
+  color: var(--color-brand);
+  text-decoration-line: underline;
 }
 
 .card__media {
