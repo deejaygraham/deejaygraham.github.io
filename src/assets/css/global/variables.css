@@ -39,6 +39,8 @@
   --gutter: var(--space-s);
   --border-radius: 0.5rem;
   --text-underline-offset: 0.15em;
+  --text-underline-thickness: 0.08em;
+  --text-underline-color: color-mix(in oklab, var(--color-brand) 60%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
