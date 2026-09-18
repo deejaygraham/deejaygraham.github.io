@@ -27,6 +27,16 @@
   backdrop-filter: blur(8px);
 }
 
+.site-header a,
+.site-footer a {
+  text-decoration-line: none;
+}
+
+.site-header a:hover,
+.site-footer a:hover {
+  text-decoration-line: underline;
+}
+
 .site-nav {
   --repel-gap: var(--space-xs);
 
@@ -42,16 +52,9 @@
   font-size: var(--size-step-1);
   font-weight: var(--font-heading-weight);
   letter-spacing: -0.02em;
-  text-decoration: none;
   color: inherit;
   padding: var(--space-2xs);
   border-radius: var(--border-radius);
-}
-
-.site-nav__brand:hover {
-  color: var(--color-brand);
-  background-color: var(--color-brand-soft);
-  text-decoration: none;
 }
 
 .site-nav__brand-icon {
@@ -73,12 +76,6 @@
   display: inline-block;
   padding: var(--space-2xs) var(--space-xs);
   border-radius: var(--border-radius);
-  text-decoration: none;
-}
-
-.site-nav__list a:hover {
-  background-color: var(--color-brand-soft);
-  text-decoration: none;
 }
 
 .site-nav__desktop {
