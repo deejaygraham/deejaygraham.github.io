@@ -1,7 +1,7 @@
 ---
 permalink: mentoring/index.html
 layout: page.njk
-title: Mentoring and Teaching
+title: mentoring and teaching
 ---
 
 I'm passionate about helping the next generation of software developers grow their
