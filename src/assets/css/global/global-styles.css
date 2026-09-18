@@ -11,20 +11,20 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
+a,
+.text-link {
   color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: var(--text-underline-thickness);
+  text-decoration-color: var(--text-underline-color);
   text-underline-offset: var(--text-underline-offset);
 }
 
-p a,
-.site-prose a {
-  text-decoration: underline dotted;
-  text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
-}
-
-a:hover {
+a:hover,
+.text-link:hover {
   color: var(--color-brand);
-  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 :focus-visible {
