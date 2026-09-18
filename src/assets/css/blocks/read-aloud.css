@@ -5,17 +5,6 @@
   color: inherit;
 }
 
-.read-aloud__label {
-  text-decoration: underline dotted;
-  text-underline-offset: var(--text-underline-offset);
-  text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
-}
-
-.read-aloud__label:hover {
-  color: var(--color-brand);
-  text-decoration: underline;
-}
-
 .narrator {
   display: inline-flex;
   align-items: center;
@@ -28,14 +17,6 @@
 
 .narrator-settings summary {
   cursor: pointer;
-  text-decoration: underline dotted;
-  text-underline-offset: var(--text-underline-offset);
-  text-decoration-color: color-mix(in oklab, var(--color-brand) 55%, transparent);
-}
-
-.narrator-settings summary:hover {
-  color: var(--color-brand);
-  text-decoration: underline;
 }
 
 .narrator-settings__panel {
