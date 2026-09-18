@@ -38,6 +38,7 @@
   --wrapper-max: 64rem;
   --gutter: var(--space-s);
   --border-radius: 0.5rem;
+  --text-underline-offset: 0.15em;
 }
 
 @media (prefers-color-scheme: dark) {
