@@ -11,7 +11,7 @@ export default [
   {
     data: {
       title: "NDifference",
-      subtitle: "My .Net API reporting tool",
+      subtitle: "My .Net API reporting tool, so called because nobody else seems to care about it :)",
     },
     url: `${site.url}/ndifference/`
   },
