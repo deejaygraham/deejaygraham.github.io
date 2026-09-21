@@ -41,7 +41,7 @@
     "@axe-core/playwright": "^4.13.0",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.63.0",
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.1",
     "ava": "^8.0.1",
     "cssnano": "^8.0.5",
     "elasticlunr": "^0.9.5",
@@ -58,7 +58,7 @@
     "postcss-cli": "^11.0.1",
     "postcss-import": "^17.0.0",
     "postcss-import-ext-glob": "^2.1.1",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.8",
     "sharp": "^0.35.4",
     "shiki": "^4.4.3"
   },
