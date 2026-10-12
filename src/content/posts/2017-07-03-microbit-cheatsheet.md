@@ -16,6 +16,7 @@ from microbic import *
 ## Display
 
 ### Text
+
 ```python
 display.scroll(‘hello there!’)
 ```
