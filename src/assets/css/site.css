@@ -8,5 +8,5 @@
 @import-glob "blocks/*.css";
 @import-glob "utilities/*.css";
 
-// finally print 
+/* finally print styling */ 
 @import "print.css";
