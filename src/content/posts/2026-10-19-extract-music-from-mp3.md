@@ -45,6 +45,8 @@ after first doing some preprocessing on the data to remove cruft with hpss.
 ```python
 import librosa
 import numpy as np
+import winsound
+import time
 
 AUDIO_FILE = 'Captain Laser Beam Distress Call.mp3'  
 
@@ -52,6 +54,20 @@ HOP_LENGTH = 256
 MIN_NOTE_DURATION = 0.05  # seconds
 MIN_CONFIDENCE = 0.70
 
+NOTE_NAMES = {
+    "C": 0,
+    "C#": 1,
+    "D": 2,
+    "D#": 3,
+    "E": 4,
+    "F": 5,
+    "F#": 6,
+    "G": 7,
+    "G#": 8,
+    "A": 9,
+    "A#": 10,
+    "B": 11,
+}
 
 def midi_to_note(midi_number):
     names = [
@@ -64,6 +80,18 @@ def midi_to_note(midi_number):
 
     return f"{name}{octave}"
 
+def note_to_frequency(note):
+    octave = int(note[-1])
+    name = note[:-1]
+
+    midi = (octave + 1) * 12 + NOTE_NAMES[name]
+
+    return 440.0 * (2 ** ((midi - 69) / 12))
+
+
+def play_note(note, duration=300):
+    frequency = round(note_to_frequency(note))
+    winsound.Beep(frequency, duration)
 
 # -------------------------------------------------------
 # Load audio
@@ -218,5 +246,16 @@ melody = [event["note"] for event in events]
 print()
 print("Melody:")
 print(melody)
+
+for note in melody:
+    print(note, round(note_to_frequency(note)), "Hz")
+    play_note(note, 300)
+
+    # Small gap between notes
+    time.sleep(0.05)
+
 ```
+
+In this version I also added a super basic playback, i.e. not taking account of timing, mechanism so that I can try to validate 
+the output and compare it against what is in the original source.
 
