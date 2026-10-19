@@ -1,4 +1,6 @@
 ---
+title: Extract Music from MP3
+tags: [python, music]
 ---
 
 I discovered a python package [librosa](https://librosa.org/doc/latest/index.html) that does audio and signal processing and that you 
