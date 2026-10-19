@@ -46,7 +46,7 @@ after first doing some preprocessing on the data to remove cruft with hpss.
 import librosa
 import numpy as np
 
-AUDIO_FILE = 'C:\\Users\\Derek.Graham\\Downloads\\Captain Laser Beam Distress Call.mp3'  
+AUDIO_FILE = 'Captain Laser Beam Distress Call.mp3'  
 
 HOP_LENGTH = 256
 MIN_NOTE_DURATION = 0.05  # seconds
