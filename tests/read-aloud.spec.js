@@ -136,14 +136,14 @@ test.describe("read aloud", () => {
 
     await button.click();
     await expect(button).toHaveClass(/narrator-active/);
-    await expect(button).toHaveAttribute("aria-label", "Stop reading this page aloud");
+    await expect(button).toHaveAttribute("aria-label", "Stop reading");
     await expect(page).toHaveTitle(`[🔊] ${originalTitle}`);
 
     await button.click();
 
     await expect(button).not.toHaveClass(/narrator-active/);
     await expect(button).toHaveAttribute("aria-label", "Read this page aloud");
-    await expect(page.locator("#read-aloud-label")).toHaveText("Read this aloud");
+    await expect(page.locator("#read-aloud-label")).toHaveText("Read this page aloud");
     await expect(page).toHaveTitle(originalTitle);
     await expect
       .poll(() => page.evaluate(() => /** @type {any} */ (window).__speechMock.cancelCount))
