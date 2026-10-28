@@ -199,10 +199,12 @@ export const initNarratePostContent = () => {
       isNarrating = active;
       document.title = active ? "[🔊] " + defaultTabTitle : defaultTabTitle;
       narrationButton.classList.toggle("narrator-active", active);
-      narrationButtonLabel.textContent = active ? "Stop reading" : "Read this aloud";
+      const startReadingLabel = "Read this page aloud";
+      const stopReadingLabel = "Stop reading";
+      narrationButtonLabel.textContent = active ? stopReadingLabel : startReadingLabel;
       narrationButton.setAttribute(
         "aria-label",
-        active ? "Stop reading this page aloud" : "Read this page aloud",
+        active ? stopReadingLabel : startReadingLabel,
       );
     };
 
