@@ -16,21 +16,19 @@ front of it. The test took a number of hours to gather data so this was the hack
 ```python
 import keyboard, time, sys
 
-
 def keep_alive():
 
     keypress = "f15"  # key pressed causing keep alive
-    press_every_n_minutes = 1  # once per minute
+    press_every_n_minutes = 2  # once per minute
     sleep_time = press_every_n_minutes * 60
 
-    thumb_emoji = "\U0001f44d"
     computer_emoji = "\U0001f5a5\U0000fe0f"
     print(f"Keeping {computer_emoji} awake using {keypress} every {sleep_time} seconds")
 
     while True:
         try:
             keyboard.press_and_release(keypress)
-            print(f"Button {keypress} was pressed at {current_time()}")
+            print('.', end='')
             time.sleep(sleep_time)
 
         except KeyboardInterrupt:
@@ -38,15 +36,8 @@ def keep_alive():
             print("Done.")
             sys.exit()
 
-
-def current_time():
-    local_time = time.localtime()
-    return time.strftime("%H:%M:%S", local_time)
-
-
 if __name__ == "__main__":
     keep_alive()
 ```
 
-This could be adapted to work on linux or macos fairly easily but, as I said, this was just for me to run on one machine so I've not investigated the system calls for keyboard, system etc. that might 
-need the code to handle that variation.
+This could be adapted to work on linux or macos fairly easily but, as I said, this was just for me to run on one machine so I've not investigated the system calls for keyboard, system etc. that might need the code to handle that variation.
