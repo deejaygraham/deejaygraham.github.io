@@ -7,8 +7,7 @@ thumbnail: /assets/img/heroes/hero-makers-and-creators.jpg
 
 My name is Derek Graham and this is my personal blog.
 
-In my most pretentious moments I like to think of myself as a writer of speculative fiction for computers (what people normally call a "programmer") or a 
-"legacy code archaeologist" (someone who has to make sense of long dead codebases).
+In my most pretentious moments I like to think of myself as: someone who explains ideas to machines; a writer of speculative fiction for computers (what people normally call a "programmer") or a "code archaeologist" (someone who has to make sense of long dead codebases).
 
 In real life, I'm a software architect working for a very popular business software company in the North East of England. I can't be sure that the opinions 
 I have expressed here are my own so they **definitely** don't represent the views of my employer.
