@@ -1,3 +1,4 @@
+/* eslint-disable */
 const QUOTES = [
     {
         quote: "Always wanted to travel back in time to try fighting a younger version of yourself? Software development is the career for you!",
