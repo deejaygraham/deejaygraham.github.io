@@ -3,6 +3,7 @@ import { registerThemeSwitch } from "./theme-switcher.js";
 import { addCopyButtonToSourceCode } from "./add-source-copy-button.js";
 import { renderMicrobits } from "./microbit.js";
 import { initNarratePostContent } from "./read-content-aloud.js";
+import { highlightSearchTerm } from "./highlight-search-term.js";
 
 const runWhenDocumentReady = (callback) => {
   if (document.readyState === "loading") {
@@ -19,4 +20,5 @@ runWhenDocumentReady(() => {
   addCopyButtonToSourceCode();
   renderMicrobits();
   initNarratePostContent();
+  highlightSearchTerm();
 });
