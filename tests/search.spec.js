@@ -39,8 +39,18 @@ test.describe("search page", () => {
     const hit = page.locator("#search-results").getByText("Make A Jazz Noise Here", { exact: true });
     await expect(hit).toBeVisible();
     const postLink = page.locator("#search-results a").filter({ hasText: "Make A Jazz Noise Here" });
-    await expect(postLink).toHaveAttribute("href", /make-a-jazz-noise-here/);
+    await expect(postLink).toHaveAttribute("href", /make-a-jazz-noise-here\/\?q=jazz/);
     await expect(postLink).toHaveCount(1);
+  });
+
+  test("clicked result highlights the search term in the post text", async ({ page }) => {
+    await page.getByLabel(/search for posts/i).fill("Jazz");
+    await page.locator("#search-results a").filter({ hasText: "Make A Jazz Noise Here" }).click();
+
+    await expect(page).toHaveURL(/make-a-jazz-noise-here\/\?q=Jazz/);
+    const highlights = page.locator(".site-prose mark");
+    await expect(highlights.first()).toHaveText(/Jazz/i);
+    expect(await highlights.count()).toBeGreaterThan(0);
   });
 
   test("search by quotation author finds the expected post", async ({ page }) => {
