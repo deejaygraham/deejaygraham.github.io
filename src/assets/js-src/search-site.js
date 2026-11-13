@@ -9,27 +9,30 @@ const ignoreEnterKey = (e) => {
 /**
  * One search hit as a semantic article, styled like post cards.
  */
-const formatResult = (document, url, title, excerpt) => {
+const formatResult = (document, url, title, excerpt, searchTerm) => {
   const article = document.createElement("article");
   article.className = "card search-result";
 
-  const body = document.createElement("a");
-  body.setAttribute("href", url);
-  body.className = "card__body";
+  const anchor = document.createElement("a");
+  const resultUrl = new URL(url, window.location.origin);
+  resultUrl.searchParams.set("q", searchTerm);
+  anchor.setAttribute("href", `${resultUrl.pathname}${resultUrl.search}${resultUrl.hash}`);
+  anchor.className = "card__body";
 
   const titleEl = document.createElement("h2");
   titleEl.className = "card__title";
   titleEl.textContent = title;
-  body.appendChild(titleEl);
+  
+  anchor.appendChild(titleEl);
 
   if (excerpt) {
     const excerptEl = document.createElement("p");
     excerptEl.className = "text-muted";
     excerptEl.textContent = excerpt.replace(/<[^>]+>/g, "");
-    body.appendChild(excerptEl);
+    anchor.appendChild(excerptEl);
   }
 
-  article.appendChild(body);
+  article.appendChild(anchor);
   return article;
 };
 
@@ -45,6 +48,7 @@ const displayResults = (searchTerm, results) => {
         result.id,
         result.title,
         result.excerpt,
+        searchTerm,
       );
       container.appendChild(formattedResult);
     });
