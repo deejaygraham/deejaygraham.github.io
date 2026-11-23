@@ -8,12 +8,16 @@
 {% endif %}
 
 {# default to small font size #}
-{% set quoteSize = 'quote--s' %}
+{% set quoteSize = 'quote--xs' %}
 {% set words = content | wordCount %}
 {% if words < 100 %}
 {% set quoteSize = "quote--xl" %}
-{% elif words < 500 %}
+{% elif words < 200 %}
 {% set quoteSize = "quote--l" %}
+{% elif words < 300 %}
+{% set quoteSize = "quote--m" %}
+{% elif words < 400 %}
+{% set quoteSize = "quote--s" %}
 {% endif %}
 
 <figure class="quote mt-m mb-m site-prose">
