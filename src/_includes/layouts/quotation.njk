@@ -10,13 +10,13 @@
 {# default to small font size #}
 {% set quoteSize = 'quote--xs' %}
 {% set words = content | wordCount %}
-{% if words < 100 %}
+{% if words < 40 %}
 {% set quoteSize = "quote--xl" %}
-{% elif words < 200 %}
+{% elif words < 80 %}
 {% set quoteSize = "quote--l" %}
-{% elif words < 300 %}
+{% elif words < 120 %}
 {% set quoteSize = "quote--m" %}
-{% elif words < 400 %}
+{% elif words < 150 %}
 {% set quoteSize = "quote--s" %}
 {% endif %}
 
