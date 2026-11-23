@@ -6,12 +6,20 @@
   margin: 0;
 }
 
-.quote--s {
+.quote--xs {
   font-size: var(--size-step-1);
 }
 
-.quote--l {
+.quote--s {
+  font-size: var(--size-step-2);
+}
+
+.quote--m {
   font-size: var(--size-step-3);
+}
+
+.quote--l {
+  font-size: var(--size-step-4);
 }
 
 .quote--xl {
