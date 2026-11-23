@@ -4,7 +4,7 @@
   font-weight: var(--font-heading-weight);
   letter-spacing: -0.02em;
   text-wrap: balance;
-  margin-block-end: var(--space-m);
+  /* margin-block-end: var(--space-m); */
 }
 
 .section-title {
