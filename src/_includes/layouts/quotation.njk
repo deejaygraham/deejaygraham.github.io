@@ -10,15 +10,15 @@
 {# default to largest font size #}
 {% set quoteSize = 'quote--xl' %}
 {% set words = content | wordCount %}
-{% set sizes = {
+{% set mapping = {
     'quote--l': 30,
     'quote--m': 60,
     'quote--s': 90,
     'quote--xs': 120
 } %}
-{% for size in sizes %}
-   {% if words >= size[1] %}
-     {% set quoteSize = size[0] %}
+{% for style, threshold in mapping %}
+   {% if words >= threshold %}
+     {% set quoteSize = style %}
    {% endif %}
 {% endfor %}
 
