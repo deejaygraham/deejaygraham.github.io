@@ -7,18 +7,20 @@
 </section>
 {% endif %}
 
-{# default to small font size #}
-{% set quoteSize = 'quote--xs' %}
+{# default to largest font size #}
+{% set quoteSize = 'quote--xl' %}
 {% set words = content | wordCount %}
-{% if words < 40 %}
-{% set quoteSize = "quote--xl" %}
-{% elif words < 80 %}
-{% set quoteSize = "quote--l" %}
-{% elif words < 120 %}
-{% set quoteSize = "quote--m" %}
-{% elif words < 150 %}
-{% set quoteSize = "quote--s" %}
-{% endif %}
+{% set sizes = {
+    'quote--l': 30,
+    'quote--m': 60,
+    'quote--s': 90,
+    'quote--xs': 120
+} %}
+{% for size in sizes %}
+   {% if words >= size[1] %}
+     {% set quoteSize = size[0] %}
+   {% endif %}
+{% endfor %}
 
 <figure class="quote mt-m mb-m site-prose">
 {% include "icons/quotation-mark.svg" %}
